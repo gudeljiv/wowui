@@ -21,7 +21,7 @@ along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 
 local addonName = ...
 ---@class AdiBags: AceAddon
-local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
+local addon = LibStub("AceAddon-3.0"):GetAddon(addonName, true)
 
 local L = addon.L
 
@@ -34,7 +34,7 @@ local setmetatable = _G.setmetatable
 local type = _G.type
 --GLOBALS>
 
-local LSM = LibStub('LibSharedMedia-3.0')
+local LSM = LibStub("LibSharedMedia-3.0")
 local FONT = LSM.MediaType.FONT
 local ALL_FONTS = LSM:HashTable(FONT)
 
@@ -50,7 +50,7 @@ local ALL_NAMES = setmetatable({}, {
 				return n
 			end
 		end
-	end
+	end,
 })
 
 local function GetFontSettings(font)
@@ -62,7 +62,7 @@ end
 -- Font prototype
 --------------------------------------------------------------------------------
 ---@class AdiFont: Font
-local proto = CreateFont(addonName.."BaseFont")
+local proto = CreateFont(addonName .. "BaseFont")
 local meta = { __index = proto }
 
 function proto:SetSetting(info, value, ...)
@@ -127,8 +127,8 @@ function addon:CreateFont(name, template, dbGetter)
 	font:SetFontObject(template)
 	font.template = template
 	font.GetDB = dbGetter
-	LSM.RegisterCallback(font, 'LibSharedMedia_Registered', 'ApplySettings')
-	LSM.RegisterCallback(font, 'LibSharedMedia_SetGlobal', 'ApplySettings')
+	LSM.RegisterCallback(font, "LibSharedMedia_Registered", "ApplySettings")
+	LSM.RegisterCallback(font, "LibSharedMedia_SetGlobal", "ApplySettings")
 	return font
 end
 
@@ -145,42 +145,46 @@ function addon:CreateFontOptions(font, title, order)
 	local _, mediumSize = font.template:GetFont()
 	mediumSize = floor(mediumSize)
 	return {
-		name = title or L['Text'],
-		type = 'group',
+		name = title or L["Text"],
+		type = "group",
 		order = order or 0,
 		inline = true,
 		handler = font,
-		set = 'SetSetting',
-		get = 'GetSetting',
-		disabled = function() return addon.db.profile.theme.currentTheme == 'default' end,
+		set = "SetSetting",
+		get = "GetSetting",
+		disabled = function()
+			return addon.db.profile.theme.currentTheme == "default"
+		end,
 		args = {
 			name = {
-				name = L['Font'],
-				type = 'select',
+				name = L["Font"],
+				type = "select",
 				order = 10,
-				dialogControl = 'LSM30_Font',
+				dialogControl = "LSM30_Font",
 				values = ALL_FONTS,
 			},
 			size = {
-				name = L['Size'],
-				type = 'range',
+				name = L["Size"],
+				type = "range",
 				order = 20,
 				min = mediumSize - 8,
 				max = mediumSize + 8,
 				step = 1,
 			},
 			color = {
-				name = L['Color'],
-				type = 'color',
+				name = L["Color"],
+				type = "color",
 				order = 30,
 				hasAlpha = false,
 			},
 			reset = {
-				name = L['Reset'],
-				type = 'execute',
+				name = L["Reset"],
+				type = "execute",
 				order = 40,
-				disabled = function() return addon.db.profile.theme.currentTheme == 'default' end,
-				func = 'ResetSettings',
+				disabled = function()
+					return addon.db.profile.theme.currentTheme == "default"
+				end,
+				func = "ResetSettings",
 			},
 		},
 	}

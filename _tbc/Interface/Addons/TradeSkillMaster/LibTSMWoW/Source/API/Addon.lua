@@ -7,8 +7,6 @@
 local LibTSMWoW = select(2, ...).LibTSMWoW
 local Addon = LibTSMWoW:Init("API.Addon")
 
-
-
 -- ============================================================================
 -- Module Functions
 -- ============================================================================
@@ -28,7 +26,9 @@ end
 function Addon.GetInfo(nameOrIndex)
 	local name, _, _, loadable = C_AddOns.GetAddOnInfo(nameOrIndex)
 	loadable = loadable and true or false
-	local version = strtrim(C_AddOns.GetAddOnMetadata(name, "X-Curse-Packaged-Version") or C_AddOns.GetAddOnMetadata(name, "Version") or "")
+	local version = strtrim(
+		C_AddOns.GetAddOnMetadata(name, "X-Curse-Packaged-Version") or C_AddOns.GetAddOnMetadata(name, "Version") or ""
+	)
 	local loaded = C_AddOns.IsAddOnLoaded(nameOrIndex)
 	return name, version, loaded, loadable
 end
@@ -45,7 +45,8 @@ end
 ---@return boolean
 function Addon.IsEnabled(name)
 	local character = UnitName("player")
-	return C_AddOns.GetAddOnEnableState(name, character) == Enum.AddOnEnableState.All and select(4, C_AddOns.GetAddOnInfo(name))
+	return C_AddOns.GetAddOnEnableState(name, character) == Enum.AddOnEnableState.All
+		and select(4, C_AddOns.GetAddOnInfo(name))
 end
 
 ---Enables the specified addon.

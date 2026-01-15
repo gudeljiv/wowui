@@ -33,21 +33,20 @@ local function SecondsToTimeAbbrevHook(seconds)
 	-- 	return "|cffffffff%dm|r", tempTime
 	-- end
 
-
-	local tempTime;
+	local tempTime
 	local threshold = 1
-	if ( seconds >= SECONDS_PER_DAY * threshold ) then
-		tempTime = ceil(seconds / SECONDS_PER_DAY);
+	if seconds >= SECONDS_PER_DAY * threshold then
+		tempTime = ceil(seconds / SECONDS_PER_DAY)
 		-- return DAY_ONELETTER_ABBR, tempTime;
 		return "|cffffffff%dd|r", tempTime
 	end
-	if ( seconds >= SECONDS_PER_HOUR * threshold ) then
-		tempTime = ceil(seconds / SECONDS_PER_HOUR);
+	if seconds >= SECONDS_PER_HOUR * threshold then
+		tempTime = ceil(seconds / SECONDS_PER_HOUR)
 		-- return HOUR_ONELETTER_ABBR, tempTime;
 		return "|cffffffff%dh|r", tempTime
 	end
-	if ( seconds >= SECONDS_PER_MIN * threshold ) then
-		tempTime = ceil(seconds / SECONDS_PER_MIN);
+	if seconds >= SECONDS_PER_MIN * threshold then
+		tempTime = ceil(seconds / SECONDS_PER_MIN)
 		-- return MINUTE_ONELETTER_ABBR, tempTime;
 		return "|cffffffff%dm|r", tempTime
 	end
@@ -59,220 +58,297 @@ SecondsToTimeAbbrev = SecondsToTimeAbbrevHook
 
 -- BuffFrame:SetScript("OnUpdate", nil)
 
--- TemporaryEnchantFrame ...
-TempEnchant1:ClearAllPoints()
--- TempEnchant1:SetPoint("TOPRIGHT", Minimap, "TOPLEFT", -15, 0)
-TempEnchant1:SetPoint("TOPRIGHT", MinimapCluster, "TOPLEFT", 0, -41)
--- TempEnchant1.SetPoint = function() end
+local function SetupTempEnchants()
+	if not BuffFrame then
+		return
+	end
 
-TempEnchant2:ClearAllPoints()
-TempEnchant2:SetPoint("TOPRIGHT", TempEnchant1, "TOPLEFT", -cfg.paddingX, 0)
+	-- Get the children of BuffFrame
+	local numChildren = BuffFrame:GetNumChildren()
+	local children = { BuffFrame:GetChildren() }
 
-local function UpdateFirstButton(self)
-	if (self and self:IsShown()) then
-		self:ClearAllPoints()
+	local firstEnchantIndex = nil
 
-		if (BuffFrame.numEnchants == 1) then
-			self:SetPoint("TOPRIGHT", TempEnchant1, "TOPLEFT", -cfg.paddingX, 0)
-			return
-		elseif (BuffFrame.numEnchants == 2) then
-			self:SetPoint("TOPRIGHT", TempEnchant2, "TOPLEFT", -cfg.paddingX, 0)
-			return
-		elseif (BuffFrame.numEnchants == 3) then
-			self:SetPoint("TOPRIGHT", TempEnchant3, "TOPLEFT", -cfg.paddingX, 0)
-			return
-		else
-			self:SetPoint("TOPRIGHT", TempEnchant1)
-			return
+	-- The first few unnamed buttons are typically the temp enchants
+	for i = 1, math.min(3, numChildren) do
+		local child = children[i]
+
+		if child then
+			child:ClearAllPoints()
+			-- child:CreateBeautyBorder(8)
+			if i == 1 then
+				firstEnchantIndex = child
+				child:SetPoint("TOPRIGHT", Minimap, "TOPLEFT", 0, 0)
+			else
+				local prevChild = children[i - 1]
+				if prevChild then
+					child:SetPoint("TOPRIGHT", prevChild, "TOPLEFT", -cfg.paddingX, 0)
+				end
+			end
 		end
 	end
 end
+
+-- Update when enchants change
+local f = CreateFrame("Frame")
+f:RegisterEvent("UNIT_INVENTORY_CHANGED")
+f:RegisterEvent("PLAYER_ENTERING_WORLD")
+f:SetScript("OnEvent", function(_, event, unit)
+	if event == "PLAYER_ENTERING_WORLD" or (event == "UNIT_INVENTORY_CHANGED" and unit == "player") then
+		C_Timer.After(0.5, SetupTempEnchants)
+	end
+end)
 
 local function CheckFirstButton()
-	if (BuffButton1) then
-		UpdateFirstButton(BuffButton1)
+	if BuffButton1 then
+		SetupTempEnchants(BuffButton1)
 	end
 end
 
-hooksecurefunc(
-	"BuffFrame_UpdateAllBuffAnchors",
-	function()
-		local previousBuff, aboveBuff
-		local numBuffs = 0
-		local numTotal = BuffFrame.numEnchants
+local function UpdateBuffLayout()
+	SetupTempEnchants()
+	local previousBuff, aboveBuff
+	local numBuffs = 0
+	local numTotal = BuffFrame.numEnchants
 
-		for i = 1, BUFF_ACTUAL_DISPLAY do
-			local buff = _G["BuffButton" .. i]
-
-			numBuffs = numBuffs + 1
-			numTotal = numTotal + 1
-
-			buff:ClearAllPoints()
-			if (numBuffs == 1) then
-				UpdateFirstButton(buff)
-			elseif (numBuffs > 1 and mod(numTotal, cfg.buffPerRow) == 1) then
-				if (numTotal == cfg.buffPerRow + 1) then
-					buff:SetPoint("TOP", TempEnchant1, "BOTTOM", 0, -cfg.paddingY)
-				else
-					buff:SetPoint("TOP", aboveBuff, "BOTTOM", 0, -cfg.paddingY)
-				end
-
-				aboveBuff = buff
-			else
-				buff:SetPoint("TOPRIGHT", previousBuff, "TOPLEFT", -cfg.paddingX, 0)
-			end
-
-			previousBuff = buff
-		end
-	end
-)
-
-hooksecurefunc(
-	"DebuffButton_UpdateAnchors",
-	function(self, index)
-		local numBuffs = BUFF_ACTUAL_DISPLAY + BuffFrame.numEnchants
-
-		local debuffSpace = cfg.buffSize + cfg.paddingY
-		local numRows = ceil(numBuffs / cfg.buffPerRow)
-
-		local rowSpacing
-		if (numRows and numRows > 1) then
-			rowSpacing = -numRows * debuffSpace
-		else
-			rowSpacing = -debuffSpace
+	for i = 1, BUFF_ACTUAL_DISPLAY do
+		local buff = _G["BuffButton" .. i]
+		if not buff then
+			break
 		end
 
-		local buff = _G[self .. index]
+		numBuffs = numBuffs + 1
+		numTotal = numTotal + 1
+
 		buff:ClearAllPoints()
-		if (index == 1) then
-			buff:SetPoint("TOP", TempEnchant1, "BOTTOM", 0, rowSpacing)
-		elseif (index >= 2 and mod(index, cfg.buffPerRow) == 1) then
-			buff:SetPoint("TOP", _G[self .. (index - cfg.buffPerRow)], "BOTTOM", 0, -cfg.paddingY)
+		if numBuffs == 1 then
+			UpdateFirstButton(buff)
+		elseif numBuffs > 1 and mod(numTotal, cfg.buffPerRow) == 1 then
+			if numTotal == cfg.buffPerRow + 1 then
+				buff:SetPoint("TOP", firstEnchantIndex, "BOTTOM", 0, -cfg.paddingY)
+			else
+				buff:SetPoint("TOP", aboveBuff, "BOTTOM", 0, -cfg.paddingY)
+			end
+			aboveBuff = buff
 		else
-			buff:SetPoint("TOPRIGHT", _G[self .. (index - 1)], "TOPLEFT", -cfg.paddingX, 0)
+			buff:SetPoint("TOPRIGHT", previousBuff, "TOPLEFT", -cfg.paddingX, 0)
 		end
+
+		previousBuff = buff
 	end
-)
-
-for i = 1, NUM_TEMP_ENCHANT_FRAMES do
-	local button = _G["TempEnchant" .. i]
-	button:SetScale(cfg.buffScale)
-	button:SetSize(cfg.buffSize, cfg.buffSize)
-
-	button:SetScript(
-		"OnShow",
-		function()
-			CheckFirstButton()
-		end
-	)
-
-	button:SetScript(
-		"OnHide",
-		function()
-			CheckFirstButton()
-		end
-	)
-
-	local icon = _G["TempEnchant" .. i .. "Icon"]
-	icon:SetTexCoord(0.04, 0.96, 0.04, 0.96)
-
-	local duration = _G["TempEnchant" .. i .. "Duration"]
-	duration:ClearAllPoints()
-	duration:SetPoint("BOTTOM", button, "BOTTOM", 0, -2)
-	duration:SetFont(cfg.durationFont, cfg.buffFontSize, "THINOUTLINE")
-	duration:SetShadowOffset(0, 0)
-	duration:SetDrawLayer("OVERLAY")
-
-	local border = _G["TempEnchant" .. i .. "Border"]
-	border:ClearAllPoints()
-	border:SetPoint("TOPRIGHT", button, 1, 1)
-	border:SetPoint("BOTTOMLEFT", button, -1, -1)
-	border:SetTexture(cfg.borderDebuff)
-	border:SetTexCoord(0, 1, 0, 1)
-	border:SetVertexColor(0.9, 0.25, 0.9)
-
-	button.Shadow = button:CreateTexture("$parentBackground", "BACKGROUND")
-	button.Shadow:SetPoint("TOPRIGHT", border, 3.35, 3.35)
-	button.Shadow:SetPoint("BOTTOMLEFT", border, -3.35, -3.35)
-	button.Shadow:SetTexture("Interface\\AddOns\\nBuff\\media\\textureShadow")
-	button.Shadow:SetVertexColor(0, 0, 0, 1)
 end
 
-hooksecurefunc(
-	"AuraButton_Update",
-	function(self, index)
-		local button = _G[self .. index]
+-- Hook into buff events
+local frame = CreateFrame("Frame")
+frame:RegisterEvent("UNIT_AURA")
+frame:SetScript("OnEvent", function(self, event, unit)
+	if unit == "player" then
+		UpdateBuffLayout()
+	end
+end)
 
-		if (button and not button.Shadow) then
-			if (button) then
-				if (self:match("Debuff")) then
-					button:SetSize(cfg.debuffSize, cfg.debuffSize)
-					button:SetScale(cfg.debuffScale)
-				else
-					button:SetSize(cfg.buffSize, cfg.buffSize)
-					button:SetScale(cfg.buffScale)
-				end
-			end
+local function UpdateDebuffAnchors()
+	SetupTempEnchants()
+	local numBuffs = BUFF_ACTUAL_DISPLAY + BuffFrame.numEnchants
 
-			local icon = _G[self .. index .. "Icon"]
-			if (icon) then
-				icon:SetTexCoord(0.04, 0.96, 0.04, 0.96)
-			end
+	local debuffSpace = cfg.buffSize + cfg.paddingY
+	local numRows = ceil(numBuffs / cfg.buffPerRow)
 
-			local duration = _G[self .. index .. "Duration"]
-			if (duration) then
-				duration:ClearAllPoints()
-				duration:SetPoint("BOTTOM", button, "BOTTOM", 0, -2)
-				if (self:match("Debuff")) then
-					duration:SetFont(cfg.durationFont, cfg.debuffFontSize, "THINOUTLINE")
-				else
-					duration:SetFont(cfg.durationFont, cfg.buffFontSize, "THINOUTLINE")
-				end
-				duration:SetShadowOffset(0, 0)
-				duration:SetDrawLayer("OVERLAY")
-			end
+	local rowSpacing
+	if numRows and numRows > 1 then
+		rowSpacing = -numRows * debuffSpace
+	else
+		rowSpacing = -debuffSpace
+	end
 
-			local count = _G[self .. index .. "Count"]
-			if (count) then
-				count:ClearAllPoints()
-				count:SetPoint("TOPRIGHT", button)
-				if (self:match("Debuff")) then
-					count:SetFont(cfg.countFont, cfg.debuffCountSize, "THINOUTLINE")
-				else
-					count:SetFont(cfg.countFont, cfg.buffCountSize, "THINOUTLINE")
-				end
-				count:SetShadowOffset(0, 0)
-				count:SetDrawLayer("OVERLAY")
-			end
+	for i = 1, DEBUFF_ACTUAL_DISPLAY do
+		local debuff = _G["DebuffButton" .. i]
+		if not debuff or not debuff:IsShown() then
+			break
+		end
 
-			local border = _G[self .. index .. "Border"]
-			if (border) then
-				border:SetTexture(cfg.borderDebuff)
-				border:SetPoint("TOPRIGHT", button, 1, 1)
-				border:SetPoint("BOTTOMLEFT", button, -1, -1)
-				border:SetTexCoord(0, 1, 0, 1)
-			end
-
-			if (button and not border) then
-				if (not button.texture) then
-					button.texture = button:CreateTexture("$parentOverlay", "ARTWORK")
-					button.texture:SetParent(button)
-					button.texture:SetTexture(cfg.borderBuff)
-					button.texture:SetPoint("TOPRIGHT", button, 1, 1)
-					button.texture:SetPoint("BOTTOMLEFT", button, -1, -1)
-					button.texture:SetVertexColor(unpack(cfg.buffBorderColor))
-				end
-			end
-
-			if (button) then
-				if (not button.Shadow) then
-					button.Shadow = button:CreateTexture("$parentShadow", "BACKGROUND")
-					button.Shadow:SetTexture("Interface\\AddOns\\nBuff\\media\\textureShadow")
-					button.Shadow:SetPoint("TOPRIGHT", button.texture or border, 3.35, 3.35)
-					button.Shadow:SetPoint("BOTTOMLEFT", button.texture or border, -3.35, -3.35)
-					button.Shadow:SetVertexColor(0, 0, 0, 1)
-				end
-			end
+		debuff:ClearAllPoints()
+		if i == 1 then
+			debuff:SetPoint("TOP", firstEnchantIndex, "BOTTOM", 0, rowSpacing)
+		elseif i >= 2 and mod(i, cfg.buffPerRow) == 1 then
+			debuff:SetPoint("TOP", _G["DebuffButton" .. (i - cfg.buffPerRow)], "BOTTOM", 0, -cfg.paddingY)
+		else
+			debuff:SetPoint("TOPRIGHT", _G["DebuffButton" .. (i - 1)], "TOPLEFT", -cfg.paddingX, 0)
 		end
 	end
-)
+end
+
+-- Register events to update debuff layout
+local debuffFrame = CreateFrame("Frame")
+debuffFrame:RegisterEvent("UNIT_AURA")
+debuffFrame:SetScript("OnEvent", function(self, event, unit)
+	if unit == "player" then
+		UpdateDebuffAnchors()
+	end
+end)
+
+-- for i = 1, NUM_TEMP_ENCHANT_FRAMES do
+-- 	local button = _G["TempEnchant" .. i]
+-- 	button:SetScale(cfg.buffScale)
+-- 	button:SetSize(cfg.buffSize, cfg.buffSize)
+
+-- 	button:SetScript("OnShow", function()
+-- 		CheckFirstButton()
+-- 	end)
+
+-- 	button:SetScript("OnHide", function()
+-- 		CheckFirstButton()
+-- 	end)
+
+-- 	local icon = _G["TempEnchant" .. i .. "Icon"]
+-- 	icon:SetTexCoord(0.04, 0.96, 0.04, 0.96)
+
+-- 	local duration = _G["TempEnchant" .. i .. "Duration"]
+-- 	duration:ClearAllPoints()
+-- 	duration:SetPoint("BOTTOM", button, "BOTTOM", 0, -2)
+-- 	duration:SetFont(cfg.durationFont, cfg.buffFontSize, "THINOUTLINE")
+-- 	duration:SetShadowOffset(0, 0)
+-- 	duration:SetDrawLayer("OVERLAY")
+
+-- 	local border = _G["TempEnchant" .. i .. "Border"]
+-- 	border:ClearAllPoints()
+-- 	border:SetPoint("TOPRIGHT", button, 1, 1)
+-- 	border:SetPoint("BOTTOMLEFT", button, -1, -1)
+-- 	border:SetTexture(cfg.borderDebuff)
+-- 	border:SetTexCoord(0, 1, 0, 1)
+-- 	border:SetVertexColor(0.9, 0.25, 0.9)
+
+-- 	button.Shadow = button:CreateTexture("$parentBackground", "BACKGROUND")
+-- 	button.Shadow:SetPoint("TOPRIGHT", border, 3.35, 3.35)
+-- 	button.Shadow:SetPoint("BOTTOMLEFT", border, -3.35, -3.35)
+-- 	button.Shadow:SetTexture("Interface\\AddOns\\nBuff\\media\\textureShadow")
+-- 	button.Shadow:SetVertexColor(0, 0, 0, 1)
+-- end
+
+local function StyleAuraButton(buttonName, index, isDebuff)
+	local button = _G[buttonName .. index]
+	if not button then
+		return
+	end
+
+	-- Only style once
+	if button.nbuffStyled then
+		return
+	end
+	button.nbuffStyled = true
+
+	-- Set size and scale
+	if isDebuff then
+		button:SetSize(cfg.debuffSize, cfg.debuffSize)
+		button:SetScale(cfg.debuffScale)
+	else
+		button:SetSize(cfg.buffSize, cfg.buffSize)
+		button:SetScale(cfg.buffScale)
+	end
+
+	-- Style icon
+	local icon = _G[buttonName .. index .. "Icon"]
+	if icon then
+		icon:SetTexCoord(0.04, 0.96, 0.04, 0.96)
+	end
+
+	-- Style duration text
+	local duration = _G[buttonName .. index .. "Duration"]
+	if duration then
+		duration:ClearAllPoints()
+		duration:SetPoint("BOTTOM", button, "BOTTOM", 0, -2)
+		if isDebuff then
+			duration:SetFont(cfg.durationFont, cfg.debuffFontSize, "THINOUTLINE")
+		else
+			duration:SetFont(cfg.durationFont, cfg.buffFontSize, "THINOUTLINE")
+		end
+		duration:SetShadowOffset(0, 0)
+		duration:SetDrawLayer("OVERLAY")
+	end
+
+	-- Style count text
+	local count = _G[buttonName .. index .. "Count"]
+	if count then
+		count:ClearAllPoints()
+		count:SetPoint("TOPRIGHT", button)
+		if isDebuff then
+			count:SetFont(cfg.countFont, cfg.debuffCountSize, "THINOUTLINE")
+		else
+			count:SetFont(cfg.countFont, cfg.buffCountSize, "THINOUTLINE")
+		end
+		count:SetShadowOffset(0, 0)
+		count:SetDrawLayer("OVERLAY")
+	end
+
+	-- Style border
+	local border = _G[buttonName .. index .. "Border"]
+	if border then
+		border:SetTexture(cfg.borderDebuff)
+		border:SetPoint("TOPRIGHT", button, 1, 1)
+		border:SetPoint("BOTTOMLEFT", button, -1, -1)
+		border:SetTexCoord(0, 1, 0, 1)
+	end
+
+	-- Create buff border if no debuff border exists
+	if not border and not isDebuff then
+		if not button.texture then
+			button.texture = button:CreateTexture("$parentOverlay", "ARTWORK")
+			button.texture:SetParent(button)
+			button.texture:SetTexture(cfg.borderBuff)
+			button.texture:SetPoint("TOPRIGHT", button, 1, 1)
+			button.texture:SetPoint("BOTTOMLEFT", button, -1, -1)
+			button.texture:SetVertexColor(unpack(cfg.buffBorderColor))
+		end
+	end
+
+	-- Create shadow
+	if not button.Shadow then
+		button.Shadow = button:CreateTexture("$parentShadow", "BACKGROUND")
+		button.Shadow:SetTexture("Interface\\AddOns\\nBuff\\media\\textureShadow")
+		button.Shadow:SetPoint("TOPRIGHT", button.texture or border, 3.35, 3.35)
+		button.Shadow:SetPoint("BOTTOMLEFT", button.texture or border, -3.35, -3.35)
+		button.Shadow:SetVertexColor(0, 0, 0, 1)
+	end
+end
+
+local function StyleAllAuras()
+	-- Style buffs (check until we find a nil button)
+	local maxBuffs = BUFF_ACTUAL_DISPLAY or 32 -- Fallback to 32
+	for i = 1, maxBuffs do
+		local button = _G["BuffButton" .. i]
+		if button then
+			StyleAuraButton("BuffButton", i, false)
+		end
+	end
+
+	-- Style temp enchants
+	local maxEnchants = NUM_TEMP_ENCHANT_FRAMES or 3 -- Fallback to 3
+	for i = 1, maxEnchants do
+		local button = _G["TempEnchant" .. i]
+		if button then
+			StyleAuraButton("TempEnchant", i, false)
+		end
+	end
+
+	-- Style debuffs
+	local maxDebuffs = DEBUFF_ACTUAL_DISPLAY or 16 -- Fallback to 16
+	for i = 1, maxDebuffs do
+		local button = _G["DebuffButton" .. i]
+		if button then
+			StyleAuraButton("DebuffButton", i, true)
+		end
+	end
+end
+
+-- Hook into the event system
+local styleFrame = CreateFrame("Frame")
+styleFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
+styleFrame:RegisterEvent("UNIT_AURA")
+styleFrame:SetScript("OnEvent", function(self, event, unit)
+	if event == "PLAYER_ENTERING_WORLD" or unit == "player" then
+		StyleAllAuras()
+	end
+end)
+
+-- Also style immediately on load
+StyleAllAuras()

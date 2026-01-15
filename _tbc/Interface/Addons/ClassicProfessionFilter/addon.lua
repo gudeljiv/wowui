@@ -1,7 +1,6 @@
 local ADDON_NAME, ADDON = ...
 local MODULE_NAME = "addon"
 
-
 ADDON[1] = {} -- CPF, Addon
 ADDON[2] = {} -- C, Config
 ADDON[3] = LibStub("AceLocale-3.0"):GetLocale(ADDON_NAME, true) -- L, Locale
@@ -11,7 +10,6 @@ local CPF, C, L = unpack(ADDON)
 _G["CPF"] = CPF --Expose internals on the Plugin lib
 print(ADDON_NAME, MODULE_NAME)
 --@end-debug@]==]
-
 
 ---------------------------------------------
 -- CONSTANTS
@@ -24,7 +22,6 @@ CPF.IS_RELEASE_VERSION = CPF.VERSION:match("^%d+.%d+.%d+$") ~= nil
 CPF.IS_RELEASE_VERSION = false
 --@end-debug@]==]
 
-
 ---------------------------------------------
 -- VARIABLES
 ---------------------------------------------
@@ -34,31 +31,31 @@ CPF.isDebug = false
 -- METHODS
 ---------------------------------------------
 function CPF:debug(...)
-    if ( CPF.isDebug ) then
-        print("[" .. CPF.ADDON_NAME .. "]", ...)
-    end
+	if CPF.isDebug then
+		print("[" .. CPF.ADDON_NAME .. "]", ...)
+	end
 end
 
 function CPF:debugf(format, ...)
-    if ( CPF.isDebug ) then
-        CPF:debug(string.format(format, ...))
-    end
+	if CPF.isDebug then
+		CPF:debug(string.format(format, ...))
+	end
 end
 
 function CPF:trace(...)
-    --[=[@alpha@
+	--[=[@alpha@
     CPF:debug(...)
     --@end-alpha@]=]
 end
 
 function CPF:tracef(...)
-    --[=[@alpha@
+	--[=[@alpha@
     CPF:debugf(...)
     --@end-alpha@]=]
 end
 
 function CPF:strmatch(str, filter)
-    --[[
+	--[[
         This algorithm is straight forward. We use string.sub to check all possible substrings
         for a match. A single match is enough and immediately returns true.
 
@@ -97,17 +94,16 @@ function CPF:strmatch(str, filter)
                 sub(1,0)    |         |     MATCH; immediately return true
     ]]
 
-    if ( str and filter ) then
-        for i=1, str:len()-filter:len()+1, 1 do
-            if ( str:sub(i, i+filter:len()-1) == filter ) then
-                return true
-            end
-        end
-    end
+	if str and filter then
+		for i = 1, str:len() - filter:len() + 1, 1 do
+			if str:sub(i, i + filter:len() - 1) == filter then
+				return true
+			end
+		end
+	end
 
-    return false
+	return false
 end
-
 
 ---------------------------------------------
 -- EVENTS & CALLBACKS
@@ -117,33 +113,32 @@ CPF.eventCallbacks = LibStub("CallbackHandler-1.0"):New(CPF, "RegisterEvent", "U
 
 local frame = CreateFrame("frame")
 frame:SetScript("OnEvent", function(self, event, ...)
-    CPF.eventCallbacks:Fire(event, ...)
+	CPF.eventCallbacks:Fire(event, ...)
 end)
 
 function CPF.eventCallbacks:OnUsed(target, event)
-    frame:RegisterEvent(event)
+	frame:RegisterEvent(event)
 end
 function CPF.eventCallbacks:OnUnused(target, event)
-    frame:UnregisterEvent(event)
+	frame:UnregisterEvent(event)
 end
 
 local onDemandInitializers = {}
 function CPF:InitializeOnDemand(addonName, func)
-    if IsAddOnLoaded(addonName) then
-        func()
-    else
-        onDemandInitializers[addonName] = onDemandInitializers[addonName] or {}
-        tinsert(onDemandInitializers[addonName], func)
-    end
+	if C_AddOns.IsAddOnLoaded(addonName) then
+		func()
+	else
+		onDemandInitializers[addonName] = onDemandInitializers[addonName] or {}
+		tinsert(onDemandInitializers[addonName], func)
+	end
 end
 CPF.RegisterEvent("onDemandInitializers", "ADDON_LOADED", function(event, addonName)
-    if onDemandInitializers[addonName] then
-        for _,initializer in pairs(onDemandInitializers[addonName]) do
-            initializer()
-        end
-    end
+	if onDemandInitializers[addonName] then
+		for _, initializer in pairs(onDemandInitializers[addonName]) do
+			initializer()
+		end
+	end
 end)
-
 
 ---------------------------------------------
 -- INITIALIZE
@@ -152,16 +147,13 @@ end)
 LoadAddOn("Blizzard_DebugTools")
 --@end-debug@]==]
 
-CPF.RegisterCallback(MODULE_NAME, "initialize", function(event)
-end)
+CPF.RegisterCallback(MODULE_NAME, "initialize", function(event) end)
 
 CPF.RegisterEvent(MODULE_NAME, "ADDON_LOADED", function(event, addonName)
-    if ( addonName == CPF.ADDON_NAME ) then
-        CPF.UnregisterEvent(MODULE_NAME, "ADDON_LOADED")
+	if addonName == CPF.ADDON_NAME then
+		CPF.UnregisterEvent(MODULE_NAME, "ADDON_LOADED")
 
-        -- Initialize addon modules
-        CPF.callbacks:Fire("initialize")
-    end
+		-- Initialize addon modules
+		CPF.callbacks:Fire("initialize")
+	end
 end)
-
-

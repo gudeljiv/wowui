@@ -1,10 +1,10 @@
 -- Broker_MicroMenu by yess
-local ldb = LibStub:GetLibrary("LibDataBroker-1.1",true)
-local LibQTip = LibStub('LibQTip-1.0')
+local ldb = LibStub:GetLibrary("LibDataBroker-1.1", true)
+local LibQTip = LibStub("LibQTip-1.0")
 local L = LibStub("AceLocale-3.0"):GetLocale("Broker_MicroMenu")
 
-local _G, floor, string, GetNetStats, GetFramerate  = _G, floor, string, GetNetStats, GetFramerate
-local delay, counter = 1,0
+local _G, floor, string, GetNetStats, GetFramerate = _G, floor, string, GetNetStats, GetFramerate
+local delay, counter = 1, 0
 local dataobj, tooltip, db
 local color = true
 local _
@@ -23,17 +23,20 @@ local function Debug(...)
 end
 
 local function RGBToHex(r, g, b)
-	return ("%02x%02x%02x"):format(r*255, g*255, b*255)
+	return ("%02x%02x%02x"):format(r * 255, g * 255, b * 255)
 end
 
 local mb = _G.MainMenuMicroButton and _G.MainMenuMicroButton:GetScript("OnMouseUp")
-local function mainmenu(self, ...) self.down = 1; mb(self, ...) end
+local function mainmenu(self, ...)
+	self.down = 1
+	mb(self, ...)
+end
 
 dataobj = ldb:NewDataObject(addonName, {
 	type = "data source",
-	icon = path.."green.tga",
+	icon = path .. "green.tga",
 	label = "MicroMenu",
-	text  = "",
+	text = "",
 	OnClick = function(self, button, ...)
 		if button == "RightButton" then
 			if _G.IsModifierKeyDown() then
@@ -46,7 +49,7 @@ dataobj = ldb:NewDataObject(addonName, {
 		end
 		LibQTip:Release(tooltip)
 		tooltip = nil
-	end
+	end,
 })
 
 -------------------------
@@ -59,13 +62,13 @@ function cellPrototype:InitializeCell()
 	self.texture:SetAllPoints(self)
 end
 
-function cellPrototype:SetupCell(tooltip, value, justification, font, iconCoords, unitID,guild,atlas)
+function cellPrototype:SetupCell(tooltip, value, justification, font, iconCoords, unitID, guild, atlas)
 	local tex = self.texture
 	tex:SetWidth(16)
 	tex:SetHeight(16)
 
 	if guild then
-		_G.SetSmallGuildTabardTextures("player", tex,tex);
+		_G.SetSmallGuildTabardTextures("player", tex, tex)
 	elseif unitID then
 		_G.SetPortraitTexture(tex, unitID)
 	else
@@ -81,9 +84,7 @@ function cellPrototype:SetupCell(tooltip, value, justification, font, iconCoords
 	return tex:GetWidth(), tex:GetHeight()
 end
 
-function cellPrototype:ReleaseCell()
-
-end
+function cellPrototype:ReleaseCell() end
 
 -------------------------
 
@@ -91,7 +92,7 @@ function dataobj:UpdateText()
 	local fps = floor(GetFramerate())
 	local _, _, latencyHome, latencyWorld = GetNetStats()
 
-    local colorGood = "|cff00ff00"
+	local colorGood = "|cff00ff00"
 	local fpsColor, colorHome, colorWorld = "", "", ""
 	if db.enableColoring then
 		if fps > 30 then
@@ -110,21 +111,25 @@ function dataobj:UpdateText()
 		end
 		if latencyWorld < 300 then
 			colorWorld = colorGood
-			dataobj.icon = path.."green.tga"
+			dataobj.icon = path .. "green.tga"
 		elseif latencyWorld < 500 then
 			colorWorld = "|cffffd200"
-			dataobj.icon = path.."yellow.tga"
+			dataobj.icon = path .. "yellow.tga"
 		else
 			colorWorld = "|cffdd3a00"
-			dataobj.icon = path.."red.tga"
+			dataobj.icon = path .. "red.tga"
 		end
 	end
 
 	if db.customTextSetting then
-		local lw_string = colorWorld..latencyWorld.."|r"
-		local lh_string = colorHome..latencyHome.."|r"
-		local fps_string = fpsColor..fps.."|r"
-		local text = string.gsub(string.gsub(string.gsub(db.textOutput, "{fps}", (fps_string or "fps")), "{lw}", (lw_string or "lw")), "{lh}", (lh_string or "lh"))
+		local lw_string = colorWorld .. latencyWorld .. "|r"
+		local lh_string = colorHome .. latencyHome .. "|r"
+		local fps_string = fpsColor .. fps .. "|r"
+		local text = string.gsub(
+			string.gsub(string.gsub(db.textOutput, "{fps}", (fps_string or "fps")), "{lw}", (lw_string or "lw")),
+			"{lh}",
+			(lh_string or "lh")
+		)
 		dataobj.text = text
 	else
 		local text = ""
@@ -136,9 +141,9 @@ function dataobj:UpdateText()
 		end
 		if db.showFPS then
 			if db.fpsFirst then
-				dataobj.text = string.format("%s%i|r %s %s", fpsColor, fps , L["fps"], text)
+				dataobj.text = string.format("%s%i|r %s %s", fpsColor, fps, L["fps"], text)
 			else
-				dataobj.text = string.format("%s%s%i|r fps", text, fpsColor, fps )
+				dataobj.text = string.format("%s%s%i|r fps", text, fpsColor, fps)
 			end
 		else
 			dataobj.text = text
@@ -150,9 +155,9 @@ local function MouseHandler(event, func, button, ...)
 	local name = func
 
 	if _G.type(func) == "function" then
-		func(event, func,button, ...)
+		func(event, func, button, ...)
 	else
-		func:GetScript("OnClick")(func,button, ...)
+		func:GetScript("OnClick")(func, button, ...)
 	end
 
 	LibQTip:Release(tooltip)
@@ -164,45 +169,57 @@ function dataobj:OnEnter()
 		LibQTip:Release(tooltip)
 	end
 
-	tooltip = LibQTip:Acquire(addonName.."Tooltip", 2, "LEFT", "LEFT")
+	tooltip = LibQTip:Acquire(addonName .. "Tooltip", 2, "LEFT", "LEFT")
 	tooltip:Clear()
 	self.tooltip = tooltip
 
 	local y, x = tooltip:AddLine()
-	tooltip:SetCell(y, 1, "", myProvider, {0.2, 0.8, 0.2, 0.8},"player")
+	tooltip:SetCell(y, 1, "", myProvider, { 0.2, 0.8, 0.2, 0.8 }, "player")
 	local ckey = _G.GetBindingKey("TOGGLECHARACTER0")
 	if ckey then
-		tooltip:SetCell(y, 2, _G.CHARACTER_BUTTON.."|cffffd200 ("..ckey..")")
+		tooltip:SetCell(y, 2, _G.CHARACTER_BUTTON .. "|cffffd200 (" .. ckey .. ")")
 	else
 		tooltip:SetCell(y, 2, _G.CHARACTER_BUTTON)
 	end
-	tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, function() _G.ToggleCharacter("PaperDollFrame") end)
+	tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, function()
+		_G.ToggleCharacter("PaperDollFrame")
+	end)
 
 	if _G.ProfessionMicroButton then
 		local y, x = tooltip:AddLine()
-		tooltip:SetCell(y, 1, "UI-HUD-MicroMenu-".._G.ProfessionMicroButton.textureName.."-Up", myProvider,nil,nil,nil,true)
+		tooltip:SetCell(
+			y,
+			1,
+			"UI-HUD-MicroMenu-" .. _G.ProfessionMicroButton.textureName .. "-Up",
+			myProvider,
+			nil,
+			nil,
+			nil,
+			true
+		)
 		tooltip:SetCell(y, 2, _G.ProfessionMicroButton.tooltipText)
 		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, _G.ProfessionMicroButton)
 	end
 
 	local y, x = tooltip:AddLine()
 	if _G.PlayerSpellsMicroButton then
-		tooltip:SetCell(y, 1, path.."talents.tga", myProvider)
+		tooltip:SetCell(y, 1, path .. "talents.tga", myProvider)
 		tooltip:SetCell(y, 2, _G.PlayerSpellsMicroButton.tooltipText)
 		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, _G.PlayerSpellsMicroButton)
 	else
-		tooltip:SetCell(y, 1, path.."spells.tga", myProvider)
+		tooltip:SetCell(y, 1, path .. "spells.tga", myProvider)
 		local key = _G.GetBindingKey("TOGGLESPELLBOOK")
 		if key then
-			tooltip:SetCell(y, 2, _G.SPELLBOOK_ABILITIES_BUTTON.."|cffffd200 ("..key..")")
+			tooltip:SetCell(y, 2, _G.SPELLBOOK_ABILITIES_BUTTON .. "|cffffd200 (" .. key .. ")")
 		else
 			tooltip:SetCell(y, 2, _G.SPELLBOOK_ABILITIES_BUTTON)
 		end
 		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, function(self, func, button, ...)
-
 			if _G.InCombatLockdown() then
 				if key then
-					_G.DEFAULT_CHAT_FRAME:AddMessage("Can't open the Spellbook during combat. Use your hot key: "..key)
+					_G.DEFAULT_CHAT_FRAME:AddMessage(
+						"Can't open the Spellbook during combat. Use your hot key: " .. key
+					)
 				else
 					_G.DEFAULT_CHAT_FRAME:AddMessage("Can't open the Spellbook during combat. Set and use a hot key.")
 				end
@@ -214,22 +231,22 @@ function dataobj:OnEnter()
 
 	if _G.TalentMicroButton then
 		local y, x = tooltip:AddLine()
-		tooltip:SetCell(y, 1, path.."talents.tga", myProvider)
+		tooltip:SetCell(y, 1, path .. "talents.tga", myProvider)
 		tooltip:SetCell(y, 2, _G.TalentMicroButton.tooltipText)
 		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, function(self, func, button, ...)
 			if _G.InCombatLockdown() then
 				key = _G.GetBindingKey("TOGGLETALENTS")
 				if key then
-					_G.DEFAULT_CHAT_FRAME:AddMessage("Can't open the Talents during combat. Use your hot key: "..key)
+					_G.DEFAULT_CHAT_FRAME:AddMessage("Can't open the Talents during combat. Use your hot key: " .. key)
 				else
 					_G.DEFAULT_CHAT_FRAME:AddMessage("Can't open the Talents during combat. Set and use a hot key.")
 				end
 			else
 				_G.LoadAddOn("Blizzard_TalentUI")
-				if  _G.PlayerTalentFrame:IsShown() then
+				if _G.PlayerTalentFrame:IsShown() then
 					_G.PlayerTalentFrame:Hide()
 				else
-					_G.tinsert(_G.UISpecialFrames,_G.PlayerTalentFrame:GetName());
+					_G.tinsert(_G.UISpecialFrames, _G.PlayerTalentFrame:GetName())
 					_G.PlayerTalentFrame:Show()
 				end
 			end
@@ -238,45 +255,45 @@ function dataobj:OnEnter()
 
 	if _G.AchievementMicroButton then
 		local y, x = tooltip:AddLine()
-		tooltip:SetCell(y, 1, path.."achivements.tga", myProvider)
+		tooltip:SetCell(y, 1, path .. "achivements.tga", myProvider)
 		tooltip:SetCell(y, 2, _G.AchievementMicroButton.tooltipText)
 		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, _G.AchievementMicroButton)
 	end
 
 	if _G.QuestLogMicroButton then
 		local y, x = tooltip:AddLine()
-		tooltip:SetCell(y, 1, path.."quest.tga", myProvider)
+		tooltip:SetCell(y, 1, path .. "quest.tga", myProvider)
 		tooltip:SetCell(y, 2, _G.QuestLogMicroButton.tooltipText)
 		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, _G.QuestLogMicroButton)
 	end
 
 	if _G.HousingMicroButton then
 		local y, x = tooltip:AddLine()
-		tooltip:SetCell(y, 1, path.."quest.tga", myProvider)
+		tooltip:SetCell(y, 1, path .. "quest.tga", myProvider)
 		tooltip:SetCell(y, 2, _G.HousingMicroButton.tooltipText)
 		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, _G.HousingMicroButton)
 	end
 
 	if _G.GuildMicroButton then
 		local y, x = tooltip:AddLine()
-		tooltip:SetCell(y, 1, "", myProvider, nil,"player",true)
+		tooltip:SetCell(y, 1, "", myProvider, nil, "player", true)
 		tooltip:SetCell(y, 2, _G.GuildMicroButton.tooltipText)
 		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, _G.GuildMicroButton)
 	end
 
 	if _G.LFDMicroButton then
 		local y, x = tooltip:AddLine()
-		tooltip:SetCell(y, 1, path.."lfg.tga", myProvider)
+		tooltip:SetCell(y, 1, path .. "lfg.tga", myProvider)
 		tooltip:SetCell(y, 2, _G.LFDMicroButton.tooltipText)
 		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, _G.LFDMicroButton)
 	end
 
 	if _G.CollectionsMicroButton then
 		local y, x = tooltip:AddLine()
-		tooltip:SetCell(y, 1, path.."mounts.tga", myProvider)
+		tooltip:SetCell(y, 1, path .. "mounts.tga", myProvider)
 		local clkey = _G.GetBindingKey("TOGGLECOLLECTIONS")
 		if clkey then
-			tooltip:SetCell(y, 2, _G.COLLECTIONS.."|cffffd200 ("..clkey..")")
+			tooltip:SetCell(y, 2, _G.COLLECTIONS .. "|cffffd200 (" .. clkey .. ")")
 		else
 			tooltip:SetCell(y, 2, _G.COLLECTIONS)
 		end
@@ -285,19 +302,19 @@ function dataobj:OnEnter()
 
 	if _G.EJMicroButton then
 		local y, x = tooltip:AddLine()
-		tooltip:SetCell(y, 1, path.."journal.tga", myProvider)
+		tooltip:SetCell(y, 1, path .. "journal.tga", myProvider)
 		tooltip:SetCell(y, 2, _G.EJMicroButton.tooltipText)
 		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, _G.EJMicroButton)
 	end
 	if _G.RaidMicroButton then
 		local y, x = tooltip:AddLine()
-		tooltip:SetCell(y, 1, path.."raid.tga", myProvider)
+		tooltip:SetCell(y, 1, path .. "raid.tga", myProvider)
 		tooltip:SetCell(y, 2, _G.RaidMicroButton.tooltipText)
 		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, _G.RaidMicroButton)
 	end
 
 	if _G.GameMenuFrame then
-		tooltip:AddSeparator(10,0,0,0,0)
+		tooltip:AddSeparator(10, 0, 0, 0, 0)
 
 		-- Adding Buttons of Main Game Menu
 		local GameMenuButtons = {
@@ -305,15 +322,17 @@ function dataobj:OnEnter()
 			_G.GameMenuButtonEditMode,
 			_G.GameMenuButtonMacros,
 			_G.GameMenuButtonAddons,
-			GameMenuButtonOptions
+			GameMenuButtonOptions,
 		}
 
 		for _, MenuButton in pairs(GameMenuButtons) do
 			if MenuButton then
 				local y, x = tooltip:AddLine()
-				tooltip:SetCell(y, 1, path.."green.tga", myProvider)
+				tooltip:SetCell(y, 1, path .. "green.tga", myProvider)
 				tooltip:SetCell(y, 2, MenuButton:GetText())
-				tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, function() MenuButton:Click() end)
+				tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, function()
+					MenuButton:Click()
+				end)
 			end
 		end
 	end
@@ -322,30 +341,32 @@ function dataobj:OnEnter()
 		local y, x = tooltip:AddLine()
 		tooltip:SetCell(y, 1, "Interface\\Buttons\\UI-OptionsButton", myProvider)
 		tooltip:SetCell(y, 2, OPTIONS_LABEL or OPTIONS or "Options")
-		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, function() SettingsPanel:Open() end)
+		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, function()
+			SettingsPanel:Open()
+		end)
 	end
 
 	if not GameMenuButtonMacros then
 		local y, x = tooltip:AddLine()
 		tooltip:SetCell(y, 1, "Interface\\MacroFrame\\MacroFrame-Icon", myProvider)
 		tooltip:SetCell(y, 2, MACROS or "Macros")
-		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, function() 
+		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, function()
 			if C_AddOns and C_AddOns.IsAddOnLoaded and not C_AddOns.IsAddOnLoaded("Blizzard_MacroUI") then
-   				C_AddOns.LoadAddOn("Blizzard_MacroUI")
+				C_AddOns.LoadAddOn("Blizzard_MacroUI")
 			end
 			if ShowMacroFrame then
 				ShowMacroFrame()
 			end
-		 end)
+		end)
 	end
 
 	if LE_EXPANSION_LEVEL_CURRENT > 10 then
 		local y, x = tooltip:AddLine()
 		tooltip:SetCell(y, 1, "|A:ClickCast-Icon-Mouse:16:16|a")
 		tooltip:SetCell(y, 2, "Click Cast")
-		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, function() 
+		tooltip:SetLineScript(y, "OnMouseUp", MouseHandler, function()
 			if C_AddOns and C_AddOns.IsAddOnLoaded and not C_AddOns.IsAddOnLoaded("Blizzard_ClickBindingUI") then
-   				C_AddOns.LoadAddOn("Blizzard_ClickBindingUI")
+				C_AddOns.LoadAddOn("Blizzard_ClickBindingUI")
 			end
 			if ClickBindingFrame then
 				ClickBindingFrame:Show()
@@ -353,12 +374,12 @@ function dataobj:OnEnter()
 		end)
 	end
 
-    local y, x = tooltip:AddLine("")
 	local y, x = tooltip:AddLine("")
 	local y, x = tooltip:AddLine("")
-	tooltip:SetCell(y, 1, path.."green.tga", myProvider)
+	local y, x = tooltip:AddLine("")
+	tooltip:SetCell(y, 1, path .. "green.tga", myProvider)
 	tooltip:SetCell(y, 2, string.format(L["Use %s key for Game Menu and Shop."], "|cffffd200(ESC)|r"))
-	
+
 	tooltip:SetAutoHideDelay(0.01, self)
 	tooltip:SmartAnchorTo(self)
 	tooltip:Show()
@@ -388,8 +409,6 @@ local function OnEnterWorld(self)
 	frame:UnregisterEvent("PLAYER_ENTERING_WORLD")
 end
 
-
 frame:SetScript("OnUpdate", OnUpdate)
 frame:RegisterEvent("PLAYER_ENTERING_WORLD")
 frame:SetScript("OnEvent", OnEnterWorld)
-

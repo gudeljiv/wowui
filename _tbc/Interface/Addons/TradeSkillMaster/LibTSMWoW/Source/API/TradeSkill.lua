@@ -34,7 +34,7 @@ local RECIPE_TYPE = EnumType.New("TRADE_SKILL_RECIPE_TYPE", {
 	ITEM = EnumType.NewValue(),
 	ENCHANT = EnumType.NewValue(),
 	SALVAGE = EnumType.NewValue(),
-	UNKNOWN = EnumType.NewValue()
+	UNKNOWN = EnumType.NewValue(),
 })
 TradeSkill.RECIPE_TYPE = RECIPE_TYPE
 local RECIPE_DIFFICULTY = EnumType.New("TRADE_SKILL_RECIPE_DIFFICULTY", {
@@ -78,13 +78,11 @@ local CLASSIC_SUB_NAMES = {
 	["Мастеровой"] = true, -- ruRU ARTISAN
 }
 local BUGGED_QUANTITY_RANGE_SPELLS = {
-	[169092] = {1, 1}, -- Temporal Crystal
-	[210116] = {4, 4}, -- Yseralline
-	[209664] = {42, 42}, -- Felwort (amount is variable but the values are conservative)
-	[247861] = {4, 4}, -- Astral Glory (amount is variable but the values are conservative)
+	[169092] = { 1, 1 }, -- Temporal Crystal
+	[210116] = { 4, 4 }, -- Yseralline
+	[209664] = { 42, 42 }, -- Felwort (amount is variable but the values are conservative)
+	[247861] = { 4, 4 }, -- Astral Glory (amount is variable but the values are conservative)
 }
-
-
 
 -- ============================================================================
 -- Module Functions
@@ -111,7 +109,6 @@ function TradeSkill.LoadBlizzardCraftUI()
 	end
 	C_AddOns.LoadAddOn("Blizzard_CraftUI")
 end
-
 
 ---Opens a trade skill.
 ---@param profession string|Enum.Profession The name of the profession (classic) or the profession enum value (retail)
@@ -370,7 +367,8 @@ end
 ---@return number?
 function TradeSkill.GetItemCraftedQuality(itemId)
 	assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_TRADE_SKILL_UI))
-	return C_TradeSkillUI.GetItemCraftedQualityByItemInfo(itemId) or C_TradeSkillUI.GetItemReagentQualityByItemInfo(itemId)
+	return C_TradeSkillUI.GetItemCraftedQualityByItemInfo(itemId)
+		or C_TradeSkillUI.GetItemReagentQualityByItemInfo(itemId)
 end
 
 ---Gets the chat icon for a given crafted quality.
@@ -486,7 +484,10 @@ function TradeSkill.GetRecipeQualityInfo(spellId)
 	end
 	local hasQualityMats = false
 	for _, data in ipairs(info.reagentSlotSchematics) do
-		if data.reagentType == Enum.CraftingReagentType.Basic and data.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent then
+		if
+			data.reagentType == Enum.CraftingReagentType.Basic
+			and data.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent
+		then
 			hasQualityMats = true
 			break
 		end
@@ -513,7 +514,8 @@ function TradeSkill.CategoryInfo(categoryId)
 	if ClientInfo.HasFeature(ClientInfo.FEATURES.C_TRADE_SKILL_UI) then
 		C_TradeSkillUI.GetCategoryInfo(categoryId, private.categoryInfoTemp)
 		local name = private.categoryInfoTemp.name
-		local parentCategoryId = private.categoryInfoTemp.numIndents ~= 0 and private.categoryInfoTemp.parentCategoryID or nil
+		local parentCategoryId = private.categoryInfoTemp.numIndents ~= 0 and private.categoryInfoTemp.parentCategoryID
+			or nil
 		local currentSkillLevel = private.categoryInfoTemp.skillLineCurrentLevel
 		local maxSkillLevel = private.categoryInfoTemp.skillLineMaxLevel
 		local numIndents = 0
@@ -666,10 +668,16 @@ function TradeSkill.GetMatInfo(spellId, level, index)
 		if reagentSlotInfo.reagentType == Enum.CraftingReagentType.Modifying and reagentSlotInfo.required then
 			item = C_TradeSkillUI.GetRecipeQualityReagentItemLink(spellId, reagentSlotInfo.dataSlotIndex, 1)
 			isModifiedReagent = true
-		elseif reagentSlotInfo.reagentType == Enum.CraftingReagentType.Basic and reagentSlotInfo.dataSlotType == Enum.TradeskillSlotDataType.Reagent then
+		elseif
+			reagentSlotInfo.reagentType == Enum.CraftingReagentType.Basic
+			and reagentSlotInfo.dataSlotType == Enum.TradeskillSlotDataType.Reagent
+		then
 			item = C_TradeSkillUI.GetRecipeFixedReagentItemLink(spellId, reagentSlotInfo.dataSlotIndex)
 			isModifiedReagent = false
-		elseif reagentSlotInfo.reagentType == Enum.CraftingReagentType.Basic and reagentSlotInfo.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent then
+		elseif
+			reagentSlotInfo.reagentType == Enum.CraftingReagentType.Basic
+			and reagentSlotInfo.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent
+		then
 			item = C_TradeSkillUI.GetRecipeQualityReagentItemLink(spellId, reagentSlotInfo.dataSlotIndex, 1)
 			-- NOTE: For some reason, the above API doesn't always work (i.e. with 'Handful of Serevite Bolts')
 			item = item or reagentSlotInfo.reagents[1].itemID
@@ -695,9 +703,15 @@ end
 ---@return string|number slotTextOrItemId
 function TradeSkill.GetMatSlotInfo(data)
 	assert(ClientInfo.HasFeature(ClientInfo.FEATURES.C_TRADE_SKILL_UI))
-	if data.reagentType == Enum.CraftingReagentType.Basic and data.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent then
+	if
+		data.reagentType == Enum.CraftingReagentType.Basic
+		and data.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent
+	then
 		return MAT_TYPE.QUALITY, data.reagents[1].itemID
-	elseif data.reagentType == Enum.CraftingReagentType.Optional or data.reagentType == Enum.CraftingReagentType.Modifying then
+	elseif
+		data.reagentType == Enum.CraftingReagentType.Optional
+		or data.reagentType == Enum.CraftingReagentType.Modifying
+	then
 		if data.required then
 			return MAT_TYPE.REQUIRED, data.slotInfo.slotText or REQUIRED_REAGENT_TOOLTIP_CLICK_TO_ADD
 		else
@@ -706,7 +720,7 @@ function TradeSkill.GetMatSlotInfo(data)
 	elseif data.reagentType == Enum.CraftingReagentType.Finishing then
 		return MAT_TYPE.FINISHING, data.slotInfo.slotText or OPTIONAL_REAGENT_POSTFIX
 	else
-		error("Unexpected optional mat type: "..tostring(data.reagentType)..", "..tostring(data.dataSlotType))
+		error("Unexpected optional mat type: " .. tostring(data.reagentType) .. ", " .. tostring(data.dataSlotType))
 	end
 end
 
@@ -810,8 +824,6 @@ function TradeSkill.LinkRecipe(spellId)
 	ChatEdit_InsertLink(link)
 end
 
-
-
 -- ============================================================================
 -- Private Helper Functions
 -- ============================================================================
@@ -835,7 +847,8 @@ function private.IsRegularMat(data)
 	if data.reagentType ~= Enum.CraftingReagentType.Basic then
 		return false
 	end
-	return data.dataSlotType == Enum.TradeskillSlotDataType.Reagent or data.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent
+	return data.dataSlotType == Enum.TradeskillSlotDataType.Reagent
+		or data.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent
 end
 
 function private.GetParentCategory(categoryId)
@@ -897,10 +910,16 @@ function private.SpecialMatIterator(mats, index)
 		if private.IsValidSpecialMat(data, mats.categorySkillLevel) then
 			wipe(private.itemIdsTemp)
 			local matType, slotText = nil, nil
-			if data.reagentType == Enum.CraftingReagentType.Basic and data.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent then
+			if
+				data.reagentType == Enum.CraftingReagentType.Basic
+				and data.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent
+			then
 				matType = MAT_TYPE.QUALITY
 				slotText = data.reagents[1].itemID
-			elseif data.reagentType == Enum.CraftingReagentType.Optional or data.reagentType == Enum.CraftingReagentType.Modifying then
+			elseif
+				data.reagentType == Enum.CraftingReagentType.Optional
+				or data.reagentType == Enum.CraftingReagentType.Modifying
+			then
 				if data.required then
 					matType = MAT_TYPE.REQUIRED
 					slotText = data.slotInfo.slotText or REQUIRED_REAGENT_TOOLTIP_CLICK_TO_ADD
@@ -912,7 +931,12 @@ function private.SpecialMatIterator(mats, index)
 				matType = MAT_TYPE.FINISHING
 				slotText = data.slotInfo.slotText or OPTIONAL_REAGENT_POSTFIX
 			else
-				error("Unexpected optional mat type: "..tostring(data.reagentType)..", "..tostring(data.dataSlotType))
+				error(
+					"Unexpected optional mat type: "
+						.. tostring(data.reagentType)
+						.. ", "
+						.. tostring(data.dataSlotType)
+				)
 			end
 			return index, matType, data.quantityRequired, data.dataSlotIndex, slotText, data.reagents
 		end
@@ -923,9 +947,16 @@ function private.IsValidSpecialMat(data, categorySkillLevel)
 	if data.reagentType == Enum.CraftingReagentType.Modifying and data.required then
 		return true
 	end
-	if data.reagentType == Enum.CraftingReagentType.Basic and data.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent then
+	if
+		data.reagentType == Enum.CraftingReagentType.Basic
+		and data.dataSlotType == Enum.TradeskillSlotDataType.ModifiedReagent
+	then
 		-- Pass
-	elseif data.reagentType == Enum.CraftingReagentType.Optional or data.reagentType == Enum.CraftingReagentType.Modifying or data.reagentType == Enum.CraftingReagentType.Finishing then
+	elseif
+		data.reagentType == Enum.CraftingReagentType.Optional
+		or data.reagentType == Enum.CraftingReagentType.Modifying
+		or data.reagentType == Enum.CraftingReagentType.Finishing
+	then
 		-- Pass
 	else
 		return false
@@ -944,7 +975,7 @@ function private.MapDifficulty(value)
 		elseif value == Enum.TradeskillRelativeDifficulty.Trivial then
 			return RECIPE_DIFFICULTY.TRIVIAL
 		else
-			error("Unknown difficulty: "..tostring(value))
+			error("Unknown difficulty: " .. tostring(value))
 		end
 	else
 		if value == "optimal" then
@@ -956,7 +987,7 @@ function private.MapDifficulty(value)
 		elseif value == "trivial" then
 			return RECIPE_DIFFICULTY.TRIVIAL
 		else
-			error("Unknown difficulty: "..tostring(value))
+			error("Unknown difficulty: " .. tostring(value))
 		end
 	end
 end

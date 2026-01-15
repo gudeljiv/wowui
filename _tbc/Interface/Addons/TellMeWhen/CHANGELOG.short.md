@@ -5,4 +5,4 @@
 * Bar icons can now have smoothing enabled (most useful on Resource Display icons). Midnight only.
 
 
-[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/07d43609f028f8d9c457e3f4de93529a844d3ca1/CHANGELOG.md)
+[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/13e4a5897d8b4c3925633c24f0c5192e8324ad77/CHANGELOG.md)

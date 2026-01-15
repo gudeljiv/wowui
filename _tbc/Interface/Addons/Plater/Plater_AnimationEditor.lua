@@ -4,6 +4,7 @@ local Plater = Plater
 local GameCooltip = GameCooltip2
 local DF = DetailsFramework
 local _
+local GetSpellInfo = GetSpellInfo or function(spellID) if not spellID then return nil end local si = C_Spell.GetSpellInfo(spellID) if si then return si.name, nil, si.iconID, si.castTime, si.minRange, si.maxRange, si.spellID, si.originalIconID end end
 
 --get templates
 local options_text_template = DF:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE")
@@ -645,8 +646,9 @@ function Plater.CreateSpellAnimationPanel()
 	end
 
 	function animationFrame.DoImportAnimation (animationObject)
-		local spellID = animationObject.info.spellid
+		local spellID = tonumber(animationObject.info.spellid)
 		local spellName = GetSpellInfo (spellID)
+		if not spellName then return end
 
 		local db = Plater.db.profile.spell_animation_list
 		db [spellID] = animationObject
@@ -676,7 +678,7 @@ function Plater.CreateSpellAnimationPanel()
 
 		if (animationObject) then
 			local db = Plater.db.profile.spell_animation_list
-			local spellID = animationObject.info.spellid
+			local spellID = tonumber(animationObject.info.spellid)
 
 			if (not spellID) then
 				Plater:Msg ("invalid animation.")

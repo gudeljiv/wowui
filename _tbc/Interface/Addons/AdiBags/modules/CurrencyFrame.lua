@@ -39,7 +39,7 @@ local GetCurrencyInfo = _G.C_CurrencyInfo.GetCurrencyInfo
 local GetCurrencyListSize = _G.C_CurrencyInfo.GetCurrencyListSize
 local hooksecurefunc = _G.hooksecurefunc
 local ipairs = _G.ipairs
-local IsAddOnLoaded = _G.C_AddOns.IsAddOnLoaded
+local C_AddOns.IsAddOnLoaded = _G.C_AddOns.IsAddOnLoaded
 local tconcat = _G.table.concat
 local tinsert = _G.tinsert
 local unpack = _G.unpack
@@ -84,7 +84,7 @@ function mod:OnEnable()
 
 	self:RegisterEvent('CURRENCY_DISPLAY_UPDATE', "Update")
 	if not self.hooked then
-		if IsAddOnLoaded('Blizzard_TokenUI') then
+		if C_AddOns.IsAddOnLoaded('Blizzard_TokenUI') then
 			self:ADDON_LOADED('OnEnable', 'Blizzard_TokenUI')
 		else
 			self:RegisterEvent('ADDON_LOADED')

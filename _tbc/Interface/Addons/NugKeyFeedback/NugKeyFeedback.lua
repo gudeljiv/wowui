@@ -48,7 +48,7 @@ if isClassic then
     UnitCastingInfo = CastingInfo
     UnitChannelInfo = ChannelInfo
 end
-local IsAddOnLoaded = IsAddOnLoaded or C_AddOns.IsAddOnLoaded
+local C_AddOns.IsAddOnLoaded = C_AddOns.IsAddOnLoaded or C_AddOns.IsAddOnLoaded
 
 local firstTimeUse = false
 
@@ -63,10 +63,10 @@ function NugKeyFeedback:PLAYER_LOGIN(event)
     self.db = _G.NugKeyFeedbackDB
     ns.SetupDefaults(self.db, defaults)
 
-    local usingActionBarAddons = IsAddOnLoaded("Bartender4") or
-        IsAddOnLoaded("Neuron") or
-        IsAddOnLoaded("ElvUI") or
-        IsAddOnLoaded("TukUI")
+    local usingActionBarAddons = C_AddOns.IsAddOnLoaded("Bartender4") or
+        C_AddOns.IsAddOnLoaded("Neuron") or
+        C_AddOns.IsAddOnLoaded("ElvUI") or
+        C_AddOns.IsAddOnLoaded("TukUI")
 
     if self.db.forceUseActionHook or usingActionBarAddons then
         self.mirror = self:CreateFeedbackButton(true)

@@ -2,16 +2,38 @@ local L = DBM_GUI_L
 
 ---@class DBMGUI
 local DBM_GUI = {
-	tabs	= {},
-	panels	= {}
+	tabs = {},
+	panels = {},
 }
 _G.DBM_GUI = DBM_GUI
 
 local isRetail = WOW_PROJECT_ID == (WOW_PROJECT_MAINLINE or 1)
 
-local next, type, pairs, strsplit, tonumber, tostring, ipairs, tinsert, tsort, mfloor, slower = next, type, pairs, strsplit, tonumber, tostring, ipairs, table.insert, table.sort, math.floor, string.lower
-local CreateFrame, C_Timer, GameFontNormal, GameFontNormalSmall, GameFontHighlight, GameFontHighlightSmall, ChatFontNormal, UIParent = CreateFrame, C_Timer, GameFontNormal, GameFontNormalSmall, GameFontHighlight, GameFontHighlightSmall, ChatFontNormal, UIParent
-local RAID_DIFFICULTY1, RAID_DIFFICULTY2, RAID_DIFFICULTY3, RAID_DIFFICULTY4, PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY3, PLAYER_DIFFICULTY6, PLAYER_DIFFICULTY_TIMEWALKER, CHALLENGE_MODE, ALL, CLOSE, SPECIALIZATION = RAID_DIFFICULTY1, RAID_DIFFICULTY2, RAID_DIFFICULTY3, RAID_DIFFICULTY4, PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY3, PLAYER_DIFFICULTY6, PLAYER_DIFFICULTY_TIMEWALKER, CHALLENGE_MODE, ALL, CLOSE, SPECIALIZATION
+local next, type, pairs, strsplit, tonumber, tostring, ipairs, tinsert, tsort, mfloor, slower =
+	next, type, pairs, strsplit, tonumber, tostring, ipairs, table.insert, table.sort, math.floor, string.lower
+local CreateFrame, C_Timer, GameFontNormal, GameFontNormalSmall, GameFontHighlight, GameFontHighlightSmall, ChatFontNormal, UIParent =
+	CreateFrame,
+	C_Timer,
+	GameFontNormal,
+	GameFontNormalSmall,
+	GameFontHighlight,
+	GameFontHighlightSmall,
+	ChatFontNormal,
+	UIParent
+local RAID_DIFFICULTY1, RAID_DIFFICULTY2, RAID_DIFFICULTY3, RAID_DIFFICULTY4, PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY3, PLAYER_DIFFICULTY6, PLAYER_DIFFICULTY_TIMEWALKER, CHALLENGE_MODE, ALL, CLOSE, SPECIALIZATION =
+	RAID_DIFFICULTY1,
+	RAID_DIFFICULTY2,
+	RAID_DIFFICULTY3,
+	RAID_DIFFICULTY4,
+	PLAYER_DIFFICULTY1,
+	PLAYER_DIFFICULTY2,
+	PLAYER_DIFFICULTY3,
+	PLAYER_DIFFICULTY6,
+	PLAYER_DIFFICULTY_TIMEWALKER,
+	CHALLENGE_MODE,
+	ALL,
+	CLOSE,
+	SPECIALIZATION
 local DBM, DBM_OPTION_SPACER = DBM, DBM_OPTION_SPACER
 local playerName, realmName, playerLevel = UnitName("player"), GetRealmName(), UnitLevel("player")
 
@@ -125,8 +147,16 @@ do
 			-- Embedded Sound Clip media
 			LSM:Register("sound", "AirHorn (DBM)", [[Interface\AddOns\DBM-Core\sounds\AirHorn.ogg]])
 			LSM:Register("sound", "Jaina: Beware", [[Interface\AddOns\DBM-Core\sounds\SoundClips\beware.ogg]])
-			LSM:Register("sound", "Jaina: Beware (reverb)", [[Interface\AddOns\DBM-Core\sounds\SoundClips\beware_with_reverb.ogg]])
-			LSM:Register("sound", "Thrall: That's Incredible!", [[Interface\AddOns\DBM-Core\sounds\SoundClips\incredible.ogg]])
+			LSM:Register(
+				"sound",
+				"Jaina: Beware (reverb)",
+				[[Interface\AddOns\DBM-Core\sounds\SoundClips\beware_with_reverb.ogg]]
+			)
+			LSM:Register(
+				"sound",
+				"Thrall: That's Incredible!",
+				[[Interface\AddOns\DBM-Core\sounds\SoundClips\incredible.ogg]]
+			)
 			LSM:Register("sound", "Saurfang: Don't Die", [[Interface\AddOns\DBM-Core\sounds\SoundClips\dontdie.ogg]])
 			-- Blakbyrd
 			LSM:Register("sound", "Blakbyrd Alert 1", [[Interface\AddOns\DBM-Core\sounds\BlakbyrdAlerts\Alert1.ogg]])
@@ -172,7 +202,7 @@ do
 		end
 		tsort(keytable, function(a, b)
 			return a:lower() < b:lower()
-		end);
+		end)
 		-- DBM values (mediatable) first, LibSharedMedia values (sorted alphabetically) afterwards
 		local result = mediatable
 		for i = 1, #result do
@@ -197,14 +227,14 @@ do
 				end
 				if insertme then
 					local ins = {
-						text	= keytable[i],
-						value	= v
+						text = keytable[i],
+						value = v,
 					}
 					if mediatype == "statusbar" then
 						ins.texture = true
 					elseif mediatype == "font" then
 						ins.font = true
-					elseif mediatype == "sound" then--and type(v) == "string" and v:lower():find("addons")
+					elseif mediatype == "sound" then --and type(v) == "string" and v:lower():find("addons")
 						ins.sound = true
 					end
 					if ins.texture or ins.font or ins.sound then
@@ -232,12 +262,12 @@ do
 		popupFrame:SetSize(512, 512)
 		popupFrame:SetPoint("CENTER")
 		popupFrame.backdropInfo = {
-			bgFile		= "Interface\\DialogFrame\\UI-DialogBox-Background", -- 131071
-			edgeFile	= "Interface\\DialogFrame\\UI-DialogBox-Border", -- 131072
-			tile		= true,
-			tileSize	= 32,
-			edgeSize	= 32,
-			insets		= { left = 8, right = 8, top = 8, bottom = 8 }
+			bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background", -- 131071
+			edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border", -- 131072
+			tile = true,
+			tileSize = 32,
+			edgeSize = 32,
+			insets = { left = 8, right = 8, top = 8, bottom = 8 },
 		}
 		popupFrame:ApplyBackdrop()
 		popupFrame:SetMovable(true)
@@ -251,12 +281,12 @@ do
 		---@class DBMPopupFrameBackdrop: Frame, BackdropTemplate
 		local backdrop = CreateFrame("Frame", nil, popupFrame, "BackdropTemplate")
 		backdrop.backdropInfo = {
-			bgFile		= "Interface\\ChatFrame\\ChatFrameBackground",
-			edgeFile	= "Interface\\Tooltips\\UI-Tooltip-Border",
-			tile		= true,
-			tileSize	= 16,
-			edgeSize	= 16,
-			insets		= { left = 3, right = 3, top = 5, bottom = 3 }
+			bgFile = "Interface\\ChatFrame\\ChatFrameBackground",
+			edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+			tile = true,
+			tileSize = 16,
+			edgeSize = 16,
+			insets = { left = 3, right = 3, top = 5, bottom = 3 },
 		}
 		backdrop:ApplyBackdrop()
 		backdrop:SetBackdropColor(0.1, 0.1, 0.1, 0.6)
@@ -336,7 +366,9 @@ do
 			createPopupFrame()
 		end
 		popupFrame.import:Hide()
-		popupFrame:SetText(LibDeflate:EncodeForPrint(LibDeflate:CompressDeflate(LibSerialize:Serialize(export), {level = 9})))
+		popupFrame:SetText(
+			LibDeflate:EncodeForPrint(LibDeflate:CompressDeflate(LibSerialize:Serialize(export), { level = 9 }))
+		)
 		popupFrame:Show()
 	end
 
@@ -349,7 +381,8 @@ do
 			createPopupFrame()
 		end
 		function popupFrame:VerifyImport(import)
-			local success, deserialized = LibSerialize:Deserialize(LibDeflate:DecompressDeflate(LibDeflate:DecodeForPrint(import)))
+			local success, deserialized =
+				LibSerialize:Deserialize(LibDeflate:DecompressDeflate(LibDeflate:DecodeForPrint(import)))
 			if not success then
 				DBM:AddMsg("Failed to deserialize")
 				return false
@@ -409,7 +442,8 @@ local function addOptions(mod, catpanel, v)
 			catbutton = catpanel:CreateLine(v.text)
 		elseif type(mod.Options[v]) == "boolean" then
 			if mod.Options[v .. "TColor"] then
-				catbutton = catpanel:CreateCheckButton(mod.localization.options[v], true, nil, nil, nil, mod, v, nil, true)
+				catbutton =
+					catpanel:CreateCheckButton(mod.localization.options[v], true, nil, nil, nil, mod, v, nil, true)
 			elseif mod.Options[v .. "SWSound"] then
 				catbutton = catpanel:CreateCheckButton(mod.localization.options[v], true, nil, nil, nil, mod, v)
 			else
@@ -428,8 +462,8 @@ local function addOptions(mod, catpanel, v)
 			local dropdownOptions = {}
 			for _, val in ipairs(mod.dropdowns[v]) do
 				tinsert(dropdownOptions, {
-					text	= mod.localization.options[val],
-					value	= val
+					text = mod.localization.options[val],
+					value = val,
 				})
 			end
 			--title, values, vartype, var, callfunc, width, height, parent
@@ -481,22 +515,30 @@ function DBM_GUI:CreateBossModPanel(mod, isTestView)
 				icon:SetAlpha(0.25)
 				icon:SetDesaturated(true)
 			end
-			if		i == 1 then		icon:SetTexCoord(0,		0.25,	0,		0.25)
-			elseif	i == 2 then		icon:SetTexCoord(0.25,	0.5,	0,		0.25)
-			elseif	i == 3 then		icon:SetTexCoord(0.5,	0.75,	0,		0.25)
-			elseif	i == 4 then		icon:SetTexCoord(0.75,	1,		0,		0.25)
-			elseif	i == 5 then		icon:SetTexCoord(0,		0.25,	0.25,	0.5)
-			elseif	i == 6 then		icon:SetTexCoord(0.25,	0.5,	0.25,	0.5)
-			elseif	i == 7 then		icon:SetTexCoord(0.5,	0.75,	0.25,	0.5)
-			elseif	i == 8 then		icon:SetTexCoord(0.75,	1,		0.25,	0.5)
---			elseif	i == 9 then		icon:SetTexCoord(0,		0.25,	0.5,	0.75)
---			elseif	i == 10 then	icon:SetTexCoord(0.25,	0.5,	0.5,	0.75)
---			elseif	i == 11 then	icon:SetTexCoord(0.5,	0.75,	0.5,	0.75)
---			elseif	i == 12 then	icon:SetTexCoord(0.75,	1,		0.5,	0.75)
---			elseif	i == 13 then	icon:SetTexCoord(0,		0.25,	0.75,	1)
---			elseif	i == 14 then	icon:SetTexCoord(0.25,	0.5,	0.75,	1)
---			elseif	i == 15 then	icon:SetTexCoord(0.5,	0.75,	0.75,	1)
---			elseif	i == 16 then	icon:SetTexCoord(0.75,	1,		0.75,	1)
+			if i == 1 then
+				icon:SetTexCoord(0, 0.25, 0, 0.25)
+			elseif i == 2 then
+				icon:SetTexCoord(0.25, 0.5, 0, 0.25)
+			elseif i == 3 then
+				icon:SetTexCoord(0.5, 0.75, 0, 0.25)
+			elseif i == 4 then
+				icon:SetTexCoord(0.75, 1, 0, 0.25)
+			elseif i == 5 then
+				icon:SetTexCoord(0, 0.25, 0.25, 0.5)
+			elseif i == 6 then
+				icon:SetTexCoord(0.25, 0.5, 0.25, 0.5)
+			elseif i == 7 then
+				icon:SetTexCoord(0.5, 0.75, 0.25, 0.5)
+			elseif i == 8 then
+				icon:SetTexCoord(0.75, 1, 0.25, 0.5)
+				--			elseif	i == 9 then		icon:SetTexCoord(0,		0.25,	0.5,	0.75)
+				--			elseif	i == 10 then	icon:SetTexCoord(0.25,	0.5,	0.5,	0.75)
+				--			elseif	i == 11 then	icon:SetTexCoord(0.5,	0.75,	0.5,	0.75)
+				--			elseif	i == 12 then	icon:SetTexCoord(0.75,	1,		0.5,	0.75)
+				--			elseif	i == 13 then	icon:SetTexCoord(0,		0.25,	0.75,	1)
+				--			elseif	i == 14 then	icon:SetTexCoord(0.25,	0.5,	0.75,	1)
+				--			elseif	i == 15 then	icon:SetTexCoord(0.5,	0.75,	0.75,	1)
+				--			elseif	i == 16 then	icon:SetTexCoord(0.75,	1,		0.75,	1)
 			end
 		end
 	end
@@ -532,16 +574,16 @@ function DBM_GUI:CreateBossModPanel(mod, isTestView)
 				local title, desc, _, icon
 				local usedSpellID, hasPrivate
 				if mod.groupOptions[spellID] and mod.groupOptions[spellID].customKeys then
-					usedSpellID = mod.groupOptions[spellID].customKeys--Color coding would be done in customKeys, not here
+					usedSpellID = mod.groupOptions[spellID].customKeys --Color coding would be done in customKeys, not here
 				end
 				if mod.groupOptions[spellID] and mod.groupOptions[spellID].hasPrivate then
 					hasPrivate = true
 				end
-				if mod.groupOptions[spellID].title then--Custom title, it's a bogus spellId, so we completely ignore it and bundle with localized custom title
+				if mod.groupOptions[spellID].title then --Custom title, it's a bogus spellId, so we completely ignore it and bundle with localized custom title
 					title, desc, icon = mod.groupOptions[spellID].title, L.CustomOptions, 136116
 				elseif tonumber(spellID) then
 					spellID = tonumber(spellID)
-					if spellID then--Because LuaLS doesn't understand tonumber(spellID) as a nil check
+					if spellID then --Because LuaLS doesn't understand tonumber(spellID) as a nil check
 						if spellID < 0 then
 							title, desc, _, icon = DBM:EJ_GetSectionInfo(-spellID)
 						else
@@ -555,15 +597,18 @@ function DBM_GUI:CreateBossModPanel(mod, isTestView)
 					title, desc, _, icon = DBM:EJ_GetSectionInfo(spellID:gsub("ej", ""))
 				elseif spellID:find("^at") then
 					_, title, _, _, _, _, _, desc, _, icon = GetAchievementInfo(spellID:gsub("at", ""))
-					if not title then--Core has debug for spell and EJ, but this calls WoW API directly
-						DBM:Debug("|cffff0000Invalid call to GetAchievementInfo for achievementID: |r"..spellID:gsub("at", ""))
+					if not title then --Core has debug for spell and EJ, but this calls WoW API directly
+						DBM:Debug(
+							"|cffff0000Invalid call to GetAchievementInfo for achievementID: |r"
+								.. spellID:gsub("at", "")
+						)
 					end
 				end
-				if not title then--Spell/EJ section/achievement not found - typo/removed/ptr or beta mod on live
+				if not title then --Spell/EJ section/achievement not found - typo/removed/ptr or beta mod on live
 					title, desc, icon = spellID, L.NoDescription, 136116
 				end
 				if not usedSpellID then
-					usedSpellID = "|Hgarrmission:DBM:wacopy:"..spellID.."|h|cff69ccf0"..spellID.."|r|h"
+					usedSpellID = "|Hgarrmission:DBM:wacopy:" .. spellID .. "|h|cff69ccf0" .. spellID .. "|r|h"
 				end
 				local catpanel = panel:CreateAbility(title, icon, usedSpellID, hasPrivate)
 				if desc then
@@ -604,8 +649,8 @@ local function GetSpecializationGroup()
 		local numTabs = GetNumTalentTabs()
 		local highestPointsSpent, currentSpecGroup = 0, 1
 		if MAX_TALENT_TABS then
-			for i=1, MAX_TALENT_TABS do
-				if ( i <= numTabs ) then
+			for i = 1, MAX_TALENT_TABS do
+				if i <= numTabs then
 					local _, _, _, _, pointsSpent = GetTalentTabInfo(i)
 					if pointsSpent > highestPointsSpent then
 						highestPointsSpent = pointsSpent
@@ -644,8 +689,15 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 					for i = 0, 4 do
 						if optionTable[i] then
 							tinsert(modProfileDropdown, {
-								text	= (i == 0 and charname .. " (" .. ALL.. ")") or charname .. " (" .. SPECIALIZATION .. i .. "-" .. (charTable["talent" .. i] or "") .. ")",
-								value	= charname .. "|" .. tostring(i)
+								text = (i == 0 and charname .. " (" .. ALL .. ")")
+									or charname
+										.. " ("
+										.. SPECIALIZATION
+										.. i
+										.. "-"
+										.. (charTable["talent" .. i] or "")
+										.. ")",
+								value = charname .. "|" .. tostring(i),
 							})
 						end
 					end
@@ -663,11 +715,18 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 
 		local refresh
 
-		local copyModProfile = modProfileArea:CreateDropdown(L.SelectModProfileCopy, modProfileDropdown, nil, nil, function(value)
-			local name, profile = strsplit("|", value)
-			DBM:CopyAllModOption(addon.modId, name, tonumber(profile))
-			C_Timer.After(0.05, refresh)
-		end, 100)
+		local copyModProfile = modProfileArea:CreateDropdown(
+			L.SelectModProfileCopy,
+			modProfileDropdown,
+			nil,
+			nil,
+			function(value)
+				local name, profile = strsplit("|", value)
+				DBM:CopyAllModOption(addon.modId, name, tonumber(profile))
+				C_Timer.After(0.05, refresh)
+			end,
+			100
+		)
 		local isNewDropdown = copyModProfile.mytype == "dropdown2"
 		copyModProfile:SetPoint("TOPLEFT", isNewDropdown and 15 or -7, -54)
 		copyModProfile:SetScript("OnShow", function()
@@ -678,11 +737,18 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 			end
 		end)
 
-		local copyModSoundProfile = modProfileArea:CreateDropdown(L.SelectModProfileCopySound, modProfileDropdown, nil, nil, function(value)
-			local name, profile = strsplit("|", value)
-			DBM:CopyAllModTypeOption(addon.modId, name, tonumber(profile), "SWSound")
-			C_Timer.After(0.05, refresh)
-		end, 100)
+		local copyModSoundProfile = modProfileArea:CreateDropdown(
+			L.SelectModProfileCopySound,
+			modProfileDropdown,
+			nil,
+			nil,
+			function(value)
+				local name, profile = strsplit("|", value)
+				DBM:CopyAllModTypeOption(addon.modId, name, tonumber(profile), "SWSound")
+				C_Timer.After(0.05, refresh)
+			end,
+			100
+		)
 		copyModSoundProfile.myheight = 0
 		copyModSoundProfile:SetPoint("LEFT", copyModProfile, "RIGHT", 27, 0)
 		copyModSoundProfile:SetScript("OnShow", function()
@@ -693,11 +759,18 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 			end
 		end)
 
-		local copyModNoteProfile = modProfileArea:CreateDropdown(L.SelectModProfileCopyNote, modProfileDropdown, nil, nil, function(value)
-			local name, profile = strsplit("|", value)
-			DBM:CopyAllModTypeOption(addon.modId, name, tonumber(profile), "SWNote")
-			C_Timer.After(0.05, refresh)
-		end, 100)
+		local copyModNoteProfile = modProfileArea:CreateDropdown(
+			L.SelectModProfileCopyNote,
+			modProfileDropdown,
+			nil,
+			nil,
+			function(value)
+				local name, profile = strsplit("|", value)
+				DBM:CopyAllModTypeOption(addon.modId, name, tonumber(profile), "SWNote")
+				C_Timer.After(0.05, refresh)
+			end,
+			100
+		)
 		copyModNoteProfile.myheight = 0
 		copyModNoteProfile:SetPoint("LEFT", copyModSoundProfile, "RIGHT", 27, 0)
 		copyModNoteProfile:SetScript("OnShow", function()
@@ -708,11 +781,18 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 			end
 		end)
 
-		local deleteModProfile = modProfileArea:CreateDropdown(L.SelectModProfileDelete, modProfileDropdown, nil, nil, function(value)
-			local name, profile = strsplit("|", value)
-			DBM:DeleteAllModOption(addon.modId, name, tonumber(profile))
-			C_Timer.After(0.05, refresh)
-		end, 100)
+		local deleteModProfile = modProfileArea:CreateDropdown(
+			L.SelectModProfileDelete,
+			modProfileDropdown,
+			nil,
+			nil,
+			function(value)
+				local name, profile = strsplit("|", value)
+				DBM:DeleteAllModOption(addon.modId, name, tonumber(profile))
+				C_Timer.After(0.05, refresh)
+			end,
+			100
+		)
 		deleteModProfile.myheight = 60
 		deleteModProfile:SetPoint("TOPLEFT", copyModSoundProfile, "BOTTOMLEFT", 0, isNewDropdown and -15 or -10)
 		deleteModProfile:SetScript("OnShow", function()
@@ -734,7 +814,8 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 		local function actuallyImport(importTable)
 			local profileID = playerLevel > 9 and DBM_UseDualProfile and GetSpecializationGroup() or 0
 			for _, id in ipairs(DBM.ModLists[addon.modId]) do
-				_G[addon.modId:gsub("-", "") .. "_AllSavedVars"][playerName .. "-" .. realmName][id][profileID] = importTable[id]
+				_G[addon.modId:gsub("-", "") .. "_AllSavedVars"][playerName .. "-" .. realmName][id][profileID] =
+					importTable[id]
 				---@diagnostic disable-next-line: inject-field
 				DBM:GetModByName(id).Options = importTable[id]
 			end
@@ -747,7 +828,8 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 			local exportProfile = {}
 			local profileID = playerLevel > 9 and DBM_UseDualProfile and GetSpecializationGroup() or 0
 			for _, id in ipairs(DBM.ModLists[addon.modId]) do
-				exportProfile[id] = _G[addon.modId:gsub("-", "") .. "_AllSavedVars"][playerName .. "-" .. realmName][id][profileID]
+				exportProfile[id] =
+					_G[addon.modId:gsub("-", "") .. "_AllSavedVars"][playerName .. "-" .. realmName][id][profileID]
 			end
 			DBM_GUI:CreateExportProfile(exportProfile)
 		end)
@@ -760,7 +842,11 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 					for settingName, settingValue in pairs(table) do
 						local ending = settingName:sub(-6):lower()
 						if ending == "cvoice" or ending == "wsound" then -- CVoice or SWSound (s is ignored so we only have to sub once)
-							if type(settingValue) == "string" and settingValue:lower() ~= "none" and not DBM:ValidateSound(settingValue, true, true) then
+							if
+								type(settingValue) == "string"
+								and settingValue:lower() ~= "none"
+								and not DBM:ValidateSound(settingValue, true, true)
+							then
 								tinsert(errors, id .. "-" .. settingName)
 							end
 						end
@@ -795,7 +881,13 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 		return
 	end
 
-	local ptext = panel:CreateText(L.BossModLoaded:format(subtab and addon.subTabs[subtab] or addon.name), nil, nil, nil, "CENTER")
+	local ptext = panel:CreateText(
+		L.BossModLoaded:format(subtab and addon.subTabs[subtab] or addon.name),
+		nil,
+		nil,
+		nil,
+		"CENTER"
+	)
 	ptext:SetPoint("TOPLEFT", panel.frame, "TOPLEFT", 10, modProfileArea and -255 or -10)
 
 	local singleLine, doubleLine, noHeaderLine = 0, 0, 0
@@ -804,11 +896,26 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 	area.frame:SetPoint("TOPLEFT", 10, modProfileArea and -270 or -25)
 
 	local statOrder = {
-		"follower", "story", "lfr", "normal", "normal25", "heroic", "heroic25", "mythic", "challenge", "timewalker", "duos"
+		"follower",
+		"story",
+		"lfr",
+		"normal",
+		"normal25",
+		"heroic",
+		"heroic25",
+		"mythic",
+		"challenge",
+		"timewalker",
+		"duos",
 	}
 
 	for _, mod in ipairs(DBM.Mods) do
-		if mod.modId == addon.modId and (not subtab or subtab == mod.subTab) and not mod.isTrashMod and not mod.noStatistics then
+		if
+			mod.modId == addon.modId
+			and (not subtab or subtab == mod.subTab)
+			and not mod.isTrashMod
+			and not mod.noStatistics
+		then
 			if not mod.stats then
 				local defaultStats = DBM:CreateDefaultModStats()
 				mod.stats = defaultStats or {}
@@ -826,10 +933,11 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 				return -- No stats available for this? Possibly a bug
 			end
 
-			local Title			= area:CreateText(mod.localization.general.name, nil, nil, GameFontHighlight)
+			local Title = area:CreateText(mod.localization.general.name, nil, nil, GameFontHighlight)
 
 			local function CreateText(text, header)
-				local frame = area:CreateText(text or "", nil, nil, header and GameFontHighlightSmall or GameFontNormalSmall)
+				local frame =
+					area:CreateText(text or "", nil, nil, header and GameFontHighlightSmall or GameFontNormalSmall)
 				frame:Hide()
 				return frame
 			end
@@ -837,13 +945,13 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 			local sections = {}
 			for i = 1, 6 do
 				local section = {}
-				section.header	= CreateText(nil, true)
-				section.text1	= CreateText(L.Statistic_Kills)
-				section.text2	= CreateText(L.Statistic_Wipes)
-				section.text3	= CreateText(L.Statistic_BestKill)
-				section.value1	= CreateText()
-				section.value2	= CreateText()
-				section.value3	= CreateText()
+				section.header = CreateText(nil, true)
+				section.text1 = CreateText(L.Statistic_Kills)
+				section.text2 = CreateText(L.Statistic_Wipes)
+				section.text3 = CreateText(L.Statistic_BestKill)
+				section.value1 = CreateText()
+				section.value2 = CreateText()
+				section.value3 = CreateText()
 				if i == 1 then
 					section.header:SetPoint("TOPLEFT", Title, "BOTTOMLEFT", 20, -5)
 				elseif i == 4 then
@@ -872,21 +980,26 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 			end
 
 			local statTypes = {
-				follower	= DBM_CORE_L.FOLLOWER,--no PLAYER_DIFFICULTY entry yet
-				story		= DBM_CORE_L.STORY,--no PLAYER_DIFFICULTY entry yet
-				lfr25		= PLAYER_DIFFICULTY3,
-				normal		= mod.addon.minExpansion < 5 and not DBM:IsSeasonal("SeasonOfDiscovery") and RAID_DIFFICULTY1 or PLAYER_DIFFICULTY1,
-				normal25	= RAID_DIFFICULTY2,
-				heroic		= mod.addon.minExpansion < 5 and not DBM:IsSeasonal("SeasonOfDiscovery") and RAID_DIFFICULTY3 or PLAYER_DIFFICULTY2,
-				heroic25	= RAID_DIFFICULTY4,
-				mythic		= PLAYER_DIFFICULTY6,
-				challenge	= (mod.addon.minExpansion < 6 and not mod.upgradedMPlus) and CHALLENGE_MODE or PLAYER_DIFFICULTY6 .. "+",
-				timewalker	= PLAYER_DIFFICULTY_TIMEWALKER,
-				duos		= DBM_CORE_L.DUOS
+				follower = DBM_CORE_L.FOLLOWER, --no PLAYER_DIFFICULTY entry yet
+				story = DBM_CORE_L.STORY, --no PLAYER_DIFFICULTY entry yet
+				lfr25 = PLAYER_DIFFICULTY3,
+				normal = mod.addon.minExpansion < 5 and not DBM:IsSeasonal("SeasonOfDiscovery") and RAID_DIFFICULTY1
+					or PLAYER_DIFFICULTY1,
+				normal25 = RAID_DIFFICULTY2,
+				heroic = mod.addon.minExpansion < 5 and not DBM:IsSeasonal("SeasonOfDiscovery") and RAID_DIFFICULTY3
+					or PLAYER_DIFFICULTY2,
+				heroic25 = RAID_DIFFICULTY4,
+				mythic = PLAYER_DIFFICULTY6,
+				challenge = (mod.addon.minExpansion < 6 and not mod.upgradedMPlus) and CHALLENGE_MODE
+					or PLAYER_DIFFICULTY6 .. "+",
+				timewalker = PLAYER_DIFFICULTY_TIMEWALKER,
+				duos = DBM_CORE_L.DUOS,
 			}
-			if (mod.addon.type == "PARTY" or mod.addon.type == "SCENARIO") or -- Fixes dungeons being labled incorrectly
-				(mod.addon.type == "RAID" and statSplit["timewalker"]) or -- Fixes raids with timewalker being labled incorrectly
-				(mod.instanceId == 369) then -- Fixes SoO being labled incorrectly
+			if
+				(mod.addon.type == "PARTY" or mod.addon.type == "SCENARIO") -- Fixes dungeons being labled incorrectly
+				or (mod.addon.type == "RAID" and statSplit["timewalker"]) -- Fixes raids with timewalker being labled incorrectly
+				or (mod.instanceId == 369)
+			then -- Fixes SoO being labled incorrectly
 				statTypes.normal = PLAYER_DIFFICULTY1
 				statTypes.heroic = PLAYER_DIFFICULTY2
 			end
@@ -904,17 +1017,34 @@ function DBM_GUI:CreateBossModTab(addon, panel, subtab)
 					lastArea = lastArea + 1
 					local section = sections[lastArea]
 					section.header:SetText(statTypes[statType])
-					local kills, pulls, bestRank, bestTime = mod.stats[statType .. "Kills"] or 0, mod.stats[statType .. "Pulls"] or 0, mod.stats[statType .. "BestRank"] or 0, mod.stats[statType .. "BestTime"]
+					local kills, pulls, bestRank, bestTime =
+						mod.stats[statType .. "Kills"] or 0,
+						mod.stats[statType .. "Pulls"] or 0,
+						mod.stats[statType .. "BestRank"] or 0,
+						mod.stats[statType .. "BestTime"]
 					section.value1:SetText(kills)
 					section.value2:SetText(pulls - kills)
-					if bestRank > 0 then--Used by "challenge" and "normal" for M+, Delves, and SoD raids
-						section.value3:SetText(bestTime and ("%d:%02d (%d)"):format(mfloor(bestTime / 60), bestTime % 60, bestRank) or "-")
+					if bestRank > 0 then --Used by "challenge" and "normal" for M+, Delves, and SoD raids
+						section.value3:SetText(
+							bestTime and ("%d:%02d (%d)"):format(mfloor(bestTime / 60), bestTime % 60, bestRank) or "-"
+						)
 					else
-						section.value3:SetText(bestTime and ("%d:%02d"):format(mfloor(bestTime / 60), bestTime % 60) or "-")
+						section.value3:SetText(
+							bestTime and ("%d:%02d"):format(mfloor(bestTime / 60), bestTime % 60) or "-"
+						)
 					end
 				end
 			end
-			Title:SetPoint("TOPLEFT", area.frame, "TOPLEFT", 10, -10 - (L.FontHeight * 5 * noHeaderLine) - (L.FontHeight * 6 * singleLine) - (L.FontHeight * 10 * doubleLine))
+			Title:SetPoint(
+				"TOPLEFT",
+				area.frame,
+				"TOPLEFT",
+				10,
+				-10
+					- (L.FontHeight * 5 * noHeaderLine)
+					- (L.FontHeight * 6 * singleLine)
+					- (L.FontHeight * 10 * doubleLine)
+			)
 			if statCount == 1 then
 				sections[1].header:Hide()
 				sections[1].text1:SetPoint("TOPLEFT", Title, "BOTTOMLEFT", 20, -5)
@@ -965,7 +1095,8 @@ do
 					end
 				end
 				if modId then
-					currentSeasons[mapName] = seasonCategory:CreateNewPanel(mapName, "PARTY", false, nil, true, modId, true)
+					currentSeasons[mapName] =
+						seasonCategory:CreateNewPanel(mapName, "PARTY", false, nil, true, modId, true)
 					hasAnyMod = true
 				end
 			end
@@ -981,7 +1112,15 @@ do
 					end
 				end
 				if affixAddon then
-					currentSeasons["MPlusAffixes"] = seasonCategory:CreateNewPanel("MPlusAffixes", "PARTY", false, affixAddon.name, false, "DBM-Affixes", true)
+					currentSeasons["MPlusAffixes"] = seasonCategory:CreateNewPanel(
+						"MPlusAffixes",
+						"PARTY",
+						false,
+						affixAddon.name,
+						false,
+						"DBM-Affixes",
+						true
+					)
 					hasAnyMod = true
 				end
 			end
@@ -991,7 +1130,20 @@ do
 		end
 	end
 
-    local expansions = {"CLASSIC", "BC", "WOTLK", "CATA", "MOP", "WOD", "LEG", "BFA", "SHADOWLANDS", "DRAGONFLIGHT", "WARWITHIN", "MIDNIGHT"}
+	local expansions = {
+		"CLASSIC",
+		"BC",
+		"WOTLK",
+		"CATA",
+		"MOP",
+		"WOD",
+		"LEG",
+		"BFA",
+		"SHADOWLANDS",
+		"DRAGONFLIGHT",
+		"WARWITHIN",
+		"MIDNIGHT",
+	}
 
 	function DBM_GUI:UpdateModList()
 		for _, addon in ipairs(DBM.AddOns) do
@@ -1002,7 +1154,14 @@ do
 					customName = _G["EXPANSION_NAME" .. (tIndexOf(expansions, addon.category:upper()) or 99) - 1]
 				end
 				-- Create a Panel for "Naxxramas" "Eye of Eternity" ...
-				addon.panel = DBM_GUI:CreateNewPanel(addon.name or "Error: No-modId", addon.type, false, customName, true, addon.modId)
+				addon.panel = DBM_GUI:CreateNewPanel(
+					addon.name or "Error: No-modId",
+					addon.type,
+					false,
+					customName,
+					true,
+					addon.modId
+				)
 				if addon.modId == "DBM-Affixes" then -- If affixes, hide second general entry (as it's under Current Season)
 					DBM_GUI.tabs[3].buttons[#DBM_GUI.tabs[3].buttons].hidden = true
 				end
@@ -1040,7 +1199,8 @@ do
 				for k, v in pairs(addon.subTabs) do
 					if not addon.subPanels[k] then
 						subTabId = subTabId + 1
-						addon.subPanels[k] = currentSeasons[v] or addon.panel:CreateNewPanel("SubTab" .. subTabId, addon.type, false, v, addon.modId)
+						addon.subPanels[k] = currentSeasons[v]
+							or addon.panel:CreateNewPanel("SubTab" .. subTabId, addon.type, false, v, addon.modId)
 						DBM_GUI:CreateBossModTab(addon, addon.subPanels[k], k)
 					end
 				end
@@ -1052,14 +1212,48 @@ do
 				if mod.modId == addon.modId then
 					if not addon.subTabs or (addon.subPanels and (addon.subPanels[mod.subTab] or mod.subTab == 0)) then
 						if addon.subTabs and addon.subPanels[mod.subTab] then
-							mod.panel = mod.panel or addon.subPanels[mod.subTab]:CreateNewPanel(mod.id or "Error: DBM.Mods", addon.type, nil, mod.localization.general.name)
+							mod.panel = mod.panel
+								or addon.subPanels[mod.subTab]:CreateNewPanel(
+									mod.id or "Error: DBM.Mods",
+									addon.type,
+									nil,
+									mod.localization.general.name
+								)
 							if mod.showTestUI then
-								mod.testPanel = mod.testPanel or addon.subPanels[mod.subTab]:CreateNewPanel(mod.id or "Error: DBM.Mods", addon.type, nil, L.TestModEntry:format(mod.localization.general.name), nil, nil, nil, true)
+								mod.testPanel = mod.testPanel
+									or addon.subPanels[mod.subTab]:CreateNewPanel(
+										mod.id or "Error: DBM.Mods",
+										addon.type,
+										nil,
+										L.TestModEntry:format(mod.localization.general.name),
+										nil,
+										nil,
+										nil,
+										true
+									)
 							end
 						else
-							mod.panel = mod.panel or currentSeasons[mod.id] or addon.panel:CreateNewPanel(mod.id or "Error: DBM.Mods", addon.type, nil, mod.localization.general.name)
+							mod.panel = mod.panel
+								or currentSeasons[mod.id]
+								or addon.panel:CreateNewPanel(
+									mod.id or "Error: DBM.Mods",
+									addon.type,
+									nil,
+									mod.localization.general.name
+								)
 							if mod.showTestUI then
-								mod.testPanel = mod.testPanel or currentSeasons[mod.id] or addon.panel:CreateNewPanel(mod.id or "Error: DBM.Mods", addon.type, nil, L.TestModEntry:format(mod.localization.general.name), nil, nil, nil, true)
+								mod.testPanel = mod.testPanel
+									or currentSeasons[mod.id]
+									or addon.panel:CreateNewPanel(
+										mod.id or "Error: DBM.Mods",
+										addon.type,
+										nil,
+										L.TestModEntry:format(mod.localization.general.name),
+										nil,
+										nil,
+										nil,
+										true
+									)
 							end
 						end
 					end

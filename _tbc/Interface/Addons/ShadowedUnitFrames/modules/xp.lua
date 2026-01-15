@@ -86,7 +86,22 @@ end
 
 function XP:UpdateRep(frame)
 	if( not frame.xpBar.rep ) then return end
-	local name, reaction, min, max, current = GetWatchedFactionInfo()
+	local name, reaction, min, max, current
+	
+	-- Modern API (TBC Anniversary / Retail)
+	if C_Reputation and C_Reputation.GetWatchedFactionData then
+		local factionData = C_Reputation.GetWatchedFactionData()
+		if factionData then
+			name = factionData.name
+			reaction = factionData.reaction
+			min = factionData.currentReactionThreshold
+			max = factionData.nextReactionThreshold
+			current = factionData.currentStanding
+		end
+	-- Classic API
+	elseif GetWatchedFactionInfo then
+		name, reaction, min, max, current = GetWatchedFactionInfo()
+	end
 	if( not name ) then
 		frame.xpBar.rep:Hide()
 		return

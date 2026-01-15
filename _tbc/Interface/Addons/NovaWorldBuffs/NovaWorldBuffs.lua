@@ -5826,7 +5826,7 @@ f:SetScript("OnEvent", function(self, event, ...)
 		local _, _, zone = NWB:GetPlayerZonePosition()
 		local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellID, spellName =
 			CombatLogGetCurrentEventInfo()
-		if (subEvent == "SPELL_AURA_APPLIED" or subEvent == "SPELL_AURA_REFRESH") then
+		if subEvent == "SPELL_AURA_APPLIED" or subEvent == "SPELL_AURA_REFRESH" then
 			--Can't check for buffs here because often songflower won't be the first buff in combat log when someone logs in.
 			--Then the player could be NWB.detectedPlayers right before their logon songflower buff is seen, triggering a false timer.
 			--Other combat events we can use to check for players around us.
@@ -9616,12 +9616,15 @@ NWBCopyFrame:SetMovable(true)
 NWBCopyFrame:EnableMouse(true)
 tinsert(UISpecialFrames, "NWBCopyFrame")
 NWBCopyFrame:SetPoint("CENTER", UIParent, 0, 100)
-NWBCopyFrame:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8x8", insets = {
-	top = 0,
-	left = 0,
-	bottom = 0,
-	right = 0,
-} })
+NWBCopyFrame:SetBackdrop({
+	bgFile = "Interface\\Buttons\\WHITE8x8",
+	insets = {
+		top = 0,
+		left = 0,
+		bottom = 0,
+		right = 0,
+	},
+})
 NWBCopyFrame:SetBackdropColor(0, 0, 0, 0.9)
 NWBCopyFrame.CharCount:Hide()
 NWBCopyFrame:SetFrameStrata("HIGH")

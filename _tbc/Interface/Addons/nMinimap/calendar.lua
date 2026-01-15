@@ -1,7 +1,7 @@
 local select = select
 
-if not IsAddOnLoaded("Blizzard_TimeManager") then
-	LoadAddOn("Blizzard_TimeManager")
+if not C_AddOns.IsAddOnLoaded("Blizzard_TimeManager") then
+	C_AddOns.LoadAddOn("Blizzard_TimeManager")
 end
 
 for i = 1, select("#", GameTimeFrame:GetRegions()) do

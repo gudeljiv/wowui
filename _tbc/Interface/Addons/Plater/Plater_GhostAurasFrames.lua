@@ -3,11 +3,16 @@ local addonName, platerInternal = ...
 local Plater = _G.Plater
 local DF = DetailsFramework
 local _
+local GetSpellInfo = GetSpellInfo or function(spellID) if not spellID then return nil end local si = C_Spell.GetSpellInfo(spellID) if si then return si.name, nil, si.iconID, si.castTime, si.minRange, si.maxRange, si.spellID, si.originalIconID end end
+local IsBetaBuild = IsBetaBuild or function() return false end
 
 local IS_WOW_PROJECT_MAINLINE = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE
 local IS_WOW_PROJECT_NOT_MAINLINE = WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE
 local IS_WOW_PROJECT_CLASSIC_ERA = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
-local IS_WOW_PROJECT_CLASSIC_TBC = WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC
+local IS_WOW_PROJECT_CLASSIC_WRATH = IS_WOW_PROJECT_NOT_MAINLINE and ClassicExpansionAtLeast and LE_EXPANSION_WRATH_OF_THE_LICH_KING and ClassicExpansionAtLeast(LE_EXPANSION_WRATH_OF_THE_LICH_KING)
+--local IS_WOW_PROJECT_CLASSIC_CATACLYSM = IS_WOW_PROJECT_NOT_MAINLINE and ClassicExpansionAtLeast and LE_EXPANSION_CATACLYSM and ClassicExpansionAtLeast(LE_EXPANSION_CATACLYSM)
+local IS_WOW_PROJECT_CLASSIC_MOP = IS_WOW_PROJECT_NOT_MAINLINE and ClassicExpansionAtLeast and LE_EXPANSION_MISTS_OF_PANDARIA and ClassicExpansionAtLeast(LE_EXPANSION_MISTS_OF_PANDARIA)
+local IS_WOW_PROJECT_MIDNIGHT = DF.IsAddonApocalypseWow()
 
 local ghostAuraFrame
 
@@ -197,17 +202,15 @@ function Plater.Auras.BuildGhostAurasOptionsTab(frame)
 
     ghostAuraFrame:SetScript("OnShow", function()
         Plater.Auras.GhostAuras.SetSpec()
-    end)
-    --Plater.Auras.GhostAuras.SetSpec() --debug, will update then the plater options is opened instead when the tab is opened
-
-    --add a ghost aura
-    function ghostAuraFrame.LoadGameSpells()
-        if (not next (Plater.SpellHashTable)) then
-            --load all spells in the game
-            DF:LoadAllSpells(Plater.SpellHashTable, Plater.SpellIndexTable)
-            return true
+        if not IsBetaBuild() then
+            DF:LoadSpellCache(Plater.SpellHashTable, Plater.SpellIndexTable, Plater.SpellSameNameTable)
         end
-    end
+    end)
+    ghostAuraFrame:SetScript("OnHide", function()
+        DF:UnloadSpellCache()
+    end)
+
+    --Plater.Auras.GhostAuras.SetSpec() --debug, will update then the plater options is opened instead when the tab is opened
 
     local newAuraLabel = DF:CreateLabel(ghostAuraFrame, "Add Ghost Aura", DF:GetTemplate("font", "ORANGE_FONT_TEMPLATE"))
     DF:SetFontSize(newAuraLabel, 12)
@@ -217,7 +220,6 @@ function Plater.Auras.BuildGhostAurasOptionsTab(frame)
     newAuraEntry:SetJustifyH("left")
 
     newAuraEntry:SetHook("OnEditFocusGained", function(self)
-        ghostAuraFrame.LoadGameSpells()
         newAuraEntry.SpellAutoCompleteList = Plater.SpellIndexTable
         newAuraEntry:SetAsAutoComplete("SpellAutoCompleteList", nil, true)
     end)

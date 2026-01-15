@@ -243,6 +243,7 @@ DF.CooldownsBySpec = {
 			[231895] = 1, --Crusade (talent)
 			[205191] = 2, --Eye for an Eye (talent)
 			[184662] = 2, --Shield of Vengeance
+			[403876] = 2, --Divine Protection
 			[642] = 2, --Divine Shield
 			[1022] = 3, --Blessing of Protection
 			[6940] = 3, --Blessing of Sacrifice
@@ -481,7 +482,6 @@ DF.CooldownsBySpec = {
 			[98008] = 4, --Spirit Link Totem
 			[108280] = 4, --Healing Tide Totem
 			[16191] = 4, --Mana Tide Totem
-			[198103] = 4, --Earth Elemental
 			[207399] = 4, --Ancestral Protection Totem (talent)
 			[198103] = 4, --Earth Elemental
 			[65992] = 5, --Tremor Totem
@@ -845,7 +845,6 @@ DF.CooldownsInfo = {
 	[198589] = {cooldown = 60, duration = 10, talent = false, charges = 1, class = "DEMONHUNTER", type = 2}, --Blur
 
 	[196555] = {cooldown = 120, duration = 5, talent = 21865, charges = 1, class = "DEMONHUNTER", type = 2}, --Netherwalk (talent)
-	[196718] = {cooldown = 180, duration = 8, talent = false, charges = 1, class = "DEMONHUNTER", type = 4}, --Darkness
 	[187827] = {cooldown = 180, duration = 15, talent = false, charges = 1, class = "DEMONHUNTER", type = 2}, --Metamorphosis
 	[196718] = {cooldown = 180, duration = 8, talent = false, charges = 1, class = "DEMONHUNTER", type = 4}, --Darkness
 	[188501] = {cooldown = 30, duration = 10, talent = false, charges = 1, class = "DEMONHUNTER", type = 5}, --Spectral Sight
@@ -908,7 +907,6 @@ DF.CooldownsInfo = {
 	[199754] = {cooldown = 120, duration = 10, talent = false, charges = 1, class = "ROGUE", type = 2},  --Riposte
 	[121471] = {cooldown = 180, duration = 20, talent = false, charges = 1, class = "ROGUE", type = 1},  --Shadow Blades
 	[343142] = {cooldown = 90, duration = 10, talent = 19250, charges = 1, class = "ROGUE", type = 5},  --Dreadblades
-	[121471]  = {cooldown = 180, duration = 20, talent = false, charges = 1, class = "ROGUE", type = 1},  --Shadow Blades
 }
 
 -- {cooldown = , duration = , talent = false, charges = 1}
@@ -939,6 +937,7 @@ DF.CrowdControlSpells = {
 	[277792] = "MAGE", --Polymorph Bumblebee
 	[391622] = "MAGE", --Polymorph Duck
 	[2139] = "MAGE", --Counterspell
+	[460392] = "MAGE", --Polymorph Mosswool
 	
 	[82691] = "MAGE", --Ring of Frost (debuff spellid)
 	[122] = "MAGE", --Frost Nova
@@ -957,6 +956,7 @@ DF.CrowdControlSpells = {
 	[15487] = "PRIEST", --Silence
 	
 	[2094] = "ROGUE", --Blind
+	[427773] = "ROGUE", --Blind (AoE)
 	[1833] = "ROGUE", --Cheap Shot
 	[408] = "ROGUE", --Kidney Shot
 	[1766] = "ROGUE", --Kick
@@ -969,6 +969,7 @@ DF.CrowdControlSpells = {
 	[105421] = "PALADIN", --Blinding Light (talent)
 	[31935] = "PALADIN", --Avengers Shield
 	[217824] = "PALADIN", --Shield of Virtue
+	[10326] = "PALADIN", --Turn Evil
 	
 	[221562] = "DEATHKNIGHT", --Asphyxiate
 	[108194] = "DEATHKNIGHT", --Asphyxiate (talent)
@@ -1002,6 +1003,7 @@ DF.CrowdControlSpells = {
 	[24394] = "HUNTER", --Intimidation
 	[117405] = "HUNTER", --Binding Shot (trigger)
 	[117526] = "HUNTER", --Binding Shot (triggered)
+	[1513] = "HUNTER", --Scare Beast
 	
 	[119381] = "MONK", --Leg Sweep
 	[115078] = "MONK", --Paralysis
@@ -1034,6 +1036,7 @@ DF.CrowdControlSpells = {
 	[331866] = "COVENANT|VENTHYR", --Agent of Chaos (Nadia soulbind)
 	
 	[372245] = "EVOKER", --Terror of the Skies
+	[360806] = "EVOKER", --Sleep Walk
 }
 
 -- additionals for classic
@@ -1278,7 +1281,52 @@ end
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --consumables
-if (DF.IsShadowlandsWow() or DF.IsDragonflight()) then --Temporary IsDragonFlight until I get the items together
+if (DF.IsMidnightWow()) then
+    --midnight TODO Get buff ids. Current alpha on 6/6 does not have all professions fully implemented.
+    DF.WeaponEnchantIds = {
+	}
+
+	DF.FlaskIDs = {
+	}
+
+	DF.FoodIDs = {
+		--TODO Get all buffs. Current alpha on 6/6 does not have all buffs.
+		[457173] = 1, -- Lowest Secondary Stat +273 30min (Pan Seared Mycobloom)
+        [457174] = 1, -- Lowest Secondary Stat +273 15min (Skewered Filet)
+	}
+
+	DF.PotionIDs = {
+	}
+
+	DF.FeastIDs = {
+	}
+
+	DF.RuneIDs = {
+	}
+
+elseif (DF.IsWarWow()) then
+    --TWW TODO Get buff ids. Current alpha on 6/6 does not have all professions fully implemented.
+    DF.WeaponEnchantIds = {
+	}
+
+	DF.FlaskIDs = {
+	}
+
+	DF.FoodIDs = {
+		--TODO Get all buffs. Current alpha on 6/6 does not have all buffs.
+		[457173] = 1, -- Lowest Secondary Stat +273 30min (Pan Seared Mycobloom)
+        [457174] = 1, -- Lowest Secondary Stat +273 15min (Skewered Filet)
+	}
+
+	DF.PotionIDs = {
+	}
+
+	DF.FeastIDs = {
+	}
+
+	DF.RuneIDs = {
+	}
+elseif (DF.IsShadowlandsWow() or DF.IsDragonflight()) then --Temporary IsDragonFlight until I get the items together
 	DF.WeaponEnchantIds = {
 		[6188] = true, --shadowcore oil
 		[6190] = true, --embalmer's oil
@@ -1410,8 +1458,8 @@ elseif (DF.IsWotLKWow()) then
 	}
 	DF.FeastIDs = {}
 	DF.RuneIDs = {}
-
-elseif (DF.IsClassicWow()) then
+--~Cata temp
+elseif (DF.IsClassicWow() or DF.IsCataWow() or DF.IsPandaWow() or DF.IsTBCWow()) then
 	DF.PotionIDs = {}
 	DF.FeastIDs = {}
 	DF.RuneIDs = {}
@@ -1440,7 +1488,7 @@ function DF:GetSpellsForEncounterFromJournal (instanceEJID, encounterEJID)
 	
 	while (nextID [1]) do
 		--get the deepest section in the hierarchy
-		local ID = tremove(nextID)
+		local ID = table.remove(nextID)
 		local sectionInfo = C_EncounterJournal.GetSectionInfo (ID)
 		
 		if (sectionInfo) then

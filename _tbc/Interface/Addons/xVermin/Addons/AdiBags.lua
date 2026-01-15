@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-if C_AddOns.IsAddOnLoaded("AdiBags") then
+if C_AddOns.IsAddOnLoaded("AdiBags") and 1 == 2 then
 	local addon = LibStub("AceAddon-3.0"):GetAddon("AdiBags")
 	local L = setmetatable({}, { __index = addon.L })
 

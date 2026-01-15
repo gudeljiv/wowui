@@ -81,7 +81,7 @@ local isFirstRun = true
 local allowFormattingUpdate = false
 local trackerBaseFrame, trackerHeaderFrame, trackerQuestFrame
 local QuestLogFrame = QuestLogExFrame or ClassicQuestLog or QuestLogFrame
-local IsAddOnLoaded = C_AddOns.IsAddOnLoaded or IsAddOnLoaded
+local C_AddOns.IsAddOnLoaded = C_AddOns.IsAddOnLoaded or C_AddOns.IsAddOnLoaded
 local WatchFrame_Update = QuestWatch_Update or WatchFrame_Update
 local GetItemCount = C_Item.GetItemCount or GetItemCount
 
@@ -155,7 +155,7 @@ function QuestieTracker.Initialize()
     end
 
     -- Flip some Dugi Guides options to prevent weird behavior
-    if IsAddOnLoaded("DugisGuideViewerZ") then
+    if C_AddOns.IsAddOnLoaded("DugisGuideViewerZ") then
         -- Turns off "Show Quest Objectives - Display quest objectives in small/anchored frame instead of the watch frame"
         DugisGuideViewer:SetDB(false, 39) -- DGV_OBJECTIVECOUNTER
 
@@ -2339,7 +2339,7 @@ function QuestieTracker:TrackAchieve(achieveId)
         local frameMatch
 
         -- Krowi isn't using this check box for their Achievement frame
-        if not IsAddOnLoaded("Krowi_AchievementFilter") then
+        if not C_AddOns.IsAddOnLoaded("Krowi_AchievementFilter") then
             mouseFocus = QuestieCompat.GetMouseFocus():GetName()
             frameMatch = strmatch(mouseFocus, "(AchievementFrameAchievementsContainerButton%dTracked.*)")
         end

@@ -462,7 +462,7 @@ DF:Mixin(BarMetaFunctions, DF.ScriptHookMixin)
 	end
 
 -- frame stratas
-	function BarMetaFunctions:SetFrameStrata()
+	function BarMetaFunctions:GetFrameStrata()
 		return self.statusbar:GetFrameStrata()
 	end
 	function BarMetaFunctions:SetFrameStrata(strata)
@@ -666,14 +666,16 @@ DF:Mixin(BarMetaFunctions, DF.ScriptHookMixin)
 		self.timer = true
 
 		self.HasTimer = true
-		self.TimerScheduled = DF:ScheduleTimer("StartTimeBarAnimation", 0.1, self)
+		C_Timer.After(0.1, function()
+			DF:StartTimeBarAnimation(self)
+		end)
 	end
 
 	function DF:StartTimeBarAnimation (timebar)
 		timebar.TimerScheduled = nil
 		timebar.statusbar:SetScript("OnUpdate", OnUpdate)
 	end
-	
+
 ------------------------------------------------------------------------------------------------------------
 --object constructor
 
@@ -761,7 +763,7 @@ function DF:NewBar (parent, container, name, member, w, h, value, texture_name)
 	end
 	
 	if (name:find("$parent")) then
-		local parentName = DF.GetParentName(parent)
+		local parentName = DF:GetParentName(parent)
 		name = name:gsub("$parent", parentName)
 	end
 	

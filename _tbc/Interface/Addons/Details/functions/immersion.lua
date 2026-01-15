@@ -6,7 +6,6 @@ local Details = _G.Details
 local C_Timer = _G.C_Timer
 local C_Map = _G.C_Map
 local ceil = math.ceil
-local addonName, Details222 = ...
 
 -- immersion namespace
 Details.Immersion = {}
@@ -41,7 +40,7 @@ function immersionFrame.CheckIfCanEnableImmersion()
 end
 
 --check events
-immersionFrame:SetScript("OnEvent", function(_, event, ...)
+immersionFrame:SetScript("OnEvent", function (_, event, ...)
     if (event == "ZONE_CHANGED_NEW_AREA") then
         C_Timer.After(3, immersionFrame.CheckIfCanEnableImmersion)
     end

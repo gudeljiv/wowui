@@ -8,46 +8,46 @@
 --
 
 -- create new library
-local LIB_NAME = "LibFroznFunctions-1.0";
-local LIB_MINOR = 55; -- bump on changes
+local LIB_NAME = "LibFroznFunctions-1.0"
+local LIB_MINOR = 55 -- bump on changes
 
-if (not LibStub) then
-	error(LIB_NAME .. " requires LibStub.");
+if not LibStub then
+	error(LIB_NAME .. " requires LibStub.")
 end
 -- local ldb = LibStub:GetLibrary("LibDataBroker-1.1", true)
 -- if not ldb then error(LIB_NAME .. " requires LibDataBroker-1.1.") end
 
-local LibFroznFunctions = LibStub:NewLibrary(LIB_NAME, LIB_MINOR);
+local LibFroznFunctions = LibStub:NewLibrary(LIB_NAME, LIB_MINOR)
 
-if (not LibFroznFunctions) then
-	return;
+if not LibFroznFunctions then
+	return
 end
 
 ----------------------------------------------------------------------------------------------------
 --                                           Table API                                            --
 ----------------------------------------------------------------------------------------------------
 
-LibFroznFunctions.TableRegistry = LibFroznFunctions.TableRegistry or {};
+LibFroznFunctions.TableRegistry = LibFroznFunctions.TableRegistry or {}
 
 -- register table version
 --
 -- @param name     table name
 -- @param version  table version
 function LibFroznFunctions:RegisterTableVersion(name, version)
-	local oldVersion = LibFroznFunctions.TableRegistry[name];
-	
-	if (oldVersion) and (oldVersion >= version) then
-		return;
+	local oldVersion = LibFroznFunctions.TableRegistry[name]
+
+	if oldVersion and (oldVersion >= version) then
+		return
 	end
-	
-	LibFroznFunctions.TableRegistry[name] = version;
+
+	LibFroznFunctions.TableRegistry[name] = version
 end
 
 -- get table version
 --
 -- @param name  table name
 function LibFroznFunctions:GetTableVersion(name)
-	return LibFroznFunctions.TableRegistry[name];
+	return LibFroznFunctions.TableRegistry[name]
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -72,34 +72,34 @@ LibFroznFunctions.isWoWFlavor = {
 	MoPC = false,
 	SL = false,
 	DF = false,
-	TWW = false
-};
+	TWW = false,
+}
 
-if (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_CLASSIC"]) then
-	LibFroznFunctions.isWoWFlavor.ClassicEra = true;
-elseif (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_BURNING_CRUSADE_CLASSIC"]) then
-	LibFroznFunctions.isWoWFlavor.BCC = true;
-elseif (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_WRATH_CLASSIC"]) then
-	LibFroznFunctions.isWoWFlavor.WotLKC = true;
-elseif (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_CATACLYSM_CLASSIC"]) then
-	LibFroznFunctions.isWoWFlavor.CataC = true;
-elseif (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_MISTS_CLASSIC"]) then
-	LibFroznFunctions.isWoWFlavor.MoPC = true;
+if _G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_CLASSIC"] then
+	LibFroznFunctions.isWoWFlavor.ClassicEra = true
+elseif _G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_BURNING_CRUSADE_CLASSIC"] then
+	LibFroznFunctions.isWoWFlavor.BCC = true
+elseif _G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_WRATH_CLASSIC"] then
+	LibFroznFunctions.isWoWFlavor.WotLKC = true
+elseif _G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_CATACLYSM_CLASSIC"] then
+	LibFroznFunctions.isWoWFlavor.CataC = true
+elseif _G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_MISTS_CLASSIC"] then
+	LibFroznFunctions.isWoWFlavor.MoPC = true
 else -- retail
-	if (_G["LE_EXPANSION_LEVEL_CURRENT"] == _G["LE_EXPANSION_SHADOWLANDS"]) then
-		LibFroznFunctions.isWoWFlavor.SL = true;
-	elseif (_G["LE_EXPANSION_LEVEL_CURRENT"] == _G["LE_EXPANSION_DRAGONFLIGHT"]) then
-		LibFroznFunctions.isWoWFlavor.DF = true;
+	if _G["LE_EXPANSION_LEVEL_CURRENT"] == _G["LE_EXPANSION_SHADOWLANDS"] then
+		LibFroznFunctions.isWoWFlavor.SL = true
+	elseif _G["LE_EXPANSION_LEVEL_CURRENT"] == _G["LE_EXPANSION_DRAGONFLIGHT"] then
+		LibFroznFunctions.isWoWFlavor.DF = true
 	else
-		LibFroznFunctions.isWoWFlavor.TWW = true;
+		LibFroznFunctions.isWoWFlavor.TWW = true
 	end
 end
 
 -- GearScore algorithms
 LFF_GEAR_SCORE_ALGORITHM = {
 	TacoTip = 1, -- TacoTip's GearScore algorithm
-	TipTac = 2 -- TipTac's GearScore algorithm
-};
+	TipTac = 2, -- TipTac's GearScore algorithm
+}
 
 -- differences between WoW flavors
 --
@@ -149,81 +149,111 @@ LibFroznFunctions.hasWoWFlavor = {
 	defaultGearScoreAlgorithm = LFF_GEAR_SCORE_ALGORITHM.TipTac,
 	optionsSliderTemplate = "UISliderTemplateWithLabels",
 	skyriding = (C_MountJournal and C_MountJournal.SwapDynamicFlightMode and true or false), -- see MountJournalDynamicFlightModeButtonMixin:OnClick() in "Blizzard_MountCollection.lua"
-	challengeMode = (C_ChallengeMode and C_ChallengeMode.IsChallengeModeActive and true or false)
-};
+	challengeMode = (C_ChallengeMode and C_ChallengeMode.IsChallengeModeActive and true or false),
+}
 
-if (LibFroznFunctions.isWoWFlavor.ClassicEra) then
-	LibFroznFunctions.hasWoWFlavor.guildNameInPlayerUnitTip = false;
-	LibFroznFunctions.hasWoWFlavor.talentsAvailableForInspectedUnit = false;
-	LibFroznFunctions.hasWoWFlavor.talentIconAvailable = false;
-	LibFroznFunctions.hasWoWFlavor.realGetSpellLinkAvailable = false;
+if LibFroznFunctions.isWoWFlavor.ClassicEra then
+	LibFroznFunctions.hasWoWFlavor.guildNameInPlayerUnitTip = false
+	LibFroznFunctions.hasWoWFlavor.talentsAvailableForInspectedUnit = false
+	LibFroznFunctions.hasWoWFlavor.talentIconAvailable = false
+	LibFroznFunctions.hasWoWFlavor.realGetSpellLinkAvailable = false
 end
-if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.BCC) or (LibFroznFunctions.isWoWFlavor.WotLKC) then
-	LibFroznFunctions.hasWoWFlavor.defaultGearScoreAlgorithm = LFF_GEAR_SCORE_ALGORITHM.TacoTip;
+if
+	LibFroznFunctions.isWoWFlavor.ClassicEra
+	or LibFroznFunctions.isWoWFlavor.BCC
+	or LibFroznFunctions.isWoWFlavor.WotLKC
+then
+	LibFroznFunctions.hasWoWFlavor.defaultGearScoreAlgorithm = LFF_GEAR_SCORE_ALGORITHM.TacoTip
 end
-if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.BCC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) then
-	LibFroznFunctions.hasWoWFlavor.numTalentTrees = 3;
-	LibFroznFunctions.hasWoWFlavor.roleIconAvailable = false;
-	LibFroznFunctions.hasWoWFlavor.specializationAvailable = false;
+if
+	LibFroznFunctions.isWoWFlavor.ClassicEra
+	or LibFroznFunctions.isWoWFlavor.BCC
+	or LibFroznFunctions.isWoWFlavor.WotLKC
+	or LibFroznFunctions.isWoWFlavor.CataC
+then
+	LibFroznFunctions.hasWoWFlavor.numTalentTrees = 3
+	LibFroznFunctions.hasWoWFlavor.roleIconAvailable = false
+	LibFroznFunctions.hasWoWFlavor.specializationAvailable = false
 end
-if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.BCC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.MoPC) then
-	LibFroznFunctions.hasWoWFlavor.needsSuppressingErrorMessageAndSpeechWhenCallingCanInspect = true;
-	LibFroznFunctions.hasWoWFlavor.GameTooltipSetPaddingWithLeftAndTop = false;
-	LibFroznFunctions.hasWoWFlavor.GameTooltipFadeOutNotBeCalledForWorldFrameUnitTips = true;
-	LibFroznFunctions.hasWoWFlavor.relatedExpansionForItemAvailable = false;
+if
+	LibFroznFunctions.isWoWFlavor.ClassicEra
+	or LibFroznFunctions.isWoWFlavor.BCC
+	or LibFroznFunctions.isWoWFlavor.WotLKC
+	or LibFroznFunctions.isWoWFlavor.CataC
+	or LibFroznFunctions.isWoWFlavor.MoPC
+then
+	LibFroznFunctions.hasWoWFlavor.needsSuppressingErrorMessageAndSpeechWhenCallingCanInspect = true
+	LibFroznFunctions.hasWoWFlavor.GameTooltipSetPaddingWithLeftAndTop = false
+	LibFroznFunctions.hasWoWFlavor.GameTooltipFadeOutNotBeCalledForWorldFrameUnitTips = true
+	LibFroznFunctions.hasWoWFlavor.relatedExpansionForItemAvailable = false
 end
-if (LibFroznFunctions.isWoWFlavor.BCC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.SL) then
-	LibFroznFunctions.hasWoWFlavor.optionsSliderTemplate = "OptionsSliderTemplate";
+if LibFroznFunctions.isWoWFlavor.BCC or LibFroznFunctions.isWoWFlavor.WotLKC or LibFroznFunctions.isWoWFlavor.SL then
+	LibFroznFunctions.hasWoWFlavor.optionsSliderTemplate = "OptionsSliderTemplate"
 end
-if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.BCC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.MoPC) or (LibFroznFunctions.isWoWFlavor.SL) then
-	LibFroznFunctions.hasWoWFlavor.specializationAndClassTextInPlayerUnitTip = false;
-	LibFroznFunctions.hasWoWFlavor.experienceBarFrame = MainMenuExpBar;
-	LibFroznFunctions.hasWoWFlavor.experienceBarDockedToInterfaceBar = true;
+if
+	LibFroznFunctions.isWoWFlavor.ClassicEra
+	or LibFroznFunctions.isWoWFlavor.BCC
+	or LibFroznFunctions.isWoWFlavor.WotLKC
+	or LibFroznFunctions.isWoWFlavor.CataC
+	or LibFroznFunctions.isWoWFlavor.MoPC
+	or LibFroznFunctions.isWoWFlavor.SL
+then
+	LibFroznFunctions.hasWoWFlavor.specializationAndClassTextInPlayerUnitTip = false
+	LibFroznFunctions.hasWoWFlavor.experienceBarFrame = MainMenuExpBar
+	LibFroznFunctions.hasWoWFlavor.experienceBarDockedToInterfaceBar = true
 end
-if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.BCC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.MoPC) or (LibFroznFunctions.isWoWFlavor.SL) or (LibFroznFunctions.isWoWFlavor.DF) then
-	LibFroznFunctions.hasWoWFlavor.rightClickForFrameSettingsTextInUnitTip = false;
-	LibFroznFunctions.hasWoWFlavor.clickForSettingsTextInCurrencyTip = false;
-	LibFroznFunctions.hasWoWFlavor.ShoppingTooltipHasCompareHeader = false;
+if
+	LibFroznFunctions.isWoWFlavor.ClassicEra
+	or LibFroznFunctions.isWoWFlavor.BCC
+	or LibFroznFunctions.isWoWFlavor.WotLKC
+	or LibFroznFunctions.isWoWFlavor.CataC
+	or LibFroznFunctions.isWoWFlavor.MoPC
+	or LibFroznFunctions.isWoWFlavor.SL
+	or LibFroznFunctions.isWoWFlavor.DF
+then
+	LibFroznFunctions.hasWoWFlavor.rightClickForFrameSettingsTextInUnitTip = false
+	LibFroznFunctions.hasWoWFlavor.clickForSettingsTextInCurrencyTip = false
+	LibFroznFunctions.hasWoWFlavor.ShoppingTooltipHasCompareHeader = false
 end
-if (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.MoPC) then
-	LibFroznFunctions.hasWoWFlavor.barMarginAdjustment = -1;
+if LibFroznFunctions.isWoWFlavor.CataC or LibFroznFunctions.isWoWFlavor.MoPC then
+	LibFroznFunctions.hasWoWFlavor.barMarginAdjustment = -1
 end
-if (LibFroznFunctions.isWoWFlavor.MoPC) or (LibFroznFunctions.isWoWFlavor.SL) then
-	LibFroznFunctions.hasWoWFlavor.numTalentTrees = 0;
+if LibFroznFunctions.isWoWFlavor.MoPC or LibFroznFunctions.isWoWFlavor.SL then
+	LibFroznFunctions.hasWoWFlavor.numTalentTrees = 0
 end
-if (LibFroznFunctions.isWoWFlavor.DF) then
+if LibFroznFunctions.isWoWFlavor.DF then
 	LibFroznFunctions.hasWoWFlavor.skyriding = (GetAchievementInfo(15794) and true or false) -- see DRAGONRIDING_ACCOUNT_ACHIEVEMENT_ID in "Blizzard_DragonflightLandingPage.lua"
 end
-LibFroznFunctions.hasWoWFlavor.itemLevelOfFirstRaidTierSet = 
-	LibFroznFunctions.isWoWFlavor.ClassicEra and  66 or -- Cenarion Vestments (Druid, Tier 1)
-	LibFroznFunctions.isWoWFlavor.BCC        and 120 or -- Chestguard of Malorne (Druid, Tier 4)
-	LibFroznFunctions.isWoWFlavor.WotLKC     and 213 or -- Valorous Dreamwalker Robe (Druid, Tier 7)
-	LibFroznFunctions.isWoWFlavor.CataC      and 359 or -- Stormrider's Robes (Druid, Tier 11)
-	LibFroznFunctions.isWoWFlavor.MoPC       and 397 or -- Deep Earth Robes (Druid, Tier 13)
-	LibFroznFunctions.isWoWFlavor.DF         and 395 or -- Lost Landcaller's Robes (Druid, Tier 29)
-	LibFroznFunctions.isWoWFlavor.TWW        and 571;   -- Hide of the Greatlynx (Druid, Tier 32)
+LibFroznFunctions.hasWoWFlavor.itemLevelOfFirstRaidTierSet = LibFroznFunctions.isWoWFlavor.ClassicEra and 66 -- Cenarion Vestments (Druid, Tier 1)
+	or LibFroznFunctions.isWoWFlavor.BCC and 120 -- Chestguard of Malorne (Druid, Tier 4)
+	or LibFroznFunctions.isWoWFlavor.WotLKC and 213 -- Valorous Dreamwalker Robe (Druid, Tier 7)
+	or LibFroznFunctions.isWoWFlavor.CataC and 359 -- Stormrider's Robes (Druid, Tier 11)
+	or LibFroznFunctions.isWoWFlavor.MoPC and 397 -- Deep Earth Robes (Druid, Tier 13)
+	or LibFroznFunctions.isWoWFlavor.DF and 395 -- Lost Landcaller's Robes (Druid, Tier 29)
+	or LibFroznFunctions.isWoWFlavor.TWW and 571 -- Hide of the Greatlynx (Druid, Tier 32)
 
 -- aura filters, see "AuraUtil.lua"
-LFF_AURA_FILTERS = (AuraUtil) and (AuraUtil.AuraFilters) or {
-	Helpful = "HELPFUL",
-	Harmful = "HARMFUL",
-	Raid = "RAID",
-	IncludeNameplateOnly = "INCLUDE_NAME_PLATE_ONLY",
-	Player = "PLAYER",
-	Cancelable = "CANCELABLE",
-	NotCancelable = "NOT_CANCELABLE",
-	Maw = "MAW",
-};
+LFF_AURA_FILTERS = AuraUtil and AuraUtil.AuraFilters
+	or {
+		Helpful = "HELPFUL",
+		Harmful = "HARMFUL",
+		Raid = "RAID",
+		IncludeNameplateOnly = "INCLUDE_NAME_PLATE_ONLY",
+		Player = "PLAYER",
+		Cancelable = "CANCELABLE",
+		NotCancelable = "NOT_CANCELABLE",
+		Maw = "MAW",
+	}
 
 -- world elapsed timer types
-LFF_WORLD_ELAPSED_TIMER_TYPES = Enum.WorldElapsedTimerTypes; -- see WorldElapsedTimerTypes in "WorldElapsedTimerConstantsDocumentation.lua"
+LFF_WORLD_ELAPSED_TIMER_TYPES = Enum.WorldElapsedTimerTypes -- see WorldElapsedTimerTypes in "WorldElapsedTimerConstantsDocumentation.lua"
 
-if (not LFF_WORLD_ELAPSED_TIMER_TYPES) then
+if not LFF_WORLD_ELAPSED_TIMER_TYPES then
 	LFF_WORLD_ELAPSED_TIMER_TYPES = {
 		None = 0, -- LE_WORLD_ELAPSED_TIMER_TYPE_NONE
 		ChallengeMode = 1, -- LE_WORLD_ELAPSED_TIMER_TYPE_CHALLENGE_MODE
-		ProvingGround = 2 -- LE_WORLD_ELAPSED_TIMER_TYPE_PROVING_GROUND
-	};
+		ProvingGround = 2, -- LE_WORLD_ELAPSED_TIMER_TYPE_PROVING_GROUND
+	}
 end
 
 -- is unit a battle pet
@@ -231,11 +261,11 @@ end
 -- @param  unitID  unit id, e.g. "player", "target" or "mouseover"
 -- @return true if it's a battle pet unit, false otherwise.
 function LibFroznFunctions:UnitIsBattlePet(unitID)
-	if (UnitIsBattlePet) then
-		return (not not UnitIsBattlePet(unitID));
+	if UnitIsBattlePet then
+		return (not not UnitIsBattlePet(unitID))
 	end
-	
-	return false;
+
+	return false
 end
 
 -- is unit a wild/tameable battle pet
@@ -243,11 +273,11 @@ end
 -- @param  unitID  unit id, e.g. "player", "target" or "mouseover"
 -- @return true if it's a wild/tameable battle pet, false otherwise.
 function LibFroznFunctions:UnitIsWildBattlePet(unitID)
-	if (UnitIsWildBattlePet) then
-		return UnitIsWildBattlePet(unitID);
+	if UnitIsWildBattlePet then
+		return UnitIsWildBattlePet(unitID)
 	end
-	
-	return false;
+
+	return false
 end
 
 -- is unit a battle pet summoned by a player
@@ -255,11 +285,11 @@ end
 -- @param  unitID  unit id, e.g. "player", "target" or "mouseover"
 -- @return true if it's a battle pet summoned by a player, false otherwise.
 function LibFroznFunctions:UnitIsBattlePetCompanion(unitID)
-	if (UnitIsBattlePetCompanion) then
-		return UnitIsBattlePetCompanion(unitID);
+	if UnitIsBattlePetCompanion then
+		return UnitIsBattlePetCompanion(unitID)
 	end
-	
-	return false;
+
+	return false
 end
 
 -- is unit a mercenary
@@ -267,11 +297,11 @@ end
 -- @param  unitID  unit id, e.g. "player", "target" or "mouseover"
 -- @return true if the unit has enabled mercenary mode, false otherwise.
 function LibFroznFunctions:UnitIsMercenary(unitID)
-	if (UnitIsMercenary) then
-		return UnitIsMercenary(unitID);
+	if UnitIsMercenary then
+		return UnitIsMercenary(unitID)
 	end
-	
-	return false;
+
+	return false
 end
 
 -- create color from hex string
@@ -279,20 +309,24 @@ end
 -- @param  hexColor  color represented by hexadecimal digits in format AARRGGBB, e.g. "FFFF7C0A" (orange color for druid)
 -- @return ColorMixin
 function LibFroznFunctions:CreateColorFromHexString(hexColor)
-	if (CreateColorFromHexString) then
-		return CreateColorFromHexString(hexColor);
+	if CreateColorFromHexString then
+		return CreateColorFromHexString(hexColor)
 	end
-	
-	if (#hexColor == 8) then
+
+	if #hexColor == 8 then
 		local function ExtractColorValueFromHex(str, index)
-			return tonumber(str:sub(index, index + 1), 16) / 255;
+			return tonumber(str:sub(index, index + 1), 16) / 255
 		end
-		
-		local a, r, g, b = ExtractColorValueFromHex(hexColor, 1), ExtractColorValueFromHex(hexColor, 3), ExtractColorValueFromHex(hexColor, 5), ExtractColorValueFromHex(hexColor, 7);
-		
-		return CreateColor(r, g, b, a);
+
+		local a, r, g, b =
+			ExtractColorValueFromHex(hexColor, 1),
+			ExtractColorValueFromHex(hexColor, 3),
+			ExtractColorValueFromHex(hexColor, 5),
+			ExtractColorValueFromHex(hexColor, 7)
+
+		return CreateColor(r, g, b, a)
 	else
-		error("CreateColorFromHexString input must be hexadecimal digits in this format: AARRGGBB.");
+		error("CreateColorFromHexString input must be hexadecimal digits in this format: AARRGGBB.")
 	end
 end
 
@@ -311,25 +345,25 @@ end
 --          .extraInfo       optional. additional custom data.
 function LibFroznFunctions:SetupColorPickerAndShow(info)
 	-- since df 10.2.5
-	if (ColorPickerFrame) and (ColorPickerFrame.SetupColorPickerAndShow) then
-		ColorPickerFrame:SetupColorPickerAndShow(info);
-		return;
+	if ColorPickerFrame and ColorPickerFrame.SetupColorPickerAndShow then
+		ColorPickerFrame:SetupColorPickerAndShow(info)
+		return
 	end
-	
+
 	-- before df 10.2.5
-	OpenColorPicker(info);
+	OpenColorPicker(info)
 end
 
 -- get color alpha from color picker
 -- @return opacity value (0 = fully transparent, 1 = fully opaque)
 function LibFroznFunctions:GetColorAlphaFromColorPicker()
 	-- since df 10.2.5
-	if (ColorPickerFrame) and (ColorPickerFrame.GetColorAlpha) then
-		return ColorPickerFrame:GetColorAlpha();
+	if ColorPickerFrame and ColorPickerFrame.GetColorAlpha then
+		return ColorPickerFrame:GetColorAlpha()
 	end
-	
+
 	-- before df 10.2.5
-	return OpacitySliderFrame:GetValue();
+	return OpacitySliderFrame:GetValue()
 end
 
 -- get global string
@@ -337,14 +371,14 @@ end
 -- @param  str  name of localized global string constant
 -- @return localized global string constant, false/nil otherwise.
 function LibFroznFunctions:GetGlobalString(str)
-	if (_G[str]) then
-		return _G[str];
+	if _G[str] then
+		return _G[str]
 	end
-	
+
 	-- fallback if global string doesn't exist in classic
-	local locale = GetLocale();
-	
-	return LFF_GLOBAL_STRINGS[locale] and LFF_GLOBAL_STRINGS[locale][str];
+	local locale = GetLocale()
+
+	return LFF_GLOBAL_STRINGS[locale] and LFF_GLOBAL_STRINGS[locale][str]
 end
 
 -- get unit from tooltip
@@ -353,12 +387,12 @@ end
 -- @return name, unit id[, unit guid]
 function LibFroznFunctions:GetUnitFromTooltip(tooltip)
 	-- since df 10.0.2
-	if (TooltipUtil) then
-		return TooltipUtil.GetDisplayedUnit(tooltip);
+	if TooltipUtil then
+		return TooltipUtil.GetDisplayedUnit(tooltip)
 	end
-	
+
 	-- before df 10.0.2
-	return tooltip:GetUnit();
+	return tooltip:GetUnit()
 end
 
 -- hook tooltip's OnTooltipSetUnit
@@ -367,18 +401,18 @@ end
 -- @param callback  callback function. parameters: self, ... (additional payload)
 function LibFroznFunctions:HookScriptOnTooltipSetUnit(tip, callback)
 	-- before df 10.0.2
-	if (tip:HasScript("OnTooltipSetUnit")) then
-		tip:HookScript("OnTooltipSetUnit", callback);
-		return;
+	if tip:HasScript("OnTooltipSetUnit") then
+		tip:HookScript("OnTooltipSetUnit", callback)
+		return
 	end
-	
+
 	-- since df 10.0.2
-	if (TooltipDataProcessor) then
+	if TooltipDataProcessor then
 		TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Unit, function(self, ...)
-			if (self == tip) then
-				callback(self, ...);
+			if self == tip then
+				callback(self, ...)
 			end
-		end);
+		end)
 	end
 end
 
@@ -388,21 +422,21 @@ end
 -- @return itemName, itemLink[, item id]
 function LibFroznFunctions:GetItemFromTooltip(tooltip)
 	-- since df 10.0.2
-	if (TooltipUtil) then
-		if (tooltip:IsTooltipType(Enum.TooltipDataType.Toy)) then -- see TooltipUtil.GetDisplayedItem() in "TooltipUtil.lua"
-			local tooltipData = tooltip:GetTooltipData();
-			local itemLink = C_ToyBox.GetToyLink(tooltipData.id);
-			if (itemLink) then
-				local name = C_Item.GetItemInfo(itemLink);
-				return name, itemLink, tooltipData.id;
+	if TooltipUtil then
+		if tooltip:IsTooltipType(Enum.TooltipDataType.Toy) then -- see TooltipUtil.GetDisplayedItem() in "TooltipUtil.lua"
+			local tooltipData = tooltip:GetTooltipData()
+			local itemLink = C_ToyBox.GetToyLink(tooltipData.id)
+			if itemLink then
+				local name = C_Item.GetItemInfo(itemLink)
+				return name, itemLink, tooltipData.id
 			end
 		end
-		
-		return TooltipUtil.GetDisplayedItem(tooltip);
+
+		return TooltipUtil.GetDisplayedItem(tooltip)
 	end
-	
+
 	-- before df 10.0.2
-	return tooltip:GetItem();
+	return tooltip:GetItem()
 end
 
 -- get item level by unit and inventory slot
@@ -410,26 +444,26 @@ end
 -- @param  unitID           unit id, e.g. "player", "target" or "mouseover"
 -- @param  inventorySlotID  inventory slot id
 -- @return itemLevel, nil otherwise.
-local LFF_ITEM_TOOLTIP_ITEM_LEVEL_MAXLINE = 4;
-local LFF_ITEM_TOOLTIP_ITEM_LEVEL_PATTERN = ITEM_LEVEL:gsub("%%d", "(%%d+)");
+local LFF_ITEM_TOOLTIP_ITEM_LEVEL_MAXLINE = 4
+local LFF_ITEM_TOOLTIP_ITEM_LEVEL_PATTERN = ITEM_LEVEL:gsub("%%d", "(%%d+)")
 
 function LibFroznFunctions:GetItemLevelByUnitAndInventorySlot(unitID, inventorySlotID)
 	-- get item tooltip data because item level upgrades aren't considered in item links returned by GetInventoryItemLink()
-	local itemTooltipData = LibFroznFunctions:GetTooltipInfo("GetInventoryItem", unitID, inventorySlotID);
-	
+	local itemTooltipData = LibFroznFunctions:GetTooltipInfo("GetInventoryItem", unitID, inventorySlotID)
+
 	if (not itemTooltipData) or (type(itemTooltipData.lines) ~= "table") then
-		return nil;
+		return nil
 	end
-	
+
 	-- get item level from item tooltip data
 	for i = 2, min(#itemTooltipData.lines, LFF_ITEM_TOOLTIP_ITEM_LEVEL_MAXLINE) do
-		local lineLeftText = itemTooltipData.lines[i].leftText;
-		
-		if (type(lineLeftText) == "string") then
-			local itemLevel = tonumber(lineLeftText:match(LFF_ITEM_TOOLTIP_ITEM_LEVEL_PATTERN));
-			
-			if (itemLevel) then
-				return itemLevel;
+		local lineLeftText = itemTooltipData.lines[i].leftText
+
+		if type(lineLeftText) == "string" then
+			local itemLevel = tonumber(lineLeftText:match(LFF_ITEM_TOOLTIP_ITEM_LEVEL_PATTERN))
+
+			if itemLevel then
+				return itemLevel
 			end
 		end
 	end
@@ -441,18 +475,18 @@ end
 -- @param callback  callback function. parameters: self, ... (additional payload)
 function LibFroznFunctions:HookScriptOnTooltipSetItem(tip, callback)
 	-- before df 10.0.2
-	if (tip:HasScript("OnTooltipSetItem")) then
-		tip:HookScript("OnTooltipSetItem", callback);
-		return;
+	if tip:HasScript("OnTooltipSetItem") then
+		tip:HookScript("OnTooltipSetItem", callback)
+		return
 	end
-	
+
 	-- since df 10.0.2
-	if (TooltipDataProcessor) then
+	if TooltipDataProcessor then
 		TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Item, function(self, ...)
-			if (self == tip) then
-				callback(self, ...);
+			if self == tip then
+				callback(self, ...)
 			end
-		end);
+		end)
 	end
 end
 
@@ -462,12 +496,12 @@ end
 -- @return spellName, spellID
 function LibFroznFunctions:GetSpellFromTooltip(tooltip)
 	-- since df 10.0.2
-	if (TooltipUtil) then
-		return TooltipUtil.GetDisplayedSpell(tooltip);
+	if TooltipUtil then
+		return TooltipUtil.GetDisplayedSpell(tooltip)
 	end
-	
+
 	-- before df 10.0.2
-	return tooltip:GetSpell();
+	return tooltip:GetSpell()
 end
 
 -- hook tooltip's OnTooltipSetSpell
@@ -476,18 +510,18 @@ end
 -- @param callback  callback function. parameters: self, ... (additional payload)
 function LibFroznFunctions:HookScriptOnTooltipSetSpell(tip, callback)
 	-- before df 10.0.2
-	if (tip:HasScript("OnTooltipSetSpell")) then
-		tip:HookScript("OnTooltipSetSpell", callback);
-		return;
+	if tip:HasScript("OnTooltipSetSpell") then
+		tip:HookScript("OnTooltipSetSpell", callback)
+		return
 	end
-	
+
 	-- since df 10.0.2
-	if (TooltipDataProcessor) then
+	if TooltipDataProcessor then
 		TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Spell, function(self, ...)
-			if (self == tip) then
-				callback(self, ...);
+			if self == tip then
+				callback(self, ...)
 			end
-		end);
+		end)
 	end
 end
 
@@ -499,7 +533,7 @@ end
 --           .mawPowerRarityID  maw power rarity id
 --         returns nil if maw power doesn't exist.
 function LibFroznFunctions:GetMawPower(mawPowerID)
-	return LFF_MAWPOWERID_TO_MAWPOWER_LOOKUP[tonumber(mawPowerID)];
+	return LFF_MAWPOWERID_TO_MAWPOWER_LOOKUP[tonumber(mawPowerID)]
 end
 
 -- get spell data from enchant
@@ -510,7 +544,7 @@ end
 --           .spellIDDescription  (alternate) spell id for description. 0 if there is no specific (alternate) spell id for the description.
 --         returns nil if enchant doesn't exist.
 function LibFroznFunctions:GetSpellDataFromEnchant(enchantID)
-	return LFF_ENCHANTID_TO_SPELLID_LOOKUP[tonumber(enchantID)];
+	return LFF_ENCHANTID_TO_SPELLID_LOOKUP[tonumber(enchantID)]
 end
 
 -- get mount from tooltip
@@ -519,22 +553,22 @@ end
 -- @return mountName, mountID
 function LibFroznFunctions:GetMountFromTooltip(tooltip)
 	-- since df 10.0.2
-	if (TooltipUtil) then
+	if TooltipUtil then
 		if tooltip:IsTooltipType(Enum.TooltipDataType.Mount) then -- see TooltipUtil.GetDisplayedSpell() in "TooltipUtil.lua"
-			local tooltipData = tooltip:GetTooltipData();
-			local id = tooltipData.id;
-			local name = C_MountJournal.GetMountInfoByID(id);
-			return name, id;
+			local tooltipData = tooltip:GetTooltipData()
+			local id = tooltipData.id
+			local name = C_MountJournal.GetMountInfoByID(id)
+			return name, id
 		end
-		
-		return;
+
+		return
 	end
-	
+
 	-- before df 10.0.2
-	local spellName, spellID = tooltip:GetSpell();
-	local mountID = self:GetMountFromSpell(spellID);
-	
-	return spellName, mountID;
+	local spellName, spellID = tooltip:GetSpell()
+	local mountID = self:GetMountFromSpell(spellID)
+
+	return spellName, mountID
 end
 
 -- get mount from spell
@@ -545,12 +579,12 @@ end
 --         returns nil if spell/aura doesn't belong to a mount.
 function LibFroznFunctions:GetMountFromSpell(spellID)
 	-- since BfA 8.0.1
-	if (C_MountJournal) and (C_MountJournal.GetMountFromSpell) then
-		return C_MountJournal.GetMountFromSpell(spellID) or LFF_SPELLID_TO_MOUNTID_LOOKUP[tonumber(spellID)]; -- also check LFF_SPELLID_TO_MOUNTID_LOOKUP, because some mounted auras doesn't belong to a mount, e.g. "Running Wild" for worgen
+	if C_MountJournal and C_MountJournal.GetMountFromSpell then
+		return C_MountJournal.GetMountFromSpell(spellID) or LFF_SPELLID_TO_MOUNTID_LOOKUP[tonumber(spellID)] -- also check LFF_SPELLID_TO_MOUNTID_LOOKUP, because some mounted auras doesn't belong to a mount, e.g. "Running Wild" for worgen
 	end
-	
+
 	-- before BfA 8.0.1
-	return LFF_SPELLID_TO_MOUNTID_LOOKUP[tonumber(spellID)];
+	return LFF_SPELLID_TO_MOUNTID_LOOKUP[tonumber(spellID)]
 end
 
 -- get mount from item
@@ -561,12 +595,12 @@ end
 --         returns nil if spell/aura doesn't belong to a mount.
 function LibFroznFunctions:GetMountFromItem(itemID)
 	-- since BfA 8.1.0
-	if (C_MountJournal) and (C_MountJournal.GetMountFromItem) then
-		return C_MountJournal.GetMountFromItem(itemID) or LFF_ITEMID_TO_MOUNTID_LOOKUP[tonumber(itemID)]; -- also check LFF_ITEMID_TO_MOUNTID_LOOKUP, because some mount items doesn't belong to a mount, e.g. "Clutch of Ha-Li" (ItemID 173887)
+	if C_MountJournal and C_MountJournal.GetMountFromItem then
+		return C_MountJournal.GetMountFromItem(itemID) or LFF_ITEMID_TO_MOUNTID_LOOKUP[tonumber(itemID)] -- also check LFF_ITEMID_TO_MOUNTID_LOOKUP, because some mount items doesn't belong to a mount, e.g. "Clutch of Ha-Li" (ItemID 173887)
 	end
-	
+
 	-- before BfA 8.1.0
-	return LFF_ITEMID_TO_MOUNTID_LOOKUP[tonumber(itemID)];
+	return LFF_ITEMID_TO_MOUNTID_LOOKUP[tonumber(itemID)]
 end
 
 -- check if mount is collected
@@ -575,55 +609,55 @@ end
 -- @return true if mount is collected, false otherwise. returns nil if it can't be determined if the mount is collected.
 function LibFroznFunctions:IsMountCollected(mountID)
 	-- since Legion 7.0.3
-	if (C_MountJournal) and (C_MountJournal.GetMountInfoByID) then
-		return select(11, C_MountJournal.GetMountInfoByID(mountID));
+	if C_MountJournal and C_MountJournal.GetMountInfoByID then
+		return select(11, C_MountJournal.GetMountInfoByID(mountID))
 	end
-	
+
 	-- before Legion 7.0.3
-	if (GetNumCompanions) then
-		local numCompanionsOfMount = GetNumCompanions("MOUNT");
-		
-		if (numCompanionsOfMount) then -- function exists in classic era since 1.14.4 but returns nil
+	if GetNumCompanions then
+		local numCompanionsOfMount = GetNumCompanions("MOUNT")
+
+		if numCompanionsOfMount then -- function exists in classic era since 1.14.4 but returns nil
 			for index = 1, numCompanionsOfMount do
-				local creatureID = GetCompanionInfo("MOUNT", index);
-				
-				if (creatureID == mountID) then
-					return true;
+				local creatureID = GetCompanionInfo("MOUNT", index)
+
+				if creatureID == mountID then
+					return true
 				end
 			end
-			
-			return false;
+
+			return false
 		end
 	end
-	
+
 	-- before WotLK 3.0.2
-	if (C_Container) and (C_Container.GetContainerNumSlots) then
-		local lastBankBagSlot = ITEM_INVENTORY_BANK_BAG_OFFSET + NUM_BANKBAGSLOTS;
-		local firstReagentBagSlot, lastReagentBagSlot = NUM_BAG_SLOTS + 1, ITEM_INVENTORY_BANK_BAG_OFFSET;
-		
+	if C_Container and C_Container.GetContainerNumSlots then
+		local lastBankBagSlot = ITEM_INVENTORY_BANK_BAG_OFFSET + NUM_BANKBAGSLOTS
+		local firstReagentBagSlot, lastReagentBagSlot = NUM_BAG_SLOTS + 1, ITEM_INVENTORY_BANK_BAG_OFFSET
+
 		for bagID = BANK_CONTAINER, lastBankBagSlot do
 			if (bagID <= firstReagentBagSlot) or (bagID >= lastReagentBagSlot) then -- ignore reagent bags
-				local numSlots = C_Container.GetContainerNumSlots(bagID);
-				
+				local numSlots = C_Container.GetContainerNumSlots(bagID)
+
 				for slotIndex = 1, numSlots do
-					local itemLink = C_Container.GetContainerItemLink(bagID, slotIndex);
-					
-					if (itemLink) then
-						local linkType, itemID = itemLink:match("H?(%a+):(%d+)");
-						
-						if (itemID) then
-							local mountIDFromItem = self:GetMountFromItem(itemID);
-							
-							if (mountIDFromItem == mountID) then
-								return true;
+					local itemLink = C_Container.GetContainerItemLink(bagID, slotIndex)
+
+					if itemLink then
+						local linkType, itemID = itemLink:match("H?(%a+):(%d+)")
+
+						if itemID then
+							local mountIDFromItem = self:GetMountFromItem(itemID)
+
+							if mountIDFromItem == mountID then
+								return true
 							end
 						end
 					end
 				end
 			end
 		end
-		
-		return false;
+
+		return false
 	end
 end
 
@@ -632,14 +666,14 @@ end
 -- @return frame that currently has mouse focus
 function LibFroznFunctions:GetMouseFocus()
 	-- since tww 11.0.0
-	if (GetMouseFoci) then
-		local frames = GetMouseFoci();
-		
-		return frames and frames[1];
+	if GetMouseFoci then
+		local frames = GetMouseFoci()
+
+		return frames and frames[1]
 	end
-	
+
 	-- before tww 11.0.0
-	return GetMouseFocus();
+	return GetMouseFocus()
 end
 
 -- get spell info
@@ -648,17 +682,17 @@ end
 -- @return spellInfo
 function LibFroznFunctions:GetSpellInfo(spellIdentifier)
 	-- since tww 11.0.0
-	if (C_Spell) and (C_Spell.GetSpellInfo) then
-		if (not spellIdentifier) then
-			return nil;
+	if C_Spell and C_Spell.GetSpellInfo then
+		if not spellIdentifier then
+			return nil
 		end
-		
-		return C_Spell.GetSpellInfo(spellIdentifier);
+
+		return C_Spell.GetSpellInfo(spellIdentifier)
 	end
-	
+
 	-- before tww 11.0.0
-	local name, rank, iconID, castTime, minRange, maxRange, spellID, originalIconID = GetSpellInfo(spellIdentifier); -- [18.07.19] 8.0/BfA: 2nd param "rank/nameSubtext" now returns nil
-	
+	local name, rank, iconID, castTime, minRange, maxRange, spellID, originalIconID = GetSpellInfo(spellIdentifier) -- [18.07.19] 8.0/BfA: 2nd param "rank/nameSubtext" now returns nil
+
 	return {
 		name = name,
 		iconID = iconID,
@@ -666,8 +700,8 @@ function LibFroznFunctions:GetSpellInfo(spellIdentifier)
 		minRange = minRange,
 		maxRange = maxRange,
 		spellID = spellID,
-		originalIconID = originalIconID
-	};
+		originalIconID = originalIconID,
+	}
 end
 
 -- get spell texture
@@ -676,16 +710,16 @@ end
 -- @return iconID
 function LibFroznFunctions:GetSpellTexture(spellIdentifier)
 	-- since tww 11.0.0
-	if (C_Spell) and (C_Spell.GetSpellTexture) then
-		if (not spellIdentifier) then
-			return nil;
+	if C_Spell and C_Spell.GetSpellTexture then
+		if not spellIdentifier then
+			return nil
 		end
-		
-		return C_Spell.GetSpellTexture(spellIdentifier);
+
+		return C_Spell.GetSpellTexture(spellIdentifier)
 	end
-	
+
 	-- before tww 11.0.0
-	return GetSpellTexture(spellIdentifier);
+	return GetSpellTexture(spellIdentifier)
 end
 
 -- get spell subtext
@@ -694,16 +728,16 @@ end
 -- @return subtext
 function LibFroznFunctions:GetSpellSubtext(spellIdentifier)
 	-- since tww 11.0.0
-	if (C_Spell) and (C_Spell.GetSpellSubtext) then
-		if (not spellIdentifier) then
-			return nil;
+	if C_Spell and C_Spell.GetSpellSubtext then
+		if not spellIdentifier then
+			return nil
 		end
-		
-		return C_Spell.GetSpellSubtext(spellIdentifier);
+
+		return C_Spell.GetSpellSubtext(spellIdentifier)
 	end
-	
+
 	-- before tww 11.0.0
-	return GetSpellSubtext(spellIdentifier);
+	return GetSpellSubtext(spellIdentifier)
 end
 
 -- get spell link
@@ -713,23 +747,28 @@ end
 -- @return spellLink
 function LibFroznFunctions:GetSpellLink(spellIdentifier, glyphID)
 	-- before bc 2.3.0
-	if (not self.hasWoWFlavor.realGetSpellLinkAvailable) then
-		local spellInfo = self:GetSpellInfo(spellIdentifier);
-		
-		return format("|c%s|Hspell:%d:0|h[%s]|h|r", "FF71D5FF", spellInfo and spellInfo.spellID, spellInfo and spellInfo.name);
+	if not self.hasWoWFlavor.realGetSpellLinkAvailable then
+		local spellInfo = self:GetSpellInfo(spellIdentifier)
+
+		return format(
+			"|c%s|Hspell:%d:0|h[%s]|h|r",
+			"FF71D5FF",
+			spellInfo and spellInfo.spellID,
+			spellInfo and spellInfo.name
+		)
 	end
-	
+
 	-- since tww 11.0.0
-	if (C_Spell) and (C_Spell.GetSpellLink) then
-		if (not spellIdentifier) then
-			return nil;
+	if C_Spell and C_Spell.GetSpellLink then
+		if not spellIdentifier then
+			return nil
 		end
-		
-		return C_Spell.GetSpellLink(spellIdentifier, glyphID);
+
+		return C_Spell.GetSpellLink(spellIdentifier, glyphID)
 	end
-	
+
 	-- before tww 11.0.0
-	return GetSpellLink(spellIdentifier);
+	return GetSpellLink(spellIdentifier)
 end
 
 -- get spell book item name
@@ -737,17 +776,21 @@ end
 -- @param  index                spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
 -- @param  bookTypeOrSpellBank  LFF_BOOKTYPE_SPELL_OR_SPELLBANK_PLAYER or LFF_BOOKTYPE_PET_OR_SPELLBANK_PET depending on if you wish to query the player or pet spellbook.
 -- @return spellName, spellSubName, spellID
-LFF_BOOKTYPE_SPELL_OR_SPELLBANK_PLAYER = (C_SpellBook) and (C_SpellBook.GetSpellBookItemName) and (Enum.SpellBookSpellBank.Player) or BOOKTYPE_SPELL; -- see SpellBookSpellBank in "SpellBookConstantsDocumentation.lua"
-LFF_BOOKTYPE_PET_OR_SPELLBANK_PET = (C_SpellBook) and (C_SpellBook.GetSpellBookItemName) and (Enum.SpellBookSpellBank.Pet) or BOOKTYPE_PET;
+LFF_BOOKTYPE_SPELL_OR_SPELLBANK_PLAYER = C_SpellBook
+		and C_SpellBook.GetSpellBookItemName
+		and Enum.SpellBookSpellBank.Player
+	or BOOKTYPE_SPELL -- see SpellBookSpellBank in "SpellBookConstantsDocumentation.lua"
+LFF_BOOKTYPE_PET_OR_SPELLBANK_PET = C_SpellBook and C_SpellBook.GetSpellBookItemName and Enum.SpellBookSpellBank.Pet
+	or BOOKTYPE_PET
 
 function LibFroznFunctions:GetSpellBookItemName(index, bookTypeOrSpellBank)
 	-- since tww 11.0.0
-	if (C_SpellBook) and (C_SpellBook.GetSpellBookItemName) then
-		return C_SpellBook.GetSpellBookItemName(index, bookTypeOrSpellBank);
+	if C_SpellBook and C_SpellBook.GetSpellBookItemName then
+		return C_SpellBook.GetSpellBookItemName(index, bookTypeOrSpellBank)
 	end
-	
+
 	-- before tww 11.0.0
-	return GetSpellBookItemName(index, bookTypeOrSpellBank);
+	return GetSpellBookItemName(index, bookTypeOrSpellBank)
 end
 
 -- get spell book item texture
@@ -757,12 +800,12 @@ end
 -- @return spellName, spellSubName, spellID
 function LibFroznFunctions:GetSpellBookItemTexture(index, bookTypeOrSpellBank)
 	-- since tww 11.0.0
-	if (C_SpellBook) and (C_SpellBook.GetSpellBookItemTexture) then
-		return C_SpellBook.GetSpellBookItemTexture(index, bookTypeOrSpellBank);
+	if C_SpellBook and C_SpellBook.GetSpellBookItemTexture then
+		return C_SpellBook.GetSpellBookItemTexture(index, bookTypeOrSpellBank)
 	end
-	
+
 	-- before tww 11.0.0
-	return GetSpellBookItemTexture(index, bookTypeOrSpellBank);
+	return GetSpellBookItemTexture(index, bookTypeOrSpellBank)
 end
 
 -- get spell book item info
@@ -770,34 +813,34 @@ end
 -- @param  index                spellbook slot index, ranging from 1 through the total number of spells across all tabs and pages.
 -- @param  bookTypeOrSpellBank  LFF_BOOKTYPE_SPELL_OR_SPELLBANK_PLAYER or LFF_BOOKTYPE_PET_OR_SPELLBANK_PET depending on if you wish to query the player or pet spellbook.
 -- @return spellBookItemInfo
-LFF_SPELLBOOK_ITEM_TYPE = Enum.SpellBookItemType; -- see SpellBookItemType in "SpellBookConstantsDocumentation.lua"
+LFF_SPELLBOOK_ITEM_TYPE = Enum.SpellBookItemType -- see SpellBookItemType in "SpellBookConstantsDocumentation.lua"
 
-if (not LFF_SPELLBOOK_ITEM_TYPE) then
+if not LFF_SPELLBOOK_ITEM_TYPE then
 	LFF_SPELLBOOK_ITEM_TYPE = {
 		None = 0,
 		Spell = 1,
 		FutureSpell = 2,
 		PetAction = 3,
-		Flyout = 4
-	};
+		Flyout = 4,
+	}
 end
 
 function LibFroznFunctions:GetSpellBookItemInfo(index, bookTypeOrSpellBank)
 	-- since tww 11.0.0
-	if (C_SpellBook) and (C_SpellBook.GetSpellBookItemInfo) then
-		return C_SpellBook.GetSpellBookItemInfo(index, bookTypeOrSpellBank);
+	if C_SpellBook and C_SpellBook.GetSpellBookItemInfo then
+		return C_SpellBook.GetSpellBookItemInfo(index, bookTypeOrSpellBank)
 	end
-	
+
 	-- before tww 11.0.0
-	local spellType, id = GetSpellBookItemInfo(index, bookTypeOrSpellBank);
-	
+	local spellType, id = GetSpellBookItemInfo(index, bookTypeOrSpellBank)
+
 	local spellTypeToSpellBookItemTypeLookup = { -- see SpellBookItemType in "SpellBookConstantsDocumentation.lua"
 		SPELL = LFF_SPELLBOOK_ITEM_TYPE.Spell,
 		FUTURESPELL = LFF_SPELLBOOK_ITEM_TYPE.FutureSpell,
 		PETACTION = LFF_SPELLBOOK_ITEM_TYPE.PetAction,
-		FLYOUT = LFF_SPELLBOOK_ITEM_TYPE.Flyout
-	};
-	
+		FLYOUT = LFF_SPELLBOOK_ITEM_TYPE.Flyout,
+	}
+
 	return {
 		actionID = id,
 		spellID = nil,
@@ -807,8 +850,8 @@ function LibFroznFunctions:GetSpellBookItemInfo(index, bookTypeOrSpellBank)
 		iconID = nil,
 		isPassive = nil,
 		isOffSpec = nil,
-		skillLineIndex = nil
-	};
+		skillLineIndex = nil,
+	}
 end
 
 -- has pet spells
@@ -816,12 +859,12 @@ end
 -- @return numPetSpells, petNameToken. returns numPetSpells = nil for feral spirit (shaman wolves) in wotlkc.
 function LibFroznFunctions:HasPetSpells()
 	-- since tww 11.0.0
-	if (C_SpellBook) and (C_SpellBook.HasPetSpells) then
-		return C_SpellBook.HasPetSpells();
+	if C_SpellBook and C_SpellBook.HasPetSpells then
+		return C_SpellBook.HasPetSpells()
 	end
-	
+
 	-- before tww 11.0.0
-	return HasPetSpells();
+	return HasPetSpells()
 end
 
 -- get quest currency info
@@ -831,14 +874,14 @@ end
 -- @return questRewardCurrencyInfo
 function LibFroznFunctions:GetQuestCurrencyInfo(itemType, currencyIndex)
 	-- since tww 11.0.0
-	if (C_QuestOffer) and (C_QuestOffer.GetQuestRewardCurrencyInfo) then
-		return C_QuestOffer.GetQuestRewardCurrencyInfo(itemType, currencyIndex);
+	if C_QuestOffer and C_QuestOffer.GetQuestRewardCurrencyInfo then
+		return C_QuestOffer.GetQuestRewardCurrencyInfo(itemType, currencyIndex)
 	end
-	
+
 	-- before tww 11.0.0
-	local name, texture, quantity, quality = GetQuestCurrencyInfo(itemType, currencyIndex);
-	local currencyID = GetQuestCurrencyID(itemType, currencyIndex);
-	
+	local name, texture, quantity, quality = GetQuestCurrencyInfo(itemType, currencyIndex)
+	local currencyID = GetQuestCurrencyID(itemType, currencyIndex)
+
 	return {
 		texture = texture,
 		name = name,
@@ -847,8 +890,8 @@ function LibFroznFunctions:GetQuestCurrencyInfo(itemType, currencyIndex)
 		baseRewardAmount = nil,
 		bonusRewardAmount = nil,
 		totalRewardAmount = quantity,
-		questRewardContextFlags = nil
-	};
+		questRewardContextFlags = nil,
+	}
 end
 
 -- get quest log reward currency info
@@ -859,13 +902,13 @@ end
 -- @return questRewardCurrencyInfo
 function LibFroznFunctions:GetQuestLogRewardCurrencyInfo(questID, currencyIndex, isChoice)
 	-- since tww 11.0.0
-	if (C_QuestLog) and (C_QuestLog.GetQuestRewardCurrencyInfo) then
-		return C_QuestLog.GetQuestRewardCurrencyInfo(questID, currencyIndex, isChoice);
+	if C_QuestLog and C_QuestLog.GetQuestRewardCurrencyInfo then
+		return C_QuestLog.GetQuestRewardCurrencyInfo(questID, currencyIndex, isChoice)
 	end
-	
+
 	-- before tww 11.0.0
-	local name, texture, quantity, currencyID, quality = GetQuestLogRewardCurrencyInfo(currencyIndex, questID, isChoice);
-	
+	local name, texture, quantity, currencyID, quality = GetQuestLogRewardCurrencyInfo(currencyIndex, questID, isChoice)
+
 	return {
 		texture = texture,
 		name = name,
@@ -874,8 +917,8 @@ function LibFroznFunctions:GetQuestLogRewardCurrencyInfo(questID, currencyIndex,
 		baseRewardAmount = nil,
 		bonusRewardAmount = nil,
 		totalRewardAmount = quantity,
-		questRewardContextFlags = nil
-	};
+		questRewardContextFlags = nil,
+	}
 end
 
 -- get specialization
@@ -886,12 +929,12 @@ end
 -- @return currentSpec. returns nil if no specialization is currently learned.
 function LibFroznFunctions:GetSpecialization(isInspect, isPet, specGroup)
 	-- since mopc 5.5.0
-	if (C_SpecializationInfo) and (C_SpecializationInfo.GetSpecialization) then
-		return C_SpecializationInfo.GetSpecialization(isInspect, isPet, specGroup);
+	if C_SpecializationInfo and C_SpecializationInfo.GetSpecialization then
+		return C_SpecializationInfo.GetSpecialization(isInspect, isPet, specGroup)
 	end
-	
+
 	-- before mopc 5.5.0
-	return GetSpecialization(isInspect, isPet, specGroup);
+	return GetSpecialization(isInspect, isPet, specGroup)
 end
 
 -- get specialization info
@@ -904,12 +947,12 @@ end
 -- @return id, name, description, icon, role, primaryStat
 function LibFroznFunctions:GetSpecializationInfo(specIndex, isInspect, isPet, inspectTarget, sex)
 	-- since mopc 5.5.0
-	if (C_SpecializationInfo) and (C_SpecializationInfo.GetSpecializationInfo) then
-		return C_SpecializationInfo.GetSpecializationInfo(specIndex, isInspect, isPet, inspectTarget, sex);
+	if C_SpecializationInfo and C_SpecializationInfo.GetSpecializationInfo then
+		return C_SpecializationInfo.GetSpecializationInfo(specIndex, isInspect, isPet, inspectTarget, sex)
 	end
-	
+
 	-- before mopc 5.5.0
-	return GetSpecializationInfo(specIndex, isInspect, isPet, inspectTarget, sex);
+	return GetSpecializationInfo(specIndex, isInspect, isPet, inspectTarget, sex)
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -923,15 +966,15 @@ end
 -- @param  ...             values, e.g. "Bob"
 -- @return text with replaced parts
 function LibFroznFunctions:ReplaceText(text, replacements, ...)
-	local newText = tostring(text);
-	
-	if (type(replacements) == "table") then
+	local newText = tostring(text)
+
+	if type(replacements) == "table" then
 		for key, replacement in pairs(replacements) do
-			newText = string.gsub(newText, key, replacement);
+			newText = string.gsub(newText, key, replacement)
 		end
 	end
-	
-	return string.format(newText, ...);
+
+	return string.format(newText, ...)
 end
 
 -- format text
@@ -941,15 +984,15 @@ end
 -- @param  ...             values, e.g. UnitHealth("player")
 -- @return formatted text
 function LibFroznFunctions:FormatText(text, replacements, ...)
-	local newText = tostring(text);
-	
-	if (type(replacements) == "table") then
+	local newText = tostring(text)
+
+	if type(replacements) == "table" then
 		for key, replacement in pairs(replacements) do
-			newText = string.gsub(newText, "{" .. key .. "}", replacement);
+			newText = string.gsub(newText, "{" .. key .. "}", replacement)
 		end
 	end
-	
-	return string.format(newText, ...);
+
+	return string.format(newText, ...)
 end
 
 -- remove pattern from end of text multiple times
@@ -958,15 +1001,15 @@ end
 -- @param  pattern  pattern to remove multiple times from end of text
 -- @return text with removed pattern from the end of multiple times
 function LibFroznFunctions:RemovePatternFromEndOfTextMultipleTimes(text, pattern)
-	local newText = tostring(text);
-	
-	newText = newText:gsub(pattern .. "$", "");
-	
-	if (newText == text) then
-		return newText;
+	local newText = tostring(text)
+
+	newText = newText:gsub(pattern .. "$", "")
+
+	if newText == text then
+		return newText
 	end
-	
-	return self:RemovePatternFromEndOfTextMultipleTimes(newText, pattern);
+
+	return self:RemovePatternFromEndOfTextMultipleTimes(newText, pattern)
 end
 
 -- remove colors from text
@@ -974,7 +1017,7 @@ end
 -- @param  text     text to remove colors from
 -- @return text with removed colors
 function LibFroznFunctions:RemoveColorsFromText(text)
-	return tostring(text):gsub("|c%x%x%x%x%x%x%x%x(.-)|r", "%1");
+	return tostring(text):gsub("|c%x%x%x%x%x%x%x%x(.-)|r", "%1")
 end
 
 -- camel case text
@@ -982,9 +1025,9 @@ end
 -- @param  text  text to camel case, e.g. "warrior" or "WARRIOR"
 -- @return camel cased text
 function LibFroznFunctions:CamelCaseText(text)
-	local newText = tostring(text);
-	
-	return (newText:lower():gsub("^%l", string.upper));
+	local newText = tostring(text)
+
+	return (newText:lower():gsub("^%l", string.upper))
 end
 
 -- format number
@@ -993,47 +1036,47 @@ end
 -- @param  abbreviate  optional. true if number should be abbreviated.
 -- @return formatted number
 function LibFroznFunctions:FormatNumber(number, abbreviate)
-	local realNumber = tonumber(number);
-	
-	if (abbreviate) then
+	local realNumber = tonumber(number)
+
+	if abbreviate then
 		-- use the correct symbol for long scale number locales
-		local BILLION_NUMBER = 10^9;
-		local locale = GetLocale();
-		
-		if (self:ExistsInTable(quality, { "frFR", "esMX", "esES" })) then
-			BILLION_NUMBER = 10^12
+		local BILLION_NUMBER = 10 ^ 9
+		local locale = GetLocale()
+
+		if self:ExistsInTable(quality, { "frFR", "esMX", "esES" }) then
+			BILLION_NUMBER = 10 ^ 12
 		end
-		
-		local absRealNumber = math.abs(realNumber);
-		local abbreviatedRealNumber, abbreviatedFormat;
-		
-		if (absRealNumber >= BILLION_NUMBER) then
-			abbreviatedFormat = "%.1fb";
-			abbreviatedRealNumber = realNumber / BILLION_NUMBER;
-		elseif (absRealNumber >= 1000000000) then
-			abbreviatedFormat = "%.0fm";
-			abbreviatedRealNumber = realNumber / 1000000;
-		elseif (absRealNumber >= 10000000) then
-			abbreviatedFormat = "%.1fm";
-			abbreviatedRealNumber = realNumber / 1000000;
-		elseif (absRealNumber >= 1000000) then
-			abbreviatedFormat = "%.2fm";
-			abbreviatedRealNumber = realNumber / 1000000;
-		elseif (absRealNumber >= 100000) then
-			abbreviatedFormat = "%.0fk";
-			abbreviatedRealNumber = realNumber / 1000;
-		elseif (absRealNumber >= 10000) then
-			abbreviatedFormat = "%.1fk";
-			abbreviatedRealNumber = realNumber / 1000;
+
+		local absRealNumber = math.abs(realNumber)
+		local abbreviatedRealNumber, abbreviatedFormat
+
+		if absRealNumber >= BILLION_NUMBER then
+			abbreviatedFormat = "%.1fb"
+			abbreviatedRealNumber = realNumber / BILLION_NUMBER
+		elseif absRealNumber >= 1000000000 then
+			abbreviatedFormat = "%.0fm"
+			abbreviatedRealNumber = realNumber / 1000000
+		elseif absRealNumber >= 10000000 then
+			abbreviatedFormat = "%.1fm"
+			abbreviatedRealNumber = realNumber / 1000000
+		elseif absRealNumber >= 1000000 then
+			abbreviatedFormat = "%.2fm"
+			abbreviatedRealNumber = realNumber / 1000000
+		elseif absRealNumber >= 100000 then
+			abbreviatedFormat = "%.0fk"
+			abbreviatedRealNumber = realNumber / 1000
+		elseif absRealNumber >= 10000 then
+			abbreviatedFormat = "%.1fk"
+			abbreviatedRealNumber = realNumber / 1000
 		else
-			abbreviatedFormat = "%.0f";
-			abbreviatedRealNumber = realNumber;
+			abbreviatedFormat = "%.0f"
+			abbreviatedRealNumber = realNumber
 		end
-		
-		return string.format(abbreviatedFormat, abbreviatedRealNumber);
+
+		return string.format(abbreviatedFormat, abbreviatedRealNumber)
 	end
-	
-	return BreakUpLargeNumbers(realNumber);
+
+	return BreakUpLargeNumbers(realNumber)
 end
 
 -- convert to table
@@ -1041,7 +1084,7 @@ end
 -- @param  obj   object
 -- @return object as table
 function LibFroznFunctions:ConvertToTable(obj)
-	return (type(obj) == "table") and obj or { obj };
+	return (type(obj) == "table") and obj or { obj }
 end
 
 -- check if table is empty
@@ -1050,12 +1093,12 @@ end
 -- @return true if table is empty, false otherwise. returns nil if table is missing/invalid.
 function LibFroznFunctions:IsTableEmpty(tab)
 	-- no table
-	if (type(tab) ~= "table") then
-		return;
+	if type(tab) ~= "table" then
+		return
 	end
-	
+
 	-- check if table is empty
-	return (next(tab) == nil);
+	return (next(tab) == nil)
 end
 
 -- remove items from table
@@ -1065,28 +1108,28 @@ end
 -- @return number of removed items
 function LibFroznFunctions:RemoveFromTable(tab, removeFn)
 	-- no table
-	if (type(tab) ~= "table") then
-		return 0;
+	if type(tab) ~= "table" then
+		return 0
 	end
-	
+
 	-- remove items from table
-	local tabLength = #tab;
-	local secondIndex = 0;
-	
+	local tabLength = #tab
+	local secondIndex = 0
+
 	for index = 1, tabLength do
-		if (removeFn(tab[index])) then
-			tab[index] = nil;
+		if removeFn(tab[index]) then
+			tab[index] = nil
 		else
-			secondIndex = secondIndex + 1;
-			
-			if (index ~= secondIndex) then
-				tab[secondIndex] = tab[index];
-				tab[index] = nil;
+			secondIndex = secondIndex + 1
+
+			if index ~= secondIndex then
+				tab[secondIndex] = tab[index]
+				tab[index] = nil
 			end
 		end
 	end
-	
-	return tabLength - secondIndex;
+
+	return tabLength - secondIndex
 end
 
 -- remove all items from table
@@ -1095,20 +1138,20 @@ end
 -- @param shallow  optional. true if only values on the first level should be removed, false/nil if deeper nested values should also be removed.
 function LibFroznFunctions:RemoveAllFromTable(tab, shallow)
 	-- no table
-	if (type(tab) ~= "table") then
-		return;
+	if type(tab) ~= "table" then
+		return
 	end
-	
+
 	-- remove all items from table
-	if (not shallow) then
+	if not shallow then
 		for key, value in pairs(tab) do
-			if (type(value) == "table") then
-				self:RemoveAllFromTable(value);
+			if type(value) == "table" then
+				self:RemoveAllFromTable(value)
 			end
 		end
 	end
-	
-	wipe(tab);
+
+	wipe(tab)
 end
 
 -- chain tables
@@ -1117,29 +1160,29 @@ end
 -- @param  alternateTable[]  alternate table
 -- @return chained table[]
 function LibFroznFunctions:ChainTables(leadingTable, alternateTable)
-	local oldLeadingTableMetatable = getmetatable(leadingTable);
-	
+	local oldLeadingTableMetatable = getmetatable(leadingTable)
+
 	return setmetatable(leadingTable, {
 		__index = function(tab, index)
 			-- check if value exists in alternate table
-			local value = alternateTable[index];
-			
-			if (value ~= nil) then
-				return value;
+			local value = alternateTable[index]
+
+			if value ~= nil then
+				return value
 			end
-			
+
 			-- check if value exists in old metatable of leading table
-			if (not oldLeadingTableMetatable) or (not oldLeadingTableMetatable.__index) then
-				return;
+			if (not oldLeadingTableMetatable) or not oldLeadingTableMetatable.__index then
+				return
 			end
-			
-			if (type(oldLeadingTableMetatable.__index) == "table") then
-				return oldLeadingTableMetatable.__index[index];
+
+			if type(oldLeadingTableMetatable.__index) == "table" then
+				return oldLeadingTableMetatable.__index[index]
 			end
-			
-			return oldLeadingTableMetatable.__index(tab, index);
-		end
-	});
+
+			return oldLeadingTableMetatable.__index(tab, index)
+		end,
+	})
 end
 
 -- create push array
@@ -1170,73 +1213,73 @@ end
 local pushArray = {
 	__index = {
 		Clear = function(tab)
-			wipe(tab);
+			wipe(tab)
 		end,
 		Push = function(tab, value)
-			tab.next = value;
+			tab.next = value
 		end,
 		PushUnique = function(tab, value)
-			if (tab:Contains(value)) then
-				return;
+			if tab:Contains(value) then
+				return
 			end
-			tab.next = value;
+			tab.next = value
 		end,
 		PushUniqueOnTop = function(tab, value)
-			tab:Remove(value);
-			tab.next = value;
+			tab:Remove(value)
+			tab.next = value
 		end,
 		count = 0,
 		GetCount = function(tab)
-			return tab.count;
+			return tab.count
 		end,
 		Contains = function(tab, value)
 			for _, _value in ipairs(tab) do
-				if (_value == value) then
-					return true;
+				if _value == value then
+					return true
 				end
 			end
-			return false;
+			return false
 		end,
 		Pop = function(tab)
-			if (tab.count > 0) then
-				local value = rawget(tab, tab.count);
-				tab.last = nil;
-				return value;
+			if tab.count > 0 then
+				local value = rawget(tab, tab.count)
+				tab.last = nil
+				return value
 			end
 		end,
 		Remove = function(tab, value)
 			local itemsRemoved = LibFroznFunctions:RemoveFromTable(tab, function(_value)
-				return (_value == value);
-			end);
-			tab.count = tab.count - itemsRemoved;
-			return itemsRemoved;
+				return (_value == value)
+			end)
+			tab.count = tab.count - itemsRemoved
+			return itemsRemoved
 		end,
 		Concat = function(tab, sep)
-			return table.concat(tab, sep);
-		end
+			return table.concat(tab, sep)
+		end,
 	},
 	__newindex = function(tab, key, value)
-		if (key == "next") then
-			if (value ~= nil) then
-				tab.count = tab.count + 1;
-				tab.last = value;
+		if key == "next" then
+			if value ~= nil then
+				tab.count = tab.count + 1
+				tab.last = value
 			end
-		elseif (key == "last") then
-			if (tab.count > 0) then
-				rawset(tab, tab.count, value);
-				
-				if (value == nil) then
-					tab.count = tab.count - 1;
+		elseif key == "last" then
+			if tab.count > 0 then
+				rawset(tab, tab.count, value)
+
+				if value == nil then
+					tab.count = tab.count - 1
 				end
 			end
 		else
-			rawset(tab, key, value);
+			rawset(tab, key, value)
 		end
-	end
-};
+	end,
+}
 
 function LibFroznFunctions:CreatePushArray(optionalTable)
-	return setmetatable(optionalTable or {}, pushArray);
+	return setmetatable(optionalTable or {}, pushArray)
 end
 
 -- create linked table from table with key
@@ -1248,21 +1291,21 @@ end
 function LibFroznFunctions:CreateLinkedTableFromTableWithKey(originalTable, keyFromOriginalTable)
 	local linkedTableMeta = {
 		__index = function(tab, key, arg1)
-			if (key == "__GetLinkedTable") then
-				return originalTable[keyFromOriginalTable];
+			if key == "__GetLinkedTable" then
+				return originalTable[keyFromOriginalTable]
 			end
-			
-			return originalTable[keyFromOriginalTable][key];
+
+			return originalTable[keyFromOriginalTable][key]
 		end,
 		__newindex = function(tab, key, value)
-			originalTable[keyFromOriginalTable][key] = value;
+			originalTable[keyFromOriginalTable][key] = value
 		end,
 		__call = function(tab, ...)
-			return originalTable(...);
-		end
-	};
-	
-	return setmetatable({}, linkedTableMeta);
+			return originalTable(...)
+		end,
+	}
+
+	return setmetatable({}, linkedTableMeta)
 end
 
 -- check if item exists in table
@@ -1272,18 +1315,18 @@ end
 -- @return true if item exists in table, false otherwise.
 function LibFroznFunctions:ExistsInTable(value, tab)
 	-- no table
-	if (type(tab) ~= "table") then
-		return;
+	if type(tab) ~= "table" then
+		return
 	end
-	
+
 	-- check if item exists in table
 	for _, _value in ipairs(tab) do
-		if (_value == value) then
-			return true;
+		if _value == value then
+			return true
 		end
 	end
-	
-	return false;
+
+	return false
 end
 
 -- check if table equals table
@@ -1294,40 +1337,40 @@ end
 -- @return true if table equals table, false otherwise.
 function LibFroznFunctions:TableEqualsTable(tab, otherTab, shallow)
 	-- no table
-	if (type(tab) ~= "table") then
-		return false;
+	if type(tab) ~= "table" then
+		return false
 	end
-	if (type(otherTab) ~= "table") then
-		return false;
+	if type(otherTab) ~= "table" then
+		return false
 	end
-	
+
 	-- check if table equals table
 	for key, value in pairs(tab) do
-		local otherValue = otherTab[key];
-		
-		if (value ~= otherValue) then
-			return false;
+		local otherValue = otherTab[key]
+
+		if value ~= otherValue then
+			return false
 		end
 		if (not shallow) and (type(value) == "table") then
-			if (not self:TableEqualsTable(value, otherValue)) then
-				return false;
+			if not self:TableEqualsTable(value, otherValue) then
+				return false
 			end
 		end
 	end
 	for otherKey, otherValue in pairs(otherTab) do
-		local value = tab[otherKey];
-		
-		if (otherValue ~= value) then
-			return false;
+		local value = tab[otherKey]
+
+		if otherValue ~= value then
+			return false
 		end
-		if (type(otherValue) == "table") then
+		if type(otherValue) == "table" then
 			if (not shallow) and (not self:TableEqualsTable(otherValue, value)) then
-				return false;
+				return false
 			end
 		end
 	end
-	
-	return true;
+
+	return true
 end
 
 -- call function and suppress error message and speech
@@ -1336,25 +1379,25 @@ end
 -- @return return values of function to call. returns nil if function to call is missing/invalid.
 function LibFroznFunctions:CallFunctionAndSuppressErrorMessageAndSpeech(func)
 	-- no function to call
-	if (type(func) ~= "function") then
-		return;
+	if type(func) ~= "function" then
+		return
 	end
-	
+
 	-- call function and suppress error message and speech
 	-- local oldCVarSound_EnableErrorSpeech = GetCVar("Sound_EnableErrorSpeech");
-	
+
 	-- SetCVar("Sound_EnableErrorSpeech", 0);
-	
-	UIErrorsFrame:UnregisterEvent("UI_ERROR_MESSAGE");
-	
-	local values = { func() };
-	
+
+	UIErrorsFrame:UnregisterEvent("UI_ERROR_MESSAGE")
+
+	local values = { func() }
+
 	-- UIErrorsFrame:Clear();
 	-- SetCVar("Sound_EnableErrorSpeech", oldCVarSound_EnableErrorSpeech);
-	
-	UIErrorsFrame:RegisterEvent("UI_ERROR_MESSAGE");
-	
-	return unpack(values);
+
+	UIErrorsFrame:RegisterEvent("UI_ERROR_MESSAGE")
+
+	return unpack(values)
 end
 
 -- get value from object by path
@@ -1363,17 +1406,17 @@ end
 -- @param  path  path into object, e.g. "info.tooltipData.type"
 -- @return return value from path into object, nil otherwise.
 function LibFroznFunctions:GetValueFromObjectByPath(obj, path)
-	local currentObject = obj;
-	
+	local currentObject = obj
+
 	for partOfPath in tostring(path):gmatch("([^.]+)") do
-		if (type(currentObject) ~= "table") then
-			return;
+		if type(currentObject) ~= "table" then
+			return
 		end
-		
-		currentObject = currentObject[partOfPath];
+
+		currentObject = currentObject[partOfPath]
 	end
-	
-	return currentObject;
+
+	return currentObject
 end
 
 -- mixin missing objects
@@ -1383,16 +1426,16 @@ end
 -- @return object with mixins excluding already existing objects
 function LibFroznFunctions:MixinMissingObjects(obj, ...)
 	for i = 1, select("#", ...) do -- see "Mixin.lua"
-		local mixin = select(i, ...);
-		
+		local mixin = select(i, ...)
+
 		for k, v in pairs(mixin) do
-			if (obj[k] == nil) then
-				obj[k] = v;
+			if obj[k] == nil then
+				obj[k] = v
 			end
 		end
 	end
 
-	return obj;
+	return obj
 end
 
 -- mixin differing objects
@@ -1402,16 +1445,16 @@ end
 -- @return object with mixins excluding equal objects
 function LibFroznFunctions:MixinDifferingObjects(obj, ...)
 	for i = 1, select("#", ...) do -- see "Mixin.lua"
-		local mixin = select(i, ...);
-		
+		local mixin = select(i, ...)
+
 		for k, v in pairs(mixin) do
-			if (obj[k] ~= v) then
-				obj[k] = v;
+			if obj[k] ~= v then
+				obj[k] = v
 			end
 		end
 	end
 
-	return obj;
+	return obj
 end
 
 -- mixin whole objects
@@ -1420,27 +1463,27 @@ end
 -- @param  ...   mixins to mixin
 -- @return object with mixins removing not existing objects
 function LibFroznFunctions:MixinWholeObjects(obj, ...)
-	local keysProcessed = {};
-	
+	local keysProcessed = {}
+
 	for i = 1, select("#", ...) do -- see "Mixin.lua"
-		local mixin = select(i, ...);
-		
+		local mixin = select(i, ...)
+
 		for k, v in pairs(mixin) do
-			if (obj[k] ~= v) then
-				obj[k] = v;
+			if obj[k] ~= v then
+				obj[k] = v
 			end
-			
-			keysProcessed[k] = true;
+
+			keysProcessed[k] = true
 		end
 	end
-	
+
 	for k, v in pairs(obj) do
-		if (not keysProcessed[k]) then
-			obj[k] = nil;
+		if not keysProcessed[k] then
+			obj[k] = nil
 		end
 	end
-	
-	return obj;
+
+	return obj
 end
 
 -- call of function delayed
@@ -1448,10 +1491,10 @@ end
 -- @param waitSeconds  optional. seconds to wait.
 -- @param fn           function to call delayed
 function LibFroznFunctions:CallFunctionDelayed(waitSeconds, fn)
-	if (waitSeconds) then
-		C_Timer.After(waitSeconds, fn);
+	if waitSeconds then
+		C_Timer.After(waitSeconds, fn)
 	else
-		fn();
+		fn()
 	end
 end
 
@@ -1461,21 +1504,21 @@ end
 -- @param functionName  name of the function being hooked
 -- @param hookfunc      hook function
 function LibFroznFunctions:HookSecureFuncIfExists(tab, functionName, hookfunc)
-	local realTab, realFunctionName;
-	
-	if (type(tab) == "table") then
-		realTab = tab;
-		realFunctionName = functionName;
+	local realTab, realFunctionName
+
+	if type(tab) == "table" then
+		realTab = tab
+		realFunctionName = functionName
 	else
-		realTab = _G;
-		realFunctionName = tab;
+		realTab = _G
+		realFunctionName = tab
 	end
-	
-	if (type(realTab[realFunctionName]) ~= "function") then
-		return;
+
+	if type(realTab[realFunctionName]) ~= "function" then
+		return
 	end
-	
-	hooksecurefunc(tab, functionName, hookfunc);
+
+	hooksecurefunc(tab, functionName, hookfunc)
 end
 
 -- register the frame to an event if event exists
@@ -1484,11 +1527,11 @@ end
 -- @param eventName  name of the event
 -- @return true if the frame is successfully registered to the event, false if the frame was already registered to this event.
 function LibFroznFunctions:RegisterEventIfExists(frame, eventName)
-	if (not C_EventUtils.IsEventValid(eventName)) then
-		return;
+	if not C_EventUtils.IsEventValid(eventName) then
+		return
 	end
-	
-	return frame:RegisterEvent(eventName);
+
+	return frame:RegisterEvent(eventName)
 end
 
 -- register the frame to an event for specified units if event exists
@@ -1498,11 +1541,11 @@ end
 -- @param ...        unit ids, e.g. "player", "target" or "mouseover"
 -- @return true if the frame is successfully registered to the event, false if the frame was already registered to this event.
 function LibFroznFunctions:RegisterUnitEventIfExists(frame, eventName, ...)
-	if (not C_EventUtils.IsEventValid(eventName)) then
-		return;
+	if not C_EventUtils.IsEventValid(eventName) then
+		return
 	end
-	
-	return frame:RegisterUnitEvent(eventName, ...);
+
+	return frame:RegisterUnitEvent(eventName, ...)
 end
 
 -- unregister an event from the frame if event exists
@@ -1511,11 +1554,11 @@ end
 -- @param eventName  name of the event
 -- @return true if the event is successfully unregistered from the frame, false if the event was already unregistered from the frame.
 function LibFroznFunctions:UnregisterEventIfExists(frame, eventName)
-	if (not C_EventUtils.IsEventValid(eventName)) then
-		return;
+	if not C_EventUtils.IsEventValid(eventName) then
+		return
 	end
-	
-	return frame:UnregisterEvent(eventName);
+
+	return frame:UnregisterEvent(eventName)
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -1528,31 +1571,31 @@ end
 -- @param  callbacksForEvent[]  table with callback functions ("key = event name" and "value = callback function"). parameters: self, ... (event payload)
 -- @param  name                 optional. string with name of group item.
 -- @param  disabled             optional. true if item is disabled, false/nil otherwise.
-local groupsWithItemsForGroupEvents = {};
+local groupsWithItemsForGroupEvents = {}
 
 function LibFroznFunctions:RegisterForGroupEvents(group, callbacksForEvent, name, disabled)
 	-- one of the parameters are invalid
 	if (type(group) ~= "string") or (group == "") or (type(callbacksForEvent) ~= "table") then
-		return;
+		return
 	end
-	
+
 	-- get group
-	local itemGroup;
-	
-	if (not groupsWithItemsForGroupEvents[group]) then
+	local itemGroup
+
+	if not groupsWithItemsForGroupEvents[group] then
 		-- create group
-		groupsWithItemsForGroupEvents[group] = self:CreatePushArray();
-		itemGroup = groupsWithItemsForGroupEvents[group];
+		groupsWithItemsForGroupEvents[group] = self:CreatePushArray()
+		itemGroup = groupsWithItemsForGroupEvents[group]
 	else
-		itemGroup = groupsWithItemsForGroupEvents[group];
+		itemGroup = groupsWithItemsForGroupEvents[group]
 	end
-	
+
 	-- add item to group
 	itemGroup:Push({
 		name = name,
 		disabled = disabled,
-		callbacks = callbacksForEvent
-	});
+		callbacks = callbacksForEvent,
+	})
 end
 
 -- fire group event
@@ -1563,20 +1606,20 @@ end
 function LibFroznFunctions:FireGroupEvent(group, eventName, ...)
 	-- one of the parameters are invalid
 	if (type(group) ~= "string") or (group == "") or (type(eventName) ~= "string") then
-		return;
+		return
 	end
-	
+
 	-- get group
-	local itemGroup = groupsWithItemsForGroupEvents[group];
-	
-	if (not itemGroup) then
-		return;
+	local itemGroup = groupsWithItemsForGroupEvents[group]
+
+	if not itemGroup then
+		return
 	end
-	
+
 	-- fire event for group
 	for _, item in ipairs(itemGroup) do
-		if (not item.disabled) and (item.callbacks) and (item.callbacks[eventName]) then
-			item.callbacks[eventName](item.callbacks, ...);
+		if (not item.disabled) and item.callbacks and item.callbacks[eventName] then
+			item.callbacks[eventName](item.callbacks, ...)
 		end
 	end
 end
@@ -1590,7 +1633,7 @@ end
 -- @param  message  message to add to (selected) chat frame
 -- @param  ...      additional params (r, g, b, messageID)
 function LibFroznFunctions:AddMessageToChatFrame(message, ...)
-	(SELECTED_CHAT_FRAME or DEFAULT_CHAT_FRAME):AddMessage(message, ...);
+	(SELECTED_CHAT_FRAME or DEFAULT_CHAT_FRAME):AddMessage(message, ...)
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -1604,31 +1647,32 @@ end
 -- @param parentCategoryName  optional. name of parent category
 function LibFroznFunctions:RegisterAddOnCategory(frame, categoryName, parentCategoryName)
 	-- since df 10.0.0 and wotlkc 3.4.2
-	if (Settings) and (Settings.RegisterAddOnCategory) then -- see "\SharedXML\Settings\Blizzard_Deprecated.lua" for df 10.0.0
+	if Settings and Settings.RegisterAddOnCategory then -- see "\SharedXML\Settings\Blizzard_Deprecated.lua" for df 10.0.0
 		-- cancel is no longer a default option. may add menu extension for this.
-		frame.OnCommit = frame.okay;
-		frame.OnDefault = frame.default;
-		frame.OnRefresh = frame.refresh;
-		
-		if (parentCategoryName) then
-			local category = Settings.GetCategory(parentCategoryName);
-			local subcategory, layout = Settings.RegisterCanvasLayoutSubcategory(category, frame, categoryName, categoryName);
-			subcategory.ID = categoryName;
+		frame.OnCommit = frame.okay
+		frame.OnDefault = frame.default
+		frame.OnRefresh = frame.refresh
+
+		if parentCategoryName then
+			local category = Settings.GetCategory(parentCategoryName)
+			local subcategory, layout =
+				Settings.RegisterCanvasLayoutSubcategory(category, frame, categoryName, categoryName)
+			subcategory.ID = categoryName
 		else
-			local category, layout = Settings.RegisterCanvasLayoutCategory(frame, categoryName, categoryName);
-			category.ID = categoryName;
-			
-			Settings.RegisterAddOnCategory(category);
+			local category, layout = Settings.RegisterCanvasLayoutCategory(frame, categoryName, categoryName)
+			category.ID = categoryName
+
+			Settings.RegisterAddOnCategory(category)
 		end
-		
-		return;
+
+		return
 	end
-	
+
 	-- before df 10.0.0
-	frame.name = categoryName;
-	frame.parent = parentCategoryName;
-	
-	InterfaceOptions_AddCategory(frame);
+	frame.name = categoryName
+	frame.parent = parentCategoryName
+
+	InterfaceOptions_AddCategory(frame)
 end
 
 -- open addon category
@@ -1637,60 +1681,63 @@ end
 -- @param subcategoryName  name of subcategory
 function LibFroznFunctions:OpenAddOnCategory(categoryName, subcategoryName)
 	-- since df 10.0.0 and wotlkc 3.4.2
-	if (Settings) and (Settings.OpenToCategory) then
+	if Settings and Settings.OpenToCategory then
 		-- open category
 		for index, tbl in ipairs(SettingsPanel:GetCategoryList().groups) do -- see SettingsPanelMixin:OpenToCategory() in "Blizzard_SettingsPanel.lua"
-			local categories = tbl.categories;
-			
+			local categories = tbl.categories
+
 			for index, category in ipairs(categories) do
-				if (category:GetName() == categoryName) then
-					Settings.OpenToCategory(category:GetID());
-					
+				if category:GetName() == categoryName then
+					Settings.OpenToCategory(category:GetID())
+
 					-- scroll to category, see OnSelectionChanged() in "Blizzard_CategoryList.lua"
-					local categoryList = SettingsPanel:GetCategoryList();
+					local categoryList = SettingsPanel:GetCategoryList()
 					local categoryElementData = categoryList:FindCategoryElementData(category)
-					
-					if (categoryElementData) then
-						categoryList.ScrollBox:ScrollToElementData(categoryElementData, ScrollBoxConstants.AlignNearest);
+
+					if categoryElementData then
+						categoryList.ScrollBox:ScrollToElementData(categoryElementData, ScrollBoxConstants.AlignNearest)
 					end
-					
+
 					-- open subcategory
-					if (subcategoryName) then
-						local subCategories = category:GetSubcategories();
-						
+					if subcategoryName then
+						local subCategories = category:GetSubcategories()
+
 						for index, subcategory in ipairs(subCategories) do
-							if (subcategory:GetName() == subcategoryName) then
-								SettingsPanel:SelectCategory(subcategory);
-								
+							if subcategory:GetName() == subcategoryName then
+								SettingsPanel:SelectCategory(subcategory)
+
 								-- scroll to category, see OnSelectionChanged() in "Blizzard_CategoryList.lua"
 								local subCategoryElementData = categoryList:FindCategoryElementData(subcategory)
-								
-								if (subCategoryElementData) then
-									categoryList.ScrollBox:ScrollToElementData(subCategoryElementData, ScrollBoxConstants.AlignNearest);
+
+								if subCategoryElementData then
+									categoryList.ScrollBox:ScrollToElementData(
+										subCategoryElementData,
+										ScrollBoxConstants.AlignNearest
+									)
 								end
-								
-								return;
+
+								return
 							end
 						end
 					end
-					
-					return;
+
+					return
 				end
 			end
 		end
-		
-		return;
+
+		return
 	end
-	
+
 	-- before df 10.0.0
-	if (not InterfaceOptionsFrame:IsShown()) then
-		InterfaceOptionsFrame_Show();
+	if not InterfaceOptionsFrame:IsShown() then
+		InterfaceOptionsFrame_Show()
 	end
-	
-	InterfaceOptionsFrame_OpenToCategory(categoryName);
-	
-	if (subcategoryName) then
-		InterfaceOptionsFrame_OpenToCategory(subcategoryName);
+
+	InterfaceOptionsFrame_OpenToCategory(categoryName)
+
+	if subcategoryName then
+		InterfaceOptionsFrame_OpenToCategory(subcategoryName)
 	end
 end
 
@@ -1699,46 +1746,50 @@ end
 -- @param categoryName  name of category
 function LibFroznFunctions:ExpandAddOnCategory(categoryName)
 	-- since df 10.0.0 and wotlkc 3.4.2
-	if (Settings) and (Settings.CreateCategory) then
+	if Settings and Settings.CreateCategory then
 		for index, tbl in ipairs(SettingsPanel:GetCategoryList().groups) do -- see SettingsPanelMixin:OpenToCategory() in "Blizzard_SettingsPanel.lua"
 			for index, category in ipairs(tbl.categories) do
-				if (category:GetName() == categoryName) then
-					if (not category.expanded) then
-						category.expanded = true;
-						SettingsPanel:GetCategoryList():CreateCategories();
+				if category:GetName() == categoryName then
+					if not category.expanded then
+						category.expanded = true
+						SettingsPanel:GetCategoryList():CreateCategories()
 					end
-					
-					return;
+
+					return
 				end
 			end
 		end
-		
-		return;
+
+		return
 	end
-	
+
 	-- before df 10.0.0
 	local function SecureNext(elements, key)
-		return securecall(next, elements, key);
+		return securecall(next, elements, key)
 	end
-	
-	local elementToDisplay; -- see InterfaceOptionsFrame_OpenToCategory() in "InterfaceOptionsFrame.lua"
-	
+
+	local elementToDisplay -- see InterfaceOptionsFrame_OpenToCategory() in "InterfaceOptionsFrame.lua"
+
 	for i, element in SecureNext, INTERFACEOPTIONS_ADDONCATEGORIES do
-		if (categoryName) and (element.name) and (element.name == categoryName) then
-			elementToDisplay = element;
-			break;
+		if categoryName and element.name and (element.name == categoryName) then
+			elementToDisplay = element
+			break
 		end
 	end
-	
-	if (not elementToDisplay) then
-		return;
+
+	if not elementToDisplay then
+		return
 	end
-	
-	local buttons = InterfaceOptionsFrameAddOns.buttons;
-	
+
+	local buttons = InterfaceOptionsFrameAddOns.buttons
+
 	for i, button in SecureNext, buttons do
-		if (elementToDisplay.name) and (button.element) and ((button.element.name == elementToDisplay.name) and (button.element.collapsed)) then
-			OptionsListButtonToggle_OnClick(button.toggle);
+		if
+			elementToDisplay.name
+			and button.element
+			and ((button.element.name == elementToDisplay.name) and button.element.collapsed)
+		then
+			OptionsListButtonToggle_OnClick(button.toggle)
 		end
 	end
 end
@@ -1750,36 +1801,41 @@ end
 -- @param callbackForSlashCommands  callback function for slash commands. parameters: msg, editBox
 function LibFroznFunctions:RegisterNewSlashCommands(modName, slashCommands, callbackForSlashCommands)
 	-- one of the parameters are invalid
-	if (type(modName) ~= "string") or (modName == "") or (type(slashCommands) ~= "string") and (type(slashCommands) ~= "table") or (type(callbackForSlashCommands) ~= "function") then
-		return;
+	if
+		(type(modName) ~= "string")
+		or (modName == "")
+		or (type(slashCommands) ~= "string") and (type(slashCommands) ~= "table")
+		or (type(callbackForSlashCommands) ~= "function")
+	then
+		return
 	end
-	
+
 	-- register new slash commands
-	local preparedModName = modName:gsub(" ", ""):upper(); -- see RegisterNewSlashCommand() in "ChatFrame.lua"
-	local preparedSlashCommands = self:ConvertToTable(slashCommands);
-	local index = 0;
-	local keyForPreparedSlashCommand;
-	
+	local preparedModName = modName:gsub(" ", ""):upper() -- see RegisterNewSlashCommand() in "ChatFrame.lua"
+	local preparedSlashCommands = self:ConvertToTable(slashCommands)
+	local index = 0
+	local keyForPreparedSlashCommand
+
 	for _, slashCommand in ipairs(preparedSlashCommands) do
-		if (type(slashCommand) == "string") then
-			local preparedSlashCommand = slashCommand:gsub(" ", ""):gsub("/", ""):lower();
-			
-			if (preparedSlashCommand ~= "") then
+		if type(slashCommand) == "string" then
+			local preparedSlashCommand = slashCommand:gsub(" ", ""):gsub("/", ""):lower()
+
+			if preparedSlashCommand ~= "" then
 				-- find next free index for mod name
 				repeat
-					index = index + 1;
-					keyForPreparedSlashCommand = "SLASH_" .. preparedModName .. index;
-				until (not _G[keyForPreparedSlashCommand]);
-				
+					index = index + 1
+					keyForPreparedSlashCommand = "SLASH_" .. preparedModName .. index
+				until not _G[keyForPreparedSlashCommand]
+
 				-- set command
-				_G[keyForPreparedSlashCommand] = "/" .. preparedSlashCommand;
+				_G[keyForPreparedSlashCommand] = "/" .. preparedSlashCommand
 			end
 		end
 	end
-	
+
 	-- register callback for commands if some were added
-	if (index > 0) then
-		SlashCmdList[preparedModName] = callbackForSlashCommands;
+	if index > 0 then
+		SlashCmdList[preparedModName] = callbackForSlashCommands
 	end
 end
 
@@ -1792,9 +1848,9 @@ end
 -- @param  indexOrName  index in the addon list (cannot query Blizzard addons by index) or name of the addon (as in TOC/folder filename, case insensitive)
 -- @return true if the addon is enabled, false otherwise.
 function LibFroznFunctions:IsAddOnEnabled(indexOrName)
-	local loadable, reason = C_AddOns.IsAddOnLoadable(indexOrName, UnitGUID("player"), true);
-	
-	return loadable;
+	local loadable, reason = C_AddOns.IsAddOnLoadable(indexOrName, UnitGUID("player"), true)
+
+	return loadable
 end
 
 -- is addon finished loading
@@ -1802,9 +1858,9 @@ end
 -- @param  indexOrName  index in the addon list (cannot query Blizzard addons by index) or name of the addon (as in TOC/folder filename, case insensitive)
 -- @return true if the addon finished loading, false otherwise.
 function LibFroznFunctions:IsAddOnFinishedLoading(indexOrName)
-	local loaded, finished = C_AddOns.IsAddOnLoaded(indexOrName);
-	
-	return loaded and finished;
+	local loaded, finished = C_AddOns.IsAddOnLoaded(indexOrName)
+
+	return loaded and finished
 end
 
 -- create database with lib AceDB-3.0
@@ -1812,55 +1868,55 @@ end
 -- @param  tblNameOrObject  name of variable, or table to use for the database.
 -- @param  defaultConfig    optional. default config
 -- @return database
-local LibAceDB;
+local LibAceDB
 
 function LibFroznFunctions:CreateDbWithLibAceDB(tblNameOrObject, defaultConfig)
 	-- get lib AceDB-3.0
-	if (not LibAceDB) then
-		LibAceDB = LibStub:GetLibrary("AceDB-3.0");
+	if not LibAceDB then
+		LibAceDB = LibStub:GetLibrary("AceDB-3.0")
 	end
-	
+
 	-- get table the database should use
-	local tbl;
-	
-	if (type(tblNameOrObject) == "string") then
+	local tbl
+
+	if type(tblNameOrObject) == "string" then
 		-- lookup the global object for this table name
-		tbl = self:GetValueFromObjectByPath(_G, tblNameOrObject);
+		tbl = self:GetValueFromObjectByPath(_G, tblNameOrObject)
 	else
-		tbl = tblNameOrObject;
+		tbl = tblNameOrObject
 	end
-	
+
 	-- consider, that the original config before using lib AceDB-3.0 needs to be taken over.
-	local orgConfig;
-	
-	if (type(tbl) == "table") and (not tbl.profiles) then
-		orgConfig = tbl;
+	local orgConfig
+
+	if (type(tbl) == "table") and not tbl.profiles then
+		orgConfig = tbl
 	end
-	
+
 	-- create new database. consider that the database can already be registered in lib AceDB-3.0.
-	local db = self:GetDbFromLibAceDB(tblNameOrObject);
-	
-	if (db) then
+	local db = self:GetDbFromLibAceDB(tblNameOrObject)
+
+	if db then
 		-- database is already registered in lib AceDB-3.0. register additional defaults if necessary.
-		if (defaultConfig) then
-			local newDefaults = db.defaults.profile;
-			
-			MergeTable(newDefaults, defaultConfig);
-			db:RegisterDefaults({ profile = newDefaults });
+		if defaultConfig then
+			local newDefaults = db.defaults.profile
+
+			MergeTable(newDefaults, defaultConfig)
+			db:RegisterDefaults({ profile = newDefaults })
 		end
 	else
 		-- database doesn't exists in lib AceDB-3.0 yet. create new database
-		db = LibAceDB:New(tblNameOrObject, (defaultConfig and { profile = defaultConfig } or nil), true);
+		db = LibAceDB:New(tblNameOrObject, (defaultConfig and { profile = defaultConfig } or nil), true)
 	end
-	
+
 	-- consider, that the original config before using lib AceDB-3.0 needs to be taken over.
-	if (orgConfig) then
-		local cfg = db.profile;
-		
-		MergeTable(cfg, orgConfig);
+	if orgConfig then
+		local cfg = db.profile
+
+		MergeTable(cfg, orgConfig)
 	end
-	
-	return db, self:CreateLinkedTableFromTableWithKey(db, "profile");
+
+	return db, self:CreateLinkedTableFromTableWithKey(db, "profile")
 end
 
 -- get database from lib AceDB-3.0
@@ -1869,32 +1925,32 @@ end
 -- @return database  returns nil if the table is unknown or the database using the table doesn't exist.
 function LibFroznFunctions:GetDbFromLibAceDB(tblNameOrObject)
 	-- get lib AceDB-3.0
-	if (not LibAceDB) then
-		LibAceDB = LibStub:GetLibrary("AceDB-3.0");
+	if not LibAceDB then
+		LibAceDB = LibStub:GetLibrary("AceDB-3.0")
 	end
-	
+
 	-- get table used by the database
-	local tbl;
-	
-	if (type(tblNameOrObject) == "string") then
+	local tbl
+
+	if type(tblNameOrObject) == "string" then
 		-- lookup the global object for this table name
-		tbl = self:GetValueFromObjectByPath(_G, tblNameOrObject);
+		tbl = self:GetValueFromObjectByPath(_G, tblNameOrObject)
 	else
-		tbl = tblNameOrObject;
+		tbl = tblNameOrObject
 	end
-	
-	if (type(tbl) ~= "table") then
-		return nil;
+
+	if type(tbl) ~= "table" then
+		return nil
 	end
-	
+
 	-- find database object in db registry
 	for db in pairs(LibAceDB.db_registry) do
 		if (not db.parent) and (db.sv == tbl) then
-			return db;
+			return db
 		end
 	end
-	
-	return nil;
+
+	return nil
 end
 
 -- get profiles from database from lib AceDB-3.0
@@ -1903,28 +1959,28 @@ end
 -- @return profiles[]
 function LibFroznFunctions:GetProfilesFromDbFromLibAceDB(db, noCurrentProfile, noDefaultProfile)
 	-- build list of profiles to ignore
-	local profilesToIgnore = {};
-	
-	if (noCurrentProfile) then
-		local currentProfile = db:GetCurrentProfile();
-		
-		tinsert(profilesToIgnore, currentProfile);
+	local profilesToIgnore = {}
+
+	if noCurrentProfile then
+		local currentProfile = db:GetCurrentProfile()
+
+		tinsert(profilesToIgnore, currentProfile)
 	end
-	
-	if (noDefaultProfile) then
-		tinsert(profilesToIgnore, "Default");
+
+	if noDefaultProfile then
+		tinsert(profilesToIgnore, "Default")
 	end
-	
+
 	-- get profiles from database from lib AceDB-3.0
-	local profiles = {};
-	
+	local profiles = {}
+
 	for _, name in ipairs(db:GetProfiles()) do
-		if (not self:ExistsInTable(name, profilesToIgnore)) then
-			tinsert(profiles, name);
+		if not self:ExistsInTable(name, profilesToIgnore) then
+			tinsert(profiles, name)
 		end
 	end
-	
-	return profiles;
+
+	return profiles
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -1940,23 +1996,36 @@ end
 -- @param  asBytes          if param "colorDefinition" is a table, the value range for r/g/b/a is treated as 0-255 instead of 0-1.
 -- @return ColorMixin  returns nil of no valid color definition with param "colorDefinition" is specified.
 function LibFroznFunctions:CreateColorSmart(colorDefinition, asBytes)
-	if (type(colorDefinition) == "table") then
-		if (colorDefinition.r) and (colorDefinition.g) and (colorDefinition.b) then
-			return asBytes and CreateColorFromBytes(colorDefinition.r, colorDefinition.g, colorDefinition.b, colorDefinition.a or 255) or CreateColor(colorDefinition.r, colorDefinition.g, colorDefinition.b, colorDefinition.a or 1);
+	if type(colorDefinition) == "table" then
+		if colorDefinition.r and colorDefinition.g and colorDefinition.b then
+			return asBytes
+					and CreateColorFromBytes(
+						colorDefinition.r,
+						colorDefinition.g,
+						colorDefinition.b,
+						colorDefinition.a or 255
+					)
+				or CreateColor(colorDefinition.r, colorDefinition.g, colorDefinition.b, colorDefinition.a or 1)
 		end
-		
-		local r, g, b, a = unpack(colorDefinition);
-		
-		return asBytes and CreateColorFromBytes(r, g, b, a or 255) or CreateColor(r, g, b, a or 1);
+
+		local r, g, b, a = unpack(colorDefinition)
+
+		return asBytes and CreateColorFromBytes(r, g, b, a or 255) or CreateColor(r, g, b, a or 1)
 	end
-	
-	if (type(colorDefinition) ~= "string") then
-		return;
+
+	if type(colorDefinition) ~= "string" then
+		return
 	end
-	
-	local hexA, hexR, hexG, hexB = colorDefinition:gsub("|c", ""):match("(%2x)(%2x)(%2x)(%2x)");
-	
-	return hexA and CreateColorFromBytes(tonumber("0x" .. hexR), tonumber("0x" .. hexG), tonumber("0x" .. hexB), tonumber("0x" .. hexA));
+
+	local hexA, hexR, hexG, hexB = colorDefinition:gsub("|c", ""):match("(%2x)(%2x)(%2x)(%2x)")
+
+	return hexA
+		and CreateColorFromBytes(
+			tonumber("0x" .. hexR),
+			tonumber("0x" .. hexG),
+			tonumber("0x" .. hexB),
+			tonumber("0x" .. hexA)
+		)
 end
 
 -- get class color
@@ -1966,41 +2035,42 @@ end
 -- @param  customClassColors           optional. custom class colors
 -- @return ColorMixin  returns nil if class file for param "classID" and "alternateClassIDIfNotFound" doesn't exist.
 local function getClassColor(classFile, customClassColors)
-	local classColor; -- see "ColorUtil.lua"
-	
+	local classColor -- see "ColorUtil.lua"
+
 	-- custom class colors
-	if (customClassColors) then
-		classColor = customClassColors[classFile];
-		
-		if (classColor) then
-			return classColor;
+	if customClassColors then
+		classColor = customClassColors[classFile]
+
+		if classColor then
+			return classColor
 		end
 	end
-	
+
 	-- global custom class colors
-	if (CUSTOM_CLASS_COLORS) then
-		classColor = CUSTOM_CLASS_COLORS[classFile];
-		
-		if (classColor) then
+	if CUSTOM_CLASS_COLORS then
+		classColor = CUSTOM_CLASS_COLORS[classFile]
+
+		if classColor then
 			-- make shure that ColorMixin methods are available
-			if (type(classColor.WrapTextInColorCode) ~= "function") then
-				classColor = CreateColor(classColor.r, classColor.g, classColor.b, classColor.a);
+			if type(classColor.WrapTextInColorCode) ~= "function" then
+				classColor = CreateColor(classColor.r, classColor.g, classColor.b, classColor.a)
 			end
-			
-			return classColor;
+
+			return classColor
 		end
 	end
-	
+
 	-- default class color
-	classColor = RAID_CLASS_COLORS[classFile];
-	
-	return classColor;
+	classColor = RAID_CLASS_COLORS[classFile]
+
+	return classColor
 end
 
 function LibFroznFunctions:GetClassColor(classID, alternateClassIDIfNotFound, customClassColors)
-	local classInfo = (classID and C_CreatureInfo.GetClassInfo(classID)) or (alternateClassIDIfNotFound and C_CreatureInfo.GetClassInfo(alternateClassIDIfNotFound));
-	
-	return classInfo and getClassColor(classInfo.classFile, customClassColors);
+	local classInfo = (classID and C_CreatureInfo.GetClassInfo(classID))
+		or (alternateClassIDIfNotFound and C_CreatureInfo.GetClassInfo(alternateClassIDIfNotFound))
+
+	return classInfo and getClassColor(classInfo.classFile, customClassColors)
 end
 
 -- get class color by class file
@@ -2010,7 +2080,7 @@ end
 -- @param  customClassColors             optional. custom class colors
 -- @return ColorMixin  returns nil if class file for param "classFile" and "alternateClassFileIfNotFound" doesn't exist.
 function LibFroznFunctions:GetClassColorByClassFile(classFile, alternateClassFileIfNotFound)
-	return getClassColor(classFile, customClassColors) or getClassColor(alternateClassFileIfNotFound, customClassColors);
+	return getClassColor(classFile, customClassColors) or getClassColor(alternateClassFileIfNotFound, customClassColors)
 end
 
 -- get power color
@@ -2034,15 +2104,21 @@ local powerTypeToPowerTokenLookup = { -- see powerTypeToStringLookup in "Blizzar
 	[Enum.PowerType.Insanity] = "INSANITY",
 	[Enum.PowerType.ArcaneCharges] = "ARCANE_CHARGES",
 	[Enum.PowerType.Fury] = "FURY",
-	[Enum.PowerType.Pain] = "PAIN"
-};
+	[Enum.PowerType.Pain] = "PAIN",
+}
 
-if (Enum.PowerType.Essence) then
-	powerTypeToPowerTokenLookup[Enum.PowerType.Essence] = POWER_TYPE_ESSENCE;
+if Enum.PowerType.Essence then
+	powerTypeToPowerTokenLookup[Enum.PowerType.Essence] = POWER_TYPE_ESSENCE
 end
 
 function LibFroznFunctions:GetPowerColor(powerType, alternatePowerTypeIfNotFound)
-	return self:CreateColorSmart((powerTypeToPowerTokenLookup[powerType] and PowerBarColor[powerTypeToPowerTokenLookup[powerType]]) or (powerTypeToPowerTokenLookup[alternatePowerTypeIfNotFound] and PowerBarColor[powerTypeToPowerTokenLookup[alternatePowerTypeIfNotFound]]));
+	return self:CreateColorSmart(
+		(powerTypeToPowerTokenLookup[powerType] and PowerBarColor[powerTypeToPowerTokenLookup[powerType]])
+			or (
+				powerTypeToPowerTokenLookup[alternatePowerTypeIfNotFound]
+				and PowerBarColor[powerTypeToPowerTokenLookup[alternatePowerTypeIfNotFound]]
+			)
+	)
 end
 
 -- get item quality color
@@ -2050,46 +2126,46 @@ end
 -- @param  quality                     item quality, e.g. 0 (poor), 3 (rare), 4 (epic), see "Enum.ItemQuality" or LFF_ITEM_QUALITY
 -- @param  alternateQualityIfNotFound  alternate quality if color for param "quality" doesn't exist
 -- @return ColorMixin  returns nil if quality for param "quality" and "alternateQualityIfNotFound" doesn't exist.
-LFF_ITEM_QUALITY = CopyTable(Enum.ItemQuality); -- see ItemQuality in "ItemQualitiesDocumentation.lua"
+LFF_ITEM_QUALITY = CopyTable(Enum.ItemQuality) -- see ItemQuality in "ItemQualitiesDocumentation.lua"
 
-if (LFF_ITEM_QUALITY.Standard) then
-	LFF_ITEM_QUALITY.Common = LFF_ITEM_QUALITY.Standard;
-	LFF_ITEM_QUALITY.Standard = nil;
+if LFF_ITEM_QUALITY.Standard then
+	LFF_ITEM_QUALITY.Common = LFF_ITEM_QUALITY.Standard
+	LFF_ITEM_QUALITY.Standard = nil
 end
-if (LFF_ITEM_QUALITY.Good) then
-	LFF_ITEM_QUALITY.Uncommon = LFF_ITEM_QUALITY.Good;
-	LFF_ITEM_QUALITY.Good = nil;
+if LFF_ITEM_QUALITY.Good then
+	LFF_ITEM_QUALITY.Uncommon = LFF_ITEM_QUALITY.Good
+	LFF_ITEM_QUALITY.Good = nil
 end
 
-if (LFF_ITEM_QUALITY.Superior) then
-	LFF_ITEM_QUALITY.Rare = LFF_ITEM_QUALITY.Superior;
-	LFF_ITEM_QUALITY.Superior = nil;
+if LFF_ITEM_QUALITY.Superior then
+	LFF_ITEM_QUALITY.Rare = LFF_ITEM_QUALITY.Superior
+	LFF_ITEM_QUALITY.Superior = nil
 end
 
 function LibFroznFunctions:GetItemQualityColor(quality, alternateQualityIfNotFound)
 	-- since tww 11.1.5
-	if (ColorManager) then
-		local itemQualityColor = ColorManager.GetColorDataForItemQuality(quality);
-		local itemQualityColorMixin = (itemQualityColor and itemQualityColor.color);
-		
-		if (not itemQualityColorMixin) then
-			itemQualityColor = ColorManager.GetColorDataForItemQuality(alternateQualityIfNotFound);
-			itemQualityColorMixin = (itemQualityColor and itemQualityColor.color);
+	if ColorManager then
+		local itemQualityColor = ColorManager.GetColorDataForItemQuality(quality)
+		local itemQualityColorMixin = (itemQualityColor and itemQualityColor.color)
+
+		if not itemQualityColorMixin then
+			itemQualityColor = ColorManager.GetColorDataForItemQuality(alternateQualityIfNotFound)
+			itemQualityColorMixin = (itemQualityColor and itemQualityColor.color)
 		end
-		
-		return itemQualityColorMixin;
+
+		return itemQualityColorMixin
 	end
-	
+
 	-- before tww 11.1.5
-	local itemQualityColor = ITEM_QUALITY_COLORS[quality]; -- see "UIParent.lua"
-	local itemQualityColorMixin = (itemQualityColor and itemQualityColor.color);
-	
-	if (not itemQualityColorMixin) then
-		itemQualityColor = ITEM_QUALITY_COLORS[alternateQualityIfNotFound];
-		itemQualityColorMixin = (itemQualityColor and itemQualityColor.color);
+	local itemQualityColor = ITEM_QUALITY_COLORS[quality] -- see "UIParent.lua"
+	local itemQualityColorMixin = (itemQualityColor and itemQualityColor.color)
+
+	if not itemQualityColorMixin then
+		itemQualityColor = ITEM_QUALITY_COLORS[alternateQualityIfNotFound]
+		itemQualityColorMixin = (itemQualityColor and itemQualityColor.color)
 	end
-	
-	return itemQualityColorMixin;
+
+	return itemQualityColorMixin
 end
 
 -- get difficulty color for unit compared to the player level
@@ -2098,23 +2174,25 @@ end
 -- @return ColorMixin  difficulty color. returns nil if no unit id is supplied.
 function LibFroznFunctions:GetDifficultyColorForUnit(unitID)
 	-- no unit id
-	if (not unitID) then
-		return;
+	if not unitID then
+		return
 	end
-	
+
 	-- get difficulty color for unit compared to the player level
-	local isBattlePet = self:UnitIsBattlePet(unitID);
-	local unitLevel = isBattlePet and UnitBattlePetLevel(unitID) or UnitLevel(unitID) or -1;
-	
-	local difficultyColor;
-	
-	if (unitLevel == -1) then
-		difficultyColor = QuestDifficultyColors["impossible"]; -- see "Constants.lua"
+	local isBattlePet = self:UnitIsBattlePet(unitID)
+	local unitLevel = isBattlePet and UnitBattlePetLevel(unitID) or UnitLevel(unitID) or -1
+
+	local difficultyColor
+
+	if unitLevel == -1 then
+		difficultyColor = QuestDifficultyColors["impossible"] -- see "Constants.lua"
 	else
-		difficultyColor = GetDifficultyColor and GetDifficultyColor(C_PlayerInfo.GetContentDifficultyCreatureForPlayer(unitID)) or GetCreatureDifficultyColor(unitLevel); -- see "UIParent.lua"
+		difficultyColor = GetDifficultyColor
+				and GetDifficultyColor(C_PlayerInfo.GetContentDifficultyCreatureForPlayer(unitID))
+			or GetCreatureDifficultyColor(unitLevel) -- see "UIParent.lua"
 	end
-	
-	return self:CreateColorSmart(difficultyColor);
+
+	return self:CreateColorSmart(difficultyColor)
 end
 
 -- get difficulty color for quest compared to the player level
@@ -2124,29 +2202,31 @@ end
 -- @return ColorMixin  difficulty color. returns nil if no quest id is supplied, based on situation.
 function LibFroznFunctions:GetDifficultyColorForQuest(questID, questLevel)
 	-- world quests
-	if (C_QuestLog.IsWorldQuest) and (questID) and (C_QuestLog.IsWorldQuest(questID)) then -- see GameTooltip_AddQuest()
-		local tagInfo = C_QuestLog.GetQuestTagInfo(questID);
-		local worldQuestQuality = (tagInfo and tagInfo.quality or Enum.WorldQuestQuality.Common);
-		
+	if C_QuestLog.IsWorldQuest and questID and (C_QuestLog.IsWorldQuest(questID)) then -- see GameTooltip_AddQuest()
+		local tagInfo = C_QuestLog.GetQuestTagInfo(questID)
+		local worldQuestQuality = (tagInfo and tagInfo.quality or Enum.WorldQuestQuality.Common)
+
 		-- since tww 11.1.5
-		if (ColorManager) then
-			return ColorManager.GetColorDataForWorldQuestQuality(worldQuestQuality).color; -- see "UIParent.lua"
+		if ColorManager then
+			return ColorManager.GetColorDataForWorldQuestQuality(worldQuestQuality).color -- see "UIParent.lua"
 		end
-		
+
 		-- before tww 11.1.5
-		return WORLD_QUEST_QUALITY_COLORS[worldQuestQuality].color; -- see "UIParent.lua"
+		return WORLD_QUEST_QUALITY_COLORS[worldQuestQuality].color -- see "UIParent.lua"
 	end
-	
+
 	-- other quests
-	
+
 	-- GetDifficultyColor() will be used and no quest id
-	if (GetDifficultyColor) and (not questID) then
-		return;
+	if GetDifficultyColor and not questID then
+		return
 	end
-	
-	local difficultyColor = GetDifficultyColor and GetDifficultyColor(C_PlayerInfo.GetContentDifficultyQuestForPlayer(questID)) or GetQuestDifficultyColor((type(questLevel) == "number") and questLevel or 0); -- see "UIParent.lua"
-	
-	return self:CreateColorSmart(difficultyColor);
+
+	local difficultyColor = GetDifficultyColor
+			and GetDifficultyColor(C_PlayerInfo.GetContentDifficultyQuestForPlayer(questID))
+		or GetQuestDifficultyColor((type(questLevel) == "number") and questLevel or 0) -- see "UIParent.lua"
+
+	return self:CreateColorSmart(difficultyColor)
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -2159,20 +2239,30 @@ end
 -- @return markup for role icon to use in text. returns nil for invalid roles.
 function LibFroznFunctions:CreateMarkupForRoleIcon(role)
 	local atlas
-	
-	if (role == "TANK") then
-		atlas = "UI-LFG-RoleIcon-Tank-Micro";
-	elseif (role == "DAMAGER") then
-		atlas = "UI-LFG-RoleIcon-DPS-Micro";
-	elseif (role == "HEALER") then
-		atlas = "UI-LFG-RoleIcon-Healer-Micro";
+
+	if role == "TANK" then
+		atlas = "UI-LFG-RoleIcon-Tank-Micro"
+	elseif role == "DAMAGER" then
+		atlas = "UI-LFG-RoleIcon-DPS-Micro"
+	elseif role == "HEALER" then
+		atlas = "UI-LFG-RoleIcon-Healer-Micro"
 	else
-		return;
+		return
 	end
-	
-	local atlasInfo = C_Texture.GetAtlasInfo(atlas);
-	
-	return CreateTextureMarkup("Interface\\LFGFrame\\UILFGPrompts", 2048, 2048, nil, nil, atlasInfo.leftTexCoord + (10 / 2048), atlasInfo.rightTexCoord - (15 / 2048), atlasInfo.topTexCoord + (10 / 2048), atlasInfo.bottomTexCoord - (15 / 2048));
+
+	local atlasInfo = C_Texture.GetAtlasInfo(atlas)
+
+	return CreateTextureMarkup(
+		"Interface\\LFGFrame\\UILFGPrompts",
+		2048,
+		2048,
+		nil,
+		nil,
+		atlasInfo.leftTexCoord + (10 / 2048),
+		atlasInfo.rightTexCoord - (15 / 2048),
+		atlasInfo.topTexCoord + (10 / 2048),
+		atlasInfo.bottomTexCoord - (15 / 2048)
+	)
 end
 
 -- create markup for class icon
@@ -2182,11 +2272,11 @@ end
 function LibFroznFunctions:CreateMarkupForClassIcon(classIcon)
 	-- invalid class icon
 	if (type(classIcon) ~= "number") and (type(classIcon) ~= "string") then
-		return;
+		return
 	end
-	
+
 	-- create markup for class icon
-	return CreateTextureMarkup(classIcon, 64, 64, nil, nil, 0.07, 0.93, 0.07, 0.93);
+	return CreateTextureMarkup(classIcon, 64, 64, nil, nil, 0.07, 0.93, 0.07, 0.93)
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -2198,18 +2288,18 @@ end
 -- @return anchorPoints[] (point, relativeTo, relativePoint, offsetX, offsetY). returns nil for currently forbidden frames.
 function LibFroznFunctions:GetAnchorPoints(frame)
 	-- check if insecure interaction with the frame is currently forbidden
-	if (frame:IsForbidden()) then
-		return;
+	if frame:IsForbidden() then
+		return
 	end
-	
+
 	-- get anchor points
-	local anchorPoints = {};
-	
+	local anchorPoints = {}
+
 	for pointIndex = 1, frame:GetNumPoints() do
-		tinsert(anchorPoints, { frame:GetPoint(pointIndex) });
+		tinsert(anchorPoints, { frame:GetPoint(pointIndex) })
 	end
-	
-	return anchorPoints;
+
+	return anchorPoints
 end
 
 -- set anchor points
@@ -2218,15 +2308,15 @@ end
 -- @param anchorPoints[]  anchor points (anchor point: point, relativeTo, relativePoint, offsetX, offsetY)
 function LibFroznFunctions:SetAnchorPoints(frame, anchorPoints)
 	-- check if insecure interaction with the frame is currently forbidden
-	if (frame:IsForbidden()) then
-		return;
+	if frame:IsForbidden() then
+		return
 	end
-	
+
 	-- set anchor points
-	frame:ClearAllPoints();
-	
+	frame:ClearAllPoints()
+
 	for _, anchorPoint in ipairs(anchorPoints) do
-		frame:SetPoint(unpack(anchorPoint));
+		frame:SetPoint(unpack(anchorPoint))
 	end
 end
 
@@ -2243,11 +2333,11 @@ local anchorToAnchorPointSideLookup = {
 	BOTTOMLEFT = "BOTTOM",
 	BOTTOMRIGHT = "BOTTOM",
 	LEFT = "LEFT",
-	RIGHT = "RIGHT"
-};
+	RIGHT = "RIGHT",
+}
 
 function LibFroznFunctions:GetAnchorPointSide(anchorPoint)
-	return anchorToAnchorPointSideLookup[anchorPoint];
+	return anchorToAnchorPointSideLookup[anchorPoint]
 end
 
 -- mirror anchor point vertically
@@ -2264,11 +2354,11 @@ local anchorToVerticallyMirroredAnchorPointLookup = {
 	BOTTOMRIGHT = "BOTTOMLEFT",
 	LEFT = "RIGHT",
 	RIGHT = "LEFT",
-	CENTER = "CENTER"
-};
+	CENTER = "CENTER",
+}
 
 function LibFroznFunctions:MirrorAnchorPointVertically(anchorPoint)
-	return anchorToVerticallyMirroredAnchorPointLookup[anchorPoint];
+	return anchorToVerticallyMirroredAnchorPointLookup[anchorPoint]
 end
 
 -- mirror anchor point horizontally
@@ -2285,11 +2375,11 @@ local anchorToHorizontallyMirroredAnchorPointLookup = {
 	BOTTOMRIGHT = "TOPRIGHT",
 	LEFT = "LEFT",
 	RIGHT = "RIGHT",
-	CENTER = "CENTER"
-};
+	CENTER = "CENTER",
+}
 
 function LibFroznFunctions:MirrorAnchorPointHorizontally(anchorPoint)
-	return anchorToHorizontallyMirroredAnchorPointLookup[anchorPoint];
+	return anchorToHorizontallyMirroredAnchorPointLookup[anchorPoint]
 end
 
 -- mirror anchor point centered
@@ -2306,11 +2396,11 @@ local anchorToCenteredMirroredAnchorPointLookup = {
 	BOTTOMRIGHT = "TOPLEFT",
 	LEFT = "RIGHT",
 	RIGHT = "LEFT",
-	CENTER = "CENTER"
-};
+	CENTER = "CENTER",
+}
 
 function LibFroznFunctions:MirrorAnchorPointCentered(anchorPoint)
-	return anchorToCenteredMirroredAnchorPointLookup[anchorPoint];
+	return anchorToCenteredMirroredAnchorPointLookup[anchorPoint]
 end
 
 -- get anchor points by anchor point and horizontal/vertical alignment between two frames
@@ -2320,30 +2410,38 @@ end
 -- @param  vAlign       optional. vertical alignment, e.g "TOP", "MIDDLE" or "BOTTOM"
 -- @return anchor point for outer frame, anchor point for reference frame. nil, nil if no valid anchor point is supplied.
 function LibFroznFunctions:GetAnchorPointsByAnchorPointAndAlignment(anchorPoint, hAlign, vAlign)
-	local anchorPointForOuterFrame = self:MirrorAnchorPointCentered(anchorPoint);
-	
+	local anchorPointForOuterFrame = self:MirrorAnchorPointCentered(anchorPoint)
+
 	-- invalid anchor point
-	if (not anchorPointForOuterFrame) then
-		return nil, nil;
+	if not anchorPointForOuterFrame then
+		return nil, nil
 	end
-	
-	local anchorPointForReferenceFrame = anchorPoint;
-	
-	if ((anchorPointForOuterFrame == "TOP") or (anchorPointForOuterFrame == "BOTTOM")) and (hAlign) and (hAlign ~= "CENTER") then
-		anchorPointForOuterFrame = anchorPointForOuterFrame .. hAlign;
-		anchorPointForReferenceFrame = self:MirrorAnchorPointHorizontally(anchorPointForOuterFrame);
+
+	local anchorPointForReferenceFrame = anchorPoint
+
+	if
+		((anchorPointForOuterFrame == "TOP") or (anchorPointForOuterFrame == "BOTTOM"))
+		and hAlign
+		and (hAlign ~= "CENTER")
+	then
+		anchorPointForOuterFrame = anchorPointForOuterFrame .. hAlign
+		anchorPointForReferenceFrame = self:MirrorAnchorPointHorizontally(anchorPointForOuterFrame)
 	end
-	if ((anchorPointForOuterFrame == "LEFT") or (anchorPointForOuterFrame == "RIGHT")) and (vAlign) and (vAlign ~= "MIDDLE") then
-		anchorPointForOuterFrame = vAlign .. anchorPointForOuterFrame;
-		anchorPointForReferenceFrame = self:MirrorAnchorPointVertically(anchorPointForOuterFrame);
+	if
+		((anchorPointForOuterFrame == "LEFT") or (anchorPointForOuterFrame == "RIGHT"))
+		and vAlign
+		and (vAlign ~= "MIDDLE")
+	then
+		anchorPointForOuterFrame = vAlign .. anchorPointForOuterFrame
+		anchorPointForReferenceFrame = self:MirrorAnchorPointVertically(anchorPointForOuterFrame)
 	end
-	
+
 	-- invalid anchor point
-	if (not anchorPointForReferenceFrame) then
-		return nil, nil;
+	if not anchorPointForReferenceFrame then
+		return nil, nil
 	end
-	
-	return anchorPointForOuterFrame, anchorPointForReferenceFrame;
+
+	return anchorPointForOuterFrame, anchorPointForReferenceFrame
 end
 
 -- get offsets by anchor point and offsets and grow direction
@@ -2355,35 +2453,42 @@ end
 -- @param  growDirection     optional. grow direction, e.g. "UP", "RIGHT", "DOWN" or "LEFT"
 -- @param  growOffset        optional. grow offset
 -- @return x offset, y offset (inverted)
-function LibFroznFunctions:GetOffsetsByAnchorPointAndOffsetsAndGrowDirection(anchorPoint, fixedOuterOffset, _xOffset, _yOffset, growDirection, growOffset)
-	local xOffset, yOffset = (_xOffset or 0), (-_yOffset or 0);
-	local anchorPointSide = self:GetAnchorPointSide(anchorPoint);
-	
-	if (fixedOuterOffset) then
-		if (anchorPointSide == "TOP") then
-			yOffset = yOffset - fixedOuterOffset;
-		elseif (anchorPointSide == "BOTTOM") then
-			yOffset = yOffset + fixedOuterOffset;
-		elseif (anchorPointSide == "RIGHT") then
-			xOffset = xOffset + fixedOuterOffset;
-		elseif (anchorPointSide == "LEFT") then
-			xOffset = xOffset - fixedOuterOffset;
+function LibFroznFunctions:GetOffsetsByAnchorPointAndOffsetsAndGrowDirection(
+	anchorPoint,
+	fixedOuterOffset,
+	_xOffset,
+	_yOffset,
+	growDirection,
+	growOffset
+)
+	local xOffset, yOffset = (_xOffset or 0), (-_yOffset or 0)
+	local anchorPointSide = self:GetAnchorPointSide(anchorPoint)
+
+	if fixedOuterOffset then
+		if anchorPointSide == "TOP" then
+			yOffset = yOffset - fixedOuterOffset
+		elseif anchorPointSide == "BOTTOM" then
+			yOffset = yOffset + fixedOuterOffset
+		elseif anchorPointSide == "RIGHT" then
+			xOffset = xOffset + fixedOuterOffset
+		elseif anchorPointSide == "LEFT" then
+			xOffset = xOffset - fixedOuterOffset
 		end
 	end
-	
-	if (growDirection) and (growOffset) then
-		if (growDirection == "UP") then
-			yOffset = yOffset + growOffset;
-		elseif (growDirection == "DOWN") then
-			yOffset = yOffset - growOffset;
-		elseif (growDirection == "LEFT") then
-			xOffset = xOffset - growOffset;
-		elseif (growDirection == "RIGHT") then
-			xOffset = xOffset + growOffset;
+
+	if growDirection and growOffset then
+		if growDirection == "UP" then
+			yOffset = yOffset + growOffset
+		elseif growDirection == "DOWN" then
+			yOffset = yOffset - growOffset
+		elseif growDirection == "LEFT" then
+			xOffset = xOffset - growOffset
+		elseif growDirection == "RIGHT" then
+			xOffset = xOffset + growOffset
 		end
 	end
-	
-	return xOffset, yOffset;
+
+	return xOffset, yOffset
 end
 
 -- get offsets for anchor point between two frames
@@ -2394,44 +2499,119 @@ end
 -- @param  frameReference  reference frame
 -- @return left offset, right offset. nil, nil if no valid anchor point is supplied.
 function LibFroznFunctions:GetOffsetsForAnchorPoint(anchorPoint, anchorFrame, targetFrame, referenceFrame)
-	local effectiveScaleAnchorFrame = anchorFrame:GetEffectiveScale();
-	local effectiveScaleTargetFrame = targetFrame:GetEffectiveScale();
-	local effectiveScaleReferenceFrame = referenceFrame:GetEffectiveScale();
-	local UIScale = UIParent:GetEffectiveScale();
-	
-	local totalEffectiveScaleAnchorFrame = effectiveScaleAnchorFrame / UIScale;
-	local totalEffectiveScaleTargetFrame = effectiveScaleTargetFrame / UIScale;
-	local totalEffectiveScaleReferenceFrame = effectiveScaleReferenceFrame / UIScale;
-	
-	if (anchorPoint == "TOPLEFT") then
-		return ((anchorFrame:GetLeft() * totalEffectiveScaleAnchorFrame) - (referenceFrame:GetLeft() * totalEffectiveScaleReferenceFrame)) / totalEffectiveScaleTargetFrame, ((anchorFrame:GetTop() * totalEffectiveScaleAnchorFrame) - (referenceFrame:GetTop() * totalEffectiveScaleReferenceFrame)) / totalEffectiveScaleTargetFrame;
+	local effectiveScaleAnchorFrame = anchorFrame:GetEffectiveScale()
+	local effectiveScaleTargetFrame = targetFrame:GetEffectiveScale()
+	local effectiveScaleReferenceFrame = referenceFrame:GetEffectiveScale()
+	local UIScale = UIParent:GetEffectiveScale()
+
+	local totalEffectiveScaleAnchorFrame = effectiveScaleAnchorFrame / UIScale
+	local totalEffectiveScaleTargetFrame = effectiveScaleTargetFrame / UIScale
+	local totalEffectiveScaleReferenceFrame = effectiveScaleReferenceFrame / UIScale
+
+	if anchorPoint == "TOPLEFT" then
+		return (
+			(anchorFrame:GetLeft() * totalEffectiveScaleAnchorFrame)
+			- (referenceFrame:GetLeft() * totalEffectiveScaleReferenceFrame)
+		) / totalEffectiveScaleTargetFrame,
+			(
+				(anchorFrame:GetTop() * totalEffectiveScaleAnchorFrame)
+				- (referenceFrame:GetTop() * totalEffectiveScaleReferenceFrame)
+			) / totalEffectiveScaleTargetFrame
 	end
-	if (anchorPoint == "TOPRIGHT") then
-		return ((anchorFrame:GetRight() * totalEffectiveScaleAnchorFrame) - (referenceFrame:GetRight() * totalEffectiveScaleReferenceFrame)) / totalEffectiveScaleTargetFrame, ((anchorFrame:GetTop() * totalEffectiveScaleAnchorFrame) - (referenceFrame:GetTop() * totalEffectiveScaleReferenceFrame)) / totalEffectiveScaleTargetFrame;
+	if anchorPoint == "TOPRIGHT" then
+		return (
+			(anchorFrame:GetRight() * totalEffectiveScaleAnchorFrame)
+			- (referenceFrame:GetRight() * totalEffectiveScaleReferenceFrame)
+		) / totalEffectiveScaleTargetFrame,
+			(
+				(anchorFrame:GetTop() * totalEffectiveScaleAnchorFrame)
+				- (referenceFrame:GetTop() * totalEffectiveScaleReferenceFrame)
+			) / totalEffectiveScaleTargetFrame
 	end
-	if (anchorPoint == "BOTTOMLEFT") then
-		return ((anchorFrame:GetLeft() * totalEffectiveScaleAnchorFrame) - (referenceFrame:GetLeft() * totalEffectiveScaleReferenceFrame)) / totalEffectiveScaleTargetFrame, ((anchorFrame:GetBottom() * totalEffectiveScaleAnchorFrame) - (referenceFrame:GetBottom() * totalEffectiveScaleReferenceFrame)) / totalEffectiveScaleTargetFrame;
+	if anchorPoint == "BOTTOMLEFT" then
+		return (
+			(anchorFrame:GetLeft() * totalEffectiveScaleAnchorFrame)
+			- (referenceFrame:GetLeft() * totalEffectiveScaleReferenceFrame)
+		) / totalEffectiveScaleTargetFrame,
+			(
+				(anchorFrame:GetBottom() * totalEffectiveScaleAnchorFrame)
+				- (referenceFrame:GetBottom() * totalEffectiveScaleReferenceFrame)
+			) / totalEffectiveScaleTargetFrame
 	end
-	if (anchorPoint == "BOTTOMRIGHT") then
-		return ((anchorFrame:GetRight() * totalEffectiveScaleAnchorFrame) - (referenceFrame:GetRight() * totalEffectiveScaleReferenceFrame)) / totalEffectiveScaleTargetFrame, ((anchorFrame:GetBottom() * totalEffectiveScaleAnchorFrame) - (referenceFrame:GetBottom() * totalEffectiveScaleReferenceFrame)) / totalEffectiveScaleTargetFrame;
+	if anchorPoint == "BOTTOMRIGHT" then
+		return (
+			(anchorFrame:GetRight() * totalEffectiveScaleAnchorFrame)
+			- (referenceFrame:GetRight() * totalEffectiveScaleReferenceFrame)
+		) / totalEffectiveScaleTargetFrame,
+			(
+				(anchorFrame:GetBottom() * totalEffectiveScaleAnchorFrame)
+				- (referenceFrame:GetBottom() * totalEffectiveScaleReferenceFrame)
+			) / totalEffectiveScaleTargetFrame
 	end
-	if (anchorPoint == "TOP") then
-		return ((((anchorFrame:GetLeft() + anchorFrame:GetRight()) * totalEffectiveScaleAnchorFrame) - ((referenceFrame:GetLeft() + referenceFrame:GetRight()) * totalEffectiveScaleReferenceFrame)) / 2) / totalEffectiveScaleTargetFrame, ((anchorFrame:GetTop() * totalEffectiveScaleAnchorFrame) - (referenceFrame:GetTop() * totalEffectiveScaleReferenceFrame)) / totalEffectiveScaleTargetFrame;
+	if anchorPoint == "TOP" then
+		return (
+			(
+				((anchorFrame:GetLeft() + anchorFrame:GetRight()) * totalEffectiveScaleAnchorFrame)
+				- ((referenceFrame:GetLeft() + referenceFrame:GetRight()) * totalEffectiveScaleReferenceFrame)
+			) / 2
+		) / totalEffectiveScaleTargetFrame,
+			(
+				(anchorFrame:GetTop() * totalEffectiveScaleAnchorFrame)
+				- (referenceFrame:GetTop() * totalEffectiveScaleReferenceFrame)
+			) / totalEffectiveScaleTargetFrame
 	end
-	if (anchorPoint == "BOTTOM") then
-		return ((((anchorFrame:GetLeft() + anchorFrame:GetRight()) * totalEffectiveScaleAnchorFrame) - ((referenceFrame:GetLeft() + referenceFrame:GetRight()) * totalEffectiveScaleReferenceFrame)) / 2) / totalEffectiveScaleTargetFrame, ((anchorFrame:GetBottom() * totalEffectiveScaleAnchorFrame) - (referenceFrame:GetBottom() * totalEffectiveScaleReferenceFrame)) / totalEffectiveScaleTargetFrame;
+	if anchorPoint == "BOTTOM" then
+		return (
+			(
+				((anchorFrame:GetLeft() + anchorFrame:GetRight()) * totalEffectiveScaleAnchorFrame)
+				- ((referenceFrame:GetLeft() + referenceFrame:GetRight()) * totalEffectiveScaleReferenceFrame)
+			) / 2
+		) / totalEffectiveScaleTargetFrame,
+			(
+				(anchorFrame:GetBottom() * totalEffectiveScaleAnchorFrame)
+				- (referenceFrame:GetBottom() * totalEffectiveScaleReferenceFrame)
+			) / totalEffectiveScaleTargetFrame
 	end
-	if (anchorPoint == "LEFT") then
-		return ((anchorFrame:GetLeft() * totalEffectiveScaleAnchorFrame) - (referenceFrame:GetLeft() * totalEffectiveScaleReferenceFrame)) / totalEffectiveScaleTargetFrame, ((((anchorFrame:GetTop() + anchorFrame:GetBottom()) * totalEffectiveScaleAnchorFrame) - ((referenceFrame:GetTop() + referenceFrame:GetBottom()) * totalEffectiveScaleReferenceFrame)) / 2) / totalEffectiveScaleTargetFrame;
+	if anchorPoint == "LEFT" then
+		return (
+			(anchorFrame:GetLeft() * totalEffectiveScaleAnchorFrame)
+			- (referenceFrame:GetLeft() * totalEffectiveScaleReferenceFrame)
+		) / totalEffectiveScaleTargetFrame,
+			(
+				(
+					((anchorFrame:GetTop() + anchorFrame:GetBottom()) * totalEffectiveScaleAnchorFrame)
+					- ((referenceFrame:GetTop() + referenceFrame:GetBottom()) * totalEffectiveScaleReferenceFrame)
+				) / 2
+			) / totalEffectiveScaleTargetFrame
 	end
-	if (anchorPoint == "RIGHT") then
-		return ((anchorFrame:GetRight() * totalEffectiveScaleAnchorFrame) - (referenceFrame:GetRight() * totalEffectiveScaleReferenceFrame)) / totalEffectiveScaleTargetFrame, ((((anchorFrame:GetTop() + anchorFrame:GetBottom()) * totalEffectiveScaleAnchorFrame) - ((referenceFrame:GetTop() + referenceFrame:GetBottom()) * totalEffectiveScaleReferenceFrame)) / 2) / totalEffectiveScaleTargetFrame;
+	if anchorPoint == "RIGHT" then
+		return (
+			(anchorFrame:GetRight() * totalEffectiveScaleAnchorFrame)
+			- (referenceFrame:GetRight() * totalEffectiveScaleReferenceFrame)
+		) / totalEffectiveScaleTargetFrame,
+			(
+				(
+					((anchorFrame:GetTop() + anchorFrame:GetBottom()) * totalEffectiveScaleAnchorFrame)
+					- ((referenceFrame:GetTop() + referenceFrame:GetBottom()) * totalEffectiveScaleReferenceFrame)
+				) / 2
+			) / totalEffectiveScaleTargetFrame
 	end
-	if (anchorPoint == "CENTER") then
-		return ((((anchorFrame:GetLeft() + anchorFrame:GetRight()) * totalEffectiveScaleAnchorFrame) - ((referenceFrame:GetLeft() + referenceFrame:GetRight()) * totalEffectiveScaleReferenceFrame)) / 2) / totalEffectiveScaleTargetFrame, ((((anchorFrame:GetTop() + anchorFrame:GetBottom()) * totalEffectiveScaleAnchorFrame) - ((referenceFrame:GetTop() + referenceFrame:GetBottom()) * totalEffectiveScaleReferenceFrame)) / 2) / totalEffectiveScaleTargetFrame;
+	if anchorPoint == "CENTER" then
+		return (
+			(
+				((anchorFrame:GetLeft() + anchorFrame:GetRight()) * totalEffectiveScaleAnchorFrame)
+				- ((referenceFrame:GetLeft() + referenceFrame:GetRight()) * totalEffectiveScaleReferenceFrame)
+			) / 2
+		) / totalEffectiveScaleTargetFrame,
+			(
+				(
+					((anchorFrame:GetTop() + anchorFrame:GetBottom()) * totalEffectiveScaleAnchorFrame)
+					- ((referenceFrame:GetTop() + referenceFrame:GetBottom()) * totalEffectiveScaleReferenceFrame)
+				) / 2
+			) / totalEffectiveScaleTargetFrame
 	end
-	
-	return nil, nil;
+
+	return nil, nil
 end
 
 -- refresh anchor shopping tooltips
@@ -2440,174 +2620,187 @@ end
 -- 1. consider scaling to choose left or right side
 -- 2. calling ClearAllPoints() to refresh anchoring of shopping tooltips after re-anchoring of tip
 function LibFroznFunctions:RefreshAnchorShoppingTooltips(tip)
-	local primaryTooltip = ShoppingTooltip1;
-	local secondaryTooltip = ShoppingTooltip2;
-	
-	local primaryShown = primaryTooltip:IsShown();
-	local secondaryShown = secondaryTooltip:IsShown();
-	
+	local primaryTooltip = ShoppingTooltip1
+	local secondaryTooltip = ShoppingTooltip2
+
+	local primaryShown = primaryTooltip:IsShown()
+	local secondaryShown = secondaryTooltip:IsShown()
+
 	-- no shopping tooltip visible
-	if (not primaryShown) and (not secondaryShown) then
-		return;
+	if (not primaryShown) and not secondaryShown then
+		return
 	end
-	
+
 	-- refresh anchor of shopping tooltips
-	local self;
-	
-	if (TooltipComparisonManager) then -- since df 10.0.2
-		self = TooltipComparisonManager;
+	local self
+
+	if TooltipComparisonManager then -- since df 10.0.2
+		self = TooltipComparisonManager
 	else -- before df 10.0.2
-		local primaryTooltipPoint1 = (primaryTooltip:GetNumPoints() >= 1) and select(2, primaryTooltip:GetPoint(1));
-		local secondaryTooltipPoint1 = (secondaryTooltip:GetNumPoints() >= 1) and select(2, secondaryTooltip:GetPoint(1));
-		
+		local primaryTooltipPoint1 = (primaryTooltip:GetNumPoints() >= 1) and select(2, primaryTooltip:GetPoint(1))
+		local secondaryTooltipPoint1 = (secondaryTooltip:GetNumPoints() >= 1)
+			and select(2, secondaryTooltip:GetPoint(1))
+
 		self = {
 			tooltip = primaryTooltip:GetOwner(),
-			anchorFrame = (primaryTooltipPoint1 ~= secondaryTooltip) and primaryTooltipPoint1 or (primaryTooltipPoint1 == secondaryTooltip) and secondaryTooltipPoint1 or primaryTooltip:GetOwner(),
-			comparisonItem = (primaryTooltip:IsShown())
-		};
+			anchorFrame = (primaryTooltipPoint1 ~= secondaryTooltip) and primaryTooltipPoint1
+				or (primaryTooltipPoint1 == secondaryTooltip) and secondaryTooltipPoint1
+				or primaryTooltip:GetOwner(),
+			comparisonItem = (primaryTooltip:IsShown()),
+		}
 	end
-	
+
 	-- not the affected tip or no comparison item
-	if (self.tooltip ~= tip) or (not self.comparisonItem) then
-		return;
+	if (self.tooltip ~= tip) or not self.comparisonItem then
+		return
 	end
-	
+
 	-- start of original TooltipComparisonManager:AnchorShoppingTooltips()
-	local tooltip = self.tooltip;
+	local tooltip = self.tooltip
 	-- local primaryTooltip = tooltip.shoppingTooltips[1]; -- removed
 	-- local secondaryTooltip = tooltip.shoppingTooltips[2]; -- removed
-	
-	local sideAnchorFrame = self.anchorFrame;
+
+	local sideAnchorFrame = self.anchorFrame
 	if self.anchorFrame.IsEmbedded then
-		sideAnchorFrame = self.anchorFrame:GetParent():GetParent();
+		sideAnchorFrame = self.anchorFrame:GetParent():GetParent()
 	end
-	
+
 	-- recalculate size of tip, side anchor frame and shopping tips to ensure that they have the correct dimensions -- added start
-	LibFroznFunctions:RecalculateSizeOfGameTooltip(tooltip);
-	LibFroznFunctions:RecalculateSizeOfGameTooltip(sideAnchorFrame);
-	
-	if (primaryShown) then
-		LibFroznFunctions:RecalculateSizeOfGameTooltip(primaryTooltip);
+	LibFroznFunctions:RecalculateSizeOfGameTooltip(tooltip)
+	LibFroznFunctions:RecalculateSizeOfGameTooltip(sideAnchorFrame)
+
+	if primaryShown then
+		LibFroznFunctions:RecalculateSizeOfGameTooltip(primaryTooltip)
 	end
-	
-	if (secondaryShown) then
-		LibFroznFunctions:RecalculateSizeOfGameTooltip(secondaryTooltip);
+
+	if secondaryShown then
+		LibFroznFunctions:RecalculateSizeOfGameTooltip(secondaryTooltip)
 	end -- added end
-	
+
 	-- sometimes the sideAnchorFrame is an actual tooltip, and sometimes it's a script region, so make sure we're getting the actual anchor type
-	local anchorType = sideAnchorFrame.GetAnchorType and sideAnchorFrame:GetAnchorType() or tooltip:GetAnchorType(); -- moved here
-	
+	local anchorType = sideAnchorFrame.GetAnchorType and sideAnchorFrame:GetAnchorType() or tooltip:GetAnchorType() -- moved here
+
 	-- local leftPos = sideAnchorFrame:GetLeft(); -- removed
 	-- local rightPos = sideAnchorFrame:GetRight(); -- removed
-	local leftPos = (sideAnchorFrame:GetLeft() ~= nil) and (sideAnchorFrame:GetLeft() * sideAnchorFrame:GetEffectiveScale()); -- added
-	local rightPos = (sideAnchorFrame:GetRight() ~= nil) and (sideAnchorFrame:GetRight() * sideAnchorFrame:GetEffectiveScale()); -- added
-	
+	local leftPos = (sideAnchorFrame:GetLeft() ~= nil)
+		and (sideAnchorFrame:GetLeft() * sideAnchorFrame:GetEffectiveScale()) -- added
+	local rightPos = (sideAnchorFrame:GetRight() ~= nil)
+		and (sideAnchorFrame:GetRight() * sideAnchorFrame:GetEffectiveScale()) -- added
+
 	-- local selfLeftPos = tooltip:GetLeft(); -- removed
 	-- local selfRightPos = tooltip:GetRight(); -- removed
-	local selfLeftPos = (tooltip:GetLeft() ~= nil) and (tooltip:GetLeft() * tooltip:GetEffectiveScale()); -- added
-	local selfRightPos = (tooltip:GetRight() ~= nil) and (tooltip:GetRight() * tooltip:GetEffectiveScale()); -- added
-	
+	local selfLeftPos = (tooltip:GetLeft() ~= nil) and (tooltip:GetLeft() * tooltip:GetEffectiveScale()) -- added
+	local selfRightPos = (tooltip:GetRight() ~= nil) and (tooltip:GetRight() * tooltip:GetEffectiveScale()) -- added
+
 	-- if we get the Left, we have the Right
 	if leftPos and selfLeftPos then
-		leftPos = math.min(selfLeftPos, leftPos);-- get the left most bound
-		rightPos = math.max(selfRightPos, rightPos);-- get the right most bound
+		leftPos = math.min(selfLeftPos, leftPos) -- get the left most bound
+		rightPos = math.max(selfRightPos, rightPos) -- get the right most bound
 	else
-		leftPos = leftPos or selfLeftPos or 0;
-		rightPos = rightPos or selfRightPos or 0;
+		leftPos = leftPos or selfLeftPos or 0
+		rightPos = rightPos or selfRightPos or 0
 	end
-	
+
 	-- sometimes the sideAnchorFrame is an actual tooltip, and sometimes it's a script region, so make sure we're getting the actual anchor type
 	-- local anchorType = sideAnchorFrame.GetAnchorType and sideAnchorFrame:GetAnchorType() or tooltip:GetAnchorType(); -- moved to top
-	
-	local totalWidth = 0;
+
+	local totalWidth = 0
 	if primaryShown then
-		totalWidth = totalWidth + primaryTooltip:GetWidth() * primaryTooltip:GetEffectiveScale();
+		totalWidth = totalWidth + primaryTooltip:GetWidth() * primaryTooltip:GetEffectiveScale()
 	end
 	if secondaryShown then
-		totalWidth = totalWidth + secondaryTooltip:GetWidth() * primaryTooltip:GetEffectiveScale();
+		totalWidth = totalWidth + secondaryTooltip:GetWidth() * primaryTooltip:GetEffectiveScale()
 	end
-	
-	local rightDist = 0;
+
+	local rightDist = 0
 	-- local screenWidth = GetScreenWidth(); -- removed
-	local screenWidth = GetScreenWidth() * UIParent:GetEffectiveScale(); -- added
-	rightDist = screenWidth - rightPos;
-	
+	local screenWidth = GetScreenWidth() * UIParent:GetEffectiveScale() -- added
+	rightDist = screenWidth - rightPos
+
 	-- find correct side
-	local side;
-	if anchorType and (totalWidth < leftPos) and (anchorType == "ANCHOR_LEFT" or anchorType == "ANCHOR_TOPLEFT" or anchorType == "ANCHOR_BOTTOMLEFT") then
-		side = "left";
-	elseif anchorType and (totalWidth < rightDist) and (anchorType == "ANCHOR_RIGHT" or anchorType == "ANCHOR_TOPRIGHT" or anchorType == "ANCHOR_BOTTOMRIGHT") then
-		side = "right";
+	local side
+	if
+		anchorType
+		and (totalWidth < leftPos)
+		and (anchorType == "ANCHOR_LEFT" or anchorType == "ANCHOR_TOPLEFT" or anchorType == "ANCHOR_BOTTOMLEFT")
+	then
+		side = "left"
+	elseif
+		anchorType
+		and (totalWidth < rightDist)
+		and (anchorType == "ANCHOR_RIGHT" or anchorType == "ANCHOR_TOPRIGHT" or anchorType == "ANCHOR_BOTTOMRIGHT")
+	then
+		side = "right"
 	elseif rightDist < leftPos then
-		side = "left";
+		side = "left"
 	else
-		side = "right";
+		side = "right"
 	end
-	
+
 	-- see if we should slide the tooltip
 	if totalWidth > 0 and (anchorType and anchorType ~= "ANCHOR_PRESERVE") then --we never slide a tooltip with a preserved anchor
-		local slideAmount = 0;
-		if ( (side == "left") and (totalWidth > leftPos) ) then
-			slideAmount = totalWidth - leftPos;
-		elseif ( (side == "right") and (rightPos + totalWidth) >  screenWidth ) then
-			slideAmount = screenWidth - (rightPos + totalWidth);
+		local slideAmount = 0
+		if (side == "left") and (totalWidth > leftPos) then
+			slideAmount = totalWidth - leftPos
+		elseif (side == "right") and (rightPos + totalWidth) > screenWidth then
+			slideAmount = screenWidth - (rightPos + totalWidth)
 		end
 		if sideAnchorFrame.SetAnchorType then -- added start
-			slideAmount = slideAmount / sideAnchorFrame:GetEffectiveScale();
+			slideAmount = slideAmount / sideAnchorFrame:GetEffectiveScale()
 		else
-			slideAmount = slideAmount / tooltip:GetEffectiveScale();
+			slideAmount = slideAmount / tooltip:GetEffectiveScale()
 		end -- added end
-		
+
 		if slideAmount ~= 0 then -- if we calculated a slideAmount, we need to slide
-			local anchorPoints; -- added
-			
+			local anchorPoints -- added
+
 			if sideAnchorFrame.SetAnchorType then
 				-- sideAnchorFrame:SetAnchorType(anchorType, slideAmount, 0); -- removed. calling SetAnchorType() results in not visible ChatFrame hover tooltips with anchor type ANCHOR_NONE. additionally the current slide amount isn't considered, too.
-				anchorPoints = LibFroznFunctions:GetAnchorPoints(sideAnchorFrame); -- added start
-				
-				newOriginalSlideAmount = anchorPoints[1][4];
-				anchorPoints[1][4] = anchorPoints[1][4] + slideAmount;
-				
-				LibFroznFunctions:SetAnchorPoints(sideAnchorFrame, anchorPoints); -- added end
+				anchorPoints = LibFroznFunctions:GetAnchorPoints(sideAnchorFrame) -- added start
+
+				newOriginalSlideAmount = anchorPoints[1][4]
+				anchorPoints[1][4] = anchorPoints[1][4] + slideAmount
+
+				LibFroznFunctions:SetAnchorPoints(sideAnchorFrame, anchorPoints) -- added end
 			else
 				-- tooltip:SetAnchorType(anchorType, slideAmount, 0); -- removed. calling SetAnchorType() results in not visible ChatFrame hover tooltips with anchor type ANCHOR_NONE. additionally the current slide amount isn't considered, too.
-				anchorPoints = LibFroznFunctions:GetAnchorPoints(tooltip); -- added start
-				
-				newOriginalSlideAmount = anchorPoints[1][4];
-				anchorPoints[1][4] = anchorPoints[1][4] + slideAmount;
-				
-				LibFroznFunctions:SetAnchorPoints(tooltip, anchorPoints); -- added end
+				anchorPoints = LibFroznFunctions:GetAnchorPoints(tooltip) -- added start
+
+				newOriginalSlideAmount = anchorPoints[1][4]
+				anchorPoints[1][4] = anchorPoints[1][4] + slideAmount
+
+				LibFroznFunctions:SetAnchorPoints(tooltip, anchorPoints) -- added end
 			end
 		end
 	end
-	
-	primaryTooltip:ClearAllPoints(); -- added
-	
+
+	primaryTooltip:ClearAllPoints() -- added
+
 	if secondaryShown then
-		secondaryTooltip:ClearAllPoints(); -- added
-		
-		primaryTooltip:SetPoint("TOP", self.anchorFrame, 0, -10);
-		secondaryTooltip:SetPoint("TOP", self.anchorFrame, 0, -10);
+		secondaryTooltip:ClearAllPoints() -- added
+
+		primaryTooltip:SetPoint("TOP", self.anchorFrame, 0, -10)
+		secondaryTooltip:SetPoint("TOP", self.anchorFrame, 0, -10)
 		if side and side == "left" then
-			primaryTooltip:SetPoint("RIGHT", sideAnchorFrame, "LEFT");
+			primaryTooltip:SetPoint("RIGHT", sideAnchorFrame, "LEFT")
 		else
-			secondaryTooltip:SetPoint("LEFT", sideAnchorFrame, "RIGHT");
+			secondaryTooltip:SetPoint("LEFT", sideAnchorFrame, "RIGHT")
 		end
-		
+
 		if side and side == "left" then
-			secondaryTooltip:SetPoint("TOPRIGHT", primaryTooltip, "TOPLEFT");
+			secondaryTooltip:SetPoint("TOPRIGHT", primaryTooltip, "TOPLEFT")
 		else
-			primaryTooltip:SetPoint("TOPLEFT", secondaryTooltip, "TOPRIGHT");
+			primaryTooltip:SetPoint("TOPLEFT", secondaryTooltip, "TOPRIGHT")
 		end
 	else
-		primaryTooltip:SetPoint("TOP", self.anchorFrame, 0, -10);
+		primaryTooltip:SetPoint("TOP", self.anchorFrame, 0, -10)
 		if side and side == "left" then
-			primaryTooltip:SetPoint("RIGHT", sideAnchorFrame, "LEFT");
+			primaryTooltip:SetPoint("RIGHT", sideAnchorFrame, "LEFT")
 		else
-			primaryTooltip:SetPoint("LEFT", sideAnchorFrame, "RIGHT");
+			primaryTooltip:SetPoint("LEFT", sideAnchorFrame, "RIGHT")
 		end
 	end
-	
+
 	-- primaryTooltip:SetShown(primaryShown); -- removed
 	-- secondaryTooltip:SetShown(secondaryShown); -- removed
 end
@@ -2617,19 +2810,19 @@ end
 -- @return x coordinate, y coordinate (unaffected by UI scale)
 function LibFroznFunctions:GetCursorPosition()
 	-- get cursor position
-	local x, y = GetCursorPosition();
-	
+	local x, y = GetCursorPosition()
+
 	-- workaround for blizzard bug (tested under tww 11.0.2): if centering of the cursor when mouse freelooking is enabled, GetCursorPosition() returns the real cursor position for the first frame instead of the centered position when left-clicking. reproduced with addon "Combat Mode". for more info, see: https://github.com/Stanzilla/WoWUIBugs/issues/504
 	if (IsMouselooking()) and (GetCVar("CursorFreelookCentering") == "1") then
-		local UIScale = UIParent:GetEffectiveScale();
-		local UIParentWidth = UIParent:GetWidth() * UIScale;
-		local UIParentHeight = UIParent:GetHeight() * UIScale;
-		
-		x, y = (UIParentWidth / 2), (UIParentHeight * tonumber(GetCVar("CursorCenteredYPos")));
+		local UIScale = UIParent:GetEffectiveScale()
+		local UIParentWidth = UIParent:GetWidth() * UIScale
+		local UIParentHeight = UIParent:GetHeight() * UIScale
+
+		x, y = (UIParentWidth / 2), (UIParentHeight * tonumber(GetCVar("CursorCenteredYPos")))
 	end
-	
+
 	-- return cursor position
-	return x, y;
+	return x, y
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -2649,15 +2842,15 @@ function LibFroznFunctions:StripTextures(obj)
 		"BottomEdge",
 		"LeftEdge",
 		"RightEdge",
-		"Center"
-	};
+		"Center",
+	}
 
 	for index, pieceName in ipairs(nineSlicePieces) do
-		local region = obj[pieceName];
-		
-		if (region) then
-			region:SetTexture(nil);
-			region:SetAtlas(nil);
+		local region = obj[pieceName]
+
+		if region then
+			region:SetTexture(nil)
+			region:SetAtlas(nil)
 		end
 	end
 end
@@ -2669,40 +2862,40 @@ end
 -- @param  maxLevelBack           optional. max level to search back in frame chain, e.g. 1 = actual level, 2 = actual and one level back.
 -- @return true if frame or pattern in frame chain exists, false otherwise.
 function LibFroznFunctions:IsFrameBackInFrameChain(referenceFrame, framesAndNamePatterns, maxLevel)
-	local framesAndNamePatternsTable = self:ConvertToTable(framesAndNamePatterns);
-	local currentFrame = referenceFrame;
-	local currentLevel = 1;
-	
-	while (currentFrame) do
+	local framesAndNamePatternsTable = self:ConvertToTable(framesAndNamePatterns)
+	local currentFrame = referenceFrame
+	local currentLevel = 1
+
+	while currentFrame do
 		for _, frameAndNamePattern in ipairs(framesAndNamePatternsTable) do
-			if (type(frameAndNamePattern) == "table") then
-				if (currentFrame == frameAndNamePattern) then
-					return true;
+			if type(frameAndNamePattern) == "table" then
+				if currentFrame == frameAndNamePattern then
+					return true
 				end
-			elseif (type(frameAndNamePattern) == "string") then
-				if (type(currentFrame.GetName) == "function") then
-					local currentFrameName = currentFrame:GetName();
-					
-					if (currentFrameName) and (currentFrameName:match(frameAndNamePattern)) then
-						return true;
+			elseif type(frameAndNamePattern) == "string" then
+				if type(currentFrame.GetName) == "function" then
+					local currentFrameName = currentFrame:GetName()
+
+					if currentFrameName and (currentFrameName:match(frameAndNamePattern)) then
+						return true
 					end
 				end
 			end
 		end
-		
-		if (maxLevel) and (currentLevel >= maxLevel) then
-			return false;
+
+		if maxLevel and (currentLevel >= maxLevel) then
+			return false
 		end
-		
-		if (type(currentFrame.GetParent) ~= "function") then
-			return false;
+
+		if type(currentFrame.GetParent) ~= "function" then
+			return false
 		end
-		
-		currentFrame = currentFrame:GetParent();
-		currentLevel = currentLevel + 1;
+
+		currentFrame = currentFrame:GetParent()
+		currentLevel = currentLevel + 1
 	end
-	
-	return false;
+
+	return false
 end
 
 -- show popup with text
@@ -2720,175 +2913,176 @@ end
 --          .cancelButtonText    cancel button text
 --          .onShowHandler       optional. handler for OnShow event of popup. parameters: self, data
 --          .onAcceptHandler     optional. handler for OnAccept event (button pressed) of popup. parameters: self, data
-local SPWT_GameDialogResizeHooked = {};
+local SPWT_GameDialogResizeHooked = {}
 
 function LibFroznFunctions:ShowPopupWithText(params)
 	-- no params
-	if (not params) then
-		return;
+	if not params then
+		return
 	end
-	
+
 	-- create initial popup config
-	local popupName = LIB_NAME .. "-" .. LIB_MINOR .. "_ShowPopupWithText";
-	
-	if (not StaticPopupDialogs[popupName]) then
-		local editBoxOnEscapePressed = StaticPopup_StandardEditBoxOnEscapePressed or function(self, data)
-			-- StaticPopup_StandardEditBoxOnEscapePressed() not available in catac 4.4.0 and classic era 1.15.2
-			local dialog = self:GetParent();
-			local which = dialog.which;
-			
-			if (not which) then
-				return;
+	local popupName = LIB_NAME .. "-" .. LIB_MINOR .. "_ShowPopupWithText"
+
+	if not StaticPopupDialogs[popupName] then
+		local editBoxOnEscapePressed = StaticPopup_StandardEditBoxOnEscapePressed
+			or function(self, data)
+				-- StaticPopup_StandardEditBoxOnEscapePressed() not available in catac 4.4.0 and classic era 1.15.2
+				local dialog = self:GetParent()
+				local which = dialog.which
+
+				if not which then
+					return
+				end
+
+				local dialogInfo = StaticPopupDialogs[which]
+
+				if (not dialogInfo) or not dialogInfo.hideOnEscape then
+					return
+				end
+
+				dialog:Hide()
 			end
-			
-			local dialogInfo = StaticPopupDialogs[which];
-			
-			if (not dialogInfo) or (not dialogInfo.hideOnEscape) then
-				return;
-			end
-			
-			dialog:Hide();
-		end
-		
+
 		local function setAndHighlightLockedEditBoxText(self, data)
-			local lockedEditBoxText = data.lockedEditBoxText;
-			
-			if (lockedEditBoxText) and (lockedEditBoxText ~= "") then
-				self:SetText(lockedEditBoxText);
-				self:HighlightText();
+			local lockedEditBoxText = data.lockedEditBoxText
+
+			if lockedEditBoxText and (lockedEditBoxText ~= "") then
+				self:SetText(lockedEditBoxText)
+				self:HighlightText()
 			end
 		end
-		
+
 		local definition = {
 			showAlertGear = 1,
 			hasEditBox = 1,
 			editBoxWidth = 400,
 			OnShow = function(self, data)
 				-- fix width for greater edit box width
-				local which = self.which;
-				
-				if (which) then
-					local dialogInfo = StaticPopupDialogs[which];
-					
-					if (dialogInfo) and (dialogInfo.editBoxWidth and dialogInfo.editBoxWidth > 260) then
-						if (self.Resize) then -- GameDialogMixin:Resize() available since tww 11.2.0
-							if (not SPWT_GameDialogResizeHooked[self]) then -- see GameDialogMixin:Resize() in "GameDialog.lua"
+				local which = self.which
+
+				if which then
+					local dialogInfo = StaticPopupDialogs[which]
+
+					if dialogInfo and (dialogInfo.editBoxWidth and dialogInfo.editBoxWidth > 260) then
+						if self.Resize then -- GameDialogMixin:Resize() available since tww 11.2.0
+							if not SPWT_GameDialogResizeHooked[self] then -- see GameDialogMixin:Resize() in "GameDialog.lua"
 								hooksecurefunc(self, "Resize", function(self)
-									local dialogInfo = self.dialogInfo;
-									
-									if (not dialogInfo) then
-										return;
+									local dialogInfo = self.dialogInfo
+
+									if not dialogInfo then
+										return
 									end
-									
-									local data = self.data;
-									
-									if (not data) or (not data.considerEditBoxWidth) then
-										return;
+
+									local data = self.data
+
+									if (not data) or not data.considerEditBoxWidth then
+										return
 									end
-									
-									self:SetMinimumWidth(self:GetMinimumWidth() + (dialogInfo.editBoxWidth - 260 - 19));
-									self:Layout();
-								end);
-								
-								SPWT_GameDialogResizeHooked[self] = true;
+
+									self:SetMinimumWidth(self:GetMinimumWidth() + (dialogInfo.editBoxWidth - 260 - 19))
+									self:Layout()
+								end)
+
+								SPWT_GameDialogResizeHooked[self] = true
 							end
-							
-							data.considerEditBoxWidth = true;
+
+							data.considerEditBoxWidth = true
 						else -- before tww 11.2.0
-							local width = self:GetWidth() + (dialogInfo.editBoxWidth - 260);
-							
-							self:SetWidth(width);
-							self.maxWidthSoFar = width;
+							local width = self:GetWidth() + (dialogInfo.editBoxWidth - 260)
+
+							self:SetWidth(width)
+							self.maxWidthSoFar = width
 						end
 					end
 				end
-				
+
 				-- consider icon, locked edit box text and OnShow handler
-				local editBox = (self.GetEditBox and self:GetEditBox() or self.editBox); -- acccessor method GetEditBox() available since tww 11.2.0
-				
-				if (data) then
-					local alertIcon = (self.AlertIcon or _G[self:GetName() .. "AlertIcon"]);
-					
-					if (alertIcon) then
-						alertIcon:SetTexture(data.iconFile);
-						
-						local iconTexCoord = data.iconTexCoord;
-						
-						if (iconTexCoord) then
-							alertIcon:SetTexCoord(unpack(iconTexCoord));
+				local editBox = (self.GetEditBox and self:GetEditBox() or self.editBox) -- acccessor method GetEditBox() available since tww 11.2.0
+
+				if data then
+					local alertIcon = (self.AlertIcon or _G[self:GetName() .. "AlertIcon"])
+
+					if alertIcon then
+						alertIcon:SetTexture(data.iconFile)
+
+						local iconTexCoord = data.iconTexCoord
+
+						if iconTexCoord then
+							alertIcon:SetTexCoord(unpack(iconTexCoord))
 						else
-							alertIcon:SetTexCoord(0, 1, 0, 1);
+							alertIcon:SetTexCoord(0, 1, 0, 1)
 						end
 					end
-					
-					setAndHighlightLockedEditBoxText(editBox, data);
-					
-					if (data.onShowHandler) then
-						data.onShowHandler(self, data);
+
+					setAndHighlightLockedEditBoxText(editBox, data)
+
+					if data.onShowHandler then
+						data.onShowHandler(self, data)
 					end
 				end
-				
+
 				-- focus edit box
-				editBox:SetFocus();
+				editBox:SetFocus()
 			end,
 			EditBoxOnTextChanged = function(self, data)
 				-- consider locked edit box text
-				if (not data) then
-					return;
+				if not data then
+					return
 				end
-				
-				setAndHighlightLockedEditBoxText(self, data);
+
+				setAndHighlightLockedEditBoxText(self, data)
 			end,
 			selectCallbackByIndex = true,
 			EditBoxOnEnterPressed = function(self, data)
-				local dialog = self:GetParent();
-				
-				if (dialog.button1:IsEnabled()) then
-					StaticPopup_OnClick(dialog, 1);
+				local dialog = self:GetParent()
+
+				if dialog.button1:IsEnabled() then
+					StaticPopup_OnClick(dialog, 1)
 				end
 			end,
 			EditBoxOnEscapePressed = editBoxOnEscapePressed,
 			OnAccept = function(self, data)
-				if (data.onAcceptHandler) then
-					data.onAcceptHandler(self, data);
+				if data.onAcceptHandler then
+					data.onAcceptHandler(self, data)
 				end
 			end,
 			OnCancel = function(self, data)
-				local editBox = (self.GetEditBox and self:GetEditBox() or self.editBox); -- acccessor method GetEditBox() available since tww 11.2.0;
-				
-				editBoxOnEscapePressed(editBox, data);
+				local editBox = (self.GetEditBox and self:GetEditBox() or self.editBox) -- acccessor method GetEditBox() available since tww 11.2.0;
+
+				editBoxOnEscapePressed(editBox, data)
 			end,
-			hideOnEscape = 1
-		};
-		
-		if (StaticPopup_AddDefinition) then -- since tww 11.2.0
-			StaticPopup_AddDefinition(popupName, definition);
+			hideOnEscape = 1,
+		}
+
+		if StaticPopup_AddDefinition then -- since tww 11.2.0
+			StaticPopup_AddDefinition(popupName, definition)
 		else -- before tww 11.2.0
-			StaticPopupDialogs[popupName] = definition; -- hopefully no taint, see "StaticPopup.lua"
+			StaticPopupDialogs[popupName] = definition -- hopefully no taint, see "StaticPopup.lua"
 		end
 	end
-	
+
 	-- set popup config
-	local staticPopupDialog = StaticPopupDialogs[popupName];
-	
-	staticPopupDialog.text = params.prompt;
-	
-	if (StaticPopup_SetButtonText) then -- since tww 11.2.0
-		StaticPopup_SetButtonText(popupName, 1, params.acceptButtonText);
-		StaticPopup_SetButtonText(popupName, 2, params.cancelButtonText);
+	local staticPopupDialog = StaticPopupDialogs[popupName]
+
+	staticPopupDialog.text = params.prompt
+
+	if StaticPopup_SetButtonText then -- since tww 11.2.0
+		StaticPopup_SetButtonText(popupName, 1, params.acceptButtonText)
+		StaticPopup_SetButtonText(popupName, 2, params.cancelButtonText)
 	else -- before tww 11.2.0
-		staticPopupDialog.button1 = params.acceptButtonText;
-		staticPopupDialog.button2 = params.cancelButtonText;
+		staticPopupDialog.button1 = params.acceptButtonText
+		staticPopupDialog.button2 = params.cancelButtonText
 	end
-	
+
 	-- show popup with text
 	StaticPopup_Show(popupName, nil, nil, {
 		lockedEditBoxText = params.lockedText,
 		iconFile = params.iconFile,
 		iconTexCoord = params.iconTexCoord,
 		onShowHandler = params.onShowHandler,
-		onAcceptHandler = params.onAcceptHandler
-	});
+		onAcceptHandler = params.onAcceptHandler,
+	})
 end
 
 -- check if the mouse cursor is hovering over the WorldFrame
@@ -2896,69 +3090,75 @@ end
 -- hint: temporary workaround for blizzard bug in classic era 1.15.7, see https://github.com/frozn/TipTac/issues/386: GetMouseFoci() doesn't return the WorldFrame any more since patch 1.15.7
 --
 -- @return true if the mouse cursor is hovering over the WorldFrame, false otherwise.
-local frameForWorldFrameIsMouseMotionFocus;
+local frameForWorldFrameIsMouseMotionFocus
 
 -- create frame for "create frame for WorldFrame is mouse motion focus on player login"
-local frameForCreateFrameForWorldFrameIsMouseMotionFocusOnPlayerLogin;
+local frameForCreateFrameForWorldFrameIsMouseMotionFocusOnPlayerLogin
 
-if (LibFroznFunctions.isWoWFlavor.ClassicEra) then
-	frameForCreateFrameForWorldFrameIsMouseMotionFocusOnPlayerLogin = CreateFrame("Frame", LIB_NAME .. "-" .. LIB_MINOR .. "_CreateFrameForWorldFrameIsMouseMotionFocusOnPlayerLogin");
-	frameForCreateFrameForWorldFrameIsMouseMotionFocusOnPlayerLogin:Hide();
+if LibFroznFunctions.isWoWFlavor.ClassicEra then
+	frameForCreateFrameForWorldFrameIsMouseMotionFocusOnPlayerLogin =
+		CreateFrame("Frame", LIB_NAME .. "-" .. LIB_MINOR .. "_CreateFrameForWorldFrameIsMouseMotionFocusOnPlayerLogin")
+	frameForCreateFrameForWorldFrameIsMouseMotionFocusOnPlayerLogin:Hide()
 
 	frameForCreateFrameForWorldFrameIsMouseMotionFocusOnPlayerLogin:SetScript("OnEvent", function(self, event, ...)
-		self[event](self, event, ...);
-	end);
-	
+		self[event](self, event, ...)
+	end)
+
 	function frameForCreateFrameForWorldFrameIsMouseMotionFocusOnPlayerLogin:PLAYER_LOGIN()
 		-- create frame for "WorldFrame is mouse motion focus"
-		if (not frameForWorldFrameIsMouseMotionFocus) then
-			frameForWorldFrameIsMouseMotionFocus = CreateFrame("Frame", LIB_NAME .. "-" .. LIB_MINOR .. "_WorldFrameIsMouseMotionFocus");
-			
-			frameForWorldFrameIsMouseMotionFocus:SetFrameStrata("BACKGROUND");
-			frameForWorldFrameIsMouseMotionFocus:SetFrameLevel(0);
-			frameForWorldFrameIsMouseMotionFocus:SetAllPoints(WorldFrame);
-			
-			frameForWorldFrameIsMouseMotionFocus:EnableMouseMotion(true);
-			frameForWorldFrameIsMouseMotionFocus:SetPropagateMouseMotion(true);
-			frameForWorldFrameIsMouseMotionFocus:SetPropagateMouseClicks(true);
-			
+		if not frameForWorldFrameIsMouseMotionFocus then
+			frameForWorldFrameIsMouseMotionFocus =
+				CreateFrame("Frame", LIB_NAME .. "-" .. LIB_MINOR .. "_WorldFrameIsMouseMotionFocus")
+
+			frameForWorldFrameIsMouseMotionFocus:SetFrameStrata("BACKGROUND")
+			frameForWorldFrameIsMouseMotionFocus:SetFrameLevel(0)
+			frameForWorldFrameIsMouseMotionFocus:SetAllPoints(WorldFrame)
+
+			frameForWorldFrameIsMouseMotionFocus:EnableMouseMotion(true)
+			frameForWorldFrameIsMouseMotionFocus:SetPropagateMouseMotion(true)
+			frameForWorldFrameIsMouseMotionFocus:SetPropagateMouseClicks(true)
+
 			WorldFrame:HookScript("OnShow", function()
-				frameForWorldFrameIsMouseMotionFocus:Show();
-			end);
-			
+				frameForWorldFrameIsMouseMotionFocus:Show()
+			end)
+
 			WorldFrame:HookScript("OnHide", function()
-				frameForWorldFrameIsMouseMotionFocus:Hide();
-			end);
-			
-			frameForWorldFrameIsMouseMotionFocus:SetShown(WorldFrame:IsShown());
+				frameForWorldFrameIsMouseMotionFocus:Hide()
+			end)
+
+			frameForWorldFrameIsMouseMotionFocus:SetShown(WorldFrame:IsShown())
 		end
 	end
-	
-	frameForCreateFrameForWorldFrameIsMouseMotionFocusOnPlayerLogin:RegisterEvent("PLAYER_LOGIN");
+
+	frameForCreateFrameForWorldFrameIsMouseMotionFocusOnPlayerLogin:RegisterEvent("PLAYER_LOGIN")
 end
 
 function LibFroznFunctions:WorldFrameIsMouseMotionFocus()
-	local WorldFrame = WorldFrame;
-	
-	if (self.isWoWFlavor.ClassicEra) then
-		if (frameForWorldFrameIsMouseMotionFocus) then
-			WorldFrame = frameForWorldFrameIsMouseMotionFocus;
+	local WorldFrame = WorldFrame
+
+	if self.isWoWFlavor.ClassicEra then
+		if frameForWorldFrameIsMouseMotionFocus then
+			WorldFrame = frameForWorldFrameIsMouseMotionFocus
 		end
 	else
 		-- make shure that the WorldFrame can receive mouse hover events
-		if (not WorldFrame:IsForbidden()) and ((not WorldFrame:IsProtected()) or (not InCombatLockdown())) and (not WorldFrame:IsMouseMotionEnabled()) then
-			WorldFrame:EnableMouseMotion(true);
+		if
+			(not WorldFrame:IsForbidden())
+			and ((not WorldFrame:IsProtected()) or (not InCombatLockdown()))
+			and (not WorldFrame:IsMouseMotionEnabled())
+		then
+			WorldFrame:EnableMouseMotion(true)
 		end
-		
+
 		-- check if the mouse cursor is hovering over the WorldFrame
-		local mouseFocus = self:GetMouseFocus();
-		
-		if (mouseFocus == WorldFrame) then
-			return true;
+		local mouseFocus = self:GetMouseFocus()
+
+		if mouseFocus == WorldFrame then
+			return true
 		end
 	end
-	
-	return WorldFrame:IsMouseMotionFocus(); -- checking "mouseFocus == WorldFrame" alone doesn't work in cases if there is a fullscreen frame above the world frame, e.g. from addon "OPie".
+
+	return WorldFrame:IsMouseMotionFocus() -- checking "mouseFocus == WorldFrame" alone doesn't work in cases if there is a fullscreen frame above the world frame, e.g. from addon "OPie".
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -2972,19 +3172,19 @@ end
 -- @return line from GameTooltip. nil if line doesn't exist.
 function LibFroznFunctions:GetLineFromGameTooltip(tip, lineIndex)
 	-- only for GameTooltip tips
-	if (tip:GetObjectType() ~= "GameTooltip") then
-		return nil;
+	if tip:GetObjectType() ~= "GameTooltip" then
+		return nil
 	end
-	
+
 	-- no tip name available
-	local tipName = tip:GetName();
-	
-	if (not tipName) then
-		return nil;
+	local tipName = tip:GetName()
+
+	if not tipName then
+		return nil
 	end
-	
+
 	-- get line from GameTooltip
-	return _G[tipName .. "TextLeft" .. lineIndex];
+	return _G[tipName .. "TextLeft" .. lineIndex]
 end
 
 -- get double line from GameTooltip (TextLeft, TextRight)
@@ -2994,19 +3194,19 @@ end
 -- @return double line from GameTooltip. nil, nil if line doesn't exist.
 function LibFroznFunctions:GetDoubleLineFromGameTooltip(tip, lineIndex)
 	-- only for GameTooltip tips
-	if (tip:GetObjectType() ~= "GameTooltip") then
-		return nil, nil;
+	if tip:GetObjectType() ~= "GameTooltip" then
+		return nil, nil
 	end
-	
+
 	-- no tip name available
-	local tipName = tip:GetName();
-	
-	if (not tipName) then
-		return nil, nil;
+	local tipName = tip:GetName()
+
+	if not tipName then
+		return nil, nil
 	end
-	
+
 	-- get double line from GameTooltip
-	return _G[tipName .. "TextLeft" .. lineIndex], _G[tipName .. "TextRight" .. lineIndex];
+	return _G[tipName .. "TextLeft" .. lineIndex], _G[tipName .. "TextRight" .. lineIndex]
 end
 
 -- get line text from GameTooltip (TextLeft)
@@ -3015,15 +3215,15 @@ end
 -- @param  lineIndex  line index
 -- @return line text from GameTooltip
 function LibFroznFunctions:GetLineTextFromGameTooltip(tip, lineIndex)
-	local tipLine = self:GetLineFromGameTooltip(tip, lineIndex);
-	
+	local tipLine = self:GetLineFromGameTooltip(tip, lineIndex)
+
 	-- line from GameTooltip not available
-	if (not tipLine) then
-		return nil;
+	if not tipLine then
+		return nil
 	end
-	
+
 	-- get line text from GameTooltip
-	return tipLine:GetText();
+	return tipLine:GetText()
 end
 
 -- get double line text from GameTooltip (TextLeft, TextRight)
@@ -3032,10 +3232,10 @@ end
 -- @param  lineIndex  line index
 -- @return double line text from GameTooltip
 function LibFroznFunctions:GetDoubleLineTextFromGameTooltip(tip, lineIndex)
-	local tipLineLeft, tipLineRight = self:GetDoubleLineFromGameTooltip(tip, lineIndex);
-	
+	local tipLineLeft, tipLineRight = self:GetDoubleLineFromGameTooltip(tip, lineIndex)
+
 	-- get double line text from GameTooltip
-	return (tipLineLeft and tipLineLeft:GetText() or nil), (tipLineRight and tipLineRight:GetText() or nil);
+	return (tipLineLeft and tipLineLeft:GetText() or nil), (tipLineRight and tipLineRight:GetText() or nil)
 end
 
 -- recalculate size of GameTooltip
@@ -3043,11 +3243,11 @@ end
 -- @param tip  GameTooltip
 function LibFroznFunctions:RecalculateSizeOfGameTooltip(tip)
 	if (tip:IsForbidden()) or (type(tip.GetObjectType) ~= "function") or (tip:GetObjectType() ~= "GameTooltip") then
-		return;
+		return
 	end
-	
-	tip:SetPadding(tip:GetPadding());
-	tip:GetWidth(); -- possible blizzard bug (tested under df 10.2.7): tooltip is sometimes invisible after SetPadding() is called in OnShow. Calling e.g. GetWidth() after SetPadding() fixes this. reproduced with addon "Total RP 3" where the player's unit tooltip isn't shown any more.
+
+	tip:SetPadding(tip:GetPadding())
+	tip:GetWidth() -- possible blizzard bug (tested under df 10.2.7): tooltip is sometimes invisible after SetPadding() is called in OnShow. Calling e.g. GetWidth() after SetPadding() fixes this. reproduced with addon "Total RP 3" where the player's unit tooltip isn't shown any more.
 end
 
 -- get tooltip info
@@ -3061,26 +3261,26 @@ end
 --         returns nil if no tooltip data is available.
 function LibFroznFunctions:GetTooltipInfo(functionName, ...)
 	-- get tooltip info from C_TooltipInfo
-	
+
 	-- since df 10.0.2
-	if (C_TooltipInfo) and (type(C_TooltipInfo[functionName]) == "function") then
-		local tooltipData = C_TooltipInfo[functionName](...);
-		
-		return tooltipData;
+	if C_TooltipInfo and (type(C_TooltipInfo[functionName]) == "function") then
+		local tooltipData = C_TooltipInfo[functionName](...)
+
+		return tooltipData
 	end
-	
+
 	-- before df 10.0.2
-	
+
 	-- get tooltip info from scanning tooltip
 	local accessors = { -- see "TooltipDataHandler.lua"
 		GetUnit = "SetUnit",
 		GetUnitAura = "SetUnitAura",
-		GetInventoryItem = "SetInventoryItem"
-	};
-	
-	local tooltipData = LibFroznFunctions:GetTooltipDataFromScanTip("GetTooltipInfo", accessors[functionName], ...);
-	
-	return tooltipData;
+		GetInventoryItem = "SetInventoryItem",
+	}
+
+	local tooltipData = LibFroznFunctions:GetTooltipDataFromScanTip("GetTooltipInfo", accessors[functionName], ...)
+
+	return tooltipData
 end
 
 -- get tooltip data from scanning tooltip
@@ -3093,49 +3293,49 @@ end
 --             .leftText    left text of line
 --             .rightText   right text of line
 --         returns nil if no tooltip data is available.
-local getTooltipDataFromScanTipFrames = {};
+local getTooltipDataFromScanTipFrames = {}
 
 function LibFroznFunctions:GetTooltipDataFromScanTip(scanTipName, functionName, ...)
 	-- function not available from GameTooltip
-	if (type(GameTooltip[functionName]) ~= "function") then
-		return nil;
+	if type(GameTooltip[functionName]) ~= "function" then
+		return nil
 	end
-	
+
 	-- create scanning tooltip if not already available
-	local completeScanTipName = LIB_NAME .. "-" .. LIB_MINOR .. "_" .. scanTipName;
-	local scanTip = getTooltipDataFromScanTipFrames[completeScanTipName];
-	
-	if (not scanTip) then
-		scanTip = CreateFrame("GameTooltip", completeScanTipName, nil, "GameTooltipTemplate");
-		getTooltipDataFromScanTipFrames[completeScanTipName] = scanTip;
-		
-		scanTip:SetOwner(UIParent, "ANCHOR_NONE");
+	local completeScanTipName = LIB_NAME .. "-" .. LIB_MINOR .. "_" .. scanTipName
+	local scanTip = getTooltipDataFromScanTipFrames[completeScanTipName]
+
+	if not scanTip then
+		scanTip = CreateFrame("GameTooltip", completeScanTipName, nil, "GameTooltipTemplate")
+		getTooltipDataFromScanTipFrames[completeScanTipName] = scanTip
+
+		scanTip:SetOwner(UIParent, "ANCHOR_NONE")
 	end
-	
+
 	-- get tooltip data from scanning tooltip
-	scanTip:ClearLines();
-	scanTip[functionName](scanTip, ...);
-	
-	local numLines = scanTip:NumLines();
-	
-	if (numLines == 0) then
-		return nil;
+	scanTip:ClearLines()
+	scanTip[functionName](scanTip, ...)
+
+	local numLines = scanTip:NumLines()
+
+	if numLines == 0 then
+		return nil
 	end
-	
+
 	local tooltipData = {
-		lines = {}
-	};
-	
+		lines = {},
+	}
+
 	for lineIndex = 1, numLines do
-		local tipLineLeft, tipLineRight = self:GetDoubleLineTextFromGameTooltip(scanTip, lineIndex);
-		
+		local tipLineLeft, tipLineRight = self:GetDoubleLineTextFromGameTooltip(scanTip, lineIndex)
+
 		tinsert(tooltipData.lines, {
 			leftText = tipLineLeft,
-			rightText = tipLineRight
-		});
+			rightText = tipLineRight,
+		})
 	end
-	
-	return tooltipData;
+
+	return tooltipData
 end
 
 -- get aura description
@@ -3149,79 +3349,79 @@ end
 --         returns "LFF_AURA_DESCRIPTION.none" if no aura description has been found or spell id can't be determined from aura.
 LFF_AURA_DESCRIPTION = {
 	available = 1, -- aura description available
-	none = 2 -- no aura description found
-};
+	none = 2, -- no aura description found
+}
 
 function LibFroznFunctions:GetAuraDescription(unitID, index, filter, callbackForAuraData)
 	-- check if spell data for aura is available and queried from server
-	local auraData = self:GetAuraDataByIndex(unitID, index, filter);
-	local spellID = (auraData and auraData.spellId);
-	
-	if (not spellID) then
-		return LFF_AURA_DESCRIPTION.none;
+	local auraData = self:GetAuraDataByIndex(unitID, index, filter)
+	local spellID = (auraData and auraData.spellId)
+
+	if not spellID then
+		return LFF_AURA_DESCRIPTION.none
 	end
-	
-	local spell = Spell:CreateFromSpellID(spellID);
-	
-	if (spell:IsSpellEmpty()) then
-		return LFF_AURA_DESCRIPTION.none;
+
+	local spell = Spell:CreateFromSpellID(spellID)
+
+	if spell:IsSpellEmpty() then
+		return LFF_AURA_DESCRIPTION.none
 	end
-	
+
 	-- spell data for aura is already available
-	if (spell:IsSpellDataCached()) then
-		return LFF_GetAuraDescriptionFromSpellData(unitID, index, filter);
+	if spell:IsSpellDataCached() then
+		return LFF_GetAuraDescriptionFromSpellData(unitID, index, filter)
 	end
-	
+
 	-- spell data for aura isn't available
-	if (type(callbackForAuraData) == "function") then
-		local unitGUID = UnitGUID(unitID);
-		
+	if type(callbackForAuraData) == "function" then
+		local unitGUID = UnitGUID(unitID)
+
 		spell:ContinueOnSpellLoad(function()
-			LFF_GetAuraDescriptionFromSpellData(unitID, index, filter, callbackForAuraData, unitGUID);
-		end);
+			LFF_GetAuraDescriptionFromSpellData(unitID, index, filter, callbackForAuraData, unitGUID)
+		end)
 	else
-		C_Spell.RequestLoadSpellData(spellID);
+		C_Spell.RequestLoadSpellData(spellID)
 	end
-	
-	return LFF_AURA_DESCRIPTION.available;
+
+	return LFF_AURA_DESCRIPTION.available
 end
 
 function LFF_GetAuraDescriptionFromSpellData(unitID, index, filter, callbackForAuraData, unitGUID)
 	-- check if unit guid from unit id is still the same when waiting for spell data
-	if (type(callbackForAuraData) == "function") and (unitGUID) then
-		local _unitGUID = UnitGUID(unitID);
-		
-		if (_unitGUID ~= unitGUID) then
-			return;
+	if (type(callbackForAuraData) == "function") and unitGUID then
+		local _unitGUID = UnitGUID(unitID)
+
+		if _unitGUID ~= unitGUID then
+			return
 		end
 	end
-	
+
 	-- get aura description from spell data
-	local tooltipData = LibFroznFunctions:GetTooltipInfo("GetUnitAura", unitID, index, filter);
-	
-	return LFF_GetAuraDescriptionFromTooltipData(tooltipData, callbackForAuraData);
+	local tooltipData = LibFroznFunctions:GetTooltipInfo("GetUnitAura", unitID, index, filter)
+
+	return LFF_GetAuraDescriptionFromTooltipData(tooltipData, callbackForAuraData)
 end
 
 function LFF_GetAuraDescriptionFromTooltipData(tooltipData, callbackForAuraData)
 	-- no tooltip data available
-	if (not tooltipData) then
-		return LFF_AURA_DESCRIPTION.none;
+	if not tooltipData then
+		return LFF_AURA_DESCRIPTION.none
 	end
-	
+
 	-- tip line 1 is aura name. tip line 2 is aura description.
-	local tipLine = tooltipData.lines[2];
-	
-	if (tipLine) then
-		local auraDescription = tipLine.leftText;
-		
-		if (type(callbackForAuraData) == "function") then
-			callbackForAuraData(auraDescription);
+	local tipLine = tooltipData.lines[2]
+
+	if tipLine then
+		local auraDescription = tipLine.leftText
+
+		if type(callbackForAuraData) == "function" then
+			callbackForAuraData(auraDescription)
 		end
-		
-		return auraDescription;
+
+		return auraDescription
 	end
-	
-	return LFF_AURA_DESCRIPTION.none;
+
+	return LFF_AURA_DESCRIPTION.none
 end
 
 -- get item enchant
@@ -3238,92 +3438,92 @@ end
 --         returns "LFF_ENCHANT.none" if no enchant has been found or spell id can't be determined from enchant.
 LFF_ENCHANT = {
 	available = 1, -- enchant available
-	none = 2 -- no enchant found
-};
+	none = 2, -- no enchant found
+}
 
 function LibFroznFunctions:GetItemEnchant(enchantID, callbackForEnchantmentData)
 	-- check if spell data for enchant is available
-	local spellData = LibFroznFunctions:GetSpellDataFromEnchant(enchantID);
-	
+	local spellData = LibFroznFunctions:GetSpellDataFromEnchant(enchantID)
+
 	if (not spellData) or (spellData.spellID == 0) then
-		return LFF_ENCHANT.none;
+		return LFF_ENCHANT.none
 	end
-	
-	local spell = Spell:CreateFromSpellID(spellData.spellID);
-	
-	if (spell:IsSpellEmpty()) then
-		return LFF_ENCHANT.none;
+
+	local spell = Spell:CreateFromSpellID(spellData.spellID)
+
+	if spell:IsSpellEmpty() then
+		return LFF_ENCHANT.none
 	end
-	
-	local spellDescription;
-	
-	if (spellData.spellIDDescription == 0) then
+
+	local spellDescription
+
+	if spellData.spellIDDescription == 0 then
 		spellDescription = spell
 	else
-		spellDescription = Spell:CreateFromSpellID(spellData.spellIDDescription);
+		spellDescription = Spell:CreateFromSpellID(spellData.spellIDDescription)
 	end
-	
+
 	-- check if spell data for enchant is available and queried from server
-	local spellCountWaitingForData = 0;
-	
-	if (type(callbackForEnchantData) == "function") then
-		if (not spell:IsSpellDataCached()) then
-			spellCountWaitingForData = spellCountWaitingForData + 1;
-			
+	local spellCountWaitingForData = 0
+
+	if type(callbackForEnchantData) == "function" then
+		if not spell:IsSpellDataCached() then
+			spellCountWaitingForData = spellCountWaitingForData + 1
+
 			spell:ContinueOnSpellLoad(function()
-				spellCountWaitingForData = spellCountWaitingForData - 1;
-				
-				if (spellCountWaitingForData == 0) then
-					LFF_GetEnchantFromSpellData(spell, spellDescription, callbackForEnchantData);
+				spellCountWaitingForData = spellCountWaitingForData - 1
+
+				if spellCountWaitingForData == 0 then
+					LFF_GetEnchantFromSpellData(spell, spellDescription, callbackForEnchantData)
 				end
-			end);
+			end)
 		end
-		
+
 		if (not spellDescription:IsSpellEmpty()) and (not spellDescription:IsSpellDataCached()) then
-			spellCountWaitingForData = spellCountWaitingForData + 1;
-			
+			spellCountWaitingForData = spellCountWaitingForData + 1
+
 			spellDescription:ContinueOnSpellLoad(function()
-				spellCountWaitingForData = spellCountWaitingForData - 1;
-				
-				if (spellCountWaitingForData == 0) then
-					LFF_GetEnchantFromSpellData(spell, spellDescription, callbackForEnchantData);
+				spellCountWaitingForData = spellCountWaitingForData - 1
+
+				if spellCountWaitingForData == 0 then
+					LFF_GetEnchantFromSpellData(spell, spellDescription, callbackForEnchantData)
 				end
-			end);
+			end)
 		end
 	else
-		if (not spell:IsSpellDataCached()) then
-			C_Spell.RequestLoadSpellData(spell:GetSpellID());
+		if not spell:IsSpellDataCached() then
+			C_Spell.RequestLoadSpellData(spell:GetSpellID())
 		end
-		
-		if (not spellDescription:IsSpellDataCached()) then
-			C_Spell.RequestLoadSpellData(spellDescription:GetSpellID());
+
+		if not spellDescription:IsSpellDataCached() then
+			C_Spell.RequestLoadSpellData(spellDescription:GetSpellID())
 		end
 	end
-	
-	if (spellCountWaitingForData > 0) then
-		return LFF_ENCHANT.available;
+
+	if spellCountWaitingForData > 0 then
+		return LFF_ENCHANT.available
 	end
-	
+
 	-- spell data for enchant is already available
-	return LFF_GetEnchantFromSpellData(spell, spellDescription, callbackForEnchantData);
+	return LFF_GetEnchantFromSpellData(spell, spellDescription, callbackForEnchantData)
 end
 
 function LFF_GetEnchantFromSpellData(spell, spellDescription, callbackForEnchantData)
 	-- get enchant from spell data
-	local spellID = spell:GetSpellID();
-	
+	local spellID = spell:GetSpellID()
+
 	local enchant = {
 		spellID = spellID,
 		spellName = spell:GetSpellName(),
 		spellIconID = LibFroznFunctions:GetSpellTexture(spellID),
-		description = spellDescription:GetSpellDescription()
-	};
-	
-	if (type(callbackForEnchantData) == "function") then
-		callbackForEnchantData(enchant);
+		description = spellDescription:GetSpellDescription(),
+	}
+
+	if type(callbackForEnchantData) == "function" then
+		callbackForEnchantData(enchant)
 	end
-	
-	return enchant;
+
+	return enchant
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -3334,32 +3534,32 @@ end
 --
 -- @param  fontFile  path to a font file
 -- @return true if font exists, false otherwise.
-local fontExistsFont;
+local fontExistsFont
 
 function LibFroznFunctions:FontExists(fontFile)
 	-- invalid font file
-	if (type(fontFile) ~= "string") then
-		return false;
+	if type(fontFile) ~= "string" then
+		return false
 	end
-	
+
 	-- check if font file equals original test font file
-	local originalTestFontFile = "Fonts\\ARIALN.TTF";
-	
-	if (fontFile:lower() == originalTestFontFile:lower()) then
-		return true;
+	local originalTestFontFile = "Fonts\\ARIALN.TTF"
+
+	if fontFile:lower() == originalTestFontFile:lower() then
+		return true
 	end
-	
+
 	-- create font and set with original test font file
-	if (not fontExistsFont) then
-		fontExistsFont = CreateFont(LIB_NAME .. "-" .. LIB_MINOR .. "_FontExists");
+	if not fontExistsFont then
+		fontExistsFont = CreateFont(LIB_NAME .. "-" .. LIB_MINOR .. "_FontExists")
 	end
-	
-	fontExistsFont:SetFont(originalTestFontFile, 10, "");
-	
+
+	fontExistsFont:SetFont(originalTestFontFile, 10, "")
+
 	-- check if font changed aka exists
-	fontExistsFont:SetFont(fontFile, 10, "");
-	
-	return (fontExistsFont:GetFont() ~= originalTestFontFile);
+	fontExistsFont:SetFont(fontFile, 10, "")
+
+	return (fontExistsFont:GetFont() ~= originalTestFontFile)
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -3370,29 +3570,29 @@ end
 --
 -- @param  textureFile  path to a texture (usually in Interface\\) or a FileDataID
 -- @return true if texture exists, false otherwise.
-local textureExistsFrame, textureExistsTexture;
+local textureExistsFrame, textureExistsTexture
 
 function LibFroznFunctions:TextureExists(textureFile)
 	-- invalid texture file
 	if (type(textureFile) ~= "string") and (type(textureFile) ~= "number") then
-		return false;
+		return false
 	end
-	
+
 	-- create frame
-	if (not textureExistsFrame) then
-		textureExistsFrame = CreateFrame("Frame", LIB_NAME .. "-" .. LIB_MINOR .. "_TextureExists");
+	if not textureExistsFrame then
+		textureExistsFrame = CreateFrame("Frame", LIB_NAME .. "-" .. LIB_MINOR .. "_TextureExists")
 	end
-	
+
 	-- create texture
-	if (not textureExistsTexture) then
-		textureExistsTexture = textureExistsFrame:CreateTexture();
+	if not textureExistsTexture then
+		textureExistsTexture = textureExistsFrame:CreateTexture()
 	end
-	
+
 	-- check if texture exists
-	textureExistsTexture:SetTexture("?");
-	textureExistsTexture:SetTexture(textureFile);
-	
-	return (textureExistsTexture:GetTexture() ~= "?");
+	textureExistsTexture:SetTexture("?")
+	textureExistsTexture:SetTexture(textureFile)
+
+	return (textureExistsTexture:GetTexture() ~= "?")
 end
 
 -- create texture markup with aspect ratio
@@ -3408,21 +3608,32 @@ end
 -- @param  xOffset        x offset for the rendered image in pixels
 -- @param  yOffset        y offset for the rendered image in pixels (< 0 = move top, >0 = move bottom)
 -- @return texture markup with vertex color
-function LibFroznFunctions:CreateTextureMarkupWithAspectRatio(textureFile, textureWidth, textureHeight, aspectRatio, leftTexel, rightTexel, topTexel, bottomTexel, xOffset, yOffset)
+function LibFroznFunctions:CreateTextureMarkupWithAspectRatio(
+	textureFile,
+	textureWidth,
+	textureHeight,
+	aspectRatio,
+	leftTexel,
+	rightTexel,
+	topTexel,
+	bottomTexel,
+	xOffset,
+	yOffset
+)
 	-- see CreateTextureMarkup() in "TextureUtil.lua"
 	return ("|T%s:%d:%f:%d:%d:%d:%d:%d:%d:%d:%d|t"):format(
-		  textureFile
-		, 0
-		, aspectRatio
-		, xOffset or 0
-		, yOffset or 0
-		, textureWidth
-		, textureHeight
-		, leftTexel * textureWidth
-		, rightTexel * textureWidth
-		, topTexel * textureHeight
-		, bottomTexel * textureHeight
-	);
+		textureFile,
+		0,
+		aspectRatio,
+		xOffset or 0,
+		yOffset or 0,
+		textureWidth,
+		textureHeight,
+		leftTexel * textureWidth,
+		rightTexel * textureWidth,
+		topTexel * textureHeight,
+		bottomTexel * textureHeight
+	)
 end
 
 -- create texture markup with vertex color
@@ -3442,14 +3653,46 @@ end
 -- @param  gVertexColor   optional. G color value in the range 0-1 that is used to tint the texture
 -- @param  bVertexColor   optional. B color value in the range 0-1 that is used to tint the texture
 -- @return texture markup with vertex color
-function LibFroznFunctions:CreateTextureMarkupWithVertexColor(textureFile, textureWidth, textureHeight, width, height, leftTexel, rightTexel, topTexel, bottomTexel, xOffset, yOffset, rVertexColor, gVertexColor, bVertexColor)
-	local textureMarkup = CreateTextureMarkup(textureFile, textureWidth, textureHeight, width, height, leftTexel, rightTexel, topTexel, bottomTexel, xOffset, yOffset);
-	
-	if (rVertexColor) or (gVertexColor) or (bVertexColor) then
-		textureMarkup = format(textureMarkup:sub(1, -3) .. ":%d:%d:%d|t", (rVertexColor or 0) * 255, (gVertexColor or 0) * 255, (bVertexColor or 0) * 255);
+function LibFroznFunctions:CreateTextureMarkupWithVertexColor(
+	textureFile,
+	textureWidth,
+	textureHeight,
+	width,
+	height,
+	leftTexel,
+	rightTexel,
+	topTexel,
+	bottomTexel,
+	xOffset,
+	yOffset,
+	rVertexColor,
+	gVertexColor,
+	bVertexColor
+)
+	local textureMarkup = CreateTextureMarkup(
+		textureFile,
+		textureWidth,
+		textureHeight,
+		width,
+		height,
+		leftTexel,
+		rightTexel,
+		topTexel,
+		bottomTexel,
+		xOffset,
+		yOffset
+	)
+
+	if rVertexColor or gVertexColor or bVertexColor then
+		textureMarkup = format(
+			textureMarkup:sub(1, -3) .. ":%d:%d:%d|t",
+			(rVertexColor or 0) * 255,
+			(gVertexColor or 0) * 255,
+			(bVertexColor or 0) * 255
+		)
 	end
-	
-	return textureMarkup;
+
+	return textureMarkup
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -3462,75 +3705,84 @@ end
 -- @return unit id, unit name. nil, unit name otherwise.
 function LibFroznFunctions:GetUnitIDFromGUID(unitGUID)
 	-- no unit guid
-	if (not unitGUID) then
-		return nil, nil;
+	if not unitGUID then
+		return nil, nil
 	end
-	
-    local unitName = select(6, GetPlayerInfoByGUID(unitGUID));
-	
+
+	local unitName = select(6, GetPlayerInfoByGUID(unitGUID))
+
 	-- no unit name
-	if (not unitName) then
-		return nil, nil;
+	if not unitName then
+		return nil, nil
 	end
-	
+
 	-- use blizzard function, since df 10.0.2
-	if (UnitTokenFromGUID) then
-		local unitID = UnitTokenFromGUID(unitGUID);
-		
-		if (unitID) then
-			return unitID, unitName;
+	if UnitTokenFromGUID then
+		local unitID = UnitTokenFromGUID(unitGUID)
+
+		if unitID then
+			return unitID, unitName
 		end
-		
-		return nil, unitName;
+
+		return nil, unitName
 	end
-	
+
 	-- check unit name if unit is in the current zone
-    if (UnitExists(unitName)) then
-        return unitName, unitName;
+	if UnitExists(unitName) then
+		return unitName, unitName
 	end
-	
+
 	-- check fixed unit ids
 	local checkUnitIDs = {
-		"player", "mouseover", "target", "focus", "npc", "softenemy", "softfriend", "softinteract", "pet", "vehicle"
-	};
-	
+		"player",
+		"mouseover",
+		"target",
+		"focus",
+		"npc",
+		"softenemy",
+		"softfriend",
+		"softinteract",
+		"pet",
+		"vehicle",
+	}
+
 	for _, checkUnitID in ipairs(checkUnitIDs) do
-		if (UnitGUID(checkUnitID) == unitGUID) then
-			return checkUnitID, unitName;
+		if UnitGUID(checkUnitID) == unitGUID then
+			return checkUnitID, unitName
 		end
 	end
-	
+
 	-- check party/raid unit ids
-	local numMembers = GetNumGroupMembers();
-	local isInRaid = IsInRaid();
-	local checkUnitID;
-	
-	if (numMembers > 0) then
+	local numMembers = GetNumGroupMembers()
+	local isInRaid = IsInRaid()
+	local checkUnitID
+
+	if numMembers > 0 then
 		for i = 1, numMembers do
-			checkUnitID = (inRaid and "raid" .. i or "party" .. i);
-			
-			if (UnitGUID(checkUnitID) == unitGUID) then
-				return checkUnitID, unitName;
+			checkUnitID = (inRaid and "raid" .. i or "party" .. i)
+
+			if UnitGUID(checkUnitID) == unitGUID then
+				return checkUnitID, unitName
 			end
 		end
 	end
-	
+
 	-- check nameplate unit ids
-	local nameplates = C_NamePlate.GetNamePlates();
-	local numNameplates = #nameplates;
-	
-	if (numNameplates > 0) then
+	local nameplates = C_NamePlate.GetNamePlates()
+	local numNameplates = #nameplates
+
+	if numNameplates > 0 then
 		for i = 1, numNameplates do
-			checkUnitID = (nameplates[i].namePlateUnitToken or "nameplate" .. i);
-			
-			if (UnitGUID(checkUnitID) == unitGUID) then
-				return checkUnitID, unitName;
+			checkUnitID = (nameplates[i].namePlateUnitToken or "nameplate" .. i)
+
+			if UnitGUID(checkUnitID) == unitGUID then
+				return checkUnitID, unitName
 			end
 		end
 	end
-	
-    -- no unit id found
-    return nil, unitName;
+
+	-- no unit id found
+	return nil, unitName
 end
 
 -- get unit reaction index from unit id
@@ -3539,52 +3791,54 @@ end
 -- @return reaction index, see LFF_UNIT_REACTION_INDEX
 --         returns nil if no unit id is supplied.
 LFF_UNIT_REACTION_INDEX = {
-	tapped = 1,            -- Tapped by other Player
-	hostile = 2,           -- Hostile             (unit can attack the player and vice versa)
-	caution = 3,           -- Caution             (unit can attack the player but the player not the unit)
-	neutral = 4,           -- Neutral             (unit can't attack the player but the player can)
-	friendlyPlayer = 5,    -- Friendly Player     (unit can't attack the player and vice versa and isn't flagged for PvP)
+	tapped = 1, -- Tapped by other Player
+	hostile = 2, -- Hostile             (unit can attack the player and vice versa)
+	caution = 3, -- Caution             (unit can attack the player but the player not the unit)
+	neutral = 4, -- Neutral             (unit can't attack the player but the player can)
+	friendlyPlayer = 5, -- Friendly Player     (unit can't attack the player and vice versa and isn't flagged for PvP)
 	friendlyPvPPlayer = 6, -- Friendly PvP Player (unit can't attack the player and vice versa and is flagged for PvP)
-	friendlyNPC = 7,       -- Friendly NPC        (unit can't attack the player and vice versa and isn't a player or player controlled aka a NPC)
-	honoredNPC = 8,        -- Honored NPC         (unit can't attack the player and vice versa and isn't a player or player controlled aka a NPC)
-	reveredNPC = 9,        -- Revered NPC         (unit can't attack the player and vice versa and isn't a player or player controlled aka a NPC)
-	exaltedNPC = 10,       -- Exalted NPC         (unit can't attack the player and vice versa and isn't a player or player controlled aka a NPC)
-	dead = 11              -- Dead
-};
+	friendlyNPC = 7, -- Friendly NPC        (unit can't attack the player and vice versa and isn't a player or player controlled aka a NPC)
+	honoredNPC = 8, -- Honored NPC         (unit can't attack the player and vice versa and isn't a player or player controlled aka a NPC)
+	reveredNPC = 9, -- Revered NPC         (unit can't attack the player and vice versa and isn't a player or player controlled aka a NPC)
+	exaltedNPC = 10, -- Exalted NPC         (unit can't attack the player and vice versa and isn't a player or player controlled aka a NPC)
+	dead = 11, -- Dead
+}
 
 function LibFroznFunctions:GetUnitReactionIndex(unitID)
 	-- no unit id
-	if (not unitID) then
-		return;
+	if not unitID then
+		return
 	end
-	
+
 	-- dead unit
-	if (UnitIsDead(unitID)) then
-		return LFF_UNIT_REACTION_INDEX.dead; -- 11 = Dead
+	if UnitIsDead(unitID) then
+		return LFF_UNIT_REACTION_INDEX.dead -- 11 = Dead
 	end
-	
+
 	-- player or player controlled unit
 	if (UnitIsPlayer(unitID)) or (UnitPlayerControlled(unitID)) then -- can't rely on UnitPlayerControlled() alone, since it always returns nil on units out of range.
-		if (UnitCanAttack(unitID, "player")) then
-			return (UnitCanAttack("player", unitID) and LFF_UNIT_REACTION_INDEX.hostile or LFF_UNIT_REACTION_INDEX.caution); -- 2 = Hostile, 3 = Caution
+		if UnitCanAttack(unitID, "player") then
+			return (
+				UnitCanAttack("player", unitID) and LFF_UNIT_REACTION_INDEX.hostile or LFF_UNIT_REACTION_INDEX.caution
+			) -- 2 = Hostile, 3 = Caution
 		end
-		
-		if (UnitCanAttack("player", unitID)) then
-			return LFF_UNIT_REACTION_INDEX.neutral; -- 4 = Neutral
+
+		if UnitCanAttack("player", unitID) then
+			return LFF_UNIT_REACTION_INDEX.neutral -- 4 = Neutral
 		end
-		
+
 		if (UnitIsPVP(unitID)) and (not UnitIsPVPSanctuary(unitID)) and (not UnitIsPVPSanctuary("player")) then
-			return LFF_UNIT_REACTION_INDEX.friendlyPvPPlayer; -- 6 = Friendly PvP Player
+			return LFF_UNIT_REACTION_INDEX.friendlyPvPPlayer -- 6 = Friendly PvP Player
 		end
-		
-		return LFF_UNIT_REACTION_INDEX.friendlyPlayer; -- 5 = Friendly Player
+
+		return LFF_UNIT_REACTION_INDEX.friendlyPlayer -- 5 = Friendly Player
 	end
-	
+
 	-- tapped unit
-	if (UnitIsTapDenied(unitID)) then
-		return LFF_UNIT_REACTION_INDEX.tapped; -- 1 = Tapped by other Player
+	if UnitIsTapDenied(unitID) then
+		return LFF_UNIT_REACTION_INDEX.tapped -- 1 = Tapped by other Player
 	end
-	
+
 	-- NPC / other
 	--
 	-- 1. Hated      ->  2 = Hostile
@@ -3595,28 +3849,28 @@ function LibFroznFunctions:GetUnitReactionIndex(unitID)
 	-- 6. Honored    ->  8 = Honored NPC
 	-- 7. Revered    ->  9 = Revered NPC
 	-- 8. Exalted    -> 10 = Exalted NPC
-	local reaction = (UnitReaction(unitID, "player") or 3); -- default: 3 = Caution
-	
-	if (reaction <= 2) then
-		return LFF_UNIT_REACTION_INDEX.hostile;
+	local reaction = (UnitReaction(unitID, "player") or 3) -- default: 3 = Caution
+
+	if reaction <= 2 then
+		return LFF_UNIT_REACTION_INDEX.hostile
 	end
-	if (reaction == 3) then
-		return LFF_UNIT_REACTION_INDEX.caution;
+	if reaction == 3 then
+		return LFF_UNIT_REACTION_INDEX.caution
 	end
-	if (reaction == 4) then
-		return LFF_UNIT_REACTION_INDEX.neutral;
+	if reaction == 4 then
+		return LFF_UNIT_REACTION_INDEX.neutral
 	end
-	if (reaction == 5) then
-		return LFF_UNIT_REACTION_INDEX.friendlyNPC;
+	if reaction == 5 then
+		return LFF_UNIT_REACTION_INDEX.friendlyNPC
 	end
-	if (reaction == 6) then
-		return LFF_UNIT_REACTION_INDEX.honoredNPC;
+	if reaction == 6 then
+		return LFF_UNIT_REACTION_INDEX.honoredNPC
 	end
-	if (reaction == 7) then
-		return LFF_UNIT_REACTION_INDEX.reveredNPC;
+	if reaction == 7 then
+		return LFF_UNIT_REACTION_INDEX.reveredNPC
 	end
-	
-	return LFF_UNIT_REACTION_INDEX.exaltedNPC;
+
+	return LFF_UNIT_REACTION_INDEX.exaltedNPC
 end
 
 -- get npc id from unit guid
@@ -3625,14 +3879,14 @@ end
 -- @return npc id of npc, nil otherwise.
 function LibFroznFunctions:GetNpcIDFromGUID(unitGUID)
 	-- no unit guid
-	if (not unitGUID) then
-		return;
+	if not unitGUID then
+		return
 	end
-	
+
 	-- get npc id from unit guid
-	local npcID = tonumber(unitGUID:match("-(%d+)-%x+$"));
-	
-	return npcID;
+	local npcID = tonumber(unitGUID:match("-(%d+)-%x+$"))
+
+	return npcID
 end
 
 -- get unit record from cache
@@ -3641,38 +3895,38 @@ end
 -- @param  unitGUID                          optional. unit guid if unit id is missing.
 -- @param  tryToDetermineUnitIDFromUnitGUID  optional. true if it should be tried to determine the unit id from the unit guid.
 -- @return unitRecord, see LibFroznFunctions:CreateUnitRecord()
-local cacheUnitRecords = {};
+local cacheUnitRecords = {}
 
 function LibFroznFunctions:GetUnitRecordFromCache(_unitID, _unitGUID, tryToDetermineUnitIDFromUnitGUID)
 	-- no valid unit any more e.g. during fading out
-	local unitGUID = (_unitID) and (UnitGUID(_unitID)) or (_unitGUID);
-	
-	if (not unitGUID) then
-		return;
+	local unitGUID = _unitID and (UnitGUID(_unitID)) or _unitGUID
+
+	if not unitGUID then
+		return
 	end
-	
+
 	-- get unit record from cache
-	local unitRecordFromCache = cacheUnitRecords[unitGUID];
-	
+	local unitRecordFromCache = cacheUnitRecords[unitGUID]
+
 	-- no unit id
-	local unitID = (_unitID) or ((tryToDetermineUnitIDFromUnitGUID) and (LibFroznFunctions:GetUnitIDFromGUID(unitGUID)));
-	
-	if (not unitID) then
-		return unitRecordFromCache;
+	local unitID = _unitID or (tryToDetermineUnitIDFromUnitGUID and (LibFroznFunctions:GetUnitIDFromGUID(unitGUID)))
+
+	if not unitID then
+		return unitRecordFromCache
 	end
-	
+
 	-- create/update unit record from cache
-	if (unitRecordFromCache) then
-		LibFroznFunctions:UpdateUnitRecord(unitRecordFromCache, unitID);
+	if unitRecordFromCache then
+		LibFroznFunctions:UpdateUnitRecord(unitRecordFromCache, unitID)
 	else
-		unitRecordFromCache = LibFroznFunctions:CreateUnitRecord(unitID);
-		
-		if (unitRecordFromCache) then
-			cacheUnitRecords[unitGUID] = unitRecordFromCache;
+		unitRecordFromCache = LibFroznFunctions:CreateUnitRecord(unitID)
+
+		if unitRecordFromCache then
+			cacheUnitRecords[unitGUID] = unitRecordFromCache
 		end
 	end
-	
-	return unitRecordFromCache;
+
+	return unitRecordFromCache
 end
 
 -- create unit record
@@ -3716,62 +3970,67 @@ end
 --           .subzone                             subzone of the player unit
 --           .isTipTacDeveloper                   true if it's a unit of a TipTac developer, false for other units.
 --         returns nil if no unit id is supplied
-local LFF_CURRENT_REGION_ID = GetCurrentRegion();
+local LFF_CURRENT_REGION_ID = GetCurrentRegion()
 local LFF_TIPTAC_DEVELOPER = {
 	[3] = { -- region id Europe
 		["Player-1099-00D6E047"] = true, -- Camassea - Rexxar
 		["Player-1099-006E9FB3"] = true, -- Valadenya - Rexxar
-		["Player-1099-025F2F49"] = true  -- Gorath - Rexxar
-	}
-};
+		["Player-1099-025F2F49"] = true, -- Gorath - Rexxar
+	},
+}
 
 function LibFroznFunctions:CreateUnitRecord(unitID)
 	-- no unit id
-	if (not unitID) then
-		return;
+	if not unitID then
+		return
 	end
-	
+
 	-- no unit guid
-	local unitGUID = UnitGUID(unitID);
-	
-	if (not unitGUID) then
-		return;
+	local unitGUID = UnitGUID(unitID)
+
+	if not unitGUID then
+		return
 	end
-	
+
 	-- create unit record
-	local unitRecord = {};
-	
-	unitRecord.guid = unitGUID;
-	unitRecord.id = unitID;
-	
-	unitRecord.isPlayer = UnitIsPlayer(unitID);
-	unitRecord.isSelf = (unitRecord.isPlayer) and UnitIsUnit(unitID, "player");
-	unitRecord.isOtherPlayer = (unitRecord.isPlayer) and (not unitRecord.isSelf);
-	unitRecord.isPet = (not unitRecord.isPlayer) and UnitPlayerControlled(unitID);
-	unitRecord.isBattlePet = self:UnitIsBattlePet(unitID);
-	unitRecord.isWildBattlePet = self:UnitIsWildBattlePet(unitID);
-	unitRecord.isBattlePetCompanion = self:UnitIsBattlePetCompanion(unitID);
-	unitRecord.isNPC = (not unitRecord.isPlayer) and (not unitRecord.isPet) and (not unitRecord.isBattlePet);
-	
-	local name, normalizedForeignRealmName = UnitName(unitID);
-	
-	unitRecord.name = name;
-	unitRecord.nameWithForeignRealmSuffix = GetUnitName(unitID);
-	unitRecord.nameWithNormalizedForeignRealmName = GetUnitName(unitID, true);
-	unitRecord.normalizedForeignRealmName = (normalizedForeignRealmName) and (normalizedForeignRealmName ~= "") and (normalizedForeignRealmName);
-	unitRecord.normalizedRealmName = (unitRecord.normalizedForeignRealmName) or (GetNormalizedRealmName());
-	unitRecord.fullPlayerName = FULL_PLAYER_NAME:format(unitRecord.name, unitRecord.normalizedRealmName);
-	
-	unitRecord.sex = UnitSex(unitID);
-	unitRecord.className, unitRecord.classFile, unitRecord.classID = UnitClass(unitID);
-	unitRecord.classification = UnitClassification(unitID);
-	unitRecord.isTipTacDeveloper = (unitRecord.isPlayer) and (LFF_TIPTAC_DEVELOPER[LFF_CURRENT_REGION_ID]) and (LFF_TIPTAC_DEVELOPER[LFF_CURRENT_REGION_ID][unitRecord.guid]) or false;
-	
-	unitRecord.npcID = (unitRecord.isNPC) and self:GetNpcIDFromGUID(unitRecord.guid) or nil;
-	
-	self:UpdateUnitRecord(unitRecord);
-	
-	return unitRecord;
+	local unitRecord = {}
+
+	unitRecord.guid = unitGUID
+	unitRecord.id = unitID
+
+	unitRecord.isPlayer = UnitIsPlayer(unitID)
+	unitRecord.isSelf = unitRecord.isPlayer and UnitIsUnit(unitID, "player")
+	unitRecord.isOtherPlayer = unitRecord.isPlayer and not unitRecord.isSelf
+	unitRecord.isPet = (not unitRecord.isPlayer) and UnitPlayerControlled(unitID)
+	unitRecord.isBattlePet = self:UnitIsBattlePet(unitID)
+	unitRecord.isWildBattlePet = self:UnitIsWildBattlePet(unitID)
+	unitRecord.isBattlePetCompanion = self:UnitIsBattlePetCompanion(unitID)
+	unitRecord.isNPC = (not unitRecord.isPlayer) and not unitRecord.isPet and not unitRecord.isBattlePet
+
+	local name, normalizedForeignRealmName = UnitName(unitID)
+
+	unitRecord.name = name
+	unitRecord.nameWithForeignRealmSuffix = GetUnitName(unitID)
+	unitRecord.nameWithNormalizedForeignRealmName = GetUnitName(unitID, true)
+	unitRecord.normalizedForeignRealmName = normalizedForeignRealmName
+		and (normalizedForeignRealmName ~= "")
+		and normalizedForeignRealmName
+	unitRecord.normalizedRealmName = unitRecord.normalizedForeignRealmName or (GetNormalizedRealmName())
+	unitRecord.fullPlayerName = FULL_PLAYER_NAME:format(unitRecord.name, unitRecord.normalizedRealmName)
+
+	unitRecord.sex = UnitSex(unitID)
+	unitRecord.className, unitRecord.classFile, unitRecord.classID = UnitClass(unitID)
+	unitRecord.classification = UnitClassification(unitID)
+	unitRecord.isTipTacDeveloper = unitRecord.isPlayer
+			and LFF_TIPTAC_DEVELOPER[LFF_CURRENT_REGION_ID]
+			and LFF_TIPTAC_DEVELOPER[LFF_CURRENT_REGION_ID][unitRecord.guid]
+		or false
+
+	unitRecord.npcID = unitRecord.isNPC and self:GetNpcIDFromGUID(unitRecord.guid) or nil
+
+	self:UpdateUnitRecord(unitRecord)
+
+	return unitRecord
 end
 
 -- update unit record
@@ -3781,62 +4040,65 @@ end
 -- @return unitRecord, see LibFroznFunctions:CreateUnitRecord()
 function LibFroznFunctions:UpdateUnitRecord(unitRecord, newUnitID)
 	-- no valid unit any more (e.g. during fading out) or not the same unit
-	local unitID = (newUnitID) or (unitRecord.id);
-	local unitGUID = UnitGUID(unitID);
-	
+	local unitID = newUnitID or unitRecord.id
+	local unitGUID = UnitGUID(unitID)
+
 	if (not unitGUID) or (unitGUID ~= unitRecord.guid) then
-		return;
+		return
 	end
-	
+
 	-- update unit record
-	local unitPVPName = UnitPVPName(unitID); -- returns nil or "" if the unit is currently not visible to the client
-	local mapID = C_Map.GetBestMapForUnit(unitID);
-	
-	unitRecord.id = unitID;
-	unitRecord.timestamp = GetTime();
-	
-	unitRecord.nameWithTitle = (unitPVPName) and (unitPVPName ~= "") and (unitPVPName) or (unitRecord.name);
-	unitRecord.level = (unitRecord.isBattlePet) and (UnitBattlePetLevel(unitID)) or (UnitLevel(unitID)) or -1;
-	unitRecord.reactionIndex = self:GetUnitReactionIndex(unitID);
-	
-	unitRecord.health = UnitHealth(unitID);
-	unitRecord.healthMax = UnitHealthMax(unitID);
-	
-	unitRecord.powerType = UnitPowerType(unitID);
-	unitRecord.power = UnitPower(unitID);
-	unitRecord.powerMax = UnitPowerMax(unitID);
-	
-	unitRecord.map = nil;
-	unitRecord.zone = nil;
-	unitRecord.subzone = nil;
-	
+	local unitPVPName = UnitPVPName(unitID) -- returns nil or "" if the unit is currently not visible to the client
+	local mapID = C_Map.GetBestMapForUnit(unitID)
+
+	unitRecord.id = unitID
+	unitRecord.timestamp = GetTime()
+
+	unitRecord.nameWithTitle = unitPVPName and (unitPVPName ~= "") and unitPVPName or unitRecord.name
+	unitRecord.level = unitRecord.isBattlePet and (UnitBattlePetLevel(unitID)) or (UnitLevel(unitID)) or -1
+	unitRecord.reactionIndex = self:GetUnitReactionIndex(unitID)
+
+	unitRecord.health = UnitHealth(unitID)
+	unitRecord.healthMax = UnitHealthMax(unitID)
+
+	unitRecord.powerType = UnitPowerType(unitID)
+	unitRecord.power = UnitPower(unitID)
+	unitRecord.powerMax = UnitPowerMax(unitID)
+
+	unitRecord.map = nil
+	unitRecord.zone = nil
+	unitRecord.subzone = nil
+
 	-- add location (map, zone and subzone) to unit record
-	if (unitRecord.isPlayer) then
-		if (mapID) then
-			local mapInfo = C_Map.GetMapInfo(mapID);
-			
-			unitRecord.map = (mapInfo) and (mapInfo.name);
+	if unitRecord.isPlayer then
+		if mapID then
+			local mapInfo = C_Map.GetMapInfo(mapID)
+
+			unitRecord.map = mapInfo and mapInfo.name
 		end
-		
-		if (unitRecord.isSelf) then
-			local subzone = GetSubZoneText();
-			
-			unitRecord.zone = GetRealZoneText();
-			unitRecord.subzone = (subzone ~= "") and (subzone);
+
+		if unitRecord.isSelf then
+			local subzone = GetSubZoneText()
+
+			unitRecord.zone = GetRealZoneText()
+			unitRecord.subzone = (subzone ~= "") and subzone
 		end
 	end
-	
+
 	-- add role play name to unit record
-	if (unitRecord.isPlayer) then
-		local _msp = (msp or msptrp);
-		
-		if (_msp) then
-			local field = "NA"; -- Name
-			
-			_msp:Request(unitRecord.fullPlayerName, field);
-			
-			if (_msp.char[unitRecord.fullPlayerName] ~= nil) and (_msp.char[unitRecord.fullPlayerName].field[field] ~= "") then
-				unitRecord.rpName = _msp.char[unitRecord.fullPlayerName].field[field];
+	if unitRecord.isPlayer then
+		local _msp = (msp or msptrp)
+
+		if _msp then
+			local field = "NA" -- Name
+
+			_msp:Request(unitRecord.fullPlayerName, field)
+
+			if
+				(_msp.char[unitRecord.fullPlayerName] ~= nil)
+				and (_msp.char[unitRecord.fullPlayerName].field[field] ~= "")
+			then
+				unitRecord.rpName = _msp.char[unitRecord.fullPlayerName].field[field]
 			end
 		end
 	end
@@ -3850,22 +4112,22 @@ end
 -- @return aura infos as a table of type AuraData
 function LibFroznFunctions:GetAuraDataByIndex(unitID, index, filter)
 	-- see "Deprecated_10_2_5.lua"
-	
+
 	-- since df 10.2.5
-	if (C_UnitAuras) and (C_UnitAuras.GetAuraDataByIndex) then
-		return C_UnitAuras.GetAuraDataByIndex(unitID, index, filter);
+	if C_UnitAuras and C_UnitAuras.GetAuraDataByIndex then
+		return C_UnitAuras.GetAuraDataByIndex(unitID, index, filter)
 	end
-	
+
 	-- before 10.2.5
-	local unitAura = { UnitAura(unitID, index, filter) };
-	
+	local unitAura = { UnitAura(unitID, index, filter) }
+
 	-- no aura available
-	local name = unitAura[1];
-	
-	if (not name) then
-		return nil;
+	local name = unitAura[1]
+
+	if not name then
+		return nil
 	end
-	
+
 	return {
 		name = unitAura[1],
 		icon = unitAura[2],
@@ -3883,7 +4145,7 @@ function LibFroznFunctions:GetAuraDataByIndex(unitID, index, filter)
 		nameplateShowAll = unitAura[14],
 		timeMod = unitAura[15],
 		points = { select(16, unitAura) },
-		
+
 		-- not available
 		auraInstanceID = nil,
 		isHarmful = nil,
@@ -3891,8 +4153,8 @@ function LibFroznFunctions:GetAuraDataByIndex(unitID, index, filter)
 		isNameplateOnly = nil,
 		isRaid = nil,
 		charges = nil,
-		maxCharges = nil
-	};
+		maxCharges = nil,
+	}
 end
 
 -- iterate through unit's auras
@@ -3904,49 +4166,49 @@ end
 -- @param usePackedAura optional. if true, aura infos will be passed to callback function "func" as a table of type AuraData. otherwise aura infos from UnitAuraBySlot() / UnitAura() will be passed as multiple return values.
 function LibFroznFunctions:ForEachAura(unitID, filter, maxCount, func, usePackedAura)
 	-- see SecureAuraHeader_Update() in "SecureGroupHeaders.lua"
-	
+
 	-- since df 10.0.0
-	if (AuraUtil) and (AuraUtil.ForEachAura) then
+	if AuraUtil and AuraUtil.ForEachAura then
 		local function callbackFunc(nameOrAuraData, ...)
-			if (usePackedAura) then
-				if (not nameOrAuraData) or (not nameOrAuraData.name) then
-					return;
+			if usePackedAura then
+				if (not nameOrAuraData) or not nameOrAuraData.name then
+					return
 				end
 			else
-				if (not nameOrAuraData) then
-					return;
+				if not nameOrAuraData then
+					return
 				end
 			end
-			
-			func(nameOrAuraData, ...);
+
+			func(nameOrAuraData, ...)
 		end
-		
-		AuraUtil.ForEachAura(unitID, filter, maxCount, callbackFunc, usePackedAura);
-		return;
+
+		AuraUtil.ForEachAura(unitID, filter, maxCount, callbackFunc, usePackedAura)
+		return
 	end
-	
+
 	-- before df 10.0.0
-	if (maxCount) and (maxCount <= 0) then
-		return;
+	if maxCount and (maxCount <= 0) then
+		return
 	end
-	
-	local index = 0;
-	
-	while (true) do
-		index = index + 1;
-		
-		local unitAuraData = self:GetAuraDataByIndex(unitID, index, filter);
-		
+
+	local index = 0
+
+	while true do
+		index = index + 1
+
+		local unitAuraData = self:GetAuraDataByIndex(unitID, index, filter)
+
 		-- no more auras available
-		if (not unitAuraData) or (not unitAuraData.name) then
-			break;
+		if (not unitAuraData) or not unitAuraData.name then
+			break
 		end
-		
+
 		-- call func
-		local done = false;
-		
-		if (usePackedAura) then
-			done = func(unitAuraData);
+		local done = false
+
+		if usePackedAura then
+			done = func(unitAuraData)
 		else
 			done = func(
 				auraData.name,
@@ -3965,16 +4227,16 @@ function LibFroznFunctions:ForEachAura(unitID, filter, maxCount, func, usePacked
 				auraData.nameplateShowAll,
 				auraData.timeMod,
 				unpack(auraData.points)
-			);
+			)
 		end
-		
-		if (done) then
-			break;
+
+		if done then
+			break
 		end
-		
+
 		-- max count of auras reached
-		if (maxCount) and (index == maxCount) then
-			return;
+		if maxCount and (index == maxCount) then
+			return
 		end
 	end
 end
@@ -3998,26 +4260,27 @@ end
 --           .isEmpowered       true if spell is empower spell
 --           .numEmpowerStages  number of stages of empower spell
 function LibFroznFunctions:GetUnitCastingSpell(unitID)
-	local name, displayName, textureFile, startTimeMs, endTimeMs, isTradeSkill, castID, notInterruptible, spellID = UnitCastingInfo(unitID);
-	local isEmpowered, numEmpowerStages;
-	
-	local isCasting, isChanneling, isCharging = false, false, false;
-	
-	if (name) then
-		isCasting = true;
+	local name, displayName, textureFile, startTimeMs, endTimeMs, isTradeSkill, castID, notInterruptible, spellID =
+		UnitCastingInfo(unitID)
+	local isEmpowered, numEmpowerStages
+
+	local isCasting, isChanneling, isCharging = false, false, false
+
+	if name then
+		isCasting = true
 	else
-		name, displayName, textureFile, startTimeMs, endTimeMs, isTradeSkill, notInterruptible, spellID, isEmpowered, numEmpowerStages = UnitChannelInfo(unitID);
-		
-		if (name) then
-			if (numEmpowerStages and (numEmpowerStages > 0)) then -- see CastingBarMixin:OnEvent() handling event UNIT_SPELLCAST_EMPOWER_START in "CastingBarFrame.lua"
-				isCharging = true;
+		name, displayName, textureFile, startTimeMs, endTimeMs, isTradeSkill, notInterruptible, spellID, isEmpowered, numEmpowerStages =
+			UnitChannelInfo(unitID)
+
+		if name then
+			if numEmpowerStages and (numEmpowerStages > 0) then -- see CastingBarMixin:OnEvent() handling event UNIT_SPELLCAST_EMPOWER_START in "CastingBarFrame.lua"
+				isCharging = true
 			else
-				isChanneling = true;
+				isChanneling = true
 			end
 		end
-		
 	end
-	
+
 	return {
 		isCasting = isCasting,
 		isChanneling = isChanneling,
@@ -4032,8 +4295,8 @@ function LibFroznFunctions:GetUnitCastingSpell(unitID)
 		notInterruptible = notInterruptible,
 		spellID = spellID,
 		isEmpowered = isEmpowered,
-		numEmpowerStages = numEmpowerStages
-	};
+		numEmpowerStages = numEmpowerStages,
+	}
 end
 
 -- get the faction a unit belongs to
@@ -4042,108 +4305,110 @@ end
 -- @return englishFaction    unit's faction name in english, e.g. "Alliance", "Horde", "Neutral". nil otherwise.
 -- @return localizedFaction  unit's faction name in the client's locale, nil otherwise.
 function LibFroznFunctions:GetUnitFactionGroup(unitID)
-	local englishFaction, localizedFaction = UnitFactionGroup(unitID);
-	
-	if (englishFaction) then
+	local englishFaction, localizedFaction = UnitFactionGroup(unitID)
+
+	if englishFaction then
 		-- consider that localized faction for pandaren player on the Wandering Isle is ""
-		if (englishFaction == "Neutral") then
-			localizedFaction = FACTION_NEUTRAL;
-		
+		if englishFaction == "Neutral" then
+			localizedFaction = FACTION_NEUTRAL
+
 		-- consider mercenary mode (allows players to enter unrated battlegrounds and Ashran as a member of the opposite faction)
-		elseif (self:UnitIsMercenary(unitID)) then
-			if (englishFaction == "Horde") then
-				englishFaction = "Alliance";
-				localizedFaction = FACTION_ALLIANCE;
-			elseif (englishFaction == "Alliance") then
-				englishFaction = "Horde";
-				localizedFaction = FACTION_HORDE;
+		elseif self:UnitIsMercenary(unitID) then
+			if englishFaction == "Horde" then
+				englishFaction = "Alliance"
+				localizedFaction = FACTION_ALLIANCE
+			elseif englishFaction == "Alliance" then
+				englishFaction = "Horde"
+				localizedFaction = FACTION_HORDE
 			end
 		end
 	end
-	
-	return englishFaction, localizedFaction;
+
+	return englishFaction, localizedFaction
 end
 
 -- get player guild club member info
 --
 -- @param  unitGUID  unit guid
 -- @return playerGuildClubMemberInfo, nil otherwise.
-local frameForGroupRosterUpdate, playerGuildClubIDCache;
-local playerGuildClubMemberInfosCache = {};
-local eventsForGroupRosterUpdateRegistered = false;
+local frameForGroupRosterUpdate, playerGuildClubIDCache
+local playerGuildClubMemberInfosCache = {}
+local eventsForGroupRosterUpdateRegistered = false
 
 function LibFroznFunctions:GetPlayerGuildClubMemberInfo(unitGUID)
 	-- register events for guild roster update
-	if (not eventsForGroupRosterUpdateRegistered) then
+	if not eventsForGroupRosterUpdateRegistered then
 		-- cache the player guild club member infos
 		local function cachePlayerGuildClubMemberInfosFn()
 			-- clear player guild club member infos in cache
-			playerGuildClubIDCache = nil;
-			wipe(playerGuildClubMemberInfosCache);
-			
+			playerGuildClubIDCache = nil
+			wipe(playerGuildClubMemberInfosCache)
+
 			-- player isn't in a guild
-			if (not IsInGuild()) then
-				return;
+			if not IsInGuild() then
+				return
 			end
-			
+
 			-- cache the player guild club member infos
-			if (not playerGuildClubIDCache) then
-				playerGuildClubIDCache = C_Club.GetGuildClubId();
+			if not playerGuildClubIDCache then
+				playerGuildClubIDCache = C_Club.GetGuildClubId()
 			end
-			
-			if (playerGuildClubIDCache) then
-				local playerGuildClubMemberIDs = C_Club.GetClubMembers(playerGuildClubIDCache);
-				
+
+			if playerGuildClubIDCache then
+				local playerGuildClubMemberIDs = C_Club.GetClubMembers(playerGuildClubIDCache)
+
 				for _, playerGuildClubMemberID in ipairs(playerGuildClubMemberIDs) do
-					local playerGuildClubMemberInfo = C_Club.GetMemberInfo(playerGuildClubIDCache, playerGuildClubMemberID);
-					
-					if (playerGuildClubMemberInfo) and (playerGuildClubMemberInfo.guid) then
-						playerGuildClubMemberInfosCache[playerGuildClubMemberInfo.guid] = playerGuildClubMemberInfo;
+					local playerGuildClubMemberInfo =
+						C_Club.GetMemberInfo(playerGuildClubIDCache, playerGuildClubMemberID)
+
+					if playerGuildClubMemberInfo and playerGuildClubMemberInfo.guid then
+						playerGuildClubMemberInfosCache[playerGuildClubMemberInfo.guid] = playerGuildClubMemberInfo
 					end
 				end
 			end
 		end
-		
-		cachePlayerGuildClubMemberInfosFn();
-		
+
+		cachePlayerGuildClubMemberInfosFn()
+
 		-- create frame for guild roster update
-		frameForGroupRosterUpdate = CreateFrame("Frame", LIB_NAME .. "-" .. LIB_MINOR .. "_GetPlayerGuildClubMemberInfo");
-		frameForGroupRosterUpdate:Hide();
-		
+		frameForGroupRosterUpdate =
+			CreateFrame("Frame", LIB_NAME .. "-" .. LIB_MINOR .. "_GetPlayerGuildClubMemberInfo")
+		frameForGroupRosterUpdate:Hide()
+
 		frameForGroupRosterUpdate:SetScript("OnEvent", function(self, event, ...)
-			self[event](self, event, ...);
-		end);
+			self[event](self, event, ...)
+		end)
 
 		function frameForGroupRosterUpdate:PLAYER_LOGIN()
 			-- request updated guild roster information from the server if player is in a guild
-			if (IsInGuild()) then
-				C_GuildInfo.GuildRoster();
+			if IsInGuild() then
+				C_GuildInfo.GuildRoster()
 			end
 		end
-		
+
 		function frameForGroupRosterUpdate:PLAYER_GUILD_UPDATE()
 			-- cache the player guild club member infos
-			cachePlayerGuildClubMemberInfosFn();
+			cachePlayerGuildClubMemberInfosFn()
 		end
-		
+
 		function frameForGroupRosterUpdate:GUILD_ROSTER_UPDATE()
 			-- cache the player guild club member infos
-			cachePlayerGuildClubMemberInfosFn();
+			cachePlayerGuildClubMemberInfosFn()
 		end
-		
-		frameForGroupRosterUpdate:RegisterEvent("PLAYER_LOGIN");
-		frameForGroupRosterUpdate:RegisterEvent("PLAYER_GUILD_UPDATE");
-		frameForGroupRosterUpdate:RegisterEvent("GUILD_ROSTER_UPDATE");
-		eventsForGroupRosterUpdateRegistered = true;
+
+		frameForGroupRosterUpdate:RegisterEvent("PLAYER_LOGIN")
+		frameForGroupRosterUpdate:RegisterEvent("PLAYER_GUILD_UPDATE")
+		frameForGroupRosterUpdate:RegisterEvent("GUILD_ROSTER_UPDATE")
+		eventsForGroupRosterUpdateRegistered = true
 	end
-	
+
 	-- no unit guid
-	if (not unitGUID) then
-		return nil;
+	if not unitGUID then
+		return nil
 	end
-	
+
 	-- get player guild club member info
-	return playerGuildClubMemberInfosCache[unitGUID];
+	return playerGuildClubMemberInfosCache[unitGUID]
 end
 
 ----------------------------------------------------------------------------------------------------
@@ -4151,17 +4416,17 @@ end
 ----------------------------------------------------------------------------------------------------
 
 -- config
-local LFF_INSPECT_TIMEOUT = 2; -- safety cap on how often the api will allow us to call NotifyInspect without issues
-local LFF_INSPECT_FAIL_TIMEOUT = 1; -- time to wait for event INSPECT_READY with inspect data
-local LFF_CACHE_TIMEOUT = 5; -- seconds to keep stale information before issuing a new inspect
+local LFF_INSPECT_TIMEOUT = 2 -- safety cap on how often the api will allow us to call NotifyInspect without issues
+local LFF_INSPECT_FAIL_TIMEOUT = 1 -- time to wait for event INSPECT_READY with inspect data
+local LFF_CACHE_TIMEOUT = 5 -- seconds to keep stale information before issuing a new inspect
 
 -- create frame for delayed inspection
-local frameForDelayedInspection = CreateFrame("Frame", LIB_NAME .. "-" .. LIB_MINOR .. "_DelayedInspection");
-frameForDelayedInspection:Hide();
+local frameForDelayedInspection = CreateFrame("Frame", LIB_NAME .. "-" .. LIB_MINOR .. "_DelayedInspection")
+frameForDelayedInspection:Hide()
 
 frameForDelayedInspection:SetScript("OnEvent", function(self, event, ...)
-	self[event](self, event, ...);
-end);
+	self[event](self, event, ...)
+end)
 
 -- inspect unit
 --
@@ -4181,55 +4446,60 @@ end);
 --           .talents               see LibFroznFunctions:GetTalents()
 --           .averageItemLevel      see LibFroznFunctions:GetAverageItemLevel()
 --         returns nil if no unit id is supplied or unit isn't a player.
-local unitCache = {};
-local eventsForInspectingRegistered = false;
+local unitCache = {}
+local eventsForInspectingRegistered = false
 
 LFF_INSPECT_STATUS = {
 	queuedForNextInspect = 1, -- queued for next inspection
-	waitingForInspectData = 2 -- waiting for inspect data
-};
+	waitingForInspectData = 2, -- waiting for inspect data
+}
 
-function LibFroznFunctions:InspectUnit(unitID, callbackForInspectData, removeCallbackFromQueuedInspectCallbacks, bypassUnitCacheTimeout)
+function LibFroznFunctions:InspectUnit(
+	unitID,
+	callbackForInspectData,
+	removeCallbackFromQueuedInspectCallbacks,
+	bypassUnitCacheTimeout
+)
 	-- register events for inspecting
-	if (not eventsForInspectingRegistered) then
-		frameForDelayedInspection:RegisterEvent("INSPECT_READY");
-		eventsForInspectingRegistered = true;
+	if not eventsForInspectingRegistered then
+		frameForDelayedInspection:RegisterEvent("INSPECT_READY")
+		eventsForInspectingRegistered = true
 	end
-	
+
 	-- remove callback function from all queued inspect callbacks if requested
-	if (removeCallbackFromQueuedInspectCallbacks) then
-		self:RemoveCallbackFromQueuedInspectCallbacks(callbackForInspectData);
+	if removeCallbackFromQueuedInspectCallbacks then
+		self:RemoveCallbackFromQueuedInspectCallbacks(callbackForInspectData)
 	end
-	
+
 	-- no unit id or not a player
-	local isValidUnitID = (unitID) and (UnitIsPlayer(unitID));
-	
-	if (not isValidUnitID) then
-		return;
+	local isValidUnitID = unitID and (UnitIsPlayer(unitID))
+
+	if not isValidUnitID then
+		return
 	end
-	
+
 	-- get record in unit cache
-	local unitGUID = UnitGUID(unitID);
-	local unitCacheRecord = frameForDelayedInspection:GetUnitCacheRecord(unitID, unitGUID);
-	
-	if (not unitCacheRecord) then
-		return;
+	local unitGUID = UnitGUID(unitID)
+	local unitCacheRecord = frameForDelayedInspection:GetUnitCacheRecord(unitID, unitGUID)
+
+	if not unitCacheRecord then
+		return
 	end
-	
+
 	-- no need for a delayed inspect request on the player unit
-	if (unitCacheRecord.isSelf) then
-		frameForDelayedInspection:InspectDataAvailable(unitID, unitCacheRecord);
-	
+	if unitCacheRecord.isSelf then
+		frameForDelayedInspection:InspectDataAvailable(unitID, unitCacheRecord)
+
 	-- reinspect only if enough time has been elapsed
 	elseif (not bypassUnitCacheTimeout) and (GetTime() - unitCacheRecord.timestampLastInspect <= LFF_CACHE_TIMEOUT) then
-		frameForDelayedInspection:FinishInspect(unitCacheRecord, true);
-	
+		frameForDelayedInspection:FinishInspect(unitCacheRecord, true)
+
 	-- schedule a delayed inspect request
 	else
-		frameForDelayedInspection:InitiateInspectRequest(unitID, unitCacheRecord, callbackForInspectData);
+		frameForDelayedInspection:InitiateInspectRequest(unitID, unitCacheRecord, callbackForInspectData)
 	end
-	
-	return unitCacheRecord;
+
+	return unitCacheRecord
 end
 
 -- remove callback function from all queued inspect callbacks if requested
@@ -4237,59 +4507,59 @@ end
 -- @param  callbackForInspectData()  callback function if inspect data is available which should be removed from all queued inspect callbacks
 function LibFroznFunctions:RemoveCallbackFromQueuedInspectCallbacks(callbackForInspectData)
 	for _, unitCacheRecord in ipairs(unitCache) do
-		unitCacheRecord.callbacks:Remove(callbackForInspectData);
+		unitCacheRecord.callbacks:Remove(callbackForInspectData)
 	end
 end
 
 -- get record in unit cache
 function frameForDelayedInspection:GetUnitCacheRecord(unitID, unitGUID)
 	-- no unit guid
-	if (not unitGUID) then
-		return;
+	if not unitGUID then
+		return
 	end
-	
+
 	-- get record in unit cache
-	local unitCacheRecord = unitCache[unitGUID];
-	local isValidUnitID = (unitID) and (UnitIsPlayer(unitID));
-	
-	if (unitCacheRecord) then
+	local unitCacheRecord = unitCache[unitGUID]
+	local isValidUnitID = unitID and (UnitIsPlayer(unitID))
+
+	if unitCacheRecord then
 		-- update record in unit cache if a valid unit id is available
-		if (isValidUnitID) then
-			unitCacheRecord = LibFroznFunctions:GetUnitRecordFromCache(unitID);
+		if isValidUnitID then
+			unitCacheRecord = LibFroznFunctions:GetUnitRecordFromCache(unitID)
 		end
 	else
 		-- create record in unit cache if a valid unit id is available
-		if (isValidUnitID) then
-			unitCacheRecord = frameForDelayedInspection:CreateUnitCacheRecord(unitID, unitGUID);
+		if isValidUnitID then
+			unitCacheRecord = frameForDelayedInspection:CreateUnitCacheRecord(unitID, unitGUID)
 		end
 	end
-	
-	return unitCacheRecord;
+
+	return unitCacheRecord
 end
 
 -- create record in unit cache
 function frameForDelayedInspection:CreateUnitCacheRecord(unitID, unitGUID)
-	local unitCacheRecord = LibFroznFunctions:GetUnitRecordFromCache(unitID);
-	unitCache[unitGUID] = unitCacheRecord;
-	
-	unitCacheRecord.needsInspect = false;
-	unitCacheRecord.canInspect = nil;
-	unitCacheRecord.inspectStatus = nil;
-	unitCacheRecord.inspectTimestamp = 0;
-	unitCacheRecord.timestampLastInspect = 0;
-	unitCacheRecord.callbacks = LibFroznFunctions:CreatePushArray();
-	
-	unitCacheRecord.talents = LibFroznFunctions:AreTalentsAvailable(unitID, unitCacheRecord.isSelf);
-	unitCacheRecord.averageItemLevel = LibFroznFunctions:IsAverageItemLevelAvailable(unitID);
-	
-	return unitCacheRecord;
+	local unitCacheRecord = LibFroznFunctions:GetUnitRecordFromCache(unitID)
+	unitCache[unitGUID] = unitCacheRecord
+
+	unitCacheRecord.needsInspect = false
+	unitCacheRecord.canInspect = nil
+	unitCacheRecord.inspectStatus = nil
+	unitCacheRecord.inspectTimestamp = 0
+	unitCacheRecord.timestampLastInspect = 0
+	unitCacheRecord.callbacks = LibFroznFunctions:CreatePushArray()
+
+	unitCacheRecord.talents = LibFroznFunctions:AreTalentsAvailable(unitID, unitCacheRecord.isSelf)
+	unitCacheRecord.averageItemLevel = LibFroznFunctions:IsAverageItemLevelAvailable(unitID)
+
+	return unitCacheRecord
 end
 
 -- determine if an "Inspect Frame" is open. native inspect as well as addon Examiner are supported.
 --
 -- @return true if inspect frame is open, false otherwise.
 function LibFroznFunctions:IsInspectFrameOpen()
-	return (InspectFrame and InspectFrame:IsShown()) or (Examiner and Examiner:IsShown());
+	return (InspectFrame and InspectFrame:IsShown()) or (Examiner and Examiner:IsShown())
 end
 
 -- check if inspection is possible
@@ -4298,228 +4568,238 @@ end
 -- @return true if inspection is possible, false otherwise.
 function LibFroznFunctions:CanInspect(unitID)
 	-- no unit id or not a player
-	local isValidUnitID = (unitID) and (UnitIsPlayer(unitID));
-	
-	if (not isValidUnitID) then
-		return false;
+	local isValidUnitID = unitID and (UnitIsPlayer(unitID))
+
+	if not isValidUnitID then
+		return false
 	end
-	
+
 	-- no inspection if inspect frame is open
-	if (self:IsInspectFrameOpen()) then
-		return false;
+	if self:IsInspectFrameOpen() then
+		return false
 	end
-	
+
 	-- check if inspection is possible
 	local function checkFn()
-		return CanInspect(unitID);
+		return CanInspect(unitID)
 	end
-	
+
 	-- needs suppressing error message and speech when calling CanInspect()
-	if (self.hasWoWFlavor.needsSuppressingErrorMessageAndSpeechWhenCallingCanInspect) then
-		return self:CallFunctionAndSuppressErrorMessageAndSpeech(checkFn);
+	if self.hasWoWFlavor.needsSuppressingErrorMessageAndSpeechWhenCallingCanInspect then
+		return self:CallFunctionAndSuppressErrorMessageAndSpeech(checkFn)
 	end
-	
-	return checkFn();
+
+	return checkFn()
 end
 
 -- initiate inspect request
-local unitCacheQueuedForNextInspect = LibFroznFunctions:CreatePushArray();
+local unitCacheQueuedForNextInspect = LibFroznFunctions:CreatePushArray()
 
 function frameForDelayedInspection:InitiateInspectRequest(unitID, unitCacheRecord, callbackForInspectData)
 	-- check if inspect isn't possible
-	unitCacheRecord.canInspect = LibFroznFunctions:CanInspect(unitID);
-	
-	if (not unitCacheRecord.canInspect) then
-		frameForDelayedInspection:FinishInspect(unitCacheRecord, true);
-		
-		return;
+	unitCacheRecord.canInspect = LibFroznFunctions:CanInspect(unitID)
+
+	if not unitCacheRecord.canInspect then
+		frameForDelayedInspection:FinishInspect(unitCacheRecord, true)
+
+		return
 	end
-	
+
 	-- don't inspect if we're already waiting for inspect data and it hasn't been timed out yet
-	if (unitCacheRecord.inspectStatus == LFF_INSPECT_STATUS.waitingForInspectData) and (GetTime() - unitCacheRecord.inspectTimestamp <= LFF_INSPECT_FAIL_TIMEOUT) then
-		return;
+	if
+		(unitCacheRecord.inspectStatus == LFF_INSPECT_STATUS.waitingForInspectData)
+		and (GetTime() - unitCacheRecord.inspectTimestamp <= LFF_INSPECT_FAIL_TIMEOUT)
+	then
+		return
 	end
-	
+
 	-- add callback for inspect data
-	unitCacheRecord.needsInspect = true;
-	unitCacheRecord.callbacks:PushUnique(callbackForInspectData);
-	
+	unitCacheRecord.needsInspect = true
+	unitCacheRecord.callbacks:PushUnique(callbackForInspectData)
+
 	-- schedule a delayed inspect request
-	unitCacheRecord.inspectStatus = LFF_INSPECT_STATUS.queuedForNextInspect;
-	unitCacheRecord.inspectTimestamp = 0;
-	
-	frameForDelayedInspection:AddQueuedInspectRequest(unitCacheRecord);
+	unitCacheRecord.inspectStatus = LFF_INSPECT_STATUS.queuedForNextInspect
+	unitCacheRecord.inspectTimestamp = 0
+
+	frameForDelayedInspection:AddQueuedInspectRequest(unitCacheRecord)
 end
 
 -- schedule a delayed inspect request
 function frameForDelayedInspection:AddQueuedInspectRequest(unitCacheRecord)
-	unitCacheQueuedForNextInspect:PushUniqueOnTop(unitCacheRecord);
-	
-	frameForDelayedInspection:Show();
+	unitCacheQueuedForNextInspect:PushUniqueOnTop(unitCacheRecord)
+
+	frameForDelayedInspection:Show()
 end
 
 -- remove queued inspect request
 function frameForDelayedInspection:RemoveQueuedInspectRequest(unitCacheRecord)
-	local itemsRemoved = unitCacheQueuedForNextInspect:Remove(unitCacheRecord);
-	
-	if (itemsRemoved > 0) then
+	local itemsRemoved = unitCacheQueuedForNextInspect:Remove(unitCacheRecord)
+
+	if itemsRemoved > 0 then
 		-- check if there are no more queued inspect requests available
-		if (unitCacheQueuedForNextInspect:GetCount() == 0) then
-			frameForDelayedInspection:Hide();
+		if unitCacheQueuedForNextInspect:GetCount() == 0 then
+			frameForDelayedInspection:Hide()
 		end
 	end
 end
 
 -- HOOK: frameForDelayedInspection's OnUpdate() -- sends the inspect request after a delay
-frameForDelayedInspection.NextNotifyInspectTimestamp = GetTime();
-frameForDelayedInspection.NotifyInspectHooked = false;
+frameForDelayedInspection.NextNotifyInspectTimestamp = GetTime()
+frameForDelayedInspection.NotifyInspectHooked = false
 
 frameForDelayedInspection:SetScript("OnUpdate", function(self, elapsed)
-	if (self.NextNotifyInspectTimestamp <= GetTime()) then
+	if self.NextNotifyInspectTimestamp <= GetTime() then
 		-- get next unit to send next queued inspect request for
-		local unitCacheRecord, unitID, unitIDForNotifyInspectFound;
-		
+		local unitCacheRecord, unitID, unitIDForNotifyInspectFound
+
 		repeat
-			unitCacheRecord = unitCacheQueuedForNextInspect:Pop();
-			
+			unitCacheRecord = unitCacheQueuedForNextInspect:Pop()
+
 			-- check if there are no more queued inspect requests available
-			if (not unitCacheRecord) then
-				self:Hide();
-				return;
+			if not unitCacheRecord then
+				self:Hide()
+				return
 			end
-			
+
 			-- get unit id from unit guid and check if inspect is possible
-			unitID = LibFroznFunctions:GetUnitIDFromGUID(unitCacheRecord.guid);
-			unitIDForNotifyInspectFound = true;
-			
-			if (not unitID) then
-				frameForDelayedInspection:FinishInspect(unitCacheRecord, true);
-				unitIDForNotifyInspectFound = false;
+			unitID = LibFroznFunctions:GetUnitIDFromGUID(unitCacheRecord.guid)
+			unitIDForNotifyInspectFound = true
+
+			if not unitID then
+				frameForDelayedInspection:FinishInspect(unitCacheRecord, true)
+				unitIDForNotifyInspectFound = false
 			else
-				unitCacheRecord.canInspect = LibFroznFunctions:CanInspect(unitID);
-				
-				if (not unitCacheRecord.canInspect) then
-					frameForDelayedInspection:FinishInspect(unitCacheRecord, true);
-					unitIDForNotifyInspectFound = false;
+				unitCacheRecord.canInspect = LibFroznFunctions:CanInspect(unitID)
+
+				if not unitCacheRecord.canInspect then
+					frameForDelayedInspection:FinishInspect(unitCacheRecord, true)
+					unitIDForNotifyInspectFound = false
 				end
 			end
-		until (unitIDForNotifyInspectFound);
-		
+		until unitIDForNotifyInspectFound
+
 		-- hook NotifyInspect() to monitor inspect requests
-		frameForDelayedInspection:HookNotifyInspect();
-		
+		frameForDelayedInspection:HookNotifyInspect()
+
 		-- send next queued inspect request
-		NotifyInspect(unitID);
-		
+		NotifyInspect(unitID)
+
 		-- check if there are no more queued inspect requests available
-		if (unitCacheQueuedForNextInspect:GetCount() == 0) then
-			self:Hide();
+		if unitCacheQueuedForNextInspect:GetCount() == 0 then
+			self:Hide()
 		end
 	end
-end);
+end)
 
 -- HOOK: NotifyInspect() to monitor inspect requests
 function frameForDelayedInspection:HookNotifyInspect()
 	-- check if NotifyInspect() is already hooked
-	if (frameForDelayedInspection.NotifyInspectHooked) then
-		return;
+	if frameForDelayedInspection.NotifyInspectHooked then
+		return
 	end
-	
+
 	-- HOOK: NotifyInspect() to monitor inspect requests
 	hooksecurefunc("NotifyInspect", function(unitID)
 		-- set queued inspect request to inspect requests waiting for inspect data
-		local unitGUID = UnitGUID(unitID);
-		local unitCacheRecord = frameForDelayedInspection:GetUnitCacheRecord(unitID, unitGUID);
-		
-		if (unitCacheRecord) then
-			unitCacheRecord.inspectStatus = LFF_INSPECT_STATUS.waitingForInspectData;
-			unitCacheRecord.inspectTimestamp = GetTime();
-			
-			frameForDelayedInspection:RemoveQueuedInspectRequest(unitCacheRecord);
+		local unitGUID = UnitGUID(unitID)
+		local unitCacheRecord = frameForDelayedInspection:GetUnitCacheRecord(unitID, unitGUID)
+
+		if unitCacheRecord then
+			unitCacheRecord.inspectStatus = LFF_INSPECT_STATUS.waitingForInspectData
+			unitCacheRecord.inspectTimestamp = GetTime()
+
+			frameForDelayedInspection:RemoveQueuedInspectRequest(unitCacheRecord)
 		end
-		
+
 		-- set timestamp for next inspect request
-		frameForDelayedInspection.NextNotifyInspectTimestamp = GetTime() + LFF_INSPECT_TIMEOUT;
-	end);
-	
-	frameForDelayedInspection.NotifyInspectHooked = true;
+		frameForDelayedInspection.NextNotifyInspectTimestamp = GetTime() + LFF_INSPECT_TIMEOUT
+	end)
+
+	frameForDelayedInspection.NotifyInspectHooked = true
 end
 
 -- EVENT: INSPECT_READY - inspect data available
 function frameForDelayedInspection:INSPECT_READY(event, unitGUID)
 	-- no unit guid
-	if (not unitGUID) then
-		return;
+	if not unitGUID then
+		return
 	end
-	
-	local unitID = LibFroznFunctions:GetUnitIDFromGUID(unitGUID);
-	local unitCacheRecord = frameForDelayedInspection:GetUnitCacheRecord(unitID, unitGUID);
-	
-	if (unitCacheRecord) then
-		self:InspectDataAvailable(unitID, unitCacheRecord);
+
+	local unitID = LibFroznFunctions:GetUnitIDFromGUID(unitGUID)
+	local unitCacheRecord = frameForDelayedInspection:GetUnitCacheRecord(unitID, unitGUID)
+
+	if unitCacheRecord then
+		self:InspectDataAvailable(unitID, unitCacheRecord)
 	end
 end
 
 -- inspect data available
 function frameForDelayedInspection:InspectDataAvailable(unitID, unitCacheRecord)
-	if (not unitID) then
-		frameForDelayedInspection:FinishInspect(unitCacheRecord, true);
-		return;
+	if not unitID then
+		frameForDelayedInspection:FinishInspect(unitCacheRecord, true)
+		return
 	end
-	
-	unitCacheRecord.talents = LibFroznFunctions:GetTalents(unitID);
+
+	unitCacheRecord.talents = LibFroznFunctions:GetTalents(unitID)
 	unitCacheRecord.averageItemLevel = LibFroznFunctions:GetAverageItemLevel(unitID, function(averageItemLevel)
-		unitCacheRecord.averageItemLevel = averageItemLevel;
-		
-		frameForDelayedInspection:FinishInspectDataAvailable(unitCacheRecord);
-	end);
-	
-	frameForDelayedInspection:FinishInspectDataAvailable(unitCacheRecord);
+		unitCacheRecord.averageItemLevel = averageItemLevel
+
+		frameForDelayedInspection:FinishInspectDataAvailable(unitCacheRecord)
+	end)
+
+	frameForDelayedInspection:FinishInspectDataAvailable(unitCacheRecord)
 end
 
 -- finish inspect data available
 function frameForDelayedInspection:FinishInspectDataAvailable(unitCacheRecord)
 	-- check which data is set
-	local numDataIsSet = 0;
-	
+	local numDataIsSet = 0
+
 	if (unitCacheRecord.talents ~= LFF_TALENTS.available) and (unitCacheRecord.talents ~= LFF_TALENTS.na) then
-		numDataIsSet = numDataIsSet + 1;
+		numDataIsSet = numDataIsSet + 1
 	end
-	if (unitCacheRecord.averageItemLevel ~= LFF_AVERAGE_ITEM_LEVEL.available) and (unitCacheRecord.averageItemLevel ~= LFF_AVERAGE_ITEM_LEVEL.na) then
-		numDataIsSet = numDataIsSet + 1;
+	if
+		(unitCacheRecord.averageItemLevel ~= LFF_AVERAGE_ITEM_LEVEL.available)
+		and (unitCacheRecord.averageItemLevel ~= LFF_AVERAGE_ITEM_LEVEL.na)
+	then
+		numDataIsSet = numDataIsSet + 1
 	end
-	
+
 	-- finish inspect data available
-	if (numDataIsSet == 0) then
-		frameForDelayedInspection:FinishInspect(unitCacheRecord, true, true);
-	elseif (numDataIsSet < 2) then
-		frameForDelayedInspection:FinishInspect(unitCacheRecord, false, true);
+	if numDataIsSet == 0 then
+		frameForDelayedInspection:FinishInspect(unitCacheRecord, true, true)
+	elseif numDataIsSet < 2 then
+		frameForDelayedInspection:FinishInspect(unitCacheRecord, false, true)
 	else
-		unitCacheRecord.timestamp = GetTime();
-		
-		frameForDelayedInspection:FinishInspect(unitCacheRecord);
+		unitCacheRecord.timestamp = GetTime()
+
+		frameForDelayedInspection:FinishInspect(unitCacheRecord)
 	end
 end
 
 -- finish inspect
-function frameForDelayedInspection:FinishInspect(unitCacheRecord, noInspectDataAvailable, noClearCallbacksForInspectData)
+function frameForDelayedInspection:FinishInspect(
+	unitCacheRecord,
+	noInspectDataAvailable,
+	noClearCallbacksForInspectData
+)
 	-- send unit cache record to callbacks if inspect data is available
-	if (not noInspectDataAvailable) then
+	if not noInspectDataAvailable then
 		for _, callback in ipairs(unitCacheRecord.callbacks) do
-			callback(unitCacheRecord);
+			callback(unitCacheRecord)
 		end
 	end
-	
-	if (not noClearCallbacksForInspectData) then
-		unitCacheRecord.callbacks:Clear();
+
+	if not noClearCallbacksForInspectData then
+		unitCacheRecord.callbacks:Clear()
 	end
-	
+
 	-- finish inspect request
-	unitCacheRecord.needsInspect = false;
-	unitCacheRecord.inspectStatus = nil;
-	unitCacheRecord.inspectTimestamp = 0;
-	
-	frameForDelayedInspection:RemoveQueuedInspectRequest(unitCacheRecord);
+	unitCacheRecord.needsInspect = false
+	unitCacheRecord.inspectStatus = nil
+	unitCacheRecord.inspectTimestamp = 0
+
+	frameForDelayedInspection:RemoveQueuedInspectRequest(unitCacheRecord)
 end
 
 -- check if talents are available
@@ -4532,30 +4812,30 @@ end
 LFF_TALENTS = {
 	available = 1, -- talents available
 	na = 2, -- no talents available
-	none = 3 -- no talents found
-};
+	none = 3, -- no talents found
+}
 
 function LibFroznFunctions:AreTalentsAvailable(unitID, isSelf)
 	-- no unit id or not a player
-	local isValidUnitID = (unitID) and (UnitIsPlayer(unitID));
-	
-	if (not isValidUnitID) then
-		return;
+	local isValidUnitID = unitID and (UnitIsPlayer(unitID))
+
+	if not isValidUnitID then
+		return
 	end
-	
-	 -- no need to display talent/specialization for players who hasn't yet gotten talent tabs or a specialization
-	local unitLevel = UnitLevel(unitID);
-	
-	if (unitLevel < 10 and unitLevel ~= -1) then
-		return LFF_TALENTS.na;
+
+	-- no need to display talent/specialization for players who hasn't yet gotten talent tabs or a specialization
+	local unitLevel = UnitLevel(unitID)
+
+	if unitLevel < 10 and unitLevel ~= -1 then
+		return LFF_TALENTS.na
 	end
-	
+
 	-- consider if getting talents from other players isn't available
-	if (not isSelf) and (not self.hasWoWFlavor.talentsAvailableForInspectedUnit) then
-		return LFF_TALENTS.na;
+	if (not isSelf) and not self.hasWoWFlavor.talentsAvailableForInspectedUnit then
+		return LFF_TALENTS.na
 	end
-	
-	return LFF_TALENTS.available;
+
+	return LFF_TALENTS.available
 end
 
 -- get talents
@@ -4571,64 +4851,79 @@ end
 --         returns nil if unit id is missing or not a player
 function LibFroznFunctions:GetTalents(unitID)
 	-- check if talents are available
-	local isSelf = UnitIsUnit(unitID, "player");
-	local areTalentsAvailable = self:AreTalentsAvailable(unitID, isSelf);
-	
-	if (areTalentsAvailable ~= LFF_TALENTS.available) then
-		return areTalentsAvailable;
+	local isSelf = UnitIsUnit(unitID, "player")
+	local areTalentsAvailable = self:AreTalentsAvailable(unitID, isSelf)
+
+	if areTalentsAvailable ~= LFF_TALENTS.available then
+		return areTalentsAvailable
 	end
-	
+
 	-- get talents
-	local talents = {};
-	
-	if (self.hasWoWFlavor.specializationAvailable) then -- retail, since MoP 5.0.4
-		local specializationName, specializationIcon, role, _;
-		
-		if (isSelf) then -- player
-			local specIndex = self:GetSpecialization();
-			
-			if (not specIndex) then
-				return LFF_TALENTS.none;
+	local talents = {}
+
+	if self.hasWoWFlavor.specializationAvailable then -- retail, since MoP 5.0.4
+		local specializationName, specializationIcon, role, _
+
+		if isSelf then -- player
+			local specIndex = self:GetSpecialization()
+
+			if not specIndex then
+				return LFF_TALENTS.none
 			end
-			
-			_, specializationName, _, specializationIcon, role = self:GetSpecializationInfo(specIndex);
+
+			_, specializationName, _, specializationIcon, role = self:GetSpecializationInfo(specIndex)
 		else -- inspecting
-			local specializationID = GetInspectSpecialization(unitID);
-			
-			if (specializationID == 0) then
-				return LFF_TALENTS.none;
+			local specializationID = GetInspectSpecialization(unitID)
+
+			if specializationID == 0 then
+				return LFF_TALENTS.none
 			end
-			
-			_, specializationName, _, specializationIcon, role = GetSpecializationInfoByID(specializationID);
+
+			_, specializationName, _, specializationIcon, role = GetSpecializationInfoByID(specializationID)
 		end
-		
-		if (specializationName ~= "") then
-			talents.name = specializationName;
+
+		if specializationName ~= "" then
+			talents.name = specializationName
 		end
-		
-		talents.role = role;
-		talents.iconFileID = specializationIcon;
-		
-		local pointsSpent = {};
-		
-		if (isSelf) and (C_SpecializationInfo.CanPlayerUseTalentSpecUI()) or (not isSelf) and (C_Traits.HasValidInspectData()) then
-			local configID = (isSelf) and (C_ClassTalents) and (C_ClassTalents.GetActiveConfigID) and (C_ClassTalents.GetActiveConfigID()) or (not isSelf) and (Constants.TraitConsts.INSPECT_TRAIT_CONFIG_ID);
-			
-			if (configID) then
-				local configInfo = C_Traits.GetConfigInfo(configID);
-				
-				if (configInfo) and (configInfo.treeIDs) then
-					local treeID = configInfo.treeIDs[1];
-					if (treeID) then
-						local treeCurrencyInfo = C_Traits.GetTreeCurrencyInfo(configID, treeID, false);
-						
-						if (treeCurrencyInfo) then
+
+		talents.role = role
+		talents.iconFileID = specializationIcon
+
+		local pointsSpent = {}
+
+		if
+			isSelf and (C_SpecializationInfo.CanPlayerUseTalentSpecUI())
+			or (not isSelf) and (C_Traits.HasValidInspectData())
+		then
+			local configID = isSelf
+					and C_ClassTalents
+					and C_ClassTalents.GetActiveConfigID
+					and (C_ClassTalents.GetActiveConfigID())
+				or (not isSelf) and Constants.TraitConsts.INSPECT_TRAIT_CONFIG_ID
+
+			if configID then
+				local configInfo = C_Traits.GetConfigInfo(configID)
+
+				if configInfo and configInfo.treeIDs then
+					local treeID = configInfo.treeIDs[1]
+					if treeID then
+						local treeCurrencyInfo = C_Traits.GetTreeCurrencyInfo(configID, treeID, false)
+
+						if treeCurrencyInfo then
 							for _, treeCurrencyInfoItem in ipairs(treeCurrencyInfo) do
-								if (treeCurrencyInfoItem.spent) then
-									local traitCurrencyFlags, traitCurrencyType, currencyTypesID, traitCurrencyIcon = C_Traits.GetTraitCurrencyInfo(treeCurrencyInfoItem.traitCurrencyID);
-									
-									if (self:ExistsInTable(traitCurrencyFlags, { Enum.TraitCurrencyFlag.UseClassIcon, Enum.TraitCurrencyFlag.UseSpecIcon })) and (treeCurrencyInfoItem.spent) then
-										tinsert(pointsSpent, treeCurrencyInfoItem.spent);
+								if treeCurrencyInfoItem.spent then
+									local traitCurrencyFlags, traitCurrencyType, currencyTypesID, traitCurrencyIcon =
+										C_Traits.GetTraitCurrencyInfo(treeCurrencyInfoItem.traitCurrencyID)
+
+									if
+										(
+											self:ExistsInTable(traitCurrencyFlags, {
+												Enum.TraitCurrencyFlag.UseClassIcon,
+												Enum.TraitCurrencyFlag.UseSpecIcon,
+											})
+										) and treeCurrencyInfoItem.spent
+									then
+										tinsert(pointsSpent, treeCurrencyInfoItem.spent)
 									end
 								end
 							end
@@ -4637,46 +4932,47 @@ function LibFroznFunctions:GetTalents(unitID)
 				end
 			end
 		end
-		
-		if (#pointsSpent > 0) then
-			talents.pointsSpent = pointsSpent;
+
+		if #pointsSpent > 0 then
+			talents.pointsSpent = pointsSpent
 		end
 	else -- classic era, before MoP 5.0.4
 		-- inspect functions will always use the active spec when not inspecting
-		local activeTalentGroup = GetActiveTalentGroup and GetActiveTalentGroup(not isSelf);
-		local numTalentTabs = GetNumTalentTabs(not isSelf);
-		
-		if (not numTalentTabs) then
-			return LFF_TALENTS.none;
+		local activeTalentGroup = GetActiveTalentGroup and GetActiveTalentGroup(not isSelf)
+		local numTalentTabs = GetNumTalentTabs(not isSelf)
+
+		if not numTalentTabs then
+			return LFF_TALENTS.none
 		end
-		
-		local talentTabName, talentTabIcon;
-		local pointsSpent = {};
-		local maxPointsSpent;
-		
+
+		local talentTabName, talentTabIcon
+		local pointsSpent = {}
+		local maxPointsSpent
+
 		for tabIndex = 1, numTalentTabs do
-			local _, _talentTabName, _, _talentTabIcon, _pointsSpent = GetTalentTabInfo(tabIndex, not isSelf, nil, activeTalentGroup);
-			
-			tinsert(pointsSpent, _pointsSpent);
-			
+			local _, _talentTabName, _, _talentTabIcon, _pointsSpent =
+				GetTalentTabInfo(tabIndex, not isSelf, nil, activeTalentGroup)
+
+			tinsert(pointsSpent, _pointsSpent)
+
 			if (not maxPointsSpent) or (_pointsSpent > maxPointsSpent) then
-				maxPointsSpent = _pointsSpent;
-				talentTabName, talentTabIcon = _talentTabName, _talentTabIcon;
+				maxPointsSpent = _pointsSpent
+				talentTabName, talentTabIcon = _talentTabName, _talentTabIcon
 			end
 		end
-		
-		if (talentTabName ~= "") then
-			talents.name = talentTabName;
+
+		if talentTabName ~= "" then
+			talents.name = talentTabName
 		end
-		
-		talents.iconFileID = talentTabIcon;
-		
-		if (#pointsSpent > 0) then
-			talents.pointsSpent = pointsSpent;
+
+		talents.iconFileID = talentTabIcon
+
+		if #pointsSpent > 0 then
+			talents.pointsSpent = pointsSpent
 		end
 	end
-	
-	return talents;
+
+	return talents
 end
 
 -- check if average item level is available
@@ -4688,25 +4984,25 @@ end
 LFF_AVERAGE_ITEM_LEVEL = {
 	available = 1, -- average item level available
 	na = 2, -- no average item level available
-	none = 3 -- no average item level found
-};
+	none = 3, -- no average item level found
+}
 
 function LibFroznFunctions:IsAverageItemLevelAvailable(unitID)
 	-- no unit id or not a player
-	local isValidUnitID = (unitID) and (UnitIsPlayer(unitID));
-	
-	if (not isValidUnitID) then
-		return;
+	local isValidUnitID = unitID and (UnitIsPlayer(unitID))
+
+	if not isValidUnitID then
+		return
 	end
-	
-	 -- consider minimum player level to display average item level, see MIN_PLAYER_LEVEL_FOR_ITEM_LEVEL_DISPLAY in "PaperDollFrame.lua"
-	local unitLevel = UnitLevel(unitID);
-	
-	if (unitLevel < 10 and unitLevel ~= -1) then
-		return LFF_AVERAGE_ITEM_LEVEL.na;
+
+	-- consider minimum player level to display average item level, see MIN_PLAYER_LEVEL_FOR_ITEM_LEVEL_DISPLAY in "PaperDollFrame.lua"
+	local unitLevel = UnitLevel(unitID)
+
+	if unitLevel < 10 and unitLevel ~= -1 then
+		return LFF_AVERAGE_ITEM_LEVEL.na
 	end
-	
-	return LFF_AVERAGE_ITEM_LEVEL.available;
+
+	return LFF_AVERAGE_ITEM_LEVEL.available
 end
 
 -- get average item level
@@ -4726,114 +5022,115 @@ end
 --         returns nil if unit id is missing or not a player
 function LibFroznFunctions:GetAverageItemLevel(unitID, callbackForItemData)
 	-- check if average item level is available
-	local isAverageItemLevelAvailable = self:IsAverageItemLevelAvailable(unitID);
-	
-	if (isAverageItemLevelAvailable ~= LFF_AVERAGE_ITEM_LEVEL.available) then
-		return isAverageItemLevelAvailable;
+	local isAverageItemLevelAvailable = self:IsAverageItemLevelAvailable(unitID)
+
+	if isAverageItemLevelAvailable ~= LFF_AVERAGE_ITEM_LEVEL.available then
+		return isAverageItemLevelAvailable
 	end
-	
+
 	-- check if item data for all items are available and queried from server
-	local itemCountWaitingForData = 0;
-	local unitGUID = UnitGUID(unitID);
-	
+	local itemCountWaitingForData = 0
+	local unitGUID = UnitGUID(unitID)
+
 	for i = INVSLOT_FIRST_EQUIPPED, INVSLOT_LAST_EQUIPPED do
-		local itemID = GetInventoryItemID(unitID, i);
-		
-		if (itemID) then
-			local item = Item:CreateFromItemID(itemID);
-			
+		local itemID = GetInventoryItemID(unitID, i)
+
+		if itemID then
+			local item = Item:CreateFromItemID(itemID)
+
 			if (not item:IsItemEmpty()) and (not item:IsItemDataCached()) then
-				itemCountWaitingForData = itemCountWaitingForData + 1;
-				
+				itemCountWaitingForData = itemCountWaitingForData + 1
+
 				item:ContinueOnItemLoad(function()
-					itemCountWaitingForData = itemCountWaitingForData - 1;
-					
-					if (itemCountWaitingForData == 0) then
-						LFF_GetAverageItemLevelFromItemData(unitID, callbackForItemData, unitGUID);
+					itemCountWaitingForData = itemCountWaitingForData - 1
+
+					if itemCountWaitingForData == 0 then
+						LFF_GetAverageItemLevelFromItemData(unitID, callbackForItemData, unitGUID)
 					end
-				end);
+				end)
 			end
 		end
 	end
-	
-	if (itemCountWaitingForData > 0) then
-		return LFF_AVERAGE_ITEM_LEVEL.available;
+
+	if itemCountWaitingForData > 0 then
+		return LFF_AVERAGE_ITEM_LEVEL.available
 	end
-	
+
 	-- item data for all items is already available
-	return LFF_GetAverageItemLevelFromItemData(unitID);
+	return LFF_GetAverageItemLevelFromItemData(unitID)
 end
 
 -- get average item level from item data
 function LFF_GetAverageItemLevelFromItemData(unitID, callbackForItemData, unitGUID)
 	-- check if unit guid from unit id is still the same when waiting for item data
-	if (callbackForItemData) and (unitGUID) then
-		local _unitGUID = UnitGUID(unitID);
-		
-		if (_unitGUID ~= unitGUID) then
-			return;
+	if callbackForItemData and unitGUID then
+		local _unitGUID = UnitGUID(unitID)
+
+		if _unitGUID ~= unitGUID then
+			return
 		end
 	end
-	
+
 	-- get items
-	local items = {};
-	local itemCount = 0;
-	
+	local items = {}
+	local itemCount = 0
+
 	for i = INVSLOT_FIRST_EQUIPPED, INVSLOT_LAST_EQUIPPED do
-		local itemLink = GetInventoryItemLink(unitID, i);
-		
-		if (itemLink) then
-			local item = Item:CreateFromItemLink(itemLink);
-			
-			if (not item:IsItemEmpty()) then
-				local effectiveILvl = LibFroznFunctions:GetItemLevelByUnitAndInventorySlot(unitID, i) or item:GetCurrentItemLevel(); -- preferably get effective item level from tooltip data because item level upgrades aren't considered in item links returned by GetInventoryItemLink()
-				local quality = item:GetItemQuality();
-				local inventoryType = item:GetInventoryType();
-				
+		local itemLink = GetInventoryItemLink(unitID, i)
+
+		if itemLink then
+			local item = Item:CreateFromItemLink(itemLink)
+
+			if not item:IsItemEmpty() then
+				local effectiveILvl = LibFroznFunctions:GetItemLevelByUnitAndInventorySlot(unitID, i)
+					or item:GetCurrentItemLevel() -- preferably get effective item level from tooltip data because item level upgrades aren't considered in item links returned by GetInventoryItemLink()
+				local quality = item:GetItemQuality()
+				local inventoryType = item:GetInventoryType()
+
 				items[i] = {
 					item = item,
 					effectiveILvl = effectiveILvl or 0,
 					quality = quality or 0,
-					inventoryType = inventoryType
-				};
-				
-				itemCount = itemCount + 1;
+					inventoryType = inventoryType,
+				}
+
+				itemCount = itemCount + 1
 			end
 		end
 	end
-	
-	if (itemCount == 0) then
-		if (callbackForItemData) then
-			callbackForItemData(LFF_AVERAGE_ITEM_LEVEL.none);
+
+	if itemCount == 0 then
+		if callbackForItemData then
+			callbackForItemData(LFF_AVERAGE_ITEM_LEVEL.none)
 		end
-		
-		return LFF_AVERAGE_ITEM_LEVEL.none;
+
+		return LFF_AVERAGE_ITEM_LEVEL.none
 	end
-	
+
 	-- calculate average item level and TipTac's GearScore
-	local totalScore = 0;
-	local totalItems = 0;
-	local totalQuality = 0;
-	local totalItemsForQuality = 0;
-	local averageItemLevel;
-	local totalQualityColor;
-	local TacoTipGearScore = 0;
-	local TacoTipGearScoreQualityColor;
-	local TipTacGearScore = 0;
-	local TipTacGearScoreQualityColor;
-	
+	local totalScore = 0
+	local totalItems = 0
+	local totalQuality = 0
+	local totalItemsForQuality = 0
+	local averageItemLevel
+	local totalQualityColor
+	local TacoTipGearScore = 0
+	local TacoTipGearScoreQualityColor
+	local TipTacGearScore = 0
+	local TipTacGearScoreQualityColor
+
 	local ignoreInventorySlots = {
 		[INVSLOT_BODY] = true, -- shirt
 		[INVSLOT_TABARD] = true, -- tabard
-		[INVSLOT_RANGED] = true -- ranged
-	};
-	
+		[INVSLOT_RANGED] = true, -- ranged
+	}
+
 	local twoHandedInventoryTypes = {
 		[Enum.InventoryType.IndexRangedType] = true,
 		[Enum.InventoryType.IndexRangedrightType] = true,
-		[Enum.InventoryType.Index2HweaponType] = true
-	};
-	
+		[Enum.InventoryType.Index2HweaponType] = true,
+	}
+
 	local slotModForTipTacGearScore = {
 		[Enum.InventoryType.IndexNeckType] = 0.5625,
 		[Enum.InventoryType.IndexShoulderType] = 0.75,
@@ -4848,113 +5145,128 @@ function LFF_GetAverageItemLevelFromItemData(unitID, callbackForItemData, unitGU
 		[Enum.InventoryType.IndexCloakType] = 0.5625,
 		[Enum.InventoryType.IndexThrownType] = 0.3164,
 		[Enum.InventoryType.IndexRangedrightType] = 0.3164,
-		[Enum.InventoryType.IndexRelicType] = 0.3164
-	};
-	
+		[Enum.InventoryType.IndexRelicType] = 0.3164,
+	}
+
 	-- to check if main hand only
-	local itemMainHand = items[INVSLOT_MAINHAND];
-	local itemOffHand = items[INVSLOT_OFFHAND];
-	
-	local isMainHandOnly = (itemMainHand) and (not itemOffHand);
-	
+	local itemMainHand = items[INVSLOT_MAINHAND]
+	local itemOffHand = items[INVSLOT_OFFHAND]
+
+	local isMainHandOnly = itemMainHand and not itemOffHand
+
 	-- to check if main or off hand are artifacts
-	local isMainHandArtifact = (itemMainHand) and (itemMainHand.quality == LFF_ITEM_QUALITY.Artifact);
-	local itemMainHandEffectiveILvl = (itemMainHand) and (itemMainHand.effectiveILvl);
-	
-	local isOffHandArtifact = (itemOffHand) and (itemOffHand.quality == LFF_ITEM_QUALITY.Artifact);
-	local itemOffHandEffectiveILvl = (itemOffHand) and (itemOffHand.effectiveILvl);
-	
+	local isMainHandArtifact = itemMainHand and (itemMainHand.quality == LFF_ITEM_QUALITY.Artifact)
+	local itemMainHandEffectiveILvl = itemMainHand and itemMainHand.effectiveILvl
+
+	local isOffHandArtifact = itemOffHand and (itemOffHand.quality == LFF_ITEM_QUALITY.Artifact)
+	local itemOffHandEffectiveILvl = itemOffHand and itemOffHand.effectiveILvl
+
 	-- calculate average item level and GearScore
 	for i, item in pairs(items) do
 		-- map Heirloom and WoWToken to Rare
-		local quality = item.quality;
-		
+		local quality = item.quality
+
 		if (quality == 7) or (quality == 8) then
-			quality = 3;
+			quality = 3
 		end
-		
-		if (not ignoreInventorySlots[i]) then -- ignore shirt, tabard and ranged
-			local twoHandedMainHandOnly = false;
-			local iLvlToAdd;
-			
-			totalItems = totalItems + 1;
-			
+
+		if not ignoreInventorySlots[i] then -- ignore shirt, tabard and ranged
+			local twoHandedMainHandOnly = false
+			local iLvlToAdd
+
+			totalItems = totalItems + 1
+
 			if (i == INVSLOT_MAINHAND) or (i == INVSLOT_OFFHAND) then -- handle main and off hand
-				if (isMainHandOnly) then -- main hand only
-					if (twoHandedInventoryTypes[item.inventoryType]) then -- two handed
-						iLvlToAdd = item.effectiveILvl * 2;
-						totalItems = totalItems + 1;
-						twoHandedMainHandOnly = true;
+				if isMainHandOnly then -- main hand only
+					if twoHandedInventoryTypes[item.inventoryType] then -- two handed
+						iLvlToAdd = item.effectiveILvl * 2
+						totalItems = totalItems + 1
+						twoHandedMainHandOnly = true
 					else -- one handed
-						iLvlToAdd = item.effectiveILvl;
+						iLvlToAdd = item.effectiveILvl
 					end
 				else -- main and/or off hand
-					if (isMainHandArtifact) or (isOffHandArtifact) then -- main or off hand is artifact
-						if (itemMainHandEffectiveILvl > itemOffHandEffectiveILvl) then
-							iLvlToAdd = itemMainHandEffectiveILvl;
+					if isMainHandArtifact or isOffHandArtifact then -- main or off hand is artifact
+						if itemMainHandEffectiveILvl > itemOffHandEffectiveILvl then
+							iLvlToAdd = itemMainHandEffectiveILvl
 						else
-							iLvlToAdd = itemOffHandEffectiveILvl;
+							iLvlToAdd = itemOffHandEffectiveILvl
 						end
 					else -- main and off hand are non-artifacts
-						iLvlToAdd = item.effectiveILvl;
+						iLvlToAdd = item.effectiveILvl
 					end
 				end
 			else -- other items
-				iLvlToAdd = item.effectiveILvl;
+				iLvlToAdd = item.effectiveILvl
 			end
-			
-			totalScore = totalScore + iLvlToAdd;
-			totalItemsForQuality = totalItemsForQuality + 1;
-			totalQuality = totalQuality + quality;
-			
+
+			totalScore = totalScore + iLvlToAdd
+			totalItemsForQuality = totalItemsForQuality + 1
+			totalQuality = totalQuality + quality
+
 			-- TipTac's own implementation to simply calculate the GearScore:
 			-- 1. weighted item level by performance per item level above/below base level of first tier set of current expansion
 			-- 2. weighted item level by inventory type
 			-- 3. weighted item level by item quality
 			-- 4. sum it all up
-			local performancePerILvlForTipTacGearScore = LibFroznFunctions.hasWoWFlavor.itemLevelOfFirstRaidTierSet and math.pow(1.01, (twoHandedMainHandOnly and (iLvlToAdd / 2) or iLvlToAdd) - LibFroznFunctions.hasWoWFlavor.itemLevelOfFirstRaidTierSet) or 1; -- +1 iLvl = +1% performance, source: https://www.wowhead.com/news/gear-inflation-on-target-1-item-level-should-result-in-roughly-1-increased-322062
-			local qualityModForTipTacGearScore = LibFroznFunctions:ExistsInTable(quality, { 0, 1 }) and 0.005 or (quality == 5) and 1.3 or (quality == 6) and 1.69 or 1;
-			
-			TipTacGearScore = TipTacGearScore + (LibFroznFunctions.hasWoWFlavor.itemLevelOfFirstRaidTierSet or iLvlToAdd) * performancePerILvlForTipTacGearScore * (slotModForTipTacGearScore[item.inventoryType] or 1) * (LibFroznFunctions:ExistsInTable(quality, { 0, 1 }) and 0.005 or (quality == 5) and 1.3 or (quality == 6) and 1.69 or 1);
+			local performancePerILvlForTipTacGearScore = LibFroznFunctions.hasWoWFlavor.itemLevelOfFirstRaidTierSet
+					and math.pow(
+						1.01,
+						(twoHandedMainHandOnly and (iLvlToAdd / 2) or iLvlToAdd)
+							- LibFroznFunctions.hasWoWFlavor.itemLevelOfFirstRaidTierSet
+					)
+				or 1 -- +1 iLvl = +1% performance, source: https://www.wowhead.com/news/gear-inflation-on-target-1-item-level-should-result-in-roughly-1-increased-322062
+			local qualityModForTipTacGearScore = LibFroznFunctions:ExistsInTable(quality, { 0, 1 }) and 0.005
+				or (quality == 5) and 1.3
+				or (quality == 6) and 1.69
+				or 1
+
+			TipTacGearScore = TipTacGearScore
+				+ (LibFroznFunctions.hasWoWFlavor.itemLevelOfFirstRaidTierSet or iLvlToAdd)
+					* performancePerILvlForTipTacGearScore
+					* (slotModForTipTacGearScore[item.inventoryType] or 1)
+					* (LibFroznFunctions:ExistsInTable(quality, { 0, 1 }) and 0.005 or (quality == 5) and 1.3 or (quality == 6) and 1.69 or 1)
 		end
 	end
-	
-	if (totalItems == 0) then
-		if (callbackForItemData) then
-			callbackForItemData(LFF_AVERAGE_ITEM_LEVEL.none);
+
+	if totalItems == 0 then
+		if callbackForItemData then
+			callbackForItemData(LFF_AVERAGE_ITEM_LEVEL.none)
 		end
 
-		return LFF_AVERAGE_ITEM_LEVEL.none;
+		return LFF_AVERAGE_ITEM_LEVEL.none
 	end
-	
+
 	-- set average item level and quality color
-	local isSelf = UnitIsUnit(unitID, "player");
-	
-	if (isSelf) and (GetAverageItemLevel) then
-		local avgItemLevel, avgItemLevelEquipped, avgItemLevelPvP = GetAverageItemLevel();
-		
-		averageItemLevel = math.floor(avgItemLevelEquipped);
-		
-		if (GetItemLevelColor) then
-			totalQualityColor = LibFroznFunctions:CreateColorSmart(GetItemLevelColor());
+	local isSelf = UnitIsUnit(unitID, "player")
+
+	if isSelf and GetAverageItemLevel then
+		local avgItemLevel, avgItemLevelEquipped, avgItemLevelPvP = GetAverageItemLevel()
+
+		averageItemLevel = math.floor(avgItemLevelEquipped)
+
+		if GetItemLevelColor then
+			totalQualityColor = LibFroznFunctions:CreateColorSmart(GetItemLevelColor())
 		end
-	elseif (C_PaperDollInfo) and (C_PaperDollInfo.GetInspectItemLevel) then
-		averageItemLevel = C_PaperDollInfo.GetInspectItemLevel(unitID);
+	elseif C_PaperDollInfo and C_PaperDollInfo.GetInspectItemLevel then
+		averageItemLevel = C_PaperDollInfo.GetInspectItemLevel(unitID)
 	end
-	
+
 	if (not averageItemLevel) or (averageItemLevel == 0) then
-		averageItemLevel = math.floor(totalScore / 16);
+		averageItemLevel = math.floor(totalScore / 16)
 	end
-	
-	if (not totalQualityColor) then
-		totalQualityColor = LibFroznFunctions:GetItemQualityColor(Round(totalQuality / totalItemsForQuality), LFF_ITEM_QUALITY.Common);
+
+	if not totalQualityColor then
+		totalQualityColor =
+			LibFroznFunctions:GetItemQualityColor(Round(totalQuality / totalItemsForQuality), LFF_ITEM_QUALITY.Common)
 	end
-	
+
 	-- set GearScore and quality color
-	TacoTipGearScore, TacoTipGearScoreQualityColor = LFF_GetTacoTipGearScoreFromItemData(unitID, (unitGUID or UnitGUID(unitID)), items);
-	TipTacGearScore = math.floor(TipTacGearScore);
-	TipTacGearScoreQualityColor = totalQualityColor;
-	
+	TacoTipGearScore, TacoTipGearScoreQualityColor =
+		LFF_GetTacoTipGearScoreFromItemData(unitID, (unitGUID or UnitGUID(unitID)), items)
+	TipTacGearScore = math.floor(TipTacGearScore)
+	TipTacGearScoreQualityColor = totalQualityColor
+
 	-- return average item level
 	local returnAverageItemLevel = {
 		value = averageItemLevel,
@@ -4963,14 +5275,14 @@ function LFF_GetAverageItemLevelFromItemData(unitID, callbackForItemData, unitGU
 		TacoTipGearScore = TacoTipGearScore,
 		TacoTipGearScoreQualityColor = TacoTipGearScoreQualityColor,
 		TipTacGearScore = TipTacGearScore,
-		TipTacGearScoreQualityColor = TipTacGearScoreQualityColor
-	};
-	
-	if (callbackForItemData) then
-		callbackForItemData(returnAverageItemLevel);
+		TipTacGearScoreQualityColor = TipTacGearScoreQualityColor,
+	}
+
+	if callbackForItemData then
+		callbackForItemData(returnAverageItemLevel)
 	end
-	
-	return returnAverageItemLevel;
+
+	return returnAverageItemLevel
 end
 
 -- get TacoTip's GearScore from item data (from "gearscore.lua" of TacoTip v0.4.3)
@@ -4978,20 +5290,20 @@ function LFF_GetTacoTipGearScoreFromItemData(unitID, unitGUID, items)
 	local BRACKET_SIZE = 1000
 
 	-- if (CI:IsWotlk()) then
-	if (LibFroznFunctions.isWoWFlavor.WotLKC) then -- added
+	if LibFroznFunctions.isWoWFlavor.WotLKC then -- added
 		BRACKET_SIZE = 1000
 	-- elseif (CI:IsTBC()) then
-	elseif (LibFroznFunctions.isWoWFlavor.BCC) then -- added
+	elseif LibFroznFunctions.isWoWFlavor.BCC then -- added
 		BRACKET_SIZE = 400
 	-- elseif (CI:IsClassic()) then
-	elseif (LibFroznFunctions.isWoWFlavor.ClassicEra) then -- added
+	elseif LibFroznFunctions.isWoWFlavor.ClassicEra then -- added
 		BRACKET_SIZE = 200
 	end
 
-	local MAX_SCORE = BRACKET_SIZE*6-1
+	local MAX_SCORE = BRACKET_SIZE * 6 - 1
 
 	local GS_ItemTypes = {
-		["INVTYPE_RELIC"] = { ["SlotMOD"] = 0.3164, ["ItemSlot"] = 18, ["Enchantable"] = false},
+		["INVTYPE_RELIC"] = { ["SlotMOD"] = 0.3164, ["ItemSlot"] = 18, ["Enchantable"] = false },
 		["INVTYPE_TRINKET"] = { ["SlotMOD"] = 0.5625, ["ItemSlot"] = 33, ["Enchantable"] = false },
 		["INVTYPE_2HWEAPON"] = { ["SlotMOD"] = 2.000, ["ItemSlot"] = 16, ["Enchantable"] = true },
 		["INVTYPE_WEAPONMAINHAND"] = { ["SlotMOD"] = 1.0000, ["ItemSlot"] = 16, ["Enchantable"] = true },
@@ -5018,130 +5330,155 @@ function LFF_GetTacoTipGearScoreFromItemData(unitID, unitGUID, items)
 	}
 
 	local GS_Rarity = {
-		[0] = {Red = 0.55, Green = 0.55, Blue = 0.55 },
-		[1] = {Red = 1.00, Green = 1.00, Blue = 1.00 },
-		[2] = {Red = 0.12, Green = 1.00, Blue = 0.00 },
-		[3] = {Red = 0.00, Green = 0.50, Blue = 1.00 },
-		[4] = {Red = 0.69, Green = 0.28, Blue = 0.97 },
-		[5] = {Red = 0.94, Green = 0.09, Blue = 0.00 },
-		[6] = {Red = 1.00, Green = 0.00, Blue = 0.00 },
-		[7] = {Red = 0.90, Green = 0.80, Blue = 0.50 },
+		[0] = { Red = 0.55, Green = 0.55, Blue = 0.55 },
+		[1] = { Red = 1.00, Green = 1.00, Blue = 1.00 },
+		[2] = { Red = 0.12, Green = 1.00, Blue = 0.00 },
+		[3] = { Red = 0.00, Green = 0.50, Blue = 1.00 },
+		[4] = { Red = 0.69, Green = 0.28, Blue = 0.97 },
+		[5] = { Red = 0.94, Green = 0.09, Blue = 0.00 },
+		[6] = { Red = 1.00, Green = 0.00, Blue = 0.00 },
+		[7] = { Red = 0.90, Green = 0.80, Blue = 0.50 },
 	}
 
 	local GS_Formula = {
 		["A"] = {
 			[4] = { ["A"] = 91.4500, ["B"] = 0.6500 },
 			[3] = { ["A"] = 81.3750, ["B"] = 0.8125 },
-			[2] = { ["A"] = 73.0000, ["B"] = 1.0000 }
+			[2] = { ["A"] = 73.0000, ["B"] = 1.0000 },
 		},
 		["B"] = {
 			[4] = { ["A"] = 26.0000, ["B"] = 1.2000 },
 			[3] = { ["A"] = 0.7500, ["B"] = 1.8000 },
 			[2] = { ["A"] = 8.0000, ["B"] = 2.0000 },
-			[1] = { ["A"] = 0.0000, ["B"] = 2.2500 }
-		}
+			[1] = { ["A"] = 0.0000, ["B"] = 2.2500 },
+		},
 	}
 
 	local GS_Quality = {
-		[BRACKET_SIZE*6] = {
-			["Red"] = { ["A"] = 0.94, ["B"] = BRACKET_SIZE*5, ["C"] = 0.00006, ["D"] = 1 },
-			["Blue"] = { ["A"] = 0.47, ["B"] = BRACKET_SIZE*5, ["C"] = 0.00047, ["D"] = -1 },
+		[BRACKET_SIZE * 6] = {
+			["Red"] = { ["A"] = 0.94, ["B"] = BRACKET_SIZE * 5, ["C"] = 0.00006, ["D"] = 1 },
+			["Blue"] = { ["A"] = 0.47, ["B"] = BRACKET_SIZE * 5, ["C"] = 0.00047, ["D"] = -1 },
 			["Green"] = { ["A"] = 0, ["B"] = 0, ["C"] = 0, ["D"] = 0 },
-			["Description"] = "Legendary"
+			["Description"] = "Legendary",
 		},
-		[BRACKET_SIZE*5] = {
-			["Red"] = { ["A"] = 0.69, ["B"] = BRACKET_SIZE*4, ["C"] = 0.00025, ["D"] = 1 },
-			["Blue"] = { ["A"] = 0.28, ["B"] = BRACKET_SIZE*4, ["C"] = 0.00019, ["D"] = 1 },
-			["Green"] = { ["A"] = 0.97, ["B"] = BRACKET_SIZE*4, ["C"] = 0.00096, ["D"] = -1 },
-			["Description"] = "Epic"
+		[BRACKET_SIZE * 5] = {
+			["Red"] = { ["A"] = 0.69, ["B"] = BRACKET_SIZE * 4, ["C"] = 0.00025, ["D"] = 1 },
+			["Blue"] = { ["A"] = 0.28, ["B"] = BRACKET_SIZE * 4, ["C"] = 0.00019, ["D"] = 1 },
+			["Green"] = { ["A"] = 0.97, ["B"] = BRACKET_SIZE * 4, ["C"] = 0.00096, ["D"] = -1 },
+			["Description"] = "Epic",
 		},
-		[BRACKET_SIZE*4] = {
-			["Red"] = { ["A"] = 0.0, ["B"] = BRACKET_SIZE*3, ["C"] = 0.00069, ["D"] = 1 },
-			["Blue"] = { ["A"] = 0.5, ["B"] = BRACKET_SIZE*3, ["C"] = 0.00022, ["D"] = -1 },
-			["Green"] = { ["A"] = 1, ["B"] = BRACKET_SIZE*3, ["C"] = 0.00003, ["D"] = -1 },
-			["Description"] = "Superior"
+		[BRACKET_SIZE * 4] = {
+			["Red"] = { ["A"] = 0.0, ["B"] = BRACKET_SIZE * 3, ["C"] = 0.00069, ["D"] = 1 },
+			["Blue"] = { ["A"] = 0.5, ["B"] = BRACKET_SIZE * 3, ["C"] = 0.00022, ["D"] = -1 },
+			["Green"] = { ["A"] = 1, ["B"] = BRACKET_SIZE * 3, ["C"] = 0.00003, ["D"] = -1 },
+			["Description"] = "Superior",
 		},
-		[BRACKET_SIZE*3] = {
-			["Red"] = { ["A"] = 0.12, ["B"] = BRACKET_SIZE*2, ["C"] = 0.00012, ["D"] = -1 },
-			["Blue"] = { ["A"] = 1, ["B"] = BRACKET_SIZE*2, ["C"] = 0.00050, ["D"] = -1 },
-			["Green"] = { ["A"] = 0, ["B"] = BRACKET_SIZE*2, ["C"] = 0.001, ["D"] = 1 },
-			["Description"] = "Uncommon"
+		[BRACKET_SIZE * 3] = {
+			["Red"] = { ["A"] = 0.12, ["B"] = BRACKET_SIZE * 2, ["C"] = 0.00012, ["D"] = -1 },
+			["Blue"] = { ["A"] = 1, ["B"] = BRACKET_SIZE * 2, ["C"] = 0.00050, ["D"] = -1 },
+			["Green"] = { ["A"] = 0, ["B"] = BRACKET_SIZE * 2, ["C"] = 0.001, ["D"] = 1 },
+			["Description"] = "Uncommon",
 		},
-		[BRACKET_SIZE*2] = {
+		[BRACKET_SIZE * 2] = {
 			["Red"] = { ["A"] = 1, ["B"] = BRACKET_SIZE, ["C"] = 0.00088, ["D"] = -1 },
 			["Blue"] = { ["A"] = 1, ["B"] = 000, ["C"] = 0.00000, ["D"] = 0 },
 			["Green"] = { ["A"] = 1, ["B"] = BRACKET_SIZE, ["C"] = 0.001, ["D"] = -1 },
-			["Description"] = "Common"
+			["Description"] = "Common",
 		},
 		[BRACKET_SIZE] = {
 			["Red"] = { ["A"] = 0.55, ["B"] = 0, ["C"] = 0.00045, ["D"] = 1 },
 			["Blue"] = { ["A"] = 0.55, ["B"] = 0, ["C"] = 0.00045, ["D"] = 1 },
 			["Green"] = { ["A"] = 0.55, ["B"] = 0, ["C"] = 0.00045, ["D"] = 1 },
-			["Description"] = "Trash"
+			["Description"] = "Trash",
 		},
 	}
-	
+
 	local function GetQuality(ItemScore)
 		ItemScore = tonumber(ItemScore)
-		if (not ItemScore) then
+		if not ItemScore then
 			return 0, 0, 0, "Trash"
 		end
 		--if (not CI:IsWotlk()) then
-			--return 1, 1, 1, "Common"
+		--return 1, 1, 1, "Common"
 		--end
-		if (ItemScore > MAX_SCORE) then
+		if ItemScore > MAX_SCORE then
 			ItemScore = MAX_SCORE
 		end
 		local Red = 0.1
 		local Blue = 0.1
 		local Green = 0.1
 		local GS_QualityDescription = "Legendary"
-		for i = 0,6 do
-			if ((ItemScore > i * BRACKET_SIZE) and (ItemScore <= ((i + 1) * BRACKET_SIZE))) then
-				local Red = GS_Quality[( i + 1 ) * BRACKET_SIZE].Red["A"] + (((ItemScore - GS_Quality[( i + 1 ) * BRACKET_SIZE].Red["B"])*GS_Quality[( i + 1 ) * BRACKET_SIZE].Red["C"])*GS_Quality[( i + 1 ) * BRACKET_SIZE].Red["D"])
-				local Blue = GS_Quality[( i + 1 ) * BRACKET_SIZE].Green["A"] + (((ItemScore - GS_Quality[( i + 1 ) * BRACKET_SIZE].Green["B"])*GS_Quality[( i + 1 ) * BRACKET_SIZE].Green["C"])*GS_Quality[( i + 1 ) * BRACKET_SIZE].Green["D"])
-				local Green = GS_Quality[( i + 1 ) * BRACKET_SIZE].Blue["A"] + (((ItemScore - GS_Quality[( i + 1 ) * BRACKET_SIZE].Blue["B"])*GS_Quality[( i + 1 ) * BRACKET_SIZE].Blue["C"])*GS_Quality[( i + 1 ) * BRACKET_SIZE].Blue["D"])
-				return Red, Green, Blue, GS_Quality[( i + 1 ) * BRACKET_SIZE].Description
+		for i = 0, 6 do
+			if (ItemScore > i * BRACKET_SIZE) and (ItemScore <= ((i + 1) * BRACKET_SIZE)) then
+				local Red = GS_Quality[(i + 1) * BRACKET_SIZE].Red["A"]
+					+ (
+						(
+							(ItemScore - GS_Quality[(i + 1) * BRACKET_SIZE].Red["B"])
+							* GS_Quality[(i + 1) * BRACKET_SIZE].Red["C"]
+						) * GS_Quality[(i + 1) * BRACKET_SIZE].Red["D"]
+					)
+				local Blue = GS_Quality[(i + 1) * BRACKET_SIZE].Green["A"]
+					+ (
+						(
+							(ItemScore - GS_Quality[(i + 1) * BRACKET_SIZE].Green["B"])
+							* GS_Quality[(i + 1) * BRACKET_SIZE].Green["C"]
+						) * GS_Quality[(i + 1) * BRACKET_SIZE].Green["D"]
+					)
+				local Green = GS_Quality[(i + 1) * BRACKET_SIZE].Blue["A"]
+					+ (
+						(
+							(ItemScore - GS_Quality[(i + 1) * BRACKET_SIZE].Blue["B"])
+							* GS_Quality[(i + 1) * BRACKET_SIZE].Blue["C"]
+						) * GS_Quality[(i + 1) * BRACKET_SIZE].Blue["D"]
+					)
+				return Red, Green, Blue, GS_Quality[(i + 1) * BRACKET_SIZE].Description
 			end
 		end
 		return 0.1, 0.1, 0.1, "Trash"
 	end
 
 	local function GetItemScore(ItemLink)
-		if not (ItemLink) then
+		if not ItemLink then
 			return 0, 0, 0.1, 0.1, 0.1
 		end
-		local ItemName, ItemLink, ItemRarity, ItemLevel, ItemMinLevel, ItemType, ItemSubType, ItemStackCount, ItemEquipLoc, ItemTexture = C_Item.GetItemInfo(ItemLink)
-		if (ItemLink and ItemRarity and ItemLevel and ItemEquipLoc and GS_ItemTypes[ItemEquipLoc]) then
+		local ItemName, ItemLink, ItemRarity, ItemLevel, ItemMinLevel, ItemType, ItemSubType, ItemStackCount, ItemEquipLoc, ItemTexture =
+			C_Item.GetItemInfo(ItemLink)
+		if ItemLink and ItemRarity and ItemLevel and ItemEquipLoc and GS_ItemTypes[ItemEquipLoc] then
 			local Table
 			local QualityScale = 1
 			local GearScore = 0
 			local Scale = 1.8618
-			if (ItemRarity == 5) then 
+			if ItemRarity == 5 then
 				QualityScale = 1.3
 				ItemRarity = 4
-			elseif (ItemRarity == 1) then
+			elseif ItemRarity == 1 then
 				QualityScale = 0.005
 				ItemRarity = 2
-			elseif (ItemRarity == 0) then
+			elseif ItemRarity == 0 then
 				QualityScale = 0.005
 				ItemRarity = 2
-			elseif (ItemRarity == 7) then
+			elseif ItemRarity == 7 then
 				ItemRarity = 3
 				ItemLevel = 187.05
 			end
-			if (ItemLevel > 120) then
+			if ItemLevel > 120 then
 				Table = GS_Formula["A"]
 			else
 				Table = GS_Formula["B"]
 			end
-			if ((ItemRarity >= 2) and (ItemRarity <= 4)) then
-				local Red, Green, Blue = GetQuality((floor(((ItemLevel - Table[ItemRarity].A) / Table[ItemRarity].B) * 1 * Scale)) * 11.25)
-				GearScore = floor(((ItemLevel - Table[ItemRarity].A) / Table[ItemRarity].B) * GS_ItemTypes[ItemEquipLoc].SlotMOD * Scale * QualityScale)
-				if (ItemLevel == 187.05) then
+			if (ItemRarity >= 2) and (ItemRarity <= 4) then
+				local Red, Green, Blue =
+					GetQuality((floor(((ItemLevel - Table[ItemRarity].A) / Table[ItemRarity].B) * 1 * Scale)) * 11.25)
+				GearScore = floor(
+					((ItemLevel - Table[ItemRarity].A) / Table[ItemRarity].B)
+						* GS_ItemTypes[ItemEquipLoc].SlotMOD
+						* Scale
+						* QualityScale
+				)
+				if ItemLevel == 187.05 then
 					ItemLevel = 0
 				end
-				if (GearScore < 0) then
+				if GearScore < 0 then
 					GearScore = 0
 					Red, Green, Blue = GetQuality(1)
 				end
@@ -5150,144 +5487,146 @@ function LFF_GetTacoTipGearScoreFromItemData(unitID, unitGUID, items)
 		end
 		return 0, 0, 0.1, 0.1, 0.1, 0
 	end
-	
+
 	local function GetScore(unitorguid, useCallback)
 		-- local guid = getPlayerGUID(unitorguid)
 		local guid = unitorguid -- added
 		-- if (guid) then
-			-- if (guid ~= UnitGUID("player")) then
-				-- local _, invTime = CI:GetLastCacheTime(guid)
-				-- if(invTime == 0) then
-					-- return 0,0
-				-- end
-			-- end
-
-			local PlayerClass, PlayerEnglishClass = GetPlayerInfoByGUID(guid)
-			local GearScore = 0
-			local ItemCount = 0
-			local LevelTotal = 0
-			local TitanGrip = 1
-			local IsReady = true
-
-			-- local mainHandItem = CI:GetInventoryItemMixin(guid, 16)
-			-- local offHandItem = CI:GetInventoryItemMixin(guid, 17)
-			local mainHandItem = items[16] and items[16].item -- added
-			local offHandItem = items[17] and items[17].item -- added
-			local mainHandLink
-			local offHandLink
-			
-			local cb_table
-			
-			if (useCallback) then
-				cb_table = {["guid"] = guid, ["items"] = {}}
-			end
-
-			if (mainHandItem) then
-				if (mainHandItem:IsItemDataCached()) then
-					mainHandLink = mainHandItem:GetItemLink()
-				else
-					IsReady = false
-					local itemID = mainHandItem:GetItemID()
-					if (itemID) then
-						if (useCallback) then
-							table.insert(cb_table.items, itemID)
-							mainHandItem:ContinueOnItemLoad(function()
-								itemcacheCB(cb_table, itemID)
-							end)
-						else
-							C_Item.RequestLoadItemDataByID(itemID)
-						end
-					end
-				end
-			end
-			if (offHandItem) then
-				if (offHandItem:IsItemDataCached()) then
-					offHandLink = offHandItem:GetItemLink()
-				else
-					IsReady = false
-					local itemID = offHandItem:GetItemID()
-					if (itemID) then
-						if (useCallback) then
-							table.insert(cb_table.items, itemID)
-							offHandItem:ContinueOnItemLoad(function()
-								itemcacheCB(cb_table, itemID)
-							end)
-						else
-							C_Item.RequestLoadItemDataByID(itemID)
-						end
-					end
-				end
-			end
-
-			if (mainHandLink and offHandLink) then
-				local ItemName, ItemLink, ItemRarity, ItemLevel, ItemMinLevel, ItemType, ItemSubType, ItemStackCount, ItemEquipLoc, ItemTexture = C_Item.GetItemInfo(mainHandLink)
-				if (ItemEquipLoc == "INVTYPE_2HWEAPON") then
-					TitanGrip = 0.5
-				end
-			end
-
-			if (offHandLink) then
-				local ItemName, ItemLink, ItemRarity, ItemLevel, ItemMinLevel, ItemType, ItemSubType, ItemStackCount, ItemEquipLoc, ItemTexture = C_Item.GetItemInfo(offHandLink)
-				if (ItemEquipLoc == "INVTYPE_2HWEAPON") then
-					TitanGrip = 0.5
-				end
-				local TempScore, ItemLevel = GetItemScore(offHandLink)
-				if (PlayerEnglishClass == "HUNTER") then
-					TempScore = TempScore * 0.3164
-				end
-				GearScore = GearScore + TempScore * TitanGrip
-				ItemCount = ItemCount + 1
-				LevelTotal = LevelTotal + ItemLevel
-			end
-
-			for i = 1, 18 do
-				if ( i ~= 4 ) and ( i ~= 17 ) then
-					-- local item = CI:GetInventoryItemMixin(guid, i)
-					local item = items[i] and items[i].item -- added
-					if (item) then
-						if (item:IsItemDataCached()) then
-							local TempScore, ItemLevel = GetItemScore(item:GetItemLink())
-							if (PlayerEnglishClass == "HUNTER") then
-								if (i == 16) then
-									TempScore = TempScore * 0.3164
-								elseif (i == 18) then
-									TempScore = TempScore * 5.3224
-								end
-							end
-							if ( i == 16 ) then
-								TempScore = TempScore * TitanGrip
-							end
-							GearScore = GearScore + TempScore
-							ItemCount = ItemCount + 1
-							LevelTotal = LevelTotal + ItemLevel
-						else
-							IsReady = false
-							local itemID = item:GetItemID()
-							if (itemID) then
-								if (useCallback) then
-									table.insert(cb_table.items, itemID)
-									item:ContinueOnItemLoad(function()
-										itemcacheCB(cb_table, itemID)
-									end)
-								else
-									C_Item.RequestLoadItemDataByID(itemID)
-								end
-							end
-						end
-					end
-				end
-			end
-			if (IsReady and GearScore > 0 and ItemCount > 0) then
-				return floor(GearScore), floor(LevelTotal/ItemCount)
-			end
+		-- if (guid ~= UnitGUID("player")) then
+		-- local _, invTime = CI:GetLastCacheTime(guid)
+		-- if(invTime == 0) then
+		-- return 0,0
 		-- end
-		return 0,0
+		-- end
+
+		local PlayerClass, PlayerEnglishClass = GetPlayerInfoByGUID(guid)
+		local GearScore = 0
+		local ItemCount = 0
+		local LevelTotal = 0
+		local TitanGrip = 1
+		local IsReady = true
+
+		-- local mainHandItem = CI:GetInventoryItemMixin(guid, 16)
+		-- local offHandItem = CI:GetInventoryItemMixin(guid, 17)
+		local mainHandItem = items[16] and items[16].item -- added
+		local offHandItem = items[17] and items[17].item -- added
+		local mainHandLink
+		local offHandLink
+
+		local cb_table
+
+		if useCallback then
+			cb_table = { ["guid"] = guid, ["items"] = {} }
+		end
+
+		if mainHandItem then
+			if mainHandItem:IsItemDataCached() then
+				mainHandLink = mainHandItem:GetItemLink()
+			else
+				IsReady = false
+				local itemID = mainHandItem:GetItemID()
+				if itemID then
+					if useCallback then
+						table.insert(cb_table.items, itemID)
+						mainHandItem:ContinueOnItemLoad(function()
+							itemcacheCB(cb_table, itemID)
+						end)
+					else
+						C_Item.RequestLoadItemDataByID(itemID)
+					end
+				end
+			end
+		end
+		if offHandItem then
+			if offHandItem:IsItemDataCached() then
+				offHandLink = offHandItem:GetItemLink()
+			else
+				IsReady = false
+				local itemID = offHandItem:GetItemID()
+				if itemID then
+					if useCallback then
+						table.insert(cb_table.items, itemID)
+						offHandItem:ContinueOnItemLoad(function()
+							itemcacheCB(cb_table, itemID)
+						end)
+					else
+						C_Item.RequestLoadItemDataByID(itemID)
+					end
+				end
+			end
+		end
+
+		if mainHandLink and offHandLink then
+			local ItemName, ItemLink, ItemRarity, ItemLevel, ItemMinLevel, ItemType, ItemSubType, ItemStackCount, ItemEquipLoc, ItemTexture =
+				C_Item.GetItemInfo(mainHandLink)
+			if ItemEquipLoc == "INVTYPE_2HWEAPON" then
+				TitanGrip = 0.5
+			end
+		end
+
+		if offHandLink then
+			local ItemName, ItemLink, ItemRarity, ItemLevel, ItemMinLevel, ItemType, ItemSubType, ItemStackCount, ItemEquipLoc, ItemTexture =
+				C_Item.GetItemInfo(offHandLink)
+			if ItemEquipLoc == "INVTYPE_2HWEAPON" then
+				TitanGrip = 0.5
+			end
+			local TempScore, ItemLevel = GetItemScore(offHandLink)
+			if PlayerEnglishClass == "HUNTER" then
+				TempScore = TempScore * 0.3164
+			end
+			GearScore = GearScore + TempScore * TitanGrip
+			ItemCount = ItemCount + 1
+			LevelTotal = LevelTotal + ItemLevel
+		end
+
+		for i = 1, 18 do
+			if (i ~= 4) and (i ~= 17) then
+				-- local item = CI:GetInventoryItemMixin(guid, i)
+				local item = items[i] and items[i].item -- added
+				if item then
+					if item:IsItemDataCached() then
+						local TempScore, ItemLevel = GetItemScore(item:GetItemLink())
+						if PlayerEnglishClass == "HUNTER" then
+							if i == 16 then
+								TempScore = TempScore * 0.3164
+							elseif i == 18 then
+								TempScore = TempScore * 5.3224
+							end
+						end
+						if i == 16 then
+							TempScore = TempScore * TitanGrip
+						end
+						GearScore = GearScore + TempScore
+						ItemCount = ItemCount + 1
+						LevelTotal = LevelTotal + ItemLevel
+					else
+						IsReady = false
+						local itemID = item:GetItemID()
+						if itemID then
+							if useCallback then
+								table.insert(cb_table.items, itemID)
+								item:ContinueOnItemLoad(function()
+									itemcacheCB(cb_table, itemID)
+								end)
+							else
+								C_Item.RequestLoadItemDataByID(itemID)
+							end
+						end
+					end
+				end
+			end
+		end
+		if IsReady and GearScore > 0 and ItemCount > 0 then
+			return floor(GearScore), floor(LevelTotal / ItemCount)
+		end
+		-- end
+		return 0, 0
 	end
-	
+
 	-- return GearScore and quality color
-	local gearScore = GetScore(unitGUID);
-	local qualityColorR, qualityColorG, qualityColorB = GetQuality(gearScore);
-	local qualityColor = CreateColor(qualityColorR, qualityColorG, qualityColorB, 1);
-	
-	return gearScore, qualityColor;
+	local gearScore = GetScore(unitGUID)
+	local qualityColorR, qualityColorG, qualityColorB = GetQuality(gearScore)
+	local qualityColor = CreateColor(qualityColorR, qualityColorG, qualityColorB, 1)
+
+	return gearScore, qualityColor
 end

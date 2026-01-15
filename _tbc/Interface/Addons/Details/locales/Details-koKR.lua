@@ -27,7 +27,7 @@ L["STRING_ASCENDING"] = "오름차순"
 L["STRING_ATACH_DESC"] = "창 #%d|1이;가; 창 #%d|1과;와; 그룹이 되었습니다."
 L["STRING_ATTRIBUTE_CUSTOM"] = "사용자 설정"
 L["STRING_ATTRIBUTE_DAMAGE"] = "피해"
-L["STRING_ATTRIBUTE_DAMAGE_BYSPELL"] = "주문별 받은 피해"
+L["STRING_ATTRIBUTE_DAMAGE_BYSPELL"] = "주문 별 받은 피해"
 L["STRING_ATTRIBUTE_DAMAGE_DEBUFFS"] = "효과 & 바닥"
 L["STRING_ATTRIBUTE_DAMAGE_DEBUFFS_REPORT"] = "약화 효과 피해와 유지 시간"
 L["STRING_ATTRIBUTE_DAMAGE_DONE"] = "피해량"
@@ -84,9 +84,10 @@ L["STRING_CLICK_REPORT_LINE2"] = "|cFFFFCC22Shift+클릭|r: |cFFFFEE00창 모드
 L["STRING_CLOSEALL"] = "모든 창이 닫혔습니다, 다시 열려면 '/details show'를 입력하세요."
 L["STRING_COLOR"] = "색상"
 L["STRING_COMMAND_LIST"] = "명령어 목록"
-L["STRING_CONTEXT"] = "상황 정보"
+--[[Translation missing --]]
+--[[ L["STRING_CONTEXT"] = ""--]] 
 L["STRING_COOLTIP_NOOPTIONS"] = "옵션 없음"
-L["STRING_CREATEAURA"] = "효과 만들기"
+L["STRING_CREATEAURA"] = "오라 만들기"
 L["STRING_CRITICAL_HITS"] = "치명타 및 극대화 적중"
 L["STRING_CRITICAL_ONLY"] = "치명타"
 L["STRING_CURRENT"] = "현재"
@@ -101,7 +102,7 @@ L["STRING_CUSTOM_ATTRIBUTE_DAMAGE"] = "피해"
 L["STRING_CUSTOM_ATTRIBUTE_HEAL"] = "치유"
 L["STRING_CUSTOM_ATTRIBUTE_SCRIPT"] = "사용자 설정 스크립트"
 L["STRING_CUSTOM_AUTHOR"] = "제작자:"
-L["STRING_CUSTOM_AUTHOR_DESC"] = "이 디스플레이를 만든 사람입니다."
+L["STRING_CUSTOM_AUTHOR_DESC"] = "이 디스플레이를 만든 사람."
 L["STRING_CUSTOM_CANCEL"] = "취소"
 L["STRING_CUSTOM_CC_DONE"] = "시전한 군중 제어"
 L["STRING_CUSTOM_CC_RECEIVED"] = "받은 군중 제어"
@@ -169,9 +170,6 @@ L["STRING_CUSTOM_TARGET_DESC"] = [=[행위자의 대상입니다.
 
 오른쪽에 있는 버튼은 공격대 전투 중 npc들의 목록을 표시합니다.]=]
 L["STRING_CUSTOM_TEMPORARILY"] = " (|cFFFFC000임시|r)"
-L["STRING_CUSTOM_TEXTURE_GUIDE"] = [=[월드 오브 워크래프트 클라이언트에서 텍스쳐 파일을 열기 위해서는 .TGA 형식의 파일이 필요하며, 높이와 너비는 8의 배수여야 합니다.
-
-텍스쳐를 /WoW Install Folder/retail/Interface/ 에 넣으십시요.]=]
 L["STRING_DAMAGE"] = "피해"
 L["STRING_DAMAGE_DPS_IN"] = "받은 DPS:"
 L["STRING_DAMAGE_FROM"] = "피해 출처"
@@ -186,8 +184,6 @@ L["STRING_DODGE"] = "회피"
 L["STRING_DOT"] = " (지속 효과)"
 L["STRING_DPS"] = "Dps"
 L["STRING_EMPTY_SEGMENT"] = "빈 세분화"
---[[Translation missing --]]
-L["STRING_ENABLE_DO_NOT_DISTURB"] = "Enable Do Not Disturb"
 L["STRING_ENABLED"] = "사용"
 L["STRING_ENVIRONMENTAL_DROWNING"] = "환경피해 (호흡 불가)"
 L["STRING_ENVIRONMENTAL_FALLING"] = "환경피해 (낙하 충격)"
@@ -195,6 +191,7 @@ L["STRING_ENVIRONMENTAL_FATIGUE"] = "환경피해 (피로)"
 L["STRING_ENVIRONMENTAL_FIRE"] = "환경피해 (화염)"
 L["STRING_ENVIRONMENTAL_LAVA"] = "환경피해 (용암)"
 L["STRING_ENVIRONMENTAL_SLIME"] = "환경피해 (독성)"
+L["STRING_EQUILIZING"] = "전투 데이터 공유"
 L["STRING_ERASE"] = "삭제"
 L["STRING_ERASE_DATA"] = "모든 데이터 초기화"
 L["STRING_ERASE_DATA_OVERALL"] = "종합 데이터 초기화"
@@ -203,10 +200,10 @@ L["STRING_EXAMPLE"] = "예제"
 L["STRING_EXPLOSION"] = "폭발"
 L["STRING_FAIL_ATTACKS"] = "공격 실패"
 L["STRING_FEEDBACK_CURSE_DESC"] = "티켓 페이지를 열거나 Details! 페이지에 메시지를 남기세요."
-L["STRING_FEEDBACK_MMOC_DESC"] = "mmo-champion 포럼에 있는 스레드에 글을 작성하세요."
+L["STRING_FEEDBACK_MMOC_DESC"] = "mmo-champion 포럼에 있는 스레드에 글을 작성합니다."
 L["STRING_FEEDBACK_PREFERED_SITE"] = "선호하는 커뮤니티 사이트를 선택하세요:"
 L["STRING_FEEDBACK_SEND_FEEDBACK"] = "피드백 보내기"
-L["STRING_FEEDBACK_WOWI_DESC"] = "Details! 프로젝트 페이지에 의견을 남기세요."
+L["STRING_FEEDBACK_WOWI_DESC"] = "Details! 프로젝트 페이지에 의견을 남깁니다."
 L["STRING_FIGHTNUMBER"] = "전투 #"
 L["STRING_FORGE_BUTTON_ALLSPELLS"] = "모든 주문"
 L["STRING_FORGE_BUTTON_ALLSPELLS_DESC"] = "플레이어와 npc의 모든 주문을 나열합니다."
@@ -266,8 +263,8 @@ L["STRING_GUILDDAMAGERANK_PLAYERBASE_PLAYER"] = "플레이어"
 L["STRING_GUILDDAMAGERANK_PLAYERBASE_RAID"] = "모든 플레이어"
 L["STRING_GUILDDAMAGERANK_RAID"] = "공격대"
 L["STRING_GUILDDAMAGERANK_ROLE"] = "역할"
-L["STRING_GUILDDAMAGERANK_SHOWHISTORY"] = "기록"
-L["STRING_GUILDDAMAGERANK_SHOWRANK"] = "길드 순위"
+L["STRING_GUILDDAMAGERANK_SHOWHISTORY"] = "기록 표시"
+L["STRING_GUILDDAMAGERANK_SHOWRANK"] = "길드 순위 표시"
 L["STRING_GUILDDAMAGERANK_SYNCBUTTONTEXT"] = "길드와 동기화"
 L["STRING_GUILDDAMAGERANK_TUTORIAL_DESC"] = "Details!가 길드로 진행한 각 우두머리 전투의 피해량과 치유량을 저장합니다.\\n\\n'|cFFFFFF00기록 표시|r'를 선택하여 기록을 탐색하세요, 모든 전투 결과가 표시됩니다.\\n '|cFFFFFF00길드 순위 표시|r'를 선택하면 선택한 우두머리의 상위 점수가 표시됩니다.\\n\\n이 도구를 처음 사용하거나 공격대 진행에 참여하지 않았다면  '|cFFFFFF00길드와 동기화|r' 버튼을 클릭하세요."
 L["STRING_GUILDDAMAGERANK_WINDOWALERT"] = "우두머리 처치! 순위 표시"
@@ -293,7 +290,8 @@ L["STRING_INFO_TUTORIAL_COMPARISON1"] = "|cFFFFDD00비교|r 탭을 클릭하면 
 L["STRING_INSTANCE_CHAT"] = "인스턴스 대화"
 L["STRING_INSTANCE_LIMIT"] = "최대 창 갯수에 도달했습니다, 옵션 창에서 이 제한 갯수를 변경할 수 있습니다. 또한 창 메뉴에서 닫혀진 창(#)을 다시 열 수 있습니다."
 L["STRING_INTERFACE_OPENOPTIONS"] = "옵션 창 열기"
-L["STRING_INVERT_RULE"] = "반전 규칙"
+--[[Translation missing --]]
+--[[ L["STRING_INVERT_RULE"] = ""--]] 
 L["STRING_ISA_PET"] = "소환수에 의한 행동"
 L["STRING_KEYBIND_BOOKMARK"] = "북마크"
 L["STRING_KEYBIND_BOOKMARK_NUMBER"] = "북마크 #%s"
@@ -307,27 +305,11 @@ L["STRING_KEYBIND_TOGGLE_WINDOWS"] = "모든 창 표시 전환"
 L["STRING_KEYBIND_WINDOW_CONTROL"] = "창"
 L["STRING_KEYBIND_WINDOW_REPORT"] = "창 #%s에 표시된 데이터를 보고합니다."
 L["STRING_KEYBIND_WINDOW_REPORT_HEADER"] = "데이터 보고하기"
---[[Translation missing --]]
-L["STRING_KEYSTONE_ADD_TO_FRIENDS_TOOLTIP"] = "Add to friends list as character (not battlenet friend request)."
---[[Translation missing --]]
-L["STRING_KEYSTONE_CLICK_TO_VIEW_SCOREBOARD"] = "Click to view the scoreboard."
---[[Translation missing --]]
-L["STRING_KEYSTONE_DND_TOOLTIP"] = "Your key won't be sent to your guild or friends. While in a group, it will still be sent."
---[[Translation missing --]]
-L["STRING_KEYSTONE_LIFETIME_LIKES_YOU_GAVE"] = [=[Life-time likes you gave for this player through the 'GG' button in the |cFFFFFF00Details! Damage Meter Mythic+|r addon.
-
-View run breakdown by selecting a Mythic+ run you did with this player.]=]
---[[Translation missing --]]
-L["STRING_KEYSTONE_NO_MYTHICPLUS_ADDON"] = "Mythic+ addon not found."
---[[Translation missing --]]
-L["STRING_KEYSTONE_REQUEST_FROM_GUILD"] = "Request from Guild"
 L["STRING_KILLED"] = "죽임"
 L["STRING_LAST_COOLDOWN"] = "마지막으로 사용한 생존기"
 L["STRING_LEFT"] = "좌측"
 L["STRING_LEFT_CLICK_SHARE"] = "보고하려면 클릭하세요."
 L["STRING_LEFT_TO_RIGHT"] = "왼쪽에서 오른쪽으로"
---[[Translation missing --]]
-L["STRING_LIKES_YOU_GAVE"] = "Likes you gave"
 L["STRING_LOCK_DESC"] = "창 잠금 또는 잠금해제"
 L["STRING_LOCK_WINDOW"] = "잠금"
 L["STRING_MASTERY"] = "특화"
@@ -362,7 +344,7 @@ L["STRING_MINITUTORIAL_BOOKMARK3"] = "오른쪽 클릭으로 북마크 창을 �
 L["STRING_MINITUTORIAL_BOOKMARK4"] = "다시 보지 않습니다."
 L["STRING_MINITUTORIAL_CLOSECTRL1"] = "|cFFFFFF00Ctrl + 오른쪽 클릭|r으로 창 닫기!"
 L["STRING_MINITUTORIAL_CLOSECTRL2"] = "다시 열고 싶다면 Mode 메뉴 -> 창 제어 또는 옵션 창으로 가세요."
-L["STRING_MINITUTORIAL_OPTIONS_PANEL1"] = "편집 중인 창입니다."
+L["STRING_MINITUTORIAL_OPTIONS_PANEL1"] = "편집할 창을 선택합니다."
 L["STRING_MINITUTORIAL_OPTIONS_PANEL2"] = "체크하면 그룹의 모든 창이 같이 변경됩니다."
 L["STRING_MINITUTORIAL_OPTIONS_PANEL3"] = [=[그룹을 만들려면 창 #2를 창 #1 가까이 드래그하세요.
 
@@ -395,13 +377,9 @@ L["STRING_NEWS_REINSTALL"] = "업데이트 후에 문제가 생겼나요? '/deta
 L["STRING_NEWS_TITLE"] = "버전 변경 사항"
 L["STRING_NO"] = "아니오"
 L["STRING_NO_DATA"] = "데이터가 이미 지워졌습니다"
---[[Translation missing --]]
-L["STRING_NO_MYTHIC_PLUS_ADDON"] = "To track your Mythic+ runs including loot, score, damage, healing done, and who you played with, install the |cFFFFAA00Details! Damage Meter Mythic+|r addon on |cFFfff1c1Wago AddOns|r or |cFFfff1c1Curse Forge|r."
 L["STRING_NO_SPELL"] = "사용한 주문 없음"
 L["STRING_NO_TARGET"] = "대상이 없습니다."
 L["STRING_NO_TARGET_BOX"] = "표시할 대상 없음"
---[[Translation missing --]]
-L["STRING_NO_TELEPORTER"] = "You don't have this teleporter"
 L["STRING_NOCLOSED_INSTANCES"] = [=[닫혀있는 창이 없습니다,
 클릭하면 새 창을 엽니다.]=]
 L["STRING_NOLAST_COOLDOWN"] = "사용한 생존기 없음"
@@ -429,13 +407,6 @@ L["STRING_OPTIONS_3D_UANCHOR"] = "상위 3D 모델:"
 L["STRING_OPTIONS_3D_UENABLED_DESC"] = "바 위에 3D 모델 프레임 사용을 켜거나 끕니다."
 L["STRING_OPTIONS_3D_USELECT_DESC"] = "상위 모델 바에 사용할 모델을 선택합니다."
 L["STRING_OPTIONS_ADVANCED"] = "고급"
-L["STRING_OPTIONS_ALIGNED_TEXT_COLUMNS"] = "문자 행 정렬"
-L["STRING_OPTIONS_ALIGNED_TEXT_COLUMNS_AUTOALIGN"] = "자동 정렬"
-L["STRING_OPTIONS_ALIGNED_TEXT_COLUMNS_AUTOALIGN_DESC"] = "각 문자의 길이에 따라 정렬이 자동으로 수행됩니다."
-L["STRING_OPTIONS_ALIGNED_TEXT_COLUMNS_DESC"] = "괄호와 구분 기호를 비활성화하고 세로 열의 막대 텍스트를 정렬합니다."
-L["STRING_OPTIONS_ALIGNED_TEXT_COLUMNS_OFFSET"] = "텍스트 %d 간격"
-L["STRING_OPTIONS_ALIGNED_TEXT_COLUMNS_OFFSET_DESC"] = "오른쪽 테두리와의 간격"
-L["STRING_OPTIONS_ALIGNED_TEXT_COLUMNS_WARNING"] = "활성화되어 있으면 구분 기호와 대괄호가 사용되지 않습니다."
 L["STRING_OPTIONS_ALPHAMOD_ANCHOR"] = "자동 숨기기:"
 L["STRING_OPTIONS_ALWAYS_USE"] = "모든 캐릭터에 사용"
 L["STRING_OPTIONS_ALWAYS_USE_DESC"] = "모든 캐릭터에 같은 프로필이 사용됩니다. 저장된 다른 프로필을 선택하면 어떤 캐릭터든 강제 적용됩니다."
@@ -527,7 +498,10 @@ L["STRING_OPTIONS_BARRIGHTTEXTCUSTOM2_DESC"] = [=[|cFFFFFF00{data1}|r: 첫번째
 
 |cFFFFFF00Escape Sequences|r: 색상 변경이나 텍스쳐를 추가합니다. 자세한 정보는 'UI escape sequences' 검색하세요.]=]
 L["STRING_OPTIONS_BARS"] = "바 일반 설정"
-L["STRING_OPTIONS_BARS_CUSTOM_TEXTURE"] = "사용자 정의 텍스처 파일"
+L["STRING_OPTIONS_BARS_CUSTOM_TEXTURE"] = "사용자 설정 텍스쳐 파일"
+L["STRING_OPTIONS_BARS_CUSTOM_TEXTURE_DESC"] = [=[
+
+|cFFFFFF00중요|r: 이미지는 256x32 픽셀이어야 합니다.]=]
 L["STRING_OPTIONS_BARS_DESC"] = "바 모양을 설정하는 옵션들입니다."
 L["STRING_OPTIONS_BARSORT"] = "바 순위 정렬 순서"
 L["STRING_OPTIONS_BARSORT_DESC"] = "오름차순 또는 내림차순으로 바를 정렬합니다."
@@ -537,13 +511,13 @@ L["STRING_OPTIONS_BARSTART_DESC"] = [=[비활성하면 상위 무늬를 아이�
 투명 영역이 있는 아이콘 묶음을 사용할 때 유용합니다.]=]
 L["STRING_OPTIONS_BARUR_ANCHOR"] = "빠른 갱신:"
 L["STRING_OPTIONS_BARUR_DESC"] = "사용하면, DPS와 HPS 값이 보통보다 조금 더 빠르게 갱신 됩니다."
-L["STRING_OPTIONS_BG_ALL_ALLY"] = "전장 적 표시"
-L["STRING_OPTIONS_BG_ALL_ALLY_DESC"] = [=[옵션을 켜면, 창이 그룹 모드에 있을 때 적 플레이어도 표시됩니다.
+L["STRING_OPTIONS_BG_ALL_ALLY"] = "모두 표시"
+L["STRING_OPTIONS_BG_ALL_ALLY_DESC"] = [=[활성화하면 창이 그룹 모드일 경우 적 플레이어도 보여집니다.
 
-|cFFFFFF00중요|r: 변경 사항은 다음 전투에 들어가면 적용됩니다.]=]
+|cFFFFFF00중요|r: 다음 전투부터 적용됩니다.]=]
 L["STRING_OPTIONS_BG_ANCHOR"] = "전장:"
-L["STRING_OPTIONS_BG_UNIQUE_SEGMENT"] = "단일 세분화 전장"
-L["STRING_OPTIONS_BG_UNIQUE_SEGMENT_DESC"] = "세분화 하나가 전장 시작 시 생성되어 끝날 때까지 지속됩니다."
+L["STRING_OPTIONS_BG_UNIQUE_SEGMENT"] = "고유 영역"
+L["STRING_OPTIONS_BG_UNIQUE_SEGMENT_DESC"] = "하나의 영역이 전장의 시작 시 생성되어 끝날 때까지 지속됩니다."
 L["STRING_OPTIONS_CAURAS"] = "오라 수집"
 L["STRING_OPTIONS_CAURAS_DESC"] = [=[수집 허용:
 
@@ -632,7 +606,8 @@ L["STRING_OPTIONS_COMBAT_ALPHA_5"] = "인스턴스 밖에 있을 때"
 L["STRING_OPTIONS_COMBAT_ALPHA_6"] = "인스턴스 안에 있을 때"
 L["STRING_OPTIONS_COMBAT_ALPHA_7"] = "공격대 디버그"
 L["STRING_OPTIONS_COMBAT_ALPHA_8"] = "전장"
-L["STRING_OPTIONS_COMBAT_ALPHA_9"] = "쐐기에서"
+--[[Translation missing --]]
+--[[ L["STRING_OPTIONS_COMBAT_ALPHA_9"] = ""--]] 
 L["STRING_OPTIONS_COMBAT_ALPHA_DESC"] = [=[전투 상태가 창 투명도를 어떻게 변경할 지 선택하세요.
 
 |cFFFFFF00변경 없음|r: 투명도를 변경하지 않습니다.
@@ -663,21 +638,17 @@ L["STRING_OPTIONS_DATABROKER_TEXT_ADD8"] = "치유량 차이"
 L["STRING_OPTIONS_DATABROKER_TEXT_ADD9"] = "전투 경과 시간"
 L["STRING_OPTIONS_DATABROKER_TEXT1_DESC"] = [=[|cFFFFFF00{dmg}|r: 자신의 피해량입니다.
 
-|cFFFFFF00{dps}|r: 자신의 초당 피해량입니다. 
+|cFFFFFF00{dps}|r: 자신의 초당 피해량 입니다.
 
-|cFFFFFF00{rdps}|r: 공격대의 초당 피해량입니다. 
+|cFFFFFF00{dpos}|r: 공격대원이나 파티원의 피해량에서 자신의 순위입니다.
 
-|cFFFFFF00{dpos}|r: 공격대나 파티 내에서 자신의 피해량 순위입니다.
-
-|cFFFFFF00{ddiff}|r: 1등과 자신의 피해량 차이입니다. 
+|cFFFFFF00{ddiff}|r: 1등과 자신의 피해량 차이입니다.
 
 |cFFFFFF00{heal}|r: 자신의 치유량입니다.
 
 |cFFFFFF00{hps}|r: 자신의 초당 치유량입니다.
 
-|cFFFFFF00{rhps}|r: 공격대의 초당 치유량입니다.
-
-|cFFFFFF00{hpos}|r: 공격대나 파티 내에서 자신의 치유량 순위입니다.
+|cFFFFFF00{hpos}|r: 공격대원이나 파티원의 치유량 중에서 자신의 순위입니다.
 
 |cFFFFFF00{hdiff}|r: 1등과 자신의 치유량 차이입니다.
 
@@ -685,10 +656,10 @@ L["STRING_OPTIONS_DATABROKER_TEXT1_DESC"] = [=[|cFFFFFF00{dmg}|r: 자신의 피�
 L["STRING_OPTIONS_DATACHARTTITLE"] = "차트에 쓰일 정기적인 데이터 생성"
 L["STRING_OPTIONS_DATACHARTTITLE_DESC"] = "이 창에서 차트 구성에 쓰일 사용자 설정 데이터를 생성할 수 있습니다."
 L["STRING_OPTIONS_DATACOLLECT_ANCHOR"] = "데이터 속성:"
-L["STRING_OPTIONS_DEATHLIMIT"] = "죽음 이벤트 개수"
-L["STRING_OPTIONS_DEATHLIMIT_DESC"] = [=[|cFFFFFF00기타 > 죽음|r 디스플레이에 표시할 이벤트 수를 설정합니다.
+L["STRING_OPTIONS_DEATHLIMIT"] = "죽음 이벤트 갯수"
+L["STRING_OPTIONS_DEATHLIMIT_DESC"] = [=[죽음 로그에 표시할 이벤트 갯수를 설정합니다.
 
-|cFFFFFF00중요|r: 변경 후 새로운 죽음부터 적용됩니다.]=]
+|cFFFFFF00중요|r: 변경 후 죽음부터 적용됩니다.]=]
 L["STRING_OPTIONS_DEATHLOG_MINHEALING"] = "죽음 기록 최소 치유"
 L["STRING_OPTIONS_DEATHLOG_MINHEALING_DESC"] = [=[이 임계치보다 낮은 치유는 죽음 로그에 표시하지 않습니다.
 
@@ -719,17 +690,14 @@ L["STRING_OPTIONS_ED_DESC"] = [=[|cFFFFFF00수동|r: 사용자가 초기화 버�
 L["STRING_OPTIONS_ED1"] = "수동"
 L["STRING_OPTIONS_ED2"] = "묻기"
 L["STRING_OPTIONS_ED3"] = "자동"
-L["STRING_OPTIONS_EDIT_CUSTOM_TEXT"] = "사용자 정의 텍스트 편집"
 L["STRING_OPTIONS_EDITIMAGE"] = "이미지 편집"
-L["STRING_OPTIONS_EDITINSTANCE"] = "편집 중인 창:"
+L["STRING_OPTIONS_EDITINSTANCE"] = "창 편집:"
 L["STRING_OPTIONS_ERASECHARTDATA"] = "차트 삭제"
 L["STRING_OPTIONS_ERASECHARTDATA_DESC"] = "접속종료 시 차트를 만들기 위해 수집된 모든 전투 데이터가 지워집니다."
-L["STRING_OPTIONS_EXPORT_PROFILE"] = "프로필 내보내기"
 L["STRING_OPTIONS_EXTERNALS_TITLE"] = "외부 위젯"
 L["STRING_OPTIONS_EXTERNALS_TITLE2"] = "여러 외부 위젯의 작동 방법을 조절하는 옵션입니다."
 L["STRING_OPTIONS_GENERAL"] = "일반 설정"
 L["STRING_OPTIONS_GENERAL_ANCHOR"] = "일반:"
-L["STRING_OPTIONS_GROUPING_HORIZONTAL_GAP"] = "\"창 사이의 공간\""
 L["STRING_OPTIONS_HIDE_ICON"] = "아이콘 숨기기"
 L["STRING_OPTIONS_HIDE_ICON_DESC"] = [=[활성화하면 선택한 디스플레이를 나타내는 아이콘을 표시하지 않습니다.
 
@@ -756,13 +724,18 @@ L["STRING_OPTIONS_ILVL_TRACKER_DESC"] = [=[활성화 하고 전투 중이 아니
 
 비활성하면, 다른 애드온이 요청한 아이템 레벨을 읽거나 수동으로 다른 플레이어를 살펴보기 해야합니다.]=]
 L["STRING_OPTIONS_ILVL_TRACKER_TEXT"] = "사용"
-L["STRING_OPTIONS_IMPORT_PROFILE"] = "프로필 가져오기"
-L["STRING_OPTIONS_IMPORT_PROFILE_NAME"] = "새 프로필의 이름 입력"
-L["STRING_OPTIONS_IMPORT_PROFILE_PASTE"] = "Details! 프로필 가져오기 (문자열 붙여넣기)"
+L["STRING_OPTIONS_INSTANCE_ALPHA2"] = "배경 색상"
+L["STRING_OPTIONS_INSTANCE_ALPHA2_DESC"] = "창의 배경색을 변경하는 옵션입니다."
 L["STRING_OPTIONS_INSTANCE_BACKDROP"] = "배경 무늬"
 L["STRING_OPTIONS_INSTANCE_BACKDROP_DESC"] = [=[이 창에 사용할 배경 무늬를 선택하세요.
 
 |cFFFFFF00기본값|r: Details Background.]=]
+L["STRING_OPTIONS_INSTANCE_COLOR"] = "창 색상"
+L["STRING_OPTIONS_INSTANCE_COLOR_DESC"] = [=[이 창의 색상과 투명도를 변경합니다.
+
+|cFFFFFF00중요|r: 여기서 선택한 투명도는 |cFFFFFF00자동 투명도|r가 활성화 되어있으면 동작하지 않습니다.
+
+|cFFFFFF00중요|r: 선택한 창 색상으로 상태바에 설정된 색상을 덮어씁니다.]=]
 L["STRING_OPTIONS_INSTANCE_CURRENT"] = "현재 전투로 자동 변경"
 L["STRING_OPTIONS_INSTANCE_CURRENT_DESC"] = "전투가 시작되면 자동으로 현재 전투 세분화로 변경합니다."
 L["STRING_OPTIONS_INSTANCE_DELETE"] = "삭제"
@@ -770,7 +743,7 @@ L["STRING_OPTIONS_INSTANCE_DELETE_DESC"] = [=[창을 완전히 제거합니다.
 제거하는 동안 게임 화면을 다시 불러옵니다.]=]
 L["STRING_OPTIONS_INSTANCE_SKIN"] = "스킨"
 L["STRING_OPTIONS_INSTANCE_SKIN_DESC"] = "스킨 테마에 맞춰 창의 외형을 변경합니다."
-L["STRING_OPTIONS_INSTANCE_STATUSBAR_ANCHOR"] = "상태바"
+L["STRING_OPTIONS_INSTANCE_STATUSBAR_ANCHOR"] = "상태바:"
 L["STRING_OPTIONS_INSTANCE_STATUSBARCOLOR"] = "색상과 투명도"
 L["STRING_OPTIONS_INSTANCE_STATUSBARCOLOR_DESC"] = [=[상태바에 사용할 색상을 선택하세요.
 
@@ -785,6 +758,7 @@ High를 사용하면 다른 주요 창들보다 앞에 놓이게 됩니다.
 우선 순위를 수정하면 다른 창과 충돌이나 겹치는 문제가 발생할 수 있습니다.]=]
 L["STRING_OPTIONS_INSTANCES"] = "창:"
 L["STRING_OPTIONS_INTERFACEDIT"] = "인터페이스 편집 모드"
+L["STRING_OPTIONS_LEFT_MENU_ANCHOR"] = "메뉴 설정:"
 L["STRING_OPTIONS_LOCKSEGMENTS"] = "세분화 잠금"
 L["STRING_OPTIONS_LOCKSEGMENTS_DESC"] = "활성화하면 세분화 변경 시 다른 모든 창도 똑같이 선택한 세분화로 변경됩니다."
 L["STRING_OPTIONS_MANAGE_BOOKMARKS"] = "북마크 관리"
@@ -863,25 +837,12 @@ L["STRING_OPTIONS_MINIMAP_ANCHOR"] = "미니맵:"
 L["STRING_OPTIONS_MINIMAP_DESC"] = "미니맵 아이콘을 표시하거나 숨깁니다."
 L["STRING_OPTIONS_MISCTITLE"] = "기타 설정"
 L["STRING_OPTIONS_MISCTITLE2"] = "여러가지 옵션을 설정합니다."
-L["STRING_OPTIONS_MPLUS_AUTO_CLOSE_TIME"] = "자동 종료 시간"
-L["STRING_OPTIONS_MPLUS_AUTO_CLOSE_TIME_DESC"] = "M+ 종료 창 표시를 자동으로 닫는 시간입니다."
-L["STRING_OPTIONS_MPLUS_BOSSNEWCOMBAT"] = "보스 전투를 위한 새로운 전투 기록"
-L["STRING_OPTIONS_MPLUS_BOSSNEWCOMBAT_DESC"] = "전투 중에 보스 전투가 시작되면 현재 전투는 종료되고 보스 전투에 대한 새로운 전투 기록이 시작됩니다."
-L["STRING_OPTIONS_MPLUS_DPS_ANCHOR"] = "전체 전투에 대한 DPS 통계"
-L["STRING_OPTIONS_MPLUS_MERGETRASH"] = "잡몹 병합"
-L["STRING_OPTIONS_MPLUS_PANELS_ANCHOR"] = "창"
-L["STRING_OPTIONS_MPLUS_SHOWENDPANEL"] = "M+ 종료 창 표시"
-L["STRING_OPTIONS_MPLUS_TIME_INCOMBAT"] = "전투 시간"
-L["STRING_OPTIONS_MPLUS_TIME_INCOMBAT_DESC"] = "M+에서 완료한 전체 전투 기록은 \"총 피해량\" / \"총 전투 시간\"을 사용하여 DPS를 계산합니다."
-L["STRING_OPTIONS_MPLUS_TIME_RUNTIME"] = "던전 진행 시간"
-L["STRING_OPTIONS_MPLUS_TIME_RUNTIME_DESC"] = "M+에서 완료한 전체 전투 기록은 \"총 피해량\" / \"완료 시간\"을 사용하여 DPS를 계산합니다."
 L["STRING_OPTIONS_NICKNAME"] = "별명"
 L["STRING_OPTIONS_NICKNAME_DESC"] = [=[당신의 별명을 정합니다.
 
 별명은 길드원들에게 보내지며 Details!에서 캐릭터 이름대신 사용합니다.]=]
 L["STRING_OPTIONS_OPEN_ROWTEXT_EDITOR"] = "바 문자 편집기"
 L["STRING_OPTIONS_OPEN_TEXT_EDITOR"] = "문자 편집기 열기"
-L["STRING_OPTIONS_OPENBROKER"] = "텍스트 편집기 열기"
 L["STRING_OPTIONS_OVERALL_ALL"] = "모든 세분화"
 L["STRING_OPTIONS_OVERALL_ALL_DESC"] = "모든 세분화를 종합 데이터에 추가합니다."
 L["STRING_OPTIONS_OVERALL_ANCHOR"] = "종합 데이터:"
@@ -896,7 +857,7 @@ L["STRING_OPTIONS_OVERALL_MYTHICPLUS_DESC"] = "활성화하면 새로운 신화+
 L["STRING_OPTIONS_OVERALL_NEWBOSS"] = "새로운 공격대 우두머리에서 초기화"
 L["STRING_OPTIONS_OVERALL_NEWBOSS_DESC"] = "활성화하면 다른 공격대 우두머리를 만났을 때 자동으로 종합 데이터를 초기화 합니다."
 L["STRING_OPTIONS_OVERALL_RAIDBOSS"] = "공격대 우두머리"
-L["STRING_OPTIONS_OVERALL_RAIDBOSS_DESC"] = "공격대 우두머리 전투 세분화를 종합 데이터에 추가합니다."
+L["STRING_OPTIONS_OVERALL_RAIDBOSS_DESC"] = "공격대 전투 세분화를 종합 데이터에 추가합니다."
 L["STRING_OPTIONS_OVERALL_RAIDCLEAN"] = "공격대 일반몹"
 L["STRING_OPTIONS_OVERALL_RAIDCLEAN_DESC"] = "공격대 일반몹 정리 세분화를 종합 데이터에 추가합니다."
 L["STRING_OPTIONS_PANIMODE"] = "공황 모드"
@@ -1015,6 +976,7 @@ L["STRING_OPTIONS_REPORT_SCHEMA1"] = "총량 / 초당 / 백분율"
 L["STRING_OPTIONS_REPORT_SCHEMA2"] = "백분율 / 초당 / 총량"
 L["STRING_OPTIONS_REPORT_SCHEMA3"] = "백분율 / 총량 / 초당"
 L["STRING_OPTIONS_RESET_TO_DEFAULT"] = "기본값으로 초기화"
+L["STRING_OPTIONS_ROW_SETTING_ANCHOR"] = "배치:"
 L["STRING_OPTIONS_ROWADV_TITLE"] = "바 고급 설정"
 L["STRING_OPTIONS_ROWADV_TITLE_DESC"] = "바를 좀 더 세부적으로 조정할 수 있는 옵션입니다."
 L["STRING_OPTIONS_RT_COOLDOWN1"] = "%s ▶ %s 사용!"
@@ -1087,7 +1049,7 @@ L["STRING_OPTIONS_SAVELOAD_ERASE_DESC"] = "이전에 저장된 스킨을 삭제�
 L["STRING_OPTIONS_SAVELOAD_EXPORT"] = "내보내기"
 L["STRING_OPTIONS_SAVELOAD_EXPORT_COPY"] = "CTRL + C 누르기"
 L["STRING_OPTIONS_SAVELOAD_EXPORT_DESC"] = "문자 형식으로 스킨을 저장합니다."
-L["STRING_OPTIONS_SAVELOAD_IMPORT"] = "사용자 설정 스킨 가져오기"
+L["STRING_OPTIONS_SAVELOAD_IMPORT"] = "사용자정의 스킨 가져오기"
 L["STRING_OPTIONS_SAVELOAD_IMPORT_DESC"] = "문자 형식으로 스킨을 가져옵니다."
 L["STRING_OPTIONS_SAVELOAD_IMPORT_OKEY"] = "저장된 스킨 목록으로 성공적으로 스킨을 가져왔습니다. 드랍박스의 '적용'을 통해 지금 적용할 수 있습니다."
 L["STRING_OPTIONS_SAVELOAD_LOAD"] = "적용"
@@ -1141,7 +1103,7 @@ L["STRING_OPTIONS_SKIN_ELVUI_BUTTON3_DESC"] = [=[툴팁 수정:
 L["STRING_OPTIONS_SKIN_EXTRA_OPTIONS_ANCHOR"] = "스킨 옵션:"
 L["STRING_OPTIONS_SKIN_LOADED"] = "스킨을 불러왔습니다."
 L["STRING_OPTIONS_SKIN_PRESETS_ANCHOR"] = "스킨 저장:"
-L["STRING_OPTIONS_SKIN_PRESETSCONFIG_ANCHOR"] = "저장된 스킨:"
+L["STRING_OPTIONS_SKIN_PRESETSCONFIG_ANCHOR"] = "저장된 사용자정의 스킨 관리:"
 L["STRING_OPTIONS_SKIN_REMOVED"] = "스킨이 삭제되었습니다."
 L["STRING_OPTIONS_SKIN_RESET_TOOLTIP"] = "툴팁 테두리 초기화"
 L["STRING_OPTIONS_SKIN_RESET_TOOLTIP_DESC"] = "툴팁 테두리 색상과 무늬를 기본값으로 되돌립니다."
@@ -1195,7 +1157,6 @@ L["STRING_OPTIONS_TEXT_LPOSITION"] = "순위 표시"
 L["STRING_OPTIONS_TEXT_LPOSITION_DESC"] = "플레이어 이름 왼쪽에 순위를 표시합니다."
 L["STRING_OPTIONS_TEXT_LTRANSLIT"] = "번역"
 L["STRING_OPTIONS_TEXT_LTRANSLIT_DESC"] = "아무도 이해하지 못하는 러시아 문자를 서양 문자로 표현합니다."
-L["STRING_OPTIONS_TEXT_OUTLINE"] = "텍스트 외곽선"
 L["STRING_OPTIONS_TEXT_RIGHT_ANCHOR"] = "우측 문자:"
 L["STRING_OPTIONS_TEXT_ROUTILINE_DESC"] = "우측 문자에 외곽선을 켜거나 끕니다."
 L["STRING_OPTIONS_TEXT_ROWICONS_ANCHOR"] = "아이콘:"
@@ -1243,7 +1204,6 @@ L["STRING_OPTIONS_TIMEMEASURE"] = "시간 측정"
 L["STRING_OPTIONS_TIMEMEASURE_DESC"] = [=[|cFFFFFF00활동 시간|r: 각 공격대원의 타이머가 해당 공대원의 활동이 중단되면 초읽기를 중지했다가 활동 재개시 다시 초읽기에 들어갑니다. Dps와 Hps 산출의 일반적인 방법입니다.
 
 |cFFFFFF00실질 시간|r: 순위를 매길때 쓰입니다, 이 방법은 모든 공격대원의 Dps와 Hps를 산출하기 위해 측정된 전투 시간을 사용합니다.]=]
-L["STRING_OPTIONS_TITLEBAR_MENUBUTTONS_HEADER"] = "버튼 및 메뉴 설정"
 L["STRING_OPTIONS_TOOLBAR_SETTINGS"] = "제목 바 버튼 설정"
 L["STRING_OPTIONS_TOOLBAR_SETTINGS_DESC"] = "창의 상단에 있는 메인 메뉴를 변경하는 옵션입니다."
 L["STRING_OPTIONS_TOOLBARSIDE"] = "상단 면에 제목 바 배치"
@@ -1347,7 +1307,11 @@ L["STRING_OPTIONS_WC_ANCHOR"] = "빠른 창 제어 (#%s):"
 L["STRING_OPTIONS_WC_BOOKMARK"] = "북마크 관리"
 L["STRING_OPTIONS_WC_BOOKMARK_DESC"] = "북마크 설정 창을 엽니다."
 L["STRING_OPTIONS_WC_CLOSE"] = "닫기"
-L["STRING_OPTIONS_WC_CLOSE_DESC"] = "창을 닫습니다. 창이 닫히면 비활성 상태가 되며 언제든지 창 제어 메뉴를 통해 다시 열 수 있습니다. |cFFFFFF00중요:|r 창을 완전히 제거하려면 \"창 설정\" 항목으로 가세요."
+L["STRING_OPTIONS_WC_CLOSE_DESC"] = [=[현재 편집 중인 창을 닫습니다.
+
+닫혀 있을 때 창은 비활성 상태가 되며 언제든지 창 제어 메뉴를 통해 다시 열 수 있습니다.
+
+|cFFFFFF00중요:|r 창을 완전히 제거하려면 "창: 일반" 항목으로 가세요.]=]
 L["STRING_OPTIONS_WC_CREATE"] = "창 생성"
 L["STRING_OPTIONS_WC_CREATE_DESC"] = "새 창을 만듭니다."
 L["STRING_OPTIONS_WC_LOCK"] = "잠금"
@@ -1364,16 +1328,12 @@ L["STRING_OPTIONS_WINDOW"] = "옵션 창"
 L["STRING_OPTIONS_WINDOW_ANCHOR_ANCHORS"] = "기준점:"
 L["STRING_OPTIONS_WINDOW_IGNOREMASSTOGGLE"] = "다수 표시 전환 무시하기"
 L["STRING_OPTIONS_WINDOW_IGNOREMASSTOGGLE_DESC"] = "활성화하면 이 창은 모든 창 숨기기나 표시, 표시 전환에 영향을 받지 않습니다."
-L["STRING_OPTIONS_WINDOW_ROWAREA_COLOR"] = "\"행 영역 색상\""
-L["STRING_OPTIONS_WINDOW_ROWAREA_COLOR_DESC"] = "행이 표시될 때 해당 영역의 배경색을 설정합니다."
 L["STRING_OPTIONS_WINDOW_SCALE"] = "크기 비율"
 L["STRING_OPTIONS_WINDOW_SCALE_DESC"] = [=[창의 크기 비율을 조절합니다.
 
 |cFFFFFF00팁|r: 값을 입력하려면 오른쪽 클릭하세요.
 
 |cFFFFFF00현재|r: %s]=]
-L["STRING_OPTIONS_WINDOW_SKIN_COLOR"] = "스킨 색상"
-L["STRING_OPTIONS_WINDOW_SKIN_COLOR_DESC"] = "이 창에 적용된 스킨의 색상을 수정합니다. |cFFFFFF00중요|r: 여기서 선택한 값은 활성화된 경우 |cFFFFFF00자동 투명도|r 값으로 덮어씁니다. |cFFFFFF00중요|r: 스킨 색상을 선택하면 상태 표시줄에 적용된 모든 사용자 정의 색상을 덮어씁니다."
 L["STRING_OPTIONS_WINDOW_TITLE"] = "창 일반 설정"
 L["STRING_OPTIONS_WINDOW_TITLE_DESC"] = "선택한 창의 모양을 설정하는 옵션입니다."
 L["STRING_OPTIONS_WINDOWSPEED"] = "갱신 주기"
@@ -1425,12 +1385,10 @@ L["STRING_OPTIONSMENU_ROWTEXTS"] = "바: 문자"
 L["STRING_OPTIONSMENU_SKIN"] = "스킨 선택"
 L["STRING_OPTIONSMENU_SPELLS"] = "주문 사용자 설정"
 L["STRING_OPTIONSMENU_SPELLS_CONSOLIDATE"] = "같은 이름의 공통 주문 통합"
-L["STRING_OPTIONSMENU_TITLEBAR"] = "제목 표시줄"
 L["STRING_OPTIONSMENU_TITLETEXT"] = "제목 바: 문자"
 L["STRING_OPTIONSMENU_TOOLTIP"] = "툴팁"
 L["STRING_OPTIONSMENU_WALLPAPER"] = "창: 배경화면"
 L["STRING_OPTIONSMENU_WINDOW"] = "창: 일반"
-L["STRING_OPTIONSMENU_WINDOWBODY"] = "창 설정"
 L["STRING_OVERALL"] = "종합"
 L["STRING_OVERHEAL"] = "초과 치유"
 L["STRING_OVERHEALED"] = "초과 치유됨"
@@ -1479,8 +1437,6 @@ L["STRING_QUERY_INSPECT_REFRESH"] = "새로고침 필요"
 L["STRING_RAID_WIDE"] = "[*] 공격대 단위 생존기"
 L["STRING_RAIDCHECK_PLUGIN_DESC"] = "공격대 던전에 있을 때, Details! 제목 바 위에 영약, 음식, 시작물약 사용을 보여주는 아이콘을 표시합니다."
 L["STRING_RAIDCHECK_PLUGIN_NAME"] = "공격대 확인"
---[[Translation missing --]]
-L["STRING_RECENT_PLAYERS"] = "Recent Players:"
 L["STRING_REPORT"] = ":"
 L["STRING_REPORT_BUTTON_TOOLTIP"] = "보고서 창을 열려면 클릭하세요"
 L["STRING_REPORT_FIGHT"] = "전투"
@@ -1494,7 +1450,6 @@ L["STRING_REPORT_SINGLE_BUFFUPTIME"] = "강화 효과 유지 시간:"
 L["STRING_REPORT_SINGLE_COOLDOWN"] = "생존기 사용 :"
 L["STRING_REPORT_SINGLE_DEATH"] = "죽음:"
 L["STRING_REPORT_SINGLE_DEBUFFUPTIME"] = "약화 효과 유지 시간:"
-L["STRING_REPORT_TEXT"] = "신고"
 L["STRING_REPORT_TOOLTIP"] = "결과 보고"
 L["STRING_REPORTFRAME_COPY"] = "복사 & 붙여넣기"
 L["STRING_REPORTFRAME_CURRENT"] = "현재"
@@ -1529,7 +1484,6 @@ L["STRING_RIGHTCLICK_CLOSE_SHORT"] = "오른쪽 클릭으로 닫습니다."
 L["STRING_RIGHTCLICK_TYPEVALUE"] = "오른쪽 클릭으로 값 입력"
 L["STRING_SCORE_BEST"] = "|cFFFFFF00%s|r|1을;를; 기록했습니다, 이것은 최고 점수입니다, 축하합니다!"
 L["STRING_SCORE_NOTBEST"] = "|cFFFFFF00%1$s|r|1을;를; 기록했으며, 최고 점수는 %4$d 아이템 레벨로 %3$s에서 |cFFFFFF00%2$s|r입니다."
-L["STRING_SCRIPTS_TITLE"] = "스크립트"
 L["STRING_SEE_BELOW"] = "아래 참고"
 L["STRING_SEGMENT"] = "세분화"
 L["STRING_SEGMENT_EMPTY"] = "이 세분화는 비었습니다"
@@ -1572,7 +1526,7 @@ L["STRING_SLASH_RESET_ALIAS1"] = "clear"
 L["STRING_SLASH_RESET_DESC"] = "모든 세분화 초기화"
 L["STRING_SLASH_SHOW"] = "show"
 L["STRING_SLASH_SHOW_ALIAS1"] = "open"
-L["STRING_SLASH_SHOWHIDETOGGLE_DESC"] = "<창 번호>가 전달되지 않으면 모든 창입니다."
+L["STRING_SLASH_SHOWHIDETOGGLE_DESC"] = "<창 번호>를 지정하지 않으면 모든 창에 적용합니다."
 L["STRING_SLASH_TOGGLE"] = "toggle"
 L["STRING_SLASH_WIPE"] = "wipe"
 L["STRING_SLASH_WIPECONFIG"] = "reinstall"
@@ -1598,10 +1552,6 @@ L["STRING_SWITCH_WARNING"] = "역할 바뀜. 변경: |cFFFFAA00%s|r"
 L["STRING_TARGET"] = "대상"
 L["STRING_TARGETS"] = "대상"
 L["STRING_TARGETS_OTHER1"] = "소환수와 다른 대상들"
---[[Translation missing --]]
-L["STRING_TELEPORT"] = "Teleport"
---[[Translation missing --]]
-L["STRING_TELEPORTERS"] = "Teleporters"
 L["STRING_TEXTURE"] = "텍스쳐"
 L["STRING_TIME_OF_DEATH"] = "죽음"
 L["STRING_TOOOLD"] = "Details! 버전이 너무 오래되어 설치할 수 없습니다."
@@ -1611,14 +1561,14 @@ L["STRING_TOTAL"] = "총량"
 L["STRING_TRANSLATE_LANGUAGE"] = "Details의 번역을 도와주세요!"
 L["STRING_TUTORIAL_FULLY_DELETE_WINDOW"] = [=[창을 닫았지만 언제든 다시 열수 있습니다.
 창을 완전히 삭제하려면 옵션 -> 창: 일반 -> 삭제 항목을 찾아보세요.]=]
-L["STRING_TUTORIAL_OVERALL1"] = "종합 데이터는 전투가 완료되었을 때만 갱신됩니다, 정기적으로 갱신하려면 제목 표시줄을 오른쪽 클릭하고 '동적 종합 데이터'를 선택하세요."
+L["STRING_TUTORIAL_OVERALL1"] = "전체 데이터는 전투가 완료되었을 때만 업데이트되며, 정기적으로 업데이트하려면 제목 표시줄을 마우스 오른쪽 단추로 클릭하고 '전체 데이터 동적'을 선택하십시오."
 L["STRING_UNKNOW"] = "알 수 없음"
 L["STRING_UNKNOWSPELL"] = "알 수 없는 주문"
 L["STRING_UNLOCK"] = [=[이 버튼으로
 창 그룹 해제]=]
 L["STRING_UNLOCK_WINDOW"] = "잠금해제"
 L["STRING_UPTADING"] = "갱신 중"
-L["STRING_VERSION_AVAILABLE"] = "Curse Forge App 또는 Curse 웹 사이트에서 새로운 버전을 다운로드 할 수 있습니다."
+L["STRING_VERSION_AVAILABLE"] = "Twitch App 또는 Curse 웹 사이트에서 새로운 버전을 다운로드 할 수 있습니다."
 L["STRING_VERSION_UPDATE"] = "새 버전: 변경 내용을 보려면 클릭하세요"
 L["STRING_VOIDZONE_TOOLTIP"] = "피해와 시간"
 L["STRING_WAITPLUGIN"] = [=[플러그인
@@ -1719,7 +1669,7 @@ L["STRING_WELCOME_75"] = "키릴 알파벳"
 L["STRING_WELCOME_76"] = "중국"
 L["STRING_WELCOME_77"] = "한국"
 L["STRING_WELCOME_78"] = "대만"
-L["STRING_WELCOME_79"] = "두 번째 창 만들기"
+L["STRING_WELCOME_79"] = "두번째 창 만들기"
 L["STRING_WINDOW_NOTFOUND"] = "창을 찾을 수 없습니다."
 L["STRING_WINDOW_NUMBER"] = "창 번호"
 L["STRING_WINDOW1ATACH_DESC"] = "창 그룹을 만들려면 창 #2를 창 #1 가까이 드래그하세요."
@@ -1728,3 +1678,4 @@ L["STRING_WIPE_ERROR1"] = "이미 전멸 신호를 보냈습니다."
 L["STRING_WIPE_ERROR2"] = "공격대 우두머리 전투 중이 아닙니다."
 L["STRING_WIPE_ERROR3"] = "우두머리 전투를 끝낼 수 없습니다."
 L["STRING_YES"] = "네"
+

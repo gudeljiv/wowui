@@ -1,6 +1,6 @@
 # Baganator
 
-## [777](https://github.com/TheMouseNest/Baganator/tree/777) (2026-01-14)
-[Full Changelog](https://github.com/TheMouseNest/Baganator/compare/776...777) 
+## [779](https://github.com/TheMouseNest/Baganator/tree/779) (2026-01-15)
+[Full Changelog](https://github.com/TheMouseNest/Baganator/compare/778...779) 
 
-- Classic Anniversary: Disable Blizzard equipment sets tracking  
+- Classic Anniversary: Fix missing "Ammo" category  

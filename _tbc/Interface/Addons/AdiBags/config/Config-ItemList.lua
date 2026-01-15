@@ -20,7 +20,7 @@ along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 --]]
 
 local addonName = "AdiBags"
-local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
+local addon = LibStub("AceAddon-3.0"):GetAddon(addonName, true)
 local L = addon.L
 
 --<GLOBALS
@@ -52,8 +52,10 @@ do
 	local function Button_OnClick(frame, ...)
 		AceGUI:ClearFocus()
 		local widget = frame.obj
-		local listWidget = widget:GetUserData('listwidget')
-		if not listWidget then return end
+		local listWidget = widget:GetUserData("listwidget")
+		if not listWidget then
+			return
+		end
 		PlaySound(SOUNDKIT.IG_MAINMENU_OPTION)
 		local previousId = widget.itemId
 		if previousId then
@@ -72,14 +74,16 @@ do
 
 	local function Button_OnDragStart(frame)
 		local widget = frame.obj
-		local listWidget = widget:GetUserData('listwidget')
-		if not listWidget or not widget.itemId then return end
+		local listWidget = widget:GetUserData("listwidget")
+		if not listWidget or not widget.itemId then
+			return
+		end
 		PickupItem(widget.itemId)
 		listWidget:Fire("OnValueChanged", widget.itemId, false)
 	end
 
 	local function Button_OnEnter(frame)
-		local listWidget = frame.obj:GetUserData('listwidget')
+		local listWidget = frame.obj:GetUserData("listwidget")
 		if listWidget then
 			listWidget:Fire("OnEnter")
 			if frame.obj.itemId then
@@ -96,7 +100,7 @@ do
 	end
 
 	local function Button_OnLeave(frame)
-		local listWidget = frame.obj:GetUserData('listwidget')
+		local listWidget = frame.obj:GetUserData("listwidget")
 		if listWidget then
 			listWidget:Fire("OnLeave")
 		end
@@ -110,7 +114,7 @@ do
 	end
 
 	function methods:OnRelease()
-		self:SetUserData('listwidget', nil)
+		self:SetUserData("listwidget", nil)
 	end
 
 	function methods:SetDisabled(disabled)
@@ -129,7 +133,7 @@ do
 			self.frame:GetNormalTexture():SetTexCoord(0, 1, 0, 1)
 		else
 			self.frame:SetNormalTexture([[Interface\Buttons\UI-Slot-Background]])
-			self.frame:GetNormalTexture():SetTexCoord(0, 41/64, 0, 41/64)
+			self.frame:GetNormalTexture():SetTexCoord(0, 41 / 64, 0, 41 / 64)
 		end
 	end
 
@@ -150,7 +154,7 @@ do
 
 		local widget = {
 			frame = frame,
-			type  = Type
+			type = Type,
 		}
 		for method, func in pairs(methods) do
 			widget[method] = func
@@ -186,8 +190,8 @@ do
 	end
 
 	local function AddItem(self, itemId)
-		local widget = AceGUI:Create('ItemListElement')
-		widget:SetUserData('listwidget', self)
+		local widget = AceGUI:Create("ItemListElement")
+		widget:SetUserData("listwidget", self)
 		widget:SetItemId(itemId)
 		self:AddChild(widget)
 		return widget

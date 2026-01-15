@@ -1,7 +1,22 @@
-## Interface: 80300
+## Interface: 20504
+
 ## Title: Masque: BeautyBorder
-## Author: d87
-## Version: 3.0
+## Notes: BeautyBorder skin for Masque.
+## Notes-deDE: BeautyBorder-Skin für Masque.
+## Notes-esMX: Skin BeautyBorder para Masque.
+## Notes-esES: Skin BeautyBorder para Masque.
+## Notes-frFR: Skin de BeautyBorder pour Masque.
+## Notes-itIT: Skin BeautyBorder per Masque.
+## Notes-ruRU: Скин BeautyBorder для Masque.
+## Notes-zhTW: Masque的BeautyBorder皮膚。
+
+## Version: @project-version@
+## Author: Constantine32
 ## Dependencies: Masque
 
+## X-Category: Interface Enhancements
+## X-Credits: BeautyBorder
+## X-Curse-Project-ID: 86874
+
+# Skins
 skin.lua

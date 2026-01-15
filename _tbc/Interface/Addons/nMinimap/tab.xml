@@ -169,7 +169,7 @@
                         nMinimapTab_HideTab()
 					</OnLeave>
 					<OnMouseDown>
-                        if ( IsAddOnLoaded("AddonUsage") ) then
+                        if ( C_AddOns.IsAddOnLoaded("AddonUsage") ) then
                             AddonUsage:Toggle()
                         end
 					</OnMouseDown>

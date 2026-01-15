@@ -4,7 +4,7 @@ local localizedClass, class = UnitClass("player")
 local gameVersion = select(4, GetBuildInfo())
 local fmt, tinsert = string.format,tinsert
 local LoadAddOn = C_AddOns and C_AddOns.LoadAddOn or _G.LoadAddOn
-local IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or _G.IsAddOnLoaded
+local C_AddOns.IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or _G.C_AddOns.IsAddOnLoaded
 local GetItemInfo = C_Item and C_Item.GetItemInfo or _G.GetItemInfo
 local GetSpellTexture = C_Spell and C_Spell.GetSpellTexture or _G.GetSpellTexture
 local GetSpellSubtext = C_Spell and C_Spell.GetSpellSubtext or _G.GetSpellSubtext
@@ -6292,7 +6292,7 @@ function addon.functions.holiday(self, text, eventId, reverse)
     -- Async relies on CALENDAR_UPDATE_EVENT_LIST
     -- Currently results in one false negative if on a DMF step at login
     -- If called during the loading process, (even at PLAYER_ENTERING_WORLD) the query will not return
-    if not IsAddOnLoaded('Blizzard_Calendar') then
+    if not C_AddOns.IsAddOnLoaded('Blizzard_Calendar') then
         LoadAddOn("Blizzard_Calendar")
         addon.calendarLoaded = true
     end

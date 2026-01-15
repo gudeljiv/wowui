@@ -21,7 +21,7 @@ f.Health:SetAlpha(0)
 
 f.Health.Value = f.Health:CreateFontString(nil, "ARTWORK")
 
-if (nHealth.valueFontOutline) then
+if nHealth.valueFontOutline then
 	f.Health.Value:SetFont(nHealth.valueFont, nHealth.valueFontSize, "THINOUTLINE")
 	f.Health.Value:SetShadowOffset(0, 0)
 else
@@ -41,14 +41,12 @@ f.Health.BackgroundShadow = CreateFrame("Frame", nil, f.Health, BackdropTemplate
 f.Health.BackgroundShadow:SetFrameStrata("BACKGROUND")
 f.Health.BackgroundShadow:SetPoint("TOPLEFT", -4, 4)
 f.Health.BackgroundShadow:SetPoint("BOTTOMRIGHT", 4, -4)
-f.Health.BackgroundShadow:SetBackdrop(
-	{
-		BgFile = "Interface\\ChatFrame\\ChatFrameBackground",
-		edgeFile = "Interface\\Addons\\nHealth\\media\\textureGlow",
-		edgeSize = 4,
-		insets = {left = 3, right = 3, top = 3, bottom = 3}
-	}
-)
+f.Health.BackgroundShadow:SetBackdrop({
+	BgFile = "Interface\\ChatFrame\\ChatFrameBackground",
+	edgeFile = "Interface\\Addons\\nHealth\\media\\textureGlow",
+	edgeSize = 4,
+	insets = { left = 3, right = 3, top = 3, bottom = 3 },
+})
 f.Health.BackgroundShadow:SetBackdropColor(0.15, 0.15, 0.15, 1)
 f.Health.BackgroundShadow:SetBackdropBorderColor(0, 0, 0)
 
@@ -64,7 +62,7 @@ f.Health.Above:SetTexture("Interface\\AddOns\\nHealth\\media\\textureArrowAbove"
 f.Health.Above:SetPoint("BOTTOM", f.Health.Below, "TOP", 0, f.Health:GetHeight())
 
 local function FormatValue(self)
-	if (self >= 10000) then
+	if self >= 10000 then
 		return ("%.1fk"):format(self / 1e3)
 	else
 		return self
@@ -74,9 +72,9 @@ end
 local function UpdateBarVisibility()
 	if not TargetFrame:IsShown() or UnitIsDeadOrGhost("target") then
 		f.Health:SetAlpha(0.3)
-	elseif (InCombatLockdown()) then
+	elseif InCombatLockdown() then
 		securecall("UIFrameFadeIn", f.Health, 0.3, f.Health:GetAlpha(), nHealth.activeAlpha)
-	elseif (not InCombatLockdown() and UnitHealth("target") > 0) then
+	elseif not InCombatLockdown() and UnitHealth("target") > 0 then
 		securecall("UIFrameFadeOut", f.Health, 0.3, f.Health:GetAlpha(), nHealth.inactiveAlpha)
 	else
 		securecall("UIFrameFadeOut", f.Health, 0.3, f.Health:GetAlpha(), nHealth.emptyAlpha)
@@ -86,7 +84,7 @@ end
 local function UpdateBarValue()
 	if TargetFrame:IsShown() and not UnitIsDeadOrGhost("target") then
 		local min, max
-		if IsAddOnLoaded("RealMobHealth") then
+		if C_AddOns.IsAddOnLoaded("RealMobHealth") then
 			min, max, _, _ = RealMobHealth.GetUnitHealth("target")
 		else
 			min = UnitHealth("target")
@@ -96,8 +94,8 @@ local function UpdateBarValue()
 		f.Health:SetMinMaxValues(0, max)
 		f.Health:SetValue(min)
 
-		if (nHealth.valueAbbrev) then
-			f.Health.Value:SetText(( min > 0 and FormatValue(min) or "") .. " / " .. max)
+		if nHealth.valueAbbrev then
+			f.Health.Value:SetText((min > 0 and FormatValue(min) or "") .. " / " .. max)
 		else
 			f.Health.Value:SetText((min > 0 and min or "") .. " / " .. max)
 		end
@@ -119,37 +117,31 @@ local function UpdateBar()
 	UpdateBarValue()
 end
 
-f:SetScript(
-	"OnEvent",
-	function(self, event, arg1)
-		if (event == "PLAYER_ENTERING_WORLD") then
-			if (InCombatLockdown()) then
-				securecall("UIFrameFadeIn", f, 0.35, f:GetAlpha(), 1)
-			else
-				securecall("UIFrameFadeOut", f, 0.35, f:GetAlpha(), nHealth.inactiveAlpha)
-			end
-		end
-
-		if (event == "PLAYER_REGEN_DISABLED") then
+f:SetScript("OnEvent", function(self, event, arg1)
+	if event == "PLAYER_ENTERING_WORLD" then
+		if InCombatLockdown() then
 			securecall("UIFrameFadeIn", f, 0.35, f:GetAlpha(), 1)
-		end
-
-		if (event == "PLAYER_REGEN_ENABLED") then
+		else
 			securecall("UIFrameFadeOut", f, 0.35, f:GetAlpha(), nHealth.inactiveAlpha)
 		end
 	end
-)
+
+	if event == "PLAYER_REGEN_DISABLED" then
+		securecall("UIFrameFadeIn", f, 0.35, f:GetAlpha(), 1)
+	end
+
+	if event == "PLAYER_REGEN_ENABLED" then
+		securecall("UIFrameFadeOut", f, 0.35, f:GetAlpha(), nHealth.inactiveAlpha)
+	end
+end)
 
 local updateTimer = 0
-f:SetScript(
-	"OnUpdate",
-	function(self, elapsed)
-		updateTimer = updateTimer + elapsed
+f:SetScript("OnUpdate", function(self, elapsed)
+	updateTimer = updateTimer + elapsed
 
-		if (updateTimer > 0.1) then
-			UpdateBar()
-			UpdateBarVisibility()
-			updateTimer = 0
-		end
+	if updateTimer > 0.1 then
+		UpdateBar()
+		UpdateBarVisibility()
+		updateTimer = 0
 	end
-)
+end)

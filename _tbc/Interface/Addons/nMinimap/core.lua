@@ -30,15 +30,12 @@ MiniMapMailFrame.Text:SetTextColor(1, 0, 1)
 MiniMapMailBorder:SetTexture(nil)
 MiniMapMailIcon:SetTexture(nil)
 
-MiniMapMailFrame:HookScript(
-	"OnEvent",
-	function(self, event, ...)
-		if event == "UPDATE_PENDING_MAIL" or event == "MAIL_CLOSED" then
-			local text = HasNewMail() and "N" or ""
-			MiniMapMailFrame.Text:SetText(text)
-		end
+MiniMapMailFrame:HookScript("OnEvent", function(self, event, ...)
+	if event == "UPDATE_PENDING_MAIL" or event == "MAIL_CLOSED" then
+		local text = HasNewMail() and "N" or ""
+		MiniMapMailFrame.Text:SetText(text)
 	end
-)
+end)
 
 -- Hide all unwanted things
 
@@ -54,7 +51,8 @@ MinimapZoomOut:UnregisterAllEvents()
 MinimapNorthTag:SetAlpha(0)
 
 MinimapBorder:Hide()
-MinimapBorderTop:Hide()
+-- MinimapBorderTop:Hide()
+MinimapCluster.BorderTop:Hide()
 
 MinimapZoneText:Hide()
 
@@ -91,7 +89,7 @@ if select(2, UnitClass("player")) == "SHAMAN" then
 	classColor = {
 		b = 0.86666476726532,
 		g = 0.4392147064209,
-		r = 0
+		r = 0,
 	}
 end
 Minimap:SetBeautyBorderTexture("white")
@@ -100,16 +98,13 @@ Minimap:SetBeautyBorderColor(classColor.r, classColor.g, classColor.b)
 -- Enable mousewheel zooming
 
 Minimap:EnableMouseWheel(true)
-Minimap:SetScript(
-	"OnMouseWheel",
-	function(self, delta)
-		if delta > 0 then
-			_G.MinimapZoomIn:Click()
-		elseif delta < 0 then
-			_G.MinimapZoomOut:Click()
-		end
+Minimap:SetScript("OnMouseWheel", function(self, delta)
+	if delta > 0 then
+		_G.MinimapZoomIn:Click()
+	elseif delta < 0 then
+		_G.MinimapZoomOut:Click()
 	end
-)
+end)
 
 -- Modify the minimap tracking
 
@@ -128,24 +123,19 @@ Minimap:SetScript(
 
 TicketStatusFrame:ClearAllPoints()
 TicketStatusFrame:SetPoint("BOTTOMRIGHT", UIParent, -25, -33)
-TicketStatusFrameButton:HookScript(
-	"OnShow",
-	function(self)
-		self:SetBackdrop(
-			{
-				bgFile = "Interface\\Buttons\\WHITE8x8",
-				insets = {
-					left = 3,
-					right = 3,
-					top = 3,
-					bottom = 3
-				}
-			}
-		)
-		self:SetBackdropColor(0, 0, 0, 0.5)
-		self:CreateBeautyBorder(12)
-	end
-)
+TicketStatusFrameButton:HookScript("OnShow", function(self)
+	self:SetBackdrop({
+		bgFile = "Interface\\Buttons\\WHITE8x8",
+		insets = {
+			left = 3,
+			right = 3,
+			top = 3,
+			bottom = 3,
+		},
+	})
+	self:SetBackdropColor(0, 0, 0, 0.5)
+	self:CreateBeautyBorder(12)
+end)
 
 local function GetZoneColor()
 	local zoneType = GetZonePVPInfo()
@@ -189,26 +179,20 @@ if cfg.mouseover.zoneText then
 	SubZone:SetNonSpaceWrap(true)
 	SubZone:SetMaxLines(2)
 
-	Minimap:HookScript(
-		"OnEnter",
-		function(self)
-			if not IsShiftKeyDown() then
-				SubZone:SetTextColor(GetZoneColor())
-				SubZone:SetText(GetSubZoneText())
-				securecall("UIFrameFadeIn", SubZone, 0.15, SubZone:GetAlpha(), 1)
+	Minimap:HookScript("OnEnter", function(self)
+		if not IsShiftKeyDown() then
+			SubZone:SetTextColor(GetZoneColor())
+			SubZone:SetText(GetSubZoneText())
+			securecall("UIFrameFadeIn", SubZone, 0.15, SubZone:GetAlpha(), 1)
 
-				MainZone:SetTextColor(GetZoneColor())
-				MainZone:SetText(GetRealZoneText())
-				securecall("UIFrameFadeIn", MainZone, 0.15, MainZone:GetAlpha(), 1)
-			end
+			MainZone:SetTextColor(GetZoneColor())
+			MainZone:SetText(GetRealZoneText())
+			securecall("UIFrameFadeIn", MainZone, 0.15, MainZone:GetAlpha(), 1)
 		end
-	)
+	end)
 
-	Minimap:HookScript(
-		"OnLeave",
-		function(self)
-			securecall("UIFrameFadeOut", SubZone, 0.15, SubZone:GetAlpha(), 0)
-			securecall("UIFrameFadeOut", MainZone, 0.15, MainZone:GetAlpha(), 0)
-		end
-	)
+	Minimap:HookScript("OnLeave", function(self)
+		securecall("UIFrameFadeOut", SubZone, 0.15, SubZone:GetAlpha(), 0)
+		securecall("UIFrameFadeOut", MainZone, 0.15, MainZone:GetAlpha(), 0)
+	end)
 end

@@ -1,6 +1,5 @@
 local AceLocale = LibStub ("AceLocale-3.0")
 local Loc = AceLocale:GetLocale ("Details_Threat")
-local detailsFramework = _G.DetailsFramework
 
 local _GetNumSubgroupMembers = GetNumSubgroupMembers --> wow api
 local _GetNumGroupMembers = GetNumGroupMembers --> wow api
@@ -10,8 +9,6 @@ local _IsInRaid = IsInRaid --> wow api
 local _IsInGroup = IsInGroup --> wow api
 local _UnitGroupRolesAssigned = DetailsFramework.UnitGroupRolesAssigned --> wow api
 local GetUnitName = GetUnitName
-local Details = _G.Details
-local GetSpellInfo = Details.GetSpellInfo
 
 local _ipairs = ipairs --> lua api
 local _table_sort = table.sort --> lua api
@@ -24,7 +21,7 @@ local RAID_CLASS_COLORS = RAID_CLASS_COLORS
 
 
 --> Create the plugin Object
-local ThreatMeter = Details:NewPluginObject ("Details_TinyThreat")
+local ThreatMeter = _detalhes:NewPluginObject ("Details_TinyThreat")
 
 --> Main Frame
 local ThreatMeterFrame = ThreatMeter.Frame
@@ -36,7 +33,7 @@ local _
 local UnitDetailedThreatSituation = UnitDetailedThreatSituation
 local _UnitDetailedThreatSituation
 
-if (detailsFramework.IsTimewalkWoW()) then
+if (DetailsFramework.IsTimewalkWoW()) then
 	_UnitDetailedThreatSituation = function(source, target)
 		local isTanking, status, threatpct, rawthreatpct, threatvalue = UnitDetailedThreatSituation(source, target)
 
@@ -53,7 +50,7 @@ end
 local function CreatePluginFrames (data)
 
 	--> catch Details! main object
-	local _detalhes = _G.Details
+	local _detalhes = _G._detalhes
 	local DetailsFrameWork = _detalhes.gump
 
 	--> data
@@ -665,34 +662,14 @@ local function CreatePluginFrames (data)
 
 			--> pre build player list
 			if (_IsInRaid()) then
-                if (not ThreatMeter.saveddata.only_my_group) then
-                    for i = 1, _GetNumGroupMembers(), 1 do
-                        local thisplayer_name = GetUnitName ("raid"..i, true)
-                        local role = _UnitGroupRolesAssigned (thisplayer_name)
-                        local _, class = UnitClass (thisplayer_name)
-                        local t = {thisplayer_name, 0, false, role, class, 0, 0}
-                        ThreatMeter.player_list_indexes [#ThreatMeter.player_list_indexes+1] = t
-                        ThreatMeter.player_list_hash [thisplayer_name] = #ThreatMeter.player_list_indexes
-                    end
-                else
-                    for i = 1, 4, 1 do
-                        local thisplayer_name = GetUnitName ("party"..i, true)
-                        if (thisplayer_name) then
-                            local role = _UnitGroupRolesAssigned (thisplayer_name)
-                            local _, class = UnitClass (thisplayer_name)
-                            local t = {thisplayer_name, 0, false, role, class, 0, 0}
-                            ThreatMeter.player_list_indexes [#ThreatMeter.player_list_indexes+1] = t
-                            ThreatMeter.player_list_hash [thisplayer_name] = #ThreatMeter.player_list_indexes
-                        end
-                    end
-
-                    local thisplayer_name = GetUnitName ("player", true)
-                    local role = _UnitGroupRolesAssigned (thisplayer_name)
-                    local _, class = UnitClass (thisplayer_name)
-                    local t = {thisplayer_name, 0, false, role, class, 0, 0}
-                    ThreatMeter.player_list_indexes [#ThreatMeter.player_list_indexes+1] = t
-                    ThreatMeter.player_list_hash [thisplayer_name] = #ThreatMeter.player_list_indexes
-                end
+				for i = 1, _GetNumGroupMembers(), 1 do
+					local thisplayer_name = GetUnitName ("raid"..i, true)
+					local role = _UnitGroupRolesAssigned (thisplayer_name)
+					local _, class = UnitClass (thisplayer_name)
+					local t = {thisplayer_name, 0, false, role, class, 0, 0}
+					ThreatMeter.player_list_indexes [#ThreatMeter.player_list_indexes+1] = t
+					ThreatMeter.player_list_hash [thisplayer_name] = #ThreatMeter.player_list_indexes
+				end
 
 			elseif (_IsInGroup()) then
 				for i = 1, _GetNumGroupMembers()-1, 1 do
@@ -702,14 +679,6 @@ local function CreatePluginFrames (data)
 					local t = {thisplayer_name, 0, false, role, class, 0, 0}
 					ThreatMeter.player_list_indexes [#ThreatMeter.player_list_indexes+1] = t
 					ThreatMeter.player_list_hash [thisplayer_name] = #ThreatMeter.player_list_indexes
-
-                    if (ThreatMeter.saveddata.show_party_pets and UnitExists ("partypet" .. i)) then
-                        local thispet_name = GetUnitName ("partypet" .. i, true) .. " *PET*"
-                        local role = "DAMAGER"
-                        local t = {thispet_name, 0, false, role, class, 0, 0}
-                        ThreatMeter.player_list_indexes [#ThreatMeter.player_list_indexes+1] = t
-                        ThreatMeter.player_list_hash [thispet_name] = #ThreatMeter.player_list_indexes
-                    end
 				end
 				local thisplayer_name = GetUnitName ("player", true)
 				local role = _UnitGroupRolesAssigned (thisplayer_name)
@@ -717,14 +686,6 @@ local function CreatePluginFrames (data)
 				local t = {thisplayer_name, 0, false, role, class, 0, 0}
 				ThreatMeter.player_list_indexes [#ThreatMeter.player_list_indexes+1] = t
 				ThreatMeter.player_list_hash [thisplayer_name] = #ThreatMeter.player_list_indexes
-
-                if (ThreatMeter.saveddata.show_party_pets and UnitExists ("pet")) then
-					local thispet_name = GetUnitName ("pet", true) .. " *PET*"
-					local role = "DAMAGER"
-					local t = {thispet_name, 0, false, role, class, 0, 0}
-					ThreatMeter.player_list_indexes [#ThreatMeter.player_list_indexes+1] = t
-					ThreatMeter.player_list_hash [thispet_name] = #ThreatMeter.player_list_indexes
-				end
 
 			else
 				local thisplayer_name = GetUnitName ("player", true)
@@ -772,7 +733,6 @@ local build_options_panel = function()
 	local options_frame = ThreatMeter:CreatePluginOptionsFrame ("ThreatMeterOptionsWindow", "Tiny Threat Options", 1)
 
 	local menu = {
-		--[=[]]
 		{
 			type = "range",
 			get = function() return ThreatMeter.saveddata.updatespeed end,
@@ -784,7 +744,6 @@ local build_options_panel = function()
 			name = "Update Speed",
 			usedecimals = true,
 		},
-		--]=]
 		{
 			type = "toggle",
 			get = function() return ThreatMeter.saveddata.useplayercolor end,
@@ -840,20 +799,6 @@ local build_options_panel = function()
 			desc = "If this is enabled, certain bosses will show an additional threat threshold at 90.9% of the off-tank's threat. Any player above this threshold might be targeted after the Main Tank is incapacitated.",
 			name = "Enable Gouge mode",
 		},
-        {
-            type = "toggle",
-            get = function() return ThreatMeter.saveddata.show_party_pets end,
-            set = function(self, fixedparam, value) ThreatMeter.saveddata.show_party_pets = value end,
-            desc = "If this is enabled, you will see pets while in a party but not while in a raid",
-            name = "Show pets in party"
-        },
-        {
-            type = "toggle",
-            get = function() return ThreatMeter.saveddata.only_my_group end,
-            set = function(self, fixedparam, value) ThreatMeter.saveddata.only_my_group = value end,
-            desc = "If this is enabled, you will only see members in your group while in a raid",
-            name = "Show only my group"
-        },
 
 
 --[=[
@@ -869,14 +814,7 @@ local build_options_panel = function()
 
 	}
 
-	local options_text_template = detailsFramework:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE")
-	local options_dropdown_template = detailsFramework:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE")
-	local options_switch_template = detailsFramework:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE")
-	local options_slider_template = detailsFramework:GetTemplate ("slider", "OPTIONS_SLIDER_TEMPLATE")
-	local options_button_template = detailsFramework:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE")
-	menu.always_boxfirst = true
-
-	detailsFramework:BuildMenu (options_frame, menu, 15, -35, 160, false, options_text_template, options_dropdown_template, options_switch_template, true, options_slider_template, options_button_template)
+	_detalhes.gump:BuildMenu (options_frame, menu, 15, -35, 160)
 	options_frame:SetHeight(160)
 
 end
@@ -907,7 +845,7 @@ function ThreatMeter:OnEvent (_, event, ...)
 		local AddonName = select (1, ...)
 
 		if (AddonName == "Details_TinyThreat") then
-			if (_G.Details) then
+			if (_G._detalhes) then
 
 				if (DetailsFramework.IsClassicWow()) then
 					--return
@@ -919,19 +857,19 @@ function ThreatMeter:OnEvent (_, event, ...)
 				local MINIMAL_DETAILS_VERSION_REQUIRED = 1
 
 				--> Install
-				local install, saveddata = _G.Details:InstallPlugin ("RAID", Loc ["STRING_PLUGIN_NAME"], "Interface\\Icons\\Ability_Druid_Cower", ThreatMeter, "DETAILS_PLUGIN_TINY_THREAT", MINIMAL_DETAILS_VERSION_REQUIRED, "Terciob", "v2.20")
+				local install, saveddata = _G._detalhes:InstallPlugin ("RAID", Loc ["STRING_PLUGIN_NAME"], "Interface\\Icons\\Ability_Druid_Cower", ThreatMeter, "DETAILS_PLUGIN_TINY_THREAT", MINIMAL_DETAILS_VERSION_REQUIRED, "Terciob", "v2.01")
 				if (type (install) == "table" and install.error) then
 					print (install.error)
 				end
 
 				--> Register needed events
-				_G.Details:RegisterEvent (ThreatMeter, "COMBAT_PLAYER_ENTER")
-				_G.Details:RegisterEvent (ThreatMeter, "COMBAT_PLAYER_LEAVE")
-				_G.Details:RegisterEvent (ThreatMeter, "DETAILS_INSTANCE_ENDRESIZE")
-				_G.Details:RegisterEvent (ThreatMeter, "DETAILS_INSTANCE_SIZECHANGED")
-				_G.Details:RegisterEvent (ThreatMeter, "DETAILS_INSTANCE_STARTSTRETCH")
-				_G.Details:RegisterEvent (ThreatMeter, "DETAILS_INSTANCE_ENDSTRETCH")
-				_G.Details:RegisterEvent (ThreatMeter, "DETAILS_OPTIONS_MODIFIED")
+				_G._detalhes:RegisterEvent (ThreatMeter, "COMBAT_PLAYER_ENTER")
+				_G._detalhes:RegisterEvent (ThreatMeter, "COMBAT_PLAYER_LEAVE")
+				_G._detalhes:RegisterEvent (ThreatMeter, "DETAILS_INSTANCE_ENDRESIZE")
+				_G._detalhes:RegisterEvent (ThreatMeter, "DETAILS_INSTANCE_SIZECHANGED")
+				_G._detalhes:RegisterEvent (ThreatMeter, "DETAILS_INSTANCE_STARTSTRETCH")
+				_G._detalhes:RegisterEvent (ThreatMeter, "DETAILS_INSTANCE_ENDSTRETCH")
+				_G._detalhes:RegisterEvent (ThreatMeter, "DETAILS_OPTIONS_MODIFIED")
 
 				ThreatMeterFrame:RegisterEvent ("PLAYER_TARGET_CHANGED")
 				ThreatMeterFrame:RegisterEvent ("PLAYER_REGEN_DISABLED")
@@ -950,8 +888,6 @@ function ThreatMeter:OnEvent (_, event, ...)
 				ThreatMeter.saveddata.hide_pull_bar = ThreatMeter.saveddata.hide_pull_bar or false
 				ThreatMeter.saveddata.absolute_mode = ThreatMeter.saveddata.absolute_mode or false
 				ThreatMeter.saveddata.disable_gouge = ThreatMeter.saveddata.disable_gouge or false
-				ThreatMeter.saveddata.show_party_pets = ThreatMeter.saveddata.show_party_pets or false
-                ThreatMeter.saveddata.only_my_group = ThreatMeter.saveddata.only_my_group or false
 
 				ThreatMeter.saveddata.playSound = ThreatMeter.saveddata.playSound or false
 				ThreatMeter.saveddata.playSoundFile = ThreatMeter.saveddata.playSoundFile or "Details Threat Warning Volume 3"
@@ -959,7 +895,7 @@ function ThreatMeter:OnEvent (_, event, ...)
 				ThreatMeter.options = ThreatMeter.saveddata
 
 				--> Register slash commands
-				SLASH_DETAILS_TINYTHREAT1 = "/tinythreat"
+				SLASH_DETAILS_TINYTHREAT1, SLASH_DETAILS_TINYTHREAT2 = "/tinythreat", "/tt"
 
 				function SlashCmdList.DETAILS_TINYTHREAT (msg, editbox)
 

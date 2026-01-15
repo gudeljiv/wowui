@@ -4,7 +4,7 @@ The files in this directory provide an API for interacting with Questie. Everyth
 
 ## How to use it
 
-To use the Questie API, you first need to ensure that Questie is loaded, e.g. by using the `IsAddOnLoaded` API.
+To use the Questie API, you first need to ensure that Questie is loaded, e.g. by using the `C_AddOns.IsAddOnLoaded` API.
 
 Afterward you need to wait for Questie to be fully initialized. Once `Questie.API.isReady` is true, you can be sure the APIs return valid data. If you don't want to poll for it,
 you can register a callback via `Questie.API.RegisterOnReady`, which will be called once Questie is ready.

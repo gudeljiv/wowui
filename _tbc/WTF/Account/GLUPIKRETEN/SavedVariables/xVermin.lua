@@ -303,6 +303,13 @@ xVerminSavedData = {
 ["Befouled Water Elemental"] = {
 "Serpent Sting",
 },
+["Sandfury Shadowcaster"] = {
+"Earthbind",
+},
+["Ambershard Crusher"] = {
+"Chain Lightning",
+"Serpent Sting",
+},
 ["Evolving Ectoplasm"] = {
 "Attack",
 "Chilled",
@@ -321,18 +328,6 @@ xVerminSavedData = {
 "Flame Shock",
 "Corruption",
 "Curse of Agony",
-},
-["Ambershard Crusher"] = {
-"Chain Lightning",
-"Serpent Sting",
-},
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
 },
 ["Sea Spray"] = {
 "Frost Shock",
@@ -372,16 +367,21 @@ xVerminSavedData = {
 "Lava Lash",
 "Flame Shock",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
-"Deep Wound",
+["Whirlwind Ripper"] = {
+"Lightning Shield",
+"Serpent Sting",
 },
 ["Mordresh Fire Eye"] = {
 "Rend",
 "Deep Wound",
 },
-["Sandfury Shadowcaster"] = {
-"Earthbind",
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
 },
 ["Mutanus the Devourer"] = {
 "Shadow Word: Pain",
@@ -406,8 +406,9 @@ xVerminSavedData = {
 ["Enraged Stone Spirit"] = {
 "Rend",
 },
-["Enraged Voidwalker"] = {
-"Poison Cloud",
+["Remote-Controlled Golem"] = {
+"Rend",
+"Deep Wound",
 },
 ["Cracked Skull Soldier"] = {
 "Rend",
@@ -432,9 +433,8 @@ xVerminSavedData = {
 "Lightning Shield",
 "Rend",
 },
-["Whirlwind Ripper"] = {
-"Lightning Shield",
-"Serpent Sting",
+["Enraged Voidwalker"] = {
+"Poison Cloud",
 },
 ["Nelyz"] = {
 "Concussive Shot",

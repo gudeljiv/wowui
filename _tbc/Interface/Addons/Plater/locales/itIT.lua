@@ -5,11 +5,29 @@ do
 
 ------------------------------------------------------------
 --[[Translation missing --]]
+L["A /reload may be required to take effect."] = "A /reload may be required to take effect."
+--[[Translation missing --]]
+L["CVar, saved within Plater profile and restored when loading the profile."] = "CVar, saved within Plater profile and restored when loading the profile."
+--[[Translation missing --]]
+L["EXPORT"] = "Export"
+--[[Translation missing --]]
+L["EXPORT_CAST_COLORS"] = "Share Colors"
+--[[Translation missing --]]
+L["EXPORT_CAST_SOUNDS"] = "Share Sounds"
+--[[Translation missing --]]
 L["HIGHLIGHT_HOVEROVER"] = "Hover Over Highlight"
 --[[Translation missing --]]
 L["HIGHLIGHT_HOVEROVER_ALPHA"] = "Hover Over Highlight Alpha"
 --[[Translation missing --]]
 L["HIGHLIGHT_HOVEROVER_DESC"] = "Highlight effect when the mouse is over the nameplate."
+--[[Translation missing --]]
+L["Hold Shift to change the sound of all casts with the audio %s to %s"] = "Hold Shift to change the sound of all casts with the audio %s to %s"
+--[[Translation missing --]]
+L["IMPORT"] = "Import"
+--[[Translation missing --]]
+L["IMPORT_CAST_COLORS"] = "Import Colors"
+--[[Translation missing --]]
+L["IMPORT_CAST_SOUNDS"] = "Import Sounds"
 L["OPTIONS_ALPHA"] = "Alfa"
 --[[Translation missing --]]
 L["OPTIONS_ALPHABYFRAME_ALPHAMULTIPLIER"] = "Transparency multiplier."
@@ -51,6 +69,14 @@ L["OPTIONS_ANCHOR_TARGET_SIDE"] = "Which side this widget is attach to."
 L["OPTIONS_ANCHOR_TOP"] = "In Alto"
 L["OPTIONS_ANCHOR_TOPLEFT"] = "In Alto a Sinistra"
 L["OPTIONS_ANCHOR_TOPRIGHT"] = "In Alto a Destra"
+--[[Translation missing --]]
+L["OPTIONS_AUDIOCUE_COOLDOWN"] = "Audio Cooldown"
+--[[Translation missing --]]
+L["OPTIONS_AUDIOCUE_COOLDOWN_DESC"] = [=[Amount of time in milliseconds to wait before playing the SAME audio again.
+
+Prevents loud sounds from playing when two or more casts are happening at the same time.
+
+Set to 0 to disable this feature.]=]
 --[[Translation missing --]]
 L["OPTIONS_AURA_DEBUFF_HEIGHT"] = "Debuff's icon height."
 --[[Translation missing --]]
@@ -103,6 +129,12 @@ L["OPTIONS_CAST_SHOW_TARGETNAME_TANK"] = "[Tank] Don't Show Your Name"
 --[[Translation missing --]]
 L["OPTIONS_CAST_SHOW_TARGETNAME_TANK_DESC"] = "If you are a tank don't show the target name if the cast is on you."
 --[[Translation missing --]]
+L["OPTIONS_CASTBAR_APPEARANCE"] = "Cast Bar Appearance"
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_BLIZZCASTBAR"] = "Blizzard Cast Bar"
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_COLORS"] = "Cast Bar Colors"
+--[[Translation missing --]]
 L["OPTIONS_CASTBAR_FADE_ANIM_ENABLED"] = "Enable Fade Animations"
 --[[Translation missing --]]
 L["OPTIONS_CASTBAR_FADE_ANIM_ENABLED_DESC"] = "Enable fade animations when the cast starts and stop."
@@ -131,17 +163,33 @@ L["OPTIONS_CASTBAR_NO_SPELLNAME_LIMIT"] = "No Spell Name Length Limitation"
 --[[Translation missing --]]
 L["OPTIONS_CASTBAR_NO_SPELLNAME_LIMIT_DESC"] = "Spell name text won't be cut to fit within the cast bar width."
 --[[Translation missing --]]
+L["OPTIONS_CASTBAR_QUICKHIDE"] = "Quick Hide Cast Bar"
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_QUICKHIDE_DESC"] = "After the cast finishes, immediately hide the cast bar."
+--[[Translation missing --]]
 L["OPTIONS_CASTBAR_SPARK_HALF"] = "Half Spark"
 --[[Translation missing --]]
 L["OPTIONS_CASTBAR_SPARK_HALF_DESC"] = "Show only half of the spark texture."
 --[[Translation missing --]]
 L["OPTIONS_CASTBAR_SPARK_HIDE_INTERRUPT"] = "Hide Spark On Interrupt"
 --[[Translation missing --]]
+L["OPTIONS_CASTBAR_SPARK_SETTINGS"] = "Spark Settings"
+--[[Translation missing --]]
+L["OPTIONS_CASTBAR_SPELLICON"] = "Spell Icon"
+--[[Translation missing --]]
 L["OPTIONS_CASTBAR_TOGGLE_TEST"] = "Toggle Cast Bar Test"
 --[[Translation missing --]]
 L["OPTIONS_CASTBAR_TOGGLE_TEST_DESC"] = "Start cast bar test, press again to stop."
 --[[Translation missing --]]
 L["OPTIONS_CASTBAR_WIDTH"] = "Width of the cast bar."
+--[[Translation missing --]]
+L["OPTIONS_CASTCOLORS_DISABLE_SOUNDS"] = "Remove All Sounds"
+--[[Translation missing --]]
+L["OPTIONS_CASTCOLORS_DISABLE_SOUNDS_CONFIRM"] = "Are you sure you want to remove all configured cast sounds?"
+--[[Translation missing --]]
+L["OPTIONS_CASTCOLORS_DISABLECOLORS"] = "Disable All Colors"
+--[[Translation missing --]]
+L["OPTIONS_CASTCOLORS_DISABLECOLORS_CONFIRM"] = "Confirm disable all cast colors?"
 --[[Translation missing --]]
 L["OPTIONS_CLICK_SPACE_HEIGHT"] = "The height of the are area which accepts mouse clicks to select the target"
 --[[Translation missing --]]
@@ -236,6 +284,10 @@ L["OPTIONS_ICONSPACING"] = "Icon Spacing"
 --[[Translation missing --]]
 L["OPTIONS_INDICATORS"] = "Indicators"
 --[[Translation missing --]]
+L["OPTIONS_INTERACT_OBJECT_NAME_COLOR"] = "Game object name color"
+--[[Translation missing --]]
+L["OPTIONS_INTERACT_OBJECT_NAME_COLOR_DESC"] = "Names on objects will get this color."
+--[[Translation missing --]]
 L["OPTIONS_INTERRUPT_FILLBAR"] = "Fill Cast Bar On Interrupt"
 --[[Translation missing --]]
 L["OPTIONS_INTERRUPT_SHOW_ANIM"] = "Play Interrupt Animation"
@@ -303,6 +355,19 @@ L["OPTIONS_NOCOMBATALPHA_ENABLED"] = "Use No Combat Alpha"
 L["OPTIONS_NOCOMBATALPHA_ENABLED_DESC"] = [=[Changes the nameplate alpha when you are in combat and the unit isn't.
 
 |cFFFFFF00 Important |r:If the unit isn't in combat, it overrides the alpha from the range check.]=]
+--[[Translation missing --]]
+L["OPTIONS_NOESSENTIAL_DESC"] = [=[On updating Plater, it is common for the new version to also update scripts from the scripts tab.
+This may sometimes overwrite changes made by the creator of the profile. The option below prevents Plater from modifying scripts when the addon receives an update.
+
+Note: During major patches and bug fixes, Plater may still update scripts.]=]
+--[[Translation missing --]]
+L["OPTIONS_NOESSENTIAL_NAME"] = "Disable non-essential script updates during Plater version upgrades."
+--[[Translation missing --]]
+L["OPTIONS_NOESSENTIAL_SKIP_ALERT"] = "Skipped non-essential patch:"
+--[[Translation missing --]]
+L["OPTIONS_NOESSENTIAL_TITLE"] = "Skip Non Essential Script Patches"
+--[[Translation missing --]]
+L["OPTIONS_NOTHING_TO_EXPORT"] = "There's nothing to export."
 L["OPTIONS_OKAY"] = "Ok"
 L["OPTIONS_OUTLINE"] = "Contorno"
 --[[Translation missing --]]
@@ -366,6 +431,8 @@ Character specific setting!]=]
 --[[Translation missing --]]
 L["OPTIONS_SCALE"] = "Scale"
 --[[Translation missing --]]
+L["OPTIONS_SCRIPTING_ADDOPTION"] = "Select which option to add"
+--[[Translation missing --]]
 L["OPTIONS_SCRIPTING_REAPPLY"] = "Re-Apply Default Values"
 L["OPTIONS_SETTINGS_COPIED"] = "impostazioni copiate."
 L["OPTIONS_SETTINGS_FAIL_COPIED"] = "impossibile ottenere le impostazioni per la scheda attualmente selezionata."
@@ -376,6 +443,10 @@ L["OPTIONS_SHIELD_BAR"] = "Shield Bar"
 L["OPTIONS_SHOW_CASTBAR"] = "Show cast bar"
 --[[Translation missing --]]
 L["OPTIONS_SHOW_POWERBAR"] = "Show power bar"
+--[[Translation missing --]]
+L["OPTIONS_SHOWOPTIONS"] = "Show Options"
+--[[Translation missing --]]
+L["OPTIONS_SHOWSCRIPTS"] = "Show Scripts"
 --[[Translation missing --]]
 L["OPTIONS_SHOWTOOLTIP"] = "Show Tooltip"
 --[[Translation missing --]]
@@ -486,6 +557,16 @@ L["OPTIONS_YOFFSET"] = "Offset Y"
 L["OPTIONS_YOFFSET_DESC"] = [=[Adjust the position on the Y axis.
 
 *right click to type the value.]=]
+--[[Translation missing --]]
+L[ [=[Show nameplate for friendly npcs.
+
+|cFFFFFF00 Important |r: This option is dependent on the client`s nameplate state (on/off).
+
+|cFFFFFF00 Important |r: when disabled but enabled on the client through (%s), the healthbar isn't visible but the nameplate is still clickable.]=] ] = [=[Show nameplate for friendly npcs.
+
+|cFFFFFF00 Important |r: This option is dependent on the client`s nameplate state (on/off).
+
+|cFFFFFF00 Important |r: when disabled but enabled on the client through (%s), the healthbar isn't visible but the nameplate is still clickable.]=]
 --[[Translation missing --]]
 L["TARGET_CVAR_ALWAYSONSCREEN"] = "Target Always on the Screen|cFFFF7700*|r"
 --[[Translation missing --]]

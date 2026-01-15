@@ -21,7 +21,7 @@ along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 
 local addonName = ...
 ---@class AdiBags: AceAddon
-local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
+local addon = LibStub("AceAddon-3.0"):GetAddon(addonName, true)
 local L = addon.L
 
 -- Constants for detecting WoW version.
@@ -33,10 +33,10 @@ addon.isCata = WOW_PROJECT_ID == WOW_PROJECT_CATACLYSM_CLASSIC
 
 --<GLOBALS
 local _G = _G
-local BACKPACK_CONTAINER = _G.BACKPACK_CONTAINER or ( Enum.BagIndex and Enum.BagIndex.Backpack ) or 0
-local REAGENTBAG_CONTAINER = ( Enum.BagIndex and Enum.BagIndex.REAGENTBAG_CONTAINER ) or 5
-local BANK_CONTAINER = _G.BANK_CONTAINER or ( Enum.BagIndex and Enum.BagIndex.Bank ) or -1
-local REAGENTBANK_CONTAINER = _G.REAGENTBANK_CONTAINER or ( Enum.BagIndex and Enum.BagIndex.Reagentbank ) or -3
+local BACKPACK_CONTAINER = _G.BACKPACK_CONTAINER or (Enum.BagIndex and Enum.BagIndex.Backpack) or 0
+local REAGENTBAG_CONTAINER = (Enum.BagIndex and Enum.BagIndex.REAGENTBAG_CONTAINER) or 5
+local BANK_CONTAINER = _G.BANK_CONTAINER or (Enum.BagIndex and Enum.BagIndex.Bank) or -1
+local REAGENTBANK_CONTAINER = _G.REAGENTBANK_CONTAINER or (Enum.BagIndex and Enum.BagIndex.Reagentbank) or -3
 local NUM_BAG_SLOTS = _G.NUM_BAG_SLOTS
 local NUM_REAGENTBAG_SLOTS = _G.NUM_REAGENTBAG_SLOTS
 local NUM_TOTAL_EQUIPPED_BAG_SLOTS = _G.NUM_TOTAL_EQUIPPED_BAG_SLOTS
@@ -54,37 +54,48 @@ local BANK_ONLY = {}
 local REAGENTBANK_ONLY = {}
 
 if addon.isRetail then
-
 	-- Bags
-	for i = 1, NUM_TOTAL_EQUIPPED_BAG_SLOTS do BAGS[i] = i end
+	for i = 1, NUM_TOTAL_EQUIPPED_BAG_SLOTS do
+		BAGS[i] = i
+	end
 
 	-- Base bank bags
 	BANK_ONLY = { [BANK_CONTAINER] = BANK_CONTAINER }
-	for i = NUM_TOTAL_EQUIPPED_BAG_SLOTS + 1, NUM_TOTAL_EQUIPPED_BAG_SLOTS + NUM_BANKBAGSLOTS do BANK_ONLY[i] = i end
+	for i = NUM_TOTAL_EQUIPPED_BAG_SLOTS + 1, NUM_TOTAL_EQUIPPED_BAG_SLOTS + NUM_BANKBAGSLOTS do
+		BANK_ONLY[i] = i
+	end
 
 	--- Reagent bank bags
 	REAGENTBANK_ONLY = { [REAGENTBANK_CONTAINER] = REAGENTBANK_CONTAINER }
 
 	-- All bank bags
-	for _, bags in ipairs { BANK_ONLY, REAGENTBANK_ONLY } do
-		for id in pairs(bags) do BANK[id] = id end
+	for _, bags in ipairs({ BANK_ONLY, REAGENTBANK_ONLY }) do
+		for id in pairs(bags) do
+			BANK[id] = id
+		end
 	end
 else
-	for i = 1, NUM_BAG_SLOTS do BAGS[i] = i end
+	for i = 1, NUM_BAG_SLOTS do
+		BAGS[i] = i
+	end
 	BANK = { [BANK_CONTAINER] = BANK_CONTAINER }
-	for i = NUM_BAG_SLOTS + 1, NUM_BAG_SLOTS + NUM_BANKBAGSLOTS do BANK[i] = i end
+	for i = NUM_BAG_SLOTS + 1, NUM_BAG_SLOTS + NUM_BANKBAGSLOTS do
+		BANK[i] = i
+	end
 end
 
 -- All bags
 local ALL = {}
-for _, bags in ipairs { BAGS, BANK } do
-	for id in pairs(bags) do ALL[id] = id end
+for _, bags in ipairs({ BAGS, BANK }) do
+	for id in pairs(bags) do
+		ALL[id] = id
+	end
 end
 
 -- Expansion names
 addon.EXPANSION_MAP = {
 	[_G.LE_EXPANSION_CLASSIC] = _G.EXPANSION_NAME0,
-	[_G.LE_EXPANSION_BURNING_CRUSADE] = _G.EXPANSION_NAME1
+	[_G.LE_EXPANSION_BURNING_CRUSADE] = _G.EXPANSION_NAME1,
 }
 if addon.isRetail or addon.isWrath or addon.isCata then
 	addon.EXPANSION_MAP[_G.LE_EXPANSION_WRATH_OF_THE_LICH_KING] = _G.EXPANSION_NAME2
@@ -104,16 +115,16 @@ end
 -- Tradeskill subclassID -> subclassName
 -- Note that this differs from what GetItemSubClassInfo returns (in comments); non-retail client returns aren't obsoleted.
 addon.TRADESKILL_MAP = {
-	[ 0] = GetItemSubClassInfo(TRADE_GOODS, 0),  -- "Trade Goods (OBSOLETE)"
-	[ 1] = L["Engineering"],                     -- "Parts"
-	[ 2] = GetItemSubClassInfo(TRADE_GOODS, 2),  -- "Explosives (OBSOLETE)"
-	[ 3] = GetItemSubClassInfo(TRADE_GOODS, 3),  -- "Devices (OBSOLETE)"
-	[ 4] = GetItemSubClassInfo(TRADE_GOODS, 4),  -- "Jewelcrafting"
-	[ 5] = L["Tailoring"],                       -- "Cloth"
-	[ 6] = L["Leatherworking"],                  -- "Leather"
-	[ 7] = L["Mining"],                          -- "Metal & Stone"
-	[ 8] = GetItemSubClassInfo(TRADE_GOODS, 8),  -- "Cooking"
-	[ 9] = L["Herbalism"],                       -- "Herb"
+	[0] = GetItemSubClassInfo(TRADE_GOODS, 0), -- "Trade Goods (OBSOLETE)"
+	[1] = L["Engineering"], -- "Parts"
+	[2] = GetItemSubClassInfo(TRADE_GOODS, 2), -- "Explosives (OBSOLETE)"
+	[3] = GetItemSubClassInfo(TRADE_GOODS, 3), -- "Devices (OBSOLETE)"
+	[4] = GetItemSubClassInfo(TRADE_GOODS, 4), -- "Jewelcrafting"
+	[5] = L["Tailoring"], -- "Cloth"
+	[6] = L["Leatherworking"], -- "Leather"
+	[7] = L["Mining"], -- "Metal & Stone"
+	[8] = GetItemSubClassInfo(TRADE_GOODS, 8), -- "Cooking"
+	[9] = L["Herbalism"], -- "Herb"
 	[10] = GetItemSubClassInfo(TRADE_GOODS, 10), -- "Elemental"
 	[11] = GetItemSubClassInfo(TRADE_GOODS, 11), -- "Other"
 	[12] = GetItemSubClassInfo(TRADE_GOODS, 12), -- "Enchanting"
@@ -131,18 +142,18 @@ addon.BAG_IDS = {
 	BANK = BANK,
 	BANK_ONLY = BANK_ONLY,
 	REAGENTBANK_ONLY = REAGENTBANK_ONLY,
-	ALL = ALL
+	ALL = ALL,
 }
 
 addon.FAMILY_TAGS = {
---@noloc[[
+	--@noloc[[
 	[0x00001] = L["QUIVER_TAG"], -- Quiver
 	[0x00002] = L["AMMO_TAG"], -- Ammo Pouch
 	[0x00004] = L["SOUL_BAG_TAG"], -- Soul Bag
 	[0x00008] = L["LEATHERWORKING_BAG_TAG"], -- Leatherworking Bag
 	[0x00010] = L["INSCRIPTION_BAG_TAG"], -- Inscription Bag
 	[0x00020] = L["HERB_BAG_TAG"], -- Herb Bag
-	[0x00040] = L["ENCHANTING_BAG_TAG"] , -- Enchanting Bag
+	[0x00040] = L["ENCHANTING_BAG_TAG"], -- Enchanting Bag
 	[0x00080] = L["ENGINEERING_BAG_TAG"], -- Engineering Bag
 	[0x00100] = L["KEYRING_TAG"], -- Keyring
 	[0x00200] = L["GEM_BAG_TAG"], -- Gem Bag
@@ -150,7 +161,7 @@ addon.FAMILY_TAGS = {
 	[0x00800] = L["REAGENT_BAG_TAG"], -- Reagent Bag
 	[0x08000] = L["TACKLE_BOX_TAG"], -- Tackle Box
 	[0x10000] = L["COOKING_BAR_TAG"], -- Refrigerator
---@noloc]]
+	--@noloc]]
 }
 
 addon.FAMILY_ICONS = {
@@ -196,7 +207,7 @@ addon.DEFAULT_SETTINGS = {
 		bags = {
 			["*"] = true,
 		},
-    deprecationPhase = 1,
+		deprecationPhase = 1,
 		positionMode = "manual",
 		positions = {
 			anchor = { point = "BOTTOMRIGHT", xOffset = -32, yOffset = 200 },
@@ -214,12 +225,12 @@ addon.DEFAULT_SETTINGS = {
 		dimJunk = true,
 		questIndicator = true,
 		showBagType = true,
-		filters = { ['*'] = true },
+		filters = { ["*"] = true },
 		filterPriorities = {},
-		sortingOrder = 'default',
-		modules = { ['*'] = true },
+		sortingOrder = "default",
+		modules = { ["*"] = true },
 		virtualStacks = {
-			['*'] = false,
+			["*"] = false,
 			freeSpace = true,
 			notWhenTrading = 1,
 		},
@@ -266,7 +277,6 @@ addon.DEFAULT_SETTINGS = {
 						color = { 0, 0, 0.0, 1 },
 						bagFont = addon.BagFontDefault,
 						sectionFont = addon.SectionFontDefault,
-
 					},
 					reagentBank = {
 						background = "Blizzard Dialog Background",
@@ -289,7 +299,7 @@ addon.DEFAULT_SETTINGS = {
 	},
 	char = {
 		collapsedSections = {
-			['*'] = false,
+			["*"] = false,
 		},
 	},
 }
@@ -298,24 +308,24 @@ addon.DEFAULT_SETTINGS = {
 
 ---@enum ItemBindType The binding types for items.
 Enum.ItemBindType = {
-  LE_ITEM_BIND_NONE = 0,
-  LE_ITEM_BIND_ON_ACQUIRE = 1,
-  LE_ITEM_BIND_ON_EQUIP = 2,
-  LE_ITEM_BIND_ON_USE = 3,
-  LE_ITEM_BIND_QUEST = 4,
+	LE_ITEM_BIND_NONE = 0,
+	LE_ITEM_BIND_ON_ACQUIRE = 1,
+	LE_ITEM_BIND_ON_EQUIP = 2,
+	LE_ITEM_BIND_ON_USE = 3,
+	LE_ITEM_BIND_QUEST = 4,
 }
 
 ---@enum ExpansionType The expansion type for items.
 Enum.ExpansionType = {
-  LE_EXPANSION_CLASSIC = 0,
-  LE_EXPANSION_BURNING_CRUSADE = 1,
-  LE_EXPANSION_WRATH_OF_THE_LICH_KING = 2,
-  LE_EXPANSION_CATACLYSM = 3,
-  LE_EXPANSION_MISTS_OF_PANDARIA = 4,
-  LE_EXPANSION_WARLORDS_OF_DRAENOR = 5,
-  LE_EXPANSION_LEGION = 6,
-  LE_EXPANSION_BATTLE_FOR_AZEROTH = 7,
-  LE_EXPANSION_SHADOWLANDS = 8,
-  LE_EXPANSION_DRAGONFLIGHT = 9,
-  LE_EXPANSION_WAR_WITHIN = 10,
+	LE_EXPANSION_CLASSIC = 0,
+	LE_EXPANSION_BURNING_CRUSADE = 1,
+	LE_EXPANSION_WRATH_OF_THE_LICH_KING = 2,
+	LE_EXPANSION_CATACLYSM = 3,
+	LE_EXPANSION_MISTS_OF_PANDARIA = 4,
+	LE_EXPANSION_WARLORDS_OF_DRAENOR = 5,
+	LE_EXPANSION_LEGION = 6,
+	LE_EXPANSION_BATTLE_FOR_AZEROTH = 7,
+	LE_EXPANSION_SHADOWLANDS = 8,
+	LE_EXPANSION_DRAGONFLIGHT = 9,
+	LE_EXPANSION_WAR_WITHIN = 10,
 }

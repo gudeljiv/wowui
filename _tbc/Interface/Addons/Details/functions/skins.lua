@@ -1,10 +1,9 @@
 
-local _detalhes = _G.Details
-local Loc = LibStub("AceLocale-3.0"):GetLocale ( "Details" )
+local _detalhes = _G._detalhes
+local Loc = LibStub ("AceLocale-3.0"):GetLocale ( "Details" )
 local _
-local addonName, Details222 = ...
 
-	--install skin function:
+	--> install skin function:
 	function _detalhes:InstallSkin (skin_name, skin_table)
 		if (not skin_name) then
 			return false
@@ -31,12 +30,12 @@ local addonName, Details222 = ...
 				Details:Msg("cannot install a skin without 'skin.no_cache' before 'Details.IsLoaded()' is true.")
 			end
 		end
-
+		
 		skin_table.author = skin_table.author or ""
 		skin_table.version = skin_table.version or ""
 		skin_table.site = skin_table.site or ""
 		skin_table.desc = skin_table.desc or ""
-
+		
 		_detalhes.skins [skin_name] = skin_table
 
 		--check instances waiting for a skin
@@ -54,38 +53,38 @@ local addonName, Details222 = ...
 
 		return true
 	end
-
+	
 	function _detalhes:GetSkin (skin_name)
 		return _detalhes.skins [skin_name]
 	end
-
+	
 	local reset_tooltip = function()
-		_detalhes:SetTooltipBackdrop("Blizzard Tooltip", 16, {1, 1, 1, 1})
+		_detalhes:SetTooltipBackdrop ("Blizzard Tooltip", 16, {1, 1, 1, 1})
 		_detalhes:DelayOptionsRefresh()
 	end
 	local set_tooltip_elvui1 = function()
-		_detalhes:SetTooltipBackdrop("Blizzard Tooltip", 16, {0, 0, 0, 1})
+		_detalhes:SetTooltipBackdrop ("Blizzard Tooltip", 16, {0, 0, 0, 1})
 		_detalhes:DelayOptionsRefresh()
 	end
 	local set_tooltip_elvui2 = function()
-		_detalhes:SetTooltipBackdrop("Blizzard Tooltip", 16, {1, 1, 1, 0})
+		_detalhes:SetTooltipBackdrop ("Blizzard Tooltip", 16, {1, 1, 1, 0})
 		_detalhes:DelayOptionsRefresh()
 	end
-
-	--install wow interface skin:
+	
+	--> install wow interface skin:
 	_detalhes:InstallSkin ("WoW Interface", {
-		file = [[Interface\AddOns\Details\images\skins\default_skin.blp]],
-		author = "Details!",
-		version = "1.0",
-		site = "unknown",
-		desc = "This was the first skin made for Details!, inspired in the standard wow interface",
+		file = [[Interface\AddOns\Details\images\skins\default_skin.blp]], 
+		author = "Details!", 
+		version = "1.0", 
+		site = "unknown", 
+		desc = "This was the first skin made for Details!, inspired in the standard wow interface", 
 		no_cache = true,
-
-		can_change_alpha_head = false,
-		icon_anchor_main = {-1, 1},
-		icon_anchor_plugins = {-9, -7},
+		
+		can_change_alpha_head = false, 
+		icon_anchor_main = {-1, 1}, 
+		icon_anchor_plugins = {-9, -7}, 
 		icon_plugins_size = {19, 19},
-
+		
 		-- the four anchors:
 		icon_point_anchor = {-37, 0},
 		left_corner_anchor = {-107, 0},
@@ -94,12 +93,12 @@ local addonName, Details222 = ...
 		icon_point_anchor_bottom = {-37, 0},
 		left_corner_anchor_bottom = {-107, 0},
 		right_corner_anchor_bottom = {96, 0},
-
+		
 		attribute_icon_anchor = {34, -6},
-		attribute_icon_size = 24,
-
+		attribute_icon_size = {24, 24},
+		
 		micro_frames = {left = "DETAILS_STATUSBAR_PLUGIN_THREAT"},
-
+		
 		instance_cprops = {
 			menu_icons_alpha = 0.92,
 			["menu_icons_size"] = 0.85,
@@ -278,7 +277,7 @@ local addonName, Details222 = ...
 			["hide_icon"] = false,
 			["bg_b"] = 0.0941,
 		},
-
+		
 		skin_options = {
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP"], func = reset_tooltip, desc = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3"], func = set_tooltip_elvui2, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3_DESC"]},
@@ -286,16 +285,16 @@ local addonName, Details222 = ...
 	})
 
 	local Minimalistic_Shadow = function()
-
+	
 		local instance = _G.DetailsOptionsWindow and _G.DetailsOptionsWindow.instance
-
+		
 		if (instance) then
 			instance:ToolbarMenuSetButtonsOptions (nil, true)
 			instance:AttributeMenu (nil, nil, nil, nil, nil, nil, nil, true)
 			instance:AttributeMenu (nil, nil, 4)
-
+			
 			if (_detalhes.options_group_edit) then
-				for _, this_instance in ipairs(instance:GetInstanceGroup()) do
+				for _, this_instance in ipairs (instance:GetInstanceGroup()) do
 					if (this_instance ~= instance) then
 						this_instance:ToolbarMenuSetButtonsOptions (nil, true)
 						this_instance:AttributeMenu (nil, nil, nil, nil, nil, nil, nil, true)
@@ -303,33 +302,33 @@ local addonName, Details222 = ...
 					end
 				end
 			end
-
+			
 			_detalhes:SendOptionsModifiedEvent (DetailsOptionsWindow.instance)
 		end
-
+	
 	end
-
+	
 	_detalhes:InstallSkin ("Minimalistic", {
-		file = [[Interface\AddOns\Details\images\skins\classic_skin_v1]],
-		author = "Details!",
-		version = "1.0",
-		site = "unknown",
+		file = [[Interface\AddOns\Details\images\skins\classic_skin_v1.blp]],
+		author = "Details!", 
+		version = "1.0", 
+		site = "unknown", 
 		desc = "Simple skin with soft gray color and half transparent frames.", --\n
 		no_cache = true,
-
+		
 		--micro frames
 		micro_frames = {
-			color = {1, 1, 1, 1},
-			font = "Accidental Presidency",
+			color = {1, 1, 1, 1}, 
+			font = "Accidental Presidency", 
 			size = 10,
 			textymod = 1,
 		},
-
-		can_change_alpha_head = true,
-		icon_anchor_main = {-1, -5},
-		icon_anchor_plugins = {-7, -13},
+		
+		can_change_alpha_head = true, 
+		icon_anchor_main = {-1, -5}, 
+		icon_anchor_plugins = {-7, -13}, 
 		icon_plugins_size = {19, 18},
-
+		
 		--anchors:
 		icon_point_anchor = {-37, 0},
 		left_corner_anchor = {-107, 0},
@@ -338,29 +337,27 @@ local addonName, Details222 = ...
 		icon_point_anchor_bottom = {-37, 12},
 		left_corner_anchor_bottom = {-107, 0},
 		right_corner_anchor_bottom = {96, 0},
-
+		
 		icon_on_top = true,
 		icon_ignore_alpha = true,
 		icon_titletext_position = {3, 3},
+		
 		--overwrites
 		instance_cprops = {
 			menu_icons_alpha = 0.92,
-			["menu_icons_size"] = 0.82,
+			["menu_icons_size"] = 0.850000023841858,
 			["color"] = {
-				0.1137,
-				0.1098,
-				0.12156,
-				0.9571,
+				0.0705882352941177, -- [1]
+				0.0705882352941177, -- [2]
+				0.0705882352941177, -- [3]
+				0.639196664094925, -- [4]
 			},
 			["menu_anchor"] = {
-				20,
-				0,
+				16, -- [1]
+				0, -- [2]
 				["side"] = 2,
 			},
-			["bg_r"] = 0.243,
-			["bg_g"] = 0.2352,
-			["bg_b"] = 0.2588,
-			["bg_alpha"] = 0.6901,
+			["bg_r"] = 0.0941176470588235,
 			["color_buttons"] = {
 				1, -- [1]
 				1, -- [2]
@@ -371,9 +368,6 @@ local addonName, Details222 = ...
 				16, -- [1]
 				-3, -- [2]
 			},
-
-			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons_2_shadow",
-
 			["attribute_text"] = {
 				["enabled"] = true,
 				["shadow"] = false,
@@ -382,8 +376,8 @@ local addonName, Details222 = ...
 				["custom_text"] = "{name}",
 				["text_face"] = "Accidental Presidency",
 				["anchor"] = {
-					1.4, -- [1]
-					2, -- [2]
+					-18, -- [1]
+					3, -- [2]
 				},
 				["text_color"] = {
 					1, -- [1]
@@ -392,8 +386,8 @@ local addonName, Details222 = ...
 					1, -- [4]
 				},
 				["enable_custom_text"] = false,
-				["show_timer_always"] = true,
 			},
+			["bg_alpha"] = 0.183960914611816,
 			["plugins_grow_direction"] = 1,
 			["menu_icons"] = {
 				true, -- [1]
@@ -413,15 +407,16 @@ local addonName, Details222 = ...
 				0.333333333333333, -- [1]
 				0.333333333333333, -- [2]
 				0.333333333333333, -- [3]
+				
 				},
 			},
-			["hide_icon"] = false,
+			["hide_icon"] = true,
 			["instance_button_anchor"] = {
 				-27, -- [1]
 				1, -- [2]
 			},
 			["toolbar_side"] = 1,
-
+			["bg_g"] = 0.0941176470588235,
 			["backdrop_texture"] = "Details Ground",
 			["show_statusbar"] = false,
 			["show_sidebars"] = false,
@@ -474,7 +469,7 @@ local addonName, Details222 = ...
 				["textL_custom_text"] = "{data1}. {data3}{data2}",
 				["font_size"] = 16,
 				["height"] = 21,
-				["texture_file"] = "Interface\\AddOns\\Details\\images\\bar_textures\\bar_best.png",
+				["texture_file"] = "Interface\\AddOns\\Details\\images\\BantoBar",
 				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes_small",
 				["textR_bracket"] = "(",
 				["textR_enable_custom_text"] = false,
@@ -485,7 +480,7 @@ local addonName, Details222 = ...
 				},
 				["textL_show_number"] = true,
 				["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-				["texture"] = "You Are the Best!",
+				["texture"] = "BantoBar",
 				["use_spec_icons"] = true,
 				["textR_class_colors"] = false,
 				["textL_class_colors"] = false,
@@ -524,41 +519,42 @@ local addonName, Details222 = ...
 					["texture"] = "Details BarBorder 2",
 				},
 			},
+			["bg_b"] = 0.0941176470588235,
 		},
-
-		callback = function(skin, instance, just_updating)
+		
+		callback = function (skin, instance, just_updating)
 			--none
 		end,
-
+		
 		skin_options = {
 			{spacement = true, type = "button", name = "Shadowy Title Bar", func = Minimalistic_Shadow, desc = "Adds shadow on title bar components."},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP"], func = reset_tooltip, desc = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3"], func = set_tooltip_elvui2, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3_DESC"]},
 		}
-
+		
 	})
-
+	
 	_detalhes:InstallSkin ("Minimalistic v2", {
 		file = [[Interface\AddOns\Details\images\skins\classic_skin.blp]],
-		author = "Details!",
-		version = "1.0",
-		site = "unknown",
+		author = "Details!", 
+		version = "1.0", 
+		site = "unknown", 
 		desc = "Same as the first Minimalistic, but this one is more darker and less transparent.",
 		no_cache = true,
-
+		
 		--micro frames
 		micro_frames = {
-			color = {1, 1, 1, 0.7},
-			font = "Friz Quadrata TT",
+			color = {1, 1, 1, 0.7}, 
+			font = "Friz Quadrata TT", 
 			size = 9,
 			textymod = 0,
 		},
-
-		can_change_alpha_head = true,
-		icon_anchor_main = {-1, -5},
-		icon_anchor_plugins = {-7, -13},
+		
+		can_change_alpha_head = true, 
+		icon_anchor_main = {-1, -5}, 
+		icon_anchor_plugins = {-7, -13}, 
 		icon_plugins_size = {19, 18},
-
+		
 		--anchors:
 		icon_point_anchor = {-37, 0},
 		left_corner_anchor = {-107, 0},
@@ -567,11 +563,11 @@ local addonName, Details222 = ...
 		icon_point_anchor_bottom = {-37, 12},
 		left_corner_anchor_bottom = {-107, 0},
 		right_corner_anchor_bottom = {96, 0},
-
+		
 		icon_on_top = true,
 		icon_ignore_alpha = true,
 		icon_titletext_position = {5, 4},
-
+		
 		--overwrites
 		instance_cprops = {
 			menu_icons_alpha = 0.92,
@@ -748,41 +744,41 @@ local addonName, Details222 = ...
 			},
 			["bg_b"] = 0.0941,
 		},
-
-		callback = function(skin, instance, just_updating)
+		
+		callback = function (skin, instance, just_updating)
 			--none
 		end,
-
+		
 		skin_options = {
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP"], func = reset_tooltip, desc = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3"], func = set_tooltip_elvui2, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3_DESC"]},
 		}
-
+		
 	})
 
 	_detalhes:InstallSkin ("Serenity", {
 		file = [[Interface\AddOns\Details\images\skins\flat_skin.blp]],
-		author = "Details!",
-		version = "1.0",
-		site = "unknown",
-		desc = "Light blue, this skin fits on almost all interfaces.\n\nFor ElvUI interfaces, change the window color to black to get an compatible visual.",
+		author = "Details!", 
+		version = "1.0", 
+		site = "unknown", 
+		desc = "Light blue, this skin fits on almost all interfaces.\n\nFor ElvUI interfaces, change the window color to black to get an compatible visual.", 
 		no_cache = true,
 
 		--micro frames
 		micro_frames = {
 			left = "DETAILS_STATUSBAR_PLUGIN_PATTRIBUTE",
-			color = {1, 1, 1, 0.7},
-			font = "Accidental Presidency",
+			color = {1, 1, 1, 0.7}, 
+			font = "Accidental Presidency", 
 			size = 10,
 			textymod = 0,
 		},
-
-		can_change_alpha_head = true,
-
-		icon_anchor_main = {-1, -5},
-		icon_anchor_plugins = {-7, -13},
+		
+		can_change_alpha_head = true, 
+		
+		icon_anchor_main = {-1, -5}, 
+		icon_anchor_plugins = {-7, -13}, 
 		icon_plugins_size = {19, 18},
-
+		
 		-- the four anchors:
 		icon_point_anchor = {-37, 0},
 		left_corner_anchor = {-107, 0},
@@ -795,7 +791,7 @@ local addonName, Details222 = ...
 		icon_on_top = true,
 		icon_ignore_alpha = true,
 		icon_titletext_position = {1, 2},
-
+		
 		instance_cprops = {
 			menu_icons_alpha = 0.92,
 			["show_statusbar"] = false,
@@ -995,22 +991,22 @@ local addonName, Details222 = ...
 			["hide_icon"] = true,
 			["bg_b"] = 0.454901960784314,
  		},
-
+		
 		skin_options = {
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP"], func = reset_tooltip, desc = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3"], func = set_tooltip_elvui2, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3_DESC"]},
 		}
 	})
-
+	
 	local align_right_chat = function()
-
+	
 		if (not RightChatPanel or not RightChatPanel:IsShown()) then
-			_detalhes:Msg("Right Chat Panel isn't shown.")
+			_detalhes:Msg ("Right Chat Panel isn't shown.")
 			return
 		end
-
+		
 		local wight, height = RightChatPanel:GetSize()
-
+	
 		local instance1 = _detalhes.tabela_instancias [1]
 		local instance2 = _detalhes.tabela_instancias [2]
 		local instance3 = _detalhes.tabela_instancias [3]
@@ -1022,105 +1018,104 @@ local addonName, Details222 = ...
 			instance2:AtivarInstancia()
 			instance2:ChangeSkin (instance1.skin)
 		end
-
+		
 		if (instance3 and instance3:IsEnabled() and instance3.baseframe) then
 			instance3:ShutDown()
 		end
-
+	
 		instance1:UngroupInstance()
 		instance2:UngroupInstance()
-
+	
 		instance1.baseframe:ClearAllPoints()
 		instance2.baseframe:ClearAllPoints()
 
 		local statusbar_enabled1 = instance1.show_statusbar
 		local statusbar_enabled2 = instance2.show_statusbar
-
+		
 		local ElvUIRightChatDataPanel = RightChatDataPanel and RightChatDataPanel:IsShown()
-
+		
 		if (instance1.skin == "Forced Square") then
-			instance1.baseframe:SetSize(wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
-			instance2.baseframe:SetSize(wight/2 - 4 + 2, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
-
+			instance1.baseframe:SetSize (wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
+			instance2.baseframe:SetSize (wight/2 - 4 + 2, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
+			
 		elseif (instance1.skin == "ElvUI Frame Style") then
-			instance1.baseframe:SetSize(wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
-			instance2.baseframe:SetSize(wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
-
+			instance1.baseframe:SetSize (wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
+			instance2.baseframe:SetSize (wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
+			
 		elseif (instance1.skin == "ElvUI Style II") then
-			instance1.baseframe:SetSize(wight/2 - 4 - 2, height - 20 - 2 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
-			instance2.baseframe:SetSize(wight/2 - 4 - 2, height - 20 - 2 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
-
+			instance1.baseframe:SetSize (wight/2 - 4 - 2, height - 20 - 2 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
+			instance2.baseframe:SetSize (wight/2 - 4 - 2, height - 20 - 2 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
+			
 		else
-			instance1.baseframe:SetSize(wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
-			instance2.baseframe:SetSize(wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
-
+			instance1.baseframe:SetSize (wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled1 and 14 or 0))
+			instance2.baseframe:SetSize (wight/2 - 4, height-20 - (ElvUIRightChatDataPanel and 21 or 0) - 8 - (statusbar_enabled2 and 14 or 0))
+			
 		end
 
-		Details:Destroy(instance1.snap)
-		Details:Destroy(instance2.snap)
+		table.wipe (instance1.snap); table.wipe (instance2.snap)
 		instance1.snap [3] = 2; instance2.snap [1] = 1;
 		instance1.horizontalSnap = true; instance2.horizontalSnap = true
-
-		instance1.baseframe:SetPoint("bottomleft", RightChatDataPanel, "topleft", 1 - (instance1.skin == "Forced Square" and 1 or 0), 1 + (statusbar_enabled1 and 14 or 0) - (ElvUIRightChatDataPanel and 0 or 22))
-		instance2.baseframe:SetPoint("bottomright", RightChatToggleButton, "topright", -1, 1 + (statusbar_enabled2 and 14 or 0) - (ElvUIRightChatDataPanel and 0 or 22))
-
+		
+		instance1.baseframe:SetPoint ("bottomleft", RightChatDataPanel, "topleft", 1 - (instance1.skin == "Forced Square" and 1 or 0), 1 + (statusbar_enabled1 and 14 or 0) - (ElvUIRightChatDataPanel and 0 or 22))
+		instance2.baseframe:SetPoint ("bottomright", RightChatToggleButton, "topright", -1, 1 + (statusbar_enabled2 and 14 or 0) - (ElvUIRightChatDataPanel and 0 or 22))
+	
 		instance1:LockInstance (true)
 		instance2:LockInstance (true)
-
+	
 		instance1:SaveMainWindowPosition()
 		instance2:SaveMainWindowPosition()
 
-		_detalhes.move_janela_func(instance1.baseframe, true, instance1)
-		_detalhes.move_janela_func(instance1.baseframe, false, instance1)
-		_detalhes.move_janela_func(instance2.baseframe, true, instance2)
-		_detalhes.move_janela_func(instance2.baseframe, false, instance2)
-
+		_detalhes.move_janela_func (instance1.baseframe, true, instance1)
+		_detalhes.move_janela_func (instance1.baseframe, false, instance1)
+		_detalhes.move_janela_func (instance2.baseframe, true, instance2)
+		_detalhes.move_janela_func (instance2.baseframe, false, instance2)
+		
 	end
-
+	
 	_detalhes:InstallSkin ("Forced Square", {
 		file = [[Interface\AddOns\Details\images\skins\simplygray_skin.blp]],
-		author = "Details!",
-		version = "1.0",
-		site = "unknown",
-		desc = "Very clean skin without textures and only with a black contour.",
+		author = "Details!", 
+		version = "1.0", 
+		site = "unknown", 
+		desc = "Very clean skin without textures and only with a black contour.", 
 		no_cache = true,
 
 		--general
-		can_change_alpha_head = true,
+		can_change_alpha_head = true, 
 
 		--icon anchors
 		icon_anchor_main = {-1, -5},
 		icon_anchor_plugins = {-7, -13},
 		icon_plugins_size = {19, 18},
-
+		
 		--micro frames
 		micro_frames = {
 			color = {.7, .7, .7, 0.7},
-			font = "FORCED SQUARE",
+			font = "FORCED SQUARE", 
 			size = 10,
 			textymod = 1,
-		},
+		},		
 
 		-- the four anchors (for when the toolbar is on the top side)
 		icon_point_anchor = {-37, 0},
 		left_corner_anchor = {-107, 0},
 		right_corner_anchor = {96, 0},
-
+		
 		-- the four anchors (for when the toolbar is on the bottom side)
 		icon_point_anchor_bottom = {-37, 12},
 		left_corner_anchor_bottom = {-107, 0},
 		right_corner_anchor_bottom = {96, 0},
 
 		--[[ callback function execute after all changes on the window, first argument is this skin table, second is the instance where the skin was applied --]]
-		callback = function(self, instance) end,
+		callback = function (self, instance) end,
 		--[[ control_script is a OnUpdate script, it start right after all changes on the window and also after the callback --]]
 		--[[ control_script_on_start run before the control_script, use it to reset values if needed --]]
 		control_script_on_start = nil,
 		control_script = nil,
-
+		
 		icon_ignore_alpha = true,
 		icon_titletext_position = {3, 4},
-
+		
 		--instance overwrites
 		--[[ when a skin is selected, all customized properties of the window is reseted and then the overwrites are applied]]
 		--[[ for the complete cprop list see the file classe_instancia_include.lua]]
@@ -1330,25 +1325,25 @@ local addonName, Details222 = ...
 			["bg_alpha"] = 0.0491309501230717,
 			["bg_b"] = 0,
 		},
-
+		
 		skin_options = {
 			{spacement = true, type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON1"], func = align_right_chat, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON1_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP"], func = reset_tooltip, desc = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3"], func = set_tooltip_elvui2, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3_DESC"]},
 		}
-
+		
 	})
-
+		
 	_detalhes:InstallSkin ("ElvUI Frame Style", {
 		file = [[Interface\AddOns\Details\images\skins\elvui.blp]],
-		author = "Details!",
-		version = "1.0",
-		site = "unknown",
-		desc = "This skin is based on ElvUI's addons, relying with black and transparent frames.",
+		author = "Details!", 
+		version = "1.0", 
+		site = "unknown", 
+		desc = "This skin is based on ElvUI's addons, relying with black and transparent frames.", 
 		no_cache = true,
 
 		--general
-		can_change_alpha_head = true,
+		can_change_alpha_head = true, 
 
 		--icon anchors
 		icon_anchor_main = {-4, -5},
@@ -1358,36 +1353,36 @@ local addonName, Details222 = ...
 		--micro frames
 		micro_frames = {
 			color = {1, 1, 1, 0.7},
-			font = "FORCED SQUARE",
+			font = "FORCED SQUARE", 
 			size = 10,
 			textymod = 1,
 		},
-
+		
 		-- the four anchors (for when the toolbar is on the top side)
 		icon_point_anchor = {-35, -0.5},
 		left_corner_anchor = {-107, 0},
 		right_corner_anchor = {96, 0},
-
+		
 		-- the four anchors (for when the toolbar is on the bottom side)
 		icon_point_anchor_bottom = {-37, 12},
 		left_corner_anchor_bottom = {-107, 0},
 		right_corner_anchor_bottom = {96, 0},
 
 		--[[ callback function execute after all changes on the window, first argument is this skin table, second is the instance where the skin was applied --]]
-		callback = function(self, instance) end,
+		callback = function (self, instance) end,
 		--[[ control_script is a OnUpdate script, it start right after all changes on the window and also after the callback --]]
 		--[[ control_script_on_start run before the control_script, use it to reset values if needed --]]
 		control_script_on_start = nil,
 		control_script = nil,
-
+		
 		--instance overwrites
 		--[[ when a skin is selected, all customized properties of the window is reseted and then the overwrites are applied]]
 		--[[ for the complete cprop list see the file classe_instancia_include.lua]]
-
+		
 		icon_on_top = true,
 		icon_ignore_alpha = true,
 		icon_titletext_position = {2, 5},
-
+		
 		instance_cprops = {
 			menu_icons_alpha = 0.92,
 			["menu_icons_size"] = 0.899999976158142,
@@ -1519,9 +1514,9 @@ local addonName, Details222 = ...
 					["texture"] = "Details BarBorder 2",
 				},
 			},
-
+			
 			["show_sidebars_need_resize_by"] = 1,
-
+			
 			["auto_hide_menu"] = {
 				["left"] = false,
 				["right"] = false,
@@ -1582,63 +1577,63 @@ local addonName, Details222 = ...
 			["hide_icon"] = true,
 			["bg_b"] = 0.3294,
 		},
-
+		
 		skin_options = {
 			{spacement = true, type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON1"], func = align_right_chat, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON1_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON2"], func = set_tooltip_elvui1, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON2_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3"], func = set_tooltip_elvui2, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3_DESC"]},
 		}
 	})
-
+	
 	_detalhes:InstallSkin ("ElvUI Style II", {
 		file = [[Interface\AddOns\Details\images\skins\elvui_opaque.blp]],
-		author = "Details!",
-		version = "1.0",
-		site = "unknown",
-		desc = "based on AddonSkins for ElvUI, this skin has opaque title bar and background.",
+		author = "Details!", 
+		version = "1.0", 
+		site = "unknown", 
+		desc = "based on AddonSkins for ElvUI, this skin has opaque title bar and background.", 
 		no_cache = true,
 
 		--general
-		can_change_alpha_head = true,
+		can_change_alpha_head = true, 
 
 		--icon anchors
 		icon_anchor_main = {-4, -5},
 		icon_anchor_plugins = {-7, -13},
 		icon_plugins_size = {19, 18},
-
+		
 		--micro frames
 		micro_frames = {
-			color = {0.525490, 0.525490, 0.525490, 1},
-			font = "FORCED SQUARE",
+			color = {0.525490, 0.525490, 0.525490, 1}, 
+			font = "FORCED SQUARE", 
 			size = 11,
 			textymod = 1,
 		},
-
+		
 		-- the four anchors (for when the toolbar is on the top side)
 		icon_point_anchor = {-35, -0.5},
 		left_corner_anchor = {-107, 0},
 		right_corner_anchor = {96, 0},
-
+		
 		-- the four anchors (for when the toolbar is on the bottom side)
 		icon_point_anchor_bottom = {-37, 12},
 		left_corner_anchor_bottom = {-107, 0},
 		right_corner_anchor_bottom = {96, 0},
 
 		--[[ callback function execute after all changes on the window, first argument is this skin table, second is the instance where the skin was applied --]]
-		callback = function(self, instance) end,
+		callback = function (self, instance) end,
 		--[[ control_script is a OnUpdate script, it start right after all changes on the window and also after the callback --]]
 		--[[ control_script_on_start run before the control_script, use it to reset values if needed --]]
 		control_script_on_start = nil,
 		control_script = nil,
-
+		
 		--instance overwrites
 		--[[ when a skin is selected, all customized properties of the window is reseted and then the overwrites are applied]]
 		--[[ for the complete cprop list see the file classe_instancia_include.lua]]
-
+		
 		icon_on_top = true,
 		icon_ignore_alpha = true,
 		icon_titletext_position = {2, 5},
-
+		
 		instance_cprops = {
 			menu_icons_alpha = 0.92,
 			["show_statusbar"] = false,
@@ -1766,14 +1761,14 @@ local addonName, Details222 = ...
 			},
 			["bg_b"] = 0.517647058823529,
 		},
-
+		
 		skin_options = {
 			{spacement = true, type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON1"], func = align_right_chat, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON1_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON2"], func = set_tooltip_elvui1, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON2_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3"], func = set_tooltip_elvui2, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3_DESC"]},
 		}
 	})
-
+	
 	_detalhes:InstallSkin ("Dark Theme", {
 		file = [[Interface\AddOns\Details\images\skins\darktheme.blp]],
 		author = "Details!",
@@ -1801,32 +1796,32 @@ local addonName, Details222 = ...
 			["right"] = "DETAILS_STATUSBAR_PLUGIN_PDURABILITY",
 		},
 
-
+		
 		-- the four anchors (for when the toolbar is on the top side)
 		icon_point_anchor = {-35, -0.5},
 		left_corner_anchor = {-106, 0},
 		right_corner_anchor = {95, 0},
-
+		
 		-- the four anchors (for when the toolbar is on the bottom side)
 		icon_point_anchor_bottom = {-37, 12},
 		left_corner_anchor_bottom = {-106, 0},
 		right_corner_anchor_bottom = {95, 0},
 
 		--[[ callback function execute after all changes on the window, first argument is this skin table, second is the instance where the skin was applied --]]
-		callback = function(self, instance) end,
+		callback = function (self, instance) end,
 		--[[ control_script is a OnUpdate script, it start right after all changes on the window and also after the callback --]]
 		--[[ control_script_on_start run before the control_script, use it to reset values if needed --]]
 		control_script_on_start = nil,
 		control_script = nil,
-
+		
 		--instance overwrites
 		--[[ when a skin is selected, all customized properties of the window is reseted and then the overwrites are applied]]
 		--[[ for the complete cprop list see the file classe_instancia_include.lua]]
-
+		
 		icon_on_top = true,
 		icon_ignore_alpha = true,
 		icon_titletext_position = {1, 2},
-
+		
 		instance_cprops = {
 			menu_icons_alpha = 0.92,
 			["hide_in_combat_type"] = 1,
@@ -2255,7 +2250,7 @@ local addonName, Details222 = ...
 			},
 			["skin"] = "Dark Theme",
 		},
-
+		
 		skin_options = {
 			{spacement = true, type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON1"], func = align_right_chat, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON1_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON2"], func = set_tooltip_elvui1, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON2_DESC"]},
@@ -2265,25 +2260,25 @@ local addonName, Details222 = ...
 
 	_detalhes:InstallSkin ("New Gray", {
 		file = [[Interface\AddOns\Details\images\skins\classic_skin_v1.blp]],
-		author = "Details!",
-		version = "1.0",
-		site = "unknown",
+		author = "Details!", 
+		version = "1.0", 
+		site = "unknown", 
 		desc = "Simple skin with soft gray color and half transparent frames.", --\n
 		no_cache = true,
 
 		--micro frames
 		micro_frames = {
-			color = {1, 1, 1, 1},
-			font = "Accidental Presidency",
+			color = {1, 1, 1, 1}, 
+			font = "Accidental Presidency", 
 			size = 10,
 			textymod = 1,
 		},
-
-		can_change_alpha_head = true,
-		icon_anchor_main = {-1, -5},
-		icon_anchor_plugins = {-7, -13},
+		
+		can_change_alpha_head = true, 
+		icon_anchor_main = {-1, -5}, 
+		icon_anchor_plugins = {-7, -13}, 
 		icon_plugins_size = {19, 18},
-
+		
 		--anchors:
 		icon_point_anchor = {-37, 0},
 		left_corner_anchor = {-107, 0},
@@ -2292,11 +2287,11 @@ local addonName, Details222 = ...
 		icon_point_anchor_bottom = {-37, 12},
 		left_corner_anchor_bottom = {-107, 0},
 		right_corner_anchor_bottom = {96, 0},
-
+		
 		icon_on_top = true,
 		icon_ignore_alpha = true,
 		icon_titletext_position = {3, 3},
-
+		
 		--overwrites
 		instance_cprops = {
 			menu_icons_alpha = 0.92,
@@ -2510,41 +2505,40 @@ local addonName, Details222 = ...
 			},
 			["bars_inverted"] = false,
 		},
-
-		callback = function(skin, instance, just_updating)
+		
+		callback = function (skin, instance, just_updating)
 			--none
 		end,
-
+		
 		skin_options = {
 			{spacement = true, type = "button", name = "Shadowy Title Bar", func = Minimalistic_Shadow, desc = "Adds shadow on title bar components."},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP"], func = reset_tooltip, desc = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3"], func = set_tooltip_elvui2, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3_DESC"]},
 		}
-
-	})
-
+		
+	})	
 
 		_detalhes:InstallSkin ("Safe Skin Legion Beta", {
 		file = [[Interface\AddOns\Details\images\skins\classic_skin_v1.blp]],
-		author = "Details!",
-		version = "1.0",
-		site = "unknown",
+		author = "Details!", 
+		version = "1.0", 
+		site = "unknown", 
 		desc = "Simple skin with soft gray color and half transparent frames.", --\n
 		no_cache = true,
 
 		--micro frames
 		micro_frames = {
-			color = {1, 1, 1, 1},
-			font = "Accidental Presidency",
+			color = {1, 1, 1, 1}, 
+			font = "Accidental Presidency", 
 			size = 10,
 			textymod = 1,
 		},
-
-		can_change_alpha_head = true,
-		icon_anchor_main = {-1, -5},
-		icon_anchor_plugins = {-7, -13},
+		
+		can_change_alpha_head = true, 
+		icon_anchor_main = {-1, -5}, 
+		icon_anchor_plugins = {-7, -13}, 
 		icon_plugins_size = {19, 18},
-
+		
 		--anchors:
 		icon_point_anchor = {-37, 0},
 		left_corner_anchor = {-107, 0},
@@ -2553,11 +2547,11 @@ local addonName, Details222 = ...
 		icon_point_anchor_bottom = {-37, 12},
 		left_corner_anchor_bottom = {-107, 0},
 		right_corner_anchor_bottom = {96, 0},
-
+		
 		icon_on_top = true,
 		icon_ignore_alpha = true,
 		icon_titletext_position = {3, 3},
-
+		
 		--overwrites
 		instance_cprops = {
 			menu_icons_alpha = 0.92,
@@ -2795,17 +2789,15 @@ local addonName, Details222 = ...
 			},
 			["bars_sort_direction"] = 1,
 		},
-
-		callback = function(skin, instance, just_updating)
+		
+		callback = function (skin, instance, just_updating)
 			--none
 		end,
-
+		
 		skin_options = {
 			{spacement = true, type = "button", name = "Shadowy Title Bar", func = Minimalistic_Shadow, desc = "Adds shadow on title bar components."},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP"], func = reset_tooltip, desc = Loc ["STRING_OPTIONS_SKIN_RESET_TOOLTIP_DESC"]},
 			{type = "button", name = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3"], func = set_tooltip_elvui2, desc = Loc ["STRING_OPTIONS_SKIN_ELVUI_BUTTON3_DESC"]},
 		}
-
+		
 	})
-
-

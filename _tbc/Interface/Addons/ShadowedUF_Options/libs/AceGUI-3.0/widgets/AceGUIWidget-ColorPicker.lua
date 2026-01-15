@@ -97,11 +97,18 @@ local methods = {
 		self.text:SetText(text)
 	end,
 
-	["SetColor"] = function(self, r, g, b, a)
+["SetColor"] = function(self, r, g, b, a)
+		-- Ensure all values are valid numbers before storing and using
+		r = tonumber(r) or 0
+		g = tonumber(g) or 0
+		b = tonumber(b) or 0
+		a = tonumber(a) or 1
+		
 		self.r = r
 		self.g = g
 		self.b = b
-		self.a = a or 1
+		self.a = a
+		
 		self.colorSwatch:SetVertexColor(r, g, b, a)
 	end,
 

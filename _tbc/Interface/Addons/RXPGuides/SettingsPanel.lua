@@ -16,7 +16,7 @@ local EasyMenu = function(...)
     end
 end
 
-local IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or _G.IsAddOnLoaded
+local C_AddOns.IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or _G.C_AddOns.IsAddOnLoaded
 local GetNumAddOns =  C_AddOns and C_AddOns.GetNumAddOns or _G.GetNumAddOns
 local GetAddOnInfo = C_AddOns and C_AddOns.GetAddOnInfo or _G.GetAddOnInfo
 
@@ -3899,7 +3899,7 @@ function addon.settings:CheckAddonCompatibility()
     local a, name
 
     for i = 1, GetNumAddOns() do
-        if IsAddOnLoaded(i) then
+        if C_AddOns.IsAddOnLoaded(i) then
             name = GetAddOnInfo(i)
 
             if addon.compatibility[name] then

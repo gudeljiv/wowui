@@ -21,17 +21,23 @@ end
 -- WoW 10.0 Release Show/Hide Frame Handlers
 function Postal_TradeBlock:PLAYER_INTERACTION_MANAGER_FRAME_SHOW(eventName, ...)
 	local paneType = ...
-	if paneType ==  Enum.PlayerInteractionType.MailInfo then Postal_TradeBlock:MAIL_SHOW() end
+	if paneType == Enum.PlayerInteractionType.MailInfo then
+		Postal_TradeBlock:MAIL_SHOW()
+	end
 end
 
 function Postal_TradeBlock:PLAYER_INTERACTION_MANAGER_FRAME_HIDE(eventName, ...)
 	local paneType = ...
-	if paneType ==  Enum.PlayerInteractionType.MailInfo then Postal_TradeBlock:MAIL_CLOSED() end
+	if paneType == Enum.PlayerInteractionType.MailInfo then
+		Postal_TradeBlock:MAIL_CLOSED()
+	end
 end
 
 function Postal_TradeBlock:MAIL_SHOW()
 	PetitionFrame:UnregisterEvent("PETITION_SHOW")
-	if C_AddOns.IsAddOnLoaded("Lexan") then return end
+	if C_AddOns.IsAddOnLoaded("Lexan") then
+		return
+	end
 	if GetCVar("BlockTrades") == "0" then
 		if Postal.WOWBCClassic then
 			self:RegisterEvent("MAIL_CLOSED", "Reset")

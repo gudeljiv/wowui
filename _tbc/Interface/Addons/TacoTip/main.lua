@@ -1,6 +1,6 @@
 
 local addOnName = ...
-local addOnVersion = GetAddOnMetadata(addOnName, "Version") or "0.0.1"
+local addOnVersion = C_AddOns.GetAddOnMetadata(addOnName, "Version") or "0.0.1"
 
 local clientVersionString = GetBuildInfo()
 local clientBuildMajor = string.byte(clientVersionString, 1)

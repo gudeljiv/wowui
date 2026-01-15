@@ -21,7 +21,7 @@ along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 
 local addonName = ...
 ---@class AdiBags: AceAddon
-local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
+local addon = LibStub("AceAddon-3.0"):GetAddon(addonName, true)
 local L = addon.L
 
 --<GLOBALS
@@ -43,9 +43,11 @@ function addon:CreateBagAnchor()
 	anchor:EnableMouse(true)
 	anchor:SetClampedToScreen(true)
 	anchor:SetMovable(true)
-	anchor.OnMovingStopped = function() addon:LayoutBags() end
-	anchor:SetScript('OnMouseDown', anchor.StartMoving)
-	anchor:SetScript('OnMouseUp', anchor.StopMoving)
+	anchor.OnMovingStopped = function()
+		addon:LayoutBags()
+	end
+	anchor:SetScript("OnMouseDown", anchor.StartMoving)
+	anchor:SetScript("OnMouseUp", anchor.StopMoving)
 	anchor:Hide()
 
 	local text = anchor:CreateFontString(nil, "ARTWORK", "GameFontWhite")
@@ -53,7 +55,7 @@ function addon:CreateBagAnchor()
 	text:SetText(L["AdiBags Anchor"])
 	text:SetJustifyH("CENTER")
 	text:SetJustifyV("MIDDLE")
-	text:SetShadowColor(0,0,0,1)
+	text:SetShadowColor(0, 0, 0, 1)
 	text:SetShadowOffset(1, -1)
 	anchor.text = text
 
@@ -66,27 +68,31 @@ local function AnchoredBagLayout(self)
 
 	local nextBag, data, firstIndex = self:IterateBags(true)
 	local index, bag = nextBag(data, firstIndex)
-	if not bag then return end
+	if not bag then
+		return
+	end
 
 	local anchor = self.anchor
 	local anchorPoint = anchor:GetPosition()
 
 	local frame = bag:GetFrame()
 	frame:ClearAllPoints()
-	self:Debug('AnchoredBagLayout', anchorPoint)
+	self:Debug("AnchoredBagLayout", anchorPoint)
 	frame:SetPoint(anchorPoint, anchor, anchorPoint, 0, 0)
 
 	local lastFrame = frame
 	index, bag = nextBag(data, index)
-	if not bag then return end
+	if not bag then
+		return
+	end
 
 	local vPart = anchorPoint:match("TOP") or anchorPoint:match("BOTTOM") or ""
 	local hFrom, hTo, x = "LEFT", "RIGHT", 10
 	if anchorPoint:match("RIGHT") then
 		hFrom, hTo, x = "RIGHT", "LEFT", -10
 	end
-	local fromPoint = vPart..hFrom
-	local toPoint = vPart..hTo
+	local fromPoint = vPart .. hFrom
+	local toPoint = vPart .. hTo
 
 	while bag do
 		local frame = bag:GetFrame()
@@ -109,16 +115,16 @@ function addon:LayoutBags()
 			bag:GetFrame():SetScale(scale)
 		end
 	end
-	if self.db.profile.positionMode == 'anchored' then
+	if self.db.profile.positionMode == "anchored" then
 		AnchoredBagLayout(self)
 	else
 		ManualBagLayout(self)
 	end
-	self:SendMessage('AdiBags_ForceFullLayout')
+	self:SendMessage("AdiBags_ForceFullLayout")
 end
 
 function addon:ToggleAnchor()
-	if self.db.profile.positionMode == 'anchored' and not self.anchor:IsShown() then
+	if self.db.profile.positionMode == "anchored" and not self.anchor:IsShown() then
 		self.anchor:Show()
 	else
 		self.anchor:Hide()
@@ -126,7 +132,7 @@ function addon:ToggleAnchor()
 end
 
 function addon:UpdatePositionMode()
-	if self.db.profile.positionMode ~= 'anchored' then
+	if self.db.profile.positionMode ~= "anchored" then
 		self.anchor:Hide()
 	end
 	self:LayoutBags()

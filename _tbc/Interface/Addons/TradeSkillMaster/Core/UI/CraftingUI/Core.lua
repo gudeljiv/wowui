@@ -49,14 +49,13 @@ do
 	end
 end
 
-
-
 -- ============================================================================
 -- Module Functions
 -- ============================================================================
 
 function CraftingUI.OnInitialize(settingsDB)
-	private.settings = settingsDB:NewView()
+	private.settings = settingsDB
+		:NewView()
 		:AddKey("global", "craftingUIContext", "showDefault")
 		:AddKey("global", "craftingUIContext", "frame")
 		:AddKey("global", "coreOptions", "regionWide")
@@ -87,7 +86,12 @@ end
 
 function CraftingUI.IsProfessionIgnored(name, skillId)
 	if not ClientInfo.IsRetail() then
-		if name == Spell.GetInfo(5149) or name == BEAST_TRAINING_DE or name == BEAST_TRAINING_ES or name == BEAST_TRAINING_RUS then -- Beast Training
+		if
+			name == Spell.GetInfo(5149)
+			or name == BEAST_TRAINING_DE
+			or name == BEAST_TRAINING_ES
+			or name == BEAST_TRAINING_RUS
+		then -- Beast Training
 			return true
 		elseif name == Spell.GetInfo(7620) then -- Fishing
 			return true
@@ -111,12 +115,10 @@ end
 
 function CraftingUI.RegisterApiCallback(addonTag, func)
 	if private.apiCallbacks[addonTag] then
-		error("Callback already registered for addonTag: "..tostring(addonTag), 3)
+		error("Callback already registered for addonTag: " .. tostring(addonTag), 3)
 	end
 	private.apiCallbacks[addonTag] = func
 end
-
-
 
 -- ============================================================================
 -- Main Frame
@@ -134,9 +136,7 @@ function private.CreateMainFrame()
 		:AddSwitchButton(private.SwitchBtnOnClick)
 		:SetScript("OnHide", private.BaseFrameOnHide)
 
-	frame:GetElement("content")
-		:SetPadding(0)
-		:SetBorderColor(nil)
+	frame:GetElement("content"):SetPadding(0):SetBorderColor(nil)
 
 	for _, info in ipairs(private.topLevelPages) do
 		frame:AddNavButton(info.name, info.callback)
@@ -144,8 +144,6 @@ function private.CreateMainFrame()
 
 	return frame
 end
-
-
 
 -- ============================================================================
 -- Local Script Handlers
@@ -166,16 +164,12 @@ function private.SwitchBtnOnClick(button)
 end
 
 function private.SwitchButtonOnEnter(button)
-	button:SetTextColor("TEXT")
-		:Draw()
+	button:SetTextColor("TEXT"):Draw()
 end
 
 function private.SwitchButtonOnLeave(button)
-	button:SetTextColor("TEXT_ALT")
-		:Draw()
+	button:SetTextColor("TEXT_ALT"):Draw()
 end
-
-
 
 -- ============================================================================
 -- FSM
@@ -250,8 +244,7 @@ function private.FSMCreate()
 				else
 					return "ST_FRAME_OPEN"
 				end
-			end)
-		)
+			end))
 		:AddState(FSM.NewState("ST_DEFAULT_OPEN")
 			:SetOnEnter(function(context, isIgnored)
 				if private.craftOpen then
@@ -265,7 +258,11 @@ function private.FSMCreate()
 					private.defaultUISwitchBtn = UIElements.New("ActionButton", "switchBtn")
 						:SetSize(60, ClientInfo.IsRetail() and 15 or 16)
 						:SetFont("BODY_BODY3_MEDIUM")
-						:AddAnchor("TOPRIGHT", ClientInfo.IsRetail() and -50 or -60, ClientInfo.IsRetail() and -4 or -16)
+						:AddAnchor(
+							"TOPRIGHT",
+							ClientInfo.IsRetail() and -50 or -60,
+							ClientInfo.IsRetail() and -4 or -16
+						)
 						:SetRelativeLevel(ClientInfo.IsRetail() and 600 or 3)
 						:DisableClickCooldown()
 						:SetText(L["TSM4"])
@@ -322,8 +319,7 @@ function private.FSMCreate()
 				end
 			end)
 			:AddEventTransition("EV_TRADE_SKILL_CLOSED", "ST_CLOSED")
-			:AddEventTransition("EV_SWITCH_BTN_CLICKED", "ST_FRAME_OPEN")
-		)
+			:AddEventTransition("EV_SWITCH_BTN_CLICKED", "ST_FRAME_OPEN"))
 		:AddState(FSM.NewState("ST_FRAME_OPEN")
 			:SetOnEnter(function(context)
 				assert(not context.frame)
@@ -371,7 +367,6 @@ function private.FSMCreate()
 			end)
 			:AddEventTransition("EV_TRADE_SKILL_CLOSED", "ST_CLOSED")
 			:AddEventTransition("EV_SWITCH_BTN_CLICKED", "ST_DEFAULT_OPEN")
-			:AddEventTransition("EV_FRAME_TOGGLE", "ST_CLOSED")
-		)
+			:AddEventTransition("EV_FRAME_TOGGLE", "ST_CLOSED"))
 		:Init("ST_CLOSED", fsmContext)
 end

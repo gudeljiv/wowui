@@ -1,8 +1,9 @@
 # TomTom
 
-## [v4.2.9-release](https://github.com/jnwhiteh/TomTom/tree/v4.2.9-release) (2026-01-14)
-[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v4.2.9-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
+## [v4.2.10-release](https://github.com/jnwhiteh/TomTom/tree/v4.2.10-release) (2026-01-15)
+[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v4.2.10-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
 
+- Update TOC for TBC Anniversary  
 - Update TOC to work for retail + beta + PTR  
 - Fix duplicate localization  
 - Update HBD again, maybe fix issues  
@@ -693,4 +694,3 @@
 - * Fixing an issue where crazy arrow would appear even when disabled  
     * Updated externals to fix config issue  
 - * Fixed waypoints not automatically clearing when that option is set  
-- Removed Dongle from scm control  

@@ -29,7 +29,7 @@ local GameTooltip = _G.GameTooltip
 local GetItemInfo = _G.C_Item.GetItemInfo
 local GetItemSubClassInfo = _G.C_Item.GetItemSubClassInfo
 local hooksecurefunc = _G.hooksecurefunc
-local IsAddOnLoaded = _G.C_AddOns.IsAddOnLoaded
+local C_AddOns.IsAddOnLoaded = _G.C_AddOns.IsAddOnLoaded
 local ITEM_QUALITY_POOR
 local ITEM_QUALITY_UNCOMMON
 if addon.isRetail then
@@ -88,7 +88,7 @@ function mod:OnEnable()
 	addon.RegisterSectionHeaderScript(self, 'OnTooltipUpdate', 'OnTooltipUpdateSectionHeader')
 	addon.RegisterSectionHeaderScript(self, 'OnClick', 'OnClickSectionHeader')
 	if not self.hooked then
-		if IsAddOnLoaded('Scrap_Merchant') then
+		if C_AddOns.IsAddOnLoaded('Scrap_Merchant') then
 			self:ADDON_LOADED('OnEnable', 'Scrap_Merchant')
 		else
 			self:RegisterEvent('ADDON_LOADED')

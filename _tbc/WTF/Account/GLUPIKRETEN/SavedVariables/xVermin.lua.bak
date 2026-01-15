@@ -378,15 +378,21 @@ xVerminSavedData = {
 ["Ironspine"] = {
 "Rend",
 },
-["Enraged Voidwalker"] = {
-"Poison Cloud",
+["Remote-Controlled Golem"] = {
+"Rend",
+"Deep Wound",
 },
 ["Mordresh Fire Eye"] = {
 "Rend",
 "Deep Wound",
 },
-["Sandfury Shadowcaster"] = {
-"Earthbind",
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
 },
 ["Jade Sludge"] = {
 "Concussive Shot",
@@ -409,9 +415,8 @@ xVerminSavedData = {
 ["Enraged Stone Spirit"] = {
 "Rend",
 },
-["Whirlwind Ripper"] = {
-"Lightning Shield",
-"Serpent Sting",
+["Enraged Voidwalker"] = {
+"Poison Cloud",
 },
 ["Healing Ward"] = {
 "Faerie Fire (Feral)",
@@ -436,9 +441,9 @@ xVerminSavedData = {
 "Concussive Shot",
 "Entrapment",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
-"Deep Wound",
+["Whirlwind Ripper"] = {
+"Lightning Shield",
+"Serpent Sting",
 },
 ["Nelyz"] = {
 "Concussive Shot",
@@ -446,14 +451,6 @@ xVerminSavedData = {
 ["Thundering Boulderkin"] = {
 "Serpent Sting",
 "Instant Poison II",
-},
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
 },
 ["Evolving Ectoplasm"] = {
 "Attack",
@@ -473,6 +470,9 @@ xVerminSavedData = {
 "Flame Shock",
 "Corruption",
 "Curse of Agony",
+},
+["Sandfury Shadowcaster"] = {
+"Earthbind",
 },
 ["Lesser Rock Elemental"] = {
 "Serpent Sting",

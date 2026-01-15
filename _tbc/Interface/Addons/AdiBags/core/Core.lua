@@ -21,15 +21,15 @@ along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 
 local addonName = ...
 ---@class AdiBags: ABEvent-1.0
-local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
+local addon = LibStub("AceAddon-3.0"):GetAddon(addonName, true)
 ---@cast addon +ABEvent-1.0|ABBucket-1.0|AceHook-3.0|AceConsole-3.0
 local L = addon.L
 
 --<GLOBALS
 local _G = _G
 local ADDON_LOAD_FAILED = _G.ADDON_LOAD_FAILED
-local BANK_CONTAINER = _G.BANK_CONTAINER or ( Enum.BagIndex and Enum.BagIndex.Bank ) or -1
-local REAGENTBAG_CONTAINER = ( Enum.BagIndex and Enum.BagIndex.REAGENTBAG_CONTAINER ) or 5
+local BANK_CONTAINER = _G.BANK_CONTAINER or (Enum.BagIndex and Enum.BagIndex.Bank) or -1
+local REAGENTBAG_CONTAINER = (Enum.BagIndex and Enum.BagIndex.REAGENTBAG_CONTAINER) or 5
 local CloseWindows = _G.CloseWindows
 local CreateFrame = _G.CreateFrame
 local format = _G.format
@@ -62,7 +62,7 @@ local function DebugTable(t, prevKey)
 end
 --@end-debug@]===]
 
-local bagKeys = {"backpack", "bank", "reagentBank"}
+local bagKeys = { "backpack", "bank", "reagentBank" }
 function addon:OnInitialize()
 	-- Create the default font settings for each bag type.
 	for _, name in ipairs(bagKeys) do
@@ -72,7 +72,7 @@ function addon:OnInitialize()
 		self.DEFAULT_SETTINGS.profile.theme[name].sectionFont = self:GetFontDefaults(GameFontNormalLeft)
 	end
 
-	self.db = LibStub('AceDB-3.0'):New(addonName.."DB", self.DEFAULT_SETTINGS, true)
+	self.db = LibStub("AceDB-3.0"):New(addonName .. "DB", self.DEFAULT_SETTINGS, true)
 	self.db.RegisterCallback(self, "OnProfileChanged", "OnProfileChanged")
 	self.db.RegisterCallback(self, "OnProfileCopied", "OnProfileChanged")
 	self.db.RegisterCallback(self, "OnProfileReset", "Reconfigure")
@@ -84,8 +84,12 @@ function addon:OnInitialize()
 	self.fonts = {}
 	for _, name in ipairs(bagKeys) do
 		self.fonts[name] = {
-			bagFont = self:CreateFont(addonName..name.."BagFont", GameFontHighlightLarge, function() return addon.db.profile.theme[name].bagFont end),
-			sectionFont = self:CreateFont(addonName..name.."SectionFont", GameFontNormalLeft, function() return addon.db.profile.theme[name].sectionFont end)
+			bagFont = self:CreateFont(addonName .. name .. "BagFont", GameFontHighlightLarge, function()
+				return addon.db.profile.theme[name].bagFont
+			end),
+			sectionFont = self:CreateFont(addonName .. name .. "SectionFont", GameFontNormalLeft, function()
+				return addon.db.profile.theme[name].sectionFont
+			end),
 		}
 	end
 
@@ -97,11 +101,17 @@ function addon:OnInitialize()
 	self:SetEnabledState(false)
 
 	-- Persistant handlers
-	self.RegisterBucketMessage(addonName, 'AdiBags_ConfigChanged', 0.2, function(...) addon:ConfigChanged(...) end)
-	self.RegisterEvent(addonName, 'PLAYER_ENTERING_WORLD', function() if self.db.profile.enabled then self:Enable() end end)
+	self.RegisterBucketMessage(addonName, "AdiBags_ConfigChanged", 0.2, function(...)
+		addon:ConfigChanged(...)
+	end)
+	self.RegisterEvent(addonName, "PLAYER_ENTERING_WORLD", function()
+		if self.db.profile.enabled then
+			self:Enable()
+		end
+	end)
 
 	self:RegisterChatCommand("adibags", function(cmd)
-		addon:OpenOptions(strsplit(' ', cmd or ""))
+		addon:OpenOptions(strsplit(" ", cmd or ""))
 	end, true)
 
 	if addon.isRetail then
@@ -111,52 +121,51 @@ function addon:OnInitialize()
 		C_CVar.SetCVar("professionAccessorySlotsExampleShown", 1)
 	end
 
-  self:Deprecation()
-	self:Debug('Initialized')
+	self:Deprecation()
+	self:Debug("Initialized")
 end
 
 function addon:OnEnable()
-
 	self.globalLock = false
 
-	self:RegisterEvent('BAG_UPDATE')
-	self:RegisterEvent('BAG_UPDATE_DELAYED')
-	self:RegisterBucketEvent('PLAYERBANKSLOTS_CHANGED', 0.01, 'BankUpdated')
+	self:RegisterEvent("BAG_UPDATE")
+	self:RegisterEvent("BAG_UPDATE_DELAYED")
+	self:RegisterBucketEvent("PLAYERBANKSLOTS_CHANGED", 0.01, "BankUpdated")
 	if addon.isRetail then
-		self:RegisterBucketEvent('PLAYERREAGENTBANKSLOTS_CHANGED', 0.01, 'ReagentBankUpdated')
+		self:RegisterBucketEvent("PLAYERREAGENTBANKSLOTS_CHANGED", 0.01, "ReagentBankUpdated")
 	end
 
-	self:RegisterEvent('PLAYER_LEAVING_WORLD', 'Disable')
+	self:RegisterEvent("PLAYER_LEAVING_WORLD", "Disable")
 
-	self:RegisterMessage('AdiBags_BagOpened', 'LayoutBags')
-	self:RegisterMessage('AdiBags_BagClosed', 'LayoutBags')
-	
+	self:RegisterMessage("AdiBags_BagOpened", "LayoutBags")
+	self:RegisterMessage("AdiBags_BagClosed", "LayoutBags")
+
 	-- Track most windows involving items
 	if addon.isRetail or addon.isWrath or addon.isCata then
-		self:RegisterEvent('PLAYER_INTERACTION_MANAGER_FRAME_SHOW', 'UpdateInteractingFrame')
-		self:RegisterEvent('PLAYER_INTERACTION_MANAGER_FRAME_HIDE', 'UpdateInteractingFrame')
+		self:RegisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_SHOW", "UpdateInteractingFrame")
+		self:RegisterEvent("PLAYER_INTERACTION_MANAGER_FRAME_HIDE", "UpdateInteractingFrame")
 		-- TODO(lobato): This is a hack to fix a change in the timing of the interaction manager
 		-- event. The interaction manager frame event is fired later than the bankframe opened
 		-- event is, which causes a race somewhere else in our code. Without this, GetInteractingWindow
 		-- will return a nil value when it shouldn't. We need to figure out where this race is
 		-- happening and fix it properly.
 		-- Note, this seems to only happen with the bankframe event, and no others.
-		self:RegisterEvent('BANKFRAME_OPENED', 'UpdateInteractingWindow')
+		self:RegisterEvent("BANKFRAME_OPENED", "UpdateInteractingWindow")
 	else
-		self:RegisterEvent('BANKFRAME_OPENED', 'UpdateInteractingWindow')
-		self:RegisterEvent('BANKFRAME_CLOSED', 'UpdateInteractingWindow')
-		self:RegisterEvent('MAIL_SHOW', 'UpdateInteractingWindow')
-		self:RegisterEvent('MAIL_CLOSED', 'UpdateInteractingWindow')
-		self:RegisterEvent('MERCHANT_SHOW', 'UpdateInteractingWindow')
-		self:RegisterEvent('MERCHANT_CLOSED', 'UpdateInteractingWindow')
-		self:RegisterEvent('AUCTION_HOUSE_SHOW', 'UpdateInteractingWindow')
-		self:RegisterEvent('AUCTION_HOUSE_CLOSED', 'UpdateInteractingWindow')
-		self:RegisterEvent('TRADE_SHOW', 'UpdateInteractingWindow')
-		self:RegisterEvent('TRADE_CLOSED', 'UpdateInteractingWindow')
-		self:RegisterEvent('GUILDBANKFRAME_OPENED', 'UpdateInteractingWindow')
-		self:RegisterEvent('GUILDBANKFRAME_CLOSED', 'UpdateInteractingWindow')
-		self:RegisterEvent('SOCKET_INFO_UPDATE', 'UpdateInteractingWindow')
-		self:RegisterEvent('SOCKET_INFO_CLOSE', 'UpdateInteractingWindow')
+		self:RegisterEvent("BANKFRAME_OPENED", "UpdateInteractingWindow")
+		self:RegisterEvent("BANKFRAME_CLOSED", "UpdateInteractingWindow")
+		self:RegisterEvent("MAIL_SHOW", "UpdateInteractingWindow")
+		self:RegisterEvent("MAIL_CLOSED", "UpdateInteractingWindow")
+		self:RegisterEvent("MERCHANT_SHOW", "UpdateInteractingWindow")
+		self:RegisterEvent("MERCHANT_CLOSED", "UpdateInteractingWindow")
+		self:RegisterEvent("AUCTION_HOUSE_SHOW", "UpdateInteractingWindow")
+		self:RegisterEvent("AUCTION_HOUSE_CLOSED", "UpdateInteractingWindow")
+		self:RegisterEvent("TRADE_SHOW", "UpdateInteractingWindow")
+		self:RegisterEvent("TRADE_CLOSED", "UpdateInteractingWindow")
+		self:RegisterEvent("GUILDBANKFRAME_OPENED", "UpdateInteractingWindow")
+		self:RegisterEvent("GUILDBANKFRAME_CLOSED", "UpdateInteractingWindow")
+		self:RegisterEvent("SOCKET_INFO_UPDATE", "UpdateInteractingWindow")
+		self:RegisterEvent("SOCKET_INFO_CLOSE", "UpdateInteractingWindow")
 	end
 	self:SetSortingOrder(self.db.profile.sortingOrder)
 
@@ -178,13 +187,13 @@ function addon:OnEnable()
 
 	self:UpdatePositionMode()
 
-	self:Debug('Enabled')
+	self:Debug("Enabled")
 end
 
 function addon:OnDisable()
 	self.anchor:Hide()
 	self:CloseAllBags()
-	self:Debug('Disabled')
+	self:Debug("Disabled")
 end
 
 function addon:EnableHooks()
@@ -197,7 +206,7 @@ function addon:EnableHooks()
 	self:SecureHook("CloseBag")
 	self:RawHook("OpenBackpack", true)
 	self:SecureHook("CloseBackpack")
-	self:SecureHook('CloseSpecialWindows')
+	self:SecureHook("CloseSpecialWindows")
 end
 
 function addon:DisableHooks()
@@ -210,7 +219,7 @@ function addon:DisableHooks()
 	self:Unhook("CloseBag")
 	self:Unhook("OpenBackpack")
 	self:Unhook("CloseBackpack")
-	self:Unhook('CloseSpecialWindows')
+	self:Unhook("CloseSpecialWindows")
 end
 
 function addon:Reconfigure()
@@ -229,9 +238,9 @@ end
 -- Thanks to Talyrius for this idea
 -- TODO(lobato): Remove this update code in a future version
 local prevSkinPreset = {
-  BackpackColor = { 0, 0, 0, 1 },
-  BankColor = { 0, 0, 0.5, 1 },
-  ReagentBankColor = { 0, 0.5, 0, 1 },
+	BackpackColor = { 0, 0, 0, 1 },
+	BankColor = { 0, 0, 0.5, 1 },
+	ReagentBankColor = { 0, 0.5, 0, 1 },
 }
 
 function addon:UpgradeProfile()
@@ -291,7 +300,7 @@ end
 
 do
 	local configAddonName = "AdiBags_Config"
-	local why = '???'
+	local why = "???"
 	local function CouldNotLoad()
 		print("|cffff0000AdiBags:", format(ADDON_LOAD_FAILED, configAddonName, why), "|r")
 	end
@@ -299,7 +308,7 @@ do
 		self.OpenOptions = CouldNotLoad
 		local loaded, reason = LoadAddOn(configAddonName)
 		if not loaded then
-			why = _G['ADDON_'..reason]
+			why = _G["ADDON_" .. reason]
 		end
 		addon:OpenOptions(...)
 	end
@@ -307,7 +316,7 @@ end
 
 do
 	-- Create the Blizzard addon option frame
-	local panel = CreateFrame("Frame", addonName.."BlizzOptions")
+	local panel = CreateFrame("Frame", addonName .. "BlizzOptions")
 	panel.name = addonName
 	Settings.RegisterAddOnCategory(Settings.RegisterCanvasLayoutCategory(panel, addonName))
 
@@ -319,14 +328,14 @@ do
 	fs:SetText(addonName)
 
 	local button = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
-	button:SetText(L['Configure'])
+	button:SetText(L["Configure"])
 	button:SetWidth(128)
 	button:SetPoint("TOPLEFT", 10, -48)
-	button:SetScript('OnClick', function()
-		while CloseWindows() do end
+	button:SetScript("OnClick", function()
+		while CloseWindows() do
+		end
 		return addon:OpenOptions()
 	end)
-
 end
 
 --------------------------------------------------------------------------------
@@ -343,13 +352,13 @@ end
 function addon:BAG_UPDATE(event, bag)
 	updatedBags[bag] = true
 	if addon.isRetail or addon.isWrath or addon.isCata then
-		self:SendMessage('AdiBags_BagUpdated', updatedBags)
+		self:SendMessage("AdiBags_BagUpdated", updatedBags)
 		wipe(updatedBags)
 	end
 end
 
 function addon:BAG_UPDATE_DELAYED(event)
-	self:SendMessage('AdiBags_BagUpdated', updatedBags)
+	self:SendMessage("AdiBags_BagUpdated", updatedBags)
 	wipe(updatedBags)
 end
 
@@ -357,7 +366,7 @@ function addon:BankUpdated(slots)
 	-- Wrap several PLAYERBANKSLOTS_CHANGED into one AdiBags_BagUpdated message
 	for slot in pairs(slots) do
 		if slot > 0 and slot <= NUM_BANKGENERIC_SLOTS then
-			return self:SendMessage('AdiBags_BagUpdated', updatedBank)
+			return self:SendMessage("AdiBags_BagUpdated", updatedBank)
 		end
 	end
 end
@@ -366,7 +375,7 @@ function addon:ReagentBankUpdated(slots)
 	-- Wrap several PLAYERREAGANBANKSLOTS_CHANGED into one AdiBags_BagUpdated message
 	for slot in pairs(slots) do
 		if slot > 0 and slot <= 98 then
-			return self:SendMessage('AdiBags_BagUpdated', updatedReagentBank)
+			return self:SendMessage("AdiBags_BagUpdated", updatedReagentBank)
 		end
 	end
 end
@@ -385,13 +394,13 @@ function addon:ConfigChanged(vars)
 	elseif not self:IsEnabled() then
 		return
 	elseif vars.filter then
-		return self:SendMessage('AdiBags_FiltersChanged')
+		return self:SendMessage("AdiBags_FiltersChanged")
 	else
 		for name in pairs(vars) do
-			if strmatch(name, 'virtualStacks') then
-				return self:SendMessage('AdiBags_FiltersChanged')
-			elseif strmatch(name, 'bags%.') then
-				local _, bagName = strsplit('.', name)
+			if strmatch(name, "virtualStacks") then
+				return self:SendMessage("AdiBags_FiltersChanged")
+			elseif strmatch(name, "bags%.") then
+				local _, bagName = strsplit(".", name)
 				local bag = self:GetModule(bagName)
 				local enabled = self.db.profile.bags[bagName]
 				if enabled and not bag:IsEnabled() then
@@ -399,21 +408,21 @@ function addon:ConfigChanged(vars)
 				elseif not enabled and bag:IsEnabled() then
 					bag:Disable()
 				end
-			elseif strmatch(name, 'columnWidth') then
-				return self:SendMessage('AdiBags_LayoutChanged')
+			elseif strmatch(name, "columnWidth") then
+				return self:SendMessage("AdiBags_LayoutChanged")
 			end
 		end
 	end
 	if vars.sortingOrder then
 		return self:SetSortingOrder(self.db.profile.sortingOrder)
 	elseif vars.maxHeight then
-		return self:SendMessage('AdiBags_LayoutChanged')
+		return self:SendMessage("AdiBags_LayoutChanged")
 	elseif vars.scale then
 		return self:LayoutBags()
 	elseif vars.positionMode then
 		return self:UpdatePositionMode()
 	else
-		self:SendMessage('AdiBags_UpdateAllButtons')
+		self:SendMessage("AdiBags_UpdateAllButtons")
 	end
 end
 
@@ -421,9 +430,9 @@ function addon:SetGlobalLock(locked)
 	locked = not not locked
 	if locked ~= self.globalLock then
 		self.globalLock = locked
-		self:SendMessage('AdiBags_GlobalLockChanged', locked)
+		self:SendMessage("AdiBags_GlobalLockChanged", locked)
 		if not locked then
-			self:SendMessage('AdiBags_LayoutChanged')
+			self:SendMessage("AdiBags_LayoutChanged")
 		end
 		return true
 	end
@@ -436,16 +445,18 @@ end
 do
 	local current
 	function addon:UpdateInteractingWindow(event, ...)
-		local new = strmatch(event, '^([_%w]+)_OPEN') or strmatch(event, '^([_%w]+)_SHOW$') or strmatch(event, '^([_%w]+)_UPDATE$')
-		self:Debug('UpdateInteractingWindow', event, current, '=>', new, '|', ...)
+		local new = strmatch(event, "^([_%w]+)_OPEN")
+			or strmatch(event, "^([_%w]+)_SHOW$")
+			or strmatch(event, "^([_%w]+)_UPDATE$")
+		self:Debug("UpdateInteractingWindow", event, current, "=>", new, "|", ...)
 		if new ~= current then
 			local old = current
 			current = new
 			self.atBank = (current == "BANKFRAME")
 			if self.db.profile.virtualStacks.notWhenTrading ~= 0 then
-				self:SendMessage('AdiBags_FiltersChanged', true)
+				self:SendMessage("AdiBags_FiltersChanged", true)
 			end
-			self:SendMessage('AdiBags_InteractingWindowChanged', new, old)
+			self:SendMessage("AdiBags_InteractingWindowChanged", new, old)
 		end
 	end
 
@@ -454,23 +465,25 @@ do
 		if event == "PLAYER_INTERACTION_MANAGER_FRAME_SHOW" then
 			if kind == Enum.PlayerInteractionType.Banker then
 				new = "BANKFRAME"
-			elseif kind == Enum.PlayerInteractionType.Merchant or
-			kind == Enum.PlayerInteractionType.Auctioneer or
-			kind == Enum.PlayerInteractionType.BlackMarketAuctioneer or
-			kind == Enum.PlayerInteractionType.TradePartner or
-			kind == Enum.PlayerInteractionType.MailInfo then
+			elseif
+				kind == Enum.PlayerInteractionType.Merchant
+				or kind == Enum.PlayerInteractionType.Auctioneer
+				or kind == Enum.PlayerInteractionType.BlackMarketAuctioneer
+				or kind == Enum.PlayerInteractionType.TradePartner
+				or kind == Enum.PlayerInteractionType.MailInfo
+			then
 				new = "MERCHANT"
 			end
 		end
-		self:Debug('UpdateInteractingFrame', event, current, '=>', new, '|', kind)
+		self:Debug("UpdateInteractingFrame", event, current, "=>", new, "|", kind)
 		if new ~= current then
 			local old = current
 			current = new
 			self.atBank = (current == "BANKFRAME")
 			if self.db.profile.virtualStacks.notWhenTrading ~= 0 then
-				self:SendMessage('AdiBags_FiltersChanged', true)
+				self:SendMessage("AdiBags_FiltersChanged", true)
 			end
-			self:SendMessage('AdiBags_InteractingWindowChanged', new, old)
+			self:SendMessage("AdiBags_InteractingWindowChanged", new, old)
 		end
 	end
 
@@ -485,12 +498,12 @@ end
 
 function addon:ShouldStack(slotData)
 	local conf = self.db.profile.virtualStacks
-	local hintSuffix = '#'..tostring(slotData.bagFamily)
+	local hintSuffix = "#" .. tostring(slotData.bagFamily)
 	if not slotData.link then
-		return conf.freeSpace, "*Free*"..hintSuffix
+		return conf.freeSpace, "*Free*" .. hintSuffix
 	end
 	if not self.db.profile.showBagType then
-		hintSuffix = ''
+		hintSuffix = ""
 	end
 	local window, unstack = self:GetInteractingWindow(), 0
 	if window then
@@ -503,13 +516,13 @@ function addon:ShouldStack(slotData)
 	if maxStack > 1 then
 		if conf.stackable then
 			if (slotData.count or 1) == maxStack then
-				return true, tostring(slotData.itemId)..hintSuffix
+				return true, tostring(slotData.itemId) .. hintSuffix
 			elseif unstack < 3 then
-				return conf.incomplete, tostring(slotData.itemId)..hintSuffix
+				return conf.incomplete, tostring(slotData.itemId) .. hintSuffix
 			end
 		end
 	elseif conf.others and unstack < 2 then
-		return true, tostring(self.GetDistinctItemID(slotData.link))..hintSuffix
+		return true, tostring(self.GetDistinctItemID(slotData.link)) .. hintSuffix
 	end
 end
 
@@ -517,7 +530,7 @@ end
 -- Skin-related methods
 --------------------------------------------------------------------------------
 
-local LSM = LibStub('LibSharedMedia-3.0')
+local LSM = LibStub("LibSharedMedia-3.0")
 
 function addon:GetContainerSkin(containerName, isReagentBank)
 	local skin

@@ -586,7 +586,8 @@ end
 -- Module APIs
 function ShadowUF:RegisterModule(module, key, name, isBar, class, spec, level)
 	-- Prevent duplicate registration for deprecated plugin
-	if( key == "auraIndicators" and IsAddOnLoaded("ShadowedUF_Indicators") and self.modules.auraIndicators ) then
+	local IsAddOnLoaded = IsAddOnLoaded or C_AddOns.IsAddOnLoaded
+if( key == "auraIndicators" and IsAddOnLoaded("ShadowedUF_Indicators") and self.modules.auraIndicators ) then
 		self:Print(L["WARNING! ShadowedUF_Indicators has been deprecated as v4 and is now built in. Please delete ShadowedUF_Indicators, your configuration will be saved."])
 		return
 	end
@@ -684,46 +685,97 @@ local function basicHideBlizzardFrames(...)
 end
 
 local function hideBlizzardFrames(taint, ...)
-	for i=1, select("#", ...) do
-		local frame = select(i, ...)
-		UnregisterUnitWatch(frame)
-		frame:UnregisterAllEvents()
-		frame:Hide()
+    for i=1, select("#", ...) do
+        local frame = select(i, ...)
+        -- Skip if frame is nil
+        if not frame then
+            -- continue to next iteration
+        else
+            UnregisterUnitWatch(frame)
+            frame:UnregisterAllEvents()
+            frame:Hide()
 
-		if( frame.manabar ) then frame.manabar:UnregisterAllEvents() end
-		if( frame.healthbar ) then frame.healthbar:UnregisterAllEvents() end
-		if( frame.spellbar ) then frame.spellbar:UnregisterAllEvents() end
-		if( frame.powerBarAlt ) then frame.powerBarAlt:UnregisterAllEvents() end
+            if( frame.manabar ) then frame.manabar:UnregisterAllEvents() end
+            if( frame.healthbar ) then frame.healthbar:UnregisterAllEvents() end
+            if( frame.spellbar ) then frame.spellbar:UnregisterAllEvents() end
+            if( frame.powerBarAlt ) then frame.powerBarAlt:UnregisterAllEvents() end
 
-		if( taint ) then
-			frame.Show = ShadowUF.noop
-		else
-			frame:SetParent(ShadowUF.hiddenFrame)
-			frame:HookScript("OnShow", rehideFrame)
-		end
-	end
+            if( taint ) then
+                frame.Show = ShadowUF.noop
+            else
+                frame:SetParent(ShadowUF.hiddenFrame)
+                frame:HookScript("OnShow", rehideFrame)
+            end
+        end
+    end
 end
 
 local active_hiddens = {}
 function ShadowUF:HideBlizzardFrames()
-	if( self.db.profile.hidden.cast and not active_hiddens.cast ) then
-		hideBlizzardFrames(true, CastingBarFrame, PetCastingBarFrame)
+if( self.db.profile.hidden.cast and not active_hiddens.cast ) then
+	active_hiddens.cast = true
+	
+	-- Modern API (TBC Anniversary)
+	if PlayerCastingBarFrame then
+		PlayerCastingBarFrame:UnregisterAllEvents()
+		PlayerCastingBarFrame:Hide()
+		PlayerCastingBarFrame:SetParent(ShadowUF.hiddenFrame)
+		PlayerCastingBarFrame:HookScript("OnShow", rehideFrame)
 	end
+	
+	if PetCastingBarFrame then
+		PetCastingBarFrame:UnregisterAllEvents()
+		PetCastingBarFrame:Hide()
+		PetCastingBarFrame:SetParent(ShadowUF.hiddenFrame)
+		PetCastingBarFrame:HookScript("OnShow", rehideFrame)
+	end
+	
+	-- Classic API (fallback)
+	if CastingBarFrame then
+		hideBlizzardFrames(true, CastingBarFrame)
+	end
+end
 
-	if( self.db.profile.hidden.party and not active_hiddens.party ) then
+if( self.db.profile.hidden.party and not active_hiddens.party ) then
+    active_hiddens.party = true
+	for i=1, MAX_PARTY_MEMBERS do
+        local name = "PartyMemberFrame" .. i
+        local frame = _G[name]
+        if frame then
+            hideBlizzardFrames(false, frame, _G[name .. "HealthBar"], _G[name .. "ManaBar"])
+        end
+    end
+
+	-- Hide the new PartyFrame structure (TBC Anniversary modern backend)
+	if PartyFrame then
+		PartyFrame:UnregisterAllEvents()
+		PartyFrame:Hide()
+		PartyFrame:SetParent(ShadowUF.hiddenFrame)
+		PartyFrame:HookScript("OnShow", rehideFrame)
+		
+		-- Hide individual member frames
 		for i=1, MAX_PARTY_MEMBERS do
-			local name = "PartyMemberFrame" .. i
-			hideBlizzardFrames(false, _G[name], _G[name .. "HealthBar"], _G[name .. "ManaBar"])
-		end
-
-		-- This stops the compact party frame from being shown
-		UIParent:UnregisterEvent("GROUP_ROSTER_UPDATE")
-
-		-- This just makes sure
-		if( CompactPartyFrame ) then
-			hideBlizzardFrames(false, CompactPartyFrame)
+			local memberFrame = PartyFrame["MemberFrame" .. i]
+			if memberFrame then
+				memberFrame:UnregisterAllEvents()
+				memberFrame:Hide()
+				memberFrame:SetParent(ShadowUF.hiddenFrame)
+				memberFrame:HookScript("OnShow", rehideFrame)
+			end
 		end
 	end
+
+	-- Hide CompactPartyFrame if it exists
+	if CompactPartyFrame then
+		CompactPartyFrame:UnregisterAllEvents()
+		CompactPartyFrame:Hide()
+		CompactPartyFrame:SetParent(ShadowUF.hiddenFrame)
+		CompactPartyFrame:HookScript("OnShow", rehideFrame)
+	end
+
+	-- This stops the compact party frame from being shown
+	UIParent:UnregisterEvent("GROUP_ROSTER_UPDATE")
+end
 
 	if( CompactRaidFrameManager ) then
 		if( self.db.profile.hidden.raid and not active_hiddens.raidTriggered ) then
@@ -890,7 +942,7 @@ SlashCmdList["SHADOWEDUF"] = function(msg)
 		return
 	end
 
-	local loaded, reason = LoadAddOn("ShadowedUF_Options")
+	local loaded, reason = C_AddOns.LoadAddOn("ShadowedUF_Options")
 	if( not ShadowUF.Config ) then
 		DEFAULT_CHAT_FRAME:AddMessage(string.format(L["Failed to load ShadowedUF_Options, cannot open configuration. Error returned: %s"], reason and _G["ADDON_" .. reason] or ""))
 		return

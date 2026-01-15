@@ -1,12 +1,13 @@
 local MSQ = LibStub and LibStub("Masque", true)
-if not MSQ then return end
+if not MSQ then
+	return
+end
 
 local AddOn, Core = ...
 
-local Version = GetAddOnMetadata(AddOn, "Version")
+local Version = C_AddOns.GetAddOnMetadata(AddOn, "Version")
 local Websites = {
-	"https://github.com/christian-callau/masque-muq",
-	"https://www.curseforge.com/wow/addons/masque-muq",
+	"",
 }
 
 MSQ:AddSkin("Muq", {
@@ -20,7 +21,7 @@ MSQ:AddSkin("Muq", {
 	Backdrop = {
 		Width = 42,
 		Height = 42,
-		Color = {1, 1, 1, 1},
+		Color = { 1, 1, 1, 1 },
 		Texture = [[Interface\AddOns\Masque_Muq\Textures\Backdrop]],
 	},
 	Icon = {
@@ -30,7 +31,7 @@ MSQ:AddSkin("Muq", {
 	Flash = {
 		Width = 42,
 		Height = 42,
-		Color = {1, 0, 0, 0.5},
+		Color = { 1, 0, 0, 0.5 },
 		Texture = [[Interface\AddOns\Masque_Muq\Textures\Overlay]],
 	},
 	Cooldown = {
@@ -48,13 +49,13 @@ MSQ:AddSkin("Muq", {
 		Width = 42,
 		Height = 42,
 		Static = true,
-		Color = {0.25, 0.25, 0.25, 1},
+		Color = { 0.25, 0.25, 0.25, 1 },
 		Texture = [[Interface\AddOns\Masque_Muq\Textures\Muq]],
 	},
 	Pushed = {
 		Width = 42,
 		Height = 42,
-		Color = {1, 1, 0, 0.5},
+		Color = { 1, 1, 0, 0.5 },
 		Texture = [[Interface\AddOns\Masque_Muq\Textures\Overlay]],
 	},
 	Border = {
@@ -70,7 +71,7 @@ MSQ:AddSkin("Muq", {
 		Width = 42,
 		Height = 42,
 		BlendMode = "ADD",
-		Color = {0, 0.75, 1, 0.5},
+		Color = { 0, 0.75, 1, 0.5 },
 		Texture = [[Interface\AddOns\Masque_Muq\Textures\Border]],
 	},
 	AutoCastable = {
@@ -84,7 +85,7 @@ MSQ:AddSkin("Muq", {
 		Width = 42,
 		Height = 42,
 		BlendMode = "ADD",
-		Color = {1, 1, 1, 0.5},
+		Color = { 1, 1, 1, 0.5 },
 		Texture = [[Interface\AddOns\Masque_Muq\Textures\Highlight]],
 	},
 	Gloss = {

@@ -1,24 +1,16 @@
 
+
 --todo: need to fix this file after pre-patch
 
 local Details = _G.Details
 local DF = _G.DetailsFramework
 local Loc = _G.LibStub("AceLocale-3.0"):GetLocale("Details")
-local tocName, Details222 = ...
-local _
 
 --prefix used on sync statistics
 local CONST_GUILD_SYNC = "GS"
 
-local difficultyNames = {
-    ["normal"] = true,
-    ["heroic"] = true,
-    ["mythic"] = true,
-    ["raidfinder"] = true,
-}
-
 function Details:InitializeRaidHistoryWindow()
-    local DetailsRaidHistoryWindow = CreateFrame("frame", "DetailsRaidHistoryWindow", UIParent,"BackdropTemplate")
+    local DetailsRaidHistoryWindow = CreateFrame ("frame", "DetailsRaidHistoryWindow", UIParent,"BackdropTemplate")
     DetailsRaidHistoryWindow.Frame = DetailsRaidHistoryWindow
     DetailsRaidHistoryWindow.__name = Loc ["STRING_STATISTICS"]
     DetailsRaidHistoryWindow.real_name = "DETAILS_STATISTICS"
@@ -35,30 +27,24 @@ function Details:InitializeRaidHistoryWindow()
     end
 end
 
-function Details:OpenRaidHistoryWindow(raidName, bossEncounterId, difficultyId, playerRole, guildName, playerBase, playerName, historyType)
-    if (type(raidName) == "table") then
-        raidName = nil
-    end
-    if (guildName == "LeftButton") then
-        guildName = nil
-    end
+function Details:OpenRaidHistoryWindow (_raid, _boss, _difficulty, _role, _guild, _player_base, _player_name, _history_type)
 
     if (not DetailsRaidHistoryWindow or not DetailsRaidHistoryWindow.Initialized) then
 
         DetailsRaidHistoryWindow.Initialized = true
+        
+        local f = DetailsRaidHistoryWindow or CreateFrame ("frame", "DetailsRaidHistoryWindow", UIParent,"BackdropTemplate") --, "ButtonFrameTemplate"
+        f:SetPoint ("center", UIParent, "center")
+        f:SetFrameStrata ("HIGH")
+        f:SetToplevel (true)
+        
+        f:SetMovable (true)
+        f:SetWidth (850)
+        f:SetHeight (500)
+        tinsert (UISpecialFrames, "DetailsRaidHistoryWindow")
 
-        local statisticsFrame = DetailsRaidHistoryWindow or CreateFrame("frame", "DetailsRaidHistoryWindow", UIParent, "BackdropTemplate")
-        statisticsFrame:SetPoint("center", UIParent, "center")
-        statisticsFrame:SetFrameStrata("HIGH")
-        statisticsFrame:SetToplevel(true)
-
-        statisticsFrame:SetMovable(true)
-        statisticsFrame:SetWidth(850)
-        statisticsFrame:SetHeight(500)
-        table.insert(UISpecialFrames, "DetailsRaidHistoryWindow")
-
-        function statisticsFrame.OpenDB()
-            local db = Details222.storage.OpenRaidStorage()
+        function f.OpenDB()
+            local db = Details.storage:OpenRaidStorage()
             if (not db) then
                 Details:Msg(Loc ["STRING_GUILDDAMAGERANK_DATABASEERROR"])
                 return
@@ -66,227 +52,254 @@ function Details:OpenRaidHistoryWindow(raidName, bossEncounterId, difficultyId, 
             return db
         end
 
-        local db = statisticsFrame.OpenDB()
+        local db = f.OpenDB()
         if (not db) then
             return
         end
 
-        statisticsFrame.Mode = 2
+        C_Timer.After(8, function()
+            --if (f:IsShown()) then
+            --    return Details:OpenRaidHistoryWindow(_raid, _boss, _difficulty, _role, _guild, _player_base, _player_name, _history_type)
+            --end
+        end)
 
-        DF:ApplyStandardBackdrop(statisticsFrame)
+        f.Mode = 2
 
-        --create title bar
-        local titlebar = DF:CreateTitleBar(statisticsFrame, "Details! " .. Loc ["STRING_STATISTICS"])
-        titlebar.CloseButton:SetScript("OnClick", function() statisticsFrame:GetParent():Hide() end)
+        f.bg1 = f:CreateTexture (nil, "background")
+        f.bg1:SetTexture ([[Interface\AddOns\Details\images\background]], true)
+        f.bg1:SetAlpha (0.7)
+        f.bg1:SetVertexColor (0.27, 0.27, 0.27)
+        f.bg1:SetVertTile (true)
+        f.bg1:SetHorizTile (true)
+        f.bg1:SetSize (790, 454)
+        f.bg1:SetAllPoints()
+        
+        f:SetBackdrop ({edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize = 1, bgFile = [[Interface\AddOns\Details\images\background]], tileSize = 64, tile = true})
+        f:SetBackdropColor (.5, .5, .5, .5)
+        f:SetBackdropBorderColor (0, 0, 0, 1)
 
---STRING_GUILDDAMAGERANK_TUTORIAL_DESC
---STRING_OPTIONS_CHART_CLOSE
+        local titlebar = DF:CreateTitleBar(f, "Details! " .. Loc ["STRING_STATISTICS"])
+            
+        if (not Details:GetTutorialCVar ("HISTORYPANEL_TUTORIAL")) then
+            local tutorialFrame = CreateFrame ("frame", "$parentTutorialFrame",f,"BackdropTemplate")
+            tutorialFrame:SetPoint ("center", f, "center")
+            tutorialFrame:SetFrameStrata ("DIALOG")
+            tutorialFrame:SetSize (400, 300)
+            tutorialFrame:SetBackdrop ({bgFile = [[Interface\AddOns\Details\images\background]], tile = true, tileSize = 16,
+            insets = {left = 0, right = 0, top = 0, bottom = 0}, edgeFile = [[Interface\Buttons\WHITE8X8]], edgeSize=1})
+            tutorialFrame:SetBackdropColor (0, 0, 0, 1)
+            
+            tutorialFrame.Title = DF:CreateLabel (tutorialFrame, "Statistics" , 12, "orange") --curse localization isn't adding new strings (and I deleted the old one)
+            tutorialFrame.Title:SetPoint ("top", tutorialFrame, "top", 0, -5)
+            
+            tutorialFrame.Desc = DF:CreateLabel (tutorialFrame, Loc ["STRING_GUILDDAMAGERANK_TUTORIAL_DESC"], 12)
+            tutorialFrame.Desc.width = 370
+            tutorialFrame.Desc:SetPoint ("topleft", tutorialFrame, "topleft", 10, -45)
+            
+            local closeButton = DF:CreateButton (tutorialFrame, function() Details:SetTutorialCVar ("HISTORYPANEL_TUTORIAL", true); tutorialFrame:Hide() end, 80, 20, Loc ["STRING_OPTIONS_CHART_CLOSE"])
+            closeButton:SetPoint ("bottom", tutorialFrame, "bottom", 0, 10)
+            closeButton:SetTemplate (DF:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE"))
+        end
+        
+        --> background
+            local background = f:CreateTexture ("$parentBackgroundImage", "border")
+            background:SetAlpha (0.3)
+            background:SetPoint ("topleft", f, "topleft", 6, -65)
+            background:SetPoint ("bottomright", f, "bottomright", -10, 28)
 
-        --background
-        local background = statisticsFrame:CreateTexture("$parentBackgroundImage", "border")
-        background:SetAlpha(0.3)
-        background:SetPoint("topleft", statisticsFrame, "topleft", 6, -65)
-        background:SetPoint("bottomright", statisticsFrame, "bottomright", -10, 28)
-
-        --separate menu and main list
-        local div = statisticsFrame:CreateTexture(nil, "artwork")
-        div:SetTexture([[Interface\ACHIEVEMENTFRAME\UI-Achievement-MetalBorder-Left]])
-        div:SetAlpha(0.1)
-        div:SetPoint("topleft", statisticsFrame, "topleft", 180, -64)
-        div:SetHeight(574)
+        --> separate menu and main list
+            local div = f:CreateTexture (nil, "artwork")
+            div:SetTexture ([[Interface\ACHIEVEMENTFRAME\UI-Achievement-MetalBorder-Left]])
+            div:SetAlpha (0.1)
+            div:SetPoint ("topleft", f, "topleft", 180, -64)
+            div:SetHeight (574)
 
         --select history or guild rank
-        local options_switch_template = DF:GetTemplate("switch", "OPTIONS_CHECKBOX_TEMPLATE")
-        local options_text_template = DF:GetTemplate("font", "OPTIONS_FONT_TEMPLATE")
-        local options_button_template = DF:GetTemplate("button", "OPTIONS_BUTTON_TEMPLATE")
+        local options_switch_template = DF:GetTemplate ("switch", "OPTIONS_CHECKBOX_TEMPLATE")
+        local options_text_template = DF:GetTemplate ("font", "OPTIONS_FONT_TEMPLATE")
+        local options_button_template = DF:GetTemplate ("button", "OPTIONS_BUTTON_TEMPLATE")
 
         local selectKillTimeline = function()
-            statisticsFrame.GuildRankCheckBox:SetValue(false)
-            statisticsFrame.HistoryCheckBox:SetValue(true)
-            statisticsFrame.Mode = 1
-            statisticsFrame:Refresh()
-            statisticsFrame.ReportButton:Hide()
+            f.GuildRankCheckBox:SetValue (false)
+            f.HistoryCheckBox:SetValue (true)
+            f.Mode = 1
+            _G.DetailsRaidHistoryWindow:Refresh()
+            f.ReportButton:Hide()
         end
 
         local selectGuildRank = function()
-            statisticsFrame.HistoryCheckBox:SetValue(false)
-            statisticsFrame.GuildRankCheckBox:SetValue(true)
-            statisticsFrame.select_player:Select(1, true)
-            statisticsFrame.select_player2:Hide()
-            statisticsFrame.select_player2_label:Hide()
-            statisticsFrame.Mode = 2
-            statisticsFrame:Refresh()
-            statisticsFrame.ReportButton:Show()
+            f.HistoryCheckBox:SetValue (false)
+            f.GuildRankCheckBox:SetValue (true)
+            _G.DetailsRaidHistoryWindow.select_player:Select (1, true)
+            f.select_player2:Hide()
+            f.select_player2_label:Hide()
+            f.Mode = 2
+            _G.DetailsRaidHistoryWindow:Refresh()
+            f.ReportButton:Show()
         end
 
         --kill timeline
-        local HistoryCheckBox, HistoryLabel = DF:CreateSwitch(statisticsFrame, selectKillTimeline, false, 18, 18, "", "", "HistoryCheckBox", nil, nil, nil, nil, Loc ["STRING_GUILDDAMAGERANK_SHOWHISTORY"], options_switch_template) --, options_text_template
+        local HistoryCheckBox, HistoryLabel = DF:CreateSwitch (f, selectKillTimeline, false, 18, 18, "", "", "HistoryCheckBox", nil, nil, nil, nil, Loc ["STRING_GUILDDAMAGERANK_SHOWHISTORY"], options_switch_template) --, options_text_template
         HistoryLabel:ClearAllPoints()
         HistoryCheckBox:ClearAllPoints()
-        HistoryCheckBox:SetPoint("topleft", statisticsFrame, "topleft", 100, -34)
-        HistoryLabel:SetPoint("left", HistoryCheckBox, "right", 2, 0)
+        HistoryCheckBox:SetPoint ("topleft", f, "topleft", 100, -34)
+        HistoryLabel:SetPoint ("left", HistoryCheckBox, "right", 2, 0)
         HistoryCheckBox:SetAsCheckBox()
 
         --guildrank
-        local GuildRankCheckBox, GuildRankLabel = DF:CreateSwitch(statisticsFrame, selectGuildRank, true, 18, 18, "", "", "GuildRankCheckBox", nil, nil, nil, nil, Loc ["STRING_GUILDDAMAGERANK_SHOWRANK"], options_switch_template) --, options_text_template
+        local GuildRankCheckBox, GuildRankLabel = DF:CreateSwitch (f, selectGuildRank, true, 18, 18, "", "", "GuildRankCheckBox", nil, nil, nil, nil, Loc ["STRING_GUILDDAMAGERANK_SHOWRANK"], options_switch_template) --, options_text_template
         GuildRankLabel:ClearAllPoints()
         GuildRankCheckBox:ClearAllPoints()
-        GuildRankCheckBox:SetPoint("topleft", statisticsFrame, "topleft", 240, -34)
-        GuildRankLabel:SetPoint("left", GuildRankCheckBox, "right", 2, 0)
+        GuildRankCheckBox:SetPoint ("topleft", f, "topleft", 240, -34)
+        GuildRankLabel:SetPoint ("left", GuildRankCheckBox, "right", 2, 0)
         GuildRankCheckBox:SetAsCheckBox()
 
-        --guild sync
-        local doGuildSync = function()
-            statisticsFrame.RequestedAmount = 0
-            statisticsFrame.DownloadedAmount = 0
-            statisticsFrame.EstimateSize = 0
-            statisticsFrame.DownloadedSize = 0
-            statisticsFrame.SyncStartTime = time()
+        --> guild sync
+            local doGuildSync = function()
+                f.RequestedAmount = 0
+                f.DownloadedAmount = 0
+                f.EstimateSize = 0
+                f.DownloadedSize = 0
+                f.SyncStartTime = time()
 
-            Details222.storage.DBGuildSync()
-            statisticsFrame.GuildSyncButton:Disable()
+                Details.storage:DBGuildSync()
+                f.GuildSyncButton:Disable()
 
-            if (not statisticsFrame.SyncTexture) then
-                local workingFrame = CreateFrame("frame", nil, statisticsFrame, "BackdropTemplate")
-                statisticsFrame.WorkingFrame = workingFrame
-                workingFrame:SetSize(1, 1)
-                statisticsFrame.SyncTextureBackground = workingFrame:CreateTexture(nil, "border")
-                statisticsFrame.SyncTextureBackground:SetPoint("bottomright", statisticsFrame, "bottomright", -5, -1)
-                statisticsFrame.SyncTextureBackground:SetTexture([[Interface\COMMON\StreamBackground]])
-                statisticsFrame.SyncTextureBackground:SetSize(32, 32)
+                if (not f.SyncTexture) then
+                    local workingFrame = CreateFrame ("frame", nil, f,"BackdropTemplate")
+                    f.WorkingFrame = workingFrame
+                    workingFrame:SetSize (1, 1)
+                    f.SyncTextureBackground = workingFrame:CreateTexture (nil, "border")
+                    f.SyncTextureBackground:SetPoint ("bottomright", f, "bottomright", -5, -1)
+                    f.SyncTextureBackground:SetTexture ([[Interface\COMMON\StreamBackground]])
+                    f.SyncTextureBackground:SetSize (32, 32)
+                    f.SyncTextureCircle = workingFrame:CreateTexture (nil, "artwork")
+                    f.SyncTextureCircle:SetPoint ("center", f.SyncTextureBackground, "center", 0, 0)
+                    f.SyncTextureCircle:SetTexture ([[Interface\COMMON\StreamCircle]])
+                    f.SyncTextureCircle:SetSize (32, 32)
+                    f.SyncTextureGrade = workingFrame:CreateTexture (nil, "overlay")
+                    f.SyncTextureGrade:SetPoint ("center", f.SyncTextureBackground, "center", 0, 0)
+                    f.SyncTextureGrade:SetTexture ([[Interface\COMMON\StreamFrame]])
+                    f.SyncTextureGrade:SetSize (32, 32)
 
-                statisticsFrame.SyncTextureCircle = workingFrame:CreateTexture(nil, "artwork")
-                statisticsFrame.SyncTextureCircle:SetPoint("center", statisticsFrame.SyncTextureBackground, "center", 0, 0)
-                statisticsFrame.SyncTextureCircle:SetTexture([[Interface\COMMON\StreamCircle]])
-                statisticsFrame.SyncTextureCircle:SetSize(32, 32)
+                    local animationHub = DF:CreateAnimationHub (workingFrame)
+                    animationHub:SetLooping ("Repeat")
+                    f.WorkingAnimation = animationHub
 
-                statisticsFrame.SyncTextureGrade = workingFrame:CreateTexture(nil, "overlay")
-                statisticsFrame.SyncTextureGrade:SetPoint("center", statisticsFrame.SyncTextureBackground, "center", 0, 0)
-                statisticsFrame.SyncTextureGrade:SetTexture([[Interface\COMMON\StreamFrame]])
-                statisticsFrame.SyncTextureGrade:SetSize(32, 32)
+                    local rotation = DF:CreateAnimation (animationHub, "ROTATION", 1, 3, -360)
+                    rotation:SetTarget (f.SyncTextureCircle)
 
-                local animationHub = DF:CreateAnimationHub(workingFrame)
-                animationHub:SetLooping("Repeat")
-                statisticsFrame.WorkingAnimation = animationHub
+                    f.SyncText = workingFrame:CreateFontString (nil, "border", "GameFontNormal")
+                    f.SyncText:SetPoint ("right", f.SyncTextureBackground, "left", 0, 0)
+                    f.SyncText:SetText ("working")
 
-                local rotation = DF:CreateAnimation(animationHub, "ROTATION", 1, 3, -360)
-                rotation:SetTarget(statisticsFrame.SyncTextureCircle)
-
-                statisticsFrame.SyncText = workingFrame:CreateFontString(nil, "border", "GameFontNormal")
-                statisticsFrame.SyncText:SetPoint("right", statisticsFrame.SyncTextureBackground, "left", 0, 0)
-                statisticsFrame.SyncText:SetText("working")
-
-                local endAnimationHub = DF:CreateAnimationHub(workingFrame, nil, function() workingFrame:Hide() end)
-                DF:CreateAnimation(endAnimationHub, "ALPHA", 1, 0.5, 1, 0)
-                statisticsFrame.EndAnimationHub = endAnimationHub
-            end
-
-            statisticsFrame.WorkingFrame:Show()
-            statisticsFrame.WorkingAnimation:Play()
-
-            C_Timer.NewTicker(10, function(self)
-                if (not Details.LastGuildSyncReceived) then
-                    statisticsFrame.GuildSyncButton:Enable()
-                    statisticsFrame.EndAnimationHub:Play()
-
-                elseif (Details.LastGuildSyncReceived+10 < GetTime()) then
-                    statisticsFrame.GuildSyncButton:Enable()
-                    statisticsFrame.EndAnimationHub:Play()
-                    self:Cancel()
+                    local endAnimationHub = DF:CreateAnimationHub (workingFrame, nil, function() workingFrame:Hide() end)
+                    DF:CreateAnimation (endAnimationHub, "ALPHA", 1, 0.5, 1, 0)
+                    f.EndAnimationHub = endAnimationHub
                 end
-            end)
-        end
 
-        local guildSyncButton = DF:CreateButton(statisticsFrame, doGuildSync, 130, 20, Loc ["STRING_GUILDDAMAGERANK_SYNCBUTTONTEXT"], nil, nil, nil, "GuildSyncButton", nil, nil, options_button_template, options_text_template)
-        guildSyncButton:SetPoint("topright", statisticsFrame, "topright", -20, -34)
-        guildSyncButton:SetIcon([[Interface\GLUES\CharacterSelect\RestoreButton]], 12, 12, "overlay", {0.2, .8, 0.2, .8}, nil, 4)
+                f.WorkingFrame:Show()
+                f.WorkingAnimation:Play()
 
-        --listen to comm events
-        local eventListener = Details:CreateEventListener()
+                C_Timer.NewTicker (10, function(self)
+                    if (not Details.LastGuildSyncReceived) then
+                        f.GuildSyncButton:Enable()
+                        f.EndAnimationHub:Play()
 
-        function eventListener:OnCommReceived(event, length, prefix, playerName, realmName, detailsVersion, guildSyncID, data)
-            if (prefix == CONST_GUILD_SYNC) then
-                --print(event, length, prefix, playerName, realmName, detailsVersion, guildSyncID, data)
-
-                --received a list of encounter IDs
-                if (guildSyncID == "L") then
-
-                --received one encounter table
-                elseif (guildSyncID == "A") then
-                    if (not statisticsFrame.RequestedAmount) then
-                        --if the receiving player reloads, f.RequestedAmount is nil
-                        return
+                    elseif (Details.LastGuildSyncReceived+10 < GetTime()) then
+                        f.GuildSyncButton:Enable()
+                        f.EndAnimationHub:Play()
+                        self:Cancel()
                     end
-                    statisticsFrame.DownloadedAmount = (statisticsFrame.DownloadedAmount or 0) + 1
-
-                    --size = 1 byte per characters in the string
-                    statisticsFrame.EstimateSize = length * statisticsFrame.RequestedAmount > statisticsFrame.EstimateSize and length * statisticsFrame.RequestedAmount or statisticsFrame.RequestedAmount
-                    statisticsFrame.DownloadedSize = statisticsFrame.DownloadedSize + length
-                    local downloadSpeed = statisticsFrame.DownloadedSize / (time() - statisticsFrame.SyncStartTime)
-
-                    statisticsFrame.SyncText:SetText("working [downloading " .. statisticsFrame.DownloadedAmount .. "/" .. statisticsFrame.RequestedAmount .. ", " .. format("%.2f", downloadSpeed/1024) .. "Kbps]")
-                end
+                end)
             end
-        end
 
-        function eventListener:OnCommSent(event, length, prefix, playerName, realmName, detailsVersion, guildSyncID, missingIDs, arg8, arg9)
-            if (prefix == CONST_GUILD_SYNC) then
-                --print(event, length, prefix, playerName, realmName, detailsVersion, guildSyncID, missingIDs, arg8, arg9)
+            local GuildSyncButton = DF:CreateButton (f, doGuildSync, 130, 20, Loc ["STRING_GUILDDAMAGERANK_SYNCBUTTONTEXT"], nil, nil, nil, "GuildSyncButton", nil, nil, options_button_template, options_text_template)
+            GuildSyncButton:SetPoint ("topright", f, "topright", -20, -34)
+            GuildSyncButton:SetIcon ([[Interface\GLUES\CharacterSelect\RestoreButton]], 12, 12, "overlay", {0.2, .8, 0.2, .8}, nil, 4)
 
-                --requested a list of encounters
-                if (guildSyncID == "R") then
+        --> listen to comm events
+            local eventListener = Details:CreateEventListener()
 
-                --requested to download a selected list of encounter tables
-                elseif (guildSyncID == "G") then
-                    statisticsFrame.RequestedAmount = statisticsFrame.RequestedAmount + #missingIDs
-                    statisticsFrame.SyncText:SetText("working [downloading " .. statisticsFrame.DownloadedAmount .. "/" .. statisticsFrame.RequestedAmount .. "]")
-                end
-            end
-        end
+            function eventListener:OnCommReceived (event, length, prefix, playerName, realmName, detailsVersion, guildSyncID, data)
+                if (prefix == CONST_GUILD_SYNC) then
+                    --received a list of encounter IDs
+                    if (guildSyncID == "L") then
 
-        eventListener:RegisterEvent("COMM_EVENT_RECEIVED", "OnCommReceived")
-        eventListener:RegisterEvent("COMM_EVENT_SENT", "OnCommSent")
-
-        --report results
-        function statisticsFrame.BuildReport()
-            if (statisticsFrame.LatestResourceTable) then
-                local reportFunc = function(IsCurrent, IsReverse, AmtLines)
-                    local bossName = statisticsFrame.select_boss.label:GetText()
-                    local bossDiff = statisticsFrame.select_diff.label:GetText()
-                    local guildName = statisticsFrame.select_guild.label:GetText()
-                    local reportTable = {"Details!: DPS Rank for: " .. (bossDiff or "") .. " " .. (bossName or "--x--x--") .. " <" .. (guildName or "") .. ">"}
-                    local result = {}
-
-                    for i = 1, AmtLines do
-                        if (statisticsFrame.LatestResourceTable[i]) then
-                            local playerName = statisticsFrame.LatestResourceTable[i][1]
-                            playerName = playerName:gsub("%|c%x%x%x%x%x%x%x%x", "")
-                            playerName = playerName:gsub("%|r", "")
-                            playerName = playerName:gsub(".*%s", "")
-                            table.insert(result, {playerName, statisticsFrame.LatestResourceTable[i][2]})
-                        else
-                            break
+                    --received one encounter table
+                    elseif (guildSyncID == "A") then
+                        if (not f.RequestedAmount) then
+                            --if the receiving player reloads, f.RequestedAmount is nil
+                            return
                         end
+                        f.DownloadedAmount = (f.DownloadedAmount or 0) + 1
+
+                        --size = 1 byte per characters in the string
+                        f.EstimateSize = length * f.RequestedAmount > f.EstimateSize and length * f.RequestedAmount or f.RequestedAmount
+                        f.DownloadedSize = f.DownloadedSize + length
+                        local downloadSpeed = f.DownloadedSize / (time() - f.SyncStartTime)
+
+                        f.SyncText:SetText ("working [downloading " .. f.DownloadedAmount .. "/" .. f.RequestedAmount .. ", " .. format ("%.2f", downloadSpeed/1024) .. "Kbps]")
+                    end
+                end
+            end
+
+            function eventListener:OnCommSent(event, length, prefix, playerName, realmName, detailsVersion, guildSyncID, missingIDs, arg8, arg9)
+                if (prefix == CONST_GUILD_SYNC) then
+                    --requested a list of encounters
+                    if (guildSyncID == "R") then
+
+                    --requested to download a selected list of encounter tables
+                    elseif (guildSyncID == "G") then
+                        f.RequestedAmount = f.RequestedAmount + #missingIDs
+                        f.SyncText:SetText ("working [downloading " .. f.DownloadedAmount .. "/" .. f.RequestedAmount .. "]")
+                    end
+                end
+            end
+
+            eventListener:RegisterEvent ("COMM_EVENT_RECEIVED", "OnCommReceived")
+            eventListener:RegisterEvent ("COMM_EVENT_SENT", "OnCommSent")
+
+        --> report results
+            function f.BuildReport()
+                if (f.LatestResourceTable) then
+                    local reportFunc = function (IsCurrent, IsReverse, AmtLines)
+                        local bossName = f.select_boss.label:GetText()
+                        local bossDiff = f.select_diff.label:GetText()
+                        local guildName = f.select_guild.label:GetText()
+                        local reportTable = {"Details!: DPS Rank for: " .. (bossDiff or "") .. " " .. (bossName or "--x--x--") .. " <" .. (guildName or "") .. ">"}
+                        local result = {}
+
+                        for i = 1, AmtLines do
+                            if (f.LatestResourceTable[i]) then
+                                local playerName = f.LatestResourceTable[i][1]
+                                playerName = playerName:gsub ("%|c%x%x%x%x%x%x%x%x", "")
+                                playerName = playerName:gsub ("%|r", "")
+                                playerName = playerName:gsub (".*%s", "")
+                                tinsert (result, {playerName, f.LatestResourceTable[i][2]})
+                            else
+                                break
+                            end
+                        end
+
+                        Details:FormatReportLines (reportTable, result)
+                        Details:SendReportLines (reportTable)
                     end
 
-                    Details:FormatReportLines(reportTable, result)
-                    Details:SendReportLines(reportTable)
+                    Details:SendReportWindow (reportFunc, nil, nil, true)
                 end
-
-                Details:SendReportWindow(reportFunc, nil, nil, true)
             end
-        end
 
-        local reportButton = DF:CreateButton(statisticsFrame, statisticsFrame.BuildReport, 130, 20, Loc ["STRING_OPTIONS_REPORT_ANCHOR"]:gsub(":", ""), nil, nil, nil, "ReportButton", nil, nil, options_button_template, options_text_template)
-        reportButton:SetPoint("right", guildSyncButton, "left", -2, 0)
-        reportButton:SetIcon([[Interface\GLUES\CharacterSelect\RestoreButton]], 12, 12, "overlay", {0.2, .8, 0.2, .8}, nil, 4)
+            local ReportButton = DF:CreateButton (f, f.BuildReport, 130, 20, Loc ["STRING_OPTIONS_REPORT_ANCHOR"]:gsub (":", ""), nil, nil, nil, "ReportButton", nil, nil, options_button_template, options_text_template)
+            ReportButton:SetPoint ("right", GuildSyncButton, "left", -2, 0)
+            ReportButton:SetIcon ([[Interface\GLUES\CharacterSelect\RestoreButton]], 12, 12, "overlay", {0.2, .8, 0.2, .8}, nil, 4)			
 
         --
-        function statisticsFrame:SetBackgroundImage(encounterId)
-            local instanceId = Details:GetInstanceIdFromEncounterId(encounterId)
+        function f:SetBackgroundImage (encounterId)
+            local instanceId = Details:GetInstanceIdFromEncounterId (encounterId)
             if (instanceId) then
-                local file, L, R, T, B = Details:GetRaidBackground(instanceId)
-                --print("file:", file)
+                local file, L, R, T, B = Details:GetRaidBackground (instanceId)
+                --print ("file:", file)
                 --can't get the image, looks to be restricted
                 --[[
                 if (file) then
@@ -300,37 +313,37 @@ function Details:OpenRaidHistoryWindow(raidName, bossEncounterId, difficultyId, 
             end
         end
 
-        --window script handlers
-        statisticsFrame:SetScript("OnMouseDown", function(self, button)
-            if (self.isMoving) then
-                return
-            end
-            if (button == "RightButton") then
-                self:Hide()
-            else
-                self:StartMoving()
-                self.isMoving = true
-            end
-        end)
+        --> window script handlers
+            f:SetScript ("OnMouseDown", function(self, button)
+                if (self.isMoving) then
+                    return
+                end
+                if (button == "RightButton") then
+                    self:Hide()
+                else
+                    self:StartMoving() 
+                    self.isMoving = true
+                end
+            end)
 
-        statisticsFrame:SetScript("OnMouseUp", function(self, button)
-            if (self.isMoving and button == "LeftButton") then
-                self:StopMovingOrSizing()
-                self.isMoving = nil
-            end
-        end)
+            f:SetScript ("OnMouseUp", function(self, button)
+                if (self.isMoving and button == "LeftButton") then
+                    self:StopMovingOrSizing()
+                    self.isMoving = nil
+                end
+            end)
 
-        statisticsFrame:SetScript("OnHide", function()
-            --save latest shown state
-            statisticsFrame.LatestSelection = statisticsFrame.LatestSelection or {}
-            statisticsFrame.LatestSelection.Raid = DetailsRaidHistoryWindow.select_raid.value
-            statisticsFrame.LatestSelection.Boss = DetailsRaidHistoryWindow.select_boss.value
-            statisticsFrame.LatestSelection.Diff = DetailsRaidHistoryWindow.select_diff.value
-            statisticsFrame.LatestSelection.Role = DetailsRaidHistoryWindow.select_role.value
-            statisticsFrame.LatestSelection.Guild = DetailsRaidHistoryWindow.select_guild.value
-            statisticsFrame.LatestSelection.PlayerBase = DetailsRaidHistoryWindow.select_player.value
-            statisticsFrame.LatestSelection.PlayerName = DetailsRaidHistoryWindow.select_player2.value
-        end)
+            f:SetScript ("OnHide", function()
+                --> save latest shown state
+                f.LatestSelection = f.LatestSelection or {}
+                f.LatestSelection.Raid = DetailsRaidHistoryWindow.select_raid.value
+                f.LatestSelection.Boss = DetailsRaidHistoryWindow.select_boss.value
+                f.LatestSelection.Diff = DetailsRaidHistoryWindow.select_diff.value
+                f.LatestSelection.Role = DetailsRaidHistoryWindow.select_role.value
+                f.LatestSelection.Guild = DetailsRaidHistoryWindow.select_guild.value
+                f.LatestSelection.PlayerBase = DetailsRaidHistoryWindow.select_player.value
+                f.LatestSelection.PlayerName = DetailsRaidHistoryWindow.select_player2.value
+            end)
 
         local dropdownWidth = 160
         local icon = [[Interface\FriendsFrame\battlenet-status-offline]]
@@ -340,709 +353,634 @@ function Details:OpenRaidHistoryWindow(raidName, bossEncounterId, difficultyId, 
         local bossList = {}
         local guildList = {}
 
-        local sortAlphabetical = function(a,b) return a.value < b.value end
+        local sort_alphabetical = function(a,b) return a[1] < b[1] end
+        local sort_alphabetical2 = function(a,b) return a.value < b.value end
 
-        local onSelect = function()
-            if (statisticsFrame.Refresh) then
-                statisticsFrame:Refresh()
+        local on_select = function()
+            if (f.Refresh) then
+                f:Refresh()
             end
         end
 
-        --select raid:
-        local onRaidSelect = function(_, _, raid)
-            Details.rank_window.last_raid = raid
-            statisticsFrame:UpdateDropdowns(true)
-            onSelect()
-        end
+        --> select raid:
+            local onRaidSelect = function (_, _, raid)
+                Details.rank_window.last_raid = raid
+                f:UpdateDropdowns (true)
+                on_select()
+            end
+            local buildRaidList = function()
+                return raidList
+            end
+            local raid_dropdown = DF:CreateDropDown (f, buildRaidList, 1, dropdownWidth, 20, "select_raid")
+            local raid_string = DF:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_RAID"] .. ":", _, _, "GameFontNormal", "select_raid_label")
+            raid_dropdown:SetTemplate (DF:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 
-        local buildRaidList = function()
-            return raidList
-        end
+        --> select boss:
+            local on_boss_select = function (_, _, boss)
+                on_select()
+            end
+            local build_boss_list = function()
+                return bossList
+            end
+            local boss_dropdown = DF:CreateDropDown (f, build_boss_list, 1, dropdownWidth, 20, "select_boss")
+            local boss_string = DF:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_BOSS"] .. ":", _, _, "GameFontNormal", "select_boss_label")
+            boss_dropdown:SetTemplate (DF:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 
-        local raidDropdown = DF:CreateDropDown(statisticsFrame, buildRaidList, 1, dropdownWidth, 20, "select_raid")
-        local raidString = DF:CreateLabel(statisticsFrame, Loc ["STRING_GUILDDAMAGERANK_RAID"] .. ":", _, _, "GameFontNormal", "select_raid_label")
-        raidDropdown:SetTemplate(DF:GetTemplate("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
+        --> select difficulty:
+            local on_diff_select = function (_, _, diff)
+                Details.rank_window.last_difficulty = diff
+                on_select()
+            end
 
-        --select boss:
-        local onSelectBoss = function(_, _, boss)
-            onSelect()
-        end
+            local build_diff_list = function()
+                return difficultyList
+            end
+            local diff_dropdown = DF:CreateDropDown (f, build_diff_list, 1, dropdownWidth, 20, "select_diff")
+            local diff_string = DF:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_DIFF"] .. ":", _, _, "GameFontNormal", "select_diff_label")
+            diff_dropdown:SetTemplate (DF:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 
-        local buildBossList = function()
-            return bossList
-        end
+        --> select role:
+            local on_role_select = function (_, _, role)
+                on_select()
+            end
+            local build_role_list = function()
+                return {
+                    {value = "damage", label = "Damager", icon = icon, onclick = on_role_select},
+                    {value = "healing", label = "Healer", icon = icon, onclick = on_role_select}
+                }
+            end
+            local role_dropdown = DF:CreateDropDown (f, build_role_list, 1, dropdownWidth, 20, "select_role")
+            local role_string = DF:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_ROLE"] .. ":", _, _, "GameFontNormal", "select_role_label")
+            role_dropdown:SetTemplate (DF:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 
-        local bossDropdown = DF:CreateDropDown(statisticsFrame, buildBossList, 1, dropdownWidth, 20, "select_boss")
-        local bossString = DF:CreateLabel(statisticsFrame, Loc ["STRING_GUILDDAMAGERANK_BOSS"] .. ":", _, _, "GameFontNormal", "select_boss_label")
-        bossDropdown:SetTemplate(DF:GetTemplate("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
+        --> select guild:
+            local on_guild_select = function (_, _, guild)
+                on_select()
+            end
+            local build_guild_list = function()
+                return guildList
+            end
+            local guild_dropdown = DF:CreateDropDown (f, build_guild_list, 1, dropdownWidth, 20, "select_guild")
+            local guild_string = DF:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_GUILD"] .. ":", _, _, "GameFontNormal", "select_guild_label")
+            guild_dropdown:SetTemplate (DF:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 
-        --select difficulty:
-        local onDifficultySelect = function(_, _, diff)
-            Details.rank_window.last_difficulty = diff
-            onSelect()
-        end
+        --> select playerbase:
+            local on_player_select = function (_, _, player)
+                on_select()
+            end
+            local build_player_list = function()
+                return {
+                    {value = 1, label = Loc ["STRING_GUILDDAMAGERANK_PLAYERBASE_RAID"], icon = icon, onclick = on_player_select},
+                    {value = 2, label = Loc ["STRING_GUILDDAMAGERANK_PLAYERBASE_INDIVIDUAL"], icon = icon, onclick = on_player_select},
+                }
+            end
+            local player_dropdown = DF:CreateDropDown (f, build_player_list, 1, dropdownWidth, 20, "select_player")
+            local player_string = DF:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_PLAYERBASE"] .. ":", _, _, "GameFontNormal", "select_player_label")
+            player_dropdown:SetTemplate (DF:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 
-        local buildDifficultyList = function()
-            return difficultyList
-        end
-
-        local difficultyDropdown = DF:CreateDropDown(statisticsFrame, buildDifficultyList, 1, dropdownWidth, 20, "select_diff")
-        local difficultyString = DF:CreateLabel(statisticsFrame, Loc ["STRING_GUILDDAMAGERANK_DIFF"] .. ":", _, _, "GameFontNormal", "select_diff_label")
-        difficultyDropdown:SetTemplate(DF:GetTemplate("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
-
-        --select role:
-        local onRoleSelect = function(_, _, role)
-            onSelect()
-        end
-
-        local buildRoleList = function()
-            return {
-                {value = "DAMAGER", label = "Damager", icon = icon, onclick = onRoleSelect},
-                {value = "HEALER", label = "Healer", icon = icon, onclick = onRoleSelect}
-            }
-        end
-
-        local role_dropdown = DF:CreateDropDown (statisticsFrame, buildRoleList, 1, dropdownWidth, 20, "select_role")
-        local role_string = DF:CreateLabel(statisticsFrame, Loc ["STRING_GUILDDAMAGERANK_ROLE"] .. ":", _, _, "GameFontNormal", "select_role_label")
-        role_dropdown:SetTemplate(DF:GetTemplate("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
-
-        --select guild:
-        local onGuildSelect = function(_, _, guild)
-            onSelect()
-        end
-
-        local buildGuildList = function()
-            return guildList
-        end
-
-        local guildDropdown = DF:CreateDropDown(statisticsFrame, buildGuildList, 1, dropdownWidth, 20, "select_guild")
-        local guildString = DF:CreateLabel(statisticsFrame, Loc ["STRING_GUILDDAMAGERANK_GUILD"] .. ":", _, _, "GameFontNormal", "select_guild_label")
-        guildDropdown:SetTemplate(DF:GetTemplate("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
-
-        --select playerbase:
-        local onPlayerSelect = function(_, _, player)
-            onSelect()
-        end
-
-        local buildPlayerList = function()
-            return {
-                {value = 1, label = Loc ["STRING_GUILDDAMAGERANK_PLAYERBASE_RAID"], icon = icon, onclick = onPlayerSelect},
-                {value = 2, label = Loc ["STRING_GUILDDAMAGERANK_PLAYERBASE_INDIVIDUAL"], icon = icon, onclick = onPlayerSelect},
-            }
-        end
-
-        local player_dropdown = DF:CreateDropDown(statisticsFrame, buildPlayerList, 1, dropdownWidth, 20, "select_player")
-        local player_string = DF:CreateLabel(statisticsFrame, Loc ["STRING_GUILDDAMAGERANK_PLAYERBASE"] .. ":", _, _, "GameFontNormal", "select_player_label")
-        player_dropdown:SetTemplate(DF:GetTemplate("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
-
-        --select player:
-        local onPlayer2Select = function(_, _, player)
-            statisticsFrame.latest_player_selected = player
-            statisticsFrame:BuildPlayerTable(player)
-        end
-
-        local buildPlayer2List = function()
-            local encounterTable, guild, role = unpack(statisticsFrame.build_player2_data or {})
-            local t = {}
-            local alreadyListed = {}
-            if (encounterTable) then
-                for encounterIndex, encounter in ipairs(encounterTable) do
-                    if (encounter.guild == guild) then
-                        local roleTable = encounter [role]
-                        for playerName, _ in pairs(roleTable) do
-                            if (not alreadyListed [playerName]) then
-                                table.insert(t, {value = playerName, label = playerName, icon = icon, onclick = onPlayer2Select})
-                                alreadyListed [playerName] = true
+        --> select player:
+            local onPlayer2Select = function (_, _, player)
+                f.latest_player_selected = player
+                f:BuildPlayerTable (player)
+            end
+            local build_player2_list = function()
+                local encounterTable, guild, role = unpack (f.build_player2_data or {})
+                local t = {}
+                local alreadyListed = {}
+                if (encounterTable) then
+                    for encounterIndex, encounter in ipairs (encounterTable) do
+                        if (encounter.guild == guild) then
+                            local roleTable = encounter [role]
+                            for playerName, _ in pairs (roleTable) do
+                                if (not alreadyListed [playerName]) then
+                                    tinsert (t, {value = playerName, label = playerName, icon = icon, onclick = onPlayer2Select})
+                                    alreadyListed [playerName] = true
+                                end
                             end
                         end
                     end
                 end
+
+                table.sort(t, sort_alphabetical2)
+                return t
             end
+            local player2_dropdown = DF:CreateDropDown (f, build_player2_list, 1, dropdownWidth, 20, "select_player2")
+            local player2_string = DF:CreateLabel (f, Loc ["STRING_GUILDDAMAGERANK_PLAYERBASE_PLAYER"] .. ":", _, _, "GameFontNormal", "select_player2_label")
+            player2_dropdown:SetTemplate (DF:GetTemplate ("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 
-            table.sort(t, sortAlphabetical)
-            return t
-        end
+        function f:UpdateDropdowns(DoNotSelectRaid)
 
-        local player2Dropdown = DF:CreateDropDown(statisticsFrame, buildPlayer2List, 1, dropdownWidth, 20, "select_player2")
-        local player2String = DF:CreateLabel(statisticsFrame, Loc ["STRING_GUILDDAMAGERANK_PLAYERBASE_PLAYER"] .. ":", _, _, "GameFontNormal", "select_player2_label")
-        player2Dropdown:SetTemplate(DF:GetTemplate("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
+            local currentGuild = guild_dropdown.value
 
-        local fillDifficultyDropdown = function(difficulty)
-            --add the difficult to the dropdown
-            if (difficulty == "normal") then
-                local alreadyHave = false
-                for i, t in ipairs(difficultyList) do
-                    if (t.label == "Normal") then
-                        alreadyHave = true
-                    end
-                end
-                if (not alreadyHave) then
-                    table.insert(difficultyList, 1, {value = difficulty, label = "Normal", icon = icon, onclick = onDifficultySelect})
-                end
-
-            elseif (difficulty == "heroic") then
-                local alreadyHave = false
-                for i, t in ipairs(difficultyList) do
-                    if (t.label == "Heroic") then
-                        alreadyHave = true
-                    end
-                end
-                if (not alreadyHave) then
-                    table.insert(difficultyList, 1, {value = difficulty, label = "Heroic", icon = icon, onclick = onDifficultySelect})
-                end
-
-            elseif (difficulty == "mythic") then
-                local alreadyHave = false
-                for i, t in ipairs(difficultyList) do
-                    if (t.label == "Mythic") then
-                        alreadyHave = true
-                    end
-                end
-                if (not alreadyHave) then
-                    table.insert(difficultyList, {value = difficulty, label = "Mythic", icon = icon, onclick = onDifficultySelect})
-                end
-            end
-        end
-
-
-        function statisticsFrame:UpdateDropdowns(bDoNotSelectRaid)
-            local currentGuild = guildDropdown.value
-
-            --wipe data
-            Details:Destroy(difficultyList)
-            Details:Destroy(bossList)
-            Details:Destroy(raidList)
-            Details:Destroy(guildList)
+            --difficulty
+            wipe(difficultyList)
+            wipe(bossList)
+            wipe(raidList)
+            wipe(guildList)
 
             local bossRepeated = {}
             local raidRepeated = {}
             local guildRepeated = {}
 
             local raidSelected = _G.DetailsRaidHistoryWindow.select_raid:GetValue()
-            db = statisticsFrame.OpenDB()
+            db = f.OpenDB()
             if (not db) then
                 return
             end
 
-            ---@cast db details_storage
-
-            local playerGuildName = GetGuildInfo("player")
-
             for difficulty, encounterIdTable in pairs(db) do
-                ---@cast difficulty details_raid_difficulties
-                if (difficultyNames[difficulty]) then
-                    ---@cast encounterIdTable table<encounterid, details_encounterkillinfo[]>
-                    for dungeonEncounterID, encounterKillsTable in pairs(encounterIdTable) do
-                        ---@cast encounterKillsTable details_encounterkillinfo[]
-                        if (Details222.EJCache.IsCurrentContent(dungeonEncounterID)) then
-                            if (not bossRepeated[dungeonEncounterID]) then
-                                ---@type details_encounterinfo
-                                local encounterInfo = Details:GetEncounterInfo(dungeonEncounterID)
-                                ---@type details_instanceinfo
-                                local instanceInfo = Details:GetInstanceInfo(encounterInfo and encounterInfo.instanceId)
 
-                                if (encounterInfo and instanceInfo) then
-                                    local instanceId = instanceInfo.instanceId
-                                    if (raidSelected == instanceId) then
-                                        table.insert(bossList, {value = dungeonEncounterID, label = encounterInfo.name, icon = encounterInfo.creatureIcon, onclick = onSelectBoss})
-                                        bossRepeated[dungeonEncounterID] = true
-                                    end
+                if (type(difficulty) == "number") then
+                    if (difficulty == 14) then
+                        --don't show normal encounters
+                        --tinsert (difficultyList, {value = 14, label = "Normal", icon = icon, onclick = on_diff_select})
+                        --print ("has normal encounter")
 
-                                    if (not raidRepeated[instanceInfo.name]) then
-                                        local instanceName = instanceInfo.name
-                                        local raidIcon = instanceInfo.icon
-                                        local raidIconCoords = instanceInfo.iconCoords
-
-                                        table.insert(raidList, {value = instanceInfo.instanceId, label = instanceName, icon = raidIcon, texcoord = raidIconCoords, onclick = onRaidSelect})
-                                        raidRepeated[instanceInfo.name] = true
-                                    end
-                                end
+                    elseif (difficulty == 15) then
+                        local alreadyHave = false
+                        for i, t in ipairs(difficultyList) do
+                            if (t.label == "Heroic") then
+                                alreadyHave = true
                             end
+                        end
 
-                            --add guild name to the dropdown
-                            if (playerGuildName) then
-                                if (not guildRepeated[playerGuildName]) then
-                                    table.insert(guildList, {value = playerGuildName, label = playerGuildName, icon = icon, onclick = onGuildSelect})
-                                    guildRepeated[playerGuildName] = true
-                                end
-                            else
-                                for index, encounter in ipairs(encounterKillsTable) do
-                                    local guild = encounter.guild
-                                    if (not guildRepeated[guild]) then
-                                        table.insert(guildList, {value = guild, label = guild, icon = icon, onclick = onGuildSelect})
-                                        guildRepeated[guild] = true
-                                    end
-                                end
+                        if (not alreadyHave) then
+                            tinsert (difficultyList, 1, {value = 15, label = "Heroic", icon = icon, onclick = on_diff_select})
+                        end
+
+                    elseif (difficulty == 16) then
+                        local alreadyHave = false
+                        for i, t in ipairs (difficultyList) do
+                            if (t.label == "Mythic") then
+                                alreadyHave = true
                             end
+                        end
 
-                            --add the difficult to the dropdown
-                            fillDifficultyDropdown(difficulty)
+                        if (not alreadyHave) then
+                            tinsert (difficultyList, {value = 16, label = "Mythic", icon = icon, onclick = on_diff_select})
+                        end
+                    end
+
+                    for encounterId, encounterTable in pairs (encounterIdTable) do
+                        if (not bossRepeated[encounterId]) then
+                            local encounter, instance = Details:GetBossEncounterDetailsFromEncounterId(nil, encounterId)
+
+                            if (encounter) then
+                                local InstanceID = Details:GetInstanceIdFromEncounterId (encounterId)
+                                if (raidSelected == InstanceID) then
+                                    tinsert (bossList, {value = encounterId, label = encounter.boss, icon = icon, onclick = on_boss_select})
+                                    bossRepeated [encounterId] = true
+                                end
+                                
+                                if (not raidRepeated [instance.name]) then
+                                    tinsert (raidList, {value = instance.id, label = instance.name, icon = icon, onclick = onRaidSelect})
+                                    raidRepeated [instance.name] = true
+                                end
+                                
+                            end
+                        end
+                        
+                        for index, encounter in ipairs (encounterTable) do
+                            local guild = encounter.guild
+                            if (not guildRepeated [guild]) then
+                                tinsert (guildList, {value = guild, label = guild, icon = icon, onclick = on_guild_select})
+                                guildRepeated [guild] = true
+                            end
                         end
                     end
                 end
             end
-
-            table.sort(bossList, function(t1, t2) return t1.label < t2.label end)
-
-            difficultyDropdown:Refresh()
-            guildDropdown:Refresh()
-
-            if (not bDoNotSelectRaid) then
-                raidDropdown:Refresh()
+            
+            table.sort (bossList, function (t1, t2) return t1.label < t2.label end)
+            
+            
+            diff_dropdown:Refresh()
+            diff_dropdown:Select (1, true)
+            boss_dropdown:Refresh()
+            boss_dropdown:Select (1, true)
+            if (not DoNotSelectRaid) then
+                raid_dropdown:Refresh()
+                raid_dropdown:Select (1, true)
             end
-            bossDropdown:Refresh()
-
-            C_Timer.After(1, function()
-                if (not bDoNotSelectRaid) then
-                    raidDropdown:Select(1, true)
-                end
-
-                difficultyDropdown:Select(1, true)
-
-                if (currentGuild) then
-                    guildDropdown:Select(currentGuild)
-                else
-                    guildDropdown:Select(1, true)
-                end
-
-                bossDropdown:Select(1, true)
-            end)
-        end --end of UpdateDropdowns()
-
-        function statisticsFrame.UpdateBossDropdown()
-            local raidSelected = DetailsRaidHistoryWindow.select_raid:GetValue()
-            local bossRepeated = {}
-            Details:Destroy(bossList)
-            Details:Destroy(difficultyList)
-
-            for difficulty, encounterIdTable in pairs(db) do
-                ---@cast difficulty details_raid_difficulties
-                if (difficultyNames[difficulty]) then
-                    ---@cast encounterIdTable table<encounterid, details_encounterkillinfo[]>
-                    for dungeonEncounterID, encounterKillsTable in pairs(encounterIdTable) do
-                        if (Details222.EJCache.IsCurrentContent(dungeonEncounterID)) then
-                            if (not bossRepeated[dungeonEncounterID]) then
-                                ---@type details_encounterinfo
-                                local encounterInfo = Details:GetEncounterInfo(dungeonEncounterID)
-                                ---@type details_instanceinfo
-                                local instanceInfo = Details:GetInstanceInfo(encounterInfo and encounterInfo.instanceId)
-
-                                if (encounterInfo and instanceInfo) then
-                                    if (raidSelected == instanceInfo.instanceId) then
-                                        table.insert(bossList, {value = dungeonEncounterID, label = encounterInfo.name, icon = encounterInfo.creatureIcon, onclick = onSelectBoss})
-                                        bossRepeated[dungeonEncounterID] = true
-                                    end
-                                end
-                            end
-
-                            --add the difficult to the dropdown
-                            fillDifficultyDropdown(difficulty)
-                        end
-                    end
-                end
+            
+            guild_dropdown:Refresh()
+            if (currentGuild) then
+                guild_dropdown:Select (currentGuild)
+            else
+                guild_dropdown:Select (1, true)
             end
-
-            table.sort(bossList, function(t1, t2) return t1.label < t2.label end)
-            bossDropdown:Refresh()
         end
+        
+        function f.UpdateBossDropdown()
+        
+            local raidSelected = DetailsRaidHistoryWindow.select_raid:GetValue()
+            local boss_repeated = {}
+            wipe (bossList)
+            
+            for difficulty, encounterIdTable in pairs (db) do
+                if (type (difficulty) == "number") then
+                    if (difficulty == 14) then
+                        --tinsert (difficultyList, {value = 14, label = "Normal", icon = icon, onclick = on_diff_select})
+                        --print ("has normal encounter")
+                    elseif (difficulty == 15) then
+                        local alreadyHave = false
+                        for i, t in ipairs (difficultyList) do
+                            if (t.label == "Heroic") then
+                                alreadyHave = true
+                            end
+                        end
+                        if (not alreadyHave) then
+                            tinsert (difficultyList, 1, {value = 15, label = "Heroic", icon = icon, onclick = on_diff_select})
+                        end
+                    elseif (difficulty == 16) then
+                        local alreadyHave = false
+                        for i, t in ipairs (difficultyList) do
+                            if (t.label == "Mythic") then
+                                alreadyHave = true
+                            end
+                        end
+                        if (not alreadyHave) then
+                            tinsert (difficultyList, {value = 16, label = "Mythic", icon = icon, onclick = on_diff_select})
+                        end
+                    end
 
-        --anchors:
-        raidString:SetPoint("topleft", statisticsFrame, "topleft", 10, -70)
-        raidDropdown:SetPoint("topleft", statisticsFrame, "topleft", 10, -85)
-
-        bossString:SetPoint("topleft", statisticsFrame, "topleft", 10, -110)
-        bossDropdown:SetPoint("topleft", statisticsFrame, "topleft", 10, -125)
-
-        difficultyString:SetPoint("topleft", statisticsFrame, "topleft", 10, -150)
-        difficultyDropdown:SetPoint("topleft", statisticsFrame, "topleft", 10, -165)
-
-        role_string:SetPoint("topleft", statisticsFrame, "topleft", 10, -190)
-        role_dropdown:SetPoint("topleft", statisticsFrame, "topleft", 10, -205)
-
-        guildString:SetPoint("topleft", statisticsFrame, "topleft", 10, -230)
-        guildDropdown:SetPoint("topleft", statisticsFrame, "topleft", 10, -245)
-
-        player_string:SetPoint("topleft", statisticsFrame, "topleft", 10, -270)
-        player_dropdown:SetPoint("topleft", statisticsFrame, "topleft", 10, -285)
-
-        player2String:SetPoint("topleft", statisticsFrame, "topleft", 10, -310)
-        player2Dropdown:SetPoint("topleft", statisticsFrame, "topleft", 10, -325)
-        player2String:Hide()
-        player2Dropdown:Hide()
-
-        ---@class details_stats_gframe_data
-        ---@field text string
-        ---@field value number
-        ---@field utext string
-        ---@field data details_storage_unitresult
-        ---@field fulldate string
-        ---@field elapsed number
-
-        function statisticsFrame:BuildPlayerTable(thisPlayerName)
-            local encounterTable, selectedGuildName, role = unpack(statisticsFrame.build_player2_data or {})
-            ---@cast encounterTable details_encounterkillinfo[]
-
-            ---@type details_stats_gframe_data[]
-            local data = {}
-
-            if (type(thisPlayerName) == "string" and string.len(thisPlayerName) > 1) then
-                for encounterIndex, encounterKillInfo in ipairs(encounterTable) do
-                    if (encounterKillInfo.guild == selectedGuildName) then
-                        ---@type table<string, details_storage_unitresult>
-                        local roleTable = encounterKillInfo[role]
-
-                        local date = encounterKillInfo.date
-                        date = date:gsub(".*%s", "")
-                        date = date:sub(1, -4)
-
-                        local playerTable = roleTable[thisPlayerName]
-                        if (playerTable) then
-                            table.insert(data, {text = date, value = playerTable.total, utext = Details:ToK2(playerTable.total/encounterKillInfo.elapsed), data = playerTable, fulldate = encounterKillInfo.date, elapsed = encounterKillInfo.elapsed})
+                    for encounterId, encounterTable in pairs (encounterIdTable) do 
+                        if (not boss_repeated [encounterId]) then
+                            local encounter, instance = Details:GetBossEncounterDetailsFromEncounterId (_, encounterId)
+                            if (encounter) then
+                                local InstanceID = Details:GetInstanceIdFromEncounterId (encounterId)
+                                if (raidSelected == InstanceID) then
+                                --[=[
+                                    local bossIndex = Details:GetBossIndex (InstanceID, encounterId)
+                                    if (bossIndex) then
+                                        local l, r, t, b, texturePath = Details:GetBossIcon (InstanceID, bossIndex)
+                                        if (texturePath) then
+                                            tinsert (bossList, {value = encounterId, label = encounter.boss, icon = texturePath, texcoord = {l, r, t, b}, onclick = on_boss_select})
+                                        else
+                                            tinsert (bossList, {value = encounterId, label = encounter.boss, icon = icon, onclick = on_boss_select})
+                                        end
+                                    else
+                                        tinsert (bossList, {value = encounterId, label = encounter.boss, icon = icon, onclick = on_boss_select})
+                                    end									
+                                --]=]
+                                    tinsert (bossList, {value = encounterId, label = encounter.boss, icon = icon, onclick = on_boss_select})
+                                    boss_repeated [encounterId] = true
+                                end
+                            end
                         end
                     end
                 end
+            end
+            
+            table.sort (bossList, function (t1, t2) return t1.label < t2.label end)
+            boss_dropdown:Refresh()
+        end
+        
+        --> anchors:
+        raid_string:SetPoint ("topleft", f, "topleft", 10, -70)
+        raid_dropdown:SetPoint ("topleft", f, "topleft", 10, -85)
+        
+        boss_string:SetPoint ("topleft", f, "topleft", 10, -110)
+        boss_dropdown:SetPoint ("topleft", f, "topleft", 10, -125)
+        
+        diff_string:SetPoint ("topleft", f, "topleft", 10, -150)
+        diff_dropdown:SetPoint ("topleft", f, "topleft", 10, -165)
+        
+        role_string:SetPoint ("topleft", f, "topleft", 10, -190)
+        role_dropdown:SetPoint ("topleft", f, "topleft", 10, -205)
+        
+        guild_string:SetPoint ("topleft", f, "topleft", 10, -230)
+        guild_dropdown:SetPoint ("topleft", f, "topleft", 10, -245)
+        
+        player_string:SetPoint ("topleft", f, "topleft", 10, -270)
+        player_dropdown:SetPoint ("topleft", f, "topleft", 10, -285)
+        
+        player2_string:SetPoint ("topleft", f, "topleft", 10, -310)
+        player2_dropdown:SetPoint ("topleft", f, "topleft", 10, -325)
+        player2_string:Hide()
+        player2_dropdown:Hide()
+        
+        --> refresh the window:
+        
+        function f:BuildPlayerTable (playerName)
+            
+            local encounterTable, guild, role = unpack (f.build_player2_data or {})
+            local data = {}
+            
+            if (type (playerName) == "string" and string.len (playerName) > 1) then
+                for encounterIndex, encounter in ipairs (encounterTable) do
+                    
+                    if (encounter.guild == guild) then
+                        local roleTable = encounter [role]
+                        
+                        local date = encounter.date
+                        date = date:gsub (".*%s", "")
+                        date = date:sub (1, -4)
 
-                --update graphic
-                if (not statisticsFrame.gframe) then
-                    local onenter = function(self)
+                        local player = roleTable [playerName]
+                        
+                        if (player) then
+                        
+                            --tinsert (data, {text = date, value = player[1], data = player, fulldate = encounter.date, elapsed = encounter.elapsed})
+                            tinsert (data, {text = date, value = player[1]/encounter.elapsed, utext = Details:ToK2 (player[1]/encounter.elapsed), data = player, fulldate = encounter.date, elapsed = encounter.elapsed})
+                        end
+                    end
+                end
+                
+                --> update graphic
+                if (not f.gframe) then
+                    
+                    local onenter = function (self)
                         GameCooltip:Reset()
-                        GameCooltip:SetType("tooltip")
-                        GameCooltip:Preset(2)
+                        GameCooltip:SetType ("tooltip")
+                        GameCooltip:Preset (2)
 
-                        ---@type details_stats_gframe_data
-                        local thisData = self.data
+                        GameCooltip:AddLine ("Total Done:", Details:ToK2 (self.data.value), 1, "white")
+                        GameCooltip:AddLine ("Dps:", Details:ToK2 (self.data.value / self.data.elapsed), 1, "white")
+                        GameCooltip:AddLine ("Item Level:", floor (self.data.data [2]), 1, "white")
+                        GameCooltip:AddLine ("Date:", self.data.fulldate:gsub (".*%s", ""), 1, "white")
 
-                        GameCooltip:AddLine("Total Done:", Details:ToK2(thisData.value), 1, "white")
-                        GameCooltip:AddLine("Dps:", Details:ToK2(thisData.value / thisData.elapsed), 1, "white")
-                        GameCooltip:AddLine("Item Level:", floor(thisData.data.itemLevel), 1, "white")
-                        GameCooltip:AddLine("Date:", thisData.fulldate:gsub(".*%s", ""), 1, "white")
-
-                        GameCooltip:SetOwner(self.ball.tooltip_anchor)
+                        GameCooltip:SetOwner (self.ball.tooltip_anchor)
                         GameCooltip:Show()
                     end
-
-                    local onleave = function(self)
+                    local onleave = function (self)
                         GameCooltip:Hide()
                     end
-
-                    statisticsFrame.gframe = DF:CreateGFrame(statisticsFrame, 650, 400, 35, onenter, onleave, "gframe", "$parentGF")
-                    statisticsFrame.gframe:SetPoint("topleft", statisticsFrame, "topleft", 190, -65)
+                    f.gframe = DF:CreateGFrame (f, 650, 400, 35, onenter, onleave, "gframe", "$parentGF")
+                    f.gframe:SetPoint ("topleft", f, "topleft", 190, -65)
                 end
-
-                statisticsFrame.gframe:Reset()
-                statisticsFrame.gframe:UpdateLines(data)
+                
+                f.gframe:Reset()
+                f.gframe:UpdateLines (data)
+                
             end
         end
+        
+        local fillpanel = DF:NewFillPanel (f, {}, "$parentFP", "fillpanel", 710, 501, false, false, true, nil)
+        fillpanel:SetPoint ("topleft", f, "topleft", 195, -65)
 
-        local fillpanel = DF:NewFillPanel(statisticsFrame, {}, "$parentFP", "fillpanel", 710, 501, false, false, true, nil)
-        fillpanel:SetPoint("topleft", statisticsFrame, "topleft", 195, -65)
-
-        function statisticsFrame:BuildGuildRankTable(encounterKillsTable, selectedGuildName, role)
-            local header = {
-                {name = "Player Name", type = "text"},
-                {name = "Per Second", type = "text"},
-                {name = "Total", type = "text"},
-                {name = "Length", type = "text"},
-                {name = "Item Level", type = "text"},
-                {name = "Date", type = "text"}
-            }
-
-            ---@cast encounterKillsTable details_encounterkillinfo[]
-
-            --print(encounterTable, guild, role)
-            --dumpt(encounterKillsTable) --encounterTable is empty at the first run when the panel is shown, coorect data after selecting a dropdown
-
+        
+        function f:BuildGuildRankTable (encounterTable, guild, role)
+            
+            local header = {{name = "Player Name", type = "text"}, {name = "Per Second", type = "text"}, {name = "Total", type = "text"}, {name = "Length", type = "text"}, {name = "Item Level", type = "text"}, {name = "Date", type = "text"}}
             local players = {}
             local players_index = {}
-
-            ---@type table<unitname, details_stats_playerinfo>
+            
             local playerScore = {}
-
-            ---@class details_stats_playerinfo
-            ---@field total number
-            ---@field ps number
-            ---@field ilvl number
-            ---@field date string
-            ---@field class number
-            ---@field length number
-
+            
             --get the best of each player
-            for encounterIndex, encounterKillInfo in ipairs(encounterKillsTable) do
-                if (encounterKillInfo.guild == selectedGuildName) then
-                    local roleTable = encounterKillInfo[role]
-
-                    local date = encounterKillInfo.date
-                    date = date:gsub(".*%s", "")
-                    date = date:sub(1, -4)
-
-                    ---@cast roleTable table<actorname, details_storage_unitresult>
-
-                    for thisPlayerName, playerTable in pairs(roleTable) do
-                        if (not playerScore[thisPlayerName]) then
-                            playerScore[thisPlayerName] = {
+            for encounterIndex, encounter in ipairs (encounterTable) do
+                if (encounter.guild == guild) then
+                    local roleTable = encounter [role]
+                    
+                    local date = encounter.date
+                    date = date:gsub (".*%s", "")
+                    date = date:sub (1, -4)
+                    
+                    for playerName, playerTable in pairs (roleTable) do
+                    
+                        if (not playerScore [playerName]) then
+                            playerScore [playerName] = {
                                 total = 0,
                                 ps = 0,
                                 ilvl = 0,
-                                date = "",
+                                date = 0,
                                 class = 0,
                                 length = 0,
                             }
                         end
-
-                        local total = playerTable.total
-                        local dps = total / encounterKillInfo.elapsed
-
-                        if (dps > playerScore[thisPlayerName].ps) then
-                            playerScore[thisPlayerName].total = total
-                            playerScore[thisPlayerName].ps = total / encounterKillInfo.elapsed
-                            playerScore[thisPlayerName].ilvl = playerTable.itemLevel
-                            playerScore[thisPlayerName].length = encounterKillInfo.elapsed
-                            playerScore[thisPlayerName].date = date
-                            playerScore[thisPlayerName].class = playerTable.classId
+                    
+                        local total = playerTable [1]
+                        local dps = total / encounter.elapsed
+                        
+                        --if (total > playerScore [playerName].total) then
+                        if (dps > playerScore [playerName].ps) then
+                            playerScore [playerName].total = total
+                            playerScore [playerName].ps = total / encounter.elapsed
+                            playerScore [playerName].ilvl = playerTable [2]
+                            playerScore [playerName].length = encounter.elapsed
+                            playerScore [playerName].date = date
+                            playerScore [playerName].class = playerTable [3]
                         end
                     end
                 end
             end
-
+            
             local sortTable = {}
-            for thisPlayerName, playerInfo in pairs(playerScore) do
-                local className = select(2, GetClassInfo(playerInfo.class or 0))
+            for playerName, t in pairs (playerScore) do
+                local className = select (2, GetClassInfo (t.class or 0))
                 local classColor = "FFFFFFFF"
                 if (className) then
-                    classColor = RAID_CLASS_COLORS[className] and RAID_CLASS_COLORS[className].colorStr
+                    classColor = RAID_CLASS_COLORS [className] and RAID_CLASS_COLORS [className].colorStr
                 end
-
-                local playerNameFormated = Details:GetOnlyName(thisPlayerName)
-                table.insert(sortTable, {
+            
+                local playerNameFormated = Details:GetOnlyName (playerName)
+                tinsert (sortTable, {
                     "|c" .. classColor .. playerNameFormated .. "|r",
-                    Details:ToK2(playerInfo.ps),
-                    Details:ToK2(playerInfo.total),
-                    DF:IntegerToTimer(playerInfo.length),
-                    floor(playerInfo.ilvl),
-                    playerInfo.date,
-                    playerInfo.total,
-                    playerInfo.ps,
+                    Details:comma_value (t.ps),
+                    Details:ToK2 (t.total),
+                    DF:IntegerToTimer (t.length),
+                    floor (t.ilvl),
+                    t.date,
+                    t.total,
+                    t.ps,
                 })
             end
-
-            table.sort(sortTable, function(a, b) return a[8] > b[8] end)
-
-            --add the number before the player name
+            
+            table.sort (sortTable, function(a, b) return a[8] > b[8] end)
+            
+            --> add the number before the player name
             for i = 1, #sortTable do
                 local t = sortTable [i]
-                t[1] = i .. ". " .. t[1]
+                t [1] = i .. ". " .. t [1]
             end
-
-            fillpanel:SetFillFunction(function(index) return sortTable [index] end)
-            fillpanel:SetTotalFunction(function() return #sortTable end)
-            fillpanel:UpdateRows(header)
+            
+            fillpanel:SetFillFunction (function (index) return sortTable [index] end)
+            fillpanel:SetTotalFunction (function() return #sortTable end)
+            fillpanel:UpdateRows (header)
             fillpanel:Refresh()
-
-            statisticsFrame.LatestResourceTable = sortTable
+            
+            f.LatestResourceTable = sortTable
         end
-
-        ---@param encounterKillsTable details_encounterkillinfo[]
-        ---@param selectedGuildName string
-        ---@param role string
-        function statisticsFrame:BuildRaidTable(encounterKillsTable, selectedGuildName, role)
-            if (statisticsFrame.Mode == 2) then
-                statisticsFrame:BuildGuildRankTable(encounterKillsTable, selectedGuildName, role)
+        
+        function f:BuildRaidTable (encounterTable, guild, role)
+            
+            if (f.Mode == 2) then
+                f:BuildGuildRankTable (encounterTable, guild, role)
                 return
             end
-
+            
             local header = {{name = "Player Name", type = "text"}} -- , width = 90
             local players = {}
-
-            ---@type table<unitname, number>
-            local playerIndex = {}
-
-            ---@type table<unitname, number>
-            local playerClassTable = {}
-
-            local encounterAmount = 0
-
-            for encounterIndex, encounterKillInfo in ipairs(encounterKillsTable) do
-                if (encounterKillInfo.guild == selectedGuildName) then
-                    ---@type table<actorname, details_storage_unitresult>
-                    local roleTable = encounterKillInfo[role]
-
-                    local date = encounterKillInfo.date
-                    date = date:gsub(".*%s", "")
-                    date = date:sub(1, -4)
-                    encounterAmount = encounterAmount + 1
-
-                    table.insert(header, {name = date, type = "text"})
-
-                    for thisPlayerName, playerTable in pairs(roleTable) do
-                        local index = playerIndex[thisPlayerName]
-
+            local players_index = {}
+            local player_class = {}
+            local amt_encounters = 0
+            
+            for encounterIndex, encounter in ipairs (encounterTable) do
+                if (encounter.guild == guild) then
+                    local roleTable = encounter [role]
+                    
+                    local date = encounter.date
+                    date = date:gsub (".*%s", "")
+                    date = date:sub (1, -4)
+                    amt_encounters = amt_encounters + 1
+                    
+                    tinsert (header, {name = date, type = "text"})
+                    
+                    for playerName, playerTable in pairs (roleTable) do
+                        local index = players_index [playerName]
+                        local player
+                        
                         if (not index) then
-                            local playerInfo = {thisPlayerName}
-                            playerClassTable[thisPlayerName] = playerTable.classId
-                            for i = 1, encounterAmount-1 do
-                                table.insert(playerInfo, "")
+                            player = {playerName}
+                            player_class [playerName] = playerTable [3]
+                            for i = 1, amt_encounters-1 do
+                                tinsert (player, "")
                             end
-                            table.insert(playerInfo, Details:ToK2(playerTable.total / encounterKillInfo.elapsed))
-                            table.insert(players, playerInfo)
-                            playerIndex[thisPlayerName] = #players
+                            tinsert (player, Details:ToK2 (playerTable [1] / encounter.elapsed))
+                            tinsert (players, player)
+                            players_index [playerName] = #players
+                            
+                            --print ("not index", playerName, amt_encounters, date, 2, amt_encounters-1)
                         else
-                            local player = players[index]
-                            for i = #player+1, encounterAmount-1 do
-                                table.insert(player, "")
+                            player = players [index]
+                            for i = #player+1, amt_encounters-1 do
+                                tinsert (player, "")
                             end
-                            table.insert(player, Details:ToK2(playerTable.total / encounterKillInfo.elapsed))
+                            tinsert (player, Details:ToK2 (playerTable [1] / encounter.elapsed))
                         end
-
+                        
                     end
                 end
             end
-
-            --sort alphabetical
-            table.sort(players, function(a, b) return a[1] < b[1] end)
-
-            for index, playerTable in ipairs(players) do
-                for i = #playerTable, encounterAmount do
-                    table.insert(playerTable, "")
+            
+            --> sort alphabetical
+            table.sort (players, function(a, b) return a[1] < b[1] end)
+            
+            for index, playerTable in ipairs (players) do
+                for i = #playerTable, amt_encounters do
+                    tinsert (playerTable, "")
                 end
 
-                local className = select(2, GetClassInfo(playerClassTable[playerTable[1]] or 0))
+                local className = select (2, GetClassInfo (player_class [playerTable [1]] or 0))
                 if (className) then
-                    local playerNameFormated = Details:GetOnlyName(playerTable[1])
-                    local classColor = RAID_CLASS_COLORS[className] and RAID_CLASS_COLORS[className].colorStr
+                    local playerNameFormated = Details:GetOnlyName (playerTable[1])
+                    local classColor = RAID_CLASS_COLORS [className] and RAID_CLASS_COLORS [className].colorStr
                     playerTable [1] = "|c" .. classColor .. playerNameFormated .. "|r"
                 end
             end
-
-            fillpanel:SetFillFunction(function(index) return players [index] end)
-            fillpanel:SetTotalFunction(function() return #players end)
-
-            fillpanel:UpdateRows(header)
-
+            
+            fillpanel:SetFillFunction (function (index) return players [index] end)
+            fillpanel:SetTotalFunction (function() return #players end)
+            
+            fillpanel:UpdateRows (header)
+            
             fillpanel:Refresh()
-            fillpanel:SetPoint("topleft", statisticsFrame, "topleft", 200, -65)
+            fillpanel:SetPoint ("topleft", f, "topleft", 200, -65)
         end
-
-        function statisticsFrame:Refresh(player_name) --called when any dropdown is selected
-            --build the main table
-            local diff = difficultyDropdown.value
-            local boss = bossDropdown.value
+        
+        function f:Refresh (player_name)
+            --> build the main table
+            local diff = diff_dropdown.value
+            local boss = boss_dropdown.value
             local role = role_dropdown.value
-            local selectedGuildName = guildDropdown.value
+            local guild = guild_dropdown.value
             local player = player_dropdown.value
-
-            ---@type table<number, details_encounterkillinfo[]>
-            local encounterIdTable = db[diff]
-
-            statisticsFrame:SetBackgroundImage(boss)
-
---[=[                if (difficultyNames[difficulty]) then
-                    ---@cast encounterIdTable table<encounterid, details_encounterkillinfo[]>
-                    for dungeonEncounterID, encounterKillsTable in pairs(encounterIdTable) do
-                        if (Details222.EJCache.IsCurrentContent(dungeonEncounterID)) then
-                            if (not bossRepeated[dungeonEncounterID]) then
-                                ---@type details_encounterinfo
-                                local encounterInfo = Details:GetEncounterInfo(dungeonEncounterID)
-                                ---@type details_instanceinfo
-                                local instanceInfo = Details:GetInstanceInfo(encounterInfo and encounterInfo.instanceId)
-]=]
-
-
-            if (encounterIdTable) then
-                local encounterKillsTable = encounterIdTable[boss]
-                if (encounterKillsTable) then
-                    if (player == 1) then --raid
+            
+            local diffTable = db [diff]
+            
+            f:SetBackgroundImage (boss)
+            --Details:OpenRaidHistoryWindow (_raid, _boss, _difficulty, _role, _guild, _player_base, _player_name)
+            
+            if (diffTable) then
+                local encounters = diffTable [boss]
+                if (encounters) then
+                    if (player == 1) then --> raid
                         fillpanel:Show()
-
-                        if (statisticsFrame.gframe) then
-                            statisticsFrame.gframe:Hide()
+                        if (f.gframe) then
+                            f.gframe:Hide()
                         end
+                        player2_string:Hide()
+                        player2_dropdown:Hide()
+                        f:BuildRaidTable (encounters, guild, role)
 
-                        player2String:Hide()
-                        player2Dropdown:Hide()
-                        statisticsFrame:BuildRaidTable(encounterKillsTable, selectedGuildName, role) --calling here
-
-                    elseif (player == 2) then --only one player
+                    elseif (player == 2) then --> only one player
                         fillpanel:Hide()
-
-                        if (statisticsFrame.gframe) then
-                            statisticsFrame.gframe:Show()
+                        if (f.gframe) then
+                            f.gframe:Show()
                         end
-
-                        player2String:Show()
-                        player2Dropdown:Show()
-                        statisticsFrame.build_player2_data = {encounterKillsTable, selectedGuildName, role}
-                        player2Dropdown:Refresh()
-
-                        player_name = statisticsFrame.latest_player_selected or player_name
-
+                        player2_string:Show()
+                        player2_dropdown:Show()
+                        f.build_player2_data = {encounters, guild, role}
+                        player2_dropdown:Refresh()
+                        
+                        player_name = f.latest_player_selected or player_name
+                        
                         if (player_name) then
-                            player2Dropdown:Select(player_name)
+                            player2_dropdown:Select (player_name)
                         else
-                            player2Dropdown:Select(1, true)
+                            player2_dropdown:Select (1, true)
                         end
-
-                        statisticsFrame:BuildPlayerTable (player2Dropdown.value)
+                        
+                        f:BuildPlayerTable (player2_dropdown.value)
                     end
                 else
-                    if (player == 1) then --raid
+                    if (player == 1) then --> raid
                         fillpanel:Show()
-                        if (statisticsFrame.gframe) then
-                            statisticsFrame.gframe:Hide()
+                        if (f.gframe) then
+                            f.gframe:Hide()
                         end
-                        player2String:Hide()
-                        player2Dropdown:Hide()
-                        statisticsFrame:BuildRaidTable({}, selectedGuildName, role)
+                        player2_string:Hide()
+                        player2_dropdown:Hide()
+                        f:BuildRaidTable ({}, guild, role)
 
-                    elseif (player == 2) then --only one player
+                    elseif (player == 2) then --> only one player
                         fillpanel:Hide()
-                        if (statisticsFrame.gframe) then
-                            statisticsFrame.gframe:Show()
+                        if (f.gframe) then
+                            f.gframe:Show()
                         end
-                        player2String:Show()
-                        player2Dropdown:Show()
-                        statisticsFrame.build_player2_data = {{}, selectedGuildName, role}
-                        player2Dropdown:Refresh()
-                        player2Dropdown:Select(1, true)
-                        statisticsFrame:BuildPlayerTable (player2Dropdown.value)
+                        player2_string:Show()
+                        player2_dropdown:Show()
+                        f.build_player2_data = {{}, guild, role}
+                        player2_dropdown:Refresh()
+                        player2_dropdown:Select (1, true)
+                        f:BuildPlayerTable (player2_dropdown.value)
                     end
                 end
             end
         end
 
-        statisticsFrame.FirstRun = true
+        f.FirstRun = true
     end --end of DetailsRaidHistoryWindow creation
 
     local statsWindow = _G.DetailsRaidHistoryWindow
 
-    --table means some button send the request - nil for other ways
-        if (type(raidName) == "table" or (not raidName and not bossEncounterId and not difficultyId and not playerRole and not guildName and not playerBase and not playerName)) then
+    --> table means some button send the request - nil for other ways
+        if (type (_raid) == "table" or (not _raid and not _boss and not _difficulty and not _role and not _guild and not _player_base and not _player_name)) then
             local f = statsWindow
             if (f.LatestSelection) then
-                raidName = f.LatestSelection.Raid
-                bossEncounterId = f.LatestSelection.Boss
-                difficultyId = f.LatestSelection.Diff
-                playerRole = f.LatestSelection.Role
-                guildName = f.LatestSelection.Guild
-                playerBase = f.LatestSelection.PlayerBase
-                playerName = f.LatestSelection.PlayerBase
+                _raid = f.LatestSelection.Raid
+                _boss = f.LatestSelection.Boss
+                _difficulty = f.LatestSelection.Diff
+                _role = f.LatestSelection.Role
+                _guild = f.LatestSelection.Guild
+                _player_base = f.LatestSelection.PlayerBase
+                _player_name = f.LatestSelection.PlayerBase
             end
         end
 
     if (statsWindow.FirstRun) then
-        if (type(Details.rank_window.last_difficulty) == "number") then
-            Details.rank_window.last_difficulty = "normal"
-        end
-        difficultyId = Details.rank_window.last_difficulty or difficultyId
+        _difficulty = Details.rank_window.last_difficulty or _difficulty
 
         if (IsInGuild()) then
             local guildName = GetGuildInfo("player")
             if (guildName) then
-                guildName = guildName
+                _guild = guildName
             end
         end
 
         if (Details.rank_window.last_raid ~= "") then
-            raidName = Details.rank_window.last_raid or raidName
+            _raid = Details.rank_window.last_raid or _raid
         end
     end
 
@@ -1055,65 +993,57 @@ function Details:OpenRaidHistoryWindow(raidName, bossEncounterId, difficultyId, 
     statsWindow:Refresh()
     statsWindow:Show()
 
-    if (historyType == 1 or historyType == 2) then
-        statsWindow.Mode = historyType
+    if (_history_type == 1 or _history_type == 2) then
+        statsWindow.Mode = _history_type
         if (statsWindow.Mode == 1) then
             --overall
-            statsWindow.HistoryCheckBox:SetValue(true)
-            statsWindow.GuildRankCheckBox:SetValue(false)
+            statsWindow.HistoryCheckBox:SetValue (true)
+            statsWindow.GuildRankCheckBox:SetValue (false)
         elseif (statsWindow.Mode == 2) then
             --guild rank
-            statsWindow.GuildRankCheckBox:SetValue(true)
-            statsWindow.HistoryCheckBox:SetValue(false)
+            statsWindow.GuildRankCheckBox:SetValue (true)
+            statsWindow.HistoryCheckBox:SetValue (false)
         end
     end
 
-    --print("raidName", raidName)
-    --print("bossEncounterId", bossEncounterId)
-    --print("difficultyId", difficultyId)
-    --print("playerRole", playerRole)
-    --print("guildName", guildName)
-    --print("playerBase", playerBase)
-    --print("playerName", playerName)
-
-    if (raidName) then
-        statsWindow.select_raid:Select(raidName)
+    if (_raid) then
+        statsWindow.select_raid:Select (_raid)
         statsWindow:Refresh()
         statsWindow.UpdateBossDropdown()
     end
 
-    if (bossEncounterId) then
-        statsWindow.select_boss:Select(bossEncounterId)
+    if (_boss) then
+        statsWindow.select_boss:Select (_boss)
         statsWindow:Refresh()
     end
 
-    if (difficultyId) then
-        statsWindow.select_diff:Select(difficultyId)
+    if (_difficulty) then
+        statsWindow.select_diff:Select (_difficulty)
         statsWindow:Refresh()
     end
 
-    if (playerRole) then
-        statsWindow.select_role:Select(playerRole)
+    if (_role) then
+        statsWindow.select_role:Select (_role)
         statsWindow:Refresh()
     end
 
-    if (guildName) then
-        if (type(guildName) == "boolean") then
-            guildName = GetGuildInfo("player")
+    if (_guild) then
+        if (type (_guild) == "boolean") then
+            _guild = GetGuildInfo ("player")
         end
-        statsWindow.select_guild:Select(guildName)
+        statsWindow.select_guild:Select (_guild)
         statsWindow:Refresh()
     end
 
-    if (playerBase) then
-        statsWindow.select_player:Select(playerBase)
+    if (_player_base) then
+        statsWindow.select_player:Select (_player_base)
         statsWindow:Refresh()
     end
 
-    if (playerName) then
+    if (_player_name) then
         statsWindow.select_player2:Refresh()
-        statsWindow.select_player2:Select(playerName)
-        statsWindow:Refresh(playerName)
+        statsWindow.select_player2:Select (_player_name)
+        statsWindow:Refresh (_player_name)
     end
 
     DetailsPluginContainerWindow.OpenPlugin(statsWindow)

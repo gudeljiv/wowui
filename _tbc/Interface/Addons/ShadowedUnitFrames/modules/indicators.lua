@@ -39,16 +39,22 @@ function Indicators:UpdateResurrect(frame)
 end
 
 function Indicators:UpdateMasterLoot(frame)
-	if( not frame.indicators.masterLoot or not frame.indicators.masterLoot.enabled ) then return end
-
-	local lootType, partyID, raidID = GetLootMethod()
-	if( lootType ~= "master" ) then
-		frame.indicators.masterLoot:Hide()
-	elseif( ( partyID and partyID == 0 and UnitIsUnit(frame.unit, "player") ) or ( partyID and partyID > 0 and UnitIsUnit(frame.unit, ShadowUF.partyUnits[partyID]) ) or ( raidID and raidID > 0 and UnitIsUnit(frame.unit, ShadowUF.raidUnits[raidID]) ) ) then
-		frame.indicators.masterLoot:Show()
-	else
-		frame.indicators.masterLoot:Hide()
-	end
+    if( not frame.indicators.masterLoot or not frame.indicators.masterLoot.enabled ) then return end
+    
+    -- GetLootMethod doesn't exist in modern WoW (master loot was removed)
+    if not GetLootMethod then
+        frame.indicators.masterLoot:Hide()
+        return
+    end
+    
+    local lootType, partyID, raidID = GetLootMethod()
+    if( lootType ~= "master" ) then
+        frame.indicators.masterLoot:Hide()
+    elseif( ( partyID and partyID == 0 and UnitIsUnit(frame.unit, "player") ) or ( partyID and partyID > 0 and UnitIsUnit(frame.unit, ShadowUF.partyUnits[partyID]) ) or ( raidID and raidID > 0 and UnitIsUnit(frame.unit, ShadowUF.raidUnits[raidID]) ) ) then
+        frame.indicators.masterLoot:Show()
+    else
+        frame.indicators.masterLoot:Hide()
+    end
 end
 
 function Indicators:UpdateRaidTarget(frame)

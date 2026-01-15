@@ -25,7 +25,7 @@ local _GetShortcuts
 local trackerOptions = {}
 
 local SharedMedia = LibStub("LibSharedMedia-3.0")
-local IsAddOnLoaded = C_AddOns.IsAddOnLoaded or IsAddOnLoaded
+local C_AddOns.IsAddOnLoaded = C_AddOns.IsAddOnLoaded or C_AddOns.IsAddOnLoaded
 
 ---Toggle tracker visibility based on a condition
 ---@param shouldHide boolean Whether to hide (true) or show (false) the tracker
@@ -610,7 +610,7 @@ function QuestieOptions.tabs.tracker:Initialize()
                         name = function() return l10n("Sticky VoiceOver Frame") end,
                         desc = function() return l10n("When this is checked, the VoiceOver talking head / sound queue frame will be placed on the left or right side of the Questie Tracker depending on where the Tracker is placed on your screen.") end,
                         disabled = function() return not Questie.db.profile.trackerEnabled end,
-                        hidden = function() return not (IsAddOnLoaded("AI_VoiceOver") and IsAddOnLoaded("AI_VoiceOverData_Vanilla")) end,
+                        hidden = function() return not (C_AddOns.IsAddOnLoaded("AI_VoiceOver") and C_AddOns.IsAddOnLoaded("AI_VoiceOverData_Vanilla")) end,
                         get = function() return Questie.db.profile.stickyVoiceOverFrame end,
                         set = function(_, value)
                             Questie.db.profile.stickyVoiceOverFrame = value
@@ -635,7 +635,7 @@ function QuestieOptions.tabs.tracker:Initialize()
                             end
                         end,
                         disabled = function() return not Questie.db.profile.trackerEnabled end,
-                        hidden = function() return not IsAddOnLoaded("TomTom") end,
+                        hidden = function() return not C_AddOns.IsAddOnLoaded("TomTom") end,
                         get = function() return Questie.db.profile.trackerbindSetTomTom end,
                         set = function(_, key)
                             Questie.db.profile.trackerbindSetTomTom = key

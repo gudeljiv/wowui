@@ -1,0 +1,18 @@
+## Interface: 120001, 120000, 110207, 50503, 20505, 11508
+## Title: Dominos Progress
+## Title-zhCN: Dominos 进度条模块
+## Notes: Progress bars of all sorts
+## Notes-zhCN: 各种进度条
+## Author: Tuller
+## Dependencies: Dominos
+## IconTexture: Interface/AddOns/Dominos/Dominos
+localization.xml
+config.lua
+main.lua
+progressBar.lua
+data/xp.lua
+data/reputation.lua
+data/artifact.lua [AllowLoadGameType mainline]
+data/azerite.lua [AllowLoadGameType mainline]
+data/honor.lua
+data/gold.lua

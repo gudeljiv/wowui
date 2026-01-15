@@ -1,14 +1,9 @@
 @cont1nuity:
-- Fixing an error with tooltip scanning rework.
-- Fixing Aura Icon sizes not updating properly with Ghost Auras set to a different size.
-- Fixing the search tab being broken.
-- Some locale fixes.
-- Fixing y-offset for target arrow indicators.
-- Fixing and error on quest recognition rework.
-- Fixing and error for hiding blizzard healthbars.
-- Fixing some errors about unit flag changes when units are entering/leaving combat or change being attackable or not.
-- Fixing some default values for 'hide blizzard healthbars' on the different WoW versions.
-
-@Terciob:
-- Implementing on the fly locale change for Plater options.
+- More support for Midnight (work in progress, still...), prepatch ready.
+- Cast Bar 'Important' coloring for Midnight.
+- Unit name text max length options.
+- Unit type coloring.
+- Performance improvements for auras.
+- Adding '/plater uninstall' command to reset related CVars and disable Plater on the current character.
+- Adding TBC compatibility flag.
 

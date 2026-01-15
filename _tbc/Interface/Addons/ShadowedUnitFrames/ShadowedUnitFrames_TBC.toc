@@ -1,13 +1,25 @@
-## Interface: 20504
-## Title: Shadowed Unit Frames
-## Notes: Moooooooooooooooooo
+## Interface: 20505
+## Title: |TInterface/Icons/Spell_Shadow_SummonVoidWalker:16:16|t |cffff00ffShadowed Unit Frames|r
+## Notes: Now maintained by Datstun!
 ## Author: Shadowed
-## Version: v4.3.4-classic
+## Version: v4.4-TBC-ANNIVERSARY
 ## SavedVariables: ShadowedUFDB
 ## X-Website: https://www.wowace.com/addons/shadowed-unit-frames/
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, LibSpellRange-1.0, Clique
 ## X-Curse-Project-ID: 19268
 ## X-WoWI-ID: 13494
+## IconTexture: Interface\Icons\INV_Misc_Head_Dwarf_01
+## Category-enUS: User Interface
+## Category-deDE: Benutzerinterface
+## Category-esES: Interfaz de usuario
+## Category-esMX: Interfaz de usuario
+## Category-frFR: Interface utilisateur
+## Category-itIT: Interfaccia utente
+## Category-koKR: 사용자 인터페이스
+## Category-ptBR: Interface do usuário
+## Category-ruRU: Интерфейс пользователя
+## Category-zhCN: 用户界面
+## Category-zhTW: 使用者介面
 
 #@no-lib-strip@
 libs\LibStub\LibStub.lua

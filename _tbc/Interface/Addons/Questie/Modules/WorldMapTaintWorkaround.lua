@@ -1,7 +1,7 @@
 -- This must run as early as possible.
 -- This should be independednt of Questie and all libraries.
 
-local IsAddOnLoaded = C_AddOns.IsAddOnLoaded or IsAddOnLoaded
+local C_AddOns.IsAddOnLoaded = C_AddOns.IsAddOnLoaded or C_AddOns.IsAddOnLoaded
 
 local function doWorkaround()
     -- Blizzard's bugs
@@ -23,7 +23,7 @@ local function doWorkaround()
     --WorldMapMagnifyingGlassButton:Hide()
 end
 
-local _, finished = IsAddOnLoaded("Blizzard_WorldMap")
+local _, finished = C_AddOns.IsAddOnLoaded("Blizzard_WorldMap")
 
 if finished then
     doWorkaround()

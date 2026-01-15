@@ -23,7 +23,7 @@ along with AdiBags.  If not, see <http://www.gnu.org/licenses/>.
 
 local addonName = ...
 ---@class AdiBags: AceAddon
-local addon = LibStub('AceAddon-3.0'):GetAddon(addonName)
+local addon = LibStub("AceAddon-3.0"):GetAddon(addonName, true)
 local L = addon.L
 
 --<GLOBALS
@@ -152,21 +152,21 @@ function addon.SetupTooltip(widget, content, anchor, xOffset, yOffset)
 	widget.tootlipAnchorXOffset = xOffset or 0
 	widget.tootlipAnchorYOffset = yOffset or 0
 	widget.UpdateTooltip = WidgetTooltip_Update
-	if widget:GetScript('OnEnter') then
-		widget:HookScript('OnEnter', WidgetTooltip_OnEnter)
+	if widget:GetScript("OnEnter") then
+		widget:HookScript("OnEnter", WidgetTooltip_OnEnter)
 	else
-		widget:SetScript('OnEnter', WidgetTooltip_OnEnter)
+		widget:SetScript("OnEnter", WidgetTooltip_OnEnter)
 	end
-	if widget:GetScript('OnLeave') then
-		widget:HookScript('OnLeave', WidgetTooltip_OnLeave)
+	if widget:GetScript("OnLeave") then
+		widget:HookScript("OnLeave", WidgetTooltip_OnLeave)
 	else
-		widget:SetScript('OnLeave', WidgetTooltip_OnLeave)
+		widget:SetScript("OnLeave", WidgetTooltip_OnLeave)
 	end
 end
 
 function addon.RemoveTooltip(widget)
-	widget:SetScript('OnEnter', nil)
-	widget:SetScript('OnLeave', nil)
+	widget:SetScript("OnEnter", nil)
+	widget:SetScript("OnLeave", nil)
 	widget.tooltipCallback = nil
 	widget.UpdateTooltip = nil
 end
@@ -175,7 +175,14 @@ end
 --------------------------------------------------------------------------------
 
 function addon.IsValidItemLink(link)
-	if type(link) == "string" and (strmatch(link, "battlepet:") or strmatch(link, "keystone:") or (strmatch(link, 'item:[-:%d]+') and not strmatch(link, 'item:%d+:0:0:0:0:0:0:0:0:0'))) then
+	if
+		type(link) == "string"
+		and (
+			strmatch(link, "battlepet:")
+			or strmatch(link, "keystone:")
+			or (strmatch(link, "item:[-:%d]+") and not strmatch(link, "item:%d+:0:0:0:0:0:0:0:0:0"))
+		)
+	then
 		return true
 	end
 end
@@ -184,9 +191,8 @@ end
 -- returns a table with every attribute. Updated as of retail 9.2.7.
 function addon.ParseItemLink(link)
 	-- Parse the first elements that have no variable length
-	local _, itemID, enchantID, gemID1, gemID2, gemID3, gemID4,
-	suffixID, uniqueID, linkLevel, specializationID, modifiersMask,
-	itemContext, rest = strsplit(":", link, 14)
+	local _, itemID, enchantID, gemID1, gemID2, gemID3, gemID4, suffixID, uniqueID, linkLevel, specializationID, modifiersMask, itemContext, rest =
+		strsplit(":", link, 14)
 
 	-- The next several link items have a variable length and must be parsed
 	-- out one by one. There is definitely a more clever way of doing this,
@@ -196,7 +202,7 @@ function addon.ParseItemLink(link)
 	local bonusIDs
 	numBonusIDs, rest = strsplit(":", rest, 2)
 	if numBonusIDs ~= "" then
-		local splits = (tonumber(numBonusIDs))+1
+		local splits = (tonumber(numBonusIDs)) + 1
 		bonusIDs = strsplittable(":", rest, splits)
 		rest = table.remove(bonusIDs, splits)
 	end
@@ -205,7 +211,7 @@ function addon.ParseItemLink(link)
 	local modifierIDs
 	numModifiers, rest = strsplit(":", rest, 2)
 	if numModifiers ~= "" then
-		local splits = (tonumber(numModifiers)*2)+1
+		local splits = (tonumber(numModifiers) * 2) + 1
 		modifierIDs = strsplittable(":", rest, splits)
 		rest = table.remove(modifierIDs, splits)
 	end
@@ -214,7 +220,7 @@ function addon.ParseItemLink(link)
 	local relic1BonusIDs
 	relic1NumBonusIDs, rest = strsplit(":", rest, 2)
 	if relic1NumBonusIDs ~= "" then
-		local splits = (tonumber(relic1NumBonusIDs))+1
+		local splits = (tonumber(relic1NumBonusIDs)) + 1
 		relic1BonusIDs = strsplittable(":", rest, splits)
 		rest = table.remove(relic1BonusIDs, splits)
 	end
@@ -223,8 +229,8 @@ function addon.ParseItemLink(link)
 	local relic2BonusIDs
 	relic2NumBonusIDs, rest = strsplit(":", rest, 2)
 	if relic2NumBonusIDs ~= "" then
-		local splits = (tonumber(relic2NumBonusIDs))+1
-		relic2BonusIDs = strsplittable(":", rest, (tonumber(relic2NumBonusIDs))+1)
+		local splits = (tonumber(relic2NumBonusIDs)) + 1
+		relic2BonusIDs = strsplittable(":", rest, (tonumber(relic2NumBonusIDs)) + 1)
 		rest = table.remove(relic2BonusIDs, splits)
 	end
 
@@ -232,8 +238,8 @@ function addon.ParseItemLink(link)
 	local relic3BonusIDs
 	relic3NumBonusIDs, rest = strsplit(":", rest, 2)
 	if relic3NumBonusIDs ~= "" then
-		local splits = (tonumber(relic3NumBonusIDs))+1
-		relic3BonusIDs = strsplittable(":", rest, (tonumber(relic3NumBonusIDs))+1)
+		local splits = (tonumber(relic3NumBonusIDs)) + 1
+		relic3BonusIDs = strsplittable(":", rest, (tonumber(relic3NumBonusIDs)) + 1)
 		rest = table.remove(relic3BonusIDs, splits)
 	end
 
@@ -258,7 +264,7 @@ function addon.ParseItemLink(link)
 		relic2BonusIDs = relic2BonusIDs or {},
 		relic3BonusIDs = relic3BonusIDs or {},
 		crafterGUID = crafterGUID,
-		extraEnchantID = extraEnchantID
+		extraEnchantID = extraEnchantID,
 	}
 end
 
@@ -267,45 +273,62 @@ end
 --------------------------------------------------------------------------------
 
 local function __GetDistinctItemID(link)
-	if not link or not addon.IsValidItemLink(link) then return end
+	if not link or not addon.IsValidItemLink(link) then
+		return
+	end
 	if strmatch(link, "battlepet:") or strmatch(link, "keystone:") then
 		return link
 	else
 		local itemData = addon.ParseItemLink(link)
-		if not itemData then return end
+		if not itemData then
+			return
+		end
 		local newLink
 		local id = tonumber(itemData.itemID)
 		local equipSlot = select(9, GetItemInfo(id))
 		if equipSlot and equipSlot ~= "" and equipSlot ~= "INVTYPE_BAG" then
 			-- Rebuild an item link without any unique identifiers that are out of the player's control.
-			newLink = strjoin(':', '|Hitem',
-			itemData.itemID, itemData.enchantID, itemData.gemID1, itemData.gemID2, itemData.gemID3, itemData.gemID4,
-			itemData.suffixID, itemData.uniqueID, itemData.linkLevel, itemData.specializationID,
-			itemData.modifiersMask, itemData.itemContext,
-			#itemData.bonusIDs,
-			table.concat(itemData.bonusIDs, ":"),
-			#itemData.modifierIDs,
-			table.concat(itemData.modifierIDs),
-			"", -- Relic 1
-			"", -- Relic 2
-			"", -- Relic 3
-			"", -- Crafter GUID
-			itemData.extraEnchantID or "" -- Fix for non-retail.
+			newLink = strjoin(
+				":",
+				"|Hitem",
+				itemData.itemID,
+				itemData.enchantID,
+				itemData.gemID1,
+				itemData.gemID2,
+				itemData.gemID3,
+				itemData.gemID4,
+				itemData.suffixID,
+				itemData.uniqueID,
+				itemData.linkLevel,
+				itemData.specializationID,
+				itemData.modifiersMask,
+				itemData.itemContext,
+				#itemData.bonusIDs,
+				table.concat(itemData.bonusIDs, ":"),
+				#itemData.modifierIDs,
+				table.concat(itemData.modifierIDs),
+				"", -- Relic 1
+				"", -- Relic 2
+				"", -- Relic 3
+				"", -- Crafter GUID
+				itemData.extraEnchantID or "" -- Fix for non-retail.
 			)
 		end
 		return newLink
 	end
 end
 
-local distinctIDs = setmetatable({}, {__index = function(t, link)
-	local result = __GetDistinctItemID(link)
-	if result then
-		t[link] = result
-		return result
-	else
-		return link
-	end
-end})
+local distinctIDs = setmetatable({}, {
+	__index = function(t, link)
+		local result = __GetDistinctItemID(link)
+		if result then
+			t[link] = result
+			return result
+		else
+			return link
+		end
+	end,
+})
 
 function addon.GetDistinctItemID(link)
 	return link and distinctIDs[link]
@@ -316,16 +339,18 @@ end
 --------------------------------------------------------------------------------
 
 function addon.IsSameLinkButLevel(a, b)
-	if not a or not b then return false end
+	if not a or not b then
+		return false
+	end
 
 	-- take color coding, etc
 	-- take itemID, enchantID, 4 gem IDs, suffixID, uniqueID (8 parts)
 	-- skip linkLevel part
 	-- take the rest of the link
-	local linkRegExp = '(.*)(item:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+):%-?%d+:(.*)'
+	local linkRegExp = "(.*)(item:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+:%-?%d+):%-?%d+:(.*)"
 
-	local partsA = {strmatch(a, linkRegExp)}
-	local partsB = {strmatch(b, linkRegExp)}
+	local partsA = { strmatch(a, linkRegExp) }
+	local partsB = { strmatch(b, linkRegExp) }
 
 	for i = 1, #partsA do
 		if partsA[i] ~= partsB[i] then
@@ -343,7 +368,8 @@ end
 local JUNK = GetItemSubClassInfo(Enum.ItemClass.Miscellaneous, 0)
 function addon:IsJunk(itemId)
 	local _, _, quality, _, _, class, subclass = GetItemInfo(itemId)
-	return quality == ITEM_QUALITY_POOR or (quality and quality < ITEM_QUALITY_UNCOMMON and (class == JUNK or subclass == JUNK))
+	return quality == ITEM_QUALITY_POOR
+		or (quality and quality < ITEM_QUALITY_UNCOMMON and (class == JUNK or subclass == JUNK))
 end
 
 --------------------------------------------------------------------------------
@@ -353,16 +379,19 @@ end
 local function BuildSectionKey(name, category)
 	-- TODO(lobato): I think this is a bug, but I'm not sure. If the name is nil, then the category is used as the key,
 	-- which leads to duplicate keys.
-	assert(name ~= nil and name ~= "", "Tried to build a section key with no name. Report this to github.com/AdiAddons/AdiBags/issues please!")
+	assert(
+		name ~= nil and name ~= "",
+		"Tried to build a section key with no name. Report this to github.com/AdiAddons/AdiBags/issues please!"
+	)
 	if name ~= nil then
-		return strjoin('#', tostring(category or name), tostring(name))
+		return strjoin("#", tostring(category or name), tostring(name))
 	end
 end
 addon.BuildSectionKey = BuildSectionKey
 
 local function SplitSectionKey(key)
 	if key ~= nil then
-		local category, name = strsplit('#', tostring(key))
+		local category, name = strsplit("#", tostring(key))
 		return name or category, category
 	end
 end
@@ -391,7 +420,10 @@ end
 --------------------------------------------------------------------------------
 
 function addon.GetItemFamily(item)
-	if (type(item) == "string" and (strmatch(item, "battlepet:") or strmatch(item, "keystone:"))) or select(9, GetItemInfo(item)) == "INVTYPE_BAG" then
+	if
+		(type(item) == "string" and (strmatch(item, "battlepet:") or strmatch(item, "keystone:")))
+		or select(9, GetItemInfo(item)) == "INVTYPE_BAG"
+	then
 		return 0
 	else
 		return GetItemFamily(item)
@@ -412,11 +444,11 @@ end
 -- Wrappers for GetContainerItemInfo
 --------------------------------------------------------------------------------
 local fieldMappings = {
-	texture = {field = "iconFileID", returnSlot = 1},
-	stackCount = {field = "stackCount", returnSlot = 2},
-	locked = {field = "isLocked", returnSlot = 3},
-	quality = {field = "quality", returnSlot = 4},
-	filtered = {field = "isFiltered", returnSlot = 8},
+	texture = { field = "iconFileID", returnSlot = 1 },
+	stackCount = { field = "stackCount", returnSlot = 2 },
+	locked = { field = "isLocked", returnSlot = 3 },
+	quality = { field = "quality", returnSlot = 4 },
+	filtered = { field = "isFiltered", returnSlot = 8 },
 }
 
 local function unwrapItemInfo(field, ...)

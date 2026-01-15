@@ -1,9 +1,9 @@
 local _, xVermin = ...
--- local RangeCheck = LibStub("LibRangeCheck-3.0")
+local RangeCheck = LibStub("LibRangeCheck-3.0")
 
--- RangeCheck.RegisterCallback(RangeCheck, RangeCheck.CHECKERS_CHANGED, function()
--- 	-- print("need to refresh my stored checkers")
--- end)
+RangeCheck.RegisterCallback(RangeCheck, RangeCheck.CHECKERS_CHANGED, function()
+	-- print("need to refresh my stored checkers")
+end)
 
 xVermin.IsClassic = WOW_PROJECT_ID == WOW_PROJECT_CLASSIC
 xVermin.IsTBC = WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC
@@ -203,6 +203,7 @@ xVermin.CheckIfLoadedWithTimer = function(condition, callback, timer, waittime)
 		end
 	end)
 end
+xCheckIfLoadedWithTimer = xVermin.CheckIfLoadedWithTimer
 
 xVermin.HasValue = function(table, value)
 	for index, v in ipairs(table) do

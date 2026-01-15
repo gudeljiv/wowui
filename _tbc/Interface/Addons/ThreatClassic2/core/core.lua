@@ -35,9 +35,7 @@ local UnitIsPlayer          = _G.UnitIsPlayer
 local UnitName              = _G.UnitName
 local UnitReaction          = _G.UnitReaction
 local UnitIsUnit            = _G.UnitIsUnit
-local GetSpellInfo          = _G.GetSpellInfo
 local GetShapeshiftForm     = _G.GetShapeshiftForm
-local FindAuraByName        = AuraUtil.FindAuraByName
 
 local screenWidth           = floor(GetScreenWidth())
 local screenHeight          = floor(GetScreenHeight())
@@ -69,15 +67,6 @@ TC2.playerTarget = ""
 
 local AceComm = LibStub("AceComm-3.0")
 AceComm:Embed(TC2)
-
--- depreciation warning for ClassicThreatMeter
-C_Timer.After(3,
-  function()
-    if IsAddOnLoaded("ClassicThreatMeter") then
-      print("Please disable |cFFFBB709ClassicThreatMeter|cFFFF6060 to avoid unnecessary syncing that can negatively impact |cFFFBB709ThreatClassic2|cFFFF6060 and other addons.")
-    end
-  end
-)
 
 local LSM = LibStub("LibSharedMedia-3.0")
 -- Register some media
@@ -286,7 +275,7 @@ function TC2:UpdateThreatBars()
     local igniteOwner = nil
     local hasActiveIgnite = false
     if C.bar.showIgniteIndicator or C.customBarColors.igniteEnabled then
-        igniteOwner = select(7, FindAuraByName(GetSpellInfo(12848), TC2.playerTarget, "HARMFUL"))
+        igniteOwner = select(7, AuraUtil.FindAuraByName(C_Spell.GetSpellName(12848), TC2.playerTarget, "HARMFUL"))
     end
     -- update view
     for i = 1, C.bar.count do
@@ -479,7 +468,7 @@ function TC2:CheckWarning(threatPercent, threatValue, rawThreatPercent)
             end
         elseif self.playerClass == "PALADIN" then
             -- righteous fury active
-            if FindAuraByName(GetSpellInfo(25780), "player", "HELPFUL") then
+            if AuraUtil.FindAuraByName(C_Spell.GetSpellName(25780), "player", "HELPFUL") then
                 lastWarnPercent = 100
                 return
             end
@@ -923,7 +912,6 @@ function TC2:PLAYER_LOGIN()
     self:SetBarCount()
     self:SetupUnits()
     self:SetupFrame()
-    self:SetupMenu()
 
     -- Get Colors
     TC2.colorFallback = {0.8, 0, 0.8, C.bar.alpha}
@@ -993,7 +981,7 @@ function TC2:SetupFrame()
     self.frame.header = CreateStatusBar(self.frame, true)
     self.frame.header:SetScript("OnMouseUp", function(self, button)
         if button == "RightButton" then
-            EasyMenu(TC2.menuTable, TC2.menu, "cursor", 0, 0, "MENU")
+            MenuUtil.CreateContextMenu(TC2.frame.header, TC2.MenuGenerator)
         end
     end)
     self.frame.header:EnableMouse(true)
@@ -1005,26 +993,28 @@ function TC2:SetupFrame()
     self:UpdateFrame()
 end
 
-function TC2:SetupMenu()
-    self.menu = CreateFrame("Frame", self.addonName.."MenuFrame", UIParent, "UIDropDownMenuTemplate")
-
-    TC2.menuTable = {
-        {text = L.frame_lock, notCheckable = false, checked = function() return C.frame.locked end, func = function()
+function TC2.MenuGenerator(owner, rootDescription)
+    rootDescription:CreateCheckbox(L.frame_lock, function() return C.frame.locked end, 
+        function()
             C.frame.locked = not C.frame.locked
             TC2:UpdateFrame()
-        end},
-        {text = L.frame_test, notCheckable = false, checked = function() return C.frame.test end, func = function()
+        end
+    )
+    rootDescription:CreateCheckbox(L.frame_test, function() return C.frame.test end, 
+        function()
             C.frame.test = not C.frame.test
             if C.frame.test then
                 TC2:TestMode()
             else
                 CheckStatus()
             end
-        end},
-        {text = L.gui_config, notCheckable = true, func = function()
+        end
+    )
+    rootDescription:CreateButton(L.gui_config, 
+        function()
             LibStub("AceConfigDialog-3.0"):Open("ThreatClassic2")
-        end},
-    }
+        end
+    )
 end
 
 -----------------------------
