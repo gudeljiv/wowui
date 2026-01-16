@@ -1,6 +1,5 @@
 local faction = UnitFactionGroup("player")
 if faction == "Alliance" then return end
-
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
@@ -10,8 +9,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Survival Guide (H)
 #subgroup RXP Survival Guide 1-20
 #next 19-23 Stonetalon/Barrens/Ashenvale
-
-
 step << !Tauren !Hunter !Shaman
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gar'Thok|r
     .turnin 837 >>Turn in Encroachment
@@ -647,12 +644,20 @@ step
     .dungeon RFC
 step
     #optional
-    .abandon 5723,5725,5728,5761 >> Abandon Testing an Enemy's Strength
+    .abandon 5723 >> Abandon Testing an Enemy's Strength
     .dungeon RFC
-    --5723 Testing an Enemy's Strength
-    --5725 The Power to Destroy...
-    --5728 Hidden Enemies
-    --5761 Slaying the Beast
+step
+    #optional
+    .abandon 5725 >> Abandon The Power to Destroy...
+    .dungeon RFC
+step
+    #optional
+    .abandon 5728 >> Abandon Hidden Enemies
+    .dungeon RFC
+step
+    #optional
+    .abandon 5761 >> Abandon Slaying the Beast
+    .dungeon RFC
 step
     .goto The Barrens,55.70,27.30,20,0
     .goto The Barrens,55.78,20.00
@@ -2096,9 +2101,7 @@ step
     .accept 6548 >> Accept Avenge My Village
     .target +Makaba Flathoof
     .goto The Barrens,35.19,27.79
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
@@ -2108,7 +2111,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Survival Guide (H)
 #subgroup RXP Survival Guide 1-20
 #next 23-25 Hillsbrad
-
 step
     #optional
     #completewith next
@@ -3648,8 +3650,8 @@ step
 step
     #optional
     #completewith EnterWC
-    >>Loot the |cRXP_LOOT_Serpentbloom|r on the ground
-    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_LOOT_Serpentbloom|r |cRXP_WARN_for everybody|r
+    >>Loot the |cRXP_PICK_Serpentbloom|r on the ground
+    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_PICK_Serpentbloom|r |cRXP_WARN_for everybody|r
     >>|cRXP_WARN_Cast|r |T133939:0|t[Find Herbs] |cRXP_WARN_to see them on your minimap|r
     .complete 962,1 --Serpentbloom (10)
     .skill herbalism,<1,1
@@ -3657,8 +3659,8 @@ step
     .dungeon WC
 step
     #completewith EnterWC
-    >>Loot the |cRXP_LOOT_Serpentbloom|r on the ground
-    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_LOOT_Serpentbloom|r |cRXP_WARN_for everybody|r
+    >>Loot the |cRXP_PICK_Serpentbloom|r on the ground
+    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_PICK_Serpentbloom|r |cRXP_WARN_for everybody|r
     .complete 962,1 --Serpentbloom (10)
     .skill herbalism,1,1
     .isOnQuest 962
@@ -3678,14 +3680,18 @@ step
     .isOnQuest 1491
     .dungeon WC
 step
+    #label MadMagg
     #loop
+    .goto Kalimdor,51.97,55.23,0
+    .goto Kalimdor,51.82,54.86,0
+    .goto Kalimdor,52.01,55.02,0
     .goto Kalimdor,52.15,55.15,0
-    .goto Kalimdor,51.90,55.43,30,0
     .goto Kalimdor,51.97,55.23,30,0
     .goto Kalimdor,51.82,54.86,30,0
     .goto Kalimdor,52.01,55.02,30,0
     .goto Kalimdor,52.15,55.15,30,0
     >>Kill |cRXP_ENEMY_Mad Magglish|r. Loot him for the |cRXP_LOOT_99-Year-Old Port|r
+    >>|cRXP_WARN_He has a long respawn timer. Skip this step if you cannot find him|r
     .complete 959,1 --99-Year-Old Port (1)
     .mob Mad Magglish
     .isOnQuest 959
@@ -3700,8 +3706,8 @@ step
 step
     #optional
     #completewith GlowingShard
-    >>Loot the |cRXP_LOOT_Serpentbloom|r on the ground
-    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_LOOT_Serpentbloom|r |cRXP_WARN_for everybody|r
+    >>Loot the |cRXP_PICK_Serpentbloom|r on the ground
+    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_PICK_Serpentbloom|r |cRXP_WARN_for everybody|r
     >>|cRXP_WARN_Cast|r |T133939:0|t[Find Herbs] |cRXP_WARN_to see them on your minimap|r
     .complete 962,1 --Serpentbloom (10)
     .skill herbalism,<1,1
@@ -3710,8 +3716,8 @@ step
 step
     #optional
     #completewith GlowingShard
-    >>Loot the |cRXP_LOOT_Serpentbloom|r on the ground
-    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_LOOT_Serpentbloom|r |cRXP_WARN_for everybody|r
+    >>Loot the |cRXP_PICK_Serpentbloom|r on the ground
+    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_PICK_Serpentbloom|r |cRXP_WARN_for everybody|r
     .complete 962,1 --Serpentbloom (10)
     .skill herbalism,1,1
     .isOnQuest 962
@@ -3777,8 +3783,8 @@ step
 step
     #optional
     #completewith Ectoplasms
-    >>Loot the |cRXP_LOOT_Serpentbloom|r on the ground
-    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_LOOT_Serpentbloom|r |cRXP_WARN_for everybody|r
+    >>Loot the |cRXP_PICK_Serpentbloom|r on the ground
+    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_PICK_Serpentbloom|r |cRXP_WARN_for everybody|r
     >>|cRXP_WARN_Cast|r |T133939:0|t[Find Herbs] |cRXP_WARN_to see them on your minimap|r
     .complete 962,1 --Serpentbloom (10)
     .skill herbalism,<1,1
@@ -3787,8 +3793,8 @@ step
 step
     #optional
     #completewith Ectoplasms
-    >>Loot the |cRXP_LOOT_Serpentbloom|r on the ground
-    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_LOOT_Serpentbloom|r |cRXP_WARN_for everybody|r
+    >>Loot the |cRXP_PICK_Serpentbloom|r on the ground
+    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_PICK_Serpentbloom|r |cRXP_WARN_for everybody|r
     .complete 962,1 --Serpentbloom (10)
     .skill herbalism,1,1
     .isOnQuest 962
@@ -3843,8 +3849,8 @@ step
 step
     #optional
     #hardcore
-    >>Loot the |cRXP_LOOT_Serpentbloom|r on the ground
-    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_LOOT_Serpentbloom|r |cRXP_WARN_for everybody|r
+    >>Loot the |cRXP_PICK_Serpentbloom|r on the ground
+    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_PICK_Serpentbloom|r |cRXP_WARN_for everybody|r
     >>|cRXP_WARN_Cast|r |T133939:0|t[Find Herbs] |cRXP_WARN_to see them on your minimap|r
     .complete 962,1 --Serpentbloom (10)
     .skill herbalism,<1,1
@@ -3852,8 +3858,8 @@ step
     .dungeon WC
 step
     #hardcore
-    >>Loot the |cRXP_LOOT_Serpentbloom|r on the ground
-    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_LOOT_Serpentbloom|r |cRXP_WARN_for everybody|r
+    >>Loot the |cRXP_PICK_Serpentbloom|r on the ground
+    >>|cRXP_WARN_It is recommended that maximum 3 players attempt to complete this quest if you're doing only 1 run. There aren't enough|r |cRXP_PICK_Serpentbloom|r |cRXP_WARN_for everybody|r
     .complete 962,1 --Serpentbloom (10)
     .skill herbalism,1,1
     .isOnQuest 962
@@ -3861,7 +3867,7 @@ step
 step
     #optional
     #softcore
-    >>Loot the |cRXP_LOOT_Serpentbloom|r on the ground
+    >>Loot the |cRXP_PICK_Serpentbloom|r on the ground
     >>|cRXP_WARN_Cast|r |T133939:0|t[Find Herbs] |cRXP_WARN_to see them on your minimap|r
     .complete 962,1 --Serpentbloom (10)
     .skill herbalism,<1,1
@@ -3869,7 +3875,7 @@ step
     .dungeon WC
 step
     #softcore
-    >>Loot the |cRXP_LOOT_Serpentbloom|r on the ground
+    >>Loot the |cRXP_PICK_Serpentbloom|r on the ground
     .complete 962,1 --Serpentbloom (10)
     .skill herbalism,1,1
     .isOnQuest 962
@@ -5022,23 +5028,40 @@ step << Rogue
     .target Trak'gen
 step
     #optional
-    .abandon 6421,4021,6481,6284,6641,6563
-    --6421 Boulderslide Ravine
-    --4021 Counterattack!
-    --6481 Earthen Arise
-    --6284 Arachnophobia
-    --6641 Vorsha the Lasher
-    --6563 The Essence of Aku'Mai
+    .abandon 6421 >>Abandon Boulderslide Ravine
 step
     #optional
-    .abandon 1486,1487,1491,959,914,962
-    .dungeon WC
-    --1486 Deviate Hides
-    --1487 Deviate Eradication
-    --1491 Smart Drinks
-    --959 Trouble at the Docks
-    --914 Leaders of the Fang
-    --962 Serpentbloom
+    .abandon 4021 >>Abandon Counterattack!
+step
+    #optional
+    .abandon 6481 >>Abandon Earthen Arise
+step
+    #optional
+    .abandon 6284 >>Abandon Arachnophobia
+step
+    #optional
+    .abandon 6641 >>Abandon Vorsha the Lasher
+step
+    #optional
+    .abandon 6563 >>Abandon The Essence of Aku'Mai
+step
+    #optional
+    .abandon 1486 >>Abandon Deviate Hides
+step
+    #optional
+    .abandon 1487 >>Abandon Deviate Eradication
+step
+    #optional
+    .abandon 1491 >>Abandon Smart Drinks
+step
+    #optional
+    .abandon 959 >>Abandon Trouble at the Docks
+step
+    #optional
+    .abandon 914 >>Abandon Leaders of the Fang
+step
+    #optional
+    .abandon 962 >>Abandon Serpentbloom
 step
     #completewith next
     .zone Durotar >> Leave Orgrimmar
@@ -5048,6 +5071,4 @@ step
     .zone Tirisfal Glades >>Take the Zeppelin to Tirisfal Glades
     .zoneskip Tirisfal Glades
     .zoneskip Undercity
-
 ]])
-

@@ -5,11 +5,9 @@ RXPGuides.RegisterGuide([[
 #wotlk
 #cata
 #name Ebon Blade Daily Quests Route
-
 step
 	+To unlock the Knights of the Ebon Blade daily quests you must first complete their quest chain in Icecrown. Please use the Ebon Blade Unlock Daily Quests guide to unlock the daily quests
 	.isQuestAvailable 12814
-
 -- 3 Quests from The Shadow Vault
 step
 	>>From The Shadow Vault accept the 3 daily quests
@@ -68,7 +66,6 @@ step
     .turnin 13071 >>Turn in Vile Like Fire!
     .goto IcecrownGlacier,43.6,24.1,60,0
     .goto IcecrownGlacier,42.7,26.8
-
 -- 3 Quests from Death's Rise
 step
 	>>From Death's Rise accept the 3 daily quests

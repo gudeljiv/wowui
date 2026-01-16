@@ -1,6 +1,5 @@
 local faction = UnitFactionGroup("player")
 if faction == "Horde" then return end
-
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
@@ -362,8 +361,6 @@ step
     .goto Elwynn Forest,45.563,47.742
     .accept 2158 >> Accept Rest and Relaxation
 ]])
-
-
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
@@ -1632,7 +1629,6 @@ step
     .target Auctioneer Lympkin
     .target Auctioneer Redmuse
     .target Auctioneer Buckler
-
 step << skip
     #sticky
     #som
@@ -1645,7 +1641,6 @@ step << skip
     #completewith next
     .goto Dun Morogh,53.5,34.9,100 >>Run out of Ironforge
     >>Equip your level 3 thrown << Warrior
-
 step
 	.goto Dun Morogh,53.5,34.9,60,0
     .goto Dun Morogh,52.251,37.592,150 >> Exit Ironforge
@@ -1845,7 +1840,6 @@ step
 step
     .goto Dun Morogh,84.4,31.1,25 >> Travel to Loch Modan
 ]])
-
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
@@ -1857,7 +1851,6 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 #defaultfor Human
 #next 13-15 Westfall
-
 step
     #completewith next
     .goto Loch Modan,24.134,18.208

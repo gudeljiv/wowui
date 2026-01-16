@@ -1,4 +1,3 @@
-
 RXPGuides.RegisterGuide([[
 #classic
 #version 1
@@ -9,7 +8,6 @@ RXPGuides.RegisterGuide([[
 #displayname 16-17 Westfall
 #next 17-22 Redridge SoD
 #defaultfor !NightElf
-
 step << Paladin
     .goto Stormwind City,74.182,7.465 << Alliance
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Milton Sheaf|r << Alliance
@@ -455,9 +453,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thor|r
     .fly Redridge >> Fly to Redridge
     .target Thor
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 #version 1
@@ -468,8 +464,6 @@ RXPGuides.RegisterGuide([[
 #displayname 17-22 Redridge
 #next RestedXP Alliance 20-30\22-24 Wetlands SoD
 #defaultfor !NightElf
-
-
 step
     #label BMenace
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marshal Marris|r
@@ -502,7 +496,6 @@ step
     .accept 124 >> Accept A Baying of Gnolls
     .accept 122 >> Accept Underbelly Scales
     .isQuestTurnedIn 119
-
 step
     .goto Redridge Mountains,29.31,45.33,15,0
     .goto Redridge Mountains,29.98,44.45
@@ -889,10 +882,7 @@ step << Rogue
 #label xp20
     >> You should be level 20 here, if you're not, do the murloc quests east and grind until you are 20
     .xp 20
-
-
 ----Start of Rogue Poison and Deadmines section----
-
 step << Rogue
     .goto Redridge Mountains,30.6,59.6
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ariena Stormfeather|r
@@ -1244,11 +1234,7 @@ step
     .fly Redridge >> Fly to Redridge
     .target Dungar Longdrink
     .zoneskip Redridge Mountains
-
-
 ----End of Rogue Poison and Deadmines section----
-
-
 step
     #optional
     #completewith orcs

@@ -5,11 +5,9 @@ RXPGuides.RegisterGuide([[
 #wotlk
 #cata
 #name Icecrown Gunship Daily Quests Route
-
 step << Alliance -- Checking that the actual pre quests that have been completed, not dailies
 	+To unlock all the Icecrown Gunship daily quests you must first complete the Pre Quest chain. Please use the Icecrown Gunship Unlock Daily Quests guide to unlock all the daily quests
 	.isQuestAvailable 13314,13346,13342,13318,13321,13295,13288,13380,13291,13231,13296
-
 --	 13314  Get the Message
 --	 13346  No Rest For The Wicked
 --	 13342  Not a Bug
@@ -21,11 +19,9 @@ step << Alliance -- Checking that the actual pre quests that have been completed
 --	 13291  Borrowed Technology
 --	 13231  The Broken Front
 --	 13296  Get to Ymirheim!
-
 step << Horde -- Checking that the actual quests that have been completed, not dailies
 	+To unlock all the Icecrown Gunship daily quests you must first complete the Pre Quest chain. Please use the Icecrown Gunship Unlock Daily Quests guide to unlock all the daily quests
 	.isQuestAvailable 13313,13228,13293,13239,13373,13279,13356,13352,13358,13367,13264
-
 --	 13313  Blinding the Eyes in the Sky
 --	 13228  The Broken Front
 --	 13293  Get to Ymirheim!
@@ -36,7 +32,6 @@ step << Horde -- Checking that the actual quests that have been completed, not d
 --	 13358  Not a Bug
 --	 13367  No Rest For The Wicked
 --	 13264  That's Abominable!
-
 --Alliance Skybreaker Quests (11)
 --	Blood of the Chosen, 13336
 --	Slaves to Saronite, 13300
@@ -49,14 +44,12 @@ step << Horde -- Checking that the actual quests that have been completed, not d
 --	Not a Bug, 13344
 --	No Rest For The Wicked, 13350
 --	Capture More Dispatches, 13333
-
 --Alliance other misc quests nearby included with gunship quest chain (5)
 --  King of the Mountain, 13280
 --  Assault by Air, 13309
 --  Assault by Ground, 13284
 --  Static Shock Troops: the Bombardment, 13404
 --  Putting the Hertz: The Valley of Lost Hope, 13382 -- not implimented by blizzard
-
 --Horde Orgrim's Hammer Quests (11)
 --	Blood of the Chosen, 13330
 --	Slaves to Saronite, 13302
@@ -69,14 +62,12 @@ step << Horde -- Checking that the actual quests that have been completed, not d
 --	Not a Bug, 13365
 --	No Rest For The Wicked, 13368
 --	Keeping the Alliance Blind, 13331
-
 --Horde other misc quests nearby included with gunship quest chain (5)
 --  King of the Mountain, 13283  -- DONE
 --  Assault by Air, 13310 -- DONE
 --  Assault by Ground, 13301 -- DONE
 --  Riding the Wavelength: The Bombardment, 13406
 --  Total Ohmage: The Valley of Lost Hope!, 13376 -- not implimented by blizzard
-
 step << Alliance
     .goto IcecrownGlacier,65.1,57.2,0
     .goto IcecrownGlacier,64.7,52.4,0

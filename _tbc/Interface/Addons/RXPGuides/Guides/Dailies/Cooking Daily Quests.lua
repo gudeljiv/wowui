@@ -5,7 +5,6 @@ RXPGuides.RegisterGuide([[
 #wotlk
 #cata
 #name Cooking
-
 step << Alliance
 	.goto Dalaran,40.43,65.66
 	.daily 13100,13101,13102,13103,13107 >> Talk to Katherine Lee inside the inn. She has 1 out of 5 daily Cooking quests. Accept whichever is available
@@ -22,7 +21,6 @@ step << Horde
 	>>Mustard Dogs
 	>>Convention at the Legerdemain
 	>>Cheese for Glowergold
-
 -- Quest: Mustard Dogs!
 step << Alliance
 	>>Loot Wild Mustard in grassy areas of Dalaran
@@ -120,7 +118,6 @@ step
 	.isQuestComplete 13107 << Alliance
 	.turnin 13116 >>Turn in Mustard Dogs << Horde
 	.isQuestComplete 13116 << Horde
-
 -- Quest: Infused Mushroom Meatloaf
 step << Alliance
 	>>Go down into the Dalaran Sewers. Loot the blue Infused Mushrooms scattered around on the ground
@@ -212,7 +209,6 @@ step
 	.isQuestComplete 13100 << Alliance
 	.turnin 13112 >>Turn in Infused Mushroom Meatloaf << Horde
 	.isQuestComplete 13112 << Horde
-
 -- Quest: Sewer Stew
 step
 	.zone CrystalsongForest >>In Dalaran go into the Violet Gate building and click the Violet Strand Crystal to teleport below to Crystalsong Forest
@@ -299,7 +295,6 @@ step << Horde
 	.goto 126,35.47,57.55
 	.turnin 13114 >>Turn in Sewer Stew
 	.isQuestComplete 13114
-
 -- Quest: Cheese for Glowergold
 step << Alliance
 	#completewith Cheese
@@ -342,7 +337,6 @@ step
 	.isQuestComplete 13103 << Alliance
 	.turnin 13115 >>Cheese for Glowergold << Horde
 	.isQuestComplete 13115 << Horde
-
 -- Quest: Convention at the Legerdemain
 step << Alliance
 	>>In Dalaran go to the One More Glass building. Loot the Jug of Wine. Note it spawns randomly and can also spawn outside aswell as upstairs

@@ -120,7 +120,7 @@ WeakAurasTemplates: enabled
 WhatsTraining: enabled
 xVermin: enabled
 SkillInfoPlus: disabled
-RXPGuides: disabled
+RXPGuides: enabled
 Blizzard_CombatText: enabled
 ElvUI_AuraBarsMovers: disabled
 ElvUI_CastBarOverlay: disabled

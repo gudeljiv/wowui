@@ -1,7 +1,6 @@
 local _,addon = ...
 if addon.gameVersion < 40000 or addon.player.faction == 'Horde' then return end
 RXPGuides.RegisterGuide([[
-
 #version 1
 #group RXP Cataclysm 1-80 (A) << cata
 #group RXP MoP 1-60 (A) << mop
@@ -11,10 +10,8 @@ RXPGuides.RegisterGuide([[
 #displayname 18-21 Redridge
 #next 20-25 Duskwood
 <<Alliance
-
 --TODO: Figure out how flight paths work while leveling
 --FPs from lower level zones are supposed to open up as you level: https://youtu.be/9Y_PE0Wb4IM?si=H5H-FVQ-5StEQUfI&t=929
-
 step << NightElf/Draenei/Worgen
     .goto 62,51.716,17.647
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Teldira Moonfeather|r

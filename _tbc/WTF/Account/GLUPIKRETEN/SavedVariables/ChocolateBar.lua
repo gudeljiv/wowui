@@ -251,7 +251,7 @@ ChocolateBarDB = {
 ["barName"] = "ChocolateBar1",
 },
 ["ItemRack"] = {
-["index"] = 3,
+["index"] = 2,
 ["align"] = "right",
 ["isNew"] = false,
 ["showLabel"] = true,
@@ -371,7 +371,7 @@ ChocolateBarDB = {
 ["customLabel"] = "",
 },
 ["TipTac"] = {
-["index"] = 4,
+["index"] = 3,
 ["align"] = "right",
 ["isNew"] = false,
 ["showLabel"] = true,
@@ -399,6 +399,16 @@ ChocolateBarDB = {
 },
 ["Outfitter"] = {
 ["barName"] = "ChocolateBar1",
+},
+["AutoLayer"] = {
+["index"] = 4,
+["isNew"] = false,
+["showLabel"] = true,
+["showText"] = false,
+["barName"] = "ChocolateBar2",
+["disableTooltip"] = false,
+["showIcon"] = false,
+["customLabel"] = "AL",
 },
 ["VuhDo"] = {
 ["enabled"] = false,
@@ -465,6 +475,12 @@ ChocolateBarDB = {
 ["showText"] = false,
 ["barName"] = "ChocolateBar1",
 },
+["Omen"] = {
+["enabled"] = false,
+["align"] = "center",
+["showText"] = false,
+["barName"] = "ChocolateBar1",
+},
 ["Track Everything"] = {
 ["enabled"] = false,
 ["index"] = 4,
@@ -476,23 +492,17 @@ ChocolateBarDB = {
 ["showText"] = false,
 ["customLabel"] = "TE",
 },
-["LoonBestInSlot"] = {
-["enabled"] = false,
-["isNew"] = false,
-["barName"] = "ChocolateBar1",
-},
-["Omen"] = {
-["enabled"] = false,
-["align"] = "center",
-["showText"] = false,
-["barName"] = "ChocolateBar1",
-},
 ["gmMoney"] = {
 ["index"] = 1,
 ["isNew"] = false,
 ["showIcon"] = false,
 ["barName"] = "ChocolateBar1",
 ["customLabel"] = " ",
+},
+["LoonBestInSlot"] = {
+["enabled"] = false,
+["isNew"] = false,
+["barName"] = "ChocolateBar1",
 },
 ["RangeDisplay"] = {
 ["enabled"] = false,
@@ -511,14 +521,6 @@ ChocolateBarDB = {
 ["showText"] = false,
 ["customLabel"] = "AL",
 },
-["Broker_KillTrack"] = {
-["index"] = 2,
-["showLabel"] = true,
-["showText"] = false,
-["barName"] = "ChocolateBar2",
-["showIcon"] = false,
-["customLabel"] = "KT",
-},
 ["kRestack"] = {
 ["index"] = 3,
 ["align"] = "right",
@@ -527,6 +529,23 @@ ChocolateBarDB = {
 ["barName"] = "ChocolateBar1",
 ["showIcon"] = false,
 ["customLabel"] = "R",
+},
+["Broker_KillTrack"] = {
+["index"] = 2,
+["showLabel"] = true,
+["showText"] = false,
+["barName"] = "ChocolateBar2",
+["showIcon"] = false,
+["customLabel"] = "KT",
+},
+["gmLm"] = {
+["index"] = 2,
+["isNew"] = false,
+["showLabel"] = true,
+["showText"] = false,
+["barName"] = "ChocolateBar2",
+["showIcon"] = false,
+["customLabel"] = "LM",
 },
 ["Dugi Guides Tracking"] = {
 ["enabled"] = false,
@@ -547,14 +566,14 @@ ChocolateBarDB = {
 ["enabled"] = false,
 ["barName"] = "ChocolateBar1",
 },
-["gmLm"] = {
-["index"] = 2,
+["Selly"] = {
+["index"] = 1,
 ["isNew"] = false,
 ["showLabel"] = true,
 ["showText"] = false,
 ["barName"] = "ChocolateBar2",
 ["showIcon"] = false,
-["customLabel"] = "LM",
+["customLabel"] = "S",
 },
 ["BugSack"] = {
 ["widthBehavior"] = "free",
@@ -565,15 +584,6 @@ ChocolateBarDB = {
 ["index"] = 1,
 ["customLabel"] = "",
 },
-["gmSpecs"] = {
-["enabled"] = false,
-["isNew"] = false,
-["barName"] = "ChocolateBar1",
-},
-["NPCScan"] = {
-["isNew"] = false,
-["barName"] = "ChocolateBar1",
-},
 ["AddonCpuUsage"] = {
 ["enabled"] = false,
 ["align"] = "right",
@@ -583,6 +593,15 @@ ChocolateBarDB = {
 ["barName"] = "ChocolateBar1",
 ["showText"] = false,
 ["customLabel"] = "ACU",
+},
+["NPCScan"] = {
+["isNew"] = false,
+["barName"] = "ChocolateBar1",
+},
+["gmSpecs"] = {
+["enabled"] = false,
+["isNew"] = false,
+["barName"] = "ChocolateBar1",
 },
 ["CB_ItemLevel"] = {
 ["enabled"] = false,
@@ -662,17 +681,17 @@ ChocolateBarDB = {
 ["index"] = 1,
 ["barName"] = "ChocolateBar1",
 },
+["CB_Entertainer"] = {
+["enabled"] = false,
+["index"] = 2,
+["barName"] = "ChocolateBar1",
+},
 ["PitBull4"] = {
 ["enabled"] = false,
 ["index"] = 1,
 ["align"] = "right",
 ["isNew"] = false,
 ["showText"] = false,
-["barName"] = "ChocolateBar1",
-},
-["CB_Entertainer"] = {
-["enabled"] = false,
-["index"] = 2,
 ["barName"] = "ChocolateBar1",
 },
 ["LFGBulletinBoard"] = {
@@ -708,7 +727,7 @@ ChocolateBarDB = {
 ["customLabel"] = "GD",
 },
 ["Buffet"] = {
-["index"] = 4,
+["index"] = 3,
 ["isNew"] = false,
 ["showLabel"] = true,
 ["showText"] = false,

@@ -2,16 +2,18 @@
 BAGANATOR_CONFIG = {
 ["CharacterSpecific"] = {
 ["sort_ignore_bank_slots_count"] = {
-["Doperage-Thunderstrike"] = 0,
 ["Dopesnare-Thunderstrike"] = 0,
-["Vermins-Stitches"] = 0,
 ["Dopecoil-Thunderstrike"] = 0,
+["Dopeseal-Thunderstrike"] = 0,
+["Vermins-Stitches"] = 0,
+["Doperage-Thunderstrike"] = 0,
 },
 ["sort_ignore_slots_count_2"] = {
-["Doperage-Thunderstrike"] = 0,
 ["Dopesnare-Thunderstrike"] = 0,
-["Vermins-Stitches"] = 0,
 ["Dopecoil-Thunderstrike"] = 0,
+["Dopeseal-Thunderstrike"] = 0,
+["Vermins-Stitches"] = 0,
+["Doperage-Thunderstrike"] = 0,
 },
 ["currencies_tracked"] = {
 ["Doperage-Thunderstrike"] = {
@@ -60,7 +62,7 @@ BAGANATOR_CONFIG = {
 ["default_hearthstone"] = true,
 ["default_recipe"] = true,
 },
-["show_search_box"] = true,
+["show_search_box"] = false,
 ["debug_categories_search"] = false,
 ["bank_view_show_bag_slots"] = false,
 ["bank_view_width"] = 18,
@@ -245,8 +247,8 @@ BAGANATOR_CONFIG = {
 ["setting_anchors"] = false,
 ["character_select_position"] = {
 "CENTER",
-418.6981811523438,
-146.991943359375,
+279.0157775878906,
+100.6427154541016,
 },
 ["view_alpha"] = 0.9,
 ["category_horizontal_spacing_2"] = 0.4,
@@ -352,8 +354,8 @@ BAGANATOR_CONFIG = {
 ["show_guild_bank_button"] = true,
 ["bag_view_position"] = {
 "BOTTOMRIGHT",
--330.037353515625,
-573.5374145507812,
+-279.87841796875,
+582.4263916015625,
 },
 ["tooltips_faction_only"] = false,
 ["enable_equipment_set_info_2"] = true,

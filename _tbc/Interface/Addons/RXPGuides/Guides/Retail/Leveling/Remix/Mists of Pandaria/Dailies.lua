@@ -1,7 +1,6 @@
 ----------------------------
 ---x DAILIES
 ----------------------------
-
 --SEPERATOR
 RXPGuides.RegisterGuide([[
 #retail
@@ -10,11 +9,7 @@ RXPGuides.RegisterGuide([[
 #name 9ha
 #displayname |cFFFCDC00DAILIES|r
 #disabled
-
-
-
 ]])
-
 --Cloud Serpent Dailies
 RXPGuides.RegisterGuide([[
 #retail
@@ -24,7 +19,6 @@ RXPGuides.RegisterGuide([[
 #name a) Cloud Serpent Dailies
 #displayname |cFF1EFF001|r - Cloud Serpent
 #next ab) The Klaxxi Daillies
-
 step
     #loop
     .goto 371,57.51,45.36,15,0
@@ -439,7 +433,6 @@ step
     >>Kill the |cRXP_ENEMY_Windward Huntress|r
     .complete 31701,1 --1/1 Windward Huntress slain
     .mob Windward Huntress
-
 step
     .isOnQuest 31699
     #completewith ShadowfaeMadcapSlain
@@ -482,7 +475,6 @@ step
     >>Kill the |cRXP_ENEMY_Shadowfae Madcap|r
     .complete 31703,1 --1/1 Shadowfae Madcap slain
     .mob Shadowfae Madcap
-
 step
     #completewith StolenBoots
     #hidewindow
@@ -655,7 +647,6 @@ step
     .dailyturnin 31714 >>Turn in Saving the Serpents
     .target Elder Anli
 ]])
-
 --The Klaxxi Dailies
 RXPGuides.RegisterGuide([[
 #retail
@@ -666,7 +657,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF002|r - The Klaxxi 
 #title The Klaxxi Dailies
 #next ac) August Celestial Daillies
-
 step
     #loop
     .goto 422,54.29,35.93,15,0
@@ -1095,7 +1085,6 @@ step
     .dailyturnin 31109 >>Turn in Culling the Swarm
     .target Kil'ruk the Wind-Reaver
 ]])
-
 --August Celestial Dailies
 RXPGuides.RegisterGuide([[
 #retail
@@ -1106,8 +1095,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF003|r - August Celestial
 #title August Celestial Daillies
 #next ad) Domination Point Dailies
-
-
 --Jade Forest
 -- step
 --     .accept 30066 >>Accept Hidden Power
@@ -2060,7 +2047,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thelonius|r
     .dailyturnin 30739 >>Turn in Ellia Ravenmane: Redemption
 ]])
-
 --Domination Point Dailies Horde
 RXPGuides.RegisterGuide([[
 #retail
@@ -2070,7 +2056,6 @@ RXPGuides.RegisterGuide([[
 #name ad) Domination Point Dailies
 #displayname |cFF1EFF004|r - Domination Point
 #next ae) Landfall Daillies Alliance
-
 step
     #loop
     .goto 418,10.07,53.86,15,0
@@ -2476,9 +2461,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brolic|r
     .dailyturnin 32127 >>Turn in All Dead, All Dead
     .target Brolic
-
 ]])
-
 --Landfall Daillies Alliance
 RXPGuides.RegisterGuide([[
 #retail
@@ -2488,7 +2471,6 @@ RXPGuides.RegisterGuide([[
 #name ae) Landfall Daillies Alliance
 #displayname |cFF1EFF005|r - Landfall
 #next af) Shado-Pan Daillies
-
 --Ruins of Ogudei
 -- step
 --     .goto 418,89.70,33.09
@@ -2957,7 +2939,6 @@ step
     .target Sky Admiral Rogers
     .dailyturnin 32157 >>Turn in The Only Good Goblin...
 ]])
-
 --Shado-Pan Dailies
 RXPGuides.RegisterGuide([[
 #retail
@@ -2968,7 +2949,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF006|r - Shado-Pan
 #title Shado-Pan Dailies
 #next a) Cloud Serpent Dailies
-
 step
     #loop
     .goto 388,49.61,70.50,10,0
@@ -3095,7 +3075,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Master Snowdrift|r
     .dailyturnin 31116 >>Turn in Spirit Dust
     .target Master Snowdrift
-
 step
     .isQuestTurnedIn 31119
     .goto 388,49.61,70.50
@@ -3756,12 +3735,9 @@ step
     .dailyturnin 31061 >>Turn in Riding the Storm
     .target Ban Bearheart
 ]])
-
-
 ----------------------------
 ---x UNUSED
 ----------------------------
-
 -- Vale Dailies
 RXPGuides.RegisterGuide([[
 #retail
@@ -3770,7 +3746,6 @@ RXPGuides.RegisterGuide([[
 #subgroup |cFFFCDC00(10-70)|r Pandaria Remix 
 #name X) Vale Dailies 1
 #internal
-
 step
     .goto 390,21.40,71.46
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kun Autumnlight|r
@@ -3983,7 +3958,6 @@ step
     .dailyturnin 30266 >>Turn in Bloodied Skies
     .target Kun Autumnlight
 ]])
-
 -- Niuzao Dailies
 RXPGuides.RegisterGuide([[
 #retail
@@ -3991,6 +3965,4 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Speed Leveling
 #name X) Niuzao Daillies
 #internal
-
-
 ]])

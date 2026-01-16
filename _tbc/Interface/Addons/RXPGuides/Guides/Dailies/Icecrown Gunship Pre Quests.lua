@@ -5,7 +5,6 @@ RXPGuides.RegisterGuide([[
 #wotlk
 #cata
 #name Icecrown Gunship Unlock Daily Quests
-
 step
 	+Note: A number of Daily quests have 5 Player Group quests as prerequisites in Icecrown. You must finish them in order to unlock the proceeding Daily quests. Complete ALL Group quests when instructed by the guide
 	>>If you cannot complete them return to them later

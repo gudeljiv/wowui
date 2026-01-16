@@ -1,6 +1,5 @@
 local faction = UnitFactionGroup("player")
 if faction == "Horde" then return end
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance
@@ -11,8 +10,6 @@ RXPGuides.RegisterGuide([[
 #defaultfor Human
 #next 6-12 Elwynn Forest SoD
 #season 2
-
-
 step << !Human
     #completewith next
     +You have selected a guide meant for Humans. You should choose the same starter zone that you start in
@@ -525,15 +522,7 @@ step
     .accept 3104 >> Accept Glyphic Letter << Mage
     .accept 3105 >> Accept Tainted Letter << Warlock
     .target Marshal McBride
-
-
-
-
 ----Start of 2x level 4 training----
-
-
-
-
 step << Mage
     #xprate >1.59
     #optional
@@ -784,12 +773,7 @@ step << Warlock
     .turnin 3105 >> Turn in Tainted Letter
     .train 172 >>Train |T136118:0|t[Corruption]
     .target Drusilla La Salle
-
-
-
 ----End of 2x training section----
-
-
 step << Priest/Paladin
     .goto Elwynn Forest,48.22,41.47
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Rune Broker|r
@@ -874,8 +858,6 @@ step
     .accept 2158 >> Accept Rest and Relaxation
     .target Falkhaan Isenstrider
 ]])
-
-
 RXPGuides.RegisterGuide([[
 #classic
 #season 2
@@ -886,7 +868,6 @@ RXPGuides.RegisterGuide([[
 #displayname 6-12 Elwynn Forest
 #next 12-13 Dun Morogh SoD
 #defaultfor Human
-
 step
     #season 0,1 << Rogue
     #hardcore
@@ -2259,11 +2240,7 @@ step
     #optional
     #completewith Garrison
     .goto Elwynn Forest,24.82,76.25,80 >> Travel to Westbrook Garrison
-
-
 ----Start of Paladin 1.5x Martyrdom Rune section----
-
-
 step << Paladin
     #xprate >1.49
     #season 2
@@ -2289,10 +2266,7 @@ step << Paladin
     .mob Riverpaw Outrunner
     .isOnQuest 11
     .isQuestAvailable 1644
-
 ----Start of Warrior Gnoll Head section----
-
-
 step << Warrior
     #xprate >1.49
     #season 2
@@ -2610,15 +2584,7 @@ step << Human Paladin
     --.accept 1780 >> Accept The Tome of Divinity
     .target Stephanie Turner
 ----XX if ever in the future, add Level 12 xp grind for 1.5x Tome of Divinity
-
-
-
-
 ----Warlock Elwynn Voidwalker Section Start----
-
-
-
-
 step << Warlock
     #optional
     #completewith GakinStart
@@ -2809,11 +2775,7 @@ step << Warlock
     .target Gakin the Darkbinder
     .goto StormwindClassic,25.25,78.59
     .turnin 1689 >> Turn in The Binding
-
-
 ----Warlock Elwynn Voidwalker Section End----
-
-
 step << Warrior
     #season 2
     #completewith RoDSW

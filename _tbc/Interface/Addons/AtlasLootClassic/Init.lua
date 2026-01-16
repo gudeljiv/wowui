@@ -10,26 +10,52 @@ local ipairs = _G.ipairs
 -- ----------------------------------------------------------------------------
 local addonname = ...
 
+-----------------------------------------------------------------------
+-- AddOn version handling (fixed)
+-----------------------------------------------------------------------
+
 local GetAddOnMetadata = C_AddOns.GetAddOnMetadata
 local addonVersion = GetAddOnMetadata(addonname, "Version")
-if addonVersion == string.format("@%s@", "project-version") then addonVersion = "v99.99.9999-dev" end
-local versionT = { string.match(addonVersion, "v(%d+)%.(%d+)%.(%d+)%-?(%a*)(%d*)") }
-local addonRevision = ""
-for k, v in ipairs(versionT) do
-	if k < 4 then
-		local it = k == 3 and (4 - #v) or (2 - #v)
-		for i = 1, it do
-			versionT[k] = "0"..versionT[k]
-		end
-		addonRevision = addonRevision..versionT[k]
-	end
+
+-- Dev fallback when packaged version not replaced
+if addonVersion == string.format("@%s@", "project-version") then
+	addonVersion = "v99.99.9999-dev"
 end
 
+-- Supports:
+-- v2.5.5.12131
+-- v99.99.9999-dev
+-- v1.2.3-beta
+local major, minor, patch, buildOrTag = string.match(addonVersion, "^v(%d+)%.(%d+)%.(%d+)%.([%w%-]+)$")
+
+-- Safety fallback
+if not major then
+	major, minor, patch, buildOrTag = "0", "0", "0", "0"
+end
+
+local versionT = { major, minor, patch, buildOrTag }
+
+-- Build sortable numeric revision from major.minor.patch only
+-- MM mm pppp bbbbb -> 2.5.5.123456 => 2 5 5 123456 => 255123456
+local addonRevision = ""
+
+-- major, minor, patch
+for k = 1, 4 do
+	local v = versionT[k]
+	addonRevision = addonRevision .. v
+end
+
+addonRevision = tonumber(addonRevision) or 0
+
 _G.AtlasLoot = {
-	__addonrevision = tonumber(addonRevision),
-	__addonversion = versionT[4] == "dev" and "dev-"..(GetServerTime() or 0) or addonVersion,
-	IsDevVersion = versionT[4] == "dev" and true or nil,
-	IsTestVersion = (versionT[4] == "beta" or versionT[4] == "alpha") and true or nil,
+	__addonrevision = addonRevision,
+
+	__addonversion = (buildOrTag == "dev")
+		and ("dev-" .. (GetServerTime() or 0))
+		or addonVersion,
+
+	IsDevVersion  = (buildOrTag == "dev")   and true or nil,
+	IsTestVersion = (buildOrTag == "beta" or buildOrTag == "alpha") and true or nil,
 }
 
 local AddonNameVersion = string.format("%s-%d", addonname, _G.AtlasLoot.__addonrevision)

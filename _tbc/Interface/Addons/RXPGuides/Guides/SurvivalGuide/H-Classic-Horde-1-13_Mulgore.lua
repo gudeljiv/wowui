@@ -1,7 +1,5 @@
 local faction = UnitFactionGroup("player")
 if faction == "Alliance" then return end
-
-
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
@@ -13,7 +11,6 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 #defaultfor Tauren
 #next 6-13 Tauren
-
 step << !Tauren
     #completewith next
     .goto Mulgore,44.92,77.12
@@ -421,8 +418,6 @@ step
     .accept 1656 >>Accept A Task Unfinished
     .target Antur Fallow
 ]])
-
-
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
@@ -434,8 +429,6 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 #defaultfor Tauren
 #next 13-15 Silverpine Forest
-
-
 step
 	#completewith next
     .goto Mulgore,47.35,60.70,120 >> Run to Bloodhoof Village
@@ -1713,7 +1706,7 @@ step << Druid
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tal|r
     .fly Crossroads >>Fly to the Crossroads
     .target Tal
-    .zoneskip The barrens
+    .zoneskip The Barrens
 step << Hunter/Druid
     #label ReturntoJahan
     .goto The Barrens,51.2,29.1
@@ -3000,6 +2993,7 @@ step
     .turnin 813 >>Turn in Finding the Antidote
     .target Kor'ghan
     .isQuestComplete 813
+    .isQuestAvailable 812
 step << Hunter
     .goto Orgrimmar,81.17,18.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|t|cRXP_BUY_Talk to|r |cRXP_FRIENDLY_Zendo'jian|r|cRXP_BUY_. Buy a|r |T135499:0|t[Laminated Recurve Bow] |cRXP_BUY_from him|r
@@ -3256,4 +3250,3 @@ step
     .zone Silverpine Forest >> Travel to Silverpine Forest
     .zoneskip Silverpine Forest
     ]])
-

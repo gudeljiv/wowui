@@ -1,6 +1,5 @@
 local faction = UnitFactionGroup("player")
 if faction == "Horde" then return end
-
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
@@ -294,7 +293,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Porthannius|r
     .accept 2159 >> Accept Dolanaar Delivery
 ]])
-
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic

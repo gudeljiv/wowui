@@ -13,9 +13,11 @@ BAGANATOR_CONFIG = {
 ["currencies_tracked"] = {
 ["Doperage-Thunderstrike"] = {
 },
+["Dopesnare-Thunderstrike"] = {
+},
 ["Dopecoil-Thunderstrike"] = {
 },
-["Dopesnare-Thunderstrike"] = {
+["Dopeseal-Thunderstrike"] = {
 },
 ["Dopecure-Thunderstrike"] = {
 },

@@ -22,7 +22,11 @@ xVermin.AOE = function(range, casting)
 	for i = 1, 40 do
 		unit = "nameplate" .. i
 
-		if UnitExists(unit) and not xVermin.HasValue(t, UnitCreatureType(unit)) and UnitIsEnemy("player", unit) then
+		if
+			UnitExists(unit)
+			and not xVermin.HasValue(t, UnitCreatureType(unit))
+			and (UnitIsEnemy("player", unit) or UnitIsUnit(unit .. "target", "player"))
+		then
 			-- print(unit, UnitExists(unit), UnitCreatureType(unit), not xVermin.HasValue(t, UnitCreatureType(unit)), xVermin.GetRange(unit))
 			unitcasting = xVermin.IfUnitIsCastingInteruptible(unit)
 			targetcasting = xVermin.IfUnitIsCastingInteruptible("target")

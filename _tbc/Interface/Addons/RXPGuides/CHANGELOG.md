@@ -1,15 +1,8 @@
 # RestedXP Guides
 
-## [v4.8.29-10-gca42e40](https://github.com/RestedXP/RXPGuides/tree/ca42e404ecb86565061d2ed98313137276aca814) (2025-12-17)
-[Full Changelog](https://github.com/RestedXP/RXPGuides/compare/v4.8.29...ca42e404ecb86565061d2ed98313137276aca814) [Previous Releases](https://github.com/RestedXP/RXPGuides/releases)
+## [v4.9.10-3-g29f9aa6](https://github.com/RestedXP/RXPGuides/tree/29f9aa66a6ab8fb27a51abde6ae7902dc94dd7a7) (2026-01-14)
+[Full Changelog](https://github.com/RestedXP/RXPGuides/compare/v4.9.10...29f9aa66a6ab8fb27a51abde6ae7902dc94dd7a7) [Previous Releases](https://github.com/RestedXP/RXPGuides/releases)
 
 - Merge branch 'main' of https://github.com/RestedXP/RXPGuides  
-- Small fixes era guides  
-- Updated localization template  
-- Updated localization script  
-- Updated localization script  
-- Worgen Overhaul  
-- Panda & Dracthyr Overhaul done  
-- Quest DB update  
-- fixed issue with collect step  
-- Quest DB improvements  
+- 1-20 updates  
+- Hide all dungeon configs if empty  

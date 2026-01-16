@@ -1,7 +1,6 @@
 ----------------------------
 ---x SIDEQUESTS
 ----------------------------
-
 -- Jade Forest Tian Monastery
 RXPGuides.RegisterGuide([[
 #retail
@@ -9,7 +8,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Pandaria Remix
 #name 1) Jade Forest Side Quests Tian Monastery
 #internal
-
 step
     #completewith next
     .cast 441154 >> Use |T134491:0|t[Nostwin's Voucher] to teleport to Infinite Bazaar.
@@ -498,7 +496,6 @@ step
 --    .timer 15,RP
 --    .target High Elder Cloudfall
 ]])
-
 -- Jade Forest Sprites Plight
 RXPGuides.RegisterGuide([[
 #retail
@@ -506,7 +503,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Pandaria Remix
 #name 1) Jade Forest Side Quests Sprites Plight
 #internal
-
 step
     .goto 371,48.67,24.92
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Outcast Sprite|r.
@@ -732,7 +728,6 @@ step
 --    .turnin 29755 >>Turn in Pei-Back
 --    .target Pei-Zhi
 ]])
-
 -- Jade Forest Defiance
 RXPGuides.RegisterGuide([[
 #retail
@@ -740,7 +735,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Pandaria Remix
 #name 1) Jade Forest Defiance Side Quests
 #internal
-
 -- step << Alliance
 --     #completewith next
 --     .goto 371,46.31,80.67,40 >>Look for the Treasure on the shrine.
@@ -935,7 +929,6 @@ step
     .turnin 29670 >>Turn in Maul Gormal
     .target Shao the Defiant
 ]])
-
 -- Jade Forest Cloud Serpent
 RXPGuides.RegisterGuide([[
 #retail
@@ -943,7 +936,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Pandaria Remix
 #name 1) Jade Forest Cloud Serpent Side Quests
 #internal
-
 step
     #completewith next
     .goto 371,65.25,37.20,20,0
@@ -1143,11 +1135,9 @@ step
     .turnin 30142 >>Turn in It's A...
     .target Instructor Skythorn
 ]])
-
 ---------------------------
 ---x MAIN QUESTS
 ----------------------------
-
 --SEPERATOR
 RXPGuides.RegisterGuide([[
 #retail
@@ -1156,11 +1146,7 @@ RXPGuides.RegisterGuide([[
 #name 0
 #displayname |cFFFCDC00LEVELING|r
 #disabled
-
-
-
 ]])
-
 -- Pandaria Remix Leveling Guide: How to Use & Essential Tips
 RXPGuides.RegisterGuide([[ 
 #retail
@@ -1170,7 +1156,6 @@ RXPGuides.RegisterGuide([[
 #name 1) Pandaria Remix Leveling Guide: How to Use & Essential Tips
 #next 2) Pandaria Remix Introduction
 #displayname |cFF00CCFF0|r - How to Use & Essential Tips |cRXP_ENEMY_(Optional)|r
-
 step
     #completewith test
     +|cFFFF0000Important:|r |cRXP_WARN_Read each section carefully and click through the guide for detailed tips and strategies|r.
@@ -1244,7 +1229,6 @@ step
 step
     +If you spot any Rares or Treasures along the route, be sure to collect and kill them.
 ]])
-
 -- Introduction
 RXPGuides.RegisterGuide([[
 #retail
@@ -1256,7 +1240,6 @@ RXPGuides.RegisterGuide([[
 #title Timeless Isle Introduction
 #next 3) Jade Forest Horde << Horde
 #next 3) Jade Forest Alliance << Alliance
-
 step
     .goto 554,24.54,52.21
     .achievementComplete 19871,1
@@ -1404,21 +1387,17 @@ step << Alliance
     .turnin 79440 >>Turn in Recalling the War
     .target Eternus
 ]])
-
 -- Jade Forest Horde
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
 #group RestedXP Speed Leveling
 #subgroup |cFFFCDC00(10-70)|r Pandaria Remix 
-#subweight -1
 #title Jade Forest
 #name 3) Jade Forest Horde
 #displayname |cFF00CCFF2|r - Jade Forest
 #next 4) Valley of the Four Winds 1
-
 << Horde
-
 step
     .goto 371,30.85,10.76
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Eternus|r.
@@ -2168,20 +2147,17 @@ step
 step
     #include 1) Jade Forest Defiance Side Quests
 ]])
-
 -- Jade Forest Alliance
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
 #group RestedXP Speed Leveling
 #subgroup |cFFFCDC00(10-70)|r Pandaria Remix 
-#subweight -1
 #name 3) Jade Forest Alliance
 #displayname |cFF00CCFF2|r - Jade Forest
 #title Jade Forest
 #next 4) Valley of the Four Winds 1
 <<Alliance
-
 step
     .goto 371,42.03,92.75
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sky Admiral Rogers|r.
@@ -2224,7 +2200,7 @@ step
     #completewith next
     .exitvehicle >> |cRXP_WARN_Dismount the Skyfire Gyrocopter by pressing the |r.[Exit] |cRXP_WARN_button on your action bars|r.
     *|cRXP_WARN_Alternatively, you can use this macro;|r.
-    .link /leavevehicle>> CLICK HERE FOR MACRO.
+    .macro Leave Vehicle,6656430 >>/leavevehicle
     *|cRXP_WARN_It's recommended to safe this macro for future use|r.
 step
     .goto 371,42.04,92.75
@@ -2240,7 +2216,7 @@ step
     #completewith next
     .exitvehicle >> |cRXP_WARN_Dismount the Skyfire Gyrocopter by pressing the |r.[Exit] |cRXP_WARN_button on your action bars|r.
     *|cRXP_WARN_Alternatively, you can use this macro;|r.
-    .link /leavevehicle>> CLICK HERE FOR MACRO.
+    .macro Leave Vehicle,6656430 >>/leavevehicle
     *|cRXP_WARN_It's recommended to safe this macro for future use|r.
 step
     .goto 371,43.58,90.64

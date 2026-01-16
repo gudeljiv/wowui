@@ -6,7 +6,6 @@ RXPGuides.RegisterGuide([[
 #group +Argent Tournament
 #name A_1_AT_Start
 #displayname |cRXP_LOOT_1.0|r - Becoming a Champion
-
 step
 	#completewith next
 	.goto IcecrownGlacier,69.66,22.86,200 >> Travel to the |T236690:0|tArgent Tournament Grounds in Icecrown
@@ -525,7 +524,6 @@ step
 	.target Runok Wildmane << Tauren
 	.target Zul'tore << Troll
 	.target Eressea Dawnsinger << BloodElf
-
 step << Human
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marshal Jacob Alerius|r. He has 1 out of 3 daily quests. Accept whichever is available
 	.daily 13603,13616,13600 >>Accept A Blade Fit For A Champion |c99ffff99OR|r The Edge Of Winter |c99ffff99OR|r A Worthy Weapon
@@ -540,7 +538,6 @@ step << Human
 	.target Sir Marcus Barlowe
 	.target Captain Joseph Holley
 	.isQuestAvailable 13718
-
 step << Draenei
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Colosos|r. He has 1 out of 3 daily quests. Accept whichever is available
 	.daily 13752,13754,13753 >>Accept A Blade Fit For A Champion |c99ffff99OR|r The Edge Of Winter |c99ffff99OR|r A Worthy Weapon
@@ -555,7 +552,6 @@ step << Draenei
 	.target Saandos
 	.target Ranii
 	.isQuestAvailable 13716
-
 step << NightElf
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jaelyne Evensong|r. She has 1 out of 3 daily quests. Accept whichever is available
 	.daily 13757,13759,13758 >>Accept A Blade Fit For A Champion |c99ffff99OR|r The Edge Of Winter |c99ffff99OR|r A Worthy Weapon
@@ -570,7 +566,6 @@ step << NightElf
 	.target Illestria Bladesinger
 	.target Airae Starseeker
 	.isQuestAvailable 13717
-
 step << Dwarf
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lana Stouthammer|r. She has 1 out of 3 daily quests. Accept whichever is available
 	.daily 13741,13743,13742 >>Accept A Blade Fit For A Champion |c99ffff99OR|r The Edge Of Winter |c99ffff99OR|r A Worthy Weapon
@@ -585,7 +580,6 @@ step << Dwarf
 	.target Rollo Sureshot
 	.target Clara Tumblebrew
 	.isQuestAvailable 13714
-
 step << Gnome
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ambrose Boltspark|r. He has 1 out of 3 daily quests. Accept whichever is available
 	.daily 13746,13748,13747 >>Accept A Blade Fit For A Champion |c99ffff99OR|r The Edge Of Winter |c99ffff99OR|r A Worthy Weapon
@@ -600,7 +594,6 @@ step << Gnome
 	.target Tickin Gearspanner
 	.target Flickin Gearspanner
 	.isQuestAvailable 13715
-
 step << BloodElf
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Eressea Dawnsinger|r. She has 1 out of 3 daily quests. Accept whichever is available
 	.daily 13783,13785,13784 >>Accept A Blade Fit For A Champion |c99ffff99OR|r The Edge Of Winter |c99ffff99OR|r A Worthy Weapon
@@ -615,7 +608,6 @@ step << BloodElf
 	.target Kethiel Sunlance
 	.target Aneera Thuron
 	.isQuestAvailable 13722
-
 step << Scourge
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deathstalker Visceri|r. He has 1 out of 3 daily quests. Accept whichever is available
 	.daily 13778,13780,13779 >>Accept A Blade Fit For A Champion |c99ffff99OR|r The Edge Of Winter |c99ffff99OR|r A Worthy Weapon
@@ -630,7 +622,6 @@ step << Scourge
 	.target Sarah Chalke
 	.target Handler Dretch
 	.isQuestAvailable 13721
-
 step << Orc
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mokra the Skullcrusher|r. He has 1 out of 3 daily quests. Accept whichever is available
 	.daily 13762,13764,13763 >>Accept A Blade Fit For A Champion |c99ffff99OR|r The Edge Of Winter |c99ffff99OR|r A Worthy Weapon
@@ -645,7 +636,6 @@ step << Orc
 	.target Akinos
 	.target Morah Worgsister
 	.isQuestAvailable 13697
-
 step << Tauren
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Runok Wildmane|r. He has 1 out of 3 daily quests. Accept whichever is available
 	.daily 13773,13775,13774 >>Accept A Blade Fit For A Champion |c99ffff99OR|r The Edge Of Winter |c99ffff99OR|r A Worthy Weapon
@@ -660,7 +650,6 @@ step << Tauren
 	.target Dern Ragetotem
 	.target Anka Clawhoof
 	.isQuestAvailable 13720
-
 step << Troll
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zul'tore|r. He has 1 out of 3 daily quests. Accept whichever is available
 	.daily 13768,13770,13769 >>Accept A Blade Fit For A Champion |c99ffff99OR|r The Edge Of Winter |c99ffff99OR|r A Worthy Weapon
@@ -675,7 +664,6 @@ step << Troll
 	.target Shadow Hunter Mezil-kree
 	.target Gahju
 	.isQuestAvailable 13719
-
 step -- THE GRAND MELEE
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Alliance Lance|r in your Bags then Mount the Stabled Exodar Elekk << Draenei
@@ -791,7 +779,6 @@ step -- A Valiant's Field Training
 	.complete 13786,1 << BloodElf -- Converted Hero slain (10)
 	.isOnQuest 13592,13744,13749,13755,13760,13765,13771,13776,13781,13786
 	.mob Converted Hero
-
 step -- At The Enemy's Gates
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Alliance Lance|r in your Bags then Mount the |cRXP_FRIENDLY_Stabled Campaign Warhorse|r << Alliance
@@ -870,7 +857,6 @@ step
 	.complete 13859,2 << BloodElf -- Boneguard Scout slain (10)
 	.isOnQuest 13847,13851,13852,13854,13855,13856,13857,13858,13859,13860
 	.mob Boneguard Scout
-
 step -- A Worthy Weapon v2
 	>>|cRXP_WARN_Remember to Equip your Weapon|r
 	>>Collect |cRXP_PICK_Winter Hyacinth|r at the Ironwall Dam on the border of Icecrown and Crystalsong Forest
@@ -905,7 +891,6 @@ step
 	.complete 13779,1 << Scourge -- Blade of Drak'Mar (1)
 	.complete 13784,1 << BloodElf -- Blade of Drak'Mar (1)
 	.isOnQuest 13600,13742,13747,13753,13758,13763,13769,13774,13779,13784
-
 step -- The Edge Of Winter v2
 	#completewith next
 	.goto CrystalsongForest,55.05,75.04
@@ -938,7 +923,6 @@ step
 	.complete 13785,1 << BloodElf -- Winter's Edge (1)
 	.target Maiden of Winter's Breath Lake
 	.isOnQuest 13616,13743,13748,13754,13759,13764,13770,13775,13780,13785
-
 step -- A Blade Fit For A Champion v2
 	#completewith next
 	.goto Grizzly Hills,60.83,51.36
@@ -1024,7 +1008,6 @@ step << Human
 	.goto IcecrownGlacier,76.62,19.21
 	.target Sir Marcus Barlowe
 	.target Captain Joseph Holley
-
 step << Draenei
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Colosos|r, |cRXP_FRIENDLY_Saandos|r and |cRXP_FRIENDLY_Ranii|r
 	.turnin 13752 >> Turn in A Blade Fit For A Champion
@@ -1073,7 +1056,6 @@ step << Draenei
 	.goto IcecrownGlacier,76.15,19.08
 	.target Saandos
 	.target Ranii
-
 step << NightElf
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jaelyne Evensong|r, |cRXP_FRIENDLY_Illestria Bladesinger|r and |cRXP_FRIENDLY_Airae Starseeker|r
 	.turnin 13757 >> Turn in A Blade Fit For A Champion
@@ -1122,7 +1104,6 @@ step << NightElf
 	.goto IcecrownGlacier,76.40,19.00
 	.target Illestria Bladesinger
 	.target Airae Starseeker
-
 step << Dwarf
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lana Stouthammer|r, |cRXP_FRIENDLY_Rollo Sureshot|r and |cRXP_FRIENDLY_Clara Tumblebrew|r
 	.turnin 13741 >> Turn in A Blade Fit For A Champion
@@ -1171,7 +1152,6 @@ step << Dwarf
 	.goto IcecrownGlacier,76.64,19.57
 	.target Rollo Sureshot
 	.target Clara Tumblebrew
-
 step << Gnome
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ambrose Boltspark|r, |cRXP_FRIENDLY_Tickin Gearspanner|r and |cRXP_FRIENDLY_Flickin Gearspanner|r
 	.turnin 13746 >> Turn in A Blade Fit For A Champion
@@ -1220,7 +1200,6 @@ step << Gnome
 	.goto IcecrownGlacier,76.52,19.89
 	.target Tickin Gearspanner
 	.target Flickin Gearspanner
-
 step << Troll
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zul'tore|r, |cRXP_FRIENDLY_Shadow Hunter Mezil-kree|r and |cRXP_FRIENDLY_Gahju|r
 	.turnin 13768 >> Turn in A Blade Fit For A Champion
@@ -1269,7 +1248,6 @@ step << Troll
 	.goto IcecrownGlacier,75.93,24.41
 	.target Shadow Hunter Mezil-kree
 	.target Gahju
-
 step << Tauren
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Runok Wildmane|r, |cRXP_FRIENDLY_Dern Ragetotem|r and |cRXP_FRIENDLY_Anka Clawhoof|r
 	.turnin 13773 >> Turn in A Blade Fit For A Champion
@@ -1318,7 +1296,6 @@ step << Tauren
 	.goto IcecrownGlacier,76.14,24.64
 	.target Dern Ragetotem
 	.target Anka Clawhoof
-
 step << Orc
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mokra the Skullcrusher|r, |cRXP_FRIENDLY_Akinos|r and |cRXP_FRIENDLY_Morah Worgsister|r
 	.turnin 13762 >> Turn in A Blade Fit For A Champion
@@ -1367,7 +1344,6 @@ step << Orc
 	.goto IcecrownGlacier,76.40,24.59
 	.target Akinos
 	.target Morah Worgsister
-
 step << Scourge
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deathstalker Visceri|r, |cRXP_FRIENDLY_Sarah Chalke|r and |cRXP_FRIENDLY_Handler Dretch|r
 	.turnin 13778 >> Turn in A Blade Fit For A Champion
@@ -1416,7 +1392,6 @@ step << Scourge
 	.goto IcecrownGlacier,76.55,24.33
 	.target Sarah Chalke
 	.target Handler Dretch
-
 step << BloodElf
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Eressea Dawnsinger|r, |cRXP_FRIENDLY_Kethiel Sunlance|r and |cRXP_FRIENDLY_Aneera Thuron|r
 	.turnin 13783 >> Turn in A Blade Fit For A Champion
@@ -1465,7 +1440,6 @@ step << BloodElf
 	.goto IcecrownGlacier,76.52,23.93
 	.target Kethiel Sunlance
 	.target Aneera Thuron
-
 step -- Checking if they have 25 Valiant's Seals after a set of turn ins.
 	>>In order to complete the quest |cFFffff00The Valiant's Charge|r and progress through the |T236690:0|tArgent Tournament Grounds you must complete daily quests and acquire |T133441:0|t|c99CCFFFFValiant's Seal|r
 	>>You need |T133441:0|t|c99CCFFFF25 Valiant's Seal|r. You will earn 5 per day if you complete the 4 daily quests
@@ -1713,8 +1687,6 @@ step
 	.isQuestTurnedIn 13727 << Troll
 	.isQuestTurnedIn 13731 << BloodElf
 ]])
-
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -1724,7 +1696,6 @@ RXPGuides.RegisterGuide([[
 #name B_2_AT_Exodar
 #displayname |cRXP_FRIENDLY_2.0|r - Exodar Champion
 << Alliance !Draenei
-
 step
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Colosos|r
 	.goto IcecrownGlacier,76.10,19.10
@@ -1797,7 +1768,6 @@ step -- A Valiant's Field Training
 	.complete 13755,1 -- Converted Hero slain (10)
 	.isOnQuest 13755
 	.mob Converted Hero
-
 step -- At The Enemy's Gates
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Alliance Lance|r in your Bags then Mount the |cRXP_FRIENDLY_Stabled Campaign Warhorse|r << Alliance
@@ -1839,7 +1809,6 @@ step
 	.complete 13854,2 -- Boneguard Scout slain (10)
 	.isOnQuest 13854
 	.mob Boneguard Scout
-
 step -- A Worthy Weapon v2
 	>>|cRXP_WARN_Remember to Equip your Weapon|r
 	>>Collect |cRXP_PICK_Winter Hyacinth|r at the Ironwall Dam on the border of Icecrown and Crystalsong Forest
@@ -1865,7 +1834,6 @@ step
 	.timer 21,Maiden of Drak'Mar Roleplay
 	.complete 13753,1 -- Blade of Drak'Mar (1)
 	.isOnQuest 13753
-
 step -- The Edge Of Winter v2
 	#completewith next
 	.goto CrystalsongForest,55.05,75.04
@@ -1889,7 +1857,6 @@ step
 	.complete 13754,1 -- Winter's Edge (1)
 	.target Maiden of Winter's Breath Lake
 	.isOnQuest 13754
-
 step -- A Blade Fit For A Champion v2
 	#completewith next
 	.goto Grizzly Hills,60.83,51.36
@@ -2010,8 +1977,6 @@ step
 	>>|cRXP_LOOT_You may start|r |cRXP_ENEMY_3.0|r |cRXP_LOOT_Champion Daily Quests|r
 	.isQuestTurnedIn 13724
 ]])
-
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -2021,7 +1986,6 @@ RXPGuides.RegisterGuide([[
 #name C_2_AT_Stormwind
 #displayname |cRXP_FRIENDLY_2.0|r - Stormwind Champion
 << Alliance !Human
-
 step
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marshal Jacob Alerius|r
 	.goto IcecrownGlacier,76.60,19.12
@@ -2043,7 +2007,6 @@ step
 	.target Sir Marcus Barlowe
 	.target Captain Joseph Holley
 	.isQuestAvailable 13718
-
 step -- THE GRAND MELEE
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Alliance Lance|r in your Bags then Mount the Stabled Stormwind Steed
@@ -2096,7 +2059,6 @@ step -- A Valiant's Field Training
 	.complete 13592,1 -- Converted Hero slain (10)
 	.isOnQuest 13592
 	.mob Converted Hero
-
 step -- At The Enemy's Gates
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Alliance Lance|r in your Bags then Mount the |cRXP_FRIENDLY_Stabled Campaign Warhorse|r << Alliance
@@ -2137,7 +2099,6 @@ step
 	.complete 13847,2 -- Boneguard Scout slain (10)
 	.isOnQuest 13847
 	.mob Boneguard Scout
-
 step -- A Worthy Weapon v2
 	>>|cRXP_WARN_Remember to Equip your Weapon|r
 	>>Collect |cRXP_PICK_Winter Hyacinth|r at the Ironwall Dam on the border of Icecrown and Crystalsong Forest
@@ -2163,7 +2124,6 @@ step
 	.timer 21,Maiden of Drak'Mar Roleplay
 	.complete 13600,1 -- Blade of Drak'Mar (1)
 	.isOnQuest 13600
-
 step -- The Edge Of Winter v2
 	#completewith next
 	.goto CrystalsongForest,55.05,75.04
@@ -2187,7 +2147,6 @@ step
 	.complete 13616,1 -- Winter's Edge (1)
 	.target Maiden of Winter's Breath Lake
 	.isOnQuest 13616
-
 step -- A Blade Fit For A Champion v2
 	#completewith next
 	.goto Grizzly Hills,60.83,51.36
@@ -2307,8 +2266,6 @@ step
 	>>|cRXP_LOOT_You may start|r |cRXP_ENEMY_3.0|r |cRXP_LOOT_Champion Daily Quests|r
 	.isQuestTurnedIn 13699
 ]])
-
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -2318,7 +2275,6 @@ RXPGuides.RegisterGuide([[
 #name D_2_AT_Ironforge
 #displayname |cRXP_FRIENDLY_2.0|r - Ironforge Champion
 << Alliance !Dwarf
-
 step
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lana Stouthammer|r
 	.goto IcecrownGlacier,76.64,19.49
@@ -2340,8 +2296,6 @@ step
 	.target Rollo Sureshot
 	.target Clara Tumblebrew
 	.isQuestAvailable 13714
-
-
 step -- THE GRAND MELEE
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Alliance Lance|r in your Bags then Mount the Stabled Ironforge Ram
@@ -2377,7 +2331,6 @@ step -- THE GRAND MELEE
 	.mob Gnomeregan Valiant
 	.mob Darnassus Valiant
 	.mob Exodar Valiant
-
 step -- A Valiant's Field Training
 	>>Jump off your Mount. |cRXP_WARN_Remember to Equip your Weapon|r. Do not destroy your |T135128:0|t|c99ffff99Lance|r. You will need it again
 	>>Kill |cRXP_ENEMY_Converted Heroes|r
@@ -2394,7 +2347,6 @@ step -- A Valiant's Field Training
 	.complete 13744,1 -- Converted Hero slain (10)
 	.isOnQuest 13744
 	.mob Converted Hero
-
 step -- At The Enemy's Gates
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Alliance Lance|r in your Bags then Mount the |cRXP_FRIENDLY_Stabled Campaign Warhorse|r
@@ -2435,7 +2387,6 @@ step
 	.complete 13851,2 -- Boneguard Scout slain (10)
 	.isOnQuest 13851
 	.mob Boneguard Scout
-
 step -- A Worthy Weapon v2
 	>>|cRXP_WARN_Remember to Equip your Weapon|r
 	>>Collect |cRXP_PICK_Winter Hyacinth|r at the Ironwall Dam on the border of Icecrown and Crystalsong Forest
@@ -2461,7 +2412,6 @@ step
 	.timer 21,Maiden of Drak'Mar Roleplay
 	.complete 13742,1 -- Blade of Drak'Mar (1)
 	.isOnQuest 13742
-
 step -- The Edge Of Winter v2
 	#completewith next
 	.goto CrystalsongForest,55.05,75.04
@@ -2485,7 +2435,6 @@ step
 	.complete 13743,1 -- Winter's Edge (1)
 	.target Maiden of Winter's Breath Lake
 	.isOnQuest 13743
-
 step -- A Blade Fit For A Champion v2
 	#completewith next
 	.goto Grizzly Hills,60.83,51.36
@@ -2607,7 +2556,6 @@ step
 	>>|cRXP_LOOT_You may start|r |cRXP_ENEMY_3.0|r |cRXP_LOOT_Champion Daily Quests|r
 	.isQuestTurnedIn 13713
 ]])
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -2617,7 +2565,6 @@ RXPGuides.RegisterGuide([[
 #name E_2_AT_Gnomeregan
 #displayname |cRXP_FRIENDLY_2.0|r - Gnomeregan Champion
 << Alliance !Gnome
-
 step
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ambrose Boltspark|r
 	.goto IcecrownGlacier,76.55,19.82
@@ -2639,7 +2586,6 @@ step
 	.target Tickin Gearspanner
 	.target Flickin Gearspanner
 	.isQuestAvailable 13715
-
 step -- THE GRAND MELEE
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Alliance Lance|r in your Bags then Mount the Stabled Gnomeregan Mechanostrider
@@ -2691,7 +2637,6 @@ step -- A Valiant's Field Training
 	.complete 13749,1 -- Converted Hero slain (10)
 	.isOnQuest 13749
 	.mob Converted Hero
-
 step -- At The Enemy's Gates
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Alliance Lance|r in your Bags then Mount the |cRXP_FRIENDLY_Stabled Campaign Warhorse|r
@@ -2732,8 +2677,6 @@ step
 	.complete 13852,2 -- Boneguard Scout slain (10)
 	.isOnQuest 13852
 	.mob Boneguard Scout
-
-
 step -- A Worthy Weapon v2
 	>>|cRXP_WARN_Remember to Equip your Weapon|r
 	>>Collect |cRXP_PICK_Winter Hyacinth|r at the Ironwall Dam on the border of Icecrown and Crystalsong Forest
@@ -2759,7 +2702,6 @@ step
 	.timer 21,Maiden of Drak'Mar Roleplay
 	.complete 13747,1 -- Blade of Drak'Mar (1)
 	.isOnQuest 13747
-
 step -- The Edge Of Winter v2
 	#completewith next
 	.goto CrystalsongForest,55.05,75.04
@@ -2783,7 +2725,6 @@ step
 	.complete 13748,1 -- Winter's Edge (1)
 	.target Maiden of Winter's Breath Lake
 	.isOnQuest 13748
-
 step -- A Blade Fit For A Champion v2
 	#completewith next
 	.goto Grizzly Hills,60.83,51.36
@@ -2904,7 +2845,6 @@ step
 	>>|cRXP_LOOT_You may start|r |cRXP_ENEMY_3.0|r |cRXP_LOOT_Champion Daily Quests|r
 	.isQuestTurnedIn 13723
 ]])
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -2914,7 +2854,6 @@ RXPGuides.RegisterGuide([[
 #name F_2_AT_Darnassus
 #displayname |cRXP_FRIENDLY_2.0|r - Darnassus Champion
 << Alliance !NightElf
-
 step
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jaelyne Evensong|r
 	.goto IcecrownGlacier,76.34,19.03
@@ -2936,8 +2875,6 @@ step
 	.target Illestria Bladesinger
 	.target Airae Starseeker
 	.isQuestAvailable 13717
-
-
 step -- THE GRAND MELEE
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Alliance Lance|r in your Bags then Mount the Stabled Darnassian Nightsaber
@@ -2988,7 +2925,6 @@ step -- A Valiant's Field Training
 	.complete 13760,1 -- Converted Hero slain (10)
 	.isOnQuest 13760
 	.mob Converted Hero
-
 step -- At The Enemy's Gates
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Alliance Lance|r in your Bags then Mount the |cRXP_FRIENDLY_Stabled Campaign Warhorse|r
@@ -3029,7 +2965,6 @@ step
 	.complete 13855,2 -- Boneguard Scout slain (10)
 	.isOnQuest 13855
 	.mob Boneguard Scout
-
 step -- A Worthy Weapon v2
 	>>|cRXP_WARN_Remember to Equip your Weapon|r
 	>>Collect |cRXP_PICK_Winter Hyacinth|r at the Ironwall Dam on the border of Icecrown and Crystalsong Forest
@@ -3055,7 +2990,6 @@ step
 	.timer 21,Maiden of Drak'Mar Roleplay
 	.complete 13758,1 -- Blade of Drak'Mar (1)
 	.isOnQuest 13758
-
 step -- The Edge Of Winter v2
 	#completewith next
 	.goto CrystalsongForest,55.05,75.04
@@ -3079,7 +3013,6 @@ step
 	.complete 13759,1 -- Winter's Edge (1)
 	.target Maiden of Winter's Breath Lake
 	.isOnQuest 13759
-
 step -- A Blade Fit For A Champion v2
 	#completewith next
 	.goto Grizzly Hills,60.83,51.36
@@ -3200,7 +3133,6 @@ step
 	>>|cRXP_LOOT_You may start|r |cRXP_ENEMY_3.0|r |cRXP_LOOT_Champion Daily Quests|r
 	.isQuestTurnedIn 13725
 ]])
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -3210,8 +3142,6 @@ RXPGuides.RegisterGuide([[
 #name B_2_AT_Orgrimmar
 #displayname |cRXP_FRIENDLY_2.0|r - Orgrimmar Champion
 << Horde !Orc
-
-
 step
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mokra the Skullcrusher|r
 	.goto IcecrownGlacier,76.46,24.60
@@ -3284,7 +3214,6 @@ step -- A Valiant's Field Training
 	.complete 13765,1 -- Converted Hero slain (10)
 	.isOnQuest 13765
 	.mob Converted Hero
-
 step -- At The Enemy's Gates
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Horde Lance|r in your Bags then Mount the |cRXP_FRIENDLY_Stabled Campaign Warhorse|r
@@ -3325,7 +3254,6 @@ step
 	.complete 13856,2 -- Boneguard Scout slain (10)
 	.isOnQuest 13856
 	.mob Boneguard Scout
-
 step -- A Worthy Weapon v2
 	>>|cRXP_WARN_Remember to Equip your Weapon|r
 	>>Collect |cRXP_PICK_Winter Hyacinth|r at the Ironwall Dam on the border of Icecrown and Crystalsong Forest
@@ -3351,7 +3279,6 @@ step
 	.timer 21,Maiden of Drak'Mar Roleplay
 	.complete 13763,1 -- Blade of Drak'Mar (1)
 	.isOnQuest 13763
-
 step -- The Edge Of Winter v2
 	#completewith next
 	.goto CrystalsongForest,55.05,75.04
@@ -3375,7 +3302,6 @@ step
 	.complete 13764,1 -- Winter's Edge (1)
 	.target Maiden of Winter's Breath Lake
 	.isOnQuest 13764
-
 step -- A Blade Fit For A Champion v2
 	#completewith next
 	.goto Grizzly Hills,60.83,51.36
@@ -3495,7 +3421,6 @@ step
 	>>|cRXP_LOOT_You may start|r |cRXP_ENEMY_3.0|r |cRXP_LOOT_Champion Daily Quests|r
 	.isQuestTurnedIn 13726
 ]])
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -3505,7 +3430,6 @@ RXPGuides.RegisterGuide([[
 #name C_2_AT_Sen'jin
 #displayname |cRXP_FRIENDLY_2.0|r - Sen'jin Champion
 << Horde !Troll
-
 step
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zul'tore|r
 	.goto IcecrownGlacier,75.95,24.53
@@ -3527,7 +3451,6 @@ step
 	.target Shadow Hunter Mezil-kree
 	.target Gahju
 	.isQuestAvailable 13719
-
 step
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Horde Lance|r in your Bags then Mount the Stabled Darkspear Raptor
@@ -3579,7 +3502,6 @@ step -- A Valiant's Field Training
 	.complete 13771,1 -- Converted Hero slain (10)
 	.isOnQuest 13771
 	.mob Converted Hero
-
 step
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Horde Lance|r in your Bags then Mount the |cRXP_FRIENDLY_Stabled Campaign Warhorse|r
@@ -3620,8 +3542,6 @@ step
 	.complete 13857,2 -- Boneguard Scout slain (10)
 	.isOnQuest 13857
 	.mob Boneguard Scout
-
-
 step -- A Worthy Weapon v2
 	>>|cRXP_WARN_Remember to Equip your Weapon|r
 	>>Collect |cRXP_PICK_Winter Hyacinth|r at the Ironwall Dam on the border of Icecrown and Crystalsong Forest
@@ -3647,7 +3567,6 @@ step
 	.timer 21,Maiden of Drak'Mar Roleplay
 	.complete 13769,1 -- Blade of Drak'Mar (1)
 	.isOnQuest 13769
-
 step -- The Edge Of Winter v2
 	#completewith next
 	.goto CrystalsongForest,55.05,75.04
@@ -3671,7 +3590,6 @@ step
 	.complete 13770,1 -- Winter's Edge (1)
 	.target Maiden of Winter's Breath Lake
 	.isOnQuest 13770
-
 step -- A Blade Fit For A Champion v2
 	#completewith next
 	.goto Grizzly Hills,60.83,51.36
@@ -3792,7 +3710,6 @@ step
 	>>|cRXP_LOOT_You may start|r |cRXP_ENEMY_3.0|r |cRXP_LOOT_Champion Daily Quests|r
 	.isQuestTurnedIn 13727
 ]])
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -3802,7 +3719,6 @@ RXPGuides.RegisterGuide([[
 #name D_2_AT_Thunder Bluff
 #displayname |cRXP_FRIENDLY_2.0|r - Thunder Bluff Champion
 << Horde !Tauren
-
 step
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Runok Wildmane|r
 	.goto IcecrownGlacier,76.20,24.63
@@ -3824,7 +3740,6 @@ step
 	.target Dern Ragetotem
 	.target Anka Clawhoof
 	.isQuestAvailable 13720
-
 step
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Horde Lance|r in your Bags then Mount the Stabled Thunder Bluff Kodo
@@ -3860,7 +3775,6 @@ step
 	.mob Sen'jin Valiant
 	.mob Orgrimmar Valiant
 	.mob Undercity Valiant
-
 step -- A Valiant's Field Training
 	>>Jump off your Mount. |cRXP_WARN_Remember to Equip your Weapon|r. Do not destroy your |T135128:0|t|c99ffff99Lance|r. You will need it again
 	>>Kill |cRXP_ENEMY_Converted Heroes|r
@@ -3877,7 +3791,6 @@ step -- A Valiant's Field Training
 	.complete 13776,1 -- Converted Hero slain (10)
 	.isOnQuest 13776
 	.mob Converted Hero
-
 step -- At The Enemy's Gates
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Horde Lance|r in your Bags then Mount the |cRXP_FRIENDLY_Stabled Campaign Warhorse|r
@@ -3918,7 +3831,6 @@ step
 	.complete 13858,2 -- Boneguard Scout slain (10)
 	.isOnQuest 13858
 	.mob Boneguard Scout
-
 step -- A Worthy Weapon v2
 	>>|cRXP_WARN_Remember to Equip your Weapon|r
 	>>Collect |cRXP_PICK_Winter Hyacinth|r at the Ironwall Dam on the border of Icecrown and Crystalsong Forest
@@ -3944,7 +3856,6 @@ step
 	.timer 21,Maiden of Drak'Mar Roleplay
 	.complete 13774,1 -- Blade of Drak'Mar (1)
 	.isOnQuest 13774
-
 step -- The Edge Of Winter v2
 	#completewith next
 	.goto CrystalsongForest,55.05,75.04
@@ -3968,7 +3879,6 @@ step
 	.complete 13775,1 -- Winter's Edge (1)
 	.target Maiden of Winter's Breath Lake
 	.isOnQuest 13775
-
 step -- A Blade Fit For A Champion v2
 	#completewith next
 	.goto Grizzly Hills,60.83,51.36
@@ -4090,7 +4000,6 @@ step
 	>>|cRXP_LOOT_You may start|r |cRXP_ENEMY_3.0|r |cRXP_LOOT_Champion Daily Quests|r
 	.isQuestTurnedIn 13728
 ]])
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -4100,7 +4009,6 @@ RXPGuides.RegisterGuide([[
 #name E_2_AT_Undercity
 #displayname |cRXP_FRIENDLY_2.0|r - Undercity Champion
 << Horde !Scourge
-
 step
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Deathstalker Visceri|r
 	.goto IcecrownGlacier,76.53,24.21
@@ -4173,7 +4081,6 @@ step -- A Valiant's Field Training
 	.complete 13781,1 -- Converted Hero slain (10)
 	.isOnQuest 13781
 	.mob Converted Hero
-
 step -- At The Enemy's Gates
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Horde Lance|r in your Bags then Mount the |cRXP_FRIENDLY_Stabled Campaign Warhorse|r
@@ -4214,8 +4121,6 @@ step
 	.complete 13860,2 -- Boneguard Scout slain (10)
 	.isOnQuest 13860
 	.mob Boneguard Scout
-
-
 step -- A Worthy Weapon v2
 	>>|cRXP_WARN_Remember to Equip your Weapon|r
 	>>Collect |cRXP_PICK_Winter Hyacinth|r at the Ironwall Dam on the border of Icecrown and Crystalsong Forest
@@ -4241,7 +4146,6 @@ step
 	.timer 21,Maiden of Drak'Mar Roleplay
 	.complete 13779,1 -- Blade of Drak'Mar (1)
 	.isOnQuest 13779
-
 step -- The Edge Of Winter v2
 	#completewith next
 	.goto CrystalsongForest,55.05,75.04
@@ -4265,7 +4169,6 @@ step
 	.complete 13780,1 -- Winter's Edge (1)
 	.target Maiden of Winter's Breath Lake
 	.isOnQuest 13780
-
 step -- A Blade Fit For A Champion v2
 	#completewith next
 	.goto Grizzly Hills,60.83,51.36
@@ -4387,7 +4290,6 @@ step
 	>>|cRXP_LOOT_You may start|r |cRXP_ENEMY_3.0|r |cRXP_LOOT_Champion Daily Quests|r
 	.isQuestTurnedIn 13729
 ]])
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -4398,7 +4300,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cRXP_FRIENDLY_2.0|r - Silvermoon Champion
 #next Champion Side Quests
 << Horde !BloodElf
-
 step
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Eressea Dawnsinger|r
 	.goto IcecrownGlacier,76.45,23.85
@@ -4472,8 +4373,6 @@ step -- A Valiant's Field Training
 	.complete 13786,1 -- Converted Hero slain (10)
 	.isOnQuest 13786
 	.mob Converted Hero
-
-
 step -- At The Enemy's Gates
 	#completewith next
 	.vehicle >>Equip the |T135128:0|t|c99ffff99Alliance Lance|r in your Bags then Mount the |cRXP_FRIENDLY_Stabled Campaign Warhorse|r << Alliance
@@ -4515,8 +4414,6 @@ step
 	.complete 13859,2 -- Boneguard Scout slain (10)
 	.isOnQuest 13859
 	.mob Boneguard Scout
-
-
 step -- A Worthy Weapon v2
 	>>|cRXP_WARN_Remember to Equip your Weapon|r
 	>>Collect |cRXP_PICK_Winter Hyacinth|r at the Ironwall Dam on the border of Icecrown and Crystalsong Forest
@@ -4542,7 +4439,6 @@ step
 	.timer 21,Maiden of Drak'Mar Roleplay
 	.complete 13784,1 -- Blade of Drak'Mar (1)
 	.isOnQuest 13784
-
 step -- The Edge Of Winter v2
 	#completewith next
 	.goto CrystalsongForest,55.05,75.04
@@ -4566,7 +4462,6 @@ step
 	.complete 13785,1 -- Winter's Edge (1)
 	.target Maiden of Winter's Breath Lake
 	.isOnQuest 13785
-
 step -- A Blade Fit For A Champion v2
 	#completewith next
 	.goto Grizzly Hills,60.83,51.36
@@ -4687,9 +4582,6 @@ step
 	>>|cRXP_LOOT_You may start|r |cRXP_ENEMY_3.0|r |cRXP_LOOT_Champion Daily Quests|r
 	.isQuestTurnedIn 13731
 ]])
-
-
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -4698,7 +4590,6 @@ RXPGuides.RegisterGuide([[
 #group +Argent Tournament
 #name G_2.1_AT_The_Black Knight's_Quest_Story
 #displayname |cRXP_PICK_2.1|r - The Black Knight's Quest Story
-
 step
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crusader Rhydalla|r
 	.goto IcecrownGlacier,69.43,23.02
@@ -4889,7 +4780,6 @@ step
 	.goto IcecrownGlacier,69.43,23.02
 	.turnin 13664 >> Turn in The Black Knight's Fall
 	.target Crusader Rhydalla
-
 step -- 14016 and 14017 added in 3.2 - Add in Phase 3
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Crusader Rhydalla|r
 	.goto IcecrownGlacier,69.43,23.02
@@ -4924,7 +4814,6 @@ step
 step
 	+|cRXP_WARN_This is the end of |cRXP_ENEMY_The Black Knight's|r Story!
 ]])
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -4933,7 +4822,6 @@ RXPGuides.RegisterGuide([[
 #group +Argent Tournament
 #name H_3_AT_Champion_Daily_Quests
 #displayname |cRXP_ENEMY_3.0|r - Champion Daily Quests
-
 step
 	>>To access Champion Daily Quests you must have completed the |cRXP_LOOT_1.0|r Becoming a Champion Guide
 	>>If you cannot accept any quests make sure it has been completed
@@ -5363,9 +5251,7 @@ step << DK
 step
 	+|cRXP_WARN_You have finished all Champion Daily Quests for today! Reload this Guide tomorrow to continue them.|r
 ]])
-
 -- The following are added in 3.2 - Implement in Phase 3
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -5374,7 +5260,6 @@ RXPGuides.RegisterGuide([[
 #group +Argent Tournament
 #name I_3.1_AT_Crusader_Daily_Quests
 #displayname |cRXP_ENEMY_3.1|r - Crusader Daily Quests
-
 step
 	#completewith next
 	+|cRXP_WARN_Phase 3 introduces the Crusader Daily Quests|r
@@ -5462,7 +5347,6 @@ step
 step
 	+|cRXP_WARN_You have finished all Silver Covenant Daily Quests for today! Reload this Guide tomorrow to continue them.|r
 ]])
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -5472,7 +5356,6 @@ RXPGuides.RegisterGuide([[
 #name J_3.2_AT_Silver_Covenant_Daily_Quests
 #displayname |cRXP_ENEMY_3.2|r - Silver Covenant Daily Quests
 << Alliance
-
 step
 	#completewith next
 	+|cRXP_WARN_Phase 3 introduces the Silver Covenant Daily Quests|r
@@ -5596,7 +5479,6 @@ step
 step
 	+|cRXP_WARN_You have finished all Silver Covenant Daily Quests for today! Reload this Guide tomorrow to continue them.|r
 ]])
-
 RXPGuides.RegisterGuide([[
 #wotlk
 #cata
@@ -5606,7 +5488,6 @@ RXPGuides.RegisterGuide([[
 #name J_3.2AT_Sunreavers_Daily_Quests
 #displayname |cRXP_ENEMY_3.2|r - Sunreavers Daily Quests
 << Horde
-
 step
 	#completewith next
 	+|cRXP_WARN_Phase 3 introduces the Sunreavers Daily Quests|r

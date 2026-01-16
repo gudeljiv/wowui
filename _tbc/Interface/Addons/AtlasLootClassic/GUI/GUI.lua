@@ -1033,9 +1033,11 @@ local function DifficultySelectFunction(self, id, arg, start)
 			local favCount = Favourites:CountFavouritesByList(db.selected[1], db.selected[2], i, id)
 			local favOverall = 0
 			local favText = ""
-			for favList, favItems in pairs(favCount) do
-				favText = favText.."\n"..Favourites:GetFavouriteListText(favList, favItems)
-				favOverall = favOverall + favItems
+			if favCount then
+				for favList, favItems in pairs(favCount) do
+					favText = favText.."\n"..Favourites:GetFavouriteListText(favList, favItems)
+					favOverall = favOverall + favItems
+				end
 			end
 			boss.tt_text = (boss.tt_text_org or "")..favText
 			boss.name = boss.name_org..Favourites:GetFavouriteCountText(favOverall)

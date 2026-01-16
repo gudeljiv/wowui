@@ -1,6 +1,5 @@
 local _,addon = ...
 if addon.gameVersion < 40000 or addon.player.faction == 'Alliance' then return end
-
 RXPGuides.RegisterGuide([[
 #cata
 #mop
@@ -9,12 +8,10 @@ RXPGuides.RegisterGuide([[
 #next 6-10 Eversong Woods
 #version 1
 --#group RXP Cataclysm (H) << cata
-
 #defaultfor Undead
 #group RXP Cataclysm 1-80 (H) << cata
 #group RXP MoP 1-60 (H) << mop
 #subweight 10000
-
 step << !Undead
     #completewith next
     +|cRXP_WARN_You have selected a guide meant for Undead. It is recommended you choose the same starter zone that you start in|r

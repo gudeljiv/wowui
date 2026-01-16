@@ -2659,6 +2659,40 @@ local dangerousMobs = {
         },
       },
     },
+    ["Blade's Edge Mountains"] = {
+      ["Grulloc"] = {
+        {
+        MinLevel = 70,
+        MaxLevel = 70,
+        Classification = "Elite",
+        Movement = "Idle",
+        Notes = "Hits extremely hard. extremely dangerous",
+        Location = ".pin Blade's Edge Mountains,60.92,47.60;.mob Grulloc"
+        },
+      },
+      ["Maggoc"] = {
+        {
+        MinLevel = 70,
+        MaxLevel = 70,
+        Classification = "Elite",
+        Movement = "Slow Patrol",
+        Notes = "Hits extremely hard. extremely dangerous",
+        Location = ".line Blade's Edge Mountains,58.06,64.98,57.98,62.98,58.49,60.96,58.75,59.05,59.27,57.22,59.73,56.17,61.08,54.74,62.34,55.09,63.44,55.38,64.23,55.33,65.34,54.82,66.54,56.21,67.51,58.10,67.85,59.58,68.06,61.57,68.35,62.78,67.98,64.20,67.86,66.44,68.08,67.80,68.05,70.16,68.24,71.99,68.06,74.56,67.98,75.06;.mob Maggoc"
+        },
+      },
+    },
+    ["Hellfire Peninsula"] = {
+      ["Fel Reaver"] = {
+        {
+        MinLevel = 70,
+        MaxLevel = 70,
+        Classification = "Elite",
+        Movement = "Fast Patrol",
+        Notes = "5 second stun + knockback; hits extremely hard. extremely dangerous",
+        Location = ".line Hellfire Peninsula,24.77,65.13,22.78,56.54,18.97,55.85,17.32,50.72,18.81,47.42,17.51,43.18,20.58,46.76,25.89,47.71,28.73,51.07,31.51,50.03,28.99,45.68,27.29,42.60,27.55,40.19,30.17,39.40,32.26,45.02,35.31,47.13,38.44,43.85,40.81,43.33,43.37,45.74,46.32,44.25,46.24,39.72,47.12,35.78,47.97,33.05,48.47,28.23;.line Hellfire Peninsula,71.38,44.04,68.23,40.89,66.69,38.28,65.06,37.84,63.24,34.39,61.19,35.13,59.74,40.22,63.05,48.70,62.61,51.93,61.61,53.83,62.50,56.44,63.91,56.84,66.30,55.58,68.55,56.51,69.40,61.81,66.84,62.03,65.94,63.03,63.25,69.83,61.01,74.72,59.15,74.73,57.71,71.42,54.07,71.88,52.23,72.18,50.60,77.07,49.13,80.31,47.92,76.11,47.77,73.75,46.59,71.67,47.18,69.19,50.19,68.85,49.82,64.17;.mob Fel Reaver"
+        },
+      },
+    },
   },
   ["Horde"] = {
     ["Alterac Mountains"] = {
@@ -5520,6 +5554,40 @@ local dangerousMobs = {
         Movement = "Idle",
         Notes = "High damage frost shock + bleed",
         Location = ".pin Winterspring,54.6,51.6;.pin Winterspring,57.6,50.2;.pin Winterspring,60.4,49.8;.mob Cobalt Whelp"
+        },
+      },
+    },
+    ["Blade's Edge Mountains"] = {
+      ["Grulloc"] = {
+        {
+        MinLevel = 70,
+        MaxLevel = 70,
+        Classification = "Elite",
+        Movement = "Idle",
+        Notes = "Hits extremely hard. extremely dangerous",
+        Location = ".pin Blade's Edge Mountains,60.92,47.60;.mob Grulloc"
+        },
+      },
+      ["Maggoc"] = {
+        {
+        MinLevel = 70,
+        MaxLevel = 70,
+        Classification = "Elite",
+        Movement = "Slow Patrol",
+        Notes = "Hits extremely hard. extremely dangerous",
+        Location = ".line Blade's Edge Mountains,58.06,64.98,57.98,62.98,58.49,60.96,58.75,59.05,59.27,57.22,59.73,56.17,61.08,54.74,62.34,55.09,63.44,55.38,64.23,55.33,65.34,54.82,66.54,56.21,67.51,58.10,67.85,59.58,68.06,61.57,68.35,62.78,67.98,64.20,67.86,66.44,68.08,67.80,68.05,70.16,68.24,71.99,68.06,74.56,67.98,75.06;.mob Maggoc"
+        },
+      },
+    },
+    ["Hellfire Peninsula"] = {
+      ["Fel Reaver"] = {
+        {
+        MinLevel = 70,
+        MaxLevel = 70,
+        Classification = "Elite",
+        Movement = "Fast Patrol",
+        Notes = "5 second stun + knockback; hits extremely hard. extremely dangerous",
+        Location = ".line Hellfire Peninsula,24.77,65.13,22.78,56.54,18.97,55.85,17.32,50.72,18.81,47.42,17.51,43.18,20.58,46.76,25.89,47.71,28.73,51.07,31.51,50.03,28.99,45.68,27.29,42.60,27.55,40.19,30.17,39.40,32.26,45.02,35.31,47.13,38.44,43.85,40.81,43.33,43.37,45.74,46.32,44.25,46.24,39.72,47.12,35.78,47.97,33.05,48.47,28.23;.line Hellfire Peninsula,71.38,44.04,68.23,40.89,66.69,38.28,65.06,37.84,63.24,34.39,61.19,35.13,59.74,40.22,63.05,48.70,62.61,51.93,61.61,53.83,62.50,56.44,63.91,56.84,66.30,55.58,68.55,56.51,69.40,61.81,66.84,62.03,65.94,63.03,63.25,69.83,61.01,74.72,59.15,74.73,57.71,71.42,54.07,71.88,52.23,72.18,50.60,77.07,49.13,80.31,47.92,76.11,47.77,73.75,46.59,71.67,47.18,69.19,50.19,68.85,49.82,64.17;.mob Fel Reaver"
         },
       },
     },

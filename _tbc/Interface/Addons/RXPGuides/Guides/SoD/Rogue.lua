@@ -5,7 +5,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Shadowstrike - 3 (Elwynn Forest)
 #title Shadowstrike
-
 step << Rogue
     #season 2
     .goto Elwynn Forest,52.544,51.922
@@ -18,7 +17,6 @@ step << Rogue
     .use 204795
     .itemcount 204795,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -26,7 +24,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Shadowstrike - 3 (Dun Morogh)
 #title Shadowstrike
-
 step
     #optional
     #label FrostMCave1
@@ -49,7 +46,6 @@ step
     .use 204795
     .itemcount 204795,1 --Rune of Shadowstrike (1)
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -57,7 +53,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Shadowstrike - 3 (Shadowglen)
 #title Shadowstrike
-
 step << Rogue
     #season 2
     .goto Teldrassil,57.922,40.687,25,0
@@ -76,7 +71,6 @@ step << Rogue
     .use 204795
     .itemcount 204795,1 --Rune of Shadowstrike (1)
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -84,7 +78,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Quick Draw - 8 (Elwynn Forest)
 #title Quick Draw
-
 step << Rogue
     #season 2
     .goto Elwynn Forest,27.0,86.7,70,0
@@ -165,7 +158,6 @@ step << Rogue
     .use 203991
     .itemcount 203991,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -173,7 +165,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Quick Draw - 8 (Dun Morogh)
 #title Quick Draw
-
 step << Rogue
     #season 2
     .goto Dun Morogh,77.86,61.66
@@ -241,7 +232,6 @@ step << Rogue
     .use 203991
     .itemcount 203991,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -249,7 +239,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Quick Draw - 8 (Teldrassil)
 #title Quick Draw
-
 step << Rogue
     #season 2
     #completewith next
@@ -340,7 +329,6 @@ step << Rogue
     .use 203991
     .itemcount 203991,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -348,7 +336,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Slaughter from the Shadows - 1 (Elwynn Forest)
 #title Slaughter from the Shadows
-
 step << Rogue
     #season 2
     .goto Elwynn Forest,46.122,62.937,5,0
@@ -363,7 +350,6 @@ step << Rogue
     .use 203993
     .itemcount 203993,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -371,7 +357,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Slaughter from the Shadows - 1 (Dun Morogh)
 #title Slaughter from the Shadows
-
 step << Rogue
     #season 2
     .goto Dun Morogh,47.658,51.706,5,0
@@ -387,7 +372,6 @@ step << Rogue
     .use 203993
     .itemcount 203993,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -395,7 +379,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Between the Eyes - 8 (Stormwind)
 #title Between the Eyes
-
 step << Rogue
     #season 2
     #completewith next
@@ -418,7 +401,6 @@ step << Rogue
     .use 204174
     .itemcount 204174,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -426,7 +408,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Between the Eyes - 8 (Ironforge)
 #title Between the Eyes
-
 step << Rogue
     #season 2
     .goto Ironforge,51.913,13.383
@@ -441,7 +422,6 @@ step << Rogue
     .use 204174
     .itemcount 204174,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -449,7 +429,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Between the Eyes - 8 (Teldrassil)
 #title Between the Eyes
-
 step << Rogue
     #season 2
     .goto Teldrassil,38.92,79.93
@@ -471,7 +450,6 @@ step << Rogue
     .use 204174
     .itemcount 204174,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -479,7 +457,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Blade Dance - 10 (Westfall)
 #title Blade Dance
-
 step << Rogue
     #season 2
     .goto Westfall,48.27,46.91,60,0
@@ -513,7 +490,6 @@ step << Rogue
     .use 208771
     .itemcount 208771,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -521,7 +497,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Blade Dance - 16 (Dun Morogh)
 #title Blade Dance
-
 step << Rogue
     #season 2
     .goto Dun Morogh,77.86,61.66
@@ -543,7 +518,6 @@ step << Rogue
     .use 208771
     .itemcount 208771,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -551,7 +525,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Blade Dance - 16 (Darkshore)
 #title Blade Dance
-
 step << Rogue
     #season 2
     #completewith learnBD
@@ -577,7 +550,6 @@ step << Rogue
     .use 208771
     .itemcount 208771,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -585,7 +557,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Mutilate - 5 (Elwynn Forest)
 #title Mutilate
-
 step << Rogue
     #season 2
     .goto Elwynn Forest,57.5,48.2
@@ -610,7 +581,6 @@ step << Rogue
     .target Cutty
     .train 400094,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -618,7 +588,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Mutilate - 8 (Dun Morogh)
 #title Mutilate
-
 step << Rogue
     #season 2
     .goto Dun Morogh,77.86,61.66
@@ -640,7 +609,6 @@ step << Rogue
     .use 203990 -- Rune of Mutilation (1)
     .train 400094,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -648,7 +616,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Saber Slash - 12 (Westfall)
 #title Saber Slash
-
 step << Rogue
     #season 2
     .goto Westfall,51.540,55.361,30,0
@@ -666,7 +633,6 @@ step << Rogue
     .use 208772 -- Rune of Saber Slash (1)
     .train 424785,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -674,7 +640,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Saber Slash - 12 (Loch Modan)
 #title Saber Slash
-
 step << Rogue
     #season 2
     #completewith next
@@ -699,7 +664,6 @@ step << Rogue
     .cast 6477 >> Click the |cRXP_PICK_Escape Rope|r to return to the top
     .subzoneskip 146,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD
@@ -707,7 +671,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Saber Slash - 1 (Darkshore)
 #title Saber Slash
-
 step << Rogue
     #season 2
     #completewith next
@@ -725,7 +688,6 @@ step << Rogue
     .use 208772 -- Rune of Saber Slash (1)
     .train 424785,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Rogue SoD
@@ -733,10 +695,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Shadowstrike - 2 (Durotar)
 #title Shadowstrike
-
-
     --Rune of Shadowstrike
-
 step << Troll/Orc
     #season 2
     .goto Durotar,41.27,68.00
@@ -764,7 +723,6 @@ step << Troll/Orc
     .turnin 77583 >>Turn in Atop the Cliffs << Orc
     .target Rwag
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Rogue SoD
@@ -772,10 +730,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Shadowstrike - 2 (Tirisfal)
 #title Shadowstrike
-
-
     --Rune of Shadowstrike
-
 step << Undead
     #season 2
     .goto Tirisfal Glades,32.53,65.65
@@ -820,7 +775,6 @@ step << Undead
     .turnin 77669 >>Turn in The Scarlet Rune
     .target David Trias
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Rogue SoD
@@ -828,10 +782,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Deadly Brew - 25 (Silverpine Forest)
 #title Deadly Brew
-
-
     --Rune of Deadly Brew
-
 step
     #season 2
     .goto Silverpine Forest,47.12,71.01
@@ -947,7 +898,6 @@ step
     .use 204795
     .itemcount 204795,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Rogue SoD
@@ -955,10 +905,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Quick Draw - 10 (Durotar)
 #title Quick Draw
-
-
     --Rune of Quick Draw
-
 step
     #season 2
     .goto Durotar,57.65,58.52,30,0
@@ -1047,9 +994,7 @@ step
     .train 400095 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Quick Draw|r] |cRXP_WARN_to train|r |T134536:0|t[Quick Draw]
     .use 203991
     .itemcount 203991,1
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Rogue SoD
@@ -1057,10 +1002,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Quick Draw - 10 (Tirisfal)
 #title Quick Draw
-
-
     --Rune of Quick Draw
-
 step
     #season 2
     .goto Tirisfal Glades,37.20,52.17,50,0
@@ -1143,9 +1085,7 @@ step
     .train 400095 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Quick Draw|r] |cRXP_WARN_to train|r |T134536:0|t[Quick Draw]
     .use 203991
     .itemcount 203991,1
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Rogue SoD
@@ -1153,10 +1093,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Slaughter from the Shadows - 10 (Durotar)
 #title Slaughter from the Shadows
-
-
     --Rune of Slaughter from the Shadows
-
 step
     #completewith next
     .goto Durotar,54.25,27.64,40 >>Travel to the jump spot just east of Dustwind Cave
@@ -1173,9 +1110,7 @@ step
     .train 42992 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Slaughter|r] |cRXP_WARN_to train|r |T236280:0|t[Slaughter from the Shadows]
     .use 203993
     .itemcount 203993,1
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Rogue SoD
@@ -1183,11 +1118,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Slaughter from the Shadows - 10 (Tirisfal)
 #title Slaughter from the Shadows
-
-
     --Rune of Slaughter from the Shadows
-
-
 step
     #season 2
     .goto Tirisfal Glades,47.39,43.64,150,0
@@ -1218,9 +1149,7 @@ step
     .train 42992 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Slaughter|r] |cRXP_WARN_to train|r |T236280:0|t[Slaughter from the Shadows]
     .use 203993
     .itemcount 203993,1
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Rogue SoD
@@ -1228,10 +1157,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Mutilate - 8 (Tirisfal)
 #title Mutilate
-
-
     --Rune of Mutilate
-
 step
     #season 2
     .goto Tirisfal Glades,51.17,67.81
@@ -1262,10 +1188,7 @@ step
     .train 400094 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Mutilation|r] |cRXP_WARN_to train|r |T132304:0|t[Mutilate]
     .use 203990
     .itemcount 203990,1
-
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Rogue SoD
@@ -1273,10 +1196,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Mutilate - 10 (Durotar)
 #title Mutilate
-
-
     --Rune of Mutilate
-
 step
     #season 2
     #completewith next
@@ -1307,9 +1227,7 @@ step
     .train 400094 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Mutilation|r] |cRXP_WARN_to train|r |T132304:0|t[Mutilate]
     .use 203990
     .itemcount 203990,1
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Rogue SoD
@@ -1317,10 +1235,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Between the Eyes - 8 (Tirisfal)
 #title Between the Eyes
-
-
     --Rune of Between the Eyes
-
 step
     #season 2
     .goto Tirisfal Glades,59.38,29.05,50,0
@@ -1349,10 +1264,7 @@ step
     .train 400081 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Precision|r] |cRXP_WARN_to train|r |T135610:0|t[Between the Eyes]
     .use 204174
     .itemcount 204174,1
-
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Rogue SoD
@@ -1360,10 +1272,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Between the Eyes - 8 (Orgrimmar)
 #title Between the Eyes
-
-
     --Rune of Between the Eyes
-
 step
     #season 2
     .goto Orgrimmar,55.87,44.89
@@ -1376,10 +1285,7 @@ step
     .train 400081 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Precision|r] |cRXP_WARN_to train|r |T135610:0|t[Between the Eyes]
     .use 204174
     .itemcount 204174,1
-
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Rogue SoD
@@ -1387,10 +1293,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Blade Dance - 15 (The Barrens)
 #title Blade Dance
-
-
     --Rune of Blade Dance
-
 step
     #season 2
     .goto The Barrens,64.40,44.09,50,0
@@ -1411,9 +1314,7 @@ step
     .train 400099 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Blade Dance|r] |cRXP_WARN_to train|r |T132350:0|t[Blade Dance]
     .use 208771
     .itemcount 208771,1
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Rogue SoD
@@ -1421,10 +1322,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Saber Slash - 15 (The Barrens)
 #title Saber Slash
-
-
     --Rune of Saber Slash
-
 step
     #season 2
     #completewith next
@@ -1442,9 +1340,7 @@ step
     .train 424984 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Saber Slash|r] |cRXP_WARN_to train|r |T132375:0|t[Saber Slash]
     .use 208772
     .itemcount 208772,1
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Rogue SoD
@@ -1452,9 +1348,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Saber Slash - 15 (Silverpine)
 #title Saber Slash
-
     --Rune of Saber Slash
-
 step
     #season 2
     .goto Silverpine Forest,45.25,68.06,20,0
@@ -1469,7 +1363,6 @@ step
     .use 208772
     .itemcount 208772,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Rogue SoD
@@ -1477,7 +1370,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Belt
 #title Shadowstep
 #name Shadowstep - 30 (Silverpine Forest)
-
 step
     #completewith next
     .zone Silverpine Forest >>Travel to Silverpine Forest
@@ -1601,7 +1493,6 @@ step
     .use 210979
     .itemcount 210979,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Rogue SoD
@@ -1609,7 +1500,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Belt
 #name Shuriken Toss - 30 (Swamp of Sorrows)
 #title Shuriken Toss
-
 step
     .train 400096,1
     .train 1842 >>|cRXP_WARN_You have to learn|r |T136162:0|t[Disarm Trap] |cRXP_WARN_before you can obtain|r |T134419:0|t[|cRXP_FRIENDLY_Rune of the Assassin|r]
@@ -1630,7 +1520,6 @@ step
     .use 213139
     .train 400096 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of the Assassin|r] |cRXP_WARN_to learn|r |T132330:0|t[Shuriken Toss]
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Rogue SoD
@@ -1638,7 +1527,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Boots
 #name Master of Subtlety - 34 (Stranglethorn Vale)
 #title Master of Subtlety
-
 step
     .train 425103,1
     .skill lockpicking,125 >>|cRXP_WARN_You must level your|r |T136058:0|t[Lockpicking] |cRXP_WARN_to at least 125 to obtain the|r |T132299:0|t[Master of Subtlety] |cRXP_WARN_rune|r
@@ -1707,7 +1595,6 @@ step
     .use 213136
     .train 425103 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Sublety|r] |cRXP_WARN_to train|r |T132299:0|t[Master of Subtlety]
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Rogue SoD
@@ -1715,8 +1602,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Boots
 #title Rolling with the Punches
 #name Rolling with the Punches - 27 (Thousand Needles)
-
-
 step
     #optional
     .train 400093,1
@@ -1766,7 +1651,6 @@ step
     .use 213138
     .train 400093 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of the Southpaw|r] |cRXP_WARN_to train|r |T134919:0|t[Rolling with the Punches]
 ]])
-
  RXPGuides.RegisterGuide([[
  #classic
  << Rogue SoD
@@ -1774,7 +1658,6 @@ step
  #subgroup Helmet
  #title Focused Attacks
  #name Focused Attacks - 34 (Hinterlands)
-
  step
     >>|cRXP_WARN_You will need|r |T136175:0|t[Blind] |cRXP_WARN_and|r |T133587:0|t[Blinding Powder] |cRXP_WARN_to obtain the|r |T236274:0|t[Focused Attacks] |cRXP_WARN_rune|r
     .train 2094 >>Train |T136175:0|t[Blind]
@@ -1794,7 +1677,6 @@ step
     .use 221433
     .train 432291 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Focus|r] |cRXP_WARN_to train|r |T236274:0|t[Focused Attacks]
  ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Rogue SoD
@@ -1802,7 +1684,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Bracers
 #title Unfair Advantage
 #name Unfair Advantage - 40 (Tanaris)
-
 step
     .train 921 >>|cRXP_WARN_You need to train|r |T133644:0|t[Pick Pocket] |cRXP_WARN_to obtain the|r |T236285:0|t[Unfair Advantage] |cRXP_WARN_rune|r
     .train 432301,1
@@ -1849,7 +1730,6 @@ step << Rogue
     .itemcount 221428,1
     .use 221428
     .train 432301 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Foul Play|r] |cRXP_WARN_to train|r |T236285:0|t[Unfair Advantage]
-
 ]])
 RXPGuides.RegisterGuide([[
 #classic
@@ -1858,7 +1738,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Bracers
 #title Carnage
 #name Carnage - 45 (Blasted Lands)
-
 step
     #optional
     .skill lockpicking,225 >>|cRXP_WARN_You must level your|r |T136058:0|t[Lockpicking] |cRXP_WARN_to at least 225 to obtain the|r |T236268:0|t[Carnage] |cRXP_WARN_rune|r
@@ -1879,9 +1758,7 @@ step
     .use 221461
     .itemcount 221461,1
     .train 432299 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Carnage|r] |cRXP_WARN_to train|r |T236268:0|t[Carnage]
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Rogue SoD
@@ -1889,7 +1766,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Helmet
 #title Honor Among Thieves
 #name Honor Among Thieves - 45 (Azeroth)
-
 step
     #optional
     .xp 45 >>|cRXP_WARN_You need to reach level 45 in order to obtain this rune|r
@@ -2092,7 +1968,6 @@ step
     .train 432295 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of the Coterie|r] |cRXP_WARN_to train|r |T236275:0|t[Honor Among Thieves]
     .use 217736
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Rogue SoD
@@ -2100,7 +1975,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Cloak
 #title Crimson Tempest
 #name Crimson Tempest - 60 (Western Plaguelands)
-
 step
     .train 415918,1
     .zone Western Plaguelands >>Travel to Western Plaguelands
@@ -2133,7 +2007,6 @@ step
     .itemcount 227456,1
     .train 415918 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of the Crimson Tempest|r] |cRXP_WARN_to train|r |T135315:0|t[Crimson Tempest]
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Rogue SoD
@@ -2141,7 +2014,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Cloak
 #title Fan of Knives
 #name Fan of Knives - 55 (Winterspring)
-
 step
     .train 436609,1
     .zone Winterspring >>Travel to Winterspring
@@ -2160,7 +2032,6 @@ step
     .itemcount 227921,1
     .train 436609 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Knives|r] |cRXP_WARN_to train|r |T236273:0|t[Fan of Knives]
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Rogue SoD
@@ -2168,7 +2039,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Cloak
 #title Blunderbuss
 #name Blunderbuss - 60 (Eastern Plaguelands)
-
 step
     .train 415922,1
     .zone Eastern Plaguelands >>Travel to Eastern Plaguelands

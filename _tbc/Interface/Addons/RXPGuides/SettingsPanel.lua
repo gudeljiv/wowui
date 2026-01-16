@@ -16,7 +16,7 @@ local EasyMenu = function(...)
     end
 end
 
-local C_AddOns.IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or _G.C_AddOns.IsAddOnLoaded
+local IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or _G.IsAddOnLoaded
 local GetNumAddOns =  C_AddOns and C_AddOns.GetNumAddOns or _G.GetNumAddOns
 local GetAddOnInfo = C_AddOns and C_AddOns.GetAddOnInfo or _G.GetAddOnInfo
 
@@ -62,19 +62,14 @@ if not addon.settings.gui then
 end
 
 function addon.settings.OpenSettings(panelName)
-    if not (_G.Settings and _G.Settings.GetCategory) then
-        -- Not used by Era (1.15.0), Wrath (2.5.3), nor Retail (10.1.7)
-        -- Support legacy generic fall through to base settings though
-        _G.InterfaceOptionsFrame_OpenToCategory(panelName or addon.RXPOptions)
-        _G.InterfaceOptionsFrame_OpenToCategory(panelName or addon.RXPOptions)
-        return
-    end
 
     -- panelName only provided for Import currently
     if panelName then
         local optionsName = fmt("%s/%s", addon.RXPOptions.name, panelName)
 
         -- If sub category, open dedicated standalone window
+        local s = AceConfigDialog:GetStatusTable(optionsName)
+        s.height = 565
         AceConfigDialog:Open(optionsName)
 
         local acdFrame = AceConfigDialog.OpenFrames and
@@ -89,6 +84,10 @@ function addon.settings.OpenSettings(panelName)
             -- Successfully opened sub menu
             return
         end -- else, fall through to generic handling
+    elseif not _G.Settings then
+        _G.InterfaceOptionsFrame_OpenToCategory(addon.RXPOptions)
+        _G.InterfaceOptionsFrame_OpenToCategory(addon.RXPOptions)
+        return
     end
 
     local category = _G.Settings.GetCategory(addon.RXPOptions.name)
@@ -233,7 +232,8 @@ local settingsDBDefaults = {
 
         framePositions = {},
         frameSizes = {},
-
+        questPrio = {},
+        questPrioIndex = {},
         -- Grouping
         shareQuests = false,
     }
@@ -681,6 +681,9 @@ function addon.settings:CreateImportOptionsPanel()
                 --Let people purge the data even without any installed guides in case they experience caching issues
                 func = function()
                     addon.db.profile.guides = {}
+                    addon.settings.profile.skipQuest = {}
+                    addon.settings.profile.questPrio = {}
+                    addon.settings.profile.questPrioIndex = {}
                     addon:CreateMetaDataTable(true)
                 end
             },
@@ -919,10 +922,11 @@ function addon.settings:CreateAceOptionsPanel()
                 name = L("Run Guide Configurator"),
                 type = "execute",
                 width = 1.2,
-                func = addon.startHardcoreIntroUI,
-                hidden = addon.game ~= "CLASSIC"
+                func = function ()
+                    addon.ui.v2.LaunchConfigurator()
+                end,
+                hidden = not (addon.ui and addon.ui.v2)
             },
-
             generalSettings = {
                 type = "group",
                 name = _G.GENERAL,
@@ -1209,6 +1213,21 @@ function addon.settings:CreateAceOptionsPanel()
                         order = 4.86,
                         hidden = not (addon.inventoryManager and addon.inventoryManager.bagHook),
                     },
+                    maxSoulShards = {
+                        name = L("Soul Shard Maximum"), -- TODO locale
+                        desc = L("Automatically set Soul Shard as junk if you have more than the amount specified"),
+                        type = "input",
+                        get = function() return tostring(addon.settings.profile.maxSoulShards or 100) end,
+                        set = function(_,value)
+                            addon.settings.profile.maxSoulShards = tonumber(value) or 100
+                        end,
+                        pattern = "^%d+$",
+                        usage = L"You must input an integer number",
+                        width = optionsWidth * 0.7,
+                        order = 4.875,
+                        hidden = not (addon.inventoryManager and addon.inventoryManager.bagHook and addon.player.class == "WARLOCK" and addon.gameVersion < 40000),
+                    },
+
                     sellKeybind = {
                         name = L("Delete Cheapest Junk Item Keybind"), -- TODO locale
                         desc = L("Click to set a keybind"),
@@ -1538,8 +1557,43 @@ function addon.settings:CreateAceOptionsPanel()
                             addon.RXPFrame.GenerateMenuTable()
                         end
                     },
+                    dungeonsHeader = {
+                        name = _G.DUNGEONS,
+                        type = "header",
+                        width = "full",
+                        order = 3.0,
+                        hidden = function()
+                            return not next(addon.settings.dungeons:GetDungeons())
+                        end
+                    },
+                    dungeonsSetRecommended = {
+                        name = L("Select Recommended Dungeons"),
+                        desc = L("Factor only the high impact dungeons into the route"),
+                        order = 3.1,
+                        type = "execute",
+                        width = optionsWidth * 1.5,
+                        func = function()
+                            self.dungeons:SetRecommended()
+                        end,
+                        hidden = function()
+                            return not next(addon.settings.dungeons:GetDungeons()) or not addon.dungeonStats
+                        end
+                    },
+                    dungeonsSetAll = {
+                        name = L("Select all Dungeons"),
+                        order = 3.4,
+                        type = "execute",
+                        width = optionsWidth,
+                        func = function()
+                            self.dungeons:SetAll()
+                            addon.ReloadGuide()
+                        end,
+                        hidden = function()
+                            return not next(addon.settings.dungeons:GetDungeons())
+                        end
+                    },
                     dungeons = {
-                        name = L("Dungeons"), -- TODO locale
+                        name = _G.LFG_LIST_SELECT .. ' ' ..  _G.DUNGEONS,
                         desc = function()
                             local out =
                                 L "Routes in quests for the selected dungeon\nGuides that support this feature:\n"
@@ -1551,9 +1605,10 @@ function addon.settings:CreateAceOptionsPanel()
                         end,
                         type = "multiselect",
                         width = optionsWidth,
-                        order = 2.9,
-                        values = RXPCData.guideMetaData.enabledDungeons[addon.player
-                            .faction] or {},
+                        order = 3.9,
+                        values = function()
+                            return addon.settings.dungeons:GetDungeons()
+                        end,
                         get = function(_, key)
                             return addon.settings.profile.dungeons[key]
                         end,
@@ -1562,9 +1617,7 @@ function addon.settings:CreateAceOptionsPanel()
                             addon.ReloadGuide()
                         end,
                         hidden = function()
-                            return not next(
-                                       RXPCData.guideMetaData.enabledDungeons[addon.player
-                                           .faction])
+                            return not next(addon.settings.dungeons:GetDungeons())
                         end
                     },
                     professions = {
@@ -1588,7 +1641,7 @@ function addon.settings:CreateAceOptionsPanel()
                         values = addon.GenerateProfessionTable or {},
                         --sorting = {0, 1, 2},
                         width = optionsWidth,
-                        order = 2.91,
+                        order = 9,
                         set = function(info, value)
                             SetProfileOption(info, value)
                             addon.ReloadGuide()
@@ -2376,7 +2429,7 @@ function addon.settings:CreateAceOptionsPanel()
                         end
                     },
                     dangerousMobsHeader = {
-                        name = addon.gameVersion < 20000 and L("Dangerous Mobs Tracking") or L("Rare Tracker"),
+                        name = addon.gameVersion < 30000 and L("Dangerous Mobs Tracking") or L("Rare Tracker"),
                         type = "header",
                         width = "full",
                         order = 4.0,
@@ -2400,7 +2453,7 @@ function addon.settings:CreateAceOptionsPanel()
                             return not self.profile.enableTips
                         end,
                         hidden = function()
-                            return not addon.dangerousMobs or addon.gameVersion > 20000
+                            return not addon.dangerousMobs or addon.gameVersion > 30000
                         end
                     },
                     showDangerousUnitscan = {
@@ -2419,7 +2472,7 @@ function addon.settings:CreateAceOptionsPanel()
                             return not self.profile.enableTips
                         end,
                         hidden = function()
-                            return not unitscanEnabled or not addon.dangerousMobs or addon.gameVersion > 20000
+                            return not unitscanEnabled or not addon.dangerousMobs or addon.gameVersion > 30000
                         end
                     },
                     showRares = {
@@ -2488,8 +2541,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     enableItemUpgrades = {
                         name = fmt("%s %s", _G.ENABLE, _G.ITEM_UPGRADE),
-                        desc = L(
-                            "Calculates item upgrades with Tactics' effective power weights"),
+                        desc =
+                            L("Calculates item upgrades with Tactics' effective power weights"),
                         type = "toggle",
                         width = optionsWidth,
                         order = 5.1,
@@ -3899,7 +3952,7 @@ function addon.settings:CheckAddonCompatibility()
     local a, name
 
     for i = 1, GetNumAddOns() do
-        if C_AddOns.IsAddOnLoaded(i) then
+        if IsAddOnLoaded(i) then
             name = GetAddOnInfo(i)
 
             if addon.compatibility[name] then
@@ -4275,4 +4328,65 @@ function addon.settings:IsEnabled(...)
     end
 
     return true
+end
+
+addon.settings.dungeons = {}
+
+function addon.settings.dungeons:ScoreDungeons()
+    if self.dungeonScore and self.dungeonScoreSC then return end
+    if not addon.dungeonStats then return end
+
+    self.dungeonScore = {}
+    self.dungeonScoreSC = {}
+
+    local score
+
+    for tag, dungeon in pairs(addon.dungeonStats[addon.player.faction]) do
+        score = (dungeon.travel or 0) * 0.7 + (dungeon.quest or 0) * 1.2 + (dungeon[addon.player.class] or 0) * 1.4
+        self.dungeonScore[tag] = score
+        -- print(tag, self.dungeonScore[tag])
+    end
+
+    for tag, dungeon in pairs(addon.dungeonStatsSC[addon.player.faction]) do
+        score = (dungeon.travel or 0) * 0.7 + (dungeon.quest or 0) * 1.2 + (dungeon[addon.player.class] or 0) * 1.4
+        self.dungeonScoreSC[tag] = score
+        -- print(tag .. "-SC", self.dungeonScore[tag])
+    end
+
+    if addon.player.faction == "Alliance" then
+        self.dungeonScore["STOCKS"] = 9
+        self.dungeonScoreSC["STOCKS"] = 9
+        self.dungeonScore["ULDA"] = 9
+        self.dungeonScoreSC["ULDA"] = 9
+
+        if addon.player.class == "PALADIN" or addon.player.class == "WARRIOR" then
+            self.dungeonScore["SM"] = 9
+            self.dungeonScoreSC["SM"] = 9
+        end
+    end
+end
+
+function addon.settings.dungeons:GetDungeons()
+    return RXPCData.guideMetaData.enabledDungeons[addon.player.faction] or {}
+end
+
+function addon.settings.dungeons:SetRecommended()
+    addon.settings.dungeons:ScoreDungeons()
+
+    if not self.dungeonScore or not self.dungeonScoreSC then return end
+
+    for key, name in pairs(self:GetDungeons()) do
+        if (self.dungeonScore[key] or 0) > 7 then
+            addon.settings.profile.dungeons[key] = true
+        else
+            addon.settings.profile.dungeons[key] = false
+        end
+    end
+
+end
+
+function addon.settings.dungeons:SetAll()
+    for key, name in pairs(self:GetDungeons()) do
+        addon.settings.profile.dungeons[key] = true
+    end
 end

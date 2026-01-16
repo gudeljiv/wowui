@@ -173,6 +173,9 @@ local IsAddonUpdateAviable = false
 local UpdatedVersionRev = AtlasLoot.__addonrevision
 
 local function UpdateCheckFrameOnEvent(frame, event, arg1, ...)
+	-- DEV BUILD, we don't care about the auto updater
+	if UpdatedVersionRev == 1000 then return end
+
 	if event == "CHAT_MSG_ADDON" and arg1 == ALPrivate.ADDON_MSG_PREFIX then
 		local text, channel, sender, target, zoneChannelID, localID, name, instanceID = ...
 		--if sender ~= ALPrivate.PLAYER_NAME then
@@ -181,6 +184,7 @@ local function UpdateCheckFrameOnEvent(frame, event, arg1, ...)
 			if v and v > 0 and AtlasLoot.IsDevVersion then
 				AtlasLoot:DevPrint(format("Player '|cff00FAF6%s|r' sends version '|cff00FF96%d|r'!", sender, v))
 			end
+			-- 100000 is the DEV version, this number is now managed by the build server
 			if v and v > 0 and v > UpdatedVersionRev and v < 99999999 then
 				IsAddonUpdateAviable = true
 				UpdatedVersionRev = v

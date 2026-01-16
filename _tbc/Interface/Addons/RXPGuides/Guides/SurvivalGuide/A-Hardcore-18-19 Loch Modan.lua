@@ -7,10 +7,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 1-20
 #next 19-20 Redridge
-
-
 -- LEVEL 18-19 EAST LOCH MODAN QUESTS
-
 step
     .goto Wetlands,7.95,56.38
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dewin Shimmerdawn|r

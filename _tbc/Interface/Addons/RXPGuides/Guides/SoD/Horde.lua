@@ -8,10 +8,7 @@ RXPGuides.RegisterGuide([[
 #name Explosive Shot - 10 (Mulgore) << Hunter
 #title Furious Thunder << Warrior
 #title Explosive Shot << Hunter
-
-
     --Rune of Furious Thunder/Explosive Shot
-
 step
     #season 2
     .goto Mulgore,52.6,12.2,90,0
@@ -39,9 +36,7 @@ step << Hunter
     .train 410123 >>Use the |T134419:0|t[|cRXP_FRIENDLY_Rune of Explosive Shot|r]
     .use 206169
     .itemcount 206169,1
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Warrior SoD/Horde Hunter SoD
@@ -52,9 +47,7 @@ RXPGuides.RegisterGuide([[
 #name Sniper Training - 16 (The Barrens) << Hunter
 #title Quick Strike << Warrior
 #title Sniper Training << Hunter
-
     --Rune of Quick Strike/Sniper Training
-
 step
     #season 2
     #completewith next
@@ -90,5 +83,4 @@ step << Hunter
     .train 416091 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of the Sniper|r] |cRXP_WARN_to train|r |T132212:0|t[Sniper Training]
     .use 208777
     .itemcount 208777,1
-
     ]])

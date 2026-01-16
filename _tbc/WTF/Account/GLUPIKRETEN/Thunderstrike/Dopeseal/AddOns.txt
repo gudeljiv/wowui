@@ -95,7 +95,7 @@ RangeDisplay: enabled
 RangeDisplay_Options: enabled
 RareScanner: enabled
 RatingBuster: enabled
-RXPGuides: disabled
+RXPGuides: enabled
 RingMenuReborn: disabled
 ShadowedUF_SmoothBars: enabled
 SharedMedia: enabled

@@ -5,7 +5,6 @@ RXPGuides.RegisterGuide([[
 #wotlk
 #cata
 #name Jewelcrafting
-
 step
 	.goto Dalaran,40.67,35.35
 	>> To begin the Jewelcrafting daily quests you must first complete the quest Finish the Shipment which requires you to bring Timothy Jones in Dalaran a Chalcedony
@@ -27,7 +26,6 @@ step
 	>>Shipment: Intricate Bone Figurine -- 12961
 	>>Shipment: Bright Armor Relic -- 12962
 	>>Shipment: Shifting Sun Curio -- 12963
-
 -- Quest: Shipment: Blood Jade Amulet -- 12958
 step
 	#completewith Amulet
@@ -57,7 +55,6 @@ step
 	.goto Dalaran,40.67,35.35
 	.turnin 12958 >>Turn in Shipment: Blood Jade Amulet
 	.isQuestComplete 12958
-
 -- Quest: Shipment: Glowing Ivory Figurine -- 12959
 step
 	#completewith Ivory
@@ -85,7 +82,6 @@ step
 	.goto Dalaran,40.67,35.35
 	.turnin 12959 >>Turn in Shipment: Glowing Ivory Figurine
 	.isQuestComplete 12959
-
 -- Quest: Shipment: Wicked Sun Brooch -- 12960
 step
 	#completewith Brooch
@@ -113,7 +109,6 @@ step
 	.goto Dalaran,40.67,35.35
 	.turnin 12960 >>Turn in Shipment: Wicked Sun Brooch
 	.isQuestComplete 12960
-
 -- Quest: Shipment: Intricate Bone Figurine -- 12961
 step
 	#completewith Figurine
@@ -140,7 +135,6 @@ step
 	.goto Dalaran,40.67,35.35
 	.turnin 12961 >>Turn in Shipment: Intricate Bone Figurine
 	.isQuestComplete 12961
-
 -- Quest: Shipment: Bright Armor Relic -- 12962
 step
 	#completewith Relic
@@ -167,7 +161,6 @@ step
 	.goto Dalaran,40.67,35.35
 	.turnin 12962 >>Turn in Shipment: Bright Armor Relic
 	.isQuestComplete 12962
-
 -- Quest: Shipment: Shifting Sun Curio -- 12963
 step
 	#completewith Curio

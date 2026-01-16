@@ -5,8 +5,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Chimera Shot - 2 (Dun Morogh)
 #title Chimera Shot
-
-
 step
     +|cRXP_WARN_You should be at least level 2 in order to acquire|r |T133816:0|t[Engrave Gloves - Chimera Shot] |cRXP_WARN_in Dun Morogh alone|r
     .train 410121,1
@@ -42,7 +40,6 @@ step
     .use 206168
     .itemcount 206168,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Hunter SoD
@@ -50,7 +47,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Chimera Shot - 3 (Teldrassil)
 #title Chimera Shot
-
 step
     +|cRXP_WARN_You should be at least level 3 in order to acquire|r |T133816:0|t[Engrave Gloves - Chimera Shot] |cRXP_WARN_in Teldrassil alone|r
     .train 410121,1
@@ -91,7 +87,6 @@ step
     .use 206168
     .itemcount 206168,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Hunter SoD
@@ -99,7 +94,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Explosive Shot - 5 (Dun Morogh)
 #title Explosive Shot
-
 step
     +|cRXP_WARN_You should be at least level 5 in order to acquire|r |T133816:0|t[Engrave Gloves - Explosive Shot] |cRXP_WARN_in Dun Morogh alone|r
     .train 410123,1
@@ -142,7 +136,6 @@ step
     .use 206169
     .itemcount 206169,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Hunter SoD
@@ -150,10 +143,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Explosive Shot - 2 (Durotar)
 #title Explosive Shot
-
-
     --Rune of Explosive Shot
-
 step
     #season 2
     .goto Durotar,40.60,66.80
@@ -167,7 +157,6 @@ step
     .use 206169
     .itemcount 206169,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Hunter SoD
@@ -175,10 +164,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Chimera Shot - 2 (Durotar)
 #title Chimera Shot
-
-
     --Rune of Chimera Shot
-
 step << !Tauren
     #season 2
     .goto Durotar,42.84,69.32
@@ -255,7 +241,6 @@ step << !Tauren
     .turnin 77584 >>Turn in Hunt for the Rune << Orc Hunter
     .target Jen'shan
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Hunter SoD
@@ -263,10 +248,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Chimera Shot - 2 (Mulgore)
 #title Chimera Shot
-
-
     --Rune of Chimera Shot
-
 step << Tauren
     #season 2
     .goto Mulgore,44.26,75.70
@@ -299,7 +281,6 @@ step << Tauren
     .turnin 77649 >>Turn in A Hunter's Strength
     .target Lanka Farshot
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Hunter SoD
@@ -307,10 +288,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Master Marksman - 6 (Durotar)
 #title Master Marksman
-
-
     --Rune of Master Marksman
-
 step
     #season 2
     .goto Durotar,40.61,52.19
@@ -326,7 +304,6 @@ step
     .use 206155
     .itemcount 206155,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Hunter SoD
@@ -334,10 +311,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Master Marksman - 6 (Mulgore)
 #title Master Marksman
-
-
     --Rune of Master Marksman
-
 step
     #season 2
     .goto Mulgore,59.02,54.36
@@ -353,7 +327,6 @@ step
     .use 206155
     .itemcount 206155,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Hunter SoD
@@ -361,10 +334,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Master Marksman - 6 (Dun Morogh)
 #title Master Marksman
-
-
     --Rune of Master Marksman
-
 step
     #season 2
     .goto Dun Morogh,28.852,49.859
@@ -380,7 +350,6 @@ step
     .use 206155
     .train 410113,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Hunter SoD
@@ -388,10 +357,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Master Marksman - 6 (Teldrassil)
 #title Master Marksman
-
-
     --Rune of Master Marksman
-
 step
     #season 2
     .goto Teldrassil,46.6,46.3
@@ -407,7 +373,6 @@ step
     .use 206155
     .train 410113,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Hunter SoD
@@ -415,10 +380,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Flanking - 6 (Mulgore)
 #title Flanking
-
-
     --Rune of Flanking
-
 step
     #season 2
     .goto Mulgore,41.41,66.32,60,0
@@ -448,7 +410,6 @@ step
     .use 205979
     .itemcount 205979,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Hunter SoD
@@ -456,10 +417,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Flanking - 6 (Durotar)
 #title Flanking
-
-
     --Rune of Flanking
-
 step
     #season 2
     .goto Durotar,53.43,48.62,70,0
@@ -483,7 +441,6 @@ step
     .use 205979
     .itemcount 205979,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Hunter SoD
@@ -491,10 +448,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Carve - 10 (Durotar)
 #title Carve
-
-
     --Rune of Carve
-
 step
     #season 2
     #completewith n`t
@@ -537,7 +491,6 @@ step
     .use 206032
     .itemcount 206032,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Hunter SoD
@@ -545,10 +498,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Carve - 10 (Mulgore)
 #title Carve
-
-
     --Rune of Carve
-
 step
     #season 2
     #completewith next
@@ -588,9 +538,7 @@ step
     .train 425758 >>Use the |T134419:0|t[|cRXP_FRIENDLY_Rune of Carve|r]
     .use 206032
     .itemcount 206032,1
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Hunter SoD
@@ -598,8 +546,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Carve - 10 (Dun Morogh)
 #title Carve
-
-
     --Rune of Carve
 step
     #season 2
@@ -646,7 +592,6 @@ step
     .use 206032
     .train 425758,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Hunter SoD
@@ -654,10 +599,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Carve - 10 (Teldrassil)
 #title Carve
-
-
     --Rune of Carve
-
 step
     #season 2
     #completewith next
@@ -704,7 +646,6 @@ step
     .use 206032
     .train 425758,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Hunter SoD
@@ -712,9 +653,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Beast Mastery - 16 (The Barrens)
 #title Beast Mastery
-
     --Rune of Beast Mastery
-
 step
     #season 2
     #completewith next
@@ -736,7 +675,6 @@ step
     .use 208701
     .itemcount 208701,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Hunter SoD
@@ -744,9 +682,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Beast Mastery - 16 (Silverpine)
 #title Beast Mastery
-
     --Rune of Beast Mastery
-
 step
     #season 2
     .goto Silverpine Forest,41.37,19.64,50,0
@@ -766,7 +702,6 @@ step
     .use 208701
     .itemcount 208701,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Hunter SoD
@@ -774,10 +709,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Sniper Training - 18 (Darkshore)
 #title Sniper Training
-
-
     --Rune of the Sniper
-
 step
     #season 2
     #completewith next
@@ -817,7 +749,6 @@ step
     .use 208777
     .itemcount 208777,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Hunter SoD
@@ -825,10 +756,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Sniper Training - 16 (Westfall)
 #title Sniper Training
-
-
     --Rune of the Sniper
-
 step
     #season 2
     #completewith next
@@ -850,7 +778,6 @@ step
     .use 208777
     .itemcount 208777,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Hunter SoD
@@ -858,10 +785,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Sniper Training - 16 (Loch Modan)
 #title Sniper Training
-
-
     --Rune of the Sniper
-
 step
     #season 2
     #completewith next
@@ -884,7 +808,6 @@ step
     .use 208777
     .itemcount 208777,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Hunter SoD
@@ -892,10 +815,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Flanking - 7 (Dun Morogh)
 #title Flanking
-
-
     --Rune of Flanking
-
 step
     #season 2
     #loop
@@ -927,7 +847,6 @@ step
     .use 205979
     .itemcount 205979,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Hunter SoD
@@ -935,8 +854,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Flanking - 7 (Teldrassil)
 #title Flanking
-
-
     --Rune of Flanking
 step
     #season 2
@@ -967,7 +884,6 @@ step
     .use 205979
     .itemcount 205979,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Hunter SoD
@@ -975,10 +891,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Belt
 #title Expose Weakness
 #name Expose Weakness - 40 (Azeroth)
-
-
 -- Expose Weakness
-
 step
     #optional
     .train 426445,1
@@ -1070,7 +983,6 @@ step
     .use 211301
     .itemcount 211301,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Hunter SoD
@@ -1078,7 +990,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Belt
 #title Steady Shot
 #name Steady Shot - 30 (Arathi Highlands)
-
 step
     #completewith next
     .zone Arathi Highlands >>Travel to Arathi Highlands
@@ -1098,7 +1009,6 @@ step
     .use 213122
     .itemcount 213122,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Hunter SoD
@@ -1106,7 +1016,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Boots
 #title Dual-Wield Specialization
 #name Dual-Wield Specialization - 32 (Stranglethorn Vale)
-
 step
     #optional
     .train 410116,1
@@ -1143,7 +1052,6 @@ step
     .use 213126
     .train 410116 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of the Scrapper|r] |cRXP_WARN_to train|r |T132147:0|t[Dual-Wield Specialization]
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Hunter SoD
@@ -1151,7 +1059,6 @@ RXPGuides.RegisterGuide([[
 #subgroup Bracers
 #title Focus Fire
 #name Focus Fire - 40 (Searing Gorge)
-
 step
     #completewith next
     +|cRXP_WARN_You will have to kill a level 45 mob in a hostile area to acquire this rune. Make sure to bring help if you're lower level|r
@@ -1171,7 +1078,6 @@ step
     .use 221445
     .train 431601 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Focused Fire|r] |cRXP_WARN_to train|r |T135548:0|t[Focus Fire]
  ]])
-
  RXPGuides.RegisterGuide([[
     #classic
     << Hunter SoD
@@ -1179,7 +1085,6 @@ step
     #subgroup Bracers
     #title Raptor Fury
     #name Raptor Fury - 40 (Tanaris)
-
 step
     #completewith next
     .zone Tanaris >>Travel to Tanaris
@@ -1201,7 +1106,6 @@ step
     .train 416093 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of the Raptor|r] |cRXP_WARN_to train|r |T132253:0|t[Raptor Fury]
     .use 2220687
     .itemcount 220687,1
-
     ]])
 RXPGuides.RegisterGuide([[
     #classic
@@ -1210,7 +1114,6 @@ RXPGuides.RegisterGuide([[
     #subgroup Helmet
     #title Catlike Reflexes
     #name Catlike Reflexes - 40 (Feralas)
-
 step
     #completewith next
     .zone Feralas >>Travel to Feralas
@@ -1241,7 +1144,6 @@ step
     .train 416083 >>Use |T134419:0|t[|cRXP_FRIENDLY_Rune of the Jungle Cat|r] |cRXP_WARN_to train|r |T132167:0|t[Catlike Reflexes]
     .use 220791
 ]])
-
 RXPGuides.RegisterGuide([[
     #classic
     << Hunter SoD
@@ -1303,7 +1205,6 @@ step
     >>You also received an |T136091:0|t|cRXP_LOOT_Infernal Lasso|r trinket which can be used to tame Corehounds
     .use 220217
 ]])
-
 RXPGuides.RegisterGuide([[
     #classic
     << Hunter SoD
@@ -1330,7 +1231,6 @@ step
     .train 440563 >>Use |T134419:0|t[|cRXP_FRIENDLY_Rune of the Guerrilla|r] |cRXP_WARN_to train|r |T132171:0|t[Hit and Run]
     .use 226252
 ]])
-
 RXPGuides.RegisterGuide([[
     #classic
     << Hunter SoD
@@ -1379,7 +1279,6 @@ step
     .train 440557 >>Use |T134419:0|t[|cRXP_FRIENDLY_Rune of the Resourceful|r] |cRXP_WARN_to train|r |T132178:0|t[Resourcefulness]
     .use 225955
 ]])
-
 RXPGuides.RegisterGuide([[
     #classic
     << Hunter SoD

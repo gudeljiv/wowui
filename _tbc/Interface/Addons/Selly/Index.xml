@@ -1,0 +1,35 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+    <Script file="Inc\Functions.lua"/>
+    <Script file="Inc\Initialize.lua"/>
+    <Script file="Inc\Json.lua"/>
+
+    
+    <Script file="Main\ProfileManager.lua"/>
+    <Script file="Main\SellyManager.lua"/>
+    <Script file="Main\ExportManager.lua"/>
+    <Script file="Main\Items.lua"/>
+    <Script file="Main\Sell.lua"/>
+
+    <Script file="UI\Elements\Frames.lua"/>
+    <Script file="UI\Elements\ScrollFrame.lua"/>
+    <Script file="UI\Elements\Buttons.lua"/>
+    <Script file="UI\Elements\Checkbox.lua"/>
+    <Script file="UI\Elements\Textbox.lua"/>
+    <Script file="UI\Elements\Label.lua"/>
+    <Script file="UI\Elements\Groupbox.lua"/>
+    <Script file="UI\Elements\Tooltips.lua"/>
+    <Script file="UI\Elements\Dialog.lua"/>
+    <Script file="UI\Elements\Minimap.lua"/>
+    <Script file="UI\Elements\ContextMenu.lua"/>
+
+    <Script file="UI\Helper.lua"/>
+    <Script file="UI\Hooks.lua"/>
+    <Script file="UI\GUI.lua"/>
+
+    <Script file="Libs\LibStub\LibStub.lua"/>
+    <Script file="Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua"/>
+    <Script file="Libs\LibDataBroker-1-1\LibDataBroker-1.1.lua"/>
+    <Script file="Libs\LibDBIcon-1.0\LibDBIcon-1.0.lua"/>
+    <Script file="Libs\LibDeflate\LibDeflate.lua"/>
+    test
+</Ui>

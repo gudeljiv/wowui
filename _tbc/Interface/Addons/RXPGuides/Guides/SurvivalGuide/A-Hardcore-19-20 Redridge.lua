@@ -1,4 +1,3 @@
-
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
@@ -8,7 +7,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 1-20
 #next 20-21 Darkshore/Ashenvale
-
 step << Hunter
     .goto StormwindClassic,61.609,15.269
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Einris Brightspear|r
@@ -145,7 +143,7 @@ step << Rogue
     .goto StormwindClassic,57.38,56.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marda Weller|r
     >>|cRXP_BUY_Buy a|r |T135324:0|t[Longsword] |cRXP_BUY_and|r |T135342:0|t[Kris]
-    >>|cRXP_WARN_Equip the|r |T135324:0|t[Longsword] |cRXP_WARN_in your Mainhand and|r |T135342:0|t[Kris] |cRXP_WARN_in your Offhand|r
+    >>|cRXP_WARN_Equip the|r |T135324:0|t[Longsword] |cRXP_WARN_in your Mainhand when you are 21 and|r |T135342:0|t[Kris] |cRXP_WARN_in your Offhand|r
     .collect 923,1 --Longsword
     .collect 2209,1 --Kris
     .target Marda Weller

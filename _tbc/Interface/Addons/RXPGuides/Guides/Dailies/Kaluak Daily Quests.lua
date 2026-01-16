@@ -5,7 +5,6 @@ RXPGuides.RegisterGuide([[
 #wotlk
 #cata
 #name The Kalu'ak Daily Quests
-
 step
 	>>Travel to Moa'ki Harbor in Dragonblight. Talk to Mau'i
     .daily 11960 >>Accept Planning for the Future

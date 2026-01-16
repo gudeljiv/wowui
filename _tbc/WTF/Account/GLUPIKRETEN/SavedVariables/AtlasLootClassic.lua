@@ -1,7 +1,7 @@
 
 AtlasLootClassicDB = {
 ["global"] = {
-["__addonrevision"] = 2000000,
+["__addonrevision"] = 25512135,
 ["VendorPrice"] = {
 [47665] = "EmblemOfTriumph:25",
 [41559] = "honor:1250",

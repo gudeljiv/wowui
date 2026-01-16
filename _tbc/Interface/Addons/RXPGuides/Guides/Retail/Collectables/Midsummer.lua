@@ -5,8 +5,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF1|r - Eastern Kingdoms Bonfires
 #next a) Chapter 2 - Kalimdor Bonfires
 #internal
-
-
 step
     .goto 37,43.44,62.62
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Elwynn Forest Flame Warden|r
@@ -148,7 +146,6 @@ step
     .turnin 11834 >>Turn in Honor the Flame
     .target Winterspring Flame Warden
 ]])
-
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
@@ -156,7 +153,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF2|r - Kalimdor Bonfires
 #next a) Chapter 3 - Outland Bonfires
 #internal
-
 step
     .goto 62,48.74,22.65
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darkshore Flame Warden|r
@@ -172,7 +168,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Teldrassil Flame Warden|r
     .turnin 11824 >>Turn in Honor the Flame
     .target Teldrassil Flame Warden
-
 step
     .goto 63,86.93,41.86
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ashenvale Flame Warden|r
@@ -206,11 +201,9 @@ step
 step
     .goto 7,51.92,59.39
     .turnin 11777 >>Turn in Desecrate this Fire!
-
 step
     .goto 10,49.87,54.31
     .turnin 11783 >>Turn in Desecrate this Fire!
-
 step
     .goto 199,48.34,72.23
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Southern Barrens Flame Warden|r
@@ -234,7 +227,6 @@ step
 step
     .goto 69,72.47,47.64
     .turnin 11773 >>Turn in Desecrate this Fire!
-
 step
     .goto 69,46.82,43.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Feralas Flame Warden|r
@@ -253,7 +245,6 @@ step
 step
     .goto 78,56.43,65.88
     .turnin 28920 >>Turn in Desecrate this Fire!
-
 step
     .goto 78,59.87,63.25
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Un'Goro Crater Flame Warden|r
@@ -287,10 +278,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bloodmyst Isle Flame Warden|r
     .turnin 11809 >>Turn in Honor the Flame
     .target Bloodmyst Isle Flame Warden
-
-   
 ]])
-
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
@@ -298,11 +286,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF3|r - Outland Bonfires
 #next a) Chapter 4 - Northend Bonfires
 #internal
-
 step
     .goto 108,51.90,43.20
     .turnin 11782 >>Turn in Desecrate this Fire!
-
 step
     .goto 108,54.06,55.51
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Terokkar Forest Flame Warden|r
@@ -321,12 +307,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Priesfd|r
     .accept 88808 >>Accept A Scarred Journey Through Time
     .target Priesfds
-
-
-
     .accept 31856 >>Accept The Peak of Serenity - Begin Your Training
-
-
 step
     .goto 100,62.18,58.31
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hellfire Peninsula Flame Warden|r
@@ -340,7 +321,6 @@ step
 step
     .goto 109,32.30,68.33
     .turnin 11799 >>Turn in Desecrate this Fire!
-
 step
     .goto 109,31.21,62.66
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Netherstorm Flame Warden|r
@@ -369,15 +349,12 @@ step
 step
     .goto 107,51.08,34.14
     .turnin 11778 >>Turn in Desecrate this Fire!
-
 step
     .goto 107,49.61,69.47
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Nagrand Flame Warden|r
     .turnin 11821 >>Turn in Honor the Flame
     .target Nagrand Flame Warden
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
@@ -385,7 +362,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF4|r - Northend Bonfires
 #next a) Chapter 5 - Cataclysm Bonfires
 #internal
-
 step
     .goto 120,40.35,85.64
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Horde Bonfire|r
@@ -429,7 +405,6 @@ step
 step
     .goto 117,48.42,13.41
     .turnin 13453 >>Turn in Desecrate this Fire!
-
 step
     .goto 117,57.79,16.11
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Howling Fjord Flame Warden|r
@@ -474,7 +449,6 @@ step
     .turnin 29036 >>Turn in Honor the Flame
     .target Earthen Ring Bonfire
 ]])
-
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
@@ -482,8 +456,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF5|r - Cataclysm Bonfires
 #next a) Chapter 6 - Pandaria Bonfires
 #internal
-
-
 step
     .goto 205,49.36,42.00
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Vashj'ir Flame Guardian|r
@@ -525,9 +497,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Horde Bonfire|r
     .turnin 11802 >>Turn in Desecrate this Fire!
     .target Horde Bonfire
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
@@ -535,7 +505,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF6|r - Pandaria Bonfires
 #next a) Chapter 7 - Draenor Bonfires
 #internal
-
 step
     .goto 371,47.18,47.18
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Jade Forest Flame Guardian|r
@@ -602,9 +571,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Midsummer Bonfire|r
     .turnin 32499 >>Turn in Honor the Flame
     .target Midsummer Bonfire
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
@@ -612,8 +579,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF7|r - Draenor Bonfires
 #next a) Chapter 8 - Legion Bonfires
 #internal
-
-
 step
     .goto 539,42.62,35.99
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shadowmoon Valley Flame Warden|r
@@ -660,7 +625,6 @@ step
     .turnin 44573 >>Turn in Honor the Flame
     .target Midsummer Bonfire
 ]])
-
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
@@ -668,8 +632,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF8|r - Legion Bonfires
 #next a) Chapter 9 - BFA Bonfires
 #internal
-
-
 step
     .goto 630,48.26,29.69
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Azsuna Flame Guardian|r
@@ -713,7 +675,6 @@ step
     .turnin 44577 >>Turn in Honor the Flame
     .target Midsummer Bonfire
 ]])
-
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
@@ -721,8 +682,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF9|r - BFA Bonfires
 #next a) Chapter 10 - Dragonflight Bonfires
 #internal
-
-
 step
     .goto 895,76.35,49.88
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tiragarde Sound Flame Warden|r
@@ -750,7 +709,6 @@ step
     .goto 864,55.91,47.64
     .turnin 54749 >>Turn in Desecrate this Fire!
 ]])
-
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
@@ -758,8 +716,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF10|r - Dragonflight Bonfires
 #next a) Chapter 10 - Khaz'algar Bonfires
 #internal
-
-
 step
     .goto 2112,53.38,62.33
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thaldraszus Flame Guardian|r
@@ -810,10 +766,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Midsummer Bonfire|r
     .turnin 75647 >>Turn in Honor the Flame
     .target Midsummer Bonfire
-
-
 ]])
-
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
@@ -821,7 +774,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF10|r - Khaz'algar Bonfires
 #next a) Chapter 1 - Eastern Kingdoms Bonfires
 #internal
-
 step
     .goto 2339,48.30,51.55
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Isle of Dorn Flame Guardian|r
@@ -856,5 +808,4 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Midsummer Bonfire|r
     .turnin 87356 >>Turn in Honor the Flame
     .target Midsummer Bonfire
-
 ]])

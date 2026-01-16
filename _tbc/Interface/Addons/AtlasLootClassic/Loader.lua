@@ -66,6 +66,13 @@ local ATLASLOOT_MODULE_LIST = {
 		tt_title = nil, -- ToolTip title
 		tt_text = nil, -- ToolTip text
 	},
+	{
+		addonName = "AtlasLootClassic_BiS",
+		--icon = "Interface\\ICONS\\Inv_ChampionsOfAzeroth",
+		name = AL["BiS Lists"],
+		tt_title = nil, -- ToolTip title
+		tt_text = nil, -- ToolTip text
+	},
 }
 local ATLASLOOT_MODULE_LIST_NAMES = {}
 for i = 1, #ATLASLOOT_MODULE_LIST do

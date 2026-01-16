@@ -7,7 +7,6 @@ RXPGuides.RegisterGuide([[
 #name Beast Mastery - 12 (Darkshore) << Hunter
 #title Lacerate << Druid
 #title Beast Mastery << Hunter
-
 step << Druid/Hunter
     .goto Darkshore,39.84,53.82,50,0
     .goto Darkshore,40.03,56.24,50,0
@@ -36,7 +35,6 @@ step << Druid/Hunter
     .use 208701 << Hunter
     .itemcount 208701,1 << Hunter
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Druid SoD/Alliance Hunter SoD
@@ -46,7 +44,6 @@ RXPGuides.RegisterGuide([[
 #name Explosive Shot - 8 (Teldrassil) << Hunter
 #title Mangle << Druid
 #title Explosive Shot << Hunter
-
 step
     +|cRXP_WARN_You should be at least level 8 in order to acquire|r |T133816:0|t[Engrave Gloves - Mangle] |cRXP_WARN_in Teldrassil alone|r << Druid
     +|cRXP_WARN_You should be at least level 8 in order to acquire|r |T133816:0|t[Engrave Gloves - Explosive Shot] |cRXP_WARN_in Teldrassil alone|r << Hunter
@@ -145,7 +142,6 @@ step << Druid
     .aura -414824
     .train 410025,1
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD/Alliance Warrior SoD/Alliance Priest SoD
@@ -158,7 +154,6 @@ RXPGuides.RegisterGuide([[
 #title Slaughter from the Shadows << Rogue
 #title Furious Thunder << Warrior
 #title Void Plague << Priest
-
 step
     #completewith next
     .goto Teldrassil,44.18,58.19
@@ -188,7 +183,6 @@ step << Priest
     .train 425216 >>|cRXP_WARN_Use the|r |T136222:0|t[|cRXP_FRIENDLY_Memory of a Dark Purpose|r] |cRXP_WARN_to train|r |T237514:0|t[Void Plague]
     .use 205940
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Rogue SoD/Alliance Priest SoD
@@ -199,7 +193,6 @@ RXPGuides.RegisterGuide([[
 #name Shared Pain - 8 (Teldrassil) << Priest
 #title Mutilate << Rogue
 #title Shared Pain << Priest
-
 step << Rogue/Priest
     #completewith next
     .goto Teldrassil,54.68,52.84,20,0

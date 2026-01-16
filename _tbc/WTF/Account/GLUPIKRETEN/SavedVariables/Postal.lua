@@ -25,7 +25,7 @@ Postal3DB = {
 "Doperage|Living Flame|Horde|42|WARRIOR",
 "Doperage|Lone Wolf|Horde|42|WARRIOR",
 "Doperage|Thunderstrike|Horde|21|WARRIOR",
-"Dopeseal|Thunderstrike|Horde|1|PALADIN",
+"Dopeseal|Thunderstrike|Horde|4|PALADIN",
 "Dopesick|Stitches|Horde|3|WARRIOR",
 "Dopesnare|Living Flame|Horde|49|HUNTER",
 "Dopesnare|Lone Wolf|Horde|49|HUNTER",

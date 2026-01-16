@@ -1,0 +1,12 @@
+tag 0b47a6d7976fad06670f1d73cd1d8aac0eef6e71 1.0.14
+Author:	Trustical <info@bottie.net>
+Date:	Fri Jan 16 08:41:00 2026 +0100
+
+release
+
+commit 0875676e4bf5bd7ddb1bd55bb6b329ca37507fc9
+Author: Trustical <info@bottie.net>
+Date:   Fri Jan 16 08:40:49 2026 +0100
+
+    Toc update (Anniversary)
+

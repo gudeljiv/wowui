@@ -1,8 +1,6 @@
 local _,addon = ...
 if addon.gameVersion < 40000 or addon.player.faction == 'Horde' then return end
-
 RXPGuides.RegisterGuide([[
-
 #version 1
 #group RXP Cataclysm 1-80 (A) << cata
 #group RXP MoP 1-60 (A) << mop
@@ -12,9 +10,7 @@ RXPGuides.RegisterGuide([[
 #displayname 10-18 Loch Modan
 #next 15-20 Redridge
 #defaultfor Human/Dwarf/Gnome/Pandaren
-
 <<Alliance
-
 step
     #optional
     .maxlevel 20,endOfTheGuide
@@ -986,7 +982,6 @@ step
     .turnin 27074 >>Turn in Fight the Hammer
     .accept 27075 >>Accept Servants of Cho'gall
     .accept 27077 >>Accept Clutching at Chaos
-
 step
 #questguide
 #loop
@@ -1000,8 +995,6 @@ step
     .complete 27077,1 --|10/10 Nascent Elementium Spike
     .mob Mo'grosh Earthbender
     .mob Mo'grosh Darkmauler
-
-
 step
 #questguide
     .goto 48,64.049,26.693
@@ -1018,7 +1011,6 @@ step
     >>Kill |cRXP_ENEMY_Gor'kresh|r
     .complete 27078,1 --|1/1 Gor'kresh slain
     .mob Gor'kresh
-
 step
 #questguide
     .goto 48,64.145,26.705
@@ -1054,7 +1046,6 @@ step
     .turnin 26137 >>Turn in Checking on the Boys
     .accept 25395 >>Accept The Stolen Keg
     .accept 25211 >>Accept Cleaning Hovel
-
 --TODO: follow the path to the first quest hub
 --fly to gol'bolar quarry (dwarf) or kharanos (gnome)
 --buy mount, then fly to SW and do duskwood

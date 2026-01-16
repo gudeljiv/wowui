@@ -1,6 +1,5 @@
 local faction = UnitFactionGroup("player")
 if faction == "Horde" then return end
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance
@@ -502,7 +501,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Porthannius|r
     .accept 2159 >> Accept Dolanaar Delivery
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance
@@ -513,8 +511,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 1-20
 #defaultfor NightElf
 #next 13-20 Darkshore SoD
-
-
 step
     .goto Teldrassil,60.5,56.3
     .target Zenn Foulhoof
@@ -1554,7 +1550,6 @@ step
     .goto Teldrassil,34.61,28.79
     >>Click the |cRXP_PICK_Strange Fronded Plant|r
     .accept 931 >> Accept The Shimmering Frond
-
 step << Hunter
 	#xprate <1.5
     #completewith xp10

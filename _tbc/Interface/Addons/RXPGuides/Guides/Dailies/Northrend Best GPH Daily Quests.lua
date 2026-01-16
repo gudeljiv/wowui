@@ -4,17 +4,13 @@ RXPGuides.RegisterGuide([[
 #cata
 #group +RestedXP Northrend Daily Quests
 #name Best Daily Quests Gold Per Hour Route
-
 --20 daily quests total
 --5(rep depending) quests from Hodir (didnt include dragon flying one. its terrible) may not be 5 quests for everyone. should be at least 3 though
 --6 from icecrown. quests from Ebon Blade
 --9 from icecrown. quests from gunship/surroundings
 --all of these quests require pre quests to be completed/unlocked. each section has checks to see if they have completed pre quests or not. if they havnt they're told to do pre quest guide
 --gives the player still room to do daily heroic+normal as well as jc/cooking/fishing daily quests
-
-
 --5 Quest section for The Sons of Hodir Daily Quests. Didn't include slaying dragon quest because its really bad/slow
-
 step
 	+To unlock The Sons of Hodir daily quests you must first complete their quest chain in The Storm Peaks. Please use The Sons of Hodir Unlock Daily Quests guide to unlock the daily quests
 	.isQuestAvailable 13047
@@ -190,9 +186,7 @@ step << !Mage
 	#completewith next
     .hs >>Hearth to Dalaran if your Hearth is set there or somewhere near Icecrown.
 	>>Fly to Icecrown
-
 --9 Quest section from Icecrown Gunship and close surroundings section. 6 Quests from the gunship, other 3 from on the ground/in Ymirheim
-
 step << Alliance
 	+To unlock all the Icecrown Gunship daily quests you must first complete the pre quest chain. Please use the Icecrown Gunship Unlock Daily Quests guide to unlock all the daily quests
 	.isQuestAvailable 13314,13342,13321,13318
@@ -200,7 +194,6 @@ step << Alliance
 -- 	13342  Not a Bug
 --	13321  Retest Now
 --	13318  Drag and Drop
-
 step << Horde
 	+To unlock all the Icecrown Gunship daily quests you must first complete the pre quest chain. Please use the Icecrown Gunship Pre Quests guide to unlock all the daily quests
 	.isQuestAvailable 13313,13356,13352,13358
@@ -208,7 +201,6 @@ step << Horde
 --	13356  Retest Now
 --	13352  Drag and Drop
 --	13358  Not a Bug
-
 step << Alliance
     .goto IcecrownGlacier,65.1,57.2,0
     .goto IcecrownGlacier,64.7,52.4,0
@@ -469,13 +461,10 @@ step << Horde
     .turnin -13353 >>Turn in Drag and Drop
 	.turnin -13365 >>Turn in Not a Bug
     .turnin -13331 >>Turn in Keeping the Alliance Blind
-
 --6 Quest section from Knights of the Ebon Blade. 3 come from The Shadow Vault, other 3 from Death's Rise
-
 step
 	+To unlock the Knights of the Ebon Blade daily quests you must first complete their quest chain in Icecrown. Please use the Ebon Blade Unlock Daily Quests guide to unlock the daily quests
 	.isQuestAvailable 12814
-
 -- 3 Quests from The Shadow Vault
 step
 	>>From The Shadow Vault accept the 3 daily quests
@@ -534,7 +523,6 @@ step
     .turnin 13071 >>Turn in Vile Like Fire!
     .goto IcecrownGlacier,43.6,24.1,60,0
     .goto IcecrownGlacier,42.7,26.8
-
 -- 3 Quests from Death's Rise
 step
 	>>From Death's Rise accept the 3 daily quests

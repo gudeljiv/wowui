@@ -204,6 +204,36 @@ data = {
         ],
         "secondary": [],
     },
+    "paladin": {
+        "main": [
+            {"name": "judgement", "type": "GetSpellTexture", "id": 20271, "key": "2", "modifier": "lshift"},
+            {"name": "seal of righteousness", "type": "GetSpellTexture", "id": 20154, "key": "1", "modifier": "lshift"},
+            {"name": "purify", "type": "GetSpellTexture", "id": 4987, "key": "t"},
+            # {"name": "judgement", "type": "GetSpellTexture", "id": 20271, "key": "2", "modifier": "lshift"},
+            # {"name": "crusader strike", "type": "GetSpellTexture", "id": 35395, "key": "5"},
+            # {"name": "avengers shield", "type": "GetSpellTexture", "id": 31935, "key": "4", "modifier": "lshift"},
+            # {"name": "hammer of the righteous", "type": "GetSpellTexture", "id": 53595, "key": "4"},
+            # {"name": "shield of righteousness", "type": "GetSpellTexture", "id": 53600, "key": "6"},
+            # {"name": "exorcism", "type": "GetSpellTexture", "id": 879, "key": "3", "modifier": "lshift"},
+            # {"name": "righteous fury", "type": "GetSpellTexture", "id": 25780, "key": "5", "modifier": "lshift"},
+            # {"name": "beacon of light", "type": "GetSpellTexture", "id": 53563, "key": "5", "modifier": "lshift"},
+            # {"name": "divine plea", "type": "GetSpellTexture", "id": 54428, "modifier": "lalt", "key": "3"},
+            # {"name": "lay on hands", "type": "GetSpellTexture", "id": 633, "key": "k"},
+            # {"name": "cleanse", "type": "GetSpellTexture", "id": 4987, "key": "t"},
+            # {"name": "consecration", "type": "GetSpellTexture", "id": 20116, "key": "2"},
+            # {"name": "holy shield", "type": "GetSpellTexture", "id": 20925, "key": "3"},
+            # {"name": "holy wrath", "type": "GetSpellTexture", "id": 2812, "key": "7"},
+            # {"name": "hammer of wrath", "type": "GetSpellTexture", "id": 24275, "key": "8"},
+            # {"name": "seal of insight", "type": "GetSpellTexture", "id": 20165, "key": "f6"},
+            # {"name": "seal of truth", "type": "GetSpellTexture", "id": 31801, "key": "1", "modifier": "lshift"},
+            # {"name": "word of glory", "type": "GetSpellTexture", "id": 85673, "key": "2", "modifier": "lalt"},
+            # {"name": "divine shield", "type": "GetSpellTexture", "id": 642, "key": "t", "modifier": "lshift"},
+        ],
+        "secondary": [
+            {"name": "divine protection", "type": "GetSpellTexture", "id": 498, "key": "r", "modifier": "lalt"},
+            {"name": "ardent defender", "type": "GetSpellTexture", "id": 31850, "key": "e", "modifier": "lshift"},
+        ],
+    },
 }
 
 monitor_settings = dict()

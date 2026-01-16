@@ -5,7 +5,6 @@ RXPGuides.RegisterGuide([[
 #wotlk
 #cata
 #name Fishing
-
 step
 	.goto Dalaran,53.04,64.95
 	.daily 13830,13832,13833,13834,13836, >> Talk to Marcia Chase in Dalaran. She has 1 out of 5 daily Fishing quests. Accept whichever is available
@@ -14,7 +13,6 @@ step
 	>>Blood Is Thicker -- 13833
 	>>Dangerously Delicious -- 13834
 	>>Disarmed! -- 13836
-
 -- Quest: Dangerously Delicious -- 13834
 step << Alliance
 	#completewith next
@@ -62,7 +60,6 @@ step
 	.goto Dalaran,53.04,64.95
 	.turnin 13834 >>Turn in Dangerously Delicious
 	.isQuestComplete 13834
-
 -- Quest: The Ghostfish -- 13830
 step
 	#completewith next
@@ -94,7 +91,6 @@ step
 	.goto Dalaran,53.04,64.95
 	.turnin 13834 >>Turn in The Ghostfish
 	.isQuestComplete 13830
-
 -- Quest: Jewel Of The Sewers -- 13832
 step
 	>>Remember to buy baubles to use on your fishing rod
@@ -111,7 +107,6 @@ step
 	.goto Dalaran,53.04,64.95
 	.turnin 13832 >>Turn in Jewel Of The Sewers
 	.isQuestComplete 13832
-
 -- Quest: Disarmed! -- 13836
 step
 	>>Remember to buy baubles to use on your fishing rod
@@ -128,7 +123,6 @@ step
 	.goto Dalaran,36.58,37.33
 	.turnin 13836 >>Turn in Disarmed!
 	.isQuestComplete 13836
-
 -- Quest: Blood Is Thicker -- 13833
 step << Alliance
 	#completewith next

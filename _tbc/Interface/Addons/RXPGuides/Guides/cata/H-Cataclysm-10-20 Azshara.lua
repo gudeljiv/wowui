@@ -1,6 +1,5 @@
 local _,addon = ...
 if addon.gameVersion < 40000 or addon.player.faction == 'Alliance' then return end
-
 RXPGuides.RegisterGuide([[
 #cata
 #mop
@@ -10,11 +9,9 @@ RXPGuides.RegisterGuide([[
 #next 22-27 Ashenvale
 #version 1
 --#group RXP Cataclysm (H) << cata
-
 #group RXP Cataclysm 1-80 (H) << cata
 #group RXP MoP 1-60 (H) << mop
 #subweight 10000
-
 step << Rogue Cata/Warlock Cata/Mage Cata
     #completewith next
     .goto 1454,45.81,66.88,40 >> Travel toward the Cleft of Shadow
@@ -718,9 +715,7 @@ step
     .turnin 14423 >>Turn in Dozercism
     .accept 14424 >>Accept Need More Science
     .target Custer Clubnik
-
     --next 2 quests not mandatory to continue in zone, could skip
-
 step << skip
     .goto 1447/1,-5381.60010,2720.60010
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kalytha|r at Lake Mennar
@@ -746,9 +741,7 @@ step << skip
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Malynea|r
     .turnin 14216 >>Turn in Mystery of the Sarcen Stone
     .target Malynea Skyreaver
-
     --Travel to next area here
-
 step
     #completewith next
     .goto 1447/1,-4993.50000,2936.90015,5,0
@@ -1172,9 +1165,7 @@ step << Warrior Cata
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Warrior-Matic NX-01|r upstairs
     .trainer >> Train your class spells
     .target Warrior-Matic NX-01
-
     --VV Confirm if there are no Druid/Pala trainers in Bilgewater
-
 step
     .goto 76,59.33,50.74
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Teemo|r
@@ -2660,7 +2651,7 @@ step << Warrior/Paladin
     .use 926
     .itemcount 926,1
     .itemStat 16,QUALITY,<7
-    .itemStat 18,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<15.2
+    .itemStat 16,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<15.2
 step << Shaman
     #optional
     #completewith AzsharaEnd

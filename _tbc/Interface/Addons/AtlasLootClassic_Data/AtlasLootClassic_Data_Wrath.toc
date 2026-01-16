@@ -1,6 +1,6 @@
-﻿## Interface: 30403
+## Interface: 30403
 ## Author: Okrah, Lag
-## Version: v2.0.0
+## Version: v2.5.5.12135
 ## Dependencies: AtlasLootClassic
 ## LoadOnDemand: 1
 
@@ -43,3 +43,4 @@ items.lua
 source.lua
 source-tbc.lua
 source-wrath.lua
+

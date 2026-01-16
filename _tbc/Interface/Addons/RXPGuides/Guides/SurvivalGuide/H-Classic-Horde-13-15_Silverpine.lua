@@ -7,7 +7,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Survival Guide (H)
 #subgroup RXP Survival Guide 1-20
 #next 15-19 The Barrens
-
 step << Undead Rogue
     #sticky
     #completewith RotHideCluesTurnIn
@@ -991,5 +990,4 @@ step << !Tauren !Shaman !Hunter
     .use 6948
     .bindlocation 362,1
     .subzoneskip 362
-
     ]])

@@ -1,6 +1,5 @@
 local _,addon = ...
 if addon.gameVersion < 40000 or addon.player.faction == 'Alliance' then return end
-
 RXPGuides.RegisterGuide([[
 #cata
 #mop
@@ -9,13 +8,10 @@ RXPGuides.RegisterGuide([[
 #next 6-11 The Lost Isles
 #version 1
 --#group RXP Cataclysm (H) << cata
-
 #defaultfor Goblin
 #group RXP Cataclysm 1-80 (H) << cata
 #group RXP MoP 1-60 (H) << mop
 #subweight 10000
-
-
 step
     .goto 194,56.44,76.94
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cFF00FF25Sassy|r
@@ -672,7 +668,6 @@ step
     .turnin 14126 >>Turn in Life Savings
     .target Trade Prince Gallywix
     ]])
-
 RXPGuides.RegisterGuide([[
 #cata
 #mop
@@ -681,12 +676,10 @@ RXPGuides.RegisterGuide([[
 #next 10-22 Azshara
 #version 1
 --#group RXP Cataclysm (H) << cata
-
 #defaultfor Goblin
 #group RXP Cataclysm 1-80 (H) << cata
 #group RXP MoP 1-60 (H) << mop
 #subweight 10000
-
 step
     #completewith next
     >>Sometimes you can get stuck and have to relog or /reload

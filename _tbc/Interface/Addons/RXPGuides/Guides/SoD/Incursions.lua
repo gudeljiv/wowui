@@ -3,7 +3,6 @@ RXPGuides.RegisterGuide([[
 #season 2
 #group RestedXP Nightmare Incursion Dailies
 #name (25-32) Duskwood Nightmare Incursion
-
 step
     #optional
     #completewith travel
@@ -341,13 +340,11 @@ step
     #optional
     +You have completed this Nightmare Incursion loop. The quests will become available again after the daily reset. |cRXP_WARN_Select a differnt guide from the list to continue|r
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 #season 2
 #group RestedXP Nightmare Incursion Dailies
 #name (40-49) Ashenvale Nightmare Incursion
-
 step
     #optional
     #completewith next
@@ -754,14 +751,11 @@ step
     #optional
     +You have completed this Nightmare Incursion loop. The quests will become available again after the daily reset. |cRXP_WARN_Select a differnt guide from the list to continue|r
 ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 #season 2
 #group RestedXP Nightmare Incursion Dailies
 #name (50-53) The Hinterlands Nightmare Incursion
-
-
 step
     #ah
     >>Buy 10 |T134207:0|t[|cRXP_LOOT_Star Lotus|r], 10 |T134964:0|t[|cRXP_LOOT_Starshells|r] and 10 |T237436:0|t[|cRXP_LOOT_Starsilver Ore|r] from the auction house before heading to the Hinterlands
@@ -1102,7 +1096,6 @@ step
     .goto The Hinterlands,61.4,34.6
     .target Field Captain Korlian
     .maxlevel 53
-
 step
     #optional
     +|cRXP_WARN_You have outleveled all incursion zones and will no longer be able to accept any of the regular quests in any of them|r
@@ -1113,13 +1106,11 @@ step
     #optional
     +You have completed this Nightmare Incursion loop. The quests will become available again after the daily reset. |cRXP_WARN_Select a differnt guide from the list to continue|r
     ]])
-
 RXPGuides.RegisterGuide([[
 #classic
 #season 2
 #group RestedXP Nightmare Incursion Dailies
 #name (50-53) Feralas Nightmare Incursion
-
 step
     #ah
     >>Buy 10 |T134186:0|t[|cRXP_LOOT_Moonroot|r], |T133594:0|t[|cRXP_LOOT_Greater Moonstones|r] and |T134312:0|t[|cRXP_LOOT_Moon Dragon Scales|r] from the auction house before heading to the Hinterlands

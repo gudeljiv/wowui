@@ -5,7 +5,6 @@ RXPGuides.RegisterGuide([[
 #wotlk
 #cata
 #name The Sons of Hodir Daily Quests Route
-
 step
 	+To unlock The Sons of Hodir daily quests you must first complete their quest chain in The Storm Peaks. Please use The Sons of Hodir Unlock Daily Quests guide to unlock the daily quests
 	.isQuestAvailable 13047

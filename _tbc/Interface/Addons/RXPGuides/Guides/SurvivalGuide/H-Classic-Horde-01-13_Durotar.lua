@@ -1,6 +1,5 @@
 local faction = UnitFactionGroup("player")
 if faction == "Alliance" then return end
-
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
@@ -11,7 +10,6 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 #defaultfor Troll/Orc
 #next 6-13 Orc/Troll
-
 step << !Orc !Troll
     #completewith next
     +|cRXP_WARN_You have selected a guide meant for Orcs and Trolls. You should choose the same starter zone that you start in|r
@@ -1066,7 +1064,6 @@ step
     .accept 2161 >>Accept A Peon's Burden
     .target Ukor
     ]])
-
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
@@ -1077,7 +1074,6 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 #defaultfor Troll/Orc
 #next 13-15 Silverpine Forest
-
 step
     #loop
     .goto Durotar,54.20,73.36,0
@@ -3419,7 +3415,7 @@ step << Shaman/Hunter
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zargh|r, |cRXP_FRIENDLY_Sergra|r and |cRXP_FRIENDLY_Thork|r
     .turnin 6386 >> Turn in Return to the Crossroads
     .target +Zargh
-    .goto The Barrens,51.50,30.87
+    .goto The Barrens,52.62,29.84
     .turnin 844 >>Turn in Plainstrider Menace
     .accept 845 >>Accept The Zhevra
     .target +Sergra Darkthorn
@@ -3492,6 +3488,7 @@ step << Shaman/Hunter
     .turnin 813 >>Turn in Finding the Antidote
     .target Kor'ghan
     .isQuestComplete 813
+    .isQuestAvailable 812
 step << Shaman
     #label Shaman12training
     .goto Orgrimmar,38.82,36.41

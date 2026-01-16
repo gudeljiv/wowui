@@ -890,9 +890,8 @@ function addon.ParseGuide(groupOrContent, text, defaultFor, isEmbedded, group, k
             groupOrContent = text:match("^%s*#group%s+(.-)%s*[\r\n]") or
                                  text:match("[\r\n]%s*#group%s+(.-)%s*[\r\n]")
             if not groupOrContent then
-                print("\n" .. L("Error parsing guide") ..
-                                            ": Invalid guide group",
-                                        text:match("#name%s+.-%s*[\r\n]"))
+                addon.comms.PrettyPrint("\n%s: Invalid guide group %s",
+                                        text:match("#name%s+.-%s*[\r\n]"), L("Error parsing guide"))
                 return
             end
         end
@@ -918,6 +917,7 @@ function addon.ParseGuide(groupOrContent, text, defaultFor, isEmbedded, group, k
     local skip
     local skipGuide
     local linenumber = 0
+    local game = strlower(addon.game)
 
     for line in string.gmatch(text, "[^\n\r]+") do
         linenumber = linenumber + 1
@@ -1058,18 +1058,22 @@ function addon.GroupOverride(guide,arg2)
         if grp:match("RXP MoP 1%-80") then
             return grp:gsub("RXP MoP 1%-80","RXP MoP 1-60"),subgrp
         end
+        local prefix = ""
+        if grp:sub(1,1) == "*" then
+            prefix = "*"
+        end
         --local group,subgroup
         local swap
         if addon.game == "CLASSIC" then
             local faction = grp:match("RestedXP ([AH][lo][lr][id][ea]%w*)")
             if faction == "Alliance" then
                 subgrp = subgrp or grp:gsub("RestedXP Alliance", "RXP Speedrun Guide")
-                grp = "RestedXP Speedrun Guide (A)"
+                grp = prefix .. "RestedXP Speedrun Guide (A)"
                 swap = true
                 --print('\n',grp,subgrp,faction,type(guide) == "table" and guide.name,'\n')
             elseif faction == "Horde" then
                 subgrp = subgrp or grp:gsub("RestedXP Horde", "RXP Speedrun Guide")
-                grp = "RestedXP Speedrun Guide (H)"
+                grp = prefix .. "RestedXP Speedrun Guide (H)"
                 swap = true
                 --print(group,guide.subgroup,faction,guide.group,guide.name)
             end

@@ -801,8 +801,10 @@ function Favourites:CountFavouritesByList(addonName, contentName, boss, dif, inc
 		end
 		for i = 1, #contentData.items do
 			local subResult = self:CountFavouritesByList(addonName, contentName, i, dif, includeObsolete)
-			for listName, itemCount in pairs(subResult) do
-				result[listName] = (result[listName] or 0) + itemCount
+			if subResult then
+				for listName, itemCount in pairs(subResult) do
+					result[listName] = (result[listName] or 0) + itemCount
+				end
 			end
 		end
 		ItemCountCache[cacheIdent] = result
@@ -816,8 +818,10 @@ function Favourites:CountFavouritesByList(addonName, contentName, boss, dif, inc
 			for i in pairs(contentData.items[boss]) do
 				if type(i) == "number" then
 					local subResult = self:CountFavouritesByList(addonName, contentName, boss, i, includeObsolete)
-					for listName, itemCount in pairs(subResult) do
-						result[listName] = (result[listName] or 0) + itemCount
+					if subResult then
+						for listName, itemCount in pairs(subResult) do
+							result[listName] = (result[listName] or 0) + itemCount
+						end
 					end
 				end
 			end

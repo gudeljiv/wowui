@@ -1,7 +1,6 @@
 -- ================================================================
 -- ================    ALLIED RACE UNLOCK   =======================
 -- ================================================================
-
 --Nesting
 RXPGuides.RegisterGuide([[
 #retail
@@ -13,11 +12,9 @@ RXPGuides.RegisterGuide([[
 #chapters a) Void Elf Unlock;a) Lightforged Draenei Unlock;a) DarkIronDwarf Unlock;a) KulTiran Unlock;a) Mechagnome Unlock;a) EarthenDwarf Unlock (A) << Alliance
 #chapters a) Nightborne Unlock;a) Highmountain Tauren Unlock;a) Maghar Orc Unlock;a) Zandalari Troll Unlock;a) Vulpera Unlock;a) EarthenDwarf Unlock (H) << Horde
 ]])
-
 -----------------------------------------------------
 --- ALLIANCE
 -----------------------------------------------------
-
 ---VoidElf
 RXPGuides.RegisterGuide([[
 #retail
@@ -27,9 +24,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF1|r - Void Elf
 #next a) Lightforged Draenei Unlock
 #chapter
-
 << Alliance !VoidElf
-
 step
     #include a) Void Elf Unlock2
 ]])
@@ -40,7 +35,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Collectables
 #name a) Void Elf Unlock2
 #internal
-
 step
     #completewith next
     .zone 84 >>Travel to |cRXP_WARN_to Stormwind|r.
@@ -219,7 +213,6 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aysa Cloudsinger|r.
     .turnin 48962 >>Turn in Telogrus Rift
     .target Aysa Cloudsinger
-
 ]])
 --LightforgedDraenei
 RXPGuides.RegisterGuide([[
@@ -230,9 +223,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF2|r - Lightforged Draenei
 #next a) DarkIronDwarf Unlock
 #chapter
-
 << Alliance !LightforgedDraenei
-
 step
     #completewith next
     .zone 84 >>Travel to |cRXP_WARN_to Stormwind|r.
@@ -470,9 +461,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF3|r - Dark Iron Dwarf
 #next a) KulTiran Unlock
 #chapter
-
 << Alliance !DarkIronDwarf
-
 step
     #completewith next
     .zone 84 >>Travel to |cRXP_WARN_to Stormwind|r.
@@ -763,9 +752,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF4|r - Kul Tiran
 #next a) Mechagnome Unlock
 #chapter
-
 << Alliance !KulTiran
-
 step
     #completewith next
     .zone 84 >>Travel to |cRXP_WARN_to Stormwind|r.
@@ -1184,7 +1171,6 @@ step
     .target Lady Jaina Proudmoore
 step
     .goto 942,71.18,44.03
-
     >>|TInterface/cursor/crosshair/interact.blp:20|tClick on the |cRXP_PICK_Steering Wheel|r.
     .complete 53720,1 --1/1 Sail to Stormwind Harbor
 step
@@ -1202,9 +1188,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF5|r - Mechagnome
 #next a) EarthenDwarf Unlock (A)
 #chapter
-
 << Alliance !Mechagnome
-
 step
     #completewith next
     .zone 84 >>Travel to |cRXP_WARN_to Stormwind|r.
@@ -1536,11 +1520,9 @@ step
     .turnin 57497 >>Turn in Propagate the News
     .target Aysa Cloudsinger
 ]])
-
 -----------------------------------------------------
 --- HORDE
 -----------------------------------------------------
-
 --Nightborne
 RXPGuides.RegisterGuide([[
 #retail
@@ -1550,9 +1532,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF1|r - Nightborne
 #next a) Highmountain Tauren Unlock
 #chapter
-
 << Horde !Nightborne
-
 step
     #include a) Nightborne Unlock2
 ]])
@@ -1563,7 +1543,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Collectables
 #name a) Nightborne Unlock2
 #internal
-
 step
     #completewith NightborneStartQuestline
     .zone 85 >>Get to Orgrimmar
@@ -1762,9 +1741,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF2|r - Highmountain Tauren
 #next a) Maghar Orc Unlock
 #chapter
-
 << Horde !HighmountainTauren
-
 step
     #completewith HighmountainStartQuestline
     .zone 85 >>Get to Orgrimmar
@@ -2141,9 +2118,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF3|r - Maghar Orc
 #next a) Zandalari Troll Unlock
 #chapter
-
 << Horde !MagharOrc
-
 step
     #completewith MagharOrcStartQuestline
     .zone 85 >>Get to Orgrimmar
@@ -2498,9 +2473,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF4|r - Zandalari Troll
 #next a) Vulpera Unlock
 #chapter
-
 << Horde !ZandalariTroll
-
 step
     #completewith ZandalariTrollStartQuestline
     .zone 85 >>Get to Orgrimmar
@@ -2892,9 +2865,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF5|r - Vulpera
 #next a) EarthenDwarf Unlock (H)
 #chapter
-
 << Horde !Vulpera
-
 step
     #completewith VulperaStartQuestline
     .zone 85 >>Get to Orgrimmar
@@ -3427,11 +3398,9 @@ step
     .isQuestTurnedIn 57448
     +Congratulations! You've unlocked the Vulpera!
 ]])
-
 -- ============================================================
 -- ================    HERITAGE ARMOR   =======================
 -- ============================================================
-
 --Nesting
 RXPGuides.RegisterGuide([[
 #retail
@@ -3443,11 +3412,9 @@ RXPGuides.RegisterGuide([[
 #chapters a) Human Heritage Armor;a) Dwarf Heritage Armor;a) Nightelf Heritage Armor;a) Gnome Heritage Armor;a) Draenei Heritage Armor;a) Worgen Heritage Armor;a) EarthenDwarf Heritage Armor;a) Void Elf Heritage Armor;a) Lightforged Draenei Heritage Armor;a) Dark Iron Dwarf Heritage Armor;a) Kul Tiran Heritage Armor;a) Heritage Pandaren;a) Haranir Heritage Armor << Alliance
 #chapters a) Orc Heritage Armor;a) Undead Heritage Armor;a) Tauren Heritage Armor;a) Troll Heritage Armor;a) Blood Elf Heritage Armor;a) Goblin Heritage Armor;a) Nightborne Heritage Armor;a) Highmountain Heritage Armor;a) Mag'har Orc Heritage Armor;a) Zandalari Troll Heritage Armor;a) Vulpera Heritage Armor;a) Heritage Pandaren;a) Haranir Heritage Armor << Horde
 ]])
-
 -----------------------------------------------------
 --- ALLIANCE
 -----------------------------------------------------
-
 --Human
 RXPGuides.RegisterGuide([[
 #retail
@@ -3457,9 +3424,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF001|r - Human
 #next a) Dwarf Heritage Armor
 #chapter
-
 << Alliance
-
 step
     #label StartIncludePrepGuide
     #completewith next
@@ -3905,9 +3870,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF002|r - Dwarf
 #next a) Nightelf Heritage Armor
 #chapter
-
 << Alliance
-
 step
     #label StartIncludePrepGuide
     .goto 84,54.61,18.11
@@ -4193,9 +4156,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF003|r - Nightelf
 #next a) Gnome Heritage Armor
 #chapter
-
 << Alliance
-
 step
     #label StartIncludePrepGuide
     #completewith next
@@ -4524,9 +4485,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF004|r - Gnome
 #next a) Draenei Heritage Armor
 #chapter
-
 << Alliance
-
 step
     #label StartIncludePrepGuide
     #completewith next
@@ -4687,7 +4646,7 @@ step
     .isOnQuest 54640
     .exitvehicle >> |cRXP_WARN_Dismount the Gnomeregan Assault Tank by pressing the |r[Exit] |cRXP_WARN_button on your action bars.|r
     *|cRXP_WARN_Alternatively, you can use this macro;|r
-    .link /leavevehicle>> CLICK HERE FOR MACRO.
+    .macro Leave Vehicle,6656430 >>/leavevehicle
 step
     #loop
     .goto 120,38.23,59.93,40,0
@@ -4725,7 +4684,7 @@ step
     #completewith next
     .exitvehicle >> |cRXP_WARN_Dismount the First Squadron Prototype by pressing the |r[Exit] |cRXP_WARN_button on your action bars.|r
     *|cRXP_WARN_Alternatively, you can use this macro;|r
-    .link /leavevehicle>> CLICK HERE FOR MACRO.
+    .macro Leave Vehicle,6656430 >>/leavevehicle
 step
     .goto 120,56.13,51.42
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cog Captain Winklespring|r
@@ -4765,9 +4724,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF005|r - Draenei
 #next a) Worgen Heritage Armor
 #chapter
-
 << Alliance
-
 step
     #label StartIncludePrepGuide
     .goto 13,43.79,71.79
@@ -5195,9 +5152,7 @@ RXPGuides.RegisterGuide([[
 #displayname  |cFF1EFF006|r - Worgen
 #next a) Void Elf Heritage Armor
 #chapter
-
 << Alliance
-
 step
     #label StartIncludePrepGuide
     .goto 84,54.81,18.61
@@ -5399,9 +5354,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF007|r - Void Elf
 #next a) Lightforged Draenei Heritage Armor
 #chapter
-
 << Allianc
-
 step
     #label StartIncludePrepGuide
     #completewith next
@@ -5424,9 +5377,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF008|r - Lightforged Draeanei
 #next a) Dark Iron Dwarf Heritage Armor
 #chapter
-
 << Alliance
-
 step
     #label StartIncludePrepGuide
     #completewith next
@@ -5449,9 +5400,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF009|r - Dark Iron Dwarf
 #next a) Kul Tiran Heritage Armor
 #chapter
-
 << Alliance
-
 step
     #label StartIncludePrepGuide
     #completewith Heritage of the
@@ -5478,9 +5427,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF0010|r - Kul Tiran
 #next a) Mechagnome Heritage Armor
 #chapter
-
 << Alliance
-
 step
     #label StartIncludePrepGuide
     #completewith next
@@ -5500,9 +5447,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF0011|r - Mechagnome
 #next a) EarthenDwarf Heritage Armor
 #chapter
-
 << Alliance
-
 step
     #label StartIncludePrepGuide
     #completewith Heritage of the Mechagnome
@@ -5526,9 +5471,7 @@ RXPGuides.RegisterGuide([[
 #name a) EarthenDwarf Heritage Armor
 #displayname |cFF1EFF007|r - Earthen Dwarf
 #chapter
-
 << Alliance
-
 step
     >>Log into a level 50+ Earthen character to get this quest when you enter Dornogal.
     .accept 82771 >>Accept Heritage of the Earthen
@@ -5552,11 +5495,9 @@ step
     .turnin 82771 >>Turn in Heritage of the Earthen
     .target Dawn
 ]])
-
 -----------------------------------------------------
 --- HORDE
 -----------------------------------------------------
-
 --Orc
 RXPGuides.RegisterGuide([[
 #retail
@@ -5566,9 +5507,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF001|r - Orc
 #next a) Undead Heritage Armor
 #chapter
-
 << Horde
-
 step
     #label StartIncludePrepGuide
     #completewith next
@@ -5995,9 +5934,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF002|r - Undead
 #next a) Tauren Heritage Armor
 #chapter
-
 << Horde
-
 step
     #label StartIncludePrepGuide
     .goto 85,50.70,75.57
@@ -6508,9 +6445,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF003|r - Tauren
 #next a) Troll Heritage Armor
 #chapter
-
 << Horde
-
 step
     #label StartIncludePrepGuide
     .goto 88,60.29,51.73
@@ -6642,9 +6577,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF004|r - Troll
 #next a) Blood Elf Heritage Armor
 #chapter
-
 << Horde
-
 step
     #label StartIncludePrepGuide
     .goto 85,32.70,64.62
@@ -6841,7 +6774,6 @@ step
     .goto 50,70.38,48.96
     >>Wait until the objective completes.
     .complete 77877,2 --1/1 Ogre cave infiltrated
-
 step
     .goto 50,70.63,49.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rokhan|r
@@ -7108,9 +7040,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF005|r - Blood Elf
 #next a) Goblin Heritage Armor
 #chapter
-
 << Horde
-
 step
     #include RestedXP Collectables\a) Blood Elf Heritage Armor
 ]])
@@ -7121,7 +7051,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Collectables
 #name a) Blood Elf Heritage Armor2
 #internal
-
 step
     #label StartIncludePrepGuide
     .goto 85,39.13,79.01
@@ -7398,9 +7327,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF006|r - Goblin
 #next a) Nightborne Heritage Armor
 #chapter
-
 << Horde
-
 step
     #label StartIncludePrepGuide
     .goto 85,39.51,80.25
@@ -7649,9 +7576,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF007|r - Nightborne
 #next a) Highmountain Heritage Armor
 #chapter
-
 << Horde 
-
 step
     #label StartIncludePrepGuide
     #completewith next
@@ -7672,9 +7597,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF008|r - Highmountain
 #next a) Mag'har Orc Heritage Armor
 #chapter
-
 << Horde
-
 step
     #label StartIncludePrepGuide
     #completewith Heritage of Highmountain
@@ -7700,7 +7623,6 @@ RXPGuides.RegisterGuide([[
 #next a) Zandalari Troll Heritage Armor
 #chapter
 << Horde
-
 step
     #label StartIncludePrepGuide
     #completewith next
@@ -7721,7 +7643,6 @@ RXPGuides.RegisterGuide([[
 #next a) Vulpera Heritage Armor
 #chapter
 << Horde
-
 step
     #label StartIncludePrepGuide
     #completewith Heritage of Highmountain
@@ -7746,9 +7667,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF0011|r - Vulpera
 #next a) Heritage Pandaren
 #chapter
-
 << Horde
-
 step
     #label StartIncludePrepGuide
     #completewith next
@@ -7759,11 +7678,9 @@ step
     .turnin 58435 >>Turn in Heritage of the Vulpera
     .target Hagashi
 ]])
-
 -----------------------------------------------------
 --- NEUTRAL
 -----------------------------------------------------
-
 --Pandaren
 RXPGuides.RegisterGuide([[
 #retail
@@ -7773,7 +7690,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF0012|r - Pandaren
 #next a) Haranir Heritage Armor
 #chapter
-
 step << Horde
     .isOnQuest 84444
     .goto 85,70.32,38.96
@@ -8234,7 +8150,6 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF1EFF0013|r - Haranir
 #internal
 #chapter
-
 step
     >>zone 2413 >>Enter Harandar
     *|cRXP_WARN_Use|r |T5927658:0|t[Rootwalking] 
