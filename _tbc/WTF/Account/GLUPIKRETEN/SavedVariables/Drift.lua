@@ -18,8 +18,8 @@ DriftPoints = {
 ["relativeTo"] = "UIParent",
 ["point"] = "TOP",
 ["relativePoint"] = "TOP",
-["yOfs"] = -119.3440475463867,
-["xOfs"] = -238.4968109130859,
+["yOfs"] = -128.8678588867188,
+["xOfs"] = -264.951904296875,
 },
 ["SettingsPanel"] = {
 ["relativeTo"] = "UIParent",
@@ -44,10 +44,10 @@ DriftPoints = {
 },
 ["MacroFrame"] = {
 ["relativeTo"] = "UIParent",
-["point"] = "LEFT",
-["relativePoint"] = "LEFT",
-["yOfs"] = 107.4494323730469,
-["xOfs"] = 383.2176818847656,
+["point"] = "CENTER",
+["relativePoint"] = "CENTER",
+["yOfs"] = 96.3385238647461,
+["xOfs"] = -236.1419982910156,
 },
 ["ChatConfigFrame"] = {
 ["relativeTo"] = "UIParent",

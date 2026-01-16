@@ -79,28 +79,29 @@ local function Refresh()
 			if IsSpellKnownOrOverridesKnown(buff.spell_id) then
 				local frame = _G["buffbutton_" .. buff.short_name]
 				if not frame then
-					-- print("buffbutton_" .. buff.short_name .. " created")
+					-- print("buffbutton_" .. bcuff.short_name .. " created")
 					frame = CreateFrame(
 						"Button",
 						"buffbutton_" .. buff.short_name,
 						UIParent,
-						"SecureActionButtonTemplate,ActionButtonTemplate"
+						"SecureActionButtonTemplate, ActionButtonTemplate"
 					)
 					frame:SetAttribute("type1", "macro")
 					frame:SetAttribute("macrotext1", "/cast [@player] " .. buff.name)
+
+					-- frame:SetAttribute("type", "spell")
+					-- frame:SetAttribute("spell", "Demon Armor")
+					-- frame:SetAttribute("target-slot", 1) -- Self-cast
+
 					frame:SetFrameStrata("MEDIUM")
 					frame:CreateBeautyBorder(6)
 					frame:SetSize(36, 36)
 					frame:RegisterForClicks("AnyUp")
+
 					frame.texture = frame:CreateTexture(nil, "BACKGROUND")
 					frame.texture:SetSize(frame:GetSize())
 					frame.texture:SetPoint("CENTER")
 					frame.texture:SetTexture(GetSpellTexture(buff.spell_id))
-
-					-- frame.cooldown = CreateFrame("Cooldown", nil, frame, "CooldownFrameTemplate")
-					-- frame.cooldown:SetAllPoints(frame)
-					-- frame.cooldown:SetDrawEdge(false)
-					-- frame.cooldown:SetDrawSwipe(false)
 				end
 
 				local x = (index - 1) * shift

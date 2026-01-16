@@ -25,7 +25,7 @@ MSQ:AddSkin("BeautyBorder", {
 		Height = 40,
 	},
 	Pushed = {
-		Texture = "Interface\\AddOns\\Masque_Brownstone\\Textures\\tPushed3",
+		Texture = "Interface\\AddOns\\!Beautycase\\media\\texturePushed",
 		Width = 40,
 		Height = 40,
 		-- BlendMode = "ADD",
@@ -41,14 +41,14 @@ MSQ:AddSkin("BeautyBorder", {
 		-- Color = {0, 144 / 255, 1, 0.9}
 	},
 	Checked = {
-		Texture = "Interface\\AddOns\\Masque_Brownstone\\Textures\\tChecked",
+		Texture = "Interface\\AddOns\\!Beautycase\\media\\textureChecked",
 		Width = 33,
 		Height = 33,
 		BlendMode = "ADD",
 		-- Color = { 1, 246/255, 0, 0.9 },
 	},
 	Highlight = {
-		Texture = "Interface\\AddOns\\Masque_Brownstone\\Textures\\tHighlighted",
+		Texture = "Interface\\AddOns\\!Beautycase\\media\\textureHighlight",
 		Width = 33,
 		Height = 33,
 		BlendMode = "ADD",

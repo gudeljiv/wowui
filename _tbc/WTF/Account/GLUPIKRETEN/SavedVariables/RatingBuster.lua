@@ -25,26 +25,27 @@ RatingBusterDB = {
 ["Dopesnare - Living Flame"] = "Hunter",
 ["Mq - Celebras"] = "HUNTER",
 ["Vermins - Stitches"] = "WARRIOR",
-["Doperage - Thunderstrike"] = "Warrior",
-["Dopesnare - Thunderstrike"] = "Hunter",
-["Dopetrap - Lone Wolf"] = "HUNTER",
+["Dopeseal - Thunderstrike"] = "Paladin",
+["Jutarnjedrvo - Living Flame"] = "Shaman",
+["Vermin - Zandalar Tribe"] = "WARRIOR",
+["Dopemend - Living Flame"] = "Priest",
 ["Battitude - Zandalar Tribe"] = "ROGUE",
-["Dopeah - Stitches"] = "SHAMAN",
-["Dopeclaw - Thunderstrike"] = "Druid",
-["Doperage - Lone Wolf"] = "WARRIOR",
-["Turbonac - Celebras"] = "Warlock",
+["Dopestab - Lone Wolf"] = "ROGUE",
+["Dopetrap - Lone Wolf"] = "HUNTER",
+["Dopeclaw - Lone Wolf"] = "DRUID",
 ["Vermin - Celebras"] = "WARRIOR",
+["Doperage - Living Flame"] = "Warrior",
 ["Battlenac - Zandalar Tribe"] = "PRIEST",
 ["Dopecoil - Thunderstrike"] = "Warlock",
 ["Dopebolt - Living Flame"] = "Mage",
+["Turbonac - Celebras"] = "Warlock",
 ["Dopede - Stitches"] = "SHAMAN",
-["Doperage - Living Flame"] = "Warrior",
-["Dopeclaw - Lone Wolf"] = "DRUID",
-["Dopestab - Lone Wolf"] = "ROGUE",
-["Dopemend - Living Flame"] = "Priest",
+["Doperage - Lone Wolf"] = "WARRIOR",
+["Dopeclaw - Thunderstrike"] = "Druid",
+["Dopeah - Stitches"] = "SHAMAN",
 ["Dopeclaw - Stitches"] = "DRUID",
-["Vermin - Zandalar Tribe"] = "WARRIOR",
-["Jutarnjedrvo - Living Flame"] = "Shaman",
+["Dopesnare - Thunderstrike"] = "Hunter",
+["Doperage - Thunderstrike"] = "Warrior",
 },
 ["profiles"] = {
 ["HUNTER"] = {
@@ -59,23 +60,25 @@ RatingBusterDB = {
 },
 ["Mage"] = {
 },
-["PRIEST"] = {
+["Paladin"] = {
 },
-["Warrior"] = {
+["PRIEST"] = {
 },
 ["Warlock"] = {
 },
+["Druid"] = {
+},
 ["WARLOCK"] = {
 },
-["SHAMAN"] = {
+["DRUID"] = {
 },
 ["Priest"] = {
 },
 ["Hunter"] = {
 },
-["DRUID"] = {
+["SHAMAN"] = {
 },
-["Druid"] = {
+["Warrior"] = {
 },
 },
 }

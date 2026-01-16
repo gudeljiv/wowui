@@ -37,6 +37,7 @@ TomTomDB = {
 ["Dopeah - Stitches"] = "Default",
 ["Dopeclaw - Stitches"] = "Default",
 ["Dotwise - Golemagg"] = "Default",
+["Dopeseal - Thunderstrike"] = "Default",
 ["Greshnik - Dreadnaught"] = "Default",
 ["Dmitar - Golemagg"] = "Default",
 ["Dopetrap - Living Flame"] = "Default",
@@ -156,6 +157,7 @@ TomTomWaypointsM = {
 ["Dopeah - Stitches"] = "Dopeah - Stitches",
 ["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
 ["Dotwise - Golemagg"] = "Dotwise - Golemagg",
+["Dopeseal - Thunderstrike"] = "Dopeseal - Thunderstrike",
 ["Greshnik - Dreadnaught"] = "Greshnik - Dreadnaught",
 ["Dmitar - Golemagg"] = "Dmitar - Golemagg",
 ["Dopetrap - Living Flame"] = "Dopetrap - Living Flame",
@@ -274,6 +276,8 @@ TomTomWaypointsM = {
 ["Dopeclaw - Stitches"] = {
 },
 ["Dotwise - Golemagg"] = {
+},
+["Dopeseal - Thunderstrike"] = {
 },
 ["Greshnik - Dreadnaught"] = {
 },

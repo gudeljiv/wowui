@@ -2,17 +2,20 @@
 
 if not AL then return end
 
--- These localization strings are translated on Curseforge: https://www.curseforge.com/wow/addons/atlaslootclassic/localization
---@localization(locale="zhCN", format="lua_additive_table", table-name="AL", handle-unlocalized="ignore")@AL["--- or ---"] = "--- 或 ---"
+AL["--- or ---"] = "--- 或 ---"
 AL["%s will finish loading after combat."] = "%s 将会在战斗结束后载入。"
 AL["(%d) Set:"] = "(%d) 套装："
+--[[Translation missing --]]
+--[[ AL["(obsolete)"] = "(obsolete)"--]]
+--[[Translation missing --]]
+--[[ AL["(owned)"] = "(owned)"--]]
 AL["/al - Open the AtlasLoot window."] = "/al - 打开 AtlasLoot 窗口。"
 AL["/al mmb - Toggle MiniMapButton"] = "/al mmb - 小地图开关"
 AL["/al options - Open AtlasLoot Options window."] = "/al options - 打开 AtlasLoot 选项窗口。"
 AL["/al slash - Prints a list of all slash commands."] = "/al slash - 显示所有斜杠命令列表。"
 AL["/al togglebg - Toggle the background image on loottables."] = "/al togglebg - 切换拾取框的背景图。"
 AL["|cff00ff00Left-Click:|r %s"] = "|cff00ff00左键:|r %s"
-AL["|cff00ff00Left-Click:|r Show reagents."] = "|cff00ff00左键:|r 显示试剂"
+AL["|cff00ff00Left-Click:|r Show reagents"] = "|cff00ff00左键:|r 显示试剂"
 AL["|cff00ff00Right-Click:|r Change Class"] = "|cff00ff00右键:|r 更改职业"
 AL["|cff00ff00Set item:|r "] = "|cff00ff00套装物品:|r"
 AL["10 Raid"] = "10人团队"
@@ -31,6 +34,8 @@ AL["Add profession link into chat"] = "在聊天中插入专业链接"
 AL["Add sound into chat"] = "将音效贴到聊天窗口"
 AL["Alliance Vanguard"] = "联盟先遣军"
 AL["Alt + Left Click"] = "Alt + 左键"
+--[[Translation missing --]]
+--[[ AL["Alt + Right Click"] = "Alt + Right Click"--]]
 AL["Anub'Rekhan"] = "阿努布雷坎"
 AL["AQ opening"] = "安其拉开门事件"
 AL["Arena"] = "竞技场"
@@ -43,7 +48,13 @@ AL["Bonus"] = "奖励"
 AL["Bought with..."] = "用来购买…"
 AL["Bow"] = "弓"
 AL["Brutal %s"] = "野蛮 %s"
+--[[Translation missing --]]
+--[[ AL["Cancel"] = "Cancel"--]]
+--[[Translation missing --]]
+--[[ AL["Change item note"] = "Change item note"--]]
 AL["Chat Link"] = "聊天链接"
+--[[Translation missing --]]
+--[[ AL["Chat-Link"] = "Chat-Link"--]]
 AL["Classic"] = "经典旧世"
 AL["Click to open Atlas instance map."] = "点击打开 Atlas 副本地图"
 AL["Collections"] = "收藏品"
@@ -64,10 +75,14 @@ AL["Dress up"] = "试穿"
 AL["Droprate:"] = "掉落率:"
 AL["Dungeons and Raids"] = "地下城和团队副本"
 AL["Enhancements"] = "附魔"
+--[[Translation missing --]]
+--[[ AL["Enter a note for %s"] = "Enter a note for %s"--]]
 AL["Factions"] = "声望阵营"
 AL["Favourites"] = "偏好"
 AL["Fishing Pole"] = "鱼竿"
 AL["Fist Weapon"] = "拳套"
+--[[Translation missing --]]
+--[[ AL["Furious %s"] = "Furious %s"--]]
 AL["Global base list"] = "整体列表"
 AL["Global lists"] = "整体列表"
 AL["Gluth"] = "格拉斯"
@@ -86,6 +101,8 @@ AL["Heroic"] = "英雄"
 AL["Heroic Sanctified %s"] = "英雄神圣 %s"
 AL["Honor Hold"] = "荣耀堡"
 AL["Horde Expedition"] = "部落先遣军"
+--[[Translation missing --]]
+--[[ AL["Import done!"] = "Import done!"--]]
 AL["Instructor Razuvious"] = "教官拉苏维奥斯"
 AL["Item level:"] = "物品等级："
 AL["ItemID:"] = "物品ID:"
@@ -97,12 +114,16 @@ AL["Kurenai"] = "库雷尼"
 AL["Lady Falther'ess"] = "法瑟蕾丝夫人"
 AL["L-Click"] = "左键"
 AL["Left Click"] = "鼠标左击"
+--[[Translation missing --]]
+--[[ AL["List received. Click link again to import!"] = "List received. Click link again to import!"--]]
 AL["Lists"] = "列表"
 AL["Loatheb"] = "洛欧塞布"
 AL["Loot"] = "战利品"
 AL["Lord Blackwood"] = "布莱克伍德公爵"
 AL["Maexxna"] = "迈克斯纳"
 AL["Main"] = "主体"
+--[[Translation missing --]]
+--[[ AL["Malformed link"] = "Malformed link"--]]
 AL["Middle Click"] = "中键点击"
 AL["Misc"] = "其他"
 AL["Model"] = "模型"
@@ -130,10 +151,16 @@ AL["PvP"] = "PvP"
 AL["Quest"] = "任务"
 AL["Quest objective."] = "任务目标"
 AL["Reagent for..."] = "试剂来自..."
+--[[Translation missing --]]
+--[[ AL["Received unexpected favourite list '%s' (expected '%s')"] = "Received unexpected favourite list '%s' (expected '%s')"--]]
 AL["Recipe"] = "配方"
 AL["Regen"] = "恢复"
+--[[Translation missing --]]
+--[[ AL["Relentless %s"] = "Relentless %s"--]]
 AL["Remove item from list"] = "在列表中移除"
 AL["Reputation"] = "声望"
+--[[Translation missing --]]
+--[[ AL["Requesting favorite list from %s ..."] = "Requesting favorite list from %s ..."--]]
 AL["Required module %s is currently disabled."] = "需求模块%s已被禁用"
 AL["Required module %s is not installed."] = "没有安装需求的模块 %s 。"
 AL["Revanchion"] = "报复"
@@ -142,6 +169,8 @@ AL["Right-click to close Atlas window."] = "右键关闭 Atlas 窗口"
 AL["Sanctified %s"] = "神圣 %s"
 AL["Sapphiron"] = "萨菲隆"
 AL["Savage %s"] = "凶残 %s"
+--[[Translation missing --]]
+--[[ AL["Save"] = "Save"--]]
 AL["Scorn"] = "蔑视"
 AL["Select Module"] = "选择掉落表"
 AL["Select Subcategory"] = "选择子类别"
@@ -193,17 +222,5 @@ AL["Vendor"] = "商人"
 AL["Wand"] = "魔杖"
 AL["Weapons"] = "武器"
 AL["Wintersaber Trainers"] = "冬刃豹训练师"
-AL["Tier %s Tokens"] = "%s 级令牌"
-AL["Seasonal"] = "季节性"
-AL["P1-P3"] = "P1-P3"
-AL["P4"] = "P4"
-AL["Materials"] = "材料"
-AL["Potions"] = "药水"
-AL["Shields"] = "盾牌"
-AL["Wild Offerings"] = "野生祭品"
-AL["Wild Offering Rewards"] = "狂野祭祀奖励"
-AL["Replacements"] = "替换品"
-AL["Tarnished Undermine Real"] = "失去光泽破坏真实"
-AL["Rewards"] = "奖励"
-AL["Firelands Ember"] = "火焰之地余烬"
-AL["Supply Crate"] = "补给箱"
+--[[Translation missing --]]
+--[[ AL["Wrathful %s"] = "Wrathful %s"--]]

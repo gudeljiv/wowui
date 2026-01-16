@@ -9,7 +9,7 @@ local print = _G.print
 local tonumber = _G.tonumber
 
 --[[ luacheck: globals
-	AlertFrame CreateFrame GetAddOnMetadata InCombatLockdown InterfaceOptions_AddCategory
+	AlertFrame CreateFrame C_AddOns.GetAddOnMetadata InCombatLockdown InterfaceOptions_AddCategory
 	InterfaceOptionsFrame_Show InterfaceOptionsFramePanelContainer LibStub SlashCmdList
 
 	ITEM_QUALITY_COLORS ITEM_QUALITY1_DESC ITEM_QUALITY2_DESC ITEM_QUALITY3_DESC ITEM_QUALITY4_DESC
@@ -17,7 +17,7 @@ local tonumber = _G.tonumber
 ]]
 
 -- Mine
-E.VER = tonumber(GetAddOnMetadata(addonName, "Version"):gsub("%D", ""), nil)
+E.VER = tonumber(C_AddOns.GetAddOnMetadata(addonName, "Version"):gsub("%D", ""), nil)
 
 local STRATAS = {
 	[1] = "BACKGROUND",
@@ -27,7 +27,7 @@ local STRATAS = {
 	[5] = "DIALOG",
 }
 
-local STRATA_INDICES ={
+local STRATA_INDICES = {
 	["BACKGROUND"] = 1,
 	["LOW"] = 2,
 	["MEDIUM"] = 3,
@@ -91,7 +91,9 @@ E:RegisterEvent("ADDON_LOADED", function(arg1)
 				order = 3,
 				type = "execute",
 				name = L["FLUSH_QUEUE"],
-				func = function() P:FlushQueue() end,
+				func = function()
+					P:FlushQueue()
+				end,
 			},
 			general = {
 				order = 10,
@@ -171,7 +173,7 @@ E:RegisterEvent("ADDON_LOADED", function(arg1)
 									[5] = ITEM_QUALITY_COLORS[5].hex .. ITEM_QUALITY5_DESC .. "|r",
 								},
 							},
-						}
+						},
 					},
 					font = {
 						order = 21,
@@ -186,19 +188,23 @@ E:RegisterEvent("ADDON_LOADED", function(arg1)
 								dialogControl = "LSM30_Font",
 								values = LibStub("LibSharedMedia-3.0"):HashTable("font"),
 								get = function()
-									return LibStub("LibSharedMedia-3.0"):IsValid("font", C.db.profile.font.name) and C.db.profile.font.name or LibStub("LibSharedMedia-3.0"):GetDefault("font")
+									return LibStub("LibSharedMedia-3.0"):IsValid("font", C.db.profile.font.name)
+											and C.db.profile.font.name
+										or LibStub("LibSharedMedia-3.0"):GetDefault("font")
 								end,
 								set = function(_, value)
 									C.db.profile.font.name = value
 
 									P:UpdateFont()
-								end
+								end,
 							},
 							size = {
 								order = 2,
 								type = "range",
 								name = L["SIZE"],
-								min = 10, max = 20, step = 1,
+								min = 10,
+								max = 20,
+								step = 1,
 								get = function()
 									return C.db.profile.font.size
 								end,

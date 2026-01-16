@@ -1663,7 +1663,7 @@ data["SilithusAbyssal"] = {
 	ContentType = WORLD_EVENT_CONTENT,
 	LoadDifficulty = NORMAL_DIFF,
 	TableType = NORMAL_ITTYPE,
-	ContentPhase = 4,
+	ContentPhase = 5,
 	gameVersion = AtlasLoot.CLASSIC_VERSION_NUM,
 	items = {
 		{ -- AbyssalDukes

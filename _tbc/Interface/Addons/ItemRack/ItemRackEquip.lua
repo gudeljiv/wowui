@@ -1,28 +1,35 @@
+-- Hack for TBC Anniversary Pre-Patch (C_AddOns compatibility) - Confirmed Jan 15, 2026
+local EnableAddOn        = C_AddOns and C_AddOns.EnableAddOn        or EnableAddOn
+local LoadAddOn          = C_AddOns and C_AddOns.LoadAddOn          or LoadAddOn
+local IsAddOnLoaded      = C_AddOns and C_AddOns.IsAddOnLoaded      or IsAddOnLoaded
+local GetAddOnMetadata   = C_AddOns and C_AddOns.GetAddOnMetadata   or GetAddOnMetadata
+-- End Hack
+
 -- ItemRackEquip.lua : ItemRack.EquipSet and its supporting functions.
 local GetContainerNumSlots, GetContainerItemLink, GetContainerItemCooldown, GetContainerItemInfo, GetItemCooldown, PickupContainerItem, ContainerIDToInventoryID
+
+-- Anniversary/TBC compatibility: prefer C_Container, fallback to old globals if they exist
 if C_Container then
-	GetContainerNumSlots = C_Container.GetContainerNumSlots
-	GetContainerItemLink = C_Container.GetContainerItemLink
-	GetContainerItemCooldown = C_Container.GetContainerItemCooldown
-	GetItemCooldown = C_Container.GetItemCooldown
-	PickupContainerItem = C_Container.PickupContainerItem
-	ContainerIDToInventoryID = C_Container.ContainerIDToInventoryID
-	GetContainerItemInfo = function(bag, slot)
-		local info = C_Container.GetContainerItemInfo(bag, slot)
-		if info then
-			return info.iconFileID, info.stackCount, info.isLocked, info.quality, info.isReadable, info.hasLoot, info.hyperlink, info.isFiltered, info.hasNoValue, info.itemID, info.isBound
-		else
-			return
-		end
-	end
+    GetContainerNumSlots      = C_Container.GetContainerNumSlots
+    GetContainerItemLink      = C_Container.GetContainerItemLink
+    GetContainerItemCooldown  = C_Container.GetContainerItemCooldown
+    PickupContainerItem       = C_Container.PickupContainerItem
+    ContainerIDToInventoryID  = C_Container.ContainerIDToInventoryID
+
+    -- Provide classic-style returns from retail-style table
+    function GetContainerItemInfo(bag, slot)
+        local info = C_Container.GetContainerItemInfo(bag, slot)
+        if info then
+            return info.iconFileID, info.stackCount, info.isLocked, info.quality,
+                   info.isReadable, info.hasLoot, info.hyperlink, info.isFiltered,
+                   info.hasNoValue, info.itemID, info.isBound
+        end
+    end
 else
-	GetContainerNumSlots, GetContainerItemLink, GetContainerItemCooldown, GetContainerItemInfo, GetItemCooldown, PickupContainerItem, ContainerIDToInventoryID =
-	_G.GetContainerNumSlots, _G.GetContainerItemLink, _G.GetContainerItemCooldown, _G.GetContainerItemInfo, _G.GetItemCooldown, _G.PickupContainerItem, _G.ContainerIDToInventoryID
+    GetContainerNumSlots, GetContainerItemLink, GetContainerItemCooldown, GetContainerItemInfo, GetItemCooldown, PickupContainerItem, ContainerIDToInventoryID =
+        _G.GetContainerNumSlots, _G.GetContainerItemLink, _G.GetContainerItemCooldown, _G.GetContainerItemInfo, _G.GetItemCooldown, _G.PickupContainerItem, _G.ContainerIDToInventoryID
 end
 
-ItemRack.SwapList = {} -- table of item ids that want to swap in, indexed by slot
-ItemRack.AbortSwap = nil -- reasons: 1=not enough room, 2=item on cursor, 3=in spell targeting mode, 4=item lock
-ItemRack.AbortReasons = {"Not enough room.","Something is on the cursor.","In spell targeting mode.","Another swap is in progress."}
 
 ItemRack.SetsWaiting = {} -- numerically indexed table of {"setname",func} ie {"pvp",ItemRack.EquipSet}
 
@@ -154,7 +161,9 @@ function ItemRack.EquipSet(setname)
 	end
 	local set = ItemRackUser.Sets[setname]
 	local swap = ItemRack.SwapList
-	for i in pairs(swap) do
+ItemRack.SwapList = ItemRack.SwapList or {}
+local swap = ItemRack.SwapList
+	for i in pairs(swap or {}) do
 		swap[i] = nil
 	end
 	local inv,bag,slot

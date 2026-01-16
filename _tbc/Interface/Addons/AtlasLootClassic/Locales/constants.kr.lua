@@ -2,17 +2,20 @@
 
 if not AL then return end
 
--- These localization strings are translated on Curseforge: https://www.curseforge.com/wow/addons/atlaslootclassic/localization
 AL["--- or ---"] = "--- 또는 ---"
 AL["%s will finish loading after combat."] = "전투 후 %s 불러오기가 완료됩니다."
 AL["(%d) Set:"] = "(%d) 세트:"
+--[[Translation missing --]]
+--[[ AL["(obsolete)"] = "(obsolete)"--]]
+--[[Translation missing --]]
+--[[ AL["(owned)"] = "(owned)"--]]
 AL["/al - Open the AtlasLoot window."] = "/al - AtlasLoot 창 열기."
 AL["/al mmb - Toggle MiniMapButton"] = "/al mmb - 미니맵 버튼 토글"
 AL["/al options - Open AtlasLoot Options window."] = "/al options - AtlasLoot 옵션 창 열기."
 AL["/al slash - Prints a list of all slash commands."] = "/al slash - 모든 슬래쉬 명령어 목록 출력."
 AL["/al togglebg - Toggle the background image on loottables."] = "/al togglebg - 전리품 테이블의 배경 이미지 전환"
 AL["|cff00ff00Left-Click:|r %s"] = "|cff00ff00좌-클릭:|r %s"
-AL["|cff00ff00Left-Click:|r Show reagents."] = "|cff00ff00좌-클릭:|r 재료 표시"
+AL["|cff00ff00Left-Click:|r Show reagents"] = "|cff00ff00좌-클릭:|r 재료 표시"
 AL["|cff00ff00Right-Click:|r Change Class"] = "|cff00ff00우클릭:|r 직업 변경"
 AL["|cff00ff00Set item:|r "] = "|cff00ff00세트 아이템:|r"
 AL["10 Raid"] = "10인 공격대"
@@ -41,14 +44,21 @@ AL["AtlasLoot"] = "AtlasLoot"
 AL["AtlasLoot Modules"] = "AtlasLoot 모듈"
 AL["Balzaphon"] = "발자폰"
 AL["Bonus"] = "보조능력치"
+--[[Translation missing --]]
+--[[ AL["Bought with..."] = "Bought with..."--]]
 AL["Bow"] = "화살"
 AL["Brutal %s"] = "야만적인 %s"
+AL["Cancel"] = "취소"
+AL["Change item note"] = "아이템 노트 수정"
 AL["Chat Link"] = "대화창 링크"
+AL["Chat-Link"] = "대화창 링크"
 AL["Classic"] = "클래식"
 AL["Click to open Atlas instance map."] = "클릭해 Atlas 던전 지도 열기."
 AL["Collections"] = "수집품"
 AL["Command %s not found. Use '/al slash' for a full list of commands"] = "명령어 %s|1을;를; 찾을 수 없음. 전체 명령어 목록은 '/al slash'를 사용하십시오."
 AL["Conqueror's %s"] = "정복자의 %s"
+--[[Translation missing --]]
+--[[ AL["Contains."] = "Contains."--]]
 AL["Content phase:"] = "내용 단계:"
 AL["Copy Box"] = "복사 박스"
 AL["Coren Direbrew"] = "코렌 다이어브루"
@@ -63,10 +73,14 @@ AL["Dress up"] = "입기"
 AL["Droprate:"] = "드랍율:"
 AL["Dungeons and Raids"] = "던전과 공격대"
 AL["Enhancements"] = "강화"
+--[[Translation missing --]]
+--[[ AL["Enter a note for %s"] = "Enter a note for %s"--]]
 AL["Factions"] = "평판"
 AL["Favourites"] = "즐겨찾기"
 AL["Fishing Pole"] = "낚싯대"
 AL["Fist Weapon"] = "장착무기"
+--[[Translation missing --]]
+--[[ AL["Furious %s"] = "Furious %s"--]]
 AL["Global base list"] = "전역 기반 목록"
 AL["Global lists"] = "전역 목록"
 AL["Gluth"] = "글루스"
@@ -75,6 +89,8 @@ AL["Gothik the Harvester"] = "영혼착취자 고딕"
 AL["Grand Widow Faerlina"] = "귀부인 팰리나"
 AL["Grobbulus"] = "그라불루스"
 AL["Gun"] = "총"
+--[[Translation missing --]]
+--[[ AL["H"] = "H"--]]
 AL["Hateful %s"] = "원한에 찬 검투사 %s"
 AL["Headless Horseman"] = "저주받은 기사"
 AL["Heigan the Unclean"] = "부정의 헤이건"
@@ -84,6 +100,8 @@ AL["Heroic"] = "영웅"
 AL["Heroic Sanctified %s"] = "정화된 %s"
 AL["Honor Hold"] = "명예의 요새"
 AL["Horde Expedition"] = "호드 원정대"
+--[[Translation missing --]]
+--[[ AL["Import done!"] = "Import done!"--]]
 AL["Instructor Razuvious"] = "훈련교관 라주비어스"
 AL["Item level:"] = "아이템 레벨:"
 AL["ItemID:"] = "아이템ID:"
@@ -95,17 +113,23 @@ AL["Kurenai"] = "쿠레나이"
 AL["Lady Falther'ess"] = "귀부인 팔데리스"
 AL["L-Click"] = "좌클릭"
 AL["Left Click"] = "좌클릭"
+--[[Translation missing --]]
+--[[ AL["List received. Click link again to import!"] = "List received. Click link again to import!"--]]
 AL["Lists"] = "목록"
 AL["Loatheb"] = "로데브"
 AL["Loot"] = "전리품"
 AL["Lord Blackwood"] = "군주 블랙우드"
 AL["Maexxna"] = "맥스나"
 AL["Main"] = "일반"
+--[[Translation missing --]]
+--[[ AL["Malformed link"] = "Malformed link"--]]
 AL["Middle Click"] = "휠클릭"
 AL["Misc"] = "기타"
 AL["Model"] = "모델"
 AL["Module %s is deactivated."] = "모듈 %s|1이;가; 비활성화됨."
 AL["Module %s is not installed."] = "모듈 %s|1이;가; 설치되지 않음."
+--[[Translation missing --]]
+--[[ AL["N"] = "N"--]]
 AL["New version available!"] = "새버전 사용가능"
 AL["No module found."] = "모듈을 찾을 수 없음."
 AL["Normal"] = "일반"
@@ -127,11 +151,15 @@ AL["PvP"] = "PvP"
 AL["Quest"] = "퀘스트"
 AL["Quest objective."] = "퀘스트 목표."
 AL["Reagent for..."] = "재료..."
+--[[Translation missing --]]
+--[[ AL["Received unexpected favourite list '%s' (expected '%s')"] = "Received unexpected favourite list '%s' (expected '%s')"--]]
 AL["Recipe"] = "조리법"
 AL["Regen"] = "재생"
 AL["Relentless %s"] = "냉혹한 %s"
 AL["Remove item from list"] = "목록의 아이템 제거"
 AL["Reputation"] = "평판"
+--[[Translation missing --]]
+--[[ AL["Requesting favorite list from %s ..."] = "Requesting favorite list from %s ..."--]]
 AL["Required module %s is currently disabled."] = "필수 모듈 %s|1이;가; 현재 비활성됨."
 AL["Required module %s is not installed."] = "필수 모듈 %s|1이;가; 설치되지 않았습니다."
 AL["Revanchion"] = "레반치온"
@@ -140,6 +168,7 @@ AL["Right-click to close Atlas window."] = "우클릭하여 Atlas 창을 닫습�
 AL["Sanctified %s"] = "정화된 %s"
 AL["Sapphiron"] = "사피론"
 AL["Savage %s"] = "잔인한 검투사 %s"
+AL["Save"] = "저장"
 AL["Scorn"] = "냉소의 영혼"
 AL["Select Module"] = "모듈 선택"
 AL["Select Subcategory"] = "하위분류 선택"
@@ -192,17 +221,3 @@ AL["Wand"] = "마법봉"
 AL["Weapons"] = "무기"
 AL["Wintersaber Trainers"] = "눈호랑이 조련사"
 AL["Wrathful %s"] = "분노한 %s"
-AL["Tier %s Tokens"] = "등급 %s 토큰"
-AL["Seasonal"] = "계절별"
-AL["P1-P3"] = "P1-P3"
-AL["P4"] = "P4"
-AL["Materials"] = "재료"
-AL["Potions"] = "물약"
-AL["Shields"] = "방패"
-AL["Wild Offerings"] = "야생의 제물"
-AL["Wild Offering Rewards"] = "야생의 공물 보상"
-AL["Replacements"] = "교체품"
-AL["Tarnished Undermine Real"] = "변색된 언더마인 Real"
-AL["Rewards"] = "보상"
-AL["Firelands Ember"] = "불의 땅 앰버"
-AL["Supply Crate"] = "보급 상자"

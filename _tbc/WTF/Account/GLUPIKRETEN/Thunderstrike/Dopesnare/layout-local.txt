@@ -209,6 +209,13 @@ X: 53
 Y: -34
 W: 1024
 H: 712
+Frame: RARESCANNER_BUTTON
+FrameLevel: 200
+Anchor: TOP
+X: 0
+Y: -189
+W: 200
+H: 50
 Frame: TellMeWhen_ConfigWarning
 FrameLevel: 1
 Anchor: TOP

@@ -26,7 +26,7 @@ local QuestieCombatQueue = QuestieLoader:ImportModule("QuestieCombatQueue")
 local l10n = QuestieLoader:ImportModule("l10n")
 
 local LSM30 = LibStub("LibSharedMedia-3.0")
-local C_AddOns.IsAddOnLoaded = C_AddOns.IsAddOnLoaded or C_AddOns.IsAddOnLoaded
+local IsAddOnLoaded = C_AddOns.IsAddOnLoaded or IsAddOnLoaded
 
 local headerFrame, trackerBaseFrame
 
@@ -89,7 +89,7 @@ function TrackerHeaderFrame.Initialize(baseFrame, OnTrackedQuestClick)
         GameTooltip:AddLine(Questie:Colorize(l10n("Left Click + Hold") .. ": ", "gray") .. l10n("Drag while Unlocked"))
         GameTooltip:AddLine(Questie:Colorize(l10n("Ctrl + Left Click + Hold") .. ": ", "gray") .. l10n("Drag while Locked"))
 
-        local VoiceOver, TomTom = TrackerUtils:IsVoiceOverLoaded(), C_AddOns.IsAddOnLoaded("TomTom")
+        local VoiceOver, TomTom = TrackerUtils:IsVoiceOverLoaded(), IsAddOnLoaded("TomTom")
 
         if VoiceOver or TomTom then
             GameTooltip:AddLine(" ")

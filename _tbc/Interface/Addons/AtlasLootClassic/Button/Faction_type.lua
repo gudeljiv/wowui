@@ -1,9 +1,11 @@
 local _G = getfenv(0)
+
 -- lua
 local tonumber, type = tonumber, type
 local str_match, str_format = string.match, string.format
+
 -- WoW
-local UnitSex, GetFactionInfoByID, GetFriendshipReputation = UnitSex, GetFactionInfoByID, GetFriendshipReputation
+local UnitSex, GetFactionInfoByID = UnitSex, GetFactionInfoByID
 
 local AtlasLoot = _G.AtlasLoot
 local Faction = AtlasLoot.Button:AddType("Faction", "f")
@@ -35,7 +37,7 @@ local TT_NO_REV = "|cff00ff00"..NO
 
 local FACTION_REP_COLORS
 local FACTION_IMAGES = {
-	[0] = "Interface\\Icons\\Achievement_Reputation_08",			-- dummy
+	[0] = "Interface\\Icons\\Achievement_Reputation_08", -- dummy
 
 	-- AV
 	[729] = "Interface\\Icons\\INV_BannerPVP_01", -- Frostwolf Clan
@@ -48,45 +50,45 @@ local FACTION_IMAGES = {
 	[890] = "Interface\\Icons\\INV_BannerPVP_02", -- Silverwing Sentinels
 
 	-- Classic
-	[47] = "Interface\\Icons\\inv_misc_tournaments_symbol_dwarf",		--Ironforge
-	[54] = "Interface\\Icons\\inv_misc_tournaments_symbol_gnome",		--Gnomeregan
-	[59] = "Interface\\Icons\\INV_Ingot_Mithril",						--Thorium Brotherhood
-	[68] = "Interface\\Icons\\inv_misc_tournaments_symbol_scourge",		--Undercity
-	[69] = "Interface\\Icons\\inv_misc_tournaments_banner_nightelf",	--Darnassus
-	[72] = "Interface\\Icons\\inv_misc_tournaments_symbol_human",		--Stormwind
-	[76] = "Interface\\Icons\\inv_misc_tournaments_symbol_orc",			--Orgrimmar
-	[81] = "Interface\\Icons\\inv_misc_tournaments_symbol_tauren",		--Thunder Bluff
-	[87] = "Interface\\Icons\\INV_Helmet_66",							--Bloodsail Buccaneers
-	[270] = "Interface\\Icons\\inv_jewelry_ring_46",					--Bloodsail Buccaneers
-	[529] = "Interface\\Icons\\inv_jewelry_talisman_07",				--Argent Dawn
-	[530] = "Interface\\Icons\\inv_misc_tournaments_symbol_troll",		--Darkspear Trolls
-	[576] = "Interface\\Icons\\inv_misc_horn_01",						--Timbermaw Hold
-	[589] = "Interface\\Icons\\ability_mount_pinktiger",				--Wintersaber Trainers
-	[609] = "Interface\\Icons\\ability_racial_ultravision",				--Cenarion Circle
-	[749] = "Interface\\Icons\\spell_shadow_demonbreath",				--Hydraxian Waterlords
-	[910] = "Interface\\Icons\\inv_misc_head_dragon_bronze",			--Brood of Nozdormu
+	[47] = "Interface\\Icons\\inv_misc_tournaments_symbol_dwarf", --Ironforge
+	[54] = "Interface\\Icons\\inv_misc_tournaments_symbol_gnome", --Gnomeregan
+	[59] = "Interface\\Icons\\INV_Ingot_Mithril",                 --Thorium Brotherhood
+	[68] = "Interface\\Icons\\inv_misc_tournaments_symbol_scourge", --Undercity
+	[69] = "Interface\\Icons\\inv_misc_tournaments_banner_nightelf", --Darnassus
+	[72] = "Interface\\Icons\\inv_misc_tournaments_symbol_human", --Stormwind
+	[76] = "Interface\\Icons\\inv_misc_tournaments_symbol_orc",   --Orgrimmar
+	[81] = "Interface\\Icons\\inv_misc_tournaments_symbol_tauren", --Thunder Bluff
+	[87] = "Interface\\Icons\\INV_Helmet_66",                     --Bloodsail Buccaneers
+	[270] = "Interface\\Icons\\inv_jewelry_ring_46",              --Bloodsail Buccaneers
+	[529] = "Interface\\Icons\\inv_jewelry_talisman_07",          --Argent Dawn
+	[530] = "Interface\\Icons\\inv_misc_tournaments_symbol_troll", --Darkspear Trolls
+	[576] = "Interface\\Icons\\inv_misc_horn_01",                 --Timbermaw Hold
+	[589] = "Interface\\Icons\\ability_mount_pinktiger",          --Wintersaber Trainers
+	[609] = "Interface\\Icons\\ability_racial_ultravision",       --Cenarion Circle
+	[749] = "Interface\\Icons\\spell_shadow_demonbreath",         --Hydraxian Waterlords
+	[910] = "Interface\\Icons\\inv_misc_head_dragon_bronze",      --Brood of Nozdormu
 
 	-- BC
-	[922] = "Interface\\Icons\\INV_Misc_Bandana_03", 					-- Tranquillien
-	[932] = "Interface\\Icons\\Spell_Holy_SealOfSalvation",				-- The Aldor
-	[933] = "Interface\\Icons\\INV_Weapon_Shortblade_31", 				-- TheConsortium
-	[934] = "Interface\\Icons\\Spell_Holy_ChampionsBond",				-- The Scryers
-	[935] = "Interface\\Icons\\Spell_Nature_LightningOverload",			-- The Sha'tar
-	[941] = "Interface\\Icons\\INV_Misc_Foot_Centaur", 					-- The Mag'har
-	[942] = "Interface\\Icons\\INV_Misc_Ammo_Arrow_02",			 		-- Cenarion Expedition
-	[946] = "Interface\\Icons\\INV_BannerPVP_02", 						-- Honor Hold
-	[947] = "Interface\\Icons\\INV_BannerPVP_01", 						-- Thrallmar
-	[967] = "Interface\\Icons\\INV_Jewelry_Ring_62", 					-- The Violet Eye
-	[970] = "Interface\\Icons\\INV_Mushroom_10", 						-- Sporeggar
-	[978] = "Interface\\Icons\\INV_Misc_Foot_Centaur", 					-- Kurenai
-	[989] = "Interface\\Icons\\Ability_Warrior_VictoryRush", 			-- Keepers of Time
-	[990] = "Interface\\Icons\\INV_Misc_MonsterScales_13", 				-- The Scale of the Sands
-	[1011] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety",		-- Lower City
-	[1012] = "Interface\\Icons\\INV_Misc_Gem_Pearl_05", 				-- Ashtongue Deathsworn
-	[1015] = "Interface\\Icons\\Ability_Mount_Netherdrakepurple", 		-- Netherwing
-	[1031] = "Interface\\Icons\\INV_Misc_Ribbon_01",					-- Sha'tari Skyguard
-	[1038] = "Interface\\Icons\\INV_DataCrystal01", 					-- Ogri'la
-	[1077] = "Interface\\Icons\\INV_Misc_Statue_04",					-- Shattered Sun Offensive
+	[922] = "Interface\\Icons\\INV_Misc_Bandana_03",           -- Tranquillien
+	[932] = "Interface\\Icons\\Spell_Holy_SealOfSalvation",    -- The Aldor
+	[933] = "Interface\\Icons\\INV_Weapon_Shortblade_31",      -- TheConsortium
+	[934] = "Interface\\Icons\\Spell_Holy_ChampionsBond",      -- The Scryers
+	[935] = "Interface\\Icons\\Spell_Nature_LightningOverload", -- The Sha'tar
+	[941] = "Interface\\Icons\\INV_Misc_Foot_Centaur",         -- The Mag'har
+	[942] = "Interface\\Icons\\INV_Misc_Ammo_Arrow_02",        -- Cenarion Expedition
+	[946] = "Interface\\Icons\\INV_BannerPVP_02",              -- Honor Hold
+	[947] = "Interface\\Icons\\INV_BannerPVP_01",              -- Thrallmar
+	[967] = "Interface\\Icons\\INV_Jewelry_Ring_62",           -- The Violet Eye
+	[970] = "Interface\\Icons\\INV_Mushroom_10",               -- Sporeggar
+	[978] = "Interface\\Icons\\INV_Misc_Foot_Centaur",         -- Kurenai
+	[989] = "Interface\\Icons\\Ability_Warrior_VictoryRush",   -- Keepers of Time
+	[990] = "Interface\\Icons\\INV_Misc_MonsterScales_13",     -- The Scale of the Sands
+	[1011] = "Interface\\Icons\\Ability_Rogue_MasterOfSubtlety", -- Lower City
+	[1012] = "Interface\\Icons\\INV_Misc_Gem_Pearl_05",        -- Ashtongue Deathsworn
+	[1015] = "Interface\\Icons\\Ability_Mount_Netherdrakepurple", -- Netherwing
+	[1031] = "Interface\\Icons\\INV_Misc_Ribbon_01",           -- Sha'tari Skyguard
+	[1038] = "Interface\\Icons\\INV_DataCrystal01",            -- Ogri'la
+	[1077] = "Interface\\Icons\\INV_Misc_Statue_04",           -- Shattered Sun Offensive
 
 	-- Wrath
 	[1037] = 134981, -- Alliance Vanguard
@@ -113,27 +115,17 @@ local FACTION_KEY = {
 	[609] = "Cenarion Circle",
 	[749] = "Hydraxian Waterlords",
 	[910] = "Brood of Nozdormu",
-
-	-- SoD 
-
-	[2586] = AL["Azeroth Commerce Authority"],
-	[2587] = AL["Durotar Supply and Logistics"],
-	[2634] = AL["Blood Moon"],
-	[2641] = AL["Emerald Wardens"],	
-	[889] = AL["Warsong Outriders"],
-	[890] = AL["Silverwing Sentinels"],
-
 	-- BC
-	[922] = AL["Tranquillien"], -- Horde only
-	[941] = AL["The Mag'har"], -- Horde only
-	[946] = AL["Honor Hold"], -- Alli only
-	[947] = AL["Thrallmar"], -- Horde only
-	[978] = AL["Kurenai"], -- Alli only
+	[922] = AL["Tranquillien"],      -- Horde only
+	[941] = AL["The Mag'har"],       -- Horde only
+	[946] = AL["Honor Hold"],        -- Alli only
+	[947] = AL["Thrallmar"],         -- Horde only
+	[978] = AL["Kurenai"],           -- Alli only
 	--Wrath
 	[1037] = AL["Alliance Vanguard"], -- Alli only
 	[1052] = AL["Horde Expedition"], -- Horde only
 	[1094] = AL["The Silver Covenant"], -- Alli only
-	[1124] = AL["The Sunreavers"], -- Horde only
+	[1124] = AL["The Sunreavers"],   -- Horde only
 }
 
 ClickHandler:Add(
@@ -148,7 +140,7 @@ ClickHandler:Add(
 	},
 	{
 		--{ "ChatLink", 	AL["Chat Link"], 	AL["Add item into chat"] },
-		{ "WoWHeadLink", 	AL["Show WowHead link"], 	AL["Shows a copyable link for WoWHead"] },
+		{ "WoWHeadLink", AL["Show WowHead link"], AL["Shows a copyable link for WoWHead"] },
 	}
 )
 
@@ -156,7 +148,7 @@ local function GetLocRepStanding(id)
 	if (id > 10) then
 		return FACTION_STANDING_LABEL4_FEMALE
 	else
-		return PlayerSex==3 and _G["FACTION_STANDING_LABEL"..(id or 4).."_FEMALE"] or _G["FACTION_STANDING_LABEL"..(id or 4)]
+		return PlayerSex == 3 and _G["FACTION_STANDING_LABEL"..(id or 4).."_FEMALE"] or _G["FACTION_STANDING_LABEL"..(id or 4)]
 	end
 end
 
@@ -227,7 +219,7 @@ function Faction.OnEnter(button, owner)
 		tooltip:AddDoubleLine(AT_WAR, atWarWith and TT_YES_REV or TT_NO_REV)
 	end
 	tooltip:Show()
-	]]--
+	]] --
 	Faction.ShowToolTipFrame(button)
 end
 
@@ -255,14 +247,13 @@ function Faction.GetStringContent(str)
 	else
 		return {
 			tonumber(str_match(str, "(%d+)")),
-			tonumber(str_match(str, "rep(%d+)")),	-- required rep (1-8)
+			tonumber(str_match(str, "rep(%d+)")), -- required rep (1-8)
 		}
 	end
 end
 
 function Faction.Refresh(button)
 	if not button.FactionID then return end
-	--friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold = GetFriendshipReputation(factionID)
 	-- name, description, standingID, barMin, barMax, barValue, atWarWith, canToggleAtWar, isHeader, isCollapsed, hasRep, isWatched, isChild = GetFactionInfoByID(factionID)
 	local name, _, standingID = GetFactionInfoByID(button.FactionID)
 
@@ -307,11 +298,15 @@ function Faction.ShowToolTipFrame(button)
 		local frame = CreateFrame("Frame", name, nil, _G.BackdropTemplateMixin and "BackdropTemplate" or nil)
 		frame:SetClampedToScreen(true)
 		frame:SetWidth(WIDTH)
-		frame:SetBackdrop({bgFile = "Interface/Tooltips/UI-Tooltip-Background",
-							edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-							tile = true, tileSize = 16, edgeSize = 16,
-							insets = { left = 4, right = 4, top = 4, bottom = 4 }})
-		frame:SetBackdropColor(0,0,0,1)
+		frame:SetBackdrop({
+			bgFile = "Interface/Tooltips/UI-Tooltip-Background",
+			edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+			tile = true,
+			tileSize = 16,
+			edgeSize = 16,
+			insets = { left = 4, right = 4, top = 4, bottom = 4 }
+		})
+		frame:SetBackdropColor(0, 0, 0, 1)
 
 		frame.icon = frame:CreateTexture(name.."-icon", "ARTWORK")
 		frame.icon:SetPoint("TOPLEFT", frame, "TOPLEFT", 5, -5)
@@ -324,18 +319,22 @@ function Faction.ShowToolTipFrame(button)
 		frame.name:SetPoint("RIGHT", frame, -3, 0)
 		frame.name:SetNonSpaceWrap(false)
 		frame.name:SetJustifyH("LEFT")
-		frame.name:SetWidth(WIDTH-25)
+		frame.name:SetWidth(WIDTH - 25)
 		frame.name:SetHeight(15)
 		--frame.name:SetTextColor(1, 1, 1, 1)
 
 		frame.standing = CreateFrame("FRAME", name.."-standing", frame, _G.BackdropTemplateMixin and "BackdropTemplate" or nil)
-		frame.standing:SetWidth(WIDTH-10)
+		frame.standing:SetWidth(WIDTH - 10)
 		frame.standing:SetHeight(20)
 		frame.standing:SetPoint("TOPLEFT", frame.icon, "BOTTOMLEFT", 0, -1)
-		frame.standing:SetBackdrop({bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
-							edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
-							tile = true, tileSize = 16, edgeSize = 12,
-							insets = { left = 3, right = 3, top = 3, bottom = 3 }})
+		frame.standing:SetBackdrop({
+			bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+			edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+			tile = true,
+			tileSize = 16,
+			edgeSize = 12,
+			insets = { left = 3, right = 3, top = 3, bottom = 3 }
+		})
 		frame.standing:SetBackdropColor(0, 0, 0, 1)
 
 		frame.standing.bar = CreateFrame("StatusBar", name.."-standingBar", frame.standing)
@@ -348,7 +347,7 @@ function Faction.ShowToolTipFrame(button)
 		frame.standing.text = frame.standing.bar:CreateFontString(name.."-standingText", "ARTWORK", "GameFontNormalSmall")
 		frame.standing.text:SetPoint("TOPLEFT", 3, -3)
 		frame.standing.text:SetPoint("BOTTOMRIGHT", -4, 3)
-		frame.standing.text:SetJustifyH("CENTER") 
+		frame.standing.text:SetJustifyH("CENTER")
 		frame.standing.text:SetJustifyV("MIDDLE")
 		frame.standing.text:SetTextColor(1, 1, 1, 1)
 
@@ -356,7 +355,7 @@ function Faction.ShowToolTipFrame(button)
 		frame.desc:SetPoint("TOPLEFT", frame.standing, "BOTTOMLEFT", 0, -1)
 		frame.desc:SetJustifyH("LEFT")
 		frame.desc:SetJustifyV("TOP")
-		frame.desc:SetWidth(WIDTH-10)
+		frame.desc:SetWidth(WIDTH - 10)
 		frame.desc:SetTextColor(1, 1, 1, 1)
 
 		Faction.tooltipFrame = frame
@@ -368,7 +367,7 @@ function Faction.ShowToolTipFrame(button)
 	local factionStandingtext
 	barMin, barMax, barValue = barMin or 0, barMax or 1, barValue or 0
 	factionStandingtext = GetLocRepStanding(standingID)
-	name = name or "Faction "..button.FactionID
+	name = name or ("Faction "..button.FactionID)
 	if button.RepID and name then
 		name = format("%s (%s)", name, GetLocRepStanding(button.RepID))
 	end
@@ -390,7 +389,6 @@ function Faction.ShowToolTipFrame(button)
 
 	local newWidth = 30 + frame.name:GetUnboundedStringWidth()
 	frame:SetWidth(newWidth > 200 and newWidth or 200)
-	frame:SetHeight(20+21+frame.desc:GetHeight()+5)
+	frame:SetHeight(20 + 21 + frame.desc:GetHeight() + 5)
 	frame:Show()
 end
-

@@ -4460,7 +4460,7 @@ data["Stratholme"] = {
 			AtlasMapBossID = 6,
 			ContentPhase = 4,
 			[NORMAL_DIFF] = {
-				{ 1,  226737 }, -- Lightforge Gauntlets
+				-- { 1,  226737 }, -- Lightforge Gauntlets
 				{ 3,  228513 }, -- Vambraces of the Sadist
 				{ 4,  228515 }, -- Grimgore Noose
 				{ 5,  228514 }, -- Timmy's Galoshes

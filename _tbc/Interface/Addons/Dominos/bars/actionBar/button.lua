@@ -2,66 +2,71 @@ local _, Addon = ...
 local ActionButton = {}
 
 local function GetActionButtonCommand(id)
-    -- 0
-    if id <= 0 then
-        return
-    -- 1
-    elseif id <= 12 then
-        return "ACTIONBUTTON" .. id
-    -- 2
-    elseif id <= 24 then
-        return
-    -- 3
-    elseif id <= 36 then
-        return "MULTIACTIONBAR3BUTTON" .. (id - 24)
-    -- 4
-    elseif id <= 48 then
-        return "MULTIACTIONBAR4BUTTON" .. (id - 36)
-    -- 5
-    elseif id <= 60 then
-        return "MULTIACTIONBAR2BUTTON" .. (id - 48)
-    -- 6
-    elseif id <= 72 then
-        return "MULTIACTIONBAR1BUTTON" .. (id - 60)
-    -- 7-11
-    elseif id <= 132 then
-        return
-    -- 12
-    elseif id <= 144 then
-        return "MULTIACTIONBAR5BUTTON" .. (id - 132)
-    -- 13
-    elseif id <= 156 then
-        return "MULTIACTIONBAR6BUTTON" .. (id - 144)
-    -- 14
-    elseif id <= 168 then
-        return "MULTIACTIONBAR7BUTTON" .. (id - 156)
-    end
+	-- 0
+	if id <= 0 then
+		return
+	-- 1
+	elseif id <= 12 then
+		return "ACTIONBUTTON" .. id
+	-- 2
+	elseif id <= 24 then
+		return
+	-- 3
+	elseif id <= 36 then
+		return "MULTIACTIONBAR3BUTTON" .. (id - 24)
+	-- 4
+	elseif id <= 48 then
+		return "MULTIACTIONBAR4BUTTON" .. (id - 36)
+	-- 5
+	elseif id <= 60 then
+		return "MULTIACTIONBAR2BUTTON" .. (id - 48)
+	-- 6
+	elseif id <= 72 then
+		return "MULTIACTIONBAR1BUTTON" .. (id - 60)
+	-- 7-11
+	elseif id <= 132 then
+		return
+	-- 12
+	elseif id <= 144 then
+		return "MULTIACTIONBAR5BUTTON" .. (id - 132)
+	-- 13
+	elseif id <= 156 then
+		return "MULTIACTIONBAR6BUTTON" .. (id - 144)
+	-- 14
+	elseif id <= 168 then
+		return "MULTIACTIONBAR7BUTTON" .. (id - 156)
+	end
 end
 
 function ActionButton:OnCreate(id)
-    -- initialize secure state
-    self:SetAttributeNoHandler("action", 0)
-    self:SetAttributeNoHandler("commandName", GetActionButtonCommand(id) or ("CLICK %s:HOTKEY"):format(self:GetName()))
-    self:SetAttributeNoHandler("showgrid", 0)
-    self:SetAttributeNoHandler("useparent-checkfocuscast", true)
-    self:SetAttributeNoHandler("useparent-checkmouseovercast", true)
-    self:SetAttributeNoHandler("useparent-checkselfcast", true)
+	-- initialize secure state
+	self:SetAttributeNoHandler("action", 0)
+	self:SetAttributeNoHandler("commandName", GetActionButtonCommand(id) or ("CLICK %s:HOTKEY"):format(self:GetName()))
+	self:SetAttributeNoHandler("showgrid", 0)
+	self:SetAttributeNoHandler("useparent-checkfocuscast", true)
+	self:SetAttributeNoHandler("useparent-checkmouseovercast", true)
+	self:SetAttributeNoHandler("useparent-checkselfcast", true)
 
-    -- register for clicks on all buttons, and enable mousewheel bindings
-    self:EnableMouseWheel()
-    self:RegisterForClicks("AnyUp", "AnyDown")
+	-- register for clicks on all buttons, and enable mousewheel bindings
+	self:EnableMouseWheel()
+	self:RegisterForClicks("AnyUp", "AnyDown")
 
-    -- secure handlers
-    self:SetAttributeNoHandler('_childupdate-offset', [[
+	-- secure handlers
+	self:SetAttributeNoHandler(
+		"_childupdate-offset",
+		[[
         local offset = message or 0
         local id = self:GetAttribute('index') + offset
 
         if self:GetAttribute('action') ~= id then
             self:SetAttribute('action', id)
         end
-    ]])
+    ]]
+	)
 
-    self:SetAttributeNoHandler("SetShowGrid", [[
+	self:SetAttributeNoHandler(
+		"SetShowGrid",
+		[[
         local show, reason, force = ...
         local value = self:GetAttribute("showgrid")
         local prevValue = value
@@ -86,9 +91,12 @@ function ActionButton:OnCreate(id)
                 self:Hide(true)
             end
         end
-    ]])
+    ]]
+	)
 
-    self:SetAttributeNoHandler("UpdateShown", [[
+	self:SetAttributeNoHandler(
+		"UpdateShown",
+		[[
         local show = (self:GetAttribute("showgrid") > 0 or HasAction(self:GetAttribute("action")))
             and not self:GetAttribute("statehidden")
 
@@ -97,43 +105,48 @@ function ActionButton:OnCreate(id)
         else
             self:Hide(true)
         end
-    ]])
+    ]]
+	)
 
-    -- ...and the rest
-    Addon.BindableButton:AddQuickBindingSupport(self)
+	-- ...and the rest
+	Addon.BindableButton:AddQuickBindingSupport(self)
 
-    if Addon.SpellFlyout then
-        Addon.SpellFlyout:Register(self)
-    end
+	if Addon.SpellFlyout then
+		Addon.SpellFlyout:Register(self)
+	end
 end
 
 function ActionButton:UpdateIcon()
-    local icon = GetActionTexture(self.action)
-    if icon then
-        self.icon:SetTexture(icon)
-        self.icon:Show()
-    else
-        self.icon:Hide()
-    end
+	local icon = GetActionTexture(self.action)
+	if icon then
+		self.icon:SetTexture(icon)
+		self.icon:Show()
+	else
+		self.icon:Hide()
+	end
 end
 
 function ActionButton:UpdateOverrideBindings()
-    if InCombatLockdown() then return end
+	if InCombatLockdown() then
+		return
+	end
 
-    if C_HouseEditor and C_HouseEditor.IsHouseEditorActive() then
-        ClearOverrideBindings(self.bind)
-    else
-        self.bind:SetOverrideBindings(GetBindingKey(self:GetAttribute("commandName")))
-    end
+	if C_HouseEditor and C_HouseEditor.IsHouseEditorActive() then
+		ClearOverrideBindings(self.bind)
+	else
+		self.bind:SetOverrideBindings(GetBindingKey(self:GetAttribute("commandName")))
+	end
 end
 
 function ActionButton:UpdateShown()
-    if InCombatLockdown() then return end
+	if InCombatLockdown() then
+		return
+	end
 
-    self:SetShown(
-        (self:GetAttribute("showgrid") > 0 or HasAction(self:GetAttribute("action")))
-        and not self:GetAttribute("statehidden")
-    )
+	self:SetShown(
+		(self:GetAttribute("showgrid") > 0 or HasAction(self:GetAttribute("action")))
+			and not self:GetAttribute("statehidden")
+	)
 end
 
 --------------------------------------------------------------------------------
@@ -141,78 +154,82 @@ end
 --------------------------------------------------------------------------------
 
 function ActionButton:SetFlyoutDirectionInsecure(direction)
-    if InCombatLockdown() then return end
+	if InCombatLockdown() then
+		return
+	end
 
-    self:SetAttribute("flyoutDirection", direction)
-    self:UpdateFlyout()
+	self:SetAttribute("flyoutDirection", direction)
+	self:UpdateFlyout()
 end
 
 -- the stock UI shows and hides hotkeys based on if there's a binding or not
 -- so we simply make our hotkeys transparent when we don't want them shown
 function ActionButton:SetShowBindingText(show)
-    local parent = (show and self) or Addon.ShadowUIParent
+	local parent = (show and self) or Addon.ShadowUIParent
 
-    if self.HotKey:GetParent() ~= parent then
-        self.HotKey:SetParent(parent)
-    end
+	if self.HotKey:GetParent() ~= parent then
+		self.HotKey:SetParent(parent)
+	end
 end
 
 -- we hide cooldowns when action buttons are transparent
 -- so that the sparks don't appear
 function ActionButton:SetShowCooldowns(show)
-    if show then
-        if self.cooldown:GetParent() ~= self then
-            self.cooldown:SetParent(self)
+	if show then
+		if self.cooldown:GetParent() ~= self then
+			self.cooldown:SetParent(self)
 
-            if not Addon:IsAfterMidnight() then
-                ActionButton_UpdateCooldown(self)
-            end
-        end
-    else
-        self.cooldown:SetParent(Addon.ShadowUIParent)
-    end
+			if not Addon:IsAfterMidnight() then
+				ActionButton_UpdateCooldown(self)
+			end
+		end
+	else
+		self.cooldown:SetParent(Addon.ShadowUIParent)
+	end
 end
 
 function ActionButton:SetShowCounts(show)
-    self.Count:SetShown(show)
+	self.Count:SetShown(show)
 end
 
 function ActionButton:SetShowEquippedItemBorders(show)
-    local parent = (show and self) or Addon.ShadowUIParent
+	local parent = (show and self) or Addon.ShadowUIParent
 
-    if self.Border:GetParent() ~= parent then
-        self.Border:SetParent(parent)
-    end
+	if self.Border:GetParent() ~= parent then
+		self.Border:SetParent(parent)
+	end
 end
 
 function ActionButton:SetShowEmptyButtons(show, force)
-    self:SetShowGridInsecure(show, Addon.ActionButtons.ShowGridReasons.SHOW_EMPTY_BUTTONS_PER_BAR, force)
+	self:SetShowGridInsecure(show, Addon.ActionButtons.ShowGridReasons.SHOW_EMPTY_BUTTONS_PER_BAR, force)
 end
 
 function ActionButton:SetShowGridInsecure(show, reason, force)
-    if InCombatLockdown() then return end
+	if InCombatLockdown() then
+		return
+	end
 
-    if type(reason) ~= "number" then
-        error("Usage: ActionButton:SetShowGridInsecure(show, reason, force?)", 2)
-    end
+	if type(reason) ~= "number" then
+		error("Usage: ActionButton:SetShowGridInsecure(show, reason, force?)", 2)
+	end
 
-    local value = self:GetAttribute("showgrid") or 0
-    local prevValue = value
+	local value = self:GetAttribute("showgrid") or 0
+	local prevValue = value
 
-    if show then
-        value = bit.bor(value, reason)
-    else
-        value = bit.band(value, bit.bnot(reason))
-    end
+	if show then
+		value = bit.bor(value, reason)
+	else
+		value = bit.band(value, bit.bnot(reason))
+	end
 
-    if (value ~= prevValue) or force then
-        self:SetAttribute("showgrid", value)
-        self:UpdateShown()
-    end
+	if (value ~= prevValue) or force then
+		self:SetAttribute("showgrid", value)
+		self:UpdateShown()
+	end
 end
 
 function ActionButton:SetShowMacroText(show)
-    self.Name:SetShown(show and true)
+	self.Name:SetShown(show and true)
 end
 
 -- exports

@@ -33,7 +33,7 @@ local QuestieLib = QuestieLoader:ImportModule("QuestieLib")
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
 
-local C_AddOns.IsAddOnLoaded = C_AddOns.IsAddOnLoaded or C_AddOns.IsAddOnLoaded
+local IsAddOnLoaded = C_AddOns.IsAddOnLoaded or IsAddOnLoaded
 local GetItemCount = C_Item.GetItemCount or GetItemCount
 local GetItemSpell = C_Item.GetItemSpell or GetItemSpell
 local IsEquippableItem = C_Item.IsEquippableItem or IsEquippableItem
@@ -947,7 +947,7 @@ function TrackerUtils:GetSortedQuestIds()
 end
 
 function TrackerUtils:IsVoiceOverLoaded()
-    if (C_AddOns.IsAddOnLoaded("AI_VoiceOver") and C_AddOns.IsAddOnLoaded("AI_VoiceOverData_Vanilla")) then
+    if (IsAddOnLoaded("AI_VoiceOver") and IsAddOnLoaded("AI_VoiceOverData_Vanilla")) then
         return true
     end
 

@@ -15,7 +15,7 @@ print(ADDON_NAME, MODULE_NAME)
 -- CONSTANTS
 ---------------------------------------------
 CPF.ADDON_NAME = ADDON_NAME
-CPF.VERSION = GetAddOnMetadata(ADDON_NAME, "Version")
+CPF.VERSION = C_AddOns.GetAddOnMetadata(ADDON_NAME, "Version")
 
 CPF.IS_RELEASE_VERSION = CPF.VERSION:match("^%d+.%d+.%d+$") ~= nil
 --[==[@debug@

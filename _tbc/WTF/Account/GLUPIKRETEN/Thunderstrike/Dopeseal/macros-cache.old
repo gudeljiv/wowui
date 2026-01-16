@@ -1,0 +1,8 @@
+VER 3 0100000000000001 " " "134400"
+/startattack
+/cast Judgment
+END
+VER 3 0100000000000002 " " "134400"
+#showtooltip
+/cast [@mouseover,help,nodead][] Holy Light
+END

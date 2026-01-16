@@ -17,7 +17,7 @@ local _, xVermin = ...
 -- 		end
 
 -- 		for bag = 0, NUM_BAG_SLOTS do
--- 			for slot = 1, GetContainerNumSlots(bag) do
+-- 			for slot = 1, C_Container.GetContainerNumSlots(bag) do
 -- 				print(GetContainerItemID(bag, slot), bag, slot)
 -- 			end
 -- 		end

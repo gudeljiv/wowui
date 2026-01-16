@@ -3,7 +3,7 @@ local _, xVermin = ...
 local function BuyAmmo()
 	local index, TypeOfAmmo, BowEquipped, GunEquipped, MaxAmmoInInventory, MaxStackSize
 	local numItems = GetMerchantNumItems()
-	local playerLevel = UnitLevel('player')
+	local playerLevel = UnitLevel("player")
 
 	ammoLevel = 0
 	numberOfSlots = 0
@@ -24,17 +24,17 @@ local function BuyAmmo()
 	-- 	ammoLevel = 55
 	-- end
 
-	if xVermin.Class ~= ('HUNTER' or 'WARRIOR') then
+	if xVermin.Class ~= ("HUNTER" or "WARRIOR") then
 		return
 	end
-	BowEquipped = IsEquippedItemType('Bows') or IsEquippedItemType('Crossbows')
-	GunEquipped = IsEquippedItemType('Guns')
+	BowEquipped = IsEquippedItemType("Bows") or IsEquippedItemType("Crossbows")
+	GunEquipped = IsEquippedItemType("Guns")
 
 	if BowEquipped then
-		TypeOfAmmo = 'Arrow'
+		TypeOfAmmo = "Arrow"
 	end
 	if GunEquipped then
-		TypeOfAmmo = 'Bullet'
+		TypeOfAmmo = "Bullet"
 	end
 
 	-- for item = 1, numItems do
@@ -55,7 +55,8 @@ local function BuyAmmo()
 			return
 		end
 
-		local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID, isCraftingReagent = GetItemInfo(GetMerchantItemLink(item))
+		local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemIcon, itemSellPrice, itemClassID, itemSubClassID, bindType, expacID, itemSetID, isCraftingReagent =
+			GetItemInfo(GetMerchantItemLink(item))
 
 		if itemSubType == TypeOfAmmo and isUsable and itemMinLevel <= playerLevel then
 			index = item
@@ -66,15 +67,14 @@ local function BuyAmmo()
 	local buy = true
 	if index and buy then
 		MaxAmmoInInventory = MaxStackSize
-		if xVermin.Class == 'HUNTER' then
-
-			for bag = 0, 4 do 
+		if xVermin.Class == "HUNTER" then
+			for bag = 0, 4 do
 				-- print(bag, C_Container.GetBagName(bag))
-				if C_Container.GetBagName(bag) ~= nil then 
+				if C_Container.GetBagName(bag) ~= nil then
 					local bagtype = C_Item.GetItemFamily(C_Container.GetBagName(bag))
 					-- if ammo quiver
-					if bagtype == 1 then 
-						numberOfSlots = C_Container.GetContainerNumSlots(bag);
+					if bagtype == 1 then
+						numberOfSlots = C_Container.GetContainerNumSlots(bag)
 					end
 				end
 			end
@@ -82,7 +82,7 @@ local function BuyAmmo()
 			-- MaxAmmoInInventory = C_Container.GetContainerNumSlots(GetInventorySlotInfo('AmmoSlot')) * MaxStackSize
 			MaxAmmoInInventory = numberOfSlots * MaxStackSize
 		end
-		local ammoCount = GetInventoryItemCount('player', GetInventorySlotInfo('AmmoSlot'))
+		local ammoCount = GetInventoryItemCount("player", GetInventorySlotInfo("AmmoSlot"))
 		local needtobuy = MaxAmmoInInventory - ammoCount
 
 		-- print(numberOfSlots, MaxStackSize, MaxAmmoInInventory, needtobuy)
@@ -104,12 +104,11 @@ local function BuyAmmo()
 	end
 end
 
-local f = CreateFrame('Frame')
-f:RegisterEvent('MERCHANT_SHOW')
+local f = CreateFrame("Frame")
+f:RegisterEvent("MERCHANT_SHOW")
 -- f:SetScript('OnEvent', BuyAmmo)
 
-
-SLASH_BUYAMMO1 = '/ammo'
-SlashCmdList['BUYAMMO'] = function()
+SLASH_BUYAMMO1 = "/ammo"
+SlashCmdList["BUYAMMO"] = function()
 	BuyAmmo()
 end

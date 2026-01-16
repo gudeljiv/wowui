@@ -1,6 +1,6 @@
-﻿## Interface: 11503
-## Author: Lag
-## Version: v3.5.22
+﻿## Interface: 11508
+## Author: Okrah, Lag
+## Version: v2.0.0
 ## Dependencies: AtlasLootClassic
 ## LoadOnDemand: 1
 
@@ -41,4 +41,4 @@ core.lua
 locales.lua
 items.lua
 source.lua
-source-sod.lua
+#source-sod.lua

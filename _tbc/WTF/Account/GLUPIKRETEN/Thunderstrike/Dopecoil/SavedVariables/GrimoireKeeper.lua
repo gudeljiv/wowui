@@ -5,8 +5,8 @@ GrimoireKeeperData = {
 [16302] = true,
 [16351] = true,
 [16357] = true,
-[16316] = true,
+[16321] = true,
 [16346] = true,
 [16331] = true,
-[16321] = true,
+[16316] = true,
 }

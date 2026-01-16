@@ -2,7 +2,7 @@ local _, xVermin = ...
 
 function LBI()
 	for bagID = 0, NUM_BAG_SLOTS do
-		for slot = 1, GetContainerNumSlots(bagID) do
+		for slot = 1, C_Container.GetContainerNumSlots(bagID) do
 			texture, itemCount, locked, quality, readable, lootable, itemLink = GetContainerItemInfo(bagID, slot)
 			if itemLink then
 				itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice =
