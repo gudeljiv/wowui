@@ -22,7 +22,7 @@ NWB.options = {
 		},
 		authorText = {
 			type = "description",
-			name = "|TInterface\\AddOns\\NovaWorldBuffs\\Media\\logo32:32:32:0:20|t |cFF9CD6DEby Novaspark-Arugal|r  |cFF00C800-|r  |cFFFFFF00For help or suggestions discord.gg/RTKMfTmkdj|r",
+			name = "|TInterface\\AddOns\\NovaWorldBuffs\\Media\\logo32:32:32:0:20|t |cFF9CD6DE" .. L["by"] .. " Novaspark-Arugal|r  |cFF00C800-|r  |cFFFFFF00" .. L["For help or suggestions"] .. " discord.gg/RTKMfTmkdj|r",
 			fontSize = "medium",
 			order = 2,
 		},
@@ -2335,18 +2335,15 @@ end
 
 function NWB:checkNewVersion()
 	--NWB.db.global.versions = {};
-	local newVersionNotes = 3.20;
+	local newVersionNotes = 3.23;
 	if (NWB.version and NWB.version == newVersionNotes) then
 		if (not NWB.db.global.versions[NWB.version]) then
-			if (NWB.isClassic) then
+			if (NWB.isClassic or NWB.isTBC) then
 				--if (NWB:GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
 					local notes = {
-						"Re-enabled rend log for alliance side after 3.19 disabled it.",
-						"Added a command /dmfhelper to manually open the helper window when at sage, it should usually open auto when in a pvp zone at opposite factions sayge and a ghost. This command is a backup for if the dmf week is wrong or it doesn't show for whatever.",
-						"Fixed the set interact keybind button on the dmf helper.",
-						"Added minutes display even when showing days in the layer uptime display (left click minimap) this is for people looking for ways to determine layer on horde and alliance.",
-						"Changed layer timeout to 2h instead of 1h to help people out questing that don't get data updates too often and unguilded people, this means they'll take an extra hour to disappear after server restarts.",
-						"Updated for TBC, but may need more updating once it launches and we see where the layers are created from in that version (they may only layer outlands this time round if it's like what they did with wrath/mop).",
+						"Added some fixes for sounds not playing when you get a world buff if you were on a different layer than the quest was handed in on (this broke when buff npcs stopped yelling on all layers before a buff dropped).",
+						"Fixed /dmf command that was broken in last update (it started opening the helper window instead of showing next spawn, there is a seperate /dmfhelper command for that).",
+						"Fixed some TBC load errors.",
 					};
 					loadNewVersionFrame(NWB.version, notes, "Nova World Buffs", "Interface\\Icons\\inv_misc_head_dragon_01", -50, 350);
 				--end
@@ -4006,7 +4003,7 @@ function NWB:config(i)
 			NWB:debug(i);
 			return;
 		end
-		if (string.match(k, "r%d")) then
+		if (tostring(k) and string.match(k, "r%d")) then
 			table.insert(m, v, k);
 		end
 	end

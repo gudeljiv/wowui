@@ -1,2 +1,11 @@
-﻿2.5.000 - 14th January 2026
+﻿2.5.001 - 17th January 2026
+- For 'Automate gossip' ('Automation'), updated the list of vendors that have gossip automatically skipped without needing to hold the alt key.
+- For 'Hide keybind text' ('Text'), fixed an issue which caused it to not apply to some action bars.
+- For 'Hide macro text' ('Text'), fixed an issue which caused it to not apply to some action bars.
+- For 'Show player chain' ('Interface'), fixed a minor issue with the level number position.
+- For 'Show flight times' ('System'), fixed an issue which caused some flight times to not show.
+- For 'Mute game sounds' ('System'), added 'Events', 'Gyrocopters' and 'A'dal'.  Added additional sounds for 'Chimes' and 'Trains'.
+- The 'Filter chat messages' option ('Chat') is now available.  Added a new setting that allows you to block spell links during combat (very useful for blocking spell interrupt spam).
+
+2.5.000 - 14th January 2026
 - Welcome to Burning Crusade Anniversary.

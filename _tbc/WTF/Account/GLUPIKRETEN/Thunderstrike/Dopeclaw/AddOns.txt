@@ -191,7 +191,7 @@ XLoot_Group: disabled
 XLoot_Options: disabled
 Roll: disabled
 Gladdy: enabled
-NovaWorldBuffs: disabled
+NovaWorldBuffs: enabled
 Capping_Options: disabled
 Capping: disabled
 Masque: enabled
@@ -269,7 +269,7 @@ AdiBags_Item_Sets: disabled
 Baganator: enabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
-NovaConsumesHelper: disabled
+NovaConsumesHelper: enabled
 Drift: enabled
 Syndicator: enabled
 Blizzard_ObjectiveTracker: enabled

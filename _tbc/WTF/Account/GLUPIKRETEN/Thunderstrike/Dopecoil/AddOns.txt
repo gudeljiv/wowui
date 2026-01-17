@@ -86,7 +86,7 @@ ShadowedUFFacade: enabled
 Masque_Brownstone: enabled
 Masque_Newsom: enabled
 MSBTOptions: enabled
-NovaWorldBuffs: disabled
+NovaWorldBuffs: enabled
 NugKeyFeedback: enabled
 OmniCC: enabled
 OmniCC_Config: enabled
@@ -170,7 +170,7 @@ LoonBestInSlot: enabled
 Masque_BeautyBorder: enabled
 Masque_ElvUI: enabled
 Masque_Muq: enabled
-NovaConsumesHelper: disabled
+NovaConsumesHelper: enabled
 RatingBuster: enabled
 RingMenuReborn: disabled
 StatLogic: enabled

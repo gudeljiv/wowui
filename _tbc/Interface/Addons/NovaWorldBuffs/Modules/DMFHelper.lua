@@ -14,11 +14,6 @@ function NWB:openDmfHelperFrame()
 	end
 end
 
-SLASH_NWBDMFHCMD1, SLASH_NWBDMFHCMD2 = '/dmfhelper', '/dmfhelpers';
-function SlashCmdList.NWBDMFCMD(msg, editBox)
-	NWB:openDmfHelperFrame();
-end
-
 if (NWB.isClassic) then
 	--DMF Helper Frame.
 	--This helps using the stuck method for DMF buff people are already using on pvp realms for when factions are griefing each other.

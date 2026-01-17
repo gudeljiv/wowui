@@ -2,13 +2,9 @@
 NCHdatabase = {
 ["namespaces"] = {
 },
-["profileKeys"] = {
-["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
-["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
-},
 ["global"] = {
-["NCHMainFrameAnchor_y"] = 340.2924499511719,
-["NCHMainFrameAnchor_point"] = "RIGHT",
+["NCHMainFrameAnchor_y"] = -285.2395629882813,
+["NCHMainFrameAnchor_point"] = "TOP",
 ["NCHProtFrameAnchor_y"] = 275.5302429199219,
 ["versions"] = {
 },
@@ -16,22 +12,31 @@ NCHdatabase = {
 ["protShowGreaterFire"] = false,
 ["protShowGreaterNature"] = false,
 ["NCHProtFrameAnchor_point"] = "RIGHT",
+["hideWhenNoItems"] = true,
 ["NCHProtFrameAnchor_x"] = -587.5079956054688,
 ["minimapIcon"] = {
 ["minimapPos"] = 197.7239961858749,
 ["hide"] = true,
 },
 ["NCHProtFrameAnchor_relativePoint"] = "RIGHT",
-["buttonsWide"] = 6,
-["NCHMainFrameAnchor_relativePoint"] = "RIGHT",
-["loadInRaidGroupProt"] = false,
-["NCHMainFrameAnchor_x"] = -586.8729858398438,
+["NCHMainFrameAnchor_relativePoint"] = "TOP",
+["NCHMainFrameAnchor_x"] = 525.6437377929688,
 ["loadEverywhereProt"] = false,
+["buttonsWide"] = 6,
+["loadInRaidGroupProt"] = false,
 ["loadInRaidsProt"] = false,
+},
+["profileKeys"] = {
+["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
+["Dopeseal - Thunderstrike"] = "Dopeseal - Thunderstrike",
+["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
 },
 ["profiles"] = {
 ["Doperage - Thunderstrike"] = {
 ["consumesSlot1"] = "Flask of Chromatic Resistance",
+},
+["Dopeseal - Thunderstrike"] = {
+["consumesSlot43"] = "Swiftness Potion",
 },
 ["Dopeclaw - Thunderstrike"] = {
 ["consumesSlot2"] = "Winterfall Firewater",

@@ -139,8 +139,6 @@ function BindableButton:UpdateHotkeys()
 			text = gsub(text, _G["KEY_NUMPAD" .. i], "NU" .. i)
 		end
 
-		print(text)
-
 		text = gsub(text, KEY_MOUSEWHEELUP, "MU")
 		text = gsub(text, KEY_MOUSEWHEELDOWN, "MD")
 		text = gsub(text, KEY_NUMLOCK, "NL")

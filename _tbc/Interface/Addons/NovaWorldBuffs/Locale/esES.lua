@@ -36,7 +36,7 @@ if (type == "classic") then
 	L["cityGotBuffSummonTitle"] = "Invocación Ony/Desgarro";
 	L["cityGotBuffSummonDesc"] = "Acepta automáticamente cualquier invocación pendiente cuando obtienes un beneficio de Ony/Nef/Desgarro.";
 	L["heraldFoundCrossroads"] = "¡Heraldo encontrado! Beneficio de Desgarro en El Cruce caerá en 20 segundos.";
-	L["heraldFoundTimerMsg"] = "Beneficio de Desgarro en El Cruce"; --DBM/Bigwigs timer bar text.
+	L["heraldFoundTimerMsg"] = "Desgarro El Cruce"; --DBM/Bigwigs timer bar text.
 	L["disableOnlyNefRendBelowMaxLevelTitle"] = "Desactivar Ony/Nef/Desgarro";
 	L["disableOnlyNefRendBelowMaxLevelDesc"] = "¿Desactiva Ony/Nef/Desgarro que se muestra en el mapa de la ciudad capital y en el tooltip del icono del minimapa por debajo de cierto nivel? (Hace que el icono del minimapa solo muestra capas y no los temporizadores de beneficio)";
 	L["disableOnlyNefRendBelowMaxLevelNumTitle"] = "Ony/Nef/Desgarro nivel mínimo";
@@ -68,7 +68,7 @@ else
 	L["cityGotBuffSummonTitle"] = "Invocación Ony/Rend";
 	L["cityGotBuffSummonDesc"] = "Acepta automáticamente cualquier invocación pendiente cuando obtienes un beneficio de Ony/Nef/Rend.";
 	L["heraldFoundCrossroads"] = "¡Heraldo encontrado! Beneficio de Rend en El Cruce caerá en 20 segundos.";
-	L["heraldFoundTimerMsg"] = "Beneficio de Rend en El Cruce"; --DBM/Bigwigs timer bar text.
+	L["heraldFoundTimerMsg"] = "Rend El Cruce"; --DBM/Bigwigs timer bar text.
 	L["disableOnlyNefRendBelowMaxLevelTitle"] = "Desactivar Ony/Nef/Rend";
 	L["disableOnlyNefRendBelowMaxLevelDesc"] = "¿Desactiva Ony/Nef/Rend que se muestra en el mapa de la ciudad capital y en el tooltip del icono del minimapa por debajo de cierto nivel? (Hace que el icono del minimapa solo muestra capas y no los temporizadores de beneficio)";
 	L["disableOnlyNefRendBelowMaxLevelNumTitle"] = "Ony/Nef/Rend nivel mínimo";
@@ -1231,3 +1231,6 @@ L["Nov"] = "Nov";
 L["Dec"] = "Dic";
 
 L["for"] = "por";
+L["by"] = "por";
+
+L["For help or suggestions"] = "Ayuda o sugerencias";

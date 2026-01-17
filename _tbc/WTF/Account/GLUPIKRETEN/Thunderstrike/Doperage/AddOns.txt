@@ -114,7 +114,7 @@ SigmaProfessionFilterMining: disabled
 SigmaProfessionFilterPoisons: disabled
 Immersion: enabled
 Bagnon_ItemLevel_Vermin: disabled
-NovaWorldBuffs: disabled
+NovaWorldBuffs: enabled
 AdiBags-BetterCategories: enabled
 ClickLinks: enabled
 Details_Compare2: enabled
@@ -160,7 +160,7 @@ RuneBar: enabled
 AdiBags_Item_Sets: disabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
-NovaConsumesHelper: disabled
+NovaConsumesHelper: enabled
 Drift: enabled
 Syndicator: enabled
 Blizzard_ObjectiveTracker: enabled

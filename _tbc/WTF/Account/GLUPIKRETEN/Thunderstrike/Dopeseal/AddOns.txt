@@ -81,8 +81,8 @@ Masque_Newsom: enabled
 MikScrollingBattleText: enabled
 MSBTOptions: enabled
 Myslot: disabled
-NovaConsumesHelper: disabled
-NovaWorldBuffs: disabled
+NovaConsumesHelper: enabled
+NovaWorldBuffs: enabled
 NugKeyFeedback: enabled
 OmniCC: enabled
 OmniCC_Config: enabled

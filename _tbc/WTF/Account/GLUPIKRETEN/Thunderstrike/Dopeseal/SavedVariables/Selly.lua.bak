@@ -13,13 +13,13 @@ SellyLocalDB = {
 ["SellBlueBoE"] = false,
 ["SellGreen"] = false,
 ["SellWhite"] = false,
-["SellPurpleBoE"] = false,
-["WhitelistItems"] = {
-},
+["TotalEarnedCopper"] = 83,
+["OptionAutoSell"] = true,
 ["OptionAutoRepair"] = true,
 ["SellGreenBoE"] = false,
-["OptionAutoSell"] = true,
-["TotalEarnedCopper"] = 21,
+["WhitelistItems"] = {
+},
+["SellPurpleBoE"] = false,
 },
 },
 }

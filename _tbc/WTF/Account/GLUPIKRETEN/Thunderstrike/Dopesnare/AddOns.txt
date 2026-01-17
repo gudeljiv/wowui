@@ -111,7 +111,7 @@ AdiBags-BetterCategories: disabled
 ClassicProfessionFilter: enabled
 Immersion: enabled
 Bagnon_ItemLevel_Vermin: disabled
-NovaWorldBuffs: disabled
+NovaWorldBuffs: enabled
 ClickLinks: enabled
 Details_Compare2: enabled
 Details_EncounterDetails: enabled
@@ -173,7 +173,7 @@ LoonBestInSlot: enabled
 Masque_BeautyBorder: enabled
 Masque_ElvUI: enabled
 Masque_Muq: enabled
-NovaConsumesHelper: disabled
+NovaConsumesHelper: enabled
 RatingBuster: enabled
 RingMenuReborn: disabled
 StatLogic: enabled

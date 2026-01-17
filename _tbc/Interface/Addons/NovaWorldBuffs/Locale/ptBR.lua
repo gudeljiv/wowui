@@ -1179,3 +1179,6 @@ L["Nov"] = "Nov";
 L["Dec"] = "Dez";
 
 L["for"] = "por";
+L["by"] = "por";
+
+L["For help or suggestions"] = "Ajuda ou sugestões";

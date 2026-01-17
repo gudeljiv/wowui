@@ -96,7 +96,7 @@ Prat-3.0: enabled
 Prat-3.0_Libraries: enabled
 Immersion: enabled
 Bagnon_ItemLevel_Vermin: disabled
-NovaWorldBuffs: disabled
+NovaWorldBuffs: enabled
 Blizzard_CombatText: enabled
 Baganator-Simple: disabled
 Drift: enabled
@@ -142,7 +142,7 @@ Masque_BeautyBorder: enabled
 Masque_ElvUI: enabled
 Masque_Muq: enabled
 Masque_Newsom: enabled
-NovaConsumesHelper: disabled
+NovaConsumesHelper: enabled
 RatingBuster: enabled
 StatLogic: enabled
 TipTac: enabled

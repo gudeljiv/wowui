@@ -1148,3 +1148,6 @@ L["minimapLayerZoneIDTooltipDesc"] = "Fait en sorte que l’infobulle au survol 
 L["Unknown"] = "Inconnu";
 
 L["for"] = "depuis";
+L["by"] = "par";
+
+L["For help or suggestions"] = "Aide ou suggestions";

@@ -1,2 +1,6 @@
-﻿2.5.000 - 14th January 2026
+﻿2.5.001 - 17th January 2026
+- The 'Set map opacity' option is now available.
+- Updated points of interest icons.
+
+2.5.000 - 14th January 2026
 - Welcome to Burning Crusade Anniversary.

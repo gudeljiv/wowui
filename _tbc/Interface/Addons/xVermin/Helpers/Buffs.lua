@@ -21,6 +21,16 @@ local loadSpells = function()
 			},
 		}
 	end
+	if xVermin.Class == "PALADIN" then
+		buffs = {
+			{
+				["spell_id"] = xVermin.GetSpellID("Blessing of Might"),
+				["short_name"] = "bom",
+				["name"] = "Blessing of Might",
+				["found"] = false,
+			},
+		}
+	end
 	if xVermin.Class == "DRUID" then
 		buffs = {
 			{
@@ -89,10 +99,6 @@ local function Refresh()
 					frame:SetAttribute("type1", "macro")
 					frame:SetAttribute("macrotext1", "/cast [@player] " .. buff.name)
 
-					-- frame:SetAttribute("type", "spell")
-					-- frame:SetAttribute("spell", "Demon Armor")
-					-- frame:SetAttribute("target-slot", 1) -- Self-cast
-
 					frame:SetFrameStrata("MEDIUM")
 					frame:CreateBeautyBorder(6)
 					frame:SetSize(36, 36)
@@ -102,6 +108,9 @@ local function Refresh()
 					frame.texture:SetSize(frame:GetSize())
 					frame.texture:SetPoint("CENTER")
 					frame.texture:SetTexture(GetSpellTexture(buff.spell_id))
+
+					print("Type:", frame:GetAttribute("type1"))
+					print("Macro:", frame:GetAttribute("macrotext1"))
 				end
 
 				local x = (index - 1) * shift

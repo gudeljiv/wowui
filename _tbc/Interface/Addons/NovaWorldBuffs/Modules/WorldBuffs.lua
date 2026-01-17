@@ -2,8 +2,18 @@
 ---NovaWorldBuffs--
 -------------------
 
---Just starting to bring things over to this module, next step will be changing everything to spellIDs now they've been added to era.
---This is only half done and a huge mess atm.
+--Current observations:
+--Only and Nef both now come from the same NPC "173758" for horde and "173754" for alliance instead of the quest NPCs like they did in original 2019 classic.
+--This new hidden NPC also gives a GUID to CLEU with the zoneID for the layer you're currently on even if the buff was handed in a diff layer.
+--So there's 2 new issues to deal which with these changes, no different npcID specific to the buff type and no source zoneID to determine the quest handin layer anymore.
+--This makes telling which buff dropped impossible, now the only way to tell the diff is by the NPC yells.
+--BUT at the same time they added this new hidden NPC to hand out the buffs they also made the NPC yell only on the layer it was handed in on (I think? Needs more testing).
+--So basically the current system is held together by the fact the NPC only yells on the current layer.
+--The whole way buffs drop now it quite a mess.
+--I really miss original 2019 classic when these drops worked perfectly from the handin NPCs and originated from the quest handin layer.
+--Every buff drop back then could be 100% accurately determined by the CLEU SPELL_AURA_APPLIED event sourceGUID.
+--Rend works a little differently where there's no way to determine the zoneID it came from but it ALSO yells on every layer, making it always 0% chance to tell which layer dropped it.
+--This is even worse than ony/nef and why there has to be a rend log and data shared around the server to try and work out what layer people were on when they handed in the quest.
 
 local addonName, addon = ...;
 local NWB = addon.a;
@@ -13,6 +23,24 @@ NWB.firstYells = {rend = 0, ony = 0, nef = 0, zan = 0}; --Npc yells, shared guil
 NWB.buffDrops = {rend = 0, ony = 0, nef = 0, zan = 0}; --Full duration buff applications, personal cooldown.
 NWB.lastSets = {rend = 0, ony = 0, nef = 0, zan = 0}; --Buff drops actual being set in the addon, if it meets all checks after buff applications.
 local isClassic = NWB.isClassic;
+local logonTime = 0;
+
+local f = CreateFrame("Frame");
+f:RegisterEvent("PLAYER_ENTERING_WORLD");
+f:SetScript('OnEvent', function(self, event, ...)
+	local isLogon, isReload = ...;
+	if (isLogon or isReload) then
+		logonTime = GetTime();
+		f:UnregisterEvent("PLAYER_ENTERING_WORLD");
+	end
+end)
+
+local buffDurations = {
+	["rend"] = 3600,
+	["ony"] = 7200,
+	["nef"] = 7200,
+	["zan"] = 7200,
+};
 
 --5 second leeway for funcs sharing the same cooldown, this is for buff drops that have a 1 minute server cooldown anyway.
 local function isOnCooldown(cooldownType, type)
@@ -20,6 +48,102 @@ local function isOnCooldown(cooldownType, type)
 		return true;
 	end
 end
+
+local function setBuffTimer(type, GUID, zoneID, npcID)
+	--NWB:debug("Setting buff timer:", type, GUID, zoneID, npcID)
+	--Set a timer when a buff drops.
+	if (type == "rend") then
+		local _, _, zone = NWB:GetPlayerZonePosition();
+		if (NWB.isLayered and zone ~= 1454) then
+			--Testing tracking rend for alliance here by attaching it to the new layermap.
+			if (NWB.lastKnownLayerMapID and NWB.lastKnownLayerMapID > 0) then
+				if (NWB.faction == "Alliance") then
+					NWB:setRendBuff("self", UnitName("player"), NWB.lastKnownLayerMapID, sourceGUID, true);
+				end
+			end
+			return;
+		end
+		if (NWB.isLayered and (not npcID or npcID ~= "4949" or zone ~= 1454) and NWB.faction ~= "Alliance") then
+			--Some parts on the edges of orgrimmar seem to give the buff from Herald instead of Thrall, even while on map 1454.
+			--This creates a false 3rd layer with the barrens zoneid, took way too long to figure this out...
+			NWB:debug("bad rend buff source on layered realm", sourceGUID);
+			return;
+		end
+		if (NWB.isLayered and NWB.faction == "Alliance") then
+			NWB:setRendBuff("self", UnitName("player"), zoneID, sourceGUID, true);
+		else
+			NWB:setRendBuff("self", UnitName("player"), zoneID, sourceGUID);
+		end
+	elseif (type == "ony") then
+		if (NWB.noGUID) then
+			--NWB:debug("bufftest4", "self", UnitName("player"), NWB.currentZoneIDStrict, "noSourceGUID");
+			NWB:setOnyBuff("self", UnitName("player"), NWB.currentZoneIDStrict, "noSourceGUID");
+		elseif ((GetServerTime() - NWB.lastJoinedGroup) > 180) then
+			NWB:setOnyBuff("self", UnitName("player"), zoneID, GUID);
+		end
+	elseif (type == "nef") then
+		if (NWB.noGUID) then
+			--NWB:debug("bufftest4", "self", UnitName("player"), NWB.currentZoneIDStrict, "noSourceGUID");
+			NWB:setNefBuff("self", UnitName("player"), NWB.currentZoneIDStrict, "noSourceGUID");
+		elseif ((GetServerTime() - NWB.lastJoinedGroup) > 180) then
+			NWB:setNefBuff("self", UnitName("player"), zoneID, GUID);
+		end
+	end
+end
+
+---This is a new backup system to deal with current bugs.
+---Since Blizzard has broken the yell msgs when a buff drops and won't fix it we now need to check for additional things.
+--So we can set times based on on the buff being applied with no yell msgs.
+
+--This was going to set timers if a valid drop was detected when bugged npcs yells don't happen.
+--But now I see Blizzard has changed it so a new hidden npc "173758" drops both ony and nef so you can't even tell from the GUID which buff dropped anymore without the yell first.
+--So that idea won't work either I guess...
+--[[local function isValidDropForBackupTimer(type, spellName, duration, npcID, zoneID)
+	--Check if it's valid enough that we'll set a timer for this buff.
+	--Check layer has no timer already.
+	NWB:debug("Checking if valid for backup timer:", type, spellName, duration, npcID, zoneID);
+	--Check we're in a city where it drops.
+	if (not NWB:isCapitalCityAction(type)) then
+		return;
+	end
+	if (type == "rend") then
+	
+	elseif (type == "ony") then
+	
+	elseif (type == "nef") then
+	
+	end
+end]]
+
+local function checkBuffDropped(type, spellName, duration, npcID, zoneID)
+	--Check that it's valid enough to play a drop sound for tabbed out people waiting for buff etc.
+	--NWB:debug("Checking if buff dropped:", type, spellName, duration, npcID, zoneID);
+	if (GetTime() - logonTime < 20) then
+		--NWB:debug("Buff drop check halted, false duration hapopens at logon time.");
+		return;
+	end
+	if (type and buffDurations[type] and duration) then
+		if (duration > buffDurations[type]) then
+			--At logon ony buff gets applied with .001 seconds higher duration than max even if only a few mins left on buff.
+			--Is it always higher? does regular buff drop always come at 7200 and never higher so this could be a valid check for logon?
+			--More testing needed.
+			--NWB:debug("Buff drop check halted, higher duration than max.");
+			return;
+		end
+		--Check duration first, don't want to trigger on chronoboon or other stuff.
+		if (duration > (buffDurations[type] - 0.5)) then
+			if (not NWB.buffDrops[type] or GetServerTime() - NWB.buffDrops[type] > NWB.buffDropSpamCooldown) then
+				NWB:playSound("soundsRendDrop", type);
+				--NWB:debug("Playing backup drop sound:", type);
+			end
+			NWB:trackNewBuff(spellName, type, npcID);
+			--if (npcID and zoneID) then
+				--isValidDropForBackupTimer(type, spellName, duration, npcID, zoneID);
+			--end
+		end
+	end
+end
+---End backup system.
 
 --Adding a central place to control whether an event should fire, things are changing a lot recently in classic with buff cooldowns etc and this just make it easier to change things in one place.
 function NWB:checkEventStatus(event, type, subEvent, channel)
@@ -375,9 +499,117 @@ NWB.lastBlackfathomBoon = 0;
 NWB.lastSparkOfInspiration = 0;
 NWB.lastFervorTempleExplorer = 0;
 NWB.lastMightOfStormwind = 0;
+local cleu_spellIDs = {
+	--Use a table to lookup if we need to do anything in the CLEU event instead always running a elseif statement for speed.
+	--We only check worl buff related stuff here.
+	[16609] = "rend",
+	[22888] = "ony",
+	[24425] = "zan",
+	--New spell ID's after hotfix 23/4/21.
+	[355366] = "rend",
+	[355363] = "ony",
+	[355365] = "zan",
+	
+	[23768] = "dmf", --Sayge's Dark Fortune of Damage
+	[23769] = "dmf", --Sayge's Dark Fortune of Resistance
+	[23767] = "dmf", --Sayge's Dark Fortune of Armor
+	[23766] = "dmf", --Sayge's Dark Fortune of Intelligence
+	[23738] = "dmf", --Sayge's Dark Fortune of Spirit
+	[23737] = "dmf", --Sayge's Dark Fortune of Stamina
+	[23735] = "dmf", --Sayge's Dark Fortune of Strength
+	[23736] = "dmf", --Sayge's Dark Fortune of Agility
+	[22818] = "moxie",
+	[22817] = "ferocity",
+	[22820] = "savvy",
+	[17628] = "flaskPower", --Supreme Power.
+	[17626] = "flaskTitans", --Flask of the Titans (only flask spell with Flask in the name, dunno why).
+	[17627] = "flaskWisdom", --Distilled Wisdom.
+	[17629] = "flaskResistance", --Chromatic Resistance.
+	[15366] = "songflower",
+	[15123] = "resistFire", --LBRS fire resist buff.
+	[8733] = "blackfathom", --Blessing of Blackfathom
+	[29235] = "festivalFortitude", --Fire Festival Fortitude
+	[29846] = "festivalFury", --Fire Festival Fury
+	[29338] = "festivalFury", --Fire Festival Fury 2 diff types? aoe and single version possibly?
+	[29175] = "ribbonDance", --Fire Festival Fortitude
+	[29534] = "silithyst", --Traces of Silithyst
+	[24417] = "sheenZanza",
+	[24382] = "spiritZanza",
+	[24383] = "swiftZanza",
+	[25101] = "battleShout",
+	
+	--SoD.
+	[430947] = "boonOfBlackfathom",
+	[430352] = "ashenvaleRallyingCry",
+	[438536] = "sparkOfInspiration", --Why is there 2 the same? Horde and Alliance perhaps?
+	[438537] = "sparkOfInspiration",
+	[446695] = "fervorTempleExplorer",
+	[446698] = "fervorTempleExplorer",
+	[460939] = "mightOfStormwind",
+	[460940] = "mightOfStormwind",
+	
+	--Other.
+	--[[[1784] = "stealth", --Rank 1.
+	[1785] = "stealth", --Rank 2.
+	[1786] = "stealth", --Rank 3.
+	[1787] = "stealth", --Rank 4.]]
+	[29519] = "silithyst",
+};
+
+local dmfBuffs = {
+	[23768] = true, --Sayge's Dark Fortune of Damage
+	[23769] = true, --Sayge's Dark Fortune of Resistance
+	[23767] = true, --Sayge's Dark Fortune of Armor
+	[23766] = true, --Sayge's Dark Fortune of Intelligence
+	[23738] = true, --Sayge's Dark Fortune of Spirit
+	[23737] = true, --Sayge's Dark Fortune of Stamina
+	[23735] = true, --Sayge's Dark Fortune of Strength
+	[23736] = true, --Sayge's Dark Fortune of Agility
+};
+
+if (isClassic) then
+	--Trying to chase a bug where combat log sometimes isn't showing a new ony buff drop in stormwind.
+	local f = CreateFrame("Frame", "NWB_Backup_Auras");
+	f:RegisterEvent("UNIT_AURA");
+	f:SetScript("OnEvent", function(self, event, unit, data)
+		if (unit ~= "player") then
+			return;
+		end
+		if (data.addedAuras) then
+			for _, auraData in pairs(data.addedAuras) do
+				if (auraData.spellId and cleu_spellIDs[auraData.spellId]) then
+					local type = cleu_spellIDs[auraData.spellId];
+					if (type == "rend" or type == "ony" or type == "zan") then
+						--NWB:debug("Tracked aura applied:", auraData.name, auraData.spellId);
+						checkBuffDropped(type, auraData.name, auraData.duration);
+					end
+				end
+			end
+		end
+		if (data.updatedAuraInstanceIDs) then
+			for _, auraInstanceID in pairs(data.updatedAuraInstanceIDs) do
+				local auraData = C_UnitAuras.GetAuraDataByAuraInstanceID(unit, auraInstanceID);
+				if (auraData) then
+					--NWB:debug("Updated aura:", auraData.name, auraData.duration);
+					if (auraData.spellId and cleu_spellIDs[auraData.spellId]) then
+						local type = cleu_spellIDs[auraData.spellId];
+						if (type == "rend" or type == "ony" or type == "zan") then
+							--NWB:debug("Tracked aura applied:", auraData.name, auraData.spellId);
+							checkBuffDropped(type, auraData.name, auraData.duration);
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+
 local function combatLogEventUnfiltered(...)
 	local timestamp, subEvent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, 
 			destName, destFlags, destRaidFlags, spellID, spellName = CombatLogGetCurrentEventInfo();
+	--if (destName == UnitName("player") and (spellID == 22888 or spellName == "Rallying Cry of the Dragonslayer")) then
+	--	NWB:debug("Ony event:", subEvent, spellID, spellName)
+	--end
 	if (subEvent == "UNIT_DIED") then
 		local _, _, zone = NWB:GetPlayerZonePosition();
 		local _, _, _, _, zoneID, npcID = strsplit("-", destGUID);
@@ -477,425 +709,388 @@ local function combatLogEventUnfiltered(...)
 			end)
 		end
 	elseif (subEvent == "SPELL_AURA_APPLIED" or subEvent == "SPELL_AURA_REFRESH") then
-		local unitType, _, _, _, zoneID, npcID = strsplit("-", sourceGUID);
-		local destUnitType, _, _, _, destZoneID, destNpcID = strsplit("-", destGUID);
-		zoneID = tonumber(zoneID);
-		if (isClassic and destName == UnitName("player")) then
-			NWB:countDebuffs();
-		end
-		--[[if (NWB.isDebug) then
-			local expirationTime = NWB:getBuffDuration(spellName);
-			if (destName == UnitName("player") and (spellName == L["Rallying Cry of the Dragonslayer"] or spellName == L["Warchief's Blessing"])) then
-				NWB:debug("buff", expirationTime, sourceGUID);
+		--if (destName == UnitName("player")) then
+		--	NWB:debug("Aura:", subEvent, spellID, spellName, cleu_spellIDs[spellID]);
+		--end
+		if (destName == UnitName("player")) then
+			if (isClassic) then
+				NWB:countDebuffs();
 			end
-			if (destName == UnitName("player") and spellName == L["Rallying Cry of the Dragonslayer"] and expirationTime >= (7199.5 - buffLag)) then
-				NWB:debug("bufftest", spellName, unitType, zoneID, npcID, GetServerTime() - NWB.data.onyYell, expirationTime);
-				NWB:debug("bufftest2 source", sourceGUID, "dest", destGUID);
-				NWB:debug("ony yell", GetServerTime() - NWB.data.onyYell, "nef yell", GetServerTime() - NWB.data.nefYell);
-			end
-			if (destName == UnitName("player") and spellName == L["Warchief's Blessing"] and expirationTime >= (3599.5 - buffLag)) then
-				NWB:debug("bufftest", spellName, unitType, zoneID, npcID, GetServerTime() - NWB.data.rendYell, expirationTime);
-				NWB:debug("bufftest3 source", sourceGUID, "dest", destGUID);
-				NWB:debug("rend yell", GetServerTime() - NWB.data.rendYell);
-			end
-		end]]
-		if (destName == UnitName("player") and spellName == L["Warchief's Blessing"]) then
-			--Getting duration fails if the target is mc'd.
-			--Was this failing for the entirety of classic and I didn't know?
-			--The backup set timer from the yell msgs was likely carrying the alliance rend timer.
-			local expirationTime = NWB:getBuffDuration(L["Warchief's Blessing"], 1);
-			local _, _, zone = NWB:GetPlayerZonePosition();
-			--If layered then you must be in org to set the right layer id, the barrens is disabled.
-			--if (expirationTime >= 3599.5 and (zone == 1454 or not NWB.isLayered) and unitType == "Creature") then
-			--print(expirationTime, zone, unitType, NWB.data.rendYell, NWB.data.rendYell2, sourceGUID, destGUID, GetServerTime(), NWB.lastKnownLayerMapID)
-			if (expirationTime >= (3599.5 - buffLag) and (zone == 1454 or (zone == 1413 and NWB.faction == "Alliance") or not NWB.isLayered) and unitType == "Creature"
-					and ((GetServerTime() - NWB.data.rendYell2) < yellTwoOffset or (GetServerTime() - NWB.data.rendYell) < yellOneOffset)) then
-				NWB:trackNewBuff(spellName, "rend", npcID);
-				if (not NWB.buffDrops["rend"] or GetServerTime() - NWB.buffDrops["rend"] > NWB.buffDropSpamCooldown) then
-					NWB:playSound("soundsRendDrop", "rend");
-				end
-				if (NWB.db.global.cityGotBuffSummon) then
-					if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
-						NWB.hideSummonPopup = true;
-						NWB:print("Got Rend buff, auto taking summon.");
-					end
-					NWB:acceptSummon();
-				end
-				if (NWB.isLayered and zone ~= 1454) then
-					--Testing tracking rend for alliance here by attaching it to the new layermap.
-					if (NWB.lastKnownLayerMapID and NWB.lastKnownLayerMapID > 0) then
-						if (NWB.faction == "Alliance") then
-							NWB:setRendBuff("self", UnitName("player"), NWB.lastKnownLayerMapID, sourceGUID, true);
-						end
-					end
-					return;
-				end
-				if (NWB.isLayered and (not npcID or npcID ~= "4949" or zone ~= 1454) and NWB.faction ~= "Alliance") then
-					--Some parts on the edges of orgrimmar seem to give the buff from Herald instead of Thrall, even while on map 1454.
-					--This creates a false 3rd layer with the barrens zoneid, took way too long to figure this out...
-					NWB:debug("bad rend buff source on layered realm", sourceGUID);
-					return;
-				end
-				if (NWB.isLayered and NWB.faction == "Alliance") then
-					NWB:setRendBuff("self", UnitName("player"), zoneID, sourceGUID, true);
-				else
-					NWB:setRendBuff("self", UnitName("player"), zoneID, sourceGUID);
-				end
-				--NWB:debug("rend hand in delay", GetTime() - lastRendHandIn);
-				--NWB:debug("rend herald found delay", GetServerTime() - NWB.lastHeraldAlert);
-				--NWB:debug("rend herald yell delay", GetServerTime() - NWB.lastHeraldYell);
-				NWB.buffDrops["rend"] = GetServerTime();
-			else
-				NWB:syncBuffsWithCurrentDuration();
-			end
-		elseif (destName == UnitName("player") and spellName == L["Spirit of Zandalar"] and (GetServerTime() - NWB.lastZanBuffGained) > 1) then
-			--Zan buff has no sourceName or sourceGUID, not sure why.
-			local expirationTime = NWB:getBuffDuration(L["Spirit of Zandalar"], 4);
-			if (expirationTime >= 7199.5) then
-				NWB:setZanBuff("self", UnitName("player"), zoneID, sourceGUID);
-				NWB:trackNewBuff(spellName, "zan", npcID);
-				--Not sure why this triggers 4 times on PTR, needs more testing once it's on live server but for now we do a 1 second cooldown.
-				NWB.lastZanBuffGained = GetServerTime();
-				--if (not NWB.buffDrops["zan"] or GetServerTime() - NWB.buffDrops["zan"] > NWB.buffDropSpamCooldown) then
-					NWB:playSound("soundsZanDrop", "zan");
+			if (spellID and cleu_spellIDs[spellID]) then
+				local unitType, _, _, _, zoneID, npcID = strsplit("-", sourceGUID);
+				local destUnitType, _, _, _, destZoneID, destNpcID = strsplit("-", destGUID);
+				zoneID = tonumber(zoneID);
+				--if (subEvent == "SPELL_AURA_APPLIED" and spellName ~= "Stealth") then
+				--	NWB:debug("Aura applied:", spellName, spellID);
+				--elseif (subEvent == "SPELL_AURA_REFRESH") then
+				--	NWB:debug("Aura refreshed:", spellName, spellID);
 				--end
-				NWB:buffDroppedTaxiNode("zg");
-				if (NWB.db.global.zgGotBuffSummon) then
-					if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
-						NWB.hideSummonPopup = true;
-						NWB:print("Got Zandalar buff, auto taking summon.");
-					end
-					NWB:acceptSummon();
-				end
-				--NWB.buffDrops["zan"] = GetServerTime();
-			else
-				NWB:syncBuffsWithCurrentDuration();
-			end
-		--[[elseif (((NWB.faction == "Horde" and npcID == "14720") or (NWB.faction == "Alliance" and npcID == "14721"))
-				and destName == UnitName("player") and spellName == L["Rallying Cry of the Dragonslayer"]
-				and ((GetServerTime() - NWB.data.nefYell2) < 60 or (GetServerTime() - NWB.data.nefYell) < 60)
-				and unitType == "Creature") then]]
-		elseif (((NWB.faction == "Horde" and (npcID == "14720" or npcID == "173758" or NWB.noGUID))
-				or (NWB.faction == "Alliance" and (npcID == "14721" or npcID == "173754" or NWB.noGUID)))
-				and destName == UnitName("player") and spellName == L["Rallying Cry of the Dragonslayer"]
-				and ((GetServerTime() - NWB.data.nefYell2) < yellTwoOffset or (GetServerTime() - NWB.data.nefYell) < yellOneOffset)
-				and (unitType == "Creature" or NWB.noGUID)) then
-			--What a shitshow this is now, thanks Blizzard for removing the GUID for no good reason.
-			local expirationTime = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
-			local _, _, zone = NWB:GetPlayerZonePosition();
-			if (expirationTime >= (7199.5  - buffLag)) then
-				if (((not NWB.noGUID or NWB.currentZoneIDStrict > 0) and (zone == 1453 or zone == 1454))
-						or not NWB.isLayered) then
-					if (NWB.noGUID) then
-						NWB:debug("bufftest4", "self", UnitName("player"), NWB.currentZoneIDStrict, "noSourceGUID");
-						NWB:setNefBuff("self", UnitName("player"), NWB.currentZoneIDStrict, "noSourceGUID");
-					elseif ((GetServerTime() - NWB.lastJoinedGroup) > 180) then
-						NWB:setNefBuff("self", UnitName("player"), zoneID, sourceGUID);
-					end
-				end
-				NWB:trackNewBuff(spellName, "nef", npcID);
-				--Share cd with ony, same buff.
-				if (not NWB.buffDrops["ony"] or GetServerTime() - NWB.buffDrops["ony"] > NWB.buffDropSpamCooldown) then
-					NWB:playSound("soundsNefDrop", "nef");
-				end
-				if (NWB.db.global.cityGotBuffSummon) then
-					if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
-						NWB.hideSummonPopup = true;
-						NWB:print("Got Nefarian buff, auto taking summon.");
-					end
-					NWB:acceptSummon();
-				end
-				--NWB:debug("nef hand in delay", GetTime() - lastNefHandIn);
-				NWB.buffDrops["ony"] = GetServerTime();
-				--NWB.buffDrops["nef"] = GetServerTime();
-			else
-				NWB:syncBuffsWithCurrentDuration()
-			end
-		--[[elseif (((NWB.faction == "Horde" and npcID == "14392") or (NWB.faction == "Alliance" and npcID == "14394"))
-				and destName == UnitName("player") and spellName == L["Rallying Cry of the Dragonslayer"]
-				and ((GetServerTime() - NWB.data.onyYell2) < 60 or (GetServerTime() - NWB.data.onyYell) < 60)
-				and ((GetServerTime() - NWB.data.nefYell2) > 60)
-				and unitType == "Creature") then]]
-		elseif (((NWB.faction == "Horde" and (npcID == "14392" or npcID == "173758" or NWB.noGUID))
-				or (NWB.faction == "Alliance" and (npcID == "14394" or npcID == "173754" or NWB.noGUID)))
-				and destName == UnitName("player") and spellName == L["Rallying Cry of the Dragonslayer"]
-				and ((GetServerTime() - NWB.data.onyYell2) < yellTwoOffset or (GetServerTime() - NWB.data.onyYell) < yellOneOffset)
-				and ((GetServerTime() - NWB.data.nefYell2) > 30)
-				and (unitType == "Creature" or NWB.noGUID)) then
-			local expirationTime = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
-			local _, _, zone = NWB:GetPlayerZonePosition();
-			if (expirationTime >= (7199.5 - buffLag)) then
-				if (((not NWB.noGUID or NWB.currentZoneIDStrict > 0) and (zone == 1453 or zone == 1454))
-					or not NWB.isLayered) then
-					if (NWB.noGUID) then
-						NWB:debug("bufftest4", "self", UnitName("player"), NWB.currentZoneIDStrict, "noSourceGUID");
-						NWB:setOnyBuff("self", UnitName("player"), NWB.currentZoneIDStrict, "noSourceGUID");
-					elseif ((GetServerTime() - NWB.lastJoinedGroup) > 180) then
-						NWB:setOnyBuff("self", UnitName("player"), zoneID, sourceGUID);
-					end
-				end
-				NWB:trackNewBuff(spellName, "ony", npcID);
-				if (not NWB.buffDrops["ony"] or GetServerTime() - NWB.buffDrops["ony"] > NWB.buffDropSpamCooldown) then
-					NWB:playSound("soundsOnyDrop", "ony");
-				end
-				if (NWB.db.global.cityGotBuffSummon) then
-					if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
-						NWB.hideSummonPopup = true;
-						NWB:print("Got Onyxia buff, auto taking summon.");
-					end
-					NWB:acceptSummon();
-				end
-				--NWB:debug("ony hand in delay", GetTime() - lastOnyHandIn);
-				NWB.buffDrops["ony"] = GetServerTime();
-			else
-				NWB:syncBuffsWithCurrentDuration();
-			end
-		--[[elseif (((NWB.faction == "Horde" and destNpcID == "14392") or (NWB.faction == "Alliance" and destNpcID == "14394"))
-				and spellName == L["Sap"] and ((GetServerTime() - NWB.data.onyYell2) < 30 or (GetServerTime() - NWB.data.onyYell) < 30)) then
-			--Yell timestamp is only recorded to non-layered data (NWB.data.onyYell) first because there's is no GUID attached.
-			--Then it's copied from there to the right layer once the buff drops in setOnyBuff().
-			--For this reason we just check against the non-layered yell timestamp even for layered realms.
-			--Using destGUID instead of sourceGUID for sap target instead of buff gained from source.
-			--Sapping breaking the buff was fixed by blizzard.
-			local unitType, _, _, _, zoneID, npcID = strsplit("-", destGUID);
-			zoneID = tonumber(zoneID);
-			local _, _, zone = NWB:GetPlayerZonePosition();
-			if ((zone == 1453 or zone == 1454) or not NWB.isLayered) then
-				NWB:debug("Onyxia buff NPC sapped by", sourceName, zoneID, destGUID);
-				if (sourceName) then
-					NWB:print("Onyxia buff NPC sapped by " .. sourceName .. ", setting backup timer.");
-					if (not NWB.data.sapped) then
-						NWB.data.sapped = {};
-					end
-					NWB.data.sapped[sourceName] = GetServerTime();
-				else
-					NWB:print("Onyxia buff NPC sapped, setting backup timer.");
-				end
-				NWB:setOnyBuff("self", UnitName("player"), zoneID, destGUID, true);
-			end]]
-		elseif (destName == UnitName("player") and (spellName == L["Sayge's Dark Fortune of Agility"]
-				or spellName == L["Sayge's Dark Fortune of Spirit"] or spellName == L["Sayge's Dark Fortune of Stamina"]
-				or spellName == L["Sayge's Dark Fortune of Strength"] or spellName == L["Sayge's Dark Fortune of Armor"]
-				or spellName == L["Sayge's Dark Fortune of Resistance"] or spellName == L["Sayge's Dark Fortune of Damage"]
-				 or spellName == L["Sayge's Dark Fortune of Intelligence"])) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (not NWB.isClassic and spellName == L["Sayge's Dark Fortune of Damage"]) then
-				NWB.unitDamageFrame:RegisterEvent("UNIT_DAMAGE");
-			end
-			if (expirationTime >= 7199) then
-				NWB:trackNewBuff(spellName, "dmf", npcID);
-				NWB.lastDmfBuffGained = GetServerTime();
-				--NWB:debug(GetTime() - speedtest);
-				if (NWB.db.global.dmfGotBuffSummon) then
-					if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
-						NWB.hideSummonPopup = true;
-						NWB:print("Got DMF buff, auto taking summon.");
-					end
-					NWB:acceptSummon();
-				end
-			end
-		elseif (destName == UnitName("player") and npcID == "14822") then
-			--Backup checking Sayge NPC ID until all localizations are done properly.
-			--Maybe this is a better way of doing it overall but I have to test when DMF is actually up first.
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
-				NWB:trackNewBuff(spellName, "dmf", npcID);
-			end
-		elseif ((NWB.noGUID or (npcID == "14720" or npcID == "14721" or npcID == "173758")) and destName == UnitName("player")
-				and spellName == L["Rallying Cry of the Dragonslayer"]) then
-			--Fallback ony/nef buff tracking incase no yell msgs seen abive.
-			local expirationTime = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
-			if (expirationTime >= 7199.5) then
-				NWB:trackNewBuff(spellName, "ony", npcID);
-			end
-		end
-		--Check new nef/ony buffs for tracking durations seperately than the buff timer checks with validation above.
-		--This was used when the npc id's were different for the buffs, now we check above instead.
-		--[[if ((NWB.noGUID or (npcID == "14720" or npcID == "14721")) and destName == UnitName("player")
-				and spellName == L["Rallying Cry of the Dragonslayer"]) then
-			local expirationTime = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
-			if (expirationTime >= 7199.5) then
-				NWB:trackNewBuff(spellName, "nef");
-			end
-		elseif ((NWB.noGUID or (npcID == "14392" or npcID == "14394")) and destName == UnitName("player")
-				and spellName == L["Rallying Cry of the Dragonslayer"]) then
-			local expirationTime = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
-			if (expirationTime >= 7199.5) then
-				NWB:trackNewBuff(spellName, "ony");
-			end
-		elseif (destName == UnitName("player") and spellName == L["Songflower Serenade"]) then]]
-		if (destName == UnitName("player") and spellName == L["Songflower Serenade"]) then
-			local expirationTime = NWB:getBuffDuration(L["Songflower Serenade"], 3);
-			if (expirationTime >= 3599) then
-				NWB:trackNewBuff(spellName, "songflower");
-				if (NWB.db.global.songflowerGotBuffSummon) then
-					if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
-						NWB.hideSummonPopup = true;
-						NWB:print("Got Songflower buff, auto taking summon.");
-					end
-					NWB:acceptSummon();
-				end
-			end
-		elseif (npcID == "14326" and destName == UnitName("player")) then
-			--Mol'dar's Moxie.
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
-				NWB:trackNewBuff(spellName, "moxie", npcID);
-			end
-		elseif (npcID == "14321" and destName == UnitName("player")) then
-			--Fengus' Ferocity.
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
-				NWB:trackNewBuff(spellName, "ferocity", npcID);
-			end
-		elseif (npcID == "14323" and destName == UnitName("player")) then
-			--Slip'kik's Savvy.
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
-				NWB:trackNewBuff(spellName, "savvy", npcID);
-			end
-		elseif (NWB.isDebugg and destName == UnitName("player") and spellName == "Ice Armor") then
-			local expirationTime = NWB:getBuffDuration("Ice Armor", 0);
-			if (expirationTime >= 1799) then
-				NWB:trackNewBuff(spellName, "ice");
-			end
-		elseif (destName == UnitName("player")
-				and (spellName == L["Flask of Supreme Power"] or spellName == L["Supreme Power"])) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
-				NWB:trackNewBuff(spellName, "flaskPower");
-			end
-		elseif (destName == UnitName("player") and spellName == L["Flask of the Titans"]) then
-			--This is the only flask spell with "Flask" in the name it seems.
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
-				NWB:trackNewBuff(spellName, "flaskTitans");
-			end
-		elseif (destName == UnitName("player")
-				and (spellName == L["Flask of Distilled Wisdom"] or spellName == L["Distilled Wisdom"])) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
-				NWB:trackNewBuff(spellName, "flaskWisdom");
-			end
-		elseif (destName == UnitName("player")
-				and (spellName == L["Flask of Chromatic Resistance"] or spellName == L["Chromatic Resistance"])) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
-				NWB:trackNewBuff(spellName, "flaskResistance");
-			end
-		elseif (destName == UnitName("player") and spellName == L["Resist Fire"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 3599) then
-				NWB:trackNewBuff(spellName, "resistFire");
-			end
-		elseif (destName == UnitName("player") and spellName == L["Blessing of Blackfathom"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 3599) then
-				NWB:trackNewBuff(spellName, "blackfathom");
-			end
-		elseif (destName == UnitName("player") and spellName == L["Fire Festival Fortitude"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 3599) then
-				NWB:trackNewBuff(spellName, "festivalFortitude");
-			end
-		elseif (destName == UnitName("player") and spellName == L["Fire Festival Fury"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 3599) then
-				NWB:trackNewBuff(spellName, "festivalFury");
-			end
-		elseif (destName == UnitName("player") and spellName == L["Ribbon Dance"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 3599) then
-				NWB:trackNewBuff(spellName, "ribbonDance");
-			end
-		elseif (destName == UnitName("player") and spellName == L["Traces of Silithyst"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 1799) then
-				NWB:trackNewBuff(spellName, "silithyst");
-			end
-		elseif (destName == UnitName("player") and spellName == L["Sheen of Zanza"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
-				NWB:trackNewBuff(spellName, "sheenZanza");
-			end
-		elseif (destName == UnitName("player") and spellName == L["Spirit of Zanza"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
-				NWB:trackNewBuff(spellName, "spiritZanza");
-			end
-		elseif (destName == UnitName("player") and spellName == L["Swiftness of Zanza"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
-				NWB:trackNewBuff(spellName, "swiftZanza");
-			end
-		elseif (destName == UnitName("player") and spellID == 25101) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 899) then
-				NWB:trackNewBuff(spellName, "battleShout");
-			end
-		--New SoD buffs, now that they allow spellIDs in classic this needs to all be changed to a hash table instead of this mess of elseif's in the future.
-		elseif (destName == UnitName("player") and spellName == L["Boon of Blackfathom"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199 and UnitLevel("player") < 40) then
-				NWB:trackNewBuff(spellName, "boonOfBlackfathom");
-				if (GetServerTime() - NWB.lastBlackfathomBoon > NWB.buffDropSpamCooldownSoD) then
-					NWB.lastBlackfathomBoon = GetServerTime();
-					NWB:playSound("soundsBlackfathomBoon", "bob");
-					NWB:print(string.format(L["specificBuffDropped"], L["Boon of Blackfathom"]));
-				end
-			end
-		elseif (destName == UnitName("player") and spellName == L["Ashenvale Rallying Cry"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199) then
-				NWB:trackNewBuff(spellName, "ashenvaleRallyingCry");
-			end
-		elseif (destName == UnitName("player") and spellName == L["Spark of Inspiration"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199 and UnitLevel("player") < 50) then
-				NWB:trackNewBuff(spellName, "sparkOfInspiration");
-				if (GetServerTime() - NWB.lastSparkOfInspiration > NWB.buffDropSpamCooldownSoD) then
-					NWB.lastSparkOfInspiration = GetServerTime();
-					NWB:playSound("soundsBlackfathomBoon", "bob"); --Shared blackfathom boon sound option.
-					NWB:print(string.format(L["specificBuffDropped"], L["Spark of Inspiration"]));
-				end
-			end
-		elseif (destName == UnitName("player") and spellName == L["Fervor of the Temple Explorer"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 7199 and UnitLevel("player") < 60) then
-				NWB:trackNewBuff(spellName, "fervorTempleExplorer");
-				if (GetServerTime() - NWB.lastFervorTempleExplorer > NWB.buffDropSpamCooldownSoD) then
-					NWB.lastFervorTempleExplorer = GetServerTime();
-					NWB:playSound("soundsBlackfathomBoon", "bob"); --Shared blackfathom boon sound option.
-					NWB:print(string.format(L["specificBuffDropped"], L["Fervor of the Temple Explorer"]));
-				end
-			end
-		elseif (destName == UnitName("player") and spellName == L["Might of Stormwind"]) then
-			local expirationTime = NWB:getBuffDuration(spellName, 0);
-			if (expirationTime >= 3599.9) then
-				NWB:trackNewBuff(spellName, "mightOfStormwind");
-				local _, _, zone = NWB:GetPlayerZonePosition();
-				if (zone == 1453 or zone == 1429) then
-					if (GetServerTime() - NWB.lastMightOfStormwind > 300) then
-						NWB.lastMightOfStormwind = GetServerTime();
-						NWB:playSound("soundsRendDrop", "rend");
-						NWB:print(string.format(L["specificBuffDropped"], L["Might of Stormwind"] .. " (" .. L["Rend"] .. ")"));
-					end
-					if (NWB.db.global.cityGotBuffSummon) then
-						if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
-							NWB.hideSummonPopup = true;
-							NWB:print("Got Rend buff, auto taking summon.");
+				--We checked spell names only when classic didn't include the spellID in CLEU.
+				--Now that it does include spellID we check those first but also leave the name in becaus they've added new spellIDs in the past when fixing stuff.
+				--The speed to lookup should be the same as it exits out when finding the spellID first, and also we use a has table above now anyway for extra speed.
+				if (spellID == 16609 or spellID == 355366 or spellName == L["Warchief's Blessing"]) then --What a shitshow rend buff is now, the npcID from the dropped layer no longer shows and now it shows our current layer instead.
+					--Getting duration fails if the target is mc'd.
+					--Was this failing for the entirety of classic and I didn't know?
+					--The backup set timer from the yell msgs was likely carrying the alliance rend timer.
+					local duration = NWB:getBuffDuration(L["Warchief's Blessing"], 1);
+					local _, _, zone = NWB:GetPlayerZonePosition();
+					--If layered then you must be in org to set the right layer id, the barrens is disabled.
+					--if (duration >= 3599.5 and (zone == 1454 or not NWB.isLayered) and unitType == "Creature") then
+					--print(duration, zone, unitType, NWB.data.rendYell, NWB.data.rendYell2, sourceGUID, destGUID, GetServerTime(), NWB.lastKnownLayerMapID)
+					if (duration >= (3599.5 - buffLag) and (zone == 1454 or (zone == 1413 and NWB.faction == "Alliance") or not NWB.isLayered) and unitType == "Creature"
+							and ((GetServerTime() - NWB.data.rendYell2) < yellTwoOffset or (GetServerTime() - NWB.data.rendYell) < yellOneOffset)) then
+						NWB:trackNewBuff(spellName, "rend", npcID);
+						if (not NWB.buffDrops["rend"] or GetServerTime() - NWB.buffDrops["rend"] > NWB.buffDropSpamCooldown) then
+							NWB:playSound("soundsRendDrop", "rend");
 						end
-						NWB:acceptSummon();
+						if (NWB.db.global.cityGotBuffSummon) then
+							if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
+								NWB.hideSummonPopup = true;
+								NWB:print("Got Rend buff, auto taking summon.");
+							end
+							NWB:acceptSummon();
+						end
+						setBuffTimer("rend", sourceGUID, zoneID, npcID);
+						--NWB:debug("rend hand in delay", GetTime() - lastRendHandIn);
+						--NWB:debug("rend herald found delay", GetServerTime() - NWB.lastHeraldAlert);
+						--NWB:debug("rend herald yell delay", GetServerTime() - NWB.lastHeraldYell);
+						NWB.buffDrops["rend"] = GetServerTime();
+					else
+						NWB:syncBuffsWithCurrentDuration();
+						checkBuffDropped("rend", spellName, duration, npcID, zoneID);
 					end
+				elseif ((spellID == 24425 or spellID == 355365 or spellName == L["Spirit of Zandalar"]) and (GetServerTime() - NWB.lastZanBuffGained) > 1) then
+					--Zan buff has no sourceName or sourceGUID, not sure why.
+					local duration = NWB:getBuffDuration(L["Spirit of Zandalar"], 4);
+					if (duration >= 7199.5) then
+						NWB:setZanBuff("self", UnitName("player"), zoneID, sourceGUID);
+						NWB:trackNewBuff(spellName, "zan", npcID);
+						--Not sure why this triggers 4 times on PTR, needs more testing once it's on live server but for now we do a 1 second cooldown.
+						NWB.lastZanBuffGained = GetServerTime();
+						if (not NWB.buffDrops["zan"] or GetServerTime() - NWB.buffDrops["zan"] > NWB.buffDropSpamCooldown) then
+							NWB:playSound("soundsZanDrop", "zan");
+						end
+						NWB:buffDroppedTaxiNode("zg");
+						if (NWB.db.global.zgGotBuffSummon) then
+							if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
+								NWB.hideSummonPopup = true;
+								NWB:print("Got Zandalar buff, auto taking summon.");
+							end
+							NWB:acceptSummon();
+						end
+						--NWB.buffDrops["zan"] = GetServerTime();
+					else
+						NWB:syncBuffsWithCurrentDuration();
+					end
+				elseif (spellID == 22888 or spellID == 355363 or spellName == L["Rallying Cry of the Dragonslayer"]) then
+					--The same NPC "173758" is now dropping both nef and ony buffs.
+					--And since yells also don't display half the time this makes knowing which buff dropped impossible half the time.
+					local foundOnyOrNef;
+					if (((NWB.faction == "Horde" and (npcID == "14720" or npcID == "173758" or NWB.noGUID))
+						or (NWB.faction == "Alliance" and (npcID == "14721" or npcID == "173754" or NWB.noGUID)))
+						and ((GetServerTime() - NWB.data.nefYell2) < yellTwoOffset or (GetServerTime() - NWB.data.nefYell) < yellOneOffset)
+						and (unitType == "Creature" or NWB.noGUID)) then
+							foundOnyOrNef = true;
+							local duration = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
+							local _, _, zone = NWB:GetPlayerZonePosition();
+							if (duration >= (7199.5  - buffLag)) then
+								if (((not NWB.noGUID or NWB.currentZoneIDStrict > 0) and (zone == 1453 or zone == 1454))
+										or not NWB.isLayered) then
+									setBuffTimer("nef", sourceGUID, zoneID, npcID);
+								end
+								NWB:trackNewBuff(spellName, "nef", npcID);
+								--Share cd with ony, same buff.
+								if (not NWB.buffDrops["ony"] or GetServerTime() - NWB.buffDrops["ony"] > NWB.buffDropSpamCooldown) then
+									NWB:playSound("soundsNefDrop", "nef");
+								end
+								if (NWB.db.global.cityGotBuffSummon) then
+									if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
+										NWB.hideSummonPopup = true;
+										NWB:print("Got Nefarian buff, auto taking summon.");
+									end
+									NWB:acceptSummon();
+								end
+								--NWB:debug("nef hand in delay", GetTime() - lastNefHandIn);
+								NWB.buffDrops["ony"] = GetServerTime();
+								--NWB.buffDrops["nef"] = GetServerTime();
+							else
+								NWB:syncBuffsWithCurrentDuration()
+							end
+					end
+					if (((NWB.faction == "Horde" and (npcID == "14392" or npcID == "173758" or NWB.noGUID))
+						or (NWB.faction == "Alliance" and (npcID == "14394" or npcID == "173754" or NWB.noGUID)))
+						and ((GetServerTime() - NWB.data.onyYell2) < yellTwoOffset or (GetServerTime() - NWB.data.onyYell) < yellOneOffset)
+						and ((GetServerTime() - NWB.data.nefYell2) > 30)
+						and (unitType == "Creature" or NWB.noGUID)) then
+							foundOnyOrNef = true;
+							local duration = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
+							local _, _, zone = NWB:GetPlayerZonePosition();
+							if (duration >= (7199.5 - buffLag)) then
+								if (((not NWB.noGUID or NWB.currentZoneIDStrict > 0) and (zone == 1453 or zone == 1454))
+									or not NWB.isLayered) then
+									setBuffTimer("ony", sourceGUID, zoneID, npcID);
+								end
+								NWB:trackNewBuff(spellName, "ony", npcID);
+								if (not NWB.buffDrops["ony"] or GetServerTime() - NWB.buffDrops["ony"] > NWB.buffDropSpamCooldown) then
+									NWB:playSound("soundsOnyDrop", "ony");
+								end
+								if (NWB.db.global.cityGotBuffSummon) then
+									if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
+										NWB.hideSummonPopup = true;
+										NWB:print("Got Onyxia buff, auto taking summon.");
+									end
+									NWB:acceptSummon();
+								end
+								--NWB:debug("ony hand in delay", GetTime() - lastOnyHandIn);
+								NWB.buffDrops["ony"] = GetServerTime();
+							else
+								NWB:syncBuffsWithCurrentDuration();
+							end
+					end
+					if (not foundOnyOrNef) then
+						local duration = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
+						checkBuffDropped("ony", spellName, duration, npcID, zoneID);
+					end
+				elseif (dmfBuffs[spellID]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (not NWB.isClassic and (spellID == 23768 or spellName == L["Sayge's Dark Fortune of Damage"])) then
+						NWB.unitDamageFrame:RegisterEvent("UNIT_DAMAGE");
+					end
+					if (duration >= 7199) then
+						NWB:trackNewBuff(spellName, "dmf", npcID);
+						NWB.lastDmfBuffGained = GetServerTime();
+						--NWB:debug(GetTime() - speedtest);
+						if (NWB.db.global.dmfGotBuffSummon) then
+							if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
+								NWB.hideSummonPopup = true;
+								NWB:print("Got DMF buff, auto taking summon.");
+							end
+							NWB:acceptSummon();
+						end
+					end
+				--[[elseif (npcID == "14822") then --Can be removed when we've changed to spellIDs.
+					--Backup checking Sayge NPC ID until all localizations are done properly.
+					--Maybe this is a better way of doing it overall but I have to test when DMF is actually up first.
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199) then
+						NWB:trackNewBuff(spellName, "dmf", npcID);
+					end]]
+				--[[elseif ((NWB.noGUID or (npcID == "14720" or npcID == "14721" or npcID == "173758")) and destName == UnitName("player")
+						and spellName == L["Rallying Cry of the Dragonslayer"]) then
+					--Fallback ony/nef buff tracking incase no yell msgs seen above.
+					local duration = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
+					if (duration >= 7199.5) then
+						NWB:trackNewBuff(spellName, "ony", npcID);
+					end
+				end]]
+				--Check new nef/ony buffs for tracking durations seperately than the buff timer checks with validation above.
+				--This was used when the npc id's were different for the buffs, now we check above instead.
+				--[[if ((NWB.noGUID or (npcID == "14720" or npcID == "14721")) and destName == UnitName("player")
+						and spellName == L["Rallying Cry of the Dragonslayer"]) then
+					local duration = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
+					if (duration >= 7199.5) then
+						NWB:trackNewBuff(spellName, "nef");
+					end
+				elseif ((NWB.noGUID or (npcID == "14392" or npcID == "14394")) and destName == UnitName("player")
+						and spellName == L["Rallying Cry of the Dragonslayer"]) then
+					local duration = NWB:getBuffDuration(L["Rallying Cry of the Dragonslayer"], 2);
+					if (duration >= 7199.5) then
+						NWB:trackNewBuff(spellName, "ony");
+					end]]
+				elseif (spellID == 15366 or spellName == L["Songflower Serenade"]) then
+					local duration = NWB:getBuffDuration(L["Songflower Serenade"], 3);
+					if (duration >= 3599) then
+						NWB:trackNewBuff(spellName, "songflower");
+						if (NWB.db.global.songflowerGotBuffSummon) then
+							if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
+								NWB.hideSummonPopup = true;
+								NWB:print("Got Songflower buff, auto taking summon.");
+							end
+							NWB:acceptSummon();
+						end
+					end
+				elseif (npcID == "14326") then
+					--Mol'dar's Moxie.
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199) then
+						NWB:trackNewBuff(spellName, "moxie", npcID);
+					end
+				elseif (npcID == "14321") then
+					--Fengus' Ferocity.
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199) then
+						NWB:trackNewBuff(spellName, "ferocity", npcID);
+					end
+				elseif (npcID == "14323") then
+					--Slip'kik's Savvy.
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199) then
+						NWB:trackNewBuff(spellName, "savvy", npcID);
+					end
+				elseif (spellID == 17628) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199) then
+						NWB:trackNewBuff(spellName, "flaskPower");
+					end
+				elseif (spellID == 17626) then
+					--This is the only flask spell with "Flask" in the name it seems.
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199) then
+						NWB:trackNewBuff(spellName, "flaskTitans");
+					end
+				elseif (spellID == 17627) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199) then
+						NWB:trackNewBuff(spellName, "flaskWisdom");
+					end
+				elseif (spellID == 17629) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199) then
+						NWB:trackNewBuff(spellName, "flaskResistance");
+					end
+				elseif (spellID == 15123 or spellName == L["Resist Fire"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 3599) then
+						NWB:trackNewBuff(spellName, "resistFire");
+					end
+				elseif (spellID == 8733 or spellName == L["Blessing of Blackfathom"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 3599) then
+						NWB:trackNewBuff(spellName, "blackfathom");
+					end
+				elseif (spellID == 29235 or spellName == L["Fire Festival Fortitude"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 3599) then
+						NWB:trackNewBuff(spellName, "festivalFortitude");
+					end
+				elseif (spellID == 29846 or spellID == 29338 or spellName == L["Fire Festival Fury"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 3599) then
+						NWB:trackNewBuff(spellName, "festivalFury");
+					end
+				elseif (spellID == 29175 or spellName == L["Ribbon Dance"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 3599) then
+						NWB:trackNewBuff(spellName, "ribbonDance");
+					end
+				elseif (spellID == 29534 or spellName == L["Traces of Silithyst"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 1799) then
+						NWB:trackNewBuff(spellName, "silithyst");
+					end
+				elseif (spellID == 24417 or spellName == L["Sheen of Zanza"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199) then
+						NWB:trackNewBuff(spellName, "sheenZanza");
+					end
+				elseif (spellID == 24382 or spellName == L["Spirit of Zanza"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199) then
+						NWB:trackNewBuff(spellName, "spiritZanza");
+					end
+				elseif (spellID == 24383 or spellName == L["Swiftness of Zanza"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199) then
+						NWB:trackNewBuff(spellName, "swiftZanza");
+					end
+				elseif (spellID == 25101) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 899) then
+						NWB:trackNewBuff(spellName, "battleShout");
+					end
+				--New SoD buffs.
+				elseif (spellID == 430947 or spellName == L["Boon of Blackfathom"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199 and UnitLevel("player") < 40) then
+						NWB:trackNewBuff(spellName, "boonOfBlackfathom");
+						if (GetServerTime() - NWB.lastBlackfathomBoon > NWB.buffDropSpamCooldownSoD) then
+							NWB.lastBlackfathomBoon = GetServerTime();
+							NWB:playSound("soundsBlackfathomBoon", "bob");
+							NWB:print(string.format(L["specificBuffDropped"], L["Boon of Blackfathom"]));
+						end
+					end
+				elseif (spellID == 430352 or spellName == L["Ashenvale Rallying Cry"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199) then
+						NWB:trackNewBuff(spellName, "ashenvaleRallyingCry");
+					end
+				elseif (spellID == 438536 or spellID == 438537 or spellName == L["Spark of Inspiration"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199 and UnitLevel("player") < 50) then
+						NWB:trackNewBuff(spellName, "sparkOfInspiration");
+						if (GetServerTime() - NWB.lastSparkOfInspiration > NWB.buffDropSpamCooldownSoD) then
+							NWB.lastSparkOfInspiration = GetServerTime();
+							NWB:playSound("soundsBlackfathomBoon", "bob"); --Shared blackfathom boon sound option.
+							NWB:print(string.format(L["specificBuffDropped"], L["Spark of Inspiration"]));
+						end
+					end
+				elseif (spellID == 446695 or spellID == 446698 or spellName == L["Fervor of the Temple Explorer"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 7199 and UnitLevel("player") < 60) then
+						NWB:trackNewBuff(spellName, "fervorTempleExplorer");
+						if (GetServerTime() - NWB.lastFervorTempleExplorer > NWB.buffDropSpamCooldownSoD) then
+							NWB.lastFervorTempleExplorer = GetServerTime();
+							NWB:playSound("soundsBlackfathomBoon", "bob"); --Shared blackfathom boon sound option.
+							NWB:print(string.format(L["specificBuffDropped"], L["Fervor of the Temple Explorer"]));
+						end
+					end
+				elseif (spellID == 460939 or spellID == 460940 or spellName == L["Might of Stormwind"]) then
+					local duration = NWB:getBuffDuration(spellName, 0);
+					if (duration >= 3599.9) then
+						NWB:trackNewBuff(spellName, "mightOfStormwind");
+						local _, _, zone = NWB:GetPlayerZonePosition();
+						if (zone == 1453 or zone == 1429) then
+							if (GetServerTime() - NWB.lastMightOfStormwind > 300) then
+								NWB.lastMightOfStormwind = GetServerTime();
+								NWB:playSound("soundsRendDrop", "rend");
+								NWB:print(string.format(L["specificBuffDropped"], L["Might of Stormwind"] .. " (" .. L["Rend"] .. ")"));
+							end
+							if (NWB.db.global.cityGotBuffSummon) then
+								if (not InCombatLockdown() and C_SummonInfo.GetSummonConfirmTimeLeft() > 0) then
+									NWB.hideSummonPopup = true;
+									NWB:print("Got Rend buff, auto taking summon.");
+								end
+								NWB:acceptSummon();
+							end
+						end
+					else
+						NWB:syncBuffsWithCurrentDuration();
+					end
+				elseif (destName == UnitName("player") and spellName == L["Stealth"]) then
+					--Vanish is hidden from combat log even to ourself, use stealth instead as it fires when we vanish.
+					NWB:doStealth();
+				elseif (spellID == 29519 or spellName == L["Silithyst"]) then
+					NWB:placeSilithystMarker();
 				end
-			else
-				NWB:syncBuffsWithCurrentDuration();
+				--[[elseif (NWB.isDebugg and destName == UnitName("player") and spellName == "Ice Armor") then
+				local duration = NWB:getBuffDuration("Ice Armor", 0);
+				if (duration >= 1799) then
+					NWB:trackNewBuff(spellName, "ice");
+				end]]
+			--[[elseif (((NWB.faction == "Horde" and destNpcID == "14392") or (NWB.faction == "Alliance" and destNpcID == "14394"))
+					and spellName == L["Sap"] and ((GetServerTime() - NWB.data.onyYell2) < 30 or (GetServerTime() - NWB.data.onyYell) < 30)) then
+				--Yell timestamp is only recorded to non-layered data (NWB.data.onyYell) first because there's is no GUID attached.
+				--Then it's copied from there to the right layer once the buff drops in setOnyBuff().
+				--For this reason we just check against the non-layered yell timestamp even for layered realms.
+				--Using destGUID instead of sourceGUID for sap target instead of buff gained from source.
+				--Sapping breaking the buff was fixed by blizzard.
+				local unitType, _, _, _, zoneID, npcID = strsplit("-", destGUID);
+				zoneID = tonumber(zoneID);
+				local _, _, zone = NWB:GetPlayerZonePosition();
+				if ((zone == 1453 or zone == 1454) or not NWB.isLayered) then
+					NWB:debug("Onyxia buff NPC sapped by", sourceName, zoneID, destGUID);
+					if (sourceName) then
+						NWB:print("Onyxia buff NPC sapped by " .. sourceName .. ", setting backup timer.");
+						if (not NWB.data.sapped) then
+							NWB.data.sapped = {};
+						end
+						NWB.data.sapped[sourceName] = GetServerTime();
+					else
+						NWB:print("Onyxia buff NPC sapped, setting backup timer.");
+					end
+					NWB:setOnyBuff("self", UnitName("player"), zoneID, destGUID, true);
+				end]]
 			end
-		elseif (destName == UnitName("player") and spellName == L["Stealth"]) then
-			--Vanish is hidden from combat log even to ourself, use stealth instead as it fires when we vanish.
-			NWB:doStealth();
-		elseif (destName == UnitName("player") and spellName == L["Silithyst"]) then
-			NWB:placeSilithystMarker();
 		end
 	elseif (subEvent == "SPELL_AURA_REMOVED") then
 		if (destName == UnitName("player")) then
@@ -1741,3 +1936,57 @@ function NWB:getRendTimer(layer)
 		return NWB.data.rendTimer;
 	end
 end
+
+
+
+
+
+
+
+--Was going to be part of the backup drop system but couldn't get GUID from auras applied this way from NPCs.
+--[[local backupSpellIDs = {
+	[16609] = "rend",
+	[22888] = "ony",
+	[24425] = "zan",
+	
+};
+
+local function unitAura(unit, data)
+	if (unit ~= "player") then
+		return;
+	end
+	if (data.addedAuras) then
+		for _, auraData in pairs(data.addedAuras) do
+			NWB:debug(auraData);
+			NWB:debug("New buff:", auraData.name, auraData.duration);
+			if (auraData.spellId and backupSpellIDs[auraData.spellId]) then
+				--NWB:debug(auraData);
+				checkBuffDropped(backupSpellIDs[auraData.spellId], auraData.duration);
+			end
+		end
+	end
+	if (data.removedAuraInstanceIDs) then
+		for _, auraInstanceID in pairs(data.removedAuraInstanceIDs) do
+			
+		end
+	end
+	if (data.updatedAuraInstanceIDs) then
+		for _, auraInstanceID in pairs(data.updatedAuraInstanceIDs) do
+			local auraData = C_UnitAuras.GetAuraDataByAuraInstanceID(unit, auraInstanceID);
+			if (auraData) then
+				NWB:debug("Updated buff:", auraData.name, auraData.duration);
+				if (auraData.spellId and backupSpellIDs[auraData.spellId]) then
+					if (auraData.spellId and backupSpellIDs[auraData.spellId]) then
+						checkBuffDropped(backupSpellIDs[auraData.spellId], auraData.duration);
+					end
+				end
+			end
+		end
+	end
+end
+
+local f = CreateFrame("Frame", "NWB_Backup_Auras");
+f:RegisterEvent("UNIT_AURA");
+f:SetScript("OnEvent", function(self, event, ...)
+	unitAura(...);
+end)]]
