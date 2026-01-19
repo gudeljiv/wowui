@@ -57,17 +57,17 @@ local HandleUnit = function(unit)
 			local _, defensive = GetShapeshiftFormInfo(2) -- ako je defensive stance
 			local _, berserker = GetShapeshiftFormInfo(3) -- ako je berserker stance
 			if defensive and IsEquippedItemType("Shields") then
-				if IsSpellInRange("Shield Bash", unit) == 1 and select(2, GetSpellCooldown("Shield Bash")) == 0 then
+				if IsSpellInRange("Shield Bash", unit) == 1 and select(2, GetSpellCooldown("Shield Bash")) <= 1.5 then
 					HRF = true
 				end
 			end
 			if berserker then
-				if IsSpellInRange("Pummel", unit) == 1 and select(2, GetSpellCooldown("Pummel")) == 0 then
+				if IsSpellInRange("Pummel", unit) == 1 and select(2, GetSpellCooldown("Pummel")) <= 1.5 then
 					HRF = true
 				end
 			end
 			if battle and IsEquippedItemType("Shields") then
-				if IsSpellInRange("Shield Bash", unit) == 1 and select(2, GetSpellCooldown("Shield Bash")) == 0 then
+				if IsSpellInRange("Shield Bash", unit) == 1 and select(2, GetSpellCooldown("Shield Bash")) <= 1.5 then
 					HRF = true
 				end
 			end
@@ -75,7 +75,10 @@ local HandleUnit = function(unit)
 
 		-- PALADIN INTERRUPT
 		if xVermin.Class == "PALADIN" then
-			if IsSpellInRange("Arcane Torrent", unit) == 1 and select(2, GetSpellCooldown("Arcane Torrent")) == 0 then
+			-- if IsSpellInRange("Arcane Torrent", unit) == 1 and select(2, GetSpellCooldown("Arcane Torrent")) <= 1.5 then
+			if xVermin.InRange(8, unit, max) and select(2, GetSpellCooldown("Arcane Torrent")) <= 1.5 then
+				HRF = true
+			elseif xVermin.InRange(10, unit, max) and select(2, GetSpellCooldown("Hammer of Justice")) <= 1.5 then
 				HRF = true
 			end
 		end
@@ -88,17 +91,17 @@ local HandleUnit = function(unit)
 			local _, travel = GetShapeshiftFormInfo(4) -- ako je travel form
 			local _, moonkin = GetShapeshiftFormInfo(5) -- ako je moonkin form
 			local _, tree = GetShapeshiftFormInfo(6) -- ako je tree form
-			if bear and select(2, GetSpellCooldown("Bash")) == 0 and CheckInteractDistance(unit, 3) then
+			if bear and select(2, GetSpellCooldown("Bash")) <= 1.5 and CheckInteractDistance(unit, 3) then
 				HRF = true
 			end
-			-- if cat and select(2, GetSpellCooldown('Maim')) == 0 and CheckInteractDistance(unit, 3) then
-			-- 	HRF = true
+			-- if cat and select(2, GetSpellCooldown('Maim')) <= 1.5 and CheckInteractDistance(unit, 3) then
+			--  HRF = true
 			-- end
 		end
 
 		-- DEATHKNIGHT INTERRUPT
 		if xVermin.Class == "DEATHKNIGHT" then
-			if select(2, GetSpellCooldown("Mind Freeze")) == 0 and IsSpellInRange("Mind Freeze", unit) == 1 then
+			if select(2, GetSpellCooldown("Mind Freeze")) <= 1.5 and IsSpellInRange("Mind Freeze", unit) == 1 then
 				HRF = true
 			end
 		end
@@ -109,7 +112,7 @@ local HandleUnit = function(unit)
 			and xVermin.GetSpellID("Earth Shock") ~= nil
 			and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Earth Shock"))
 		then
-			if select(2, GetSpellCooldown("Earth Shock")) == 0 and IsSpellInRange("Earth Shock", unit) == 1 then
+			if select(2, GetSpellCooldown("Earth Shock")) <= 1.5 and IsSpellInRange("Earth Shock", unit) == 1 then
 				HRF = true
 			end
 		end
@@ -120,7 +123,7 @@ local HandleUnit = function(unit)
 			and xVermin.GetSpellID("Kick") ~= nil
 			and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Kick"))
 		then
-			if select(2, GetSpellCooldown("Kick")) == 0 and IsSpellInRange("Kick", unit) == 1 then
+			if select(2, GetSpellCooldown("Kick")) <= 1.5 and IsSpellInRange("Kick", unit) == 1 then
 				HRF = true
 			end
 		end
@@ -132,7 +135,7 @@ local HandleUnit = function(unit)
 				and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Silencing Shot"))
 			then
 				if
-					select(2, GetSpellCooldown("Silencing Shot")) == 0
+					select(2, GetSpellCooldown("Silencing Shot")) <= 1.5
 					and IsSpellInRange("Silencing Shot", unit) == 1
 				then
 					HRF = true
@@ -142,7 +145,7 @@ local HandleUnit = function(unit)
 				xVermin.GetSpellID("Intimidation", true) ~= nil
 				and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Intimidation"))
 			then
-				if select(2, GetSpellCooldown("Intimidation")) == 0 and IsSpellInRange("Intimidation", unit) == 1 then
+				if select(2, GetSpellCooldown("Intimidation")) <= 1.5 and IsSpellInRange("Intimidation", unit) == 1 then
 					HRF = true
 				end
 			end

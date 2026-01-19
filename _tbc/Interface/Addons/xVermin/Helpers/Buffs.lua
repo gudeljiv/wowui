@@ -5,6 +5,16 @@ local buffs = {}
 
 local loadSpells = function()
 	buffs = {}
+	if xVermin.Class == "PALADIN" then
+		buffs = {
+			{
+				["spell_id"] = xVermin.GetSpellID("Blessing of Might"),
+				["short_name"] = "bom",
+				["name"] = "Blessing of Might",
+				["found"] = false,
+			},
+		}
+	end
 	if xVermin.Class == "PRIEST" then
 		buffs = {
 			{
@@ -17,16 +27,6 @@ local loadSpells = function()
 				["spell_id"] = xVermin.GetSpellID("Inner Fire"),
 				["short_name"] = "if",
 				["name"] = "Inner Fire",
-				["found"] = false,
-			},
-		}
-	end
-	if xVermin.Class == "PALADIN" then
-		buffs = {
-			{
-				["spell_id"] = xVermin.GetSpellID("Blessing of Might"),
-				["short_name"] = "bom",
-				["name"] = "Blessing of Might",
 				["found"] = false,
 			},
 		}
@@ -89,28 +89,58 @@ local function Refresh()
 			if IsSpellKnownOrOverridesKnown(buff.spell_id) then
 				local frame = _G["buffbutton_" .. buff.short_name]
 				if not frame then
-					-- print("buffbutton_" .. bcuff.short_name .. " created")
-					frame = CreateFrame(
-						"Button",
-						"buffbutton_" .. buff.short_name,
-						UIParent,
-						"SecureActionButtonTemplate, ActionButtonTemplate"
-					)
+					frame =
+						CreateFrame("Button", "buffbutton_" .. buff.short_name, UIParent, "SecureActionButtonTemplate")
 					frame:SetAttribute("type1", "macro")
 					frame:SetAttribute("macrotext1", "/cast [@player] " .. buff.name)
-
 					frame:SetFrameStrata("MEDIUM")
-					frame:CreateBeautyBorder(6)
 					frame:SetSize(36, 36)
-					frame:RegisterForClicks("AnyUp")
+					frame:RegisterForClicks("AnyUp", "AnyDown")
 
-					frame.texture = frame:CreateTexture(nil, "BACKGROUND")
-					frame.texture:SetSize(frame:GetSize())
-					frame.texture:SetPoint("CENTER")
-					frame.texture:SetTexture(GetSpellTexture(buff.spell_id))
+					frame:CreateBeautyBorder(6)
 
-					print("Type:", frame:GetAttribute("type1"))
-					print("Macro:", frame:GetAttribute("macrotext1"))
+					-- Icon texture
+					frame.icon = frame:CreateTexture(nil, "BACKGROUND")
+					frame.icon:SetAllPoints()
+					frame.icon:SetTexture(GetSpellTexture(buff.spell_id))
+
+					-- -- Cooldown frame (the swipe animation)
+					-- frame.cooldown = CreateFrame("Cooldown", nil, frame, "CooldownFrameTemplate")
+					-- frame.cooldown:SetAllPoints()
+					-- frame.cooldown:SetDrawEdge(true)
+
+					-- -- Count text (for charges/stacks)
+					-- frame.count = frame:CreateFontString(nil, "OVERLAY")
+					-- frame.count:SetFontObject("NumberFontNormal")
+					-- frame.count:SetPoint("BOTTOMRIGHT", -2, 2)
+
+					-- -- Hotkey text
+					-- frame.hotkey = frame:CreateFontString(nil, "OVERLAY")
+					-- frame.hotkey:SetFontObject("NumberFontNormalSmallGray")
+					-- frame.hotkey:SetPoint("TOPLEFT", 2, -2)
+					-- frame.hotkey:SetText("") -- Set keybind here if needed
+
+					-- Highlight when moused over
+					frame:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square")
+					frame:GetHighlightTexture():SetBlendMode("ADD")
+
+					-- Pushed texture
+					frame:SetPushedTexture("Interface\\Buttons\\UI-Quickslot-Depress")
+
+					-- Normal texture (the border)
+					frame:SetNormalTexture("Interface\\Buttons\\UI-Quickslot2")
+
+					-- Optional: Check if spell is ready
+					-- frame:SetScript("OnUpdate", function(self, elapsed)
+					--  local start, duration = GetSpellCooldown(buff.spell_id)
+					--  if start and duration then
+					--      if duration > 0 then
+					--          self.cooldown:SetCooldown(start, duration)
+					--      else
+					--          self.cooldown:Clear()
+					--      end
+					--  end
+					-- end)
 				end
 
 				local x = (index - 1) * shift
