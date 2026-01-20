@@ -1,8 +1,6 @@
 local MAJOR, MINOR = "LibAPIAutoComplete-1.0", 5
 local lib = LibStub:NewLibrary(MAJOR, MINOR)
-if not lib then
-  return
-end
+if not lib then return end
 
 local SharedMedia = LibStub("LibSharedMedia-3.0")
 
@@ -14,14 +12,14 @@ local skipWords = {
   ["player"] = true,
   ["display"] = true,
   ["return"] = true,
-  ["function"] = true,
+  ["function"] = true
 }
 
 local maxMatches = 100
 
 for k in pairs(skipWords) do
   for i = #k, 5, -1 do
-    skipWords[k:sub(1, i)] = true
+     skipWords[k:sub(1, i)] = true
   end
 end
 
@@ -33,16 +31,15 @@ local function LoadBlizzard_APIDocumentation()
   end
   if #APIDocumentation.systems == 0 then
     -- workaround nil errors when loading PetConstantsDocumentation.lua
-    Constants.PetConsts = Constants.PetConsts
-      or {
-        MAX_STABLE_SLOTS = 200,
-        MAX_SUMMONABLE_PETS = 25,
-        MAX_SUMMONABLE_HUNTER_PETS = 5,
-        NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL = 5,
-        NUM_PET_SLOTS = 205,
-        EXTRA_PET_STABLE_SLOT = 5,
-        STABLED_PETS_FIRST_SLOT_INDEX = 6,
-      }
+    Constants.PetConsts = Constants.PetConsts or {
+      MAX_STABLE_SLOTS = 200,
+      MAX_SUMMONABLE_PETS = 25,
+      MAX_SUMMONABLE_HUNTER_PETS = 5,
+      NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL = 5,
+      NUM_PET_SLOTS = 205,
+      EXTRA_PET_STABLE_SLOT = 5,
+      STABLED_PETS_FIRST_SLOT_INDEX = 6
+    }
     MAX_STABLE_SLOTS = MAX_STABLE_SLOTS or 2
     NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL = NUM_PET_SLOTS_THAT_NEED_LEARNED_SPELL or 1
     EXTRA_PET_STABLE_SLOT = EXTRA_PET_STABLE_SLOT or 0
@@ -204,7 +201,7 @@ function lib:enable(editbox, params)
     return
   end
   config[editbox] = {
-    backgroundColor = params and params.backgroundColor or { 0.3, 0.3, 0.3, 0.9 },
+    backgroundColor = params and params.backgroundColor or {.3, .3, .3, .9},
     maxLinesShown = params and params.maxLinesShown or 7,
     disableFunctions = params and params.disableFunctions or false,
     disableEvents = params and params.disableEvents or false,
@@ -231,7 +228,7 @@ function lib:enable(editbox, params)
       x = x,
       y = y,
       w = w,
-      h = h,
+      h = h
     }
   end)
   editbox.APIDoc_oldOnTextChanged = editbox:GetScript("OnTextChanged")
@@ -281,11 +278,13 @@ end
 function lib:Search(word, config)
   self.data:Flush()
   if word and #word > 3 then
-    local lowerWord = word:lower()
+    local lowerWord = word:lower();
     local nsName, rest = lowerWord:match("^([%w%_]+)(.*)")
     local funcName = rest and rest:match("^%.([%w%_]+)")
     for _, systemInfo in ipairs(APIDocumentation.systems) do
-      local systemMatch = (not config.disableSystems) and (nsName and #nsName >= 4) and (systemInfo.Namespace and systemInfo.Namespace:lower():match(nsName))
+      local systemMatch = (not config.disableSystems)
+        and (nsName and #nsName >= 4)
+        and (systemInfo.Namespace and systemInfo.Namespace:lower():match(nsName))
 
       if not config.disableFunctions then
         for _, apiInfo in ipairs(systemInfo.Functions) do
@@ -516,7 +515,7 @@ function APIAutoCompleteLineMixin:Init(elementData)
   fontString:SetTextColor(0.973, 0.902, 0.581)
   if not self:GetHighlightTexture() then
     local texture = self:CreateTexture()
-    texture:SetColorTexture(0.4, 0.4, 0.4, 0.5)
+    texture:SetColorTexture(0.4,0.4,0.4,0.5)
     texture:SetAllPoints()
     self:SetHighlightTexture(texture)
   end

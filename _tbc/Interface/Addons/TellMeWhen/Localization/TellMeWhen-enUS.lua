@@ -51,7 +51,7 @@ L["LOADINGOPT"] = "Loading TellMeWhen_Options."
 L["ENABLINGOPT"] = "TellMeWhen_Options is disabled. Enabling..."
 L["CONFIGMODE"] = "TellMeWhen is in configuration mode. Icons will not be functional until you leave configuration mode. Type '/tellmewhen' or '/tmw' to toggle configuration mode on and off."
 L["CONFIGMODE_EXIT"] = "Exit config mode"
-L["CONFIGMODE_EXITED"] = "TMW is now locked. Type /tmw to enter config mode again."
+L["CONFIGMODE_EXITED"] = "TMW is now locked and operational. Type /tmw to enter config mode again."
 L["CONFIGMODE_NEVERSHOW"] = "Don't show again"
 L["IMPORT_SUCCESSFUL"] = "Import successful!"
 L["IMPORT_FAILED"] = "Import failed!"
@@ -2061,6 +2061,7 @@ L["PLAYER_DESC"] = "The 'player' unit is you."
 
 
 L["IMPORT_EXPORT"] = "Import/Export/Restore"
+L["IMPORT_EXPORT_LABEL"] = "Paste import strings here"
 L["IMPORT_EXPORT_DESC"] = [[Click the button to the right to import and export icons, groups, and profiles.
 
 Importing to or from a string, or exporting to another player, will require the use of this editbox. See the tooltips within the dropdown menu for details.]]

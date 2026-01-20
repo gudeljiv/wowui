@@ -1,6 +1,7 @@
 # Auctionator
 
-## [309](https://github.com/TheMouseNest/Auctionator/tree/309) (2026-01-14)
-[Full Changelog](https://github.com/TheMouseNest/Auctionator/compare/308...309) 
+## [310](https://github.com/TheMouseNest/Auctionator/tree/310) (2026-01-18)
+[Full Changelog](https://github.com/TheMouseNest/Auctionator/compare/309...310) 
 
-- Rearrange loading order to reduce risk of timeout  
+- [Fixes #1745] Classic Anniversary: Fix keyring items not showing in selling tab  
+- Midnight: [Fixes #1744, Fixes #1743] Fix a couple of errors  

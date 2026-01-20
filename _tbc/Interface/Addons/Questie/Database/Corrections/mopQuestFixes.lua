@@ -248,17 +248,11 @@ function MopQuestFixes.Load()
         [7043] = { -- You're a Mean One...
             [questKeys.objectives] = {nil,nil,{{17662}},nil,{{{15664},15664,nil,Questie.ICON_TYPE_INTERACT}}},
         },
-        [8327] = { -- Report to Lanthan Perilon
-            [questKeys.nextQuestInChain] = 0,
-        },
         [8328] = { -- Mage Training
             [questKeys.requiredLevel] = 2,
         },
         [8329] = { -- Warrior Training
             [questKeys.requiredLevel] = 2,
-        },
-        [8334] = { -- Aggression
-            [questKeys.preQuestSingle] = {8326},
         },
         [8345] = { -- The Shrine of Dath'Remar
             [questKeys.preQuestSingle] = {},
@@ -9368,6 +9362,21 @@ function MopQuestFixes.Load()
             [questKeys.startedBy] = {{69782}},
             [questKeys.objectives] = {{{70093},{70438,nil,Questie.ICON_TYPE_TALK}}},
             [questKeys.preQuestGroup] = {32591,32592},
+        },
+        [32594] = { -- Spirit of the Storm Lord
+            [questKeys.startedBy] = {{69782}},
+            [questKeys.extraObjectives] = {{nil,Questie.ICON_TYPE_INTERACT,l10n("Hurl the Lightning Lance into Nalak"),0,{{"monster",69099}}}},
+        },
+        [32595] = { -- The Crown of Heaven
+            [questKeys.startedBy] = {{69782}},
+            [questKeys.objectives] = {{{70466,nil,Questie.ICON_TYPE_EVENT},{64822,nil,Questie.ICON_TYPE_EVENT}}},
+        },
+        [32596] = { -- Echoes of the Titans
+            [questKeys.startedBy] = {{69782}},
+        },
+        [32598] = { -- A Reckoning
+            [questKeys.startedBy] = {{69782}},
+            [questKeys.objectives] = {{{70477,nil,Questie.ICON_TYPE_EVENT},{64822,nil,Questie.ICON_TYPE_EVENT}}},
         },
         [32599] = { -- Securing A Future
             [questKeys.preQuestSingle] = {32681}, -- wowhead comments say available without progressing IoT

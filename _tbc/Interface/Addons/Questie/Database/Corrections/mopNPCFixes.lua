@@ -6042,6 +6042,9 @@ function MopNpcFixes.Load()
             [npcKeys.spawns] = {[zoneIDs.ISLE_OF_THUNDER] = {{46.58,71.98}}},
             [npcKeys.zoneID] = zoneIDs.ISLE_OF_THUNDER,
         },
+        [69739] = { -- Essence of Storms
+            [npcKeys.spawns] = {[zoneIDs.ISLE_OF_THUNDER] = {{60.5,37.3}}},
+        },
         [69741] = { -- Lady Jaina Proudmoore
             [npcKeys.name] = "Lady Jaina Proudmoore",
             [npcKeys.subName] = "Leader of the Kirin Tor",
@@ -6331,6 +6334,10 @@ function MopNpcFixes.Load()
             [npcKeys.rank] = 1,
             [npcKeys.spawns] = {[zoneIDs.THRONE_OF_THUNDER] = {{59.52,79.43},{-1,-1}}},
             [npcKeys.zoneID] = zoneIDs.THRONE_OF_THUNDER,
+        },
+        [70466] = { -- Mason's Folly Kill Credit
+            [npcKeys.spawns] = {[zoneIDs.THE_VEILED_STAIR] = {{75.3,76.27}}},
+            [npcKeys.zoneID] = zoneIDs.THE_VEILED_STAIR,
         },
         [70476] = { -- Wrathion
             [npcKeys.name] = "Wrathion",

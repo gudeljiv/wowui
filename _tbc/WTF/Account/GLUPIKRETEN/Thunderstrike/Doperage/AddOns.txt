@@ -96,7 +96,7 @@ AdiBags-ItemRackSets: enabled
 Bagnon_Masque: enabled
 ClassicBestiary: enabled
 FarmHud: disabled
-FarmHud_QuestArrow: enabled
+FarmHud_QuestArrow: disabled
 Leatrix_Plus: enabled
 LFGBulletinBoard: enabled
 Open-Sesame: enabled
@@ -160,7 +160,7 @@ RuneBar: enabled
 AdiBags_Item_Sets: disabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
-NovaConsumesHelper: enabled
+NovaConsumesHelper: disabled
 Drift: enabled
 Syndicator: enabled
 Blizzard_ObjectiveTracker: enabled
@@ -179,7 +179,7 @@ Buffet: enabled
 CharacterStatsTBC: disabled
 CCleanerClassic: disabled
 ClassicProfessionFilter: enabled
-FarmHud_TrailPath: enabled
+FarmHud_TrailPath: disabled
 GrimoireKeeper: enabled
 ItemRack_BankFix: enabled
 Leatrix_Sounds: enabled
@@ -197,3 +197,4 @@ TipTacOptions: enabled
 TipTacTalents: enabled
 WaylaidSuppliesTooltip: disabled
 Masque_Dominos: enabled
+Farmer: disabled

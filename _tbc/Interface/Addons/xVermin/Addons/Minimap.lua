@@ -19,16 +19,27 @@ end)
 -- end)
 
 xVermin.CheckIfLoadedWithTimer("LFGMinimapFrame", function()
-	LFGMinimapFrame:HookScript("OnUpdate", function(self)
-		-- if MiniMapBattlefieldFrame and MiniMapBattlefieldFrame:IsVisible() then
-		-- 	LFGMinimapFrame:ClearAllPoints()
-		-- 	LFGMinimapFrame:SetPoint("BOTTOM", MiniMapBattlefieldFrame, "BOTTOM", -1, 30)
-		-- else
-		-- 	LFGMinimapFrame:ClearAllPoints()
-		-- 	LFGMinimapFrame:SetPoint("BOTTOMRIGHT", Minimap, "BOTTOMRIGHT", 0, 0)
-		-- end
-		LFGMinimapFrame:Hide()
-	end)
+	-- LFGMinimapFrame:HookScript("OnUpdate", function(self)
+	-- 	-- if MiniMapBattlefieldFrame and MiniMapBattlefieldFrame:IsVisible() then
+	-- 	-- 	LFGMinimapFrame:ClearAllPoints()
+	-- 	-- 	LFGMinimapFrame:SetPoint("BOTTOM", MiniMapBattlefieldFrame, "BOTTOM", -1, 30)
+	-- 	-- else
+	-- 	-- 	LFGMinimapFrame:ClearAllPoints()
+	-- 	-- 	LFGMinimapFrame:SetPoint("BOTTOMRIGHT", Minimap, "BOTTOMRIGHT", 0, 0)
+	-- 	-- end
+	-- 	LFGMinimapFrame:Hide()
+	-- end)
+
+	LFGMinimapFrame:ClearAllPoints()
+	LFGMinimapFrame:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", 0, 20)
+end)
+
+xVermin.CheckIfLoadedWithTimer("MiniMapTracking", function()
+	MiniMapTracking:ClearAllPoints()
+	MiniMapTracking:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", -27, 20)
+	-- MiniMapTracking:HookScript("OnShow", function()
+	-- MiniMapTracking:Hide()
+	-- end)
 end)
 
 MiniMapBattlefieldFrame:HookScript("OnUpdate", function(self)

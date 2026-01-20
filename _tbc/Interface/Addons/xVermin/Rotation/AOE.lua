@@ -70,11 +70,13 @@ xVermin.AOE = function(range, casting)
 				end
 			end
 
-			-- if xVermin.Class == 'xHUNTER' and UnitExists('pet') then
-			-- 	if IsSpellInRange('Bite', 'pet', unit) == 1 then
-			-- 		inRange = inRange + 1
+			-- if xVermin.Class == "HUNTER" and UnitExists("pet") then
+			-- 	if IsSpellInRange("Bite", "pet", unit) == 1 then
+			-- 		-- inRange = inRange + 1
+			-- 		print("pet in range")
 			-- 	end
-			-- else
+			-- end
+
 			minRange, maxRange = xVermin.GetRange(unit)
 			if maxRange and maxRange <= range then
 				inRange = inRange + 1

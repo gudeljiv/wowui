@@ -1,22 +1,22 @@
-lightweight tag e5ecf0ff26465f913daf6acc3e07645fcd871e32 1.7.0-release
+lightweight tag f3919ae3124233a2d3b9719f6b5cc62e5c49f80f 1.7.1-release
 Author:	GitHub <noreply@github.com>
-Date:	Fri Jan 16 01:18:31 2026 +0100
+Date:	Sat Jan 17 20:14:06 2026 +0100
 
-commit d3db4fca5785a27f8a064b3e2af776c8470812a5
-Author: SinusQuell <Boddafree@gmail.com>
-Date:   Thu Jan 15 18:58:34 2026 +0100
+commit 71d5dfbe73af51fbe5ede3fd7f1f405c9ffaea82
+Author: Jan Dorsman <160809113+jdorsman@users.noreply.github.com>
+Date:   Sat Jan 17 01:42:28 2026 +0100
 
-    fixed InviteUnit calls and .toc for tbcc
+    Fix condition
 
-commit d3db4fca5785a27f8a064b3e2af776c8470812a5
-Author: SinusQuell <Boddafree@gmail.com>
-Date:   Thu Jan 15 18:58:34 2026 +0100
+commit 71d5dfbe73af51fbe5ede3fd7f1f405c9ffaea82
+Author: Jan Dorsman <160809113+jdorsman@users.noreply.github.com>
+Date:   Sat Jan 17 01:42:28 2026 +0100
 
-    fixed InviteUnit calls and .toc for tbcc
+    Fix condition
 
-commit d3db4fca5785a27f8a064b3e2af776c8470812a5
-Author: SinusQuell <Boddafree@gmail.com>
-Date:   Thu Jan 15 18:58:34 2026 +0100
+commit d6a32f6ad5b51516bc8b036a23a5edbf982f44a2
+Author: Jan Dorsman <160809113+jdorsman@users.noreply.github.com>
+Date:   Sat Jan 17 00:31:12 2026 +0100
 
-    fixed InviteUnit calls and .toc for tbcc
+    Prevent invites on full group
 

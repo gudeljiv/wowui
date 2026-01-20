@@ -554,6 +554,18 @@ local easternKingdomsLocales = {
         ["zhCN"] = "东部王国",
         ["zhTW"] = "東部王國",
     },
+    ["Dalaran Crater"] = {
+        ["enUS"] = true,
+        ["deDE"] = "Dalarankrater",
+        ["esES"] = "Cráter de Dalaran",
+        ["esMX"] = "Cráter de Dalaran",
+        ["frFR"] = "Cratère de Dalaran",
+        ["koKR"] = "달라란 구덩이",
+        ["ptBR"] = "Cratera de Dalaran",
+        ["ruRU"] = "Даларанский кратер",
+        ["zhCN"] = "达拉然巨坑",
+        ["zhTW"] = "達拉然陷坑",
+    },
 }
 
 for k, v in pairs(easternKingdomsLocales) do

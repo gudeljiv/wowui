@@ -1166,3 +1166,6 @@ L["for"] = "por";
 L["by"] = "por";
 
 L["For help or suggestions"] = "Ayuda o sugerencias";
+
+L["rendLogQuestInfo"] = "Las entregas de Rend solo se muestran para la Horda.";
+L["recentlyKilledMsg"] = "Nuevo temporizador de PNJ de %s recién muerta recibido, murió hace %s";

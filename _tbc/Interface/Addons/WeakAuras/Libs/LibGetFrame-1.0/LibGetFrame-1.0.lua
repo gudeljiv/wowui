@@ -11,7 +11,8 @@ end
 lib.callbacks = lib.callbacks or LibStub("CallbackHandler-1.0"):New(lib)
 local callbacks = lib.callbacks
 
-local GetPlayerInfoByGUID, UnitExists, C_Timer, UnitIsUnit, SecureButton_GetUnit, C_AddOns = GetPlayerInfoByGUID, UnitExists, C_Timer, UnitIsUnit, SecureButton_GetUnit, C_AddOns
+local GetPlayerInfoByGUID, UnitExists, C_Timer, UnitIsUnit, SecureButton_GetUnit, C_AddOns =
+  GetPlayerInfoByGUID, UnitExists, C_Timer, UnitIsUnit, SecureButton_GetUnit, C_AddOns
 local tinsert, CopyTable, wipe = tinsert, CopyTable, wipe
 
 local maxDepth = 50
@@ -99,7 +100,7 @@ local defaultTargetFrames = {
   "^TargetFrame$",
   "^hbExtra_HealUnit$",
   "^UUF_Target$",
-  "^XPerl_Target$",
+  "^XPerl_Target$"
 }
 local getDefaultTargetFrames = function()
   return CopyTable(defaultTargetFrames)
@@ -116,7 +117,7 @@ local defaultTargettargetFrames = {
   "^UUF_TargetTarget$",
   "^TargetTargetFrame$",
   "^XPerl_TargetTarget$",
-  "^TargetFrameToT$",
+  "^TargetFrameToT$"
 }
 local getDefaultTargettargetFrames = function()
   return CopyTable(defaultTargettargetFrames)
@@ -140,7 +141,7 @@ end
 lib.getDefaultPartyFrames = getDefaultPartyFrames
 local defaultPartyTargetFrames = {
   "SUFChildpartytarget%d",
-  "XPerl_party%dtargetFrame",
+  "XPerl_party%dtargetFrame"
 }
 local getDefaultPartyTargetFrames = function()
   return CopyTable(defaultPartyTargetFrames)
@@ -154,7 +155,7 @@ local defaultFocusFrames = {
   "^FocusFrame$",
   "^hbExtra_HealUnit$",
   "^UUF_Focus$",
-  "^XPerl_Focus$",
+  "^XPerl_Focus$"
 }
 local getDefaultFocusFrames = function()
   return CopyTable(defaultFocusFrames)
@@ -223,7 +224,7 @@ function CacheMonitorMixin:Add(key, ...)
         self.added[key] = true
       end
     end
-    self.cache[key] = { ... }
+    self.cache[key] = {...}
   else
     local value = ...
     if self.makeDiff then
@@ -239,9 +240,7 @@ function CacheMonitorMixin:Add(key, ...)
   end
 end
 function CacheMonitorMixin:CalcRemoved()
-  if not self.makeDiff then
-    return
-  end
+  if not self.makeDiff then return end
   for key, value in pairs(self.data) do
     if self.cache[key] == nil then
       self.removed[key] = value
@@ -262,8 +261,8 @@ function CacheMonitorMixin:Reset()
   end
 end
 --
-local FrameToFrameName = {} -- frame adress => frame name
-local FrameToUnit = {} -- frame adress => unitToken
+local FrameToFrameName = {}   -- frame adress => frame name
+local FrameToUnit = {}        -- frame adress => unitToken
 Mixin(FrameToFrameName, CacheMonitorMixin)
 Mixin(FrameToUnit, CacheMonitorMixin)
 FrameToFrameName:Init()
@@ -272,7 +271,8 @@ FrameToUnit:Init(true)
 local profiling = false
 local profileData
 
-local function doNothing() end
+local function doNothing()
+end
 
 local StartProfiling = doNothing
 local StopProfiling = doNothing
@@ -355,7 +355,7 @@ local function recurseGetName(frame)
 end
 
 local notAUnitFrameTypeAttribute = {
-  cancelaura = true,
+  cancelaura = true
 }
 
 local function ScanFrames(depth, frame, ...)
@@ -552,13 +552,13 @@ end
 lib.getDefaultOptions = getDefaultOptions
 
 local IterateGroupMembers = function(reversed, forceParty)
-  local unit = (not forceParty and IsInRaid()) and "raid" or "party"
-  local numGroupMembers = unit == "party" and GetNumSubgroupMembers() or GetNumGroupMembers()
-  local i = reversed and numGroupMembers or (unit == "party" and 0 or 1)
+  local unit = (not forceParty and IsInRaid()) and 'raid' or 'party'
+  local numGroupMembers = unit == 'party' and GetNumSubgroupMembers() or GetNumGroupMembers()
+  local i = reversed and numGroupMembers or (unit == 'party' and 0 or 1)
   return function()
     local ret
-    if i == 0 and unit == "party" then
-      ret = "player"
+    if i == 0 and unit == 'party' then
+      ret = 'player'
     elseif i <= numGroupMembers and i > 0 then
       ret = unit .. i
     end

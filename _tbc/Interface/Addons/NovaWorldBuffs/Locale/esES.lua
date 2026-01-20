@@ -47,6 +47,7 @@ if (type == "classic") then
 	L["flashDisableRendDesc"] = "Anular para desactivar todos los eventos de destello del cliente relacionados con Desgarro.";
 	L["soundsFirstYellRendTitle"] = "Beneficio de Desgarro entrante";
 	L["soundsFirstYellRendDesc"] = "Sonido que se reproduce cuando se entrega la cabeza de Desgarro y tienes unos segundos antes de que se active el beneficio (primer grito del PNJ).";
+	L["rendLogQuestInfo"] = "Las entregas de Desgarro solo se muestran para la Horda.";
 else
     L["Rallying Cry of the Dragonslayer"] = "Berrido de convocación del matadragones"
 	L["Warchief's Blessing"] = "Bendición del Jefe de Guerra";
@@ -79,6 +80,7 @@ else
 	L["flashDisableRendDesc"] = "Anular para desactivar todos los eventos de destello del cliente relacionados con Rend.";
 	L["soundsFirstYellRendTitle"] = "Beneficio de Rend entrante";
 	L["soundsFirstYellRendDesc"] = "Sonido que se reproduce cuando se entrega la cabeza de Rend y tienes unos segundos antes de que se active el beneficio (primer grito del PNJ).";
+	L["rendLogQuestInfo"] = "Las entregas de Rend solo se muestran para la Horda.";
 end
 
 --Rend buff aura name.
@@ -1234,3 +1236,5 @@ L["for"] = "por";
 L["by"] = "por";
 
 L["For help or suggestions"] = "Ayuda o sugerencias";
+
+L["recentlyKilledMsg"] = "Nuevo temporizador de PNJ de %s recién muerta recibido, murió hace %s";

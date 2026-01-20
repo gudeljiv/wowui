@@ -1,6 +1,6 @@
 ## Interface: 11508
 ## Author: Okrah, Lag
-## Version: v2.5.5.12135
+## Version: v2.5.5.12154
 
 ## SavedVariables: AtlasLootClassicDB
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, AceGUI-3.0-SharedMediaWidgets, LibDBIcon-1.0, LibDataBroker-1.1

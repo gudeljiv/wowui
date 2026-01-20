@@ -133,7 +133,7 @@ oUF: disabled
 oUF_Neav: disabled
 oUF_NeavRaid: disabled
 FarmHud: disabled
-FarmHud_QuestArrow: enabled
+FarmHud_QuestArrow: disabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
 AuctionFaster: disabled
@@ -162,7 +162,7 @@ Details_EncounterDetails: enabled
 Details_RaidCheck: enabled
 Details_Vanguard: enabled
 HealBarsClassic: enabled
-FarmHud_TrailPath: enabled
+FarmHud_TrailPath: disabled
 EasyFrames: enabled
 BigWigs: disabled
 BigWigs_Onyxia: disabled
@@ -269,7 +269,7 @@ AdiBags_Item_Sets: disabled
 Baganator: enabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
-NovaConsumesHelper: enabled
+NovaConsumesHelper: disabled
 Drift: enabled
 Syndicator: enabled
 Blizzard_ObjectiveTracker: enabled
@@ -301,3 +301,4 @@ TipTacOptions: enabled
 TipTacTalents: enabled
 WaylaidSuppliesTooltip: disabled
 Masque_Dominos: enabled
+Farmer: disabled

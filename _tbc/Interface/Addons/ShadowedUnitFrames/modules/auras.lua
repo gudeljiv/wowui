@@ -16,14 +16,6 @@ function Auras:OnEnable(frame)
 
 	frame:RegisterNormalEvent("PLAYER_ENTERING_WORLD", self, "Update")
 	frame:RegisterUnitEvent("UNIT_AURA", self, "Update")
-	
-	-- Modern API event for full aura updates (dispels, expirations, etc)
-	if frame.RegisterUnitEvent then
-		pcall(function()
-			frame:RegisterUnitEvent("UNIT_AURA_FULL_UPDATE", self, "Update")
-		end)
-	end
-	
 	frame:RegisterUpdateFunc(self, "Update")
 
 	self:UpdateFilter(frame)

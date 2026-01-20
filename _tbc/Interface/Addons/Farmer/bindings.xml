@@ -1,0 +1,5 @@
+<Bindings>
+  <Binding category="Farmer" name="FARMER_TOGGLERADAR">
+    FARMER_TOGGLERADAR();
+  </Binding>
+</Bindings>

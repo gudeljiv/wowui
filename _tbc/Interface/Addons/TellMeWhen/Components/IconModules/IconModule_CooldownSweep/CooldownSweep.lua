@@ -168,6 +168,7 @@ function CooldownSweep:OnNewInstance(icon)
 
 	-- cooldown2 displays charges.
 	self.cooldown2 = CreateFrame("Cooldown", self:GetChildNameBase() .. "Cooldown2", icon, "CooldownFrameTemplate")
+	self.cooldown2:SetCountdownFont("SystemFont_Shadow_Small2_Outline")
 	self.cooldown2:SetDrawSwipe(false)
 	self.cooldown2:SetDrawBling(false)
 	self.cooldown2.SetDrawBling = TMW.NULLFUNC -- Prevent Masque from messing with this
@@ -236,8 +237,6 @@ end
 local omnicc_loaded = IsAddOnLoaded("OmniCC")
 local tullacc_loaded = IsAddOnLoaded("tullaCC")
 
-local useBlizzSetCooldown = C_Secrets and C_Secrets.HasSecretRestrictions() and ActionButton_ApplyCooldown
-
 function CooldownSweep:SetupForIcon(icon)
 	self.ShowTimer = icon.ShowTimer
 	self.ShowTimerText = icon.ShowTimerText
@@ -281,14 +280,9 @@ function CooldownSweep:SetupForIcon(icon)
 		and not self.icon.FakeHidden
 	self.cooldown:SetDrawBling(self.shouldShowBling)
 
-	if useBlizzSetCooldown then
-		-- ActionButton_ApplyCooldown always puts charges on cd2
-		self.cooldown2:SetHideCountdownNumbers(true)
-	else
-		self.cooldown2:SetHideCountdownNumbers(hideNumbers)
-	end
 
 	self.cooldown2:SetDrawEdge(self.ShowTimer)
+	self.cooldown2:SetHideCountdownNumbers(hideNumbers)
 
 	-- https://github.com/ascott18/TellMeWhen/issues/1914:
 	-- If a meta icon switches between hidden/shown timer text
@@ -308,30 +302,34 @@ function CooldownSweep:SetupForIcon(icon)
 	self:REVERSE(icon, attributes.reverse)
 end
 
--- function ActionButton_ApplyCooldown(normalCooldown, cooldownInfo, chargeCooldown, chargeInfo, lossOfControlCooldown, lossOfControlInfo)
-if ActionButton_ApplyCooldown then
+if TMW.clientHasSecrets then
 	function CooldownSweep:UpdateCooldown()
-		ActionButton_ApplyCooldown(
-			-- Regular
-			self.cooldown, {
-				startTime = self.start,
-				duration = self.duration,
-				modRate = self.modRate,
-				isEnabled = true,
-			}, 
-			-- Charges
-			self.cooldown2, {
-				maxCharges = self.maxCharges or 0,
-				currentCharges = self.charges or 0,
-				cooldownStartTime = self.chargeStart or 0,
-				cooldownDuration = self.chargeDur or 0,
-				chargeModRate = self.modRate
-			},
-			-- Loss of control
-			nil, {
-				startTime = 0,
-				duration = 0,
-			})
+		local cd = self.cooldown
+		local cd2 = self.cooldown2
+
+		local mainStart, mainDuration = self.start, self.duration
+		local otherStart, otherDuration = self.chargeStart, self.chargeDur
+
+		cd:SetCooldown(mainStart, mainDuration, self.modRate)
+
+		-- Handle charges of spells that aren't completely depleted.
+		if otherStart == nil or otherDuration == nil then
+			cd2:SetCooldown(0, 0)
+		else
+			cd2:SetCooldown(otherStart, otherDuration, self.modRate)
+			if not self.charges then
+				cd2:SetAlpha(0)
+			elseif not issecretvalue(mainStart) and mainStart == 0 then
+				-- When the main duration is forced to a non-secret zero
+				-- due to GCD ignoring, always allow charges to show if there are any.
+				-- This avoids a missing sweep if you deplete charges of an ability 
+				-- just before its about to gain a second charge.
+				cd2:SetAlpha(1)
+			else
+				-- Show if we have charges, hide if fully on cooldown
+				cd2:SetAlpha(self.charges)
+			end
+		end
 	end
 else
 	function CooldownSweep:UpdateCooldown()
@@ -343,25 +341,23 @@ else
 		local mainStart, mainDuration
 		local otherStart, otherDuration = 0, 0
 
-		-- can't show charges as the primary if charges are secret
-		if not issecretvalue(self.charges) and self.maxCharges ~= 0 and self.charges == 0 then
+		if self.maxCharges ~= 0 and self.charges == 0 then
 			mainStart, mainDuration = self.chargeStart, self.chargeDur
 		else
 			mainStart, mainDuration = self.start, duration
-			-- if charges are secret, assume they exist and display them.
-			if issecretvalue(self.charges) or self.charges ~= self.maxCharges then
+			if self.charges ~= self.maxCharges then
 				otherStart, otherDuration = self.chargeStart, self.chargeDur
 			end
 		end
 
-		if issecretvalue(mainDuration) or mainDuration > 0 then
+		if mainDuration > 0 then
 			cd:SetCooldown(mainStart, mainDuration, self.modRate)
 		else
 			cd:SetCooldown(0, 0)
 		end
 
 		-- Handle charges of spells that aren't completely depleted.
-		if issecretvalue(otherDuration) or otherDuration > 0 then
+		if otherDuration > 0 then
 			cd2:SetCooldown(otherStart, otherDuration, self.modRate)
 		else
 			cd2:SetCooldown(0, 0)

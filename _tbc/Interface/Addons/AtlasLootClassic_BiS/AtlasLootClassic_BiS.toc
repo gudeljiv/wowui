@@ -1,6 +1,6 @@
 ## Interface: 20505
 ## Author: Okrah, Lag
-## Version: v2.5.5.12135
+## Version: v2.5.5.12154
 ## Dependencies: AtlasLootClassic
 ## LoadOnDemand: 1
 
@@ -35,4 +35,27 @@
 Locales\Locales.xml
 
 data.lua
+
+WarriorProt.lua
+WarriorFury.lua
+WarriorArms.lua
+Rogue.lua
+HunterBM.lua
+HunterSurv.lua
+DruidResto.lua
+DruidBoom.lua
+DruidFeral.lua
+DruidBear.lua
+MageArc.lua
+MageFire.lua
+WarlockAff.lua
+Warlockdest.lua
+PriestShadow.lua
+PriestHoly.lua
+ShamanEle.lua
+ShamanEnh.lua
+ShamanResto.lua
+PalProt.lua
+PalHoly.lua
+Palret.lua
 

@@ -5,7 +5,7 @@ test.Registry = {
 	---@type table<string, TestDefinition>
 	tests = {},
 	---@type string[]
-	sortedTests = {},
+	sortedTests = {}
 }
 
 ---@type table<string|integer, TestDefinition[]>
@@ -23,9 +23,7 @@ local function yield()
 end
 
 function test:DecompressLog(testData)
-	if testData.log then
-		return
-	end
+	if testData.log then return end
 	DBM:Debug("DecompressLog(" .. testData.name .. ")", 1)
 	local libSerialize = LibStub("LibSerialize")
 	local libDeflate = LibStub("LibDeflate")

@@ -1,5 +1,5 @@
-local L = DBM_GUI_L
-local CL = DBM_CORE_L
+local L		= DBM_GUI_L
+local CL	= DBM_CORE_L
 
 local isRetail = WOW_PROJECT_ID == (WOW_PROJECT_MAINLINE or 1)
 
@@ -31,7 +31,7 @@ frame:RegisterForDrag("LeftButton")
 frame:SetFrameLevel(frame:GetFrameLevel() + 4)
 frame:SetResizeBounds(800, 400, UIParent:GetWidth(), UIParent:GetHeight())
 frame:Hide()
-NineSliceUtil.ApplyLayoutByName(frame, "ButtonFrameTemplateNoPortrait")
+NineSliceUtil.ApplyLayoutByName(frame, "ButtonFrameTemplateNoPortrait");
 frame.firstshow = true
 frame:SetScript("OnShow", function(self)
 	if self.firstshow then
@@ -119,20 +119,9 @@ frameHeaderText:SetPoint("TOP", frameHeader, 0, -5)
 frameHeaderText:SetPoint("LEFT")
 frameHeaderText:SetPoint("RIGHT")
 if DBM.NewerVersion then
-	frameHeaderText:SetText(
-		CL.DEADLY_BOSS_MODS
-			.. " - "
-			.. DBM.DisplayVersion
-			.. " ("
-			.. DBM:ShowRealDate(DBM.Revision)
-			.. "). |cffff0000Version "
-			.. DBM.NewerVersion
-			.. " is available.|r"
-	)
+	frameHeaderText:SetText(CL.DEADLY_BOSS_MODS.. " - " .. DBM.DisplayVersion.. " (" .. DBM:ShowRealDate(DBM.Revision) .. "). |cffff0000Version " .. DBM.NewerVersion .. " is available.|r")
 else
-	frameHeaderText:SetText(
-		CL.DEADLY_BOSS_MODS .. " - " .. DBM.DisplayVersion .. " (" .. DBM:ShowRealDate(DBM.Revision) .. ")"
-	)
+	frameHeaderText:SetText(CL.DEADLY_BOSS_MODS.. " - " .. DBM.DisplayVersion.. " (" .. DBM:ShowRealDate(DBM.Revision) .. ")")
 end
 
 ---@class DBMMainFrameOkButton: Button
@@ -207,9 +196,9 @@ local frameWrapper = CreateFrame("Frame", nil, frame, "BackdropTemplate")
 frameWrapper:SetPoint("TOPLEFT", 15, -59)
 frameWrapper:SetPoint("BOTTOMRIGHT", -15, 40)
 frameWrapper.backdropInfo = {
-	edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", -- 137057
-	edgeSize = 16,
-	tileEdge = true,
+	edgeFile	= "Interface\\Tooltips\\UI-Tooltip-Border", -- 137057
+	edgeSize	= 16,
+	tileEdge	= true
 }
 frameWrapper:ApplyBackdrop()
 frameWrapper:SetBackdropBorderColor(0.6, 0.6, 0.6, 1)
@@ -342,8 +331,11 @@ frameBreak:SetPoint("TOPLEFT", frameList, "TOPRIGHT", 12, -1)
 frameBreak:SetPoint("BOTTOMLEFT", frameList, "BOTTOMRIGHT", 12, 1)
 frameBreak:SetWidth(16)
 frameBreak:SetTexture("Interface\\Tooltips\\UI-Tooltip-Border", "REPEAT", "REPEAT") -- 137057
-local edgeRepeatY = math.max(0, (frameBreak:GetHeight() / 16) * frameBreak:GetEffectiveScale() - 2 - 0.0625)
-frameBreak:SetTexCoord(0.1328125, 0.0625, 0.1328125, edgeRepeatY, 0.2421875, 0.0625, 0.2421875, edgeRepeatY)
+local edgeRepeatY = math.max(0, (frameBreak:GetHeight() / 16) * frameBreak:GetEffectiveScale() - 2 - 0.0625);
+frameBreak:SetTexCoord(0.1328125, 0.0625,
+	0.1328125, edgeRepeatY,
+	0.2421875, 0.0625,
+	0.2421875, edgeRepeatY);
 frameBreak:SetVertexColor(0.6, 0.6, 0.6, 1)
 
 ---@class DBMPanelContainer: ScrollFrame, BackdropTemplate
@@ -369,11 +361,11 @@ local frameContainerScrollBarBackdrop = CreateFrame("Frame", nil, frameContainer
 frameContainerScrollBarBackdrop:SetPoint("TOPLEFT", -4, 20)
 frameContainerScrollBarBackdrop:SetPoint("BOTTOMRIGHT", 4, -20)
 frameContainerScrollBarBackdrop.backdropInfo = {
-	edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", -- 137057
-	tile = true,
-	tileSize = 16,
-	edgeSize = 16,
-	insets = { left = 0, right = 0, top = 5, bottom = 5 },
+	edgeFile	= "Interface\\Tooltips\\UI-Tooltip-Border", -- 137057
+	tile		= true,
+	tileSize	= 16,
+	edgeSize	= 16,
+	insets		= { left = 0, right = 0, top = 5, bottom = 5 }
 }
 frameContainerScrollBarBackdrop:ApplyBackdrop()
 frameContainerScrollBarBackdrop:SetBackdropBorderColor(0.6, 0.6, 0.6, 0.6)

@@ -1,0 +1,11 @@
+<UI>
+  <include file="localization\localization.xml"/>
+  <include file="core\core.xml"/>
+  <include file="client\client.xml"/>
+  <include file="migration\migration.xml"/>
+  <include file="main\main.xml"/>
+  <include file="detectors\detectors.xml"/>
+  <include file="plugins\plugins.xml"/>
+  <include file="modules\modules.xml"/>
+  <include file="pluginAPI\pluginAPI.xml"/>
+</UI>

@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-3.0"
-local MINOR_VERSION = tonumber(("20260114224610"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20260118201703"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_MINOR_VERSION then
 	_G.DogTag_MINOR_VERSION = MINOR_VERSION
@@ -39,12 +39,15 @@ DogTag:AddTag("Base", "Round", {
 
 DogTag:AddTag("Base", "Floor", {
 	code = function(number)
+		if issecretvalue(number) then
+			return string.format("%d", number)
+		end
 		return math.floor(number)
 	end,
 	arg = {
 		'number', "number", "@req",
 	},
-	ret = "number",
+	ret = C_Secrets and C_Secrets.HasSecretRestrictions() and "number;string" or "number",
 	static = true,
 	doc = L["Take the floor of number"],
 	example = '[9.876:Floor] => "9"; [Floor(9.876)] => "9"',

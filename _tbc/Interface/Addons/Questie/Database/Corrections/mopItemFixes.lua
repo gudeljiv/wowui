@@ -1279,8 +1279,14 @@ function MopItemFixes.Load()
             [itemKeys.npcDrops] = {50358,69664,69996,69997,69998,69999,70000,70001,70002,70003,70530},
             [itemKeys.objectDrops] = {218593},
         },
+        [94594] = { -- Titan Runestone
+            [itemKeys.npcDrops] = {68036,69427,69017,68078,68904,68397,69473}, -- TODO: Add SOO Bosses, once that is live
+        },
         [94605] = { -- Wild Pterrorwing Hatchling
             [itemKeys.npcDrops] = {69428},
+        },
+        [94721] = { -- Strange Metal Ingot
+            [itemKeys.startQuest] = 32621,
         },
         [95372] = { -- Choker of Storms
             [itemKeys.objectDrops] = {218853},
@@ -1311,6 +1317,9 @@ function MopItemFixes.Load()
         },
         [95390] = { -- Pristine Kypari Sap Container
             [itemKeys.startQuest] = 32693,
+        },
+        [95433] = { -- Tempered Lightning Lance
+            [itemKeys.npcDrops] = {69739},
         },
         [97978] = { -- Knockoff Grumplefloot
             [itemKeys.startQuest] = 32836,

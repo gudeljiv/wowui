@@ -108,36 +108,29 @@ end
 local texCoords = { 0.08, 0.92, 0.08, 0.92 }
 local function ItemButtonQualityHook(frame, quality)
 	if frame.bgrSimpleHooked then
-		-- print("------------------------------------------------")
-		-- for k, v in pairs(frame) do
-		--     print(string.format("│ %-8s : %-8s │", tostring(k), tostring(v)))
-		-- end
-		-- print("name", frame:GetName())
-		-- for k, v in pairs(frame.widgetContainer) do
-		--     print(string.format("│ %-8s : %-8s │", tostring(k), tostring(v)))
-		-- end
-		-- print("GetInventorySlot", frame:GetInventorySlot())
-		-- print("------------------------------------------------")
-
-		local slot = frame:GetInventorySlot()
-		-- local bag = frame:GetInventoryBag()
-		-- print("name:", frame:GetName(), "; slot:", slot)
-
-		-- frame:ClearNormalTexture()
 		frame:CreateBeautyBorder(8)
-		frame.IconBorder:SetVertexColor(color.r, color.g, color.b, 1)
+		-- frame.IconBorder:SetVertexColor(color.r, color.g, color.b, 1)
 
-		-- frame.IconBorder:SetTexture("Interface/AddOns/Baganator/Assets/Skins/dark-icon-border")
-		-- frame:ClearNormalTexture()
 		local c = ITEM_QUALITY_COLORS[quality]
+
+		if frame.BGRUpdateQuests then
+			local questTexture = frame:GetName() and _G[frame:GetName() .. "IconQuestTexture"] or frame.IconQuestTexture
+			hooksecurefunc(frame, "BGRUpdateQuests", function()
+				if questTexture then
+					local textureID = questTexture:GetTexture()
+					if textureID then
+						questTexture:Hide()
+						frame:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
+						frame:SetBeautyBorderColor(1, 0.964, 0, 1)
+					end
+				end
+			end)
+		end
+
 		if c and quality and quality > 1 then
-			--   frame.IconBorder:SetVertexColor(c.r, c.g, c.b, quality > 1 and 1 or 0.5)
-			--   frame.IconBorder:Show()
 			frame:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
 			frame:SetBeautyBorderColor(c.r or 1, c.g or 1, c.b or 1)
 		else
-			--   frame.IconBorder:SetVertexColor(color.r, color.g, color.b, 1)
-			--   frame.IconBorder:Show()
 			frame:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
 			frame:SetBeautyBorderColor(1, 1, 1)
 		end

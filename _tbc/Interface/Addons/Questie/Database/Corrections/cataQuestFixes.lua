@@ -856,9 +856,6 @@ function CataQuestFixes.Load()
         [8335] = { -- Felendren the Banished
             [questKeys.startedBy] = {{15281}},
         },
-        [8347] = { -- Aiding the Outrunners
-            [questKeys.breadcrumbForQuestId] = 9704,
-        },
         [8481] = { -- The Root of All Evil
             [questKeys.objectives] = {nil,nil,{{21145}},{576,42000}},
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_SLAY, l10n("Kill Xandivious"),0,{{"monster", 15623}}}},
@@ -1161,12 +1158,6 @@ function CataQuestFixes.Load()
         [9272] = { -- Dressing the Part
             [questKeys.zoneOrSort] = zoneIDs.STRANGLETHORN_VALE,
         },
-        [9279] = { -- You Survived!
-            [questKeys.breadcrumbForQuestId] = 9280,
-        },
-        [9280] = { -- Replenishing the Healing Crystals
-            [questKeys.breadcrumbs] = {9279},
-        },
         [9283] = { -- Rescue the Survivors!
             [questKeys.objectives] = {{{16483,nil,Questie.ICON_TYPE_INTERACT}}},
             [questKeys.startedBy] = {{16502}},
@@ -1208,9 +1199,6 @@ function CataQuestFixes.Load()
         },
         [9369] = { -- Replenishing the Healing Crystals
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE - raceIDs.DRAENEI,
-        },
-        [9371] = { -- Botanist Taerix
-            [questKeys.breadcrumbForQuestId] = 10302,
         },
         [9372] = { -- Demonic Contamination
             [questKeys.preQuestSingle] = {},
@@ -1261,15 +1249,16 @@ function CataQuestFixes.Load()
         },
         [9625] = { -- Elekks Are Serious Business
             [questKeys.exclusiveTo] = {28559},
-            [questKeys.nextQuestInChain] = 9634,
-            [questKeys.breadcrumbForQuestId] = 9634,
+            [questKeys.breadcrumbForQuestId] = 9634, -- TO DO: check if "fake" breadcrumb
         },
         [9626] = { -- Meeting the Warchief
             [questKeys.finishedBy] = {{39605}},
         },
         [9634] = { -- Alien Predators
-            [questKeys.preQuestSingle] = {},
-            [questKeys.breadcrumbs] = {9625,28559},
+            [questKeys.breadcrumbs] = {9625,28559}, -- TO DO: check if "fake" breadcrumb 9625
+        },
+        [9645] = {
+            [questKeys.triggerEnd] = {"Journal Entry Read", {[zoneIDs.KARAZHAN_MASTERS_TERRACE]={{45.92,90.39}},[zoneIDs.KARAZHAN]={{-1,-1}}}},
         },
         [9672] = { -- The Bloodcurse Legacy
             [questKeys.exclusiveTo] = {9751},
@@ -1282,9 +1271,6 @@ function CataQuestFixes.Load()
         },
         [9701] = { -- Observing the Sporelings
             [questKeys.breadcrumbs] = {9697},
-        },
-        [9704] = { -- Slain by the Wretched
-            [questKeys.breadcrumbs] = {8347},
         },
         [9729] = { -- Fhwoor Smash!
             [questKeys.requiredMinRep] = {970,42000},
@@ -1538,10 +1524,6 @@ function CataQuestFixes.Load()
         },
         [10302] = { -- Volatile Mutations
             [questKeys.preQuestSingle] = {9369,9280},
-            [questKeys.breadcrumbs] = {9371},
-        },
-        [10304] = { -- Vindicator Aldar
-            [questKeys.breadcrumbForQuestId] = 9303,
         },
         [10305] = { -- Abjurist Belmara
             [questKeys.startedBy] = {nil,nil,{29234}},

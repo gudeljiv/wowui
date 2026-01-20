@@ -46,6 +46,7 @@ Experience/MobsToKill.lua
 Reputation/Reputation.lua
 
 Addons/AdiBags.lua
+Addons/AutoLayer.lua
 Addons/Baganator.lua
 Addons/BISTooltip.lua
 Addons/ChocolateBar.lua
@@ -68,6 +69,7 @@ Addons/Questie.lua
 Addons/RangeDisplay.lua
 Addons/RingMenu.lua
 Addons/RXPGuide.lua
+Addons/Selly.lua
 Addons/TellMeWhen.lua
 Addons/TomTom.lua
 Addons/WeakAuras.lua

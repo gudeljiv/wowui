@@ -133,7 +133,16 @@ local function checkBuffDropped(type, spellName, duration, npcID, zoneID)
 		--Check duration first, don't want to trigger on chronoboon or other stuff.
 		if (duration > (buffDurations[type] - 0.5)) then
 			if (not NWB.buffDrops[type] or GetServerTime() - NWB.buffDrops[type] > NWB.buffDropSpamCooldown) then
-				NWB:playSound("soundsRendDrop", type);
+				if (type == "rend") then
+					NWB:playSound("soundsRendDrop", type);
+				elseif (type == "ony") then
+					NWB:playSound("soundsOnyDrop", type);
+				elseif (type == "nef") then
+					NWB:playSound("soundsNefDrop", type);
+				elseif (type == "zan") then
+					NWB:playSound("soundsZanDrop", type);
+				end
+				NWB.buffDrops[type] = GetServerTime();
 				--NWB:debug("Playing backup drop sound:", type);
 			end
 			NWB:trackNewBuff(spellName, type, npcID);
@@ -778,7 +787,7 @@ local function combatLogEventUnfiltered(...)
 							end
 							NWB:acceptSummon();
 						end
-						--NWB.buffDrops["zan"] = GetServerTime();
+						NWB.buffDrops["zan"] = GetServerTime();
 					else
 						NWB:syncBuffsWithCurrentDuration();
 					end

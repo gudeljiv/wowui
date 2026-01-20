@@ -3,125 +3,135 @@ local _, xVermin = ...
 local GetNumTrackingTypes = C_Minimap and C_Minimap.GetNumTrackingTypes or GetNumTrackingTypes
 local GetTrackingInfo = C_Minimap and C_Minimap.GetTrackingInfo or GetTrackingInfo
 
-local titm = CreateFrame('Frame', 'TrackingIconTextFrame')
-titm:SetPoint('CENTER', UIParent, 'CENTER', 0, -55)
-titm.text = titm:CreateFontString(nil, 'ARTWORK')
-titm.text:SetFont(xVermin.Config.font.arial, 10, 'NONE')
+local titm = CreateFrame("Frame", "TrackingIconTextFrame")
+titm:SetPoint("CENTER", UIParent, "CENTER", 0, -55)
+titm.text = titm:CreateFontString(nil, "ARTWORK")
+titm.text:SetFont(xVermin.Config.font.arial, 10, "NONE")
 titm.text:SetShadowOffset(1, -1)
-titm.text:SetPoint('TOP', titm, 'TOP', 0, 0)
+titm.text:SetPoint("TOP", titm, "TOP", 0, 0)
 titm.text:SetTextColor(xVermin.ClassColor.r, xVermin.ClassColor.g, xVermin.ClassColor.b, 1)
 titm:SetWidth(titm.text:GetStringWidth())
 titm:SetHeight(titm.text:GetStringHeight())
 titm:SetFrameStrata("HIGH")
 
-
-local TrackingIconFrame = CreateFrame('Frame', 'TrackingIconFrame', Minimap)
-TrackingIconFrame:SetPoint('TOPRIGHT', Minimap, 'TOPRIGHT', -5, -5)
+local TrackingIconFrame = CreateFrame("Frame", "TrackingIconFrame", Minimap)
+TrackingIconFrame:SetPoint("TOPRIGHT", Minimap, "TOPRIGHT", -5, -5)
 TrackingIconFrame:SetWidth(16)
 TrackingIconFrame:SetHeight(16)
 TrackingIconFrame:EnableMouse(false)
 TrackingIconFrame:CreateBeautyBorder(6)
-TrackingIconFrame:SetFrameStrata('HIGH')
+TrackingIconFrame:SetFrameStrata("HIGH")
 TrackingIconFrame.Icon = TrackingIconFrame:CreateTexture()
 TrackingIconFrame.Icon:SetAllPoints(TrackingIconFrame)
 TrackingIconFrame:Hide()
-
 
 local function TrackingIcon()
 	TrackingIconFrame:Hide()
 
 	local t = GetTrackingTexture()
-	if t == 136025 or t == 133939 or t == 135942 or t == 136142 or t == 132328 or t == 132320 or t == 136217 or t == 135861 or t == 134153 or t == 132275 or t == 135974 then
+	if
+		t == 136025
+		or t == 133939
+		or t == 135942
+		or t == 136142
+		or t == 132328
+		or t == 132320
+		or t == 136217
+		or t == 135861
+		or t == 134153
+		or t == 132275
+		or t == 135974
+	then
 		texture = t
 	end
 
-	if (texture) then
+	if texture then
 		trackingID = texture
 		-- Minerals
-		if (texture == 136025) then
-			titm.text:SetText('MINERALS')
+		if texture == 136025 then
+			titm.text:SetText("MINERALS")
 			TrackingIconFrame:Show()
-			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\spell_nature_earthquake')
+			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\spell_nature_earthquake")
 		end
 
 		-- Herbs
-		if (texture == 133939) then
-			titm.text:SetText('HERBS')
+		if texture == 133939 then
+			titm.text:SetText("HERBS")
 			TrackingIconFrame:Show()
-			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\inv_misc_flower_02')
+			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\inv_misc_flower_02")
 		end
 
 		-- Humanoids HUNTER
-		if (texture == 135942) then
-			titm.text:SetText('HUMANOIDS')
+		if texture == 135942 then
+			titm.text:SetText("HUMANOIDS")
 			TrackingIconFrame:Show()
-			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\spell_holy_prayerofhealing')
+			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\spell_holy_prayerofhealing")
 		end
 
 		-- Beasts
-		if (texture == 132328) then
-			titm.text:SetText('BEASTS')
+		if texture == 132328 then
+			titm.text:SetText("BEASTS")
 			TrackingIconFrame:Show()
-			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\ability_tracking')
+			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\ability_tracking")
 		end
 
 		-- Humanoids DRUID
-		if (texture == 132328 and xVermin.Class == 'DRUID') then
-			titm.text:SetText('HUMANOIDS')
+		if texture == 132328 and xVermin.Class == "DRUID" then
+			titm.text:SetText("HUMANOIDS")
 			TrackingIconFrame:Show()
-			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\ability_tracking')
+			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\ability_tracking")
 		end
 
 		--Undead
-		if (texture == 136142) then
-			titm.text:SetText('UNDEAD')
+		if texture == 136142 then
+			titm.text:SetText("UNDEAD")
 			TrackingIconFrame:Show()
-			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\spell_shadow_darksummoning')
+			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\spell_shadow_darksummoning")
 		end
 
 		--Sense Undead
-		if (texture == 135974) then
-			titm.text:SetText('SENSE UNDEAD')
+		if texture == 135974 then
+			titm.text:SetText("SENSE UNDEAD")
 			TrackingIconFrame:Show()
-			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\spell_holy_senseundead')
+			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\spell_holy_senseundead")
 		end
 
 		-- Hidden
-		if (texture == 132320) then
-			titm.text:SetText('HIDDEN')
+		if texture == 132320 then
+			titm.text:SetText("HIDDEN")
 			TrackingIconFrame:Show()
-			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\ability_stealth')
+			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\ability_stealth")
 		end
 
 		-- Demons
-		if (texture == 136217) then
-			titm.text:SetText('DEMONS')
+		if texture == 136217 then
+			titm.text:SetText("DEMONS")
 			TrackingIconFrame:Show()
-			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\spell_shadow_summonfelhunter')
+			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\spell_shadow_summonfelhunter")
 		end
 
 		-- Elementals
-		if (texture == 135861) then
-			titm.text:SetText('ELEMENTALS')
+		if texture == 135861 then
+			titm.text:SetText("ELEMENTALS")
 			TrackingIconFrame:Show()
-			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\spell_frost_summonwaterelemental')
+			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\spell_frost_summonwaterelemental")
 		end
 
 		-- Dragonkin
-		if (texture == 134153) then
-			titm.text:SetText('DRAGONKIN')
+		if texture == 134153 then
+			titm.text:SetText("DRAGONKIN")
 			TrackingIconFrame:Show()
-			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\inv_misc_head_dragon_01')
+			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\inv_misc_head_dragon_01")
 		end
 
 		-- Giants
-		if (texture == 132275) then
-			titm.text:SetText('GIANTS')
+		if texture == 132275 then
+			titm.text:SetText("GIANTS")
 			TrackingIconFrame:Show()
-			TrackingIconFrame.Icon:SetTexture('Interface\\Icons\\ability_racial_avatar')
+			TrackingIconFrame.Icon:SetTexture("Interface\\Icons\\ability_racial_avatar")
 		end
 
-		if not texture or xVermin.Class ~= 'HUNTER' then
+		if not texture or xVermin.Class ~= "HUNTER" then
 			titm:Hide()
 		else
 			titm:SetWidth(titm.text:GetStringWidth())
@@ -135,26 +145,26 @@ local function InitializeTracking()
 	local i = 1
 	while true do
 		local spellName, spellSubName = GetSpellBookItemName(i, BOOKTYPE_SPELL)
-		
+
 		if not spellName then
 			do
 				break
 			end
 		end
 
-		if (
-			spellName == 'Find Minerals' or 
-			spellName == 'Find Herbs' or 
-			spellName == 'Track Beasts' or 
-			spellName == 'Track Humanoids' or 
-			spellName == 'Track Undead' or 
-			spellName == 'Track Hidden' or 
-			spellName == 'Track Demons' or 
-			spellName == 'Track Elementals' or 
-			spellName == 'Track Dragonkin' or 
-			spellName == 'Track Giants' or 
-			spellName == 'Sense Undead'
-		) then
+		if
+			spellName == "Find Minerals"
+			or spellName == "Find Herbs"
+			or spellName == "Track Beasts"
+			or spellName == "Track Humanoids"
+			or spellName == "Track Undead"
+			or spellName == "Track Hidden"
+			or spellName == "Track Demons"
+			or spellName == "Track Elementals"
+			or spellName == "Track Dragonkin"
+			or spellName == "Track Giants"
+			or spellName == "Sense Undead"
+		then
 			TrackingIcon(spellName)
 		end
 
@@ -162,23 +172,10 @@ local function InitializeTracking()
 	end
 end
 
-local f = CreateFrame('Frame')
-f:RegisterEvent('PLAYER_ENTERING_WORLD')
-f:RegisterEvent('CHAT_MSG_SKILL')
-f:RegisterEvent('MINIMAP_UPDATE_TRACKING')
-f:SetScript(
-	'OnEvent',
-	function(self, event, isInitialLogin, isReloadingUi)
-		InitializeTracking()
-	end
-)
-
-MiniMapTracking:Hide()
-MiniMapTracking:HookScript(
-	'OnShow',
-	function()
-		MiniMapTracking:Hide()
-	end
-)
-
-
+local f = CreateFrame("Frame")
+f:RegisterEvent("PLAYER_ENTERING_WORLD")
+f:RegisterEvent("CHAT_MSG_SKILL")
+f:RegisterEvent("MINIMAP_UPDATE_TRACKING")
+f:SetScript("OnEvent", function(self, event, isInitialLogin, isReloadingUi)
+	InitializeTracking()
+end)

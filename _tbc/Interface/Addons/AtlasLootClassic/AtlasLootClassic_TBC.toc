@@ -1,6 +1,6 @@
 ## Interface: 20505
 ## Author: Okrah, Lag
-## Version: v2.5.5.12135
+## Version: v2.5.5.12154
 
 ## Title: AtlasLootClassic |cFF22B14C[Core]|r
 ## Title-deDE: AtlasLootClassic |cFF22B14C[Kern]|r

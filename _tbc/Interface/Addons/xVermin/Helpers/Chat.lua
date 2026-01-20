@@ -163,18 +163,31 @@ local function LockFramePosition(frame, point, relativeTo, relativePoint, x, y)
 	FCF_SetLocked(frame, true)
 	-- frame:SetUserPlaced(false)
 
-	frame:SetScript("OnUpdate", function(self)
-		frame:ClearAllPoints()
-		frame:SetPoint(point, relativeTo, relativePoint, x, y)
-	end)
+	-- frame:SetScript("OnUpdate", function(self)
+	-- 	frame:ClearAllPoints()
+	-- 	frame:SetPoint(point, relativeTo, relativePoint, x, y)
+	-- end)
 
-	-- local orig = frame.SetPoint
-	-- hooksecurefunc(frame, "SetPoint", function(self)
-	-- 	-- if moved, snap back
-	-- 	if self:GetPoint() ~= point then
-	-- 		orig(self, point, relativeTo, relativePoint, x, y)
+	-- frame:SetScript("OnUpdate", function(self)
+	-- 	local _, _, _, currentX, currentY = self:GetPoint()
+	-- 	if currentX ~= x or currentY ~= y then
+	-- 		frame:ClearAllPoints()
+	-- 		frame:SetPoint(point, relativeTo, relativePoint, x, y)
 	-- 	end
 	-- end)
+	local isUpdating = false
+	hooksecurefunc(frame, "SetPoint", function()
+		if isUpdating then
+			return
+		end
+
+		local currentPoint, currentRelativeTo, currentRelativePoint, currentX, currentY = frame:GetPoint()
+		if currentX ~= x or currentY ~= y or currentPoint ~= point then
+			isUpdating = true
+			frame:SetPoint(point, relativeTo, relativePoint, x, y)
+			isUpdating = false
+		end
+	end)
 end
 
 local function SetChat()
@@ -387,7 +400,7 @@ local function SetChat()
 		BottomButton.SetScale = function() end
 		BottomButton.SetPoint = function() end
 
-		v:EnableMouse(false)
+		v:EnableMouse(true)
 		-- v:SetScript(
 		-- 	'OnEnter',
 		-- 	function()

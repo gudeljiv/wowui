@@ -182,7 +182,6 @@ function QuestieQuestFixes:Load()
         },
         [287] = {
             [questKeys.preQuestSingle] = {},
-            [questKeys.breadcrumbs] = {420},
         },
         [297] = {
              [questKeys.breadcrumbs] = {436}, -- #2492
@@ -198,6 +197,9 @@ function QuestieQuestFixes:Load()
         },
         [310] = {
             [questKeys.childQuests] = {308,403},
+        },
+        [315] = {
+            [questKeys.nextQuestInChain] = 0,
         },
         [349] = {
             [questKeys.objectivesText] = {},
@@ -230,6 +232,7 @@ function QuestieQuestFixes:Load()
             [questKeys.preQuestSingle] = {427}, -- proof of demise requires at war with the scarlet crusade
         },
         [403] = {
+            [questKeys.exclusiveTo] = {311}, -- #6998
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
             [questKeys.parentQuest] = 310,
         },
@@ -245,10 +248,7 @@ function QuestieQuestFixes:Load()
         },
         [415] = {
             [questKeys.breadcrumbForQuestId] = 413, -- #567
-        },
-        [420] = {
-            [questKeys.nextQuestInChain] = 287,
-            [questKeys.breadcrumbForQuestId] = 287,
+            [questKeys.nextQuestInChain] = 0,
         },
         [427] = {
             [questKeys.preQuestSingle] = {},
@@ -543,6 +543,9 @@ function QuestieQuestFixes:Load()
             [questKeys.childQuests] = {},
             [questKeys.parentQuest] = 0,
         },
+        [917] = {
+            [questKeys.nextQuestInChain] = 920,
+        },
         [918] = {
             [questKeys.preQuestSingle] = {},
         },
@@ -567,6 +570,9 @@ function QuestieQuestFixes:Load()
         },
         [936] = {
             [questKeys.breadcrumbForQuestId] = 3761,
+        },
+        [937] = {
+            [questKeys.nextQuestInChain] = 940,
         },
         [938] = {
             [questKeys.triggerEnd] = {"Lead Mist safely to Sentinel Arynia Cloudsbreak", {[zoneIDs.TELDRASSIL]={{38.33,34.39}}}},
@@ -1432,6 +1438,12 @@ function QuestieQuestFixes:Load()
             [questKeys.preQuestSingle] = {}, -- #1541
             [questKeys.preQuestGroup] = {2500,17}, -- #1541
         },
+        [2518] = {
+            [questKeys.breadcrumbs] = {2519},
+        },
+        [2519] = {
+            [questKeys.breadcrumbForQuestId] = 2518,
+        },
         [2520] = {
             [questKeys.triggerEnd] = {"Offer the sacrifice at the fountain", {[zoneIDs.DARNASSUS]={{38.63,85.99}}}},
         },
@@ -1830,6 +1842,11 @@ function QuestieQuestFixes:Load()
         },
         [3903] = {
             [questKeys.preQuestSingle] = {18},
+            [questKeys.breadcrumbForQuestId] = 3904,
+        },
+        [3904] = {
+            [questKeys.preQuestSingle] = {18},
+            [questKeys.breadcrumbs] = {3903},
         },
         [3909] = {
             [questKeys.requiredSourceItems] = {11141,11242},
@@ -2427,6 +2444,15 @@ function QuestieQuestFixes:Load()
         [5526] = {
             [questKeys.zoneOrSort] = zoneIDs.MOONGLADE,
             [questKeys.requiredSourceItems] = {18501},
+        },
+        [5542] = { -- Demon Dogs
+            [questKeys.startedBy] = {{1855,12126}},
+        },
+        [5543] = { -- Blood Tinged Skies
+            [questKeys.startedBy] = {{1855,12126}},
+        },
+        [5544] = { -- Carrion Grubbage
+            [questKeys.startedBy] = {{1855,12126}},
         },
         [5561] = {
             [questKeys.objectives] = {nil,nil,nil,nil,{{{4700,4701,4702},4700,"Kodos Tamed",Questie.ICON_TYPE_INTERACT}}},
@@ -3770,6 +3796,7 @@ function QuestieQuestFixes:Load()
         },
         [8385] = { -- Concerted Efforts
             [questKeys.zoneOrSort] = sortKeys.IRONFORGE,
+            [questKeys.objectivesText] = {},
         },
         [8386] = { -- Fight for Warsong Gulch
             [questKeys.requiredMaxLevel] = 19,
@@ -5157,28 +5184,31 @@ function QuestieQuestFixes:LoadFactionFixes()
 
     local questFixesHorde = {
         [687] = {
-            [questKeys.startedBy] = {{2787},nil,nil}
+            [questKeys.startedBy] = {{2787},nil,nil},
         },
         [737] = {
-            [questKeys.startedBy] = {{2934},nil,nil}
+            [questKeys.startedBy] = {{2934},nil,nil},
         },
         [1718] = {
-            [questKeys.startedBy] = {{3041,3354,4595},nil,nil}
+            [questKeys.startedBy] = {{3041,3354,4595},nil,nil},
         },
         [1947] = {
-            [questKeys.startedBy] = {{3048,4568,5885},nil,nil}
+            [questKeys.startedBy] = {{3048,4568,5885},nil,nil},
         },
         [1953] = {
-            [questKeys.startedBy] = {{3048,4568,5885},nil,nil}
+            [questKeys.startedBy] = {{3048,4568,5885},nil,nil},
         },
         [2861] = {
-            [questKeys.startedBy] = {{4568,5885},nil,nil}
+            [questKeys.startedBy] = {{4568,5885},nil,nil},
+        },
+        [3741] = {
+            [questKeys.reputationReward] = {}, -- doable as horde, but no SW reputation for horde side
         },
         [5050] = {
-            [questKeys.startedBy] = {{8403},nil,nil}
+            [questKeys.startedBy] = {{8403},nil,nil},
         },
         [6681] = {
-            [questKeys.startedBy] = {{3327,3328,3401,4582,4583,4584},nil,{17126}} -- #7244
+            [questKeys.startedBy] = {{3327,3328,3401,4582,4583,4584},nil,{17126}}, -- #7244
         },
         [7562] = {
             [questKeys.startedBy] = {{5753,5815},nil,nil},
@@ -5188,7 +5218,7 @@ function QuestieQuestFixes:LoadFactionFixes()
             [questKeys.startedBy] = {{6018},nil,nil},
         },
         [8904] = {
-            [questKeys.exclusiveTo] = {8900,8901,8902,8979}
+            [questKeys.exclusiveTo] = {8900,8901,8902,8979},
         },
         [9388] = {
             [questKeys.startedBy] = {{16818},nil,nil},
@@ -5200,28 +5230,28 @@ function QuestieQuestFixes:LoadFactionFixes()
 
     local questFixesAlliance = {
         [687] = {
-            [questKeys.startedBy] = {{2786},nil,nil}
+            [questKeys.startedBy] = {{2786},nil,nil},
         },
         [737] = {
-            [questKeys.startedBy] = {{2786},nil,nil}
+            [questKeys.startedBy] = {{2786},nil,nil},
         },
         [1718] = {
-            [questKeys.startedBy] = {{5113,5479},nil,nil}
+            [questKeys.startedBy] = {{5113,5479},nil,nil},
         },
         [1947] = {
-            [questKeys.startedBy] = {{5144,5497},nil,nil}
+            [questKeys.startedBy] = {{5144,5497},nil,nil},
         },
         [1953] = {
-            [questKeys.startedBy] = {{5144,5497},nil,nil}
+            [questKeys.startedBy] = {{5144,5497},nil,nil},
         },
         [2861] = {
-            [questKeys.startedBy] = {{5144,5497},nil,nil}
+            [questKeys.startedBy] = {{5144,5497},nil,nil},
         },
         [5050] = {
-            [questKeys.startedBy] = {{3520},nil,nil}
+            [questKeys.startedBy] = {{3520},nil,nil},
         },
         [6681] = {
-            [questKeys.startedBy] = {{332,918,4214,4215,4163,5165,5166,5167},nil,{17126}} -- #7244
+            [questKeys.startedBy] = {{332,918,4214,4215,4163,5165,5166,5167},nil,{17126}}, -- #7244
         },
         [7562] = {
             [questKeys.startedBy] = {{5520,6382},nil,nil},

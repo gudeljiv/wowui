@@ -368,7 +368,7 @@ end
 
 -- Name abbreviation
 local function abbreviateName(text)
-	return string.sub(text, 1, 1) .. "."
+	return (string.utf8sub or string.sub)(text, 1, 1) .. "."
 end
 
 Tags.abbrevCache = setmetatable({}, {
@@ -794,6 +794,14 @@ Tags.defaultTags = {
 	end]],
 	["cpoints"] = [[function(unit, unitOwner)
 		return UnitPower("player", Enum.PowerType.ComboPoints)
+	end]],
+	["sshards"] = [[function(unit, unitOwner)
+		local points = UnitPower(ShadowUF.playerUnit, Enum.PowerType.SoulShards)
+		return points and points > 0 and points
+	end]],
+	["hpower"] = [[function(unit, unitOwner)
+		local points = UnitPower(ShadowUF.playerUnit, Enum.PowerType.HolyPower)
+		return points and points > 0 and points
 	end]],
 	["smartlevel"] = [[function(unit, unitOwner)
 		local classif = UnitClassification(unit)

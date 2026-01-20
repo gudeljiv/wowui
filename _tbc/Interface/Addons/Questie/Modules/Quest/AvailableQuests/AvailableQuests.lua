@@ -152,9 +152,6 @@ end
 
 ---@param questId QuestId
 function AvailableQuests.RemoveQuest(questId)
-    if availableQuests[questId] then
-        _MarkQuestAsUnavailableFromNPC(questId)
-    end
     availableQuests[questId] = nil
     QuestieMap:UnloadQuestFrames(questId)
     QuestieTooltips:RemoveQuest(questId)
@@ -164,7 +161,7 @@ end
 local lastNpcGuid
 
 --- Called on GOSSIP_SHOW to hide all quests that are not available from the NPC.
-function AvailableQuests.HideNotAvailableQuestsFromGossipShow()
+function AvailableQuests.ValidateAvailableQuestsFromGossipShow()
     local npcGuid = UnitGUID("target")
     if (not npcGuid) then
         return
@@ -176,18 +173,30 @@ function AvailableQuests.HideNotAvailableQuestsFromGossipShow()
     end
 
     local npcId = tonumber(npcIDStr)
-    if (not availableQuestsByNpc[npcId]) or lastNpcGuid == npcGuid then
+    if lastNpcGuid == npcGuid then
         return
     end
 
     lastNpcGuid = npcGuid
 
-    local availableQuestsInGossip = QuestieCompat.GetAvailableQuests() -- empty list when not from gossip
+    local availableQuestsInGossip = QuestieCompat.GetAvailableQuests()
+
+    -- validate no quest is incorrectly hidden
+    for _, gossipQuest in pairs(availableQuestsInGossip) do
+        local questId = gossipQuest.questID
+        if unavailableQuestsDeterminedByTalking[questId] then
+            unavailableQuestsDeterminedByTalking[questId] = nil
+            local quest = QuestieDB.GetQuest(questId)
+            if quest then
+                AvailableQuests.DrawAvailableQuest(quest)
+            end
+        end
+    end
 
     -- Active quests are relevant, because the API can fire GOSSIP_SHOW before QUEST_ACCEPTED.
     -- So we need to check active quests to not hide them incorrectly for the day.
     local activeQuests = QuestieCompat.GetActiveQuests()
-    for questId in pairs(availableQuestsByNpc[npcId]) do
+    for questId in pairs(availableQuestsByNpc[npcId] or {}) do
         local isAvailableInGossip = false
         for _, gossipQuest in pairs(availableQuestsInGossip) do
             if gossipQuest.questID == questId then
@@ -204,16 +213,14 @@ function AvailableQuests.HideNotAvailableQuestsFromGossipShow()
 
         if (not isAvailableInGossip) and QuestieDB.IsDailyQuest(questId) then
             AvailableQuests.RemoveQuest(questId)
-
-            unavailableQuestsDeterminedByTalking[questId] = true
-            availableQuestsByNpc[npcId][questId] = nil
+            _MarkQuestAsUnavailableFromNPC(questId, npcId)
         end
     end
 end
 
 --- Called on QUEST_DETAIL to hide all quests that are not available from the NPC.
 --- This is relevant on NPCs which offer random quests each day and especially a different number of quests.
-function AvailableQuests.HideNotAvailableQuestsFromQuestDetail()
+function AvailableQuests.ValidateAvailableQuestsFromQuestDetail()
     local npcGuid = UnitGUID("target")
     if (not npcGuid) then
         return
@@ -225,7 +232,7 @@ function AvailableQuests.HideNotAvailableQuestsFromQuestDetail()
     end
 
     local npcId = tonumber(npcIDStr)
-    if (not availableQuestsByNpc[npcId]) or lastNpcGuid == npcGuid then
+    if lastNpcGuid == npcGuid then
         return
     end
 
@@ -238,19 +245,26 @@ function AvailableQuests.HideNotAvailableQuestsFromQuestDetail()
         return
     end
 
-    for questId in pairs(availableQuestsByNpc[npcId]) do
+    -- validate quest is not incorrectly hidden
+    if unavailableQuestsDeterminedByTalking[availableQuestId] then
+        unavailableQuestsDeterminedByTalking[availableQuestId] = nil
+        local quest = QuestieDB.GetQuest(availableQuestId)
+        if quest then
+            AvailableQuests.DrawAvailableQuest(quest)
+        end
+    end
+
+    for questId in pairs(availableQuestsByNpc[npcId] or {}) do
         if questId ~= availableQuestId and QuestieDB.IsDailyQuest(questId) then
             AvailableQuests.RemoveQuest(questId)
-
-            unavailableQuestsDeterminedByTalking[questId] = true
-            availableQuestsByNpc[npcId][questId] = nil
+            _MarkQuestAsUnavailableFromNPC(questId, npcId)
         end
     end
 end
 
 --- Called on QUEST_GREETING to hide all quests that are not available from the NPC.
 --- This is relevant on NPCs which offer random quests each day and especially a different number of quests.
-function AvailableQuests.HideNotAvailableQuestsFromQuestGreeting()
+function AvailableQuests.ValidateAvailableQuestsFromQuestGreeting()
     local npcGuid = UnitGUID("target")
     if (not npcGuid) then
         return
@@ -262,7 +276,7 @@ function AvailableQuests.HideNotAvailableQuestsFromQuestGreeting()
     end
 
     local npcId = tonumber(npcIDStr)
-    if (not availableQuestsByNpc[npcId]) or lastNpcGuid == npcGuid then
+    if lastNpcGuid == npcGuid then
         return
     end
 
@@ -271,28 +285,40 @@ function AvailableQuests.HideNotAvailableQuestsFromQuestGreeting()
     local availableQuestsInGreeting = {}
     for i = 1, MAX_NUM_QUESTS do
         local titleLine = _G["QuestTitleButton" .. i]
-        if titleLine and titleLine:IsVisible() then
+        if (not titleLine) then
+            break
+        elseif titleLine:IsVisible() then
             local title
-            if titleLine.isActive == 1 then
+            local isActive = titleLine.isActive == 1
+            if isActive then
                 -- Active quests are relevant, because the API can fire QUEST_GREETING before QUEST_ACCEPTED.
                 -- So we need to check active quests to not hide them incorrectly for the day.
                 title = GetActiveTitle(titleLine:GetID())
             else
                 title = GetAvailableTitle(titleLine:GetID())
             end
-            local questId = QuestieDB.GetQuestIDFromName(title, npcGuid, true)
+            local questId = QuestieDB.GetQuestIDFromName(title, npcGuid, (not isActive))
             if questId and questId > 0 then
                 availableQuestsInGreeting[questId] = true
             end
         end
     end
 
-    for questId in pairs(availableQuestsByNpc[npcId]) do
+    -- validate no quest is incorrectly hidden
+    for questId in pairs(availableQuestsInGreeting) do
+        if unavailableQuestsDeterminedByTalking[questId] then
+            unavailableQuestsDeterminedByTalking[questId] = nil
+            local quest = QuestieDB.GetQuest(questId)
+            if quest then
+                AvailableQuests.DrawAvailableQuest(quest)
+            end
+        end
+    end
+
+    for questId in pairs(availableQuestsByNpc[npcId] or {}) do
         if (not availableQuestsInGreeting[questId]) and QuestieDB.IsDailyQuest(questId) then
             AvailableQuests.RemoveQuest(questId)
-
-            unavailableQuestsDeterminedByTalking[questId] = true
-            availableQuestsByNpc[npcId][questId] = nil
+            _MarkQuestAsUnavailableFromNPC(questId, npcId)
         end
     end
 end
@@ -594,15 +620,13 @@ _GetIconScaleForAvailable = function()
     return Questie.db.profile.availableScale or 1.3
 end
 
-_MarkQuestAsUnavailableFromNPC = function(questId)
-    local quest = QuestieDB.GetQuest(questId)
-    if quest then
-        for _, npcId in pairs(quest.Starts.NPC or {}) do
-            if availableQuestsByNpc[npcId] then
-                availableQuestsByNpc[npcId][questId] = nil
-            end
-        end
-    end
+---@param questId QuestId
+---@param npcId NpcId
+_MarkQuestAsUnavailableFromNPC = function(questId, npcId)
+    unavailableQuestsDeterminedByTalking[questId] = true
+    availableQuestsByNpc[npcId][questId] = nil
+
+    -- TODO: Add Comms call to inform other players about this unavailable quest
 end
 
 return AvailableQuests

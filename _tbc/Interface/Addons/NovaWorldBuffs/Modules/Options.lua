@@ -2335,15 +2335,15 @@ end
 
 function NWB:checkNewVersion()
 	--NWB.db.global.versions = {};
-	local newVersionNotes = 3.23;
+	local newVersionNotes = 3.24;
 	if (NWB.version and NWB.version == newVersionNotes) then
 		if (not NWB.db.global.versions[NWB.version]) then
 			if (NWB.isClassic or NWB.isTBC) then
 				--if (NWB:GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
 					local notes = {
-						"Added some fixes for sounds not playing when you get a world buff if you were on a different layer than the quest was handed in on (this broke when buff npcs stopped yelling on all layers before a buff dropped).",
-						"Fixed /dmf command that was broken in last update (it started opening the helper window instead of showing next spawn, there is a seperate /dmfhelper command for that).",
-						"Fixed some TBC load errors.",
+						"Fixed DMF damage buff not showing what percentage buff you got from Sayge.",
+						"Moved the layer display on minimap slightly higher in TBC so it doesn't cover the clock (reminder you can shift and drag if you want it somewhere else).",
+						"Fixed an issue that could cause the buff gained sound more than once.",
 					};
 					loadNewVersionFrame(NWB.version, notes, "Nova World Buffs", "Interface\\Icons\\inv_misc_head_dragon_01", -50, 350);
 				--end
@@ -2483,9 +2483,7 @@ end
 
 --Reset colors.
 function NWB:resetMinimapLayerFrame(info)
-	MinimapLayerFrame:ClearAllPoints();
-	--MinimapLayerFrame:SetPoint("BOTTOM", Minimap, 2, 4);
-	MinimapLayerFrame:SetPoint("BOTTOM", Minimap, "BOTTOM", 0, 4);
+	NWB:updateMinimapLayerFramePos();
 end
 --Colorize chat prefix in all chat channels.
 function NWB:setColorizePrefixLinks(info, value)

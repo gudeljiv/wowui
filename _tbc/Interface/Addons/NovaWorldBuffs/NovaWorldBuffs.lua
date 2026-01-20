@@ -3059,7 +3059,7 @@ f:SetScript("OnEvent", function(self, event, ...)
 					if (NWB.data.myChars[UnitName("player")].storedBuffs) then
 						for k, v in pairs(NWB.data.myChars[UnitName("player")].storedBuffs) do
 							if (k == L["Sayge's Dark Fortune of Damage"]) then
-								unitDamageFrame:RegisterEvent("UNIT_DAMAGE");
+								NWB.unitDamageFrame:RegisterEvent("UNIT_DAMAGE");
 								break;
 							end
 						end
@@ -3373,6 +3373,9 @@ function NWB:getTimeString(seconds, countOnly, type, space, firstOnly, long)
 		elseif (m > 1) then
 			return m .. " " .. L["minutesMedium"] .. " " .. s .. " " .. L["secondsMedium"];
 		end
+		if (s == 1) then
+			return s .. " " .. L["secondMedium"];
+		end
 		--If no matches it must be seconds only.
 		return s .. " " .. L["secondsMedium"];
 	else
@@ -3407,6 +3410,9 @@ function NWB:getTimeString(seconds, countOnly, type, space, firstOnly, long)
 			return m .. " " .. L["minutes"] .. " " .. s .. " " .. L["seconds"];
 		end
 		--If no matches it must be seconds only.
+		if (s == 1) then
+			return s .. " " .. L["second"];
+		end
 		return s .. " " .. L["seconds"];
 	end
 end
@@ -10925,10 +10931,18 @@ end
 --function NWB:validateLayer(layer)
 --	return true;
 --end
-	
+
 local MinimapLayerFrame = CreateFrame("Frame", "MinimapLayerFrame", Minimap, "ThinGoldEdgeTemplate");
---MinimapLayerFrame:SetPoint("BOTTOM", 2, 4);
-MinimapLayerFrame:SetPoint("BOTTOM", Minimap, "BOTTOM", 0, 4);
+function NWB:updateMinimapLayerFramePos()
+	MinimapLayerFrame:ClearAllPoints();
+	if (Enum.GameRule.EditModeDisabled and not C_GameRules.IsGameRuleActive(Enum.GameRule.EditModeDisabled)) then
+		--Edit mode in TBC makes the layer frame slightly cover the clock.
+		MinimapLayerFrame:SetPoint("BOTTOM", Minimap, "BOTTOM", 0, 6);
+	else
+		MinimapLayerFrame:SetPoint("BOTTOM", Minimap, "BOTTOM", 0, 4);
+	end
+end
+NWB:updateMinimapLayerFramePos();
 MinimapLayerFrame:SetFrameStrata("HIGH");
 MinimapLayerFrame:SetFrameLevel(9);
 MinimapLayerFrame:SetMovable(true);

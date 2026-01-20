@@ -1,6 +1,4 @@
-if not WeakAuras.IsLibsOK() then
-  return
-end
+if not WeakAuras.IsLibsOK() then return end
 ---@type string
 local AddonName = ...
 ---@class Private
@@ -15,7 +13,7 @@ local default = function(parentType)
 
     stopmotionTexture = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\stopmotion",
     stopmotionDesaturate = false,
-    stopmotionColor = { 1, 1, 1, 1 },
+    stopmotionColor = {1, 1, 1, 1},
     stopmotionBlendMode = "BLEND",
     startPercent = 0,
     endPercent = 1,
@@ -38,7 +36,7 @@ local default = function(parentType)
     height = 32,
     scale = 1,
 
-    progressSource = { -2, "" },
+    progressSource = {-2, ""},
   }
 
   if C_AddOns.IsAddOnLoaded("WeakAurasStopMotion") then
@@ -56,12 +54,13 @@ local default = function(parentType)
   return defaults
 end
 
+
 local properties = {
   stopmotionVisible = {
     display = L["Visibility"],
     setter = "SetVisible",
     type = "bool",
-    defaultProperty = true,
+    defaultProperty = true
   },
   stopmotionDesaturate = {
     display = L["Desaturate"],
@@ -71,7 +70,7 @@ local properties = {
   stopmotionColor = {
     display = L["Color"],
     setter = "SetColor",
-    type = "color",
+    type = "color"
   },
 }
 
@@ -86,6 +85,7 @@ local funcs = {
   SetColor = function(self, ...)
     self.stopMotion:SetColor(...)
   end,
+
 }
 
 local TimedFuncs = {
@@ -189,7 +189,11 @@ local function modify(parent, region, parentData, data, first)
   region.scale = data.scale or 1
   region.Anchor = nil
 
-  if parentData.regionType == "aurabar" and data.anchor_mode == "area" and data.anchor_area == "fg" and data.barModelClip then
+  if parentData.regionType == "aurabar"
+    and data.anchor_mode == "area"
+    and data.anchor_area == "fg"
+    and data.barModelClip
+  then
     -- Special anchoring for clipping !
     region:SetClipsChildren(true)
     region:SetScript("OnSizeChanged", nil)
@@ -269,7 +273,12 @@ local function modify(parent, region, parentData, data, first)
 end
 
 local function supports(regionType)
-  return regionType == "texture" or regionType == "progresstexture" or regionType == "icon" or regionType == "aurabar" or regionType == "text" or regionType == "empty"
+  return regionType == "texture"
+         or regionType == "progresstexture"
+         or regionType == "icon"
+         or regionType == "aurabar"
+         or regionType == "text"
+         or regionType == "empty"
 end
 
 WeakAuras.RegisterSubRegionType("substopmotion", L["Stop Motion"], supports, create, modify, onAcquire, onRelease, default, nil, properties)

@@ -5,8 +5,8 @@ bind E ACTIONBUTTON11
 bind X MULTIACTIONBAR2BUTTON12
 bind NUMLOCK NONE
 bind BUTTON4 NONE
-bind INSERT CLICK DominosActionButton14:HOTKEY
-bind DELETE CLICK DominosActionButton13:HOTKEY
+bind INSERT NONE
+bind DELETE NONE
 bind PAGEUP CAMERAZOOMIN
 bind PAGEUP NONE HousingEditor
 bind PAGEUP NONE HousingEditorBasicDecorMode
@@ -123,7 +123,7 @@ bind F10 NONE HousingEditorBasicDecorMode
 bind F11 NONE
 bind F11 NONE HousingEditor
 bind F11 NONE HousingEditorBasicDecorMode
-bind F12 CLICK DominosActionButton15:HOTKEY
+bind F12 NONE
 bind F12 NONE HousingEditor
 bind SHIFT-P TOGGLECHARACTER4
 bind SHIFT-M NONE
@@ -148,7 +148,7 @@ bind MOUSEWHEELDOWN MULTIACTIONBAR2BUTTON1
 bind END CLICK RotBotF2:LeftButton
 bind END NONE HousingEditor
 bind END NONE HousingEditorBasicDecorMode
-bind HOME CLICK DominosActionButton15:HOTKEY
+bind HOME CLICK RotBotF1:LeftButton
 bind HOME NONE HousingEditor
 bind HOME NONE HousingEditorBasicDecorMode
 bind CTRL-R NONE
@@ -304,4 +304,4 @@ bind CTRL-O TOGGLEGUILDTAB
 bind CTRL-UP CAMERAZOOMIN
 bind CTRL-DOWN CAMERAZOOMOUT
 bind ; QUESTIE_TOGGLE_JOURNEY
-bind BACKSPACE CLICK DominosActionButton18:HOTKEY
+bind BACKSPACE NONE

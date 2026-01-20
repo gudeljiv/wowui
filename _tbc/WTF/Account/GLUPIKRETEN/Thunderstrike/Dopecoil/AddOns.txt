@@ -74,7 +74,7 @@ Details_TinyThreat: enabled
 Details_Vanguard: enabled
 ExtendedCharacterStats: enabled
 FarmHud: disabled
-FarmHud_QuestArrow: enabled
+FarmHud_QuestArrow: disabled
 gmMoney: enabled
 Immersion: enabled
 Leatrix_Maps: enabled
@@ -161,7 +161,7 @@ Buffet: enabled
 CharacterStatsTBC: disabled
 CCleanerClassic: disabled
 ClassicProfessionFilter: enabled
-FarmHud_TrailPath: enabled
+FarmHud_TrailPath: disabled
 GrimoireKeeper: enabled
 ItemRack_BankFix: enabled
 Leatrix_Sounds: enabled
@@ -170,7 +170,7 @@ LoonBestInSlot: enabled
 Masque_BeautyBorder: enabled
 Masque_ElvUI: enabled
 Masque_Muq: enabled
-NovaConsumesHelper: enabled
+NovaConsumesHelper: disabled
 RatingBuster: enabled
 RingMenuReborn: disabled
 StatLogic: enabled
@@ -181,3 +181,4 @@ TipTacTalents: enabled
 WaylaidSuppliesTooltip: disabled
 Masque_Dominos: enabled
 Dominos_Cast: disabled
+Farmer: disabled

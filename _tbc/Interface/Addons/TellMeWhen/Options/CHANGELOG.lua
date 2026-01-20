@@ -3,6 +3,11 @@ if not TMW then return end
 TMW.CHANGELOG_LASTVER="10.0.0"
 
 TMW.CHANGELOG = [==[
+## v12.0.1
+* Midnight: Minor clarifications of secret behavior
+* Midnight: Add cooldown numbers on charge CDs
+* Midnight: Fix error in cast icon type
+
 ## v12.0.0
 * WoW Midnight support. 
 * TBC Classic Anniversary support.

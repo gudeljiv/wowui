@@ -6,14 +6,14 @@ ShadowUF = select(2, ...)
 
 local L = ShadowUF.L
 ShadowUF.dbRevision = 61
-ShadowUF.dbRevisionClassic = 5
+ShadowUF.dbRevisionClassic = 6
 ShadowUF.playerUnit = "player"
 ShadowUF.enabledUnits = {}
 ShadowUF.modules = {}
 ShadowUF.moduleOrder = {}
 ShadowUF.unitList = {"player", "pet", "pettarget", "target", "targettarget", "targettargettarget", "focus", "focustarget", "party", "partypet", "partytarget", "partytargettarget", "raid", "raidpet", "boss", "bosstarget", "maintank", "maintanktarget", "mainassist", "mainassisttarget", "arena", "arenatarget", "arenapet", "battleground", "battlegroundtarget", "battlegroundpet", "arenatargettarget", "battlegroundtargettarget", "maintanktargettarget", "mainassisttargettarget", "bosstargettarget"}
 ShadowUF.fakeUnits = {["targettarget"] = true, ["targettargettarget"] = true, ["pettarget"] = true, ["arenatarget"] = true, ["arenatargettarget"] = true, ["focustarget"] = true, ["focustargettarget"] = true, ["partytarget"] = true, ["raidtarget"] = true, ["bosstarget"] = true, ["maintanktarget"] = true, ["mainassisttarget"] = true, ["battlegroundtarget"] = true, ["partytargettarget"] = true, ["battlegroundtargettarget"] = true, ["maintanktargettarget"] = true, ["mainassisttargettarget"] = true, ["bosstargettarget"] = true}
-L.units = {["raidpet"] = L["Raid pet"], ["PET"] = L["Pet"], ["arena"] = L["Arena"], ["arenapet"] = L["Arena Pet"], ["arenatarget"] = L["Arena Target"], ["arenatargettarget"] = L["Arena Target of Target"], ["boss"] = L["Boss"], ["bosstarget"] = L["Boss Target"], ["focus"] = L["Focus"], ["focustarget"] = L["Focus Target"], ["mainassist"] = L["Main Assist"], ["mainassisttarget"] = L["Main Assist Target"], ["maintank"] = L["Main Tank"], ["maintanktarget"] = L["Main Tank Target"], ["party"] = L["Party"], ["partypet"] = L["Party Pet"], ["partytarget"] = L["Party Target"], ["pet"] = L["Pet"], ["pettarget"] = L["Pet Target"], ["player"] = L["Player"],["raid"] = L["Raid"], ["target"] = L["Target"], ["targettarget"] = L["Target of Target"], ["targettargettarget"] = L["Target of Target of Target"], ["battleground"] = L["Battleground"], ["battlegroundpet"] = L["Battleground Pet"], ["battlegroundtarget"] = L["Battleground Target"], ["partytargettarget"] = L["Party Target of Target"], ["battlegroundtargettarget"] = L["Battleground Target of Target"], ["maintanktargettarget"] = L["Main Tank Target of Target"], ["mainassisttargettarget"] = L["Main Assist Target of Target"], ["bosstargettarget"] = L["Boss Target of Target"]}
+L.units = {["raidpet"] = L["Raid pet"], ["PET"] = L["Pet"], ["VEHICLE"] = L["Vehicle"], ["arena"] = L["Arena"], ["arenapet"] = L["Arena Pet"], ["arenatarget"] = L["Arena Target"], ["arenatargettarget"] = L["Arena Target of Target"], ["boss"] = L["Boss"], ["bosstarget"] = L["Boss Target"], ["focus"] = L["Focus"], ["focustarget"] = L["Focus Target"], ["mainassist"] = L["Main Assist"], ["mainassisttarget"] = L["Main Assist Target"], ["maintank"] = L["Main Tank"], ["maintanktarget"] = L["Main Tank Target"], ["party"] = L["Party"], ["partypet"] = L["Party Pet"], ["partytarget"] = L["Party Target"], ["pet"] = L["Pet"], ["pettarget"] = L["Pet Target"], ["player"] = L["Player"],["raid"] = L["Raid"], ["target"] = L["Target"], ["targettarget"] = L["Target of Target"], ["targettargettarget"] = L["Target of Target of Target"], ["battleground"] = L["Battleground"], ["battlegroundpet"] = L["Battleground Pet"], ["battlegroundtarget"] = L["Battleground Target"], ["partytargettarget"] = L["Party Target of Target"], ["battlegroundtargettarget"] = L["Battleground Target of Target"], ["maintanktargettarget"] = L["Main Tank Target of Target"], ["mainassisttargettarget"] = L["Main Assist Target of Target"], ["bosstargettarget"] = L["Boss Target of Target"]}
 L.shortUnits = {["battleground"] = L["BG"], ["battlegroundtarget"] = L["BG Target"], ["battlegroundpet"] = L["BG Pet"], ["battlegroundtargettarget"] = L["BG ToT"], ["arenatargettarget"] = L["Arena ToT"], ["partytargettarget"] = L["Party ToT"], ["bosstargettarget"] = L["Boss ToT"], ["maintanktargettarget"] = L["MT ToT"], ["mainassisttargettarget"] = L["MA ToT"]}
 
 -- Cache the units so we don't have to concat every time it updates
@@ -118,6 +118,14 @@ end
 function ShadowUF:CheckUpgrade()
 	local revisionClassic = self.db.profile.revisionClassic or (self.db.profile.revision and 1 or self.dbRevisionClassic)
 	local revision = self.db.profile.revision or self.dbRevision
+	if( revisionClassic <= 5 ) then
+		local config = self.db.profile.units
+		config.player.soulShards = {anchorTo = "$parent", order = 60, height = 0.40, anchorPoint = "BR", x = -8, y = 6, size = 12, spacing = -2, growth = "LEFT", isBar = true, showAlways = true}
+		config.player.holyPower = {anchorTo = "$parent", order = 60, height = 0.40, anchorPoint = "BR", x = -3, y = 6, size = 14, spacing = -4, growth = "LEFT", isBar = true, showAlways = true}
+
+		self.db.profile.classColors.VEHICLE = {r = 0.23, g = 0.41, b = 0.23}
+		self.db.profile.healthColors.aggro = {r = 0.9, g = 0, b = 0}
+	end
 	if( revisionClassic <= 4 ) then
 		-- new resources
 		self.db.profile.powerColors.RUNES_BLOOD = {r = 0.95, g = 0.0, b = 0.08}
@@ -377,6 +385,8 @@ function ShadowUF:LoadUnitDefaults()
 	self.defaults.profile.units.player.xpBar = {enabled = false}
 	self.defaults.profile.units.player.fader = {enabled = false}
 	self.defaults.profile.units.player.comboPoints = {enabled = true, isBar = true}
+	self.defaults.profile.units.player.holyPower = {enabled = true, isBar = true}
+	self.defaults.profile.units.player.soulShards = {enabled = true, isBar = true}
 	table.insert(self.defaults.profile.units.player.text, {enabled = true, text = "", anchorTo = "", anchorPoint = "C", size = 0, x = 0, y = 0, default = true})
 	table.insert(self.defaults.profile.units.player.text, {enabled = true, text = "", anchorTo = "", anchorPoint = "C", size = 0, x = 0, y = 0, default = true})
 	table.insert(self.defaults.profile.units.player.text, {enabled = true, text = "", anchorTo = "", anchorPoint = "C", size = 0, x = 0, y = 0, default = true})
@@ -586,8 +596,7 @@ end
 -- Module APIs
 function ShadowUF:RegisterModule(module, key, name, isBar, class, spec, level)
 	-- Prevent duplicate registration for deprecated plugin
-	local IsAddOnLoaded = IsAddOnLoaded or C_AddOns.IsAddOnLoaded
-if( key == "auraIndicators" and IsAddOnLoaded("ShadowedUF_Indicators") and self.modules.auraIndicators ) then
+	if( key == "auraIndicators" and C_AddOns.IsAddOnLoaded("ShadowedUF_Indicators") and self.modules.auraIndicators ) then
 		self:Print(L["WARNING! ShadowedUF_Indicators has been deprecated as v4 and is now built in. Please delete ShadowedUF_Indicators, your configuration will be saved."])
 		return
 	end
@@ -685,97 +694,58 @@ local function basicHideBlizzardFrames(...)
 end
 
 local function hideBlizzardFrames(taint, ...)
-    for i=1, select("#", ...) do
-        local frame = select(i, ...)
-        -- Skip if frame is nil
-        if not frame then
-            -- continue to next iteration
-        else
-            UnregisterUnitWatch(frame)
-            frame:UnregisterAllEvents()
-            frame:Hide()
+	for i=1, select("#", ...) do
+		local frame = select(i, ...)
+		UnregisterUnitWatch(frame)
+		frame:UnregisterAllEvents()
+		frame:Hide()
 
-            if( frame.manabar ) then frame.manabar:UnregisterAllEvents() end
-            if( frame.healthbar ) then frame.healthbar:UnregisterAllEvents() end
-            if( frame.spellbar ) then frame.spellbar:UnregisterAllEvents() end
-            if( frame.powerBarAlt ) then frame.powerBarAlt:UnregisterAllEvents() end
+		if( frame.manabar ) then frame.manabar:UnregisterAllEvents() end
+		if( frame.healthbar ) then frame.healthbar:UnregisterAllEvents() end
+		if( frame.spellbar ) then frame.spellbar:UnregisterAllEvents() end
+		if( frame.powerBarAlt ) then frame.powerBarAlt:UnregisterAllEvents() end
 
-            if( taint ) then
-                frame.Show = ShadowUF.noop
-            else
-                frame:SetParent(ShadowUF.hiddenFrame)
-                frame:HookScript("OnShow", rehideFrame)
-            end
-        end
-    end
+		if( taint ) then
+			frame.Show = ShadowUF.noop
+		else
+			frame:SetParent(ShadowUF.hiddenFrame)
+			frame:HookScript("OnShow", rehideFrame)
+		end
+	end
 end
 
 local active_hiddens = {}
 function ShadowUF:HideBlizzardFrames()
-if( self.db.profile.hidden.cast and not active_hiddens.cast ) then
-	active_hiddens.cast = true
-	
-	-- Modern API (TBC Anniversary)
-	if PlayerCastingBarFrame then
-		PlayerCastingBarFrame:UnregisterAllEvents()
-		PlayerCastingBarFrame:Hide()
-		PlayerCastingBarFrame:SetParent(ShadowUF.hiddenFrame)
-		PlayerCastingBarFrame:HookScript("OnShow", rehideFrame)
+	if( self.db.profile.hidden.cast and not active_hiddens.cast ) then
+		hideBlizzardFrames(true, CastingBarFrame, PetCastingBarFrame)
 	end
-	
-	if PetCastingBarFrame then
-		PetCastingBarFrame:UnregisterAllEvents()
-		PetCastingBarFrame:Hide()
-		PetCastingBarFrame:SetParent(ShadowUF.hiddenFrame)
-		PetCastingBarFrame:HookScript("OnShow", rehideFrame)
-	end
-	
-	-- Classic API (fallback)
-	if CastingBarFrame then
-		hideBlizzardFrames(true, CastingBarFrame)
-	end
-end
 
-if( self.db.profile.hidden.party and not active_hiddens.party ) then
-    active_hiddens.party = true
-	for i=1, MAX_PARTY_MEMBERS do
-        local name = "PartyMemberFrame" .. i
-        local frame = _G[name]
-        if frame then
-            hideBlizzardFrames(false, frame, _G[name .. "HealthBar"], _G[name .. "ManaBar"])
-        end
-    end
-
-	-- Hide the new PartyFrame structure (TBC Anniversary modern backend)
-	if PartyFrame then
-		PartyFrame:UnregisterAllEvents()
-		PartyFrame:Hide()
-		PartyFrame:SetParent(ShadowUF.hiddenFrame)
-		PartyFrame:HookScript("OnShow", rehideFrame)
-		
-		-- Hide individual member frames
-		for i=1, MAX_PARTY_MEMBERS do
-			local memberFrame = PartyFrame["MemberFrame" .. i]
-			if memberFrame then
-				memberFrame:UnregisterAllEvents()
-				memberFrame:Hide()
-				memberFrame:SetParent(ShadowUF.hiddenFrame)
-				memberFrame:HookScript("OnShow", rehideFrame)
+	if( self.db.profile.hidden.party and not active_hiddens.party ) then
+		if( PartyFrame ) then
+			hideBlizzardFrames(false, PartyFrame)
+			for memberFrame in PartyFrame.PartyMemberFramePool:EnumerateActive() do
+				if memberFrame.HealthBarContainer and memberFrame.HealthBarContainer.HealthBar then
+					hideBlizzardFrames(false, memberFrame, memberFrame.HealthBarContainer.HealthBar, memberFrame.ManaBar)
+				else
+					hideBlizzardFrames(false, memberFrame, memberFrame.HealthBar, memberFrame.ManaBar)
+				end
+			end
+			PartyFrame.PartyMemberFramePool:ReleaseAll()
+		else
+			for i=1, MAX_PARTY_MEMBERS do
+				local name = "PartyMemberFrame" .. i
+				hideBlizzardFrames(false, _G[name], _G[name .. "HealthBar"], _G[name .. "ManaBar"])
 			end
 		end
-	end
 
-	-- Hide CompactPartyFrame if it exists
-	if CompactPartyFrame then
-		CompactPartyFrame:UnregisterAllEvents()
-		CompactPartyFrame:Hide()
-		CompactPartyFrame:SetParent(ShadowUF.hiddenFrame)
-		CompactPartyFrame:HookScript("OnShow", rehideFrame)
-	end
+		-- This stops the compact party frame from being shown
+		UIParent:UnregisterEvent("GROUP_ROSTER_UPDATE")
 
-	-- This stops the compact party frame from being shown
-	UIParent:UnregisterEvent("GROUP_ROSTER_UPDATE")
-end
+		-- This just makes sure
+		if( CompactPartyFrame ) then
+			hideBlizzardFrames(false, CompactPartyFrame)
+		end
+	end
 
 	if( CompactRaidFrameManager ) then
 		if( self.db.profile.hidden.raid and not active_hiddens.raidTriggered ) then

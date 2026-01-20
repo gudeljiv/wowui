@@ -54,13 +54,9 @@ local function checkRange(self)
 			UnitInRange(frame.unit, "player") and ShadowUF.db.profile.units[frame.unitType].range.inAlpha
 				or ShadowUF.db.profile.units[frame.unitType].range.oorAlpha
 		)
-	-- Nope, fall back to interaction :(
+	-- Nope, just show in range :(
 	else
-		-- frame:SetRangeAlpha(CheckInteractDistance(frame.unit, 4) and ShadowUF.db.profile.units[frame.unitType].range.inAlpha or ShadowUF.db.profile.units[frame.unitType].range.oorAlpha)
-		frame:SetRangeAlpha(
-			xInRange(28, frame.unit, "max") and ShadowUF.db.profile.units[frame.unitType].range.inAlpha
-				or ShadowUF.db.profile.units[frame.unitType].range.oorAlpha
-		)
+		frame:SetRangeAlpha(ShadowUF.db.profile.units[frame.unitType].range.inAlpha)
 	end
 end
 

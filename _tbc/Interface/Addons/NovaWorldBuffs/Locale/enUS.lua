@@ -1132,3 +1132,6 @@ L["Crossroads"] = "Crossroads";
 
 L["by"] = "by";
 L["For help or suggestions"] = "For help or suggestions";
+
+L["rendLogQuestInfo"] = "Rend quest handins can only be shown on the horde side.";
+L["recentlyKilledMsg"] = "New recently killed %s NPC timer received, died %s ago";

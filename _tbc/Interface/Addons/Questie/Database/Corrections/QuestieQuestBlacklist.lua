@@ -1215,6 +1215,8 @@ function QuestieQuestBlacklist:Load()
         [10932] = true, -- Level 0 Priest quest
         [10933] = true, -- Level 0 Priest quest
         [10934] = true, -- Level 0 Priest quest
+        [63448] = true, -- Boosted character quest
+        [63767] = true, -- Boosted character quest
         [64028] = true, -- First quest for boosted characters. Blocked to not show for others
         [64031] = true, -- Boosted character quest
         [64034] = true, -- Boosted character quest
@@ -1241,6 +1243,8 @@ function QuestieQuestBlacklist:Load()
         [64145] = true, -- Horde pala mount quest chain
         [64217] = true, -- Boosted character quest
         [64845] = Expansions.Current >= Expansions.Tbc, -- Alliance War Effort
+        [65284] = true, -- Boosted character quest
+        [65561] = true, -- Boosted character quest
         [70395] = true, -- First quest for boosted characters. Blocked to not show for others
         [70396] = true, -- First quest for boosted characters. Blocked to not show for others
         [70397] = true, -- Boosted character quest
@@ -1276,6 +1280,11 @@ function QuestieQuestBlacklist:Load()
         [78223] = true, -- Boosted character quest
         [78224] = true, -- Boosted character quest
         [78225] = true, -- Boosted character quest
+        [93823] = true, -- Boosted character quest
+
+        -- TBC Anniversary BG quests
+        [95455] = Expansions.Current >= Expansions.Wotlk, -- Only present in Anniversary TBC
+        [95457] = Expansions.Current >= Expansions.Wotlk, -- Only present in Anniversary TBC
 
         -- Paladin class quests with SWP patch
         [64319] = true, -- removed in wotlk
@@ -5240,7 +5249,7 @@ function QuestieQuestBlacklist:Load()
         [10497] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [10498] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [10499] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [10529] = Expansions.Current >= Expansions.Cata, -- Removed with cata
+        [10529] = true, -- Not in the game
         [10530] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [10548] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [10549] = Expansions.Current >= Expansions.Cata, -- Removed with cata
@@ -6989,7 +6998,7 @@ function QuestieQuestBlacklist:Load()
     elseif Questie.IsTBC then
         Questie:Debug(Questie.DEBUG_DEVELOP, "Blacklisting quests for TBC...")
         questsToBlacklist = ContentPhases.BlacklistTbcQuestsByPhase(questsToBlacklist, ContentPhases.activePhases.TBC)
-    elseif Questie.IsAnniversary or Questie.IsAnniversaryHardcore then
+    elseif Questie.IsAnniversaryEra or Questie.IsAnniversaryHardcore then
         Questie:Debug(Questie.DEBUG_DEVELOP, "Blacklisting quests for Anniversary...")
         questsToBlacklist = ContentPhases.BlacklistAnniversaryQuestsByPhase(questsToBlacklist, ContentPhases.activePhases.Anniversary)
     elseif Questie.IsSoM then

@@ -1,0 +1,4 @@
+VER 3 0100000000000001 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,help][]Healing Wave
+END

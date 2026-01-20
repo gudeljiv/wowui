@@ -86,7 +86,7 @@ AdiBags-ItemRackSets: enabled
 Bagnon_Masque: enabled
 ClassicBestiary: enabled
 FarmHud: disabled
-FarmHud_QuestArrow: enabled
+FarmHud_QuestArrow: disabled
 Leatrix_Plus: enabled
 LFGBulletinBoard: enabled
 Open-Sesame: enabled
@@ -135,14 +135,14 @@ Details_Compare2: enabled
 Details_EncounterDetails: enabled
 Details_RaidCheck: enabled
 Details_Vanguard: enabled
-FarmHud_TrailPath: enabled
+FarmHud_TrailPath: disabled
 ItemRack_BankFix: enabled
 Leatrix_Sounds: enabled
 Masque_BeautyBorder: enabled
 Masque_ElvUI: enabled
 Masque_Muq: enabled
 Masque_Newsom: enabled
-NovaConsumesHelper: enabled
+NovaConsumesHelper: disabled
 RatingBuster: enabled
 StatLogic: enabled
 TipTac: enabled
@@ -150,3 +150,4 @@ TipTacItemRef: enabled
 TipTacOptions: enabled
 TipTacTalents: enabled
 Masque_Dominos: enabled
+Farmer: disabled

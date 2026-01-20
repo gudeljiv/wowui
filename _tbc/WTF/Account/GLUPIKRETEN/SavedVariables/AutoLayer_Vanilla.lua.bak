@@ -1,13 +1,31 @@
 
 AutoLayerDB = {
 ["profileKeys"] = {
+["Dopesnare - Thunderstrike"] = "Dopesnare - Thunderstrike",
 ["Dopeseal - Thunderstrike"] = "Dopeseal - Thunderstrike",
+["Poklopac - Thunderstrike"] = "Poklopac - Thunderstrike",
+["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
 },
 ["profiles"] = {
+["Dopesnare - Thunderstrike"] = {
+["layered"] = 18,
+["minimap"] = {
+["minimapPos"] = 108.628265206722,
+},
+},
 ["Dopeseal - Thunderstrike"] = {
 ["enabled"] = false,
 ["minimap"] = {
 ["minimapPos"] = 75.29389017010425,
+},
+},
+["Poklopac - Thunderstrike"] = {
+["layered"] = 26,
+},
+["Dopeclaw - Thunderstrike"] = {
+["enabled"] = false,
+["minimap"] = {
+["minimapPos"] = 110.0167771652883,
 },
 },
 },

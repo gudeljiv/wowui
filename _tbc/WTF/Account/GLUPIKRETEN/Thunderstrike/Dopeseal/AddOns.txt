@@ -51,8 +51,8 @@ Dominos_Roll: enabled
 Drift: enabled
 ExtendedCharacterStats: enabled
 FarmHud: disabled
-FarmHud_QuestArrow: enabled
-FarmHud_TrailPath: enabled
+FarmHud_QuestArrow: disabled
+FarmHud_TrailPath: disabled
 GatherMate2: enabled
 GatherMate2_Data: enabled
 gmMoney: enabled
@@ -81,7 +81,7 @@ Masque_Newsom: enabled
 MikScrollingBattleText: enabled
 MSBTOptions: enabled
 Myslot: disabled
-NovaConsumesHelper: enabled
+NovaConsumesHelper: disabled
 NovaWorldBuffs: enabled
 NugKeyFeedback: enabled
 OmniCC: enabled
@@ -123,3 +123,4 @@ WhatsTraining: enabled
 xVermin: enabled
 Blizzard_ObjectiveTracker: enabled
 Blizzard_CompactRaidFrames: enabled
+Farmer: disabled

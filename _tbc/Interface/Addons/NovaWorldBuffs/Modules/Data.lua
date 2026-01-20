@@ -875,7 +875,7 @@ function NWB:createData(distribution, noLogs, type, isRequestData)
 			local me = UnitName("player") .. "-" .. GetNormalizedRealmName();
 			data[me] = settings[me];
 		end
-		if (enableLogging and NWB.isClassic and not noLogs and includeTimerLog and (not logLayeredServersOnly or NWB.isLayered)) then
+		if (enableLogging and (NWB.isClassic or NWB.isTBCPrepatch) and not noLogs and includeTimerLog and (not logLayeredServersOnly or NWB.isLayered)) then
 			local timerLog = NWB:createTimerLogData(distribution);
 			if (timerLog) then
 				data.timerLog = timerLog;
@@ -2125,7 +2125,8 @@ function NWB:receivedNpcDied(type, timestamp, distribution, layer, sender)
 						local layerNum = NWB:GetLayerNum(layer);
 						layerMsg = " (" .. L["Layer"] .. " " .. layerNum .. ")";
 					end
-					local msg = "New recently killed " .. typeString .. " NPC timer received, died " .. timeAgoString .. " ago" .. layerMsg .. ".";
+					--local msg = "New recently killed " .. typeString .. " NPC timer received, died " .. timeAgoString .. " ago" .. layerMsg .. ".";
+					local msg = string.format(L["recentlyKilledMsg"], typeString, timeAgoString) .. layerMsg .. ".";
 					if (NWB.db.global.middleNpcKilled) then
 						NWB:middleScreenMsg("npcKilled", msg, nil, 5);
 					end
@@ -2138,7 +2139,8 @@ function NWB:receivedNpcDied(type, timestamp, distribution, layer, sender)
 					local layerNum = NWB:GetLayerNum(layer);
 					layerMsg = " (" .. L["Layer"] .. " " .. layerNum .. ")";
 				end
-				local msg = "New recently killed " .. typeString .. " NPC timer received, died " .. timeAgoString .. " ago" .. layerMsg .. ".";
+				--local msg = "New recently killed " .. typeString .. " NPC timer received, died " .. timeAgoString .. " ago" .. layerMsg .. ".";
+				local msg = string.format(L["recentlyKilledMsg"], typeString, timeAgoString) .. layerMsg .. ".";
 				if (NWB.db.global.middleNpcKilled) then
 					NWB:middleScreenMsg("npcKilled", msg, nil, 5);
 				end
@@ -2757,7 +2759,7 @@ end
 function NWB:recalcTimerLogFrame()
 	NWBTimerLogFrame.EditBox:SetText("\n\n\n");
 	if (NWB.faction == "Alliance") then
-		NWBTimerLogFrame.EditBox:Insert("|cFF9CD6DERend quest handins can only be shown on the horde side.\n");
+		NWBTimerLogFrame.EditBox:Insert("|cFF9CD6DE" .. L["rendLogQuestInfo"] .. "\n");
 	end
 	if (type(NWB.data.timerLog) ~= "table" or not next(NWB.data.timerLog)) then
 		NWBTimerLogFrame.EditBox:Insert("\n\|cffFFFF00" .. L["No timer logs found."] .. "\n");

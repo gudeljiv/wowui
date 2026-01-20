@@ -139,4 +139,5 @@ ALPrivate.LOC_CLASSES = {}
 ---@diagnostic disable-next-line: deprecated
 FillLocalizedClassList(ALPrivate.LOC_CLASSES)
 
-ALPrivate.ADDON_MSG_PREFIX = "ATLASLOOT_F_MSG"
+-- Updated the message so we don't conflict with other versions of AtlasLoot forks
+ALPrivate.ADDON_MSG_PREFIX = "ATLASLOOT_F_MSG_ANNIVERSARY"

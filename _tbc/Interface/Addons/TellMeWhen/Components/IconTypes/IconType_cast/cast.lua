@@ -21,6 +21,7 @@ local UnitCastingInfo, UnitChannelInfo =
 	  UnitCastingInfo, UnitChannelInfo
 
 local strlowerCache = TMW.strlowerCache
+local issecretvalue = TMW.issecretvalue
 
 
 local Type = TMW.Classes.IconType:New("cast")
@@ -167,8 +168,7 @@ if TMW.clientHasSecrets then
 				end
 
 				if name then
-					-- Times reported by the cast APIs are in milliseconds for some reason.
-					icon.LastTextures[GUID] = iconTexture
+					icon.LastTexture = iconTexture
 
 					local state
 					if Interruptible then
@@ -187,7 +187,7 @@ if TMW.clientHasSecrets then
 						return
 					end
 				elseif icon.States[STATE_ABSENTEACH].Alpha > 0 then
-					if not icon:YieldInfo(true, nil, unit, GUID, icon.LastTextures[GUID], 0, 0, false) then
+					if not icon:YieldInfo(true, nil, unit, GUID, icon.LastTexture, 0, 0, false) then
 						-- If icon:YieldInfo() returns false, it means we don't need to keep harvesting data.
 						return
 					end
@@ -276,7 +276,9 @@ function Type:HandleYieldedInfo(icon, iconToSet, spell, unit, GUID, texture, sta
 		iconToSet:SetInfo(
 			"state; texture; start, duration; spell; unit, GUID",
 			STATE_ABSENT,
-			GUID and icon.LastTextures[GUID] or (icon.NoPocketwatch and "" or "Interface\\Icons\\INV_Misc_PocketWatch_01"),
+			GUID and not issecretvalue(GUID) and icon.LastTextures[GUID]
+				or icon.LastTexture
+				or (icon.NoPocketwatch and "" or "Interface\\Icons\\INV_Misc_PocketWatch_01"),
 			0, 0,
 			icon.Spells.First,
 			unit, GUID
@@ -290,6 +292,7 @@ function Type:Setup(icon)
 	
 	icon.Units, icon.UnitSet = TMW:GetUnits(icon, icon.Unit, icon:GetSettings().UnitConditions)
 
+	icon.LastTexture = nil
 	icon.LastTextures = icon.LastTextures or {}
 
 	local texture, known = Type:GetConfigIconTexture(icon)

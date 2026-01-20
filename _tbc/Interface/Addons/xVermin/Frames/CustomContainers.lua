@@ -101,7 +101,7 @@ cc = CreateFrame("Frame", "CustomContainer_MM", UIParent)
 cc:SetWidth(154)
 cc:SetHeight(30)
 -- cc:SetPoint("TOPRIGHT", "Minimap", "BOTTOMRIGHT", 0, -10)
-cc:SetPoint("TOP", "Minimap", "BOTTOM", 0, -20)
+cc:SetPoint("TOP", "Minimap", "BOTTOM", 0, -10)
 
 local cc1 = CreateFrame("Frame", "CustomContainer_1", cc, BackdropTemplateMixin and "BackdropTemplate")
 cc1:SetWidth(154)

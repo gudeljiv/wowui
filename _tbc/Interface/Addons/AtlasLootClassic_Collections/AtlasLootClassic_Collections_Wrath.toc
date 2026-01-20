@@ -1,6 +1,6 @@
 ## Interface: 30403
 ## Author: Okrah, Lag
-## Version: v2.5.5.12135
+## Version: v2.5.5.12154
 ## Dependencies: AtlasLootClassic
 ## LoadOnDemand: 1
 

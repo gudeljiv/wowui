@@ -1,8 +1,9 @@
 # TomTom
 
-## [v4.2.10-release](https://github.com/jnwhiteh/TomTom/tree/v4.2.10-release) (2026-01-15)
-[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v4.2.10-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
+## [v4.2.11-release](https://github.com/jnwhiteh/TomTom/tree/v4.2.11-release) (2026-01-18)
+[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v4.2.11-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
 
+- Add control-enter to paste window for easy submit  
 - Update TOC for TBC Anniversary  
 - Update TOC to work for retail + beta + PTR  
 - Fix duplicate localization  
@@ -693,4 +694,3 @@
 - * Added a right-click option to clear the current waypoint on the arrow  
 - * Fixing an issue where crazy arrow would appear even when disabled  
     * Updated externals to fix config issue  
-- * Fixed waypoints not automatically clearing when that option is set  
