@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 13641,
+["session"] = 13651,
 ["errors"] = {
 {
 ["message"] = "Lua error in aura 'Druid DPS': Icon Function\nWeakAuras Version: 5.7.1\nAura Version: 1.0.1\n[string \"return function(e)\"]:3: attempt to index field '?' (a nil value)",
@@ -5504,14 +5504,6 @@ BugGrabberDB = {
 ["counter"] = 2,
 },
 {
-["message"] = "Interface/AddOns/ClassicProfessionFilter/addon.lua:20: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["time"] = "2026/01/14 19:02:48",
-["locals"] = "",
-["stack"] = "",
-["session"] = 13285,
-["counter"] = 2,
-},
-{
 ["message"] = "...nterface/AddOns/Dejunk/src/ui/widgets/item-frame.lua:3: attempt to index field 'Libs' (a nil value)",
 ["time"] = "2026/01/14 19:06:56",
 ["locals"] = "",
@@ -7208,22 +7200,6 @@ BugGrabberDB = {
 ["counter"] = 1,
 },
 {
-["message"] = "...rface/AddOns/ClassicProfessionFilter/SkillFilter.lua:242: attempt to call field 'RegisterCallback' (a nil value)",
-["time"] = "2026/01/14 19:02:48",
-["locals"] = "",
-["stack"] = "",
-["session"] = 13452,
-["counter"] = 3,
-},
-{
-["message"] = "...rface/AddOns/ClassicProfessionFilter/CraftFilter.lua:302: attempt to call field 'RegisterCallback' (a nil value)",
-["time"] = "2026/01/14 19:02:48",
-["locals"] = "",
-["stack"] = "",
-["session"] = 13452,
-["counter"] = 3,
-},
-{
 ["message"] = "Interface/AddOns/Dejunk/src/_init.lua:2: attempt to call field 'GetAddOnMetadata' (a nil value)",
 ["time"] = "2026/01/14 19:02:49",
 ["locals"] = "",
@@ -7664,6 +7640,30 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:583: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:507: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:507>\n[C]: in function 'SetSize'\n[Interface/AddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua]:2002: in function 'updateAllSetupFunc'\n[Interface/AddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua]:422: in function 'CompactUnitFrame_UpdateAll'\n[Interface/AddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua]:66: in function <...ddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua:57>",
 ["session"] = 13641,
 ["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/ClassicProfessionFilter/addon.lua:20: attempt to call global 'GetAddOnMetadata' (a nil value)",
+["time"] = "2026/01/14 19:02:48",
+["locals"] = "",
+["stack"] = "",
+["session"] = 13643,
+["counter"] = 4,
+},
+{
+["message"] = "...rface/AddOns/ClassicProfessionFilter/SkillFilter.lua:242: attempt to call field 'RegisterCallback' (a nil value)",
+["time"] = "2026/01/14 19:02:48",
+["locals"] = "",
+["stack"] = "",
+["session"] = 13643,
+["counter"] = 5,
+},
+{
+["message"] = "...rface/AddOns/ClassicProfessionFilter/CraftFilter.lua:302: attempt to call field 'RegisterCallback' (a nil value)",
+["time"] = "2026/01/14 19:02:48",
+["locals"] = "",
+["stack"] = "",
+["session"] = 13643,
+["counter"] = 5,
 },
 },
 }

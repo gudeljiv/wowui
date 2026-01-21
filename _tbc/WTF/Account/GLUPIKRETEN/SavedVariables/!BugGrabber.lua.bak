@@ -1,16 +1,8 @@
 
 BugGrabberDB = {
-["session"] = 13640,
+["session"] = 13650,
 ["lastSanitation"] = 3,
 ["errors"] = {
-{
-["message"] = "Interface/AddOns/WeakAuras/Prototypes.lua:9695: attempt to concatenate local 'v' (a boolean value)",
-["time"] = "2023/09/19 13:02:12",
-["locals"] = "v = true\n(*temporary) = \"|T\"\n(*temporary) = true\n(*temporary) = \":12:12:0:0:64:64:4:60:4:60|t\"\n(*temporary) = \"attempt to concatenate local 'v' (a boolean value)\"\n",
-["stack"] = "[string \"@Interface/AddOns/WeakAuras/Prototypes.lua\"]:9695: in function `func'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4564: in function `RunCustomTextFunc'\n[string \"@Interface/AddOns/WeakAuras/SubRegionTypes/SubText.lua\"]:322: in function `?'\n[string \"@Interface/AddOns/WeakAuras/SubscribableObject.lua\"]:90: in function `Notify'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4313: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:4308>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4404: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:4366>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4514: in function `UpdatedTriggerState'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4242: in function `UpdateFakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:4215: in function `FakeStatesFor'\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3028: in function <Interface/AddOns/WeakAuras/WeakAuras.lua:2883>\n[string \"@Interface/AddOns/WeakAuras/WeakAuras.lua\"]:3051: in function `Add'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:763: in function `Close'\n[string \"@Interface/AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua\"]:208: in function <...AddOns/WeakAurasOptions/OptionsFrames/TextEditor.lua:207>",
-["session"] = 10479,
-["counter"] = 2,
-},
 {
 ["message"] = "Lua error in aura 'Druid DPS': Icon Function\nWeakAuras Version: 5.7.1\nAura Version: 1.0.1\n[string \"return function(e)\"]:3: attempt to index field '?' (a nil value)",
 ["time"] = "2023/09/19 13:05:20",
@@ -5512,14 +5504,6 @@ BugGrabberDB = {
 ["counter"] = 2,
 },
 {
-["message"] = "Interface/AddOns/ClassicProfessionFilter/addon.lua:20: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["time"] = "2026/01/14 19:02:48",
-["locals"] = "",
-["stack"] = "",
-["session"] = 13285,
-["counter"] = 2,
-},
-{
 ["message"] = "...nterface/AddOns/Dejunk/src/ui/widgets/item-frame.lua:3: attempt to index field 'Libs' (a nil value)",
 ["time"] = "2026/01/14 19:06:56",
 ["locals"] = "",
@@ -7216,22 +7200,6 @@ BugGrabberDB = {
 ["counter"] = 1,
 },
 {
-["message"] = "...rface/AddOns/ClassicProfessionFilter/SkillFilter.lua:242: attempt to call field 'RegisterCallback' (a nil value)",
-["time"] = "2026/01/14 19:02:48",
-["locals"] = "",
-["stack"] = "",
-["session"] = 13452,
-["counter"] = 3,
-},
-{
-["message"] = "...rface/AddOns/ClassicProfessionFilter/CraftFilter.lua:302: attempt to call field 'RegisterCallback' (a nil value)",
-["time"] = "2026/01/14 19:02:48",
-["locals"] = "",
-["stack"] = "",
-["session"] = 13452,
-["counter"] = 3,
-},
-{
 ["message"] = "Interface/AddOns/Dejunk/src/_init.lua:2: attempt to call field 'GetAddOnMetadata' (a nil value)",
 ["time"] = "2026/01/14 19:02:49",
 ["locals"] = "",
@@ -7664,6 +7632,38 @@ BugGrabberDB = {
 ["stack"] = "[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `SetPoint'\n[string \"@Interface/AddOns/BlizzMove/BlizzMove.lua\"]:516: in function <Interface/AddOns/BlizzMove/BlizzMove.lua:507>\n[string \"@Interface/AddOns/BlizzMove/BlizzMove.lua\"]:838: in function <Interface/AddOns/BlizzMove/BlizzMove.lua:827>\n[string \"=(tail call)\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `xpcall'\n[string \"@Interface/AddOns/Drift/DriftHelpers.lua\"]:178: in function <Interface/AddOns/Drift/DriftHelpers.lua:155>\n[string \"@Interface/AddOns/Drift/DriftHelpers.lua\"]:335: in function <Interface/AddOns/Drift/DriftHelpers.lua:331>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `xpcall'\n...\n[string \"@Interface/AddOns/ClassicCastbars/Core/LoadOptions.lua\"]:12: in function <...nterface/AddOns/ClassicCastbars/Core/LoadOptions.lua:10>\n[string \"=[C]\"]: ?\n[string \"=[C]\"]: in function `Show'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2146: in function `SetUIPanel'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:1952: in function `ShowUIPanel'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:1859: in function <Interface_Vanilla/FrameXML/UIParent.lua:1855>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:2638: in function `ShowUIPanel'\n[string \"@Interface_Vanilla/FrameXML/UIParent.lua\"]:3514: in function `ToggleGameMenu'\n[string \"TOGGLEGAMEMENU\"]:1: in function <[string \"TOGGLEGAMEMENU\"]:1>",
 ["session"] = 13638,
 ["counter"] = 51,
+},
+{
+["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'CompactPartyFrameMember5:SetSize()'.",
+["time"] = "2026/01/20 15:37:27",
+["locals"] = "self = <table> {\n}\nevent = \"ADDON_ACTION_BLOCKED\"\naddonName = \"xVermin\"\naddonFunc = \"CompactPartyFrameMember5:SetSize()\"\nname = \"xVermin\"\nbadAddons = <table> {\n xVermin = true\n}\nL = <table> {\n ADDON_CALL_PROTECTED_MATCH = \"^%[(.*)%] (AddOn '.*' tried to call the protected function '.*'.)$\"\n NO_DISPLAY_2 = \"|cffffff00The standard display is called BugSack, and can probably be found on the same site where you found !BugGrabber.|r\"\n ERROR_DETECTED = \"%s |cffffff00captured, click the link for more information.|r\"\n USAGE = \"|cffffff00Usage: /buggrabber <1-%d>.|r\"\n BUGGRABBER_STOPPED = \"|cffffff00There are too many errors in your UI. As a result, your game experience may be degraded. Disable or update the failing addons if you don't want to see this message again.|r\"\n STOP_NAG = \"|cffffff00!BugGrabber will not nag about missing a display addon again until next patch.|r\"\n ADDON_DISABLED = \"|cffffff00!BugGrabber and %s cannot coexist; %s has been forcefully disabled. If you want to, you may log out, disable !BugGrabber, and enable %s.|r\"\n NO_DISPLAY_STOP = \"|cffffff00If you don't want to be reminded about this again, run /stopnag.|r\"\n NO_DISPLAY_1 = \"|cffffff00You seem to be running !BugGrabber with no display addon to go along with it. Although a slash command is provided for accessing error reports, a display can help you manage these errors in a more convenient way.|r\"\n ERROR_UNABLE = \"|cffffff00!BugGrabber is unable to retrieve errors from other players by itself. Please install BugSack or a similar display addon that might give you this functionality.|r\"\n ADDON_CALL_PROTECTED = \"[%s] AddOn '%s' tried to call the protected function '%s'.\"\n}\n",
+["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:583: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:507: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:507>\n[C]: in function 'SetSize'\n[Interface/AddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua]:2002: in function 'updateAllSetupFunc'\n[Interface/AddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua]:422: in function 'CompactUnitFrame_UpdateAll'\n[Interface/AddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua]:66: in function <...ddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua:57>",
+["session"] = 13641,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/ClassicProfessionFilter/addon.lua:20: attempt to call global 'GetAddOnMetadata' (a nil value)",
+["time"] = "2026/01/14 19:02:48",
+["locals"] = "",
+["stack"] = "",
+["session"] = 13643,
+["counter"] = 4,
+},
+{
+["message"] = "...rface/AddOns/ClassicProfessionFilter/SkillFilter.lua:242: attempt to call field 'RegisterCallback' (a nil value)",
+["time"] = "2026/01/14 19:02:48",
+["locals"] = "",
+["stack"] = "",
+["session"] = 13643,
+["counter"] = 5,
+},
+{
+["message"] = "...rface/AddOns/ClassicProfessionFilter/CraftFilter.lua:302: attempt to call field 'RegisterCallback' (a nil value)",
+["time"] = "2026/01/14 19:02:48",
+["locals"] = "",
+["stack"] = "",
+["session"] = 13643,
+["counter"] = 5,
 },
 },
 }

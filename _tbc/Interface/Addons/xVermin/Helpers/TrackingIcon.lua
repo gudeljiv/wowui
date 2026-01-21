@@ -28,21 +28,38 @@ TrackingIconFrame:Hide()
 local function TrackingIcon()
 	TrackingIconFrame:Hide()
 
-	local t = GetTrackingTexture()
-	if
-		t == 136025
-		or t == 133939
-		or t == 135942
-		or t == 136142
-		or t == 132328
-		or t == 132320
-		or t == 136217
-		or t == 135861
-		or t == 134153
-		or t == 132275
-		or t == 135974
-	then
-		texture = t
+	local texture
+
+	for i = 1, C_Minimap.GetNumTrackingTypes() do
+		local info = C_Minimap.GetTrackingInfo(i)
+
+		-- if info then
+		-- 	print(
+		-- 		info.name,
+		-- 		info.texture, -- texture file ID
+		-- 		info.iconID, -- sometimes used instead
+		-- 		info.active
+		-- 	)
+		-- end
+
+		if
+			info.active
+			and (
+				info.texture == 136025
+				or info.texture == 133939
+				or info.texture == 135942
+				or info.texture == 136142
+				or info.texture == 132328
+				or info.texture == 132320
+				or info.texture == 136217
+				or info.texture == 135861
+				or info.texture == 134153
+				or info.texture == 132275
+				or info.texture == 135974
+			)
+		then
+			texture = info.texture
+		end
 	end
 
 	if texture then

@@ -1,5 +1,0 @@
-<UI>
-  <include file="utils\utils.xml"/>
-  <include file="classes\classes.xml"/>
-  <include file="polyfills\polyfills.xml"/>
-</UI>

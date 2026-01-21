@@ -1,5 +1,0 @@
-<UI>
-  <script file="Options.lua"/>
-  <script file="Autoloot.lua"/>
-  <script file="Fishing.lua"/>
-</UI>

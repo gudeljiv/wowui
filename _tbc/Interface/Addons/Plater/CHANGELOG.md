@@ -1,4 +1,5 @@
 @cont1nuity:
+- Unit type coloring option to not override threat colors.
 - More support for Midnight (work in progress, still...), prepatch ready.
 - Cast Bar 'Important' coloring for Midnight.
 - Unit name text max length options.

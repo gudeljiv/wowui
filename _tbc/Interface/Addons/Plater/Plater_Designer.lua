@@ -62,6 +62,7 @@ local dv = function(f) detailsFramework:DebugVisibility(f) end
 ---@param f frame
 ---@param n string
 local createFrameTag = function (f,n)
+    do return end
     local t = f:CreateTexture (nil, "overlay")
     local fs = f:CreateFontString (nil, "overlay", "GameFontNormalSmall")
 
@@ -103,34 +104,35 @@ a:SetScript("OnEvent", function(self, event, ...)
     self:UnregisterEvent("PLAYER_LOGIN")
 end)
 
-function Plater.CreateDesignerWindow()
+function Plater.CreateDesignerWindow(tabFrame, tabContainer, parent)
     local gName = "PlaterDsgn"
 
-    local startY = -30
-    local startX = 10
-
     local isCastBarSelected = false
+
+    local startX, startY, heightSize = 10, platerInternal.optionsYStart, 755
 
     --tab background using a rounded panel | need to make a preset for this, atm it is declaring each time the same table
     local roundedPanelOptions = {
         scale = 1,
-        width = 1300,
-        height = 600,
+        width = tabFrame:GetWidth() - 4,
+        height = tabFrame:GetHeight() - 4 - math.abs(startY),
         roundness = 8,
     }
 
     ---@type df_roundedpanel
-    local editorMainFrame = detailsFramework:CreateRoundedPanel(UIParent, gName, roundedPanelOptions)
+    --local editorMainFrame = detailsFramework:CreateRoundedPanel(tabFrame, gName, roundedPanelOptions)
+    local editorMainFrame = CreateFrame("Frame", gName, tabFrame)
     --editorMainFrame:SetFrameStrata("FULLSCREEN")
     --local editorMainFrame = CreateFrame("frame", gName, UIParent)
 
     Plater.DesignerWindow = editorMainFrame
 
-    detailsFramework:MakeDraggable(editorMainFrame)
-    editorMainFrame:EnableMouse(true)
+    --detailsFramework:MakeDraggable(editorMainFrame)
+    --editorMainFrame:EnableMouse(true)
     createFrameTag(editorMainFrame, "editorMainFrame")
-    editorMainFrame:SetSize (roundedPanelOptions.width, roundedPanelOptions.height)
-    editorMainFrame:SetPoint ("center", UIParent, "center", -100, 0)
+    editorMainFrame:SetSize(roundedPanelOptions.width, roundedPanelOptions.height)
+    --editorMainFrame:SetPoint ("center", UIParent, "center", -100, 0)
+    editorMainFrame:SetPoint("topleft", tabFrame, "topleft", 0, startY + 24)
 
     --create the widget editor
     local editorOptions = {
@@ -161,13 +163,13 @@ function Plater.CreateDesignerWindow()
 
     --the frame in the middle of the tab, the the settings for the selected widget are placed
     ---@type df_editor
-    local layoutEditor = detailsFramework:CreateEditor(editorMainFrame, "Plater_LayoutEditor", editorOptions)
+    local layoutEditor = detailsFramework:CreateEditor(editorMainFrame, "Plater_LayoutEditor_", editorOptions)
     createFrameTag(layoutEditor, "layoutEditor")
     layoutEditor:SetPoint("topleft", editorMainFrame, "topleft", 5, -16)
     layoutEditor:SetPoint("bottomleft", editorMainFrame, "bottomleft", 5, 5)
     layoutEditor:EnableMouse(false)
     layoutEditor:SetFrameLevel(editorMainFrame:GetFrameLevel() + 10)
-    layoutEditor:SetFrameStrata("HIGH")
+    --layoutEditor:SetFrameStrata("HIGH")
 
     function designer.UpdateAllNameplates()
         for _, thisPlateFrame in ipairs(Plater.GetAllShownPlates()) do
@@ -178,8 +180,8 @@ function Plater.CreateDesignerWindow()
     end
 
     --create close button using the framework
-    local closeButton = detailsFramework:CreateCloseButton(editorMainFrame)
-    closeButton:SetPoint("topright", editorMainFrame, "topright", -3, -3)
+    --local closeButton = detailsFramework:CreateCloseButton(editorMainFrame)
+    --closeButton:SetPoint("topright", editorMainFrame, "topright", -3, -3)
 
     local canvasFrame = layoutEditor:GetCanvasScrollBox()
     canvasFrame:EnableMouse(false)
@@ -208,6 +210,7 @@ function Plater.CreateDesignerWindow()
         end
     end
 
+    --plater only
     local onClickSelectPlateConfigOption = function(self, fixedParameter, newSubTablePath)
         subTablePath = newSubTablePath
 
@@ -254,6 +257,53 @@ function Plater.CreateDesignerWindow()
     plateConfigDropdown:SetPoint("topleft", previewNameplateFrame, "topleft", 2, -13)
     plateConfigDropdown:SetTemplate(detailsFramework:GetTemplate("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
 
+    local onSelectChangeAllFonts = function(self, fixedParameter, fontName)
+        local SharedMedia = LibStub:GetLibrary("LibSharedMedia-3.0")
+        local fontFile = SharedMedia:Fetch("font", fontName)
+
+        local plateConfigs = {"enemynpc", "friendlynpc", "enemyplayer", "friendlyplayer", "player"}
+
+        for i = 1, #plateConfigs do
+            local plateTable = Plater.db.profile.plate_config[plateConfigs[i]]
+            plateTable.actorname_text_font = fontName
+            plateTable.spellname_text_font = fontName
+            plateTable.spellpercent_text_font = fontName
+            plateTable.level_text_font = fontName
+            plateTable.percent_text_font = fontName
+            plateTable.big_actortitle_text_font = fontName
+            plateTable.big_actorname_text_font = fontName
+            plateTable.power_percent_text_font = fontName
+        end
+
+        local profile = Plater.db.profile
+        profile.castbar_target_font = fontName
+        profile.aura_timer_text_font = fontName
+        profile.aura_stack_font = fontName
+
+        --update the font on all nameplates
+        designer.UpdateAllNameplates()
+
+        --refreshes the current object being edited
+        layoutEditor:Refresh()
+
+        local registeredObjects = layoutEditor:GetAllRegisteredObjects()
+        for i = 1, #registeredObjects do
+            local objectInfo = registeredObjects[i]
+            local uiObject = objectInfo.object
+            if (uiObject.GetObjectType and uiObject:GetObjectType() == "FontString") then
+                ---@cast uiObject fontstring
+                detailsFramework:SetFontFace(uiObject, fontFile)
+            end
+        end
+    end
+
+    local selectFontDropdown = detailsFramework:CreateFontDropDown(previewNameplateFrame, onSelectChangeAllFonts, 0, 160, 20)
+    selectFontDropdown:SetPoint("topright", previewNameplateFrame, "topright", -2, -13)
+    selectFontDropdown:SetTemplate(detailsFramework:GetTemplate("dropdown", "OPTIONS_DROPDOWN_TEMPLATE"))
+    selectFontDropdown.label:SetText("change all fonts")
+    selectFontDropdown.icon:SetTexture([[Interface\AnimCreate\AnimCreateIcons]])
+    selectFontDropdown.icon:SetTexCoord(0, 32/128, 64/128, 96/128)
+
     plateFrame = designer.CreatePreview(previewNameplateFrame)
     --createFrameTag(plateFrame, "nameplate")
     plateFrame:SetPoint("center", previewNameplateFrame, "center", 0, 50)
@@ -266,6 +316,8 @@ function Plater.CreateDesignerWindow()
     local unitFrame = plateFrame.unitFrame
     ---@type healthbar
     local healthBar = unitFrame.healthBar
+    healthBar:SetMinMaxValues(0, 1)
+    healthBar:SetValue(0.7)
     ---@type castbar
     local castBar = unitFrame.castBar
     castBar:SetMinMaxValues(0, 1)
@@ -274,11 +326,12 @@ function Plater.CreateDesignerWindow()
     castBar:Show()
     castBar:AdjustPointsOffset(0, -30)
 
+    --castBar:ClearAllPoints()
+
     --Plater_LayoutEditor
     --Plater_LayoutEditorGuideFrame
     --PlaterDesignerPlatePreview
     --^ parenting stair
-
 
     ---@type fontstring
     local unitName = unitFrame.unitName
@@ -315,12 +368,38 @@ function Plater.CreateDesignerWindow()
     detailsFramework:SetFontSize(actorTitleSpecial, Plater.db.profile.plate_config.enemynpc.big_actortitle_text_size)
 
     actorNameSpecial:ClearAllPoints()
-    actorNameSpecial:SetPoint("bottomleft", previewNameplateFrame, "bottomleft", 5, 90)
+    actorNameSpecial:SetPoint("bottomleft", previewNameplateFrame, "bottomleft", 5, 40)
     actorTitleSpecial:ClearAllPoints()
     actorTitleSpecial:SetPoint("top", actorNameSpecial, "bottom", 0, -2)
 
+    --Plater.db.profile
+    local profileRoot = Plater.db.profile
+    local rootKey = "" --as the settings are in the root of the profile table, there is no path to pass
+    --profileRoot.plate_config
+    local plateConfig = profileRoot.plate_config
+
     local onSettingChanged = function(editingObject, optionKey, newValue, profileTable, profileKey)
-        --print("Changed!", optionKey, newValue, profileTable, profileKey)
+        --plater only, change the incombat and outofcombat settings together
+        if profileKey:find("health_incombat") then
+            if optionKey == "width" then
+                profileTable.health[1] = newValue
+            else
+                profileTable.health[2] = newValue
+            end
+        end
+
+        if profileKey:find("cast_incombat") then
+            if optionKey == "width" then
+                profileTable.cast[1] = newValue
+                local castBarOffSetX = plateConfig[subTablePath].castbar_offset_x
+                local castBarOffSetXRel = (healthBar:GetWidth() - newValue) / 2
+                --local castBarOffSetY = plateConfig.castbar_offset --override by -30 pixels
+                PixelUtil.SetPoint (castBar, "topleft", healthBar, "bottomleft", castBarOffSetXRel + castBarOffSetX, -30)
+                PixelUtil.SetPoint (castBar, "topright", healthBar, "bottomright", -castBarOffSetXRel + castBarOffSetX, -30)
+            else
+                profileTable.cast[2] = newValue
+            end
+        end
 
         if (optionKey == "anchor") then
             local anchorTable = detailsFramework.table.getfrompath(profileTable, profileKey, 1)
@@ -334,12 +413,6 @@ function Plater.CreateDesignerWindow()
 
         designer.UpdateAllNameplates()
     end
-
-    --Plater.db.profile
-    local profileRoot = Plater.db.profile
-    local rootKey = "" --as the settings are in the root of the profile table, there is no path to pass
-    --profileRoot.plate_config
-    local plateConfig = profileRoot.plate_config
 
     ---@type df_editobjectoptions
     local editObjectDefaultOptions = {
@@ -397,6 +470,7 @@ function Plater.CreateDesignerWindow()
     objectInfo = layoutEditor:RegisterObject(questOptionsFontString, "Quest Options", "QUESTOPTIONS", plateConfig, subTablePath, options.WidgetSettingsMapTables.QuestOptions, options.WidgetSettingsExtraOptions.QuestOptions, onSettingChanged, questOptions, unitFrame)
     plateConfigObjectsInfo[#plateConfigObjectsInfo+1] = objectInfo
 
+
     --health bar
     ---@type df_editobjectoptions
     local healthBarOptions = detailsFramework.table.copy({}, editObjectDefaultOptions)
@@ -450,7 +524,7 @@ function Plater.CreateDesignerWindow()
 
     local moveUpFrame = CreateFrame("frame", nil, editorMainFrame)
     moveUpFrame:SetScript("OnUpdate", function(self, deltaTime)
-        plateFrame.unitFrame:SetFrameStrata("HIGH")
+        --plateFrame.unitFrame:SetFrameStrata("HIGH")
         plateFrame:SetFrameLevel(previewNameplateFrame:GetFrameLevel() + 100)
         --unitFrame:Show()
         --healthBar:Show()
@@ -497,6 +571,14 @@ function Plater.CreateDesignerWindow()
         plateFrame:Show()
         layoutEditor:Show()
         plateFrame:Show()
+        actorTitleSpecial:Show()
+        actorNameSpecial:Show()
+        healthBar:Show()
+        plateFrame.unitFrame:SetUnit("player")
+        unitName:SetText("Unit Name")
+        unitName:Show()
+        unitFrame.BuffFrame:Show()
+        unitFrame.BuffFrame2:Show()
     end)
 
     editorMainFrame:SetScript("OnHide", function()
@@ -504,6 +586,17 @@ function Plater.CreateDesignerWindow()
         plateFrame:Hide()
         layoutEditor:Hide()
         plateFrame:Hide()
+        plateFrame.unitFrame:SetUnit(nil)
+
+        actorTitleSpecial:Hide()
+        actorNameSpecial:Hide()
+
+        C_Timer.After(1, function()
+            plateFrame:Hide()
+        end)
+
+        unitFrame.BuffFrame:Hide()
+        unitFrame.BuffFrame2:Hide()
     end)
 
     --/plater editmode
@@ -740,4 +833,10 @@ function designer.UpdatePreview()
 
     local raidTargetIcon = unitFrame.PlaterRaidTargetFrame.RaidTargetIcon
     local extraRaidMark = healthBar.ExtraRaidMark
+
+    plateFrame:SetParent(UIParent)
+    plateFrame:SetFrameStrata("FULLSCREEN")
+    plateFrame.unitFrame:SetFrameStrata("FULLSCREEN")
+
+    Plater.UpdatePlateSize(plateFrame)
 end

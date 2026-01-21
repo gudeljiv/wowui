@@ -20,7 +20,7 @@ AutoLayerDB = {
 },
 },
 ["Poklopac - Thunderstrike"] = {
-["layered"] = 26,
+["layered"] = 30,
 },
 ["Dopeclaw - Thunderstrike"] = {
 ["enabled"] = false,

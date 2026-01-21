@@ -205,7 +205,7 @@ PLATER_DEFAULT_SETTINGS = {
 				actorname_text_shadow_color = {0, 0, 0, 1},
 				actorname_text_shadow_color_offset = {1, -1},
 				actorname_text_anchor = {side = 8, x = 0, y = 0},
-				actorname_text_max_length = 99,
+				actorname_text_max_length = 100,
 				
 				spellname_text_size = 10,
 				spellname_text_font = "Arial Narrow",
@@ -277,7 +277,7 @@ PLATER_DEFAULT_SETTINGS = {
 				actorname_text_shadow_color = {0, 0, 0, 1},
 				actorname_text_shadow_color_offset = {1, -1},
 				actorname_text_anchor = {side = 4, x = 0, y = 0},
-				actorname_text_max_length = 99,
+				actorname_text_max_length = 100,
 				
 				spellname_text_size = 10,
 				spellname_text_font = "Arial Narrow",
@@ -362,7 +362,7 @@ PLATER_DEFAULT_SETTINGS = {
 				actorname_text_shadow_color = {0, 0, 0, 1},
 				actorname_text_shadow_color_offset = {1, -1},
 				actorname_text_anchor = {side = 8, x = 0, y = 0},
-				actorname_text_max_length = 99,
+				actorname_text_max_length = 100,
 				
 				spellname_text_size = 10,
 				spellname_text_font = "Arial Narrow",
@@ -448,7 +448,7 @@ PLATER_DEFAULT_SETTINGS = {
 				actorname_text_shadow_color = {0, 0, 0, 1},
 				actorname_text_shadow_color_offset = {1, -1},
 				actorname_text_anchor = {side = 4, x = 0, y = 0},
-				actorname_text_max_length = 99,
+				actorname_text_max_length = 100,
 				
 				spellname_text_size = 12,
 				spellname_text_font = "Arial Narrow",
@@ -540,7 +540,7 @@ PLATER_DEFAULT_SETTINGS = {
 				actorname_text_shadow_color = {0, 0, 0, 1},
 				actorname_text_shadow_color_offset = {1, -1},
 				actorname_text_anchor = {side = 8, x = 0, y = 0},
-				actorname_text_max_length = 99,
+				actorname_text_max_length = 100,
 				
 				spellname_text_size = 10,
 				spellname_text_font = "Arial Narrow",
@@ -3133,12 +3133,15 @@ PLATER_DEFAULT_SETTINGS = {
 		},
 		
 		unit_type_coloring_enabled = true,
-		unit_type_coloring_boss = {0.294118, 0, 0.509804, 1},
-		unit_type_coloring_miniboss = {0, 0.086, 1, 1},
+		unit_type_coloring_no_override_threat = true,
+		unit_type_coloring_boss = {0.423529, 0.172549, 0.6901960, 1},
+		unit_type_coloring_miniboss = {0.278431, 0.258823, 1, 1},
 		unit_type_coloring_caster = {0, 0.8196, 1, 1},
 		unit_type_coloring_elite = {1, 0.5961, 0.51373, 1},
-		--unit_type_coloring_trivial = {0, 0.086, 1, 1},
-		
+		unit_type_coloring_trivial = {.5, .5, .5, 1},
+		unit_type_coloring_enable_elite = false,
+		unit_type_coloring_enable_trivial = false,
+
 		news_frame = {},
 		first_run2 = false,
 	}

@@ -1,4 +1,8 @@
-﻿2.5.001 - 17th January 2026
+﻿2.5.002 -21st January 2026
+- For 'Show zone menus', skinned the Outland dropdown menu for ElvUI users.
+- For 'Show unexplored areas', fixed an issue which caused the Alterac Valley map to show as unexplored.
+
+2.5.001 - 17th January 2026
 - The 'Set map opacity' option is now available.
 - Updated points of interest icons.
 

@@ -1,7 +1,7 @@
 # Auctionator
 
-## [310](https://github.com/TheMouseNest/Auctionator/tree/310) (2026-01-18)
-[Full Changelog](https://github.com/TheMouseNest/Auctionator/compare/309...310) 
+## [311](https://github.com/TheMouseNest/Auctionator/tree/311) (2026-01-21)
+[Full Changelog](https://github.com/TheMouseNest/Auctionator/compare/310...311) 
 
-- [Fixes #1745] Classic Anniversary: Fix keyring items not showing in selling tab  
-- Midnight: [Fixes #1744, Fixes #1743] Fix a couple of errors  
+- Fix "Open Options" button in Auctionator tab  
+- Retail: Fix displaying crafted item qualities in AH UI  

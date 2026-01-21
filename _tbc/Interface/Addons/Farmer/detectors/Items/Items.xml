@@ -1,4 +1,0 @@
-<UI>
-  <script file="Items.lua"/>
-  <include file="storages\storages.xml"/>
-</UI>

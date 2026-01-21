@@ -1,5 +1,67 @@
 ## SpellActivationOverlay Changelog
 
+#### v2.7.0 (2026-01-20)
+
+Thank you to our amazing contributors for helping out. Thanks!
+- @Amanthuul my man, for adding Death Knights effects to Mists of Pandaria
+
+Introducing The Burning Crusade flavor!
+- The addon has pretty advanced support at the moment
+- Make sure to report issues and suggest ideas, thank you :)
+
+Spell Alerts for The Burning Crusade
+- Druid's Nature's Grace
+- Hunter's Mongoose Bite
+- Mage's Clearcasting
+- Mage's Freeze debuff
+- Priest's Surge of Light
+- Rogue's Riposte
+- Shaman's Elemental Focus
+- Warlock's Backlash
+- Warlock's Eye of Kilrogg
+- Warlock's Nightfall
+- Healing Trance / Eye of Gruul, for all healing classes
+
+Glowing Buttons for The Burning Crusade
+- Hunter's Counterattack
+- Hunter's Mongoose Bite
+- Mage's Ice Lance, when the target is Frozen
+- Priest's Shadowform, when not assuming the shadowform
+- Priest's Smite, during Surge of Light
+- Paladin's Exorcism
+- Paladin's Hammer of Wrath
+- Paladin's Holy Shock
+- Rogue's Riposte
+- Warlock's Incinerate, during Backlash
+- Warlock's Shadow Bolt, during Backlash
+- Warlock's Shadow Bolt, during Nightfall
+- Warrior's Execute
+- Warrior's Overpower
+- Warrior's Revenge
+- Warrior's Victory Rush
+
+This release optimizes code size
+- The addon loads slightly faster
+- The addon uses slightly less memory
+- Packages are slightly smaller to download
+- Gains are about 5-15% depending on game flavor and player class
+
+New Glowing Buttons
+- Death Knight's Blood Tap, with 5+ charges of Blood Charge (Mists of Pandaria)
+- Death Knight's Soul Reaper, when the target has low hp (Mists of Pandaria)
+- There are three Soul Reaper options - one for each spec
+- By default, Soul Reaper's execute threshold is 35% of the target's health
+- Soul Reaper's execute threshold increases to 45% with the tier 15 set bonus
+
+Bug Fixes
+- Glowing Buttons are now functional (The Burning Crusade)
+- Item text\* is now always displayed in options (The Burning Crusade, Wrath)
+
+\* Currently supported items are Eye of Gruul (TBC) and Soul Preserver (Wrath)
+
+Known Limitations
+- Sliders in the options panel have no background ruler (The Burning Crusade)
+
 #### v2.6.2 (2026-01-07)
 
 Bug Fixes
@@ -406,7 +468,7 @@ New Glowing Buttons
 - Warrior's Execute, during Regicide (Season of Discovery)
 - Warrior's Heroic Strike, during Incite (Cataclysm)
 
-Introducting Mists of Pandaria flavor!
+Introducing Mists of Pandaria flavor!
 - The addon is still in very early stage
 - Support for Death Knight's Crimson Scourge
 - Support for Death Knight's Will of the Necropolis
