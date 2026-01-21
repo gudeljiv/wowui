@@ -132,8 +132,8 @@ Questie: enabled
 oUF: disabled
 oUF_Neav: disabled
 oUF_NeavRaid: disabled
-FarmHud: disabled
-FarmHud_QuestArrow: disabled
+FarmHud: enabled
+FarmHud_QuestArrow: enabled
 TrackingSwitcher: enabled
 TrinketMenu: enabled
 AuctionFaster: disabled
@@ -162,7 +162,7 @@ Details_EncounterDetails: enabled
 Details_RaidCheck: enabled
 Details_Vanguard: enabled
 HealBarsClassic: enabled
-FarmHud_TrailPath: disabled
+FarmHud_TrailPath: enabled
 EasyFrames: enabled
 BigWigs: disabled
 BigWigs_Onyxia: disabled

@@ -1,7 +1,7 @@
 ## Interface: 40401
 ## Title: Masque: ElvUI
 ## Notes: ElvUI Skin for Masque
-## Version: 3.2
+## Version: 3.4
 ## Author: Lorade
 ## Dependencies: Masque
 

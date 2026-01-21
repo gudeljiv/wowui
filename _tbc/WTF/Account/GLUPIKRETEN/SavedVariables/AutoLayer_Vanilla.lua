@@ -8,7 +8,7 @@ AutoLayerDB = {
 },
 ["profiles"] = {
 ["Poklopac - Thunderstrike"] = {
-["layered"] = 30,
+["layered"] = 32,
 },
 ["Dopeseal - Thunderstrike"] = {
 ["enabled"] = false,
@@ -23,7 +23,7 @@ AutoLayerDB = {
 ["layered"] = 18,
 },
 ["Dopeclaw - Thunderstrike"] = {
-["enabled"] = false,
+["layered"] = 1,
 ["minimap"] = {
 ["minimapPos"] = 110.0167771652883,
 },

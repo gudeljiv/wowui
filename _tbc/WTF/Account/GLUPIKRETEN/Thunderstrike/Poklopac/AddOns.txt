@@ -25,7 +25,7 @@ AtlasLootClassic_Factions: enabled
 AtlasLootClassic_Options: enabled
 AtlasLootClassic_PvP: enabled
 Auctionator: enabled
-AutoLayer_Vanilla: enabled
+AutoLayer_Vanilla: disabled
 Baganator: enabled
 Buffet: enabled
 !BugGrabber: enabled
@@ -51,7 +51,7 @@ Dominos_Roll: enabled
 Drift: disabled
 ExtendedCharacterStats: enabled
 Farmer: disabled
-FarmHud: disabled
+FarmHud: enabled
 FarmHud_QuestArrow: enabled
 FarmHud_TrailPath: enabled
 GatherMate2: enabled
@@ -66,7 +66,7 @@ Leatrix_Maps: enabled
 Leatrix_Plus: enabled
 Leatrix_Sounds: enabled
 LFGBulletinBoard: enabled
-LibRangeCheck-3.0: enabled
+LibRangeCheck-3.0: disabled
 LoonBestInSlot: enabled
 ls_Toasts: enabled
 Masque: enabled
@@ -124,3 +124,4 @@ WhatsTraining: enabled
 xVermin: enabled
 Blizzard_ObjectiveTracker: enabled
 Blizzard_CompactRaidFrames: enabled
+BaganatorCustomSkin: disabled

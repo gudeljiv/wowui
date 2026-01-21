@@ -107,9 +107,12 @@ end
 
 local texCoords = { 0.08, 0.92, 0.08, 0.92 }
 local function ItemButtonQualityHook(frame, quality)
+	frame.IconBorder:Hide()
+	frame.IconBorder:HookScript("OnShow", function(self)
+		self:Hide()
+	end)
 	if frame.bgrSimpleHooked then
 		frame:CreateBeautyBorder(8)
-		-- frame.IconBorder:SetVertexColor(color.r, color.g, color.b, 1)
 
 		local c = ITEM_QUALITY_COLORS[quality]
 
@@ -275,17 +278,8 @@ end
 
 local function LoadSkin()
 	showSlots = not addonTable.Config.Get("skins.dark.empty_slot_background")
-	if addonTable.API.IsMasqueApplying() or not addonTable.Config.Get("skins.dark.square_icons") then
-		skinners.ItemButton = function(frame, tags)
-			if not tags.containerBag then
-				table.insert(allItemButtons, frame)
-				frame.SlotBackground:SetShown(showSlots)
-			end
-		end
-	else
-		hooksecurefunc("SetItemButtonQuality", ItemButtonQualityHook)
-		hooksecurefunc("SetItemButtonTexture", ItemButtonTextureHook)
-	end
+	hooksecurefunc("SetItemButtonQuality", ItemButtonQualityHook)
+	hooksecurefunc("SetItemButtonTexture", ItemButtonTextureHook)
 
 	addonTable.CallbackRegistry:RegisterCallback("SettingChanged", function(_, settingName)
 		if settingName == "skins.dark.empty_slot_background" then

@@ -1,0 +1,9 @@
+## Interface: 20505, 11505
+## Title: FlightReady
+## Notes: Seamless flight paths! Auto-dismount/unshift with Leatrix & Custom profile support.
+## Author: Grimbrok
+## Version: 1.1.0
+## IconTexture: Interface\AddOns\FlightReady\icon.png
+## SavedVariables: FlightReadyDB
+
+core.lua

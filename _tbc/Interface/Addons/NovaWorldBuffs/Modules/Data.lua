@@ -403,7 +403,7 @@ end
 --I've tried my best to keep the data short and only send the first few log entries at a time.
 --I will remove this log system if the rend drop is ever fixed so it can work like ony/nef and not send the yell msgs on every layer.
 function NWB:sendTimerLogData(distribution, entries)
-	if (not enableLogging or not NWB.isClassic) then
+	if (not enableLogging or (not NWB.isClassic and not NWB.isTBCPrepatch)) then
 		return;
 	end
 	if (logLayeredServersOnly and not NWB.isLayered) then
@@ -903,7 +903,7 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 	if (not lastSendLayerMap[distribution]) then
 		lastSendLayerMap[distribution] = 0;
 	end
-	if (NWB.isSOD or not NWB.isClassic) then
+	if (NWB.isSOD or (not NWB.isClassic and not NWB.isTBCPrepatch)) then
 		noLogs = true;
 	end
 	--if (NWB.isTBC and firstLayeredYell and distribution == "YELL") then
@@ -1226,7 +1226,7 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLaye
 			local me = UnitName("player") .. "-" .. GetNormalizedRealmName();
 			data[me] = settings[me];
 		end
-		if (enableLogging and NWB.isClassic and not noLogs and includeTimerLog and (not logLayeredServersOnly or NWB.isLayered)) then
+		if (enableLogging and (NWB.isClassic  or NWB.isTBCPrepatch)and not noLogs and includeTimerLog and (not logLayeredServersOnly or NWB.isLayered)) then
 			local timerLog = NWB:createTimerLogData(distribution);
 			if (timerLog) then
 				data.timerLog = timerLog;
@@ -1243,7 +1243,7 @@ function NWB:createTimerLogData(distribution, entries)
 		return;
 	end
 	local data = {};
-	if (not NWB.isClassic) then
+	if (not NWB.isClassic and not NWB.isTBCPrepatch) then
 		--No logs once TBC launches.
 		return data;
 	end

@@ -21,7 +21,7 @@ local S = setmetatable(addon.S, { __index = L })
 RatingBuster = LibStub("AceAddon-3.0"):NewAddon("RatingBuster", "AceConsole-3.0", "AceEvent-3.0", "AceBucket-3.0")
 RatingBuster.title = "Rating Buster"
 --@non-debug@
-RatingBuster.version = "2.0.9"
+RatingBuster.version = "2.0.10"
 --@end-non-debug@
 --[==[@debug@
 RatingBuster.version = "(development)"
@@ -3489,7 +3489,6 @@ local summaryCalcData = {
 		stat = StatLogic.Stats.MeleeCrit,
 		func = function(sum, statModContext)
 			return sum[StatLogic.Stats.MeleeCrit]
-				+ sum[StatLogic.Stats.MeleeCritRating] * statModContext("ADD_MELEE_CRIT_MOD_MELEE_CRIT_RATING")
 				+ summaryFunc[StatLogic.Stats.MeleeCritRating](sum, statModContext) * statModContext("ADD_MELEE_CRIT_MOD_MELEE_CRIT_RATING")
 				+ summaryFunc[StatLogic.Stats.Agility](sum, statModContext) * statModContext("ADD_MELEE_CRIT_MOD_AGI")
 		end,

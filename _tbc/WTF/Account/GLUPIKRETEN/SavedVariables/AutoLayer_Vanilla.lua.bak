@@ -23,10 +23,10 @@ AutoLayerDB = {
 ["layered"] = 30,
 },
 ["Dopeclaw - Thunderstrike"] = {
-["enabled"] = false,
 ["minimap"] = {
 ["minimapPos"] = 110.0167771652883,
 },
+["layered"] = 1,
 },
 },
 }

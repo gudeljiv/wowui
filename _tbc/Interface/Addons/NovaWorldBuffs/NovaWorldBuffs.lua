@@ -3278,46 +3278,30 @@ function NWB:getTimeString(seconds, countOnly, type, space, firstOnly, long)
 		space = "";
 	end
 	if (type == "short") then
-		if (d == 1 and (h == 0 or firstOnly)) then
-			if (long) then
-				if (m == 0 or firstOnly) then
+		if (d > 0) then
+			if (firstOnly) then
 					return d .. L["dayShort"];
-				elseif (h == 1) then
-					return d .. L["dayShort"] .. space .. m .. L["minuteShort"];
+			end
+			if (long) then
+				if (h > 0) then
+					if (m > 0) then
+						return d .. L["dayShort"] .. space .. h .. L["hourShort"] .. space .. m .. L["minuteShort"];
+					else
+						return d .. L["dayShort"] .. space .. h .. L["hourShort"];
+					end
+				else
+					if (m > 0) then
+						return d .. L["dayShort"] .. space .. m .. L["minuteShort"];
+					else
+						return d .. L["dayShort"];
+					end
 				end
 			else
-				return d .. L["dayShort"];
-			end
-		elseif (d == 1) then
-			if (long) then
-				if (m == 0 or firstOnly) then
+				if (h > 0) then
 					return d .. L["dayShort"] .. space .. h .. L["hourShort"];
-				elseif (h == 1) then
-					return d .. L["dayShort"] .. space .. h .. L["hourShort"] .. space .. m .. L["minuteShort"];
-				end
-			else
-				return d .. L["dayShort"] .. space .. h .. L["hourShort"];
-			end
-		end
-		if (d > 1 and (h == 0 or firstOnly)) then
-			if (long) then
-				if (m == 0 or firstOnly) then
+				else
 					return d .. L["dayShort"];
-				elseif (h == 1) then
-					return d .. L["dayShort"] .. space .. m .. L["minuteShort"];
 				end
-			else
-				return d .. L["dayShort"];
-			end
-		elseif (d > 1) then
-			if (long) then
-				if (m == 0 or firstOnly) then
-					return d .. L["dayShort"] .. space .. h .. L["hourShort"];
-				elseif (h == 1) then
-					return d .. L["dayShort"] .. space .. h .. L["hourShort"] .. space .. m .. L["minuteShort"];
-				end
-			else
-				return d .. L["dayShort"] .. space .. h .. L["hourShort"];
 			end
 		end
 		if (h == 1 and (m == 0 or firstOnly)) then
@@ -8640,7 +8624,7 @@ function NWB:openLayerFrame()
 		if (NWBlayerFrameTimerLogButton) then
 			NWBlayerFrameTimerLogButton:SetPoint("CENTER", -58, -28);
 		end
-	elseif (not NWB.isClassic) then
+	elseif (not NWB.isClassic and not NWB.isTBCPrepatch) then
 		--If layered and is TBC.
 		--Disable rend log button and move guild layers to it's spot on TBC realms.
 		NWBlayerFrameTimerLogButton:Hide();

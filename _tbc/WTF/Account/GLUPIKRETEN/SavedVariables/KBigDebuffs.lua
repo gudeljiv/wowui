@@ -1,0 +1,20 @@
+
+KBigDebuffsOptions = {
+["BuffsOrientation"] = "LeftThenUp",
+["MaxDebuffs"] = 3,
+["DebuffsPosX"] = 0,
+["BuffsScale"] = 0.95,
+["DebuffsOrientation"] = "RightThenUp",
+["DebuffsPerLine"] = 3,
+["BuffsPosX"] = 0,
+["ShowMsgNormal"] = true,
+["MaxBuffs"] = 3,
+["DebuffsPosY"] = 0,
+["ShowMsgWarning"] = true,
+["Version"] = "12.0.001",
+["DebuffsScale"] = 1.25,
+["ShowMsgError"] = false,
+["BuffsPosY"] = 0,
+["UseTaintMethod"] = false,
+["BuffsPerLine"] = 4,
+}

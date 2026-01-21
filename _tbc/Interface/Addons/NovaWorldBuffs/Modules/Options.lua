@@ -2335,15 +2335,13 @@ end
 
 function NWB:checkNewVersion()
 	--NWB.db.global.versions = {};
-	local newVersionNotes = 3.24;
+	local newVersionNotes = 3.25;
 	if (NWB.version and NWB.version == newVersionNotes) then
 		if (not NWB.db.global.versions[NWB.version]) then
-			if (NWB.isClassic or NWB.isTBC) then
+			if (NWB.isTBC) then
 				--if (NWB:GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
 					local notes = {
-						"Fixed DMF damage buff not showing what percentage buff you got from Sayge.",
-						"Moved the layer display on minimap slightly higher in TBC so it doesn't cover the clock (reminder you can shift and drag if you want it somewhere else).",
-						"Fixed an issue that could cause the buff gained sound more than once.",
+						"Enabled rend log again for during the TBC prepatch (hopefully), may take a couple days for enough people to update for it to work properly, It will automatically disable roughly around when the portal opens.",
 					};
 					loadNewVersionFrame(NWB.version, notes, "Nova World Buffs", "Interface\\Icons\\inv_misc_head_dragon_01", -50, 350);
 				--end

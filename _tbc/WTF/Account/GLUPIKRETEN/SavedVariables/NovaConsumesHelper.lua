@@ -2,6 +2,13 @@
 NCHdatabase = {
 ["namespaces"] = {
 },
+["profileKeys"] = {
+["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
+["Dopeseal - Thunderstrike"] = "Dopeseal - Thunderstrike",
+["Poklopac - Thunderstrike"] = "Poklopac - Thunderstrike",
+["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
+["Dopesnare - Thunderstrike"] = "Dopesnare - Thunderstrike",
+},
 ["global"] = {
 ["NCHMainFrameAnchor_y"] = -285.2395629882813,
 ["NCHMainFrameAnchor_point"] = "TOP",
@@ -19,18 +26,12 @@ NCHdatabase = {
 ["hide"] = true,
 },
 ["NCHProtFrameAnchor_relativePoint"] = "RIGHT",
+["loadInRaidGroupProt"] = false,
 ["NCHMainFrameAnchor_relativePoint"] = "TOP",
+["loadInRaidsProt"] = false,
 ["NCHMainFrameAnchor_x"] = 525.6437377929688,
 ["loadEverywhereProt"] = false,
 ["buttonsWide"] = 6,
-["loadInRaidGroupProt"] = false,
-["loadInRaidsProt"] = false,
-},
-["profileKeys"] = {
-["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
-["Dopeseal - Thunderstrike"] = "Dopeseal - Thunderstrike",
-["Dopesnare - Thunderstrike"] = "Dopesnare - Thunderstrike",
-["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
 },
 ["profiles"] = {
 ["Doperage - Thunderstrike"] = {
@@ -39,10 +40,12 @@ NCHdatabase = {
 ["Dopeseal - Thunderstrike"] = {
 ["consumesSlot43"] = "Swiftness Potion",
 },
-["Dopesnare - Thunderstrike"] = {
+["Poklopac - Thunderstrike"] = {
 },
 ["Dopeclaw - Thunderstrike"] = {
 ["consumesSlot2"] = "Winterfall Firewater",
+},
+["Dopesnare - Thunderstrike"] = {
 },
 },
 }

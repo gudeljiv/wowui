@@ -1,0 +1,10 @@
+## Interface: 110002
+## Title: Baganator Custom Skin
+## Notes: Custom dark skin for Baganator
+## Author: YourName
+## Version: 1.0.0
+## Dependencies: Baganator
+## X-Curse-Project-ID: 
+## X-Wago-ID: 
+
+Core.lua
