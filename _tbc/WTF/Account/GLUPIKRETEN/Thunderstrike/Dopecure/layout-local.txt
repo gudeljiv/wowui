@@ -85,9 +85,9 @@ W: 338
 H: 424
 Frame: TaxiFrame
 FrameLevel: 1
-Anchor: TOPLEFT
+Anchor: BOTTOMLEFT
 X: 0
-Y: -104
+Y: -67
 W: 384
 H: 512
 Frame: ItemRefTooltip
@@ -190,9 +190,9 @@ W: 1024
 H: 712
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
-Anchor: TOPRIGHT
+Anchor: RIGHT
 X: -351
-Y: -175
+Y: 175
 W: 607
 H: 672
 Frame: PallyPowerBlessingsFrame

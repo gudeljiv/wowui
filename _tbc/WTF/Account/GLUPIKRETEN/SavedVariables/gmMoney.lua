@@ -54,7 +54,7 @@ GMMONEY = {
 ["CLASS"] = "DRUID",
 },
 ["Dopecure"] = {
-["GOLD"] = 46990,
+["GOLD"] = 64577,
 ["CLASS"] = "PRIEST",
 },
 ["Doperage"] = {
@@ -66,7 +66,7 @@ GMMONEY = {
 ["CLASS"] = "WARLOCK",
 },
 ["Dopesnare"] = {
-["GOLD"] = 26447,
+["GOLD"] = 35402,
 ["CLASS"] = "HUNTER",
 },
 },
@@ -125,29 +125,29 @@ GMMONEY = {
 ["GOLD"] = 4,
 ["CLASS"] = "WARRIOR",
 },
-["Vermina"] = {
-["GOLD"] = 59137573,
-["CLASS"] = "PALADIN",
+["Battitude"] = {
+["GOLD"] = 998227,
+["CLASS"] = "ROGUE",
 },
 ["Moolatz"] = {
 ["GOLD"] = 7980232,
 ["CLASS"] = "DRUID",
 },
-["Augustin"] = {
-["GOLD"] = 96743,
-["CLASS"] = "MAGE",
+["Tadibey"] = {
+["GOLD"] = 763196,
+["CLASS"] = "SHAMAN",
 },
-["Battitude"] = {
-["GOLD"] = 998227,
-["CLASS"] = "ROGUE",
+["Vermina"] = {
+["GOLD"] = 59137573,
+["CLASS"] = "PALADIN",
 },
 ["Miqa"] = {
 ["GOLD"] = 6472995,
 ["CLASS"] = "PRIEST",
 },
-["Tadibey"] = {
-["GOLD"] = 763196,
-["CLASS"] = "SHAMAN",
+["Augustin"] = {
+["GOLD"] = 96743,
+["CLASS"] = "MAGE",
 },
 ["Vermin"] = {
 ["GOLD"] = 144333979,
@@ -168,29 +168,13 @@ GMMONEY = {
 ["CLASS"] = "WARRIOR",
 },
 },
-["Celebras"] = {
-["Battlenac"] = {
-["GOLD"] = 192,
-["CLASS"] = "PRIEST",
-},
-["Mq"] = {
-["GOLD"] = 16306,
-["CLASS"] = "HUNTER",
-},
-["Moolatz"] = {
-["GOLD"] = 18539,
-["CLASS"] = "DRUID",
-},
-["Turbonac"] = {
-["GOLD"] = 9939,
-["CLASS"] = "WARLOCK",
-},
-["Vbank"] = {
-["GOLD"] = 207930,
+["Gehennas"] = {
+["Battlearm"] = {
+["GOLD"] = 0,
 ["CLASS"] = "WARRIOR",
 },
-["Vermin"] = {
-["GOLD"] = 21402,
+["Battledog"] = {
+["GOLD"] = 0,
 ["CLASS"] = "WARRIOR",
 },
 },
@@ -240,13 +224,29 @@ GMMONEY = {
 ["CLASS"] = "WARRIOR",
 },
 },
-["Gehennas"] = {
-["Battlearm"] = {
-["GOLD"] = 0,
+["Celebras"] = {
+["Battlenac"] = {
+["GOLD"] = 192,
+["CLASS"] = "PRIEST",
+},
+["Mq"] = {
+["GOLD"] = 16306,
+["CLASS"] = "HUNTER",
+},
+["Moolatz"] = {
+["GOLD"] = 18539,
+["CLASS"] = "DRUID",
+},
+["Turbonac"] = {
+["GOLD"] = 9939,
+["CLASS"] = "WARLOCK",
+},
+["Vbank"] = {
+["GOLD"] = 207930,
 ["CLASS"] = "WARRIOR",
 },
-["Battledog"] = {
-["GOLD"] = 0,
+["Vermin"] = {
+["GOLD"] = 21402,
 ["CLASS"] = "WARRIOR",
 },
 },

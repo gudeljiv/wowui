@@ -306,17 +306,9 @@ xVerminSavedData = {
 ["Sandfury Shadowcaster"] = {
 "Earthbind",
 },
-["Larsera"] = {
+["Ambershard Crusher"] = {
+"Chain Lightning",
 "Serpent Sting",
-"Intimidation",
-"Earth Shock",
-"Impact",
-"Sunfire",
-"Wrath",
-"Charge Stun",
-"Starfire Stun",
-"Electrocutioner's Shock",
-"Chimera Shot",
 },
 ["Evolving Ectoplasm"] = {
 "Attack",
@@ -347,11 +339,15 @@ xVerminSavedData = {
 "Charge Stun",
 "Bash",
 },
-["Gahz'rilla"] = {
-"Impact",
-"Intimidation",
-"Charge Stun",
-"Counterspell",
+["Theradrim Guardian"] = {
+"Lightning Shield",
+"Chain Lightning",
+"Deadly Poison II",
+"Instant Poison IV",
+"Poison",
+"Chimera Shot",
+"Serpent Sting",
+"Thunder Clap",
 },
 ["Stone Rumbler"] = {
 "Lightning Shield",
@@ -414,12 +410,12 @@ xVerminSavedData = {
 "Rend",
 "Deep Wound",
 },
-["Sea Elemental"] = {
-"Frost Shock",
-},
 ["Cracked Skull Soldier"] = {
 "Rend",
 "Fear",
+},
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Rock Elemental"] = {
 "Serpent Sting",
@@ -447,19 +443,23 @@ xVerminSavedData = {
 "Serpent Sting",
 "Instant Poison II",
 },
-["Theradrim Guardian"] = {
-"Lightning Shield",
-"Chain Lightning",
-"Deadly Poison II",
-"Instant Poison IV",
-"Poison",
-"Chimera Shot",
-"Serpent Sting",
-"Thunder Clap",
+["Gahz'rilla"] = {
+"Impact",
+"Intimidation",
+"Charge Stun",
+"Counterspell",
 },
-["Ambershard Crusher"] = {
-"Chain Lightning",
+["Larsera"] = {
 "Serpent Sting",
+"Intimidation",
+"Earth Shock",
+"Impact",
+"Sunfire",
+"Wrath",
+"Charge Stun",
+"Starfire Stun",
+"Electrocutioner's Shock",
+"Chimera Shot",
 },
 ["Lesser Rock Elemental"] = {
 "Serpent Sting",

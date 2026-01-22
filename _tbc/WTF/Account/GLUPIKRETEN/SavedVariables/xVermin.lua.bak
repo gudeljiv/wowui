@@ -316,6 +316,10 @@ xVerminSavedData = {
 "Deep Wound",
 "Explosive Trap Effect",
 },
+["Ambershard Crusher"] = {
+"Chain Lightning",
+"Serpent Sting",
+},
 ["Larsera"] = {
 "Serpent Sting",
 "Intimidation",
@@ -328,15 +332,15 @@ xVerminSavedData = {
 "Electrocutioner's Shock",
 "Chimera Shot",
 },
-["Ambershard Crusher"] = {
+["Theradrim Guardian"] = {
+"Lightning Shield",
 "Chain Lightning",
+"Deadly Poison II",
+"Instant Poison IV",
+"Poison",
+"Chimera Shot",
 "Serpent Sting",
-},
-["Gahz'rilla"] = {
-"Impact",
-"Intimidation",
-"Charge Stun",
-"Counterspell",
+"Thunder Clap",
 },
 ["Sea Spray"] = {
 "Frost Shock",
@@ -348,15 +352,11 @@ xVerminSavedData = {
 "Charge Stun",
 "Bash",
 },
-["Theradrim Guardian"] = {
-"Lightning Shield",
-"Chain Lightning",
-"Deadly Poison II",
-"Instant Poison IV",
-"Poison",
-"Chimera Shot",
-"Serpent Sting",
-"Thunder Clap",
+["Gahz'rilla"] = {
+"Impact",
+"Intimidation",
+"Charge Stun",
+"Counterspell",
 },
 ["Stone Rumbler"] = {
 "Lightning Shield",
@@ -421,9 +421,8 @@ xVerminSavedData = {
 ["Healing Ward"] = {
 "Faerie Fire (Feral)",
 },
-["Cracked Skull Soldier"] = {
-"Rend",
-"Fear",
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Rock Elemental"] = {
 "Serpent Sting",
@@ -434,8 +433,9 @@ xVerminSavedData = {
 ["Razorlash"] = {
 "Blackout",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Cracked Skull Soldier"] = {
+"Rend",
+"Fear",
 },
 ["Overlord Ramtusk"] = {
 "Concussive Shot",

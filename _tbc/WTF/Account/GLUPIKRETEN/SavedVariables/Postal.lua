@@ -30,7 +30,7 @@ Postal3DB = {
 "Dopesnare|Living Flame|Horde|49|HUNTER",
 "Dopesnare|Lone Wolf|Horde|49|HUNTER",
 "Dopesnare|Stitches|Horde|40|HUNTER",
-"Dopesnare|Thunderstrike|Horde|25|HUNTER",
+"Dopesnare|Thunderstrike|Horde|26|HUNTER",
 "Dopestab|Living Flame|Horde|41|ROGUE",
 "Dopestab|Lone Wolf|Horde|41|ROGUE",
 "Dopetrap|Living Flame|Horde|1|HUNTER",
@@ -156,9 +156,9 @@ Postal3DB = {
 ["Dopecure - Thunderstrike"] = {
 ["BlackBook"] = {
 ["recent"] = {
+"Dopesnare|Thunderstrike|Horde",
 "Doperage|Thunderstrike|Horde",
 "Dopecoil|Thunderstrike|Horde",
-"Dopesnare|Thunderstrike|Horde",
 },
 },
 },

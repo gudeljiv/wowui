@@ -1,6 +1,6 @@
-## Interface: 110200, 50500, 11507
+## Interface: 120001, 120000, 50503, 38000, 20505, 11508
 ## Title: FarmHud
-## Version: 10.1.6-release
+## Version: 10.1.7-release
 
 ## Category-enUS: Map
 ## Category-deDE: Karte

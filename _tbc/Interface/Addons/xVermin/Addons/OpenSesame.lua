@@ -1,5 +1,10 @@
 local _, xVermin = ...
 
 xVermin.CheckIfLoadedWithTimer("LibDBIcon10_Open-Sesame", function()
-	_G["LibDBIcon10_Open-Sesame"]:Hide()
+	local frame = _G["LibDBIcon10_Open-Sesame"]
+	frame:Hide()
+
+	frame:HookScript("OnShow", function(self)
+		self:Hide()
+	end)
 end)

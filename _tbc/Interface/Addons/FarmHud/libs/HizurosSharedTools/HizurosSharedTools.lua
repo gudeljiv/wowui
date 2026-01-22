@@ -1,11 +1,10 @@
 
-local MAJOR, MINOR = "HizurosSharedTools", tonumber((gsub("r46","r",""))) or 9999;
+local MAJOR, MINOR = "HizurosSharedTools", tonumber((gsub("r51","r",""))) or 9999;
 ---@class HizurosSharedTools
 local lib = LibStub:NewLibrary(MAJOR, MINOR);
 if not lib then return end
 
 local _G,tostringall,tonumber,rawset,type = _G,tostringall,tonumber,rawset,type
-local ConsolePrint = ConsolePrint;
 
 local LC = LibStub("LibColors-1.0");
 local C = LC.color;
@@ -80,6 +79,52 @@ do
 		_ConsolePrint(date("|cff999999%X|r"),colorize(ns,"<debug>",...));
 	end
 
+	local dumpTable
+	local insStr = "  "
+	function dumpTable(t,res,inset)
+		local tmp,isAssoc,i,ins = {},false,"  ";
+		res,inset = res or {},inset or 0;
+		ins = strrep(insStr,inset);
+
+		if inset==0 then
+			tinsert(res,ins.."{");
+		end
+
+		for k,v in pairs(t)do
+			local tk = type(k)
+			if type(v)=="table" then
+				if tk=="number" then
+					tinsert(res,ins..i.."{ -- ["..k.."]");
+				else
+					tinsert(res,ins..i.."["..k.."] = {");
+				end
+				dumpTable(v,res,inset+1);
+				tinsert(res,ins..i.."},");
+			elseif tk=="number" then
+				tinsert(res,ins..i..tostring(v)..", -- ["..k.."]");
+			else
+				tinsert(res,ins..i.."["..k.."] = "..tostring(v))
+			end
+		end
+
+		if inset==0 then
+			tinsert(res,ins.."},");
+		end
+
+		return res;
+	end
+
+	local function ns_debugTable(ns, tbl)
+		if type(tbl)~="table" then
+			ns_debug(ns,tbl)
+			return;
+		end
+		local res = dumpTable(tbl);
+		for i=1, #res do
+			ns_debug(ns, res[i])
+		end
+	end
+
 	local function ns_debugPrint(ns,...)
 		if not ns.debugMode then return end
 		print(colorize(ns,"<debug>",...));
@@ -95,7 +140,7 @@ do
 	---@param short string AddOn short name
 	function lib.RegisterPrint(ns,addon,short)
 		ns.addon,ns.addon_short = addon,short;
-		ns.print,ns.debug,ns.debugPrint = ns_print,ns_debug,ns_debugPrint;
+		ns.print,ns.debug,ns.debugPrint,ns.debugTable = ns_print,ns_debug,ns_debugPrint,ns_debugTable;
 		ns.deprecated = lib.deprecated;
 	end
 end
@@ -139,6 +184,7 @@ do -- 013088, 0070E0
 
 		-- donations
 		{"paypal","Nanci"}, false, {"PP",true}, false, false,
+		{"paypal","Michael"}, false, {"PP",true}, false, false,
 
 		-- localizations
 		{"curseforge","Nelfym"},		{"frFR",1},false,false,false,
@@ -483,18 +529,6 @@ do
 			end,
 		},
 
-		C_GossipInfo = {
-			GetFriendshipReputation = function(friendshipFactionID)
-				if C_GossipInfo and C_GossipInfo.GetFriendshipReputation then
-					return C_GossipInfo.GetFriendshipReputation(friendshipFactionID);
-				end
-				local info = {reverseColor=false,overrideColor=0};
-				-- friendID, friendRep, friendMaxRep, friendName, friendText, friendTexture, friendTextLevel, friendThreshold, nextFriendThreshold
-				info.friendshipFactionID, info.standing, info.maxRep, info.name, info.text, info.texture, info.reaction, info.reactionThreshold, info.nextThreshold = GetFriendshipReputation(friendshipFactionID);
-				return info;
-			end
-		},
-
 		C_Reputation = {
 			_GetFactionData = function(i,fSuffix)
 				if C_Reputation and C_Reputation.GetFactionInfo then
@@ -556,31 +590,6 @@ do
 		},
 
 		C_Spell = {
-			GetSpellInfo = function(...)
-				if C_Spell and C_Spell.GetSpellInfo then
-					return C_Spell.GetSpellInfo(...)
-				elseif C_SpellBook and C_SpellBook.GetSpellInfo then
-					return C_SpellBook.GetSpellInfo(...)
-				elseif GetSpellInfo then
-					-- old: name, rank, icon, castTime, minRange, maxRange, spellID, originalIcon
-					-- rank is missing
-					local info = {}
-					info.name, info.rank, info.iconID, info.castTime, info.minRange, info.maxRange, info.spellID, info.originalIcon = GetSpellInfo(...)
-					return info;
-				end
-			end,
-			GetSpellCooldown = function(...)
-				if C_Spell and C_Spell.GetSpellCooldown then
-					return C_Spell.GetSpellCooldown(...)
-				end
-				return GetSpellCooldown(...)
-			end,
-			GetSpellLink = function(...)
-				if C_Spell and C_Spell.GetSpellLink then
-					return C_Spell.GetSpellLink(...)
-				end
-				return GetSpellLink(...)
-			end,
 			GetSpellIcon = function(...)
 				if C_Container and C_Spell.GetSpellIcon then
 					return C_Spell.GetSpellIcon(...)
@@ -598,49 +607,13 @@ do
 				end
 				return GetItemStats(...)
 			end,
-			GetItemSpell = function(...)
-				if C_Item and C_Item.GetItemSpell then
-					return C_Item.GetItemSpell(...)
-				end
-				return GetItemSpell(...)
-			end,
-			GetItemInfoInstant = function(...)
-				if C_Item and C_Item.GetItemInfoInstant then
-					return C_Item.GetItemInfoInstant(...)
-				end
-				return GetItemInfoInstant(...)
-			end,
 			GetItemCooldown = function(...)
 				if C_Item and C_Item.GetItemCooldown then
 					return C_Item.GetItemCooldown(...)
 				end
 				return GetItemCooldown(...)
 			end,
-			GetItemIconByID = function(...)
-				if C_Item and C_Item.GetItemIconByID then
-					return C_Item.GetItemIconByID(...)
-				end
-				return GetItemIcon(...);
-			end,
-			GetItemIcon = function(...)
-				lib.debug("Warning","GetItemIcon must be replaced by GetItemIconByID",debugstack())
-				return lib.deprecated.C_Spell.GetItemIconByID(...)
-			end
-		},
 
-		C_Container = {
-			ContainerIDToInventoryID = function(...)
-				if C_Container and C_Container.ContainerIDToInventoryID then
-					return C_Container.ContainerIDToInventoryID(...)
-				end
-				return ContainerIDToInventoryID(...)
-			end,
-			GetContainerItemDurability = function(...)
-				if C_Container and C_Container.GetContainerItemDurability then
-					return C_Container.GetContainerItemDurability(...)
-				end
-				return GetContainerItemDurability(...)
-			end
 		},
 
 		global = {
@@ -652,25 +625,6 @@ do
 			end,
 		},
 
-		C_TransmogSets = {
-			GetFullBaseSetsCounts = function(...)
-				if C_TransmogSets.GetFullBaseSetsCounts then
-					return C_TransmogSets.GetFullBaseSetsCounts(...)
-				end
-				return C_TransmogSets.GetBaseSetsCounts(...)
-			end,
-		},
-
-		C_Minimap = {
-			SetTracking = function(...)
-				if C_Minimap and C_Minimap.SetTracking then
-					return C_Minimap.SetTracking(...)
-				end
-				SetTracking(...)
-			end
-
-		},
-
 		C_AddOns = {
 			GetAddOnMemoryUsage = function(...)
 				if C_AddOns and C_AddOns.GetAddOnMemoryUsage then
@@ -679,15 +633,6 @@ do
 				return GetAddOnMemoryUsage(...)
 			end
 		},
-
-		C_CurrencyInfo = {
-			GetCoinTextureString = function(...)
-				if C_CurrencyInfo and C_CurrencyInfo.GetCoinTextureString then
-					return C_CurrencyInfo.GetCoinTextureString(...)
-				end
-				return GetCoinTextureString(...)
-			end
-		}
 	}
 
 	local dummyF = function() end
@@ -734,7 +679,11 @@ end
 
 --== MapPin or TomTom ==--
 do
-	function lib.AddWaypoint(mapId, x,y, label, useTomTom, addon)
+	function lib.AddWaypoint(mapId, x,y, ...)
+		local label, addon, useTomTom, mapPinToChat, z = ...
+		if type(label)=="number" then
+			z, label, useTomTom, addon = ...; -- special for map pin from blizzard. it can work with z as third location param
+		end
 		local TomTom = _G["TomTom"];
 		if TomTom and TomTom.AddWaypoint and useTomTom then
 			TomTom:AddWaypoint(mapId,x/100,y/100,{
@@ -744,9 +693,15 @@ do
 				minimap = true,
 				world = true
 			});
-			-- Thanks @ fuba82@github for reminding me. i've forgot to add this function content. :-)
-		else -- as option and fallback
-			_G["DEFAULT_CHAT_FRAME"]:AddMessage("\124cffffff00\124Hworldmap:"..mapId..":"..(x*100)..":"..(y*100).."\124h[\124A:Waypoint-MapPin-ChatIcon:13:13:0:0\124a "..label.."-Kartenmarkierung]\124h\124r");
+		elseif C_Map.CanSetUserWaypointOnMap(mapId) then
+			if not mapPinToChat then
+				local uiMapPoint = UiMapPoint.CreateFromCoordinates(mapId, x/100, y/100, z);
+				C_Map.SetUserWaypoint(uiMapPoint);
+			else
+				_G["DEFAULT_CHAT_FRAME"]:AddMessage("\124cffffff00\124Hworldmap:"..mapId..":"..(x*100)..":"..(y*100).."\124h[\124A:Waypoint-MapPin-ChatIcon:13:13:0:0\124a "..label.."-Kartenmarkierung]\124h\124r");
+			end
+		else
+			print(addon..": Cannot set waypoints on this map.")
 		end
 	end
 end

@@ -67,7 +67,7 @@ RatingBusterDB = {
 },
 ["SHAMAN"] = {
 },
-["Warlock"] = {
+["Druid"] = {
 },
 ["WARLOCK"] = {
 },
@@ -77,7 +77,7 @@ RatingBusterDB = {
 },
 ["DRUID"] = {
 },
-["Druid"] = {
+["Warlock"] = {
 },
 ["Paladin"] = {
 },
