@@ -13,21 +13,23 @@ data["ShamanEle"] = {
             -- T1
             name = format(AL["Head"], "1"),
             [NORMAL_DIFF] = {
-                {1, 34332}, -- Cowl of Gul'dan
-                {2, 34340}, -- Dark Conjuror's Collar
-                {3, 34355}, -- Lightning Etched Specs
-                {4, 34403}, -- Cover of Ursoc the Mighty
-                {5, 34405}, -- Helm of Arcane Purity
-                {6, 35182}, -- Hyper-Magnified Moon Specs
-                {7, 32525}, -- Cowl of the Illidari High Lord
-                {8, 31014}, -- Skyshatter Headguard
-                {9, 35050}, -- Brutal Gladiator's Mail Helm
-                {10, 30171}, -- Cataclysm Headpiece
-                {11, 32476}, -- Gadgetstorm Goggles
-                {12, 32480}, -- Magnified Moon Specs
-                {13, 33713}, -- Vengeful Gladiator's Mail Helm
-                {14, 33453}, -- Hood of Hexing
-                {15, 29986} -- Cowl of the Grand Engineer
+                {1, 34332},
+                {2, 34340},
+                {3, 34355},
+                {4, 34403},
+                {5, 34405},
+                {6, 35182},
+                {7, 32525},
+                {8, 31014},
+                {9, 35050},
+                {10, 30171},
+                {11, 32476},
+                {12, 32480},
+                {13, 33713},
+                {14, 33453},
+                {15, 29986},
+                {16, 34220 },
+                {17, 29191 },
             }
         },
         {
@@ -55,105 +57,110 @@ data["ShamanEle"] = {
             -- T2
             name = format(AL["Shoulders"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34210}, -- Amice of the Convoker
-                {2, 34390}, -- Erupting Epaulets
-                {3, 34391}, -- Spaulders of Devastation
-                {4, 34393}, -- Shoulderpads of Knowledge's Pursuit
-                {5, 32587}, -- Mantle of Nimble Thought
-                {6, 31023}, -- Skyshatter Mantle
-                {7, 30884}, -- Hatefury Mantle
-                {8, 33489}, -- Mantle of Ill Intent
-                {9, 33970}, -- Pauldrons of the Furious Elements
-                {10, 32338}, -- Blood-cursed Shoulderpads
-                {11, 35052}, -- Brutal Gladiator's Mail Spaulders
-                {12, 30173}, -- Cataclysm Shoulderpads
-                {13, 30079}, -- Illidari Shoulderpads
-                {14, 33973}, -- Pauldrons of Tribal Fury
-                {15, 33715} -- Vengeful Gladiator's Mail Spaulders
+                {1, 34210},
+                {2, 34390},
+                {3, 34391},
+                {4, 34393},
+                {5, 32587},
+                {6, 31023},
+                {7, 30884},
+                {8, 33489},
+                {9, 33970},
+                {10, 32338},
+                {11, 35052},
+                {12, 30173},
+                {13, 30079},
+                {14, 33973},
+                {15, 33715},
+                {16, 28886 },
             }
         },
         {
             -- T2
             name = format(AL["Back"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34242}, -- Tattered Cape of Antonidas
-                {2, 32524}, -- Shroud of the Highborne
-                {3, 32331}, -- Cloak of the Illidari Council
-                {4, 33591}, -- Shadowcaster's Drape
-                {5, 30735}, -- Ancient Spellcloak of the Highborne
-                {6, 33592}, -- Cloak of Ancient Rituals
-                {7, 28797}, -- Brute Cloak of the Ogre-Magi
-                {8, 35321}, -- Cloak of Arcane Alacrity
-                {9, 29992}, -- Royal Cloak of the Sunstriders
-                {10, 31201}, -- Illidari Cloak of Wrath
-                {11, 33304}, -- Cloak of Subjugated Power
-                {12, 23050}, -- Cloak of the Necropolis
-                {13, 29369}, -- Shawl of Shifting Probabilities
-                {14, 35497}, -- Cloak of the Frigid Winds
-                {15, 28766} -- Ruby Drape of the Mysticant
+                {1, 34242},
+                {2, 32524},
+                {3, 32331},
+                {4, 33591},
+                {5, 30735},
+                {6, 33592},
+                {7, 28797},
+                {8, 35321},
+                {9, 29992},
+                {10, 31201},
+                {11, 33304},
+                {12, 23050},
+                {13, 29369},
+                {14, 35497},
+                {15, 28766},
+                {16, 34003, "Profession" },
             }
         },
         {
             -- T2
             name = format(AL["Chest"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34364}, -- Sunfire Robe
-                {2, 34396}, -- Garments of Crashing Shores
-                {3, 34232}, -- Fel Conquerer Raiments
-                {4, 34399}, -- Robes of Ghostly Hatred
-                {5, 34398}, -- Utopian Tunic of Elune
-                {6, 34933}, -- Hauberk of Whirling Fury
-                {7, 31017}, -- Skyshatter Breastplate
-                {8, 33965}, -- Hauberk of the Furious Elements
-                {9, 30107}, -- Vestments of the Sea-Witch
-                {10, 34936}, -- Tormented Demonsoul Robes
-                {11, 30913}, -- Robes of Rhonin
-                {12, 32592}, -- Chestguard of Relentless Storms
-                {13, 35048}, -- Brutal Gladiator's Mail Armor
-                {14, 34610}, -- Scarlet Sin'dorei Robes
-                {15, 30056} -- Robe of Hateful Echoes
+                {1, 34364},
+                {2, 34396},
+                {3, 34232},
+                {4, 34399},
+                {5, 34398},
+                {6, 34933},
+                {7, 31017},
+                {8, 33965},
+                {9, 30107},
+                {10, 34936},
+                {11, 30913},
+                {12, 32592},
+                {13, 35048},
+                {14, 34610},
+                {15, 30056},
+                {16, 27960, "Profession" },
             }
         },
         {
             -- T2
-            name = format(AL["Wrist"], "2"),
+            name = format(AL["Bracer"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34437}, -- Skyshatter Bands
-                {2, 32586}, -- Bracers of Nimble Thought
-                {3, 33588}, -- Runed Spell-cuffs
-                {4, 35173}, -- Guardian's Mail Bracers
-                {5, 30870}, -- Cuffs of Devastation
-                {6, 30684}, -- Ravager's Cuffs of Wrath
-                {7, 32259}, -- Bands of the Coming Storm
-                {8, 33897}, -- Vindicator's Mail Bracers
-                {9, 29918}, -- Mindstorm Wristbands
-                {10, 33578}, -- Armwraps of the Kaldorei Protector
-                {11, 33285}, -- Fury of the Ursine
-                {12, 32270}, -- Focused Mana Bindings
-                {13, 29523}, -- Windhawk Bracers
-                {14, 32655}, -- Crystalweave Bracers
-                {15, 32817} -- Veteran's Mail Bracers
+                {1, 34437},
+                {2, 32586},
+                {3, 33588},
+                {4, 35173},
+                {5, 30870},
+                {6, 30684},
+                {7, 32259},
+                {8, 33897},
+                {9, 29918},
+                {10, 33578},
+                {11, 33285},
+                {12, 32270},
+                {13, 29523},
+                {14, 32655},
+                {15, 32817},
+                {16, 27917, "Profession" },
             }
         },
         {
             -- T2
-            name = format(AL["Hands"], "2"),
+            name = format(AL["Gloves"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34344}, -- Handguards of Defiled Worlds
-                {2, 34406}, -- Gloves of Tyri's Power
-                {3, 34350}, -- Gauntlets of the Ancient Shadowmoon
-                {4, 34366}, -- Sunfire Handwraps
-                {5, 34407}, -- Tranquil Moonlight Wraps
-                {6, 31008}, -- Skyshatter Gauntlets
-                {7, 34938}, -- Enslaved Doomguard Soulgrips
-                {8, 33586}, -- Studious Wraps
-                {9, 30725}, -- Anger-Spark Gloves
-                {10, 33534}, -- Grips of Nature's Wrath
-                {11, 33974}, -- Grasp of the Moonkin
-                {12, 35049}, -- Brutal Gladiator's Mail Gauntlets
-                {13, 28780}, -- Soul-Eater's Handwraps
-                {14, 34376}, -- Sun-Drenched Scale Gloves
-                {15, 29987} -- Gauntlets of the Sun King
+                {1, 34344},
+                {2, 34406},
+                {3, 34350},
+                {4, 34366},
+                {5, 34407},
+                {6, 31008},
+                {7, 34938},
+                {8, 33586},
+                {9, 30725},
+                {10, 33534},
+                {11, 33974},
+                {12, 35049},
+                {13, 28780},
+                {14, 34376},
+                {15, 29987},
+                {16, 33997, "Profession" },
             }
         },
         {
@@ -179,65 +186,68 @@ data["ShamanEle"] = {
         },
         {
             -- T2
-            name = format(AL["Rings"], "2"),
+            name = format(AL["Ring"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34230}, -- Ring of Omnipotence
-                {2, 34362}, -- Loop of Forged Power
-                {3, 32527}, -- Ring of Ancient Knowledge
-                {4, 33497}, -- Mana Attuned Band
-                {5, 29305}, -- Band of the Eternal Sage
-                {6, 32247}, -- Ring of Captured Storms
-                {7, 32528}, -- Blessed Band of Karabor
-                {8, 34363}, -- Ring of Flowing Life
-                {9, 33498}, -- Signet of the Quiet Forest
-                {10, 30667}, -- Ring of Unrelenting Storms (Nature)
-                {11, 35282}, -- Sin'dorei Band of Dominance
-                {12, 29304}, -- Band of Eternity (revered)
-                {13, 34166}, -- Band of Lucent Beams
-                {14, 29303}, -- Band of Eternity (honored)
-                {15, 30109} -- Ring of Endless Coils
+                {1, 34230},
+                {2, 34362},
+                {3, 32527},
+                {4, 33497},
+                {5, 29305},
+                {6, 32247},
+                {7, 32528},
+                {8, 34363},
+                {9, 33498},
+                {10, 30667},
+                {11, 35282},
+                {12, 29304},
+                {13, 34166},
+                {14, 29303},
+                {15, 30109},
+                {16, 27924, "Profession" },
             }
         },
         {
             -- T2
             name = format(AL["Legs"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34181}, -- Leggings of Calamity
-                {2, 34186}, -- Chain Links of the Tumultuous Storm
-                {3, 34386}, -- Pantaloons of Growing Strife
-                {4, 34169}, -- Breeches of Natural Aggression
-                {5, 34934}, -- Rushing Storm Kilt
-                {6, 30916}, -- Leggings of Channeled Elements
-                {7, 34937}, -- Corrupted Soulcloth Pantaloons
-                {8, 33584}, -- Pantaloons of Arcane Annihilation
-                {9, 31020}, -- Skyshatter Legguards
-                {10, 30734}, -- Leggings of the Seventh Circle
-                {11, 34905}, -- Crystalwind Leggings
-                {12, 33971}, -- Elunite Imbued Leggings
-                {13, 33533}, -- Avalanche Leggings
-                {14, 32367}, -- Leggings of Devastation
-                {15, 24262} -- Spellstrike Pants
+                {1, 34181},
+                {2, 34186},
+                {3, 34386},
+                {4, 34169},
+                {5, 34934},
+                {6, 30916},
+                {7, 34937},
+                {8, 33584},
+                {9, 31020},
+                {10, 30734},
+                {11, 34905},
+                {12, 33971},
+                {13, 33533},
+                {14, 32367},
+                {15, 24262},
+                {16, 24274 },
             }
         },
         {
             -- T2
-            name = format(AL["Feet"], "2"),
+            name = format(AL["Boots"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34566}, -- Skyshatter Treads
-                {2, 32239}, -- Slippers of the Seacaller
-                {3, 33357}, -- Footpads of Madness
-                {4, 32242}, -- Boots of Oceanic Fury
-                {5, 32352}, -- Naturewarden's Treads
-                {6, 33537}, -- Treads of Booming Thunder
-                {7, 30680}, -- Glider's Foot-Wraps of Wrath
-                {8, 35143}, -- Guardian's Mail Sabatons
-                {9, 30067}, -- Velvet Boots of the Guardian
-                {10, 33577}, -- Moon-walkers
-                {11, 30037}, -- Boots of Blasting
-                {12, 30894}, -- Blue Suede Shoes
-                {13, 34919}, -- Boots of Incantations
-                {14, 28517}, -- Boots of Foretelling
-                {15, 30043} -- Hurricane Boots
+                {1, 34566},
+                {2, 32239},
+                {3, 33357},
+                {4, 32242},
+                {5, 32352},
+                {6, 33537},
+                {7, 30680},
+                {8, 35143},
+                {9, 30067},
+                {10, 33577},
+                {11, 30037},
+                {12, 30894},
+                {13, 34919},
+                {14, 28517},
+                {15, 30043},
+                {16, 34008, "Profession" },
             }
         },
         {
@@ -265,63 +275,66 @@ data["ShamanEle"] = {
             -- T2
             name = format(AL["Onehand"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34336}, -- Sunflare
-                {2, 34176}, -- Reign of Misery
-                {3, 35014}, -- Brutal Gladiator's Gavel
-                {4, 35102}, -- Brutal Gladiator's Spellblade
-                {5, 32237}, -- The Maelstrom's Fury
-                {6, 33687}, -- Vengeful Gladiator's Gavel
-                {7, 33763}, -- Vengeful Gladiator's Spellblade
-                {8, 34895}, -- Scryer's Blade of Focus
-                {9, 34009}, -- Hammer of Judgement
-                {10, 33354}, -- Wub's Cursed Hexblade
-                {11, 32053}, -- Merciless Gladiator's Spellblade
-                {12, 32963}, -- Merciless Gladiator's Gavel
-                {13, 30723}, -- Talon of the Tempest
-                {14, 33283}, -- Amani Punisher
-                {15, 28770} -- Nathrezim Mindblade
+                {1, 34336},
+                {2, 34176},
+                {3, 35014},
+                {4, 35102},
+                {5, 32237},
+                {6, 33687},
+                {7, 33763},
+                {8, 34895},
+                {9, 34009},
+                {10, 33354},
+                {11, 32053},
+                {12, 32963},
+                {13, 30723},
+                {14, 33283},
+                {15, 28770},
+                {16, 27975, "Profession" },
             }
         },
         {
             -- T2
             name = format(AL["Offhand"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34179}, -- Heart of the Pit
-                {2, 30872}, -- Chronicle of Dark Secrets
-                {3, 30909}, -- Antonidas's Aegis of Rapt Concentration
-                {4, 33334}, -- Fetish of the Primal Gods
-                {5, 30049}, -- Fathomstone
-                {6, 32361}, -- Blind-Seers Icon
-                {7, 29273}, -- Khadgar's Knapsack
-                {8, 34986}, -- Brutal Gladiator's Barrier
-                {9, 35008}, -- Brutal Gladiator's Endgame
-                {10, 28603}, -- Talisman of Nightbane
-                {11, 25099}, -- Draenei Crystal Rod of Wrath
-                {12, 32533}, -- Karrog's Shard
-                {13, 29268}, -- Mazthoril Honor Shield
-                {14, 34011}, -- Illidari Runeshield
-                {15, 28781} -- Karaborian Talisman
+                {1, 34179},
+                {2, 30872},
+                {3, 30909},
+                {4, 33334},
+                {5, 30049},
+                {6, 32361},
+                {7, 29273},
+                {8, 34986},
+                {9, 35008},
+                {10, 28603},
+                {11, 25099},
+                {12, 32533},
+                {13, 29268},
+                {14, 34011},
+                {15, 28781},
+                {16, 27945, "Profession" },
             }
         },
         {
             -- T2
             name = format(AL["Twohand"], "2"),
             [NORMAL_DIFF] = {
-                {1, 32374}, -- Zhar'doom, Greatstaff of the Devourer
-                {2, 34182}, -- Grand Magister's Staff of Torrents
-                {3, 34987}, -- Brutal Gladiator's Battle Staff
-                {4, 35109}, -- Brutal Gladiator's War Staff
-                {5, 34540}, -- Vengeful Gladiator's Battle Staff
-                {6, 33766}, -- Vengeful Gladiator's War Staff
-                {7, 29988}, -- The Nexus Key
-                {8, 33494}, -- Amani Divining Staff
-                {9, 32055}, -- Merciless Gladiator's War Staff
-                {10, 24557}, -- Gladiator's War Staff
-                {11, 35514}, -- Frostscythe of Lord Ahune
-                {12, 29355}, -- Terokk's Shadowstaff
-                {13, 28633}, -- Staff of Infinite Mysteries
-                {14, 32854}, -- Hammer of Righteous Might
-                {15, 34797} -- Sun-infused Focus Staff
+                {1, 32374},
+                {2, 34182},
+                {3, 34987},
+                {4, 35109},
+                {5, 34540},
+                {6, 33766},
+                {7, 29988},
+                {8, 33494},
+                {9, 32055},
+                {10, 24557},
+                {11, 35514},
+                {12, 29355},
+                {13, 28633},
+                {14, 32854},
+                {15, 34797},
+                {16, 27975, "Profession" },
             }
         },
         {
@@ -333,3 +346,48 @@ data["ShamanEle"] = {
         --@end-version-bcc@
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

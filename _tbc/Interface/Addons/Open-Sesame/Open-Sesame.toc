@@ -1,25 +1,29 @@
-## Title: Open-Sesame
-## Notes: Automatically opens containers in your inventory.
-## Author: Gogo#0298 & TechnoHunter#2706
+## Title: Open Sesame
+## Notes: Automatically opens clams and unlocked containers in your inventory. Features Speedy Loot for faster looting.
+## Author: Gogo1951
+## X-License: MIT
 
+## IconTexture: Interface\AddOns\Open-Sesame\Open-Sesame.tga
+## Category-enUS: Bags & Inventory
+
+## Interface: 11508, 20505
+## Version: 2026.01.16.A
 ## X-Curse-Project-ID: 830638
+## SavedVariables: OpenSesameDB
 
-## Interface: 100007
+# Includes
+Includes\LibStub\LibStub.lua
+Includes\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Includes\LibDataBroker-1.1\LibDataBroker-1.1.lua
+Includes\LibDBIcon-1.0\LibDBIcon-1.0.lua
 
-## Version: 3.3.5
+## Open Sesame
+Data.lua
+Core.lua
+SpeedyLoot.lua
+Minimap.lua
 
-## DefaultState: enabled
-
-Open-Sesame_Mainline.lua
-
-# Open Sesame! on CurseForge : https://www.curseforge.com/wow/addons/open-sesame
-# Open Sesame! on GitHub : https://github.com/Gogo1951/Open-Sesame
-# 
-# Looking around CurseForge, it looks like the bulk of the original code came from kAutoOpen.
-# 
-# Auto Open Items -- https://www.curseforge.com/wow/addons/auto-open-items
-# AutoClam -- https://www.curseforge.com/wow/addons/autoclam
-# AutoOpen -- https://www.curseforge.com/wow/addons/autoopen
-# kAutoOpen Dragonflight -- https://www.curseforge.com/wow/addons/kautoopen-dragonflight
-# kAutoOpen -- https://www.curseforge.com/wow/addons/kautoopen
-# Openables (Weak Aura) -- https://wago.io/gtRVJZetK
+# Feedback Welcome! (=
+# Open Sesame on CurseForge // https://www.curseforge.com/wow/addons/open-sesame
+# Open Sesame on GitHub // https://github.com/Gogo1951/Open-Sesame
+# Open Sesame on Discord // https://discord.gg/eh8hKq992Q

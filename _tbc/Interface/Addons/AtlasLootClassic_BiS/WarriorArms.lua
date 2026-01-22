@@ -1,4 +1,4 @@
-local addonname = ...
+﻿local addonname = ...
 local AtlasLoot = _G.AtlasLoot
 local data = AtlasLoot.ItemDB:Add(addonname, 1)
 local AL = AtlasLoot.Locales
@@ -13,21 +13,23 @@ data["WarriorArms"] = {
             -- T1
             name = format(AL["Head"], "1"),
             [NORMAL_DIFF] = {
-                {1, 34333}, -- Coif of Alleria
-                {2, 34345}, -- Crown of Anasterian
-                {3, 34354}, -- Mayhem Projection Goggles
-                {4, 34244}, -- Duplicitous Guise
-                {5, 32235}, -- Cursed Vision of Sargeras
-                {6, 32373}, -- Helm of the Illidari Shatterer
-                {7, 35068}, -- Brutal Gladiator's Plate Helm
-                {8, 30972}, -- Onslaught Battle-Helm
-                {9, 33730}, -- Vengeful Gladiator's Plate Helm
-                {10, 30120}, -- Destroyer Battle-Helm
-                {11, 32376}, -- Forest Prowler's Helm
-                {12, 32461}, -- Furious Gizmatic Goggles
-                {13, 34404}, -- Mask of the Fury Hunter
-                {14, 29021}, -- Warbringer Battle-Helm
-                {15, 30488} -- Merciless Gladiator's Plate Helm
+                {1, 34333},
+                {2, 34345},
+                {3, 34354},
+                {4, 34244},
+                {5, 32235},
+                {6, 32373},
+                {7, 35068},
+                {8, 30972},
+                {9, 33730},
+                {10, 30120},
+                {11, 32376},
+                {12, 32461},
+                {13, 34404},
+                {14, 29021},
+                {15, 30488},
+                {16, 32409 },
+                {17, 29192 },
             }
         },
         {
@@ -55,105 +57,110 @@ data["WarriorArms"] = {
             -- T2
             name = format(AL["Shoulders"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34194}, -- Mantle of the Golden Forest
-                {2, 34388}, -- Pauldrons of Berserking
-                {3, 34392}, -- Demontooth Shoulderpads
-                {4, 30979}, -- Onslaught Shoulderblades
-                {5, 34195}, -- Shoulderpads of Vehemence
-                {6, 30866}, -- Blood-stained Pauldrons
-                {7, 35070}, -- Brutal Gladiator's Plate Shoulders
-                {8, 30740}, -- Ripfiend Shoulderplates
-                {9, 32377}, -- Mantle of Darkness
-                {10, 30055}, -- Shoulderpads of the Stranger
-                {11, 30122}, -- Destroyer Shoulderblades
-                {12, 33514}, -- Pauldrons of Gruesome Fate
-                {13, 30053}, -- Pauldrons of the Wardancer
-                {14, 32264}, -- Shoulders of the Hidden Predator
-                {15, 33732} -- Vengeful Gladiator's Plate Shoulders
+                {1, 34194},
+                {2, 34388},
+                {3, 34392},
+                {4, 30979},
+                {5, 34195},
+                {6, 30866},
+                {7, 35070},
+                {8, 30740},
+                {9, 32377},
+                {10, 30055},
+                {11, 30122},
+                {12, 33514},
+                {13, 30053},
+                {14, 32264},
+                {15, 33732},
+                {16, 28888 },
             }
         },
         {
             -- T2
             name = format(AL["Back"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34241}, -- Cloak of Unforgivable Sin
-                {2, 32323}, -- Shadowmoon Destroyer's Drape
-                {3, 33484}, -- Dory's Embrace
-                {4, 33122}, -- Cloak of Darkness (melee)
-                {5, 30729}, -- Black-Iron Battlecloak
-                {6, 24259}, -- Vengeance Wrap
-                {7, 29994}, -- Thalassian Wildercloak
-                {8, 30098}, -- Razor-Scale Battlecloak
-                {9, 33590}, -- Cloak of Fiends
-                {10, 28777}, -- Cloak of the Pit Stalker
-                {11, 28672}, -- Drape of the Dark Reavers
-                {12, 27892}, -- Cloak of the Inciter
-                {13, 28371}, -- Netherfury Cape
-                {14, 27878}, -- Auchenai Death Shroud
-                {15, 29382} -- Blood Knight War Cloak
+                {1, 34241},
+                {2, 32323},
+                {3, 33484},
+                {4, 33122},
+                {5, 30729},
+                {6, 24259},
+                {7, 29994},
+                {8, 30098},
+                {9, 33590},
+                {10, 28777},
+                {11, 28672},
+                {12, 27892},
+                {13, 28371},
+                {14, 27878},
+                {15, 29382},
+                {16, 34004, "Profession" },
             }
         },
         {
             -- T2
             name = format(AL["Chest"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34397}, -- Bladed Chaos Tunic
-                {2, 34377}, -- Hard Khorium Battleplate
-                {3, 34369}, -- Carapace of Sun and Shadow
-                {4, 34211}, -- Harness of Carnal Instinct
-                {5, 34215}, -- Warharness of Reckless Fury
-                {6, 35066}, -- Brutal Gladiator's Plate Chestpiece
-                {7, 30905}, -- Midnight Chestguard
-                {8, 30975}, -- Onslaught Breastplate
-                {9, 33728}, -- Vengeful Gladiator's Plate Chestpiece
-                {10, 28485}, -- Bulwark of the Ancient Kings
-                {11, 32365}, -- Heartshatter Breastplate
-                {12, 30101}, -- Bloodsea Brigand's Vest
-                {13, 30118}, -- Destroyer Breastplate
-                {14, 32252}, -- Nether Shadow Tunic
-                {15, 28484} -- Bulwark of Kings
+                {1, 34397},
+                {2, 34377},
+                {3, 34369},
+                {4, 34211},
+                {5, 34215},
+                {6, 35066},
+                {7, 30905},
+                {8, 30975},
+                {9, 33728},
+                {10, 28485},
+                {11, 32365},
+                {12, 30101},
+                {13, 30118},
+                {14, 32252},
+                {15, 28484},
+                {16, 27960, "Profession" },
             }
         },
         {
             -- T2
-            name = format(AL["Wrist"], "2"),
+            name = format(AL["Bracer"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34441}, -- Onslaught Bracers
-                {2, 30863}, -- Deadly Cuffs
-                {3, 30057}, -- Bracers of Eradication
-                {4, 32324}, -- Insidious Bands
-                {5, 30861}, -- Furious Shackles
-                {6, 28795}, -- Bladespire Warbands
-                {7, 33540}, -- Master Assassin Wristwraps
-                {8, 35176}, -- Guardian's Plate Bracers
-                {9, 33513}, -- Eternium Rage-shackles
-                {10, 35178}, -- Guardian's Scaled Bracers
-                {11, 32251}, -- Wraps of Precise Flight
-                {12, 30091}, -- True-Aim Stalker Bands
-                {13, 33813}, -- Vindicator's Plate Bracers
-                {14, 32574}, -- Bindings of Lightning Reflexes
-                {15, 33529} -- Steadying Bracers
+                {1, 34441},
+                {2, 30863},
+                {3, 30057},
+                {4, 32324},
+                {5, 30861},
+                {6, 28795},
+                {7, 33540},
+                {8, 35176},
+                {9, 33513},
+                {10, 35178},
+                {11, 32251},
+                {12, 30091},
+                {13, 33813},
+                {14, 32574},
+                {15, 33529},
+                {16, 27899, "Profession" },
             }
         },
         {
             -- T2
-            name = format(AL["Hands"], "2"),
+            name = format(AL["Gloves"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34343}, -- Thalassian Ranger Gauntlets
-                {2, 34370}, -- Gloves of Immortal Dusk
-                {3, 34341}, -- Borderland Paingrips
-                {4, 34408}, -- Gloves of the Forest Drifter
-                {5, 32278}, -- Grips of Silent Justice
-                {6, 34234}, -- Shadowed Gauntlets of Paroxysm
-                {7, 34378}, -- Hard Khorium Battlefists
-                {8, 34374}, -- Fletcher's Gloves of the Phoenix
-                {9, 30969}, -- Onslaught Gauntlets
-                {10, 34916}, -- Gauntlets of Rapidity
-                {11, 28824}, -- Gauntlets of Martial Perfection
-                {12, 28776}, -- Liar's Tongue Gloves
-                {13, 35067}, -- Brutal Gladiator's Plate Gauntlets
-                {14, 29947}, -- Gloves of the Searing Grip
-                {15, 33528} -- Gauntlets of Sniping
+                {1, 34343},
+                {2, 34370},
+                {3, 34341},
+                {4, 34408},
+                {5, 32278},
+                {6, 34234},
+                {7, 34378},
+                {8, 34374},
+                {9, 30969},
+                {10, 34916},
+                {11, 28824},
+                {12, 28776},
+                {13, 35067},
+                {14, 29947},
+                {15, 33528},
+                {16, 33995, "Profession" },
             }
         },
         {
@@ -179,65 +186,67 @@ data["WarriorArms"] = {
         },
         {
             -- T2
-            name = format(AL["Rings"], "2"),
+            name = format(AL["Ring"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34189}, -- Band of Ruinous Delight
-                {2, 32497}, -- Stormrage Signet Ring
-                {3, 34887}, -- Angelista's Revenge
-                {4, 33496}, -- Signet of Primal Wrath
-                {5, 32335}, -- Unstoppable Aggressor's Ring
-                {6, 29997}, -- Band of the Ranger-General
-                {7, 34361}, -- Hard Khorium Band
-                {8, 35131}, -- Guardian's Band of Triumph
-                {9, 29301}, -- Band of the Eternal Champion
-                {10, 30738}, -- Ring of Reciprocity
-                {11, 28757}, -- Ring of a Thousand Marks
-                {12, 33919}, -- Vindicator's Band of Triumph
-                {13, 32266}, -- Ring of Deceitful Intent
-                {14, 35284}, -- Sin'dorei Band of Triumph
-                {15, 30052} -- Ring of Lethality
+                {1, 34189},
+                {2, 32497},
+                {3, 34887},
+                {4, 33496},
+                {5, 32335},
+                {6, 29997},
+                {7, 34361},
+                {8, 35131},
+                {9, 29301},
+                {10, 30738},
+                {11, 28757},
+                {12, 33919},
+                {13, 32266},
+                {14, 35284},
+                {15, 30052},
             }
         },
         {
             -- T2
             name = format(AL["Legs"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34188}, -- Leggings of the Immortal Night
-                {2, 34180}, -- Felfury Legplates
-                {3, 32341}, -- Leggings of Divine Retribution
-                {4, 34385}, -- Leggings of the Immortal Beast
-                {5, 34168}, -- Starstalker Legguards
-                {6, 35069}, -- Brutal Gladiator's Plate Legguards
-                {7, 30977}, -- Onslaught Greaves
-                {8, 30903}, -- Legguards of Endless Rage
-                {9, 30900}, -- Bow-stitched Leggings
-                {10, 33731}, -- Vengeful Gladiator's Plate Legguards
-                {11, 34943}, -- Legplates of Unending Fury
-                {12, 30898}, -- Shady Dealer's Pantaloons
-                {13, 29950}, -- Greaves of the Bloodwarder
-                {14, 30121}, -- Destroyer Greaves
-                {15, 29995} -- Leggings of Murderous Intent
+                {1, 34188},
+                {2, 34180},
+                {3, 32341},
+                {4, 34385},
+                {5, 34168},
+                {6, 35069},
+                {7, 30977},
+                {8, 30903},
+                {9, 30900},
+                {10, 33731},
+                {11, 34943},
+                {12, 30898},
+                {13, 29950},
+                {14, 30121},
+                {15, 29995},
+                {16, 29535 },
             }
         },
         {
             -- T2
-            name = format(AL["Feet"], "2"),
+            name = format(AL["Boots"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34569}, -- Onslaught Treads
-                {2, 32345}, -- Dreadboots of the Legion
-                {3, 32366}, -- Shadowmaster's Boots
-                {4, 32510}, -- Softstep Boots of Tracking
-                {5, 33222}, -- Nyn'jah's Tabi Boots
-                {6, 34809}, -- Sunrage Treads
-                {7, 35146}, -- Guardian's Plate Greaves
-                {8, 33303}, -- Skullshatter Warboots
-                {9, 30880}, -- Quickstrider Moccasins
-                {10, 30039}, -- Boots of Utter Darkness
-                {11, 34807}, -- Sunstrider Warboots
-                {12, 30081}, -- Warboots of Obliteration
-                {13, 35148}, -- Guardian's Scaled Greaves
-                {14, 29951}, -- Star-Strider Boots
-                {15, 30104} -- Cobra-Lash Boots
+                {1, 34569},
+                {2, 32345},
+                {3, 32366},
+                {4, 32510},
+                {5, 33222},
+                {6, 34809},
+                {7, 35146},
+                {8, 33303},
+                {9, 30880},
+                {10, 30039},
+                {11, 34807},
+                {12, 30081},
+                {13, 35148},
+                {14, 29951},
+                {15, 30104},
+                {16, 34007, "Profession" },
             }
         },
         {
@@ -275,43 +284,68 @@ data["WarriorArms"] = {
             -- T2
             name = format(AL["Twohand"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34247}, -- Apolyon, the Soul-Render
-                {2, 34183}, -- Shivering Felspine
-                {3, 34989}, -- Brutal Gladiator's Bonegrinder
-                {4, 35015}, -- Brutal Gladiator's Greatsword
-                {5, 34997}, -- Brutal Gladiator's Decapitator
-                {6, 30902}, -- Cataclysm's Edge
-                {7, 35064}, -- Brutal Gladiator's Painsaw
-                {8, 34891}, -- The Blade of Harbingers
-                {9, 33663}, -- Vengeful Gladiator's Bonegrinder
-                {10, 33688}, -- Vengeful Gladiator's Greatsword
-                {11, 33670}, -- Vengeful Gladiator's Decapitator
-                {12, 32348}, -- Soul Cleaver
-                {13, 33727}, -- Vengeful Gladiator's Painsaw
-                {14, 29993}, -- Twinblade of the Phoenix
-                {15, 32332} -- Torch of the Damned
+                {1, 34247},
+                {2, 34183},
+                {3, 34989},
+                {4, 35015},
+                {5, 34997},
+                {6, 30902},
+                {7, 35064},
+                {8, 34891},
+                {9, 33663},
+                {10, 33688},
+                {11, 33670},
+                {12, 32348},
+                {13, 33727},
+                {14, 29993},
+                {15, 32332},
+                {16, 27984, "Profession" },
             }
         },
         {
             -- T2
             name = format(AL["Ranged"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34334}, -- Thori'dal, the Stars' Fury
-                {2, 34196}, -- Golden Bow of Quel'Thalas
-                {3, 34892}, -- Crossbow of Relentless Strikes
-                {4, 33474}, -- Ancient Amani Longbow
-                {5, 34349}, -- Blade of Life's Inevitability
-                {6, 35108}, -- Brutal Gladiator's War Edge
-                {7, 30105}, -- Serpent Spine Longbow
-                {8, 30724}, -- Barrel-Blade Longrifle
-                {9, 32326}, -- Twisted Blades of Zarak
-                {10, 33765}, -- Vengeful Gladiator's War Edge
-                {11, 28772}, -- Sunfury Bow of the Phoenix
-                {12, 32054}, -- Merciless Gladiator's War Edge
-                {13, 33491}, -- Tuskbreaker
-                {14, 30279}, -- Mama's Insurance
-                {15, 34603} -- Distracting Blades
+                {1, 34334},
+                {2, 34196},
+                {3, 34892},
+                {4, 33474},
+                {5, 34349},
+                {6, 35108},
+                {7, 30105},
+                {8, 30724},
+                {9, 32326},
+                {10, 33765},
+                {11, 28772},
+                {12, 32054},
+                {13, 33491},
+                {14, 30279},
+                {15, 34603},
+                {16, 23765 },
             }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

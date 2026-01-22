@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-Unit-3.0"
-local MINOR_VERSION = tonumber(("20260118201618"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20260119224119"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_Unit_MINOR_VERSION then
 	_G.DogTag_Unit_MINOR_VERSION = MINOR_VERSION
@@ -16,6 +16,7 @@ local GetClassicExpansionLevel = GetClassicExpansionLevel
 DogTag_Unit_funcs[#DogTag_Unit_funcs+1] = function(DogTag_Unit, DogTag)
 
 local L = DogTag_Unit.L
+local issecretvalue = DogTag.issecretvalue
 
 local tt
 if not C_TooltipInfo then
@@ -93,7 +94,7 @@ local function FigureNPCGuild(unit)
 	elseif tt then
 		left_2 = tt.left[2] and tt.left[2]:GetText() or nil
 	end
-	if not left_2 or left_2:find(LEVEL_start) then
+	if not left_2 or issecretvalue(left_2) or left_2:find(LEVEL_start) then
 		return nil
 	end
 	if info and not TooltipLineCouldBeGuild(info.lines[2]) then

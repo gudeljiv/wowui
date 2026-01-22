@@ -218,9 +218,9 @@ W: 1024
 H: 712
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
-Anchor: TOPRIGHT
+Anchor: RIGHT
 X: -351
-Y: -175
+Y: 175
 W: 607
 H: 672
 Frame: PallyPowerBlessingsFrame
@@ -236,4 +236,4 @@ Anchor: CENTER
 X: 0
 Y: 0
 W: 200
-H: 309
+H: 350

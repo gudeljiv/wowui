@@ -125,3 +125,5 @@ xVermin: enabled
 Blizzard_ObjectiveTracker: enabled
 Blizzard_CompactRaidFrames: enabled
 BaganatorCustomSkin: disabled
+LortiUI: disabled
+UberUI: disabled

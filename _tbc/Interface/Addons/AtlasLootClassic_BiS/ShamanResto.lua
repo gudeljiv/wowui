@@ -13,21 +13,23 @@ data["ShamanResto"] = {
             -- T1
             name = format(AL["Head"], "1"),
             [NORMAL_DIFF] = {
-                {1, 34402}, -- Shroud of Chieftain Ner'zhul
-                {2, 34339}, -- Cowl of Light's Purity
-                {3, 34245}, -- Cover of Ursol the Wise
-                {4, 35184}, -- Primal-Attuned Goggles
-                {5, 35183}, -- Wonderheal XT68 Shades
-                {6, 31012}, -- Skyshatter Helmet
-                {7, 32241}, -- Helm of Soothing Currents
-                {8, 35181}, -- Powerheal 9000 Lens
-                {9, 32240}, -- Guise of the Tidal Lurker
-                {10, 35079}, -- Brutal Gladiator's Ringmail Helm
-                {11, 32475}, -- Living Replicator Specs
-                {12, 30166}, -- Cataclysm Headguard
-                {13, 33286}, -- Mojo-mender's Mask
-                {14, 32329}, -- Cowl of Benevolence
-                {15, 33463} -- Hood of the Third Eye
+                {1, 34402},
+                {2, 34339},
+                {3, 34245},
+                {4, 35184},
+                {5, 35183},
+                {6, 31012},
+                {7, 32241},
+                {8, 35181},
+                {9, 32240},
+                {10, 35079},
+                {11, 32475},
+                {12, 30166},
+                {13, 33286},
+                {14, 32329},
+                {15, 33463},
+                {16, 25897 },
+                {17, 29190 },
             }
         },
         {
@@ -55,105 +57,110 @@ data["ShamanResto"] = {
             -- T2
             name = format(AL["Shoulders"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34202}, -- Shawl of Wonderment
-                {2, 34208}, -- Equilibrium Epaulets
-                {3, 34209}, -- Spaulders of Reclamation
-                {4, 32579}, -- Living Earth Shoulders
-                {5, 32583}, -- Shoulderpads of Renewed Life
-                {6, 33464}, -- Hex Lord's Voodoo Pauldrons
-                {7, 31022}, -- Skyshatter Shoulderpads
-                {8, 32585}, -- Swiftheal Mantle
-                {9, 35081}, -- Brutal Gladiator's Ringmail Spaulders
-                {10, 30168}, -- Cataclysm Shoulderguards
-                {11, 30097}, -- Coral-Barbed Shoulderpads
-                {12, 33742}, -- Vengeful Gladiator's Ringmail Spaulders
-                {13, 34210}, -- Amice of the Convoker
-                {14, 33287}, -- Gnarled Ironwood Pauldrons
-                {15, 32517} -- The Wavemender's Mantle
+                {1, 34202},
+                {2, 34208},
+                {3, 34209},
+                {4, 32579},
+                {5, 32583},
+                {6, 33464},
+                {7, 31022},
+                {8, 32585},
+                {9, 35081},
+                {10, 30168},
+                {11, 30097},
+                {12, 33742},
+                {13, 34210},
+                {14, 33287},
+                {15, 32517},
+                {16, 28887 },
             }
         },
         {
             -- T2
             name = format(AL["Back"], "2"),
             [NORMAL_DIFF] = {
-                {1, 32524}, -- Shroud of the Highborne
-                {2, 33592}, -- Cloak of Ancient Rituals
-                {3, 34205}, -- Shroud of Redeemed Souls
-                {4, 34242}, -- Tattered Cape of Antonidas
-                {5, 34012}, -- Shroud of the Final Stand
-                {6, 34702}, -- Cloak of Swift Mending
-                {7, 35324}, -- Cloak of Swift Reprieve
-                {8, 29989}, -- Sunshower Light Cloak
-                {9, 32337}, -- Shroud of Forgiveness
-                {10, 31329}, -- Lifegiving Cloak
-                {11, 28765}, -- Stainless Cloak of the Pure Hearted
-                {12, 24254}, -- White Remedy Cape
-                {13, 28582}, -- Red Riding Hood's Cloak
-                {14, 33333}, -- Kharmaa's Shroud of Hope
-                {15, 27448} -- Cloak of the Everliving
+                {1, 32524},
+                {2, 33592},
+                {3, 34205},
+                {4, 34242},
+                {5, 34012},
+                {6, 34702},
+                {7, 35324},
+                {8, 29989},
+                {9, 32337},
+                {10, 31329},
+                {11, 28765},
+                {12, 24254},
+                {13, 28582},
+                {14, 33333},
+                {15, 27448},
+                {16, 25084, "Profession" },
             }
         },
         {
             -- T2
             name = format(AL["Chest"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34375}, -- Sun-Drenched Scale Chestguard
-                {2, 34365}, -- Robe of Eternal Light
-                {3, 34212}, -- Sunglow Vest
-                {4, 34229}, -- Garments of Serene Shores
-                {5, 34233}, -- Robes of Faltered Light
-                {6, 34371}, -- Leather Chestguard of the Sun
-                {7, 33469}, -- Hauberk of the Empire's Champion
-                {8, 35077}, -- Brutal Gladiator's Ringmail Armor
-                {9, 31016}, -- Skyshatter Chestguard
-                {10, 34364}, -- Sunfire Robe
-                {11, 34930}, -- Wave of Life Chestguard
-                {12, 30164}, -- Cataclysm Chestguard
-                {13, 33738}, -- Vengeful Gladiator's Ringmail Armor
-                {14, 21875}, -- Primal Mooncloth Robe
-                {15, 32340} -- Garments of Temperance
+                {1, 34375},
+                {2, 34365},
+                {3, 34212},
+                {4, 34229},
+                {5, 34233},
+                {6, 34371},
+                {7, 33469},
+                {8, 35077},
+                {9, 31016},
+                {10, 34364},
+                {11, 34930},
+                {12, 30164},
+                {13, 33738},
+                {14, 21875},
+                {15, 32340},
+                {16, 33991, "Profession" },
             }
         },
         {
             -- T2
-            name = format(AL["Wrist"], "2"),
+            name = format(AL["Bracer"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34438}, -- Skyshatter Bracers
-                {2, 32584}, -- Swiftheal Wraps
-                {3, 32577}, -- Living Earth Bindings
-                {4, 32582}, -- Bracers of Renewed Life
-                {5, 30869}, -- Howling Wind Bracers
-                {6, 35177}, -- Guardian's Ringmail Bracers
-                {7, 30684}, -- Ravager's Cuffs of Healing
-                {8, 33589}, -- Wristguards of Tranquil Thought
-                {9, 30868}, -- Rejuvenating Bracers
-                {10, 30871}, -- Bracers of Martyrdom
-                {11, 30047}, -- Blackfathom Warbands
-                {12, 33906}, -- Vindicator's Ringmail Bracers
-                {13, 34602}, -- Eversong Cuffs
-                {14, 33557}, -- Gargon's Bracers of Peaceful Slumber
-                {15, 33532} -- Gleaming Earthen Bracers
+                {1, 34438},
+                {2, 32584},
+                {3, 32577},
+                {4, 32582},
+                {5, 30869},
+                {6, 35177},
+                {7, 30684},
+                {8, 33589},
+                {9, 30868},
+                {10, 30871},
+                {11, 30047},
+                {12, 33906},
+                {13, 34602},
+                {14, 33557},
+                {15, 33532},
+                {16, 27911, "Profession" },
             }
         },
         {
             -- T2
-            name = format(AL["Hands"], "2"),
+            name = format(AL["Gloves"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34376}, -- Sun-Drenched Scale Gloves
-                {2, 34372}, -- Leather Gauntlets of the Sun
-                {3, 34409}, -- Gauntlets of the Ancient Frostwolf
-                {4, 32328}, -- Botanist's Gloves of Growth
-                {5, 34342}, -- Handguards of the Dawn
-                {6, 32275}, -- Spiritwalker Gauntlets
-                {7, 34351}, -- Tranquil Majesty Wraps
-                {8, 34791}, -- Gauntlets of the Tranquil Waves
-                {9, 34367}, -- Hands of Eternal Light
-                {10, 32353}, -- Gloves of Unfailing Faith
-                {11, 29976}, -- Worldstorm Gauntlets
-                {12, 31007}, -- Skyshatter Gloves
-                {13, 34344}, -- Handguards of Defiled Worlds
-                {14, 34406}, -- Gloves of Tyri's Power
-                {15, 35078} -- Brutal Gladiator's Ringmail Gauntlets
+                {1, 34376},
+                {2, 34372},
+                {3, 34409},
+                {4, 32328},
+                {5, 34342},
+                {6, 32275},
+                {7, 34351},
+                {8, 34791},
+                {9, 34367},
+                {10, 32353},
+                {11, 29976},
+                {12, 31007},
+                {13, 34344},
+                {14, 34406},
+                {15, 35078},
+                {16, 33999, "Profession" },
             }
         },
         {
@@ -179,65 +186,67 @@ data["ShamanResto"] = {
         },
         {
             -- T2
-            name = format(AL["Rings"], "2"),
+            name = format(AL["Ring"], "2"),
             [NORMAL_DIFF] = {
-                {1, 32528}, -- Blessed Band of Karabor
-                {2, 34363}, -- Ring of Flowing Life
-                {3, 33498}, -- Signet of the Quiet Forest
-                {4, 34166}, -- Band of Lucent Beams
-                {5, 29309}, -- Band of the Eternal Restorer
-                {6, 34625}, -- Kharmaa's Ring of Fate
-                {7, 32238}, -- Ring of Calming Waves
-                {8, 34890}, -- Anveena's Touch
-                {9, 29308}, -- Band of Eternity (revered)
-                {10, 30736}, -- Ring of Flowing Light
-                {11, 28763}, -- Jade Ring of the Everliving
-                {12, 35283}, -- Sin'dorei Band of Salvation
-                {13, 35733}, -- Ring of Harmonic Beauty
-                {14, 29306}, -- Band of Eternity (honored)
-                {15, 34230} -- Ring of Omnipotence
+                {1, 32528},
+                {2, 34363},
+                {3, 33498},
+                {4, 34166},
+                {5, 29309},
+                {6, 34625},
+                {7, 32238},
+                {8, 34890},
+                {9, 29308},
+                {10, 30736},
+                {11, 28763},
+                {12, 35283},
+                {13, 35733},
+                {14, 29306},
+                {15, 34230},
             }
         },
         {
             -- T2
             name = format(AL["Legs"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34383}, -- Kilt of Spiritual Reconstruction
-                {2, 34170}, -- Pantaloons of Calming Strife
-                {3, 34384}, -- Breeches of Natural Splendor
-                {4, 33585}, -- Achromic Trousers of the Naaru
-                {5, 30912}, -- Leggings of Eternity
-                {6, 32271}, -- Kilt of Immortal Nature
-                {7, 34931}, -- Runed Scales of Antiquity
-                {8, 30893}, -- Sun-touched Chain Leggings
-                {9, 30727}, -- Gilded Trousers of Benediction
-                {10, 29991}, -- Sunhawk Leggings
-                {11, 31019}, -- Skyshatter Leggings
-                {12, 33530}, -- Natural Life Leggings
-                {13, 34901}, -- Grovewalker's Leggings
-                {14, 34925}, -- Adorned Supernal Legwraps
-                {15, 35080} -- Brutal Gladiator's Ringmail Leggings
+                {1, 34383},
+                {2, 34170},
+                {3, 34384},
+                {4, 33585},
+                {5, 30912},
+                {6, 32271},
+                {7, 34931},
+                {8, 30893},
+                {9, 30727},
+                {10, 29991},
+                {11, 31019},
+                {12, 33530},
+                {13, 34901},
+                {14, 34925},
+                {15, 35080},
+                {16, 24276 },
             }
         },
         {
             -- T2
-            name = format(AL["Feet"], "2"),
+            name = format(AL["Boots"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34565}, -- Skyshatter Boots
-                {2, 33471}, -- Two-toed Sandals
-                {3, 33324}, -- Treads of the Life Path
-                {4, 30737}, -- Gold-Leaf Wildboots
-                {5, 30680}, -- Glider's Foot-Wraps of Healing
-                {6, 34926}, -- Slippers of Dutiful Mending
-                {7, 30873}, -- Stillwater Boots
-                {8, 30092}, -- Orca-Hide Boots
-                {9, 35147}, -- Guardian's Ringmail Sabatons
-                {10, 34566}, -- Skyshatter Treads
-                {11, 32609}, -- Boots of the Divine Light
-                {12, 30100}, -- Soul-Strider Boots
-                {13, 34707}, -- Boots of Resuscitation
-                {14, 33908}, -- Vindicator's Ringmail Sabatons
-                {15, 30035} -- Boots of the Long Road
+                {1, 34565},
+                {2, 33471},
+                {3, 33324},
+                {4, 30737},
+                {5, 30680},
+                {6, 34926},
+                {7, 30873},
+                {8, 30092},
+                {9, 35147},
+                {10, 34566},
+                {11, 32609},
+                {12, 30100},
+                {13, 34707},
+                {14, 33908},
+                {15, 30035},
+                {16, 34008, "Profession" },
             }
         },
         {
@@ -286,21 +295,21 @@ data["ShamanResto"] = {
             -- T2
             name = format(AL["Offhand"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34206}, -- Book of Highborne Hymns
-                {2, 34231}, -- Aegis of Angelic Fortune
-                {3, 30882}, -- Bastion of Light
-                {4, 32350}, -- Touch of Inspiration
-                {5, 32255}, -- Felstone Bulwark
-                {6, 33332}, -- Enamelled Disc of Mojo
-                {7, 35073}, -- Brutal Gladiator's Redoubt
-                {8, 35074}, -- Brutal Gladiator's Reprieve
-                {9, 30911}, -- Scepter of Purification
-                {10, 29274}, -- Tears of Heaven
-                {11, 29458}, -- Aegis of the Vindicator
-                {12, 29923}, -- Talisman of the Sun King
-                {13, 33735}, -- Vengeful Gladiator's Redoubt
-                {14, 33736}, -- Vengeful Gladiator's Reprieve
-                {15, 28728} -- Aran's Soothing Sapphire
+                {1, 34206},
+                {2, 34231},
+                {3, 30882},
+                {4, 32350},
+                {5, 32255},
+                {6, 33332},
+                {7, 35073},
+                {8, 35074},
+                {9, 30911},
+                {10, 29274},
+                {11, 29458},
+                {12, 29923},
+                {13, 33735},
+                {14, 33736},
+                {15, 28728},
             }
         },
         {
@@ -333,3 +342,30 @@ data["ShamanResto"] = {
         --@end-version-bcc@
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

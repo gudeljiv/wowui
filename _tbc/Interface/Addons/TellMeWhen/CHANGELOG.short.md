@@ -1,8 +1,7 @@
 
-## v12.0.1
-* Midnight: Minor clarifications of secret behavior
-* Midnight: Add cooldown numbers on charge CDs
-* Midnight: Fix error in cast icon type
+## v12.0.2
+* Midnight: Restored spell cast conditions since they still work against `player`.
+* Midnight: Fully obsolete health and power conditions that are always secret.
 
 
-[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/7a81b5ed33f80709ad06f6b80b0440a78ff6b321/CHANGELOG.md)
+[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/c6841bdedac847172353012ccb63d774dc1f816b/CHANGELOG.md)

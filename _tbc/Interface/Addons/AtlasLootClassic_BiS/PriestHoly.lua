@@ -13,21 +13,23 @@ data["PriestHoly"] = {
             -- T1
             name = format(AL["Head"], "1"),
             [NORMAL_DIFF] = {
-                {1, 34339}, -- Cowl of Light's Purity
-                {2, 35181}, -- Powerheal 9000 Lens
-                {3, 31063}, -- Cowl of Absolution
-                {4, 32329}, -- Cowl of Benevolence
-                {5, 30152}, -- Cowl of the Avatar
-                {6, 32495}, -- Powerheal 4000 Lens
-                {7, 29049}, -- Light-Collar of the Incarnate
-                {8, 29990}, -- Crown of the Sun
-                {9, 34405}, -- Helm of Arcane Purity
-                {10, 33463}, -- Hood of the Third Eye
-                {11, 31064}, -- Hood of Absolution
-                {12, 32090}, -- Cowl of Naaru Blessings
-                {13, 35054}, -- Brutal Gladiator's Mooncloth Hood
-                {14, 34340}, -- Dark Conjuror's Collar
-                {15, 28413} -- Hallowed Crown
+                {1, 34339},
+                {2, 35181},
+                {3, 31063},
+                {4, 32329},
+                {5, 30152},
+                {6, 32495},
+                {7, 29049},
+                {8, 29990},
+                {9, 34405},
+                {10, 33463},
+                {11, 31064},
+                {12, 32090},
+                {13, 35054},
+                {14, 34340},
+                {15, 28413},
+                {16, 25901 },
+                {17, 29190 },
             }
         },
         {
@@ -55,105 +57,110 @@ data["PriestHoly"] = {
             -- T2
             name = format(AL["Shoulders"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34202}, -- Shawl of Wonderment
-                {2, 31069}, -- Mantle of Absolution
-                {3, 32273}, -- Amice of Brilliant Light
-                {4, 32585}, -- Swiftheal Mantle
-                {5, 30154}, -- Mantle of the Avatar
-                {6, 29054}, -- Light-Mantle of the Incarnate
-                {7, 28612}, -- Pauldrons of the Solace-Giver
-                {8, 21874}, -- Primal Mooncloth Shoulders
-                {9, 34393}, -- Shoulderpads of Knowledge's Pursuit
-                {10, 35056}, -- Brutal Gladiator's Mooncloth Mantle
-                {11, 27775}, -- Hallowed Pauldrons
-                {12, 34210}, -- Amice of the Convoker
-                {13, 30163}, -- Wings of the Avatar
-                {14, 33720}, -- Vengeful Gladiator's Mooncloth Mantle
-                {15, 27433} -- Pauldrons of Sufferance
+                {1, 34202},
+                {2, 31069},
+                {3, 32273},
+                {4, 32585},
+                {5, 30154},
+                {6, 29054},
+                {7, 28612},
+                {8, 21874},
+                {9, 34393},
+                {10, 35056},
+                {11, 27775},
+                {12, 34210},
+                {13, 30163},
+                {14, 33720},
+                {15, 27433},
+                {16, 28887 },
             }
         },
         {
             -- T2
             name = format(AL["Back"], "2"),
             [NORMAL_DIFF] = {
-                {1, 29989}, -- Sunshower Light Cloak
-                {2, 32337}, -- Shroud of Forgiveness
-                {3, 34205}, -- Shroud of Redeemed Souls
-                {4, 32524}, -- Shroud of the Highborne
-                {5, 34012}, -- Shroud of the Final Stand
-                {6, 33592}, -- Cloak of Ancient Rituals
-                {7, 28765}, -- Stainless Cloak of the Pure Hearted
-                {8, 27946}, -- Avian Cloak of Feathers
-                {9, 28582}, -- Red Riding Hood's Cloak
-                {10, 28373}, -- Cloak of Scintillating Auras
-                {11, 22960}, -- Cloak of Suturing
-                {12, 35324}, -- Cloak of Swift Reprieve
-                {13, 34242}, -- Tattered Cape of Antonidas
-                {14, 31329}, -- Lifegiving Cloak
-                {15, 33333} -- Kharmaa's Shroud of Hope
+                {1, 29989},
+                {2, 32337},
+                {3, 34205},
+                {4, 32524},
+                {5, 34012},
+                {6, 33592},
+                {7, 28765},
+                {8, 27946},
+                {9, 28582},
+                {10, 28373},
+                {11, 22960},
+                {12, 35324},
+                {13, 34242},
+                {14, 31329},
+                {15, 33333},
+                {16, 27962, "Profession" },
             }
         },
         {
             -- T2
             name = format(AL["Chest"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34233}, -- Robes of Faltered Light
-                {2, 34365}, -- Robe of Eternal Light
-                {3, 31066}, -- Vestments of Absolution
-                {4, 34924}, -- Gown of Spiritual Wonder
-                {5, 33203}, -- Robes of Heavenly Purpose
-                {6, 30150}, -- Vestments of the Avatar
-                {7, 21875}, -- Primal Mooncloth Robe
-                {8, 32340}, -- Garments of Temperance
-                {9, 34399}, -- Robes of Ghostly Hatred
-                {10, 29050}, -- Robes of the Incarnate
-                {11, 35057}, -- Brutal Gladiator's Mooncloth Robe
-                {12, 28230}, -- Hallowed Garments
-                {13, 34364}, -- Sunfire Robe
-                {14, 33721}, -- Vengeful Gladiator's Mooncloth Robe
-                {15, 34232} -- Fel Conquerer Raiments
+                {1, 34233},
+                {2, 34365},
+                {3, 31066},
+                {4, 34924},
+                {5, 33203},
+                {6, 30150},
+                {7, 21875},
+                {8, 32340},
+                {9, 34399},
+                {10, 29050},
+                {11, 35057},
+                {12, 28230},
+                {13, 34364},
+                {14, 33721},
+                {15, 34232},
+                {16, 33990, "Profession" },
             }
         },
         {
             -- T2
-            name = format(AL["Wrist"], "2"),
+            name = format(AL["Bracer"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34435}, -- Cuffs of Absolution
-                {2, 30871}, -- Bracers of Martyrdom
-                {3, 32513}, -- Wristbands of Divine Influence
-                {4, 33589}, -- Wristguards of Tranquil Thought
-                {5, 32584}, -- Swiftheal Wraps
-                {6, 35174}, -- Guardian's Mooncloth Cuffs
-                {7, 30684}, -- Ravager's Cuffs of the Prophet
-                {8, 34434}, -- Bracers of Absolution
-                {9, 32516}, -- Wraps of Purification
-                {10, 28511}, -- Bands of Indwelling
-                {11, 29249}, -- Bands of the Benevolent
-                {12, 33901}, -- Vindicator's Mooncloth Cuffs
-                {13, 30870}, -- Cuffs of Devastation
-                {14, 22519}, -- Bindings of Faith
-                {15, 27452} -- Light Scribe Bands
+                {1, 34435},
+                {2, 30871},
+                {3, 32513},
+                {4, 33589},
+                {5, 32584},
+                {6, 35174},
+                {7, 30684},
+                {8, 34434},
+                {9, 32516},
+                {10, 28511},
+                {11, 29249},
+                {12, 33901},
+                {13, 30870},
+                {14, 22519},
+                {15, 27452},
+                {16, 27911, "Profession" },
             }
         },
         {
             -- T2
-            name = format(AL["Hands"], "2"),
+            name = format(AL["Gloves"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34342}, -- Handguards of the Dawn
-                {2, 34367}, -- Hands of Eternal Light
-                {3, 31060}, -- Gloves of Absolution
-                {4, 30151}, -- Gloves of the Avatar
-                {5, 32353}, -- Gloves of Unfailing Faith
-                {6, 33587}, -- Light-Blessed Bonds
-                {7, 34406}, -- Gloves of Tyri's Power
-                {8, 28508}, -- Gloves of Saintly Blessings
-                {9, 29055}, -- Handwraps of the Incarnate
-                {10, 27536}, -- Hallowed Handwraps
-                {11, 35053}, -- Brutal Gladiator's Mooncloth Gloves
-                {12, 34344}, -- Handguards of Defiled Worlds
-                {13, 22517}, -- Gloves of Faith
-                {14, 34366}, -- Sunfire Handwraps
-                {15, 24393} -- Bloody Surgeon's Mitts
+                {1, 34342},
+                {2, 34367},
+                {3, 31060},
+                {4, 30151},
+                {5, 32353},
+                {6, 33587},
+                {7, 34406},
+                {8, 28508},
+                {9, 29055},
+                {10, 27536},
+                {11, 35053},
+                {12, 34344},
+                {13, 22517},
+                {14, 34366},
+                {15, 24393},
+                {16, 33999, "Profession" },
             }
         },
         {
@@ -179,65 +186,68 @@ data["PriestHoly"] = {
         },
         {
             -- T2
-            name = format(AL["Rings"], "2"),
+            name = format(AL["Ring"], "2"),
             [NORMAL_DIFF] = {
-                {1, 35733}, -- Ring of Harmonic Beauty
-                {2, 34363}, -- Ring of Flowing Life
-                {3, 29309}, -- Band of the Eternal Restorer
-                {4, 34166}, -- Band of Lucent Beams
-                {5, 32528}, -- Blessed Band of Karabor
-                {6, 30110}, -- Coral Band of the Revived
-                {7, 33498}, -- Signet of the Quiet Forest
-                {8, 29308}, -- Band of Eternity (revered)
-                {9, 32238}, -- Ring of Calming Waves
-                {10, 34890}, -- Anveena's Touch
-                {11, 29290}, -- Violet Signet of the Grand Restorer
-                {12, 29306}, -- Band of Eternity (honored)
-                {13, 29291}, -- Violet Signet
-                {14, 28790}, -- Naaru Lightwarden's Band
-                {15, 35130} -- Guardian's Band of Salvation
+                {1, 35733},
+                {2, 34363},
+                {3, 29309},
+                {4, 34166},
+                {5, 32528},
+                {6, 30110},
+                {7, 33498},
+                {8, 29308},
+                {9, 32238},
+                {10, 34890},
+                {11, 29290},
+                {12, 29306},
+                {13, 29291},
+                {14, 28790},
+                {15, 35130},
+                {16, 27926, "Profession" },
             }
         },
         {
             -- T2
             name = format(AL["Legs"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34170}, -- Pantaloons of Calming Strife
-                {2, 34925}, -- Adorned Supernal Legwraps
-                {3, 30912}, -- Leggings of Eternity
-                {4, 31068}, -- Breeches of Absolution
-                {5, 30153}, -- Breeches of the Avatar
-                {6, 29977}, -- Star-Soul Breeches
-                {7, 30727}, -- Gilded Trousers of Benediction
-                {8, 28742}, -- Pantaloons of Repentance
-                {9, 29053}, -- Trousers of the Incarnate
-                {10, 33585}, -- Achromic Trousers of the Naaru
-                {11, 30543}, -- Pontifex Kilt
-                {12, 35055}, -- Brutal Gladiator's Mooncloth Leggings
-                {13, 34386}, -- Pantaloons of Growing Strife
-                {14, 31343}, -- Kamaei's Cerulean Skirt
-                {15, 28218} -- Pontiff's Pantaloons of Prophecy
+                {1, 34170},
+                {2, 34925},
+                {3, 30912},
+                {4, 31068},
+                {5, 30153},
+                {6, 29977},
+                {7, 30727},
+                {8, 28742},
+                {9, 29053},
+                {10, 33585},
+                {11, 30543},
+                {12, 35055},
+                {13, 34386},
+                {14, 31343},
+                {15, 28218},
+                {16, 24276 },
             }
         },
         {
             -- T2
-            name = format(AL["Feet"], "2"),
+            name = format(AL["Boots"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34562}, -- Boots of Absolution
-                {2, 34926}, -- Slippers of Dutiful Mending
-                {3, 30885}, -- Archbishop's Slippers
-                {4, 32609}, -- Boots of the Divine Light
-                {5, 30100}, -- Soul-Strider Boots
-                {6, 30035}, -- Boots of the Long Road
-                {7, 33471}, -- Two-toed Sandals
-                {8, 28663}, -- Boots of the Incorrupt
-                {9, 30680}, -- Glider's Foot-Wraps of the Prophet
-                {10, 34563}, -- Treads of Absolution
-                {11, 35144}, -- Guardian's Mooncloth Slippers
-                {12, 29251}, -- Boots of the Pious
-                {13, 25792}, -- Curate's Boots
-                {14, 33902}, -- Vindicator's Mooncloth Slippers
-                {15, 27411} -- Slippers of Serenity
+                {1, 34562},
+                {2, 34926},
+                {3, 30885},
+                {4, 32609},
+                {5, 30100},
+                {6, 30035},
+                {7, 33471},
+                {8, 28663},
+                {9, 30680},
+                {10, 34563},
+                {11, 35144},
+                {12, 29251},
+                {13, 25792},
+                {14, 33902},
+                {15, 27411},
+                {16, 34008, "Profession" },
             }
         },
         {
@@ -265,21 +275,22 @@ data["PriestHoly"] = {
             -- T2
             name = format(AL["Onehand"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34335}, -- Hammer of Sanctification
-                {2, 34199}, -- Archon's Gavel
-                {3, 35082}, -- Brutal Gladiator's Salvation
-                {4, 32500}, -- Crystal Spire of Karabor
-                {5, 34896}, -- Gavel of Naaru Blessings
-                {6, 30108}, -- Lightfathom Scepter
-                {7, 33743}, -- Vengeful Gladiator's Salvation
-                {8, 30918}, -- Hammer of Atonement
-                {9, 33468}, -- Dark Blessing
-                {10, 32964}, -- Merciless Gladiator's Salvation
-                {11, 28771}, -- Light's Justice
-                {12, 32451}, -- Gladiator's Salvation
-                {13, 28522}, -- Shard of the Virtuous
-                {14, 23556}, -- Hand of Eternity
-                {15, 29353} -- Shockwave Truncheon
+                {1, 34335},
+                {2, 34199},
+                {3, 35082},
+                {4, 32500},
+                {5, 34896},
+                {6, 30108},
+                {7, 33743},
+                {8, 30918},
+                {9, 33468},
+                {10, 32964},
+                {11, 28771},
+                {12, 32451},
+                {13, 28522},
+                {14, 23556},
+                {15, 29353},
+                {16, 34010, "Profession" },
             }
         },
         {
@@ -307,21 +318,22 @@ data["PriestHoly"] = {
             -- T2
             name = format(AL["Twohand"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34337}, -- Golden Staff of the Sin'dorei
-                {2, 30908}, -- Apostle of Argus
-                {3, 32344}, -- Staff of Immaculate Recovery
-                {4, 29981}, -- Ethereum Life-Staff
-                {5, 33490}, -- Staff of Dark Mending
-                {6, 34608}, -- Rod of the Blazing Light
-                {7, 30732}, -- Exodar Life-Staff
-                {8, 28782}, -- Crystalheart Pulse-Staff
-                {9, 28604}, -- Nightstaff of the Everliving
-                {10, 22631}, -- Atiesh, Greatstaff of the Guardian
-                {11, 27791}, -- Serpentcrest Life-Staff
-                {12, 29133}, -- Seer's Cane
-                {13, 30012}, -- Ameer's Judgement
-                {14, 31289}, -- Staff of Divine Infusion
-                {15, 28033} -- Epoch-Mender
+                {1, 34337},
+                {2, 30908},
+                {3, 32344},
+                {4, 29981},
+                {5, 33490},
+                {6, 34608},
+                {7, 30732},
+                {8, 28782},
+                {9, 28604},
+                {10, 22631},
+                {11, 27791},
+                {12, 29133},
+                {13, 30012},
+                {14, 31289},
+                {15, 28033},
+                {16, 34010, "Profession" },
             }
         },
         {
@@ -349,3 +361,33 @@ data["PriestHoly"] = {
         --@end-version-bcc@
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

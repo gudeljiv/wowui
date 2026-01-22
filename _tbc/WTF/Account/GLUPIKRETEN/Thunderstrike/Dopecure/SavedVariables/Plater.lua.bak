@@ -6,16 +6,16 @@ PlaterDBChr = {
 ["buffsBanned"] = {
 },
 ["first_run3"] = {
-["Player-6409-04889C6A"] = true,
-["Player-6111-04889C6A"] = true,
 ["Player-5220-01B88810"] = true,
-},
-["spellRangeCheckRangeEnemy"] = {
-[5] = 30,
-},
-["debuffsBanned"] = {
+["Player-6111-04889C6A"] = true,
+["Player-6409-04889C6A"] = true,
 },
 ["minimap"] = {
 ["hide"] = true,
+},
+["debuffsBanned"] = {
+},
+["spellRangeCheckRangeEnemy"] = {
+[5] = 30,
 },
 }

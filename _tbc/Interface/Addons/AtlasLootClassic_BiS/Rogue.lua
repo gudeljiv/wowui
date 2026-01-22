@@ -28,6 +28,9 @@ data["Rogue"] = {
                 {13, 31999}, -- Merciless Gladiator's Leather Helm
                 {14, 28182}, -- Helm of the Claw
                 {15, 28224} -- Wastewalker Helm
+                ,
+                {16, 32409},
+                {17, 29192}
             }
         },
         {
@@ -70,6 +73,8 @@ data["Rogue"] = {
                 {13, 30917}, -- Razorfury Mantle
                 {14, 27797}, -- Wastewalker Shoulderpads
                 {15, 29047} -- Netherblade Shoulderpads
+                ,
+                {16, 28888},
             }
         },
         {
@@ -91,6 +96,8 @@ data["Rogue"] = {
                 {13, 29382}, -- Blood Knight War Cloak
                 {14, 35495}, -- The Frost Lord's War Cloak
                 {15, 28777} -- Cloak of the Pit Stalker
+                ,
+                {16, 34004, "Profession"},
             }
         },
         {
@@ -112,11 +119,13 @@ data["Rogue"] = {
                 {13, 33329}, -- Shadowtooth Trollskin Cuirass
                 {14, 29045}, -- Netherblade Chestpiece
                 {15, 28601} -- Chestguard of the Conniver
+                ,
+                {16, 27960, "Profession"}
             }
         },
         {
             -- T2
-            name = format(AL["Wrist"], "2"),
+            name = format(AL["Bracer"], "2"),
             [NORMAL_DIFF] = {
                 {1, 34448}, -- Slayer's Bracers
                 {2, 32324}, -- Insidious Bands
@@ -133,11 +142,13 @@ data["Rogue"] = {
                 {13, 28171}, -- Spymistress's Wristguards
                 {14, 29246}, -- Nightfall Wristguards
                 {15, 29527} -- Primalstrike Bracers
+                ,
+                {16, 34002, "Profession"}
             }
         },
         {
             -- T2
-            name = format(AL["Hands"], "2"),
+            name = format(AL["Gloves"], "2"),
             [NORMAL_DIFF] = {
                 {1, 34370}, -- Gloves of Immortal Dusk
                 {2, 34234}, -- Shadowed Gauntlets of Paroxysm
@@ -154,6 +165,8 @@ data["Rogue"] = {
                 {13, 34911}, -- Handwraps of the Aggressor
                 {14, 30644}, -- Grips of Deftness
                 {15, 29048} -- Netherblade Gloves
+                ,
+                {16, 25080, "Profession"}
             }
         },
         {
@@ -179,7 +192,7 @@ data["Rogue"] = {
         },
         {
             -- T2
-            name = format(AL["Rings"], "2"),
+            name = format(AL["Ring"], "2"),
             [NORMAL_DIFF] = {
                 {1, 34361}, -- Hard Khorium Band
                 {2, 32497}, -- Stormrage Signet Ring
@@ -217,11 +230,13 @@ data["Rogue"] = {
                 {13, 34910}, -- Tameless Breeches
                 {14, 33702}, -- Vengeful Gladiator's Leather Legguards
                 {15, 30538} -- Midnight Legguards
+                ,
+                {16, 29535},
             }
         },
         {
             -- T2
-            name = format(AL["Feet"], "2"),
+            name = format(AL["Boots"], "2"),
             [NORMAL_DIFF] = {
                 {1, 34575}, -- Slayer's Boots
                 {2, 33222}, -- Nyn'jah's Tabi Boots
@@ -238,6 +253,8 @@ data["Rogue"] = {
                 {13, 33582}, -- Footwraps of Wild Encroachment
                 {14, 31288}, -- The Master's Treads
                 {15, 33880} -- Vindicator's Dragonhide Boots
+                ,
+                {16, 34007, "Profession"}
             }
         },
         {
@@ -280,6 +297,8 @@ data["Rogue"] = {
                 {13, 33762}, -- Vengeful Gladiator's Slicer
                 {14, 28439}, -- Dragonstrike (melee proc)
                 {15, 30881} -- Blade of Infamy
+                ,
+                {16, 27984, "Profession"}
             }
         },
         {
@@ -301,6 +320,8 @@ data["Rogue"] = {
                 {13, 32369}, -- Blade of Savagery
                 {14, 30865}, -- Tracker's Blade
                 {15, 33756} -- Vengeful Gladiator's Shiv
+                ,
+                {16, 27984, "Profession"}
             }
         },
         {
@@ -312,21 +333,23 @@ data["Rogue"] = {
             -- T2
             name = format(AL["Ranged"], "2"),
             [NORMAL_DIFF] = {
-                {2, 34334}, -- Thori'dal, the Stars' Fury
-                {3, 34196}, -- Golden Bow of Quel'Thalas
-                {4, 34892}, -- Crossbow of Relentless Strikes
-                {5, 34349}, -- Blade of Life's Inevitability
-                {6, 29949}, -- Arcanite Steam-Pistol
-                {7, 30724}, -- Barrel-Blade Longrifle
-                {8, 33474}, -- Ancient Amani Longbow
-                {9, 34603}, -- Distracting Blades
-                {10, 33491}, -- Tuskbreaker
-                {11, 32326}, -- Twisted Blades of Zarak
-                {12, 28772}, -- Sunfury Bow of the Phoenix
-                {13, 29151}, -- Veteran's Musket
-                {14, 29152}, -- Marksman's Bow
-                {15, 28504}, -- Steelhawk Crossbow
-                {16, 34622} -- Spinesever
+                {1, 34334}, -- Thori'dal, the Stars' Fury
+                {2, 34196}, -- Golden Bow of Quel'Thalas
+                {3, 34892}, -- Crossbow of Relentless Strikes
+                {4, 34349}, -- Blade of Life's Inevitability
+                {5, 29949}, -- Arcanite Steam-Pistol
+                {6, 30724}, -- Barrel-Blade Longrifle
+                {7, 33474}, -- Ancient Amani Longbow
+                {8, 34603}, -- Distracting Blades
+                {9, 33491}, -- Tuskbreaker
+                {10, 32326}, -- Twisted Blades of Zarak
+                {11, 28772}, -- Sunfury Bow of the Phoenix
+                {12, 29151}, -- Veteran's Musket
+                {13, 29152}, -- Marksman's Bow
+                {14, 28504}, -- Steelhawk Crossbow
+                {15, 34622} -- Spinesever
+                ,
+                {16, 23766},
             }
         }
 

@@ -13,21 +13,23 @@ data["Palret"] = {
             -- T1
             name = format(AL["Head"], "1"),
             [NORMAL_DIFF] = {
-                {1, 34244}, -- Duplicitous Guise
-                {2, 34333}, -- Coif of Alleria
-                {3, 34345}, -- Crown of Anasterian
-                {4, 32235}, -- Cursed Vision of Sargeras
-                {5, 34354}, -- Mayhem Projection Goggles
-                {6, 32373}, -- Helm of the Illidari Shatterer
-                {7, 32376}, -- Forest Prowler's Helm
-                {8, 34404}, -- Mask of the Fury Hunter
-                {9, 35090}, -- Brutal Gladiator's Scaled Helm
-                {10, 32461}, -- Furious Gizmatic Goggles
-                {11, 30989}, -- Lightbringer War-Helm
-                {12, 30131}, -- Crystalforge War-Helm
-                {13, 33751}, -- Vengeful Gladiator's Scaled Helm
-                {14, 32041}, -- Merciless Gladiator's Scaled Helm
-                {15, 29073} -- Justicar Crown
+                {1, 34244},
+                {2, 34333},
+                {3, 34345},
+                {4, 32235},
+                {5, 34354},
+                {6, 32373},
+                {7, 32376},
+                {8, 34404},
+                {9, 35090},
+                {10, 32461},
+                {11, 30989},
+                {12, 30131},
+                {13, 33751},
+                {14, 32041},
+                {15, 29073},
+                {16, 32409 },
+                {17, 29192 },
             }
         },
         {
@@ -55,105 +57,110 @@ data["Palret"] = {
             -- T2
             name = format(AL["Shoulders"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34388}, -- Pauldrons of Berserking
-                {2, 34195}, -- Shoulderpads of Vehemence
-                {3, 34194}, -- Mantle of the Golden Forest
-                {4, 34392}, -- Demontooth Shoulderpads
-                {5, 30055}, -- Shoulderpads of the Stranger
-                {6, 32581}, -- Swiftstrike Shoulders
-                {7, 32570}, -- Swiftsteel Shoulders
-                {8, 32575}, -- Shoulders of Lightning Reflexes
-                {9, 30997}, -- Lightbringer Shoulderbraces
-                {10, 32264}, -- Shoulders of the Hidden Predator
-                {11, 30866}, -- Blood-stained Pauldrons
-                {12, 30740}, -- Ripfiend Shoulderplates
-                {13, 30053}, -- Pauldrons of the Wardancer
-                {14, 35092}, -- Brutal Gladiator's Scaled Shoulders
-                {15, 30133} -- Crystalforge Shoulderbraces
+                {1, 34388},
+                {2, 34195},
+                {3, 34194},
+                {4, 34392},
+                {5, 30055},
+                {6, 32581},
+                {7, 32570},
+                {8, 32575},
+                {9, 30997},
+                {10, 32264},
+                {11, 30866},
+                {12, 30740},
+                {13, 30053},
+                {14, 35092},
+                {15, 30133},
+                {16, 28888 },
             }
         },
         {
             -- T2
             name = format(AL["Back"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34241}, -- Cloak of Unforgivable Sin
-                {2, 33590}, -- Cloak of Fiends
-                {3, 32323}, -- Shadowmoon Destroyer's Drape
-                {4, 34190}, -- Crimson Paragon's Cover
-                {5, 33122}, -- Cloak of Darkness (melee)
-                {6, 30098}, -- Razor-Scale Battlecloak
-                {7, 29994}, -- Thalassian Wildercloak
-                {8, 24259}, -- Vengeance Wrap
-                {9, 30729}, -- Black-Iron Battlecloak
-                {10, 33484}, -- Dory's Embrace
-                {11, 28777}, -- Cloak of the Pit Stalker
-                {12, 28672}, -- Drape of the Dark Reavers
-                {13, 34708}, -- Cloak of the Coming Night
-                {14, 32665}, -- Crystalweave Cape
-                {15, 29382} -- Blood Knight War Cloak
+                {1, 34241},
+                {2, 33590},
+                {3, 32323},
+                {4, 34190},
+                {5, 33122},
+                {6, 30098},
+                {7, 29994},
+                {8, 24259},
+                {9, 30729},
+                {10, 33484},
+                {11, 28777},
+                {12, 28672},
+                {13, 34708},
+                {14, 32665},
+                {15, 29382},
+                {16, 34004, "Profession" },
             }
         },
         {
             -- T2
             name = format(AL["Chest"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34369}, -- Carapace of Sun and Shadow
-                {2, 34397}, -- Bladed Chaos Tunic
-                {3, 34215}, -- Warharness of Reckless Fury
-                {4, 34377}, -- Hard Khorium Battleplate
-                {5, 34211}, -- Harness of Carnal Instinct
-                {6, 30905}, -- Midnight Chestguard
-                {7, 30990}, -- Lightbringer Breastplate
-                {8, 35088}, -- Brutal Gladiator's Scaled Chestpiece
-                {9, 34942}, -- Breastplate of Ire
-                {10, 34912}, -- Scaled Drakeskin Chestguard
-                {11, 28485}, -- Bulwark of the Ancient Kings
-                {12, 30129}, -- Crystalforge Breastplate
-                {13, 34373}, -- Embrace of the Phoenix
-                {14, 32365}, -- Heartshatter Breastplate
-                {15, 34906} -- Embrace of Everlasting Prowess
+                {1, 34369},
+                {2, 34397},
+                {3, 34215},
+                {4, 34377},
+                {5, 34211},
+                {6, 30905},
+                {7, 30990},
+                {8, 35088},
+                {9, 34942},
+                {10, 34912},
+                {11, 28485},
+                {12, 30129},
+                {13, 34373},
+                {14, 32365},
+                {15, 34906},
+                {16, 27960, "Profession" },
             }
         },
         {
             -- T2
-            name = format(AL["Wrist"], "2"),
+            name = format(AL["Bracer"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34431}, -- Lightbringer Bands
-                {2, 32574}, -- Bindings of Lightning Reflexes
-                {3, 32580}, -- Swiftstrike Bracers
-                {4, 32568}, -- Swiftsteel Bracers
-                {5, 30863}, -- Deadly Cuffs
-                {6, 30057}, -- Bracers of Eradication
-                {7, 32324}, -- Insidious Bands
-                {8, 30861}, -- Furious Shackles
-                {9, 28795}, -- Bladespire Warbands
-                {10, 33540}, -- Master Assassin Wristwraps
-                {11, 35176}, -- Guardian's Plate Bracers
-                {12, 35178}, -- Guardian's Scaled Bracers
-                {13, 32251}, -- Wraps of Precise Flight
-                {14, 33813}, -- Vindicator's Plate Bracers
-                {15, 33910} -- Vindicator's Scaled Bracers
+                {1, 34431},
+                {2, 32574},
+                {3, 32580},
+                {4, 32568},
+                {5, 30863},
+                {6, 30057},
+                {7, 32324},
+                {8, 30861},
+                {9, 28795},
+                {10, 33540},
+                {11, 35176},
+                {12, 35178},
+                {13, 32251},
+                {14, 33813},
+                {15, 33910},
+                {16, 27899, "Profession" },
             }
         },
         {
             -- T2
-            name = format(AL["Hands"], "2"),
+            name = format(AL["Gloves"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34343}, -- Thalassian Ranger Gauntlets
-                {2, 34370}, -- Gloves of Immortal Dusk
-                {3, 34234}, -- Shadowed Gauntlets of Paroxysm
-                {4, 34341}, -- Borderland Paingrips
-                {5, 34378}, -- Hard Khorium Battlefists
-                {6, 34374}, -- Fletcher's Gloves of the Phoenix
-                {7, 34408}, -- Gloves of the Forest Drifter
-                {8, 32347}, -- Grips of Damnation
-                {9, 32234}, -- Fists of Mukoa
-                {10, 29947}, -- Gloves of the Searing Grip
-                {11, 32608}, -- Pillager's Gauntlets
-                {12, 32278}, -- Grips of Silent Justice
-                {13, 34916}, -- Gauntlets of Rapidity
-                {14, 34911}, -- Handwraps of the Aggressor
-                {15, 33539} -- Trickster's Stickyfingers
+                {1, 34343},
+                {2, 34370},
+                {3, 34234},
+                {4, 34341},
+                {5, 34378},
+                {6, 34374},
+                {7, 34408},
+                {8, 32347},
+                {9, 32234},
+                {10, 29947},
+                {11, 32608},
+                {12, 32278},
+                {13, 34916},
+                {14, 34911},
+                {15, 33539},
+                {16, 33995, "Profession" },
             }
         },
         {
@@ -179,65 +186,67 @@ data["Palret"] = {
         },
         {
             -- T2
-            name = format(AL["Rings"], "2"),
+            name = format(AL["Ring"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34361}, -- Hard Khorium Band
-                {2, 34189}, -- Band of Ruinous Delight
-                {3, 32335}, -- Unstoppable Aggressor's Ring
-                {4, 32526}, -- Band of Devastation
-                {5, 34887}, -- Angelista's Revenge
-                {6, 30834}, -- Shapeshifter's Signet
-                {7, 29301}, -- Band of the Eternal Champion
-                {8, 33496}, -- Signet of Primal Wrath
-                {9, 29997}, -- Band of the Ranger-General
-                {10, 32497}, -- Stormrage Signet Ring
-                {11, 35131}, -- Guardian's Band of Triumph
-                {12, 30061}, -- Ancestral Ring of Conquest
-                {13, 32266}, -- Ring of Deceitful Intent
-                {14, 29300}, -- Band of Eternity (revered)
-                {15, 30052} -- Ring of Lethality
+                {1, 34361},
+                {2, 34189},
+                {3, 32335},
+                {4, 32526},
+                {5, 34887},
+                {6, 30834},
+                {7, 29301},
+                {8, 33496},
+                {9, 29997},
+                {10, 32497},
+                {11, 35131},
+                {12, 30061},
+                {13, 32266},
+                {14, 29300},
+                {15, 30052},
             }
         },
         {
             -- T2
             name = format(AL["Legs"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34180}, -- Felfury Legplates
-                {2, 34188}, -- Leggings of the Immortal Night
-                {3, 34168}, -- Starstalker Legguards
-                {4, 34385}, -- Leggings of the Immortal Beast
-                {5, 34943}, -- Legplates of Unending Fury
-                {6, 30900}, -- Bow-stitched Leggings
-                {7, 30903}, -- Legguards of Endless Rage
-                {8, 32341}, -- Leggings of Divine Retribution
-                {9, 34910}, -- Tameless Breeches
-                {10, 30993}, -- Lightbringer Greaves
-                {11, 34381}, -- Felstrength Legplates
-                {12, 33538}, -- Shallow-grave Trousers
-                {13, 29950}, -- Greaves of the Bloodwarder
-                {14, 29995}, -- Leggings of Murderous Intent
-                {15, 35091} -- Brutal Gladiator's Scaled Legguards
+                {1, 34180},
+                {2, 34188},
+                {3, 34168},
+                {4, 34385},
+                {5, 34943},
+                {6, 30900},
+                {7, 30903},
+                {8, 32341},
+                {9, 34910},
+                {10, 30993},
+                {11, 34381},
+                {12, 33538},
+                {13, 29950},
+                {14, 29995},
+                {15, 35091},
+                {16, 29535 },
             }
         },
         {
             -- T2
-            name = format(AL["Feet"], "2"),
+            name = format(AL["Boots"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34561}, -- Lightbringer Boots
-                {2, 32345}, -- Dreadboots of the Legion
-                {3, 32366}, -- Shadowmaster's Boots
-                {4, 32510}, -- Softstep Boots of Tracking
-                {5, 33222}, -- Nyn'jah's Tabi Boots
-                {6, 33303}, -- Skullshatter Warboots
-                {7, 29951}, -- Star-Strider Boots
-                {8, 30104}, -- Cobra-Lash Boots
-                {9, 35146}, -- Guardian's Plate Greaves
-                {10, 30880}, -- Quickstrider Moccasins
-                {11, 33582}, -- Footwraps of Wild Encroachment
-                {12, 30081}, -- Warboots of Obliteration
-                {13, 35148}, -- Guardian's Scaled Greaves
-                {14, 28608}, -- Ironstriders of Urgency
-                {15, 34809} -- Sunrage Treads
+                {1, 34561},
+                {2, 32345},
+                {3, 32366},
+                {4, 32510},
+                {5, 33222},
+                {6, 33303},
+                {7, 29951},
+                {8, 30104},
+                {9, 35146},
+                {10, 30880},
+                {11, 33582},
+                {12, 30081},
+                {13, 35148},
+                {14, 28608},
+                {15, 34809},
+                {16, 27951, "Profession" },
             }
         },
         {
@@ -275,21 +284,22 @@ data["Palret"] = {
             -- T2
             name = format(AL["Twohand"], "2"),
             [NORMAL_DIFF] = {
-                {1, 34247}, -- Apolyon, the Soul-Render
-                {2, 34183}, -- Shivering Felspine
-                {3, 34891}, -- The Blade of Harbingers
-                {4, 34989}, -- Brutal Gladiator's Bonegrinder
-                {5, 35015}, -- Brutal Gladiator's Greatsword
-                {6, 32332}, -- Torch of the Damned
-                {7, 30902}, -- Cataclysm's Edge
-                {8, 34997}, -- Brutal Gladiator's Decapitator
-                {9, 35064}, -- Brutal Gladiator's Painsaw
-                {10, 33663}, -- Vengeful Gladiator's Bonegrinder
-                {11, 33688}, -- Vengeful Gladiator's Greatsword
-                {12, 28430}, -- Lionheart Executioner
-                {13, 29993}, -- Twinblade of the Phoenix
-                {14, 33670}, -- Vengeful Gladiator's Decapitator
-                {15, 32348} -- Soul Cleaver
+                {1, 34247},
+                {2, 34183},
+                {3, 34891},
+                {4, 34989},
+                {5, 35015},
+                {6, 32332},
+                {7, 30902},
+                {8, 34997},
+                {9, 35064},
+                {10, 33663},
+                {11, 33688},
+                {12, 28430},
+                {13, 29993},
+                {14, 33670},
+                {15, 32348},
+                {16, 27984, "Profession" },
             }
         },
         {
@@ -301,3 +311,36 @@ data["Palret"] = {
         --@end-version-bcc@
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -190,9 +190,17 @@ function ItemFrame:Refresh(skipProtect)
 		end
 
 		local fixItemNum = 0
-		local setn, item = nil, nil
+		local setn, item, correctedTableType = nil, nil, nil
 		for i = 1, #items do
+			local originalTableType = tableType[1]
 			item = items[i]
+
+			-- In case we want to override the default behavior
+			if item[3] then
+				--print ('Converting item to ' .. item[3])
+				tableType[1] = item[3]
+			end
+
 			fixItemNum = item[1] - page
 			if ItemFrame.frame.ItemButtons[fixItemNum] then
 				ItemFrame.frame.ItemButtons[fixItemNum]:SetDifficultyID(diffData.difficultyID)
@@ -204,6 +212,8 @@ function ItemFrame:Refresh(skipProtect)
 				GUI.frame.contentFrame.nextPageButton.info = tostring(AtlasLoot.db.GUI.selected[5] + 1)
 				--break
 			end
+
+			tableType[1] = originalTableType
 		end
 		-- page not found set it to first page and reset
 		if not setn and AtlasLoot.db.GUI.selected[5] ~= 0 then

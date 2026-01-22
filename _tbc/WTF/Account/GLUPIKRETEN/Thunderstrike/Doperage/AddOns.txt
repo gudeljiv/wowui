@@ -198,3 +198,5 @@ TipTacTalents: enabled
 WaylaidSuppliesTooltip: disabled
 Masque_Dominos: enabled
 Farmer: disabled
+LortiUI: disabled
+UberUI: disabled

@@ -7,10 +7,16 @@ local loadSpells = function()
 	buffs = {}
 	if xVermin.Class == "PALADIN" then
 		buffs = {
+			-- {
+			-- 	["spell_id"] = xVermin.GetSpellID("Blessing of Might"),
+			-- 	["short_name"] = "bom",
+			-- 	["name"] = "Blessing of Might",
+			-- 	["found"] = false,
+			-- },
 			{
-				["spell_id"] = xVermin.GetSpellID("Blessing of Might"),
-				["short_name"] = "bom",
-				["name"] = "Blessing of Might",
+				["spell_id"] = xVermin.GetSpellID("Blessing of Wisdom"),
+				["short_name"] = "bow",
+				["name"] = "Blessing of Wisdom",
 				["found"] = false,
 			},
 		}

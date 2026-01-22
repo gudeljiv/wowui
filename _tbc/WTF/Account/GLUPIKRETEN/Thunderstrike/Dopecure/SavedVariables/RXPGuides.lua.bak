@@ -146,21 +146,11 @@ RXPCData = {
 },
 ["finished"] = false,
 },
-[792] = {
-{
-["type"] = "monster",
-["numRequired"] = 12,
-["text"] = "Vile Familiar slain: 0/12",
-["finished"] = false,
-["numFulfilled"] = 0,
-},
-["finished"] = false,
-},
-[3902] = {
+[794] = {
 {
 ["type"] = "item",
-["numRequired"] = 6,
-["text"] = "Scavenged Goods: 0/6",
+["numRequired"] = 1,
+["text"] = "Burning Blade Medallion: 0/1",
 ["finished"] = false,
 ["numFulfilled"] = 0,
 },
@@ -176,11 +166,21 @@ RXPCData = {
 },
 ["finished"] = false,
 },
-[794] = {
+[3902] = {
 {
 ["type"] = "item",
-["numRequired"] = 1,
-["text"] = "Burning Blade Medallion: 0/1",
+["numRequired"] = 6,
+["text"] = "Scavenged Goods: 0/6",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[792] = {
+{
+["type"] = "monster",
+["numRequired"] = 12,
+["text"] = "Vile Familiar slain: 0/12",
 ["finished"] = false,
 ["numFulfilled"] = 0,
 },
@@ -205,32 +205,15 @@ RXPCData = {
 [382] = "The Red Messenger",
 [6395] = "Marla's Last Wish",
 [376] = "The Damned",
-[792] = "Vile Familiars",
-[3902] = "Scavenging Deathknell",
-[3901] = "Rattling the Rattlecages",
 [794] = "Burning Blade Medallion",
-},
-["guideDisabled"] = {
-[0] = 0,
-},
-["currentGuideName"] = "",
-["stepSkip"] = {
-},
-["discardPile"] = {
-[6948] = true,
+[3901] = "Rattling the Rattlecages",
+[3902] = "Scavenging Deathknell",
+[792] = "Vile Familiars",
 },
 ["guideMetaData"] = {
 ["enableGroupQuests"] = {
 },
 ["professionGuides"] = {
-},
-["dungeonGuides"] = {
-},
-["enabledDungeons"] = {
-["Horde"] = {
-},
-["Alliance"] = {
-},
 },
 ["enabledProfessions"] = {
 ["Horde"] = {
@@ -238,6 +221,23 @@ RXPCData = {
 ["Alliance"] = {
 },
 },
+["enabledDungeons"] = {
+["Horde"] = {
+},
+["Alliance"] = {
+},
+},
+["dungeonGuides"] = {
+},
+},
+["currentGuideName"] = "",
+["stepSkip"] = {
+},
+["discardPile"] = {
+[6948] = true,
+},
+["guideDisabled"] = {
+[0] = 0,
 },
 }
 RXPCTrackingData = {
@@ -258,10 +258,10 @@ RXPCTrackingData = {
 ["monthDay"] = 21,
 ["day"] = 0,
 ["month"] = 12,
-["minute"] = 37,
+["weekday"] = 1,
 ["year"] = 2025,
 ["hour"] = 10,
-["weekday"] = 1,
+["minute"] = 37,
 },
 ["started"] = 0,
 },
@@ -281,10 +281,10 @@ RXPCTrackingData = {
 ["monthDay"] = 21,
 ["day"] = 0,
 ["month"] = 12,
-["minute"] = 37,
+["weekday"] = 1,
 ["year"] = 2025,
 ["hour"] = 10,
-["weekday"] = 1,
+["minute"] = 37,
 },
 ["started"] = 0,
 },

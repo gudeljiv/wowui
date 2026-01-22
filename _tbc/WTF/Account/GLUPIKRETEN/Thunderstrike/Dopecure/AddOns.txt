@@ -151,3 +151,5 @@ TipTacOptions: enabled
 TipTacTalents: enabled
 Masque_Dominos: enabled
 Farmer: disabled
+LortiUI: disabled
+UberUI: disabled
