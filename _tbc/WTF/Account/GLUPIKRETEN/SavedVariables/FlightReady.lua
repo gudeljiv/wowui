@@ -30,5 +30,5 @@ FlightReadyDB = {
 ["offsetY"] = 0,
 ["individual"] = {
 },
-["uiMode"] = "STANDARD",
+["uiMode"] = "LEATRIX",
 }

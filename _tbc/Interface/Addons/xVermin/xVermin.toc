@@ -17,6 +17,7 @@ _Debug.lua
 Frames/_Misc_Frames.lua
 Frames/_Moveable_Frames.lua
 Frames/BetterRunesFrame.lua
+Frames/BuffFrame.lua
 Frames/CharacterFrame.lua
 Frames/CustomContainers.lua
 Frames/DefaultFramesCustomScale.lua
@@ -62,14 +63,15 @@ Addons/MultiCastActionBarFrame.lua
 Addons/nMainBar.lua
 Addons/NovaWorldBuffs.lua
 Addons/NugKeyFeedback.lua
+Addons/OpenSesame.lua
 Addons/PallyPower.lua
-Addons/RareScanner.lua
-Addons/ShadowedUnitFrames.lua
 Addons/Questie.lua
+Addons/RareScanner.lua
 Addons/RangeDisplay.lua
 Addons/RingMenu.lua
 Addons/RXPGuide.lua
 Addons/Selly.lua
+Addons/ShadowedUnitFrames.lua
 Addons/SUI.lua
 Addons/TellMeWhen.lua
 Addons/TomTom.lua

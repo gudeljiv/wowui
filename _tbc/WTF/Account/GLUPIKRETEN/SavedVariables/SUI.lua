@@ -4,6 +4,7 @@ SUIDB = {
 ["Doperage - Thunderstrike"] = "Default",
 ["Dopeseal - Thunderstrike"] = "Default",
 ["Poklopac - Thunderstrike"] = "Default",
+["Dopeclaw - Thunderstrike"] = "Default",
 ["Dopesnare - Thunderstrike"] = "Default",
 ["Dopecure - Thunderstrike"] = "Default",
 },

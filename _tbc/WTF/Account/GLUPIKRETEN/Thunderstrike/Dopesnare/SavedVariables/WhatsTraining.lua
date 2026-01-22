@@ -2,6 +2,7 @@
 WT_LearnedPetAbilities = {
 ["Cower"] = {
 ["Rank 1"] = true,
+["Rank 2"] = true,
 },
 ["Charge"] = {
 ["Rank 1"] = true,
@@ -48,6 +49,9 @@ WT_LearnedPetAbilities = {
 ["Nature Resistance"] = {
 ["Rank 3"] = true,
 ["Rank 1"] = true,
+["Rank 2"] = true,
+},
+["Gore"] = {
 ["Rank 2"] = true,
 },
 ["Bite"] = {

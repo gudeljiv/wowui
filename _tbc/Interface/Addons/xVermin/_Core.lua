@@ -171,7 +171,7 @@ xVermin.CheckIfLoadedWithTimer = function(condition, callback, timer, waittime)
 		condition_table["and"] = {}
 		condition_table["or"] = {}
 
-		condition:gsub("[_.%w]+", function(word)
+		condition:gsub("[_.%w%-]+", function(word)
 			-- return keywords[word] or string.format("_G[%q]", word)
 			-- text.keywords[word] = string.format('_G[%q]', word)
 			if type(condition) == "string" and condition:sub(1, 9) == "ChatFrame" then

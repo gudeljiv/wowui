@@ -1,0 +1,39 @@
+## Interface: 11508
+## Title: Tamed
+## Author: https://github.com/moody
+## Version: 1.15.2
+## Notes: A guide to tamed pet abilities.
+## SavedVariables: __TAMED_ADDON_DB__
+
+# Libraries
+libs\LibStub.lua
+libs\CallbackHandler-1.0.lua
+libs\AceAddon-3.0.lua
+libs\AceConsole-3.0.lua
+libs\AceDB-3.0.lua
+libs\AceGUI-3.0\AceGUI-3.0.xml
+libs\HereBeDragons-2.0.lua
+libs\HereBeDragons-Pins-2.0.lua
+libs\LibDataBroker-1.1.lua
+libs\LibDBIcon-1.0.lua
+
+# Data
+data\TameableAbilities.lua
+data\TameableNPCs.lua
+
+# General
+src\_init.lua
+src\locale.lua
+src\colors.lua
+src\data.lua
+src\commands.lua
+src\db.lua
+src\tooltips.lua
+
+# UI
+src\ui\minimap-icon.lua
+src\ui\widgets.lua
+src\ui\pin-helper.lua
+src\ui\main.lua
+src\ui\groups\ability-group.lua
+src\ui\groups\options-group.lua

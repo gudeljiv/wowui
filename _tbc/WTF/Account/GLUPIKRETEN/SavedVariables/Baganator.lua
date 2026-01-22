@@ -117,21 +117,21 @@ BAGANATOR_CONFIG = {
 ["default_miscellaneous"] = false,
 },
 ["show_sort_button_2"] = true,
-["guild_current_tab"] = 1,
+["category_group_empty_slots"] = true,
 ["sort_ignore_bank_slots_count"] = {
 ["Dopestab-LoneWolf"] = 0,
 ["Jutarnjedrvo-LoneWolf"] = 0,
 ["Dopeclaw-LoneWolf"] = 0,
 ["Dopesnare-LoneWolf"] = 0,
 },
-["category_group_empty_slots"] = true,
+["icon_top_left_corner_array"] = {
+"item_level",
+},
 ["no_frame_borders"] = true,
 ["warband_current_tab"] = 1,
 ["category_item_grouping"] = false,
 ["main_view_show_bag_slots"] = false,
-["icon_top_left_corner_array"] = {
-"item_level",
-},
+["guild_current_tab"] = 1,
 ["recent_timeout"] = 0,
 ["category_display_order"] = {
 "default_auto_recents",
@@ -187,17 +187,13 @@ BAGANATOR_CONFIG = {
 ["debug_timers"] = false,
 ["bank_view_position"] = {
 "BOTTOMLEFT",
-1276.984008789063,
-655.1582641601562,
+1113.809692382813,
+736.4281616210938,
 },
 ["bag_view_width"] = 12,
 ["tooltips_character_limit"] = 4,
 ["recent_include_owned"] = false,
-["character_select_position"] = {
-"CENTER",
-279.0157775878906,
-100.6427154541016,
-},
+["enable_equipment_set_info_2"] = true,
 ["tooltips_faction_only"] = false,
 ["guild_view_position_2"] = {
 "TOPLEFT",
@@ -215,7 +211,7 @@ BAGANATOR_CONFIG = {
 ["keyring"] = true,
 },
 ["setting_anchors"] = false,
-["enable_equipment_set_info_2"] = true,
+["bag_empty_space_at_top"] = true,
 ["disabled_skins"] = {
 },
 ["category_horizontal_spacing_2"] = 0.4,
@@ -337,7 +333,11 @@ BAGANATOR_CONFIG = {
 ["Doperage-LoneWolf"] = 0,
 ["Dopestab-LoneWolf"] = 0,
 },
-["bag_empty_space_at_top"] = true,
+["character_select_position"] = {
+"CENTER",
+279.0157775878906,
+100.6427154541016,
+},
 ["show_guild_bank_button"] = true,
 ["category_sections"] = {
 ["1"] = {
@@ -346,27 +346,6 @@ BAGANATOR_CONFIG = {
 ["2"] = {
 ["name"] = "CRAFTING",
 },
-},
-["debug_keywords"] = false,
-["enable_guild_view"] = true,
-["auto_sort_on_open"] = false,
-["skins"] = {
-["blizzard"] = {
-["no_frame_borders"] = false,
-["view_transparency"] = 0,
-["empty_slot_background"] = false,
-},
-["dark"] = {
-["no_frame_borders"] = true,
-["square_icons"] = true,
-["view_transparency"] = 0.3,
-["empty_slot_background"] = false,
-},
-},
-["main_view_position"] = {
-"RIGHT",
--350.796142578125,
-166.9839477539063,
 },
 ["recent_characters_main_view"] = {
 "Dopecoil-Thunderstrike",
@@ -388,6 +367,27 @@ BAGANATOR_CONFIG = {
 "Dopenac-LoneWolf",
 "Dopemend-LoneWolf",
 "Dopecoil-LoneWolf",
+},
+["enable_guild_view"] = true,
+["auto_sort_on_open"] = false,
+["debug_keywords"] = false,
+["main_view_position"] = {
+"RIGHT",
+-350.796142578125,
+166.9839477539063,
+},
+["skins"] = {
+["blizzard"] = {
+["no_frame_borders"] = false,
+["view_transparency"] = 0,
+["empty_slot_background"] = false,
+},
+["dark"] = {
+["no_frame_borders"] = true,
+["square_icons"] = true,
+["view_transparency"] = 0.3,
+["empty_slot_background"] = false,
+},
 },
 ["show_guild_banks_in_tooltips"] = true,
 ["guild_view_dialog_position"] = {
