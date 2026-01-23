@@ -32,17 +32,17 @@ LBIS:AddEnchant(spec3, "37891", LBIS.L["Head"]) --
 LBIS:AddEnchant(spec3, "29483", LBIS.L["Shoulder"]) --
 LBIS:AddEnchant(spec5, "27927", LBIS.L["Ring"]) --
 
-LBIS:AddItem(spec0, "32461", LBIS.L["Head"], "BIS") --Furious Gizmatic Goggles
 LBIS:AddItem(spec0, "32087", LBIS.L["Head"], "BIS") --Mask of the Deceiver
-LBIS:AddItem(spec0, "31105", LBIS.L["Head"], "BIS") --Overlord's Helmet of Second Sight
 LBIS:AddItem(spec0, "28182", LBIS.L["Head"], "Alt") --Helm of the Claw
+LBIS:AddItem(spec0, "31105", LBIS.L["Head"], "Alt") --Overlord's Helmet of Second Sight
 LBIS:AddItem(spec0, "33173", LBIS.L["Shoulder"], "BIS") --Ragesteel Shoulders
 LBIS:AddItem(spec0, "27771", LBIS.L["Shoulder"], "BIS") --Doomplate Shoulderguards
 LBIS:AddItem(spec0, "27434", LBIS.L["Shoulder"], "Alt") --Mantle of Perenolde
 LBIS:AddItem(spec0, "28865", LBIS.L["Shoulder"], "Alt") --High Warlord's Scaled Shoulders
 LBIS:AddItem(spec0, "28713", LBIS.L["Shoulder"], "Alt") --Grand Marshal's Scaled Shoulders
+LBIS:AddItem(spec0, "33122", LBIS.L["Back"], "BIS") --Cloak of Darkness
 LBIS:AddItem(spec0, "24259", LBIS.L["Back"], "BIS") --Vengeance Wrap
-LBIS:AddItem(spec0, "27878", LBIS.L["Back"], "BIS") --Auchenai Death Shroud
+LBIS:AddItem(spec0, "27878", LBIS.L["Back"], "Alt") --Auchenai Death Shroud
 LBIS:AddItem(spec0, "27892", LBIS.L["Back"], "Alt") --Cloak of the Inciter
 LBIS:AddItem(spec0, "28249", LBIS.L["Back"], "Alt") --Capacitus' Cloak of Calibration
 LBIS:AddItem(spec0, "23522", LBIS.L["Chest"], "BIS") --Ragesteel Breastplate
@@ -79,9 +79,8 @@ LBIS:AddItem(spec0, "30365", LBIS.L["Ring"], "Alt") --Overseer's Signet
 LBIS:AddItem(spec0, "23038", LBIS.L["Ring"], "Alt") --Band of Unnatural Forces
 LBIS:AddItem(spec0, "31380", LBIS.L["Ring"], "Alt") --Acrobat's Mark of the Sha'tar
 LBIS:AddItem(spec0, "29383", LBIS.L["Trinket"], "BIS") --Bloodlust Brooch
-LBIS:AddItem(spec0, "28034", LBIS.L["Trinket"], "Alt") --Hourglass of the Unraveller
-LBIS:AddItem(spec0, "28288", LBIS.L["Trinket"], "Alt") --Abacus of Violent Odds
-LBIS:AddItem(spec0, "31856", LBIS.L["Trinket"], "Alt") --Darkmoon Card: Crusade
+LBIS:AddItem(spec0, "28034", LBIS.L["Trinket"], "BIS") --Hourglass of the Unraveller
+LBIS:AddItem(spec0, "28288", LBIS.L["Trinket"], "BIS") --Abacus of Violent Odds
 LBIS:AddItem(spec0, "22954", LBIS.L["Trinket"], "Alt") --Kiss of the Spider
 LBIS:AddItem(spec0, "23041", LBIS.L["Trinket"], "Alt") --Slayer's Crest
 LBIS:AddItem(spec0, "19406", LBIS.L["Trinket"], "Alt") --Drake Fang Talisman
@@ -97,7 +96,6 @@ LBIS:AddItem(spec0, "27986", LBIS.L["Two Hand"], "Alt") --Crow Wing Reaper
 LBIS:AddItem(spec0, "27484", LBIS.L["Ranged/Relic"], "BIS") --Libram of Avengement
 LBIS:AddItem(spec0, "22401", LBIS.L["Ranged/Relic"], "Alt") --Libram of Hope
 LBIS:AddItem(spec0, "23203", LBIS.L["Ranged/Relic"], "Alt") --Libram of Fervor
-LBIS:AddItem(spec0, "22402", LBIS.L["Ranged/Relic"], "Alt") --Libram of Grace
 
 LBIS:AddItem(spec1, "29073", LBIS.L["Head"], "BIS") --Justicar Crown
 LBIS:AddItem(spec1, "27881", LBIS.L["Head"], "Alt") --Gladiator's Scaled Helm
@@ -146,25 +144,23 @@ LBIS:AddItem(spec1, "28730", LBIS.L["Ring"], "Alt") --Mithril Band of the Unscar
 LBIS:AddItem(spec1, "29283", LBIS.L["Ring"], "Alt") --Violet Signet of the Master Assassin
 LBIS:AddItem(spec1, "31920", LBIS.L["Ring"], "Alt") --Shaffar's Band of Brutality
 LBIS:AddItem(spec1, "28649", LBIS.L["Ring"], "Alt") --Garona's Signet Ring
+LBIS:AddItem(spec1, "28288", LBIS.L["Trinket"], "BIS") --Abacus of Violent Odds
 LBIS:AddItem(spec1, "29383", LBIS.L["Trinket"], "BIS") --Bloodlust Brooch
 LBIS:AddItem(spec1, "28830", LBIS.L["Trinket"], "BIS") --Dragonspine Trophy
-LBIS:AddItem(spec1, "28288", LBIS.L["Trinket"], "BIS") --Abacus of Violent Odds
-LBIS:AddItem(spec1, "23206", LBIS.L["Trinket"], "Alt") --Mark of the Champion
-LBIS:AddItem(spec1, "31856", LBIS.L["Trinket"], "Alt") --Darkmoon Card: Crusade
 LBIS:AddItem(spec1, "28034", LBIS.L["Trinket"], "Alt") --Hourglass of the Unraveller
+LBIS:AddItem(spec1, "23206", LBIS.L["Trinket"], "Alt") --Mark of the Champion
 LBIS:AddItem(spec1, "22954", LBIS.L["Trinket"], "Alt") --Kiss of the Spider
 LBIS:AddItem(spec1, "23041", LBIS.L["Trinket"], "Alt") --Slayer's Crest
 LBIS:AddItem(spec1, "19406", LBIS.L["Trinket"], "Alt") --Drake Fang Talisman
 LBIS:AddItem(spec1, "28579", LBIS.L["Trinket"], "Alt") --Romulo's Poison Vial
 LBIS:AddItem(spec1, "28429", LBIS.L["Two Hand"], "BIS") --Lionheart Champion
-LBIS:AddItem(spec1, "30722", LBIS.L["Two Hand"], "Alt") --Ethereum Nexus-Reaver
+LBIS:AddItem(spec1, "30722", LBIS.L["Two Hand"], "BIS") --Ethereum Nexus-Reaver
 LBIS:AddItem(spec1, "28441", LBIS.L["Two Hand"], "Alt") --Deep Thunder
 LBIS:AddItem(spec1, "28773", LBIS.L["Two Hand"], "Alt") --Gorehowl
 LBIS:AddItem(spec1, "24550", LBIS.L["Two Hand"], "Alt") --Gladiator's Greatsword
 LBIS:AddItem(spec1, "27484", LBIS.L["Ranged/Relic"], "BIS") --Libram of Avengement
 LBIS:AddItem(spec1, "22401", LBIS.L["Ranged/Relic"], "Alt") --Libram of Hope
 LBIS:AddItem(spec1, "23203", LBIS.L["Ranged/Relic"], "Alt") --Libram of Fervor
-LBIS:AddItem(spec1, "22402", LBIS.L["Ranged/Relic"], "Alt") --Libram of Grace
 
 LBIS:AddItem(spec2, "32461", LBIS.L["Head"], "BIS") --Furious Gizmatic Goggles
 LBIS:AddItem(spec2, "30131", LBIS.L["Head"], "Alt") --Crystalforge War-Helm
