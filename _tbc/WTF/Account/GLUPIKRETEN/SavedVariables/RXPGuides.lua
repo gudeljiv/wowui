@@ -268,7 +268,7 @@ RXPSettings = {
 ["profileKeys"] = {
 ["Vermin - Zandalar Tribe"] = "Default",
 ["Dopeclaw - Living Flame"] = "Default",
-["Poklopac - Thunderstrike"] = "Poklopac - Thunderstrike",
+["Poklopac - Thunderstrike"] = "Default",
 ["Vbank - Celebras"] = "Default",
 ["Dopesick - Stitches"] = "Default",
 ["Dopenac - Lone Wolf"] = "Default",
@@ -441,7 +441,6 @@ nil,
 },
 },
 ["Poklopac - Thunderstrike"] = {
-["enableGroupQuests"] = true,
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -500,6 +499,7 @@ nil,
 },
 ["enableXpStepSkipping"] = false,
 ["itemUpgradeSpec"] = "Enhancement",
+["enableGroupQuests"] = true,
 },
 ["Vbank - Celebras"] = {
 ["macroAnnounced"] = true,
@@ -2790,10 +2790,10 @@ nil,
 ["RXPFrame"] = {
 {
 "BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
+nil,
+"BOTTOMRIGHT",
+-544.7991333007812,
+1.26976752281189,
 },
 },
 ["activeItemFrame"] = {
@@ -2824,8 +2824,8 @@ nil,
 42.99992370605469,
 },
 ["RXPFrame"] = {
-265.0950317382813,
-207.5399017333984,
+253.0314331054688,
+207.4602813720703,
 },
 ["activeItemFrame"] = {
 72.69862365722656,
@@ -2836,14 +2836,15 @@ nil,
 31.99995613098145,
 },
 },
-["itemUpgradeSpec"] = "Warrior",
+["itemUpgradeSpec"] = "Enhancement",
 ["enableLevelUpAnnounceGroup"] = false,
 ["dungeons"] = {
 ["WC"] = true,
 },
-["frameHeight"] = 207.5399017333984,
-["enableLevelUpAnnounceSolo"] = false,
+["enableGroupQuests"] = true,
 ["enableFlyStepAnnouncements"] = false,
+["enableLevelUpAnnounceSolo"] = false,
+["frameHeight"] = 207.4602813720703,
 },
 ["Dopestab - Lone Wolf"] = {
 ["frameSizes"] = {

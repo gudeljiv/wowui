@@ -16,9 +16,7 @@ SUIDB = {
 ["afkscreen"] = false,
 },
 ["display"] = {
-["ms"] = false,
 ["ilvl"] = false,
-["fps"] = false,
 },
 },
 ["tooltip"] = {

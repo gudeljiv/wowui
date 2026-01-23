@@ -16,9 +16,7 @@ SUIDB = {
 },
 ["font"] = "Fonts\\ARIALN.TTF",
 ["display"] = {
-["ms"] = false,
 ["ilvl"] = false,
-["fps"] = false,
 },
 },
 ["tooltip"] = {

@@ -1957,6 +1957,23 @@ nil,
 ["shown"] = false,
 ["hide"] = true,
 },
+["GUI"] = {
+["selectedGameVersion"] = 1,
+["selected"] = {
+nil,
+"BlackfathomDeeps",
+6,
+1,
+0,
+},
+["point"] = {
+nil,
+nil,
+"CENTER",
+-115.5555038452148,
+-121.2699508666992,
+},
+},
 },
 ["Vermins - Stonespine"] = {
 },

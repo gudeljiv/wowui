@@ -160,7 +160,7 @@ RuneBar: enabled
 AdiBags_Item_Sets: disabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
-NovaConsumesHelper: disabled
+NovaConsumesHelper: enabled
 Drift: enabled
 Syndicator: enabled
 Blizzard_ObjectiveTracker: enabled

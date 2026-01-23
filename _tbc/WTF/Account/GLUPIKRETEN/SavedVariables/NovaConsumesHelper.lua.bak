@@ -29,8 +29,9 @@ NCHdatabase = {
 ["profileKeys"] = {
 ["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
 ["Dopeseal - Thunderstrike"] = "Dopeseal - Thunderstrike",
-["Dopesnare - Thunderstrike"] = "Dopesnare - Thunderstrike",
+["Poklopac - Thunderstrike"] = "Poklopac - Thunderstrike",
 ["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
+["Dopesnare - Thunderstrike"] = "Dopesnare - Thunderstrike",
 },
 ["profiles"] = {
 ["Doperage - Thunderstrike"] = {
@@ -39,10 +40,12 @@ NCHdatabase = {
 ["Dopeseal - Thunderstrike"] = {
 ["consumesSlot43"] = "Swiftness Potion",
 },
-["Dopesnare - Thunderstrike"] = {
+["Poklopac - Thunderstrike"] = {
 },
 ["Dopeclaw - Thunderstrike"] = {
 ["consumesSlot2"] = "Winterfall Firewater",
+},
+["Dopesnare - Thunderstrike"] = {
 },
 },
 }

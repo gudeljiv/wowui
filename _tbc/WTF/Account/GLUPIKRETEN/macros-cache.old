@@ -56,18 +56,21 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3731
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Kayren Soothallow
+/targetexact Hillsbrad Farmhand
+/targetexact Hillsbrad Farmer
+/targetexact Farmer Getz
 /targetlasttarget [dead]
 END
-VER 3 0000000000000024 "sharp" "134400"
-#showtooltip
-/use Rough Sharpening Stone
+VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
+#showtooltip item:0
+/use item:0
 /use [button:2] 17; 16
 /click StaticPopup1Button1
 END
 VER 3 000000000000000B "TEST" "132089"
-/run BuffFrame:ClearAllPoints()
-/run BuffFrame:SetPoint("TOPRIGHT", MinimapCluster, "TOPLEFT", -35, -23)
+/run RepositionLootFrames()
+/run GroupLootContainer:Show()
+/run GroupLootContainer:CreateBeautyBorder(8)
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

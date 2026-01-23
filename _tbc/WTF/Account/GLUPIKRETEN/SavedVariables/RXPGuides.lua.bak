@@ -2761,7 +2761,7 @@ nil,
 },
 ["RXPFrame"] = {
 265.0950317382813,
-207.5399017333984,
+27.99999809265137,
 },
 ["activeItemFrame"] = {
 72.69862365722656,
@@ -2769,17 +2769,10 @@ nil,
 },
 ["activeTargetFrame"] = {
 84.79988861083984,
-42.99992370605469,
+18.00000190734863,
 },
 },
-["itemUpgradeSpec"] = "Warrior",
-["enableFlyStepAnnouncements"] = false,
-["enableLevelUpAnnounceGroup"] = false,
-["dungeons"] = {
-["WC"] = true,
-},
-["frameHeight"] = 207.5399017333984,
-["enableLevelUpAnnounceSolo"] = false,
+["itemUpgradeSpec"] = "Discipline ",
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -2818,7 +2811,15 @@ nil,
 },
 },
 },
+["enableLevelUpAnnounceGroup"] = false,
+["dungeons"] = {
+["WC"] = true,
+},
+["enableGroupQuests"] = true,
+["enableFlyStepAnnouncements"] = false,
+["enableLevelUpAnnounceSolo"] = false,
 ["activeTargetScale"] = 1.25,
+["frameHeight"] = 207.5399017333984,
 },
 ["Dopeclaw - Thunderstrike"] = {
 ["showDangerousMobsMap"] = true,

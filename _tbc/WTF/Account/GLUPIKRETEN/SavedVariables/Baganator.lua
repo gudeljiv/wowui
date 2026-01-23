@@ -66,7 +66,7 @@ BAGANATOR_CONFIG = {
 },
 ["show_search_box"] = false,
 ["debug_categories_search"] = false,
-["bank_view_show_bag_slots"] = false,
+["bank_view_show_bag_slots"] = true,
 ["bank_view_width"] = 18,
 ["sort_method"] = "item-level",
 ["reverse_groups_sort_order"] = false,
@@ -288,6 +288,7 @@ BAGANATOR_CONFIG = {
 ["addedItems"] = {
 ["i:16790"] = true,
 ["i:209874"] = true,
+["i:11407"] = true,
 },
 },
 ["default_auto_equipment_sets"] = {
@@ -299,12 +300,16 @@ BAGANATOR_CONFIG = {
 ["priority"] = -1,
 ["addedItems"] = {
 ["i:2901"] = true,
+["i:5956"] = true,
 ["i:7005"] = true,
 },
 },
 ["default_junk"] = {
 ["showGroupPrefix"] = true,
 ["priority"] = -1,
+["addedItems"] = {
+["i:17056"] = true,
+},
 },
 ["default_consumable"] = {
 ["showGroupPrefix"] = true,

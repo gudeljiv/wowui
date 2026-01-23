@@ -25,7 +25,17 @@ xVermin.AOE = function(range, casting)
 		if
 			UnitExists(unit)
 			and not xVermin.HasValue(t, UnitCreatureType(unit))
-			and (UnitIsEnemy("player", unit) or UnitIsUnit(unit .. "target", "player"))
+			and (
+				(UnitIsEnemy("player", unit) and UnitIsPlayer(unit) and UnitIsPVP("player") and UnitIsPVP(unit)) -- ako je enemy player i ako je pvp
+				or (UnitIsEnemy("player", unit) and not UnitIsPlayer(unit)) -- ako enemy nije player
+				or (
+					UnitIsUnit(unit .. "target", "player")
+					and UnitIsPlayer(unit)
+					and UnitIsPVP("player")
+					and UnitIsPVP(unit)
+				) -- ako me targetira enemy koji je player i pvp je
+				or (UnitIsUnit(unit .. "target", "player") and not UnitIsPlayer(unit) and UnitAffectingCombat(unit)) -- ako me targetira enemy koji nije player i u combatu je
+			)
 		then
 			-- print(unit, UnitExists(unit), UnitCreatureType(unit), not xVermin.HasValue(t, UnitCreatureType(unit)), xVermin.GetRange(unit))
 			unitcasting = xVermin.IfUnitIsCastingInteruptible(unit)
