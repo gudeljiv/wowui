@@ -118,8 +118,8 @@ def print_debug(no, xclass, skill, id, image):
 
 classes = {"warrior", "druid", "rogue", "warlock", "mage", "hunter", "death knight", "priest", "paladin", "shaman"}
 
-time1 = 0.75
-time2 = 0.75
+time1 = 0.25
+time2 = 0.25
 
 count = 0
 number = 0

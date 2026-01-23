@@ -69,8 +69,21 @@ function Module:OnEnable()
 				copyBox:SetFont(f1, f2, f3)
 
 				local lines = GetChatLines(chat)
-				local text = concat(lines, "\n")
-				copyBox:SetMaxLetters(#lines * 255 + #lines)
+
+				-- pack/sanitize holes (nil indices) and preserve order
+				local keys, packed = {}, {}
+				for k, v in pairs(lines) do
+					if v ~= nil then
+						keys[#keys + 1] = k
+					end
+				end
+				table.sort(keys)
+				for _, k in ipairs(keys) do
+					packed[#packed + 1] = lines[k]
+				end
+
+				local text = table.concat(packed, "\n")
+				copyBox:SetMaxLetters(#text + 50) -- or: #packed * 255 + #packed
 				copyBox:SetText(text)
 			end
 		end
