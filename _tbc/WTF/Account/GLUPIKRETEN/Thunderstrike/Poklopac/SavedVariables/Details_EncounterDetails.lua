@@ -4,14 +4,6 @@ EncounterDetailsDB = {
 [36] = {
 },
 [37] = {
-["Raid Damage Done"] = {
-13,
-14,
-14,
-14,
-["max_value"] = 14,
-["__time"] = 1769069690,
-},
 },
 [38] = {
 ["Raid Damage Done"] = {

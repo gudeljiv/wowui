@@ -1,14 +1,8 @@
 
 BugGrabberDB = {
-["session"] = 13810,
+["session"] = 13812,
 ["lastSanitation"] = 3,
 ["errors"] = {
-{
-["message"] = "Interface/AddOns/SigmaProfessionFilter/TradeSkillFrame/Core/Utility.lua:1 (null)",
-["time"] = "2023/10/11 10:26:33",
-["session"] = 10752,
-["counter"] = 2,
-},
 {
 ["message"] = "Interface_Vanilla\\FrameXML\\Bindings.xml:1 Interface/AddOns/SigmaProfessionFilter/CraftFrame/Core/Utility.lua:1 (null)",
 ["time"] = "2023/10/11 10:26:33",
@@ -7674,6 +7668,14 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/xVermin/Helpers/WeaponBuff.lua]:106: in function <Interface/AddOns/xVermin/Helpers/WeaponBuff.lua:103>\n[Interface/AddOns/xVermin/Helpers/WeaponBuff.lua]:157: in function <Interface/AddOns/xVermin/Helpers/WeaponBuff.lua:155>",
 ["session"] = 13808,
 ["counter"] = 2,
+},
+{
+["message"] = "Interface/AddOns/SUI/Modules/Chat/_Copy.lua:69: invalid value (nil) at index 4 in table for 'concat'",
+["time"] = "2026/01/24 22:29:41",
+["locals"] = "chat = ChatFrame1 {\n shouldFadeAfterInactivity = true\n hasActiveChanges = false\n isScrollingMessageFrame = true\n systemPositionDirty = false\n buttonFrame = ChatFrame1ButtonFrame {\n }\n snappedFrames = <table> {\n }\n alternativeDefaultLanguage = \"Orcish\"\n hasOwnFontObject = true\n oldAlpha = 0\n channelList = <table> {\n }\n FontStringContainer = Frame {\n }\n messageTypeList = <table> {\n }\n fontObject = table: 0000025CBD6B1EC0 {\n }\n systemNameString = \"Chat Frame\"\n EditModeResizeButton = Button {\n }\n settingsDialogAnchor = <table> {\n }\n clickAnywhereButton = ChatFrame1ClickAnywhereButton {\n }\n isLayoutDirty = false\n systemInfo = <table> {\n }\n fadeDurationSecs = 3\n buttonSide = \"left\"\n Copy = Button {\n }\n ResizeButton = ChatFrame1ResizeButton {\n }\n overrideFadeTimestamp = 221115.169000\n settingDisplayInfoMap = <table> {\n }\n fontStringPool = <table> {\n }\n dirtySettings = <table> {\n }\n mouseOutTime = 3.221000\n minimizeButton = ChatFrame1MinimizeButton {\n }\n isInitialized = 1\n scrollOffset = 0\n checkedGMOTD = true\n init = 0\n defaultLanguage = \"Orcish\"\n allowScroll = true\n flashTimer = 0\n isUninteractable = false\n name = \"General\"\n isDocked = 1\n savedSystemInfo = <table> {\n }\n isDisplayDirty = false\n downKeys = <table> {\n }\n chatframe = ChatFrame1 {\n }\n onDisplayRefreshedCallbacks = <table> {\n }\n visibleLines = <table> {\n }\n oldestFadingLineTimestamp = 221115.169000\n textIsCopyable = false\n mouseInTime = 0\n timeVisibleSecs = 120\n historyBuffer = <table> {\n }\n zoneChannelList = <table> {\n }\n editBox = ChatFrame1EditBox {\n }\n insertMode = 2\n ScrollToBottomButton = Button {\n }\n Selection = Frame {\n }\n Background = ChatFrame1Background {\n }\n system = 8\n settingMap = <table> {\n }\n isStaticDocked = true\n isLocked = true\n}\nwidth = 540.000061\nheight = 300\nf1 = \"Fonts\\ARIALN.TTF\"\nf2 = 12\nf3 = \"\"\nlines = <table> {\n 1 = \"|cFF33FF99Buffet|r: Cache has been cleared due to version update.\"\n 2 = \"GrimoireKeeper loaded: enGB\"\n 3 = \"GrimoireKeeper v1.2 loaded\"\n 5 = \"|cFF33FF99Buffet|r: 2.5.4.131 Loaded!\"\n 6 = \"|c00FFAA00ThreatClassic2 v2.67 - Type /tc2 for options.|r\"\n 7 = \"|cff59f0dcTacoTip v0.4.5 by kebabstorm loaded. Safe travels!\"\n 8 = \"Total time played: 0 |4day:days;, 1 |4hour:hours;, 58 |4minute:minutes;, 55 |4second:seconds;\"\n 9 = \"Time played this level: 0 |4day:days;, 0 |4hour:hours;, 28 |4minute:minutes;, 34 |4second:seconds;\"\n 10 = \"Guild Message of the Day: www.GuildHelp.com - Our guild helps with Leveling & Gold for community members. Join us in discord or on www.GuildHelp.com\"\n 11 = \"|cff00BBFFOpen Sesame|r |cffAAAAAA//|r |cffFFFFFFPaused until you have at least 4 empty bag slots.|r\"\n 12 = \"RestedXP Guides: Targeting macro updated with: Galgar\"\n 13 = \"|cffff6900|HNWBCustomLink:buffs|h[WorldBuffs]|h|r |cffffff00|HNWBCustomLink:timers|h|HNWBCustomLink:timers|hYou are on a layered realm.|h|h\"\n 14 = \"|cffff6900|HNWBCustomLink:buffs|h[WorldBuffs]|h|r |cffffff00|HNWBCustomLink:timers|h|HNWBCustomLink:timers|hClick here to view current timers.|h|h\"\n}\ncontainer = CopyFrame {\n Center = Texture {\n }\n RightEdge = Texture {\n }\n backdropInfo = <table> {\n }\n BottomEdge = Texture {\n }\n BottomLeftCorner = Texture {\n }\n BottomRightCorner = Texture {\n }\n TopEdge = Texture {\n }\n TopRightCorner = Texture {\n }\n TopLeftCorner = Texture {\n }\n LeftEdge = Texture {\n }\n}\ncopyBox = EditBox {\n}\nscroll = ScrollFrame {\n ScrollBar = CopyFrameScrollBar {\n }\n offset = 0\n}\ntitle = FontString {\n}\n",
+["stack"] = "[Interface/AddOns/SUI/Modules/Chat/_Copy.lua]:69: in function <Interface/AddOns/SUI/Modules/Chat/_Copy.lua:56>\n[Interface/AddOns/SUI/Modules/Chat/_Copy.lua]:101: in function <Interface/AddOns/SUI/Modules/Chat/_Copy.lua:96>",
+["session"] = 13811,
+["counter"] = 1,
 },
 },
 }

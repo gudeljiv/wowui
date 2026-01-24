@@ -19,8 +19,6 @@ function Buffs:OnEnable()
 		else
 			self.Duration:SetFormattedText("%ds", timeLeft)
 		end
-
-		self.Duration:SetDrawLayer("OVERLAY", 7)
 	end
 
 	local function HookDurationUpdates(auraFrames)
@@ -50,7 +48,6 @@ function Buffs:OnEnable()
 
 		local border = CreateFrame("Frame", nil, button)
 		border:SetSize(icon:GetWidth() + 4, icon:GetHeight() + 4)
-
 		if BuffFrame.AuraContainer.isHorizontal then
 			if BuffFrame.AuraContainer.addIconsToTop then
 				border:SetPoint("CENTER", button, "CENTER", 0, -5)
