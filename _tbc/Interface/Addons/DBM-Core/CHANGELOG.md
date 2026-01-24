@@ -1,8 +1,10 @@
 # DBM - Core
 
-## [12.0.14](https://github.com/DeadlyBossMods/DeadlyBossMods/tree/12.0.14) (2026-01-24)
-[Full Changelog](https://github.com/DeadlyBossMods/DeadlyBossMods/compare/12.0.13...12.0.14) [Previous Releases](https://github.com/DeadlyBossMods/DeadlyBossMods/releases)
+## [12.0.15](https://github.com/DeadlyBossMods/DeadlyBossMods/tree/12.0.15) (2026-01-24)
+[Full Changelog](https://github.com/DeadlyBossMods/DeadlyBossMods/compare/12.0.13...12.0.15) [Previous Releases](https://github.com/DeadlyBossMods/DeadlyBossMods/releases)
 
+- fix errors that occur in real dungeons but don't occur during forced secret testing (wtf blizz)  
+- bump alpha  
 - fix quick bug with hiding  
 - Support up to 2 icons instead of capping at 1.  
     Next update will focus on more configuration options like choosing number of icons, or whether they are large or small and stacked like timeline.  
