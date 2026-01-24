@@ -1,9 +1,9 @@
-VER 3 0100000000000001 " " "134400"
-#showtooltip
-/cast [@mouseover,exists,help][]Healing Wave
-END
 VER 3 0100000000000002 " " "134400"
 #showtooltip
 /startattack
 /cast Lightning Bolt
+END
+VER 3 0100000000000001 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,help][]Healing Wave
 END
