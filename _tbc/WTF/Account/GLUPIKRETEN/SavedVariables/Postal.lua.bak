@@ -12,7 +12,7 @@ Postal3DB = {
 "Dopeclaw|Living Flame|Horde|38|DRUID",
 "Dopeclaw|Lone Wolf|Horde|38|DRUID",
 "Dopeclaw|Stitches|Horde|1|DRUID",
-"Dopeclaw|Thunderstrike|Horde|23|DRUID",
+"Dopeclaw|Thunderstrike|Horde|24|DRUID",
 "Dopecoil|Lone Wolf|Horde|9|SHAMAN",
 "Dopecoil|Thunderstrike|Horde|20|WARLOCK",
 "Dopecure|Stitches|Horde|11|PRIEST",
@@ -82,12 +82,12 @@ Postal3DB = {
 ["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
 ["Dopesnare - Lone Wolf"] = "Dopesnare - Lone Wolf",
 ["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
+["Doperage - Living Flame"] = "Doperage - Living Flame",
 ["Turbonac - Celebras"] = "Turbonac - Celebras",
-["Vermin - Celebras"] = "Vermin - Celebras",
 ["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
 ["Dopecoil - Thunderstrike"] = "Dopecoil - Thunderstrike",
 ["Dopebolt - Living Flame"] = "Dopebolt - Living Flame",
-["Doperage - Living Flame"] = "Doperage - Living Flame",
+["Vermin - Celebras"] = "Vermin - Celebras",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 ["Dopede - Stitches"] = "Dopede - Stitches",
 ["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
@@ -265,16 +265,9 @@ Postal3DB = {
 },
 ["Vermin - Zandalar Tribe"] = {
 },
+["Doperage - Living Flame"] = {
+},
 ["Turbonac - Celebras"] = {
-},
-["Vermin - Celebras"] = {
-["BlackBook"] = {
-["recent"] = {
-"Vbank|Celebras|Alliance",
-"Mq|Celebras|Alliance",
-"Dibsie-Celebras|Celebras|Alliance",
-},
-},
 },
 ["Battlenac - Zandalar Tribe"] = {
 },
@@ -289,7 +282,14 @@ Postal3DB = {
 },
 ["Dopebolt - Living Flame"] = {
 },
-["Doperage - Living Flame"] = {
+["Vermin - Celebras"] = {
+["BlackBook"] = {
+["recent"] = {
+"Vbank|Celebras|Alliance",
+"Mq|Celebras|Alliance",
+"Dibsie-Celebras|Celebras|Alliance",
+},
+},
 },
 ["Dopetrap - Lone Wolf"] = {
 },
@@ -304,8 +304,8 @@ Postal3DB = {
 ["Dopeclaw - Thunderstrike"] = {
 ["BlackBook"] = {
 ["recent"] = {
-"Dopecure|Thunderstrike|Horde",
 "Doperage|Thunderstrike|Horde",
+"Dopecure|Thunderstrike|Horde",
 "Dopesnare|Thunderstrike|Horde",
 },
 },

@@ -6,8 +6,9 @@ BAGANATOR_CONFIG = {
 ["Dopesnare-Thunderstrike"] = 0,
 ["Dopecoil-Thunderstrike"] = 0,
 ["Dopeseal-Thunderstrike"] = 0,
-["Vermins-Stitches"] = 0,
 ["Doperage-Thunderstrike"] = 0,
+["Vermins-Stitches"] = 0,
+["Dopeclaw-Thunderstrike"] = 0,
 },
 ["currencies_tracked_imported"] = {
 },
@@ -33,8 +34,9 @@ BAGANATOR_CONFIG = {
 ["Dopesnare-Thunderstrike"] = 0,
 ["Dopecoil-Thunderstrike"] = 0,
 ["Dopeseal-Thunderstrike"] = 0,
-["Vermins-Stitches"] = 0,
 ["Doperage-Thunderstrike"] = 0,
+["Vermins-Stitches"] = 0,
+["Dopeclaw-Thunderstrike"] = 0,
 },
 },
 ["Profiles"] = {
@@ -117,17 +119,17 @@ BAGANATOR_CONFIG = {
 ["default_miscellaneous"] = false,
 },
 ["show_sort_button_2"] = true,
-["guild_current_tab"] = 1,
+["icon_top_left_corner_array"] = {
+"item_level",
+},
 ["currencies_tracked_imported"] = {
 },
-["category_group_empty_slots"] = true,
+["guild_current_tab"] = 1,
 ["icon_context_fading"] = true,
 ["warband_current_tab"] = 1,
 ["category_item_grouping"] = false,
 ["main_view_show_bag_slots"] = false,
-["icon_top_left_corner_array"] = {
-"item_level",
-},
+["category_group_empty_slots"] = true,
 ["recent_timeout"] = 0,
 ["category_display_order"] = {
 "default_auto_recents",
@@ -168,7 +170,7 @@ BAGANATOR_CONFIG = {
 ["sort_start_at_bottom"] = false,
 ["hide_boe_on_common"] = false,
 ["bank_view_type"] = "category",
-["icon_grey_junk"] = false,
+["icon_grey_junk"] = true,
 ["main_view_position"] = {
 "RIGHT",
 -350.796142578125,
@@ -197,14 +199,10 @@ BAGANATOR_CONFIG = {
 1113.809692382813,
 736.4281616210938,
 },
-["show_guild_bank_button"] = true,
+["setting_anchors"] = false,
 ["tooltips_character_limit"] = 4,
 ["recent_include_owned"] = false,
-["character_select_position"] = {
-"CENTER",
-279.0157775878906,
-100.6427154541016,
-},
+["bag_empty_space_at_top"] = true,
 ["category_default_import"] = 3,
 ["guild_view_position_2"] = {
 "TOPLEFT",
@@ -217,8 +215,18 @@ BAGANATOR_CONFIG = {
 ["hide_special_container"] = {
 ["keyring"] = true,
 },
-["bag_view_width"] = 12,
-["enable_equipment_set_info_2"] = true,
+["sort_ignore_slots_count_2"] = {
+["Jutarnjedrvo-LoneWolf"] = 0,
+["Dopeclaw-LoneWolf"] = 0,
+["Dopesnare-LoneWolf"] = 0,
+["Doperage-LoneWolf"] = 0,
+["Dopestab-LoneWolf"] = 0,
+},
+["character_select_position"] = {
+"CENTER",
+279.0157775878906,
+100.6427154541016,
+},
 ["disabled_skins"] = {
 },
 ["category_horizontal_spacing_2"] = 0.4,
@@ -318,7 +326,7 @@ BAGANATOR_CONFIG = {
 },
 },
 ["enable_bank_view"] = true,
-["icon_text_quality_colors"] = false,
+["icon_text_quality_colors"] = true,
 ["saved_searches"] = {
 },
 ["sort_ignore_slots_at_end"] = true,
@@ -342,19 +350,10 @@ BAGANATOR_CONFIG = {
 },
 ["show_inventory_tooltips"] = true,
 ["view_alpha"] = 0.9,
-["setting_anchors"] = false,
-["bag_empty_space_at_top"] = true,
-["sort_ignore_slots_count_2"] = {
-["Jutarnjedrvo-LoneWolf"] = 0,
-["Dopeclaw-LoneWolf"] = 0,
-["Dopesnare-LoneWolf"] = 0,
-["Doperage-LoneWolf"] = 0,
-["Dopestab-LoneWolf"] = 0,
-},
+["show_guild_bank_button"] = true,
+["enable_equipment_set_info_2"] = true,
+["bag_view_width"] = 12,
 ["debug_timers"] = false,
-["debug_keywords"] = false,
-["enable_guild_view"] = true,
-["auto_sort_on_open"] = false,
 ["skins"] = {
 ["blizzard"] = {
 ["no_frame_borders"] = false,
@@ -368,7 +367,8 @@ BAGANATOR_CONFIG = {
 ["empty_slot_background"] = false,
 },
 },
-["category_sort_method"] = "item-level",
+["enable_guild_view"] = true,
+["auto_sort_on_open"] = false,
 ["recent_characters_main_view"] = {
 "Dopecoil-Thunderstrike",
 "Mq-Celebras",
@@ -390,6 +390,8 @@ BAGANATOR_CONFIG = {
 "Dopemend-LoneWolf",
 "Dopecoil-LoneWolf",
 },
+["category_sort_method"] = "item-level",
+["debug_keywords"] = false,
 ["show_guild_banks_in_tooltips"] = true,
 ["guild_view_dialog_position"] = {
 "BOTTOM",

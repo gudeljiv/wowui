@@ -438,3 +438,17 @@ xVermin.MHWF = function()
 	return false
 end
 xMHWF = xVermin.MHWF
+
+xVermin.TalentLearned = function(tabIndex, talentIndex)
+	if not tabIndex then
+		return false
+	end
+	if not talentIndex then
+		return false
+	end
+	name, iconPath, tier, column, currentRank, maxRank, isExceptional, meetsPrereq =
+		GetTalentInfo(tabIndex, talentIndex)
+
+	return currentRank > 0 and true or false
+end
+xTalentLearned = xVermin.TalentLearned
