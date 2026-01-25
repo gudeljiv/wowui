@@ -276,10 +276,18 @@ xVermin.IfUnitIsCastingClassic = function(unit)
 end
 IfUnitIsCastingClassic = xVermin.IfUnitIsCastingClassic
 
-xVermin.GetRange = function(unit)
+xVermin.GetRange = function(unit, xtype)
 	unit = unit or "target"
+	xtype = xtype or nil
+
 	if UnitExists(unit) then
 		minRange, maxRange = RangeCheck:GetRange(unit)
+		if xtype and xtype == "min" and minRange and minRange >= 0 then
+			return minRange
+		end
+		if xtype and xtype == "max" and maxRange and maxRange >= 0 then
+			return maxRange
+		end
 		if minRange and maxRange and minRange >= 0 and maxRange >= 0 then
 			return minRange, maxRange
 		end

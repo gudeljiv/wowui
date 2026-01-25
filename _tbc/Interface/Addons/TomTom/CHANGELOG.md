@@ -1,8 +1,9 @@
 # TomTom
 
-## [v4.2.14-release](https://github.com/jnwhiteh/TomTom/tree/v4.2.14-release) (2026-01-23)
-[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v4.2.14-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
+## [v4.2.15-release](https://github.com/jnwhiteh/TomTom/tree/v4.2.15-release) (2026-01-25)
+[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v4.2.15-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
 
+- Add split configuration for addon compartment button  
 - Remove AceEvent so TomTom can't get blamed  
 - Update TOC for 12.0  
 - Fix opening options with /tomtom  
@@ -692,4 +693,3 @@
     * Added a "Send Waypoint" option, needs testing  
     * Fixed an issue with the waypoint arrow when using minimap rotation  
     * Added the waypoint removal (all, zone) options to the crazy arrow right-click  
-- * Added alpha for border  

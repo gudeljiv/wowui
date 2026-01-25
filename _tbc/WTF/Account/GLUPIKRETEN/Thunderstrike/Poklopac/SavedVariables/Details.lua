@@ -7,6 +7,1217 @@ _detalhes_database = {
 ["tabelas"] = {
 {
 {
+["combatId"] = 21,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.008338,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 66.008338,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 66.008338,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Mottled Boar"] = true,
+},
+["targets"] = {
+["Mottled Boar"] = 66,
+},
+["colocacao"] = 1,
+["aID"] = "6409-04BC9882",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1769336959,
+["nome"] = "Poklopac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 12,
+["targets"] = {
+["Mottled Boar"] = 35,
+},
+["n_total"] = 35,
+["n_min"] = 11,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 35,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[403] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 16,
+["targets"] = {
+["Mottled Boar"] = 31,
+},
+["n_total"] = 31,
+["n_min"] = 15,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 31,
+["c_max"] = 0,
+["id"] = 403,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 6.947514787924892,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 2.008338,
+["start_time"] = 1769336950,
+["delay"] = 0,
+["last_event"] = 1769336958,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.006461,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 2.006461,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 2.006461,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-6414-1-51023-3098-000075EEA6",
+["aID"] = "3098",
+["damage_from"] = {
+["Poklopac"] = true,
+},
+["targets"] = {
+["Poklopac"] = 2,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1769336959,
+["nome"] = "Mottled Boar",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 2,
+["targets"] = {
+["Poklopac"] = 2,
+},
+["n_total"] = 2,
+["n_min"] = 2,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 2,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 66.006461,
+["start_time"] = 1769336955,
+["delay"] = 0,
+["last_event"] = 1769336956,
+},
+},
+},
+{
+["combatId"] = 21,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 21,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 21,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["grupo"] = true,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 21,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["tempo_start"] = 1769336950,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+78,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+66,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Poklopac"] = {
+["Lightning Bolt"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "11:29:20",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Mottled Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 267900.683,
+["CombatEndedAt"] = 267900.683,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "11:29:11",
+["end_time"] = 267900.683,
+["mapId"] = 1,
+["combat_id"] = 21,
+["timeStart"] = 1769336951,
+["timeEnd"] = 1769336960,
+["playing_solo"] = true,
+["is_challenge"] = false,
+["frags"] = {
+["Mottled Boar"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 56,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Poklopac"] = 66.008338,
+},
+},
+},
+["start_time"] = 267891.182,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 20,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 61.001783,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 61.001783,
+["colocacao"] = 1,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Mottled Boar"] = true,
+},
+["targets"] = {
+["Mottled Boar"] = 61,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1769336392,
+["totalabsorbed"] = 0.001783,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 11,
+["targets"] = {
+["Mottled Boar"] = 33,
+},
+["n_total"] = 33,
+["n_min"] = 11,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 33,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[403] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 14,
+["targets"] = {
+["Mottled Boar"] = 28,
+},
+["n_total"] = 28,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 28,
+["c_max"] = 0,
+["id"] = 403,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769336390,
+["damage_taken"] = 5.001783,
+["start_time"] = 1769336382,
+["delay"] = 0,
+["last_dps"] = 6.299884643214543,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 30.005993,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 30.005993,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-6414-1-51023-3098-000075E9EB",
+["damage_from"] = {
+["Siskobaby"] = true,
+["Dangera"] = true,
+["Forgro"] = true,
+["Fröstela"] = true,
+["Poklopac"] = true,
+},
+["targets"] = {
+["Forgro"] = 12,
+["Poklopac"] = 5,
+["Fröstela"] = 4,
+["Dangera"] = 9,
+},
+["aID"] = "3098",
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["fight_component"] = true,
+["end_time"] = 1769336950,
+["totalabsorbed"] = 0.005993,
+["nome"] = "Mottled Boar",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 3,
+["targets"] = {
+["Siskobaby"] = 0,
+["Dangera"] = 9,
+["Forgro"] = 12,
+["Fröstela"] = 4,
+["Poklopac"] = 5,
+},
+["n_total"] = 30,
+["n_min"] = 1,
+["g_dmg"] = 0,
+["counter"] = 16,
+["total"] = 30,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 15,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769336863,
+["damage_taken"] = 400.005993,
+["start_time"] = 1769336923,
+["delay"] = 1769336863,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 20,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 20,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 20,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["nome"] = "Poklopac",
+["grupo"] = true,
+["aID"] = "6409-04BC9882",
+["last_event"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["tipo"] = 4,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 20,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 267889.596,
+["tempo_start"] = 1769336382,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+479,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+61,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Poklopac"] = {
+["Lightning Bolt"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "11:19:52",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Mottled Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 267332.534,
+["CombatEndedAt"] = 267332.534,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "11:19:42",
+["end_time"] = 267332.534,
+["mapId"] = 1,
+["combat_id"] = 20,
+["timeStart"] = 1769336382,
+["timeEnd"] = 1769336392,
+["frags"] = {
+["Mottled Boar"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 55,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 61.001783,
+},
+},
+},
+["start_time"] = 267322.851,
+["TimeData"] = {
+},
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 19,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 17.00433,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 17.00433,
+["colocacao"] = 1,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+},
+["targets"] = {
+["Mottled Boar"] = 17,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1769336378,
+["totalabsorbed"] = 0.00433,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+[403] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 17,
+["targets"] = {
+["Mottled Boar"] = 17,
+},
+["n_total"] = 17,
+["n_min"] = 17,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 17,
+["c_max"] = 0,
+["id"] = 403,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769336377,
+["damage_taken"] = 0.00433,
+["start_time"] = 1769336377,
+["delay"] = 0,
+["last_dps"] = 26.20081664196369,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["aID"] = "3098",
+["total_without_pet"] = 0.007837,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.007837,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-6414-1-51023-3098-000075E985",
+["damage_from"] = {
+["Dangera"] = true,
+["Poklopac"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["classe"] = "UNKNOW",
+["fight_component"] = true,
+["end_time"] = 1769336378,
+["totalabsorbed"] = 0.007837,
+["nome"] = "Mottled Boar",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 32.007837,
+["start_time"] = 1769336378,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 19,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 19,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 19,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 19,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 267321.536,
+["tempo_start"] = 1769336377,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+32,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+17,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "11:19:38",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Mottled Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 267318.762,
+["CombatEndedAt"] = 267318.762,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "11:19:38",
+["end_time"] = 267318.762,
+["mapId"] = 1,
+["combat_id"] = 19,
+["timeStart"] = 1769336378,
+["timeEnd"] = 1769336378,
+["frags"] = {
+["Mottled Boar"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 54,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 17.00433,
+},
+},
+},
+["start_time"] = 267318.113,
+["TimeData"] = {
+},
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 18,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 46.005392,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 46.005392,
+["colocacao"] = 1,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+},
+["targets"] = {
+["Mottled Boar"] = 46,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1769336374,
+["totalabsorbed"] = 0.005392,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+[403] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 17,
+["targets"] = {
+["Mottled Boar"] = 46,
+},
+["n_total"] = 46,
+["n_min"] = 14,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 46,
+["c_max"] = 0,
+["id"] = 403,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769336373,
+["damage_taken"] = 0.005392,
+["start_time"] = 1769336370,
+["delay"] = 0,
+["last_dps"] = 14.35873657915487,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["aID"] = "3098",
+["total_without_pet"] = 0.002713,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 0.002713,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-6414-1-51023-3098-000075E9AD",
+["damage_from"] = {
+["Dangera"] = true,
+["Poklopac"] = true,
+},
+["targets"] = {
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["classe"] = "UNKNOW",
+["fight_component"] = true,
+["end_time"] = 1769336374,
+["totalabsorbed"] = 0.002713,
+["nome"] = "Mottled Boar",
+["spells"] = {
+["_ActorTable"] = {
+},
+["tipo"] = 2,
+},
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
+["damage_taken"] = 60.002713,
+["start_time"] = 1769336374,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 18,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 18,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 18,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["nome"] = "Poklopac",
+["grupo"] = true,
+["aID"] = "6409-04BC9882",
+["last_event"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["tipo"] = 4,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 18,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 267317.374,
+["tempo_start"] = 1769336370,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+60,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+46,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Poklopac"] = {
+["Lightning Bolt"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "11:19:34",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Mottled Boar",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 267314.312,
+["CombatEndedAt"] = 267314.312,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "11:19:31",
+["end_time"] = 267314.312,
+["mapId"] = 1,
+["combat_id"] = 18,
+["timeStart"] = 1769336371,
+["timeEnd"] = 1769336374,
+["frags"] = {
+["Mottled Boar"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 53,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 46.005392,
+},
+},
+},
+["start_time"] = 267311.108,
+["TimeData"] = {
+},
+["playerTalents"] = {
+},
+},
+{
+{
 ["tipo"] = 2,
 ["combatId"] = 17,
 ["_ActorTable"] = {
@@ -85,11 +1296,11 @@ _detalhes_database = {
 ["flag_original"] = 68136,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
-["total_without_pet"] = 101.008508,
+["aID"] = "3098",
+["total_without_pet"] = 479.008508,
 ["last_dps_realtime"] = 0,
-["dps_started"] = true,
-["total"] = 101.008508,
+["dps_started"] = false,
+["total"] = 479.008508,
 ["friendlyfire"] = {
 },
 ["total_extra"] = 0,
@@ -97,23 +1308,47 @@ _detalhes_database = {
 ["damage_from"] = {
 ["Poklopac"] = true,
 ["Dazzurm"] = true,
+["Graxime"] = true,
+["Iphilo"] = true,
+["Laftel"] = true,
+["Rexxzorl"] = true,
+["Kollishokki"] = true,
+["Starspace"] = true,
+["Fröstela"] = true,
 ["Atubolu"] = true,
 ["Juanass"] = true,
-["Graxime"] = true,
+["Sasahe"] = true,
+["Siskobaby"] = true,
+["Forgro"] = true,
+["Dangera"] = true,
+["Shakenn"] = true,
+["Maegwîn"] = true,
 ["Sangorra"] = true,
 },
 ["targets"] = {
+["Sasahe"] = 8,
 ["Poklopac"] = 2,
+["Starspace"] = 39,
+["Dangera"] = 10,
 ["Dazzurm"] = 38,
 ["Juanass"] = 13,
+["Forgro"] = 46,
 ["Graxime"] = 42,
+["Shakenn"] = 37,
+["Iphilo"] = 98,
+["Kollishokki"] = 20,
+["Fröstela"] = 16,
+["Maegwîn"] = 33,
+["Laftel"] = 47,
+["Rexxzorl"] = 24,
 ["Sangorra"] = 6,
 },
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["classe"] = "UNKNOW",
 ["fight_component"] = true,
-["aID"] = "3098",
+["end_time"] = 1769336370,
 ["totalabsorbed"] = 0.008508,
 ["nome"] = "Mottled Boar",
 ["spells"] = {
@@ -126,18 +1361,30 @@ _detalhes_database = {
 ["targets"] = {
 ["Poklopac"] = 2,
 ["Dazzurm"] = 38,
-["Juanass"] = 13,
 ["Graxime"] = 42,
+["Iphilo"] = 98,
+["Laftel"] = 47,
+["Rexxzorl"] = 24,
+["Kollishokki"] = 20,
+["Starspace"] = 39,
+["Fröstela"] = 16,
+["Forgro"] = 46,
+["Juanass"] = 13,
+["Sasahe"] = 8,
+["Siskobaby"] = 0,
+["Dangera"] = 10,
+["Shakenn"] = 37,
+["Maegwîn"] = 33,
 ["Sangorra"] = 6,
 },
-["n_total"] = 101,
+["n_total"] = 479,
 ["n_min"] = 1,
 ["g_dmg"] = 0,
-["counter"] = 54,
-["DODGE"] = 1,
-["total"] = 101,
+["counter"] = 267,
+["DODGE"] = 9,
+["total"] = 479,
 ["c_max"] = 0,
-["MISS"] = 4,
+["MISS"] = 7,
 ["id"] = 1,
 ["r_dmg"] = 0,
 ["spellschool"] = 1,
@@ -148,20 +1395,20 @@ _detalhes_database = {
 ["c_min"] = 0,
 ["successful_casted"] = 0,
 ["c_total"] = 0,
-["n_amt"] = 49,
+["n_amt"] = 251,
 ["n_max"] = 3,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
 ["custom"] = 0,
-["last_event"] = 1769291422,
-["damage_taken"] = 1373.008508,
-["start_time"] = 1769291253,
-["delay"] = 1769291422,
+["last_event"] = 1769336367,
+["damage_taken"] = 5345.008508,
+["start_time"] = 1769335816,
+["delay"] = 1769336329,
 ["last_dps"] = 0,
 },
 },
@@ -224,6 +1471,7 @@ _detalhes_database = {
 ["raid_roster"] = {
 ["Poklopac"] = "Player-6409-04BC9882",
 },
+["CombatStartedAt"] = 267309.64,
 ["tempo_start"] = 1769199005,
 ["last_events_tables"] = {
 },
@@ -237,7 +1485,7 @@ _detalhes_database = {
 ["playerTalents"] = {
 },
 ["totals"] = {
-1669,
+6310,
 0,
 {
 0,
@@ -4954,1020 +6202,6 @@ false,
 },
 ["playing_solo"] = true,
 },
-{
-{
-["tipo"] = 2,
-["combatId"] = 3,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["pets"] = {
-},
-["classe"] = "SHAMAN",
-["total_without_pet"] = 59.003805,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 59.003805,
-["colocacao"] = 1,
-["friendlyfire"] = {
-},
-["total_extra"] = 0,
-["serial"] = "Player-6409-04BC9882",
-["damage_from"] = {
-["Mottled Boar"] = true,
-},
-["targets"] = {
-["Mottled Boar"] = 59,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1769198397,
-["totalabsorbed"] = 0.003805,
-["aID"] = "6409-04BC9882",
-["nome"] = "Poklopac",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["b_dmg"] = 0,
-["targets"] = {
-["Mottled Boar"] = 6,
-},
-["n_total"] = 6,
-["n_min"] = 6,
-["g_dmg"] = 0,
-["counter"] = 1,
-["total"] = 6,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 1,
-["n_max"] = 6,
-["r_amt"] = 0,
-},
-[403] = {
-["c_amt"] = 1,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["b_dmg"] = 0,
-["targets"] = {
-["Mottled Boar"] = 53,
-},
-["n_total"] = 30,
-["n_min"] = 15,
-["g_dmg"] = 0,
-["counter"] = 4,
-["total"] = 53,
-["c_max"] = 23,
-["spellschool"] = 8,
-["id"] = 403,
-["r_dmg"] = 0,
-["extra"] = {
-},
-["RESIST"] = 1,
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 23,
-["successful_casted"] = 0,
-["c_total"] = 23,
-["n_amt"] = 2,
-["n_max"] = 15,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["grupo"] = true,
-["on_hold"] = false,
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1769198395,
-["damage_taken"] = 6.003805,
-["start_time"] = 1769198387,
-["delay"] = 0,
-["last_dps"] = 6.286363200512335,
-},
-{
-["flag_original"] = 68136,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 16.008901,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 16.008901,
-["friendlyfire"] = {
-},
-["total_extra"] = 0,
-["serial"] = "Creature-0-6425-1-53285-3098-000073CD4D",
-["damage_from"] = {
-["Wilkyway"] = true,
-["Poklopac"] = true,
-},
-["targets"] = {
-["Wilkyway"] = 10,
-["Poklopac"] = 6,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["aID"] = "3098",
-["fight_component"] = true,
-["end_time"] = 1769198501,
-["totalabsorbed"] = 0.008901,
-["nome"] = "Mottled Boar",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["b_dmg"] = 0,
-["targets"] = {
-["Wilkyway"] = 10,
-["Poklopac"] = 6,
-},
-["n_total"] = 16,
-["n_min"] = 2,
-["g_dmg"] = 0,
-["counter"] = 8,
-["total"] = 16,
-["c_max"] = 0,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 8,
-["n_max"] = 2,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["on_hold"] = false,
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1769198427,
-["damage_taken"] = 115.008901,
-["start_time"] = 1769198464,
-["delay"] = 1769198427,
-["last_dps"] = 0,
-},
-},
-},
-{
-["tipo"] = 3,
-["combatId"] = 3,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 7,
-["combatId"] = 3,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 9,
-["combatId"] = 3,
-["_ActorTable"] = {
-{
-["flag_original"] = 1047,
-["pets"] = {
-},
-["buff_uptime_targets"] = {
-},
-["aID"] = "6409-04BC9882",
-["buff_uptime_spells"] = {
-["_ActorTable"] = {
-[186403] = {
-["appliedamt"] = 1,
-["targets"] = {
-},
-["activedamt"] = 1,
-["uptime"] = 9,
-["id"] = 186403,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-["tipo"] = 9,
-},
-["nome"] = "Poklopac",
-["grupo"] = true,
-["buff_uptime"] = 9,
-["tipo"] = 4,
-["classe"] = "SHAMAN",
-["serial"] = "Player-6409-04BC9882",
-["last_event"] = 1769198397,
-},
-},
-},
-{
-["tipo"] = 2,
-["combatId"] = 3,
-["_ActorTable"] = {
-},
-},
-["raid_roster"] = {
-["Poklopac"] = "Player-6409-04BC9882",
-},
-["CombatStartedAt"] = 129443.478,
-["tempo_start"] = 1769198387,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
-["totals"] = {
-131,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["totals_grupo"] = {
-59,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Poklopac"] = {
-["Lightning Bolt"] = 3,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Kalimdor",
-["data_fim"] = "20:59:57",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Mottled Boar",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 129340.291,
-["CombatEndedAt"] = 129340.291,
-["aura_timeline"] = {
-},
-["compressed_charts"] = {
-},
-["data_inicio"] = "20:59:48",
-["end_time"] = 129340.291,
-["mapId"] = 1,
-["combat_id"] = 3,
-["timeStart"] = 1769198388,
-["timeEnd"] = 1769198397,
-["frags"] = {
-["Mottled Boar"] = 1,
-},
-["is_challenge"] = false,
-["spells_cast_timeline"] = {
-},
-["boss_hp"] = 1,
-["combat_counter"] = 38,
-["player_last_events"] = {
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["damage_section"] = {
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage"] = {
-{
-["Poklopac"] = 59.003805,
-},
-},
-},
-["start_time"] = 129330.905,
-["TimeData"] = {
-},
-["playing_solo"] = true,
-},
-{
-{
-["tipo"] = 2,
-["combatId"] = 2,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["pets"] = {
-},
-["classe"] = "SHAMAN",
-["total_without_pet"] = 55.008713,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 55.008713,
-["colocacao"] = 1,
-["friendlyfire"] = {
-},
-["total_extra"] = 0,
-["serial"] = "Player-6409-04BC9882",
-["damage_from"] = {
-},
-["targets"] = {
-["Mottled Boar"] = 55,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1769069690,
-["totalabsorbed"] = 0.008713,
-["aID"] = "6409-04BC9882",
-["nome"] = "Poklopac",
-["spells"] = {
-["_ActorTable"] = {
-[403] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["b_dmg"] = 0,
-["targets"] = {
-["Mottled Boar"] = 55,
-},
-["n_total"] = 55,
-["n_min"] = 13,
-["g_dmg"] = 0,
-["counter"] = 4,
-["total"] = 55,
-["c_max"] = 0,
-["id"] = 403,
-["r_dmg"] = 0,
-["spellschool"] = 8,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 4,
-["n_max"] = 14,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["grupo"] = true,
-["on_hold"] = false,
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1769069689,
-["damage_taken"] = 0.008713,
-["start_time"] = 1769069685,
-["delay"] = 0,
-["last_dps"] = 11.28615367254816,
-},
-{
-["flag_original"] = 68136,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 105.005897,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 105.005897,
-["friendlyfire"] = {
-},
-["total_extra"] = 0,
-["serial"] = "Creature-0-6424-1-7759-3098-000071DC19",
-["damage_from"] = {
-["Deadstoke"] = true,
-["Garney"] = true,
-["Mariohannah"] = true,
-["Whassoi"] = true,
-["Zugstyle"] = true,
-["Mulna"] = true,
-["Poklopac"] = true,
-["Tamyris"] = true,
-["Snillgutt"] = true,
-["Ertrigg"] = true,
-},
-["targets"] = {
-["Zugstyle"] = 26,
-["Mulna"] = 32,
-["Ertrigg"] = 27,
-["Mariohannah"] = 7,
-["Garney"] = 3,
-["Deadstoke"] = 2,
-["Whassoi"] = 8,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["aID"] = "3098",
-["fight_component"] = true,
-["end_time"] = 1769198387,
-["totalabsorbed"] = 0.005897,
-["nome"] = "Mottled Boar",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 2,
-["g_amt"] = 0,
-["b_dmg"] = 2,
-["targets"] = {
-["Zugstyle"] = 26,
-["Mulna"] = 32,
-["Ertrigg"] = 27,
-["Mariohannah"] = 7,
-["Garney"] = 3,
-["Deadstoke"] = 2,
-["Whassoi"] = 8,
-},
-["n_total"] = 105,
-["n_min"] = 1,
-["g_dmg"] = 0,
-["counter"] = 66,
-["MISS"] = 3,
-["r_amt"] = 0,
-["spellschool"] = 1,
-["DODGE"] = 2,
-["id"] = 1,
-["r_dmg"] = 0,
-["c_max"] = 0,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 61,
-["n_max"] = 3,
-["total"] = 105,
-},
-},
-["tipo"] = 2,
-},
-["on_hold"] = false,
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1769070402,
-["damage_taken"] = 2055.005897,
-["start_time"] = 1769198216,
-["delay"] = 1769070402,
-["last_dps"] = 0,
-},
-},
-},
-{
-["tipo"] = 3,
-["combatId"] = 2,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 7,
-["combatId"] = 2,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 9,
-["combatId"] = 2,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["pets"] = {
-},
-["classe"] = "SHAMAN",
-["nome"] = "Poklopac",
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
-["last_event"] = 0,
-["serial"] = "Player-6409-04BC9882",
-["tipo"] = 4,
-},
-},
-},
-{
-["tipo"] = 2,
-["combatId"] = 2,
-["_ActorTable"] = {
-},
-},
-["raid_roster"] = {
-["Poklopac"] = "Player-6409-04BC9882",
-},
-["CombatStartedAt"] = 129330.155,
-["tempo_start"] = 1769069685,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
-["totals"] = {
-2198,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["totals_grupo"] = {
-55,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Poklopac"] = {
-["Lightning Bolt"] = 2,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Kalimdor",
-["data_fim"] = "09:14:50",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Mottled Boar",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 634.274,
-["CombatEndedAt"] = 634.274,
-["aura_timeline"] = {
-},
-["compressed_charts"] = {
-},
-["data_inicio"] = "09:14:45",
-["end_time"] = 634.274,
-["mapId"] = 1,
-["combat_id"] = 2,
-["timeStart"] = 1769069685,
-["timeEnd"] = 1769069690,
-["frags"] = {
-["Mottled Boar"] = 1,
-},
-["is_challenge"] = false,
-["spells_cast_timeline"] = {
-},
-["boss_hp"] = 1,
-["combat_counter"] = 37,
-["player_last_events"] = {
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["damage_section"] = {
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage"] = {
-{
-["Poklopac"] = 55.008713,
-},
-},
-},
-["start_time"] = 629.4,
-["TimeData"] = {
-},
-["playing_solo"] = true,
-},
-{
-{
-["tipo"] = 2,
-["combatId"] = 1,
-["_ActorTable"] = {
-{
-["flag_original"] = 1297,
-["pets"] = {
-},
-["classe"] = "SHAMAN",
-["total_without_pet"] = 43.003323,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 43.003323,
-["colocacao"] = 1,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Player-6409-04BC9882",
-["damage_from"] = {
-},
-["targets"] = {
-["Mottled Boar"] = 43,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1768919848,
-["totalabsorbed"] = 0.003323,
-["aID"] = "6409-04BC9882",
-["nome"] = "Poklopac",
-["spells"] = {
-["_ActorTable"] = {
-[403] = {
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 15,
-["targets"] = {
-["Mottled Boar"] = 43,
-},
-["n_total"] = 43,
-["n_min"] = 14,
-["g_dmg"] = 0,
-["counter"] = 3,
-["total"] = 43,
-["c_max"] = 0,
-["id"] = 403,
-["r_dmg"] = 0,
-["spellschool"] = 8,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 3,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-["tipo"] = 2,
-},
-["grupo"] = true,
-["friendlyfire"] = {
-},
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1768919847,
-["damage_taken"] = 0.003323,
-["start_time"] = 1768919843,
-["delay"] = 0,
-["last_dps"] = 8.583497604774463,
-},
-{
-["flag_original"] = 68136,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 23.003766,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 23.003766,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-6414-1-12937-3098-00006F9185",
-["damage_from"] = {
-["Poklopac"] = true,
-["Shotcha"] = true,
-["Blumenbjörn"] = true,
-["Orgunit"] = true,
-["Chronorock"] = true,
-["Nynaévè"] = true,
-},
-["targets"] = {
-["Orgunit"] = 5,
-["Nynaévè"] = 11,
-["Chronorock"] = 7,
-},
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["aID"] = "3098",
-["fight_component"] = true,
-["end_time"] = 1769069685,
-["totalabsorbed"] = 0.003766,
-["nome"] = "Mottled Boar",
-["spells"] = {
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 3,
-["targets"] = {
-["Orgunit"] = 5,
-["Nynaévè"] = 11,
-["Chronorock"] = 7,
-},
-["n_total"] = 23,
-["n_min"] = 1,
-["g_dmg"] = 0,
-["counter"] = 15,
-["MISS"] = 1,
-["r_amt"] = 0,
-["spellschool"] = 1,
-["DODGE"] = 3,
-["id"] = 1,
-["r_dmg"] = 0,
-["c_max"] = 0,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 11,
-["b_dmg"] = 0,
-["total"] = 23,
-},
-},
-["tipo"] = 2,
-},
-["friendlyfire"] = {
-},
-["tipo"] = 1,
-["custom"] = 0,
-["last_event"] = 1769069556,
-["damage_taken"] = 372.003766,
-["start_time"] = 1768979983,
-["delay"] = 1769069556,
-["last_dps"] = 0,
-},
-},
-},
-{
-["tipo"] = 3,
-["combatId"] = 1,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 7,
-["combatId"] = 1,
-["_ActorTable"] = {
-},
-},
-{
-["tipo"] = 9,
-["combatId"] = 1,
-["_ActorTable"] = {
-{
-["flag_original"] = 1047,
-["buff_uptime"] = 5,
-["buff_uptime_targets"] = {
-},
-["aID"] = "6409-04BC9882",
-["buff_uptime_spells"] = {
-["_ActorTable"] = {
-[186403] = {
-["appliedamt"] = 1,
-["targets"] = {
-},
-["activedamt"] = 1,
-["uptime"] = 5,
-["id"] = 186403,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-},
-["tipo"] = 9,
-},
-["nome"] = "Poklopac",
-["grupo"] = true,
-["pets"] = {
-},
-["tipo"] = 4,
-["classe"] = "SHAMAN",
-["serial"] = "Player-6409-04BC9882",
-["last_event"] = 1768919848,
-},
-},
-},
-{
-["tipo"] = 2,
-["combatId"] = 1,
-["_ActorTable"] = {
-},
-},
-["boss_hp"] = 1,
-["CombatStartedAt"] = 627.88,
-["tempo_start"] = 1768919843,
-["last_events_tables"] = {
-},
-["alternate_power"] = {
-},
-["bossTimers"] = {
-},
-["cleu_events"] = {
-["n"] = 1,
-},
-["playerTalents"] = {
-},
-["totals"] = {
-402,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-["frags_total"] = 0,
-["voidzone_damage"] = 0,
-},
-["totals_grupo"] = {
-43,
-0,
-{
-0,
-[0] = 0,
-["alternatepower"] = 0,
-[3] = 0,
-[6] = 0,
-},
-{
-["buff_uptime"] = 0,
-["ress"] = 0,
-["cooldowns_defensive"] = 0,
-["dispell"] = 0,
-["interrupt"] = 0,
-["debuff_uptime"] = 0,
-["cc_break"] = 0,
-["dead"] = 0,
-},
-},
-["frags_need_refresh"] = true,
-["amountCasts"] = {
-["Poklopac"] = {
-["Lightning Bolt"] = 2,
-},
-},
-["instance_type"] = "none",
-["zoneName"] = "Kalimdor",
-["data_fim"] = "15:37:28",
-["pvp"] = true,
-["bIsClosed"] = true,
-["cleu_timeline"] = {
-},
-["enemy"] = "Mottled Boar",
-["trinketProcs"] = {
-},
-["TotalElapsedCombatTime"] = 579314.61,
-["CombatEndedAt"] = 579314.61,
-["aura_timeline"] = {
-},
-["compressed_charts"] = {
-},
-["data_inicio"] = "15:37:23",
-["end_time"] = 579315.013,
-["mapId"] = 1,
-["combat_id"] = 1,
-["timeStart"] = 1768919843,
-["timeEnd"] = 1768919848,
-["is_challenge"] = false,
-["frags"] = {
-["Mottled Boar"] = 1,
-},
-["raid_roster"] = {
-["Youmepriest"] = "Player-6409-04B54A0A",
-["Poklopac"] = "Player-6409-04BC9882",
-},
-["combat_counter"] = 36,
-["player_last_events"] = {
-},
-["PhaseData"] = {
-{
-1,
-1,
-},
-["damage_section"] = {
-},
-["heal_section"] = {
-},
-["heal"] = {
-{
-},
-},
-["damage"] = {
-{
-["Poklopac"] = 43.003323,
-},
-},
-},
-["start_time"] = 579310.003,
-["TimeData"] = {
-},
-["spells_cast_timeline"] = {
-},
-},
 },
 },
 ["ocd_tracker"] = {
@@ -5994,9 +6228,8 @@ false,
 ["show_options"] = false,
 ["ignored_cooldowns"] = {
 },
+["height"] = 18,
 ["framme_locked"] = false,
-["cooldowns"] = {
-},
 ["own_frame"] = {
 ["defensive-raid"] = false,
 ["ofensive"] = false,
@@ -6004,7 +6237,8 @@ false,
 ["utility"] = false,
 ["defensive-personal"] = false,
 },
-["height"] = 18,
+["cooldowns"] = {
+},
 ["show_conditions"] = {
 ["only_inside_instance"] = true,
 ["only_in_group"] = true,
@@ -6022,7 +6256,7 @@ false,
 ["utility"] = false,
 },
 },
-["combat_counter"] = 52,
+["combat_counter"] = 56,
 ["damage_meter_sessions"] = {
 },
 ["force_font_outline"] = "",
@@ -6103,11 +6337,8 @@ false,
 },
 },
 },
+["on_death_menu"] = false,
 ["cached_talents"] = {
-},
-["announce_firsthit"] = {
-["enabled"] = true,
-["channel"] = "SELF",
 },
 ["last_instance_id"] = 0,
 ["data_harvest_for_charsts"] = {
@@ -6140,7 +6371,34 @@ false,
 ["reverse"] = false,
 },
 ["active_profile"] = "xVermin",
-["last_day"] = "24",
+["last_day"] = "25",
+["coach"] = {
+["enabled"] = false,
+["welcome_panel_pos"] = {
+},
+["last_coach_name"] = false,
+},
+["ignore_nicktag"] = false,
+["cached_roles"] = {
+},
+["data_harvested_for_charts"] = {
+},
+["combat_log"] = {
+["inverse_deathlog_overalldata"] = false,
+["track_hunter_frenzy"] = false,
+["merge_gemstones_1007"] = false,
+["merge_critical_heals"] = false,
+["inverse_deathlog_raid"] = false,
+["calc_evoker_damage"] = true,
+["evoker_show_realtimedps"] = false,
+["inverse_deathlog_mplus"] = false,
+},
+["benchmark_db"] = {
+["frame"] = {
+},
+},
+["mythic_plus_log"] = {
+},
 ["nick_tag_cache"] = {
 ["last_version"] = 16,
 ["Thraax"] = {
@@ -6168,28 +6426,10 @@ false,
 },
 ["nextreset"] = 1770214665,
 },
-["benchmark_db"] = {
-["frame"] = {
-},
-},
-["cached_roles"] = {
-},
 ["character_data"] = {
-["logons"] = 35,
+["logons"] = 39,
 },
-["combat_log"] = {
-["inverse_deathlog_overalldata"] = false,
-["track_hunter_frenzy"] = false,
-["merge_gemstones_1007"] = false,
-["merge_critical_heals"] = false,
-["inverse_deathlog_raid"] = false,
-["calc_evoker_damage"] = true,
-["evoker_show_realtimedps"] = false,
-["inverse_deathlog_mplus"] = false,
-},
-["damage_meter_session_info"] = {
-},
-["mythic_plus_log"] = {
+["player_stats"] = {
 },
 ["mythic_dungeon_currentsaved"] = {
 ["dungeon_name"] = "",
@@ -6205,13 +6445,9 @@ false,
 ["SoloTablesSaved"] = {
 ["Mode"] = 1,
 },
-["on_death_menu"] = false,
-["ignore_nicktag"] = false,
-["data_harvested_for_charts"] = {
-},
 ["last_realversion"] = 166,
 ["last_version"] = "2.5.5 14324",
-["combat_id"] = 17,
+["combat_id"] = 21,
 ["savedStyles"] = {
 {
 ["hide_in_combat_type"] = 1,
@@ -6232,7 +6468,7 @@ false,
 1,
 },
 ["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-["bars_sort_direction"] = 1,
+["skin_custom"] = "vermin",
 ["use_auto_align_multi_fontstrings"] = true,
 ["tooltip"] = {
 ["n_abilities"] = 3,
@@ -6400,13 +6636,13 @@ false,
 },
 },
 ["show_sidebars"] = false,
-["name"] = "vermin",
+["version"] = 3,
 ["switch_tank_in_combat"] = {
 1,
 1,
 1,
 },
-["version"] = 3,
+["bg_alpha"] = 0,
 ["fontstrings_text4_anchor"] = 4,
 ["plugins_grow_direction"] = 1,
 ["menu_alpha"] = {
@@ -6448,7 +6684,7 @@ false,
 },
 ["backdrop_texture"] = "Details Ground",
 ["hide_in_combat_alpha"] = 0,
-["micro_displays_locked"] = false,
+["bars_sort_direction"] = 1,
 ["strata"] = "LOW",
 ["libwindow"] = {
 ["y"] = -20,
@@ -6464,15 +6700,11 @@ false,
 0.07058823529411765,
 },
 },
-["row_show_animation"] = {
-["anim"] = "Fade",
-["options"] = {
-},
-},
 ["menu_anchor_down"] = {
 16,
 -3,
 },
+["bars_grow_direction"] = 1,
 ["grab_on_top"] = false,
 ["auto_hide_menu"] = {
 ["left"] = false,
@@ -6490,15 +6722,19 @@ false,
 0,
 1,
 },
-["bars_grow_direction"] = 1,
+["row_show_animation"] = {
+["anim"] = "Fade",
+["options"] = {
+},
+},
 ["auto_current"] = true,
-["skin_custom"] = "vermin",
+["micro_displays_locked"] = false,
 ["switch_damager"] = {
 1,
 1,
 1,
 },
-["bg_alpha"] = 0,
+["name"] = "vermin",
 ["hide_in_combat"] = false,
 ["row_info"] = {
 ["textR_outline"] = false,
@@ -6648,11 +6884,119 @@ false,
 },
 },
 ["last_instance_time"] = 0,
-["coach"] = {
-["enabled"] = false,
-["welcome_panel_pos"] = {
+["plugin_database"] = {
+["DETAILS_PLUGIN_TINY_THREAT"] = {
+["enabled"] = true,
+["only_my_group"] = false,
+["animate"] = false,
+["updatespeed"] = 1,
+["hide_pull_bar"] = false,
+["useclasscolors"] = false,
+["playercolor"] = {
+1,
+1,
+1,
 },
-["last_coach_name"] = false,
+["usefocus"] = false,
+["disable_gouge"] = false,
+["playSound"] = false,
+["showamount"] = false,
+["useplayercolor"] = false,
+["absolute_mode"] = false,
+["show_party_pets"] = false,
+["playSoundFile"] = "Details Threat Warning Volume 3",
+["author"] = "Terciob",
+},
+["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
+["enabled"] = true,
+["encounter_timers_bw"] = {
+},
+["max_emote_segments"] = 3,
+["last_section_selected"] = "main",
+["author"] = "Terciob",
+["window_scale"] = 1,
+["hide_on_combat"] = false,
+["show_icon"] = 5,
+["opened"] = 0,
+["encounter_timers_dbm"] = {
+},
+},
+["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+["enabled"] = true,
+["author"] = "Terciob",
+["max_compares"] = 4,
+["compare_type"] = 1,
+},
+["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+["use_square_mode"] = false,
+["is_first_run"] = false,
+["grow_direction"] = "right",
+["arrow_color"] = {
+1,
+1,
+1,
+0.5,
+},
+["scale"] = 1,
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
+},
+["minimap"] = {
+["minimapPos"] = 160,
+["radius"] = 160,
+["hide"] = true,
+},
+["row_height"] = 18,
+["arrow_anchor_x"] = 0,
+["font_color"] = {
+1,
+1,
+1,
+1,
+},
+["row_texture"] = "xVerminClean",
+["square_grow_direction"] = "right",
+["point"] = "RIGHT",
+["main_frame_strata"] = "LOW",
+["square_amount"] = 5,
+["enabled"] = false,
+["arrow_size"] = 10,
+["use_spark"] = false,
+["row_spacement"] = 19,
+["main_frame_color"] = {
+0,
+0,
+0,
+0,
+},
+["author"] = "Details! Team",
+["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+["font_size"] = 10,
+["y"] = -183.107162475586,
+["x"] = -4.001220703125,
+["font_face"] = "Friz Quadrata TT",
+["square_size"] = 32,
+["per_second"] = {
+["enabled"] = false,
+["point"] = "CENTER",
+["scale"] = 1,
+["font_shadow"] = true,
+["y"] = -6.103515625e-05,
+["x"] = 0.00311279296875,
+["size"] = 32,
+["update_speed"] = 0.05,
+["attribute_type"] = 1,
+},
+["row_color"] = {
+0.443137254901961,
+0.592156862745098,
+1,
+0.480826139450073,
+},
+["main_frame_locked"] = true,
+["arrow_anchor_y"] = 0,
+},
 },
 ["announce_deaths"] = {
 ["enabled"] = false,
@@ -6785,15 +7129,15 @@ false,
 },
 ["zoneName"] = "Kalimdor",
 ["boss_hp"] = 1,
-["spells_cast_timeline"] = {
+["segments_added"] = {
 },
 ["is_challenge"] = false,
-["segments_added"] = {
+["frags"] = {
 },
 ["data_fim"] = 0,
 ["cleu_timeline"] = {
 },
-["frags"] = {
+["spells_cast_timeline"] = {
 },
 ["PhaseData"] = {
 {
@@ -6817,123 +7161,13 @@ false,
 ["player_last_events"] = {
 },
 },
-["plugin_database"] = {
-["DETAILS_PLUGIN_TINY_THREAT"] = {
-["enabled"] = true,
-["only_my_group"] = false,
-["animate"] = false,
-["updatespeed"] = 1,
-["hide_pull_bar"] = false,
-["useclasscolors"] = false,
-["playercolor"] = {
-1,
-1,
-1,
-},
-["usefocus"] = false,
-["disable_gouge"] = false,
-["playSound"] = false,
-["showamount"] = false,
-["useplayercolor"] = false,
-["absolute_mode"] = false,
-["show_party_pets"] = false,
-["playSoundFile"] = "Details Threat Warning Volume 3",
-["author"] = "Terciob",
-},
-["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
-["enabled"] = true,
-["encounter_timers_bw"] = {
-},
-["max_emote_segments"] = 3,
-["last_section_selected"] = "main",
-["author"] = "Terciob",
-["window_scale"] = 1,
-["hide_on_combat"] = false,
-["show_icon"] = 5,
-["opened"] = 0,
-["encounter_timers_dbm"] = {
-},
-},
-["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-["enabled"] = true,
-["author"] = "Terciob",
-["max_compares"] = 4,
-["compare_type"] = 1,
-},
-["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-["use_square_mode"] = false,
-["is_first_run"] = false,
-["grow_direction"] = "right",
-["arrow_color"] = {
-1,
-1,
-1,
-0.5,
-},
-["scale"] = 1,
-["main_frame_size"] = {
-249.999740600586,
-89.9999694824219,
-},
-["minimap"] = {
-["minimapPos"] = 160,
-["radius"] = 160,
-["hide"] = true,
-},
-["row_height"] = 18,
-["arrow_anchor_x"] = 0,
-["font_color"] = {
-1,
-1,
-1,
-1,
-},
-["row_texture"] = "xVerminClean",
-["square_grow_direction"] = "right",
-["point"] = "RIGHT",
-["main_frame_strata"] = "LOW",
-["square_amount"] = 5,
-["enabled"] = false,
-["arrow_size"] = 10,
-["per_second"] = {
-["enabled"] = false,
-["point"] = "CENTER",
-["scale"] = 1,
-["font_shadow"] = true,
-["y"] = -6.103515625e-05,
-["x"] = 0.00311279296875,
-["size"] = 32,
-["update_speed"] = 0.05,
-["attribute_type"] = 1,
-},
-["row_spacement"] = 19,
-["main_frame_color"] = {
-0,
-0,
-0,
-0,
-},
-["author"] = "Details! Team",
-["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-["y"] = -183.107162475586,
-["font_size"] = 10,
-["x"] = -4.001220703125,
-["font_face"] = "Friz Quadrata TT",
-["square_size"] = 32,
-["use_spark"] = false,
-["row_color"] = {
-0.443137254901961,
-0.592156862745098,
-1,
-0.480826139450073,
-},
-["main_frame_locked"] = true,
-["arrow_anchor_y"] = 0,
-},
+["damage_meter_session_info"] = {
 },
 ["arena_data_headers"] = {
 },
-["player_stats"] = {
+["announce_firsthit"] = {
+["enabled"] = true,
+["channel"] = "SELF",
 },
 ["announce_cooldowns"] = {
 ["enabled"] = false,

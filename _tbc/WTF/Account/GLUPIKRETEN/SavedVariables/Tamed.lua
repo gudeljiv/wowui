@@ -2,9 +2,11 @@
 __TAMED_ADDON_DB__ = {
 ["profileKeys"] = {
 ["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
-["Poklopac - Thunderstrike"] = "Poklopac - Thunderstrike",
+["Dopeseal - Thunderstrike"] = "Dopeseal - Thunderstrike",
 ["Dopecure - Thunderstrike"] = "Dopecure - Thunderstrike",
+["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
 ["Dopesnare - Thunderstrike"] = "Dopesnare - Thunderstrike",
+["Poklopac - Thunderstrike"] = "Poklopac - Thunderstrike",
 },
 ["global"] = {
 ["minimapIcon"] = {

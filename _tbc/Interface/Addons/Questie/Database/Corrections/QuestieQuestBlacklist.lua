@@ -14,7 +14,7 @@ function QuestieQuestBlacklist:Load()
     local locale = GetLocale()
     local questsToBlacklist = {
         [7462] = true, -- Duplicate of 7877. See #1583
-        [2358] = true, -- See #921
+        [2358] = Expansions.Current == Expansions.Era or Expansions.Current >= Expansions.Wotlk, -- available in TBC anniversary (!)
         [787] = true, -- The New Horde is not in the game. See #830
         [6606] = true, -- Quest is not in the game. See #1338
         [6072] = true, -- Ayanna Everstride doesn't start "Hunter's Path" (this quest is most likely simply not in the game) #700
@@ -1204,7 +1204,7 @@ function QuestieQuestBlacklist:Load()
         [10048] = true, -- A Handful of Magic Dust BETA
         [10049] = true, -- A Handful of Magic Dust BETA
         [10169] = true, -- Losing Gracefully (removed with 2.4.0)
-        [10259] = true, -- Into the Breach (TBC Pre patch event)
+        [10259] = Expansions.Current ~= Expansions.Tbc, -- Into the Breach (TBC Pre patch event)
         [10364] = true, -- Caedmos (Unavailable Priest quest)
         [10379] = true, -- Touch of Weakness (Followup of NOT A QUEST)
         [10534] = true, -- Returning Home (Unavailable Priest quest)
@@ -1382,7 +1382,7 @@ function QuestieQuestBlacklist:Load()
         [8443] = Expansions.Current >= Expansions.Tbc,
 
         -- Phase 4 Zul'Aman
-        --[11196] = true, -- Not in the game
+        [11196] = true, -- Not in the game
 
         ----- Wotlk -------------- Wotlk quests --------------- Wotlk -----
         ----- Wotlk ------------- starting here -------------- Wotlk -----
@@ -2027,7 +2027,7 @@ function QuestieQuestBlacklist:Load()
         [400] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [401] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [404] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [403] = Expansions.Current >= Expansions.Cata, -- Removed with cata
+        [403] = Expansions.Current >= Expansions.Tbc, -- Removed with TBC
         [405] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [406] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [407] = Expansions.Current >= Expansions.Cata, -- Removed with cata

@@ -4,7 +4,7 @@ VER 3 000000000000003F " " "134400"
 END
 VER 3 0000000000000033 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:3530
 END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
@@ -15,15 +15,15 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:159
+/cast item:1205
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:117
+/cast item:422
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:858
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -34,7 +34,7 @@ VER 3 0000000000000011 "inspect" "136106"
 END
 VER 3 0000000000000037 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:2455
 END
 VER 3 000000000000003A "pattack" "132152"
 #showtooltip
@@ -51,12 +51,12 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:3731
+#showtooltip item:3730
 /cast feed pet
-/use item:3731
+/use item:3730
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Galgar
+/targetexact Blackfathom Tide Priestess
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
@@ -66,9 +66,7 @@ VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
 /click StaticPopup1Button1
 END
 VER 3 000000000000000B "TEST" "132089"
-/run RepositionLootFrames()
-/run GroupLootContainer:Show()
-/run GroupLootContainer:CreateBeautyBorder(8)
+/tar miner hackett
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

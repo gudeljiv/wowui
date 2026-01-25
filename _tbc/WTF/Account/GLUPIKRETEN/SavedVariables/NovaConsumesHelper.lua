@@ -10,7 +10,7 @@ NCHdatabase = {
 ["Dopesnare - Thunderstrike"] = "Dopesnare - Thunderstrike",
 },
 ["global"] = {
-["NCHMainFrameAnchor_y"] = -285.2395629882813,
+["NCHMainFrameAnchor_y"] = -284.6047058105469,
 ["NCHMainFrameAnchor_point"] = "TOP",
 ["NCHProtFrameAnchor_y"] = 275.5302429199219,
 ["versions"] = {
@@ -29,9 +29,10 @@ NCHdatabase = {
 ["loadInRaidGroupProt"] = false,
 ["NCHMainFrameAnchor_relativePoint"] = "TOP",
 ["loadInRaidsProt"] = false,
-["NCHMainFrameAnchor_x"] = 525.6437377929688,
+["NCHMainFrameAnchor_x"] = 525.0087890625,
 ["loadEverywhereProt"] = false,
 ["buttonsWide"] = 6,
+["hideWhenNoItemsProt"] = true,
 },
 ["profiles"] = {
 ["Doperage - Thunderstrike"] = {

@@ -1,10 +1,6 @@
 
 EncounterDetailsDB = {
 ["chartData"] = {
-[36] = {
-},
-[37] = {
-},
 [38] = {
 ["Raid Damage Done"] = {
 23,
@@ -234,6 +230,50 @@ EncounterDetailsDB = {
 0,
 ["max_value"] = 15,
 ["__time"] = 1769199011,
+},
+},
+[53] = {
+["Raid Damage Done"] = {
+14,
+15,
+17,
+["max_value"] = 17,
+["__time"] = 1769336374,
+},
+},
+[54] = {
+["Raid Damage Done"] = {
+["__time"] = 1769336378,
+},
+},
+[55] = {
+["Raid Damage Done"] = {
+14,
+0,
+14,
+0,
+11,
+0,
+11,
+0,
+11,
+["max_value"] = 14,
+["__time"] = 1769336392,
+},
+},
+[56] = {
+["Raid Damage Done"] = {
+16,
+0,
+15,
+0,
+12,
+0,
+11,
+0,
+12,
+["max_value"] = 16,
+["__time"] = 1769336960,
 },
 },
 },
