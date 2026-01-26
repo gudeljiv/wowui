@@ -313,6 +313,8 @@ L["ICONMENU_UNITCOOLDOWN_DESC"] = [[Tracks the cooldowns of someone else.
 L["ICONMENU_ICD"] = "Internal Cooldown"
 L["ICONMENU_ICD_DESC"] = [=[Tracks the cooldown of a proc or a similar effect.
 
+In Midnight, you can use this icon type to approximate any timer that occurs when a spell is cast.
+
 |cFFFF5959IMPORTANT|r: See the tooltips under the %q settings for how to track each internal cooldown type.]=]
 
 L["ICONMENU_CAST"] = "Spell Cast"
@@ -893,6 +895,10 @@ L["UIPANEL_GROUPALPHA_DESC"] = [[Set the opacity level of the entire group.
 This setting has no effect on the functionality of icons themselves. It only changes the appearance of the group and its icons.
 
 Set this setting to 0 if you want to hide the entire group will still allowing it to remain fully functional (similar to the %q setting for icons).]]
+
+L["UIPANEL_GROUPALPHA_STATIC"] = "Use Static Group Opacity"
+L["UIPANEL_GROUPALPHA_INHERIT"] = "Inherit Opacity from Icon"
+L["UIPANEL_GROUPALPHA_INHERIT_DESC"] = [[If set, the group will inherit its opacity from the specified icon, overriding the static Group Opacity setting below.]]
 
 L["UIPANEL_ONLYINCOMBAT"] = "Only show in combat"
 L["UIPANEL_SPEC"] = "Dual Spec"

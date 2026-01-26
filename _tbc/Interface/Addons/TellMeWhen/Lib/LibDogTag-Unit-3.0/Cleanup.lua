@@ -1,6 +1,6 @@
 local DOGTAG_MAJOR_VERSION = "LibDogTag-3.0"
 local MAJOR_VERSION = "LibDogTag-Unit-3.0"
-local MINOR_VERSION = tonumber(("20260119224119"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20260125232237"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_Unit_MINOR_VERSION then
 	_G.DogTag_Unit_MINOR_VERSION = MINOR_VERSION

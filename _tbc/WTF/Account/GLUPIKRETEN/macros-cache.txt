@@ -56,8 +56,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3730
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Vicious Gray Bear
-/targetexact Gray Bear
+/targetexact Hillsbrad Peasant
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"

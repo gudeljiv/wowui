@@ -19,7 +19,7 @@ VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:422
+/cast item:4538
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
@@ -34,7 +34,7 @@ VER 3 0000000000000011 "inspect" "136106"
 END
 VER 3 0000000000000037 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:3385
+/cast item:0
 END
 VER 3 000000000000003A "pattack" "132152"
 #showtooltip
@@ -56,7 +56,8 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3730
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Syndicate Rogue
+/targetexact Vicious Gray Bear
+/targetexact Gray Bear
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
