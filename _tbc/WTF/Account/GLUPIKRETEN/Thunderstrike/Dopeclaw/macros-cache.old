@@ -10,9 +10,7 @@ VER 3 0100000001000005 "AP" "136068"
 END
 VER 3 0100000001000016 "cat" "134400"
 #showtooltip Cat Form
-/cancelform [noform:2]
-/cast [form:2] Cat Form
-/cast [noform:2] !Cat Form
+/cast !Cat Form
 END
 VER 3 010000000100001B "charge" "134400"
 #showtooltip Feral Charge

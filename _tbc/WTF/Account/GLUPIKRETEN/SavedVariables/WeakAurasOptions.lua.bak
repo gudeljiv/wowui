@@ -2,20 +2,8 @@
 WeakAurasOptionsSaved = {
 ["magnetAlign"] = true,
 ["rebuilding"] = false,
-["savedSnippets"] = {
-},
 ["spellCacheAchievements"] = true,
-["spellCacheStrings"] = true,
-["locale"] = "enUS",
-["needsRebuild"] = false,
-["version"] = "5.21.1",
-["lockPositions"] = false,
-["spellCacheAchivements"] = true,
-["frame"] = {
-["xOffset"] = 724.0757446289062,
-["width"] = 1051.967651367188,
-["height"] = 955.2742919921875,
-["yOffset"] = 1361.90478515625,
+["savedSnippets"] = {
 },
 ["spellCache"] = {
 ["Enchant Cloak - Greater Defense"] = {
@@ -47365,5 +47353,17 @@ WeakAurasOptionsSaved = {
 ["spells"] = "359998=135745",
 },
 },
+["locale"] = "enUS",
+["needsRebuild"] = false,
+["version"] = "5.21.1",
+["lockPositions"] = false,
+["frame"] = {
+["xOffset"] = 724.0757446289062,
+["yOffset"] = 1361.90478515625,
+["height"] = 955.2742919921875,
+["width"] = 1051.967651367188,
+},
+["spellCacheStrings"] = true,
+["spellCacheAchivements"] = true,
 ["build"] = "65534",
 }
