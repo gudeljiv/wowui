@@ -26,7 +26,7 @@ AtlasLootClassic_Options: enabled
 AtlasLootClassic_PvP: enabled
 Auctionator: enabled
 AutoLayer_Vanilla: disabled
-Baganator: enabled
+Baganator: disabled
 Buffet: enabled
 !BugGrabber: enabled
 BugSack: enabled
@@ -103,7 +103,7 @@ SharedMedia: enabled
 SharedMedia_xVermin: enabled
 SigmaHelmAndCloak: enabled
 StatLogic: enabled
-Syndicator: enabled
+Syndicator: disabled
 TacoTip: enabled
 TellMeWhen: enabled
 TellMeWhen_Options: enabled
@@ -127,3 +127,6 @@ Blizzard_CompactRaidFrames: enabled
 BaganatorCustomSkin: disabled
 LortiUI: disabled
 UberUI: disabled
+AdiBags: enabled
+AdiBags_Config: enabled
+SortBags: enabled

@@ -51,7 +51,7 @@ TomTomDB = {
 ["Provokator - Jin'do"] = "Default",
 ["Dopecoil - Thunderstrike"] = "Default",
 ["Dopebolt - Lone Wolf"] = "Default",
-["Moolatz - Dreadnaught"] = "Default",
+["Battlenac - Celebras"] = "Default",
 ["Dopemend - Living Flame"] = "Default",
 ["Moolatz - Celebras"] = "Default",
 ["Jutarnjedrvo - Lone Wolf"] = "Default",
@@ -60,7 +60,7 @@ TomTomDB = {
 ["Nitwit - Dreadnaught"] = "Default",
 ["Turbonac - Celebras"] = "Default",
 ["Dopestab - Lone Wolf"] = "Default",
-["Doperage - Thunderstrike"] = "Default",
+["Mxys - Golemagg"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
 ["Vermins - Stitches"] = "Default",
 ["Pitchwise - Dreadnaught"] = "Default",
@@ -80,10 +80,10 @@ TomTomDB = {
 ["Battlearm - Jin'do"] = "Default",
 ["Mq - Celebras"] = "Default",
 ["Dopeclaw - Thunderstrike"] = "Default",
-["Mxys - Golemagg"] = "Default",
+["Doperage - Thunderstrike"] = "Default",
 ["Vermin - Zandalar Tribe"] = "Default",
 ["Mxzq - Golemagg"] = "Default",
-["Battlenac - Celebras"] = "Default",
+["Moolatz - Dreadnaught"] = "Default",
 },
 ["profiles"] = {
 ["Default"] = {
@@ -172,7 +172,7 @@ TomTomWaypointsM = {
 ["Provokator - Jin'do"] = "Provokator - Jin'do",
 ["Dopecoil - Thunderstrike"] = "Dopecoil - Thunderstrike",
 ["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
-["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
+["Battlenac - Celebras"] = "Battlenac - Celebras",
 ["Dopemend - Living Flame"] = "Dopemend - Living Flame",
 ["Moolatz - Celebras"] = "Moolatz - Celebras",
 ["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
@@ -181,7 +181,7 @@ TomTomWaypointsM = {
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
 ["Turbonac - Celebras"] = "Turbonac - Celebras",
 ["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
-["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
+["Mxys - Golemagg"] = "Mxys - Golemagg",
 ["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
 ["Vermins - Stitches"] = "Vermins - Stitches",
 ["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
@@ -201,10 +201,10 @@ TomTomWaypointsM = {
 ["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 ["Mq - Celebras"] = "Mq - Celebras",
 ["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
-["Mxys - Golemagg"] = "Mxys - Golemagg",
+["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
 ["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
 ["Mxzq - Golemagg"] = "Mxzq - Golemagg",
-["Battlenac - Celebras"] = "Battlenac - Celebras",
+["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
 },
 ["profiles"] = {
 ["Dopeclaw - Lone Wolf"] = {
@@ -307,7 +307,7 @@ TomTomWaypointsM = {
 },
 ["Dopebolt - Lone Wolf"] = {
 },
-["Moolatz - Dreadnaught"] = {
+["Battlenac - Celebras"] = {
 },
 ["Dopemend - Living Flame"] = {
 },
@@ -325,7 +325,7 @@ TomTomWaypointsM = {
 },
 ["Dopestab - Lone Wolf"] = {
 },
-["Doperage - Thunderstrike"] = {
+["Mxys - Golemagg"] = {
 },
 ["Doperage - Lone Wolf"] = {
 },
@@ -390,13 +390,13 @@ TomTomWaypointsM = {
 },
 ["Dopeclaw - Thunderstrike"] = {
 },
-["Mxys - Golemagg"] = {
+["Doperage - Thunderstrike"] = {
 },
 ["Vermin - Zandalar Tribe"] = {
 },
 ["Mxzq - Golemagg"] = {
 },
-["Battlenac - Celebras"] = {
+["Moolatz - Dreadnaught"] = {
 },
 },
 }

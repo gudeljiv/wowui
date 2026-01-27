@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-if C_AddOns.IsAddOnLoaded("AdiBags") and 1 == 2 then
+if C_AddOns.IsAddOnLoaded("AdiBags") then
 	local addon = LibStub("AceAddon-3.0"):GetAddon("AdiBags")
 	local L = setmetatable({}, { __index = addon.L })
 
@@ -150,9 +150,40 @@ if C_AddOns.IsAddOnLoaded("AdiBags") and 1 == 2 then
 	hooksecurefunc(addon, "CreateContainerFrame", function(self, name, isBank, bagObject)
 		if AdiBagsContainer1 then
 			AdiBagsContainer1:CreateBeautyBorder(8)
+			AdiBagsContainer1SearchBox:Hide()
+
+			-- Create sort button if it doesn't exist
+			if not AdiBagsContainer1.SortButton and SortBags then
+				local sortBtn =
+					CreateFrame("Button", "AdiBagsContainer1SortButton", AdiBagsContainer1, "UIPanelButtonTemplate")
+				sortBtn:SetSize(20, 20)
+				sortBtn:SetPoint("TOPRIGHT", AdiBagsContainer1, "TOPRIGHT", -8, -8)
+				sortBtn:SetText("S")
+				sortBtn:SetFrameStrata("HIGH")
+				sortBtn:SetFrameLevel(100)
+				sortBtn:SetScript("OnClick", function()
+					SortBags()
+				end)
+				AdiBagsContainer1.SortButton = sortBtn
+			end
 		end
 		if AdiBagsContainer2 then
 			AdiBagsContainer2:CreateBeautyBorder(8)
+			AdiBagsContainer2SearchBox:Hide()
+
+			if not AdiBagsContainer2.SortButton and SortBags then
+				local sortBtn =
+					CreateFrame("Button", "AdiBagsContainer2SortButton", AdiBagsContainer2, "UIPanelButtonTemplate")
+				sortBtn:SetSize(20, 20)
+				sortBtn:SetPoint("TOPRIGHT", AdiBagsContainer2, "TOPRIGHT", -8, -8)
+				sortBtn:SetText("S")
+				sortBtn:SetFrameStrata("HIGH")
+				sortBtn:SetFrameLevel(100)
+				sortBtn:SetScript("OnClick", function()
+					SortBags()
+				end)
+				AdiBagsContainer2.SortButton = sortBtn
+			end
 		end
 	end)
 end

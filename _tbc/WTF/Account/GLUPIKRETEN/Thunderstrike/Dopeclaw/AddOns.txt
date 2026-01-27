@@ -216,7 +216,7 @@ unitscan: disabled
 WideQuestLogPlus: enabled
 Deathlog: disabled
 RareScanner: enabled
-SortBags: disabled
+SortBags: enabled
 Ace3: enabled
 AceGUI-3.0_SFX-Widgets: enabled
 LibDBIcon-1.0: enabled
@@ -266,12 +266,12 @@ ElvUI_Options: disabled
 ElvUI: disabled
 ElvUI_Libraries: disabled
 AdiBags_Item_Sets: disabled
-Baganator: enabled
+Baganator: disabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
 NovaConsumesHelper: disabled
 Drift: enabled
-Syndicator: enabled
+Syndicator: disabled
 Blizzard_ObjectiveTracker: enabled
 DBM-VPVEM: enabled
 DBM-Party-BC: enabled

@@ -42,7 +42,7 @@ AdiBags_Config: enabled
 Blizzard_CompactRaidFrames: enabled
 SortBagsButton: disabled
 Myslot: disabled
-SortBags: disabled
+SortBags: enabled
 TradeSkillMaster: disabled
 TradeSkillMaster_AppHelper: disabled
 unitscan: disabled
@@ -140,11 +140,11 @@ ElvUI_Options: disabled
 ElvUI: disabled
 ElvUI_Libraries: disabled
 AdiBags_Item_Sets: disabled
-Baganator: enabled
+Baganator: disabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
 AdiBags-ClassicItemLevel: disabled
-Syndicator: enabled
+Syndicator: disabled
 Blizzard_ObjectiveTracker: enabled
 DBM-Core: enabled
 DBM-GUI: enabled

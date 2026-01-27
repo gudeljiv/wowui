@@ -65,7 +65,7 @@ ShadowedUnitFrames: enabled
 SharedMedia: enabled
 SharedMedia_xVermin: enabled
 SimpleRaidTargetIcons: enabled
-SortBags: disabled
+SortBags: enabled
 TacoTip: enabled
 TellMeWhen: enabled
 TellMeWhen_Options: enabled
@@ -100,9 +100,9 @@ NovaWorldBuffs: enabled
 Blizzard_CombatText: enabled
 Baganator-Simple: disabled
 Drift: enabled
-Baganator: enabled
+Baganator: disabled
 ClassicFocus: disabled
-Syndicator: enabled
+Syndicator: disabled
 Blizzard_ObjectiveTracker: enabled
 CCleanerClassic: disabled
 ClassicProfessionFilter: enabled

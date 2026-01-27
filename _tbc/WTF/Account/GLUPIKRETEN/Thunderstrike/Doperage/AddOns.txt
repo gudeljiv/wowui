@@ -84,7 +84,7 @@ WeakAurasTemplates: enabled
 WideQuestLogPlus: disabled
 Deathlog: disabled
 RareScanner: enabled
-SortBags: disabled
+SortBags: enabled
 TradeSkillMaster_AppHelper: disabled
 DugisGuideViewerZ: disabled
 OPie_Classic: disabled
@@ -135,7 +135,7 @@ LibSharedMedia-3.0: enabled
 Scrap: enabled
 BrainDead: enabled
 SyLevel: enabled
-Baganator: enabled
+Baganator: disabled
 RXPGuides_Themes: enabled
 Blizzard_CombatText: enabled
 ElvUI_AuraBarsMovers: disabled
@@ -162,7 +162,7 @@ SpellActivationOverlay: enabled
 Baganator-Simple: disabled
 NovaConsumesHelper: enabled
 Drift: enabled
-Syndicator: enabled
+Syndicator: disabled
 Blizzard_ObjectiveTracker: enabled
 DBM-Core: enabled
 DBM-GUI: enabled

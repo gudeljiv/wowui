@@ -13,12 +13,12 @@ WT_LearnedPetAbilities = {
 },
 ["Great Stamina"] = {
 ["Rank 3"] = true,
-["Rank 4"] = true,
 ["Rank 8"] = true,
+["Rank 4"] = true,
 ["Rank 5"] = true,
 ["Rank 7"] = true,
-["Rank 1"] = true,
 ["Rank 6"] = true,
+["Rank 1"] = true,
 ["Rank 2"] = true,
 },
 ["Screech"] = {
@@ -51,7 +51,36 @@ WT_LearnedPetAbilities = {
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
-["Bite"] = {
+["Growl"] = {
+["Rank 3"] = true,
+["Rank 4"] = true,
+["Rank 5"] = true,
+["Rank 1"] = true,
+["Rank 2"] = true,
+},
+["Fire Resistance"] = {
+["Rank 3"] = true,
+["Rank 1"] = true,
+["Rank 2"] = true,
+},
+["Natural Armor"] = {
+["Rank 3"] = true,
+["Rank 8"] = true,
+["Rank 4"] = true,
+["Rank 5"] = true,
+["Rank 7"] = true,
+["Rank 6"] = true,
+["Rank 1"] = true,
+["Rank 2"] = true,
+},
+["Dive"] = {
+["Rank 1"] = true,
+},
+["Gore"] = {
+["Rank 3"] = true,
+["Rank 2"] = true,
+},
+["Claw"] = {
 ["Rank 3"] = true,
 ["Rank 4"] = true,
 ["Rank 5"] = true,
@@ -64,40 +93,11 @@ WT_LearnedPetAbilities = {
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
-["Gore"] = {
-["Rank 3"] = true,
-["Rank 2"] = true,
-},
-["Natural Armor"] = {
-["Rank 3"] = true,
-["Rank 4"] = true,
-["Rank 8"] = true,
-["Rank 5"] = true,
-["Rank 7"] = true,
-["Rank 1"] = true,
-["Rank 6"] = true,
-["Rank 2"] = true,
-},
-["Dive"] = {
-["Rank 1"] = true,
-},
-["Claw"] = {
+["Bite"] = {
 ["Rank 3"] = true,
 ["Rank 4"] = true,
 ["Rank 5"] = true,
 ["Rank 6"] = true,
-["Rank 1"] = true,
-["Rank 2"] = true,
-},
-["Fire Resistance"] = {
-["Rank 3"] = true,
-["Rank 1"] = true,
-["Rank 2"] = true,
-},
-["Growl"] = {
-["Rank 3"] = true,
-["Rank 4"] = true,
-["Rank 5"] = true,
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },

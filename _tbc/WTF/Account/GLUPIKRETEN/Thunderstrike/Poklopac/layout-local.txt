@@ -5,7 +5,7 @@ Anchor: BOTTOMRIGHT
 X: -545
 Y: 0
 W: 253
-H: 207
+H: 28
 Frame: PallyPowerFrame
 FrameLevel: 1
 Anchor: RIGHT
@@ -13,13 +13,6 @@ X: -477
 Y: 363
 W: 1
 H: 1
-Frame: SettingsPanel
-FrameLevel: 1
-Anchor: TOP
-X: 0
-Y: -116
-W: 920
-H: 724
 Frame: ColorPickerFrame
 FrameLevel: 23
 Anchor: CENTER
@@ -204,9 +197,9 @@ W: 1024
 H: 712
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
-Anchor: RIGHT
+Anchor: TOPRIGHT
 X: -351
-Y: 175
+Y: -175
 W: 607
 H: 672
 Frame: PallyPowerBlessingsFrame
@@ -230,3 +223,10 @@ X: 25
 Y: 233
 W: 500
 H: 273
+Frame: SettingsPanel
+FrameLevel: 1
+Anchor: TOP
+X: 0
+Y: -116
+W: 920
+H: 724

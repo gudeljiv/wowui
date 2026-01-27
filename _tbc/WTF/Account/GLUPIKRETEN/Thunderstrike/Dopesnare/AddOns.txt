@@ -10,8 +10,8 @@ nMainbar: disabled
 nMinimap: enabled
 !Beautycase: enabled
 !Colorz: enabled
-AdiBags: disabled
-AdiBags_Config: disabled
+AdiBags: enabled
+AdiBags_Config: enabled
 Align: disabled
 AtlasLootClassic_Options: enabled
 AtlasLootClassic_Collections: enabled
@@ -67,7 +67,7 @@ ShadowedUnitFrames: enabled
 SharedMedia: enabled
 SharedMedia_xVermin: enabled
 SimpleRaidTargetIcons: enabled
-SortBags: disabled
+SortBags: enabled
 TacoTip: enabled
 TellMeWhen: enabled
 TellMeWhen_Options: enabled
@@ -144,12 +144,12 @@ ElvUI_Options: disabled
 ElvUI: disabled
 ElvUI_Libraries: disabled
 AdiBags_Item_Sets: disabled
-Baganator: enabled
+Baganator: disabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
 Buffet: enabled
 Drift: enabled
-Syndicator: enabled
+Syndicator: disabled
 Blizzard_ObjectiveTracker: enabled
 DBM-Core: enabled
 DBM-GUI: enabled

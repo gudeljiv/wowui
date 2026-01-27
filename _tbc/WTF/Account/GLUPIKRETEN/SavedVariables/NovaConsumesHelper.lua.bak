@@ -2,10 +2,18 @@
 NCHdatabase = {
 ["namespaces"] = {
 },
+["profileKeys"] = {
+["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
+["Dopeseal - Thunderstrike"] = "Dopeseal - Thunderstrike",
+["Poklopac - Thunderstrike"] = "Poklopac - Thunderstrike",
+["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
+["Dopesnare - Thunderstrike"] = "Dopesnare - Thunderstrike",
+},
 ["global"] = {
-["NCHMainFrameAnchor_y"] = -285.2395629882813,
+["NCHMainFrameAnchor_y"] = -284.6047058105469,
 ["NCHMainFrameAnchor_point"] = "TOP",
 ["NCHProtFrameAnchor_y"] = 275.5302429199219,
+["loadInRaidGroupProt"] = false,
 ["versions"] = {
 },
 ["minimapButton"] = false,
@@ -19,19 +27,12 @@ NCHdatabase = {
 ["hide"] = true,
 },
 ["NCHProtFrameAnchor_relativePoint"] = "RIGHT",
+["hideWhenNoItemsProt"] = true,
 ["NCHMainFrameAnchor_relativePoint"] = "TOP",
-["NCHMainFrameAnchor_x"] = 525.6437377929688,
+["loadInRaidsProt"] = false,
+["NCHMainFrameAnchor_x"] = 525.0087890625,
 ["loadEverywhereProt"] = false,
 ["buttonsWide"] = 6,
-["loadInRaidGroupProt"] = false,
-["loadInRaidsProt"] = false,
-},
-["profileKeys"] = {
-["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
-["Dopeseal - Thunderstrike"] = "Dopeseal - Thunderstrike",
-["Poklopac - Thunderstrike"] = "Poklopac - Thunderstrike",
-["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
-["Dopesnare - Thunderstrike"] = "Dopesnare - Thunderstrike",
 },
 ["profiles"] = {
 ["Doperage - Thunderstrike"] = {

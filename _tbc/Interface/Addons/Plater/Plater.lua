@@ -2651,7 +2651,7 @@ Plater.AnchorNamesByPhraseId = {
 			if (Plater.db.profile.use_ui_parent_just_enabled) then
 				Plater.db.profile.use_ui_parent_just_enabled = false
 				if (Plater.db.profile.ui_parent_scale_tune == 0) then
-					Plater.db.profile.ui_parent_scale_tune = 1 / UIParent:GetEffectiveScale()
+					Plater.db.profile.ui_parent_scale_tune = 1 / (IS_WOW_PROJECT_MIDNIGHT and 1 or UIParent:GetEffectiveScale())
 					Plater.RefreshDBUpvalues()
 					Plater.UpdateAllPlates()
 				end
@@ -2833,7 +2833,9 @@ Plater.AnchorNamesByPhraseId = {
 					newUnitFrame:SetAllPoints()
 					newUnitFrame:SetFrameStrata ("BACKGROUND")
 
-					--plateFrame:HookScript("OnSizeChanged", Plater.UpdateUIParentScale)
+					if IS_WOW_PROJECT_MIDNIGHT then
+						plateFrame:HookScript("OnSizeChanged", Plater.UpdateUIParentScale)
+					end
 					
 					--create a 33ms show animation played when the nameplate is added in the screen
 					--nevermind, unitFrame childs are kepping the last alpha value of the animation instead of reseting to their defaults
@@ -2855,8 +2857,6 @@ Plater.AnchorNamesByPhraseId = {
 				plateFrame.unitFrame = newUnitFrame
 
 				local unitFrame = plateFrame.unitFrame
-				
-				plateFrame:HookScript("OnSizeChanged", Plater.UpdateUIParentScale)
 
 				unitFrame:EnableMouse(false)
 
@@ -3814,6 +3814,9 @@ Plater.AnchorNamesByPhraseId = {
 			unitFrame.nameplateScaleAdjust = 1
 			
 			if (DB_USE_UIPARENT) then
+				if not IS_WOW_PROJECT_MIDNIGHT then
+					plateFrame:HookScript("OnSizeChanged", Plater.UpdateUIParentScale)
+				end
 				Plater.UpdateUIParentScale(plateFrame)
 			else
 				unitFrame:SetScale (1) --reset scale
@@ -6398,7 +6401,8 @@ end
 			elseif (Plater.IsUnitTapDenied (unitID)) then
 				r, g, b, a = unpack (Plater.db.profile.tap_denied_color)
 				
-			elseif Plater.db.profile.unit_type_coloring_enabled and (Plater.ZoneInstanceType == "party" or Plater.ZoneInstanceType == "raid") and unitFrame.isGoodAggroState then
+			--elseif Plater.db.profile.unit_type_coloring_enabled and (Plater.ZoneInstanceType == "party" or Plater.ZoneInstanceType == "raid") and unitFrame.isGoodAggroState then
+			elseif Plater.db.profile.unit_type_coloring_enabled and (Plater.ZoneInstanceType == "party" or Plater.ZoneInstanceType == "raid") then
 				local pLevel = UnitEffectiveLevel("player")
                 local uLevel = UnitEffectiveLevel(unitID)
 
@@ -7358,10 +7362,10 @@ end
 				if not self.hasUnitTypeColor then
 					Plater.ChangeHealthBarColor_Internal (self.healthBar, r, g, b, a)
 
-				elseif (not self.isGoodAggroState and (Plater.db.profile.unit_type_coloring_enabled and Plater.db.profile.unit_type_coloring_no_override_threat or not Plater.db.profile.unit_type_coloring_enabled)) then
+				elseif self.InCombat and not self.isGoodAggroState or (Plater.db.profile.unit_type_coloring_no_override_threat and self.isGoodAggroState) then
 					Plater.ChangeHealthBarColor_Internal (self.healthBar, r, g, b, a)
 
-				elseif Plater.db.profile.unit_type_coloring_enabled and self.isGoodAggroState and (Plater.ZoneInstanceType == "party" or Plater.ZoneInstanceType == "raid") then
+				elseif Plater.db.profile.unit_type_coloring_enabled and (self.isGoodAggroState or not self.InCombat) and (Plater.ZoneInstanceType == "party" or Plater.ZoneInstanceType == "raid") then
 					-- reset
 					Plater.FindAndSetNameplateColor (self)
 
