@@ -2,7 +2,7 @@ local Combat = {}
 ShadowUF:RegisterModule(Combat, "combatText", ShadowUF.L["Combat text"])
 
 function Combat:OnEnable(frame)
-	if( not frame.combatText ) then
+	if not frame.combatText then
 		frame.combatText = CreateFrame("Frame", nil, frame.highFrame)
 		frame.combatText:SetFrameStrata("HIGH")
 		frame.combatText.feedbackText = frame.combatText:CreateFontString(nil, "ARTWORK")
@@ -21,7 +21,7 @@ end
 function Combat:OnLayoutApplied(frame, config)
 	-- Update feedback text
 	ShadowUF.Layout:ToggleVisibility(frame.combatText, frame.visibility.combatText)
-	if( frame.visibility.combatText ) then
+	if frame.visibility.combatText then
 		frame.combatText.feedbackFontHeight = ShadowUF.db.profile.font.size + 1
 		frame.combatText.fontPath = ShadowUF.Layout.mediaPath.font
 
@@ -36,13 +36,13 @@ end
 
 function Combat:Update(frame, event, unit, type, ...)
 	CombatFeedback_OnCombatEvent(frame.combatText, type, ...)
-	if( type == "IMMUNE" ) then
+	if type == "IMMUNE" then
 		frame.combatText.feedbackText:SetTextHeight(frame.combatText.feedbackFontHeight * 0.75)
 	end
 
 	-- Increasing the font size will make the text look pixelated, however scaling it up will make it look smooth and awesome
 	local scale = frame.combatText.feedbackText:GetStringHeight() / ShadowUF.db.profile.font.size
-	if( scale > 0 ) then
+	if scale > 0 then
 		frame.combatText:SetScale(scale)
 		frame.combatText.feedbackText:SetFont(frame.combatText.fontPath, ShadowUF.db.profile.font.size, "OUTLINE")
 	end

@@ -5,6 +5,4648 @@ _detalhes_database = {
 ["mythic_dungeon_id"] = 0,
 ["tabela_historico"] = {
 ["tabelas"] = {
+{
+{
+["combatId"] = 55,
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["totalabsorbed"] = 0.006461,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 102.006461,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 102.006461,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Pygmy Surf Crawler"] = true,
+},
+["targets"] = {
+["Pygmy Surf Crawler"] = 102,
+},
+["colocacao"] = 1,
+["aID"] = "6409-04BC9882",
+["grupo"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 102,
+},
+["end_time"] = 1769626612,
+["nome"] = "Poklopac",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 1,
+["g_amt"] = 0,
+["n_max"] = 23,
+["targets"] = {
+["Pygmy Surf Crawler"] = 82,
+},
+["n_total"] = 82,
+["n_min"] = 17,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 82,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 17,
+["r_amt"] = 0,
+},
+[8042] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 20,
+["targets"] = {
+["Pygmy Surf Crawler"] = 20,
+},
+["n_total"] = 20,
+["n_min"] = 20,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 20,
+["c_max"] = 0,
+["id"] = 8042,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 10.34758176099847,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 22.006461,
+["start_time"] = 1769626602,
+["delay"] = 0,
+["last_event"] = 1769626611,
+},
+{
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.002828,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 22.002828,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 22.002828,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-6427-1-11341-3106-00007A5BD9",
+["aID"] = "3106",
+["damage_from"] = {
+["Poklopac"] = true,
+},
+["targets"] = {
+["Poklopac"] = 22,
+},
+["fight_component"] = true,
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1769626612,
+["nome"] = "Pygmy Surf Crawler",
+["spells"] = {
+["tipo"] = 2,
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 5,
+["targets"] = {
+["Poklopac"] = 22,
+},
+["n_total"] = 22,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 22,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 5,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+},
+["friendlyfire"] = {
+},
+["last_dps"] = 0,
+["custom"] = 0,
+["tipo"] = 1,
+["damage_taken"] = 102.002828,
+["start_time"] = 1769626602,
+["delay"] = 0,
+["last_event"] = 1769626610,
+},
+},
+},
+{
+["combatId"] = 55,
+["tipo"] = 3,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 55,
+["tipo"] = 7,
+["_ActorTable"] = {
+},
+},
+{
+["combatId"] = 55,
+["tipo"] = 9,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["grupo"] = true,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["last_event"] = 0,
+["tipo"] = 4,
+},
+},
+},
+{
+["combatId"] = 55,
+["tipo"] = 2,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 557538.617,
+["tempo_start"] = 1769626602,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+124,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+102,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["debuff_uptime"] = 0,
+["cooldowns_defensive"] = 0,
+["interrupt"] = 0,
+["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Poklopac"] = {
+["Earth Shock"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "19:56:52",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Pygmy Surf Crawler",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 9.85800000000745,
+["CombatEndedAt"] = 557548.475,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "19:56:43",
+["end_time"] = 557548.475,
+["mapId"] = 1,
+["combat_id"] = 55,
+["timeStart"] = 1769626603,
+["timeEnd"] = 1769626612,
+["playing_solo"] = true,
+["is_challenge"] = false,
+["frags"] = {
+["Pygmy Surf Crawler"] = 1,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 112,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Poklopac"] = 102.006461,
+},
+},
+},
+["start_time"] = 557538.617,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 54,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 118.001638,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 118.001638,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Clattering Scorpid"] = true,
+},
+["targets"] = {
+["Clattering Scorpid"] = 118,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1769626461,
+["totalabsorbed"] = 0.001638,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Clattering Scorpid"] = 67,
+},
+["n_total"] = 67,
+["n_min"] = 21,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 67,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["n_max"] = 23,
+["r_amt"] = 0,
+},
+[8042] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Clattering Scorpid"] = 18,
+},
+["n_total"] = 18,
+["n_min"] = 18,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 18,
+["c_max"] = 0,
+["id"] = 8042,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 18,
+["r_amt"] = 0,
+},
+[403] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Clattering Scorpid"] = 33,
+},
+["n_total"] = 33,
+["n_min"] = 16,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 33,
+["c_max"] = 0,
+["id"] = 403,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["n_max"] = 17,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769626459,
+["damage_taken"] = 13.001638,
+["start_time"] = 1769626449,
+["delay"] = 0,
+["last_dps"] = 10.43246733269702,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 13.006703,
+["last_dps_realtime"] = 0,
+["monster"] = true,
+["total"] = 13.006703,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-6427-1-11341-3125-00007A4D62",
+["on_hold"] = false,
+["damage_from"] = {
+["Poklopac"] = true,
+},
+["targets"] = {
+["Poklopac"] = 13,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.006703,
+["fight_component"] = true,
+["end_time"] = 1769626461,
+["aID"] = "3125",
+["nome"] = "Clattering Scorpid",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Poklopac"] = 13,
+},
+["n_total"] = 13,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 13,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["n_max"] = 5,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["dps_started"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769626457,
+["damage_taken"] = 118.006703,
+["start_time"] = 1769626453,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 54,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 54,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 54,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["nome"] = "Poklopac",
+["grupo"] = true,
+["aID"] = "6409-04BC9882",
+["last_event"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["tipo"] = 4,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 54,
+["_ActorTable"] = {
+},
+},
+["boss_hp"] = 1,
+["tempo_start"] = 1769626449,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+131,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+118,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Poklopac"] = {
+["Lightning Bolt"] = 1,
+["Earth Shock"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "19:54:21",
+["timeEnd"] = 1769626461,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Clattering Scorpid",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 557397.568,
+["CombatEndedAt"] = 557397.568,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "19:54:10",
+["end_time"] = 557397.568,
+["mapId"] = 1,
+["combat_id"] = 54,
+["timeStart"] = 1769626450,
+["playing_solo"] = true,
+["TimeData"] = {
+},
+["is_challenge"] = false,
+["frags"] = {
+["Clattering Scorpid"] = 1,
+},
+["combat_counter"] = 111,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 118.001638,
+},
+},
+},
+["spells_cast_timeline"] = {
+},
+["start_time"] = 557386.257,
+["contra"] = "Clattering Scorpid",
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 53,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 137.001252,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 137.001252,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Pygmy Surf Crawler"] = true,
+},
+["targets"] = {
+["Pygmy Surf Crawler"] = 137,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 137,
+},
+["end_time"] = 1769626392,
+["totalabsorbed"] = 0.001252,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 2,
+["b_dmg"] = 0,
+["targets"] = {
+["Pygmy Surf Crawler"] = 120,
+},
+["n_total"] = 80,
+["n_min"] = 18,
+["g_dmg"] = 40,
+["counter"] = 8,
+["total"] = 120,
+["c_max"] = 0,
+["MISS"] = 2,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["n_max"] = 21,
+["r_amt"] = 0,
+},
+[403] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Pygmy Surf Crawler"] = 17,
+},
+["n_total"] = 17,
+["n_min"] = 17,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 17,
+["c_max"] = 0,
+["id"] = 403,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["n_max"] = 17,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769626392,
+["damage_taken"] = 63.001252,
+["start_time"] = 1769626372,
+["delay"] = 0,
+["last_dps"] = 6.513943134269566,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 63.003282,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 63.003282,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-6427-1-11341-3106-00007A5AFC",
+["damage_from"] = {
+["Poklopac"] = true,
+},
+["targets"] = {
+["Poklopac"] = 63,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["aID"] = "3106",
+["fight_component"] = true,
+["end_time"] = 1769626392,
+["totalabsorbed"] = 0.003282,
+["nome"] = "Pygmy Surf Crawler",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Poklopac"] = 63,
+},
+["n_total"] = 63,
+["n_min"] = 6,
+["g_dmg"] = 0,
+["counter"] = 10,
+["total"] = 63,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 10,
+["n_max"] = 7,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769626389,
+["damage_taken"] = 137.003282,
+["start_time"] = 1769626371,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 53,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 53,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 53,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["nome"] = "Poklopac",
+["grupo"] = true,
+["aID"] = "6409-04BC9882",
+["last_event"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["tipo"] = 4,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 53,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 557384.96,
+["tempo_start"] = 1769626371,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+200,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+137,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Poklopac"] = {
+["Lightning Bolt"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "19:53:13",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Pygmy Surf Crawler",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 557328.889,
+["CombatEndedAt"] = 557328.889,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "19:52:52",
+["end_time"] = 557328.889,
+["mapId"] = 1,
+["combat_id"] = 53,
+["timeStart"] = 1769626372,
+["timeEnd"] = 1769626393,
+["frags"] = {
+["Pygmy Surf Crawler"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 110,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 137.001252,
+},
+},
+},
+["start_time"] = 557307.857,
+["TimeData"] = {
+},
+["playing_solo"] = true,
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 52,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 126.001188,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 126.001188,
+["colocacao"] = 1,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Pygmy Surf Crawler"] = true,
+},
+["targets"] = {
+["Pygmy Surf Crawler"] = 126,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 126,
+},
+["end_time"] = 1769626312,
+["totalabsorbed"] = 0.001188,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 1,
+["n_max"] = 22,
+["targets"] = {
+["Pygmy Surf Crawler"] = 102,
+},
+["n_total"] = 83,
+["n_min"] = 19,
+["g_dmg"] = 19,
+["counter"] = 6,
+["total"] = 102,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[403] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 0,
+["targets"] = {
+["Pygmy Surf Crawler"] = 24,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 24,
+["c_max"] = 24,
+["id"] = 403,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 24,
+["successful_casted"] = 0,
+["c_total"] = 24,
+["n_amt"] = 0,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769626369,
+["damage_taken"] = 28.001188,
+["start_time"] = 1769626297,
+["delay"] = 0,
+["last_dps"] = 8.50727081224164,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["aID"] = "3106",
+["total_without_pet"] = 28.005347,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 28.005347,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-6427-1-11341-3106-00007A535A",
+["damage_from"] = {
+["Poklopac"] = true,
+},
+["targets"] = {
+["Poklopac"] = 28,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["classe"] = "UNKNOW",
+["fight_component"] = true,
+["end_time"] = 1769626371,
+["totalabsorbed"] = 0.005347,
+["nome"] = "Pygmy Surf Crawler",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 6,
+["targets"] = {
+["Poklopac"] = 28,
+},
+["n_total"] = 28,
+["n_min"] = 5,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 28,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 5,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769626369,
+["damage_taken"] = 126.005347,
+["start_time"] = 1769626304,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 52,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 52,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 52,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 52,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 557305.846,
+["tempo_start"] = 1769626297,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+196,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+126,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "19:51:52",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Pygmy Surf Crawler",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 557247.982,
+["CombatEndedAt"] = 557247.982,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "19:51:37",
+["end_time"] = 557247.982,
+["mapId"] = 1,
+["combat_id"] = 52,
+["timeStart"] = 1769626297,
+["timeEnd"] = 1769626312,
+["frags"] = {
+["Makrura Clacker"] = 1,
+["Pygmy Surf Crawler"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 109,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 126.001188,
+},
+},
+},
+["start_time"] = 557233.171,
+["TimeData"] = {
+},
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 51,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 137.002343,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 137.002343,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Pygmy Surf Crawler"] = true,
+},
+["targets"] = {
+["Pygmy Surf Crawler"] = 137,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 118,
+},
+["end_time"] = 1769626256,
+["totalabsorbed"] = 0.002343,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Pygmy Surf Crawler"] = 137,
+},
+["n_total"] = 137,
+["n_min"] = 19,
+["g_dmg"] = 0,
+["counter"] = 8,
+["total"] = 137,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 7,
+["n_max"] = 21,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769626255,
+["damage_taken"] = 57.002343,
+["start_time"] = 1769626235,
+["delay"] = 0,
+["last_dps"] = 6.523610447106811,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["aID"] = "3106",
+["total_without_pet"] = 86.005225,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 86.005225,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-6427-1-11341-3106-00007A59F4",
+["damage_from"] = {
+["Yaznik <Bithka>"] = true,
+["Poklopac"] = true,
+["Bithka"] = true,
+},
+["targets"] = {
+["Bithka"] = 29,
+["Poklopac"] = 57,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["classe"] = "UNKNOW",
+["fight_component"] = true,
+["end_time"] = 1769626297,
+["totalabsorbed"] = 0.005225,
+["nome"] = "Pygmy Surf Crawler",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Bithka"] = 29,
+["Poklopac"] = 57,
+},
+["n_total"] = 86,
+["n_min"] = 5,
+["g_dmg"] = 0,
+["counter"] = 14,
+["total"] = 86,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 13,
+["n_max"] = 8,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769626275,
+["damage_taken"] = 390.005225,
+["start_time"] = 1769626256,
+["delay"] = 1769626275,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 51,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 51,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 51,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 51,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 557231.734,
+["tempo_start"] = 1769626235,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+582,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+137,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "19:50:57",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Pygmy Surf Crawler",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 557192.576,
+["CombatEndedAt"] = 557192.576,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "19:50:36",
+["end_time"] = 557192.576,
+["mapId"] = 1,
+["combat_id"] = 51,
+["timeStart"] = 1769626236,
+["timeEnd"] = 1769626257,
+["frags"] = {
+["Pygmy Surf Crawler"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 108,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 137.002343,
+},
+},
+},
+["start_time"] = 557171.575,
+["TimeData"] = {
+},
+["playing_solo"] = true,
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 50,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 138.001058,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 138.001058,
+["colocacao"] = 1,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Pygmy Surf Crawler"] = true,
+},
+["targets"] = {
+["Pygmy Surf Crawler"] = 138,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 138,
+},
+["end_time"] = 1769626206,
+["totalabsorbed"] = 0.001058,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 22,
+["targets"] = {
+["Pygmy Surf Crawler"] = 121,
+},
+["n_total"] = 84,
+["n_min"] = 18,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 121,
+["c_max"] = 37,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 37,
+["successful_casted"] = 0,
+["c_total"] = 37,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[403] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 17,
+["targets"] = {
+["Pygmy Surf Crawler"] = 17,
+},
+["n_total"] = 17,
+["n_min"] = 17,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 17,
+["c_max"] = 0,
+["spellschool"] = 8,
+["id"] = 403,
+["r_dmg"] = 0,
+["extra"] = {
+},
+["RESIST"] = 1,
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769626232,
+["damage_taken"] = 29.001058,
+["start_time"] = 1769626191,
+["delay"] = 0,
+["last_dps"] = 9.73209153734143,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["aID"] = "3106",
+["total_without_pet"] = 29.00179,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 29.00179,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-6427-1-11341-3106-00007A59B7",
+["damage_from"] = {
+["Poklopac"] = true,
+},
+["targets"] = {
+["Poklopac"] = 29,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["classe"] = "UNKNOW",
+["fight_component"] = true,
+["end_time"] = 1769626206,
+["totalabsorbed"] = 0.00179,
+["nome"] = "Pygmy Surf Crawler",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 7,
+["targets"] = {
+["Poklopac"] = 29,
+},
+["n_total"] = 29,
+["n_min"] = 5,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 29,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 5,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769626204,
+["damage_taken"] = 138.00179,
+["start_time"] = 1769626196,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 50,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 50,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 50,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 50,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 557167.041,
+["tempo_start"] = 1769626191,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+167,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+138,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "19:50:06",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Pygmy Surf Crawler",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 557142.0700000001,
+["CombatEndedAt"] = 557142.0700000001,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "19:49:52",
+["end_time"] = 557142.0700000001,
+["mapId"] = 1,
+["combat_id"] = 50,
+["timeStart"] = 1769626192,
+["timeEnd"] = 1769626206,
+["frags"] = {
+["Pygmy Surf Crawler"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 107,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 138.001058,
+},
+},
+},
+["start_time"] = 557127.89,
+["TimeData"] = {
+},
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 49,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 107.006167,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 107.006167,
+["colocacao"] = 1,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Pygmy Surf Crawler"] = true,
+},
+["targets"] = {
+["Pygmy Surf Crawler"] = 107,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 20,
+},
+["end_time"] = 1769626174,
+["totalabsorbed"] = 0.006167,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 22,
+["targets"] = {
+["Pygmy Surf Crawler"] = 107,
+},
+["n_total"] = 63,
+["n_min"] = 20,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 107,
+["c_max"] = 44,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 44,
+["successful_casted"] = 0,
+["c_total"] = 44,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769626173,
+["damage_taken"] = 18.006167,
+["start_time"] = 1769626166,
+["delay"] = 0,
+["last_dps"] = 12.70857090272528,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["aID"] = "3106",
+["total_without_pet"] = 18.003539,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 18.003539,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-6427-1-11341-3106-00007A5A1F",
+["damage_from"] = {
+["Poklopac"] = true,
+},
+["targets"] = {
+["Poklopac"] = 18,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["classe"] = "UNKNOW",
+["fight_component"] = true,
+["end_time"] = 1769626174,
+["totalabsorbed"] = 0.003539,
+["nome"] = "Pygmy Surf Crawler",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 5,
+["targets"] = {
+["Poklopac"] = 18,
+},
+["n_total"] = 18,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 18,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769626172,
+["damage_taken"] = 107.003539,
+["start_time"] = 1769626166,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 49,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 49,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 49,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 49,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 557126.517,
+["tempo_start"] = 1769626166,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+125,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+107,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "19:49:34",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Pygmy Surf Crawler",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 8.419999999925494,
+["CombatEndedAt"] = 557110.517,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "19:49:26",
+["end_time"] = 557110.517,
+["mapId"] = 1,
+["combat_id"] = 49,
+["timeStart"] = 1769626166,
+["timeEnd"] = 1769626174,
+["frags"] = {
+["Pygmy Surf Crawler"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 106,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 107.006167,
+},
+},
+},
+["start_time"] = 557102.0970000001,
+["TimeData"] = {
+},
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 48,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 126.001227,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 126.001227,
+["colocacao"] = 1,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Pygmy Surf Crawler"] = true,
+},
+["targets"] = {
+["Pygmy Surf Crawler"] = 126,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 126,
+},
+["end_time"] = 1769625708,
+["totalabsorbed"] = 0.001227,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 22,
+["targets"] = {
+["Pygmy Surf Crawler"] = 96,
+},
+["n_total"] = 96,
+["n_min"] = 18,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 96,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 5,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[403] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 15,
+["targets"] = {
+["Pygmy Surf Crawler"] = 30,
+},
+["n_total"] = 30,
+["n_min"] = 15,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 30,
+["c_max"] = 0,
+["id"] = 403,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769625708,
+["damage_taken"] = 23.001227,
+["start_time"] = 1769625693,
+["delay"] = 0,
+["last_dps"] = 8.774458704743912,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["aID"] = "3106",
+["total_without_pet"] = 198.008511,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 198.008511,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-6427-1-11341-3106-00007A52DF",
+["damage_from"] = {
+["Poklopac"] = true,
+["Gazgulthraka"] = true,
+["Bonecruncher"] = true,
+},
+["targets"] = {
+["Poklopac"] = 23,
+["Gazgulthraka"] = 7,
+["Bonecruncher"] = 168,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["classe"] = "UNKNOW",
+["fight_component"] = true,
+["end_time"] = 1769626166,
+["totalabsorbed"] = 0.008511,
+["nome"] = "Pygmy Surf Crawler",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 1,
+["g_amt"] = 0,
+["n_max"] = 7,
+["targets"] = {
+["Poklopac"] = 23,
+["Gazgulthraka"] = 7,
+["Bonecruncher"] = 168,
+},
+["n_total"] = 198,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 41,
+["DODGE"] = 1,
+["total"] = 198,
+["c_max"] = 0,
+["MISS"] = 5,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 35,
+["b_dmg"] = 3,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769626113,
+["damage_taken"] = 1097.008511,
+["start_time"] = 1769626065,
+["delay"] = 1769626113,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 48,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 48,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 48,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["buff_uptime"] = 15,
+["buff_uptime_targets"] = {
+},
+["aID"] = "6409-04BC9882",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[8202] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 15,
+["id"] = 8202,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["nome"] = "Poklopac",
+["grupo"] = true,
+["pets"] = {
+},
+["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769625708,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 48,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["tempo_start"] = 1769625693,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+1297,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+126,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Poklopac"] = {
+["Lightning Bolt"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "19:41:48",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Pygmy Surf Crawler",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 556643.854,
+["CombatEndedAt"] = 556643.854,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "19:41:33",
+["end_time"] = 556643.854,
+["mapId"] = 1,
+["combat_id"] = 48,
+["timeStart"] = 1769625693,
+["timeEnd"] = 1769625708,
+["frags"] = {
+["Pygmy Surf Crawler"] = 2,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 105,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 126.001227,
+},
+},
+},
+["start_time"] = 556629.4940000001,
+["TimeData"] = {
+},
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 47,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 134.002624,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 134.002624,
+["colocacao"] = 1,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Pygmy Surf Crawler"] = true,
+},
+["targets"] = {
+["Pygmy Surf Crawler"] = 134,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1769625689,
+["totalabsorbed"] = 0.002624,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 22,
+["targets"] = {
+["Pygmy Surf Crawler"] = 83,
+},
+["n_total"] = 44,
+["n_min"] = 22,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 83,
+["c_max"] = 39,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 39,
+["successful_casted"] = 0,
+["c_total"] = 39,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[8042] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 19,
+["targets"] = {
+["Pygmy Surf Crawler"] = 19,
+},
+["n_total"] = 19,
+["n_min"] = 19,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 19,
+["c_max"] = 0,
+["id"] = 8042,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[403] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 17,
+["targets"] = {
+["Pygmy Surf Crawler"] = 32,
+},
+["n_total"] = 32,
+["n_min"] = 15,
+["g_dmg"] = 0,
+["counter"] = 2,
+["total"] = 32,
+["c_max"] = 0,
+["id"] = 403,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769625688,
+["damage_taken"] = 9.002624,
+["start_time"] = 1769625680,
+["delay"] = 0,
+["last_dps"] = 14.14424994715585,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["aID"] = "3106",
+["total_without_pet"] = 9.003248,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 9.003248,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-6427-1-11341-3106-00007A53BB",
+["damage_from"] = {
+["Poklopac"] = true,
+},
+["targets"] = {
+["Poklopac"] = 9,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["classe"] = "UNKNOW",
+["fight_component"] = true,
+["end_time"] = 1769625689,
+["totalabsorbed"] = 0.003248,
+["nome"] = "Pygmy Surf Crawler",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 5,
+["targets"] = {
+["Poklopac"] = 9,
+},
+["n_total"] = 9,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 9,
+["c_max"] = 0,
+["MISS"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769625686,
+["damage_taken"] = 134.003248,
+["start_time"] = 1769625682,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 47,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 47,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 47,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["buff_uptime"] = 9,
+["buff_uptime_targets"] = {
+},
+["aID"] = "6409-04BC9882",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[8202] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 9,
+["id"] = 8202,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["nome"] = "Poklopac",
+["grupo"] = true,
+["pets"] = {
+},
+["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769625689,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 47,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 556628.474,
+["tempo_start"] = 1769625680,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+143,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+134,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Poklopac"] = {
+["Lightning Bolt"] = 1,
+["Earth Shock"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "19:41:29",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Pygmy Surf Crawler",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 556625.241,
+["CombatEndedAt"] = 556625.241,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "19:41:20",
+["end_time"] = 556625.241,
+["mapId"] = 1,
+["combat_id"] = 47,
+["timeStart"] = 1769625680,
+["timeEnd"] = 1769625689,
+["frags"] = {
+["Pygmy Surf Crawler"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 104,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 134.002624,
+},
+},
+},
+["start_time"] = 556615.767,
+["TimeData"] = {
+},
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 46,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 121.008993,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 121.008993,
+["colocacao"] = 1,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Makrura Shellhide"] = true,
+},
+["targets"] = {
+["Makrura Shellhide"] = 121,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[32] = 121,
+},
+["end_time"] = 1769625675,
+["totalabsorbed"] = 0.008993,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 20,
+["targets"] = {
+["Makrura Shellhide"] = 56,
+},
+["n_total"] = 56,
+["n_min"] = 18,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 56,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 3,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[403] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 17,
+["targets"] = {
+["Makrura Shellhide"] = 65,
+},
+["n_total"] = 65,
+["n_min"] = 16,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 65,
+["c_max"] = 0,
+["id"] = 403,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769625675,
+["damage_taken"] = 26.008993,
+["start_time"] = 1769625660,
+["delay"] = 0,
+["last_dps"] = 8.39116517573329,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 26.007954,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 26.007954,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-6427-1-11341-3104-00007A57B5",
+["on_hold"] = false,
+["damage_from"] = {
+["Poklopac"] = true,
+},
+["targets"] = {
+["Poklopac"] = 26,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.007954,
+["fight_component"] = true,
+["end_time"] = 1769625675,
+["aID"] = "3104",
+["nome"] = "Makrura Shellhide",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 7,
+["targets"] = {
+["Poklopac"] = 26,
+},
+["n_total"] = 26,
+["n_min"] = 6,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 26,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["monster"] = true,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769625672,
+["damage_taken"] = 121.007954,
+["start_time"] = 1769625666,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 46,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 46,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 46,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["buff_uptime"] = 15,
+["buff_uptime_targets"] = {
+},
+["aID"] = "6409-04BC9882",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[8202] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 15,
+["id"] = 8202,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["nome"] = "Poklopac",
+["grupo"] = true,
+["pets"] = {
+},
+["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769625675,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 46,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 556614.998,
+["tempo_start"] = 1769625660,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+147,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+121,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Poklopac"] = {
+["Lightning Bolt"] = 2,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "19:41:15",
+["timeEnd"] = 1769625675,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Makrura Shellhide",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 556611.4990000001,
+["CombatEndedAt"] = 556611.4990000001,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "19:41:01",
+["end_time"] = 556611.4990000001,
+["mapId"] = 1,
+["combat_id"] = 46,
+["timeStart"] = 1769625661,
+["playing_solo"] = true,
+["TimeData"] = {
+},
+["is_challenge"] = false,
+["frags"] = {
+["Makrura Shellhide"] = 1,
+},
+["combat_counter"] = 103,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 121.008993,
+},
+},
+},
+["spells_cast_timeline"] = {
+},
+["start_time"] = 556597.078,
+["contra"] = "Makrura Shellhide",
+["boss_hp"] = 1,
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 45,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 121.005482,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 121.005482,
+["colocacao"] = 1,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Pygmy Surf Crawler"] = true,
+},
+["targets"] = {
+["Pygmy Surf Crawler"] = 121,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 121,
+},
+["end_time"] = 1769625650,
+["totalabsorbed"] = 0.005482,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 23,
+["targets"] = {
+["Pygmy Surf Crawler"] = 87,
+},
+["n_total"] = 46,
+["n_min"] = 23,
+["g_dmg"] = 0,
+["counter"] = 3,
+["total"] = 87,
+["c_max"] = 41,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 41,
+["successful_casted"] = 0,
+["c_total"] = 41,
+["n_amt"] = 2,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[8042] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 18,
+["targets"] = {
+["Pygmy Surf Crawler"] = 18,
+},
+["n_total"] = 18,
+["n_min"] = 18,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 18,
+["c_max"] = 0,
+["id"] = 8042,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[403] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 16,
+["targets"] = {
+["Pygmy Surf Crawler"] = 16,
+},
+["n_total"] = 16,
+["n_min"] = 16,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 16,
+["c_max"] = 0,
+["id"] = 403,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769625650,
+["damage_taken"] = 17.005482,
+["start_time"] = 1769625640,
+["delay"] = 0,
+["last_dps"] = 12.53553113030566,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["aID"] = "3106",
+["total_without_pet"] = 17.004901,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 17.004901,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-6427-1-11341-3106-00007A53B4",
+["damage_from"] = {
+["Poklopac"] = true,
+},
+["targets"] = {
+["Poklopac"] = 17,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["classe"] = "UNKNOW",
+["fight_component"] = true,
+["end_time"] = 1769625650,
+["totalabsorbed"] = 0.004901,
+["nome"] = "Pygmy Surf Crawler",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 5,
+["targets"] = {
+["Poklopac"] = 17,
+},
+["n_total"] = 17,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 17,
+["c_max"] = 0,
+["DODGE"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769625648,
+["damage_taken"] = 121.004901,
+["start_time"] = 1769625640,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 45,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["healing_from"] = {
+["Poklopac"] = true,
+},
+["pets"] = {
+},
+["iniciar_hps"] = false,
+["heal_enemy_amt"] = 0,
+["totalover"] = 0.007564,
+["total_without_pet"] = 67.007564,
+["total"] = 67.007564,
+["targets_absorbs"] = {
+},
+["heal_enemy"] = {
+},
+["colocacao"] = 1,
+["on_hold"] = false,
+["serial"] = "Player-6409-04BC9882",
+["totalabsorb"] = 0.007564,
+["last_hps"] = 6.941630995593647,
+["targets"] = {
+["Poklopac"] = 67,
+},
+["totalover_without_pet"] = 0.007564,
+["last_event"] = 1769625642,
+["healing_taken"] = 67.007564,
+["fight_component"] = true,
+["end_time"] = 1769625650,
+["targets_overheal"] = {
+},
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+[332] = {
+["c_amt"] = 0,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+},
+["n_max"] = 67,
+["targets"] = {
+["Poklopac"] = 67,
+},
+["n_total"] = 67,
+["n_min"] = 67,
+["counter"] = 1,
+["overheal"] = 0,
+["total"] = 67,
+["c_max"] = 0,
+["id"] = 332,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["spellschool"] = 8,
+["c_total"] = 0,
+["totaldenied"] = 0,
+["n_amt"] = 1,
+["absorbed"] = 0,
+},
+},
+["tipo"] = 3,
+},
+["grupo"] = true,
+["start_time"] = 1769625642,
+["classe"] = "SHAMAN",
+["custom"] = 0,
+["tipo"] = 2,
+["totaldenied"] = 0.007564,
+["delay"] = 0,
+["aID"] = "6409-04BC9882",
+},
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 45,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 45,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["buff_uptime_targets"] = {
+},
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[8202] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 9,
+["id"] = 8202,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["fight_component"] = true,
+["last_event"] = 1769625650,
+["nome"] = "Poklopac",
+["grupo"] = true,
+["tipo"] = 4,
+["buff_uptime"] = 9,
+["serial"] = "Player-6409-04BC9882",
+["aID"] = "6409-04BC9882",
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 45,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 556595.621,
+["tempo_start"] = 1769625640,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+138,
+67,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+121,
+67,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Poklopac"] = {
+["Earth Shock"] = 1,
+["Healing Wave"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "19:40:51",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Pygmy Surf Crawler",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 556587.144,
+["CombatEndedAt"] = 556587.144,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "19:40:41",
+["end_time"] = 556587.144,
+["mapId"] = 1,
+["combat_id"] = 45,
+["timeStart"] = 1769625641,
+["timeEnd"] = 1769625651,
+["frags"] = {
+["Pygmy Surf Crawler"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 102,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+["Poklopac"] = 67.007564,
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 121.005482,
+},
+},
+},
+["start_time"] = 556577.491,
+["TimeData"] = {
+},
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 44,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 249.004597,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 249.004597,
+["colocacao"] = 1,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Pygmy Surf Crawler"] = true,
+},
+["targets"] = {
+["Pygmy Surf Crawler"] = 249,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+[128] = 116,
+},
+["end_time"] = 1769625638,
+["totalabsorbed"] = 0.004597,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 3,
+["n_max"] = 22,
+["targets"] = {
+["Pygmy Surf Crawler"] = 184,
+},
+["n_total"] = 124,
+["n_min"] = 19,
+["g_dmg"] = 60,
+["counter"] = 9,
+["total"] = 184,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 6,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[403] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 17,
+["targets"] = {
+["Pygmy Surf Crawler"] = 65,
+},
+["n_total"] = 65,
+["n_min"] = 15,
+["g_dmg"] = 0,
+["counter"] = 4,
+["total"] = 65,
+["c_max"] = 0,
+["id"] = 403,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 4,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769625638,
+["damage_taken"] = 88.004597,
+["start_time"] = 1769625606,
+["delay"] = 0,
+["last_dps"] = 7.592066497941454,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["aID"] = "3106",
+["total_without_pet"] = 88.002754,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 88.002754,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Creature-0-6427-1-11341-3106-00007A53DC",
+["damage_from"] = {
+["Poklopac"] = true,
+},
+["targets"] = {
+["Poklopac"] = 88,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["classe"] = "UNKNOW",
+["fight_component"] = true,
+["end_time"] = 1769625638,
+["totalabsorbed"] = 0.002754,
+["nome"] = "Pygmy Surf Crawler",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 7,
+["targets"] = {
+["Poklopac"] = 88,
+},
+["n_total"] = 88,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 16,
+["total"] = 88,
+["c_max"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 16,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769625636,
+["damage_taken"] = 249.002754,
+["start_time"] = 1769625608,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 44,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 44,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 44,
+["_ActorTable"] = {
+{
+["flag_original"] = 1047,
+["buff_uptime"] = 32,
+["buff_uptime_targets"] = {
+},
+["aID"] = "6409-04BC9882",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[8202] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 32,
+["id"] = 8202,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["nome"] = "Poklopac",
+["grupo"] = true,
+["pets"] = {
+},
+["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769625638,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 44,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 556577.245,
+["tempo_start"] = 1769625606,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playing_solo"] = true,
+["totals"] = {
+337,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+249,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Poklopac"] = {
+["Lightning Bolt"] = 3,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "19:40:39",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Pygmy Surf Crawler",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 556575.408,
+["CombatEndedAt"] = 556575.408,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "19:40:07",
+["end_time"] = 556575.408,
+["mapId"] = 1,
+["combat_id"] = 44,
+["timeStart"] = 1769625607,
+["timeEnd"] = 1769625639,
+["frags"] = {
+["Pygmy Surf Crawler"] = 2,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
+},
+["boss_hp"] = 1,
+["combat_counter"] = 101,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 249.004597,
+},
+},
+},
+["start_time"] = 556542.61,
+["TimeData"] = {
+},
+["playerTalents"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 43,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "SHAMAN",
+["total_without_pet"] = 121.004207,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 121.004207,
+["colocacao"] = 1,
+["on_hold"] = false,
+["total_extra"] = 0,
+["serial"] = "Player-6409-04BC9882",
+["damage_from"] = {
+["Clattering Scorpid"] = true,
+},
+["targets"] = {
+["Clattering Scorpid"] = 121,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1769625342,
+["totalabsorbed"] = 0.004207,
+["aID"] = "6409-04BC9882",
+["nome"] = "Poklopac",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 1,
+["b_amt"] = 1,
+["g_amt"] = 0,
+["n_max"] = 21,
+["targets"] = {
+["Clattering Scorpid"] = 105,
+},
+["n_total"] = 77,
+["n_min"] = 18,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 105,
+["c_max"] = 28,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 28,
+["successful_casted"] = 0,
+["c_total"] = 28,
+["n_amt"] = 4,
+["b_dmg"] = 18,
+["r_amt"] = 0,
+},
+[403] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 16,
+["targets"] = {
+["Clattering Scorpid"] = 16,
+},
+["n_total"] = 16,
+["n_min"] = 16,
+["g_dmg"] = 0,
+["counter"] = 1,
+["total"] = 16,
+["c_max"] = 0,
+["id"] = 403,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 1,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["friendlyfire"] = {
+},
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769625342,
+["damage_taken"] = 46.004207,
+["start_time"] = 1769625327,
+["delay"] = 0,
+["last_dps"] = 8.087435302798724,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 53.00429,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 53.00429,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-6427-1-11341-3125-00037A47A3",
+["on_hold"] = false,
+["damage_from"] = {
+["Sen'jin Watcher"] = true,
+["Poklopac"] = true,
+},
+["targets"] = {
+["Bugfighter"] = 7,
+["Poklopac"] = 46,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["totalabsorbed"] = 0.00429,
+["fight_component"] = true,
+["end_time"] = 1769625606,
+["aID"] = "3125",
+["nome"] = "Clattering Scorpid",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 7,
+["targets"] = {
+["Bugfighter"] = 7,
+["Poklopac"] = 41,
+},
+["n_total"] = 48,
+["n_min"] = 5,
+["g_dmg"] = 0,
+["counter"] = 10,
+["total"] = 48,
+["c_max"] = 0,
+["MISS"] = 2,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 8,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+[11918] = {
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["n_max"] = 1,
+["targets"] = {
+["Poklopac"] = 5,
+},
+["n_total"] = 5,
+["n_min"] = 1,
+["g_dmg"] = 0,
+["counter"] = 5,
+["total"] = 5,
+["c_max"] = 0,
+["id"] = 11918,
+["r_dmg"] = 0,
+["spellschool"] = 8,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 5,
+["b_dmg"] = 0,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["monster"] = true,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769625374,
+["damage_taken"] = 266.00429,
+["start_time"] = 1769625578,
+["delay"] = 1769625374,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 43,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 43,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 43,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["buff_uptime"] = 15,
+["buff_uptime_targets"] = {
+},
+["aID"] = "6409-04BC9882",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[8202] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 15,
+["id"] = 8202,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["nome"] = "Poklopac",
+["grupo"] = true,
+["pets"] = {
+},
+["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769625342,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 43,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Poklopac"] = "Player-6409-04BC9882",
+},
+["CombatStartedAt"] = 556541.014,
+["tempo_start"] = 1769625327,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+319,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+121,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Poklopac"] = {
+["Lightning Bolt"] = 1,
+["Rockbiter Weapon"] = 1,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Kalimdor",
+["data_fim"] = "19:35:43",
+["timeEnd"] = 1769625343,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Clattering Scorpid",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 556278.781,
+["CombatEndedAt"] = 556278.781,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "19:35:28",
+["end_time"] = 556278.781,
+["mapId"] = 1,
+["combat_id"] = 43,
+["timeStart"] = 1769625328,
+["playing_solo"] = true,
+["TimeData"] = {
+},
+["is_challenge"] = false,
+["frags"] = {
+["Clattering Scorpid"] = 1,
+},
+["combat_counter"] = 100,
+["player_last_events"] = {
+["Poklopac"] = {
+{
+true,
+11918,
+1,
+1769625345.26,
+0.7283950617283951,
+"Clattering Scorpid",
+nil,
+8,
+false,
+-1,
+false,
+false,
+},
+{
+true,
+11918,
+1,
+1769625348.268,
+0.7222222222222222,
+"Clattering Scorpid",
+nil,
+8,
+false,
+-1,
+false,
+false,
+},
+{
+true,
+11918,
+1,
+1769625351.214,
+0.7160493827160493,
+"Clattering Scorpid",
+nil,
+8,
+false,
+-1,
+false,
+false,
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+{
+},
+["n"] = 4,
+},
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage"] = {
+{
+["Poklopac"] = 121.004207,
+},
+},
+},
+["spells_cast_timeline"] = {
+},
+["start_time"] = 556263.819,
+["contra"] = "Clattering Scorpid",
+["boss_hp"] = 1,
+},
 },
 },
 ["ocd_tracker"] = {
@@ -31,8 +4673,9 @@ _detalhes_database = {
 ["show_options"] = false,
 ["ignored_cooldowns"] = {
 },
+["cooldowns"] = {
+},
 ["height"] = 18,
-["framme_locked"] = false,
 ["own_frame"] = {
 ["defensive-raid"] = false,
 ["ofensive"] = false,
@@ -40,8 +4683,7 @@ _detalhes_database = {
 ["utility"] = false,
 ["defensive-personal"] = false,
 },
-["cooldowns"] = {
-},
+["framme_locked"] = false,
 ["show_conditions"] = {
 ["only_inside_instance"] = true,
 ["only_in_group"] = true,
@@ -59,7 +4701,7 @@ _detalhes_database = {
 ["utility"] = false,
 },
 },
-["combat_counter"] = 68,
+["combat_counter"] = 112,
 ["damage_meter_sessions"] = {
 },
 ["force_font_outline"] = "",
@@ -140,8 +4782,9 @@ _detalhes_database = {
 },
 },
 },
-["character_data"] = {
-["logons"] = 45,
+["benchmark_db"] = {
+["frame"] = {
+},
 },
 ["cached_talents"] = {
 },
@@ -176,25 +4819,17 @@ _detalhes_database = {
 ["reverse"] = false,
 },
 ["active_profile"] = "xVermin",
-["mythic_dungeon_currentsaved"] = {
-["dungeon_name"] = "",
-["started"] = false,
-["segment_id"] = 0,
-["ej_id"] = 0,
-["started_at"] = 0,
-["run_id"] = 0,
-["level"] = 0,
-["dungeon_zone_id"] = 0,
-["previous_boss_killed_at"] = 0,
-},
-["player_stats"] = {
+["last_day"] = "28",
+["announce_firsthit"] = {
+["enabled"] = true,
+["channel"] = "SELF",
 },
 ["ignore_nicktag"] = false,
-["cached_roles"] = {
-},
 ["announce_damagerecord"] = {
 ["enabled"] = true,
 ["channel"] = "SELF",
+},
+["data_harvested_for_charts"] = {
 },
 ["combat_log"] = {
 ["inverse_deathlog_overalldata"] = false,
@@ -206,7 +4841,9 @@ _detalhes_database = {
 ["evoker_show_realtimedps"] = false,
 ["inverse_deathlog_mplus"] = false,
 },
-["last_day"] = "28",
+["character_data"] = {
+["logons"] = 61,
+},
 ["plugin_database"] = {
 ["DETAILS_PLUGIN_TINY_THREAT"] = {
 ["enabled"] = true,
@@ -321,6 +4958,22 @@ _detalhes_database = {
 },
 },
 },
+["mythic_dungeon_currentsaved"] = {
+["dungeon_name"] = "",
+["started"] = false,
+["segment_id"] = 0,
+["ej_id"] = 0,
+["started_at"] = 0,
+["run_id"] = 0,
+["level"] = 0,
+["dungeon_zone_id"] = 0,
+["previous_boss_killed_at"] = 0,
+},
+["mythic_plus_log"] = {
+},
+["SoloTablesSaved"] = {
+["Mode"] = 1,
+},
 ["on_death_menu"] = false,
 ["coach"] = {
 ["enabled"] = false,
@@ -328,22 +4981,12 @@ _detalhes_database = {
 },
 ["last_coach_name"] = false,
 },
-["mythic_plus_log"] = {
-},
-["benchmark_db"] = {
-["frame"] = {
-},
-},
-["announce_firsthit"] = {
-["enabled"] = true,
-["channel"] = "SELF",
-},
-["last_realversion"] = 167,
-["last_version"] = "2.5.5 14350",
-["combat_id"] = 21,
+["last_realversion"] = 168,
+["last_version"] = "2.5.5 14356",
+["combat_id"] = 55,
 ["savedStyles"] = {
 {
-["hide_in_combat_type"] = 1,
+["show_statusbar"] = false,
 ["clickthrough_window"] = false,
 ["titlebar_shown"] = false,
 ["menu_anchor"] = {
@@ -361,7 +5004,7 @@ _detalhes_database = {
 1,
 },
 ["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-["skin_custom"] = "vermin",
+["bars_sort_direction"] = 1,
 ["use_auto_align_multi_fontstrings"] = true,
 ["tooltip"] = {
 ["n_abilities"] = 3,
@@ -373,30 +5016,42 @@ _detalhes_database = {
 1,
 },
 ["clickthrough_toolbaricons"] = false,
-["clickthrough_rows"] = false,
+["attribute_text"] = {
+["enabled"] = true,
+["shadow"] = false,
+["side"] = 1,
+["text_color"] = {
+1,
+1,
+1,
+1,
+},
+["custom_text"] = "{name}",
+["text_face"] = "Arial Narrow",
+["anchor"] = {
+56,
+3,
+},
+["text_size"] = 12,
+["enable_custom_text"] = false,
+["show_timer"] = false,
+},
 ["titlebar_texture"] = "xVerminClean",
-["switch_tank"] = {
-1,
-1,
-1,
-},
-["switch_all_roles_after_wipe"] = {
-1,
-1,
-1,
-},
+["ignore_mass_showhide"] = false,
+["fontstrings_text_limit_offset"] = -10,
 ["icon_desaturated"] = false,
 ["desaturated_menu"] = false,
-["micro_displays_side"] = 2,
+["show_sidebars"] = false,
 ["window_scale"] = 1,
 ["hide_icon"] = true,
 ["toolbar_side"] = 1,
 ["bg_g"] = 0.1333333333333333,
 ["menu_icons_alpha"] = 0.92,
 ["bg_b"] = 0.1333333333333333,
-["switch_healer_in_combat"] = {
-1,
-1,
+["rowareaborder_color"] = {
+0,
+0,
+0,
 1,
 },
 ["color"] = {
@@ -484,12 +5139,12 @@ _detalhes_database = {
 },
 ["skin"] = "Minimalistic",
 ["following"] = {
+["enabled"] = false,
 ["bar_color"] = {
 1,
 1,
 1,
 },
-["enabled"] = false,
 ["text_color"] = {
 1,
 1,
@@ -528,14 +5183,14 @@ false,
 1,
 },
 },
-["show_sidebars"] = false,
-["version"] = 3,
+["micro_displays_side"] = 2,
+["name"] = "vermin",
 ["switch_tank_in_combat"] = {
 1,
 1,
 1,
 },
-["bg_alpha"] = 0,
+["version"] = 3,
 ["fontstrings_text4_anchor"] = 4,
 ["plugins_grow_direction"] = 1,
 ["menu_alpha"] = {
@@ -546,26 +5201,7 @@ false,
 ["onenter"] = 1,
 },
 ["fullborder_shown"] = false,
-["attribute_text"] = {
-["show_timer"] = false,
-["shadow"] = false,
-["side"] = 1,
-["text_color"] = {
-1,
-1,
-1,
-1,
-},
-["custom_text"] = "{name}",
-["text_face"] = "Arial Narrow",
-["anchor"] = {
-56,
-3,
-},
-["text_size"] = 12,
-["enable_custom_text"] = false,
-["enabled"] = true,
-},
+["clickthrough_rows"] = false,
 ["rowareaborder_shown"] = false,
 ["rowareaborder_size"] = 0.5,
 ["clickthrough_incombatonly"] = false,
@@ -577,7 +5213,7 @@ false,
 },
 ["backdrop_texture"] = "Details Ground",
 ["hide_in_combat_alpha"] = 0,
-["bars_sort_direction"] = 1,
+["micro_displays_locked"] = false,
 ["strata"] = "LOW",
 ["libwindow"] = {
 ["y"] = -20,
@@ -593,49 +5229,45 @@ false,
 0.07058823529411765,
 },
 },
-["menu_anchor_down"] = {
-16,
--3,
-},
-["bars_grow_direction"] = 1,
-["grab_on_top"] = false,
-["auto_hide_menu"] = {
-["left"] = false,
-["right"] = true,
-},
-["show_statusbar"] = false,
-["switch_damager_in_combat"] = {
-1,
-1,
-1,
-},
-["rowareaborder_color"] = {
-0,
-0,
-0,
-1,
-},
 ["row_show_animation"] = {
 ["anim"] = "Fade",
 ["options"] = {
 },
 },
-["auto_current"] = true,
-["micro_displays_locked"] = false,
-["switch_damager"] = {
+["menu_anchor_down"] = {
+16,
+-3,
+},
+["grab_on_top"] = false,
+["auto_hide_menu"] = {
+["left"] = false,
+["right"] = true,
+},
+["hide_in_combat_type"] = 1,
+["switch_damager_in_combat"] = {
 1,
 1,
 1,
 },
-["name"] = "vermin",
-["hide_in_combat"] = false,
+["switch_healer_in_combat"] = {
+1,
+1,
+1,
+},
+["bars_grow_direction"] = 1,
+["auto_current"] = true,
+["skin_custom"] = "vermin",
 ["row_info"] = {
-["textR_outline"] = false,
+["show_arena_role_icon"] = false,
 ["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 ["textL_outline"] = false,
-["textR_outline_small"] = true,
-["textL_outline_small"] = true,
-["textL_enable_custom_text"] = false,
+["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+["textR_show_data"] = {
+true,
+true,
+false,
+},
+["percent_type"] = 1,
 ["fixed_text_color"] = {
 1,
 1,
@@ -647,7 +5279,12 @@ false,
 ["between"] = 1,
 },
 ["texture_background_class_color"] = false,
-["start_after_icon"] = true,
+["textL_outline_small_color"] = {
+0,
+0,
+0,
+1,
+},
 ["font_face_file"] = "Fonts\\ARIALN.TTF",
 ["faction_icon_size_offset"] = -10,
 ["backdrop"] = {
@@ -661,8 +5298,6 @@ false,
 ["enabled"] = false,
 ["texture"] = "ThreatPlatesBorder",
 },
-["font_size"] = 11,
-["textL_custom_text"] = "{data1}. {data3}{data2}",
 ["models"] = {
 ["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 ["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -671,16 +5306,13 @@ false,
 ["lower_alpha"] = 0.1,
 ["upper_enabled"] = false,
 },
+["textL_custom_text"] = "{data1}. {data3}{data2}",
+["font_size"] = 11,
 ["textL_translit_text"] = false,
-["texture_custom_file"] = "Interface\\",
+["height"] = 19,
 ["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 ["icon_size_offset"] = 0,
-["textL_outline_small_color"] = {
-0,
-0,
-0,
-1,
-},
+["start_after_icon"] = true,
 ["show_faction_icon"] = true,
 ["overlay_color"] = {
 0.7,
@@ -688,18 +5320,14 @@ false,
 0.7,
 0,
 },
-["textR_show_data"] = {
-true,
-true,
-false,
-},
-["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-["icon_file"] = "",
+["textL_outline_small"] = true,
+["textR_outline_small"] = true,
+["arena_role_icon_size_offset"] = -10,
 ["icon_grayscale"] = false,
-["use_spec_icons"] = false,
 ["textR_bracket"] = "(",
+["use_spec_icons"] = false,
 ["texture_custom"] = "",
-["show_arena_role_icon"] = false,
+["textR_outline"] = false,
 ["fixed_texture_color"] = {
 0,
 0,
@@ -733,23 +5361,33 @@ false,
 0,
 0,
 },
-["arena_role_icon_size_offset"] = -10,
+["icon_file"] = "",
 ["font_face"] = "Arial Narrow",
 ["texture_class_colors"] = true,
-["percent_type"] = 1,
+["textL_enable_custom_text"] = false,
 ["fast_ps_update"] = false,
 ["textR_separator"] = "NONE",
-["height"] = 19,
+["texture_custom_file"] = "Interface\\",
 },
-["ignore_mass_showhide"] = false,
-["fontstrings_text_limit_offset"] = -10,
+["bg_alpha"] = 0,
+["hide_in_combat"] = false,
+["switch_damager"] = {
+1,
+1,
+1,
+},
+["switch_tank"] = {
+1,
+1,
+1,
+},
+["switch_all_roles_after_wipe"] = {
+1,
+1,
+1,
+},
 ["wallpaper"] = {
-["overlay"] = {
-1,
-1,
-1,
-1,
-},
+["enabled"] = false,
 ["alpha"] = 0.5,
 ["width"] = 283.000183105469,
 ["texcoord"] = {
@@ -761,7 +5399,12 @@ false,
 ["height"] = 114.042518615723,
 ["anchor"] = "all",
 ["level"] = 2,
-["enabled"] = false,
+["overlay"] = {
+1,
+1,
+1,
+1,
+},
 ["texture"] = "Interface\\AddOns\\Details\\images\\background",
 },
 ["stretch_button_side"] = 2,
@@ -829,6 +5472,32 @@ false,
 {
 ["tipo"] = 9,
 ["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["buff_uptime"] = 0,
+["nome"] = "Poklopac",
+["classe"] = "SHAMAN",
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[8202] = {
+["id"] = 8202,
+["targets"] = {
+},
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["buff_uptime_targets"] = {
+},
+["grupo"] = true,
+["pets"] = {
+},
+["last_event"] = 0,
+["aID"] = "6409-04BC9882",
+["serial"] = "Player-6409-04BC9882",
+["tipo"] = 4,
+},
 },
 },
 {
@@ -838,11 +5507,12 @@ false,
 },
 ["raid_roster"] = {
 },
-["tempo_start"] = 527927.335,
+["tempo_start"] = 1769625327,
 ["last_events_tables"] = {
 },
 ["alternate_power"] = {
 },
+["combat_counter"] = 99,
 ["bossTimers"] = {
 },
 ["trinketProcs"] = {
@@ -862,17 +5532,15 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
 ["frags_total"] = 0,
 ["voidzone_damage"] = 0,
-},
-["player_last_events"] = {
 },
 ["totals_grupo"] = {
 0,
@@ -887,19 +5555,20 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
 },
+["compressed_charts"] = {
+},
 ["frags_need_refresh"] = false,
 ["aura_timeline"] = {
 },
-["compressed_charts"] = {
-},
+["overall_refreshed"] = true,
 ["data_inicio"] = 0,
 ["amountCasts"] = {
 },
@@ -909,39 +5578,43 @@ false,
 },
 ["zoneName"] = "Kalimdor",
 ["boss_hp"] = 1,
+["spells_cast_timeline"] = {
+},
 ["is_challenge"] = false,
-["frags"] = {
+["segments_added"] = {
 },
 ["data_fim"] = 0,
 ["cleu_timeline"] = {
 },
-["spells_cast_timeline"] = {
+["frags"] = {
 },
 ["PhaseData"] = {
 {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
-},
-["damage_section"] = {
 },
 ["damage"] = {
 },
 },
 ["start_time"] = 0,
 ["TimeData"] = {
+["Raid Damage Done"] = {
 },
-["combat_counter"] = 67,
 },
-["data_harvested_for_charts"] = {
+["player_last_events"] = {
+},
+},
+["cached_roles"] = {
 },
 ["arena_data_headers"] = {
 },
-["SoloTablesSaved"] = {
-["Mode"] = 1,
+["player_stats"] = {
 },
 ["announce_cooldowns"] = {
 ["enabled"] = false,

@@ -15,15 +15,15 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:159
+/cast item:0
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:117
+/cast item:0
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:118
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -56,7 +56,10 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3730
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Duokna
+/targetexact Makrura Clacker
+/targetexact Makrura Shellhide
+/targetexact Surf Crawler
+/targetexact Pygmy Surf Crawler
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"

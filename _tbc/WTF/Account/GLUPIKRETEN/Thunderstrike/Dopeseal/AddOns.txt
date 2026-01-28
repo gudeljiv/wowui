@@ -130,3 +130,4 @@ AdiBagsEx: disabled
 AdiBags: enabled
 AdiBags_Config: enabled
 SortBags: enabled
+Blizzard_CombatText: enabled

@@ -4001,7 +4001,7 @@ Plater.AnchorNamesByPhraseId = {
 			wipe (unitFrame.CustomIndicators)
 			
 			--health amount
-			Plater.QuickHealthUpdate (unitFrame)
+			--Plater.QuickHealthUpdate (unitFrame)
 			healthBar.IsAnimating = false
 			
 			--hide execute indicators
@@ -4046,7 +4046,7 @@ Plater.AnchorNamesByPhraseId = {
 					
 					plateFrame.PlateConfig = DB_PLATE_CONFIG.player
 					Plater.UpdatePlateFrame (plateFrame, ACTORTYPE_PLAYER, nil, true)
-					Plater.QuickHealthUpdate (unitFrame) -- ensure up to date, for good measure
+					--Plater.QuickHealthUpdate (unitFrame) -- ensure up to date, for good measure
 					Plater.OnUpdateHealth (healthBar)
 
 				else
@@ -5398,6 +5398,7 @@ function Plater.OnInit() --private --~oninit ~init
 				DF:SetFontFace (textString, profile.castbar_target_font)
 				
 				Plater.SetAnchor (textString, profile.castbar_target_anchor)
+				Plater.SetTextAlignmentFromAnchor(textString, profile.castbar_target_anchor)
 			else
 				if targetFontString then
 					targetFontString:Hide()
@@ -5797,7 +5798,7 @@ function Plater.OnInit() --private --~oninit ~init
 					--self.Text:SetText(self.SpellNameRenamed)
 					--cut the spell name text to fit within the castbar
 					--Plater.UpdateSpellNameSize (self.Text, unitFrame.ActorType, nil, isInCombat)
-					Plater.UpdateTextSize (self.SpellNameRenamed or "", self.Text, DB_PLATE_CONFIG [unitFrame.actorType].spellname_text_max_width or 300, nil, nil)					
+					Plater.UpdateTextSize (self.SpellNameRenamed or "", self.Text, DB_PLATE_CONFIG [unitFrame.actorType].spellname_text_max_width or 0, nil)
 					
 					-- in some occasions channeled casts don't have a CLEU entry... check this here
 					if (unitFrame.ActorType == "enemynpc" and event == "UNIT_SPELLCAST_CHANNEL_START" and (not DB_CAPTURED_SPELLS[spellID] or DB_CAPTURED_SPELLS[spellID].isChanneled == nil or not DB_CAPTURED_CASTS[spellID] or DB_CAPTURED_CASTS[spellID].isChanneled == nil)) then
@@ -5891,7 +5892,7 @@ function Plater.OnInit() --private --~oninit ~init
 									targetName = C_ColorUtil.WrapTextInColor(targetName, color)
 								end
 								
-								targetName = Plater.UpdateTextSize (targetName or "", self.FrameOverlay.TargetName, Plater.db.profile.castbar_target_text_max_width or 300, nil, nil)
+								targetName = Plater.UpdateTextSize (targetName or "", self.FrameOverlay.TargetName, Plater.db.profile.castbar_target_text_max_width or 0, nil)
 								
 							else
 								self.FrameOverlay.TargetName:SetText(nil)
@@ -6159,7 +6160,7 @@ function Plater.OnInit() --private --~oninit ~init
 		Plater.StartLogPerformanceCore("Plater-Core", "Health", "OnUpdateHealthMax")
 		
 		-- ensure updated values...
-		Plater.QuickHealthUpdate (self.unitFrame)
+		--Plater.QuickHealthUpdate (self.unitFrame)
 		
 		Plater.CheckLifePercentText (self.unitFrame)
 		
@@ -8000,6 +8001,7 @@ end
 			DF:SetFontFace (spellnameString, plateConfigs.spellname_text_font)
 			DF:SetFontSize (spellnameString, plateConfigs.spellname_text_size)
 			Plater.SetAnchor (spellnameString, plateConfigs.spellname_text_anchor)
+			Plater.SetTextAlignmentFromAnchor(spellnameString, plateConfigs.spellname_text_anchor)
 		end
 
 		--update spell cast time
@@ -8243,6 +8245,7 @@ end
 			Plater.SetFontOutlineAndShadow (nameString, plateConfigs.actorname_text_outline, plateConfigs.actorname_text_shadow_color, plateConfigs.actorname_text_shadow_color_offset[1], plateConfigs.actorname_text_shadow_color_offset[2])
 
 			Plater.SetAnchor (nameString, plateConfigs.actorname_text_anchor)
+			Plater.SetTextAlignmentFromAnchor(nameString, plateConfigs.actorname_text_anchor)
 			--PixelUtil.SetHeight (nameString, nameString:GetLineHeight())
 		end
 		
@@ -8528,7 +8531,7 @@ end
 		end
 		
 		if IS_WOW_PROJECT_MIDNIGHT then
-			Plater.UpdateTextSize (spellName, nameString, maxWidth, nil, nil)
+			Plater.UpdateTextSize (spellName, nameString, maxWidth, nil)
 		else		
 			while (nameString:GetUnboundedStringWidth() > maxLength) do
 				spellName = strsub (spellName, 1, #spellName - 1)
@@ -8554,7 +8557,11 @@ end
 	function Plater.UpdateUnitName (plateFrame)
 		local nameString = plateFrame.CurrentUnitNameString
 
-		Plater.UpdateTextSize (plateFrame [MEMBER_NAME] or plateFrame.unitFrame [MEMBER_NAME] or "", nameString, DB_PLATE_CONFIG [plateFrame.actorType].actorname_text_max_width or 300, nil, nil)
+		local maxWidth = DB_PLATE_CONFIG [plateFrame.actorType].actorname_text_max_width or 0
+		if plateFrame.IsFriendlyPlayerWithoutHealthBar or plateFrame.IsNpcWithoutHealthBar then
+			maxWidth = 0
+		end
+		Plater.UpdateTextSize (plateFrame [MEMBER_NAME] or plateFrame.unitFrame [MEMBER_NAME] or "", nameString, maxWidth, nil)
 		
 		--check if the player has a guild, this check is done when the nameplate is added
 		if (plateFrame.playerGuildName) then
@@ -8564,24 +8571,36 @@ end
 		end
 	end
 
-	function Plater.UpdateTextSize (text, fontString, maxWidth, maxLength, fontSize)
+	function Plater.UpdateTextSize (text, fontString, maxWidth, maxLength)
 		if not text then return end
-		if maxWidth and type(fontSize) == "number" then
-			local textLength = floor(maxWidth / fontSize * 2)
-			text = string.format("%." .. textLength .. "s", text)
-			if fontString then
+		--if maxWidth and type(fontSize) == "number" then
+		--	local textLength = floor(maxWidth / fontSize * 2)
+		--	text = string.format("%." .. textLength .. "s", text)
+		--	if fontString then
+		--		fontString:SetWordWrap(false)
+		--		fontString:SetNonSpaceWrap(false)
+		--		fontString:SetSpacing(0)
+		--		
+		--		fontString:SetText (text)
+		--		
+		--		if not IS_WOW_PROJECT_MIDNIGHT then
+		--			-- cleanup utf8...
+		--			text = DF:CleanTruncateUTF8String(text)
+		--			textString:SetText (text)
+		--		end
+		--	end
+		--	
+		--else
+		if fontString and maxWidth then
+			if maxWidth == 0 then
+				fontString:SetWordWrap(true)
+				fontString:SetNonSpaceWrap(true)
+				fontString:SetSpacing(0)
+			else
 				fontString:SetWordWrap(false)
-				fontString:SetText (text)
-				
-				if not IS_WOW_PROJECT_MIDNIGHT then
-					-- cleanup utf8...
-					text = DF:CleanTruncateUTF8String(text)
-					textString:SetText (text)
-				end
+				fontString:SetNonSpaceWrap(false)
+				fontString:SetSpacing(0)
 			end
-			
-		elseif fontString and maxWidth then
-			fontString:SetWordWrap(false)
 			fontString:SetWidth(maxWidth)
 			fontString:SetText(text)	
 			
@@ -8985,7 +9004,7 @@ end
 			unitFrame.healthBar.Settings.ShowHealingPrediction = Plater.db.profile.show_health_prediction
 			unitFrame.healthBar.Settings.ShowShields = Plater.db.profile.show_shield_prediction
 			if (unitFrame.healthBar.unit) then
-				unitFrame.healthBar:UNIT_HEALTH()
+				--unitFrame.healthBar:UNIT_HEALTH() -- this should be fired with SetUnit
 			end
 			
 			if IS_WOW_PROJECT_MAINLINE and unitFrame.WidgetContainer then
@@ -9662,65 +9681,79 @@ end
 	end
 
 	local anchor_functions = {
-		function (widget, config, attachTo, centered)--1 topleft
+		--1 topleft
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			local widgetRelative = centered and "bottom" or "bottomleft"
 			PixelUtil.SetPoint (widget, widgetRelative, attachTo, "topleft", config.x, config.y, 0, 0)
 		end,
-		function (widget, config, attachTo, centered)--2 left
+		--2 left
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			local widgetRelative = centered and "center" or "right"
 			PixelUtil.SetPoint (widget, widgetRelative, attachTo, "left", config.x, config.y, 0, 0)
 		end,
-		function (widget, config, attachTo, centered)--3 bottomleft
+		--3 bottomleft
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			local widgetRelative = centered and "top" or "topleft"
 			PixelUtil.SetPoint (widget, widgetRelative, attachTo, "bottomleft", config.x, config.y, 0, 0)
 		end,
-		function (widget, config, attachTo, centered)--4 bottom
+		--4 bottom
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			PixelUtil.SetPoint (widget, "top", attachTo, "bottom", config.x, config.y, 0, 0)
 		end,
-		function (widget, config, attachTo, centered)--5 bottomright
+		--5 bottomright
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			local widgetRelative = centered and "top" or "topright"
 			PixelUtil.SetPoint (widget, widgetRelative, attachTo, "bottomright", config.x, config.y, 0, 0)
 		end,
-		function (widget, config, attachTo, centered)--6 right
+		--6 right
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			local widgetRelative = centered and "center" or "left"
 			PixelUtil.SetPoint (widget, widgetRelative, attachTo, "right", config.x, config.y, 0, 0)
 		end,
-		function (widget, config, attachTo, centered)--7 topright
+		--7 topright
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			local widgetRelative = centered and "bottom" or "bottomright"
 			PixelUtil.SetPoint (widget, widgetRelative, attachTo, "topright", config.x, config.y, 0, 0)
 		end,
-		function (widget, config, attachTo, centered)--8 top
+		--8 top
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			PixelUtil.SetPoint (widget, "bottom", attachTo, "top", config.x, config.y, 0, 0)
 		end,
-		function (widget, config, attachTo, centered)--9 center
+		--9 center
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			PixelUtil.SetPoint (widget, "center", attachTo, "center", config.x, config.y, 0, 0)
 		end,
-		function (widget, config, attachTo, centered)--10 inner left
+		--10 inner left
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			PixelUtil.SetPoint (widget, "left", attachTo, "left", config.x, config.y, 0, 0)
 		end,
-		function (widget, config, attachTo, centered)--11 inner right
+		--11 inner right
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			PixelUtil.SetPoint (widget, "right", attachTo, "right", config.x, config.y, 0, 0)
 		end,
-		function (widget, config, attachTo, centered)--12 inner top
+		--12 inner top
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			PixelUtil.SetPoint (widget, "top", attachTo, "top", config.x, config.y, 0, 0)
 		end,
-		function (widget, config, attachTo, centered)--13 inner bottom
+		--13 inner bottom
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			PixelUtil.SetPoint (widget, "bottom", attachTo, "bottom", config.x, config.y, 0, 0)
 		end,
-		function (widget, config, attachTo, centered)--14 inner topleft
+		--14 inner topleft
+		function (widget, config, attachTo, centered)
 			widget:ClearAllPoints()
 			PixelUtil.SetPoint (widget, "topleft", attachTo, "topleft", config.x, config.y, 0, 0)
 		end,
@@ -9745,6 +9778,31 @@ end
 	function Plater.SetAnchor (widget, config, attachTo, centered) --private
 		attachTo = attachTo or widget:GetParent()
 		anchor_functions [config.side] (widget, config, attachTo, centered)
+	end
+	
+	function Plater.SetTextAlignmentFromAnchor(fontString, config)
+		local sideMap = {
+			[1] = "LEFT",
+			[2] = "LEFT",
+			[3] = "LEFT",
+			[4] = "CENTER",
+			[5] = "RIGHT",
+			[6] = "RIGHT",
+			[7] = "RIGHT",
+			[8] = "CENTER",
+			[9] = "CENTER",
+			[10] = "LEFT",
+			[11] = "RIGHT",
+			[12] = "CENTER",
+			[13] = "CENTER",
+			[14] = "LEFT",
+			[15] = "LEFT",
+			[16] = "RIGHT",
+			[17] = "RIGHT",
+		}
+		local side = config and config.side or 1
+		side = (side > 0 and side <= 17) and side or 1
+		fontString:SetJustifyH(sideMap[side])
 	end
 	
 	-- anchor sides as comprehensive table.

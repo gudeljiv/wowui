@@ -1,51 +1,14 @@
 
 RXPCData = {
 ["completedWaypoints"] = {
-[53] = {
+[16] = {
+},
+[20] = {
 },
 },
-["currentStep"] = 53,
+["currentStep"] = 20,
 ["questObjectivesCache"] = {
-[788] = {
-{
-["type"] = "monster",
-["numRequired"] = 10,
-["text"] = "Mottled Boar slain: 0/10",
-["finished"] = false,
-["numFulfilled"] = 0,
-},
-["finished"] = false,
-},
-[1516] = {
-{
-["type"] = "item",
-["numRequired"] = 2,
-["text"] = "Felstalker Hoof: 0/2",
-["finished"] = false,
-["numFulfilled"] = 0,
-},
-["finished"] = false,
-},
-[792] = {
-{
-["type"] = "monster",
-["numRequired"] = 12,
-["text"] = "Vile Familiar slain: 0/12",
-["finished"] = false,
-["numFulfilled"] = 0,
-},
-["finished"] = false,
-},
-[6394] = {
-{
-["type"] = "item",
-["numRequired"] = 1,
-["text"] = "Thazz'ril's Pick: 0/1",
-["finished"] = false,
-["numFulfilled"] = 0,
-},
-["finished"] = false,
-},
+[0] = 21,
 [4641] = {
 {
 ["type"] = "event",
@@ -56,31 +19,11 @@ RXPCData = {
 },
 ["finished"] = false,
 },
-[4402] = {
-{
-["type"] = "item",
-["numRequired"] = 10,
-["text"] = "Cactus Apple: 0/10",
-["finished"] = false,
-["numFulfilled"] = 0,
-},
-["finished"] = false,
-},
-[789] = {
-{
-["type"] = "item",
-["numRequired"] = 10,
-["text"] = "Scorpid Worker Tail: 0/10",
-["finished"] = false,
-["numFulfilled"] = 0,
-},
-["finished"] = false,
-},
-[5441] = {
+[788] = {
 {
 ["type"] = "monster",
-["numRequired"] = 5,
-["text"] = "Peons Awoken: 0/5",
+["numRequired"] = 10,
+["text"] = "Mottled Boar slain: 0/10",
 ["finished"] = false,
 ["numFulfilled"] = 0,
 },
@@ -96,6 +39,26 @@ RXPCData = {
 },
 ["finished"] = false,
 },
+[789] = {
+{
+["type"] = "item",
+["numRequired"] = 10,
+["text"] = "Scorpid Worker Tail: 0/10",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[1516] = {
+{
+["type"] = "item",
+["numRequired"] = 2,
+["text"] = "Felstalker Hoof: 0/2",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
 [790] = {
 {
 ["type"] = "item",
@@ -106,7 +69,77 @@ RXPCData = {
 },
 ["finished"] = false,
 },
-[0] = 11,
+[837] = {
+{
+["type"] = "monster",
+["numRequired"] = 4,
+["text"] = "Razormane Quilboar slain: 0/4",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "monster",
+["numRequired"] = 4,
+["text"] = "Razormane Scout slain: 0/4",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "monster",
+["numRequired"] = 4,
+["text"] = "Razormane Dustrunner slain: 0/4",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "monster",
+["numRequired"] = 4,
+["text"] = "Razormane Battleguard slain: 0/4",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[791] = {
+{
+["type"] = "item",
+["numRequired"] = 8,
+["text"] = "Canvas Scraps: 0/8",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[4402] = {
+{
+["type"] = "item",
+["numRequired"] = 10,
+["text"] = "Cactus Apple: 0/10",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[808] = {
+{
+["type"] = "item",
+["numRequired"] = 1,
+["text"] = "Minshina's Skull: 0/1",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[6394] = {
+{
+["type"] = "item",
+["numRequired"] = 1,
+["text"] = "Thazz'ril's Pick: 0/1",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
 [794] = {
 {
 ["type"] = "item",
@@ -117,26 +150,179 @@ RXPCData = {
 },
 ["finished"] = false,
 },
+[826] = {
+{
+["type"] = "monster",
+["numRequired"] = 8,
+["text"] = "Hexed Troll slain: 0/8",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "monster",
+["numRequired"] = 8,
+["text"] = "Voodoo Troll slain: 0/8",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "item",
+["numRequired"] = 1,
+["text"] = "Zalazane's Head: 0/1",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[5441] = {
+{
+["type"] = "monster",
+["numRequired"] = 5,
+["text"] = "Peons Awoken: 0/5",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[786] = {
+{
+["type"] = "object",
+["numRequired"] = 1,
+["text"] = "Attack Plan: Valley of Trials destroyed: 0/1",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "object",
+["numRequired"] = 1,
+["text"] = "Attack Plan: Sen'jin Village destroyed: 0/1",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "object",
+["numRequired"] = 1,
+["text"] = "Attack Plan: Orgrimmar destroyed: 0/1",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[815] = {
+{
+["type"] = "item",
+["numRequired"] = 3,
+["text"] = "Taillasher Egg: 0/3",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[818] = {
+{
+["type"] = "item",
+["numRequired"] = 4,
+["text"] = "Intact Makrura Eye: 0/4",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "item",
+["numRequired"] = 8,
+["text"] = "Crawler Mucus: 0/8",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[792] = {
+{
+["type"] = "monster",
+["numRequired"] = 12,
+["text"] = "Vile Familiar slain: 0/12",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[784] = {
+{
+["type"] = "monster",
+["numRequired"] = 10,
+["text"] = "Kul Tiras Sailor slain: 0/10",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "monster",
+["numRequired"] = 8,
+["text"] = "Kul Tiras Marine slain: 0/8",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+{
+["type"] = "monster",
+["numRequired"] = 1,
+["text"] = "Lieutenant Benedict slain: 0/1",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[817] = {
+{
+["type"] = "item",
+["numRequired"] = 4,
+["text"] = "Durotar Tiger Fur: 0/4",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
+[825] = {
+{
+["type"] = "item",
+["numRequired"] = 3,
+["text"] = "Gnomish Tools: 0/3",
+["finished"] = false,
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
 },
 ["currentGuideGroup"] = "RestedXP TBC Guide (H)",
 ["flightPaths"] = {
+[23] = "Orgrimmar, Durotar",
+[25] = "Crossroads, The Barrens",
 },
 ["questNameCache"] = {
-[788] = "Cutting Teeth",
-[790] = "Sarkoth",
-[792] = "Vile Familiars",
-[6394] = "Thazz'ril's Pick",
 [4641] = "Your Place In The World",
-[4402] = "Galgar's Cactus Apple Surprise",
-[1517] = "Call of Earth",
-[789] = "Sting of the Scorpid",
-[1518] = "Call of Earth",
-[5441] = "Lazy Peons",
-[3089] = "Rune-Inscribed Parchment",
-[805] = "Report to Sen'jin Village",
+[788] = "Cutting Teeth",
 [804] = "Sarkoth",
+[789] = "Sting of the Scorpid",
+[805] = "Report to Sen'jin Village",
+[1517] = "Call of Earth",
+[1518] = "Call of Earth",
+[791] = "Carry Your Weight",
+[4402] = "Galgar's Cactus Apple Surprise",
+[808] = "Minshina's Skull",
+[6394] = "Thazz'ril's Pick",
+[5441] = "Lazy Peons",
+[826] = "Zalazane",
 [1516] = "Call of Earth",
+[786] = "Thwarting Kolkar Aggression",
+[3089] = "Rune-Inscribed Parchment",
+[2161] = "A Peon's Burden",
+[792] = "Vile Familiars",
+[790] = "Sarkoth",
+[818] = "A Solvent Spirit",
+[784] = "Vanquish the Betrayers",
+[815] = "Break a Few Eggs",
 [794] = "Burning Blade Medallion",
+[825] = "From The Wreckage....",
+[837] = "Encroachment",
+[817] = "Practical Prey",
+[823] = "Report to Orgnil",
 },
 ["guideMetaData"] = {
 ["RestedXP Survival Guide (H)||1-6 Durotar"] = {
@@ -1784,23 +1970,16 @@ RXPCData = {
 },
 ["discardPile"] = {
 },
-["currentGuideName"] = "01-06 Durotar",
+["currentGuideName"] = "06-10 Durotar",
 ["stepSkip"] = {
-[33] = true,
-[35] = true,
 [2] = true,
-[41] = true,
-[31] = true,
-[49] = true,
-[18] = true,
+[8] = true,
+[12] = true,
 [19] = true,
-[20] = true,
-[13] = true,
-[7] = true,
-[48] = true,
-[34] = true,
+[9] = true,
+[5] = true,
 },
-["currentStepId"] = 3418689305,
+["currentStepId"] = 3587902720,
 ["guideDisabled"] = {
 33777,
 100789,
@@ -2005,6 +2184,7 @@ RXPCTrackingData = {
 ["hour"] = 21,
 ["weekday"] = 6,
 },
+["finished"] = 1,
 ["started"] = 4477,
 },
 ["quests"] = {
@@ -2035,6 +2215,7 @@ RXPCTrackingData = {
 ["weekday"] = 4,
 },
 ["finished"] = 14171,
+["started"] = 2,
 },
 ["quests"] = {
 ["Durotar"] = {
@@ -2089,8 +2270,8 @@ RXPCTrackingData = {
 ["deaths"] = 0,
 ["mobs"] = {
 ["Durotar"] = {
-["xp"] = 495,
-["count"] = 3,
+["xp"] = 3275,
+["count"] = 38,
 },
 },
 ["timestamp"] = {
@@ -2103,13 +2284,49 @@ RXPCTrackingData = {
 ["hour"] = 12,
 ["weekday"] = 4,
 },
+["finished"] = 17532,
+["dateFinished"] = {
+["monthDay"] = 28,
+["day"] = 0,
+["month"] = 1,
+["minute"] = 8,
+["year"] = 2026,
+["hour"] = 20,
+["weekday"] = 4,
+},
 ["started"] = 14736,
 },
 ["quests"] = {
 ["Durotar"] = {
-[1517] = 270,
 [1518] = 450,
+[805] = 230,
+[1517] = 270,
+[2161] = 110,
 },
+},
+},
+{
+["groupExperience"] = 0,
+["deaths"] = 0,
+["mobs"] = {
+["Durotar"] = {
+["xp"] = 228,
+["count"] = 3,
+},
+},
+["timestamp"] = {
+["dateStarted"] = {
+["monthDay"] = 28,
+["day"] = 0,
+["month"] = 1,
+["minute"] = 8,
+["year"] = 2026,
+["hour"] = 20,
+["weekday"] = 4,
+},
+["started"] = 17533,
+},
+["quests"] = {
 },
 },
 },
