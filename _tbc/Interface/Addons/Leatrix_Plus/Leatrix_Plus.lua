@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 2.5.002 (21st January 2026)
+-- 	Leatrix Plus 2.5.03 (28th January 2026)
 ----------------------------------------------------------------------
 
 --	01:Functions 02:Locks   03:Restart 40:Player   45:Rest
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "2.5.002"
+	LeaPlusLC["AddonVer"] = "2.5.03"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -602,7 +602,7 @@
 		-- Interface
 		or	(LeaPlusLC["MinimapModder"]			~= LeaPlusDB["MinimapModder"])			-- Enhance minimap
 		or	(LeaPlusLC["SquareMinimap"]			~= LeaPlusDB["SquareMinimap"])			-- Square minimap
-		or	(LeaPlusLC["CombineAddonButtons"]	~= LeaPlusDB["CombineAddonButtons"])	-- Combine addon buttons
+		or	(LeaPlusLC["MinimapButtonBag"]		~= LeaPlusDB["MinimapButtonBag"])		-- Minimap button bag
 		or	(LeaPlusLC["HideMiniTracking"]		~= LeaPlusDB["HideMiniTracking"])		-- Hide tracking button
 		or	(LeaPlusLC["HideMiniLFG"]			~= LeaPlusDB["HideMiniLFG"])			-- Hide the Looking for Group button
 		or	(LeaPlusLC["MiniExcludeList"]		~= LeaPlusDB["MiniExcludeList"])		-- Minimap exclude list
@@ -5105,6 +5105,35 @@
 			MinimapCluster:EnableMouse(false)
 
 			----------------------------------------------------------------------
+			-- Button test mode
+			----------------------------------------------------------------------
+
+			-- Create a ton of minimap buttons for test purposes
+			local useMinimapButtonTestMode = false
+			if useMinimapButtonTestMode then
+				local numberOfTestButtons = 50
+				local miniTable = {}
+				for i = 1, numberOfTestButtons do
+					miniTable[i] = LibStub("LibDataBroker-1.1"):NewDataObject("Leatrix_Plus" .. i, {
+						type = "data source",
+						text = "Test Addon " .. i,
+						icon = "Interface\\HELPFRAME\\ReportLagIcon-Movement",
+						OnClick = function(self, btn)
+							LeaPlusGlobalMiniBtnClickFunc(btn)
+						end,
+						OnTooltipShow = function(tooltip)
+							if not tooltip or not tooltip.AddLine then return end
+							tooltip:AddLine("Test Addon " .. i)
+						end,
+					})
+					miniTable[i].minimapPos = i * 50
+				end
+				for i = 1, numberOfTestButtons do
+					LibStub("LibDBIcon-1.0", true):Register("Leatrix_Plus" .. i, miniTable[i], miniTable[i])
+				end
+			end
+
+			----------------------------------------------------------------------
 			-- Configuration panel
 			----------------------------------------------------------------------
 
@@ -5126,7 +5155,7 @@
 			LeaPlusLC:MakeCB(SideMinimap, "HideMiniTracking", "Hide the tracking button", 16, -152, true, "If checked, the tracking button will be hidden while the pointer is not over the minimap.")
 			LeaPlusLC:MakeCB(SideMinimap, "HideMiniLFG", "Hide the Looking for Group button", 16, -172, true, "If checked, the Looking for Group button will be hidden while you are not queued.|n|nThis only applies to game realms with a Looking for Group feature.")
 			LeaPlusLC:MakeCB(SideMinimap, "HideMiniAddonButtons", "Hide addon buttons", 16, -192, false, "If checked, addon buttons will be hidden while the pointer is not over the minimap.")
-			LeaPlusLC:MakeCB(SideMinimap, "CombineAddonButtons", "MinimapButtonButton", 16, -212, true, "If checked, minimap buttons for addons will be collected and placed in a frame which you can toggle by right-clicking the minimap.|n|nThis setting will help you declutter the minimap without the need to install a separate addon just to do that.")
+			LeaPlusLC:MakeCB(SideMinimap, "MinimapButtonBag", "Minimap button bag", 16, -212, true, "If checked, minimap buttons for addons will be collected and placed in a bag which you can toggle by right-clicking the minimap.|n|nThis setting will help you declutter the minimap without the need to install a separate addon to do that.")
 			LeaPlusLC:MakeCB(SideMinimap, "SquareMinimap", "Square minimap", 16, -232, true, "If checked, the minimap shape will be square.")
 			LeaPlusLC:MakeCB(SideMinimap, "ShowWhoPinged", "Show who pinged", 16, -252, false, "If checked, when someone pings the minimap, their name will be shown.  This does not apply to your pings.")
 
@@ -5137,7 +5166,7 @@
 
 			-- Set exclude button visibility
 			local function SetExcludeButtonsFunc()
-				if LeaPlusLC["HideMiniAddonButtons"] == "On" or LeaPlusLC["CombineAddonButtons"] == "On" then
+				if LeaPlusLC["HideMiniAddonButtons"] == "On" or LeaPlusLC["MinimapButtonBag"] == "On" then
 					LeaPlusLC:LockItem(LeaPlusCB["MiniExcludedButton"], false)
 				else
 					LeaPlusLC:LockItem(LeaPlusCB["MiniExcludedButton"], true)
@@ -5235,7 +5264,7 @@
 				SaveString()
 
 				-- Help button tooltip
-				ExcludedButtonsPanel.h.tiptext = L["If you use the 'Hide addon buttons' or 'Combine addon buttons' settings but you want some addon buttons to remain visible around the minimap, enter the addon names into the editbox separated by a comma.|n|nThe editbox tooltip shows the addon names that you can enter.  The names must match exactly with the names shown in the editbox tooltip though case does not matter.|n|nChanges to the list will require a UI reload to take effect."]
+				ExcludedButtonsPanel.h.tiptext = L["If you use the 'Hide addon buttons' or 'Minimap button bag' settings but you want some addon buttons to remain visible around the minimap, enter the addon names into the editbox separated by a comma.|n|nThe editbox tooltip shows the addon names that you can enter.  The names must match exactly with the names shown in the editbox tooltip though case does not matter.|n|nChanges to the list will require a UI reload to take effect."]
 
 				-- Back button handler
 				ExcludedButtonsPanel.b:SetScript("OnClick", function()
@@ -5424,20 +5453,21 @@
 			end
 
 			----------------------------------------------------------------------
-			-- Combine addon buttons
+			-- Minimap button bag
 			----------------------------------------------------------------------
 
-			if LeaPlusLC["CombineAddonButtons"] == "On" then
+			if LeaPlusLC["MinimapButtonBag"] == "On" then
 
 				-- Lock out hide minimap buttons
 				LeaPlusLC:LockItem(LeaPlusCB["HideMiniAddonButtons"], true)
-				LeaPlusCB["HideMiniAddonButtons"].tiptext = LeaPlusCB["HideMiniAddonButtons"].tiptext .. "|n|n|cff00AAFF" .. L["Cannot be used with Combine addon buttons."]
+				LeaPlusCB["HideMiniAddonButtons"].tiptext = LeaPlusCB["HideMiniAddonButtons"].tiptext .. "|n|n|cff00AAFF" .. L["Cannot be used with Minimap button bag."]
 
 				-- Create button frame (parenting to cluster ensures bFrame scales correctly)
 				local bFrame = CreateFrame("FRAME", nil, MinimapCluster, "BackdropTemplate")
 				bFrame:ClearAllPoints()
 				bFrame:SetPoint("TOPLEFT", Minimap, "TOPRIGHT", 4, 4)
 				bFrame:Hide()
+				bFrame:SetClampedToScreen(true)
 				bFrame:SetFrameLevel(8)
 
 				LeaPlusLC.bFrame = bFrame -- Used in LibDBIcon callback
@@ -5706,8 +5736,8 @@
 					end)
 				end
 
-				-- Rescale addon buttons if combine addon buttons is disabled
-				if LeaPlusLC["CombineAddonButtons"] == "Off" then
+				-- Rescale addon buttons if minimap button bag is disabled
+				if LeaPlusLC["MinimapButtonBag"] == "Off" then
 					-- Scale existing buttons
 					local buttons = LibDBIconStub:GetButtonList()
 					for i = 1, #buttons do
@@ -5774,7 +5804,7 @@
 					-- Function to anchor the tooltip to the custom button or the minimap
 					local function ReanchorTooltip(tip, myButton)
 						tip:ClearAllPoints()
-						if LeaPlusLC["CombineAddonButtons"] == "On" then
+						if LeaPlusLC["MinimapButtonBag"] == "On" then
 							if LeaPlusLC.bFrame and LeaPlusLC.bFrame:GetPoint() == "BOTTOMLEFT" then
 								tip:SetPoint("TOPLEFT", Minimap, "BOTTOMLEFT", 0, -6)
 							else
@@ -5969,7 +5999,7 @@
 			-- Hide addon buttons
 			----------------------------------------------------------------------
 
-			if LeaPlusLC["CombineAddonButtons"] == "Off" then
+			if LeaPlusLC["MinimapButtonBag"] == "Off" then
 
 				-- Function to set button state
 				local function SetHideButtons()
@@ -6293,8 +6323,8 @@
 			-- LibDBIcon callback (search LibDBIcon_IconCreated to find calls to this)
 			LibDBIconStub.RegisterCallback(miniFrame, "LibDBIcon_IconCreated", function(self, button, name)
 
-				-- Combine addon buttons: Hide new LibDBIcon icons
-				if LeaPlusLC["CombineAddonButtons"] == "On" then
+				-- Minimap button bag: Hide new LibDBIcon icons
+				if LeaPlusLC["MinimapButtonBag"] == "On" then
 					--C_Timer.After(0.1, function() -- Removed for now
 						local buttonName = strlower(name)
 
@@ -6324,12 +6354,12 @@
 				end
 
 				-- Square minimap: Set scale of new LibDBIcon icons
-				if LeaPlusLC["SquareMinimap"] == "On" and LeaPlusLC["CombineAddonButtons"] == "Off" then
+				if LeaPlusLC["SquareMinimap"] == "On" and LeaPlusLC["MinimapButtonBag"] == "Off" then
 					button:SetScale(0.75)
 				end
 
 				-- Hide addon buttons: Hide new LibDBIcon icons
-				if LeaPlusLC["CombineAddonButtons"] == "Off" then
+				if LeaPlusLC["MinimapButtonBag"] == "Off" then
 					local buttonName = strlower(name)
 					if LeaPlusLC["HideMiniAddonButtons"] == "On" then
 						-- Hide addon buttons is enabled
@@ -8708,6 +8738,7 @@
 			LeaPlusLC:MakeCB(DismountFrame, "DismountNoResource", "Dismount when not enough rage, mana or energy", 16, -92, false, "If checked, you will be dismounted when you attempt to cast a spell but don't have the rage, mana or energy to cast it.")
 			LeaPlusLC:MakeCB(DismountFrame, "DismountNoMoving", "Dismount when casting a spell while moving", 16, -112, false, "If checked, you will be dismounted when you attempt to cast a non-instant cast spell while moving.")
 			LeaPlusLC:MakeCB(DismountFrame, "DismountNoTaxi", "Dismount when the flight map opens", 16, -132, false, "If checked, you will be dismounted when you instruct a flight master to open the flight map.")
+			LeaPlusLC:MakeCB(DismountFrame, "DismountShowFormBtn", "Show cancel form button on flight map", 16, -152, false, "If checked, a cancel form button will be shown on the flight map while you are playing as a shapeshifted druid or shaman.")
 
 			-- Help button hidden
 			DismountFrame.h.tiptext = L["The game will dismount you if you successfully cast a spell without addons.  These settings let you set some additional dismount rules."]
@@ -8738,6 +8769,7 @@
 				LeaPlusLC["DismountNoResource"] = "On"
 				LeaPlusLC["DismountNoMoving"] = "On"
 				LeaPlusLC["DismountNoTaxi"] = "On"
+				LeaPlusLC["DismountShowFormBtn"] = "On"
 
 				-- Update settings and configuration panel
 				SetDismount()
@@ -8752,12 +8784,71 @@
 					LeaPlusLC["DismountNoResource"] = "On"
 					LeaPlusLC["DismountNoMoving"] = "On"
 					LeaPlusLC["DismountNoTaxi"] = "On"
+					LeaPlusLC["DismountShowFormBtn"] = "On"
 					SetDismount()
 				else
 					DismountFrame:Show()
 					LeaPlusLC:HideFrames()
 				end
 			end)
+
+			-- Druid cancel form button
+			local void, class = UnitClass("player")
+			if class == "DRUID" or class == "SHAMAN" then
+
+				-- Create button
+				local cancelFormBtn = CreateFrame("Button", nil, TaxiFrame, "SecureActionButtonTemplate")
+				cancelFormBtn:RegisterForClicks("AnyDown")
+				cancelFormBtn:SetAttribute("type", "macro")
+				cancelFormBtn:SetAttribute("macrotext", "/cancelform")
+				cancelFormBtn:ClearAllPoints()
+				cancelFormBtn:SetSize(24, 24)
+				if LeaPlusLC["EnhanceFlightMap"] == "On" then
+					cancelFormBtn:SetPoint("TOPRIGHT", TaxiFrame, "TOPRIGHT", -76, -80)
+				else
+					cancelFormBtn:SetPoint("TOPRIGHT", TaxiFrame, "TOPRIGHT", -46, -46)
+				end
+				cancelFormBtn:SetNormalTexture("Interface\\ICONS\\Achievement_Character_Nightelf_Female")
+				cancelFormBtn:SetPushedTexture("Interface\\ICONS\\Achievement_Character_Nightelf_Female")
+				cancelFormBtn:SetHighlightTexture("Interface\\ICONS\\Achievement_Character_Nightelf_Female")
+
+				-- Button message
+				cancelFormBtn.f = cancelFormBtn:CreateFontString(nil, 'ARTWORK', 'GameFontNormal')
+				cancelFormBtn.f:SetHeight(32)
+				cancelFormBtn.f:SetPoint('RIGHT', cancelFormBtn, 'LEFT', -10, 0)
+				cancelFormBtn.f:SetText(L["Click to unshift"])
+
+				-- Toggle button when form changes
+				cancelFormBtn:SetScript("OnEvent", function()
+					local form = GetShapeshiftForm() or 0
+					if form ~= 0 then
+						if not cancelFormBtn:IsShown() then	cancelFormBtn:Show() end
+					else
+						cancelFormBtn:Hide()
+					end
+				end)
+
+				-- Function to set event and button status
+				local function SetShiftEvent()
+					if LeaPlusLC["DismountShowFormBtn"] == "On" then
+						cancelFormBtn:RegisterEvent("UPDATE_SHAPESHIFT_FORM")
+						local form = GetShapeshiftForm() or 0
+						if form ~= 0 then cancelFormBtn:Show() else cancelFormBtn:Hide() end
+					else
+						cancelFormBtn:UnregisterEvent("UPDATE_SHAPESHIFT_FORM")
+						cancelFormBtn:Hide()
+					end
+				end
+
+				-- Set button when option is clicked, when reset button is clicked, preset profile and on startup
+				LeaPlusCB["DismountShowFormBtn"]:HookScript("OnClick", SetShiftEvent)
+				DismountFrame.r:HookScript("OnClick", SetShiftEvent)
+				LeaPlusCB["DismountBtn"]:HookScript("OnClick", function()
+					if IsShiftKeyDown() and IsControlKeyDown() then	SetShiftEvent() end
+				end)
+				SetShiftEvent()
+
+			end
 
 		end
 
@@ -8936,6 +9027,9 @@
 				end
 
 			end
+
+			-- Assign global scope for function
+			_G.LeaPlusGlobalMiniBtnClickFunc = MiniBtnClickFunc
 
 			-- Create minimap button using LibDBIcon
 			local miniButton = LibStub("LibDataBroker-1.1"):NewDataObject("Leatrix_Plus", {
@@ -9975,7 +10069,7 @@
 			local function MakeSpellEB(num, x, y, tab, shifttab)
 
 				-- Create editbox for spell ID
-                SpellEB[num] = LeaPlusLC:CreateEditBox("Spell" .. num, CooldownPanel, 70, 6, "TOPLEFT", x, y - 20, "Spell" .. tab, "Spell" .. shifttab)
+                SpellEB[num] = LeaPlusLC:CreateEditBox("Spell" .. num, CooldownPanel, 80, 8, "TOPLEFT", x, y - 20, "Spell" .. tab, "Spell" .. shifttab)
 				SpellEB[num]:SetNumeric(true)
 
 				-- Set initial value (for current spec)
@@ -9991,14 +10085,14 @@
 				end)
 
 				-- Create checkbox for pet cooldown
-				LeaPlusLC:MakeCB(CooldownPanel, "Spell" .. num .."Pet", "", 462, y - 20, false, "")
+				LeaPlusLC:MakeCB(CooldownPanel, "Spell" .. num .."Pet", "", 472, y - 20, false, "")
 				LeaPlusCB["Spell" .. num .."Pet"]:SetHitRectInsets(0, 0, 0, 0)
 
 			end
 
 			-- Add titles
 			LeaPlusLC:MakeTx(CooldownPanel, "Spell ID", 384, -92)
-			LeaPlusLC:MakeTx(CooldownPanel, "Pet", 462, -92)
+			LeaPlusLC:MakeTx(CooldownPanel, "Pet", 472, -92)
 
 			-- Add editboxes and checkboxes
 			MakeSpellEB(1, 386, -92, "2", "5")
@@ -11949,6 +12043,7 @@
 					if LeaPlusDB[oldvar] and not LeaPlusDB[newvar] then LeaPlusDB[newvar] = LeaPlusDB[oldvar]; LeaPlusDB[oldvar] = nil end
 				end
 
+				UpdateVars("CombineAddonButtons", "MinimapButtonBag")		-- 2.5.03 (25th January 2026)
 				UpdateVars("MuteStriders", "MuteMechSteps")					-- 1.14.45 (1st June 2022)
 				UpdateVars("MinimapMod", "MinimapModder")					-- 1.14.57 (24th August 2022)
 
@@ -12027,7 +12122,7 @@
 				LeaPlusLC:LoadVarChk("MinimapModder", "Off")				-- Enhance minimap
 				LeaPlusLC:LoadVarChk("SquareMinimap", "Off")				-- Square minimap
 				LeaPlusLC:LoadVarChk("ShowWhoPinged", "On")					-- Show who pinged
-				LeaPlusLC:LoadVarChk("CombineAddonButtons", "Off")			-- Combine addon buttons
+				LeaPlusLC:LoadVarChk("MinimapButtonBag", "Off")				-- Minimap button bag
 				LeaPlusLC:LoadVarStr("MiniExcludeList", "")					-- Minimap exclude list
 				LeaPlusLC:LoadVarChk("HideMiniZoomBtns", "Off")				-- Hide zoom buttons
 				LeaPlusLC:LoadVarChk("HideMiniClock", "Off")				-- Hide the clock
@@ -12147,6 +12242,7 @@
 				LeaPlusLC:LoadVarChk("DismountNoResource", "On")			-- Dismount on resource error
 				LeaPlusLC:LoadVarChk("DismountNoMoving", "On")				-- Dismount on moving
 				LeaPlusLC:LoadVarChk("DismountNoTaxi", "On")				-- Dismount on flight map open
+				LeaPlusLC:LoadVarChk("DismountShowFormBtn", "On")			-- Dismount cancel form button
 				LeaPlusLC:LoadVarChk("ShowVendorPrice", "Off")				-- Show vendor price
 				LeaPlusLC:LoadVarChk("CombatPlates", "Off")					-- Combat plates
 				LeaPlusLC:LoadVarChk("EasyItemDestroy", "Off")				-- Easy item destroy
@@ -12391,7 +12487,7 @@
 			LeaPlusDB["MinimapModder"]			= LeaPlusLC["MinimapModder"]
 			LeaPlusDB["SquareMinimap"]			= LeaPlusLC["SquareMinimap"]
 			LeaPlusDB["ShowWhoPinged"]			= LeaPlusLC["ShowWhoPinged"]
-			LeaPlusDB["CombineAddonButtons"]	= LeaPlusLC["CombineAddonButtons"]
+			LeaPlusDB["MinimapButtonBag"]		= LeaPlusLC["MinimapButtonBag"]
 			LeaPlusDB["MiniExcludeList"] 		= LeaPlusLC["MiniExcludeList"]
 			LeaPlusDB["HideMiniZoomBtns"]		= LeaPlusLC["HideMiniZoomBtns"]
 			LeaPlusDB["HideMiniClock"]			= LeaPlusLC["HideMiniClock"]
@@ -12512,6 +12608,7 @@
 			LeaPlusDB["DismountNoResource"] 	= LeaPlusLC["DismountNoResource"]
 			LeaPlusDB["DismountNoMoving"] 		= LeaPlusLC["DismountNoMoving"]
 			LeaPlusDB["DismountNoTaxi"] 		= LeaPlusLC["DismountNoTaxi"]
+			LeaPlusDB["DismountShowFormBtn"] 	= LeaPlusLC["DismountShowFormBtn"]
 			LeaPlusDB["ShowVendorPrice"] 		= LeaPlusLC["ShowVendorPrice"]
 			LeaPlusDB["CombatPlates"]			= LeaPlusLC["CombatPlates"]
 			LeaPlusDB["EasyItemDestroy"]		= LeaPlusLC["EasyItemDestroy"]
@@ -14524,7 +14621,7 @@
 				LeaPlusDB["MinimapModder"] = "On"				-- Enhance minimap
 				LeaPlusDB["SquareMinimap"] = "On"				-- Square minimap
 				LeaPlusDB["ShowWhoPinged"] = "On"				-- Show who pinged
-				LeaPlusDB["CombineAddonButtons"] = "Off"		-- Combine addon buttons
+				LeaPlusDB["MinimapButtonBag"] = "Off"			-- Minimap button bag
 				LeaPlusDB["MiniExcludeList"] = "BugSack, Leatrix_Plus" -- Excluded addon list
 				LeaPlusDB["MinimapSize"] = 180					-- Minimap size slider
 				LeaPlusDB["MinimapBorderWidth"] = 3				-- Minimap border width

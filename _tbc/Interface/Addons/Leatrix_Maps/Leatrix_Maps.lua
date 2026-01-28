@@ -1,6 +1,6 @@
 ﻿
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 2.5.002 (21st January 2026)
+	-- 	Leatrix Maps 2.5.03 (28th January 2026)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaDropList, LeaConfigList, LeaLockList = {}, {}, {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "2.5.002"
+	LeaMapsLC["AddonVer"] = "2.5.03"
 
 	-- Get locale table
 	local void, Leatrix_Maps = ...
@@ -1290,8 +1290,11 @@
 				--[[Duskwood]]				[1431] = {minLevel = 18, 	maxLevel = 30,		minFish = "55",},
 				--[[Eastern Plaguelands]]	[1423] = {minLevel = 53, 	maxLevel = 60,		minFish = "330",},
 				--[[Elwynn Forest]]			[1429] = {minLevel = 1, 	maxLevel = 10,		minFish = "1",},
+				--[[Eversong Woods]]		[1941] = {minLevel = 1, 	maxLevel = 10,		minFish = "1",},
+				--[[Ghostlands]]			[1942] = {minLevel = 10, 	maxLevel = 20,		minFish = "1",},
 				--[[Hillsbrad Foothills]]	[1424] = {minLevel = 20, 	maxLevel = 30,		minFish = "55",},
 				--[[Ironforge]]				[1455] = {minFish = 1,},
+				--[[Isle of Quel'Danas]]	[1957] = {minLevel = 70, 	maxLevel = 70,},
 				--[[Loch Modan]]			[1432] = {minLevel = 10,	maxLevel = 20,		minFish = "1",},
 				--[[Redridge Mountains]]	[1433] = {minLevel = 15, 	maxLevel = 25,		minFish = "55",},
 				--[[Searing Gorge]]			[1427] = {minLevel = 43, 	maxLevel = 50},
@@ -1309,6 +1312,8 @@
 				-- Kalimdor
 				--[[Ashenvale]]				[1440] = {minLevel = 18, 	maxLevel = 30,		minFish = "55",},
 				--[[Azshara]]				[1447] = {minLevel = 45, 	maxLevel = 55,		minFish = "205 (330)",},
+				--[[Azuremyst Isle]]		[1943] = {minLevel = 1, 	maxLevel = 10,		minFish = "1",},
+				--[[Bloodmyst Isle]]		[1950] = {minLevel = 9, 	maxLevel = 19,},
 				--[[Darkshore]]				[1439] = {minLevel = 10,	maxLevel = 20,		minFish = "1",},
 				--[[Darnassus]]				[1457] = {minFish = 1,},
 				--[[Desolace]]				[1443] = {minLevel = 30, 	maxLevel = 40,		minFish = "130",},
@@ -1330,13 +1335,13 @@
 				--[[Winterspring]]			[1452] = {minLevel = 55, 	maxLevel = 60,		minFish = "330",},
 
 				-- Outland
-				--[[Blade's Edge Mntains]]	[1949] = {minLevel = 65, 	maxLevel = 70,},
-				--[[Hellfire Peninsula]]	[1944] = {minLevel = 58, 	maxLevel = 70,		minFish = "280",},
-				--[[Nagrand]]				[1951] = {minLevel = 64, 	maxLevel = 70,		minFish = "280 (380) (395)",},
-				--[[Netherstorm]]			[1953] = {minLevel = 66, 	maxLevel = 70,		minFish = "380",},
+				--[[Blade's Edge Mntains]]	[1949] = {minLevel = 65, 	maxLevel = 68,},
+				--[[Hellfire Peninsula]]	[1944] = {minLevel = 58, 	maxLevel = 63,		minFish = "280",},
+				--[[Nagrand]]				[1951] = {minLevel = 64, 	maxLevel = 67,		minFish = "280 (380) (395)",},
+				--[[Netherstorm]]			[1953] = {minLevel = 67, 	maxLevel = 70,		minFish = "380",},
 				--[[Shadowmoon Valley]]		[1948] = {minLevel = 67, 	maxLevel = 70,		minFish = "280",},
-				--[[Terokkar Forest]]		[1952] = {minLevel = 62, 	maxLevel = 70,		minFish = "355 (405)",},
-				--[[Zangarmarsh]]			[1946] = {minLevel = 60, 	maxLevel = 63,		minFish = "305 (355)",},
+				--[[Terokkar Forest]]		[1952] = {minLevel = 62, 	maxLevel = 65,		minFish = "355 (405)",},
+				--[[Zangarmarsh]]			[1946] = {minLevel = 60, 	maxLevel = 64,		minFish = "305 (355)",},
 
 			}
 

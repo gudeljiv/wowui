@@ -10,7 +10,7 @@
 ## OptionalDeps: Masque
 ## IconTexture-blank: 982414
 ## IconTexture: Interface\AddOns\Plater\images\cast_bar
-## Version: Plater-v628-Vanilla
+## Version: Plater-v629-Vanilla
 ## X-Curse-Project-ID: 100547
 ## X-Wago-ID: kRNLep6o
 

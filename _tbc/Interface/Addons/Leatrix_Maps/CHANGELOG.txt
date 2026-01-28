@@ -1,10 +1,14 @@
-﻿2.5.002 -21st January 2026
+﻿2.5.03 - 28th January 2026
+- For 'Show zone levels', updated the zone levels for the new zones added in Burning Crusade Anniversary.
+- For 'Show points of interest', updated the points of interest icons.
+
+2.5.02 -21st January 2026
 - For 'Show zone menus', skinned the Outland dropdown menu for ElvUI users.
 - For 'Show unexplored areas', fixed an issue which caused the Alterac Valley map to show as unexplored.
 
-2.5.001 - 17th January 2026
+2.5.01 - 17th January 2026
 - The 'Set map opacity' option is now available.
 - Updated points of interest icons.
 
-2.5.000 - 14th January 2026
+2.5.00 - 14th January 2026
 - Welcome to Burning Crusade Anniversary.

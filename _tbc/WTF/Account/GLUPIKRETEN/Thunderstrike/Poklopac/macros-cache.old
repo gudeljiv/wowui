@@ -1,9 +1,87 @@
-VER 3 0100000000000002 " " "134400"
+VER 3 0000000001000001 "bolt" "136048"
 #showtooltip
 /startattack
 /cast Lightning Bolt
 END
-VER 3 0100000000000001 " " "134400"
+VER 3 0000000001000008 "disease" "134400"
 #showtooltip
-/cast [@mouseover,exists,help][]Healing Wave
+/cast [@mouseover,help,exists][]Cure Disease
+END
+VER 3 0000000001000003 "earth" "136026"
+#showtooltip
+/stopcasting
+/cast [@focus,exists,harm][] Earth Shock(Rank 1)
+END
+VER 3 0000000001000007 "flame" "134400"
+#showtooltip
+/startattack
+/cast Flame Shock
+END
+VER 3 000000000100000A "flame I" "134400"
+#showtooltip
+/cast [@none, mod:shift] Flametongue Weapon; [@none] Flametongue Weapon
+/use [mod:shift] 17; 16
+/click StaticPopup1Button1
+END
+VER 3 000000000100000D "flame II" "134400"
+#showtooltip
+/cast [@none, button:2] Flametongue Weapon; [@none] Flametongue Weapon
+/use [button:2] 17; 16
+/click StaticPopup1Button1
+END
+VER 3 0000000001000002 "heal" "136052"
+#showtooltip
+/cast [@mouseover,help,exists][] Healing Wave
+END
+VER 3 0000000001000006 "lesser" "134400"
+#showtooltip
+/cast [@mouseover,help,exists][] Lesser Healing Wave
+END
+VER 3 0000000001000012 "player" "134400"
+#showtooltip
+/cast [@player] Lesser Healing Wave
+END
+VER 3 0000000001000004 "poison" "134400"
+#showtooltip
+/cast [@mouseover,help,exists][]Cure Poison
+END
+VER 3 0000000001000015 "project" "134400"
+#showtooltip
+/cast [@cursor] Totemic Projection
+END
+VER 3 0000000001000009 "rock I" "134400"
+#showtooltip
+/cast [@none, mod:shift] Rockbiter Weapon; [@none] Rockbiter Weapon
+/use [mod:shift] 17; 16
+/click StaticPopup1Button1
+END
+VER 3 000000000100000C "rock II" "134400"
+#showtooltip
+/cast [@none, button:2] Rockbiter Weapon; [@none] Rockbiter Weapon
+/use [button:2] 17; 16
+/click StaticPopup1Button1
+END
+VER 3 0000000001000014 "tot CH" "134400"
+#showtooltip
+/cast [@targettarget] Chain Heal
+END
+VER 3 0000000001000013 "tot H" "134400"
+#showtooltip
+/cast [@targettarget] Lesser Healing Wave
+END
+VER 3 0000000001000011 "TT Cast" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/castsequence reset=combat/15 Searing Totem(Rank 5), Stoneclaw Totem(Rank 5), Healing Stream Totem(Rank 4), Grace of Air Totem(Rank 1)
+END
+VER 3 000000000100000F "wf I" "134400"
+#showtooltip
+/cast [@none, mod:shift] Windfury Weapon; [@none] Windfury Weapon
+/use [mod:shift] 17; 16
+/click StaticPopup1Button1
+END
+VER 3 0000000001000010 "wf II" "134400"
+#showtooltip
+/cast [@none, button:2] Windfury Weapon; [@none] Windfury Weapon
+/use [button:2] 17; 16
+/click StaticPopup1Button1
 END

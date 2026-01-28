@@ -118,8 +118,8 @@ def print_debug(no, xclass, skill, id, image):
 
 classes = {"warrior", "druid", "rogue", "warlock", "mage", "hunter", "death knight", "priest", "paladin", "shaman"}
 
-time1 = 0.25
-time2 = 0.25
+time1 = 0.1
+time2 = 0.1
 
 count = 0
 number = 0
@@ -214,13 +214,13 @@ with keyboard.Listener(on_press=on_press) as listener:
                     t = skill["type"] == "GetSpellTexture" and 1 or 2
                     s = skill["id"]
                     time.sleep(time1)
-                    pyperclip.copy("/run xRTF(1," + str(t) + "," + str(s) + ")")
-                    if os.name == "posix":
-                        pyautogui.hotkey("command", "v")
-                    else:
-                        pyautogui.hotkey("ctrl", "v")
-                    time.sleep(time1)
-                    pyautogui.hotkey("enter")
+                    for i in range(3):
+                        pyperclip.copy("/run xRTF(1," + str(t) + "," + str(s) + ")")
+                        if os.name == "posix":
+                            pyautogui.hotkey("command", "v")
+                        else:
+                            pyautogui.hotkey("ctrl", "v")
+                        pyautogui.hotkey("enter")
                     time.sleep(time1)
 
                     m_image = abilities_folder + slash + wow_class + slash + str(skill["name"]) + " M.png".format(**p_main)
@@ -239,11 +239,13 @@ with keyboard.Listener(on_press=on_press) as listener:
                     t = skill["type"] == "GetSpellTexture" and 1 or 2
                     s = skill["id"]
                     time.sleep(time1)
-                    pyperclip.copy("/run xRTF(2," + str(t) + "," + str(s) + ")")
-                    if os.name == "posix":
-                        pyautogui.hotkey("command", "v")
-                    else:
-                        pyautogui.hotkey("ctrl", "v")
+                    for i in range(3):
+                        pyperclip.copy("/run xRTF(2," + str(t) + "," + str(s) + ")")
+                        if os.name == "posix":
+                            pyautogui.hotkey("command", "v")
+                        else:
+                            pyautogui.hotkey("ctrl", "v")
+                        pyautogui.hotkey("enter")
                     time.sleep(time1)
                     pyautogui.hotkey("enter")
                     time.sleep(time1)
