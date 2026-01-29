@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 2.5.03 (28th January 2026)
+-- 	Leatrix Plus 2.5.04 (29th January 2026)
 ----------------------------------------------------------------------
 
 --	01:Functions 02:Locks   03:Restart 40:Player   45:Rest
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "2.5.03"
+	LeaPlusLC["AddonVer"] = "2.5.04"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -8797,7 +8797,7 @@
 			if class == "DRUID" or class == "SHAMAN" then
 
 				-- Create button
-				local cancelFormBtn = CreateFrame("Button", nil, TaxiFrame, "SecureActionButtonTemplate")
+				local cancelFormBtn = CreateFrame("Button", nil, TaxiFrame, "InsecureActionButtonTemplate")
 				cancelFormBtn:RegisterForClicks("AnyDown")
 				cancelFormBtn:SetAttribute("type", "macro")
 				cancelFormBtn:SetAttribute("macrotext", "/cancelform")

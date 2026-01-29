@@ -1,4 +1,7 @@
-﻿2.5.03 - 28th January 2026
+﻿2.5.04 - 29th January 2026
+- For 'Dismount me' ('System'), fixed an issue which caused a Lua error when shapeshifting as a druid or shaman during combat.
+
+2.5.03 - 28th January 2026
 - For 'Enhance minimap' ('Interface'), the minimap button bag will no longer go off the screen if you have a massive number of minimap buttons.
 - For 'Show cooldowns' ('Interface'), increased the character limit for the spell ID editboxes.
 - For 'Dismount me' ('System'), added a new setting that lets you unshift when interacting with a flight master as a shapeshifted druid or shaman.

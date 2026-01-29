@@ -62,7 +62,7 @@ function _Ranged:GetHitBonus()
     local hitValue = 0
 
     -- Biznick Scope awards Hit rating in TBC and is part of CR_HIT_RANGED
-    if (not ECS.IsWotlk) then
+    if ECS.IsClassic then
         local rangedEnchant = DataUtils:GetEnchantForEquipSlot(Utils.CHAR_EQUIP_SLOTS["Range"])
         if rangedEnchant and rangedEnchant == Data.Enchant.Ids.BIZNICK_SCOPE then
             hitValue = hitValue + 3
@@ -77,7 +77,7 @@ function _Ranged:GetHitBonus()
     end
 
     if hitFromItems then -- This needs to be checked because on dungeon entering it becomes nil
-        hitValue = hitValue + hitFromItems + _Ranged:GetHitTalentBonus()
+        hitValue = hitValue + hitFromItems + _Ranged:GetHitTalentBonus() + _Ranged:GetHitFromBuffs()
     end
 
     return hitValue
@@ -93,6 +93,17 @@ function _Ranged:GetHitTalentBonus()
     end
 
     return bonus
+end
+
+---@return number
+function _Ranged:GetHitFromBuffs()
+    local mod = 0
+    if C_UnitAuras.GetPlayerAuraBySpellID(6562) or C_SpellBook.IsSpellKnown(6562) or ( -- Heroic Presence
+        (C_SpellBook.IsSpellKnown(28878) or C_UnitAuras.GetPlayerAuraBySpellID(28878)) and ECS.IsWotlk -- Inspiring Presence
+    ) then
+        mod = mod + 1
+    end
+    return mod
 end
 
 ---@return string

@@ -11,10 +11,10 @@ SUIDB = {
 ["profiles"] = {
 ["Default"] = {
 ["general"] = {
+["font"] = "Fonts\\ARIALN.TTF",
 ["cosmetic"] = {
 ["afkscreen"] = false,
 },
-["font"] = "Fonts\\ARIALN.TTF",
 ["display"] = {
 ["ilvl"] = false,
 },
@@ -23,10 +23,10 @@ SUIDB = {
 ["style"] = "Default",
 },
 ["castbars"] = {
-["targetCastbar"] = false,
+["focusCastbar"] = false,
 ["style"] = "Default",
 ["icon"] = false,
-["focusCastbar"] = false,
+["targetCastbar"] = false,
 },
 ["install"] = true,
 ["actionbar"] = {
