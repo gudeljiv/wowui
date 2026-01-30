@@ -216,8 +216,8 @@ xVerminSavedData = {
 ["Entropic Beast"] = {
 "Lava Lash",
 },
-["Shadowfang Darksoul"] = {
-"Shadow Word: Pain",
+["Burning Exile"] = {
+"Serpent Sting",
 },
 ["Glutton"] = {
 "Starfire Stun",
@@ -225,8 +225,8 @@ xVerminSavedData = {
 ["Landslide"] = {
 "Blackout",
 },
-["Burning Exile"] = {
-"Serpent Sting",
+["Shadowfang Darksoul"] = {
+"Shadow Word: Pain",
 },
 ["Bloodmage Thalnos"] = {
 "Charge Stun",
@@ -299,6 +299,13 @@ xVerminSavedData = {
 "Cheap Shot",
 "Mutilate",
 },
+["Ambershard Crusher"] = {
+"Chain Lightning",
+"Serpent Sting",
+},
+["Befouled Water Elemental"] = {
+"Serpent Sting",
+},
 ["Larsera"] = {
 "Serpent Sting",
 "Intimidation",
@@ -311,6 +318,12 @@ xVerminSavedData = {
 "Electrocutioner's Shock",
 "Chimera Shot",
 },
+["Gahz'rilla"] = {
+"Impact",
+"Intimidation",
+"Charge Stun",
+"Counterspell",
+},
 ["Fire Elemental"] = {
 "Flametongue Attack",
 "Magma Totem",
@@ -319,37 +332,8 @@ xVerminSavedData = {
 "Deep Wound",
 "Explosive Trap Effect",
 },
-["Ambershard Crusher"] = {
-"Chain Lightning",
-"Serpent Sting",
-},
-["Gahz'rilla"] = {
-"Impact",
-"Intimidation",
-"Charge Stun",
-"Counterspell",
-},
-["Befouled Water Elemental"] = {
-"Serpent Sting",
-},
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
+["Sandfury Shadowcaster"] = {
 "Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
-"Serpent Sting",
-"Flame Shock",
-"Corruption",
-"Curse of Agony",
 },
 ["Shadowfang Whitescalp"] = {
 "Frostbolt",
@@ -390,15 +374,11 @@ xVerminSavedData = {
 ["Galgann Firehammer"] = {
 "War Stomp",
 },
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
-"Corruption",
-"Curse of Agony",
-"Shadow Bolt",
+["Jade Sludge"] = {
+"Concussive Shot",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
-"Deep Wound",
+["Healing Ward"] = {
+"Faerie Fire (Feral)",
 },
 ["Ironspine"] = {
 "Rend",
@@ -407,14 +387,22 @@ xVerminSavedData = {
 "Rend",
 "Deep Wound",
 },
-["Sandfury Shadowcaster"] = {
-"Earthbind",
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
 },
-["Jade Sludge"] = {
-"Concussive Shot",
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
+"Corruption",
+"Curse of Agony",
+"Shadow Bolt",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Rock Elemental"] = {
+"Serpent Sting",
 },
 ["Entropic Horror"] = {
 "Lava Lash",
@@ -430,18 +418,20 @@ xVerminSavedData = {
 ["Enraged Stone Spirit"] = {
 "Rend",
 },
-["Enraged Voidwalker"] = {
-"Poison Cloud",
-},
-["Rock Elemental"] = {
+["Whirlwind Ripper"] = {
+"Lightning Shield",
 "Serpent Sting",
+},
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Cracked Skull Soldier"] = {
 "Rend",
 "Fear",
 },
-["Healing Ward"] = {
-"Faerie Fire (Feral)",
+["Remote-Controlled Golem"] = {
+"Rend",
+"Deep Wound",
 },
 ["Jazzter"] = {
 "Fireball",
@@ -449,21 +439,31 @@ xVerminSavedData = {
 ["Razorlash"] = {
 "Blackout",
 },
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
+"Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
+"Serpent Sting",
+"Flame Shock",
+"Corruption",
+"Curse of Agony",
 },
 ["Bound Elemental"] = {
 "Lightning Shield",
 "Rend",
 },
-["Whirlwind Ripper"] = {
-"Lightning Shield",
-"Serpent Sting",
+["Enraged Voidwalker"] = {
+"Poison Cloud",
 },
 ["Nelyz"] = {
 "Concussive Shot",

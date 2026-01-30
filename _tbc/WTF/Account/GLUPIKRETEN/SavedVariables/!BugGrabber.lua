@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 13901,
+["session"] = 13903,
 ["errors"] = {
 {
 ["message"] = "[string \"print(isUsableSpell(402297))\"]:1: attempt to call global 'isUsableSpell' (a nil value)",

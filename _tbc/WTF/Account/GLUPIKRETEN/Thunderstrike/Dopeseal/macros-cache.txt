@@ -9,9 +9,13 @@ VER 3 0100000000000003 " " "134400"
 END
 VER 3 0100000000000004 " " "134400"
 #showtooltip
-/castsequence reset=120 Arcane Torrent, Hammer of Justice
+/castsequence reset=120 Arcane Torrent, Hammer of Justice, Hammer of Justice, Hammer of Justice
 END
 VER 3 0100000000000002 " " "134400"
 #showtooltip
 /cast [@mouseover,help,nodead][] Holy Light
+END
+VER 3 0100000000000005 "taunt" "134400"
+#showtooltip
+/cast Righteous Defense
 END
