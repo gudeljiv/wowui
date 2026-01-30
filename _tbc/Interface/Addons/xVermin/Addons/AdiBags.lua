@@ -157,7 +157,7 @@ if C_AddOns.IsAddOnLoaded("AdiBags") then
 				local sortBtn =
 					CreateFrame("Button", "AdiBagsContainer1SortButton", AdiBagsContainer1, "UIPanelButtonTemplate")
 				sortBtn:SetSize(20, 20)
-				sortBtn:SetPoint("TOPRIGHT", AdiBagsContainer1, "TOPRIGHT", -8, -8)
+				sortBtn:SetPoint("TOPRIGHT", AdiBagsContainer1, "TOPRIGHT", -54, -8)
 				sortBtn:SetText("S")
 				sortBtn:SetFrameStrata("HIGH")
 				sortBtn:SetFrameLevel(100)
@@ -175,7 +175,7 @@ if C_AddOns.IsAddOnLoaded("AdiBags") then
 				local sortBtn =
 					CreateFrame("Button", "AdiBagsContainer2SortButton", AdiBagsContainer2, "UIPanelButtonTemplate")
 				sortBtn:SetSize(20, 20)
-				sortBtn:SetPoint("TOPRIGHT", AdiBagsContainer2, "TOPRIGHT", -8, -8)
+				sortBtn:SetPoint("TOPRIGHT", AdiBagsContainer2, "TOPRIGHT", -54, -8)
 				sortBtn:SetText("S")
 				sortBtn:SetFrameStrata("HIGH")
 				sortBtn:SetFrameLevel(100)

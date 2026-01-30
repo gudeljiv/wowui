@@ -257,7 +257,17 @@ xVermin.IfUnitIsCasting = function(unit)
 		ChannelInfo(unit)
 	if name_casting ~= nil or name_channeling ~= nil then
 		local name = UnitName(unit)
-		return true, name, name_casting, spellid
+		return true,
+			name,
+			name_casting,
+			text,
+			texture,
+			startTimeMS,
+			endTimeMS,
+			isTradeSkill,
+			castID,
+			notInterruptible_casting,
+			spellId
 	end
 	return false
 end
@@ -270,7 +280,17 @@ xVermin.IfUnitIsCastingClassic = function(unit)
 		UnitCastingInfo(unit)
 	if name_casting ~= nil or name_channeling ~= nil then
 		local name = UnitName(unit)
-		return true, name, name_casting, spellid
+		return true,
+			name,
+			name_casting,
+			text,
+			texture,
+			startTimeMS,
+			endTimeMS,
+			isTradeSkill,
+			castID,
+			notInterruptible_casting,
+			spellId
 	end
 	return false
 end
@@ -452,3 +472,37 @@ xVermin.TalentLearned = function(tabIndex, talentIndex)
 	return currentRank > 0 and true or false
 end
 xTalentLearned = xVermin.TalentLearned
+
+xVermin.SpellCooldown = function(spellID, spellName)
+	local start, duration, enabled
+
+	-- Try spell ID first, fall back to name
+	if spellID then
+		start, duration, enabled = GetSpellCooldown(spellID)
+	elseif spellName then
+		start, duration, enabled = GetSpellCooldown(spellName)
+	else
+		return 0
+	end
+
+	-- Not usable / doesn't exist
+	if not start or enabled == 0 then
+		return 0
+	end
+
+	-- No cooldown or GCD only (duration <= 1.5)
+	if start == 0 or duration == 0 then
+		return 0
+	end
+
+	local remaining = (start + duration) - GetTime()
+
+	-- Return remaining CD, or 0 if it's just GCD
+	if remaining > 0 and duration > 1.5 then
+		return remaining
+	end
+
+	return 0
+end
+
+xSpellCooldown = xVermin.SpellCooldown

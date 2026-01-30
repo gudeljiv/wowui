@@ -78,8 +78,8 @@ local HandleUnit = function(unit)
 			-- if IsSpellInRange("Arcane Torrent", unit) == 1 and select(2, GetSpellCooldown("Arcane Torrent")) <= 1.5 then
 			if xVermin.InRange(8, unit, max) and select(2, GetSpellCooldown("Arcane Torrent")) <= 1.5 then
 				HRF = true
-			elseif xVermin.InRange(10, unit, max) and select(2, GetSpellCooldown("Hammer of Justice")) <= 1.5 then
-				HRF = true
+				-- elseif xVermin.InRange(10, unit, max) and select(2, GetSpellCooldown("Hammer of Justice")) <= 1.5 then
+				-- 	HRF = true
 			end
 		end
 

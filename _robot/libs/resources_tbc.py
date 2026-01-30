@@ -209,6 +209,7 @@ data = {
             {"name": "judgement", "type": "GetSpellTexture", "id": 20271, "key": "2", "modifier": "lshift"},
             {"name": "seal of righteousness", "type": "GetSpellTexture", "id": 20154, "key": "1", "modifier": "lshift"},
             {"name": "purify", "type": "GetSpellTexture", "id": 4987, "key": "t"},
+            {"name": "hammer of justice", "type": "GetSpellTexture", "id": 853, "key": "1"},
             # {"name": "judgement", "type": "GetSpellTexture", "id": 20271, "key": "2", "modifier": "lshift"},
             # {"name": "crusader strike", "type": "GetSpellTexture", "id": 35395, "key": "5"},
             # {"name": "avengers shield", "type": "GetSpellTexture", "id": 31935, "key": "4", "modifier": "lshift"},
