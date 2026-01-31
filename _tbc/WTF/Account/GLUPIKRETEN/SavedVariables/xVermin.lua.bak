@@ -382,6 +382,25 @@ xVerminSavedData = {
 ["Galgann Firehammer"] = {
 "War Stomp",
 },
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
+},
+["Entropic Horror"] = {
+"Lava Lash",
+"Flame Shock",
+},
+["Enraged Voidwalker"] = {
+"Poison Cloud",
+},
+["Mordresh Fire Eye"] = {
+"Rend",
+"Deep Wound",
+},
 ["Evolving Ectoplasm"] = {
 "Attack",
 "Chilled",
@@ -400,20 +419,6 @@ xVerminSavedData = {
 "Flame Shock",
 "Corruption",
 "Curse of Agony",
-},
-["Entropic Horror"] = {
-"Lava Lash",
-"Flame Shock",
-},
-["Enraged Voidwalker"] = {
-"Poison Cloud",
-},
-["Mordresh Fire Eye"] = {
-"Rend",
-"Deep Wound",
-},
-["Sandfury Shadowcaster"] = {
-"Earthbind",
 },
 ["Mutanus the Devourer"] = {
 "Shadow Word: Pain",
@@ -464,13 +469,8 @@ xVerminSavedData = {
 "Concussive Shot",
 "Entrapment",
 },
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
+["Sandfury Shadowcaster"] = {
+"Earthbind",
 },
 ["Nelyz"] = {
 "Concussive Shot",

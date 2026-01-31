@@ -23,7 +23,7 @@ VER 3 000000000000003F "gather" "134400"
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:858
+/cast item:0
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip

@@ -3,13 +3,16 @@ if not Masque then return end
 
 Masque:AddSkin("ElvUI", {
 	Author = "Lorade",
+	Description = "Skin inspired by the looks of ElvUI",
 	Version = "12.0.0",
+	Websites = {"https://www.curseforge.com/wow/addons/masque-elvui"},
 	Masque_Version = 120000,
 	Shape = "Square",
 	Backdrop = {
 		Width = 38,
 		Height = 38,
-		Color = {1,1,1,1},
+		BlendMode = "Blend",
+		Color = {1, 1, 1, 0.5},
 		Texture = [[Interface\AddOns\Masque_ElvUI\Textures\Backdrop]],
 	},
 	Icon = {
@@ -31,6 +34,9 @@ Masque:AddSkin("ElvUI", {
 		Width = 38,
 		Height = 38,
 		Color = {1, 0.8, 0.0, 0.25},
+		DrawLayer = "BORDER",
+		DrawLevel = 1,
+		UseColor = true,
 		Texture = [[Interface\AddOns\Masque_ElvUI\Textures\Flash]],
 	},
 	Normal = {
@@ -59,6 +65,9 @@ Masque:AddSkin("ElvUI", {
 		OffsetY = 0,
 		Texture = [[Interface\AddOns\Masque_ElvUI\Textures\Border]],
 	},
+	DebuffBorder = "Border",
+	EnchantBorder = "Border",
+	IconBorder = "Border",
 	Gloss = {
 		Hide = true,
 	},
@@ -100,6 +109,16 @@ Masque:AddSkin("ElvUI", {
 		OffsetX = 1,
 		OffsetY = -1,
 	},
+	AutoCastShine = {
+		Width = 35,
+		Height = 35,
+		OffsetX = 1,
+		OffsetY = -1,
+	},
+	AssistedCombatHighlight = {
+		Width = 36,
+		Height = 36,
+	},
 }, true)
 
 Masque:AddSkin("ElvUI - Hide Empties", {
@@ -107,7 +126,7 @@ Masque:AddSkin("ElvUI - Hide Empties", {
 	Backdrop = {
 		Width = 38,
 		Height = 38,
-		Color = {1,1,1,1},
+		Color = {1,1,1, 0.5},
 		Texture = [[Interface\AddOns\Masque_ElvUI\Textures\Backdrop_Hidden_Empties]],
 	},
 	Normal = {
@@ -131,7 +150,7 @@ Masque:AddSkin("ElvUI - No Backdrop", {
 	Backdrop = {
 		Width = 38,
 		Height = 38,
-		Color = {1,1,1,1},
+		Color = {1,1,1,0},
 		Texture = [[Interface\AddOns\Masque_ElvUI\Textures\No_Backdrop]],
 	},
 }, true)

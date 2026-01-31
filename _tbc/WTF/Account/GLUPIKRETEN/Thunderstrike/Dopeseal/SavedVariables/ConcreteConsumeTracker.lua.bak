@@ -1,0 +1,29 @@
+
+ConcreteConsumeTrackerTBC_icon = {
+["profileKeys"] = {
+["Dopeseal - Thunderstrike"] = "Dopeseal - Thunderstrike",
+},
+["profiles"] = {
+["Dopeseal - Thunderstrike"] = {
+},
+},
+}
+ConcreteConsumeTrackerTBCOptions = {
+["Scroll Stamina"] = "None",
+["Scroll Agility"] = "None",
+["Off-Hand"] = "None",
+["Food"] = "Hide",
+["Flask"] = "None",
+["Mover"] = true,
+["Scroll Spirit"] = "None",
+["Scroll Strength"] = "Scroll of Strength I",
+["Scroll Intellect"] = "Hide",
+["Battle"] = "None",
+["Guardian"] = "None",
+["Main-Hand"] = "None",
+["Scroll Protection"] = "None",
+["Background"] = "Graphical",
+["Visibility"] = true,
+["Size"] = "25",
+}
+ConcreteConsumeTrackerTBCV = "2.0.3"

@@ -131,3 +131,5 @@ AdiBags: enabled
 AdiBags_Config: enabled
 SortBags: enabled
 Blizzard_CombatText: enabled
+ConcreteConsumeTracker: disabled
+!ConcreteOptions: disabled

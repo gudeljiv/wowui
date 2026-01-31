@@ -9,8 +9,8 @@ xKillCount = {
 ["anchor"] = "UIParent",
 },
 ["experience"] = {
-["pulltotal"] = 78,
-["totaltotal"] = 65087,
+["pulltotal"] = 2428,
+["totaltotal"] = 80109,
 },
 ["killLog"] = {
 },

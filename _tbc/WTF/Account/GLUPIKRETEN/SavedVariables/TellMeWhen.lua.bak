@@ -3309,6 +3309,7 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
+["DurationMinEnabled"] = true,
 ["DurationMin"] = 15,
 ["Conditions"] = {
 {
@@ -3318,7 +3319,6 @@ nil,
 },
 ["n"] = 1,
 },
-["DurationMinEnabled"] = true,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -3446,6 +3446,7 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
+["DurationMinEnabled"] = true,
 ["DurationMin"] = 15,
 ["Conditions"] = {
 {
@@ -3455,7 +3456,6 @@ nil,
 },
 ["n"] = 1,
 },
-["DurationMinEnabled"] = true,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -3761,6 +3761,7 @@ nil,
 },
 ["ROGUE"] = {
 ["Locked"] = true,
+["NumGroups"] = 5,
 ["Version"] = 11001001,
 ["Groups"] = {
 {
@@ -5015,7 +5016,6 @@ nil,
 ["Scale"] = 0.4,
 },
 },
-["NumGroups"] = 5,
 },
 ["MAGE"] = {
 ["Groups"] = {
@@ -5701,6 +5701,7 @@ nil,
 },
 ["SHAMAN test"] = {
 ["Locked"] = true,
+["NumGroups"] = 5,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -7052,7 +7053,6 @@ nil,
 },
 },
 ["Version"] = 101600,
-["NumGroups"] = 5,
 },
 ["Dopesnare - Stitches"] = {
 ["Version"] = 101600,
@@ -7077,6 +7077,7 @@ nil,
 },
 ["WARLOCK"] = {
 ["Locked"] = true,
+["Version"] = 12000002,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -10311,7 +10312,6 @@ nil,
 },
 },
 ["NumGroups"] = 5,
-["Version"] = 12000002,
 },
 ["Dopeclaw - Living Flame"] = {
 ["Version"] = 11001001,
@@ -10339,6 +10339,7 @@ nil,
 },
 ["SHAMAN"] = {
 ["Locked"] = true,
+["NumGroups"] = 5,
 ["Version"] = 12000302,
 ["Groups"] = {
 {
@@ -12018,7 +12019,6 @@ nil,
 },
 },
 },
-["NumGroups"] = 5,
 },
 ["Dopetrap - Lone Wolf"] = {
 ["Version"] = 102000,
@@ -12046,8 +12046,6 @@ nil,
 },
 ["DRUID"] = {
 ["Locked"] = true,
-["Version"] = 12000302,
-["NumGroups"] = 5,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -14899,6 +14897,8 @@ nil,
 },
 },
 },
+["Version"] = 12000302,
+["NumGroups"] = 5,
 },
 ["Vermin - Zandalar Tribe"] = {
 ["Version"] = 110401,
@@ -14910,6 +14910,7 @@ nil,
 ["Version"] = 110001,
 },
 ["DEATHKNIGHT"] = {
+["NumGroups"] = 5,
 ["Version"] = 101600,
 ["Groups"] = {
 {
@@ -18330,7 +18331,6 @@ nil,
 },
 },
 },
-["NumGroups"] = 5,
 },
 ["HUNTER"] = {
 ["Groups"] = {
@@ -23180,6 +23180,7 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
+["DurationMinEnabled"] = true,
 ["DurationMin"] = 15,
 ["Conditions"] = {
 {
@@ -23189,7 +23190,6 @@ nil,
 },
 ["n"] = 1,
 },
-["DurationMinEnabled"] = true,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -23279,6 +23279,7 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
+["DurationMinEnabled"] = true,
 ["DurationMin"] = 15,
 ["Conditions"] = {
 {
@@ -23288,7 +23289,6 @@ nil,
 },
 ["n"] = 1,
 },
-["DurationMinEnabled"] = true,
 ["States"] = {
 {
 ["Alpha"] = 0,
