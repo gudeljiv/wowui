@@ -7,12 +7,11 @@ _detalhes_database = {
 ["tabelas"] = {
 {
 {
-["combatId"] = 311,
 ["tipo"] = 2,
+["combatId"] = 311,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.003818,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -20,25 +19,25 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 178.003818,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
 ["damage_from"] = {
+["Environment (Fire)"] = true,
 ["Sunscale Lashtail"] = true,
 },
 ["targets"] = {
 ["Sunscale Lashtail"] = 178,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879966,
+["totalabsorbed"] = 0.003818,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -153,20 +152,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 28.36714231078329,
-["custom"] = 0,
 ["tipo"] = 1,
-["damage_taken"] = 27.003818,
+["custom"] = 0,
+["last_event"] = 1769879966,
+["damage_taken"] = 55.003818,
 ["start_time"] = 1769879960,
 ["delay"] = 0,
-["last_event"] = 1769879966,
+["last_dps"] = 28.36714231078329,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.005395,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -174,25 +174,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 27.005395,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3254-00007E3950",
-["aID"] = "3254",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 27,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.005395,
+["fight_component"] = true,
 ["end_time"] = 1769879966,
+["aID"] = "3254",
 ["nome"] = "Sunscale Lashtail",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -250,125 +251,125 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879966,
 ["damage_taken"] = 178.005395,
 ["start_time"] = 1769879962,
 ["delay"] = 0,
-["last_event"] = 1769879966,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 311,
 ["tipo"] = 3,
+["combatId"] = 311,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 311,
 ["tipo"] = 7,
+["combatId"] = 311,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 311,
 ["tipo"] = 9,
+["combatId"] = 311,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["serial"] = "Player-6409-04BC9882",
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 18,
 ["pets"] = {
 },
-["buff_uptime_targets"] = {
-},
 ["classe"] = "SHAMAN",
-["buff_uptime"] = 18,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["grupo"] = true,
 ["debuff_uptime"] = 6,
-["aID"] = "6409-04BC9882",
+["debuff_uptime_targets"] = {
+},
 ["nome"] = "Poklopac",
-["last_event"] = 1769879966,
+["grupo"] = true,
 ["tipo"] = 4,
+["last_event"] = 1769879966,
+["buff_uptime_targets"] = {
+},
+["serial"] = "Player-6409-04BC9882",
+["aID"] = "6409-04BC9882",
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-6422-1-38847-3254-00007E3950",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3254",
+["fight_component"] = true,
 ["nome"] = "Sunscale Lashtail",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-6422-1-38847-3254-00007E3950",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 311,
 ["tipo"] = 2,
+["combatId"] = 311,
 ["_ActorTable"] = {
 },
 },
@@ -389,8 +390,8 @@ _detalhes_database = {
 ["playerTalents"] = {
 },
 ["totals"] = {
-4135,
-0,
+34567,
+3209,
 {
 0,
 [0] = 0,
@@ -401,10 +402,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -424,10 +425,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -460,7 +461,8 @@ _detalhes_database = {
 ["combat_id"] = 311,
 ["timeStart"] = 1769879961,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Sunscale Lashtail"] = 1,
@@ -473,13 +475,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -490,18 +492,16 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243398.284,
-["TimeData"] = {
-},
 ["contra"] = "Sunscale Lashtail",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 310,
 ["tipo"] = 2,
+["combatId"] = 310,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.003866,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -509,6 +509,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 595.003866,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -522,16 +523,14 @@ _detalhes_database = {
 ["Razormane Water Seeker"] = 223,
 ["Razormane Hunter"] = 223,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879950,
+["totalabsorbed"] = 0.003866,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
@@ -652,20 +651,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 41.29390422648439,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879949,
 ["damage_taken"] = 129.003866,
 ["start_time"] = 1769879935,
 ["delay"] = 0,
-["last_event"] = 1769879949,
+["last_dps"] = 41.29390422648439,
 },
 {
 ["flag_original"] = 2632,
-["totalabsorbed"] = 0.004034,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -673,25 +673,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 55.004034,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3265-00007E346C",
-["aID"] = "3265",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 55,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.004034,
+["fight_component"] = true,
 ["end_time"] = 1769879950,
+["aID"] = "3265",
 ["nome"] = "Razormane Hunter",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -722,23 +723,22 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879944,
 ["damage_taken"] = 223.004034,
 ["start_time"] = 1769879937,
 ["delay"] = 0,
-["last_event"] = 1769879944,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 4680,
-["totalabsorbed"] = 0.002483,
 ["pets"] = {
 },
-["classe"] = "PET",
+["aID"] = "3939",
 ["total_without_pet"] = 45.002483,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
@@ -746,21 +746,21 @@ _detalhes_database = {
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3939-00007E3471",
-["aID"] = "3939",
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 45,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["classe"] = "PET",
+["fight_component"] = true,
 ["end_time"] = 1769879950,
+["totalabsorbed"] = 0.002483,
 ["nome"] = "Razormane Wolf",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -791,20 +791,20 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
 ["friendlyfire"] = {
 },
-["last_dps"] = 0,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879949,
 ["damage_taken"] = 149.002483,
 ["start_time"] = 1769879938,
 ["delay"] = 0,
-["last_event"] = 1769879949,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.005923,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -812,25 +812,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 29.005923,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3267-00007E348A",
-["aID"] = "3267",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 29,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.005923,
+["fight_component"] = true,
 ["end_time"] = 1769879950,
+["aID"] = "3267",
 ["nome"] = "Razormane Water Seeker",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -861,93 +862,93 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879939,
 ["damage_taken"] = 223.005923,
 ["start_time"] = 1769879947,
 ["delay"] = 1769879939,
-["last_event"] = 1769879939,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 310,
 ["tipo"] = 3,
+["combatId"] = 310,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 310,
 ["tipo"] = 7,
+["combatId"] = 310,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 310,
 ["tipo"] = 9,
+["combatId"] = 310,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 45,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 15,
-["appliedamt"] = 2,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 45,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
-["last_event"] = 1769879950,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769879950,
 },
 },
 },
 {
-["combatId"] = 310,
 ["tipo"] = 2,
+["combatId"] = 310,
 ["_ActorTable"] = {
 },
 },
@@ -979,10 +980,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1002,10 +1003,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1038,7 +1039,8 @@ _detalhes_database = {
 ["combat_id"] = 310,
 ["timeStart"] = 1769879936,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Wolf"] = 1,
@@ -1053,13 +1055,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -1070,18 +1072,16 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243373.631,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Water Seeker",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 309,
 ["tipo"] = 2,
+["combatId"] = 309,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.001276,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -1089,6 +1089,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 394.001276,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -1100,16 +1101,14 @@ _detalhes_database = {
 ["Razormane Thornweaver"] = 196,
 ["Razormane Water Seeker"] = 198,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879932,
+["totalabsorbed"] = 0.001276,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -1227,20 +1226,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 47.56746058193883,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879931,
 ["damage_taken"] = 37.001276,
 ["start_time"] = 1769879924,
 ["delay"] = 0,
-["last_event"] = 1769879931,
+["last_dps"] = 47.56746058193883,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.005215,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -1248,25 +1248,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 23.005215,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3268-00007E328E",
-["aID"] = "3268",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 23,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.005215,
+["fight_component"] = true,
 ["end_time"] = 1769879932,
+["aID"] = "3268",
 ["nome"] = "Razormane Thornweaver",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -1298,20 +1299,19 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879926,
 ["damage_taken"] = 196.005215,
 ["start_time"] = 1769879924,
 ["delay"] = 0,
-["last_event"] = 1769879926,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.004022,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -1319,25 +1319,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 14.004022,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3267-0000FE339E",
-["aID"] = "3267",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 14,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.004022,
+["fight_component"] = true,
 ["end_time"] = 1769879932,
+["aID"] = "3267",
 ["nome"] = "Razormane Water Seeker",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -1368,43 +1369,41 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879930,
 ["damage_taken"] = 198.004022,
 ["start_time"] = 1769879930,
 ["delay"] = 0,
-["last_event"] = 1769879930,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 309,
 ["tipo"] = 3,
+["combatId"] = 309,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 309,
 ["tipo"] = 7,
+["combatId"] = 309,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 309,
 ["tipo"] = 9,
+["combatId"] = 309,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["interrupt_cast_overlap"] = 0,
-["pets"] = {
-},
+["buff_uptime"] = 24,
 ["aID"] = "6409-04BC9882",
 ["interrupt_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8042] = {
 ["id"] = 8042,
@@ -1417,67 +1416,69 @@ _detalhes_database = {
 ["counter"] = 2,
 },
 },
+["tipo"] = 9,
 },
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 8,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 8,
-["appliedamt"] = 2,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 8,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["interrompeu_oque"] = {
 [6278] = 2,
 },
-["nome"] = "Poklopac",
+["buff_uptime_targets"] = {
+},
 ["interrupt_targets"] = {
 ["Razormane Water Seeker"] = 2,
 },
 ["grupo"] = true,
-["buff_uptime_targets"] = {
+["pets"] = {
 },
-["buff_uptime"] = 24,
+["classe"] = "SHAMAN",
+["last_event"] = 1769879935,
 ["tipo"] = 4,
 ["interrupt"] = 2.001807,
-["classe"] = "SHAMAN",
 ["serial"] = "Player-6409-04BC9882",
-["last_event"] = 1769879935,
+["nome"] = "Poklopac",
 },
 },
 },
 {
-["combatId"] = 309,
 ["tipo"] = 2,
+["combatId"] = 309,
 ["_ActorTable"] = {
 },
 },
@@ -1510,10 +1511,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 2,
 ["dispell"] = 0,
+["interrupt"] = 2,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1533,10 +1534,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 2,
 ["dispell"] = 0,
+["interrupt"] = 2,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1570,7 +1571,8 @@ _detalhes_database = {
 ["combat_id"] = 309,
 ["timeStart"] = 1769879924,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Thornweaver"] = 1,
@@ -1584,13 +1586,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -1601,18 +1603,16 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243361.921,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Thornweaver",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 308,
 ["tipo"] = 2,
+["combatId"] = 308,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.008198,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -1620,6 +1620,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 194.008198,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -1629,16 +1630,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Razormane Thornweaver"] = 194,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879920,
+["totalabsorbed"] = 0.008198,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -1726,20 +1725,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 38.91058925009232,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879919,
 ["damage_taken"] = 24.008198,
 ["start_time"] = 1769879915,
 ["delay"] = 0,
-["last_event"] = 1769879919,
+["last_dps"] = 38.91058925009232,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.002069,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -1747,25 +1747,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 24.002069,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3268-0000FE339E",
-["aID"] = "3268",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 24,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.002069,
+["fight_component"] = true,
 ["end_time"] = 1769879920,
+["aID"] = "3268",
 ["nome"] = "Razormane Thornweaver",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -1797,93 +1798,93 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879919,
 ["damage_taken"] = 194.002069,
 ["start_time"] = 1769879917,
 ["delay"] = 0,
-["last_event"] = 1769879919,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 308,
 ["tipo"] = 3,
+["combatId"] = 308,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 308,
 ["tipo"] = 7,
+["combatId"] = 308,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 308,
 ["tipo"] = 9,
+["combatId"] = 308,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 15,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 5,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 5,
-["appliedamt"] = 1,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 5,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 15,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
-["last_event"] = 1769879920,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769879920,
 },
 },
 },
 {
-["combatId"] = 308,
 ["tipo"] = 2,
+["combatId"] = 308,
 ["_ActorTable"] = {
 },
 },
@@ -1916,10 +1917,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1939,10 +1940,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1972,7 +1973,8 @@ _detalhes_database = {
 ["combat_id"] = 308,
 ["timeStart"] = 1769879915,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Thornweaver"] = 1,
@@ -1985,13 +1987,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -2002,18 +2004,16 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243353.058,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Thornweaver",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 307,
 ["tipo"] = 2,
+["combatId"] = 307,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.001788,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -2021,6 +2021,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 221.001788,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -2030,16 +2031,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Razormane Thornweaver"] = 221,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879913,
+["totalabsorbed"] = 0.001788,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -2083,12 +2082,12 @@ _detalhes_database = {
 ["counter"] = 4,
 ["total"] = 31,
 ["c_max"] = 0,
-["RESIST"] = 1,
+["spellschool"] = 4,
 ["id"] = 29469,
 ["r_dmg"] = 0,
-["spellschool"] = 4,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
@@ -2127,20 +2126,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 44.12974999998564,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879912,
 ["damage_taken"] = 37.001788,
 ["start_time"] = 1769879908,
 ["delay"] = 0,
-["last_event"] = 1769879912,
+["last_dps"] = 44.12974999998564,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.002837,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -2148,25 +2148,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 37.002837,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3268-00007E346E",
-["aID"] = "3268",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 37,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.002837,
+["fight_component"] = true,
 ["end_time"] = 1769879913,
+["aID"] = "3268",
 ["nome"] = "Razormane Thornweaver",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -2224,106 +2225,106 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879912,
 ["damage_taken"] = 221.002837,
 ["start_time"] = 1769879908,
 ["delay"] = 0,
-["last_event"] = 1769879912,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 307,
 ["tipo"] = 3,
+["combatId"] = 307,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 307,
 ["tipo"] = 7,
+["combatId"] = 307,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 307,
 ["tipo"] = 9,
+["combatId"] = 307,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 14,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 5,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 4,
-["appliedamt"] = 2,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 5,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 14,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
-["last_event"] = 1769879913,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769879913,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-6422-1-38847-3268-00007E346E",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3268",
+["fight_component"] = true,
 ["nome"] = "Razormane Thornweaver",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-6422-1-38847-3268-00007E346E",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 307,
 ["tipo"] = 2,
+["combatId"] = 307,
 ["_ActorTable"] = {
 },
 },
@@ -2356,10 +2357,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2379,10 +2380,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2418,7 +2419,8 @@ _detalhes_database = {
 ["combat_id"] = 307,
 ["timeStart"] = 1769879908,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Thornweaver"] = 1,
@@ -2431,13 +2433,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -2448,18 +2450,16 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243345.75,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Thornweaver",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 306,
 ["tipo"] = 2,
+["combatId"] = 306,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.007832,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -2467,6 +2467,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 422.007832,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -2478,16 +2479,14 @@ _detalhes_database = {
 ["Razormane Thornweaver"] = 217,
 ["Razormane Water Seeker"] = 205,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879905,
+["totalabsorbed"] = 0.007832,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -2605,20 +2604,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 35.81801324051659,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879905,
 ["damage_taken"] = 53.007832,
 ["start_time"] = 1769879894,
 ["delay"] = 0,
-["last_event"] = 1769879905,
+["last_dps"] = 35.81801324051659,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.00246,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -2626,25 +2626,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 40.00246,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3268-00007E37C1",
-["aID"] = "3268",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 40,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.00246,
+["fight_component"] = true,
 ["end_time"] = 1769879905,
+["aID"] = "3268",
 ["nome"] = "Razormane Thornweaver",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -2702,20 +2703,19 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879899,
 ["damage_taken"] = 217.00246,
 ["start_time"] = 1769879895,
 ["delay"] = 0,
-["last_event"] = 1769879899,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.005858,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -2723,25 +2723,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 13.005858,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3267-00007E3448",
-["aID"] = "3267",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 13,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.005858,
+["fight_component"] = true,
 ["end_time"] = 1769879905,
+["aID"] = "3267",
 ["nome"] = "Razormane Water Seeker",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -2772,43 +2773,41 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879902,
 ["damage_taken"] = 205.005858,
 ["start_time"] = 1769879902,
 ["delay"] = 0,
-["last_event"] = 1769879902,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 306,
 ["tipo"] = 3,
+["combatId"] = 306,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 306,
 ["tipo"] = 7,
+["combatId"] = 306,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 306,
 ["tipo"] = 9,
+["combatId"] = 306,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["interrupt_cast_overlap"] = 0,
-["pets"] = {
-},
+["buff_uptime"] = 33,
 ["aID"] = "6409-04BC9882",
 ["interrupt_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8042] = {
 ["id"] = 8042,
@@ -2821,80 +2820,82 @@ _detalhes_database = {
 ["counter"] = 1,
 },
 },
+["tipo"] = 9,
 },
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 11,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 11,
-["appliedamt"] = 2,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 11,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["interrompeu_oque"] = {
 [6278] = 1,
 },
-["nome"] = "Poklopac",
+["buff_uptime_targets"] = {
+},
 ["interrupt_targets"] = {
 ["Razormane Water Seeker"] = 1,
 },
 ["grupo"] = true,
-["buff_uptime_targets"] = {
+["pets"] = {
 },
-["buff_uptime"] = 33,
+["classe"] = "SHAMAN",
+["last_event"] = 1769879905,
 ["tipo"] = 4,
 ["interrupt"] = 1.001163,
-["classe"] = "SHAMAN",
 ["serial"] = "Player-6409-04BC9882",
-["last_event"] = 1769879905,
+["nome"] = "Poklopac",
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-6422-1-38847-3268-00007E37C1",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3268",
+["fight_component"] = true,
 ["nome"] = "Razormane Thornweaver",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-6422-1-38847-3268-00007E37C1",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 306,
 ["tipo"] = 2,
+["combatId"] = 306,
 ["_ActorTable"] = {
 },
 },
@@ -2927,10 +2928,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 1,
 ["dispell"] = 0,
+["interrupt"] = 1,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2950,10 +2951,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 1,
 ["dispell"] = 0,
+["interrupt"] = 1,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2990,7 +2991,8 @@ _detalhes_database = {
 ["combat_id"] = 306,
 ["timeStart"] = 1769879894,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Thornweaver"] = 1,
@@ -3004,13 +3006,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -3021,18 +3023,16 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243331.674,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Thornweaver",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 305,
 ["tipo"] = 2,
+["combatId"] = 305,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.005767,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -3040,6 +3040,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 217.005767,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -3049,16 +3050,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Razormane Thornweaver"] = 217,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879888,
+["totalabsorbed"] = 0.005767,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -3145,20 +3144,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 37.49883653026996,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879886,
 ["damage_taken"] = 34.005767,
 ["start_time"] = 1769879882,
 ["delay"] = 0,
-["last_event"] = 1769879886,
+["last_dps"] = 37.49883653026996,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.007668,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -3166,25 +3166,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 34.007668,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3268-00007E3636",
-["aID"] = "3268",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 34,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.007668,
+["fight_component"] = true,
 ["end_time"] = 1769879888,
+["aID"] = "3268",
 ["nome"] = "Razormane Thornweaver",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -3215,93 +3216,93 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879885,
 ["damage_taken"] = 217.007668,
 ["start_time"] = 1769879883,
 ["delay"] = 0,
-["last_event"] = 1769879885,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 305,
 ["tipo"] = 3,
+["combatId"] = 305,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 305,
 ["tipo"] = 7,
+["combatId"] = 305,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 305,
 ["tipo"] = 9,
+["combatId"] = 305,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 18,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 18,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
-["last_event"] = 1769879888,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769879888,
 },
 },
 },
 {
-["combatId"] = 305,
 ["tipo"] = 2,
+["combatId"] = 305,
 ["_ActorTable"] = {
 },
 },
@@ -3334,10 +3335,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3357,10 +3358,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3390,7 +3391,8 @@ _detalhes_database = {
 ["combat_id"] = 305,
 ["timeStart"] = 1769879882,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Thornweaver"] = 1,
@@ -3403,13 +3405,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -3420,18 +3422,16 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243319.852,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Thornweaver",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 304,
 ["tipo"] = 2,
+["combatId"] = 304,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.006139,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -3439,6 +3439,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 418.006139,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -3450,16 +3451,14 @@ _detalhes_database = {
 ["Razormane Water Seeker"] = 224,
 ["Razormane Thornweaver"] = 194,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879880,
+["totalabsorbed"] = 0.006139,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -3549,20 +3548,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 39.4085169228275,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879880,
 ["damage_taken"] = 29.006139,
 ["start_time"] = 1769879870,
 ["delay"] = 0,
-["last_event"] = 1769879880,
+["last_dps"] = 39.4085169228275,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.002987,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -3570,25 +3570,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 15.002987,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3268-00007E370B",
-["aID"] = "3268",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 15,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.002987,
+["fight_component"] = true,
 ["end_time"] = 1769879880,
+["aID"] = "3268",
 ["nome"] = "Razormane Thornweaver",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -3634,10 +3635,10 @@ _detalhes_database = {
 ["c_max"] = 0,
 ["id"] = 467,
 ["r_dmg"] = 0,
-["RESIST"] = 1,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
+["RESIST"] = 1,
 ["a_amt"] = 0,
 ["c_min"] = 0,
 ["successful_casted"] = 1,
@@ -3647,20 +3648,19 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879880,
 ["damage_taken"] = 194.002987,
 ["start_time"] = 1769879877,
 ["delay"] = 0,
-["last_event"] = 1769879880,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.002458,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -3668,25 +3668,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 14.002458,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3267-00007E376C",
-["aID"] = "3267",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 14,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.002458,
+["fight_component"] = true,
 ["end_time"] = 1769879880,
+["aID"] = "3267",
 ["nome"] = "Razormane Water Seeker",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -3718,106 +3719,106 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879873,
 ["damage_taken"] = 224.002458,
 ["start_time"] = 1769879871,
 ["delay"] = 0,
-["last_event"] = 1769879873,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 304,
 ["tipo"] = 3,
+["combatId"] = 304,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 304,
 ["tipo"] = 7,
+["combatId"] = 304,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 304,
 ["tipo"] = 9,
+["combatId"] = 304,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 30,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 10,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 10,
-["appliedamt"] = 2,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 10,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 30,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
-["last_event"] = 1769879880,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769879880,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-6422-1-38847-3268-00007E370B",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3268",
+["fight_component"] = true,
 ["nome"] = "Razormane Thornweaver",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-6422-1-38847-3268-00007E370B",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 304,
 ["tipo"] = 2,
+["combatId"] = 304,
 ["_ActorTable"] = {
 },
 },
@@ -3850,10 +3851,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3873,10 +3874,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3912,7 +3913,8 @@ _detalhes_database = {
 ["combat_id"] = 304,
 ["timeStart"] = 1769879870,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Water Seeker"] = 1,
@@ -3926,13 +3928,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -3943,18 +3945,16 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243307.806,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Water Seeker",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 303,
 ["tipo"] = 2,
+["combatId"] = 303,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.003958,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -3962,6 +3962,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 602.003958,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -3971,16 +3972,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Razormane Thornweaver"] = 602,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879868,
+["totalabsorbed"] = 0.003958,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -4095,20 +4094,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 43.70899281206638,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879867,
 ["damage_taken"] = 65.003958,
 ["start_time"] = 1769879854,
 ["delay"] = 0,
-["last_event"] = 1769879867,
+["last_dps"] = 43.70899281206638,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.003852,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -4116,25 +4116,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 65.003852,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3268-00007E3797",
-["aID"] = "3268",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 65,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.003852,
+["fight_component"] = true,
 ["end_time"] = 1769879868,
+["aID"] = "3268",
 ["nome"] = "Razormane Thornweaver",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -4207,10 +4208,10 @@ _detalhes_database = {
 ["c_max"] = 0,
 ["id"] = 6950,
 ["r_dmg"] = 0,
-["RESIST"] = 1,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
+["RESIST"] = 1,
 ["a_amt"] = 0,
 ["c_min"] = 0,
 ["successful_casted"] = 2,
@@ -4220,43 +4221,41 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879867,
 ["damage_taken"] = 602.003852,
 ["start_time"] = 1769879855,
 ["delay"] = 0,
-["last_event"] = 1769879867,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 303,
 ["tipo"] = 3,
+["combatId"] = 303,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 303,
 ["tipo"] = 7,
+["combatId"] = 303,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 303,
 ["tipo"] = 9,
+["combatId"] = 303,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["interrupt_cast_overlap"] = 0,
-["pets"] = {
-},
+["buff_uptime"] = 39,
 ["aID"] = "6409-04BC9882",
 ["interrupt_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8042] = {
 ["id"] = 8042,
@@ -4269,80 +4268,82 @@ _detalhes_database = {
 ["counter"] = 1,
 },
 },
+["tipo"] = 9,
 },
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 13,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 13,
-["appliedamt"] = 2,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 13,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["interrompeu_oque"] = {
 [6950] = 1,
 },
-["nome"] = "Poklopac",
+["buff_uptime_targets"] = {
+},
 ["interrupt_targets"] = {
 ["Razormane Thornweaver"] = 1,
 },
 ["grupo"] = true,
-["buff_uptime_targets"] = {
+["pets"] = {
 },
-["buff_uptime"] = 39,
+["classe"] = "SHAMAN",
+["last_event"] = 1769879868,
 ["tipo"] = 4,
 ["interrupt"] = 1.002699,
-["classe"] = "SHAMAN",
 ["serial"] = "Player-6409-04BC9882",
-["last_event"] = 1769879868,
+["nome"] = "Poklopac",
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-6422-1-38847-3268-00007E3725",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3268",
+["fight_component"] = true,
 ["nome"] = "Razormane Thornweaver",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-6422-1-38847-3268-00007E3725",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 303,
 ["tipo"] = 2,
+["combatId"] = 303,
 ["_ActorTable"] = {
 },
 },
@@ -4375,10 +4376,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 1,
 ["dispell"] = 0,
+["interrupt"] = 1,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4398,23 +4399,23 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 1,
 ["dispell"] = 0,
+["interrupt"] = 1,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
 },
 ["frags_need_refresh"] = true,
 ["amountCasts"] = {
-["Poklopac"] = {
-["Earth Shock"] = 1,
-["Lightning Shield"] = 1,
-},
 ["Razormane Thornweaver"] = {
 ["Faerie Fire"] = 2,
 ["Thorns"] = 2,
+},
+["Poklopac"] = {
+["Earth Shock"] = 1,
+["Lightning Shield"] = 1,
 },
 },
 ["instance_type"] = "none",
@@ -4439,7 +4440,8 @@ _detalhes_database = {
 ["combat_id"] = 303,
 ["timeStart"] = 1769879855,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Thornweaver"] = 3,
@@ -4452,13 +4454,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -4469,18 +4471,16 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243292.502,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Thornweaver",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 302,
 ["tipo"] = 2,
+["combatId"] = 302,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.00281,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -4488,6 +4488,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 227.00281,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -4497,16 +4498,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Razormane Water Seeker"] = 227,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879845,
+["totalabsorbed"] = 0.00281,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -4593,20 +4592,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 38.05579379717233,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879844,
 ["damage_taken"] = 60.00281,
 ["start_time"] = 1769879839,
 ["delay"] = 0,
-["last_event"] = 1769879844,
+["last_dps"] = 38.05579379717233,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.004082,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -4614,25 +4614,26 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 60.004082,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3267-00007E375A",
-["aID"] = "3267",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 60,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.004082,
+["fight_component"] = true,
 ["end_time"] = 1769879854,
+["aID"] = "3267",
 ["nome"] = "Razormane Water Seeker",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -4691,93 +4692,93 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879848,
 ["damage_taken"] = 227.004082,
 ["start_time"] = 1769879839,
 ["delay"] = 0,
-["last_event"] = 1769879848,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 302,
 ["tipo"] = 3,
+["combatId"] = 302,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 302,
 ["tipo"] = 7,
+["combatId"] = 302,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 302,
 ["tipo"] = 9,
+["combatId"] = 302,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 18,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 18,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
-["last_event"] = 1769879845,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769879845,
 },
 },
 },
 {
-["combatId"] = 302,
 ["tipo"] = 2,
+["combatId"] = 302,
 ["_ActorTable"] = {
 },
 },
@@ -4810,10 +4811,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4833,10 +4834,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4866,7 +4867,8 @@ _detalhes_database = {
 ["combat_id"] = 302,
 ["timeStart"] = 1769879839,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Water Seeker"] = 1,
@@ -4958,13 +4960,13 @@ false,
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -4975,18 +4977,16 @@ false,
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243276.852,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Water Seeker",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 301,
 ["tipo"] = 2,
+["combatId"] = 301,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.005035,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -4994,6 +4994,7 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 215.005035,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -5004,16 +5005,14 @@ false,
 ["targets"] = {
 ["Razormane Thornweaver"] = 215,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879836,
+["totalabsorbed"] = 0.005035,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -5100,20 +5099,21 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 45.55191419490402,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879835,
 ["damage_taken"] = 26.005035,
 ["start_time"] = 1769879832,
 ["delay"] = 0,
-["last_event"] = 1769879835,
+["last_dps"] = 45.55191419490402,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.002245,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -5121,25 +5121,26 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 13.002245,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3268-00007E3738",
-["aID"] = "3268",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 13,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.002245,
+["fight_component"] = true,
 ["end_time"] = 1769879836,
+["aID"] = "3268",
 ["nome"] = "Razormane Thornweaver",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -5171,93 +5172,93 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879834,
 ["damage_taken"] = 215.002245,
 ["start_time"] = 1769879832,
 ["delay"] = 0,
-["last_event"] = 1769879834,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 301,
 ["tipo"] = 3,
+["combatId"] = 301,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 301,
 ["tipo"] = 7,
+["combatId"] = 301,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 301,
 ["tipo"] = 9,
+["combatId"] = 301,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 12,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 4,
-["appliedamt"] = 2,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 12,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
-["last_event"] = 1769879836,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769879836,
 },
 },
 },
 {
-["combatId"] = 301,
 ["tipo"] = 2,
+["combatId"] = 301,
 ["_ActorTable"] = {
 },
 },
@@ -5290,10 +5291,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5313,10 +5314,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5349,7 +5350,8 @@ false,
 ["combat_id"] = 301,
 ["timeStart"] = 1769879832,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Thornweaver"] = 1,
@@ -5441,13 +5443,13 @@ false,
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -5458,18 +5460,16 @@ false,
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243269.594,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Thornweaver",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 300,
 ["tipo"] = 2,
+["combatId"] = 300,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.00682,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -5477,6 +5477,7 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 464.00682,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -5488,16 +5489,14 @@ false,
 ["Razormane Thornweaver"] = 240,
 ["Razormane Water Seeker"] = 224,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879821,
+["totalabsorbed"] = 0.00682,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -5573,12 +5572,12 @@ false,
 ["counter"] = 3,
 ["total"] = 26,
 ["c_max"] = 0,
-["RESIST"] = 1,
+["spellschool"] = 8,
 ["id"] = 26364,
 ["r_dmg"] = 0,
-["spellschool"] = 8,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
@@ -5589,20 +5588,21 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 36.43269629395719,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879819,
 ["damage_taken"] = 143.00682,
 ["start_time"] = 1769879808,
 ["delay"] = 0,
-["last_event"] = 1769879819,
+["last_dps"] = 36.43269629395719,
 },
 {
 ["flag_original"] = 2632,
-["totalabsorbed"] = 0.001798,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -5610,25 +5610,26 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 110.001798,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3267-00007E349C",
-["aID"] = "3267",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 110,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.001798,
+["fight_component"] = true,
 ["end_time"] = 1769879832,
+["aID"] = "3267",
 ["nome"] = "Razormane Water Seeker",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -5687,20 +5688,19 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879828,
 ["damage_taken"] = 224.001798,
 ["start_time"] = 1769879808,
 ["delay"] = 0,
-["last_event"] = 1769879828,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.008435,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -5708,25 +5708,26 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 33.008435,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3268-0000FE3454",
-["aID"] = "3268",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 33,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.008435,
+["fight_component"] = true,
 ["end_time"] = 1769879821,
+["aID"] = "3268",
 ["nome"] = "Razormane Thornweaver",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -5757,93 +5758,93 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879811,
 ["damage_taken"] = 240.008435,
 ["start_time"] = 1769879818,
 ["delay"] = 1769879811,
-["last_event"] = 1769879811,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 300,
 ["tipo"] = 3,
+["combatId"] = 300,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 300,
 ["tipo"] = 7,
+["combatId"] = 300,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 300,
 ["tipo"] = 9,
+["combatId"] = 300,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 39,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 13,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 13,
-["appliedamt"] = 2,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 13,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 39,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
-["last_event"] = 1769879821,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769879821,
 },
 },
 },
 {
-["combatId"] = 300,
 ["tipo"] = 2,
+["combatId"] = 300,
 ["_ActorTable"] = {
 },
 },
@@ -5876,10 +5877,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5899,10 +5900,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5935,7 +5936,8 @@ false,
 ["combat_id"] = 300,
 ["timeStart"] = 1769879808,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Thornweaver"] = 1,
@@ -6028,13 +6030,13 @@ false,
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -6045,18 +6047,16 @@ false,
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243245.782,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Thornweaver",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 299,
 ["tipo"] = 2,
+["combatId"] = 299,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.008308,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -6064,6 +6064,7 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 1088.008308,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -6077,16 +6078,14 @@ false,
 ["Razormane Water Seeker"] = 262,
 ["Razormane Hunter"] = 480,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879802,
+["totalabsorbed"] = 0.008308,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
@@ -6094,8 +6093,8 @@ false,
 ["g_amt"] = 0,
 ["n_max"] = 41,
 ["targets"] = {
-["Razormane Thornweaver"] = 0,
 ["Razormane Wolf"] = 255,
+["Razormane Thornweaver"] = 0,
 ["Razormane Water Seeker"] = 190,
 ["Razormane Hunter"] = 330,
 },
@@ -6222,12 +6221,12 @@ false,
 ["counter"] = 7,
 ["total"] = 78,
 ["c_max"] = 0,
-["RESIST"] = 1,
+["spellschool"] = 8,
 ["id"] = 26364,
 ["r_dmg"] = 0,
-["spellschool"] = 8,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
@@ -6238,20 +6237,21 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 34.42846364155867,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879801,
 ["damage_taken"] = 266.008308,
 ["start_time"] = 1769879771,
 ["delay"] = 0,
-["last_event"] = 1769879801,
+["last_dps"] = 34.42846364155867,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.0067,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -6259,25 +6259,26 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 178.0067,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3265-00007E339E",
-["aID"] = "3265",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 178,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.0067,
+["fight_component"] = true,
 ["end_time"] = 1769879802,
+["aID"] = "3265",
 ["nome"] = "Razormane Hunter",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -6336,20 +6337,19 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879801,
 ["damage_taken"] = 480.0067,
 ["start_time"] = 1769879783,
 ["delay"] = 1769879774,
-["last_event"] = 1769879801,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.004462,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -6357,25 +6357,26 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 45.004462,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3267-00007E349C",
-["aID"] = "3267",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 45,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.004462,
+["fight_component"] = true,
 ["end_time"] = 1769879802,
+["aID"] = "3267",
 ["nome"] = "Razormane Water Seeker",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -6433,23 +6434,22 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879798,
 ["damage_taken"] = 262.004462,
 ["start_time"] = 1769879795,
 ["delay"] = 1769879785,
-["last_event"] = 1769879798,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 4680,
-["totalabsorbed"] = 0.001118,
 ["pets"] = {
 },
-["classe"] = "PET",
+["aID"] = "3939",
 ["total_without_pet"] = 43.001118,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
@@ -6457,21 +6457,21 @@ false,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3939-00007E33CE",
-["aID"] = "3939",
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 43,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["classe"] = "PET",
+["fight_component"] = true,
 ["end_time"] = 1769879802,
+["totalabsorbed"] = 0.001118,
 ["nome"] = "Razormane Wolf",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -6504,34 +6504,35 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
 ["friendlyfire"] = {
 },
-["last_dps"] = 0,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879792,
 ["damage_taken"] = 346.001118,
 ["start_time"] = 1769879780,
 ["delay"] = 1769879792,
-["last_event"] = 1769879792,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 299,
 ["tipo"] = 3,
+["combatId"] = 299,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 299,
 ["tipo"] = 7,
+["combatId"] = 299,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 299,
 ["tipo"] = 9,
+["combatId"] = 299,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
@@ -6540,7 +6541,6 @@ false,
 },
 ["aID"] = "6409-04BC9882",
 ["interrupt_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8042] = {
 ["id"] = 8042,
@@ -6553,112 +6553,113 @@ false,
 ["counter"] = 1,
 },
 },
+["tipo"] = 9,
 },
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 32,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 3,
-["id"] = 324,
+["appliedamt"] = 3,
 ["targets"] = {
 },
+["activedamt"] = 3,
 ["uptime"] = 32,
-["appliedamt"] = 3,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 32,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["interrompeu_oque"] = {
 [6278] = 1,
 },
 ["debuff_uptime"] = 4,
-["buff_uptime_targets"] = {
+["debuff_uptime_targets"] = {
 },
 ["interrupt_targets"] = {
 ["Razormane Water Seeker"] = 1,
 },
+["serial"] = "Player-6409-04BC9882",
 ["buff_uptime"] = 96,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["grupo"] = true,
-["nome"] = "Poklopac",
-["serial"] = "Player-6409-04BC9882",
 ["interrupt"] = 1.006678,
-["tipo"] = 4,
-["debuff_uptime_targets"] = {
-},
+["grupo"] = true,
 ["classe"] = "SHAMAN",
+["nome"] = "Poklopac",
 ["last_event"] = 1769879802,
+["tipo"] = 4,
+["buff_uptime_targets"] = {
+},
 },
 {
 ["flag_original"] = 2632,
 ["pets"] = {
 },
-["serial"] = "Creature-0-6422-1-38847-3265-00007E3786",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3265",
+["fight_component"] = true,
 ["nome"] = "Razormane Hunter",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-6422-1-38847-3265-00007E3786",
 ["tipo"] = 4,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-6422-1-38847-3267-00007E349C",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3267",
+["fight_component"] = true,
 ["nome"] = "Razormane Water Seeker",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-6422-1-38847-3267-00007E349C",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 299,
 ["tipo"] = 2,
+["combatId"] = 299,
 ["_ActorTable"] = {
 },
 },
@@ -6691,10 +6692,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 1,
 ["dispell"] = 0,
+["interrupt"] = 1,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -6714,10 +6715,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 1,
 ["dispell"] = 0,
+["interrupt"] = 1,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -6758,7 +6759,8 @@ false,
 ["combat_id"] = 299,
 ["timeStart"] = 1769879771,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Hunter"] = 2,
@@ -6773,13 +6775,13 @@ false,
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -6790,18 +6792,16 @@ false,
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243208.303,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Hunter",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 298,
 ["tipo"] = 2,
+["combatId"] = 298,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.00746,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -6809,6 +6809,7 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 433.00746,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -6820,16 +6821,14 @@ false,
 ["Razormane Wolf"] = 159,
 ["Razormane Hunter"] = 274,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879765,
+["totalabsorbed"] = 0.00746,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -6903,12 +6902,12 @@ false,
 ["counter"] = 7,
 ["total"] = 59,
 ["c_max"] = 0,
-["RESIST"] = 1,
+["spellschool"] = 4,
 ["id"] = 29469,
 ["r_dmg"] = 0,
-["spellschool"] = 4,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
@@ -6947,20 +6946,21 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 48.44567688523825,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879764,
 ["damage_taken"] = 73.00746,
 ["start_time"] = 1769879756,
 ["delay"] = 0,
-["last_event"] = 1769879764,
+["last_dps"] = 48.44567688523825,
 },
 {
 ["flag_original"] = 2632,
-["totalabsorbed"] = 0.008058,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -6968,25 +6968,26 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 41.008058,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3265-00007E345F",
-["aID"] = "3265",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 41,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.008058,
+["fight_component"] = true,
 ["end_time"] = 1769879765,
+["aID"] = "3265",
 ["nome"] = "Razormane Hunter",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -7045,23 +7046,22 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879760,
 ["damage_taken"] = 274.008058,
 ["start_time"] = 1769879756,
 ["delay"] = 0,
-["last_event"] = 1769879760,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 70216,
-["totalabsorbed"] = 0.008689,
 ["pets"] = {
 },
-["classe"] = "PET",
+["aID"] = "3939",
 ["total_without_pet"] = 32.008689,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
@@ -7069,21 +7069,21 @@ false,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3939-00007E348C",
-["aID"] = "3939",
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 32,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["classe"] = "PET",
+["fight_component"] = true,
 ["end_time"] = 1769879765,
+["totalabsorbed"] = 0.008689,
 ["nome"] = "Razormane Wolf",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -7114,112 +7114,113 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
 ["friendlyfire"] = {
 },
-["last_dps"] = 0,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879762,
 ["damage_taken"] = 159.008689,
 ["start_time"] = 1769879756,
 ["delay"] = 0,
-["last_event"] = 1769879762,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 298,
 ["tipo"] = 3,
+["combatId"] = 298,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 298,
 ["tipo"] = 7,
+["combatId"] = 298,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 298,
 ["tipo"] = 9,
+["combatId"] = 298,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["serial"] = "Player-6409-04BC9882",
-["buff_uptime_targets"] = {
-},
+["buff_uptime"] = 27,
 ["pets"] = {
 },
-["debuff_uptime_targets"] = {
-},
 ["classe"] = "SHAMAN",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 9,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 9,
-["appliedamt"] = 1,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 9,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 27,
 ["debuff_uptime"] = 4,
-["aID"] = "6409-04BC9882",
+["buff_uptime_targets"] = {
+},
 ["nome"] = "Poklopac",
-["last_event"] = 1769879765,
+["grupo"] = true,
 ["tipo"] = 4,
+["last_event"] = 1769879765,
+["debuff_uptime_targets"] = {
+},
+["serial"] = "Player-6409-04BC9882",
+["aID"] = "6409-04BC9882",
 },
 },
 },
 {
-["combatId"] = 298,
 ["tipo"] = 2,
+["combatId"] = 298,
 ["_ActorTable"] = {
 },
 },
@@ -7252,10 +7253,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7275,10 +7276,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7312,7 +7313,8 @@ false,
 ["combat_id"] = 298,
 ["timeStart"] = 1769879756,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Wolf"] = 1,
@@ -7326,13 +7328,13 @@ false,
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -7343,18 +7345,16 @@ false,
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243193.712,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Hunter",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 297,
 ["tipo"] = 2,
+["combatId"] = 297,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.008115,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -7362,6 +7362,7 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 228.008115,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -7371,16 +7372,14 @@ false,
 ["targets"] = {
 ["Razormane Water Seeker"] = 228,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879751,
+["totalabsorbed"] = 0.008115,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -7495,20 +7494,21 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 45.99719891067896,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879750,
 ["damage_taken"] = 30.008115,
 ["start_time"] = 1769879746,
 ["delay"] = 0,
-["last_event"] = 1769879750,
+["last_dps"] = 45.99719891067896,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.00851,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -7516,25 +7516,26 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 30.00851,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3267-00007E347B",
-["aID"] = "3267",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 30,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.00851,
+["fight_component"] = true,
 ["end_time"] = 1769879751,
+["aID"] = "3267",
 ["nome"] = "Razormane Water Seeker",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -7565,43 +7566,41 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879748,
 ["damage_taken"] = 228.00851,
 ["start_time"] = 1769879746,
 ["delay"] = 0,
-["last_event"] = 1769879748,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 297,
 ["tipo"] = 3,
+["combatId"] = 297,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 297,
 ["tipo"] = 7,
+["combatId"] = 297,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 297,
 ["tipo"] = 9,
+["combatId"] = 297,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["interrupt_cast_overlap"] = 0,
-["pets"] = {
-},
+["buff_uptime"] = 15,
 ["aID"] = "6409-04BC9882",
 ["interrupt_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8042] = {
 ["id"] = 8042,
@@ -7614,67 +7613,69 @@ false,
 ["counter"] = 1,
 },
 },
+["tipo"] = 9,
 },
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 5,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 5,
-["appliedamt"] = 1,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 5,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["interrompeu_oque"] = {
 [6278] = 1,
 },
-["nome"] = "Poklopac",
+["buff_uptime_targets"] = {
+},
 ["interrupt_targets"] = {
 ["Razormane Water Seeker"] = 1,
 },
 ["grupo"] = true,
-["buff_uptime_targets"] = {
+["pets"] = {
 },
-["buff_uptime"] = 15,
+["classe"] = "SHAMAN",
+["last_event"] = 1769879751,
 ["tipo"] = 4,
 ["interrupt"] = 1.002957,
-["classe"] = "SHAMAN",
 ["serial"] = "Player-6409-04BC9882",
-["last_event"] = 1769879751,
+["nome"] = "Poklopac",
 },
 },
 },
 {
-["combatId"] = 297,
 ["tipo"] = 2,
+["combatId"] = 297,
 ["_ActorTable"] = {
 },
 },
@@ -7707,10 +7708,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 1,
 ["dispell"] = 0,
+["interrupt"] = 1,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7730,10 +7731,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 1,
 ["dispell"] = 0,
+["interrupt"] = 1,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7766,7 +7767,8 @@ false,
 ["combat_id"] = 297,
 ["timeStart"] = 1769879746,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Razormane Water Seeker"] = 1,
@@ -7779,13 +7781,13 @@ false,
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -7796,18 +7798,16 @@ false,
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243183.961,
-["TimeData"] = {
-},
 ["contra"] = "Razormane Water Seeker",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 296,
 ["tipo"] = 2,
+["combatId"] = 296,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.008883,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -7815,6 +7815,7 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 178.008883,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -7824,16 +7825,14 @@ false,
 ["targets"] = {
 ["Sunscale Lashtail"] = 178,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879724,
+["totalabsorbed"] = 0.008883,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -7920,20 +7919,21 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 28.75749321485186,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879723,
 ["damage_taken"] = 45.008883,
 ["start_time"] = 1769879718,
 ["delay"] = 0,
-["last_event"] = 1769879723,
+["last_dps"] = 28.75749321485186,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.00628,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -7941,25 +7941,26 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 45.00628,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3254-00007E3457",
-["aID"] = "3254",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 45,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.00628,
+["fight_component"] = true,
 ["end_time"] = 1769879724,
+["aID"] = "3254",
 ["nome"] = "Sunscale Lashtail",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -8016,106 +8017,106 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879722,
 ["damage_taken"] = 178.00628,
 ["start_time"] = 1769879718,
 ["delay"] = 0,
-["last_event"] = 1769879722,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 296,
 ["tipo"] = 3,
+["combatId"] = 296,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 296,
 ["tipo"] = 7,
+["combatId"] = 296,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 296,
 ["tipo"] = 9,
+["combatId"] = 296,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 17,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 5,
-["appliedamt"] = 2,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 17,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
-["last_event"] = 1769879724,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1769879724,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-6422-1-38847-3254-00007E3457",
-["classe"] = "UNKNOW",
-["fight_component"] = true,
-["monster"] = true,
 ["aID"] = "3254",
+["fight_component"] = true,
 ["nome"] = "Sunscale Lashtail",
+["monster"] = true,
 ["last_event"] = 0,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-6422-1-38847-3254-00007E3457",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 296,
 ["tipo"] = 2,
+["combatId"] = 296,
 ["_ActorTable"] = {
 },
 },
@@ -8148,10 +8149,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -8171,10 +8172,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -8210,7 +8211,8 @@ false,
 ["combat_id"] = 296,
 ["timeStart"] = 1769879718,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Sunscale Lashtail"] = 1,
@@ -8223,13 +8225,13 @@ false,
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -8240,18 +8242,16 @@ false,
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243156.007,
-["TimeData"] = {
-},
 ["contra"] = "Sunscale Lashtail",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 295,
 ["tipo"] = 2,
+["combatId"] = 295,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.007715,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -8259,6 +8259,7 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 227.007715,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -8269,16 +8270,14 @@ false,
 ["targets"] = {
 ["Sunscale Lashtail"] = 227,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879594,
+["totalabsorbed"] = 0.007715,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -8393,20 +8392,21 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 35.97586608559173,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879593,
 ["damage_taken"] = 155.007715,
 ["start_time"] = 1769879588,
 ["delay"] = 0,
-["last_event"] = 1769879593,
+["last_dps"] = 35.97586608559173,
 },
 {
 ["flag_original"] = 68168,
-["totalabsorbed"] = 0.001262,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -8414,25 +8414,26 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 37.001262,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3254-00007E3611",
-["aID"] = "3254",
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 37,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["totalabsorbed"] = 0.001262,
+["fight_component"] = true,
 ["end_time"] = 1769879594,
+["aID"] = "3254",
 ["nome"] = "Sunscale Lashtail",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -8463,112 +8464,112 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879591,
 ["damage_taken"] = 227.001262,
 ["start_time"] = 1769879589,
 ["delay"] = 0,
-["last_event"] = 1769879591,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 295,
 ["tipo"] = 3,
+["combatId"] = 295,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 295,
 ["tipo"] = 7,
+["combatId"] = 295,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 295,
 ["tipo"] = 9,
+["combatId"] = 295,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 5,
-["appliedamt"] = 1,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["serial"] = "Player-6409-04BC9882",
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 18,
 ["pets"] = {
 },
-["buff_uptime_targets"] = {
-},
 ["classe"] = "SHAMAN",
-["buff_uptime"] = 18,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["grupo"] = true,
 ["debuff_uptime"] = 5,
-["aID"] = "6409-04BC9882",
+["debuff_uptime_targets"] = {
+},
 ["nome"] = "Poklopac",
-["last_event"] = 1769879594,
+["grupo"] = true,
 ["tipo"] = 4,
+["last_event"] = 1769879594,
+["buff_uptime_targets"] = {
+},
+["serial"] = "Player-6409-04BC9882",
+["aID"] = "6409-04BC9882",
 },
 },
 },
 {
-["combatId"] = 295,
 ["tipo"] = 2,
+["combatId"] = 295,
 ["_ActorTable"] = {
 },
 },
@@ -8601,10 +8602,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -8624,10 +8625,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -8657,7 +8658,8 @@ false,
 ["combat_id"] = 295,
 ["timeStart"] = 1769879589,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Sunscale Lashtail"] = 1,
@@ -8747,13 +8749,13 @@ false,
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -8764,18 +8766,16 @@ false,
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 243026.375,
-["TimeData"] = {
-},
 ["contra"] = "Sunscale Lashtail",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 294,
 ["tipo"] = 2,
+["combatId"] = 294,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.003876,
 ["pets"] = {
 },
 ["classe"] = "SHAMAN",
@@ -8783,6 +8783,7 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 271.003876,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -8792,16 +8793,14 @@ false,
 ["targets"] = {
 ["Greater Plainstrider"] = 271,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1769879584,
+["totalabsorbed"] = 0.003876,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Poklopac",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -8916,23 +8915,24 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 33.23569732642662,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879581,
 ["damage_taken"] = 27.003876,
 ["start_time"] = 1769879575,
 ["delay"] = 0,
-["last_event"] = 1769879581,
+["last_dps"] = 33.23569732642662,
 },
 {
 ["flag_original"] = 68136,
-["totalabsorbed"] = 0.001173,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "3244",
 ["total_without_pet"] = 27.001173,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
@@ -8940,21 +8940,21 @@ false,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-38847-3244-00007E3577",
-["aID"] = "3244",
 ["damage_from"] = {
 ["Poklopac"] = true,
 },
 ["targets"] = {
 ["Poklopac"] = 27,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["classe"] = "UNKNOW",
+["fight_component"] = true,
 ["end_time"] = 1769879584,
+["totalabsorbed"] = 0.001173,
 ["nome"] = "Greater Plainstrider",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -8985,112 +8985,113 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
 ["friendlyfire"] = {
 },
-["last_dps"] = 0,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1769879578,
 ["damage_taken"] = 271.001173,
 ["start_time"] = 1769879576,
 ["delay"] = 0,
-["last_event"] = 1769879578,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 294,
 ["tipo"] = 3,
+["combatId"] = 294,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 294,
 ["tipo"] = 7,
+["combatId"] = 294,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 294,
 ["tipo"] = 9,
+["combatId"] = 294,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["serial"] = "Player-6409-04BC9882",
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 24,
 ["pets"] = {
 },
-["buff_uptime_targets"] = {
-},
 ["classe"] = "SHAMAN",
-["buff_uptime"] = 24,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [186403] = {
-["activedamt"] = 1,
-["id"] = 186403,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 8,
-["appliedamt"] = 1,
+["id"] = 186403,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 8,
-["appliedamt"] = 1,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [8112] = {
-["activedamt"] = 1,
-["id"] = 8112,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 8,
-["appliedamt"] = 1,
+["id"] = 8112,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["grupo"] = true,
 ["debuff_uptime"] = 6,
-["aID"] = "6409-04BC9882",
+["debuff_uptime_targets"] = {
+},
 ["nome"] = "Poklopac",
-["last_event"] = 1769879584,
+["grupo"] = true,
 ["tipo"] = 4,
+["last_event"] = 1769879584,
+["buff_uptime_targets"] = {
+},
+["serial"] = "Player-6409-04BC9882",
+["aID"] = "6409-04BC9882",
 },
 },
 },
 {
-["combatId"] = 294,
 ["tipo"] = 2,
+["combatId"] = 294,
 ["_ActorTable"] = {
 },
 },
@@ -9107,8 +9108,7 @@ false,
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 298,
 0,
@@ -9122,10 +9122,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -9145,10 +9145,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -9178,10 +9178,11 @@ false,
 ["combat_id"] = 294,
 ["timeStart"] = 1769879576,
 ["timeEnd"] = 1769879584,
-["playing_solo"] = true,
-["is_challenge"] = false,
 ["frags"] = {
 ["Greater Plainstrider"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
 },
 ["boss_hp"] = 1,
 ["combat_counter"] = 351,
@@ -9192,13 +9193,13 @@ false,
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -9209,7 +9210,7 @@ false,
 ["start_time"] = 243014.013,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
+["playerTalents"] = {
 },
 },
 },
@@ -9238,9 +9239,9 @@ false,
 ["show_options"] = false,
 ["ignored_cooldowns"] = {
 },
+["framme_locked"] = false,
 ["cooldowns"] = {
 },
-["height"] = 18,
 ["own_frame"] = {
 ["defensive-raid"] = false,
 ["ofensive"] = false,
@@ -9248,7 +9249,7 @@ false,
 ["utility"] = false,
 ["defensive-personal"] = false,
 },
-["framme_locked"] = false,
+["height"] = 18,
 ["show_conditions"] = {
 ["only_inside_instance"] = true,
 ["only_in_group"] = true,
@@ -9347,7 +9348,7 @@ false,
 },
 },
 },
-["mythic_plus_log"] = {
+["data_harvested_for_charts"] = {
 },
 ["nick_tag_cache"] = {
 ["last_version"] = 16,
@@ -9407,9 +9408,19 @@ false,
 ["reverse"] = false,
 },
 ["active_profile"] = "xVermin",
-["last_day"] = "31",
-["SoloTablesSaved"] = {
-["Mode"] = 1,
+["mythic_dungeon_currentsaved"] = {
+["dungeon_name"] = "",
+["started"] = false,
+["segment_id"] = 0,
+["ej_id"] = 0,
+["started_at"] = 0,
+["run_id"] = 0,
+["level"] = 0,
+["dungeon_zone_id"] = 0,
+["previous_boss_killed_at"] = 0,
+},
+["character_data"] = {
+["logons"] = 71,
 },
 ["benchmark_db"] = {
 ["frame"] = {
@@ -9419,7 +9430,7 @@ false,
 ["enabled"] = true,
 ["channel"] = "SELF",
 },
-["damage_meter_session_info"] = {
+["player_stats"] = {
 },
 ["combat_log"] = {
 ["inverse_deathlog_overalldata"] = false,
@@ -9431,133 +9442,23 @@ false,
 ["evoker_show_realtimedps"] = false,
 ["inverse_deathlog_mplus"] = false,
 },
+["last_day"] = "31",
+["mythic_plus_log"] = {
+},
+["damage_meter_session_info"] = {
+},
 ["on_death_menu"] = false,
-["plugin_database"] = {
-["DETAILS_PLUGIN_TINY_THREAT"] = {
-["enabled"] = true,
-["only_my_group"] = false,
-["animate"] = false,
-["updatespeed"] = 1,
-["hide_pull_bar"] = false,
-["useclasscolors"] = false,
-["playercolor"] = {
-1,
-1,
-1,
-},
-["usefocus"] = false,
-["disable_gouge"] = false,
-["playSound"] = false,
-["showamount"] = false,
-["useplayercolor"] = false,
-["absolute_mode"] = false,
-["show_party_pets"] = false,
-["playSoundFile"] = "Details Threat Warning Volume 3",
-["author"] = "Terciob",
-},
-["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
-["enabled"] = true,
-["encounter_timers_bw"] = {
-},
-["max_emote_segments"] = 3,
-["last_section_selected"] = "main",
-["author"] = "Terciob",
-["window_scale"] = 1,
-["hide_on_combat"] = false,
-["show_icon"] = 5,
-["opened"] = 0,
-["encounter_timers_dbm"] = {
-},
-},
-["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-["enabled"] = true,
-["author"] = "Terciob",
-["max_compares"] = 4,
-["compare_type"] = 1,
-},
-["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-["use_square_mode"] = false,
-["is_first_run"] = false,
-["grow_direction"] = "right",
-["arrow_color"] = {
-1,
-1,
-1,
-0.5,
-},
-["scale"] = 1,
-["main_frame_size"] = {
-249.999740600586,
-89.9999694824219,
-},
-["minimap"] = {
-["minimapPos"] = 160,
-["radius"] = 160,
-["hide"] = true,
-},
-["row_height"] = 18,
-["arrow_anchor_x"] = 0,
-["font_color"] = {
-1,
-1,
-1,
-1,
-},
-["row_texture"] = "xVerminClean",
-["square_grow_direction"] = "right",
-["point"] = "RIGHT",
-["main_frame_strata"] = "LOW",
-["square_amount"] = 5,
+["coach"] = {
 ["enabled"] = false,
-["arrow_size"] = 10,
-["per_second"] = {
-["enabled"] = false,
-["point"] = "CENTER",
-["scale"] = 1,
-["font_shadow"] = true,
-["y"] = -6.103515625e-05,
-["x"] = 0.00311279296875,
-["size"] = 32,
-["update_speed"] = 0.05,
-["attribute_type"] = 1,
+["welcome_panel_pos"] = {
 },
-["row_spacement"] = 19,
-["main_frame_color"] = {
-0,
-0,
-0,
-0,
-},
-["author"] = "Details! Team",
-["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-["y"] = -183.107162475586,
-["font_size"] = 10,
-["x"] = -4.001220703125,
-["font_face"] = "Friz Quadrata TT",
-["square_size"] = 32,
-["use_spark"] = false,
-["row_color"] = {
-0.443137254901961,
-0.592156862745098,
-1,
-0.480826139450073,
-},
-["main_frame_locked"] = true,
-["arrow_anchor_y"] = 0,
-},
+["last_coach_name"] = false,
 },
 ["cached_talents"] = {
 },
 ["announce_firsthit"] = {
 ["enabled"] = true,
 ["channel"] = "SELF",
-},
-["data_harvested_for_charts"] = {
-},
-["character_data"] = {
-["logons"] = 67,
-},
-["player_stats"] = {
 },
 ["last_realversion"] = 168,
 ["last_version"] = "2.5.5 14358",
@@ -9582,7 +9483,7 @@ false,
 1,
 },
 ["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-["skin_custom"] = "vermin",
+["bars_sort_direction"] = 1,
 ["use_auto_align_multi_fontstrings"] = true,
 ["tooltip"] = {
 ["n_abilities"] = 3,
@@ -9762,13 +9663,13 @@ false,
 },
 },
 ["micro_displays_side"] = 2,
-["version"] = 3,
+["name"] = "vermin",
 ["switch_tank_in_combat"] = {
 1,
 1,
 1,
 },
-["bg_alpha"] = 0,
+["version"] = 3,
 ["fontstrings_text4_anchor"] = 4,
 ["plugins_grow_direction"] = 1,
 ["menu_alpha"] = {
@@ -9791,7 +9692,7 @@ false,
 },
 ["backdrop_texture"] = "Details Ground",
 ["hide_in_combat_alpha"] = 0,
-["bars_sort_direction"] = 1,
+["micro_displays_locked"] = false,
 ["strata"] = "LOW",
 ["libwindow"] = {
 ["y"] = -20,
@@ -9807,11 +9708,15 @@ false,
 0.07058823529411765,
 },
 },
+["row_show_animation"] = {
+["anim"] = "Fade",
+["options"] = {
+},
+},
 ["menu_anchor_down"] = {
 16,
 -3,
 },
-["bars_grow_direction"] = 1,
 ["grab_on_top"] = false,
 ["auto_hide_menu"] = {
 ["left"] = false,
@@ -9828,13 +9733,9 @@ false,
 1,
 1,
 },
-["row_show_animation"] = {
-["anim"] = "Fade",
-["options"] = {
-},
-},
+["bars_grow_direction"] = 1,
 ["auto_current"] = true,
-["micro_displays_locked"] = false,
+["skin_custom"] = "vermin",
 ["row_info"] = {
 ["show_arena_role_icon"] = false,
 ["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -9947,7 +9848,7 @@ false,
 ["textR_separator"] = "NONE",
 ["texture_custom_file"] = "Interface\\",
 },
-["name"] = "vermin",
+["bg_alpha"] = 0,
 ["hide_in_combat"] = false,
 ["switch_damager"] = {
 1,
@@ -9998,17 +9899,7 @@ false,
 },
 },
 ["last_instance_time"] = 0,
-["mythic_dungeon_currentsaved"] = {
-["dungeon_name"] = "",
-["started"] = false,
-["segment_id"] = 0,
-["ej_id"] = 0,
-["started_at"] = 0,
-["run_id"] = 0,
-["level"] = 0,
-["dungeon_zone_id"] = 0,
-["previous_boss_killed_at"] = 0,
-},
+["ignore_nicktag"] = false,
 ["announce_deaths"] = {
 ["enabled"] = false,
 ["last_hits"] = 1,
@@ -10058,6 +9949,8 @@ false,
 },
 ["targets"] = {
 ["Hexed Troll"] = 0,
+["Razormane Thornweaver"] = 0,
+["Razormane Water Seeker"] = 0,
 ["Burning Blade Apprentice"] = 0,
 ["Dustwind Storm Witch"] = 0,
 ["Felweaver Scornn"] = 0,
@@ -10103,6 +9996,8 @@ false,
 },
 ["interrupt_targets"] = {
 ["Hexed Troll"] = 0,
+["Razormane Thornweaver"] = 0,
+["Razormane Water Seeker"] = 0,
 ["Burning Blade Apprentice"] = 0,
 ["Dustwind Storm Witch"] = 0,
 ["Felweaver Scornn"] = 0,
@@ -10111,11 +10006,11 @@ false,
 ["buff_uptime"] = 0,
 ["nome"] = "Poklopac",
 ["grupo"] = true,
-["debuff_uptime_targets"] = {
-},
+["interrupt"] = 0,
 ["aID"] = "6409-04BC9882",
 ["last_event"] = 0,
-["interrupt"] = 0,
+["debuff_uptime_targets"] = {
+},
 ["tipo"] = 4,
 },
 {
@@ -10198,42 +10093,94 @@ false,
 },
 {
 ["flag_original"] = 68168,
-["serial"] = "Creature-0-6422-1-49-3204-00007B82E7",
-["fight_component"] = true,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
-["tipo"] = 4,
-["monster"] = true,
 ["aID"] = "3204",
+["fight_component"] = true,
 ["nome"] = "Gazz'uz",
+["monster"] = true,
+["tipo"] = 4,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-6422-1-49-3204-00007B82E7",
 ["last_event"] = 0,
 },
 {
 ["flag_original"] = 2632,
-["serial"] = "Creature-0-6422-1-49-3198-00007B83A3",
-["fight_component"] = true,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
-["tipo"] = 4,
-["monster"] = true,
 ["aID"] = "3198",
+["fight_component"] = true,
 ["nome"] = "Burning Blade Apprentice",
+["monster"] = true,
+["tipo"] = 4,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-6422-1-49-3198-00007B83A3",
 ["last_event"] = 0,
 },
 {
 ["flag_original"] = 68168,
-["serial"] = "Creature-0-6422-1-49-3197-00007B8387",
-["fight_component"] = true,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
-["tipo"] = 4,
-["monster"] = true,
 ["aID"] = "3197",
+["fight_component"] = true,
 ["nome"] = "Burning Blade Fanatic",
+["monster"] = true,
+["tipo"] = 4,
+["classe"] = "UNKNOW",
+["serial"] = "Creature-0-6422-1-49-3197-00007B8387",
 ["last_event"] = 0,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["aID"] = "3254",
+["monster"] = true,
+["nome"] = "Sunscale Lashtail",
+["fight_component"] = true,
+["last_event"] = 0,
+["tipo"] = 4,
+["serial"] = "Creature-0-6422-1-38847-3254-00007E3950",
+["classe"] = "UNKNOW",
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["aID"] = "3268",
+["monster"] = true,
+["nome"] = "Razormane Thornweaver",
+["fight_component"] = true,
+["last_event"] = 0,
+["tipo"] = 4,
+["serial"] = "Creature-0-6422-1-38847-3268-00007E346E",
+["classe"] = "UNKNOW",
+},
+{
+["flag_original"] = 2632,
+["pets"] = {
+},
+["aID"] = "3265",
+["monster"] = true,
+["nome"] = "Razormane Hunter",
+["fight_component"] = true,
+["last_event"] = 0,
+["tipo"] = 4,
+["serial"] = "Creature-0-6422-1-38847-3265-00007E3786",
+["classe"] = "UNKNOW",
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["aID"] = "3267",
+["monster"] = true,
+["nome"] = "Razormane Water Seeker",
+["fight_component"] = true,
+["last_event"] = 0,
+["tipo"] = 4,
+["serial"] = "Creature-0-6422-1-38847-3267-00007E349C",
+["classe"] = "UNKNOW",
 },
 },
 },
@@ -10315,15 +10262,15 @@ false,
 },
 ["zoneName"] = "Kalimdor",
 ["boss_hp"] = 1,
-["spells_cast_timeline"] = {
+["segments_added"] = {
 },
 ["is_challenge"] = false,
-["segments_added"] = {
+["frags"] = {
 },
 ["data_fim"] = 0,
 ["cleu_timeline"] = {
 },
-["frags"] = {
+["spells_cast_timeline"] = {
 },
 ["PhaseData"] = {
 {
@@ -10347,14 +10294,124 @@ false,
 ["player_last_events"] = {
 },
 },
-["ignore_nicktag"] = false,
+["plugin_database"] = {
+["DETAILS_PLUGIN_TINY_THREAT"] = {
+["enabled"] = true,
+["only_my_group"] = false,
+["animate"] = false,
+["updatespeed"] = 1,
+["hide_pull_bar"] = false,
+["useclasscolors"] = false,
+["playercolor"] = {
+1,
+1,
+1,
+},
+["usefocus"] = false,
+["disable_gouge"] = false,
+["playSound"] = false,
+["showamount"] = false,
+["useplayercolor"] = false,
+["absolute_mode"] = false,
+["show_party_pets"] = false,
+["playSoundFile"] = "Details Threat Warning Volume 3",
+["author"] = "Terciob",
+},
+["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
+["enabled"] = true,
+["encounter_timers_bw"] = {
+},
+["max_emote_segments"] = 3,
+["last_section_selected"] = "main",
+["author"] = "Terciob",
+["window_scale"] = 1,
+["hide_on_combat"] = false,
+["show_icon"] = 5,
+["opened"] = 0,
+["encounter_timers_dbm"] = {
+},
+},
+["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+["enabled"] = true,
+["author"] = "Terciob",
+["max_compares"] = 4,
+["compare_type"] = 1,
+},
+["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+["use_square_mode"] = false,
+["is_first_run"] = false,
+["grow_direction"] = "right",
+["arrow_color"] = {
+1,
+1,
+1,
+0.5,
+},
+["scale"] = 1,
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
+},
+["minimap"] = {
+["minimapPos"] = 160,
+["radius"] = 160,
+["hide"] = true,
+},
+["row_height"] = 18,
+["arrow_anchor_x"] = 0,
+["font_color"] = {
+1,
+1,
+1,
+1,
+},
+["row_texture"] = "xVerminClean",
+["square_grow_direction"] = "right",
+["point"] = "RIGHT",
+["main_frame_strata"] = "LOW",
+["square_amount"] = 5,
+["enabled"] = false,
+["arrow_size"] = 10,
+["use_spark"] = false,
+["row_spacement"] = 19,
+["main_frame_color"] = {
+0,
+0,
+0,
+0,
+},
+["author"] = "Details! Team",
+["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+["font_size"] = 10,
+["y"] = -183.107162475586,
+["x"] = -4.001220703125,
+["font_face"] = "Friz Quadrata TT",
+["square_size"] = 32,
+["per_second"] = {
+["enabled"] = false,
+["point"] = "CENTER",
+["scale"] = 1,
+["font_shadow"] = true,
+["y"] = -6.103515625e-05,
+["x"] = 0.00311279296875,
+["size"] = 32,
+["update_speed"] = 0.05,
+["attribute_type"] = 1,
+},
+["row_color"] = {
+0.443137254901961,
+0.592156862745098,
+1,
+0.480826139450073,
+},
+["main_frame_locked"] = true,
+["arrow_anchor_y"] = 0,
+},
+},
 ["arena_data_headers"] = {
 },
-["coach"] = {
-["enabled"] = false,
-["welcome_panel_pos"] = {
-},
-["last_coach_name"] = false,
+["SoloTablesSaved"] = {
+["Mode"] = 1,
 },
 ["announce_cooldowns"] = {
 ["enabled"] = false,

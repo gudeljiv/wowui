@@ -1,12 +1,12 @@
 
 RXPCData = {
 ["completedWaypoints"] = {
-[2] = {
+[22] = {
 },
-[3] = {
+[23] = {
 },
 },
-["currentStep"] = 3,
+["currentStep"] = 23,
 ["questObjectivesCache"] = {
 [0] = 34,
 [11129] = {
@@ -455,6 +455,7 @@ RXPCData = {
 [5441] = "Lazy Peons",
 [840] = "Conscript of the Horde",
 [4402] = "Galgar's Cactus Apple Surprise",
+[844] = "Plainstrider Menace",
 [848] = "Fungal Spores",
 [5726] = "Hidden Enemies",
 [789] = "Sting of the Scorpid",
@@ -466,6 +467,8 @@ RXPCData = {
 [813] = "Finding the Antidote",
 [815] = "Break a Few Eggs",
 [817] = "Practical Prey",
+[1518] = "Call of Earth",
+[827] = "Skull Rock",
 [823] = "Report to Orgnil",
 [825] = "From The Wreckage....",
 [764] = "The Venture Co.",
@@ -475,24 +478,30 @@ RXPCData = {
 [835] = "Securing the Lines",
 [837] = "Encroachment",
 [6394] = "Thazz'ril's Pick",
+[11129] = "Kyle's Gone Missing!",
+[790] = "Sarkoth",
+[3089] = "Rune-Inscribed Parchment",
 [784] = "Vanquish the Betrayers",
 [786] = "Thwarting Kolkar Aggression",
 [788] = "Cutting Teeth",
-[790] = "Sarkoth",
+[853] = "Apothecary Zamah",
 [792] = "Vile Familiars",
 [794] = "Burning Blade Medallion",
+[6365] = "Meats to Orgrimmar",
 [1517] = "Call of Earth",
-[1525] = "Call of Fire",
-[3089] = "Rune-Inscribed Parchment",
-[806] = "Dark Storms",
 [808] = "Minshina's Skull",
-[1518] = "Call of Earth",
+[1525] = "Call of Fire",
 [804] = "Sarkoth",
+[806] = "Dark Storms",
+[871] = "Disrupt the Attacks",
+[842] = "Crossroads Conscription",
+[869] = "Raptor Thieves",
+[877] = "The Stagnant Oasis",
 [816] = "Lost But Not Forgotten",
 [818] = "A Solvent Spirit",
-[11129] = "Kyle's Gone Missing!",
-[827] = "Skull Rock",
-[842] = "Crossroads Conscription",
+[5041] = "Supplies for the Crossroads",
+[6384] = "Ride to Orgrimmar",
+[1492] = "Wharfmaster Dizzywig",
 },
 ["guideMetaData"] = {
 ["RestedXP Survival Guide (H)||1-6 Durotar"] = {
@@ -2142,8 +2151,13 @@ RXPCData = {
 },
 ["currentGuideName"] = "10-13 Durotar",
 ["stepSkip"] = {
+[17] = true,
+[14] = true,
+[19] = true,
+[5] = true,
+[2] = true,
 },
-["currentStepId"] = 3757247771,
+["currentStepId"] = 3757247918,
 ["guideDisabled"] = {
 33777,
 100789,
@@ -2638,8 +2652,12 @@ RXPCTrackingData = {
 ["deaths"] = 1,
 ["mobs"] = {
 ["Durotar"] = {
-["xp"] = 778,
-["count"] = 10,
+["xp"] = 3513,
+["count"] = 27,
+},
+["The Barrens"] = {
+["xp"] = 4860,
+["count"] = 30,
 },
 },
 ["timestamp"] = {
@@ -2652,9 +2670,100 @@ RXPCTrackingData = {
 ["hour"] = 17,
 ["weekday"] = 5,
 },
+["finished"] = 26731,
+["dateFinished"] = {
+["monthDay"] = 31,
+["day"] = 0,
+["month"] = 1,
+["weekday"] = 7,
+["year"] = 2026,
+["hour"] = 17,
+["minute"] = 56,
+},
 ["started"] = 23025,
 },
 ["quests"] = {
+["The Barrens"] = {
+[2983] = 440,
+[6365] = 210,
+[840] = 460,
+[842] = 900,
+},
+},
+},
+{
+["groupExperience"] = 0,
+["deaths"] = 0,
+["mobs"] = {
+["The Barrens"] = {
+["xp"] = 9859,
+["count"] = 62,
+},
+},
+["timestamp"] = {
+["dateStarted"] = {
+["monthDay"] = 31,
+["day"] = 0,
+["month"] = 1,
+["weekday"] = 7,
+["year"] = 2026,
+["hour"] = 17,
+["minute"] = 56,
+},
+["finished"] = 27915,
+["dateFinished"] = {
+["monthDay"] = 31,
+["day"] = 0,
+["month"] = 1,
+["weekday"] = 7,
+["year"] = 2026,
+["hour"] = 18,
+["minute"] = 16,
+},
+["started"] = 26732,
+},
+["quests"] = {
+["The Barrens"] = {
+[848] = 1050,
+[850] = 875,
+[855] = 1250,
+[870] = 675,
+},
+},
+},
+{
+["groupExperience"] = 0,
+["deaths"] = 0,
+["mobs"] = {
+["The Barrens"] = {
+["xp"] = 2857,
+["count"] = 16,
+},
+["Orgrimmar"] = {
+["xp"] = 420,
+["count"] = 1,
+},
+},
+["timestamp"] = {
+["dateStarted"] = {
+["monthDay"] = 31,
+["day"] = 0,
+["month"] = 1,
+["weekday"] = 7,
+["year"] = 2026,
+["hour"] = 18,
+["minute"] = 16,
+},
+["started"] = 27916,
+},
+["quests"] = {
+["The Barrens"] = {
+[844] = 900,
+[871] = 900,
+},
+["Orgrimmar"] = {
+[6384] = 420,
+},
 },
 },
 },
@@ -2705,15 +2814,15 @@ RXPCComms = {
 ["xp"] = 0,
 ["xpPercentage"] = 42,
 },
-["Guessihavto"] = {
-["level"] = 40,
-["isRxp"] = true,
-["version"] = 1,
-["lastSeen"] = 578266.321,
+["Somangold"] = {
 ["timePlayed"] = 0,
-["class"] = "PRIEST",
+["class"] = "PALADIN",
+["version"] = 1,
+["lastSeen"] = 578843.029,
+["xpPercentage"] = 88,
+["isRxp"] = true,
 ["xp"] = 0,
-["xpPercentage"] = 46,
+["level"] = 50,
 },
 ["Calidra"] = {
 ["level"] = 41,
@@ -2725,23 +2834,35 @@ RXPCComms = {
 ["xp"] = 0,
 ["xpPercentage"] = 33,
 },
-["Somangold"] = {
-["timePlayed"] = 0,
-["class"] = "PALADIN",
-["version"] = 1,
-["lastSeen"] = 578843.029,
-["xpPercentage"] = 88,
+["Totemgar"] = {
+["level"] = 42,
 ["isRxp"] = true,
+["version"] = 1,
+["lastSeen"] = 578266.101,
+["timePlayed"] = 0,
+["class"] = "SHAMAN",
 ["xp"] = 0,
-["level"] = 50,
+["xpPercentage"] = 49,
 },
 ["Dovíd"] = {
 ["isRxp"] = true,
+["level"] = 60,
+["version"] = 1,
 ["lastSeen"] = 67621.276,
 ["xpPercentage"] = 0,
-["level"] = 60,
-["timePlayed"] = 0,
 ["class"] = "DRUID",
+["xp"] = 0,
+["timePlayed"] = 0,
+},
+["Guessihavto"] = {
+["level"] = 40,
+["isRxp"] = true,
+["version"] = 1,
+["lastSeen"] = 578266.321,
+["timePlayed"] = 0,
+["class"] = "PRIEST",
+["xp"] = 0,
+["xpPercentage"] = 46,
 },
 ["Tirifolis"] = {
 ["level"] = 20,
@@ -2752,16 +2873,6 @@ RXPCComms = {
 ["class"] = "PALADIN",
 ["xp"] = 0,
 ["xpPercentage"] = 90,
-},
-["Totemgar"] = {
-["level"] = 42,
-["isRxp"] = true,
-["version"] = 1,
-["lastSeen"] = 578266.101,
-["timePlayed"] = 0,
-["class"] = "SHAMAN",
-["xp"] = 0,
-["xpPercentage"] = 49,
 },
 ["Easypeasie"] = {
 ["xpPercentage"] = 5,
