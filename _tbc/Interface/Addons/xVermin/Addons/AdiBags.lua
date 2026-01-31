@@ -171,6 +171,7 @@ if C_AddOns.IsAddOnLoaded("AdiBags") then
 			AdiBagsContainer2:CreateBeautyBorder(8)
 			AdiBagsContainer2SearchBox:Hide()
 
+			-- Create sort button if it doesn't exist
 			if not AdiBagsContainer2.SortButton and SortBags then
 				local sortBtn =
 					CreateFrame("Button", "AdiBagsContainer2SortButton", AdiBagsContainer2, "UIPanelButtonTemplate")
