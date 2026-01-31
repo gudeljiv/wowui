@@ -75,11 +75,8 @@ local HandleUnit = function(unit)
 
 		-- PALADIN INTERRUPT
 		if xVermin.Class == "PALADIN" then
-			-- if IsSpellInRange("Arcane Torrent", unit) == 1 and select(2, GetSpellCooldown("Arcane Torrent")) <= 1.5 then
-			if xVermin.InRange(8, unit, max) and select(2, GetSpellCooldown("Arcane Torrent")) <= 1.5 then
+			if xVermin.InRange(5, unit, max) and select(2, GetSpellCooldown("Arcane Torrent")) <= 1.5 then
 				HRF = true
-				-- elseif xVermin.InRange(10, unit, max) and select(2, GetSpellCooldown("Hammer of Justice")) <= 1.5 then
-				-- 	HRF = true
 			end
 		end
 
@@ -91,12 +88,9 @@ local HandleUnit = function(unit)
 			local _, travel = GetShapeshiftFormInfo(4) -- ako je travel form
 			local _, moonkin = GetShapeshiftFormInfo(5) -- ako je moonkin form
 			local _, tree = GetShapeshiftFormInfo(6) -- ako je tree form
-			if bear and select(2, GetSpellCooldown("Bash")) <= 1.5 and CheckInteractDistance(unit, 3) then
+			if bear and select(2, GetSpellCooldown("Bash")) <= 1.5 and IsSpellInRange("Bash", unit) == 1 then
 				HRF = true
 			end
-			-- if cat and select(2, GetSpellCooldown('Maim')) <= 1.5 and CheckInteractDistance(unit, 3) then
-			--  HRF = true
-			-- end
 		end
 
 		-- DEATHKNIGHT INTERRUPT

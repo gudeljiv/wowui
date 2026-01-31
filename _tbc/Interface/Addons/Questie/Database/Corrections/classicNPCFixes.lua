@@ -468,6 +468,9 @@ function QuestieNPCFixes:Load()
         [3060] = { -- Gart Mistrunner
             [npcKeys.questStarts] = {},
         },
+        [3061] = { -- Lanka Farshot
+            [npcKeys.questStarts] = {},
+        },
         [3064] = { -- Gennia Runetotem
             [npcKeys.questStarts] = {5928},
         },
@@ -485,7 +488,7 @@ function QuestieNPCFixes:Load()
         },
         [3140] = { -- Lar Prowltusk
             [npcKeys.waypoints] = {[zoneIDs.DUROTAR]={{{54.2,73.2},{54.4,74.2},{54.4,75},{54,76.2},{54.4,75},{54.4,74.2},{54.2,73.2}}}},
-            [npcKeys.spawns] = {[zoneIDs.DUROTAR]={{54.4,75}}},
+            [npcKeys.spawns] = {[zoneIDs.DUROTAR]={{54.44,74.35}}},
         },
         [3154] = { -- Jen'shan
             [npcKeys.questStarts] = {},
@@ -548,7 +551,7 @@ function QuestieNPCFixes:Load()
             [npcKeys.questStarts] = {},
         },
         [3407] = { -- Sian'dur
-            [npcKeys.questStarts] = {6068},
+            [npcKeys.questStarts] = {6066,6068},
         },
         [3450] = { -- Defias Companion
             [npcKeys.zoneID] = zoneIDs.THE_DEADMINES,
@@ -930,7 +933,7 @@ function QuestieNPCFixes:Load()
             [npcKeys.questStarts] = {1698,1718,8417},
         },
         [5116] = { -- Olmin Burningbeard
-            [npcKeys.questStarts] = {6721,8151},
+            [npcKeys.questStarts] = {6074,6721,8151},
         },
         [5117] = { -- Regnus Thundergranite
             [npcKeys.questStarts] = {},
@@ -1002,9 +1005,6 @@ function QuestieNPCFixes:Load()
         },
         [5515] = { -- Einris Brightspear
             [npcKeys.questStarts] = {6073,6076},
-        },
-        [5516] = { -- Ulfir Ironbeard
-            [npcKeys.questStarts] = {6074,8151},
         },
         [5543] = { -- Clarice Foster
             [npcKeys.spawns] = {[zoneIDs.THUNDER_BLUFF]={{27.2,24.4}}},

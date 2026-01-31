@@ -28,7 +28,6 @@ function QuestieQuestBlacklist:Load()
         [7704] = Expansions.Current ~= Expansions.Wotlk, -- Only implemented in Wrath
         [7668] = true, -- Not in the game (yet) Replaced with 8258 in Ph 4-- #1805
         [636] = true, -- Not in the game - #1900
-        [6066] = true, -- Not in the game - #1957
         [4601] = true, -- Duplicate of 2951
         [4602] = true, -- Duplicate of 2951
         [4603] = true, -- Duplicate of 2953
@@ -351,6 +350,7 @@ function QuestieQuestBlacklist:Load()
         [11450] = true,
         [11454] = true,
         [11528] = true,
+        [11558] = true,
         [11580] = true,
         [11581] = true,
         [11583] = true,
@@ -1664,6 +1664,7 @@ function QuestieQuestBlacklist:Load()
         [83717] = Expansions.Current >= Expansions.Wotlk, -- Proof of Demise: Titan Rune Protocol Gamma (not available anymore)
         [87379] = Expansions.Current >= Expansions.Wotlk, -- Proof of Demise: Threats to Azeroth (not available anymore)
         [93975] = Expansions.Current >= Expansions.Wotlk, -- Ragnaros Must Die!
+        [94577] = Expansions.Current >= Expansions.Wotlk, -- Kael'thas Must Die!
 
         --- Daily quests
         [24788] = true, -- Daily Heroic Random (1st)
@@ -4182,6 +4183,7 @@ function QuestieQuestBlacklist:Load()
         [6063] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [6064] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [6065] = Expansions.Current >= Expansions.Cata, -- Removed with cata
+        [6066] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [6067] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [6068] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [6069] = Expansions.Current >= Expansions.Cata, -- Removed with cata
