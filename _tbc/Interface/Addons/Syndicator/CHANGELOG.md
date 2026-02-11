@@ -1,8 +1,7 @@
 # Syndicator
 
-## [259](https://github.com/TheMouseNest/Syndicator/tree/259) (2026-01-15)
-[Full Changelog](https://github.com/TheMouseNest/Syndicator/compare/258...259) 
+## [261](https://github.com/TheMouseNest/Syndicator/tree/261) (2026-02-10)
+[Full Changelog](https://github.com/TheMouseNest/Syndicator/compare/260...261) 
 
-- Remove usage of PLAYER\_ENTERING\_WORLD for initialization  
-    This mitigates any impact of the new CPU consumption restrictions  
-- Update constants (as workaround to detect TBC anniversary no longer needed)  
+- Update toc for 12.0.1  
+- Fix access to ItemVersion lookup structure (#84)  

@@ -14,18 +14,6 @@ local L = LibStub("AceLocale-3.0"):GetLocale("RatingBuster")
 local S = setmetatable(addon.S, { __index = L })
 ---@cast L RatingBusterLocale
 
---------------------
--- AceAddon Setup --
---------------------
----@class RatingBuster: AceAddon, AceConsole-3.0, AceEvent-3.0, AceBucket-3.0
-RatingBuster = LibStub("AceAddon-3.0"):NewAddon("RatingBuster", "AceConsole-3.0", "AceEvent-3.0", "AceBucket-3.0")
-RatingBuster.title = "Rating Buster"
---@non-debug@
-RatingBuster.version = "2.1.0"
---@end-non-debug@
---[==[@debug@
-RatingBuster.version = "(development)"
---@end-debug@]==]
 local addonNameWithVersion = ("%s %s"):format(addonName, RatingBuster.version)
 
 -----------
@@ -973,7 +961,7 @@ local options = {
 						sumAvoidance = {
 							type = 'toggle',
 							name = L["Sum %s"]:format(L[StatLogic.Stats.Avoidance]),
-							desc = L["Avoidance <- Dodge, Parry, MobMiss, Block(Optional)"],
+							desc = L["Avoidance <- Dodge, Parry, Miss, Block (Optional)"],
 							order = 1,
 						},
 						sumAvoidWithBlock = {

@@ -177,9 +177,6 @@ function QuestieTBCNpcFixes:Load()
             [npcKeys.questStarts] = {3790,8353,63448,63767,65284,65561,93823},
             [npcKeys.questEnds] = {8353,63448,63767,65284,65561,93823},
         },
-        [5113] = { -- Kelv Sternhammer
-            [npcKeys.questStarts] = {1718,8417},
-        },
         [5149] = { -- Brandur Ironhammer
             [npcKeys.questStarts] = {2999,3681,7670,8415},
         },
@@ -191,6 +188,9 @@ function QuestieTBCNpcFixes:Load()
         },
         [5167] = { -- Fenthwick
             [npcKeys.questStarts] = {6681},
+        },
+        [5480] = { -- Ilsa Corbin
+            [npcKeys.questStarts] = {1638},
         },
         [5495] = { -- Ursula Deline
             [npcKeys.questStarts] = {64031,64034,64035,64037,64038},
@@ -636,6 +636,9 @@ function QuestieTBCNpcFixes:Load()
             [npcKeys.spawns] = {[zoneIDs.AZUREMYST_ISLE]={{11.36,82.34}}},
             [npcKeys.zoneID] = zoneIDs.AZUREMYST_ISLE,
         },
+        [17212] = { -- Tuluun
+            [npcKeys.questStarts] = {9461,9464,9500},
+        },
         [17214] = {
             [npcKeys.waypoints] = {},
         },
@@ -643,7 +646,7 @@ function QuestieTBCNpcFixes:Load()
             [npcKeys.waypoints] = {},
         },
         [17219] = { -- Sulaa
-            [npcKeys.questStarts] = {9462,9500,9551},
+            [npcKeys.questStarts] = {9462,9502,9551},
         },
         [17240] = {
             [npcKeys.waypoints] = {},
@@ -653,6 +656,10 @@ function QuestieTBCNpcFixes:Load()
         },
         [17246] = {
             [npcKeys.waypoints] = {},
+        },
+        [17249] = { -- Landro Longshot
+            [npcKeys.questStarts] = {63450,63768,65285,65562,93824},
+            [npcKeys.questEnds] = {63450,63768,65285,65562,93824},
         },
         [17288] = {
             [npcKeys.spawns] = {[zoneIDs.THE_SHATTERED_HALLS]={{-1,-1}}},
@@ -1386,6 +1393,9 @@ function QuestieTBCNpcFixes:Load()
         },
         [23100] = {
             [npcKeys.spawns] = {[zoneIDs.TEROKKAR_FOREST] = {{44.2,41.0},},},
+        },
+        [23127] = { -- Farseer Javad
+            [npcKeys.questStarts] = {8410,9547},
         },
         [23161] = {
             [npcKeys.spawns] = {[zoneIDs.TEROKKAR_FOREST]={{70.23,83.35},{70.06,79.45},{73.5,80.7},{69.67,74.72},{75.24,81.2},{72.23,88.18},{74.79,87.51},{61.99,74.66},{61.38,78.07}}},

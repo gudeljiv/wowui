@@ -1,15 +1,14 @@
 # DBM - Dungeons, Delves, & Events
 
-## [r223](https://github.com/DeadlyBossMods/DBM-Dungeons/tree/r223) (2026-01-20)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-Dungeons/compare/r222...r223) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Dungeons/releases)
+## [r225](https://github.com/DeadlyBossMods/DBM-Dungeons/tree/r225) (2026-02-10)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Dungeons/compare/r224...r225) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Dungeons/releases)
 
-- Update halls of atonement and TAzavesh to use latest private auras and hide options not relevant to midnight  
-- Also update eco dome private aura api usage  
-- Full dungeon pass of the 4 TWW dungeons i current M+ season to support all new private auras and gtfo tech  
-- dawnbreaker and city of echos updates for midnight prepatch  
-- Update localization.kr.lua (#581)  
-- Update localization.ru.lua (#582)  
-- Update localization.cn.lua (#580)  
-- Block all trash modules from loading in midnight prepatch with exception of ones with auto gossip (but those modules stripped down to be ONLY that)  
-- Cleanup unused rangeframe check from skyreach  
-    Allow melandrus to still cleanup infoframe for court of starts helper in midnight  
+- First half of Tazevesh updates for midnight  
+- Update halls of atonement for midnight 12.0.1 features  
+- Update rest of holiday events for midnight while at it  
+- Restore the RP/combat timers to chem bro holiday boss  
+- Push the motherload test boss mod for DBM midnight feature testing  
+- this is some dumb stuff to nitpick over LuaLS  
+- Missed one secret check  
+- rework darkmoon faire mods to use midnight compatible checking to restore most functionality (minus the combat addons for rabbit and moonfang)  
+- Update koKR line in toc (#579)  

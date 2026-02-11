@@ -311,7 +311,7 @@
 		--[[Teldrassil]] [1438] = {
 			{"FlightA", 58.4, 94.0, L["Rut'theran Village"] .. ", " .. L["Teldrassil"], nil, tATex, nil, nil},
 			{"TravelA", 54.9, 96.8, L["Boat to"] .. " " .. L["Auberdine"] .. ", " .. L["Darkshore"], nil, fATex, nil, nil, nil, nil, nil, 0, 1439},
-			{"TravelA", 55.9, 89.7, L["Darnassus"], L["Portal"], pATex, nil, nil, nil, nil, nil, 0.3, 1457},
+			{"Arrow", 55.9, 89.7, L["Darnassus"], "", arTex, nil, nil, nil, nil, nil, 0.3, 1457},
 			{"Spirit", 58.7, 42.3, L["Spirit Healer"], nil, spTex, nil, nil},
 			{"Spirit", 56.2, 63.3, L["Spirit Healer"], nil, spTex, nil, nil},
 			{"Arrow", 36.2, 54.4, L["Darnassus"], nil, arTex, nil, nil, nil, nil, nil, 1.5, 1457},
@@ -468,7 +468,7 @@
 		},
 		--[[Darnassus]] [1457] = {
 			{"Spirit", 77.7, 25.9, L["Spirit Healer"], nil, spTex, nil, nil},
-			{"TravelA", 30.3, 41.4, L["Teldrassil"], L["Portal"] .. " " .. L["to"] .. " " .. L["Rut'theran Village"], pATex, nil, nil, nil, nil, nil, 1.5, 1438},
+			{"Arrow", 30.3, 41.4, L["Teldrassil"], L["Rut'theran Village"], arTex, nil, nil, nil, nil, nil, 1.5, 1438},
 			{"Arrow", 86.9, 35.8, L["Teldrassil"], nil, arTex, nil, nil, nil, nil, nil, 4.8, 1438},
 		},
 		--[[The Exodar]] [1947] = {

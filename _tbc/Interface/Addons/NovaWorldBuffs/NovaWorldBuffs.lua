@@ -80,6 +80,10 @@ function NWB:setServerConfig()
 		--Era 11, hardcore 12, probably no need to do lower layer expire time on hardcore servers but we'll do it anyway just for launch due to streamer zerg.
 		NWB.isMegaserver = true;
 	end
+	if (NWB.isTBC) then
+		--TBC launch track more layers but only track the current expansion continent so it's actually less data overall.
+		NWB.limitLayerCount = 20;
+	end
 	if (NWB.isMOP and NWB.isMegaserver) then
 		--The 2 MoP megaservers track more layers but only track the current expansion continent so it's actually less data overall.
 		NWB.limitLayerCount = 20;
@@ -91,7 +95,29 @@ function NWB:setServerConfig()
 	NWB.layerExpireTime = layerExpireTime;
 	NWB:setLayerExpireTimeData();
 	
-	if (NWB.isMOP and NWB.isMegaserver) then
+	if (NWB.isTBC) then
+		--Just for launch, increase layer limit and don't track azeroth zones
+		NWB.layerMapWhitelist = {
+			[1453] = "Stormwind City",
+			[1454] = "Orgrimmar",
+			
+			--[1941] = "Eversong Woods";
+			--[1942] = "Ghostlands";
+			--[1943] = "Azuremyst Isle";
+			[1944] = "Hellfire Peninsula";
+			[1946] = "Zangarmarsh";
+			--[1947] = "The Exodar";
+			[1948] = "Shadowmoon Valley";
+			[1949] = "Blade's Edge Mountains";
+			--[1950] = "Bloodmyst Isle";
+			[1951] = "Nagrand";
+			[1952] = "Terokkar Forest";
+			[1953] = "Netherstorm";
+			--[1954] = "Silvermoon City";
+			[1955] = "Shattrath City";
+			[1957] = "Isle of Quel'Danas";
+		};
+	elseif (NWB.isMOP and NWB.isMegaserver) then
 		NWB.layerMapWhitelist = {
 			[1453] = "Stormwind City",
 			[1454] = "Orgrimmar",
@@ -1990,13 +2016,13 @@ function NWB:printDmfPercent()
 end
 
 local playedWindows = {};
-function NWB:isTimePlayedMsgRegistered()
+--[[function NWB:isTimePlayedMsgRegistered()
 	for i = 1, NUM_CHAT_WINDOWS do
 		if (_G['ChatFrame' .. i] and _G['ChatFrame' .. i]:IsEventRegistered("TIME_PLAYED_MSG")) then
 			return true;
 		end
 	end
-end
+end]]
 
 function NWB:registerTimePlayedMsg()
 	for k, v in pairs(playedWindows) do
@@ -2024,7 +2050,7 @@ function NWB:unregisterTimePlayedMsg()
 end
 
 --Track our current buff durations across all chars.
-local gotPlayedData, reregisterPlayedEvent;
+local gotPlayedData;
 local chronoRestoreUsed = 0;
 function NWB:trackNewBuff(spellName, type, npcID)
 	if (not NWB.data.myChars[UnitName("player")].buffs[spellName]) then
@@ -2063,10 +2089,7 @@ function NWB:trackNewBuff(spellName, type, npcID)
 		NWB.currentTrackBuff = NWB.data.myChars[UnitName("player")].buffs[spellName];
 		--Hide the msg from chat.
 		if (not gotPlayedData) then
-			if (NWB:isTimePlayedMsgRegistered()) then
-				reregisterPlayedEvent = true;
-				NWB:unregisterTimePlayedMsg();
-			end
+			NWB:unregisterTimePlayedMsg();
 			gotPlayedData = true;
 			RequestTimePlayed();
 		end
@@ -2500,9 +2523,7 @@ function NWB:timePlayedMsg(...)
 	end
 	--Reregister the chat frame event after we're done.
 	C_Timer.After(2, function()
-		if (reregisterPlayedEvent) then
-			NWB:registerTimePlayedMsg();
-		end
+		NWB:registerTimePlayedMsg();
 	end)
 	NWB:syncBuffsWithCurrentDuration();
 	NWB:recalcBuffTimers();
@@ -2912,10 +2933,7 @@ f:SetScript("OnEvent", function(self, event, ...)
 				--Only request played data at logon if we didn't get it already for some reason.
 				if (not gotPlayedData) then
 					gotPlayedData = true;
-					if (NWB:isTimePlayedMsgRegistered()) then
-						reregisterPlayedEvent = true;
-						NWB:unregisterTimePlayedMsg();
-					end
+					NWB:unregisterTimePlayedMsg();
 					RequestTimePlayed();
 				end
 			end)
@@ -4145,7 +4163,7 @@ function NWB:openConfig()
 		InterfaceOptionsFrameAddOnsListScrollBar:SetValue(math.floor(max/2));
 	end
 	InterfaceOptionsFrame_OpenToCategory("NovaWorldBuffs");]]
-	Settings.OpenToCategory("NovaWorldBuffs");
+	Settings.OpenToCategory(self.NWBOptions.name);
 end
 
 function NWB:doResetTimerData()
@@ -5136,7 +5154,7 @@ end
 end]]
 
 function NWB:sendBigWigs(time, msg, type)
-	if (NWB.db.global.bigWigsSupport and NWB.isClassic) then
+	if (NWB.db.global.bigWigsSupport and (NWB.isClassic or (NWB.isTBC and UnitLevel("player") < 64))) then
 		--This cooldown is checked in the first yell func instead.
 		--if (GetServerTime() - NWB.firstYells[type] > NWB.buffDropSpamCooldown) then
 		if (NWB:isCapitalCityAction(type)) then
@@ -5640,7 +5658,7 @@ function NWB:doFlowerMsg(type, layer)
 	end
 	if (type and (GetServerTime() - flowerMsg) > 10) then
 		if (NWB.db.global.guildSongflower == true or NWB.db.global.guildSongflower == 1) then
-			NWB:sendGuildMsg(string.format(L["songflowerPicked"], NWB.songFlowers[type].subZone) .. layerMsg, "guildSongflower", "songflower");
+			NWB:sendGuildMsg(string.format(L["songflowerPicked"], L[NWB.songFlowers[type].subZone]) .. layerMsg, "guildSongflower", "songflower");
 		end
 		flowerMsg = GetServerTime();
 	end
@@ -5765,7 +5783,8 @@ function NWB:updateFelwoodWorldmapMarker(type)
 				frame = _G[type .. "NWB"].timerFrame;
 				if (not _G[type .. "NWB"]["timerFrame"].fs2) then
 					_G[type .. "NWB"]["timerFrame"].fs2 = _G[type .. "NWB"]["timerFrame"]:CreateFontString(k .. "NWBTimerFrameFS2", "ARTWORK");
-					_G[type .. "NWB"]["timerFrame"].fs2:SetPoint("RIGHT", 17, 1);
+					--_G[type .. "NWB"]["timerFrame"].fs2:SetPoint("RIGHT", 17, 1);
+					_G[type .. "NWB"]["timerFrame"].fs2:SetPoint("LEFT", _G[type .. "NWB"]["timerFrame"], "RIGHT", 1, 1);
 					_G[type .. "NWB"]["timerFrame"].fs2:SetFont(NWB.regionFont, 13);
 					_G[type .. "NWB"]["timerFrame"].fs2:SetText("|cff00ff00[" .. L["shortLayerPrefix"] .. count .. "]");
 				end
@@ -5783,7 +5802,8 @@ function NWB:updateFelwoodWorldmapMarker(type)
 					_G[type .. "NWB"]["timerFrame" .. count].fs:SetText("00:00");
 					--Outside frame layer text.
 					_G[type .. "NWB"]["timerFrame" .. count].fs2 = _G[type .. "NWB"]["timerFrame" .. count]:CreateFontString(k .. "NWBTimerFrameFS2" .. count, "ARTWORK");
-					_G[type .. "NWB"]["timerFrame" .. count].fs2:SetPoint("RIGHT", 17, 1);
+					--_G[type .. "NWB"]["timerFrame" .. count].fs2:SetPoint("RIGHT", 17, 1);
+					_G[type .. "NWB"]["timerFrame" .. count].fs2:SetPoint("LEFT", _G[type .. "NWB"]["timerFrame" .. count], "RIGHT", 1, 1);
 					_G[type .. "NWB"]["timerFrame" .. count].fs2:SetFont(NWB.regionFont, 13);
 					_G[type .. "NWB"]["timerFrame" .. count].fs2:SetText("|cff00ff00[" .. L["shortLayerPrefix"] .. count .. "]");
 					_G[type .. "NWB"]["timerFrame" .. count]:SetWidth(_G[type .. "NWB"]["timerFrame" .. count].fs:GetStringWidth() + 14);
@@ -10230,6 +10250,25 @@ function NWB:setCurrentLayerText(unit)
 			else
 				NWB:createNewLayer(tonumber(zoneID), GUID, true);
 			end
+			if (spawnUID) then
+				--Wondered why sometimes a layer would get shared that didn't have a spawn time.
+				--It was becaus we were only recording spawn time when targeting a npc after a layer was already created, so copy pasted it here to add it on creation too.
+				local v = NWB.data.layers[tonumber(zoneID)];
+				if (v) then
+					local spawnEpoch = GetServerTime() - (GetServerTime() % 2^23);
+					local spawnEpochOffset = bit.band(tonumber(strsub(spawnUID, 5), 16), 0x7fffff);
+					local spawnIndex = bit.rshift(bit.band(tonumber(strsub(spawnUID, 1, 5), 16), 0xffff8), 3);
+					local spawnTime = spawnEpoch + spawnEpochOffset;
+					if (spawnTime > GetServerTime()) then
+						-- This only occurs if the epoch has rolled over since a unit has spawned.
+						spawnTime = spawnTime - ((2^23) - 1);
+					end
+					--print(spawnUID, spawnTime, v.spawn)
+					if (spawnTime ~= 0 and (not v.spawn or spawnTime < v.spawn or v.spawn == 0)) then
+						v.spawn = spawnTime;
+					end
+				end
+			end
 		end
 		--This can only be set while in a capital and is used for mapping zones with timers like terokkar.
 		NWB.lastKnownLayerMapID_Mapping = tonumber(zoneID);
@@ -10738,6 +10777,14 @@ function NWB:resetLayerData()
 		end
 		NWB.db.global.resetLayers17 = false;
 	end
+	if (NWB.db.global.resetLayers18) then
+		if (NWB.isTBC) then
+			NWB:debug("resetting layer data");
+			NWB.data.layers = {};
+			NWB.data.layerMapBackups = {};
+		end
+		NWB.db.global.resetLayers18 = false;
+	end
 end
 
 function NWB:fixAllLayers()
@@ -10930,6 +10977,7 @@ NWB:updateMinimapLayerFramePos();
 MinimapLayerFrame:SetFrameStrata("HIGH");
 MinimapLayerFrame:SetFrameLevel(9);
 MinimapLayerFrame:SetMovable(true);
+MinimapLayerFrame:SetClampedToScreen(true);
 MinimapLayerFrame.fs = MinimapLayerFrame:CreateFontString("MinimapLayerFrameFS", "ARTWORK");
 MinimapLayerFrame.fs:SetPoint("CENTER", 0, 0);
 MinimapLayerFrame.fs:SetFont(NWB.regionFont, 10);
@@ -10939,6 +10987,7 @@ MinimapLayerFrame:SetHeight(17);
 MinimapLayerFrame.width = MinimapLayerFrame:GetWidth();
 MinimapLayerFrame:Hide();
 MinimapLayerFrame.tooltip = CreateFrame("Frame", "NWBVersionDragTooltip", MinimapLayerFrame, "TooltipBorderedFrameTemplate");
+MinimapLayerFrame.tooltip:SetClampedToScreen(true);
 MinimapLayerFrame.tooltip:SetPoint("BOTTOM", MinimapLayerFrame, "TOP", 0, 1);
 MinimapLayerFrame.tooltip:SetFrameStrata("TOOLTIP");
 MinimapLayerFrame.tooltip:SetFrameLevel(9);

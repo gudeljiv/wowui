@@ -299,6 +299,9 @@ function QuestieItemFixes:Load()
         [4532] = { -- Trelane's Ember Agate
             [itemKeys.objectDrops] = {2718},
         },
+        [4703] = { -- Broken Tools
+            [itemKeys.objectDrops] = {17190},
+        },
         [4806] = { -- Plainstrider Scale
             [itemKeys.npcDrops] = {2956, 2957, 3068},
         },
@@ -328,7 +331,7 @@ function QuestieItemFixes:Load()
         [4986] = { -- Flawed Power Stone
             [itemKeys.relatedQuests] = {924, 926},
             [itemKeys.npcDrops] = {},
-            [itemKeys.objectDrops] = {5621},
+            [itemKeys.objectDrops] = {5619,5620,5621},
         },
         [5051] = { -- Dig Rat
             [itemKeys.relatedQuests] = {862},
@@ -1005,6 +1008,9 @@ function QuestieItemFixes:Load()
         },
         [15874] = { -- Soft-shelled Clam
             [itemKeys.npcDrops] = {12347},
+        },
+        [15885] = { -- Pendant of the Sea Lion
+            [itemKeys.objectDrops] = {15885},
         },
         [15924] = { -- Soft-shelled Clam Meat
             [itemKeys.objectDrops] = {177784},

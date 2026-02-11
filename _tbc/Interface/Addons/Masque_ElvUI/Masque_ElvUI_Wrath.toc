@@ -1,7 +1,7 @@
 ## Interface: 30400
 ## Title: Masque: ElvUI
 ## Notes: ElvUI Skin for Masque
-## Version: 3.5
+## Version: 3.6
 ## Author: Lorade
 ## Dependencies: Masque
 

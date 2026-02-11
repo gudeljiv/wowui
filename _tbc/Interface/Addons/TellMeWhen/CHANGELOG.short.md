@@ -1,9 +1,14 @@
 
-## v12.0.3
-* Groups can now inherit their opacity from an icon. This allows an entire group to take on opacity that is driven by a secret aspect, like cooldown readiness or spell casting state. This also allows using an icon's conditions to drive group opacity.
-* The Spell Cast condition can detect secret casts if the spell filter is empty and the "Casting" checkbox is chosen.
-* Fix: Prevent secrets in the import/export menu, which would break scrolling.
-* Fix: Incorrect stack text shown on item cooldown icons.
+## v12.0.6
+* Added "Class or Primary Resource" as an option to Resource Display icons.
+* Added new WoW 12.0.1 filters to the Buff/Debuff icon type.
+* Added native integration with TullaCTC for styling timer text.
+* Specialization settings are now available to global groups.
+* Fix aura events not getting registered when tracking auras on many different units across all TMW icons.
+* Fix items sometimes showing with a ? texture.
+* Workaround a Blizzard bug where secret recharge durations for a max-charge ability are ignored.
+* Masque settings are now stored against TMW groups' unique identifiers instead of against group IDs. Masque will absorb any per-group customizations into the first TMW profile you log in with.
+* The Edit Mode "TMW: Always Hide" CDM setting has been deprecated in favor of new settings on TMW groups that allow greater flexibility.
 
 
-[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/cae1840ee287fb5da6996d8a739abee5463fda59/CHANGELOG.md)
+[View Full Changelog](https://github.com/ascott18/TellMeWhen/blob/e97ed2a57114cac4252477201d9f292261cc65d7/CHANGELOG.md)

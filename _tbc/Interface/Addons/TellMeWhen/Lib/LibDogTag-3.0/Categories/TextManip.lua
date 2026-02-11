@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-3.0"
-local MINOR_VERSION = tonumber(("20260118201703"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20260207050313"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_MINOR_VERSION then
 	_G.DogTag_MINOR_VERSION = MINOR_VERSION
@@ -167,7 +167,11 @@ DogTag:AddTag("Base", "Lower", {
 })
 
 DogTag:AddTag("Base", "Bracket", {
-	code = function(value)
+	code = C_Secrets and C_Secrets.HasSecretRestrictions()
+	and function(value)
+		return C_StringUtil.WrapString(value, "[", "]")
+	end
+	or function(value)
 		return "[" .. value .. "]"
 	end,
 	arg = {
@@ -181,7 +185,11 @@ DogTag:AddTag("Base", "Bracket", {
 })
 
 DogTag:AddTag("Base", "Angle", {
-	code = function(value)
+	code = C_Secrets and C_Secrets.HasSecretRestrictions()
+	and function(value)
+		return C_StringUtil.WrapString(value, "<", ">")
+	end
+	or function(value)
 		return "<" .. value .. ">"
 	end,
 	arg = {
@@ -195,7 +203,11 @@ DogTag:AddTag("Base", "Angle", {
 })
 
 DogTag:AddTag("Base", "Brace", {
-	code = function(value)
+	code = C_Secrets and C_Secrets.HasSecretRestrictions()
+	and function(value)
+		return C_StringUtil.WrapString(value, "{", "}")
+	end
+	or function(value)
 		return "{" .. value .. "}"
 	end,
 	arg = {
@@ -209,7 +221,11 @@ DogTag:AddTag("Base", "Brace", {
 })
 
 DogTag:AddTag("Base", "Paren", {
-	code = function(value)
+	code = C_Secrets and C_Secrets.HasSecretRestrictions()
+	and function(value)
+		return C_StringUtil.WrapString(value, "(", ")")
+	end
+	or function(value)
 		return "(" .. value .. ")"
 	end,
 	arg = {

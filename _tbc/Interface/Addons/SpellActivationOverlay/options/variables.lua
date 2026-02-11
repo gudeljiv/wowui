@@ -1,4 +1,4 @@
-local AddonName, SAO = ...
+local AddonName,SAO=...
 function SAO.ApplyAllVariables(self)
 self:ApplySpellAlertOpacity()
 self:ApplySpellAlertGeometry()
@@ -11,16 +11,16 @@ SpellActivationOverlayContainerFrame:SetShown(SpellActivationOverlayDB.alert.ena
 SpellActivationOverlayContainerFrame:SetAlpha(SpellActivationOverlayDB.alert.opacity)
 end
 function SAO.ApplySpellAlertGeometry(self)
-SpellActivationOverlayAddonFrame.scale = SpellActivationOverlayDB.alert.scale
-SpellActivationOverlayAddonFrame.offset = SpellActivationOverlayDB.alert.offset
+SpellActivationOverlayAddonFrame.scale=SpellActivationOverlayDB.alert.scale
+SpellActivationOverlayAddonFrame.offset=SpellActivationOverlayDB.alert.offset
 SpellActivationOverlay_OnChangeGeometry(SpellActivationOverlayAddonFrame)
 end
 function SAO.ApplySpellAlertTimer(self)
-SpellActivationOverlayAddonFrame.useTimer = SpellActivationOverlayDB.alert.timer ~= 0
+SpellActivationOverlayAddonFrame.useTimer=SpellActivationOverlayDB.alert.timer~=0
 SpellActivationOverlay_OnChangeTimerVisibility(SpellActivationOverlayAddonFrame)
 end
 function SAO.ApplySpellAlertSound(self)
-SpellActivationOverlayAddonFrame.useSound = SpellActivationOverlayDB.alert.sound ~= 0
+SpellActivationOverlayAddonFrame.useSound=SpellActivationOverlayDB.alert.sound~=0
 SpellActivationOverlay_OnChangeSoundToggle(SpellActivationOverlayAddonFrame)
 end
 function SAO.ApplyGlowingButtonsToggle(self)

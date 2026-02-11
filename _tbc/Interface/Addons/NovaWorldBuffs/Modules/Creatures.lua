@@ -538,6 +538,13 @@ NWB.pandariaCreatures = {
 	[65599] = "H.A.R.V.E.Y.",
 };
 
+NWB.shattrathCreatures = {
+	[18481] = "A'dal",
+	[18940] = "Nutral",
+	[19046] = "Minalei",
+	[19232] = "Innkeeper Haelthol",
+};
+
 NWB.companionCreatures = {
 	--Classic.
 	[9662] = "Sprite Darter Hatchling",
@@ -869,7 +876,13 @@ NWB.companionCreatures = {
 	[6491] = "Spirit Healer",
 }
 
-if (NWB.isWrath) then
+if (NWB.isTBC) then
+	NWB.map = 1955;
+	NWB.mapName = L["Shattrath City"];
+	for k, v in pairs(NWB.shattrathCreatures) do
+		NWB.npcs[k] = v;
+	end
+elseif (NWB.isWrath) then
 	NWB.map = 125;
 	NWB.mapName = L["Dalaran"];
 	for k, v in pairs(NWB.dalaranCreatures) do

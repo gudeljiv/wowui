@@ -233,7 +233,18 @@ function NWB:OnCommReceived(commPrefix, string, distribution, sender)
 			NWB:sendLayerBuffs();
 		end
 	end
-	if (NWB.isMOP and NWB.isMegaserver) then
+	if (NWB.isTBC) then
+		if (tonumber(remoteVersion) < 3.26) then
+			if (cmd == "requestData" and distribution == "GUILD") then
+				if (not NWB:getGuildDataStatus()) then
+					NWB:sendSettings("GUILD");
+				else
+					NWB:sendData("GUILD");
+				end
+			end
+			return;
+		end
+	elseif (NWB.isMOP and NWB.isMegaserver) then
 		if (tonumber(remoteVersion) < 3.16) then
 			if (cmd == "requestData" and distribution == "GUILD") then
 				if (not NWB:getGuildDataStatus()) then

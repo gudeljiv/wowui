@@ -139,7 +139,15 @@ function EVENTS:LoadConfig()
 			frame.event = eventData.event
 			frame.eventData = eventData
 
-			local desc = eventData.desc .. "\r\n\r\n" .. L["EVENTS_HANDLERS_GLOBAL_DESC"]
+			if TMW.clientHasSecrets and eventData.maybeSecret then
+				frame.RestrictedIcon:Show()
+				TMW:TT(frame.RestrictedIcon, "UIPANEL_SECRETS_DISALLOWED", "UIPANEL_SECRETS_EVENT_DISALLOWED_DESC")
+			else
+				frame.RestrictedIcon:Hide()
+			end
+
+			local desc = eventData.desc
+			desc = desc .. "\r\n\r\n" .. L["EVENTS_HANDLERS_GLOBAL_DESC"]
 			TMW:TT(frame, eventData.text, desc, 1, 1)
 
 

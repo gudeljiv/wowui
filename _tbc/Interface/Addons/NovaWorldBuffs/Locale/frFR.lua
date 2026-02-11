@@ -1154,3 +1154,5 @@ L["For help or suggestions"] = "Aide ou suggestions";
 
 L["rendLogQuestInfo"] = "Les remises de Rend s’affichent seulement pour la Horde.";
 L["recentlyKilledMsg"] = "Nouveau minuteur de PNJ %s récemment tuée reçu, morte il y a %s";
+
+L["Shattrath City"] = "Shattrath";

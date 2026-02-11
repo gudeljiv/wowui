@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-3.0"
-local MINOR_VERSION = tonumber(("20260118201703"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20260207050313"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_MINOR_VERSION then
 	_G.DogTag_MINOR_VERSION = MINOR_VERSION
@@ -237,7 +237,7 @@ DogTag:AddTag("Base", "Hide", {
 	code = C_Secrets and C_Secrets.HasSecretRestrictions() and function(value, ...)
 		local good = true
 		if issecretvalue(value) then
-			if ... == 0 then
+			if ... == 0 and type(value) == "number" then
 				return C_StringUtil.TruncateWhenZero(value)
 			end
 			return value

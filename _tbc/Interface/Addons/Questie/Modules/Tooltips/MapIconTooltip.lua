@@ -290,7 +290,7 @@ function MapIconTooltip:Show()
                         local firstInChain = true;
                         while nextQuest ~= nil and (not Questie.db.char.hidden[nextQuest.Id]) do
                             if firstInChain then
-                                self:AddLine("  |TInterface\\Addons\\Questie\\Icons\\nextquest.blp:16|t " .. l10n("Next in chain:"), 0.86, 0.86, 0.86)
+                                self:AddLine("  |TInterface\\Addons\\Questie\\Icons\\nextquest.blp:16|t " .. l10n("Next in chain") .. l10n(": "), 0.86, 0.86, 0.86)
                                 firstInChain = false
                             end
 
@@ -406,7 +406,7 @@ function MapIconTooltip:Show()
                 end
             end
             if self.miniMapIcon == false and not data.disableShiftToRemove then
-                self:AddLine('|cFFa6a6a6Shift-click to hide|r') -- grey
+                self:AddLine(l10n("|cFFa6a6a6Shift-click to hide|r")) -- grey
             end
         end
     end

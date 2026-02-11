@@ -1,7 +1,8 @@
 # ClassicCastbars
 
-## [v1.8.10](https://github.com/wardz/ClassicCastbars/tree/v1.8.10) (2026-01-20)
-[Full Changelog](https://github.com/wardz/ClassicCastbars/compare/v1.8.9...v1.8.10) [Previous Releases](https://github.com/wardz/ClassicCastbars/releases)
+## [v1.8.11](https://github.com/wardz/ClassicCastbars/tree/v1.8.11) (2026-01-30)
+[Full Changelog](https://github.com/wardz/ClassicCastbars/compare/v1.8.10...v1.8.11) [Previous Releases](https://github.com/wardz/ClassicCastbars/releases)
 
-- tbc client seems to have changed positions here slightly. (Might still need some tweaking)  
-- fix #91  
+- remove retail/midnight toc for now  
+- fix player castbar ignoring auto position setting until reloadui  
+- fix nil localization 'REQUIRES\_RESTART'  

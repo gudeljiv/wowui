@@ -91,11 +91,11 @@ Masque:AddSkin("ElvUI", {
 		OffsetY = 2,
 	},
 	Count = {
-		Width = 38,
-		Height = 10,
+		--Width = 38,
+		--Height = 10,
 		OffsetX = -2,
 		OffsetY = 2,
-		FontSize = 13,
+		--FontSize = 26,
 	},
 	HotKey = {
 		Width = 38,
@@ -116,8 +116,8 @@ Masque:AddSkin("ElvUI", {
 		OffsetY = -1,
 	},
 	AssistedCombatHighlight = {
-		Width = 36,
-		Height = 36,
+		Width = 46,
+		Height = 46,
 	},
 }, true)
 

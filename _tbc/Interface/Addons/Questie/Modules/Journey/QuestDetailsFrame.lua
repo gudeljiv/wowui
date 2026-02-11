@@ -54,29 +54,32 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
 
     -- Generic Quest Information
 
-    local levelLabel = _QuestieJourney:CreateLabel(Questie:Colorize(l10n('Recommended Quest Level: '), 'yellow') .. quest.level, true)
+    local levelLabel = _QuestieJourney:CreateLabel(Questie:Colorize(l10n("Recommended Quest Level") .. l10n(": "), 'yellow') .. quest.level, true)
     container:AddChild(levelLabel)
 
-    local minLevelLabel = _QuestieJourney:CreateLabel(Questie:Colorize(l10n('Minimum Required Level for Quest: '), 'yellow') .. quest.requiredLevel, true)
+    local minLevelLabel = _QuestieJourney:CreateLabel(Questie:Colorize(l10n("Minimum Required Level for Quest") .. l10n(": "), 'yellow') .. quest.requiredLevel, true)
     container:AddChild(minLevelLabel)
 
     local levelDiffString = _QuestieJourney:GetDifficultyString(quest.level, quest.requiredLevel)
     local levelDiffLabel = _QuestieJourney:CreateLabel(levelDiffString, true)
     container:AddChild(levelDiffLabel)
 
-    local questIdLabel = _QuestieJourney:CreateLabel(Questie:Colorize(l10n('Quest ID: '), 'yellow') .. quest.Id, true)
+    local questIdLabel = _QuestieJourney:CreateLabel(Questie:Colorize(l10n("Quest ID") .. l10n(": "), 'yellow') .. quest.Id, true)
     container:AddChild(questIdLabel)
 
     local reputationRewardString = _QuestieJourney:GetReputationRewardString(quest.Id)
     if reputationRewardString then
-        local labelText = Questie:Colorize(l10n('Reputation Reward: '), 'yellow') .. Questie:Colorize(reputationRewardString, "reputationBlue")
+        local labelText = Questie:Colorize(l10n("Reputation Reward") .. l10n(": "), 'yellow') .. Questie:Colorize(reputationRewardString, "reputationBlue")
         local reputationRewardLabel = _QuestieJourney:CreateLabel(labelText, true)
         container:AddChild(reputationRewardLabel)
     end
 
-    local completedStatus = Questie.db.char.complete[quest.Id] and Questie:Colorize(string.upper(YES), 'green') or Questie:Colorize(string.upper(NO), 'red')
-    local completedLabel = _QuestieJourney:CreateLabel(Questie:Colorize(l10n('Completed') .. ': ', 'yellow') .. completedStatus, true)
-    container:AddChild(completedLabel)
+    local breadcrumbForQuestId = QuestieDB.QueryQuestSingle(quest.Id, "breadcrumbForQuestId")
+    if breadcrumbForQuestId and breadcrumbForQuestId ~= 0 then
+        local completedStatus = Questie.db.char.complete[quest.Id] and Questie:Colorize(YES, 'green') or Questie:Colorize(NO, 'red')
+        local completedLabel = _QuestieJourney:CreateLabel(Questie:Colorize(l10n('Completed') .. l10n(": "), 'yellow') .. completedStatus, true)
+        container:AddChild(completedLabel)
+    end
 
     QuestieJourneyUtils:Spacer(container)
 
@@ -126,13 +129,13 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
         local starty = startNpc.spawns[startindex][1][2]
         if (startx ~= -1 or starty ~= -1) then
             local startNPCLocLabel = AceGUI:Create("Label")
-            startNPCLocLabel:SetText("X: ".. startx .." || Y: ".. starty)
+            startNPCLocLabel:SetText("X" .. l10n(": ") .. startx .." || Y" .. l10n(": ") .. starty)
             startNPCLocLabel:SetFullWidth(true)
             startNPCGroup:AddChild(startNPCLocLabel)
         end
 
         local startNPCIdLabel = AceGUI:Create("Label")
-        startNPCIdLabel:SetText("NPC ID: ".. startNpc.id)
+        startNPCIdLabel:SetText(l10n("NPC ID").. l10n(": ") .. startNpc.id)
         startNPCIdLabel:SetFullWidth(true)
         startNPCGroup:AddChild(startNPCIdLabel)
 
@@ -202,7 +205,7 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
 
             local continent = QuestieJourneyUtils:GetZoneName(startindex)
 
-            startObjectZoneLabel:SetText(continent)
+            startObjectZoneLabel:SetText(l10n(continent))
             startObjectZoneLabel:SetFullWidth(true)
             startObjectGroup:AddChild(startObjectZoneLabel)
 
@@ -210,13 +213,13 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
             local starty = startObj.spawns[startindex][1][2]
             if (startx ~= -1 or starty ~= -1) then
                 local startObjectLocLabel = AceGUI:Create("Label")
-                startObjectLocLabel:SetText("X: ".. startx .." || Y: ".. starty)
+                startObjectLocLabel:SetText("X" .. l10n(": ") .. startx .." || Y" .. l10n(": ") .. starty)
                 startObjectLocLabel:SetFullWidth(true)
                 startObjectGroup:AddChild(startObjectLocLabel)
             end
 
             local startObjectIdLabel = AceGUI:Create("Label")
-            startObjectIdLabel:SetText("Object ID: ".. startObj.id)
+            startObjectIdLabel:SetText(l10n("Object ID") .. l10n(": ") .. startObj.id)
             startObjectIdLabel:SetFullWidth(true)
             startObjectGroup:AddChild(startObjectIdLabel)
 
@@ -299,14 +302,14 @@ function _QuestieJourney:DrawQuestDetailsFrame(container, quest)
             local endy = endNPC.spawns[endindex][1][2]
             if (endx ~= -1 or endy ~= -1) then
                 local endNPCLocLabel = AceGUI:Create("Label")
-                endNPCLocLabel:SetText("X: ".. endx .." || Y: ".. endy)
+                endNPCLocLabel:SetText("X" .. l10n(": ") .. endx .." || Y" .. l10n(": ") .. endy)
                 endNPCLocLabel:SetFullWidth(true)
                 endNPCGroup:AddChild(endNPCLocLabel)
             end
         end
 
         local endNPCIdLabel = AceGUI:Create("Label")
-        endNPCIdLabel:SetText("NPC ID: ".. endNPC.id)
+        endNPCIdLabel:SetText(l10n("NPC ID") .. l10n(": ") .. endNPC.id)
         endNPCIdLabel:SetFullWidth(true)
         endNPCGroup:AddChild(endNPCIdLabel)
 

@@ -1,7 +1,7 @@
 # Auctionator
 
-## [313](https://github.com/TheMouseNest/Auctionator/tree/313) (2026-01-30)
-[Full Changelog](https://github.com/TheMouseNest/Auctionator/compare/312...313) 
+## [316](https://github.com/TheMouseNest/Auctionator/tree/316) (2026-02-10)
+[Full Changelog](https://github.com/TheMouseNest/Auctionator/compare/315...316) 
 
-- [Fixes #1761] Fix some searches in Selling tab not working  
-- Classic Anniversary: Fix time left text on list views  
+- Update toc for 12.0.1  
+- Added MoP gems estimates (#1770)  

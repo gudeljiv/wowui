@@ -42,6 +42,18 @@ local getPowerCurveFunc = TMW:MakeNArgFunctionCached(2, function(unit, powerType
 	end
 end)
 
+-- Helper to create a step curve with three zones for value thresholds
+local CreateCurve = C_CurveUtil and C_CurveUtil.CreateCurve
+local CreateColorCurve = C_CurveUtil and C_CurveUtil.CreateColorCurve
+
+local function createThreeZoneCurve(CreateCurve, minPct, maxPct, lowVal, okVal, highVal)
+	local curve = CreateCurve()
+	curve:SetType(Enum.LuaCurveType.Step)
+	curve:AddPoint(0, lowVal)
+	curve:AddPoint(minPct, okVal)
+	curve:AddPoint(maxPct + 0.0001, highVal) -- Epsilon added so this acts as `>` and not `>=`.
+	return curve
+end
 
 local Type = TMW.Classes.IconType:New("value")
 Type.name = L["ICONMENU_VALUE"]
@@ -55,6 +67,8 @@ Type.barIsValue = true
 
 local STATE_UNITFOUND = TMW.CONST.STATE.DEFAULT_SHOW
 local STATE_NOUNIT = TMW.CONST.STATE.DEFAULT_HIDE
+local STATE_VALUE_LOW = 10
+local STATE_VALUE_HIGH = 11
 
 Type:SetAllowanceForView("icon", false)
 
@@ -80,6 +94,14 @@ Type:RegisterIconDefaults{
 
 	-- Whether to represent value fragments, or only whole value increments.
 	ValueFragments          = false,
+
+	-- Threshold for when the value is considered "low"
+	ValuePctMin       = 30,
+	ValuePctMinEnabled = false,
+
+	-- Threshold for when the value is considered "high"
+	ValuePctMax       = 70,
+	ValuePctMaxEnabled = false,
 }
 
 
@@ -89,15 +111,30 @@ Type:RegisterConfigPanel_XMLTemplate(105, "TellMeWhen_Unit", {
 })
 
 Type:RegisterConfigPanel_XMLTemplate(165, "TellMeWhen_IconStates", {
-	[STATE_UNITFOUND] = { text = "|cFF00FF00" .. L["ICONMENU_VALUE_HASUNIT"], },
-	[STATE_NOUNIT]    = { text = "|cFFFF0000" .. L["ICONMENU_VALUE_NOUNIT"],  },
+	[STATE_VALUE_HIGH] = {
+		text = function()
+			return "|cFFFFFF00" .. L["ICONMENU_VALUE_HIGH"]:format(TMW.CI.ics.ValuePctMax)
+		end,
+		requires = "ValuePctMaxEnabled",
+		order = 1
+	},
+	[STATE_VALUE_LOW] = {
+		text = function()
+			return "|cFFFFFF00" .. L["ICONMENU_VALUE_LOW"]:format(TMW.CI.ics.ValuePctMin)
+		end,
+		requires = "ValuePctMinEnabled",
+		order = 2
+	},
+	[STATE_UNITFOUND]  = { text = "|cFF00FF00" .. L["ICONMENU_VALUE_HASUNIT"], order = 3 },
+	[STATE_NOUNIT]     = { text = "|cFFFF0000" .. L["ICONMENU_VALUE_NOUNIT"], order = 4 },
 })
 
 Type:RegisterConfigPanel_ConstructorFunc(100, "TellMeWhen_ValueSettings", function(self)
 	self:SetTitle(L["ICONMENU_VALUE_POWERTYPE"])
 
 	local types = {
-		{ order = -2, id = -2, name = L["CONDITIONPANEL_POWER"], },
+		{ order = -3, id = -2, name = L["CONDITIONPANEL_POWER"], },
+		{ order = -2, id = -4, name = L["CONDITIONPANEL_CLASS_POWER"], },
 		{ order = -1, id = -1, name = HEALTH, },
 	    { order = 1,  id = Enum.PowerType.Mana, name = MANA, },
 		{ order = 2,  id = Enum.PowerType.Rage, name = RAGE, },
@@ -158,6 +195,9 @@ Type:RegisterConfigPanel_ConstructorFunc(100, "TellMeWhen_ValueSettings", functi
 	end
 	self.PowerType:SetFunction(function(self)
 		for _, data in TMW:OrderedPairs(types, TMW.OrderSort, true) do
+			if data.id == 0 then
+				TMW.DD:AddSpacer()
+			end
 			if data.id then
 				local info = TMW.DD:CreateInfo()
 				info.text = data.name
@@ -169,7 +209,6 @@ Type:RegisterConfigPanel_ConstructorFunc(100, "TellMeWhen_ValueSettings", functi
 		end
 	end)
 
-	self:SetHeight(36)
 	-- self.PowerType:SetDropdownAnchor("TOPRIGHT", self.PowerType.Middle, "BOTTOMRIGHT")
 	self.PowerType:SetPoint("TOPLEFT", 5, -5)
 	self.PowerType:SetPoint("RIGHT", -5, 0)
@@ -181,10 +220,7 @@ Type:RegisterConfigPanel_ConstructorFunc(100, "TellMeWhen_ValueSettings", functi
 			end
 		end
 	end)
-end)
 
-Type:RegisterConfigPanel_ConstructorFunc(105, "TellMeWhen_ValueCheckSettings", function(self)
-	self:SetTitle(Type.name)
 	self:BuildSimpleCheckSettingFrame({
 		function(check)
 			check:SetTexts(L["ICONMENU_VALUEFRAGMENTS"], L["ICONMENU_VALUEFRAGMENTS_DESC"])
@@ -197,7 +233,13 @@ Type:RegisterConfigPanel_ConstructorFunc(105, "TellMeWhen_ValueCheckSettings", f
 			end)
 		end,
 	})
+	self.ValueFragments:ClearAllPoints()
+	self.ValueFragments:SetPoint("TOPLEFT", self.PowerType, "BOTTOMLEFT", 0, -2)
+
+	self:AdjustHeight(-5)
 end)
+
+Type:RegisterConfigPanel_XMLTemplate(107, "TellMeWhen_ValuePcts")
 
 TMW:RegisterUpgrade(72011, {
 	icon = function(self, ics)
@@ -215,6 +257,7 @@ for k, v in pairs(PowerBarColor) do
 end
 PowerBarColor[-1] = {{r=1, g=0, b=0, a=1}, {r=1, g=1, b=0, a=1}, {r=0, g=1, b=0, a=1}}
 PowerBarColor[-3] = {{r=0, g=1, b=0, a=1}, {r=1, g=1, b=0, a=1}, {r=1, g=0, b=0, a=1}}
+PowerBarColor[Enum.PowerType.ArcaneCharges] = PowerBarColor["ARCANE_CHARGES"]
 
 local function Value_OnEvent(icon, event, arg1, arg2)
 	if event == icon.UnitSet.event then
@@ -284,8 +327,35 @@ end
 
 function Type:HandleYieldedInfo(icon, iconToSet, unit, value, maxValue, valueColor, valueCurveFunc)
 	if unit then
+		local state = STATE_UNITFOUND
+
+		local minEnabled = icon.ValuePctMinEnabled
+		local maxEnabled = icon.ValuePctMaxEnabled
+		if minEnabled or maxEnabled then
+			if valueCurveFunc then
+				-- Secret values: evaluate pre-created curves, storing results in state
+				state = {
+					valueThresholdState = true,
+					Alpha = valueCurveFunc(icon.thresholdAlphaCurve),
+					Color = valueCurveFunc(icon.thresholdColorCurve),
+					Desaturation = valueCurveFunc(icon.thresholdDesatCurve),
+				}
+			else
+				-- Non-secret values: we can do direct comparison
+				local pct = maxValue > 0 and (value / maxValue) or 0
+				local minPct = minEnabled and (icon.ValuePctMin / 100) or 0
+				local maxPct = maxEnabled and (icon.ValuePctMax / 100) or 1
+
+				if minEnabled and pct < minPct then
+					state = STATE_VALUE_LOW
+				elseif maxEnabled and pct > maxPct then
+					state = STATE_VALUE_HIGH
+				end
+			end
+		end
+
 		iconToSet:SetInfo("state; value, maxValue, valueColor, valueCurveFunc; unit, GUID",
-			STATE_UNITFOUND,
+			state,
 			value, maxValue, valueColor, valueCurveFunc,
 			unit, nil
 		)
@@ -303,6 +373,49 @@ function Type:Setup(icon)
 	icon.Units, icon.UnitSet = TMW:GetUnits(icon, icon.Unit, icon:GetSettings().UnitConditions)
 
 	icon:SetInfo("texture; reverse", "Interface/Icons/inv_potion_49", true)
+
+	icon.thresholdAlphaCurve = nil
+	icon.thresholdColorCurve = nil
+	icon.thresholdDesatCurve = nil
+	
+	local minEnabled = icon.ValuePctMinEnabled
+	local maxEnabled = icon.ValuePctMaxEnabled
+	if (minEnabled or maxEnabled) and clientHasSecrets then
+		local minPct = minEnabled and (icon.ValuePctMin / 100) or 0
+		local maxPct = maxEnabled and (icon.ValuePctMax / 100) or 1
+
+		local lowState = icon.States[minEnabled and STATE_VALUE_LOW or STATE_UNITFOUND]
+		local okState = icon.States[STATE_UNITFOUND]
+		local highState = icon.States[maxEnabled and STATE_VALUE_HIGH or STATE_UNITFOUND]
+
+		icon.thresholdAlphaCurve = createThreeZoneCurve(CreateCurve, minPct, maxPct, lowState.Alpha, okState.Alpha, highState.Alpha)
+
+		local lowColor = TMW:StringToCachedColorMixin(lowState.Color)
+		local okColor = TMW:StringToCachedColorMixin(okState.Color)
+		local highColor = TMW:StringToCachedColorMixin(highState.Color)
+		icon.thresholdColorCurve = createThreeZoneCurve(CreateColorCurve, minPct, maxPct, lowColor, okColor, highColor)
+
+		icon.thresholdDesatCurve = createThreeZoneCurve(CreateCurve, minPct, maxPct,
+			lowColor.flags.desaturate and 1 or 0,
+			okColor.flags.desaturate and 1 or 0,
+			highColor.flags.desaturate and 1 or 0
+		)
+	end
+
+	if icon.PowerType == -4 then
+		if ClassicExpansionAtLeast(LE_EXPANSION_LEGION) and pclass == "MAGE" and TMW.GetCurrentSpecialization() == SPEC_MAGE_ARCANE then
+			icon.PowerType = Enum.PowerType.ArcaneCharges
+		elseif pclass == "MONK" and TMW.GetCurrentSpecialization() == SPEC_MONK_WINDWALKER then
+			icon.PowerType = Enum.PowerType.Chi
+		else
+			local ClassPowers = {
+				PALADIN = ClassicExpansionAtLeast(LE_EXPANSION_CATACLYSM) and Enum.PowerType.HolyPower,
+				WARLOCK = ClassicExpansionAtLeast(LE_EXPANSION_CATACLYSM) and Enum.PowerType.SoulShards,
+				EVOKER = Enum.PowerType.Essence,
+			}
+			icon.PowerType = ClassPowers[pclass] or -2
+		end
+	end
 	
 	icon:SetUpdateMethod("auto")
 

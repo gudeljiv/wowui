@@ -24,7 +24,7 @@ local IsAddOnLoaded = C_AddOns and C_AddOns.IsAddOnLoaded or IsAddOnLoaded
 TELLMEWHEN_VERSION = GetAddOnMetadata("TellMeWhen", "Version")
 
 TELLMEWHEN_VERSION_MINOR = ""
-local projectVersion = "12.0.3" -- comes out like "6.2.2-21-g4e91cee"
+local projectVersion = "12.0.6" -- comes out like "6.2.2-21-g4e91cee"
 if projectVersion:find("project%-version") then
 	TELLMEWHEN_VERSION_MINOR = "dev"
 elseif strmatch(projectVersion, "%-%d+%-") then
@@ -33,7 +33,7 @@ end
 
 TELLMEWHEN_VERSION_FULL = TELLMEWHEN_VERSION .. " " .. TELLMEWHEN_VERSION_MINOR
 
-local REVISION = 2
+local REVISION = 3
 if #TELLMEWHEN_VERSION > 7 or REVISION >= 100 then
 	return error("TELLMEWHEN: UNEXPECTEDLY HIGH VERSION/REVISION")
 end
@@ -117,9 +117,6 @@ local TMW = _G.TMW
 TMW.issecretvalue = _G.issecretvalue or function() end
 TMW.clientHasSecrets = C_Secrets and C_Secrets.HasSecretRestrictions()
 TMW.wowMajor = math.floor(select(4, GetBuildInfo()) / 10000)
-
-
-local DogTag = LibStub("LibDogTag-3.0", true)
 
 if false then
 	 -- stress testing for text widths
@@ -268,6 +265,13 @@ TMW.Defaults = {
 		EffThreshold      = 15,
 		BackupDbInOptions = true,
 		CreateImportBackup = true,
+		EditModeLayouts = {
+			["**"] = {
+				CDMHide = {
+					["*"] = false,
+				}
+			}
+		},
 
 		NumGroups         = 0,
 		-- Groups = {} -- this will be set to the profile group defaults in a second.
@@ -298,6 +302,9 @@ TMW.Defaults = {
 				--CheckOrder		= -1,
 				EnabledSpecs	= {
 					["*"]		= true,
+				},
+				CDMViewerHide	= {
+					["*"]		= false,
 				},
 				Role 			= 0x7,
 				SettingsPerView	= {
@@ -1472,6 +1479,15 @@ TMW.C.TMW:Inherit("Core_Upgrades")
 
 function TMW:GetBaseUpgrades()			-- upgrade functions
 	return {
+		[12000603] = {
+			group = function(self, gs, domain, groupID)
+				-- EnabledSpecs was previously not applied to global groups.
+				-- Wipe out any lingering so groups aren't suddenly hidden.
+				if domain == "global" then
+					wipe(gs.EnabledSpecs)
+				end
+			end,
+		},
 
 		[92400] = {
 			-- The lua import detector for the luavalue icon type
@@ -2471,7 +2487,7 @@ do	-- TMW:OnUpdate()
 	local updateInProgress, shouldSafeUpdate
 	local start
 	-- Assume in combat unless we find out otherwise.
-	local inCombatLockdown = 1
+	local inCombatLockdown = true
 
 	-- Limit in milliseconds for each OnUpdate cycle.
 	local CoroutineLimit = 50
@@ -2490,7 +2506,7 @@ do	-- TMW:OnUpdate()
 
 	local function checkYield()
 		if inCombatLockdown and debugprofilestop() - start > CoroutineLimit then
-			TMW:Debug("OnUpdate yielded early at %s", time)
+			--TMW:Debug("OnUpdate yielded early at %s", time)
 
 			coroutine.yield()
 		end
@@ -2617,23 +2633,13 @@ function TMW:UpdateNormally()
 
 	for groupID = 1, max(TMW.db.profile.NumGroups, #TMW.profile) do
 		-- Cant use TMW.InGroups() because groups wont exist yet on the first call of this.
-		local group = TMW.profile[groupID] or
-			TMW.Classes.Group:New("Frame", "TellMeWhen_Group" .. groupID, TMW, "TellMeWhen_GroupTemplate", groupID)
-
-		group.Domain = "profile"
-		TMW[group.Domain][groupID] = group
-
+		local group = TMW.Classes.Group:GetOrCreate("profile", groupID)
 		TMW.safecall(group.Setup, group)
 	end
 
 	for groupID = 1, max(TMW.db.global.NumGroups, #TMW.global) do
 		-- Cant use TMW.InGroups() because groups wont exist yet on the first call of this.
-		local group = TMW.global[groupID] or
-			TMW.Classes.Group:New("Frame", "TellMeWhen_GlobalGroup" .. groupID, TMW, "TellMeWhen_GlobalGroupTemplate", groupID)
-
-		group.Domain = "global"
-		TMW[group.Domain][groupID] = group
-
+		local group = TMW.Classes.Group:GetOrCreate("global", groupID)
 		TMW.safecall(group.Setup, group)
 	end
 
@@ -2667,7 +2673,7 @@ do -- TMW:UpdateViaCoroutine()
 
 	local function CheckCoroutineTermination()
 		if UpdateCoroutine and debugprofilestop() - CoroutineStartTime > COROUTINE_MAX_TIME_PER_FRAME then
-			TMW:Debug("Update() yielded early at %s", time)
+			--TMW:Debug("Update() yielded early at %s", time)
 			coroutine.yield(UpdateCoroutine)
 		end
 	end
@@ -3047,6 +3053,13 @@ function TMW:SlashCommand(str)
 end
 TMW:RegisterChatCommand("tmw", "SlashCommand")
 TMW:RegisterChatCommand("tellmewhen", "SlashCommand")
+TMW:RegisterChatCommand("rl", ReloadUI)
+if _G.CooldownViewerSettings then
+	TMW:RegisterChatCommand("cdm", function()
+		_G.CooldownViewerSettings:SetShown(not _G.CooldownViewerSettings:IsShown())
+	end)
+end
+
 
 function TMW:LoadOptions(recursed)
 	--[[ Here's the story of some taint. A better version is at
@@ -3144,7 +3157,7 @@ function TMW:LoadOptions(recursed)
 		return;
 	end
 
-	TMW:Debug(L["LOADINGOPT"])
+	--TMW:Debug(L["LOADINGOPT"])
 
 	local loaded, reason = LoadAddOn("TellMeWhen_Options")
 	if not loaded then

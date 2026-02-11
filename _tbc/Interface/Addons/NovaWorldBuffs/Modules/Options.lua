@@ -1869,7 +1869,7 @@ NWB.optionDefaults = {
 		logonPrint = true,
 		chatWarning = true,
 		middleScreenWarning = true,
-		chat30 = true,
+		chat30 = false,
 		chat15 = false,
 		chat10 = true,
 		chat5 = false,
@@ -1878,7 +1878,7 @@ NWB.optionDefaults = {
 		chatZan = false,
 		chatNpcKilled = true,
 		chatOnlyInCity = false,
-		middle30 = true,
+		middle30 = false,
 		middle15 = false,
 		middle10 = true,
 		middle5 = false,
@@ -2027,6 +2027,7 @@ NWB.optionDefaults = {
 		dmfAutoResTime = 3,
 		dmfChatCountdown = true,
 		resetLayers17 = true, --Reset layers one time (sometimes needed when upgrading from old version.
+		resetLayers18 = true, --Reset layers one time (sometimes needed when upgrading from old version.
 		resetDailyData = true;
 		resetSongflowers = true, --Reset songflowers one time.
 		beta = false, --Enable features being tested on occasion.
@@ -2035,10 +2036,10 @@ NWB.optionDefaults = {
 		convertSettings = true,
 		wipeSingleLayer = true,
 		guildL = true,
-		terokkarChat10 = true,
-		terokkarMiddle10 = true,
+		terokkarChat10 = false,
+		terokkarMiddle10 = false,
 		wintergraspChat10 = true,
-		wintergraspMiddle10 = true,
+		wintergraspMiddle10 = false,
 		wipeTerokkarData4 = true,
 		showShatWorldmapMarkers = true,
 		showShatWorldmapMarkersTerok = true,
@@ -2335,13 +2336,13 @@ end
 
 function NWB:checkNewVersion()
 	--NWB.db.global.versions = {};
-	local newVersionNotes = 3.25;
+	local newVersionNotes = 3.29;
 	if (NWB.version and NWB.version == newVersionNotes) then
 		if (not NWB.db.global.versions[NWB.version]) then
 			if (NWB.isTBC) then
 				--if (NWB:GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
 					local notes = {
-						"Enabled rend log again for during the TBC prepatch (hopefully), may take a couple days for enough people to update for it to work properly, It will automatically disable roughly around when the portal opens.",
+						"Changed the Terokkat Tower timer msgs off by default for chat and middle of the screen, there's far more layers than the last TBC and its a bit spammy. You can turn them on in options if you want to see those msgs.",
 					};
 					loadNewVersionFrame(NWB.version, notes, "Nova World Buffs", "Interface\\Icons\\inv_misc_head_dragon_01", -50, 350);
 				--end

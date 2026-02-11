@@ -1,5 +1,44 @@
 ## SpellActivationOverlay Changelog
 
+#### v2.7.2 (2026-02-03)
+
+Thank you to our amazing contributors for helping out. Thanks!
+- Nezzey and catpokemon for suggesting Priest's Clearcasting effect
+- simgr0 for suggesting Shaman's Shamanistic Focus
+- cottycotty for reporting the Dominos issue
+
+New Spell Alerts
+- Priest's Clearcasting (The Burning Crusade)
+- Shaman's Shamanistic Focus (The Burning Crusade, Wrath, Cataclysm)
+
+New Glowing Buttons
+- Priest's Binding Heal, during Clearcasting (The Burning Crusade)
+- Priest's Flash Heal, during Clearcasting (The Burning Crusade)
+- Priest's Greater Heal, during Clearcasting (The Burning Crusade)
+- Shaman's Earth Shock, during Shamanistic Focus (TBC, Wrath, Cata)
+- Shaman's Flame Shock, during Shamanistic Focus (TBC, Wrath, Cata)
+- Shaman's Frost Shock, during Shamanistic Focus (TBC, Wrath, Cata)
+
+Updated Spell Alerts
+- Shaman's Elemental Focus visuals are now consistent
+- Healing Trance visuals have been updated (The Burning Crusade, Wrath)
+
+Bug Fixes
+- Buttons should glow as intended with Dominos (The Burning Crusade)
+
+This release optimizes code size a bit further than in 2.7.0
+
+#### v2.7.1 (2026-01-21)
+
+Support for Titan Reforged: Wrath
+- It uses the Wrath Classic flavor
+- Since testing on Titan Reforged servers is complicated, support is limited
+- Make sure to report issues, thank you :)
+
+Bug Fixes
+- Universal build is no longer seen as 'out of date' (The Burning Crusade)
+- Developer build is no longer seen as 'out of date' (Era, TBC, Wrath, Cata)
+
 #### v2.7.0 (2026-01-20)
 
 Thank you to our amazing contributors for helping out. Thanks!
@@ -188,7 +227,7 @@ Bug Fixes
 Ghosts\*\*\* Busted
 - Hunter's Mongoose Bite (Classic Era, The Burning Crusade)
 - Hunter's Flanking Strike (Season of Discovery)
-- Shaman's Rolling Thunder  (Season of Discovery, The Burning Crusade)
+- Shaman's Rolling Thunder (Season of Discovery, The Burning Crusade)
 - Shaman's Molten Blast (Season of Discovery)
 - Shaman's Fulmination (Cataclysm, Mists of Pandaria)
 - Shaman's Lava Surge (Cataclysm, Mists of Pandaria)

@@ -1,4 +1,8 @@
-﻿2.5.04 - 29th January 2026
+﻿2.5.05 - 8th February 2026
+- For 'Automate quests' ('Automation'), excluded lots of NPCs from automation (escort quests, repeatable quests, etc).
+- For 'Mute game sounds' ('System'), updated the sound file ID for the 'Login' setting.
+
+2.5.04 - 29th January 2026
 - For 'Dismount me' ('System'), fixed an issue which caused a Lua error when shapeshifting as a druid or shaman during combat.
 
 2.5.03 - 28th January 2026

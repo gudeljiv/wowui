@@ -49,12 +49,12 @@ function Env.AuraStacksPacked(unit, name, kindKey, onlyMine)
 	local auras = GetAuras(unit)
 	local instances = auras.instances
 	
-	for auraInstanceID, isMine in next, auras.lookup[name] or empty do
+	for auraInstanceID, isMine in next, auras.lookup[name] do
 		if (isMine or not onlyMine) then
 			local instance = instances[auraInstanceID]
 			if instance[kindKey] then
 				local count = instance.applications
-				return count == 0 and 1 or count
+				return (issecretvalue(count) or count == 0) and 1 or count
 			end
 		end
 	end
@@ -89,7 +89,7 @@ function Env.AuraCountPacked(units, spells, kindKey, onlyMine)
 		local lookup = auras.lookup
 		
 		for i = 1, #SpellsArray do
-			for auraInstanceID, isMine in next, lookup[SpellsArray[i]] or empty do
+			for auraInstanceID, isMine in next, lookup[SpellsArray[i]] do
 				if (isMine or not onlyMine) then
 					if instances[auraInstanceID][kindKey] then
 						n = n + 1
@@ -127,21 +127,25 @@ function Env.AuraDurPacked(unit, name, kindKey, onlyMine)
 	local auras = GetAuras(unit)
 	local instances = auras.instances
 	
-	for auraInstanceID, isMine in next, auras.lookup[name] or empty do
+	for auraInstanceID, isMine in next, auras.lookup[name] do
 		if (isMine or not onlyMine) then
 			local instance = instances[auraInstanceID]
 			if instance[kindKey] then
 				local expirationTime = instance.expirationTime
-				local timeMod = instance.timeMod
-				return 
-					expirationTime == 0 and huge or ((expirationTime - TMW.time) / timeMod), 
-					instance.duration, 
-					expirationTime,
-					timeMod
+				if issecretvalue(expirationTime) then
+					return huge, 0, 0, 1
+				else
+					local timeMod = instance.timeMod
+					return
+						expirationTime == 0 and huge or ((expirationTime - TMW.time) / timeMod), 
+						instance.duration,
+						expirationTime,
+						timeMod
+				end
 			end
 		end
 	end
-	return 0, 0, 0
+	return 0, 0, 0, 1
 end
 
 function Env.AuraPercent(unit, name, filter)
@@ -164,12 +168,14 @@ function Env.AuraPercentPacked(unit, name, kindKey, onlyMine)
 	local auras = GetAuras(unit)
 	local instances = auras.instances
 	
-	for auraInstanceID, isMine in next, auras.lookup[name] or empty do
+	for auraInstanceID, isMine in next, auras.lookup[name] do
 		if (isMine or not onlyMine) then
 			local instance = instances[auraInstanceID]
 			if instance[kindKey] then
 				local expirationTime = instance.expirationTime
-				return expirationTime == 0 and 1 or ((expirationTime - TMW.time) / instance.duration)
+				if not issecretvalue(expirationTime) then
+					return expirationTime == 0 and 1 or ((expirationTime - TMW.time) / instance.duration)
+				end
 			end
 		end
 	end
@@ -197,14 +203,16 @@ function Env.AuraVariableNumberPacked(unit, name, kindKey, onlyMine)
 	local auras = GetAuras(unit)
 	local instances = auras.instances
 	
-	for auraInstanceID, isMine in next, auras.lookup[name] or empty do
+	for auraInstanceID, isMine in next, auras.lookup[name] do
 		if (isMine or not onlyMine) then
 			local instance = instances[auraInstanceID]
 			if instance[kindKey] then
 				local points = instance.points
-				for i = 1, #points do
-					local v = points[i]
-					if v and v > 0 then return v end
+				if not issecretvalue(points) then
+					for i = 1, #points do
+						local v = points[i]
+						if v and v > 0 then return v end
+					end
 				end
 			end
 		end
@@ -234,7 +242,7 @@ function Env.AuraTooltipNumberPacked(unit, name, kindKey, onlyMine, requestedInd
 	local auras = GetAuras(unit)
 	local instances = auras.instances
 	
-	for auraInstanceID, isMine in next, auras.lookup[name] or empty do
+	for auraInstanceID, isMine in next, auras.lookup[name] do
 		if (isMine or not onlyMine) then
 			local instance = instances[auraInstanceID]
 			if instance[kindKey] then

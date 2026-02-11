@@ -1,7 +1,6 @@
 # Baganator
 
-## [784](https://github.com/TheMouseNest/Baganator/tree/784) (2026-01-30)
-[Full Changelog](https://github.com/TheMouseNest/Baganator/compare/783...784) 
+## [786](https://github.com/TheMouseNest/Baganator/tree/786) (2026-02-10)
+[Full Changelog](https://github.com/TheMouseNest/Baganator/compare/785...786) 
 
-- Retail: Fix "Item Level" corner widget for cached bag views  
-- Retail: Fix "Item Level" sorting method  
+- Update toc for 12.0.1  

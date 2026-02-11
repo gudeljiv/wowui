@@ -58,6 +58,15 @@ function QuestieObjectFixes:Load()
             [objectKeys.spawns] = {[zoneIDs.DARKSHORE]={{38.6,86.2}}},
             [objectKeys.zoneID] = zoneIDs.DARKSHORE,
         },
+        [13891] = { -- Serpentbloom
+            [objectKeys.spawns] = {[zoneIDs.KALIMDOR]={{51.877,54.964}},[zoneIDs.THE_BARRENS]={{49.08,33.51},{48.06,31.9},{47.49,32.92},{46.91,32.73},{48.85,32.25},{46.66,34.48},{46.06,32.74},{46.51,35.56},{49.05,34.16},{48.09,32.41},{47.66,32.22},{46.21,34.72},{45.68,33.82},{48.08,34.31},{47.62,33.85}},[zoneIDs.WAILING_CAVERNS]={{-1,-1}}},
+            [objectKeys.zoneID] = zoneIDs.WAILING_CAVERNS,
+        },
+        [15885] = { -- Shrine Of Remulos
+            [objectKeys.name] = "Shrine Of Remulos",
+            [objectKeys.spawns] = {[zoneIDs.MOONGLADE]={{36.0,41.42}}},
+            [objectKeys.zoneID] = zoneIDs.MOONGLADE,
+        },
         [19021] = {
             [objectKeys.spawns] = {[zoneIDs.ASHENVALE]={{69.04,84.77},{77.03,73.8},{79.08,74.48},{70.53,73.58},{70.68,85.06},{69.29,82.67},{71.29,83.83},{77.97,65.82},{77.38,69.77},{77.06,68.3},{69.87,74.11},{78.3,73.6},{76.22,67.48},{76.62,70.67},{76.77,72.19},{78.31,69.73},{68.24,77.68},{77.68,72.63},{74.77,69.6},{78.26,64.58},{70.72,75.24},{74.23,69.47},{74.36,70.21},{75.88,73.52},{75.87,69.99},{69.89,85.32},{74.34,77.92},{70.1,76.08},{74.58,77.19},{74.67,75.39},{76.67,68.46},{68.94,84.86},{74.41,73.38},{74.46,75.56},{73.09,73.23},{71.04,73.8},{71.45,76.97},{73.68,76.95},{72.63,76.86},{70.77,75.99},{72.51,75.12}}},
             [objectKeys.zoneID] = zoneIDs.ASHENVALE,
@@ -265,6 +274,10 @@ function QuestieObjectFixes:Load()
         [179544] = {
             [objectKeys.name] = "Skeletal Remains of Telmius Dreamseeker",
         },
+        [179547] = { -- A Dusty Tome
+            [objectKeys.spawns] = {[zoneIDs.DIRE_MAUL]={{-1,-1}}},
+            [objectKeys.zoneID] = zoneIDs.DIRE_MAUL,
+        },
         [179703] = { -- Cache of the Firelord
             [objectKeys.questStarts] = {7632},
         },
@@ -287,6 +300,9 @@ function QuestieObjectFixes:Load()
             [objectKeys.spawns] = {[zoneIDs.SILITHUS]={{25.72,90.86}}},
             [objectKeys.zoneID] = zoneIDs.SILITHUS,
         },
+        [181598] = { -- Silithyst Geyser
+            [objectKeys.spawns] = {[zoneIDs.SILITHUS]={{41.17,77.14},{49.21,44.84},{35.7,66.4},{41.67,27.04},{26.42,81.5},{20.84,81.43},{31.28,65.46},{39.94,22.35},{36.7,77.47},{18.88,80.26},{50.45,50.69},{38.91,80.85},{36.09,29.92},{48.83,85.1},{36.02,38.35},{59.25,58.77},{64.01,70.86},{60.61,63.0},{58.07,49.96}}},
+        },
         [186420] = { -- Syndicate Documents
             [objectKeys.questStarts] = {},
         },
@@ -298,9 +314,6 @@ function QuestieObjectFixes:Load()
         },
         [188123] = {
             [objectKeys.spawns] = {}, -- Mailbox possibly added in TBC/BC. Not there in Classic
-        },
-        [181598] = { -- Silithyst Geyser
-            [objectKeys.spawns] = {[zoneIDs.SILITHUS]={{41.17,77.14},{49.21,44.84},{35.7,66.4},{41.67,27.04},{26.42,81.5},{20.84,81.43},{31.28,65.46},{39.94,22.35},{36.7,77.47},{18.88,80.26},{50.45,50.69},{38.91,80.85},{36.09,29.92},{48.83,85.1},{36.02,38.35},{59.25,58.77},{64.01,70.86},{60.61,63.0},{58.07,49.96}}},
         },
         [375544] = {
             [objectKeys.name] = "Wooden Figurine",
@@ -378,6 +391,10 @@ function QuestieObjectFixes:LoadFactionFixes()
     local zoneIDs = ZoneDB.zoneIDs
 
     local objectFixesHorde = {
+        [177525] = { -- Moonkin Stone
+            [objectKeys.spawns] = {[zoneIDs.THE_BARRENS]={{41.96,60.81}}},
+            [objectKeys.zoneID] = zoneIDs.THE_BARRENS,
+        },
         [180743] = {
             [objectKeys.spawns] = {[zoneIDs.ORGRIMMAR]={{52.39,69.52}}},
         },
@@ -396,6 +413,10 @@ function QuestieObjectFixes:LoadFactionFixes()
     }
 
     local objectFixesAlliance = {
+        [177525] = { -- Moonkin Stone
+            [objectKeys.spawns] = {[zoneIDs.DARKSHORE]={{43.5,45.97}}},
+            [objectKeys.zoneID] = zoneIDs.DARKSHORE,
+        },
         [180743] = {
             [objectKeys.spawns] = {[zoneIDs.IRONFORGE]={{33.86,65.69}}},
         },

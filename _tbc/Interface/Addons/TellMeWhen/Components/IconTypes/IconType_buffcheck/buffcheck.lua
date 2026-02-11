@@ -249,7 +249,7 @@ local function BuffCheck_OnUpdate_Packed(icon, time)
 			
 			for i = 1, #SpellsArray do
 				local spell = SpellsArray[i]
-				for auraInstanceID, isMine in next, auras.lookup[spell] or empty do
+				for auraInstanceID, isMine in next, lookup[spell] do
 					local instance = instances[auraInstanceID]
 
 					if 
@@ -257,7 +257,10 @@ local function BuffCheck_OnUpdate_Packed(icon, time)
 					and	(NotOnlyMine or isMine)
 					then
 						foundOnUnit = true
-						local remaining = (instance.expirationTime == 0 and huge) or ((instance.expirationTime - time) / instance.timeMod)
+						local remaining = 
+							(issecretvalue(instance.expirationTime) and huge) or
+							(instance.expirationTime == 0 and huge) or
+							((instance.expirationTime - time) / instance.timeMod)
 	
 						-- If we haven't found anything yet, or if this aura beats the previous by sort order, then use it.
 						if not foundInstance or remaining < curSortDur then
@@ -378,7 +381,7 @@ function Type:Setup(icon)
 
 	-- Setup events and update functions.
 	icon:SetUpdateFunction(BuffCheck_OnUpdate)
-	if icon.UnitSet.allUnitsChangeOnEvent then
+	if icon.UnitSet.allUnitsChangeOnEvent and icon.Enabled then
 		icon:SetUpdateMethod("manual")
 		icon:SetScript("OnEvent", Buff_OnEvent)
 		icon:RegisterEvent(icon.UnitSet.event)

@@ -7,7 +7,7 @@
 ## Category-enUS: Bags & Inventory
 
 ## Interface: 11508, 20505
-## Version: 2026.01.31.A
+## Version: 2026.02.10.A
 ## X-Curse-Project-ID: 830638
 ## SavedVariables: OpenSesameDB
 

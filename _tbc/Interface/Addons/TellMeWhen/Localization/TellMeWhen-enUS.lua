@@ -370,6 +370,12 @@ L["ICONMENU_VALUE_POWERTYPE_DESC"] = "Configure what resource you want the icon 
 L["ICONMENU_VALUE_HASUNIT"] = "Unit Found"
 L["ICONMENU_VALUE_NOUNIT"] = "No Units Found"
 
+L["ICONMENU_VALUE_LOW"] = "Value Percentage < %s%%"
+L["ICONMENU_VALUE_HIGH"] = "Value Percentage > %s%%"
+L["ICONMENU_VALUE_THRESHOLD_TITLE"] = "Percentage Thresholds"
+L["ICONMENU_VALUE_THRESHOLD_MIN_DESC"] = "Percentage threshold, below which a custom Opacity & Color can be applied"
+L["ICONMENU_VALUE_THRESHOLD_MAX_DESC"] = "Percentage threshold, above which a custom Opacity & Color can be applied"
+
 L["ICONMENU_META"] = "Meta Icon"
 L["ICONMENU_META_DESC"] = [=[Combines multiple icons into one.
 
@@ -731,7 +737,6 @@ Advanced anchor settings are available in the group options.]]
 L["ICONMENU_SPLIT"] = "Split into new group"
 L["ICONMENU_SPLIT_GLOBAL"] = "Split into new |cff00c300global|r group"
 L["ICONMENU_SPLIT_DESC"] = "Create a new group and move this icon into it. Many group settings will carry over to the new group."
-L["ICONMENU_SPLIT_NOCOMBAT_DESC"] = "Can't create new groups while in combat. Leave combat to split into a new group."
 L["ICONMENU_COPYEVENTHANDLERS"] = "Copy %d |4Notification:Notifications;"
 L["ICONMENU_COPYEVENTHANDLERS_DESC"] = "Copy %s's %d |4Notification:Notifications; to %s."
 L["ICONMENU_COPYCONDITIONS"] = "Copy %d |4Condition:Conditions;"
@@ -808,6 +813,21 @@ L["ICONMENU_HIDEWHILESECRET"] = "Hide while secret"
 L["ICONMENU_HIDEWHILESECRET_DESC"] = [[Check this to cause the icon to hide while aura information is secret.
 
 TellMeWhen cannot automatically determine if an aura will definitely be secret or non-secret in lockdown, so this setting will let you avoid showing an aura as 'Absent' when TMW just isn't allowed to know about it.]]
+L["ICONMENU_AURAFILTER"] = "Aura Filters"
+L["ICONMENU_AURAFILTER_DESC"] = "Only show auras that match any of the selected filters."
+L["ICONMENU_AURAFILTER_NONE"] = "No Filter"
+L["ICONMENU_AURAFILTER_IMPORTANT"] = "Important"
+L["ICONMENU_AURAFILTER_IMPORTANT_DESC"] = "Only include auras that Blizzard has flagged as being important."
+L["ICONMENU_AURAFILTER_CROWD_CONTROL"] = "Crowd Control"
+L["ICONMENU_AURAFILTER_CROWD_CONTROL_DESC"] = "Only include auras that Blizzard has flagged as being crowd control."
+L["ICONMENU_AURAFILTER_BIG_DEFENSIVE"] = "Big Defensive"
+L["ICONMENU_AURAFILTER_BIG_DEFENSIVE_DESC"] = "Only include auras that Blizzard has classified as a 'Big Defensive'."
+L["ICONMENU_AURAFILTER_EXTERNAL_DEFENSIVE"] = "External Defensive"
+L["ICONMENU_AURAFILTER_EXTERNAL_DEFENSIVE_DESC"] = "Only include auras that Blizzard has classified as an 'External Defensive'."
+L["ICONMENU_AURAFILTER_RAID_PLAYER_DISPELLABLE"] = "Dispellable"
+L["ICONMENU_AURAFILTER_RAID_PLAYER_DISPELLABLE_DESC"] = "Only include auras that you can dispel."
+L["ICONMENU_AURAFILTER_RAID_IN_COMBAT"] = "Raid In Combat"
+L["ICONMENU_AURAFILTER_RAID_IN_COMBAT_DESC"] = "Only include auras that Blizzard has flagged to show on raid frames in combat. This includes things like HoTs, but not raid buffs."
 L["ICONMENU_ONLYBAGS"] = "Only if in bags"
 L["ICONMENU_ONLYBAGS_DESC"] = "Check this to make the icon show only if the item is in your bags (or equipped). If 'Only if equipped' is enabled, this is also forcibly enabled."
 
@@ -886,6 +906,7 @@ L["UIPANEL_BAR_SIZE_Y_DESC"] = "Modifies the height of icons in this group."
 
 L["UIPANEL_ICONS"] = "Icons"
 L["UIPANEL_GROUPNAME"] = "Rename Group"
+L["UIPANEL_MANAGEGROUP"] = "Rename/Delete Group"
 L["UIPANEL_DIMENSIONS"] = "Dimensions"
 L["UIPANEL_ROWS"] = "Rows"
 L["UIPANEL_COLUMNS"] = "Columns"
@@ -930,6 +951,17 @@ Note that this will force the options module to be loaded all the time, resultin
 This option is account-wide: all of your profiles will share this setting.
 
 |cffff5959Changes will only be reflected after you |cff7fffffreload your UI|cffff5959.|r]]
+L["UIPANEL_HIDE_CDM"] = "TMW: Always Hide"
+L["UIPANEL_HIDE_CDM_DESC"] = [[Hides this Cooldown Manager frame while still allowing TellMeWhen to access buff/debuff information from it.
+
+For TMW to best be able to access aura information from the CDM, you should set the Visibility setting above to Always Visible.]]
+L["UIPANEL_GROUP_CDM_HIDE"] = "Hide CDM Viewers"
+L["UIPANEL_GROUP_CDM_HIDE_DESC"] = [[Select which Cooldown Manager viewers should be hidden when this group is enabled and matches Role/Specialization filters. 
+
+The CDM will remain functional for aura data extraction even while hidden by this setting.
+
+For TMW to best be able to access aura information from the CDM, you should set the Visibility setting on the CDM to Always Visible.]]
+L["CDM_HIDDEN_BY_GROUP"] = "Hidden by TMW %s"
 L["UIPANEL_BARTEXTURE"] = "Bar Texture"
 L["UIPANEL_USE_PROFILE"] = "Use Profile Setting"
 L["UIPANEL_PERFORMANCE"] = "Performance"
@@ -998,10 +1030,13 @@ L["UIPANEL_SECRETS_CNDT_DISALLOWED_DESC"] = [[This condition cannot operate on s
 In such situations, the data will be assumed to be in a default state (cooldown ready, aura absent, etc).]]
 L["UIPANEL_SECRETS_EVENT_DISALLOWED_DESC"] = [[This cannot be triggered by secret data. Examples of secret data include spell cooldowns and buffs/debuffs while in combat, Mythic+, or PvP; or unit identity in instances.]]
 L["UIPANEL_SECRETS_AURAS_DISALLOWED_DESC"] = [[You CANNOT track any specific buff or debuff WHILE IN COMBAT, nor in combat-focused content (Mythic+ or PvP).]]
-L["UIPANEL_SECRETS_AURAS_DISALLOWED_EXCEPT_DESC"] = [[One exception is if this icon is a %s, with %q left blank, which will allow a dynamic set of auras to be displayed.]]
+L["UIPANEL_SECRETS_AURAS_DISALLOWED_EXCEPT_DESC"] = [[One exception is when tracking player buffs or target debuffs that are also displayed by the Blizzard Cooldown Manager. The CDM must be enabled, shown, and have the spell tracked for this to work.]]
 L["UIPANEL_SECRETS_META_DESC"] = [[Any component icons whose visibility is driven by secret data (mainly cooldown icons) are assumed to be always shown.
 
 Additionally, duration sorting cannot be performed on any secret durations.]]
+L["UIPANEL_SECRETS_TOTEM_DESC"] = [[You CANNOT track any specific totem name WHILE IN COMBAT, nor in combat-focused content (Mythic+ or PvP).
+
+You CAN leave "What to track" blank to track any totem. Totem slot filters still work while secret.]]
 
 L["UIPANEL_DRAWEDGE"] = "Highlight timer edge"
 L["UIPANEL_DRAWEDGE_DESC"] = "Highlights the edge of the cooldown timer (clock animation) to increase visibility"
@@ -1376,6 +1411,7 @@ L["CONDITIONPANEL_OR"] = "Or"
 L["CONDITIONPANEL_ANDOR"] = "And / Or"
 L["CONDITIONPANEL_ANDOR_DESC"] = "|cff7fffffClick|r to toggle between logical operators AND and OR"
 L["CONDITIONPANEL_POWER"] = "Primary Resource"
+L["CONDITIONPANEL_CLASS_POWER"] = "Class or Primary Resource"
 L["CONDITIONPANEL_PERCENT"] = "Percent"
 L["CONDITIONPANEL_PERCENTOFMAXHP"] = "Percent of Max Health"
 L["CONDITIONPANEL_PERCENTOFCURHP"] = "Percent of Current Health"

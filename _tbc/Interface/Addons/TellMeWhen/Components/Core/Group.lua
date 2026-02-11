@@ -114,8 +114,29 @@ do	-- TMW.CNDT implementation
 end
 
 -- [INTERNAL]
-function Group.OnNewInstance(group)
-	group.ID = group:GetID()
+-- Gets or instantiates the group frame. Not to be confused with TMW:Group_Add(),
+-- which adds a new group to settings.
+function Group:GetOrCreate(domain, groupID)
+	local group = TMW[domain][groupID]
+	if group then return group end
+
+	group = TMW.Classes.Group:New(
+		"Frame",
+		(domain == "global"
+			and "TellMeWhen_GlobalGroup"
+			or  "TellMeWhen_Group"
+		) .. groupID,
+		TMW,
+		domain == "global"
+			and "TellMeWhen_GlobalGroupTemplate"
+			or  "TellMeWhen_GroupTemplate",
+		groupID)
+
+	group.Domain = domain
+	group.ID = groupID
+	TMW[domain][groupID] = group
+
+	return group
 end
 
 -- [INTERNAL]
@@ -349,8 +370,7 @@ function Group.ShouldUpdateIcons(group)
 		return false
 
 	elseif
-		group.Domain == "profile"
-		and GetCurrentSpecializationID()
+		GetCurrentSpecializationID()
 		and not gs.EnabledSpecs[GetCurrentSpecializationID()]
 	then
 		return false
@@ -467,8 +487,9 @@ function Group.Setup(group, noIconSetup)
 		
 		viewData_old:UnimplementFromGroup(group)
 	end
-	
-	-- Setup the current view
+
+	-- Setup the current view. Do this even when the group isn't going to update icons
+	-- so that the group can be positioned and therefore be anchored to by other groups.
 	viewData:ImplementIntoGroup(group)
 	if viewData then
 		viewData:Group_Setup(group)
@@ -491,10 +512,6 @@ function Group.Setup(group, noIconSetup)
 					icon = TMW.Classes.Icon:New("Button", group:GetName() .. "_Icon" .. iconID, group, "TellMeWhen_IconTemplate", iconID)
 				end
 
-				if iconID == 1 and group.Controlled then
-					local ics = icon:GetSettings()
-				end
-
 				TMW.safecall(icon.Setup, icon)
 			end
 
@@ -510,8 +527,8 @@ function Group.Setup(group, noIconSetup)
 			icon:DisableIcon()
 		end
 	end
-	
-	if group.OnlyInCombat then
+
+	if group.OnlyInCombat and group:ShouldUpdateIcons() then
 		group:RegisterEvent("PLAYER_REGEN_ENABLED")
 		group:RegisterEvent("PLAYER_REGEN_DISABLED")
 	else
@@ -519,16 +536,16 @@ function Group.Setup(group, noIconSetup)
 		group:UnregisterEvent("PLAYER_REGEN_DISABLED")
 	end
 
-	if pclass == "WARRIOR" and group.Role ~= 0x7 then
-		-- Check for entering/leaving gladiator stance.
-		group:RegisterEvent("UPDATE_SHAPESHIFT_FORM")
-	else
-		group:UnregisterEvent("UPDATE_SHAPESHIFT_FORM")
-	end
+	-- Gladiator stance stuff
+	-- if pclass == "WARRIOR" and group.Role ~= 0x7 then
+	-- 	-- Check for entering/leaving gladiator stance.
+	-- 	group:RegisterEvent("UPDATE_SHAPESHIFT_FORM")
+	-- else
+	-- 	group:UnregisterEvent("UPDATE_SHAPESHIFT_FORM")
+	-- end
 
 	group:SetScript("OnEvent", group.OnEvent)
 
-	
 	TMW:Fire("TMW_GROUP_SETUP_POST", group)
 end
 

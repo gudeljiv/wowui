@@ -1185,3 +1185,5 @@ L["For help or suggestions"] = "Ajuda ou sugestões";
 
 L["rendLogQuestInfo"] = "As entregas de Laceral só aparecem para a Horda.";
 L["recentlyKilledMsg"] = "Novo temporizador de NPC %s recém morta recebido, morreu há %s";
+
+L["Shattrath City"] = "Shattrath";

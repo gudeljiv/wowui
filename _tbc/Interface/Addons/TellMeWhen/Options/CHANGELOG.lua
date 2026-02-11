@@ -3,6 +3,34 @@ if not TMW then return end
 TMW.CHANGELOG_LASTVER="10.0.0"
 
 TMW.CHANGELOG = [==[
+## v12.0.6
+* Added "Class or Primary Resource" as an option to Resource Display icons.
+* Added new WoW 12.0.1 filters to the Buff/Debuff icon type.
+* Added native integration with TullaCTC for styling timer text.
+* Specialization settings are now available to global groups.
+* Fix aura events not getting registered when tracking auras on many different units across all TMW icons.
+* Fix items sometimes showing with a ? texture.
+* Workaround a Blizzard bug where secret recharge durations for a max-charge ability are ignored.
+* Masque settings are now stored against TMW groups' unique identifiers instead of against group IDs. Masque will absorb any per-group customizations into the first TMW profile you log in with.
+* The Edit Mode "TMW: Always Hide" CDM setting has been deprecated in favor of new settings on TMW groups that allow greater flexibility.
+
+## v12.0.5
+* Fixed an issue that could cause some edit mode dialogs to be really wide.
+
+## v12.0.4
+
+### Midnight Aura Improvements
+* Buff/Debuff icons can now filter auras by name/id if those auras are displayed by the Blizzard Cooldown Manager. This requires the CDM to be enabled, shown, and have the spell tracked by at least one of the CDM's icon or bar groups.
+* Buff/Debuff icons can now have a blank spell filter without having to be a Group Controller.
+* Buff and debuff duration conditions can also check for specific spell names. If the aura is detectable by name via CDM data and is present, its duration will be assumed to be infinite.
+* A setting has been added on the Cooldown Manager frames in edit mode called "TMW: Always Hide" that can hide a CDM group while still allowing aura extraction.
+
+### Other
+* Resource Display now have secret-compatible percentage threshold settings for applying custom Opacity & Color above or below certain values.
+* Workaround broken Blizzard spell override behavior for Voidform/Void Volley.
+* Fixed numerous secret errors.
+* Handle (avoid) secrets in Totem checking.
+
 ## v12.0.3
 * Groups can now inherit their opacity from an icon. This allows an entire group to take on opacity that is driven by a secret aspect, like cooldown readiness or spell casting state. This also allows using an icon's conditions to drive group opacity.
 * The Spell Cast condition can detect secret casts if the spell filter is empty and the "Casting" checkbox is chosen.

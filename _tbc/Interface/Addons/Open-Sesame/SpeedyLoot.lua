@@ -1,5 +1,4 @@
 local ADDON_NAME, OS = ...
-local LOOT_DELAY = 0.3
 local lastLootTime = 0
 
 local function Print(msg)
@@ -29,12 +28,14 @@ frame:SetScript(
 
         if shouldAutoLoot then
             local now = GetTime()
-            if (now - lastLootTime) >= LOOT_DELAY then
+            if (now - lastLootTime) >= OS.LOOT_DELAY then
                 local numItems = GetNumLootItems()
                 if numItems > 0 then
                     if LootFrame then
                         LootFrame:Hide()
                     end
+
+                    OS.state.recentAnnouncements = OS.state.recentAnnouncements or {}
 
                     for slot = numItems, 1, -1 do
                         local link = GetLootSlotLink(slot)
@@ -42,16 +43,20 @@ frame:SetScript(
 
                         if link then
                             local id = tonumber(link:match("item:(%d+)"))
-                            if id then
-                                if OS.IgnoreItems and OS.IgnoreItems[id] then
-                                    shouldLoot = false
+                            if id and OS.IgnoreItems and OS.IgnoreItems[id] then
+                                shouldLoot = false
+
+                                local lastAnnounced = OS.state.recentAnnouncements[id] or 0
+                                if (now - lastAnnounced) > 5 then
                                     Print(
                                         link ..
-                                            " needs to be opened manually. It may contain a Unique or Bind on Pickup item, or was dropped by a raid boss."
+                                            " needs to be opened manually. It may contain a Unique, Bind on Pickup, or Temporary item; or it was dropped by a raid boss."
                                     )
-                                    if LootFrame then
-                                        LootFrame:Show()
-                                    end
+                                    OS.state.recentAnnouncements[id] = now
+                                end
+
+                                if LootFrame then
+                                    LootFrame:Show()
                                 end
                             end
                         end
@@ -66,3 +71,4 @@ frame:SetScript(
         end
     end
 )
+

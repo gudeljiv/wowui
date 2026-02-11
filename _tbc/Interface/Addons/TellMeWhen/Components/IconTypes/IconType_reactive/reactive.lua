@@ -193,6 +193,7 @@ if TMW.clientHasSecrets then
 				if charges then
 					stack = charges.currentCharges
 				else
+					stack = GetSpellCastCount(iName)
 					charges = emptyTable
 				end
 
@@ -231,11 +232,11 @@ if TMW.clientHasSecrets then
 						}
 					end
 
-					icon:SetInfo("state; texture; start, duration, modRate, durObj; charges, maxCharges, chargeStart, chargeDur; stack, stackText; spell",
+					icon:SetInfo("state; texture; start, duration, modRate, durObj; charges, maxCharges, chargeStart, chargeDur, chargeDurObj; stack, stackText; spell",
 						state,
 						spellTextureCache[iName],
 						cooldown.startTime, cooldown.duration, cooldown.modRate, durObj,
-						charges.currentCharges, charges.maxCharges, charges.cooldownStartTime, charges.cooldownDuration,
+						charges.currentCharges, charges.maxCharges, charges.cooldownStartTime, charges.cooldownDuration, C_Spell.GetSpellChargeDuration(iName),
 						stack, stack,
 						iName		
 					)
@@ -251,8 +252,13 @@ if TMW.clientHasSecrets then
 		if numChecked > 1 then
 
 			cooldown = GetSpellCooldown(NameFirst)
-			charges = GetSpellCharges(NameFirst) or emptyTable
-			stack = charges and charges.currentCharges or GetSpellCastCount(NameFirst)
+			charges = GetSpellCharges(NameFirst)
+			if charges then
+				stack = charges.currentCharges
+			else
+				stack = GetSpellCastCount(NameFirst)
+				charges = emptyTable
+			end
 
 			inrange, noMana = true, nil
 			if RangeCheck then
@@ -270,11 +276,11 @@ if TMW.clientHasSecrets then
 			local durObj = C_Spell.GetSpellCooldownDuration(NameFirst)
 			durObj.isOnGCD = cooldown.isOnGCD
 
-			icon:SetInfo("state; texture; start, duration, modRate, durObj; charges, maxCharges, chargeStart, chargeDur; stack, stackText; spell",
+			icon:SetInfo("state; texture; start, duration, modRate, durObj; charges, maxCharges, chargeStart, chargeDur, chargeDurObj; stack, stackText; spell",
 				not inrange and STATE_UNUSABLE_NORANGE or noMana and STATE_UNUSABLE_NOMANA or STATE_UNUSABLE,
 				icon.FirstTexture,
 				cooldown.startTime, cooldown.duration, cooldown.modRate, durObj,
-				charges.currentCharges, charges.maxCharges, charges.cooldownStartTime, charges.cooldownDuration,
+				charges.currentCharges, charges.maxCharges, charges.cooldownStartTime, charges.cooldownDuration, C_Spell.GetSpellChargeDuration(NameFirst),
 				stack, stack,
 				NameFirst
 			)
@@ -310,6 +316,7 @@ else
 				if charges then
 					stack = charges.currentCharges
 				else
+					stack = GetSpellCastCount(iName)
 					charges = emptyTable
 				end
 
@@ -371,8 +378,13 @@ else
 		if numChecked > 1 then
 
 			cooldown = GetSpellCooldown(NameFirst)
-			charges = GetSpellCharges(NameFirst) or emptyTable
-			stack = charges and charges.currentCharges or GetSpellCastCount(NameFirst)
+			charges = GetSpellCharges(NameFirst)
+			if charges then
+				stack = charges.currentCharges
+			else
+				stack = GetSpellCastCount(NameFirst)
+				charges = emptyTable
+			end
 
 			if IgnoreRunes and (cooldown and cooldown.duration) == runeCD and NameFirst ~= mindfreeze and NameFirst ~= 47528 then
 				-- DK abilities that are on cooldown because of runes are always reported

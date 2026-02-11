@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 2.5.04 (29th January 2026)
+-- 	Leatrix Plus 2.5.06 (11th February 2026)
 ----------------------------------------------------------------------
 
 --	01:Functions 02:Locks   03:Restart 40:Player   45:Rest
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "2.5.04"
+	LeaPlusLC["AddonVer"] = "2.5.06"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -1433,8 +1433,8 @@
 			-- Create soundtable for PLAYER_LOGOUT (these sounds are only muted or unmuted when logging out
 			local muteLogoutTable = {
 
-				-- Game music (sound/music/gluescreenmusic/wow_main_theme.mp3) (skit:47598)
-				"53223",
+				-- Game music (sound/music/gluescreenmusic/bc_main_theme.mp3#53220)
+				"53220",
 
 			}
 
@@ -1864,9 +1864,13 @@
 					if npcID then
 						-- Ignore specific NPCs for selecting, accepting and turning-in quests (required if automation has consequences)
 						if npcID == "15192"	-- Anachronos (Caverns of Time)
+						or npcID == "19935" -- Soridormi (The Scale of Sands, Caverns of Time)
+						or npcID == "19936" -- Arazmodu (The Scale of Sands, Caverns of Time)
 						or npcID == "3430" 	-- Mangletooth (Blood Shard quests, Barrens)
 						or npcID == "14828" -- Gelvas Grimegate (Darkmoon Faire Ticket Redemption, Elwynn Forest and Mulgore)
 						or npcID == "14921" -- Rin'wosho the Trader (Zul'Gurub Isle, Stranglethorn Vale)
+						or npcID == "18166" -- Khadgar (Allegiance to Aldor/Scryer, Shattrath)
+						or npcID == "18253" -- Archmage Leryda (Violet Signet, Karazhan)
 						or npcID == "15864" -- Valadar Starsong (Coin of Ancestry Collector, Moonglade)
 						or npcID == "15909" -- Fariel Starsong (Coin of Ancestry Collector, Moonglade)
 						or npcID == "15540" -- Windcaller Kaldon (Badge Collector, Silithus)
@@ -1882,7 +1886,7 @@
 						end
 						-- Ignore specific NPCs for accepting quests only
 						if actionType == "Accept" then
-							-- Escort quests
+							-- Classic escort quests
 							if npcID == "467" -- The Defias Traitor (The Defias Brotherhood)
 							or npcID == "349" -- Corporal Keeshan (Missing In Action)
 							or npcID == "1379" -- Miran (Protecting the Shipment)
@@ -1936,6 +1940,27 @@
 							or npcID == "12858" -- Torek (Torek's Assault)
 							or npcID == "12717" -- Muglash (Vorsha the Lasher)
 							or npcID == "13716" -- Celebras the Redeemed (The Scepter of Celebras)
+							or npcID == "19401" -- Wing Commander Brack (Return to the Abyssal Shelf) (Horde)
+							or npcID == "20235" -- Gryphoneer Windbellow (Return to the Abyssal Shelf) (Alliance)
+							-- BCC escort quests
+							or npcID == "16295" -- Ranger Lilatha (Escape from the Catacombs)
+							or npcID == "17238" -- Anchorite Truuen (Tomb of the Lightbringer)
+							or npcID == "17312" -- Magwin (A Cry For Help)
+							or npcID == "17877" -- Fhwoor (Fhwoor Smash!)
+							or npcID == "17969" -- Kayra Longmane (Escape from Umbrafen)
+							or npcID == "18210" -- Mag'har Captive (The Totem of Kar'dash, Horde)
+							or npcID == "18209" -- Kurenai Captive (The Totem of Kar'dash, Alliance)
+							or npcID == "18760" -- Isla Starmane (Escape from Firewing Point!)
+							or npcID == "19589" -- Maxx A. Million Mk. V (Mark V is Alive!)
+							or npcID == "19671" -- Cryo-Engineer Sha'heen (Someone Else's Hard Work Pays Off)
+							or npcID == "20281" -- Drijya (Sabotage the Warp-Gate!)
+							or npcID == "20415" -- Bessy (When the Cows Come Home)
+							or npcID == "20482" -- Image of Commander Ameer (Delivering the Message)
+							or npcID == "20763" -- Captured Protectorate Vanguard (Escape from the Staging Grounds)
+							or npcID == "21027" -- Earthmender Wilda (Escape from Coilskar Cistern)
+							or npcID == "22424" -- Skywing (Skywing)
+							or npcID == "22458" -- Chief Archaeologist Letoll (Digging Through Bones)
+							or npcID == "23383" -- Skyguard Prisoner (Escape from Skettis)
 							then
 								return true
 							end
@@ -1943,6 +1968,9 @@
 						-- Ignore specific NPCs for selecting quests only (only used for items that have no other purpose)
 						if actionType == "Select" then
 							if npcID == "12944" -- Lokhtos Darkbargainer (Thorium Brotherhood, Blackrock Depths)
+							or npcID == "19401" -- Wing Commander Brack (Return to the Abyssal Shelf) (Horde)
+							or npcID == "20235" -- Gryphoneer Windbellow (Return to the Abyssal Shelf) (Alliance)
+							or npcID == "10307" -- Witch Doctor Mau'ari (E'Ko quests, Winterspring)
 							-- Ahn'Qiraj War Effort (Alliance, Ironforge)
 							or npcID == "15446" -- Bonnie Stoneflayer (Light Leather Collector)
 							or npcID == "15458" -- Commander Stronghammer (Alliance Ambassador)
@@ -2097,6 +2125,84 @@
 					elseif title == L["Frostmaul E'ko"] then
 						-- Requires 3 Ice Thistle E'ko
 						if C_Item.GetItemCount(12436) >= 3 then return true end
+					elseif title == L["Marks of Kil'jaeden"] or title == L["More Marks of Kil'jaeden"] then
+						-- Requires 10 More Marks of Kil'jaeden
+						if C_Item.GetItemCount(29425) >= 10 then return true end
+					elseif title == L["Single Mark of Sargeras"] then
+						-- Requires 1 Marks of Sargeras (if more than 10, leave for More Marks of Sargeras)
+						if C_Item.GetItemCount(30809) >= 1 and C_Item.GetItemCount(30809) < 10 then return true end
+					elseif title == L["More Marks of Sargeras"] then
+						-- Requires 10 Marks of Sargeras
+						if C_Item.GetItemCount(30809) >= 10 then return true end
+					elseif title == L["Firewing Signets"] or title == L["More Firewing Signets"] then
+						-- Requires 10 Firewing Signets
+						if C_Item.GetItemCount(29426) >= 10 then return true end
+					elseif title == L["Single Sunfury Signet"] then
+						-- Requires 1 Sunfury Signet (if more than 10, leave for More Sunfury Signets)
+						if C_Item.GetItemCount(30810) >= 1 and C_Item.GetItemCount(30810) < 10 then return true end
+					elseif title == L["More Sunfury Signets"] then
+						-- Requires 10 Sunfury Signets
+						if C_Item.GetItemCount(30810) >= 10 then return true end
+
+					-- Darkmoon Faire (Rinling)
+					elseif title == L["Copper Modulator"] then
+						if C_Item.GetItemCount(4363) >= 5 then return true end
+					elseif title == L["Whirring Bronze Gizmo"] then
+						if C_Item.GetItemCount(4375) >= 7 then return true end
+					elseif title == L["Green Fireworks"] then
+						if C_Item.GetItemCount(9313) >= 36 then return true end
+					elseif title == L["Mechanical Repair Kits"] then
+						if C_Item.GetItemCount(11590) >= 6 then return true end
+					elseif title == L["Thorium Widget"] then
+						if C_Item.GetItemCount(15994) >= 6 then return true end
+					elseif title == L["More Thorium Widgets"] then
+						if C_Item.GetItemCount(15994) >= 6 then return true end
+
+					-- Darkmoon Faire (Yebb Neblegear)
+					elseif title == L["Small Furry Paws"] then
+						if C_Item.GetItemCount(5134) >= 5 then return true end
+					elseif title == L["Evil Bat Eyes"] then
+						if C_Item.GetItemCount(11404) >= 10 then return true end
+					elseif title == L["Glowing Scorpid Blood"] then
+						if C_Item.GetItemCount(19933) >= 10 then return true end
+					elseif title == L["More Bat Eyes"] then
+						if C_Item.GetItemCount(11404) >= 10 then return true end
+					elseif title == L["More Glowing Scorpid Blood"] then
+						if C_Item.GetItemCount(19933) >= 10 then return true end
+					elseif title == L["Soft Bushy Tails"] then
+						if C_Item.GetItemCount(4582) >= 5 then return true end
+					elseif title == L["Torn Bear Pelts"] then
+						if C_Item.GetItemCount(11407) >= 5 then return true end
+					elseif title == L["Vibrant Plumes"] then
+						if C_Item.GetItemCount(5117) >= 5 then return true end
+
+					-- Darkmoon Faire (Chronos)
+					elseif title == L["Armor Kits"] then
+						if C_Item.GetItemCount(15564) >= 8 then return true end
+					elseif title == L["Carnival Boots"] then
+						if C_Item.GetItemCount(2309) >= 3 then return true end
+					elseif title == L["Carnival Jerkins"] then
+						if C_Item.GetItemCount(2314) >= 3 then return true end
+					elseif title == L["Crocolisk Boy and the Bearded Murloc"] then
+						if C_Item.GetItemCount(8185) >= 1 then return true end
+					elseif title == L["More Armor Kits"] then
+						if C_Item.GetItemCount(15564) >= 8 then return true end
+					elseif title == L["The World's Largest Gnome!"] then
+						if C_Item.GetItemCount(5739) >= 3 then return true end
+
+					-- Darkmoon Faire (Kerri Hicks)
+					elseif title == L["Big Black Mace"] then
+						if C_Item.GetItemCount(7945) >= 1 then return true end
+					elseif title == L["Coarse Weightstone"] then
+						if C_Item.GetItemCount(3240) >= 10 then return true end
+					elseif title == L["Green Iron Bracers"] then
+						if C_Item.GetItemCount(3835) >= 3 then return true end
+					elseif title == L["Heavy Grinding Stone"] then
+						if C_Item.GetItemCount(3486) >= 7 then return true end
+					elseif title == L["More Dense Grinding Stones"] then
+						if C_Item.GetItemCount(12644) >= 8 then return true end
+					elseif title == L["Rituals of Strength"] then
+						if C_Item.GetItemCount(12644) >= 8 then return true end
 
 					else return true
 					end

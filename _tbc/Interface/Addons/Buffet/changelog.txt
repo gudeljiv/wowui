@@ -1,3 +1,23 @@
+### 135
+
+* Fixed more scanning issues in TBC Anniversary
+
+
+### 134
+
+* Fixed unfortunate typo :)
+
+
+### 133
+
+* Fixed scanning issues in TBC Anniversary
+
+
+### 132
+
+* Bump TOC
+
+
 ### 131
 
 * Updated for Midnight pre-patch
