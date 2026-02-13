@@ -313,6 +313,16 @@ local TTIF_ExpansionIcon = {
 		rightTexel = 0.828125,
 		topTexel = 0.21875,
 		bottomTexel = 0.75
+	},
+	[11] = {  -- Midnight
+		textureFile = "Interface\\AddOns\\" .. MOD_NAME .. "\\media\\wow_flavor\\mn_logo",
+		textureWidth = 64,
+		textureHeight = 32,
+		aspectRatio = 36 / 17,
+		leftTexel = 0.21875,
+		rightTexel = 0.78125,
+		topTexel = 0.109375,
+		bottomTexel = 0.875
 	}
 };
 
@@ -347,8 +357,10 @@ local function ttSetIconPoint(tooltip, onlyAdjustForCHWidth)
 			return;
 		end
 		
+		local tooltipCompareHeaderGetWidth = tooltip.CompareHeader:GetWidth();
+		
 		tooltip.ttIcon:ClearAllPoints();
-		tooltip.ttIcon:SetPoint(cfg.if_iconAnchor, tooltip, cfg.if_iconTooltipAnchor, cfg.if_iconOffsetX_CH + (cfg.if_iconOffsetX_CH_addCHWidth and tooltip.CompareHeader:GetWidth() or 0), cfg.if_iconOffsetY_CH);
+		tooltip.ttIcon:SetPoint(cfg.if_iconAnchor, tooltip, cfg.if_iconTooltipAnchor, cfg.if_iconOffsetX_CH + (cfg.if_iconOffsetX_CH_addCHWidth and (not LibFroznFunctions:IsSecretValue(tooltipCompareHeaderGetWidth)) and tooltipCompareHeaderGetWidth or 0), cfg.if_iconOffsetY_CH);
 	elseif (not onlyAdjustForCHWidth) then
 		tooltip.ttIcon:ClearAllPoints();
 		tooltip.ttIcon:SetPoint(cfg.if_iconAnchor, tooltip, cfg.if_iconTooltipAnchor, cfg.if_iconOffsetX, cfg.if_iconOffsetY);
@@ -670,7 +682,7 @@ local function SetUnitAura_Hook(self, alternateFilterIfNotDefined, unit, index, 
 		local auraData = LibFroznFunctions:GetAuraDataByIndex(unit, index, filter or alternateFilterIfNotDefined); -- [18.07.19] 8.0/BfA: "dropped second parameter"
 		if (auraData) and (auraData.spellId) then
 			local link = LibFroznFunctions:GetSpellLink(auraData.spellId);
-			if (link) then
+			if (link) and (not LibFroznFunctions:IsSecretValue(link)) then
 				local linkType, _spellID = link:match("H?(%a+):(%d+)");
 				if (_spellID) then
 					tipDataAdded[self] = linkType;
@@ -693,7 +705,7 @@ local function SetUnitBuffByAuraInstanceID_Hook(self, unit, auraInstanceID, filt
 			local source = aura.sourceUnit;
 			if (spellID) then
 				local link = LibFroznFunctions:GetSpellLink(spellID);
-				if (link) then
+				if (link) and (not LibFroznFunctions:IsSecretValue(link)) then
 					local linkType, _spellID = link:match("H?(%a+):(%d+)");
 					if (_spellID) then
 						tipDataAdded[self] = linkType;
@@ -1396,7 +1408,7 @@ local function OnTooltipSetSpell(self, ...)
 		local name, id = LibFroznFunctions:GetSpellFromTooltip(self);	-- [18.07.19] 8.0/BfA: "dropped second parameter (nameSubtext)"
 		if (id) then
 			local link = LibFroznFunctions:GetSpellLink(id);
-			if (link) then
+			if (link) and (not LibFroznFunctions:IsSecretValue(link)) then
 				local linkType, spellID = link:match("H?(%a+):(%d+)");
 				if (spellID) then
 					tipDataAdded[self] = linkType;

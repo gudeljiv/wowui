@@ -51,9 +51,9 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:3730
+#showtooltip item:3771
 /cast feed pet
-/use item:3730
+/use item:3771
 END
 VER 3 0000000000000041 "prospect" "134400"
 #showtooltip Prospecting
@@ -71,7 +71,7 @@ VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
 /click StaticPopup1Button1
 END
 VER 3 000000000000000B "TEST" "132089"
-/run InspectGearScore:SetPoint("LEFT", InspectGearScoreText, "LEFT", 53, 0)
+/run local b,e=UnitArmor("target")print("Armor: "..e.." (base: "..b..")")
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

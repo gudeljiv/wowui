@@ -143,7 +143,12 @@ end
 
 -- display unit tip's buffs and debuffs
 function ttAuras:DisplayUnitTipsAuras(tip, currentDisplayParams, auraType, startingAuraFrameIndex, lastAura, offsetForClampRectInsets)
+	-- check if unit record isn't a secret value
 	local unitRecord = currentDisplayParams.unitRecord;
+	
+	if (unitRecord == LFF_UNIT_RECORD.SecretValue) then
+		return 0, nil, 0;
+	end
 	
 	-- queries auras of the specific auraType, sets up the aura frame and anchors it in the desired place.
 	local aurasPerRow = floor((tip:GetWidth() - 4) / (cfg.auraSize + 2)); -- auras we can fit into one row based on the current size of the tooltip
@@ -176,8 +181,8 @@ function ttAuras:DisplayUnitTipsAuras(tip, currentDisplayParams, auraType, start
 			break;
 		end
 		
-		-- setup aura fram if it needs to be shown
-		if (not cfg.selfAurasOnly) or (validSelfCasterUnits[unitAuraData.sourceUnit]) then
+		-- setup aura frame if it needs to be shown
+		if (not cfg.selfAurasOnly) or (LibFroznFunctions:IsSecretValue(unitAuraData.sourceUnit)) or (validSelfCasterUnits[unitAuraData.sourceUnit]) then
 			auraFrameIndex = auraFrameIndex + 1;
 			
 			local aura = self.aurasPool:Acquire();
@@ -217,23 +222,56 @@ function ttAuras:DisplayUnitTipsAuras(tip, currentDisplayParams, auraType, start
 			end
 			
 			-- show cooldown model if enabled and aura duration is available
-			if (cfg.showAuraCooldown) and (unitAuraData.duration and (unitAuraData.duration > 0) and unitAuraData.expirationTime and (unitAuraData.expirationTime > 0)) then
-				aura.cooldown:SetCooldown(unitAuraData.expirationTime - unitAuraData.duration, unitAuraData.duration);
-			else
+			local hideAuraCooldown = true;
+			
+			if (cfg.showAuraCooldown) then
+				if (LibFroznFunctions:IsSecretValue(unitAuraData.duration)) then
+					-- #todo: temporarily hiding the cooldown because Cooldown:SetCooldownFromDurationObject() currently doesn't accept secret values during tainted execution.
+					-- aura.cooldown:SetCooldownFromDurationObject(unitAuraData.duration);
+					-- hideAuraCooldown = false;
+				elseif (unitAuraData.duration) and (unitAuraData.duration > 0) and (unitAuraData.expirationTime) and (unitAuraData.expirationTime > 0) then
+					aura.cooldown:SetCooldown(unitAuraData.expirationTime - unitAuraData.duration, unitAuraData.duration);
+					hideAuraCooldown = false;
+				end
+			end
+			
+			if (hideAuraCooldown) then
 				aura.cooldown:Hide();
 			end
 			
 			-- set texture and count
 			aura.icon:SetTexture(unitAuraData.icon);
-			aura.count:SetText(unitAuraData.applications and (unitAuraData.applications > 1) and unitAuraData.applications or "");
+			
+			local hideAuraCount = true;
+			
+			if (cfg.auraStackCount) then
+				if (LibFroznFunctions:IsSecretValue(unitAuraData.applications)) then
+					aura.count:SetText(C_UnitAuras.GetAuraApplicationDisplayCount(unitRecord.id, unitAuraData.auraInstanceID));
+					hideAuraCount = false;
+				elseif (unitAuraData.applications) and (unitAuraData.applications > 1) then
+					aura.count:SetText(unitAuraData.applications);
+					hideAuraCount = false;
+				end
+			end
+			
+			if (hideAuraCount) then
+				aura.count:SetText("");
+			end
 			
 			-- show border, only for debuffs
+			local hideAuraBorder = true;
+			
 			if (auraType == "HARMFUL") then
-				local color = (DebuffTypeColor[unitAuraData.dispelName] or DebuffTypeColor["none"]);
+				local dispelTypeColor = LibFroznFunctions:GetDispelTypeColor(unitAuraData.dispelName, unitRecord.id, unitAuraData.auraInstanceID);
 				
-				aura.border:SetVertexColor(color.r, color.g, color.b);
-				aura.border:Show();
-			else
+				if (dispelTypeColor) then
+					aura.border:SetVertexColor(dispelTypeColor:GetRGBA());
+					aura.border:Show();
+					hideAuraBorder = false;
+				end
+			end
+			
+			if (hideAuraBorder) then
 				aura.border:Hide();
 			end
 			

@@ -16,7 +16,10 @@ Support functions
 
 if not AceGUIMultiLineEditBoxInsertLink then
 	-- upgradeable hook
-	hooksecurefunc("ChatEdit_InsertLink", function(...) return _G.AceGUIMultiLineEditBoxInsertLink(...) end)
+	--hooksecurefunc("ChatEdit_InsertLink", function(...) return _G.AceGUIMultiLineEditBoxInsertLink(...) end)
+	hooksecurefunc(ChatFrameUtil, "InsertLink", function(link)
+		_G.AceGUIMultiLineEditBoxInsertLink(link)
+	end)
 end
 
 function _G.AceGUIMultiLineEditBoxInsertLink(text)

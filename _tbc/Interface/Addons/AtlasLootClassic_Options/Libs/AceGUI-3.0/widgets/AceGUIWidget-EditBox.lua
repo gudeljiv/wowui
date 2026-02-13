@@ -19,7 +19,10 @@ Support functions
 -------------------------------------------------------------------------------]]
 if not AceGUIEditBoxInsertLink then
 	-- upgradeable hook
-	hooksecurefunc("ChatEdit_InsertLink", function(...) return _G.AceGUIEditBoxInsertLink(...) end)
+	--hooksecurefunc("ChatEdit_InsertLink", function(...) return _G.AceGUIEditBoxInsertLink(...) end)
+	hooksecurefunc(ChatFrameUtil, "InsertLink", function(link)
+		_G.AceGUIEditBoxInsertLink(link)
+	end)
 end
 
 function _G.AceGUIEditBoxInsertLink(text)

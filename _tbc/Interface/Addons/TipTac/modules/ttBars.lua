@@ -113,7 +113,9 @@ end
 -- tooltip's current display parameters has to be set
 function ttBars:OnTipSetCurrentDisplayParams(TT_CacheForFrames, tip, currentDisplayParams, tipContent)
 	-- unregister unit events
-	self:UnregisterUnitEvents(tip);
+	if (tip:IsForbidden()) or (not tip:IsShown()) then -- unregister unit events only if tip isn't visible any more. needed to finish fading out the cast bar.
+		self:UnregisterUnitEvents(tip);
+	end
 	
 	-- register unit events
 	self:RegisterUnitEvents(tip);
@@ -144,16 +146,20 @@ local function setExtraPaddingRightForMinimumWidth(self, TT_CacheForFrames, tip,
 	for _, barsPool in pairs(self.barPools) do
 		for bar, _ in barsPool:EnumerateActive() do
 			if (bar:GetParent() == tip) and (bar:IsShown()) then
-				local newExtraPaddingRightForMinimumWidth = cfg.barTipMinimumWidth - bar:GetWidth() + (currentDisplayParams.extraPaddingRightForMinimumWidth or 0);
+				local barWidth = bar:GetWidth();
 				
-				if (newExtraPaddingRightForMinimumWidth <= 0) then
-					newExtraPaddingRightForMinimumWidth = nil;
-				end
-				
-				local tipEffectiveScale = tip:GetEffectiveScale();
-				
-				if (not newExtraPaddingRightForMinimumWidth) or (not currentDisplayParams.extraPaddingRightForMinimumWidth) or (math.abs((newExtraPaddingRightForMinimumWidth - currentDisplayParams.extraPaddingRightForMinimumWidth) * tipEffectiveScale) > 0.5) then
-					currentDisplayParams.extraPaddingRightForMinimumWidth = newExtraPaddingRightForMinimumWidth;
+				if (barWidth > 0) then -- bar width of health bar is 0 after fading out the cast bar
+					local newExtraPaddingRightForMinimumWidth = cfg.barTipMinimumWidth - barWidth + (currentDisplayParams.extraPaddingRightForMinimumWidth or 0);
+					
+					if (newExtraPaddingRightForMinimumWidth <= 0) then
+						newExtraPaddingRightForMinimumWidth = nil;
+					end
+					
+					local tipEffectiveScale = tip:GetEffectiveScale();
+					
+					if (not newExtraPaddingRightForMinimumWidth) or (not currentDisplayParams.extraPaddingRightForMinimumWidth) or (math.abs((newExtraPaddingRightForMinimumWidth - currentDisplayParams.extraPaddingRightForMinimumWidth) * tipEffectiveScale) > 0.5) then
+						currentDisplayParams.extraPaddingRightForMinimumWidth = newExtraPaddingRightForMinimumWidth;
+					end
 				end
 				
 				breakFor = true;
@@ -181,7 +187,9 @@ end
 -- tooltip's current display parameters has to be reset
 function ttBars:OnTipResetCurrentDisplayParams(TT_CacheForFrames, tip, currentDisplayParams)
 	-- unregister unit events
-	self:UnregisterUnitEvents(tip);
+	if (tip:IsForbidden()) or (not tip:IsShown()) then -- unregister unit events only if tip isn't visible any more. needed to finish fading out the cast bar.
+		self:UnregisterUnitEvents(tip);
+	end
 	
 	-- hide unit tip's bars
 	self:HideUnitTipsBars(tip);
@@ -392,8 +400,9 @@ end
 
 -- check if active spell cast is available
 function ttBars:IsActiveSpellCast(unitCastingSpell)
-	return (unitCastingSpell and ((unitCastingSpell.isCasting) or (unitCastingSpell.isChanneling) or (unitCastingSpell.isCharging)) and
-		(unitCastingSpell.startTime) and (unitCastingSpell.endTime) and (unitCastingSpell.spellID));
+	return ((unitCastingSpell) and ((unitCastingSpell.isCasting) or (unitCastingSpell.isChanneling) or (unitCastingSpell.isCharging)) and
+		((unitCastingSpell.spellIDIsSecretValue) and (unitCastingSpell.durationIfSpellIDIsSecretValue) or
+		(unitCastingSpell.spellID) and (unitCastingSpell.startTime) and (unitCastingSpell.endTime)));
 end
 
 -- update unit tip's bars
@@ -517,15 +526,34 @@ local TT_ConfigUnitEvents = {
 
 -- create frame for unit events
 ttBars.unitEventsPool = CreateFramePool("Frame", nil, nil, nil, false, function(frameForUnitEvents)
+	-- set active spell cast
+	function frameForUnitEvents:SetActiveSpellCast(unitCastingSpell)
+		self.unitCastingSpell = unitCastingSpell;
+	end
+	
+	-- check if active spell cast is available
+	function frameForUnitEvents:IsActiveSpellCast()
+		return ttBars:IsActiveSpellCast(self.unitCastingSpell);
+	end
+	
+	-- check if fading out is already enabled
+	function frameForUnitEvents:IsFadingOut(unitEventConfig)
+		return (unitEventConfig.fadeOutEnabled) and (self.castBarFadeOutEnabled) and ((unitEventConfig.fadeOutGenericStopEvent == self.castBarFadeOutGenericStopEvent) or (unitEventConfig.fadeOutGenericStopEvent == true) and (self.castBarFadeOutGenericStopEvent == false));
+	end
+	
 	-- try enabling fading out after spell cast
 	function frameForUnitEvents:TryEnablingFadingOut(unitEventConfig, spellID)
 		-- check if fading out is already enabled
 		if (self:IsFadingOut(unitEventConfig)) then
 			return;
 		end
-
+		
 		-- no fading out if there is no active spell cast, different spell or interrupted/failed channeling spell
-		if (unitEventConfig.fadeOutEnabled) and ((not self:IsActiveSpellCast()) or (self.unitCastingSpell.spellID ~= spellID) or (unitEventConfig.interruptedOrFailed and self.unitCastingSpell.isChanneling)) then
+		if (unitEventConfig.fadeOutEnabled) and
+				((not self:IsActiveSpellCast()) or
+				((not self.unitCastingSpell.spellIDIsSecretValue) and (not LibFroznFunctions:IsSecretValue(spellID)) and (self.unitCastingSpell.spellID ~= spellID)) or
+				(unitEventConfig.interruptedOrFailed and self.unitCastingSpell.isChanneling)) then
+				
 			return;
 		end
 		
@@ -534,22 +562,6 @@ ttBars.unitEventsPool = CreateFramePool("Frame", nil, nil, nil, false, function(
 		self.castBarFadeOutTimestamp = (unitEventConfig.fadeOutEnabled and GetTime() or nil);
 		self.castBarFadeOutGenericStopEvent = unitEventConfig.fadeOutGenericStopEvent;
 		self.castBarFadeOutCastSuccess = unitEventConfig.fadeOutCastSuccess;
-	end
-	
-	-- check if fading out is already enabled
-	function frameForUnitEvents:IsFadingOut(unitEventConfig)
-		return (unitEventConfig.fadeOutEnabled) and (self.castBarFadeOutEnabled) and ((unitEventConfig.fadeOutGenericStopEvent == self.castBarFadeOutGenericStopEvent) or (unitEventConfig.fadeOutGenericStopEvent == true) and (self.castBarFadeOutGenericStopEvent == false));
-	end
-	
-	-- set active spell cast
-	function frameForUnitEvents:SetActiveSpellCast(unitCastingSpell, unitRecord)
-		self.unitCastingSpell = unitCastingSpell;
-		self.unitCastingSpell.endTime = frameForUnitEvents.unitCastingSpell.endTime + (self.unitCastingSpell.isCharging and (GetUnitEmpowerHoldAtMaxTime(unitRecord.id) * 1000) or 0);
-	end
-	
-	-- check if active spell cast is available
-	function frameForUnitEvents:IsActiveSpellCast()
-		return ttBars:IsActiveSpellCast(self.unitCastingSpell);
 	end
 	
 	-- disable fading out
@@ -577,19 +589,40 @@ ttBars.unitEventsPool = CreateFramePool("Frame", nil, nil, nil, false, function(
 			return;
 		end
 		
+		-- get current display parameters
+		local tip = self:GetParent();
+		local frameParams = TT_CacheForFrames[tip];
+		
+		if (not frameParams) then
+			return;
+		end
+		
+		local currentDisplayParams = frameParams.currentDisplayParams;
+		
+		-- no unit record
+		local unitRecord = currentDisplayParams.unitRecord;
+		
+		if (not unitRecord) then
+			return;
+		end
+		
+		-- not the same unit
+		local unitID, _, spellID = ...;
+		local unitGUID = UnitGUID(unitID);
+		
+		if (unitRecord ~= LFF_UNIT_RECORD.SecretValue) and (not LibFroznFunctions:IsSecretValue(unitGUID)) and (unitGUID ~= unitRecord.guid) then
+			return;
+		end
+		
 		-- reset cast bar data if spell cast is started
 		if (unitEventConfig.startCast) then
 			self:ResetCastBarData();
 		end
 		
 		-- try enabling fading out after spell cast
-		local spellID = select(3, ...);
-		
 		self:TryEnablingFadingOut(unitEventConfig, spellID);
 		
 		-- update unit tip's bars
-		local tip = self:GetParent();
-		
 		ttBars:UpdateUnitTipsBars(tip);
 	end);
 end);
@@ -627,7 +660,7 @@ function ttBars:RegisterUnitEvents(tip)
 	end
 	
 	-- register unit events
-	if (not frameForUnitEvents.unitEventsHooked) then
+	if (not frameForUnitEvents.unitEventsHooked) and (unitRecord ~= LFF_UNIT_RECORD.SecretValue) then
 		for unitEvent, unitEventConfig in pairs(TT_ConfigUnitEvents) do
 			LibFroznFunctions:RegisterUnitEventIfExists(frameForUnitEvents, unitEvent, unitRecord.id);
 		end
@@ -666,25 +699,45 @@ end
 ----------------------------------------------------------------------------------------------------
 
 -- set formatted bar values
-local function barSetFormattedBarValues(self, value, maxValue, valueType)
+--
+-- @param self                                 bar
+-- @param valueParams                          value parameters
+--          .valueType                           value type
+--          .value                               value
+--          .maxValue                            max value
+--          .valueIsSecretValue                  true if value is a secret value, false otherwise.
+--          .valuePercentIfValueIsSecretValue    value percent if value is a secret value
+--          .valueMissingIfValueIsSecretValue    value missing if value is a secret value
+local function barSetFormattedBarValues(self, valueParams)
 	local barText = self.text;
 	
-	if (valueType == "none") then
+	if (valueParams.valueType == "none") then
 		barText:SetText("");
-	elseif (valueType == "value") or (maxValue == 0) then -- maxValue should never be zero, but if it is, don't let it pass through to the "percent" value type, or there will be an error.
-		barText:SetFormattedText("%s / %s", LibFroznFunctions:FormatNumber(value, cfg.barsCondenseValues), LibFroznFunctions:FormatNumber(maxValue, cfg.barsCondenseValues));
-	elseif (valueType == "current") then
-		barText:SetFormattedText("%s", LibFroznFunctions:FormatNumber(value, cfg.barsCondenseValues));
-	elseif (valueType == "full") then
-		barText:SetFormattedText("%s / %s (%.0f%%)", LibFroznFunctions:FormatNumber(value, cfg.barsCondenseValues), LibFroznFunctions:FormatNumber(maxValue, cfg.barsCondenseValues), value / maxValue * 100);
-	elseif (valueType == "deficit") then
-		if (value ~= maxValue) then
-			barText:SetFormattedText("-%s", LibFroznFunctions:FormatNumber(maxValue - value, cfg.barsCondenseValues));
+	elseif (valueParams.valueType == "value") or (not valueParams.valueIsSecretValue) and (valueParams.maxValue == 0) then -- maxValue should never be zero, but if it is, don't let it pass through to the "percent" value type, or there will be an error.
+		barText:SetFormattedText("%s / %s",
+			LibFroznFunctions:FormatNumber(valueParams.value, cfg.barsCondenseValues, valueParams.valueIsSecretValue),
+			LibFroznFunctions:FormatNumber(valueParams.maxValue, cfg.barsCondenseValues, valueParams.valueIsSecretValue)
+		);
+	elseif (valueParams.valueType == "current") then
+		barText:SetFormattedText("%s", LibFroznFunctions:FormatNumber(valueParams.value, cfg.barsCondenseValues, valueParams.valueIsSecretValue));
+	elseif (valueParams.valueType == "full") then
+		barText:SetFormattedText("%s / %s (%.0f%%)",
+			LibFroznFunctions:FormatNumber(valueParams.value, cfg.barsCondenseValues, valueParams.valueIsSecretValue),
+			LibFroznFunctions:FormatNumber(valueParams.maxValue, cfg.barsCondenseValues, valueParams.valueIsSecretValue),
+			valueParams.valueIsSecretValue and valueParams.valuePercentIfValueIsSecretValue or (valueParams.value / valueParams.maxValue * 100)
+		);
+	elseif (valueParams.valueType == "deficit") then
+		if (valueParams.valueIsSecretValue) then
+			barText:SetFormattedText("-%s", valueParams.valueMissingIfValueIsSecretValue);
 		else
-			barText:SetText("");
+			if (valueParams.valueIsSecretValue) or (valueParams.value ~= valueParams.maxValue) then
+				barText:SetFormattedText("-%s", LibFroznFunctions:FormatNumber(valueParams.valueIsSecretValue and valueParams.valueMissingIfValueIsSecretValue or (valueParams.maxValue - valueParams.value), cfg.barsCondenseValues, valueParams.valueIsSecretValue));
+			else
+				barText:SetText("");
+			end
 		end
-	elseif (valueType == "percent") then
-		barText:SetFormattedText("%.0f%%", value / maxValue * 100);
+	elseif (valueParams.valueType == "percent") then
+		barText:SetFormattedText("%.0f%%", valueParams.valueIsSecretValue and valueParams.valuePercentIfValueIsSecretValue or (valueParams.value / valueParams.maxValue * 100));
 	end
 end
 
@@ -696,12 +749,12 @@ ttBars.HealthBarMixin = {};
 
 -- get visibility of bar
 function ttBars.HealthBarMixin:GetVisibility(tip, unitRecord)
-	return cfg.healthBar;
+	return cfg.healthBar and (unitRecord ~= LFF_UNIT_RECORD.SecretValue);
 end
 
 -- get color of bar
 function ttBars.HealthBarMixin:GetColor(tip, unitRecord)
-	if (unitRecord.isPlayer) and (cfg.healthBarClassColor) then
+	if (unitRecord ~= LFF_UNIT_RECORD.SecretValue) and (unitRecord.isPlayer) and (cfg.healthBarClassColor) then
 		local classColor = LibFroznFunctions:GetClassColor(unitRecord.classID, 5, cfg.enableCustomClassColors and TT_ExtendedConfig.customClassColors or nil);
 		
 		return classColor:GetRGBA();
@@ -714,23 +767,23 @@ end
 function ttBars.HealthBarMixin:UpdateValue(tip, unitRecord)
 	self:SetStatusBarColor(self:GetColor(tip, unitRecord));
 	
-	local value, maxValue, valueType = unitRecord.health, unitRecord.healthMax, cfg.healthBarText;
-	
-	-- consider unit health from addon RealMobHealth
-	if (RealMobHealth) then
-		local rmhValue, rmhMaxValue = RealMobHealth.GetUnitHealth(unitRecord.id);
-		
-		if (rmhValue) and (rmhMaxValue) then
-			value = rmhValue;
-			maxValue = rmhMaxValue;
-		end
+	if (unitRecord == LFF_UNIT_RECORD.SecretValue) then
+		return;
 	end
 	
-	-- update value
-	if (value) then
-		self:SetMinMaxValues(0, maxValue);
-		self:SetValue(value);
-		self:SetFormattedBarValues(value, maxValue, valueType);
+	local valueParams = {
+		valueType = cfg.healthBarText,
+		value = unitRecord.health,
+		maxValue = unitRecord.healthMax,
+		valueIsSecretValue = unitRecord.healthIsSecretValue,
+		valuePercentIfValueIsSecretValue = unitRecord.healthPercentIfHealthIsSecretValue,
+		valueMissingIfValueIsSecretValue = unitRecord.healthMissingIfHealthIsSecretValue
+	};
+	
+	if (valueParams.value) then
+		self:SetMinMaxValues(0, valueParams.maxValue);
+		self:SetValue(valueParams.value);
+		self:SetFormattedBarValues(valueParams);
 	end
 end
 
@@ -745,7 +798,7 @@ ttBars.PowerBarMixin = {};
 
 -- get visibility of bar
 function ttBars.PowerBarMixin:GetVisibility(tip, unitRecord)
-	return (unitRecord.powerMax ~= 0) and (cfg.manaBar and unitRecord.powerType == 0 or cfg.powerBar and unitRecord.powerType ~= 0);
+	return (unitRecord ~= LFF_UNIT_RECORD.SecretValue) and ((unitRecord.powerIsSecretValue) or (unitRecord.powerMax ~= 0)) and (cfg.manaBar and unitRecord.powerType == 0 or cfg.powerBar and unitRecord.powerType ~= 0);
 end
 
 -- get color of bar
@@ -765,12 +818,23 @@ end
 function ttBars.PowerBarMixin:UpdateValue(tip, unitRecord)
 	self:SetStatusBarColor(self:GetColor(tip, unitRecord));
 	
-	local value, maxValue, valueType = unitRecord.power, unitRecord.powerMax, (unitRecord.powerType == 0 and cfg.manaBarText or cfg.powerBarText);
+	if (unitRecord == LFF_UNIT_RECORD.SecretValue) then
+		return;
+	end
 	
-	if (value) then
-		self:SetMinMaxValues(0, maxValue);
-		self:SetValue(value);
-		self:SetFormattedBarValues(value, maxValue, valueType);
+	local valueParams = {
+		valueType = (unitRecord.powerType == 0 and cfg.manaBarText or cfg.powerBarText),
+		value = unitRecord.power,
+		maxValue = unitRecord.powerMax,
+		valueIsSecretValue = unitRecord.powerIsSecretValue,
+		valuePercentIfValueIsSecretValue = unitRecord.powerPercentIfPowerIsSecretValue,
+		valueMissingIfValueIsSecretValue = unitRecord.powerMissingIfPowerIsSecretValue
+	};
+	
+	if (valueParams.value) then
+		self:SetMinMaxValues(0, valueParams.maxValue);
+		self:SetValue(valueParams.value);
+		self:SetFormattedBarValues(valueParams);
 	end
 end
 
@@ -800,30 +864,39 @@ function ttBars.CastBarMixin:GetVisibility(tip, unitRecord)
 		return (fadingOut or cfg.castBarAlwaysShow);
 	end
 	
-	-- get visibility of bar if there is an active spell cast
+	-- try enabling fading out after spell cast
+	local newUnitCastingSpell;
+	
 	if (frameForUnitEvents) and (frameForUnitEvents:IsActiveSpellCast()) then
+		-- get information about the new spell currently being cast/channeled/charged
+		local unitCastingSpell = frameForUnitEvents.unitCastingSpell;
+		
+		newUnitCastingSpell = (unitCastingSpell.spellIDIsSecretValue) and (unitRecord ~= LFF_UNIT_RECORD.SecretValue) and LibFroznFunctions:GetUnitCastingSpell(unitRecord.id);
+		
 		-- check if end time has been reached without stop event
-		if (frameForUnitEvents.unitCastingSpell.endTime <= GetTime()) then
+		if (unitCastingSpell.spellIDIsSecretValue) and (not ttBars:IsActiveSpellCast(newUnitCastingSpell)) or
+				(not unitCastingSpell.spellIDIsSecretValue) and (unitCastingSpell.endTime) and (unitCastingSpell.endTime <= GetTime()) then
+			
 			-- try enabling fading out after spell cast
 			frameForUnitEvents:TryEnablingFadingOut({
 				fadeOutEnabled = true,
 				fadeOutGenericStopEvent = true,
 				fadeOutCastSuccess = true
-			}, frameForUnitEvents.unitCastingSpell.spellID);
+			}, unitCastingSpell.spellID);
 		end
 		
 		return true;
 	end
 	
-	-- get information about the new spell currently being cast/channeled
-	local unitCastingSpell = LibFroznFunctions:GetUnitCastingSpell(unitRecord.id);
+	-- get information about the new spell currently being cast/channeled/charged
+	newUnitCastingSpell = (newUnitCastingSpell) or (unitRecord ~= LFF_UNIT_RECORD.SecretValue) and LibFroznFunctions:GetUnitCastingSpell(unitRecord.id);
 	
-	if (not ttBars:IsActiveSpellCast(unitCastingSpell)) then
+	if (not ttBars:IsActiveSpellCast(newUnitCastingSpell)) then
 		return cfg.castBarAlwaysShow;
 	end
 	
 	if (frameForUnitEvents) then
-		frameForUnitEvents:SetActiveSpellCast(unitCastingSpell, unitRecord);
+		frameForUnitEvents:SetActiveSpellCast(newUnitCastingSpell);
 	end
 	
 	return true;
@@ -848,6 +921,8 @@ function ttBars.CastBarMixin:GetColor(tip, unitRecord)
 end
 
 -- update value
+local curveScaleToCastBarWidth;
+
 function ttBars.CastBarMixin:UpdateValue(tip, unitRecord)
 	self:SetStatusBarColor(self:GetColor(tip, unitRecord));
 	
@@ -855,13 +930,19 @@ function ttBars.CastBarMixin:UpdateValue(tip, unitRecord)
 	local frameForUnitEvents = ttBars:GetFrameForUnitEvents(tip);
 	
 	-- set value of bar if fade out is enabled
-	if (frameForUnitEvents) and (frameForUnitEvents.castBarFadeOutEnabled) then
-		local minValue, maxValue = self:GetMinMaxValues();
+	local unitCastingSpell;
+	
+	if (frameForUnitEvents) then
+		unitCastingSpell = frameForUnitEvents.unitCastingSpell;
 		
-		self:SetValue(frameForUnitEvents.unitCastingSpell.isChanneling and minValue or maxValue);
-		self.spark:Hide();
-		
-		return;
+		if (frameForUnitEvents.castBarFadeOutEnabled) then
+			local minValue, maxValue = self:GetMinMaxValues();
+			
+			self:SetValue(unitCastingSpell.isChanneling and minValue or maxValue);
+			self.spark:Hide();
+			
+			return;
+		end
 	end
 	
 	-- don't set value of bar if there is no active spell cast
@@ -869,7 +950,7 @@ function ttBars.CastBarMixin:UpdateValue(tip, unitRecord)
 		if (cfg.castBarAlwaysShow) then
 			self:SetMinMaxValues(0, 1);
 			self:SetValue(0);
-			self.text:SetText(nil);
+			self.text:SetText("");
 			self.spark:Hide();
 		end
 		
@@ -877,30 +958,66 @@ function ttBars.CastBarMixin:UpdateValue(tip, unitRecord)
 	end
 	
 	-- set value of bar if there is an active spell cast
-	local value, maxValue = (frameForUnitEvents.unitCastingSpell.isChanneling and (frameForUnitEvents.unitCastingSpell.endTime - GetTime()) or (GetTime() - frameForUnitEvents.unitCastingSpell.startTime)), frameForUnitEvents.unitCastingSpell.endTime - frameForUnitEvents.unitCastingSpell.startTime;
+	local value, maxValue, duration;
+	
+	if (unitCastingSpell.spellIDIsSecretValue) and (unitCastingSpell.durationIfSpellIDIsSecretValue) then
+		duration = unitCastingSpell.durationIfSpellIDIsSecretValue;
+		
+		value, maxValue =
+			unitCastingSpell.isChanneling and (duration:GetRemainingDuration()) or (duration:GetElapsedDuration()),
+			duration:GetTotalDuration();
+	elseif (unitCastingSpell.startTime) and (unitCastingSpell.endTime) then
+		value, maxValue =
+			unitCastingSpell.isChanneling and (unitCastingSpell.endTime - GetTime()) or (GetTime() - unitCastingSpell.startTime),
+			unitCastingSpell.endTime - unitCastingSpell.startTime;
+	end
+	
 	local text = LibFroznFunctions:CreatePushArray();
 	local spacer;
 	
-	if (frameForUnitEvents.unitCastingSpell.notInterruptible) then
+	if (not LibFroznFunctions:IsSecretValue(unitCastingSpell.notInterruptible)) and (unitCastingSpell.notInterruptible) then
 		text:Push(CreateAtlasMarkup("nameplates-InterruptShield"));
 	end
 	
-	if (frameForUnitEvents.unitCastingSpell.textureFile) then
-		text:Push(CreateTextureMarkup(frameForUnitEvents.unitCastingSpell.textureFile, 64, 64, nil, nil, 0.07, 0.93, 0.07, 0.93));
+	if (unitCastingSpell.textureFile) then
+		text:Push(CreateTextureMarkup(unitCastingSpell.textureFile, 64, 64, nil, nil, 0.07, 0.93, 0.07, 0.93));
 	end
 	
-	if (frameForUnitEvents.unitCastingSpell.displayName) then
+	if (unitCastingSpell.displayName) then
 		spacer = (text:GetCount() > 0) and " " or "";
 		
-		text:Push(spacer .. frameForUnitEvents.unitCastingSpell.displayName);
+		text:Push(spacer .. unitCastingSpell.displayName);
 	end
 	
 	-- update value
-	self:SetMinMaxValues(0, maxValue);
-	self:SetValue(value);
+	self:SetMinMaxValues(0, maxValue or 1);
+	self:SetValue(value or 1);
 	self.text:SetText(text:Concat());
 	
-	self.spark:ClearAllPoints();
-	self.spark:SetPoint("CENTER", self, "LEFT", value / maxValue * self:GetWidth(), 0);
-	self.spark:Show();
+	if (value) and (maxValue) then
+		self.spark:ClearAllPoints();
+		
+		if (unitCastingSpell.spellIDIsSecretValue) then
+			if (not curveScaleToCastBarWidth) then
+				curveScaleToCastBarWidth = C_CurveUtil.CreateCurve();
+				
+				curveScaleToCastBarWidth:SetType(Enum.LuaCurveType.Linear);
+			end
+			
+			curveScaleToCastBarWidth:ClearPoints();
+			curveScaleToCastBarWidth:AddPoint(0, 0);
+			curveScaleToCastBarWidth:AddPoint(1, self:GetWidth());
+			
+			-- #todo: temporarily hiding the spark, even though the correct value is being delivered.
+			-- self.spark:SetPoint("CENTER", self, "LEFT", duration:EvaluateElapsedPercent(curveScaleToCastBarWidth), 0);
+			self.spark:Hide();
+			return;
+		else
+			self.spark:SetPoint("CENTER", self, "LEFT", value / maxValue * self:GetWidth(), 0);
+		end
+		
+		self.spark:Show();
+	else
+		self.spark:Hide();
+	end
 end

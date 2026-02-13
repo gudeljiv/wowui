@@ -9,7 +9,7 @@
 
 -- create new library
 local LIB_NAME = "LibFroznFunctions-1.0";
-local LIB_MINOR = 56; -- bump on changes
+local LIB_MINOR = 57; -- bump on changes
 
 if (not LibStub) then
 	error(LIB_NAME .. " requires LibStub.");
@@ -57,41 +57,45 @@ end
 -- WoW flavor
 --
 -- @return .ClassicEra = true/false for Classic Era
---         .BCC        = true/false for BCC
+--         .TBC        = true/false for TBC
 --         .WotLKC     = true/false for WotLKC
 --         .CataC      = true/false for CataC
 --         .MoPC       = true/false for MoPC
 --         .SL         = true/false for SL
 --         .DF         = true/false for DF
 --         .TWW        = true/false for TWW
+--         .MN         = true/false for MN
 LibFroznFunctions.isWoWFlavor = {
 	ClassicEra = false,
-	BCC = false,
+	TBC = false,
 	WotLKC = false,
 	CataC = false,
 	MoPC = false,
 	SL = false,
 	DF = false,
-	TWW = false
+	TWW = false,
+	MN = false
 };
 
 if (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_CLASSIC"]) then
 	LibFroznFunctions.isWoWFlavor.ClassicEra = true;
 elseif (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_BURNING_CRUSADE_CLASSIC"]) then
-	LibFroznFunctions.isWoWFlavor.BCC = true;
+	LibFroznFunctions.isWoWFlavor.TBC = true;
 elseif (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_WRATH_CLASSIC"]) then
 	LibFroznFunctions.isWoWFlavor.WotLKC = true;
 elseif (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_CATACLYSM_CLASSIC"]) then
 	LibFroznFunctions.isWoWFlavor.CataC = true;
 elseif (_G["WOW_PROJECT_ID"] == _G["WOW_PROJECT_MISTS_CLASSIC"]) then
 	LibFroznFunctions.isWoWFlavor.MoPC = true;
-else -- retail
+else -- WOW_PROJECT_MAINLINE (retail)
 	if (_G["LE_EXPANSION_LEVEL_CURRENT"] == _G["LE_EXPANSION_SHADOWLANDS"]) then
 		LibFroznFunctions.isWoWFlavor.SL = true;
 	elseif (_G["LE_EXPANSION_LEVEL_CURRENT"] == _G["LE_EXPANSION_DRAGONFLIGHT"]) then
 		LibFroznFunctions.isWoWFlavor.DF = true;
-	else
+	elseif (_G["LE_EXPANSION_LEVEL_CURRENT"] == _G["LE_EXPANSION_WAR_WITHIN"]) then
 		LibFroznFunctions.isWoWFlavor.TWW = true;
+	else
+		LibFroznFunctions.isWoWFlavor.MN = true;
 	end
 end
 
@@ -103,30 +107,32 @@ LFF_GEAR_SCORE_ALGORITHM = {
 
 -- differences between WoW flavors
 --
--- @return .guildNameInPlayerUnitTip                                   = true/false if the guild name is included in the player unit tip (since bc)
---         .specializationAndClassTextInPlayerUnitTip                  = true/false if a specialization and class text is included in the player unit tip (since df 10.1.5)
---         .rightClickForFrameSettingsTextInUnitTip                    = true/false if a right-click for frame settings is included in the unit tip (since tww 11.0.7)
---         .clickForSettingsTextInCurrencyTip                          = true/false if a click for settings is included in the currency tip (since tww 11.0.0)
---         .needsSuppressingErrorMessageAndSpeechWhenCallingCanInspect = true/false for suppressing error message and speech when calling CanInspect() (till mopc)
---         .talentsAvailableForInspectedUnit                           = true/false if getting talents from other players is available (since bc 2.3.0)
---         .numTalentTrees                                             = number of talent trees
---         .talentIconAvailable                                        = true/false if talent icon is available (since bc)
---         .roleIconAvailable                                          = true/false if role icon is available (since MoP 5.0.4)
---         .specializationAvailable                                    = true/false if specialization is available (since MoP 5.0.4)
---         .itemLevelOfFirstRaidTierSet                                = item level of first raid tier set. false if not defined (yet).
---         .GameTooltipSetPaddingWithLeftAndTop                        = true/false if GameTooltip:SetPadding() has the optional left and top parameters (since BfA 8.2.0)
---         .GameTooltipFadeOutNotBeCalledForWorldFrameUnitTips         = true/false if GameTooltip:FadeOut() will not be called for worldframe unit tips (till mopc)
---         .ShoppingTooltipHasCompareHeader                            = true/false if ShoppingTooltip1/2.CompareHeader exist (since tww 11.2.7)
---         .barMarginAdjustment                                        = bar margin adjustment (since bc till mopc)
---         .experienceBarDockedToInterfaceBar                          = true/false if experience bar is docked to interface bar (till df 10.0.0)
---         .experienceBarFrame                                         = frame of experience bar
---         .experienceBarMaxLevelBack                                  = max level to search back in frame chain to search for frame of experience bar
---         .realGetSpellLinkAvailable                                  = true/false if the real GetSpellLink() is available (since bc 2.3.0). in classic era this function only returns the spell name instead of a spell link.
---         .relatedExpansionForItemAvailable                           = true/false if C_Item.GetItemInfo() return the related expansion for an item (parameter expansionID) (since Legion 7.1.0)
---         .defaultGearScoreAlgorithm                                  = default GearScore algorithm
---         .optionsSliderTemplate                                      = options slider template ("OptionsSliderTemplate". since df 10.0.0, catac 4.4.0 and 1.15.4 "UISliderTemplateWithLabels")
---         .skyriding                                                  = true/false if skyriding is available (since df 10.0.2)
---         .challengeMode                                              = true/false if challenge mode is available (since Legion 7.0.3)
+-- @return .guildNameInPlayerUnitTip                                                           = true/false if the guild name is included in the player unit tip (since bc)
+--         .specializationAndClassTextInPlayerUnitTip                                          = true/false if a specialization and class text is included in the player unit tip (since df 10.1.5)
+--         .rightClickForFrameSettingsTextInUnitTip                                            = true/false if a right-click for frame settings is included in the unit tip (since tww 11.0.7)
+--         .clickForSettingsTextInCurrencyTip                                                  = true/false if a click for settings is included in the currency tip (since tww 11.0.0)
+--         .needsSuppressingErrorMessageAndSpeechWhenCallingCanInspect                         = true/false for suppressing error message and speech when calling CanInspect() (till mopc)
+--         .talentsAvailableForInspectedUnit                                                   = true/false if getting talents from other players is available (since bc 2.3.0)
+--         .numTalentTrees                                                                     = number of talent trees
+--         .talentIconAvailable                                                                = true/false if talent icon is available (since bc)
+--         .roleIconAvailable                                                                  = true/false if role icon is available (since MoP 5.0.4)
+--         .specializationAvailable                                                            = true/false if specialization is available (since MoP 5.0.4)
+--         .itemLevelOfFirstRaidTierSet                                                        = item level of first raid tier set. false if not defined (yet).
+--         .GameTooltipSetPaddingWithLeftAndTop                                                = true/false if GameTooltip:SetPadding() has the optional left and top parameters (since BfA 8.2.0)
+--         .GameTooltipFadeOutNotBeCalledForWorldFrameUnitTips                                 = true/false if GameTooltip:FadeOut() will not be called for worldframe unit tips (till mopc)
+--         .ShoppingTooltipHasCompareHeader                                                    = true/false if ShoppingTooltip1/2.CompareHeader exist (since tww 11.2.7)
+--         .barMarginAdjustment                                                                = bar margin adjustment (since bc till mopc)
+--         .experienceBarDockedToInterfaceBar                                                  = true/false if experience bar is docked to interface bar (till df 10.0.0)
+--         .experienceBarFrame                                                                 = frame of experience bar
+--         .experienceBarMaxLevelBack                                                          = max level to search back in frame chain to search for frame of experience bar
+--         .realGetSpellLinkAvailable                                                          = true/false if the real GetSpellLink() is available (since bc 2.3.0). in classic era this function only returns the spell name instead of a spell link.
+--         .relatedExpansionForItemAvailable                                                   = true/false if C_Item.GetItemInfo() return the related expansion for an item (parameter expansionID) (since Legion 7.1.0)
+--         .defaultGearScoreAlgorithm                                                          = default GearScore algorithm
+--         .optionsSliderTemplate                                                              = options slider template ("OptionsSliderTemplate". since df 10.0.0, catac 4.4.0 and 1.15.4 "UISliderTemplateWithLabels")
+--         .skyriding                                                                          = true/false if skyriding is available (since df 10.0.2)
+--         .challengeMode                                                                      = true/false if challenge mode is available (since Legion 7.0.3)
+--         .GetMountFromSpellNotPossibleInCombat                                               = true/false if calling C_MountJournal.GetMountFromSpell() isn't possible in combat because spellID is a secret value in this case (since mn 12.0.0)
+--         .aurasCooldownCountAndDebuffTypeNotAvailableInCombat                                = true/false if the cooldown, count and debuff type of the auras are not available in combat because of secret values (since mn 12.0.0)
 LibFroznFunctions.hasWoWFlavor = {
 	guildNameInPlayerUnitTip = true,
 	specializationAndClassTextInPlayerUnitTip = true,
@@ -150,7 +156,9 @@ LibFroznFunctions.hasWoWFlavor = {
 	defaultGearScoreAlgorithm = LFF_GEAR_SCORE_ALGORITHM.TipTac,
 	optionsSliderTemplate = "UISliderTemplateWithLabels",
 	skyriding = (C_MountJournal and C_MountJournal.SwapDynamicFlightMode and true or false), -- see MountJournalDynamicFlightModeButtonMixin:OnClick() in "Blizzard_MountCollection.lua"
-	challengeMode = (C_ChallengeMode and C_ChallengeMode.IsChallengeModeActive and true or false)
+	challengeMode = (C_ChallengeMode and C_ChallengeMode.IsChallengeModeActive and true or false),
+	GetMountFromSpellNotPossibleInCombat = true,
+	aurasCooldownCountAndDebuffTypeNotAvailableInCombat = true
 };
 
 if (LibFroznFunctions.isWoWFlavor.ClassicEra) then
@@ -159,15 +167,15 @@ if (LibFroznFunctions.isWoWFlavor.ClassicEra) then
 	LibFroznFunctions.hasWoWFlavor.talentIconAvailable = false;
 	LibFroznFunctions.hasWoWFlavor.realGetSpellLinkAvailable = false;
 end
-if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.BCC) or (LibFroznFunctions.isWoWFlavor.WotLKC) then
+if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.TBC) or (LibFroznFunctions.isWoWFlavor.WotLKC) then
 	LibFroznFunctions.hasWoWFlavor.defaultGearScoreAlgorithm = LFF_GEAR_SCORE_ALGORITHM.TacoTip;
 end
-if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.BCC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) then
+if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.TBC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) then
 	LibFroznFunctions.hasWoWFlavor.numTalentTrees = 3;
 	LibFroznFunctions.hasWoWFlavor.roleIconAvailable = false;
 	LibFroznFunctions.hasWoWFlavor.specializationAvailable = false;
 end
-if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.BCC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.MoPC) then
+if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.TBC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.MoPC) then
 	LibFroznFunctions.hasWoWFlavor.needsSuppressingErrorMessageAndSpeechWhenCallingCanInspect = true;
 	LibFroznFunctions.hasWoWFlavor.GameTooltipSetPaddingWithLeftAndTop = false;
 	LibFroznFunctions.hasWoWFlavor.GameTooltipFadeOutNotBeCalledForWorldFrameUnitTips = true;
@@ -176,16 +184,20 @@ end
 if (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.SL) then
 	LibFroznFunctions.hasWoWFlavor.optionsSliderTemplate = "OptionsSliderTemplate";
 end
-if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.BCC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.MoPC) or (LibFroznFunctions.isWoWFlavor.SL) then
+if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.TBC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.MoPC) or (LibFroznFunctions.isWoWFlavor.SL) then
 	LibFroznFunctions.hasWoWFlavor.specializationAndClassTextInPlayerUnitTip = false;
 	LibFroznFunctions.hasWoWFlavor.experienceBarDockedToInterfaceBar = true;
 	LibFroznFunctions.hasWoWFlavor.experienceBarFrame = (MainMenuExpBar or MainStatusTrackingBarContainer);
 	LibFroznFunctions.hasWoWFlavor.experienceBarMaxLevelBack = (MainMenuExpBar and 1 or MainStatusTrackingBarContainer and 3);
 end
-if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.BCC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.MoPC) or (LibFroznFunctions.isWoWFlavor.SL) or (LibFroznFunctions.isWoWFlavor.DF) then
+if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.TBC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.MoPC) or (LibFroznFunctions.isWoWFlavor.SL) or (LibFroznFunctions.isWoWFlavor.DF) then
 	LibFroznFunctions.hasWoWFlavor.rightClickForFrameSettingsTextInUnitTip = false;
 	LibFroznFunctions.hasWoWFlavor.clickForSettingsTextInCurrencyTip = false;
 	LibFroznFunctions.hasWoWFlavor.ShoppingTooltipHasCompareHeader = false;
+end
+if (LibFroznFunctions.isWoWFlavor.ClassicEra) or (LibFroznFunctions.isWoWFlavor.TBC) or (LibFroznFunctions.isWoWFlavor.WotLKC) or (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.MoPC) or (LibFroznFunctions.isWoWFlavor.SL) or (LibFroznFunctions.isWoWFlavor.DF) or (LibFroznFunctions.isWoWFlavor.TWW) then
+	LibFroznFunctions.hasWoWFlavor.GetMountFromSpellNotPossibleInCombat = false;
+	LibFroznFunctions.hasWoWFlavor.aurasCooldownCountAndDebuffTypeNotAvailableInCombat = false;
 end
 if (LibFroznFunctions.isWoWFlavor.CataC) or (LibFroznFunctions.isWoWFlavor.MoPC) then
 	LibFroznFunctions.hasWoWFlavor.barMarginAdjustment = -1;
@@ -198,12 +210,13 @@ if (LibFroznFunctions.isWoWFlavor.DF) then
 end
 LibFroznFunctions.hasWoWFlavor.itemLevelOfFirstRaidTierSet = 
 	LibFroznFunctions.isWoWFlavor.ClassicEra and  66 or -- Cenarion Vestments (Druid, Tier 1)
-	LibFroznFunctions.isWoWFlavor.BCC        and 120 or -- Chestguard of Malorne (Druid, Tier 4)
+	LibFroznFunctions.isWoWFlavor.TBC        and 120 or -- Chestguard of Malorne (Druid, Tier 4)
 	LibFroznFunctions.isWoWFlavor.WotLKC     and 213 or -- Valorous Dreamwalker Robe (Druid, Tier 7)
 	LibFroznFunctions.isWoWFlavor.CataC      and 359 or -- Stormrider's Robes (Druid, Tier 11)
 	LibFroznFunctions.isWoWFlavor.MoPC       and 397 or -- Deep Earth Robes (Druid, Tier 13)
 	LibFroznFunctions.isWoWFlavor.DF         and 395 or -- Lost Landcaller's Robes (Druid, Tier 29)
-	LibFroznFunctions.isWoWFlavor.TWW        and 571;   -- Hide of the Greatlynx (Druid, Tier 32)
+	LibFroznFunctions.isWoWFlavor.TWW        and 571 or -- Hide of the Greatlynx (Druid, Tier 32)
+	LibFroznFunctions.isWoWFlavor.MN         and 219;   -- Trunk of the Luminous Bloom (Druid, Tier 35)
 
 -- aura filters, see "AuraUtil.lua"
 LFF_AURA_FILTERS = (AuraUtil) and (AuraUtil.AuraFilters) or {
@@ -226,6 +239,18 @@ if (not LFF_WORLD_ELAPSED_TIMER_TYPES) then
 		ChallengeMode = 1, -- LE_WORLD_ELAPSED_TIMER_TYPE_CHALLENGE_MODE
 		ProvingGround = 2 -- LE_WORLD_ELAPSED_TIMER_TYPE_PROVING_GROUND
 	};
+end
+
+-- is secret value
+--
+-- @param  value  value
+-- @return true if value is a secret value, false otherwise.
+function LibFroznFunctions:IsSecretValue(value)
+	if (issecretvalue) then
+		return issecretvalue(value);
+	end
+	
+	return false;
 end
 
 -- is unit a battle pet
@@ -544,10 +569,14 @@ end
 -- @param  spellID  spell id
 -- @return mountID  mount id
 --         returns 0 if the spell/aura is from a mount, but there is no specific mount, e.g. "Running Wild" for worgen.
---         returns nil if spell/aura doesn't belong to a mount.
+--         returns nil if spell/aura doesn't belong to a mount or is a secret value.
 function LibFroznFunctions:GetMountFromSpell(spellID)
 	-- since BfA 8.0.1
 	if (C_MountJournal) and (C_MountJournal.GetMountFromSpell) then
+		if (self:IsSecretValue(spellID)) then
+			return nil;
+		end
+		
 		return C_MountJournal.GetMountFromSpell(spellID) or LFF_SPELLID_TO_MOUNTID_LOOKUP[tonumber(spellID)]; -- also check LFF_SPELLID_TO_MOUNTID_LOOKUP, because some mounted auras doesn't belong to a mount, e.g. "Running Wild" for worgen
 	end
 	
@@ -914,6 +943,72 @@ function LibFroznFunctions:GetSpecializationInfo(specIndex, isInspect, isPet, in
 	return GetSpecializationInfo(specIndex, isInspect, isPet, inspectTarget, sex);
 end
 
+-- get debuff display info table
+-- @return DEBUFF_DISPLAY_INFO
+local preMnDebuffDisplayInfo;
+
+function LibFroznFunctions:GetDebuffDisplayInfoTable()
+	-- since mn 12.0.0
+	if (AuraUtil) and (AuraUtil.GetDebuffDisplayInfoTable) then
+		return AuraUtil.GetDebuffDisplayInfoTable();
+	end
+	
+	-- before mn 12.0.0
+	if (not preMnDebuffDisplayInfo) then
+		local debuffTypeColorMagic = DebuffTypeColor["Magic"];
+		local debuffTypeColorCurse = DebuffTypeColor["Curse"];
+		local debuffTypeColorDisease = DebuffTypeColor["Disease"];
+		local debuffTypeColorPoison = DebuffTypeColor["Poison"];
+		local debuffTypeColorNone = DebuffTypeColor["none"];
+		
+		preMnDebuffDisplayInfo = { -- see "AuraUtil.lua"
+			["Magic"] = { color = CreateColor(debuffTypeColorMagic.r, debuffTypeColorMagic.g, debuffTypeColorMagic.b, 1), abbreviation = DEBUFF_SYMBOL_MAGIC, basicAtlas = "ui-debuff-border-magic-noicon", dispelAtlas = "ui-debuff-border-magic-icon" },
+			["Curse"] = { color = CreateColor(debuffTypeColorCurse.r, debuffTypeColorCurse.g, debuffTypeColorCurse.b, 1), abbreviation = DEBUFF_SYMBOL_CURSE, basicAtlas = "ui-debuff-border-curse-noicon", dispelAtlas = "ui-debuff-border-curse-icon" },
+			["Disease"] = { color = CreateColor(debuffTypeColorDisease.r, debuffTypeColorDisease.g, debuffTypeColorDisease.b, 1), abbreviation = DEBUFF_SYMBOL_DISEASE, basicAtlas = "ui-debuff-border-disease-noicon", dispelAtlas = "ui-debuff-border-disease-icon" },
+			["Poison"] = { color = CreateColor(debuffTypeColorPoison.r, debuffTypeColorPoison.g, debuffTypeColorPoison.b, 1), abbreviation = DEBUFF_SYMBOL_POISON, basicAtlas = "ui-debuff-border-poison-noicon", dispelAtlas = "ui-debuff-border-poison-icon" },
+			-- ["Bleed"] = { color = DEBUFF_TYPE_BLEED_COLOR, abbreviation = DEBUFF_SYMBOL_BLEED, basicAtlas = "ui-debuff-border-bleed-noicon", dispelAtlas = "ui-debuff-border-bleed-icon" },
+			["None"] = { color = CreateColor(debuffTypeColorNone.r, debuffTypeColorNone.g, debuffTypeColorNone.b, 1), abbreviation = "", basicAtlas = "ui-debuff-border-default-noicon" },
+		};
+	end
+	
+	return preMnDebuffDisplayInfo;
+end
+
+-- get dispel type color
+-- @param  dispelName                               locale-independent magic type of the aura, e.g. "Curse", "Disease", "Magic" or "Poison"
+-- @param  unitIDIfDispelNameIsSecretValue          id of unit if dispelName is a secret value
+-- @param  auraInstanceIDIfDispelNameIsSecretValue  instance id of aura if dispelName is a secret value
+-- @return dispelTypeColor
+local dispelTypeColorCurve;
+
+function LibFroznFunctions:GetDispelTypeColor(dispelName, unitIDIfDispelNameIsSecretValue, auraInstanceIDIfDispelNameIsSecretValue)
+	-- since mn 12.0.0 if dispelName is a secret value
+	local debuffDisplayInfoTable;
+	
+	if (self:IsSecretValue(dispelName)) then
+		if (not dispelTypeColorCurve) then -- see DB SpellDispelType
+			debuffDisplayInfoTable = self:GetDebuffDisplayInfoTable();
+			
+			dispelTypeColorCurve = C_CurveUtil.CreateColorCurve();
+			
+			dispelTypeColorCurve:SetType(Enum.LuaCurveType.Step);
+			dispelTypeColorCurve:AddPoint(0, debuffDisplayInfoTable["None"].color);    -- None
+			dispelTypeColorCurve:AddPoint(1, debuffDisplayInfoTable["Magic"].color);   -- Magic
+			dispelTypeColorCurve:AddPoint(2, debuffDisplayInfoTable["Curse"].color);   -- Curse
+			dispelTypeColorCurve:AddPoint(3, debuffDisplayInfoTable["Disease"].color); -- Disease
+			dispelTypeColorCurve:AddPoint(4, debuffDisplayInfoTable["Poison"].color);  -- Poison
+			dispelTypeColorCurve:AddPoint(11, debuffDisplayInfoTable["Bleed"].color);  -- Bleed
+		end
+		
+		return C_UnitAuras.GetAuraDispelTypeColor(unitIDIfDispelNameIsSecretValue, auraInstanceIDIfDispelNameIsSecretValue, dispelTypeColorCurve);
+	end
+	
+	-- before mn 12.0.0
+	debuffDisplayInfoTable = self:GetDebuffDisplayInfoTable(); -- see RefreshDebuffs() in "AuraUtil.lua"
+	
+	return (debuffDisplayInfoTable[dispelName]) and (debuffDisplayInfoTable[dispelName].color) or (debuffDisplayInfoTable["None"].color);
+end
+
 ----------------------------------------------------------------------------------------------------
 --                                        Helper Functions                                        --
 ----------------------------------------------------------------------------------------------------
@@ -991,10 +1086,13 @@ end
 
 -- format number
 --
--- @param  number      number
--- @param  abbreviate  optional. true if number should be abbreviated.
+-- @param  number               number
+-- @param  abbreviate           optional. true if number should be abbreviated.
+-- @param  numberIsSecretValue  optional. true if number is a secret value, false otherwise.
 -- @return formatted number
-function LibFroznFunctions:FormatNumber(number, abbreviate)
+local numberAbbrevOptions;
+
+function LibFroznFunctions:FormatNumber(number, abbreviate, numberIsSecretValue)
 	local realNumber = tonumber(number);
 	
 	if (abbreviate) then
@@ -1002,37 +1100,97 @@ function LibFroznFunctions:FormatNumber(number, abbreviate)
 		local BILLION_NUMBER = 10^9;
 		local locale = GetLocale();
 		
-		if (self:ExistsInTable(quality, { "frFR", "esMX", "esES" })) then
+		if (self:ExistsInTable(locale, { "frFR", "esMX", "esES" })) then
 			BILLION_NUMBER = 10^12
 		end
 		
-		local absRealNumber = math.abs(realNumber);
-		local abbreviatedRealNumber, abbreviatedFormat;
-		
-		if (absRealNumber >= BILLION_NUMBER) then
-			abbreviatedFormat = "%.1fb";
-			abbreviatedRealNumber = realNumber / BILLION_NUMBER;
-		elseif (absRealNumber >= 1000000000) then
-			abbreviatedFormat = "%.0fm";
-			abbreviatedRealNumber = realNumber / 1000000;
-		elseif (absRealNumber >= 10000000) then
-			abbreviatedFormat = "%.1fm";
-			abbreviatedRealNumber = realNumber / 1000000;
-		elseif (absRealNumber >= 1000000) then
-			abbreviatedFormat = "%.2fm";
-			abbreviatedRealNumber = realNumber / 1000000;
-		elseif (absRealNumber >= 100000) then
-			abbreviatedFormat = "%.0fk";
-			abbreviatedRealNumber = realNumber / 1000;
-		elseif (absRealNumber >= 10000) then
-			abbreviatedFormat = "%.1fk";
-			abbreviatedRealNumber = realNumber / 1000;
+		if (numberIsSecretValue) or (self:IsSecretValue(number)) then
+			if (not numberAbbrevOptions) then
+				numberAbbrevOptions = {
+					config = CreateAbbreviateConfig({
+						[1] = {
+							breakpoint = BILLION_NUMBER,
+							abbreviation = "b",
+							significandDivisor = BILLION_NUMBER / 100,
+							fractionDivisor = 100,
+							abbreviationIsGlobal = false
+						},
+						[2] = {
+							breakpoint = 1000000000,
+							abbreviation = "m",
+							significandDivisor = 1000000,
+							fractionDivisor = 1,
+							abbreviationIsGlobal = false
+						},
+						[3] = {
+							breakpoint = 10000000,
+							abbreviation = "m",
+							significandDivisor = 100000,
+							fractionDivisor = 10,
+							abbreviationIsGlobal = false
+						},
+						[4] = {
+							breakpoint = 1000000,
+							abbreviation = "m",
+							significandDivisor = 10000,
+							fractionDivisor = 100,
+							abbreviationIsGlobal = false
+						},
+						[5] = {
+							breakpoint = 100000,
+							abbreviation = "k",
+							significandDivisor = 1000,
+							fractionDivisor = 1,
+							abbreviationIsGlobal = false
+						},
+						[6] = {
+							breakpoint = 10000,
+							abbreviation = "k",
+							significandDivisor = 100,
+							fractionDivisor = 10,
+							abbreviationIsGlobal = false
+						},
+						[7] = {
+							breakpoint = 0.1,
+							abbreviation = "",
+							significandDivisor = 1,
+							fractionDivisor = 1,
+							abbreviationIsGlobal = false
+						}
+					})
+				};
+			end
+			
+			return AbbreviateNumbers(realNumber, numberAbbrevOptions);
 		else
-			abbreviatedFormat = "%.0f";
-			abbreviatedRealNumber = realNumber;
+			local absRealNumber = math.abs(realNumber);
+			local abbreviatedRealNumber, abbreviatedFormat;
+			
+			if (absRealNumber >= BILLION_NUMBER) then
+				abbreviatedFormat = "%0.2fb";
+				abbreviatedRealNumber = realNumber / BILLION_NUMBER;
+			elseif (absRealNumber >= 1000000000) then
+				abbreviatedFormat = "%.0fm";
+				abbreviatedRealNumber = realNumber / 1000000;
+			elseif (absRealNumber >= 10000000) then
+				abbreviatedFormat = "%.1fm";
+				abbreviatedRealNumber = realNumber / 1000000;
+			elseif (absRealNumber >= 1000000) then
+				abbreviatedFormat = "%.2fm";
+				abbreviatedRealNumber = realNumber / 1000000;
+			elseif (absRealNumber >= 100000) then
+				abbreviatedFormat = "%.0fk";
+				abbreviatedRealNumber = realNumber / 1000;
+			elseif (absRealNumber >= 10000) then
+				abbreviatedFormat = "%.1fk";
+				abbreviatedRealNumber = realNumber / 1000;
+			else
+				abbreviatedFormat = "%.0f";
+				abbreviatedRealNumber = realNumber;
+			end
+			
+			return string.format(abbreviatedFormat, abbreviatedRealNumber);
 		end
-		
-		return string.format(abbreviatedFormat, abbreviatedRealNumber);
 	end
 	
 	return BreakUpLargeNumbers(realNumber);
@@ -1173,7 +1331,9 @@ local pushArray = {
 	__index = {
 		Clear = function(tab)
 			wipe(tab);
+			tab.count = 0;
 		end,
+		secretValuesCount = 0,
 		Push = function(tab, value)
 			tab.next = value;
 		end,
@@ -1192,9 +1352,11 @@ local pushArray = {
 			return tab.count;
 		end,
 		Contains = function(tab, value)
-			for _, _value in ipairs(tab) do
-				if (_value == value) then
-					return true;
+			if (not LibFroznFunctions:IsSecretValue(value)) then
+				for _, _value in ipairs(tab) do
+					if (not LibFroznFunctions:IsSecretValue(_value)) and (_value == value) then
+						return true;
+					end
 				end
 			end
 			return false;
@@ -1207,32 +1369,61 @@ local pushArray = {
 			end
 		end,
 		Remove = function(tab, value)
-			local itemsRemoved = LibFroznFunctions:RemoveFromTable(tab, function(_value)
-				return (_value == value);
-			end);
-			tab.count = tab.count - itemsRemoved;
+			local itemsRemoved = 0;
+			if (not LibFroznFunctions:IsSecretValue(value)) then
+				itemsRemoved = LibFroznFunctions:RemoveFromTable(tab, function(_value)
+					return (not LibFroznFunctions:IsSecretValue(_value)) and (_value == value);
+				end);
+				tab.count = tab.count - itemsRemoved;
+			end
 			return itemsRemoved;
 		end,
 		Concat = function(tab, sep)
+			if (tab.secretValuesCount > 0) then
+				local str = "";
+				local first = true;
+				for _, value in ipairs(tab) do
+					if (first) then
+						str = str .. value;
+					else
+						str = str .. sep .. value;
+					end
+				end
+				return str;
+			end
 			return table.concat(tab, sep);
 		end
 	},
 	__newindex = function(tab, key, value)
+		local valueIsSecretValue = LibFroznFunctions:IsSecretValue(value);
 		if (key == "next") then
-			if (value ~= nil) then
+			if (valueIsSecretValue) or (value ~= nil) then
 				tab.count = tab.count + 1;
 				tab.last = value;
 			end
 		elseif (key == "last") then
 			if (tab.count > 0) then
+				local _value = rawget(tab, tab.count);
 				rawset(tab, tab.count, value);
-				
-				if (value == nil) then
+				if (not valueIsSecretValue) and (value == nil) then
 					tab.count = tab.count - 1;
+					if (LibFroznFunctions:IsSecretValue(_value)) then
+						tab.secretValuesCount = tab.secretValuesCount - 1;
+					end
+				else
+					if (valueIsSecretValue) then
+						tab.secretValuesCount = tab.secretValuesCount + 1;
+					end
 				end
 			end
 		else
+			local _value = rawget(tab, key);
 			rawset(tab, key, value);
+			if (not LibFroznFunctions:IsSecretValue(_value)) and (valueIsSecretValue) then
+				tab.secretValuesCount = tab.secretValuesCount + 1;
+			elseif (LibFroznFunctions:IsSecretValue(_value)) and (not valueIsSecretValue) then
+				tab.secretValuesCount = tab.secretValuesCount - 1;
+			end
 		end
 	end
 };
@@ -1851,7 +2042,7 @@ function LibFroznFunctions:CreateDbWithLibAceDB(tblNameOrObject, defaultConfig)
 			db:RegisterDefaults({ profile = newDefaults });
 		end
 	else
-		-- database doesn't exists in lib AceDB-3.0 yet. create new database
+		-- database doesn't exists in lib AceDB-3.0 yet. create new database.
 		db = LibAceDB:New(tblNameOrObject, (defaultConfig and { profile = defaultConfig } or nil), true);
 	end
 	
@@ -2020,12 +2211,12 @@ end
 -- @param  powerType                     power type of unit, e.g. 0 (Mana) or (1) Rage, see "Enum.PowerType"
 -- @param  alternatePowerTypeIfNotFound  alternate power type if color for param "powerType" doesn't exist
 -- @return ColorMixin  returns nil if power type for param "powerType" and "alternatePowerTypeIfNotFound" doesn't exist.
-local powerTypeToPowerTokenLookup = { -- see powerTypeToStringLookup in "Blizzard_CombatLog.lua"
+local powerTypeToPowerTokenLookup = { -- see COMBAT_LOG_POWER_TYPE_STRINGS in "CombatLogConstants.lua"
 	[Enum.PowerType.Mana] = "MANA",
 	[Enum.PowerType.Rage] = "RAGE",
 	[Enum.PowerType.Focus] = "FOCUS",
 	[Enum.PowerType.Energy] = "ENERGY",
-	[Enum.PowerType.ComboPoints] = "COMBO_POINTS",
+	[Enum.PowerType.Happiness] = "HAPPINESS", -- not available in PowerBarColor, see "PowerBarColorUtil.lua"
 	[Enum.PowerType.Runes] = "RUNES",
 	[Enum.PowerType.RunicPower] = "RUNIC_POWER",
 	[Enum.PowerType.SoulShards] = "SOUL_SHARDS",
@@ -2034,17 +2225,16 @@ local powerTypeToPowerTokenLookup = { -- see powerTypeToStringLookup in "Blizzar
 	[Enum.PowerType.Maelstrom] = "MAELSTROM",
 	[Enum.PowerType.Chi] = "CHI",
 	[Enum.PowerType.Insanity] = "INSANITY",
+	[Enum.PowerType.ComboPoints] = "COMBO_POINTS",
 	[Enum.PowerType.ArcaneCharges] = "ARCANE_CHARGES",
 	[Enum.PowerType.Fury] = "FURY",
-	[Enum.PowerType.Pain] = "PAIN"
+	[Enum.PowerType.Pain] = "PAIN",
+	[Enum.PowerType.Essence] = "ESSENCE", -- not available in PowerBarColor, see "PowerBarColorUtil.lua"
+	[Enum.PowerType.Balance] = "BALANCE" -- not available in PowerBarColor, see "PowerBarColorUtil.lua"
 };
 
-if (Enum.PowerType.Essence) then
-	powerTypeToPowerTokenLookup[Enum.PowerType.Essence] = POWER_TYPE_ESSENCE;
-end
-
 function LibFroznFunctions:GetPowerColor(powerType, alternatePowerTypeIfNotFound)
-	return self:CreateColorSmart((powerTypeToPowerTokenLookup[powerType] and PowerBarColor[powerTypeToPowerTokenLookup[powerType]]) or (powerTypeToPowerTokenLookup[alternatePowerTypeIfNotFound] and PowerBarColor[powerTypeToPowerTokenLookup[alternatePowerTypeIfNotFound]]));
+	return self:CreateColorSmart((powerTypeToPowerTokenLookup[powerType] and GetPowerBarColor(powerTypeToPowerTokenLookup[powerType])) or (powerTypeToPowerTokenLookup[alternatePowerTypeIfNotFound] and GetPowerBarColor(powerTypeToPowerTokenLookup[alternatePowerTypeIfNotFound])));
 end
 
 -- get item quality color
@@ -2501,13 +2691,17 @@ function LibFroznFunctions:RefreshAnchorShoppingTooltips(tip)
 	
 	-- local leftPos = sideAnchorFrame:GetLeft(); -- removed
 	-- local rightPos = sideAnchorFrame:GetRight(); -- removed
-	local leftPos = (sideAnchorFrame:GetLeft() ~= nil) and (sideAnchorFrame:GetLeft() * sideAnchorFrame:GetEffectiveScale()); -- added
-	local rightPos = (sideAnchorFrame:GetRight() ~= nil) and (sideAnchorFrame:GetRight() * sideAnchorFrame:GetEffectiveScale()); -- added
+	local sideAnchorFrameGetLeft = sideAnchorFrame:GetLeft(); -- added
+	local sideAnchorFrameGetRight = sideAnchorFrame:GetRight(); -- added
+	local leftPos = (sideAnchorFrameGetLeft ~= nil) and (not LibFroznFunctions:IsSecretValue(sideAnchorFrameGetLeft)) and (sideAnchorFrameGetLeft * sideAnchorFrame:GetEffectiveScale()); -- added
+	local rightPos = (sideAnchorFrameGetRight ~= nil) and (not LibFroznFunctions:IsSecretValue(sideAnchorFrameGetRight)) and (sideAnchorFrameGetRight * sideAnchorFrame:GetEffectiveScale()); -- added
 	
 	-- local selfLeftPos = tooltip:GetLeft(); -- removed
 	-- local selfRightPos = tooltip:GetRight(); -- removed
-	local selfLeftPos = (tooltip:GetLeft() ~= nil) and (tooltip:GetLeft() * tooltip:GetEffectiveScale()); -- added
-	local selfRightPos = (tooltip:GetRight() ~= nil) and (tooltip:GetRight() * tooltip:GetEffectiveScale()); -- added
+	local tooltipGetLeft = tooltip:GetLeft(); -- added
+	local tooltipGetRight = tooltip:GetRight(); -- added
+	local selfLeftPos = (tooltipGetLeft ~= nil) and (not LibFroznFunctions:IsSecretValue(tooltipGetLeft)) and (tooltipGetLeft * tooltip:GetEffectiveScale()); -- added
+	local selfRightPos = (tooltipGetRight ~= nil) and (not LibFroznFunctions:IsSecretValue(tooltipGetRight)) and (tooltipGetRight * tooltip:GetEffectiveScale()); -- added
 	
 	-- if we get the Left, we have the Right
 	if leftPos and selfLeftPos then
@@ -2523,10 +2717,14 @@ function LibFroznFunctions:RefreshAnchorShoppingTooltips(tip)
 	
 	local totalWidth = 0;
 	if primaryShown then
-		totalWidth = totalWidth + primaryTooltip:GetWidth() * primaryTooltip:GetEffectiveScale();
+		-- totalWidth = totalWidth + primaryTooltip:GetWidth(); -- removed
+		local primaryTooltipGetWidth = primaryTooltip:GetWidth(); -- added
+		totalWidth = totalWidth + ((not LibFroznFunctions:IsSecretValue(primaryTooltipGetWidth)) and (primaryTooltipGetWidth * primaryTooltip:GetEffectiveScale()) or 0); -- added
 	end
 	if secondaryShown then
-		totalWidth = totalWidth + secondaryTooltip:GetWidth() * primaryTooltip:GetEffectiveScale();
+		-- totalWidth = totalWidth + secondaryTooltip:GetWidth(); -- removed
+		local secondaryTooltipGetWidth = secondaryTooltip:GetWidth(); -- added
+		totalWidth = totalWidth + ((not LibFroznFunctions:IsSecretValue(secondaryTooltipGetWidth)) and (secondaryTooltipGetWidth * secondaryTooltip:GetEffectiveScale()) or 0); -- added
 	end
 	
 	local rightDist = 0;
@@ -3111,7 +3309,7 @@ function LibFroznFunctions:GetTooltipDataFromScanTip(scanTipName, functionName, 
 		scanTip = CreateFrame("GameTooltip", completeScanTipName, nil, "GameTooltipTemplate");
 		getTooltipDataFromScanTipFrames[completeScanTipName] = scanTip;
 		
-		scanTip:SetOwner(UIParent, "ANCHOR_NONE");
+		scanTip:SetOwner(WorldFrame, "ANCHOR_NONE");
 	end
 	
 	-- get tooltip data from scanning tooltip
@@ -3643,11 +3841,19 @@ end
 -- @param  unitGUID                          optional. unit guid if unit id is missing.
 -- @param  tryToDetermineUnitIDFromUnitGUID  optional. true if it should be tried to determine the unit id from the unit guid.
 -- @return unitRecord, see LibFroznFunctions:CreateUnitRecord()
+LFF_UNIT_RECORD = {
+	SecretValue = 1 -- unit record is a secret value
+};
+
 local cacheUnitRecords = {};
 
 function LibFroznFunctions:GetUnitRecordFromCache(_unitID, _unitGUID, tryToDetermineUnitIDFromUnitGUID)
-	-- no valid unit any more e.g. during fading out
-	local unitGUID = (_unitID) and (UnitGUID(_unitID)) or (_unitGUID);
+	-- no valid unit any more (e.g. during fading out) or unit guid is a secret value
+	local unitGUID = (not self:IsSecretValue(_unitID)) and (_unitID) and (UnitGUID(_unitID)) or (_unitGUID);
+	
+	if (self:IsSecretValue(unitGUID)) then
+		return LFF_UNIT_RECORD.SecretValue;
+	end
 	
 	if (not unitGUID) then
 		return;
@@ -3709,9 +3915,15 @@ end
 --           .reactionIndex                       reaction index of unit, see LFF_UNIT_REACTION_INDEX
 --           .health                              health of unit
 --           .healthMax                           max health of unit
+--           .healthIsSecretValue                 true if health of unit is a secret value, false otherwise.
+--           .healthPercentIfHealthIsSecretValue  health percent of unit if health is a secret value, 0 otherwise.
+--           .healthMissingIfHealthIsSecretValue  health missing of unit if health is a secret value, 0 otherwise.
 --           .powerType                           power type of unit, e.g. 0 (Mana) or (1) Rage, see "Enum.PowerType"
 --           .power                               power of unit
 --           .powerMax                            max power of unit
+--           .powerIsSecretValue                  true if power of unit is a secret value, false otherwise.
+--           .powerPercentIfHealthIsSecretValue   power percent of unit if power is a secret value, 0 otherwise.
+--           .powerMissingIfHealthIsSecretValue   power missing of unit if power is a secret value, 0 otherwise.
 --           .npcID                               npc id of npc
 --           .map                                 map of player unit
 --           .zone                                zone of the player unit
@@ -3801,18 +4013,41 @@ function LibFroznFunctions:UpdateUnitRecord(unitRecord, newUnitID)
 	unitRecord.level = (unitRecord.isBattlePet) and (UnitBattlePetLevel(unitID)) or (UnitLevel(unitID)) or -1;
 	unitRecord.reactionIndex = self:GetUnitReactionIndex(unitID);
 	
-	unitRecord.health = UnitHealth(unitID);
-	unitRecord.healthMax = UnitHealthMax(unitID);
-	
 	unitRecord.powerType = UnitPowerType(unitID);
 	unitRecord.power = UnitPower(unitID);
 	unitRecord.powerMax = UnitPowerMax(unitID);
+	unitRecord.powerIsSecretValue = (self:IsSecretValue(unitRecord.power));
+	unitRecord.powerPercentIfPowerIsSecretValue = (unitRecord.powerIsSecretValue) and (UnitPowerPercent) and UnitPowerPercent(unitID, nil, nil, CurveConstants.ScaleTo100) or 0;
+	unitRecord.powerMissingIfPowerIsSecretValue = (unitRecord.powerIsSecretValue) and (UnitPowerMissing) and UnitPowerMissing(unitID) or 0;
 	
+	-- consider unit health from addon RealMobHealth
+	local health, healthMax;
+	
+	if (RealMobHealth) then
+		local rmhValue, rmhMaxValue = RealMobHealth.GetUnitHealth(unitRecord.id);
+		
+		if (rmhValue) and (rmhMaxValue) then
+			health = rmhValue;
+			healthMax = rmhMaxValue;
+		end
+	end
+	
+	if (not health) and (not healthMax) then
+		health = UnitHealth(unitID);
+		healthMax = UnitHealthMax(unitID);
+	end
+	
+	unitRecord.health = (health) or 0;
+	unitRecord.healthMax = (healthMax) or 0;
+	unitRecord.healthIsSecretValue = (self:IsSecretValue(unitRecord.health));
+	unitRecord.healthPercentIfHealthIsSecretValue = (unitRecord.healthIsSecretValue) and (UnitHealthPercent) and UnitHealthPercent(unitID, nil, CurveConstants.ScaleTo100) or 0;
+	unitRecord.healthMissingIfHealthIsSecretValue = (unitRecord.healthIsSecretValue) and (UnitHealthMissing) and UnitHealthMissing(unitID) or 0;
+	
+	-- add location (map, zone and subzone) to unit record
 	unitRecord.map = nil;
 	unitRecord.zone = nil;
 	unitRecord.subzone = nil;
 	
-	-- add location (map, zone and subzone) to unit record
 	if (unitRecord.isPlayer) then
 		if (mapID) then
 			local mapInfo = C_Map.GetMapInfo(mapID);
@@ -3985,56 +4220,85 @@ end
 --
 -- @param unitID  unit id, e.g. "player", "target" or "mouseover"
 -- @return information about the spell currently being cast/channeled/charged
---           .isCasting         true if spell is cast
---           .isChanneling      true if spell is channeled
---           .isCharging        true if spell is charging
---           .name              name of the spell
---           .displayName       name to be displayed
---           .textureFile       texture file of spell icon
---           .startTime         time when castin/channeling began
---           .endTime           time when casting/channeling will end
---           .isTradeSkill      true if cast is a trade skill
---           .castID            guid of spell cast
---           .notInterruptible  true if cast cannot be interrupted with abilities
---           .spellID           id of spell
---           .isEmpowered       true if spell is empower spell
---           .numEmpowerStages  number of stages of empower spell
+--           .isCasting                       true if spell is cast, false otherwise.
+--           .isChanneling                    true if spell is channeled, false otherwise.
+--           .isCharging                      true if spell is charging, false otherwise.
+--           .name                            name of the spell
+--           .displayName                     name to be displayed
+--           .textureFile                     texture file of spell icon
+--           .startTime                       time when castin/channeling began
+--           .endTime                         time when casting/channeling will end
+--           .durationIfSpellIDIsSecretValue  duration if id of spell is a secret value
+--           .isTradeSkill                    true if cast is a trade skill
+--           .castID                          guid of spell cast
+--           .notInterruptible                true if cast cannot be interrupted with abilities
+--           .spellID                         id of spell
+--           .spellIDIsSecretValue            true if id of spell is a secret value, false otherwise.
+--           .isEmpowered                     true if spell is empowered spell
+--           .numEmpowerStages                number of stages of empowered spell
+--           .castBarID                       id of cast bar
 function LibFroznFunctions:GetUnitCastingSpell(unitID)
-	local name, displayName, textureFile, startTimeMs, endTimeMs, isTradeSkill, castID, notInterruptible, spellID = UnitCastingInfo(unitID);
+	local name, displayName, textureFile, startTimeMs, endTimeMs, isTradeSkill, castID, notInterruptible, spellID, castBarID = UnitCastingInfo(unitID);
 	local isEmpowered, numEmpowerStages;
 	
 	local isCasting, isChanneling, isCharging = false, false, false;
+	local spellIDIsSecretValue = false;
+	local durationIfSpellIDIsSecretValue;
 	
 	if (name) then
 		isCasting = true;
+		
+		spellIDIsSecretValue = (self:IsSecretValue(spellID));
+		
+		if (spellIDIsSecretValue) then
+			durationIfSpellIDIsSecretValue = UnitCastingDuration(unitID);
+		end
 	else
-		name, displayName, textureFile, startTimeMs, endTimeMs, isTradeSkill, notInterruptible, spellID, isEmpowered, numEmpowerStages = UnitChannelInfo(unitID);
+		name, displayName, textureFile, startTimeMs, endTimeMs, isTradeSkill, notInterruptible, spellID, isEmpowered, numEmpowerStages, castBarID = UnitChannelInfo(unitID);
 		
 		if (name) then
-			if (numEmpowerStages and (numEmpowerStages > 0)) then -- see CastingBarMixin:OnEvent() handling event UNIT_SPELLCAST_EMPOWER_START in "CastingBarFrame.lua"
+			if (numEmpowerStages) and (numEmpowerStages > 0) then -- see CastingBarMixin:OnEvent() handling event UNIT_SPELLCAST_EMPOWER_START in "CastingBarFrame.lua"
 				isCharging = true;
+				
+				spellIDIsSecretValue = (self:IsSecretValue(spellID));
+				
+				if (spellIDIsSecretValue) then
+					durationIfSpellIDIsSecretValue = UnitEmpoweredChannelDuration(unitID);
+				else
+					endTimeMs = endTimeMs + GetUnitEmpowerHoldAtMaxTime(unitRecord.id);
+				end
 			else
 				isChanneling = true;
+				
+				spellIDIsSecretValue = (self:IsSecretValue(spellID));
+				
+				if (spellIDIsSecretValue) then
+					durationIfSpellIDIsSecretValue = UnitChannelDuration(unitID);
+				end
 			end
 		end
-		
 	end
 	
 	return {
 		isCasting = isCasting,
 		isChanneling = isChanneling,
 		isCharging = isCharging,
-		name = name,
-		displayName = displayName,
-		textureFile = textureFile,
-		startTime = startTimeMs and (startTimeMs / 1000),
-		endTime = endTimeMs and (endTimeMs / 1000),
+		name = name,                                                     -- secret value for non-the-player units which are in combat
+		displayName = displayName,                                       -- secret value for non-the-player units which are in combat
+		textureFile = textureFile,                                       -- secret value for non-the-player units which are in combat
+		startTime = (startTimeMs) and (not spellIDIsSecretValue) and     -- secret value for non-the-player units which are in combat
+			(startTimeMs / 1000) or nil,
+		endTime = (endTimeMs) and (not spellIDIsSecretValue) and         -- secret value for non-the-player units which are in combat
+			(endTimeMs / 1000) or nil,
+		durationIfSpellIDIsSecretValue = durationIfSpellIDIsSecretValue, -- secret value for non-the-player units which are in combat
 		isTradeSkill = isTradeSkill,
 		castID = castID,
-		notInterruptible = notInterruptible,
-		spellID = spellID,
+		notInterruptible = notInterruptible,                             -- secret value for non-the-player units which are in combat
+		spellID = spellID,                                               -- secret value for non-the-player units which are in combat
+		spellIDIsSecretValue = spellIDIsSecretValue,
 		isEmpowered = isEmpowered,
-		numEmpowerStages = numEmpowerStages
+		numEmpowerStages = numEmpowerStages,
+		castBarID = castBarID
 	};
 end
 
@@ -4983,7 +5247,7 @@ function LFF_GetTacoTipGearScoreFromItemData(unitID, unitGUID, items)
 	if (LibFroznFunctions.isWoWFlavor.WotLKC) then -- added
 		BRACKET_SIZE = 1000
 	-- elseif (CI:IsTBC()) then
-	elseif (LibFroznFunctions.isWoWFlavor.BCC) then -- added
+	elseif (LibFroznFunctions.isWoWFlavor.TBC) then -- added
 		BRACKET_SIZE = 400
 	-- elseif (CI:IsClassic()) then
 	elseif (LibFroznFunctions.isWoWFlavor.ClassicEra) then -- added

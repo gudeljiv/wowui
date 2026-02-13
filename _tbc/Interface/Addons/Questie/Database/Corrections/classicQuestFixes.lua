@@ -4756,31 +4756,39 @@ function QuestieQuestFixes:Load()
         [8883] = {
             [questKeys.requiredSourceItems] = {21711},
         },
-        [8897] = {
-            [questKeys.exclusiveTo] = {8898,8899,8903},
+        [8897] = { -- Dearest Colara,
+            [questKeys.nextQuestInChain] = 8903,
+            [questKeys.breadcrumbForQuestId] = 8903,
         },
-        [8898] = {
-            [questKeys.exclusiveTo] = {8897,8899,8903},
+        [8898] = { -- Dearest Colara,
+            [questKeys.nextQuestInChain] = 8903,
+            [questKeys.breadcrumbForQuestId] = 8903,
         },
-        [8899] = {
-            [questKeys.exclusiveTo] = {8897,8898,8903},
+        [8899] = { -- Dearest Colara,
+            [questKeys.nextQuestInChain] = 8903,
+            [questKeys.breadcrumbForQuestId] = 8903,
         },
-        [8900] = {
+        [8900] = { -- Dearest Elenia,
             [questKeys.exclusiveTo] = {8901,8902,8904},
+            [questKeys.nextQuestInChain] = 8979,
         },
-        [8901] = {
+        [8901] = { -- Dearest Elenia,
             [questKeys.exclusiveTo] = {8900,8902,8904},
+            [questKeys.nextQuestInChain] = 8979,
         },
-        [8902] = {
+        [8902] = { -- Dearest Elenia,
             [questKeys.exclusiveTo] = {8900,8901,8904},
+            [questKeys.nextQuestInChain] = 8979,
         },
-        [8903] = {
-            [questKeys.requiredSourceItems] = {11018},
+        [8903] = { -- Dangerous Love
+            [questKeys.requiredSourceItems] = {21815,21829,21833,22178},
             [questKeys.preQuestSingle] = {},
+            [questKeys.breadcrumbs] = {8897,8898,8899},
         },
-        [8904] = {
-            [questKeys.requiredSourceItems] = {11018},
+        [8904] = { -- Dangerous Love
+            [questKeys.requiredSourceItems] = {21815,21829,21833,22163},
             [questKeys.preQuestSingle] = {},
+            [questKeys.exclusiveTo] = {8900,8901,8902},
         },
         [8905] = {
             [questKeys.nextQuestInChain] = 8922,
@@ -4830,6 +4838,21 @@ function QuestieQuestFixes:Load()
         [8920] = {
             [questKeys.nextQuestInChain] = 8923,
         },
+        [8950] = {
+            [questKeys.nextQuestInChain] = 9015,
+        },
+        [8962] = {
+            [questKeys.nextQuestInChain] = 0,
+        },
+        [8963] = {
+            [questKeys.nextQuestInChain] = 0,
+        },
+        [8964] = {
+            [questKeys.nextQuestInChain] = 0,
+        },
+        [8965] = {
+            [questKeys.nextQuestInChain] = 0,
+        },
         [8966] = {
             [questKeys.exclusiveTo] = {8967,8968,8969},
             [questKeys.preQuestSingle] = {8962,8963,8964,8965},
@@ -4846,28 +4869,32 @@ function QuestieQuestFixes:Load()
             [questKeys.exclusiveTo] = {8966,8967,8968},
             [questKeys.preQuestSingle] = {8962,8963,8964,8965},
         },
-        [8980] = { -- bad race data
+        [8979] = { -- Fenstad's Hunch
+            [questKeys.nextQuestInChain] = 8980,
+            [questKeys.preQuestSingle] = {8900,8901,8902,8904},
+        },
+        [8980] = { -- Zinge's Assessment
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
         },
         [8985] = {
             [questKeys.preQuestSingle] = {8970},
             [questKeys.exclusiveTo] = {8986,8987,8988},
-            [questKeys.nextQuestInChain] = 8989,
+            [questKeys.nextQuestInChain] = 0,
         },
         [8986] = {
             [questKeys.preQuestSingle] = {8970},
             [questKeys.exclusiveTo] = {8985,8987,8988},
-            [questKeys.nextQuestInChain] = 8990,
+            [questKeys.nextQuestInChain] = 0,
         },
         [8987] = {
             [questKeys.preQuestSingle] = {8970},
             [questKeys.exclusiveTo] = {8986,8988,8989},
-            [questKeys.nextQuestInChain] = 8991,
+            [questKeys.nextQuestInChain] = 0,
         },
         [8988] = {
             [questKeys.preQuestSingle] = {8970},
             [questKeys.exclusiveTo] = {8986,8987,8989},
-            [questKeys.nextQuestInChain] = 8992,
+            [questKeys.nextQuestInChain] = 0,
         },
         [8989] = {
             [questKeys.preQuestSingle] = {8985,8986,8987,8988},
@@ -4888,7 +4915,10 @@ function QuestieQuestFixes:Load()
         [9015] = {
             [questKeys.objectives] = {{{16059,nil,Questie.ICON_TYPE_EVENT}},nil,{{22047}}}, -- #2408
         },
-        [9026] = { -- bad race data
+        [9024] = {
+            [questKeys.nextQuestInChain] = 9025,
+        },
+        [9026] = { -- Tracing the Source
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
         },
         [9051] = {
@@ -5490,11 +5520,11 @@ function QuestieQuestFixes:LoadFactionFixes()
         [8254] = {
             [questKeys.startedBy] = {{6018}},
         },
-        [8904] = {
-            [questKeys.exclusiveTo] = {8900,8901,8902,8979},
-        },
         [8928] = {
             [questKeys.nextQuestInChain] = 8978,
+        },
+        [8996] = {
+            [questKeys.nextQuestInChain] = 8998,
         },
         [9388] = {
             [questKeys.startedBy] = {{16818}},
@@ -5544,6 +5574,9 @@ function QuestieQuestFixes:LoadFactionFixes()
         },
         [8928] = {
             [questKeys.nextQuestInChain] = 8977,
+        },
+        [8996] = {
+            [questKeys.nextQuestInChain] = 8997,
         },
         [9388] = {
             [questKeys.startedBy] = {{16817}},

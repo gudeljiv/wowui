@@ -1,24 +1,8 @@
 
 BugGrabberDB = {
-["session"] = 13946,
 ["lastSanitation"] = 3,
+["session"] = 13955,
 ["errors"] = {
-{
-["message"] = "[string \"TomTomCrazyArrow:SetPoint('TOPRIGHT', Custo...\"]:1: Action[SetPoint] failed because[SetPoint would result in anchor family connection]: attempted from: TomTomCrazyArrow:SetPoint.",
-["time"] = "2023/12/19 10:21:45",
-["locals"] = "(*temporary) = TomTomCrazyArrow {\n 0 = <userdata>\n title = FontString {\n }\n tta = FontString {\n }\n status = FontString {\n }\n arrow = Texture {\n }\n}\n(*temporary) = \"TOPRIGHT\"\n(*temporary) = CustomContainer_2 {\n 0 = <userdata>\n beautyShadow = <table> {\n }\n OnBackdropLoaded = <function> defined @Interface/SharedXML/Backdrop.lua:152\n beautyBorder = <table> {\n }\n Center = Texture {\n }\n GetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:390\n SetupTextureCoordinates = <function> defined @Interface/SharedXML/Backdrop.lua:214\n OnBackdropSizeChanged = <function> defined @Interface/SharedXML/Backdrop.lua:182\n HasBackdropInfo = <function> defined @Interface/SharedXML/Backdrop.lua:278\n SetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:422\n RightEdge = Texture {\n }\n backdropInfo = <table> {\n }\n BottomEdge = Texture {\n }\n GetEdgeSize = <function> defined @Interface/SharedXML/Backdrop.lua:188\n BottomLeftCorner = Texture {\n }\n BottomRightCorner = Texture {\n }\n TopEdge = Texture {\n }\n ApplyBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:294\n SetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:329\n ClearBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:282\n TopRightCorner = Texture {\n }\n GetBackdropBorderColor = <function> defined @Interface/SharedXML/Backdrop.lua:409\n GetBackdrop = <function> defined @Interface/SharedXML/Backdrop.lua:347\n TopLeftCorner = Texture {\n }\n SetupPieceVisuals = <function> defined @Interface/SharedXML/Backdrop.lua:246\n SetBackdropColor = <function> defined @Interface/SharedXML/Backdrop.lua:399\n LeftEdge = Texture {\n }\n SetBorderBlendMode = <function> defined @Interface/SharedXML/Backdrop.lua:266\n}\n(*temporary) = \"TOPLEFT\"\n(*temporary) = -20\n(*temporary) = -10\n",
-["stack"] = "[string \"=[C]\"]: in function `SetPoint'\n[string \"TomTomCrazyArrow:SetPoint('TOPRIGHT', CustomContainer_2, 'TOPLEFT', -20, -10)\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
-["session"] = 11056,
-["counter"] = 2,
-},
-{
-["message"] = "Interface/AddOns/ThreatClassic2/core/core.lua:332: attempt to index local 'bar' (a nil value)",
-["time"] = "2023/12/19 10:26:19",
-["locals"] = "self = <table> {\n SetupMenu = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:1008\n colorFallback = <table> {\n }\n FlashScreen = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:502\n PLAYER_ENTERING_WORLD = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:863\n partyPetUnits = <table> {\n }\n CheckWarning = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:465\n UnregisterComm = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:143\n RefreshProfile = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:1046\n partyUnits = <table> {\n }\n UpdateThreatBars = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:280\n PLAYER_REGEN_DISABLED = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:892\n OnCommReceived = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:821\n version = \"2.49\"\n UpdateBars = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:698\n playerClass = \"HUNTER\"\n config = <table> {\n }\n menuTable = <table> {\n }\n menu = ThreatClassic2MenuFrame {\n }\n PublishVersion = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:838\n SetupConfig = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:1033\n db = <table> {\n }\n configTable = <table> {\n }\n raidUnits = <table> {\n }\n SetupFrame = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:975\n locale = \"enUS\"\n UNIT_TARGET = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:871\n GROUP_ROSTER_UPDATE = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:882\n SendCommMessage = <function> defined @Interface/AddOns/AtlasLootClassic/Libs/AceComm-3.0/AceComm-3.0.lua:83\n defaultConfig = <table> {\n }\n PLAYER_REGEN_ENABLED = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:899\n PLAYER_TARGET_CHANGED = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:871\n UnregisterAllComm = <function> defined @Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:164\n playerTarget = \"target\"\n threatData = <table> {\n }\n UNIT_THREAT_LIST_UPDATE = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:905\n ZONE_CHANGED_NEW_AREA = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:888\n playerName = \"Dopesnare\"\n SetupUnits = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:960\n RegisterComm = <function> defined @Interface/AddOns/AtlasLootClassic/Libs/AceComm-3.0/AceComm-3.0.lua:56\n TestMode = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:801\n frame = ThreatClassic2BarFrame {\n }\n addonName = \"ThreatClassic2\"\n raidPetUnits = <table> {\n }\n commPrefix = \"TC2\"\n UpdateFrame = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:630\n bars = <table> {\n }\n numGroupMembers = 0\n SetBarCount = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:626\n}\nplayerIncluded = false\nigniteOwner = nil\nhasActiveIgnite = false\n(for generator) = <function> defined =[C]:-1\n(for state) = <table> {\n 1 = <table> {\n }\n 2 = <table> {\n }\n 3 = <table> {\n }\n 4 = <table> {\n }\n 5 = <table> {\n }\n 6 = <table> {\n }\n 7 = <table> {\n }\n 8 = <table> {\n }\n}\n(for control) = 1\n_ = 1\ndata = <table> {\n threatValue = 80000\n threatPercent = 100\n unit = \"Dopesnare\"\n}\nbar = nil\n(*temporary) = 0\n(*temporary) = \"player\"\n(*temporary) = true\n(*temporary) = nil\n(*temporary) = <function> defined @Interface/FrameXML/AuraUtil.lua:22\n(*temporary) = \"target\"\n(*temporary) = \"attempt to index local 'bar' (a nil value)\"\nsort = <function> defined =[C]:-1\nCompare = <function> defined @Interface/AddOns/ThreatClassic2/core/core.lua:186\nC = <table> {\n general = <table> {\n }\n backdrop = <table> {\n }\n font = <table> {\n }\n customBarColors = <table> {\n }\n warnings = <table> {\n }\n igniteIndicator = <table> {\n }\n frame = <table> {\n }\n filter = <table> {\n }\n bar = <table> {\n }\n}\nselect = <function> defined =[C]:-1\nFindAuraByName = <function> defined @Interface/FrameXML/AuraUtil.lua:32\nGetSpellInfo = ",
-["stack"] = "[string \"@Interface/AddOns/ThreatClassic2/core/core.lua\"]:332: in function `UpdateThreatBars'\n[string \"@Interface/AddOns/ThreatClassic2/core/core.lua\"]:795: in function `UpdateBars'\n[string \"@Interface/AddOns/ThreatClassic2/core/core.lua\"]:695: in function `UpdateFrame'\n[string \"@Interface/AddOns/ThreatClassic2/core/core.lua\"]:1269: in function <Interface/AddOns/ThreatClassic2/core/core.lua:1266>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:45: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:43>\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:836: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:658>\n[string \"@Interface/AddOns/Masque/Libs/AceConfig-3.0-3/AceConfigDialog-3.0-86/AceConfigDialog-3.0.lua\"]:888: in function <...nfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua:876>\n[string \"=[C]\"]: ?\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:66: in function <...terface/AddOns/Masque/Libs/AceGUI-3.0/AceGUI-3.0.lua:64>\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/AceGUI-3.0.lua\"]:300: in function `Fire'\n[string \"@Interface/AddOns/Masque/Libs/AceGUI-3.0-41/widgets/AceGUIWidget-Slider.lua\"]:65: in function <...sque/Libs/AceGUI-3.0/widgets/AceGUIWidget-Slider.lua:56>",
-["session"] = 11057,
-["counter"] = 3,
-},
 {
 ["message"] = "[string \"print(UnitAttack(\"pet\"))\"]:1: attempt to call global 'UnitAttack' (a nil value)",
 ["time"] = "2023/12/20 12:50:14",
@@ -653,14 +637,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:164: '=' expected near 'continue'",
-["session"] = 11383,
 ["time"] = "2024/01/19 11:37:15",
+["session"] = 11383,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:164: '=' expected near 'continue'",
-["session"] = 11383,
 ["time"] = "2024/01/19 11:37:15",
+["session"] = 11383,
 ["counter"] = 1,
 },
 {
@@ -857,14 +841,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/WeakAuras/Types.lua:1 Interface/AddOns/WeakAuras/Types.lua:4397: 'end' expected (to close 'function' at line 16) near '<eof>'",
-["session"] = 11425,
 ["time"] = "2024/01/21 18:11:39",
+["session"] = 11425,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/WeakAuras/Types.lua:1 Interface/AddOns/WeakAuras/Types.lua:4397: 'end' expected (to close 'function' at line 16) near '<eof>'",
-["session"] = 11425,
 ["time"] = "2024/01/21 18:11:39",
+["session"] = 11425,
 ["counter"] = 1,
 },
 {
@@ -1101,14 +1085,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:1 Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:3: unexpected symbol near ')'",
-["session"] = 11521,
 ["time"] = "2024/01/27 20:37:53",
+["session"] = 11521,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:1 Interface/AddOns/xVermin/Addons/ClassicCastbars.lua:3: unexpected symbol near ')'",
-["session"] = 11521,
 ["time"] = "2024/01/27 20:37:53",
+["session"] = 11521,
 ["counter"] = 1,
 },
 {
@@ -1177,14 +1161,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/xVermin.lua:1 Error loading Interface/AddOns/xVermin/xVermin.lua",
-["session"] = 11661,
 ["time"] = "2024/02/24 19:15:41",
+["session"] = 11661,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/xVermin.lua:1 Error loading Interface/AddOns/xVermin/xVermin.lua",
-["session"] = 11661,
 ["time"] = "2024/02/24 19:15:41",
+["session"] = 11661,
 ["counter"] = 1,
 },
 {
@@ -1389,14 +1373,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:13: unexpected symbol near 'local'",
-["session"] = 11847,
 ["time"] = "2024/03/07 11:31:22",
+["session"] = 11847,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:13: unexpected symbol near 'local'",
-["session"] = 11847,
 ["time"] = "2024/03/07 11:31:22",
+["session"] = 11847,
 ["counter"] = 1,
 },
 {
@@ -1433,14 +1417,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:1 ...erface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:4243: '}' expected (to close '{' at line 8) near '<eof>'",
-["time"] = "2024/03/16 18:39:55",
 ["session"] = 11923,
+["time"] = "2024/03/16 18:39:55",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:1 ...erface/AddOns/Questie/Localization/lookups/Classic/lookupQuests/esES.lua:4243: '}' expected (to close '{' at line 8) near '<eof>'",
-["time"] = "2024/03/16 18:39:55",
 ["session"] = 11923,
+["time"] = "2024/03/16 18:39:55",
 ["counter"] = 2,
 },
 {
@@ -1533,38 +1517,38 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:4 Deferred XML Node object named KeyBindingFrameBindingButtonTemplate already exists",
-["time"] = "2024/01/21 08:27:20",
 ["session"] = 12007,
+["time"] = "2024/01/21 08:27:20",
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:27 Deferred XML Node object named KeyBindingFrameBindingButtonTemplateWithLabel already exists",
-["time"] = "2024/01/21 08:27:20",
 ["session"] = 12007,
+["time"] = "2024/01/21 08:27:20",
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:38 Deferred XML Node object named KeyBindingFrameBindingTemplate already exists",
-["time"] = "2024/01/21 08:27:20",
 ["session"] = 12007,
+["time"] = "2024/01/21 08:27:20",
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:4 Deferred XML Node object named KeyBindingFrameBindingButtonTemplate already exists",
-["time"] = "2024/01/21 08:27:20",
 ["session"] = 12007,
+["time"] = "2024/01/21 08:27:20",
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:27 Deferred XML Node object named KeyBindingFrameBindingButtonTemplateWithLabel already exists",
-["time"] = "2024/01/21 08:27:20",
 ["session"] = 12007,
+["time"] = "2024/01/21 08:27:20",
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/Blizzard_BindingUI/Blizzard_BindingUI.xml:38 Deferred XML Node object named KeyBindingFrameBindingTemplate already exists",
-["time"] = "2024/01/21 08:27:20",
 ["session"] = 12007,
+["time"] = "2024/01/21 08:27:20",
 ["counter"] = 10,
 },
 {
@@ -1689,14 +1673,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/ImmuneData.lua:1 Interface/AddOns/xVermin/Helpers/ImmuneData.lua:77: unexpected symbol near ')'",
-["session"] = 12085,
 ["time"] = "2024/04/02 13:37:38",
+["session"] = 12085,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/xVermin/Helpers/ImmuneData.lua:1 Interface/AddOns/xVermin/Helpers/ImmuneData.lua:77: unexpected symbol near ')'",
-["session"] = 12085,
 ["time"] = "2024/04/02 13:37:38",
+["session"] = 12085,
 ["counter"] = 1,
 },
 {
@@ -2197,14 +2181,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/RXPGuides/Guides/RestedXP Classic Custom:1 Error loading Interface/AddOns/RXPGuides/Guides/RestedXP Classic Custom",
-["session"] = 12411,
 ["time"] = "2024/04/20 17:32:12",
+["session"] = 12411,
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface\\FrameXML\\FrameXML_Vanilla.toc:1 Interface/AddOns/RXPGuides/Guides/RestedXP Classic Custom:1 Error loading Interface/AddOns/RXPGuides/Guides/RestedXP Classic Custom",
-["session"] = 12411,
 ["time"] = "2024/04/20 17:32:12",
+["session"] = 12411,
 ["counter"] = 3,
 },
 {
@@ -2289,26 +2273,26 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Engraver/Engraver.toc:1 Couldn't open Interface/AddOns/Engraver/Engraver.toc",
-["session"] = 12529,
 ["time"] = "2024/07/29 09:47:42",
+["session"] = 12529,
 ["counter"] = 2,
 },
 {
 ["message"] = "Couldn't open Interface/AddOns/Engraver/Bindings.xml",
-["session"] = 12529,
 ["time"] = "2024/07/29 09:47:42",
+["session"] = 12529,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/RuneBar/RuneBar.toc:1 Couldn't open Interface/AddOns/RuneBar/RuneBar.toc",
-["session"] = 12529,
 ["time"] = "2024/07/29 09:47:42",
+["session"] = 12529,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/SimpleRunesFrame/SimpleRunesFrame.toc:1 Couldn't open Interface/AddOns/SimpleRunesFrame/SimpleRunesFrame.toc",
-["session"] = 12529,
 ["time"] = "2024/07/29 09:47:42",
+["session"] = 12529,
 ["counter"] = 2,
 },
 {
@@ -2409,20 +2393,20 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/TradeSkillMaster/LibTSMWoW/LibTSMWoW.xml:14 Error loading Interface/AddOns/TradeSkillMaster/Source/UI/SoundAlert.lua",
-["time"] = "2024/07/30 09:32:52",
 ["session"] = 12542,
+["time"] = "2024/07/30 09:32:52",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TradeSkillMaster/LibTSMUI/LibTSMUI.xml:153 Error loading Interface/AddOns/TradeSkillMaster/Source/Settings/SoundDropdown.lua",
-["time"] = "2024/07/30 09:32:52",
 ["session"] = 12542,
+["time"] = "2024/07/30 09:32:52",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TradeSkillMaster/TradeSkillMaster.toc:31 Couldn't open Interface/AddOns/TradeSkillMaster/LibTSMApp/LibTSMApp.xml",
-["time"] = "2024/07/30 09:32:52",
 ["session"] = 12542,
+["time"] = "2024/07/30 09:32:52",
 ["counter"] = 2,
 },
 {
@@ -2539,8 +2523,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:1 Interface/AddOns/xVermin/Helpers/AutoBuyAmmo.lua:72: ')' expected near '~'",
-["time"] = "2024/08/14 18:30:23",
 ["session"] = 12622,
+["time"] = "2024/08/14 18:30:23",
 ["counter"] = 2,
 },
 {
@@ -2641,14 +2625,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/TellMeWhen/includes.xml:27 Couldn't open Interface/AddOns/TellMeWhen/Lib/LibCustomGlow-1.0-20/LibCustomGlow-1.0.xml",
-["session"] = 12711,
 ["time"] = "2024/09/10 14:37:02",
+["session"] = 12711,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/WeakAuras/WeakAuras_Vanilla.toc:81 Error loading Interface/AddOns/WeakAuras/DiscordList.lua",
-["session"] = 12711,
 ["time"] = "2024/09/10 14:37:02",
+["session"] = 12711,
 ["counter"] = 2,
 },
 {
@@ -2749,8 +2733,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Addons/Baganator.lua:1 Interface/AddOns/xVermin/Addons/Baganator.lua:24: unexpected symbol near '/'",
-["time"] = "2024/09/22 17:12:39",
 ["session"] = 12770,
+["time"] = "2024/09/22 17:12:39",
 ["counter"] = 2,
 },
 {
@@ -2787,8 +2771,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_APIDocumentationGenerated/PetConstantsDocumentation.lua:1 .../AddOns/Blizzard_APIDocumentationGenerated/PetConstantsDocumentation.lua:14: '}' expected near 'MAX_SUMMONABLE_HUNTER_PETS'",
-["time"] = "2024/08/12 16:12:58",
 ["session"] = 12799,
+["time"] = "2024/08/12 16:12:58",
 ["counter"] = 10,
 },
 {
@@ -2961,8 +2945,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/SpellActivationOverlay/options/InterfaceOptionsPanels.xml:128 Couldn't find inherited node: InterfaceUICheckButtonTemplate",
-["session"] = 12813,
 ["time"] = "2024/09/25 19:42:08",
+["session"] = 12813,
 ["counter"] = 1,
 },
 {
@@ -3103,8 +3087,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Blizzard_FrameXML/DeprecatedTemplates.xml:37 Couldn't find inherited node: UISliderTemplateWithLabels",
-["time"] = "2024/09/25 19:17:19",
 ["session"] = 12858,
+["time"] = "2024/09/25 19:17:19",
 ["counter"] = 303,
 },
 {
@@ -3245,8 +3229,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "nil",
-["session"] = 12863,
 ["time"] = "2025/12/20 17:21:10",
+["session"] = 12863,
 ["counter"] = 7,
 },
 {
@@ -3331,62 +3315,62 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:17 Unrecognized XML: Backdrop",
-["time"] = "2025/12/20 17:25:24",
 ["session"] = 12869,
+["time"] = "2025/12/20 17:25:24",
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:17 Unrecognized XML attribute: bgFile",
-["time"] = "2025/12/20 17:25:24",
 ["session"] = 12869,
+["time"] = "2025/12/20 17:25:24",
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:17 Unrecognized XML attribute: edgeFile",
-["time"] = "2025/12/20 17:25:24",
 ["session"] = 12869,
+["time"] = "2025/12/20 17:25:24",
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:17 Unrecognized XML attribute: tile",
-["time"] = "2025/12/20 17:25:24",
 ["session"] = 12869,
+["time"] = "2025/12/20 17:25:24",
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:18 Unrecognized XML: BackgroundInsets",
-["time"] = "2025/12/20 17:25:24",
 ["session"] = 12869,
+["time"] = "2025/12/20 17:25:24",
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:19 Unrecognized XML: AbsInset",
-["time"] = "2025/12/20 17:25:24",
 ["session"] = 12869,
+["time"] = "2025/12/20 17:25:24",
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:19 Unrecognized XML attribute: left",
-["time"] = "2025/12/20 17:25:24",
 ["session"] = 12869,
+["time"] = "2025/12/20 17:25:24",
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:19 Unrecognized XML attribute: right",
-["time"] = "2025/12/20 17:25:24",
 ["session"] = 12869,
+["time"] = "2025/12/20 17:25:24",
 ["counter"] = 6,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:19 Unrecognized XML attribute: top",
-["time"] = "2025/12/20 17:25:24",
 ["session"] = 12869,
+["time"] = "2025/12/20 17:25:24",
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/ItemRack/ItemRack.xml:19 Unrecognized XML attribute: bottom",
-["time"] = "2025/12/20 17:25:24",
 ["session"] = 12869,
+["time"] = "2025/12/20 17:25:24",
 ["counter"] = 5,
 },
 {
@@ -3423,62 +3407,62 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:14 Unrecognized XML: Offset",
-["time"] = "2025/12/20 17:34:14",
 ["session"] = 12874,
+["time"] = "2025/12/20 17:34:14",
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:14 Unrecognized XML: AbsDimension",
-["time"] = "2025/12/20 17:34:14",
 ["session"] = 12874,
+["time"] = "2025/12/20 17:34:14",
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:14 Unrecognized XML attribute: x",
-["time"] = "2025/12/20 17:34:14",
 ["session"] = 12874,
+["time"] = "2025/12/20 17:34:14",
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:14 Unrecognized XML attribute: y",
-["time"] = "2025/12/20 17:34:14",
 ["session"] = 12874,
+["time"] = "2025/12/20 17:34:14",
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:17 Unrecognized XML: Backdrop",
-["time"] = "2025/12/20 17:34:14",
 ["session"] = 12874,
+["time"] = "2025/12/20 17:34:14",
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:17 Unrecognized XML attribute: name",
-["time"] = "2025/12/20 17:34:14",
 ["session"] = 12874,
+["time"] = "2025/12/20 17:34:14",
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:17 Unrecognized XML attribute: bgFile",
-["time"] = "2025/12/20 17:34:14",
 ["session"] = 12874,
+["time"] = "2025/12/20 17:34:14",
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:17 Unrecognized XML attribute: edgeFile",
-["time"] = "2025/12/20 17:34:14",
 ["session"] = 12874,
+["time"] = "2025/12/20 17:34:14",
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:17 Unrecognized XML attribute: tile",
-["time"] = "2025/12/20 17:34:14",
 ["session"] = 12874,
+["time"] = "2025/12/20 17:34:14",
 ["counter"] = 5,
 },
 {
 ["message"] = "Interface/AddOns/LFGBulletinBoard/GroupBulletinBoard.xml:18 Unrecognized XML: EdgeSize",
-["time"] = "2025/12/20 17:34:14",
 ["session"] = 12874,
+["time"] = "2025/12/20 17:34:14",
 ["counter"] = 5,
 },
 {
@@ -3491,26 +3475,26 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:2 Unrecognized XML: Binding",
-["session"] = 12876,
 ["time"] = "2025/12/20 17:45:32",
+["session"] = 12876,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:2 Unrecognized XML attribute: name",
-["session"] = 12876,
 ["time"] = "2025/12/20 17:45:32",
+["session"] = 12876,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:2 Unrecognized XML attribute: header",
-["session"] = 12876,
 ["time"] = "2025/12/20 17:45:32",
+["session"] = 12876,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:2 Unrecognized XML attribute: category",
-["session"] = 12876,
 ["time"] = "2025/12/20 17:45:32",
+["session"] = 12876,
 ["counter"] = 2,
 },
 {
@@ -3523,122 +3507,122 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:5 Unrecognized XML: Binding",
-["session"] = 12877,
 ["time"] = "2025/12/20 17:45:32",
+["session"] = 12877,
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:5 Unrecognized XML attribute: name",
-["session"] = 12877,
 ["time"] = "2025/12/20 17:45:32",
+["session"] = 12877,
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:5 Unrecognized XML attribute: header",
-["session"] = 12877,
 ["time"] = "2025/12/20 17:45:32",
+["session"] = 12877,
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:5 Unrecognized XML attribute: category",
-["session"] = 12877,
 ["time"] = "2025/12/20 17:45:32",
+["session"] = 12877,
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:6 Unrecognized XML: Binding",
-["time"] = "2025/12/20 17:46:06",
 ["session"] = 12877,
+["time"] = "2025/12/20 17:46:06",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:6 Unrecognized XML attribute: name",
-["time"] = "2025/12/20 17:46:06",
 ["session"] = 12877,
+["time"] = "2025/12/20 17:46:06",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:6 Unrecognized XML attribute: category",
-["session"] = 12877,
 ["time"] = "2025/12/20 17:55:01",
+["session"] = 12877,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:7 Unrecognized XML: Binding",
-["session"] = 12877,
 ["time"] = "2025/12/20 17:55:01",
+["session"] = 12877,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:7 Unrecognized XML attribute: name",
-["session"] = 12877,
 ["time"] = "2025/12/20 17:55:01",
+["session"] = 12877,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/bindings.xml:7 Unrecognized XML attribute: category",
-["session"] = 12877,
 ["time"] = "2025/12/20 17:55:01",
+["session"] = 12877,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:57 Unrecognized XML: Size",
-["time"] = "2025/12/20 17:58:46",
 ["session"] = 12878,
+["time"] = "2025/12/20 17:58:46",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:57 Unrecognized XML attribute: x",
-["time"] = "2025/12/20 17:58:46",
 ["session"] = 12878,
+["time"] = "2025/12/20 17:58:46",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:57 Unrecognized XML attribute: y",
-["time"] = "2025/12/20 17:58:46",
 ["session"] = 12878,
+["time"] = "2025/12/20 17:58:46",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:72 Unrecognized XML: Size",
-["time"] = "2025/12/20 17:58:46",
 ["session"] = 12878,
+["time"] = "2025/12/20 17:58:46",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:72 Unrecognized XML attribute: x",
-["time"] = "2025/12/20 17:58:46",
 ["session"] = 12878,
+["time"] = "2025/12/20 17:58:46",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:72 Unrecognized XML attribute: y",
-["time"] = "2025/12/20 17:58:46",
 ["session"] = 12878,
+["time"] = "2025/12/20 17:58:46",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:98 Unrecognized XML: Backdrop",
-["time"] = "2025/12/20 17:58:46",
 ["session"] = 12878,
+["time"] = "2025/12/20 17:58:46",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:98 Unrecognized XML attribute: bgFile",
-["time"] = "2025/12/20 17:58:46",
 ["session"] = 12878,
+["time"] = "2025/12/20 17:58:46",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:98 Unrecognized XML attribute: edgeFile",
-["time"] = "2025/12/20 17:58:46",
 ["session"] = 12878,
+["time"] = "2025/12/20 17:58:46",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RingMenu/RingMenuOptionsPanel.xml:98 Unrecognized XML attribute: tile",
-["time"] = "2025/12/20 17:58:46",
 ["session"] = 12878,
+["time"] = "2025/12/20 17:58:46",
 ["counter"] = 1,
 },
 {
@@ -4235,98 +4219,98 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:3 Unrecognized XML attribute: category",
-["session"] = 13151,
 ["time"] = "2026/01/02 18:16:52",
+["session"] = 13151,
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:6 Unrecognized XML: Binding",
-["session"] = 13151,
 ["time"] = "2026/01/02 18:16:52",
+["session"] = 13151,
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:6 Unrecognized XML attribute: name",
-["session"] = 13151,
 ["time"] = "2026/01/02 18:16:52",
+["session"] = 13151,
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:6 Unrecognized XML attribute: category",
-["session"] = 13151,
 ["time"] = "2026/01/02 18:16:52",
+["session"] = 13151,
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:9 Unrecognized XML attribute: category",
-["session"] = 13151,
 ["time"] = "2026/01/02 18:16:52",
+["session"] = 13151,
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:3 Unrecognized XML: Binding",
-["session"] = 13158,
 ["time"] = "2026/01/02 18:16:52",
+["session"] = 13158,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:3 Unrecognized XML attribute: name",
-["session"] = 13158,
 ["time"] = "2026/01/02 18:16:52",
+["session"] = 13158,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:3 Unrecognized XML attribute: header",
-["session"] = 13158,
 ["time"] = "2026/01/02 18:16:52",
+["session"] = 13158,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:5 Unrecognized XML: Binding",
-["time"] = "2026/01/02 18:23:19",
 ["session"] = 13158,
+["time"] = "2026/01/02 18:23:19",
 ["counter"] = 7,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:5 Unrecognized XML attribute: name",
-["time"] = "2026/01/02 18:23:19",
 ["session"] = 13158,
+["time"] = "2026/01/02 18:23:19",
 ["counter"] = 7,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:7 Unrecognized XML: Binding",
-["time"] = "2026/01/02 18:23:19",
 ["session"] = 13158,
+["time"] = "2026/01/02 18:23:19",
 ["counter"] = 7,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:7 Unrecognized XML attribute: name",
-["time"] = "2026/01/02 18:23:19",
 ["session"] = 13158,
+["time"] = "2026/01/02 18:23:19",
 ["counter"] = 7,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:9 Unrecognized XML: Binding",
-["session"] = 13158,
 ["time"] = "2026/01/02 18:16:52",
+["session"] = 13158,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:9 Unrecognized XML attribute: name",
-["session"] = 13158,
 ["time"] = "2026/01/02 18:16:52",
+["session"] = 13158,
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:11 Unrecognized XML: Binding",
-["time"] = "2026/01/02 18:23:19",
 ["session"] = 13158,
+["time"] = "2026/01/02 18:23:19",
 ["counter"] = 7,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:1 Interface/AddOns/ExtraActionBars/Bindings.xml(28): error: not well-formed (invalid token)",
-["session"] = 13159,
 ["time"] = "2026/01/02 18:38:02",
+["session"] = 13159,
 ["counter"] = 2,
 },
 {
@@ -4587,44 +4571,44 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/ls_Toasts/init.lua:1 Interface/AddOns/ls_Toasts/init.lua:20: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["time"] = "2026/01/14 19:03:03",
 ["session"] = 13284,
+["time"] = "2026/01/14 19:03:03",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Masque_BeautyBorder/skin.lua:1 Interface/AddOns/Masque_BeautyBorder/skin.lua:13: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["time"] = "2026/01/14 19:03:03",
 ["session"] = 13284,
+["time"] = "2026/01/14 19:03:03",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Masque_Brownstone/skin.lua:1 Interface/AddOns/Masque_Brownstone/skin.lua:13: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["time"] = "2026/01/14 19:03:03",
 ["session"] = 13284,
+["time"] = "2026/01/14 19:03:03",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Masque_Muq/Skins.lua:1 Interface/AddOns/Masque_Muq/Skins.lua:6: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["time"] = "2026/01/14 19:03:03",
 ["session"] = 13284,
+["time"] = "2026/01/14 19:03:03",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/MikScrollingBattleText/MikSBT.lua:1 Interface/AddOns/MikScrollingBattleText/MikSBT.lua:29: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["time"] = "2026/01/14 19:03:03",
 ["session"] = 13284,
+["time"] = "2026/01/14 19:03:03",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/MikScrollingBattleText/Localization/localization.lua:1 ...MikScrollingBattleText/Localization/localization.lua:28: attempt to index local 'L' (a nil value)",
-["time"] = "2026/01/14 19:03:03",
 ["session"] = 13284,
+["time"] = "2026/01/14 19:03:03",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/MikScrollingBattleText/MSBTProfiles.lua:1 ...rface/AddOns/MikScrollingBattleText/MSBTProfiles.lua:70: attempt to call local 'GetSkillName' (a nil value)",
-["time"] = "2026/01/14 19:03:03",
 ["session"] = 13284,
+["time"] = "2026/01/14 19:03:03",
 ["counter"] = 1,
 },
 {
@@ -4653,32 +4637,32 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/NovaWorldBuffs/Modules/Data.lua:1 Interface/AddOns/NovaWorldBuffs/Modules/Data.lua:369: attempt to concatenate field 'i' (a nil value)",
-["session"] = 13285,
 ["time"] = "2026/01/14 19:06:59",
+["session"] = 13285,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/NovaWorldBuffs/Modules/BuffsWindow.lua:1 ...erface/AddOns/NovaWorldBuffs/Modules/BuffsWindow.lua:13: attempt to call method 'addBackdrop' (a nil value)",
-["session"] = 13285,
 ["time"] = "2026/01/14 19:06:59",
+["session"] = 13285,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/picoFPS/picoFPS.lua:1 Interface/AddOns/picoFPS/picoFPS.lua:11: attempt to call global 'GetNumAddOns' (a nil value)",
-["session"] = 13285,
 ["time"] = "2026/01/14 19:06:59",
+["session"] = 13285,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Plater/libs/LibRangeCheck-2.0-100217/LibRangeCheck-2.0.lua:1 Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
-["session"] = 13285,
 ["time"] = "2026/01/14 19:06:59",
+["session"] = 13285,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RangeDisplay/libs/LibRangeCheck-3.0-31/LibRangeCheck-3.0.lua:1 Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
-["session"] = 13285,
 ["time"] = "2026/01/14 19:06:59",
+["session"] = 13285,
 ["counter"] = 1,
 },
 {
@@ -4691,50 +4675,50 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/ShadowedUnitFrames/modules/auraindicators.lua:1 ...ace/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua:589: attempt to call global 'IsAddOnLoaded' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:06:59",
+["session"] = 13286,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/SkillInfoPlus/SkillInfoPlus.lua:1 Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:06:59",
+["session"] = 13286,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TacoTip/options.lua:1 Interface/AddOns/TacoTip/options.lua:3: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:06:59",
+["session"] = 13286,
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TacoTip/main.lua:1 Interface/AddOns/TacoTip/main.lua:3: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["time"] = "2026/01/14 19:09:41",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:09:41",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/ThreatClassic2/core/init.lua:1 Interface/AddOns/ThreatClassic2/core/init.lua:13: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["time"] = "2026/01/14 19:09:41",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:09:41",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/CustomContainers.lua:1 Interface/AddOns/xVermin/Frames/CustomContainers.lua:28: attempt to call method 'CreateBeautyBorder' (a nil value)",
-["time"] = "2026/01/14 19:09:41",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:09:41",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesDarker.lua:1 ...erface/AddOns/xVermin/Frames/DefaultFramesDarker.lua:50: attempt to index global 'CastingBarFrame' (a nil value)",
-["time"] = "2026/01/14 19:09:41",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:09:41",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/KillCount.lua:1 Interface/AddOns/xVermin/Frames/KillCount.lua:40: attempt to call method 'CreateBeautyBorder' (a nil value)",
-["time"] = "2026/01/14 19:09:41",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:09:41",
 ["counter"] = 1,
 },
 {
@@ -4755,14 +4739,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Details/Details_TBC.toc:191 Duplicate File Load Detected. [Interface/AddOns/Details/core/parser_nocleu.lua] first loaded at [Interface/AddOns/Details/Details_TBC.toc:83]",
-["time"] = "2026/01/14 19:03:03",
 ["session"] = 13287,
+["time"] = "2026/01/14 19:03:03",
 ["counter"] = 4,
 },
 {
 ["message"] = "Interface/AddOns/Details/Details_TBC.toc:192 Duplicate File Load Detected. [Interface/AddOns/Details/core/parser_nocleu1.lua] first loaded at [Interface/AddOns/Details/Details_TBC.toc:162]",
-["time"] = "2026/01/14 19:03:03",
 ["session"] = 13287,
+["time"] = "2026/01/14 19:03:03",
 ["counter"] = 4,
 },
 {
@@ -5439,8 +5423,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nBuff/core.lua:1 Interface/AddOns/nBuff/core.lua:102: '<eof>' expected near 'TemporaryEnchantFrame'",
-["session"] = 13353,
 ["time"] = "2026/01/15 19:10:57",
+["session"] = 13353,
 ["counter"] = 1,
 },
 {
@@ -5453,8 +5437,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nBuff/core.lua:1 Interface/AddOns/nBuff/core.lua:62: unexpected symbol near ')'",
-["session"] = 13361,
 ["time"] = "2026/01/15 19:14:00",
+["session"] = 13361,
 ["counter"] = 1,
 },
 {
@@ -5587,14 +5571,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/TellMeWhen/TellMeWhen.lua:1 Interface/AddOns/TellMeWhen/TellMeWhen.lua:21: unexpected symbol near '.'",
-["session"] = 13377,
 ["time"] = "2026/01/15 19:39:20",
+["session"] = 13377,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/TellMeWhen/Components/IconModules/IconModule_CooldownSweep/CooldownSweep.lua:1 ...MeWhen/Components/IconModules/IconModule_CooldownSweep/CooldownSweep.lua:22: unexpected symbol near '.'",
-["session"] = 13377,
 ["time"] = "2026/01/15 19:39:20",
+["session"] = 13377,
 ["counter"] = 1,
 },
 {
@@ -5639,8 +5623,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Masque_BeautyBorder/Masque_BeautyBorder.toc:22 Error loading Interface/AddOns/Masque_BeautyBorder/Skins.lua",
-["session"] = 13387,
 ["time"] = "2026/01/15 19:53:54",
+["session"] = 13387,
 ["counter"] = 1,
 },
 {
@@ -5725,14 +5709,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/AdiBags/modules/Junk.lua:1 Interface/AddOns/AdiBags/modules/Junk.lua:32: unexpected symbol near '.'",
-["time"] = "2026/01/15 20:04:47",
 ["session"] = 13398,
+["time"] = "2026/01/15 20:04:47",
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/AdiBags/modules/CurrencyFrame.lua:1 Interface/AddOns/AdiBags/modules/CurrencyFrame.lua:42: unexpected symbol near '.'",
-["time"] = "2026/01/15 20:04:47",
 ["session"] = 13398,
+["time"] = "2026/01/15 20:04:47",
 ["counter"] = 3,
 },
 {
@@ -5833,38 +5817,38 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/WorldMapTaintWorkaround.lua:1 Interface/AddOns/Questie/Modules/WorldMapTaintWorkaround.lua:4: unexpected symbol near '.'",
-["session"] = 13415,
 ["time"] = "2026/01/16 10:48:14",
+["session"] = 13415,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/QuestieCoordinates.lua:1 Interface/AddOns/Questie/Modules/QuestieCoordinates.lua:20: unexpected symbol near '.'",
-["session"] = 13415,
 ["time"] = "2026/01/16 10:48:14",
+["session"] = 13415,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Tracker/QuestieTracker.lua:1 Interface/AddOns/Questie/Modules/Tracker/QuestieTracker.lua:84: unexpected symbol near '.'",
-["session"] = 13415,
 ["time"] = "2026/01/16 10:48:14",
+["session"] = 13415,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Tracker/TrackerUtils.lua:1 Interface/AddOns/Questie/Modules/Tracker/TrackerUtils.lua:36: unexpected symbol near '.'",
-["session"] = 13415,
 ["time"] = "2026/01/16 10:48:14",
+["session"] = 13415,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Tracker/TrackerHeaderFrame.lua:1 Interface/AddOns/Questie/Modules/Tracker/TrackerHeaderFrame.lua:29: unexpected symbol near '.'",
-["session"] = 13415,
 ["time"] = "2026/01/16 10:48:14",
+["session"] = 13415,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Options/TrackerTab/QuestieOptionsTracker.lua:1 ...face/AddOns/Questie/Modules/Options/TrackerTab/QuestieOptionsTracker.lua:28: unexpected symbol near '.'",
-["session"] = 13415,
 ["time"] = "2026/01/16 10:48:14",
+["session"] = 13415,
 ["counter"] = 1,
 },
 {
@@ -5885,8 +5869,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:109: ')' expected (to close '(' at line 103) near 'end'",
-["session"] = 13423,
 ["time"] = "2026/01/16 11:11:25",
+["session"] = 13423,
 ["counter"] = 1,
 },
 {
@@ -5995,62 +5979,62 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:28 Unrecognized XML attribute: change",
-["time"] = "2026/01/16 11:27:42",
 ["session"] = 13426,
+["time"] = "2026/01/16 11:27:42",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:29 Unrecognized XML attribute: change",
-["time"] = "2026/01/16 11:27:42",
 ["session"] = 13426,
+["time"] = "2026/01/16 11:27:42",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:32 Unrecognized XML attribute: change",
-["time"] = "2026/01/16 11:27:42",
 ["session"] = 13426,
+["time"] = "2026/01/16 11:27:42",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:55 Unrecognized XML attribute: change",
-["time"] = "2026/01/16 11:27:42",
 ["session"] = 13426,
+["time"] = "2026/01/16 11:27:42",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:56 Unrecognized XML attribute: change",
-["time"] = "2026/01/16 11:27:42",
 ["session"] = 13426,
+["time"] = "2026/01/16 11:27:42",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:77 Unrecognized XML attribute: change",
-["time"] = "2026/01/16 11:27:42",
 ["session"] = 13426,
+["time"] = "2026/01/16 11:27:42",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:79 Unrecognized XML attribute: change",
-["time"] = "2026/01/16 11:27:42",
 ["session"] = 13426,
+["time"] = "2026/01/16 11:27:42",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:232 Unrecognized XML attribute: change",
-["time"] = "2026/01/16 11:27:42",
 ["session"] = 13426,
+["time"] = "2026/01/16 11:27:42",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:233 Unrecognized XML attribute: change",
-["time"] = "2026/01/16 11:27:42",
 ["session"] = 13426,
+["time"] = "2026/01/16 11:27:42",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:260 Unrecognized XML attribute: change",
-["time"] = "2026/01/16 11:27:42",
 ["session"] = 13426,
+["time"] = "2026/01/16 11:27:42",
 ["counter"] = 1,
 },
 {
@@ -6207,8 +6191,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/AtlasLootClassic/Loader.lua:1 Interface/AddOns/AtlasLootClassic/Loader.lua:11: unexpected symbol near '.'",
-["time"] = "2026/01/16 12:06:09",
 ["session"] = 13446,
+["time"] = "2026/01/16 12:06:09",
 ["counter"] = 1,
 },
 {
@@ -6365,8 +6349,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Dejunk/src/consts.lua:1 Interface/AddOns/Dejunk/src/consts.lua:7: unexpected symbol near '.'",
-["time"] = "2026/01/16 12:15:12",
 ["session"] = 13456,
+["time"] = "2026/01/16 12:15:12",
 ["counter"] = 1,
 },
 {
@@ -6395,8 +6379,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Dejunk/src/bags.lua:1 Interface/AddOns/Dejunk/src/bags.lua:9: unexpected symbol near '.'",
-["time"] = "2026/01/16 12:15:12",
 ["session"] = 13458,
+["time"] = "2026/01/16 12:15:12",
 ["counter"] = 3,
 },
 {
@@ -6465,8 +6449,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/NugKeyFeedback/NugKeyFeedback.lua:1 Interface/AddOns/NugKeyFeedback/NugKeyFeedback.lua:51: unexpected symbol near '.'",
-["session"] = 13463,
 ["time"] = "2026/01/16 12:28:12",
+["session"] = 13463,
 ["counter"] = 1,
 },
 {
@@ -6711,8 +6695,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/FarmHud_TrailPath/FarmHud_TrailPath.xml:7 Deferred XML Node object named FarmHudTrailPathPinTemplate already exists",
-["session"] = 13667,
 ["time"] = "2026/01/21 16:46:57",
+["session"] = 13667,
 ["counter"] = 1,
 },
 {
@@ -6909,8 +6893,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Addons/SUI.lua:1 Interface/AddOns/xVermin/Addons/SUI.lua:17: unexpected symbol near ')'",
-["time"] = "2026/01/22 12:11:04",
 ["session"] = 13752,
+["time"] = "2026/01/22 12:11:04",
 ["counter"] = 1,
 },
 {
@@ -7019,8 +7003,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/xVermin.toc:113 Couldn't open Interface/AddOns/xVermin/Helpers/WeaponBuff",
-["session"] = 13791,
 ["time"] = "2026/01/23 18:05:21",
+["session"] = 13791,
 ["counter"] = 1,
 },
 {
@@ -7473,8 +7457,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/AdiBags/AdiBags_TBC.toc:51 Duplicate File Load Detected. [Interface/AddOns/AdiBags/core/EventHandlers.lua] first loaded at [Interface/AddOns/AdiBags/AdiBags_TBC.toc:47]",
-["time"] = "2026/01/27 22:23:43",
 ["session"] = 13848,
+["time"] = "2026/01/27 22:23:43",
 ["counter"] = 1,
 },
 {
@@ -7699,6 +7683,20 @@ BugGrabberDB = {
 ["locals"] = "",
 ["stack"] = "",
 ["session"] = 13941,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Helpers/_Misc.lua:1 File Interface/AddOns/xVermin/Helpers/_Misc.lua is empty.",
+["time"] = "2026/02/13 19:15:53",
+["session"] = 13947,
+["counter"] = 1,
+},
+{
+["message"] = "[string \"local b,e=UnitArmor(\"player\")message(\"Your ...\"]:1: attempt to call global 'message' (a nil value)",
+["time"] = "2026/02/13 19:27:29",
+["locals"] = "msg = \"local b,e=UnitArmor(\"player\")message(\"Your current armor is \"..e..\" (base is \"..b..\")\")\"\nuserScriptsDisabled = false\n",
+["stack"] = "[Interface/AddOns/Blizzard_ChatFrameBase/Shared/SlashCommands.lua]:1171: in function '?'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:227: in function 'ParseText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:252: in function 'SendText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/MacroExecutionManager.lua]:27: in function <...zzard_ChatFrameBase/Shared/MacroExecutionManager.lua:20>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function 'UseAction'\n[Interface/AddOns/Blizzard_FrameXML/SecureTemplates.lua]:342: in function 'handler'\n[Interface/AddOns/Blizzard_FrameXML/SecureTemplates.lua]:673: in function <...terface/AddOns/Blizzard_FrameXML/SecureTemplates.lua:655>\n[Interface/AddOns/Blizzard_FrameXML/SecureTemplates.lua]:687: in function <...terface/AddOns/Blizzard_FrameXML/SecureTemplates.lua:680>\n[Interface/AddOns/Blizzard_FrameXML/SecureTemplates.lua]:739: in function 'SecureActionButton_OnClick'\n[Interface/AddOns/Blizzard_ActionBar/Shared/ActionButton.lua]:1482: in function 'OnClick'\n[Interface/AddOns/Blizzard_ActionBar/Shared/ActionButton.lua]:1545: in function <...ce/AddOns/Blizzard_ActionBar/Shared/ActionButton.lua:1544>",
+["session"] = 13949,
 ["counter"] = 1,
 },
 },

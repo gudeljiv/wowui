@@ -74,6 +74,7 @@ Addons/Selly.lua
 Addons/ShadowedUnitFrames.lua
 Addons/SUI.lua
 Addons/TellMeWhen.lua
+Addons/TipTac.lua
 Addons/TomTom.lua
 Addons/WeakAuras.lua
 

@@ -104,7 +104,12 @@ if (LibFroznFunctions:IsAddOnEnabled("MythicDungeonTools")) then
 	tinsert(ttOptionsGeneral, { type = "Check", var = "showMythicPlusForcesFromMDT", label = "Show Mythic+ Forces from Addon\nMythic Dungeon Tools (MDT) for NPCs", tip = "This will show the mythic+ forces from addon Mythic Dungeon Tools (MDT) for NPCs.", enabled = function(factory) return factory:GetConfigValue("showUnitTip") end });
 end
 
-tinsert(ttOptionsGeneral, { type = "Check", var = "showMount", label = "Show Mount", tip = "This will show the current mount of the player.", enabled = function(factory) return factory:GetConfigValue("showUnitTip") end, y = 10 });
+option = { type = "Check", var = "showMount", label = "Show Mount", tip = "This will show the current mount of the player.", enabled = function(factory) return factory:GetConfigValue("showUnitTip") end, y = 10 };
+if (LibFroznFunctions.hasWoWFlavor.GetMountFromSpellNotPossibleInCombat) then
+	option.tip = option.tip .. "\nNOTE: Not available in combat.";
+end
+tinsert(ttOptionsGeneral, option);
+
 tinsert(ttOptionsGeneral, { type = "Check", var = "showMountCollected", label = "Collected", tip = "This option makes the tip show an icon indicating if you already have collected the mount.", enabled = function(factory) return factory:GetConfigValue("showUnitTip") and factory:GetConfigValue("showMount") end, x = 122 });
 tinsert(ttOptionsGeneral, { type = "Check", var = "showMountIcon", label = "Icon", tip = "This option makes the tip show the mount icon.", enabled = function(factory) return factory:GetConfigValue("showUnitTip") and factory:GetConfigValue("showMount") end, x = 210 });
 tinsert(ttOptionsGeneral, { type = "Check", var = "showMountText", label = "Name", tip = "This option makes the tip show the mount name.", enabled = function(factory) return factory:GetConfigValue("showUnitTip") and factory:GetConfigValue("showMount") end, x = 122 });
@@ -120,7 +125,7 @@ tinsert(ttOptionsGeneral, { type = "DropDown", var = "showTarget", label = "Show
 tinsert(ttOptionsGeneral, { type = "Text", var = "targetYouText", label = "Targeting You Text", enabled = function(factory) return factory:GetConfigValue("showUnitTip") end, y = 10 });
 
 tinsert(ttOptionsGeneral, { type = "Check", var = "showGuild", label = "Show Player Guild", tip = "This will show the guild of the player.", enabled = function(factory) return factory:GetConfigValue("showUnitTip") end, y = 10 });
-tinsert(ttOptionsGeneral, { type = "DropDown", var = "showGuildRealm", label = "Show Player Guild\nRealm", tip = "Player guild realm will only be shown if the guild is from a foreign realm.", list = { ["|cffffa0a0Do not show realm"] = "none", ["Show realm"] = "show", ["Show realm in new line"] = "showInNewLine", ["Show (*) instead"] = "asterisk" }, enabled = function(factory) return factory:GetConfigValue("showGuild") end });
+tinsert(ttOptionsGeneral, { type = "DropDown", var = "showGuildRealm", label = "Show Player Guild\nRealm", tip = "Player guild realm will only be shown if the guild is from a foreign realm.", list = { ["|cffffa0a0Do not show realm"] = "none", ["Show realm"] = "show", ["Show realm in new line"] = "showInNewLine", ["Show (*) instead"] = "asterisk" }, enabled = function(factory) return factory:GetConfigValue("showUnitTip") and factory:GetConfigValue("showGuild") end });
 tinsert(ttOptionsGeneral, { type = "Check", var = "showGuildRank", label = "Show Player Guild Rank", tip = "In addition to the guild name, with this option on, you will also see their guild rank by title and/or level", enabled = function(factory) return factory:GetConfigValue("showUnitTip") and factory:GetConfigValue("showGuild") end });
 tinsert(ttOptionsGeneral, { type = "DropDown", var = "guildRankFormat", label = "Format Guild Rank", list = { ["Title only"] = "title", ["Title + level"] = "both", ["Level only"] = "level" }, enabled = function(factory) return factory:GetConfigValue("showUnitTip") and factory:GetConfigValue("showGuild") and factory:GetConfigValue("showGuildRank") end });
 tinsert(ttOptionsGeneral, { type = "Check", var = "showGuildMemberNote", label = "Show Player Guild Member Note", tip = "This will show the guild member note of the player.", enabled = function(factory) return factory:GetConfigValue("showUnitTip") end });
@@ -184,6 +189,36 @@ for i = 1, numClasses do
 		firstClass = false;
 	end
 end
+
+-- Auras
+local ttOptionsAuras = {
+	{ type = "Header", label = "Unit Tip Auras", enabled = function(factory) return factory:GetConfigValue("enableAuras") end },
+	
+	{ type = "Check", var = "showBuffs", label = "Show Unit Buffs", tip = "Show buffs of the unit", enabled = function(factory) return factory:GetConfigValue("enableAuras") end },
+	{ type = "Check", var = "showDebuffs", label = "Show Unit Debuffs", tip = "Show debuffs of the unit", enabled = function(factory) return factory:GetConfigValue("enableAuras") end },
+	
+};
+
+option = { type = "Check", var = "selfAurasOnly", label = "Only Show Auras Coming from You", tip = "This will filter out and only display auras you cast yourself", enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end, y = 10 };
+if (LibFroznFunctions.hasWoWFlavor.aurasCooldownCountAndDebuffTypeNotAvailableInCombat) then
+	option.tip = option.tip .. ".\nNOTE: Not available in combat. In this case auras are not filtered";
+end
+tinsert(ttOptionsAuras, option);
+
+option = { type = "Check", var = "showAuraCooldown", label = "Show Cooldown Models", tip = "With this option on, you will see a visual progress of the time left on the buff", enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end, y = 10 };
+if (LibFroznFunctions.hasWoWFlavor.aurasCooldownCountAndDebuffTypeNotAvailableInCombat) then
+	option.tip = option.tip .. ".\nNOTE: Not available in combat.";
+end
+tinsert(ttOptionsAuras, option);
+
+tinsert(ttOptionsAuras, { type = "Check", var = "noCooldownCount", label = "No Cooldown Count Text", tip = "Tells cooldown enhancement addons, such as OmniCC, not to display cooldown text", enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end });
+tinsert(ttOptionsAuras, { type = "Check", var = "auraStackCount", label = "Show Amount of Stacks", tip = "With this option on, you will see the amount of stacks", enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end });
+
+tinsert(ttOptionsAuras, { type = "Slider", var = "auraSize", label = "Aura Icon Dimension", min = 8, max = 60, step = 1, enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end, y = 10 });
+tinsert(ttOptionsAuras, { type = "Slider", var = "auraMaxRows", label = "Max Aura Rows", min = 1, max = 8, step = 1, enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end });
+
+tinsert(ttOptionsAuras, { type = "Check", var = "aurasAtBottom", label = "Put Aura Icons at the Bottom Instead of Top", tip = "Puts the aura icons at the bottom of the tip instead of the default top", enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end, y = 10 });
+tinsert(ttOptionsAuras, { type = "Slider", var = "auraOffset", label = "Aura Offset", min = 0, max = 200, step = 0.5, enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end });
 
 -- Anchors
 local ttOptionsAnchors = {
@@ -602,18 +637,18 @@ local options = {
 			{ type = "Color", var = "castBarCompleteColor", label = "Cast Bar Complete Color", tip = "The complete color of the cast bar", enabled = function(factory) return factory:GetConfigValue("enableBars") and factory:GetConfigValue("castBar") end },
 			{ type = "Color", var = "castBarFailColor", label = "Cast Bar Fail Color", tip = "The fail color of the cast bar", enabled = function(factory) return factory:GetConfigValue("enableBars") and factory:GetConfigValue("castBar") end },
 			{ type = "Color", var = "castBarSparkColor", label = "Cast Bar Spark Color", tip = "The spark color of the cast bar", enabled = function(factory) return factory:GetConfigValue("enableBars") and factory:GetConfigValue("castBar") end },
-			
+
 			{ type = "Header", label = "Unit Tip Bars: Others", enabled = function(factory) return factory:GetConfigValue("enableBars") and (factory:GetConfigValue("healthBar") or factory:GetConfigValue("manaBar") or factory:GetConfigValue("powerBar") or factory:GetConfigValue("castBar")) end },
-			
-			{ type = "Check", var = "barsCondenseValues", label = "Show Condensed Bar Values", tip = "You can enable this option to condense values shown on the bars. It does this by showing 57254 as 57.3k as an example", enabled = function(factory) return factory:GetConfigValue("enableBars") and (factory:GetConfigValue("healthBar") or factory:GetConfigValue("manaBar") or factory:GetConfigValue("powerBar") or factory:GetConfigValue("castBar")) end },
-			
+
+			{ type = "Check", var = "barsCondenseValues", label = "Show Condensed Bar Values", tip = "You can enable this option to condense values shown on the bars. It does this by showing 57254 as 57.3k as an example", enabled = function(factory) return factory:GetConfigValue("enableBars") and (factory:GetConfigValue("healthBar") or factory:GetConfigValue("manaBar") or factory:GetConfigValue("powerBar")) end },
+
 			{ type = "DropDown", var = "barFontFace", label = "Font Face", media = "font", enabled = function(factory) return factory:GetConfigValue("enableBars") and (factory:GetConfigValue("healthBar") or factory:GetConfigValue("manaBar") or factory:GetConfigValue("powerBar") or factory:GetConfigValue("castBar")) end, y = 10 },
 			{ type = "DropDown", var = "barFontFlags", label = "Font Flags", list = DROPDOWN_FONTFLAGS, enabled = function(factory) return factory:GetConfigValue("enableBars") and (factory:GetConfigValue("healthBar") or factory:GetConfigValue("manaBar") or factory:GetConfigValue("powerBar") or factory:GetConfigValue("castBar")) end },
 			{ type = "Slider", var = "barFontSize", label = "Font Size", min = 6, max = 29, step = 1, enabled = function(factory) return factory:GetConfigValue("enableBars") and (factory:GetConfigValue("healthBar") or factory:GetConfigValue("manaBar") or factory:GetConfigValue("powerBar") or factory:GetConfigValue("castBar")) end },
-			
+
 			{ type = "DropDown", var = "barTexture", label = "Bar Texture", media = "statusbar", enabled = function(factory) return factory:GetConfigValue("enableBars") and (factory:GetConfigValue("healthBar") or factory:GetConfigValue("manaBar") or factory:GetConfigValue("powerBar") or factory:GetConfigValue("castBar")) end, y = 10 },
 			{ type = "Slider", var = "barHeight", label = "Bar Height", min = 1, max = 50, step = 1, enabled = function(factory) return factory:GetConfigValue("enableBars") and (factory:GetConfigValue("healthBar") or factory:GetConfigValue("manaBar") or factory:GetConfigValue("powerBar") or factory:GetConfigValue("castBar")) end },
-			
+
 			{ type = "Check", var = "barEnableTipMinimumWidth", label = "Enable Minimum Width for Tooltip If Showing Bars", tip = "Check this to enable a minimum width for the tooltip if showing bars, so that numbers are not cut off.", enabled = function(factory) return factory:GetConfigValue("enableBars") and (factory:GetConfigValue("healthBar") or factory:GetConfigValue("manaBar") or factory:GetConfigValue("powerBar") or factory:GetConfigValue("castBar")) end, y = 10 },
 			{ type = "Slider", var = "barTipMinimumWidth", label = "Minimum Width for Tooltip", min = 10, max = 500, step = 5, enabled = function(factory) return factory:GetConfigValue("enableBars") and (factory:GetConfigValue("healthBar") or factory:GetConfigValue("manaBar") or factory:GetConfigValue("powerBar") or factory:GetConfigValue("castBar")) and factory:GetConfigValue("barEnableTipMinimumWidth") end },
 		}
@@ -622,23 +657,7 @@ local options = {
 	{
 		category = "Auras",
 		enabled = { type = "Check", var = "enableAuras", tip = "Enable auras for unit tooltips" },
-		options = {
-			{ type = "Header", label = "Unit Tip Auras", enabled = function(factory) return factory:GetConfigValue("enableAuras") end },
-			
-			{ type = "Check", var = "showBuffs", label = "Show Unit Buffs", tip = "Show buffs of the unit", enabled = function(factory) return factory:GetConfigValue("enableAuras") end },
-			{ type = "Check", var = "showDebuffs", label = "Show Unit Debuffs", tip = "Show debuffs of the unit", enabled = function(factory) return factory:GetConfigValue("enableAuras") end },
-			
-			{ type = "Check", var = "selfAurasOnly", label = "Only Show Auras Coming from You", tip = "This will filter out and only display auras you cast yourself", enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end, y = 10 },
-			
-			{ type = "Check", var = "showAuraCooldown", label = "Show Cooldown Models", tip = "With this option on, you will see a visual progress of the time left on the buff", enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end, y = 10 },
-			{ type = "Check", var = "noCooldownCount", label = "No Cooldown Count Text", tip = "Tells cooldown enhancement addons, such as OmniCC, not to display cooldown text", enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end },
-			
-			{ type = "Slider", var = "auraSize", label = "Aura Icon Dimension", min = 8, max = 60, step = 1, enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end, y = 10 },
-			{ type = "Slider", var = "auraMaxRows", label = "Max Aura Rows", min = 1, max = 8, step = 1, enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end },
-		
-			{ type = "Check", var = "aurasAtBottom", label = "Put Aura Icons at the Bottom Instead of Top", tip = "Puts the aura icons at the bottom of the tip instead of the default top", enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end, y = 10 },
-			{ type = "Slider", var = "auraOffset", label = "Aura Offset", min = 0, max = 200, step = 0.5, enabled = function(factory) return factory:GetConfigValue("enableAuras") and (factory:GetConfigValue("showBuffs") or factory:GetConfigValue("showDebuffs")) end },
-		}
+		options = ttOptionsAuras
 	},
 	-- Icons
 	{

@@ -8,9 +8,9 @@ W: 1
 H: 1
 Frame: SettingsPanel
 FrameLevel: 1
-Anchor: TOPLEFT
-X: 331
-Y: -56
+Anchor: TOP
+X: 0
+Y: -116
 W: 920
 H: 724
 Frame: ColorPickerFrame

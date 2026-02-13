@@ -174,7 +174,18 @@ local UpdatedVersionRev = AtlasLoot.__addonrevision
 
 local function UpdateCheckFrameOnEvent(frame, event, arg1, ...)
 	-- DEV BUILD, we don't care about the auto updater
-	if UpdatedVersionRev == 1000 then return end
+	if UpdatedVersionRev == 1000 then 
+		-- if event == "CHAT_MSG_ADDON" and arg1 == ALPrivate.ADDON_MSG_PREFIX then
+		-- 	print ("AtlasLootClassic: Dev Build detected, auto update check disabled.")
+		-- 	local text, channel, sender, target, zoneChannelID, localID, name, instanceID = ...
+		-- 	local v = text:match(UpdateGetMsg)
+		-- 	v = tonumber(v or 0)
+		-- 	if v and v > 0 then
+		-- 		print(format("AtlasLootClassic: Player '|cff00FAF6%s|r' sends version '|cff00FF96%d|r'!", sender, v))
+		-- 	end
+		-- end
+		return 
+	end
 
 	if event == "CHAT_MSG_ADDON" and arg1 == ALPrivate.ADDON_MSG_PREFIX then
 		local text, channel, sender, target, zoneChannelID, localID, name, instanceID = ...

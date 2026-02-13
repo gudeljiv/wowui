@@ -136,15 +136,14 @@ local function GTT_OnTooltipSetUnit(self, ...)
 	-- get the unit id -- check the UnitFrame unit if this tip is from a concated unit, such as "targettarget".
 	local _, unitID = LibFroznFunctions:GetUnitFromTooltip(self);
 	
-	if (not unitID) then
+	if (LibFroznFunctions:IsSecretValue(unitID)) or (not unitID) then
 		local mouseFocus = LibFroznFunctions:GetMouseFocus();
-		if (mouseFocus) and (mouseFocus.unit) then
-			unitID = mouseFocus.unit;
-		end
+		
+		unitID = mouseFocus and mouseFocus.GetAttribute and mouseFocus:GetAttribute("unit");
 	end
 	
-	-- no unit id
-	if (not unitID) then
+	-- no unit id or unit id is a secret value
+	if (LibFroznFunctions:IsSecretValue(unitID)) or (not unitID) then
 		return;
 	end
 	
@@ -191,7 +190,7 @@ function TTT_UpdateTooltip(unitCacheRecord)
 	-- exit if unit from unit cache record doesn't match the current displaying unit
 	local _, unitID = LibFroznFunctions:GetUnitFromTooltip(GameTooltip);
 	
-	if (not unitID) then
+	if (LibFroznFunctions:IsSecretValue(unitID)) or (not unitID) then
 		return;
 	end
 	
