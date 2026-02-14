@@ -1,14 +1,19 @@
 local faction = UnitFactionGroup("player")
 if faction == "Alliance" then return end
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 << Horde
 #name 15-19 The Barrens
 #version 1
 #group RestedXP Survival Guide (H)
 #subgroup RXP Survival Guide 1-20
 #next 19-23 Stonetalon/Barrens/Ashenvale
+
+
 step << !Tauren !Hunter !Shaman
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gar'Thok|r
     .turnin 837 >>Turn in Encroachment
@@ -1712,7 +1717,7 @@ step
     .goto The Barrens,45.78,14.74,50,0
     .goto The Barrens,44.60,15.04,50,0
     >>Finish killing |cRXP_ENEMY_Raptors|r. Loot them for their |cRXP_LOOT_Heads|r
-    >>|cRXP_WARN_Be careful as they cast|r |T132152:0|t[Thrash] |cRXP_WARN_(Charges 2 extra attacks every 10 seconds)|r    
+    >>|cRXP_WARN_Be careful as they cast|r |T132152:0|t[Thrash] |cRXP_WARN_(Charges 2 extra attacks every 10 seconds)|r
     .complete 869,1 --Raptor Head (12)
     .mob Sunscale Lashtail
     .mob Sunscale Screecher
@@ -1892,7 +1897,7 @@ step
 step
     #completewith TestSeeds
     >>Kill any |cRXP_ENEMY_Sunscale Scytheclaw|r you see. Loot them for their |cRXP_LOOT_Horns|r and |cRXP_LOOT_Feathers|r
-    >>|cRXP_WARN_Be careful as they cast|r |T132152:0|t[Thrash] |cRXP_WARN_(Charges 2 extra attacks every 10 seconds)|r    
+    >>|cRXP_WARN_Be careful as they cast|r |T132152:0|t[Thrash] |cRXP_WARN_(Charges 2 extra attacks every 10 seconds)|r
     .complete 865,1 --Intact Raptor Horn (5)
     .collect 5165,3,905,3 --Sunscale Feather (3)
     .mob Sunscale Scytheclaw
@@ -2101,16 +2106,20 @@ step
     .accept 6548 >> Accept Avenge My Village
     .target +Makaba Flathoof
     .goto The Barrens,35.19,27.79
+
 ]])
+
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 << Horde
 #name 19-23 Stonetalon/Barrens/Ashenvale
 #version 1
 #group RestedXP Survival Guide (H)
 #subgroup RXP Survival Guide 1-20
 #next 23-25 Hillsbrad
+
 step
     #optional
     #completewith next
@@ -5071,4 +5080,6 @@ step
     .zone Tirisfal Glades >>Take the Zeppelin to Tirisfal Glades
     .zoneskip Tirisfal Glades
     .zoneskip Undercity
+
 ]])
+

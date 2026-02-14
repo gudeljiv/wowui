@@ -1,3 +1,4 @@
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #version 1
 #group +RestedXP Northrend Daily Quests
@@ -5,6 +6,7 @@ RXPGuides.RegisterGuide([[
 #wotlk
 #cata
 #name The Sons of Hodir Unlock Daily Quests
+
 step
     +You have completed The Sons of Hodir Pre Quest chain. Please use The Sons of Hodir Daily Quests Route guide to complete the daily quests
 	.isQuestTurnedIn 13047

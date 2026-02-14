@@ -44,7 +44,6 @@
 	<Script file="Guides/SoD/Shaman.lua"/>
 	<Script file="Guides/SoD/Horde.lua"/>
 	<Script file="Guides/SoD/Attunements.lua"/>
-	<Script file="Guides/SoD/SOD.lua"/>
 	<Script file="Guides/SoD/Custom.lua"/>	
 	
 	<Script file="Guides/SoD/Incursions.lua"/>
@@ -58,10 +57,5 @@
 	
 	<Script file="Guides\Classic-Attunements.lua"/>
 	<Script file="Guides\Classic-0.5.lua"/>
-	
-	<Script file="Guides/farmguides.lua"/>
-    <Script file="Guides/Mining.lua"/>
-    <Script file="Guides/Herbalism.lua"/>
-    <Script file="Guides/Skinning.lua"/>
 
 </Ui>

@@ -1,12 +1,14 @@
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #tbc
 #version 7
 << Alliance
 #defaultfor Gnome/Dwarf
-#group RestedXP Survival Guide (A)
+#group RXP TBC Survival Guide (A)
 #subgroup RXP Survival Guide 1-20
 #name 1-10 Dun Morogh
 #next 10-12 Elwynn Forest
+
 step << !Gnome !Dwarf
     #sticky
     #completewith next
@@ -1451,15 +1453,17 @@ step
     .target Innkeeper Firebrew
     .bindlocation 1537
 ]])
+
 RXPGuides.RegisterGuide([[
 #tbc
 #version 7
 << Alliance
 #defaultfor Gnome/Dwarf
-#group RestedXP Survival Guide (A)
+#group RXP TBC Survival Guide (A)
 #subgroup RXP Survival Guide 1-20
 #name 10-12 Elwynn Forest
 #next 12-14 Darkshore
+
 step
     #completewith next
     .goto Ironforge,78.00,51.40

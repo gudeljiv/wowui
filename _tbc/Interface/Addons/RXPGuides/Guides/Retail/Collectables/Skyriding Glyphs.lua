@@ -1,25 +1,29 @@
 -- ============================
 -- ==========   DF ============
 -- ============================
+
 --Nesting
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #subgroup Skyriding Glyphs
 #name a) Dragonflight Glyphs
 #displayname Dragonflight Glyphs
 #chapters a) Waking Shores Glyphs;a) Ohn'ahran Plains Glyphs;a) Azure Span Glyphs;a) Thaldraszus Glyphs;a) Forbidden Reach Glyphs;a) Zaralek Cavern Glyphs;a) Emerald Dream Dragon Glyphs
 ]])
+
 --Waking Shores
 RXPGuides.RegisterGuide([[
 #retail
 #version 3
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #name a) Waking Shores Glyphs
 #displayname |cFF00CCFF1|r - Waking Shores
 #next a) Ohn'ahran Plains Glyphs
 #chapter
+
 step
     #completewith WakingShoreDragonGlyphs
     +Welcome to the Dragon Glyph Guide
@@ -157,11 +161,12 @@ step
 RXPGuides.RegisterGuide([[
 #retail
 #version 3
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #name a) Ohn'ahran Plains Glyphs
 #displayname |cFF00CCFF2|r - Ohn'ahran Plains
 #next a) Azure Span Glyphs
 #chapter
+
 step
     #title Dragon Glyph: Mirewood Fen
     >>Use |T4640498:0|t[Skyward Ascend] once or twice
@@ -263,11 +268,12 @@ step
 RXPGuides.RegisterGuide([[
 #retail
 #version 3
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #name a) Azure Span Glyphs
 #displayname |cFF00CCFF3|r - Azure Span
 #next a) Thaldraszus Glyphs
 #chapter
+
 step
     #title Dragon Glyph: Forkriver Crossing
     >>Use |T4640498:0|t[Skyward Ascend] once or twice
@@ -391,11 +397,12 @@ step
 RXPGuides.RegisterGuide([[
 #retail
 #version 3
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #name a) Thaldraszus Glyphs
 #displayname |cFF00CCFF4|r - Thaldraszus
 #next a) Forbidden Reach Glyphs
 #chapter
+
 step
     #title Dragon Glyph: South Hold Gate
     >>Use|T4640498:0|t[Skyward Ascend] 2-3 times to reach the glyph
@@ -501,11 +508,12 @@ step
 RXPGuides.RegisterGuide([[
 #retail
 #version 3
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #name a) Forbidden Reach Glyphs
 #displayname |cFF00CCFF5|r - Forbidden Reach
 #next a) Zaralek Cavern Glyphs
 #chapter
+
 step
     #completewith next
     .hs >> Use your Hearthstone IF it's in Valdrakken
@@ -615,11 +623,12 @@ step
 RXPGuides.RegisterGuide([[
 #retail
 #version 3
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #name a) Zaralek Cavern Glyphs
 #displayname |cFF00CCFF6|r - Zaralek Cavern
 #next a) Emerald Dream Dragon Glyphs
 #chapter
+
 step
     .zoneskip 2200
     +This guide requires you to have the |cRXP_WARN_Zaralek Caverns|r unlocked.
@@ -703,11 +712,12 @@ step
 RXPGuides.RegisterGuide([[
 #retail
 #version 2
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #name a) Emerald Dream Dragon Glyphs
 #displayname |cFF00CCFF7|r - Emerald Dream
 #next a) Isle of the Dorn Glyphs
 #chapter
+
 step
     .zoneskip 2200
     +This guide requires you to have the |cRXP_WARN_Emerald Dream|r unlocked.
@@ -760,28 +770,32 @@ step
     .goto 2200,31.84,80.60
     .achievement 19306,7 >> Pick up the Dragon Glyph: Whorlwing Basin
 ]])
+
 -- =============================
 -- ==========   TWW ============
 -- =============================
+
 --Nesting
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #subgroup Skyriding Glyphs
 #name a) The War Within Glyphs
 #displayname The War Within Glyphs
 #chapters a) Isle of the Dorn Glyphs;a) The Ringing Deeps Glyphs;a) Hallowfall Glyphs;a) Azj-Kahet Glyphs;a) K'aresh Glyphs
 ]])
+
 --Isle of the Dorn
 RXPGuides.RegisterGuide([[
 #version 1
 #retail
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #name a) Isle of the Dorn Glyphs
 #displayname |cFF1EFF001|r - Isle of the Dorn
 #next a) The Ringing Deeps Glyphs
 #chapter
+
 step
     #completewith
     +Welcome to the Skyriding Glyph Guide
@@ -861,11 +875,12 @@ step
 RXPGuides.RegisterGuide([[
 #version 1
 #retail
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #name a) The Ringing Deeps Glyphs
 #displayname |cFF1EFF002|r - The Ringing Deeps
 #next a) Hallowfall Glyphs
 #chapter
+
 step
     #title Skyriding: The Stonevault Exterior
     .goto 2214,42.72,10.06
@@ -934,11 +949,12 @@ step
 RXPGuides.RegisterGuide([[
 #version 1
 #retail
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #name a) Hallowfall Glyphs
 #displayname |cFF1EFF003|r - Hallowfall
 #next a) Azj-Kahet Glyphs
 #chapter
+
 step
     #title Skyriding: The Fangs
     .goto 2215,62.86,51.79
@@ -1014,11 +1030,12 @@ step
 RXPGuides.RegisterGuide([[
 #version 1
 #retail
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #displayname |cFF1EFF004|r - Azj-Kahet
 #name a) Azj-Kahet Glyphs
 #next a) K'aresh Glyphs
 #chapter
+
 step
     #title Skyriding: Trickling Abyss
     .goto 2255,70.54,25.16
@@ -1101,11 +1118,12 @@ step
 RXPGuides.RegisterGuide([[
 #version 1
 #retail
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #displayname |cFF1EFF005|r - K'aresh
 #name a) K'aresh Glyphs
 #next a) Waking Shores Glyphs
 #chapter
+
 step
     #title Skyriding: Tazavesh
     .goto 2472,55.12,67.55

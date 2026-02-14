@@ -1,3 +1,5 @@
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #classic
 #version 1
@@ -8,6 +10,7 @@ RXPGuides.RegisterGuide([[
 #displayname 12-13 Dun Morogh
 #next 13-16 Loch Modan SoD
 #defaultfor !NightElf
+
 step << Warrior
     #season 2
     >>|cRXP_WARN_Look for the|r |cRXP_FRIENDLY_Wandering Swordsman|r. |cRXP_WARN_He can be anywhere in the small area marked on your map|r
@@ -491,6 +494,7 @@ step
     .accept 416 >> Accept Rat Catching
     .accept 1339 >> Accept Mountaineer Stormpike's Task
     .target Mountaineer Kadrell
+
 step << Dwarf/Gnome
     .goto Loch Modan,33.938,50.954
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thorgrum Borrelson|r
@@ -1024,6 +1028,7 @@ step << !Human
     .vendor >> |cRXP_BUY_Vendor trash, buy up to four|r |T133634:0|t[Small Brown Pouches] |cRXP_BUY_if you still need|r
     .target Yanni Stoutheart
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 #version 1
@@ -1034,6 +1039,7 @@ RXPGuides.RegisterGuide([[
 #displayname 13-16 Loch Modan
 #next 16-17 Westfall SoD
 #defaultfor !NightElf
+
 step << Hunter
 #optional
     .goto Loch Modan,35.828,43.457
@@ -1065,6 +1071,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Captain Rugelfuss|r inside the bunker
     .accept 267 >> Accept The Trogg Threat
     .target Captain Rugelfuss
+
 step
 #completewith next
     .goto Loch Modan,30.0,68.4,0
@@ -1182,6 +1189,7 @@ step << !Human
     .hs >> Hearth to Thelsamar
     .cooldown item,6948,>0
     .subzoneskip 924,1--valley of kings
+
 step
     #optional
     #completewith Algaz2

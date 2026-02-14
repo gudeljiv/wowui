@@ -1,12 +1,15 @@
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 << Horde
 #name 13-15 Silverpine Forest
 #version 1
 #group RestedXP Survival Guide (H)
 #subgroup RXP Survival Guide 1-20
 #next 15-19 The Barrens
+
 step << Undead Rogue
     #sticky
     #completewith RotHideCluesTurnIn
@@ -338,7 +341,7 @@ step << Shaman/Warrior/Druid
 step << Warlock/Mage/Priest
     #optional
     #completewith Shackles
-    +|cRXP_WARN_Equip the|r |T132491:0|t[|cRXP_FRIENDLY_Wise Man's Belt|r] 
+    +|cRXP_WARN_Equip the|r |T132491:0|t[|cRXP_FRIENDLY_Wise Man's Belt|r]
     .use 4786
     .itemcount 4786,1
     .xp <15,1
@@ -346,7 +349,7 @@ step << Warlock/Mage/Priest
 step << Hunter
     #optional
     #completewith Shackles
-    +|cRXP_WARN_Equip the|r |T135490:0|t[|cRXP_FRIENDLY_Fine Longbow|r] 
+    +|cRXP_WARN_Equip the|r |T135490:0|t[|cRXP_FRIENDLY_Fine Longbow|r]
     .use 11304
     .itemcount 11304,1
     .xp <14,1
@@ -990,4 +993,5 @@ step << !Tauren !Shaman !Hunter
     .use 6948
     .bindlocation 362,1
     .subzoneskip 362
+
     ]])

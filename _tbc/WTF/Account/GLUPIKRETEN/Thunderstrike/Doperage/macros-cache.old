@@ -69,6 +69,13 @@ VER 3 010000000100001E "sunder" "134400"
 /cast Sunder Armor
 /cast Bloodrage
 END
+VER 3 0100000001000026 "swap" "134400"
+/stopcasting
+/equipslot [noequipped:Shield] 17 Ruga's Bulwark
+/equipslot 16 Wingblade
+/equipslot 17 Curved Dagger of Fiery Wrath
+/equipslot [equipped:Shield] 17 Curved Dagger of Fiery Wrath
+END
 VER 3 0100000001000020 "sweep" "134400"
 #showtooltip
 /startattack

@@ -1,3 +1,4 @@
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #tbc
 #group RestedXP TBC Guide (H)
@@ -8,6 +9,8 @@ RXPGuides.RegisterGuide([[
 #defaultfor Scourge
 #next 6-10 Eversong Woods << !Warrior
 #next 6-13 Durotar << Warrior
+
+
 step << !Undead
     #completewith next
     +|cRXP_WARN_You have selected a guide meant for Undead. It is recommended you choose the same starter zone that you start in|r

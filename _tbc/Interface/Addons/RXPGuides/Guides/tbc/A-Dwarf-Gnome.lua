@@ -1,3 +1,4 @@
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #tbc
 #version 7
@@ -8,6 +9,7 @@ RXPGuides.RegisterGuide([[
 #defaultfor Gnome/Dwarf
 #next 6-11 Dun Morogh << !Hunter
 #next 6-10 Dun Morogh (Hunter) << Hunter
+
 step << !Gnome !Dwarf
     #sticky
     #completewith next
@@ -556,6 +558,7 @@ step
     .subzoneskip 800,1
     .isOnQuest 2160
 ]])
+
 RXPGuides.RegisterGuide([[
 #tbc
 #version 7
@@ -567,6 +570,7 @@ RXPGuides.RegisterGuide([[
 #next 11-14 Elwynn Forest/Loch Modan << Warlock
 #subgroup RestedXP Alliance 1-20
 #defaultfor Gnome/Dwarf
+
 step
     #optional
     #completewith SenirEnd
@@ -2186,7 +2190,7 @@ step << Rogue/Warrior/Warlock
     .collect 4471,1 --Flint and Tinder (1)
     .target Yanni Stoutheart
     .skill cooking,<1,1 -- shows if cooking is >1
-    .money <1 -- don't want them buying etc, unless rich alts, money too tight later 
+    .money <1 -- don't want them buying etc, unless rich alts, money too tight later
 step << skip
     #loop
     .goto Loch Modan,36.72,41.97,15,0
@@ -2844,6 +2848,7 @@ step << Rogue/Warrior
     .fly Menethil >> Fly to Menethil Harbor
     .target Thorgrum Borrelson
 ]])
+
 RXPGuides.RegisterGuide([[
 #tbc
 #version 7
@@ -2853,6 +2858,7 @@ RXPGuides.RegisterGuide([[
 #next 14-20 Bloodmyst
 #subgroup RestedXP Alliance 1-20
 #defaultfor Gnome Warlock
+
 step
     .goto StormwindClassic,66.277,62.137
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dungar Longdrink|r
@@ -2886,10 +2892,10 @@ step
 step
     .goto StormwindClassic,26.117,77.225
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ursula Deline|r
-    .train 1120 >> Train |T136163:0|t[Drain Soul] 
+    .train 1120 >> Train |T136163:0|t[Drain Soul]
     .train 6201 >> Train |T135230:0|t[Create Healthstone (Minor)]
-    .train 696 >> Train |T136185:0|t[Demon Skin (Rank 2)] 
-    .train 707 >> Train |T135817:0|t[Immolate (Rank 2)] 
+    .train 696 >> Train |T136185:0|t[Demon Skin (Rank 2)]
+    .train 707 >> Train |T135817:0|t[Immolate (Rank 2)]
     .target Ursula Deline
 step
     #completewith GoldshireQuests
@@ -3400,7 +3406,7 @@ step << Warlock
     .goto StormwindClassic,26.117,77.225
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ursula Deline|r
     .train 755 >>Train |T136168:0|t[Health Funnel]
-    .train 705 >>Train |T136197:0|t[Shadow Bolt (Rank 3)]  
+    .train 705 >>Train |T136197:0|t[Shadow Bolt (Rank 3)]
     .target Ursula Deline
     .xp <12,1
 step << Warlock
@@ -3774,7 +3780,7 @@ step << Warlock
     .goto Ironforge,51.1,8.7,15,0
     .goto Ironforge,50.343,5.657
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Briarthorn|r
-    .train 6222 >>Train |T136118:0|t[Corruption (Rank 2)] 
+    .train 6222 >>Train |T136118:0|t[Corruption (Rank 2)]
     .train 689 >>Train |T136169:0|t[Drain Life]
     .target Briarthorn
 step << Warlock
@@ -3990,7 +3996,7 @@ step
     .goto 1439,38.696,57.874,50,0
     .goto 1439,39.129,59.176,50,0
     >>|cRXP_WARN_Use|r |T134335:0|t[Tharnariun's Hope] |cRXP_WARN_on a |cRXP_ENEMY_Rabid Thistle Bear|r. It can be used from any range as long as you have one targeted|r
-    >>|cRXP_WARN_==DO NOT USE THE QUEST ITEM IF THERES NO BEAR NEARBY==|r 
+    >>|cRXP_WARN_==DO NOT USE THE QUEST ITEM IF THERES NO BEAR NEARBY==|r
     >>|cRXP_WARN_You can waste the trap and make the quest impossible to complete! If it happens to you you need to return to the questgiver and ask for another trap|r
     .complete 2118,1 --Rabid Thistle Bear Captured (1)
     .unitscan Rabid Thistle Bear
@@ -4044,6 +4050,7 @@ step
     .goto Darkshore,30.749,40.995
     .zone Azuremyst Isle >> Take the boat to Azuremyst Isle
 ]])
+
 RXPGuides.RegisterGuide([[
 #tbc
 #version 7
@@ -4053,6 +4060,7 @@ RXPGuides.RegisterGuide([[
 #next 12-14 Darkshore
 #subgroup RestedXP Alliance 1-20
 #defaultfor Dwarf Hunter
+
 step
     #optional
     #completewith SenirEnd
@@ -4868,7 +4876,7 @@ step << Hunter
     .collect 2511,1
     .money <0.1324
     .target Thalgus Thunderfist
-    .itemStat 18,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<5.00  
+    .itemStat 18,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<5.00
 step << Hunter
     #completewith next
     +|cRXP_WARN_Equip the|r |T135613:0|t[Hunter's Boomstick]

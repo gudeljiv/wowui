@@ -1,3 +1,4 @@
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #version 1
 #group +RestedXP Northrend Daily Quests
@@ -5,9 +6,11 @@ RXPGuides.RegisterGuide([[
 #wotlk
 #cata
 #name Ebon Blade Unlock Daily Quests
+
 step
     +You have completed the Knights of the Ebon Blade Pre Quest chain. Please use the Ebon Blade Daily Quests Route guide to complete the daily quests.
 	.isQuestTurnedIn 12814
+
 step << Alliance
     .goto IcecrownGlacier,65.1,57.2,0
     .goto IcecrownGlacier,64.7,52.4,0

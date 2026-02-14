@@ -1,5 +1,7 @@
 local addonName, addon = ...
 
+local locale = _G.GetLocale()
+
 local AceGUI = LibStub("AceGUI-3.0")
 local pairs, assert, type = pairs, assert, type
 local wipe = table.wipe
@@ -7,20 +9,42 @@ local wipe = table.wipe
 local guideConfigurator
 
 local dungeonIcons = {
-    ["BFD"] = "Interface\\Addons\\RXPGuides\\Textures\\DungeonIcons\\blackfathomdeeps.tga",
-    ["DM"] = "Interface\\Addons\\RXPGuides\\Textures\\DungeonIcons\\deadmines.tga",
-    ["GNOMER"] = "Interface\\Addons\\RXPGuides\\Textures\\DungeonIcons\\gnomeregan.tga",
-    ["MARA"] = "Interface\\Addons\\RXPGuides\\Textures\\DungeonIcons\\maraudon.tga",
+    ["BFD"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-BlackfathomDeeps",
+    ["DM"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-Deadmines",
+    ["GNOMER"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-Gnomeregan",
+    ["MARA"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-Maraudon",
     ["RFC"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-RagefireChasm",
-    ["RFD"] = "Interface\\Addons\\RXPGuides\\Textures\\DungeonIcons\\razorfendowns.tga",
-    ["RFK"] = "Interface\\Addons\\RXPGuides\\Textures\\DungeonIcons\\razorfenkraul.tga",
-    ["SFK"] = "Interface\\Addons\\RXPGuides\\Textures\\DungeonIcons\\shadowfangkeep.tga",
-    ["SM"] = "Interface\\Addons\\RXPGuides\\Textures\\DungeonIcons\\scarletmonastery.tga",
-    ["ST"] = "Interface\\Addons\\RXPGuides\\Textures\\DungeonIcons\\sunkentemple.tga",
-    ["STOCKS"] = "Interface\\Addons\\RXPGuides\\Textures\\DungeonIcons\\stockade.tga",
-    ["ULDA"] = "Interface\\Addons\\RXPGuides\\Textures\\DungeonIcons\\uldaman.tga",
-    ["WC"] = "Interface\\Addons\\RXPGuides\\Textures\\DungeonIcons\\wailingcaverns.tga",
-    ["ZF"] = "Interface\\Addons\\RXPGuides\\Textures\\DungeonIcons\\zulfarrak.tga",
+    ["RFD"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-RazorfenDowns",
+    ["RFK"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-RazorfenKraul",
+    ["SFK"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-ShadowFangKeep",
+    ["SM"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-ScarletMonastery",
+    ["ST"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-SunkenTemple",
+    ["STOCKS"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-TheStockade",
+    ["ULDA"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-Uldaman",
+    ["WC"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-WailingCaverns",
+    ["ZF"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-ZulFarrak",
+    ["BRD"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-BlackrockDepths",
+    ["LBRS"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-BlackrockSpire",
+    ["UBRS"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-UpperBlackrockSpire",
+    ["SCHOLO"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-Scholomance",
+    ["STRAT"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-Stratholme",
+
+    ["RAMPARTS"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-HellfireCitadel",
+    ["BF"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-HellfireCitadel",
+    ["SP"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-CoilfangReservoir",
+    ["UB"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-CoilfangReservoir",
+    ["MT"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-Auchindoun",
+    ["CRYPTS"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-Auchindoun",
+    ["OHF"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-CavernsOfTime",
+    ["SH"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-Auchindoun",
+    ["BM"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-CavernsOfTime",
+    ["MECH"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-TempestKeep",
+    ["MGT"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-MagistersTerrace",
+    ["SLABS"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-Auchindoun",
+    ["ARCATRAZ"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-TempestKeep",
+    ["BOTANICA"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-TempestKeep",
+    ["SHH"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-HellfireCitadel",
+    ["SV"] = "Interface\\ENCOUNTERJOURNAL\\UI-EJ-DUNGEONBUTTON-CoilfangReservoir",
 }
 
 function addon.ui.v2.RegisterRXPGuideConfiguratorPage1()
@@ -189,7 +213,9 @@ function addon.ui.v2.RegisterRXPGuideConfiguratorPage1()
         description:SetFontObject(GameFontNormal)
         description:SetPoint("BOTTOMLEFT", topLeftIcon, "BOTTOMRIGHT", 12, 6)
         description:SetTextColor(1, 1, 1)
-        description:SetFont(addon.font, 14, "")
+        if locale == "enUS" then
+            description:SetFont(addon.font, 14, "")
+        end
         description:SetText(L("Welcome, select a guide."))
 
         --Container Support
@@ -271,6 +297,15 @@ function addon.ui.v2.RegisterRXPGuideConfiguratorOption()
                 end
             end
         end,
+
+        ["SetEnabled"] = function(self, enabled)
+            if enabled then
+                self.frame:Enable()
+            else
+                self.frame:Disable()
+            end
+
+        end,
     }
 
     --[[-----------------------------------------------------------------------------
@@ -290,7 +325,11 @@ function addon.ui.v2.RegisterRXPGuideConfiguratorOption()
         image:SetPoint("TOPLEFT", 12,  -15)
 
         local label = frame:CreateFontString(nil, "OVERLAY")
-        label:SetFont("Fonts\\FRIZQT__.TTF", 15, "")
+        if locale == "enUS" then
+            label:SetFont("Fonts\\FRIZQT__.TTF", 15, "")
+        else
+            label:SetFontObject(GameFontNormal)
+        end
 	    label:SetTextColor(unpack(addon.activeTheme.textColor))
         label:SetPoint("LEFT", image, "RIGHT", 12, 0)
         label:SetHeight(18)
@@ -312,7 +351,11 @@ function addon.ui.v2.RegisterRXPGuideConfiguratorOption()
         frame:SetPushedTexture(pushedHighlight)
 
         local description = frame:CreateFontString(nil, "OVERLAY")
-        description:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+        if locale == "enUS" then
+            description:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+        else
+            description:SetFontObject(GameFontNormal)
+        end
         description:SetJustifyH("LEFT")
 	    description:SetTextColor(186 / 255, 186 / 255, 186 / 255)
         description:SetPoint("TOPLEFT", frame, "TOPLEFT", 30, -30)
@@ -508,7 +551,11 @@ function addon.ui.v2.RegisterRXPGuideConfigurator()
         description:SetFontObject(GameFontNormal)
         description:SetPoint("BOTTOMLEFT", topLeftIcon, "BOTTOMRIGHT", 12, 6)
         description:SetTextColor(1, 1, 1)
-        description:SetFont(addon.font, 14, "")
+        if locale == "enUS" then
+            description:SetFont(addon.font, 14, "")
+        else
+            description:SetFontObject(GameFontNormal)
+        end
         description:SetText()
 
         local backButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
@@ -865,21 +912,29 @@ function addon.ui.v2:CreateConfigurator()
 
     local page1 = AceGUI:Create("RXPGuideConfiguratorPage1")
 
+    local groupDescription = L("This guide delivers the fastest path from level 1 to %s for every class and zone. Optimized for minimal downtime, it includes the best quest routes, grinding spots, and dungeon segments to reach max level quickly and efficiently.")
     local speedrunGroup = AceGUI:Create("RXPGuideConfiguratorOption")
     speedrunGroup:SetFullWidth(true)
     speedrunGroup:SetHeight(172)
     speedrunGroup:SetLabel(L("Select Speedrun Guide"))
-    speedrunGroup:SetDescription(L("This guide delivers the fastest path from level 1 to 70 for every class and zone. Optimized for minimal downtime, it includes the best quest routes, grinding spots, and dungeon segments to reach max level quickly and efficiently."))
+    speedrunGroup:SetDescription(string.format(groupDescription, addon.player.maxlevel))
     speedrunGroup:SetImage("Interface/AddOns/" .. addonName .. "/Textures/v2/configurator-speedrun-guide")
 
     page1:AddChild(speedrunGroup)
 
+    groupDescription = L("This guide delivers the safest path from level 1 to %s for every class and zone. Optimized for maximum survivability it includes the best quest routes, grinding spots, and dungeon segments to reach max level safely and efficiently.")
     local survivalGroup = AceGUI:Create("RXPGuideConfiguratorOption")
     survivalGroup:SetFullWidth(true)
     survivalGroup:SetHeight(172)
     survivalGroup:SetLabel(L("Select Survival Guide"))
-    survivalGroup:SetDescription(L("This guide delivers the safest path from level 1 to 70 for every class and zone. Optimized for maximum survivability it includes the best quest routes, grinding spots, and dungeon segments to reach max level safely and efficiently."))
+    survivalGroup:SetDescription(string.format(groupDescription, addon.player.maxlevel))
     survivalGroup:SetImage("Interface/AddOns/" .. addonName .. "/Textures/v2/configurator-survival-guide")
+
+    -- TODO removbe on release of zhCN survival guide
+    if locale == "zhCN" then
+        survivalGroup:SetEnabled(false)
+        survivalGroup:SetDescription("即将上线")
+    end
 
     page1:AddChild(survivalGroup)
 
@@ -907,7 +962,7 @@ function addon.ui.v2:CreateConfigurator()
     --TODO locale
     local pageDescriptions = {
         [2] = L("Select your preferred features to customize the guide. The leveling route automatically adapts to your choices."),
-        [3] = "Add dungeons to your journey. The guide will adjust to your selection accordingly and include dungeon quests to your route."
+        [3] = L"Add dungeons to your journey. The guide will adjust to your selection accordingly and include dungeon quests to your route."
     }
 
     local pageOptions = {
@@ -925,7 +980,7 @@ function addon.ui.v2:CreateConfigurator()
                 setting = 'enableGroupQuests'
             },
             {
-                icon = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
+                icon = addon.game == "CLASSIC" and "Interface\\Icons\\Ability_Vehicle_LaunchPlayer" or "Interface\\Icons\\Inv_misc_missilesmall_red",
                 label = L("Skip overleveled steps"),
                 tooltip = L("Skip steps you're overleveled for"),
                 setting = 'enableXpStepSkipping',
@@ -973,7 +1028,11 @@ function addon.ui.v2:CreateConfigurator()
 
         local settingDesc = AceGUI:Create("Label")
         settingDesc:SetRelativeWidth(0.95)
-        settingDesc:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+        if locale == "enUS" then
+            settingDesc:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
+        else
+            settingDesc:SetFontObject(GameFontNormal)
+        end
         settingDesc:SetColor(186 / 255, 186 / 255, 186 / 255)
 
         settingDesc:SetText('\n' .. description)
@@ -996,7 +1055,13 @@ function addon.ui.v2:CreateConfigurator()
                 data.frame = AceGUI:Create("RXPGuideConfiguratorSetting")
                 data.frame:SetFullWidth(true)
                 data.frame:SetSetting(data.profile or addon.settings.profile, data.setting, data.callback or nil)
-                data.frame:SetImage(data.icon)
+
+                if string.find(data.icon, "Interface\\ENCOUNTERJOURNAL") then
+                    data.frame:SetImage(data.icon, 0, 0.75, 0, 0.75)
+                else
+                    data.frame:SetImage(data.icon, 0, 1, 0, 1)
+                end
+
                 data.frame:SetLabel(data.label)
                 data.frame:SetTooltip(data.tooltip)
 

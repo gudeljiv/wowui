@@ -1,6 +1,8 @@
 local _,addon = ...
 if addon.gameVersion < 40000 or addon.player.faction == 'Horde' then return end
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
+
 #group RXP Cataclysm 1-80 (A) << cata
 #group RXP MoP 1-60 (A) << mop
 #cata
@@ -9,7 +11,9 @@ RXPGuides.RegisterGuide([[
 #version 1
 #next 6-9 Elwynn Forest
 #defaultfor Human !DK
+
 << Alliance
+
 step
     .goto 425,33.56,53.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marshal McBride|r
@@ -136,6 +140,7 @@ step
     .accept 29080 >>Accept Join the Battle! << !Human
     .target Marshal McBride
 --XX needs testing on non-human classes. Not needed for Monks/DKs
+
 step << Human Monk
     .goto 425/0,-212.100,-8907.400
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Bao|r
@@ -342,6 +347,10 @@ step << Human Hunter
     .turnin 26917 >>Turn in The Hunter's Path
     .accept 28780 >>Accept Join the Battle!
     .target Ashley Blank
+
+
+
+
 step
     .goto 425,35.73,39.80
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sergeant Willem|r
@@ -580,6 +589,7 @@ step
     .accept 2158 >>Accept Rest and Relaxation
     .target Falkhaan Isenstrider
 ]])
+
 RXPGuides.RegisterGuide([[
 #version 1
 #group RXP Cataclysm 1-80 (A) << cata
@@ -589,7 +599,9 @@ RXPGuides.RegisterGuide([[
 #name 6-9 Elwynn Forest
 #next 9-11 Dun Morogh
 #defaultfor Human/Dwarf/Gnome
+
 << Alliance
+
 step << Dwarf
 #xprate >1.19
     .goto 27,53.124,49.995
@@ -1355,6 +1367,7 @@ step << Human
     .turnin 112 >> Turn in Collecting Kelp
     .target William Pestle
     .isQuestComplete 112
+
 step << Human
 #xprate <1.2
     .goto 37,42.105,65.927
@@ -1444,6 +1457,7 @@ step << Human (Rogue/Paladin/Warrior)
 	.target Dungar Longdrink
     .zoneskip 27 --Dun Morogh
     .target Goss the Swift
+
 step << Dwarf/Gnome
 #completewith next
     .hs >> Hearth to Kharanos

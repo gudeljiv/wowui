@@ -1,6 +1,8 @@
 local _,addon = ...
 if addon.gameVersion < 40000 or addon.player.faction == 'Horde' then return end
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
+
 #version 1
 #group RXP Cataclysm 1-80 (A) << cata
 #group RXP MoP 1-60 (A) << mop
@@ -9,7 +11,11 @@ RXPGuides.RegisterGuide([[
 #name 20-25 Duskwood
 #displayname 21-26 Duskwood
 #next 25-30 Northern Stranglethorn
+
+
 <<Alliance
+
+
 step
     .goto 47,93.30,12.00
     .zone 47 >> Travel to Duskwood
@@ -73,6 +79,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Calor|r
     .accept 26688 >>Accept Worgen in the Woods
 	.target Calor
+
 step
     #optional
     #completewith Letters

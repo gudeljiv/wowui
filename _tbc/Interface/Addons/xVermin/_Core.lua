@@ -504,5 +504,4 @@ xVermin.SpellCooldown = function(spellID, spellName)
 
 	return 0
 end
-
 xSpellCooldown = xVermin.SpellCooldown

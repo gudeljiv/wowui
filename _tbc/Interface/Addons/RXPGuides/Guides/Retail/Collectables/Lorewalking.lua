@@ -1,12 +1,14 @@
 --Xal'atath
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #subgroup Lorewalking
 #name a) Xal'atath
 #displayname Xal'atath
 #next ab) Ethereals
+
 step << Alliance
     .isOnQuest 90705
     .goto 84,64.24,16.10,-1
@@ -24,10 +26,11 @@ step << Horde
     .turnin 90705 >>Turn in Lorewalking
     .target Lorewalker Cho
 step
+    #label LoreWalkingPrepStart
     .goto 85,54.19,56.75,-1 << Horde
     .goto 84,64.24,16.10,-1 << Alliance
     .goto 2339,49.6,31.63,-1
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lorewalker Cho|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lorewalker Cho|r
     .accept 84371 >>Accept Lorewalking: The Blade and the High Priest
     .skipgossipid 124311
     .choose 6403389
@@ -39,7 +42,7 @@ step
     .goto 2339,49.6,31.63,-1
     >>|cRXP_WARN_Wait for the Roleplay|r.
     .complete 84371,1 --1/1 Talk to Lorewalker Cho to learn about the Legion invasion
-    .target Lorewalker Cho 
+    .target Lorewalker Cho
 step
     .goto 85,54.19,56.75,-1 << Horde
     .goto 84,64.24,16.10,-1 << Alliance
@@ -198,6 +201,7 @@ step
     .cast 201904 >>Use the |cRXP_WARN_ExtraActionButton|r
     .timer 10,RP
 step
+    #label LoreWalkingPrepEnd
     .goto 20,58.79,76.87
     >>|cRXP_WARN_Wait for the Roleplay|r.
     .complete 40710,2 --1/1 Stop the Ritual and acquire the Blade
@@ -217,16 +221,16 @@ step
     .goto 20,58.79,76.87
     >>|cRXP_WARN_Wait for the Roleplay|r.
     .complete 84779,1 --1/1 Talk to Lorewalker Cho to learn of Xal'atath's gambit
-    .target Lorewalker Cho 
+    .target Lorewalker Cho
 step << Horde
     #completewith next
-    #label Every Little Death Helps H 
+    #label Every Little Death Helps H
     >>|TInterface/cursor/crosshair/interact.blp:20|tClick on |cRXP_PICK_Xal'atath, Blade of the Black Empire|r
     .accept 54118 >>Accept Every Little Death Helps
-step << Horde 
+step << Horde
     #completewith Every Little Death Helps H
     .goto 862,78.07,36.72
-    .exitvehicle >>|cRXP_WARN_Leave the vehicle|r 
+    .exitvehicle >>|cRXP_WARN_Leave the vehicle|r
     .macro Leave Vehicle,6656430 >>/leavevehicle
 step << Alliance
     #completewith next
@@ -383,7 +387,7 @@ step
     .complete 53762,2 --1/1 Toatana slain
     .complete 53762,3 --1/1 Retrieve the Tempest Caller
     .mob Toatana
-step << Alliance 
+step << Alliance
     #loop
     .goto 864,53.02,13.68,15,0
     .goto 864,52.55,14.2,10,0
@@ -403,12 +407,12 @@ step << Horde
     .turnin 53762 >>Turn in The Tempest Crown
     .target Xal'atath
     .accept 53763 >>Accept Twist the Knife
-step 
+step
     #completewith next
     #label Xal'atath found
     #hidewindow
     >>|cRXP_WARN_Wait for the Roleplay|r.
-    .complete 53763,1 << Horde --1/1 Xal'atath found 
+    .complete 53763,1 << Horde --1/1 Xal'atath found
     .complete 54126,1 << Alliance--1/1 Xal'atath found
 step
     #completewith Xal'atath found
@@ -419,7 +423,7 @@ step
 step << Horde
     #requires Xal'atath found
     >>|cRXP_WARN_Wait for the Roleplay|r.
-    .complete 53763,1 --1/1 Xal'atath found 
+    .complete 53763,1 --1/1 Xal'atath found
 step <<Alliance
     #requires Xal'atath found
     >>|cRXP_WARN_Wait for the Roleplay|r.
@@ -634,11 +638,13 @@ step
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #subgroup Lorewalking
 #name ab) Ethereals
 #displayname Ethereals
 #next ac) The Lich King
+
+
 step << Alliance
     .isOnQuest 90705
     .goto 84,64.24,16.10,-1
@@ -714,7 +720,7 @@ step
     .complete 10339,3 --2/2 Ethereum Researcher slain
     .mob +Ethereum Researcher
     .complete 10339,4 --1/1 Captain Zovax slain
-    .mob +Captain Zovax 
+    .mob +Captain Zovax
 -- step
 --     #completewith next
 --     #label Ethereum
@@ -728,7 +734,7 @@ step
 --     .cast 3365 >>Click on the |cRXP_PICK_Ethereum Transponder Zeta|r
 step
     .goto 109,56.82,38.70
-    *|TInterface/cursor/crosshair/interact.blp:20|tClick on the |cRXP_PICK_Ethereum Transponder Zeta|r if necessary, 
+    *|TInterface/cursor/crosshair/interact.blp:20|tClick on the |cRXP_PICK_Ethereum Transponder Zeta|r if necessary,
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to the |cRXP_FRIENDLY_Image of Commander Ameer|r
     .turnin 10339 >>Turn in The Ethereum
     .accept 10384 >>Accept Ethereum Data
@@ -745,7 +751,7 @@ step
     .accept 10385 >>Accept Potential for Brain Damage = High
 step
     #hidewindow
-    #completewith Ethereum Relay Data 
+    #completewith Ethereum Relay Data
     #loop
     .goto 109,56.49,41.09,40,0
     .goto 109,55.99,42.73,40,0
@@ -781,7 +787,7 @@ step
     .target Image of Commander Ameer
 step
     >>Escort and Protect |cRXP_FRIENDLY_Protectorate Demolitionist|r.
-    .complete 10406,1 --Sabotage 
+    .complete 10406,1 --Sabotage
     .target Protectorate Demolitionist
     .mob Ethereum Archon
     .mob Ethereum Overlord
@@ -1056,6 +1062,10 @@ step
     .turnin 47219 >>Turn in A Vessel Made Ready
     .timer 5,Alleria Roleplay
     .target Alleria Windrunner
+
+
+
+
 -
 step
     .goto 882,37.13,52.32
@@ -1623,7 +1633,7 @@ step
     .target Projection of Ve'nari
 step
     .goto 1543,61.67,59.1
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lorewalker Cho|r   
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lorewalker Cho|r
     .complete 85028,14 --1/1 Thank Lorewalker Cho
     .skipgossipid 125268
     .target Lorewalker Cho
@@ -1682,11 +1692,12 @@ step
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #subgroup Lorewalking
 #name ac) The Lich King
 #displayname The Lich King
 #next ad) The Elves of Quel'Thalas
+
 step << Alliance
     .isOnQuest 90705
     .goto 84,64.24,16.10,-1
@@ -2099,11 +2110,12 @@ step
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
-#group RestedXP Collectables
+#group RestedXP Miscellaneous
 #subgroup Lorewalking
 #name ad) The Elves of Quel'Thalas
 #displayname The Elves of Quel'Thalas
 #next a) Xal'atath
+
 step << Alliance
     .isOnQuest 90705
     .goto 84,64.24,16.10,-1
@@ -2161,7 +2173,7 @@ step
     >>|TInterface/cursor/crosshair/interact.blp:20|tClick on the |cRXP_PICK_Lamp|r
     .complete 53882,1 --1/1 Light the First Flame
 step
-    #include RestedXP Collectables\a) Blood Elf Heritage Armor2@Writing on the Wall-Writing on the Wall2
+    #include RestedXP Collectables\a) Blood Elf Heritage Armor@Writing on the Wall-Writing on the Wall2
 step
     .goto 95,37.47,64.57
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lor'themar Theron|r |cRXP_WARN_next to you|r
@@ -2185,7 +2197,7 @@ step
     >>Use your [ExtraActionButton] on the illuminated spot.
     .complete 53737,1 --1/1 Light shed at Sylvanas' fall
 step
-    #include RestedXP Collectables\a) Blood Elf Heritage Armor2@TheDayHopeDiedStart-TheDayHopeDiedEnd
+    #include RestedXP Collectables\a) Blood Elf Heritage Armor@TheDayHopeDiedStart-TheDayHopeDiedEnd
 step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lor'themar Theron|r |cRXP_WARN_next to you|r.
     .turnin 53737 >>Turn in The Day Hope Died
@@ -2197,7 +2209,7 @@ step
     .skipgossipid 136429
     .target Cho
 step
-    #include RestedXP Collectables\a) Blood Elf Heritage Armor2@SunwellStart1-SunwellEnd1
+    #include RestedXP Collectables\a) Blood Elf Heritage Armor@SunwellStart1-SunwellEnd1
 step
     .goto 85,54.35,56.66,-1
     .goto 84,64.19,16.26,-1
@@ -2222,7 +2234,7 @@ step
     .complete 85254,2 --1/1 Accept "Remember the Sunwell" from Lady Liadrin
     .target Lady Liadrin
 step
-    #include RestedXP Collectables\a) Nightborne Unlock2@RemembertheSunwellStart-RemembertheSunwellEnd
+    #include RestedXP Collectables\a) Nightborne Unlock@RemembertheSunwellStart-RemembertheSunwellEnd
 step
     .goto 110,58.47,19.11
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lady Liadrin|r
@@ -2236,7 +2248,7 @@ step
     .skipgossipid 136404
     .target Cho
 step
-    #include RestedXP Collectables\a) Void Elf Unlock2@SanctumoftheMoonStart-SanctumoftheMoonEnd
+    #include RestedXP Collectables\a) Void Elf Unlock@SanctumoftheMoonStart-SanctumoftheMoonEnd
 step
     .isOnQuest 49787
     .goto 95,46.5,56.74
@@ -2248,7 +2260,7 @@ step
     .isOnQuest 49787
     .cast 258931 >>Jump and click on the |cRXP_PICK_Teleportation Console|r midair.
 step
-    #include RestedXP Collectables\a) Void Elf Unlock2@SanctumoftheMoonStart2-SanctumoftheMoonEnd2
+    #include RestedXP Collectables\a) Void Elf Unlock@SanctumoftheMoonStart2-SanctumoftheMoonEnd2
 step
     #completewith next
     #label Telogrus Rift1
@@ -2280,6 +2292,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Speed Leveling
 #name a) War Within Recap
 #internal
+
 step
     .goto 2112,59.55,41.46
     .accept 72560 >>Accept Climbing

@@ -429,6 +429,12 @@ function NeedsFoodBadly.BetterPetFood(a, b)
 		return false
 	end
 
+	local aLvl = select(4, GetItemInfo(a.id)) or 0
+	local bLvl = select(4, GetItemInfo(b.id)) or 0
+
+	if aLvl ~= bLvl then
+		return aLvl <= bLvl
+	end
 	return GetItemCount(a.id) <= GetItemCount(b.id)
 end
 

@@ -1,8 +1,11 @@
 local faction = UnitFactionGroup("player")
 if faction == "Horde" then return end
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 << Alliance
 #name 1-6 Northshire
 #version 1
@@ -66,7 +69,7 @@ step << Warrior
     .train 6673 >>Train |T132333:0|t[Battle Shout]
     .target +Llane Beshere
     .goto Elwynn Forest,50.242,42.287
-    .mob Young Wolf   
+    .mob Young Wolf
 step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marshal McBride|r
     .target Marshal McBride
@@ -361,9 +364,12 @@ step
     .goto Elwynn Forest,45.563,47.742
     .accept 2158 >> Accept Rest and Relaxation
 ]])
+
+
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 #era/som
 << Alliance
 #name 6-11 Elwynn Forest
@@ -1629,6 +1635,7 @@ step
     .target Auctioneer Lympkin
     .target Auctioneer Redmuse
     .target Auctioneer Buckler
+
 step << skip
     #sticky
     #som
@@ -1641,6 +1648,7 @@ step << skip
     #completewith next
     .goto Dun Morogh,53.5,34.9,100 >>Run out of Ironforge
     >>Equip your level 3 thrown << Warrior
+
 step
 	.goto Dun Morogh,53.5,34.9,60,0
     .goto Dun Morogh,52.251,37.592,150 >> Exit Ironforge
@@ -1840,9 +1848,11 @@ step
 step
     .goto Dun Morogh,84.4,31.1,25 >> Travel to Loch Modan
 ]])
+
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 #era/som--h
 << Alliance
 #name 11-13 Loch Modan
@@ -1851,6 +1861,7 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 #defaultfor Human
 #next 13-15 Westfall
+
 step
     #completewith next
     .goto Loch Modan,24.134,18.208

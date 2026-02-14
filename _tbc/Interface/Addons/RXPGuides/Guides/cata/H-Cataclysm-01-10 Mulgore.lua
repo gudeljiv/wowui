@@ -1,5 +1,7 @@
 local _,addon = ...
 if addon.gameVersion < 40000 or addon.player.faction == 'Alliance' then return end
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #cata
 #mop
@@ -8,10 +10,12 @@ RXPGuides.RegisterGuide([[
 #next 6-10 Mulgore
 #version 1
 --#group RXP Cataclysm (H) << cata
+
 #defaultfor Tauren
 #group RXP Cataclysm 1-80 (H) << cata
 #group RXP MoP 1-60 (H) << mop
 #subweight 10000
+
 step << !Tauren
     #completewith next
     +|cRXP_WARN_You have selected a guide meant for Tauren. We do not recommend doing this zone due to there being race-gated quests for Tauren only. It is recommended you choose the same starter zone that you start in|r
@@ -346,6 +350,7 @@ step
     .accept 11129 >>Accept Kyle's Gone Missing!
     .target Ahab Wheathoof
     ]])
+
 RXPGuides.RegisterGuide([[
 #cata
 #mop
@@ -354,10 +359,13 @@ RXPGuides.RegisterGuide([[
 #next 10-22 Azshara
 #version 1
 --#group RXP Cataclysm (H) << cata
+
 #defaultfor Tauren
 #group RXP Cataclysm 1-80 (H) << cata
 #group RXP MoP 1-60 (H) << mop
 #subweight 10000
+
+
 step
     .goto 7,48.35,53.10
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ahab|r

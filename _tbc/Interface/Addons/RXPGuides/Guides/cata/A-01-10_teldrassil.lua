@@ -1,5 +1,6 @@
 local _,addon = ...
 if addon.gameVersion < 40000 or addon.player.faction == 'Horde' then return end
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #version 1
 #group RXP Cataclysm 1-80 (A) << cata
@@ -328,7 +329,9 @@ step
     .accept 2159 >>Accept Dolanaar Delivery
 	.target Porthannius
 ]])
+
 RXPGuides.RegisterGuide([[
+
 #version 1
 #group RXP Cataclysm 1-80 (A) << cata
 #group RXP MoP 1-60 (A) << mop
@@ -337,7 +340,9 @@ RXPGuides.RegisterGuide([[
 #name 6-10 Teldrassil
 #next 10-18 Darkshore
 #defaultfor NightElf
+
 <<Alliance
+
 step
     .goto 57,59.56,49.09
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zenn Foulhoof|r
@@ -975,6 +980,7 @@ step
     .target Corithras Moonrage
     .turnin 7383 >>Turn in Teldrassil: The Burden of the Kaldorei
     .accept 933 >>Accept Teldrassil: The Coming Dawn << skip
+
 --skipping following chain. very long rp / bad xphr
 step << skip
     .goto 57,43.939,58.534

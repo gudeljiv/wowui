@@ -1,8 +1,11 @@
 local faction = UnitFactionGroup("player")
 if faction == "Horde" then return end
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 << Alliance
 #name 1-6 Shadowglen
 #version 1
@@ -293,9 +296,11 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Porthannius|r
     .accept 2159 >> Accept Dolanaar Delivery
 ]])
+
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 << Alliance
 #name 6-11 Teldrassil
 #version 1

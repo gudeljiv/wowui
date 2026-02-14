@@ -115,7 +115,7 @@ function addon.settings.ChatCommand(input)
         addon.settings:EnableFramePreviews()
     elseif input == "help" then
         addon.comms.PrettyPrint(_G.HELP .. "\n" ..
-                                    addon.help["What are command the line options?"])
+                                    addon.help[L"What are command the line options?"])
     else
         addon.settings.OpenSettings()
     end
@@ -170,6 +170,7 @@ local settingsDBDefaults = {
 
         -- Targeting
         enableTargetAutomation = true,
+        enableMaxNameplateDistance = true,
         enableTargetMacro = true,
         notifyOnTargetUpdates = true,
 
@@ -253,6 +254,9 @@ function addon.settings:InitializeDatabase()
     settingsDB.RegisterCallback(self, "OnProfileReset", "ResetProfile")
     self.profile = settingsDB.profile
     loadedProfileKey = settingsDB.keys.profile
+    if addon.GetQuestDBDefaults then
+        addon.GetQuestDBDefaults()
+    end
 end
 
 function addon.settings:InitializeSettings()
@@ -274,7 +278,7 @@ function addon.settings:MigrateLegacySettings()
     local db = addon.settings.profile
     local pp = addon.comms.PrettyPrint
     local function n(t, v)
-        if d then pp(fmt("Migrating %s = %s", t, tostr(v))) end
+        if d then pp(fmt(L"Migrating %s = %s", t, tostr(v))) end
     end
 
     db.minimap.show = nil
@@ -438,7 +442,7 @@ function addon.settings:MigrateProfile()
         -- Already migrated a character with current profile name
         if p[profileKey] and p[profileKey].migrated then
             addon.comms.PrettyDebug(
-                "Character profile (%s) already migrated", profileKey)
+                L"Character profile (%s) already migrated", profileKey)
         else
             p[profileKey] = _G.RXPCSettings.profiles[profileKey]
             p[profileKey].migrated = true
@@ -497,7 +501,7 @@ function addon.settings.GetImportedGuides()
         return display
     else
         addon.settings.gui.selectedDeleteGuide = "none"
-        return {none = "none"}
+        return {none = L"none"}
     end
 
 end
@@ -509,7 +513,7 @@ function addon.settings:UpdateImportStatusHistory(data, ...)
         tinsert(self.gui.importStatusHistory, 1, fmt(data, ...))
     end
 
-    AceConfigRegistry:NotifyChange(addon.title .. "/Import")
+    AceConfigRegistry:NotifyChange(addon.RXPOptions.name .. "/Import")
 end
 
 --importCache.widget.obj.button:GetScript("OnClick")
@@ -538,7 +542,7 @@ _G.StaticPopupDialogs["RXP_Import"] = {
     OnShow = function(self)
         local text = getglobal(self:GetName() .. "Text")
         local n = #strbuffer
-        text:SetText(fmt("Press Ctrl+V to paste a piece of the string (%d)\nPress ESC to cancel\n\nThis process is slow and should only be used if your operating system have clipboard length restrictions",n))
+        text:SetText(fmt(L"Press Ctrl+V to paste a piece of the string (%d)\nPress ESC to cancel\n\nThis process is slow and should only be used if your operating system have clipboard length restrictions",n))
     end,
     EditBoxOnEscapePressed = function(self)
         self:GetParent():Hide()
@@ -555,7 +559,7 @@ _G.StaticPopupDialogs["RXP_Import"] = {
         if n > 0 or header then
             table.insert(strbuffer,text)
         else
-            addon.comms.PrettyPrint('Import Error - Invalid String Header')
+            addon.comms.PrettyPrint(L'Import Error - Invalid String Header')
             addon.settings.OpenSettings('Import')
             return
         end
@@ -672,8 +676,8 @@ function addon.settings:CreateImportOptionsPanel()
                 type = 'execute',
                 name = L("Purge All Data"),
                 confirm = function()
-                    return L(
-                               "This action will remove ALL guides from the database\nAre you sure?")
+                    return
+                               L"This action will remove ALL guides from the database\nAre you sure?"
                 end,
                 --[[disabled = function()
                     return next(addon.db.profile.guides) == nil
@@ -684,6 +688,9 @@ function addon.settings:CreateImportOptionsPanel()
                     addon.settings.profile.skipQuest = {}
                     addon.settings.profile.questPrio = {}
                     addon.settings.profile.questPrioIndex = {}
+                    addon.db.profile.guideId = nil
+                    addon.db.profile.guideLength = nil
+                    addon.db.profile.guideContent = nil
                     addon:CreateMetaDataTable(true)
                 end
             },
@@ -771,8 +778,8 @@ function addon.settings:CreateImportOptionsPanel()
     iconFrameParent.icon:SetPoint("TOPRIGHT", -5, -5)
 
     if notOnline() then
-        self:UpdateImportStatusHistory(L(
-                                           "Battle.net unreachable, please exit your client, restart Battle.net, and try again"))
+        self:UpdateImportStatusHistory(
+                                           L"Battle.net unreachable, please exit your client, restart Battle.net, and try again")
     end
 
     local function EditBoxHook(this)
@@ -790,13 +797,13 @@ function addon.settings:CreateImportOptionsPanel()
     function ProcessBuffer(this)
         importCache.bufferString = table.concat(importCache.bufferData)
         if #importCache.bufferString > 500 then
-            addon.settings:UpdateImportStatusHistory(L(
-                                                         "Loaded %d characters into import buffer, %d shown"),
+            addon.settings:UpdateImportStatusHistory(
+                                                         L"Loaded %d characters into import buffer, %d shown",
                                                      #importCache.bufferString,
                                                      500)
         else
-            addon.settings:UpdateImportStatusHistory(L(
-                                                         "Loaded %d characters into import buffer"),
+            addon.settings:UpdateImportStatusHistory(
+                                                         L"Loaded %d characters into import buffer",
                                                      #importCache.bufferString)
         end
         if this then
@@ -925,7 +932,7 @@ function addon.settings:CreateAceOptionsPanel()
                 func = function ()
                     addon.ui.v2.LaunchConfigurator()
                 end,
-                hidden = not (addon.ui and addon.ui.v2)
+                hidden = not (addon.ui and addon.ui.v2 and (addon.gameVersion < 30000))
             },
             generalSettings = {
                 type = "group",
@@ -946,16 +953,16 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     lockFrames = {
                         name = L("Lock Frames"),
-                        desc = L(
-                            "Disable dragging/resizing, use alt+left click on the main window to resize it"),
+                        desc =
+                            L"Disable dragging/resizing, use alt+left click on the main window to resize it",
                         type = "toggle",
                         width = optionsWidth,
                         order = 1.2
                     },
                     hideInRaid = {
                         name = L("Autohide in Raids"), -- TODO locale
-                        desc = L(
-                            "Automatically hide when in a raid, and unhide when you leave a raid"),
+                        desc =
+                            L"Automatically hide when in a raid, and unhide when you leave a raid",
                         type = "toggle",
                         width = optionsWidth,
                         order = 1.3,
@@ -1042,12 +1049,12 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     enableVendorTreasure = {
                         name = fmt('%s %s', _G.ENABLE, L("Vendor Treasures")),
-                        desc = L(
-                            "Enable embedded Cpt. Stadics' Vendor Treasures"),
+                        desc =
+                            L"Enable embedded Cpt. Stadics' Vendor Treasures",
                         type = "toggle",
                         width = optionsWidth,
                         order = 2.5,
-                        hidden = addon.game ~= "CLASSIC"
+                        hidden = not addon.VendorTreasures
                     },
                     showFlightTimers = {
                         name = L("Show Flight Timers"),
@@ -1109,48 +1116,48 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     enableQuestAutomation = {
                         name = L("Quest auto accept/turn in"),
-                        desc = L(
-                            "Holding the Control key modifier also toggles the quest auto accept feature on and off"),
+                        desc =
+                            L"Holding the Control key modifier also toggles the quest auto accept feature on and off",
                         type = "toggle",
                         width = optionsWidth,
                         order = 4.1
                     },
                     enableQuestRewardAutomation = { -- Hard-coded .turnin reward choices
                         name = L("Quest auto rewards"), -- TODO locale
-                        desc = L(
-                            "Allows guides to choose quest rewards automatically"),
+                        desc =
+                            L"Allows guides to choose quest rewards automatically",
                         type = "toggle",
                         width = optionsWidth,
                         order = 4.2
                     },
                     enableTrainerAutomation = {
                         name = L("Trainer automation"),
-                        desc = L(
-                            "Allows the guide to buy useful leveling spells automatically"),
+                        desc =
+                            L"Allows the guide to buy useful leveling spells automatically",
                         type = "toggle",
                         width = optionsWidth,
                         order = 4.4
                     },
                     enableFPAutomation = {
                         name = L("Flight Path automation"),
-                        desc = L(
-                            "Allows the guide to automatically fly you to your destination"),
+                        desc =
+                            L"Allows the guide to automatically fly you to your destination",
                         type = "toggle",
                         width = optionsWidth,
                         order = 4.5
                     },
                     enableBindAutomation = {
                         name = L("Innkeeper Bind automation"), -- TODO locale
-                        desc = L(
-                            "Allows the guide to automatically set your home at an Innkeeper"),
+                        desc =
+                            L"Allows the guide to automatically set your home at an Innkeeper",
                         type = "toggle",
                         width = optionsWidth,
                         order = 4.6
                     },
                     enableGossipAutomation = {
                         name = L("Skip Gossip"), -- TODO locale
-                        desc = L(
-                            "Allows the guide to automatically skip gossip for NPCs"),
+                        desc =
+                            L"Allows the guide to automatically skip gossip for NPCs",
                         type = "toggle",
                         width = optionsWidth,
                         order = 4.7
@@ -1379,8 +1386,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     xprate = {
                         name = L("Experience rates"),
-                        desc = L(
-                            "Adjusts the guide routes to match increased xp rate bonuses"),
+                        desc =
+                            L"Adjusts the guide routes to match increased xp rate bonuses",
                         type = "range",
                         width = optionsWidth,
                         order = 1.2,
@@ -1389,8 +1396,8 @@ function addon.settings:CreateAceOptionsPanel()
                         step = 0.05,
                         isPercent = true,
                         confirm = function()
-                            return L(
-                                       "Notice: Changing experience rates beyond 1x may cause some chapters to become hidden and certain steps may automatically skip as you out level them") -- TODO locale
+                            return
+                                       L"Notice: Changing experience rates beyond 1x may cause some chapters to become hidden and certain steps may automatically skip as you out level them" -- TODO locale
                         end,
                         set = function(info, value)
                             SetProfileOption(info, value)
@@ -1409,8 +1416,8 @@ function addon.settings:CreateAceOptionsPanel()
                         width = optionsWidth * 2,
                         order = 1.3,
                         confirm = function()
-                            return L(
-                                       "Warning: Changing this setting mid-guide may cause quest pre-requisite failures.\nGuides were optimized for experience, disabling this option will result in a disjointed guide steps.") -- TODO locale
+                            return
+                                       L"Warning: Changing this setting mid-guide may cause quest pre-requisite failures.\nGuides were optimized for experience, disabling this option will result in a disjointed guide steps." -- TODO locale
                         end,
                         set = function(info, value)
                             SetProfileOption(info, value)
@@ -1422,7 +1429,7 @@ function addon.settings:CreateAceOptionsPanel()
                     enableGroupQuests = {
                         name = L("Show Group Quests"),
                         desc = function()
-                            local out = L "Guides that support this feature:\n"
+                            local out = L"Guides that support this feature:\n"
                             for guide in pairs(
                                              RXPCData.guideMetaData
                                                  .enableGroupQuests) do
@@ -1446,8 +1453,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     soloSelfFound = {
                         name = L("Solo Self Found Mode"),
-                        desc = L(
-                            "If this option is enabled, it disables all steps involving trading or Auction House"),
+                        desc =
+                            L"If this option is enabled, it disables all steps involving trading or Auction House",
                         type = "toggle",
                         width = optionsWidth,
                         order = 1.5,
@@ -1466,8 +1473,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     northrendLM = {
                         name = L("Northrend Loremaster"),
-                        desc = L(
-                            "Adjust the routes to include almost every quest in the Northrend zones"),
+                        desc =
+                            L"Adjust the routes to include almost every quest in the Northrend zones",
                         type = "toggle",
                         width = optionsWidth,
                         order = 2.1,
@@ -1479,8 +1486,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     loremasterMode = {
                         name = L("Loremaster Mode"),
-                        desc = L(
-                            "Adjust the routes to include more quests"),
+                        desc =
+                            L"Adjust the routes to include more quests",
                         type = "toggle",
                         width = optionsWidth,
                         order = 2.11,
@@ -1492,8 +1499,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     chromieTime = {
                         name = L("Show Chromie Time Guides"),
-                        desc = L(
-                            "Enables or disables the chromie time guides. Note that freshly created accounts without a level 60 character cannot access chromie time"),
+                        desc =
+                            L"Enables or disables the chromie time guides. Note that freshly created accounts without a level 60 character cannot access chromie time",
                         type = "select",
                         values = {
                             auto = "Automatic",
@@ -1507,8 +1514,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     phase = {
                         name = L("Content phase"),
-                        desc = L(
-                            "Adjusts the guide routes to match the content phase\nPhase 2: Dire Maul quests\nPhase 3: 100% quest XP (SoM)\nPhase 4: ZG/Silithus quests\nPhase 5: AQ quests\nPhase 6: Eastern Plaguelands quests"),
+                        desc =
+                            L"Adjusts the guide routes to match the content phase\nPhase 2: Dire Maul quests\nPhase 3: 100% quest XP (SoM)\nPhase 4: ZG/Silithus quests\nPhase 5: AQ quests\nPhase 6: Eastern Plaguelands quests",
                         type = "range",
                         width = optionsWidth,
                         order = 2.3,
@@ -1527,8 +1534,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     hardcore = {
                         name = L("Hardcore mode"),
-                        desc = L(
-                            "Adjust the leveling routes to the deathless ruleset"),
+                        desc =
+                            L"Adjust the leveling routes to the deathless ruleset",
                         type = "toggle",
                         width = optionsWidth,
                         order = 2.4,
@@ -1544,8 +1551,8 @@ function addon.settings:CreateAceOptionsPanel()
                             return addon.settings.profile.enableAutomaticXpRate
                         end,]]
                         name = L("Season"),
-                        desc = L(
-                            "Adjust the leveling routes to the current season"),
+                        desc =
+                            L"Adjust the leveling routes to the current season",
                         type = "select",
                         values = {[0] = L"None", [1] = L"Season of Mastery", [2] = L"Season of Discovery"},
                         --sorting = {0, 1, 2},
@@ -1556,6 +1563,26 @@ function addon.settings:CreateAceOptionsPanel()
                             addon.ReloadGuide()
                             addon.RXPFrame.GenerateMenuTable()
                         end
+                    },
+                    multibox = {
+                        name = L("Multibox mode"),
+                        desc = function()
+                            local out =
+                                L"Removes sections that require attention from all clients\nGuides that support this feature:\n"
+                            for guide in pairs(
+                                             RXPCData.guideMetaData.multibox) do
+                                out = fmt("%s\n%s", out, guide)
+                            end
+                            return out
+                        end,
+                        type = "toggle",
+                        width = optionsWidth,
+                        order = 2.4,
+                        set = function(info, value)
+                            SetProfileOption(info, value)
+                            addon.RenderFrame()
+                        end,
+                        hidden = addon.game ~= "RETAIL" or not next(RXPCData.guideMetaData.multibox)
                     },
                     dungeonsHeader = {
                         name = _G.DUNGEONS,
@@ -1596,7 +1623,7 @@ function addon.settings:CreateAceOptionsPanel()
                         name = _G.LFG_LIST_SELECT .. ' ' ..  _G.DUNGEONS,
                         desc = function()
                             local out =
-                                L "Routes in quests for the selected dungeon\nGuides that support this feature:\n"
+                                L"Routes in quests for the selected dungeon\nGuides that support this feature:\n"
                             for guide in pairs(
                                              RXPCData.guideMetaData.dungeonGuides) do
                                 out = fmt("%s\n%s", out, guide)
@@ -1630,7 +1657,7 @@ function addon.settings:CreateAceOptionsPanel()
                         name = L("Professions"),
                         desc = function()
                             local out =
-                                L "Level professions along with the guide\nGuides that support this feature:\n"
+                                L"Level professions along with the guide\nGuides that support this feature:\n"
                             for guide in pairs(
                                              RXPCData.guideMetaData.professionGuides) do
                                 out = fmt("%s\n%s", out, guide)
@@ -1718,6 +1745,16 @@ function addon.settings:CreateAceOptionsPanel()
                                 not InCombatLockdown() then
                                 addon.targeting.activeTargetFrame:Hide()
                             end
+                        end
+                    },
+                    enableMaxNameplateDistance = {
+                        name = L("Maximize Nameplate Distance"),
+                        desc = L("Automatically maximize nameplate visibility distance for better target detection (Requires reload)"),
+                        type = "toggle",
+                        width = optionsWidth,
+                        order = 0.1,
+                        disabled = function()
+                            return not self.profile.enableTargetAutomation
                         end
                     },
                     markersHeader = {
@@ -1825,8 +1862,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     showTargetingOnProximity = {
                         name = L("Only show when in range"),
-                        desc = L(
-                            "Check if targets are nearby\nWarning: This relies on ADDON_ACTION_FORBIDDEN errors from TargetUnit() to function."),
+                        desc =
+                            L"Check if targets are nearby\nWarning: This relies on ADDON_ACTION_FORBIDDEN errors from TargetUnit() to function.",
                         type = "toggle",
                         width = optionsWidth * 2,
                         order = 3.11,
@@ -1943,8 +1980,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     flashOnFind = {
                         name = L("Flash Client Icon"), -- TODO locale
-                        desc = L(
-                            "Flashes the game icon on taskbar when enemy target found"),
+                        desc =
+                            L"Flashes the game icon on taskbar when enemy target found",
                         type = "toggle",
                         width = optionsWidth,
                         order = 4.1,
@@ -1956,8 +1993,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     enableTargetingFlash = {
                         name = _G.SHOW_FULLSCREEN_STATUS_TEXT,
-                        desc = L(
-                            "Flashes the screen corners when enemy target found"),
+                        desc =
+                            L"Flashes the screen corners when enemy target found",
                         type = "toggle",
                         width = optionsWidth * 2,
                         order = 4.2,
@@ -1974,17 +2011,17 @@ function addon.settings:CreateAceOptionsPanel()
                         width = optionsWidth,
                         order = 4.3,
                         values = {
-                            ["none"] = "none",
-                            [3175] = "Map Ping",
-                            [11773] = "War Drums",
-                            [8959] = "Raid Warning",
-                            [5274] = "Auction Window Open",
-                            [17318] = "LFG Dungeon Ready",
-                            [9378] = "PVP Flag Taken",
+                            ["none"] = L"none",
+                            [3175] = L"Map Ping",
+                            [11773] = L"War Drums",
+                            [8959] = L"Raid Warning",
+                            [5274] = L"Auction Window Open",
+                            [17318] = L"LFG Dungeon Ready",
+                            [9378] = L"PVP Flag Taken",
                             [8960] = _G.QUEUED_STATUS_READY_CHECK_IN_PROGRESS,
-                            [9374] = "PVP Flag Captured",
-                            [9375] = "PVP Warning",
-                            [180461] = "Fel Reaver"
+                            [9374] = L"PVP Flag Captured",
+                            [9375] = L"PVP Warning",
+                            [180461] = L"Fel Reaver"
                         },
                         disabled = function()
                             return not self.profile.enableTargetAutomation or
@@ -2042,10 +2079,10 @@ function addon.settings:CreateAceOptionsPanel()
                         end
                     },
                     openTrackerReportOnCharOpen = {
-                        name = L(
-                            "Always Open Leveling Report With Character Panel"),
-                        desc = L(
-                            "Enables the RestedXP Leveling Report when you open your character panel"),
+                        name =
+                            L"Always Open Leveling Report With Character Panel",
+                        desc =
+                            L"Enables the RestedXP Leveling Report when you open your character panel",
                         type = "toggle",
                         width = "full",
                         order = 1.1,
@@ -2058,8 +2095,8 @@ function addon.settings:CreateAceOptionsPanel()
                     enableLevelingReportInspections = {
                         name = L("Enable Leveling Report Inspections") ..
                             " (Beta)",
-                        desc = L(
-                            "Send or receive inspection requests for other Leveling Reports"),
+                        desc =
+                            L"Send or receive inspection requests for other Leveling Reports",
                         type = "toggle",
                         width = "full",
                         order = 1.2,
@@ -2181,8 +2218,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     levelSplitsOpacity = {
                         name = L("Level Splits Opacity"),
-                        desc = L(
-                            "Lower number to make Level Splits more transparent"),
+                        desc =
+                            L"Lower number to make Level Splits more transparent",
                         type = "range",
                         width = optionsWidth,
                         order = 2.7,
@@ -2367,8 +2404,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     enableDrowningScreenFlash = {
                         name = _G.SHOW_FULLSCREEN_STATUS_TEXT,
-                        desc = L(
-                            "Flashes the screen corners when in danger of drowning"),
+                        desc =
+                            L"Flashes the screen corners when in danger of drowning",
                         type = "toggle",
                         width = optionsWidth,
                         order = 2.4,
@@ -2418,8 +2455,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     enableEmergencyScreenFlash = {
                         name = _G.SHOW_FULLSCREEN_STATUS_TEXT,
-                        desc = L(
-                            "Flashes the screen corners when an emergency action is recommended"), -- TODO locale
+                        desc =
+                            L"Flashes the screen corners when an emergency action is recommended", -- TODO locale
                         type = "toggle",
                         width = optionsWidth,
                         order = 3.4,
@@ -2439,8 +2476,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     showDangerousMobsMap = {
                         name = L("Track Mobs on Map"), -- TODO locale
-                        desc = L(
-                            "Displays dangerous mobs and patrols on your map (WIP)"),
+                        desc =
+                            L"Displays dangerous mobs and patrols on your map (WIP)",
                         type = "toggle",
                         width = optionsWidth,
                         order = 4.1,
@@ -2458,8 +2495,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     showDangerousUnitscan = {
                         name = L("Scan for dangerous mobs"), -- TODO locale
-                        desc = L(
-                            "Displays dangerous mobs and patrols on the targeting window (WIP)"),
+                        desc =
+                            L"Displays dangerous mobs and patrols on the targeting window (WIP)",
                         type = "toggle",
                         width = optionsWidth,
                         order = 4.2,
@@ -2531,7 +2568,8 @@ function addon.settings:CreateAceOptionsPanel()
                         end
                     },
                     itemUpgradesHeader = {
-                        name = _G.ITEM_UPGRADE,
+                        name = addon.player.level ~= _G.GetMaxPlayerLevel() and
+                            _G.ITEM_UPGRADE or fmt("%s - %s", _G.ITEM_UPGRADE, _G.GUILD_RECRUITMENT_MAXLEVEL),
                         type = "header",
                         width = "full",
                         order = 5.0,
@@ -2555,8 +2593,7 @@ function addon.settings:CreateAceOptionsPanel()
                         end,
                         disabled = function()
                             return not self.profile.enableTips or
-                                       UnitLevel("player") ==
-                                       GetMaxPlayerLevel()
+                                       addon.player.level == addon.player.maxlevel
                         end
                     },
                     itemUpgradeSpec = {
@@ -2582,8 +2619,7 @@ function addon.settings:CreateAceOptionsPanel()
                         disabled = function()
                             return not (self.profile.enableTips and
                                        self.profile.enableItemUpgrades) or
-                                       UnitLevel("player") ==
-                                       GetMaxPlayerLevel() or
+                                       addon.player.level == addon.player.maxlevel or
                                        addon.itemUpgrades:GetSpecWeights() ==
                                        nil
                         end
@@ -2599,7 +2635,7 @@ function addon.settings:CreateAceOptionsPanel()
                         disabled = function()
                             return not (self.profile.enableTips and
                                        self.profile.enableItemUpgrades) or
-                                       UnitLevel("player") == GetMaxPlayerLevel()
+                                       addon.player.level == addon.player.maxlevel
                         end
                     },
                     enableQuestChoiceRecommendation = {
@@ -2614,13 +2650,13 @@ function addon.settings:CreateAceOptionsPanel()
                         disabled = function()
                             return not (self.profile.enableTips and
                                        self.profile.enableItemUpgrades) or
-                                       UnitLevel("player") == GetMaxPlayerLevel()
+                                       addon.player.level == addon.player.maxlevel
                         end
                     },
                     enableQuestChoiceAutomation = {
                         name = L("Quest Reward Automation"), -- TODO locale
-                        desc = L(
-                            "Automatically chooses the best calculated quest reward"),
+                        desc =
+                            L"Automatically chooses the best calculated quest reward",
                         type = "toggle",
                         width = optionsWidth * 1.5,
                         order = 5.5,
@@ -2631,7 +2667,7 @@ function addon.settings:CreateAceOptionsPanel()
                             return not (self.profile.enableTips and
                                        self.profile.enableItemUpgrades and
                                        self.profile.enableQuestChoiceRecommendation) or
-                                       UnitLevel("player") == GetMaxPlayerLevel()
+                                       addon.player.level == addon.player.maxlevel
                         end
                     },
                     enableItemUpgradesAH = {
@@ -2647,7 +2683,7 @@ function addon.settings:CreateAceOptionsPanel()
                         disabled = function()
                             return not (self.profile.enableTips and
                                        self.profile.enableItemUpgrades) or
-                                       UnitLevel("player") == GetMaxPlayerLevel()
+                                       addon.player.level == addon.player.maxlevel
                         end,
                         set = function(info, value)
                             SetProfileOption(info, value)
@@ -2899,8 +2935,8 @@ function addon.settings:CreateAceOptionsPanel()
                         order = 1.92
                     },
                     previewFramePositions = {
-                        name = fmt("%s Frame Positions", _G.PREVIEW),
-                        desc = fmt("%s Frame Positions", _G.PREVIEW),
+                        name = fmt(L("%s Frame Positions"), _G.PREVIEW),
+                        desc = fmt(L("%s Frame Positions"), _G.PREVIEW),
                         type = 'execute',
                         width = optionsWidth,
                         order = 1.93,
@@ -3037,8 +3073,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     windowScale = {
                         name = L("Window Scale"),
-                        desc = L(
-                            "Scale of the Main Window, use alt+left click on the main window to resize it"),
+                        desc =
+                            L"Scale of the Main Window, use alt+left click on the main window to resize it",
                         type = "range",
                         width = optionsWidth,
                         order = 3.1,
@@ -3068,10 +3104,10 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     anchorOrientation = {
                         name = L("Current step frame anchor"),
-                        desc = L(
-                            "Sets the current step frame to grow from bottom to top or top to bottom"),
+                        desc =
+                            L"Sets the current step frame to grow from bottom to top or top to bottom",
                         type = "select",
-                        values = {top = "Top", bottom = "Bottom"},
+                        values = {top = _G.TRACK_QUEST_TOP_SORTING, bottom = L("Bottom")},
                         sorting = {"top", "bottom"},
                         width = optionsWidth,
                         order = 3.3,
@@ -3082,8 +3118,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     showStepList = { -- Not actually a direct setting, indirectly frameHeight
                         name = L("Show step list"),
-                        desc = L(
-                            "Show/Hide the bottom frame listing all the steps of the current guide"),
+                        desc =
+                            L"Show/Hide the bottom frame listing all the steps of the current guide",
                         type = "toggle",
                         width = optionsWidth,
                         order = 3.4,
@@ -3096,8 +3132,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     hideCompletedSteps = {
                         name = L("Hide completed steps"),
-                        desc = L(
-                            "Only shows current and future steps on the step list window"),
+                        desc =
+                            L"Only shows current and future steps on the step list window",
                         type = "toggle",
                         width = optionsWidth,
                         order = 3.5,
@@ -3108,8 +3144,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     showUnusedGuides = {
                         name = L("Show unused guides"),
-                        desc = L(
-                            "Displays guides that are not applicable for your class/race such as starting zones for other races"),
+                        desc =
+                            L"Displays guides that are not applicable for your class/race such as starting zones for other races",
                         type = "toggle",
                         width = optionsWidth,
                         order = 3.6,
@@ -3224,8 +3260,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     mapCircle = {
                         name = L("Highlight active map pins"),
-                        desc = L(
-                            "Show a targeting circle around active map pins"),
+                        desc =
+                            L"Show a targeting circle around active map pins",
                         type = "toggle",
                         width = optionsWidth,
                         order = 5.3,
@@ -3285,8 +3321,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     distanceBetweenPins = {
                         name = L("Distance Between Pins"),
-                        desc = L(
-                            "If two or more steps are very close together, this addon will group them into a single pin on the map. Adjust this range to determine how close together two steps must be to form a group."),
+                        desc =
+                            L"If two or more steps are very close together, this addon will group them into a single pin on the map. Adjust this range to determine how close together two steps must be to form a group.",
                         type = "range",
                         width = optionsWidth,
                         order = 5.7,
@@ -3300,8 +3336,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     worldMapPinBackgroundOpacity = {
                         name = L("Map Pin Background Opacity"),
-                        desc = L(
-                            "The opacity of the black circles on the map and mini map"),
+                        desc =
+                            L"The opacity of the black circles on the map and mini map",
                         type = "range",
                         width = optionsWidth,
                         order = 5.8,
@@ -3367,8 +3403,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     disableAutoSkip = {
                         name = L("Disable step skips"),
-                        desc = L(
-                            "Ignores any kind of condition that causes a step to auto skip"),
+                        desc =
+                            L"Ignores any kind of condition that causes a step to auto skip",
                         type = "toggle",
                         width = optionsWidth,
                         order = 10.2,
@@ -3394,8 +3430,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     enableHSbatch = {
                         name = L("Hearthstone batching"),
-                        desc = L(
-                            "Enables the automation of the innkeeper prompt, where you can set your home location in the same server tick you're teleporting away"),
+                        desc =
+                            L"Enables the automation of the innkeeper prompt, where you can set your home location in the same server tick you're teleporting away",
                         type = "toggle",
                         width = optionsWidth,
                         order = 1.4,
@@ -3403,8 +3439,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     batchSize = {
                         name = L("Batching window size (ms)"),
-                        desc = L(
-                            "Adjusts the batching window tolerance, used for hearthstone batching. Increase this value if you're experiencing framerate drops when using your Hearthstone"),
+                        desc =
+                            L"Adjusts the batching window tolerance, used for hearthstone batching. Increase this value if you're experiencing framerate drops when using your Hearthstone",
                         type = "range",
                         width = optionsWidth,
                         order = 1.5,
@@ -3418,8 +3454,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     updateFrequency = {
                         name = L("Update Frequency (ms)"),
-                        desc = L(
-                            "Defines how often the addon updates in milliseconds, increase this if you're having performance issues"),
+                        desc =
+                            L"Defines how often the addon updates in milliseconds, increase this if you're having performance issues",
                         type = "range",
                         width = optionsWidth,
                         order = 1.6,
@@ -3434,8 +3470,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     preLoadData = {
                         name = L("Pre load all data"),
-                        desc = L(
-                            "Loads all addon data upfront, instead of loading the data slowly over time. This increases loading screen times, only enable this option if you are experiencing frame rate drops"),
+                        desc =
+                            L"Loads all addon data upfront, instead of loading the data slowly over time. This increases loading screen times, only enable this option if you are experiencing frame rate drops",
                         type = "toggle",
                         width = optionsWidth,
                         order = 1.65,
@@ -3516,8 +3552,8 @@ function addon.settings:CreateAceOptionsPanel()
                     },
                     skipMissingPreReqs = {
                         name = L("Skip quests with missing pre-requisites"),
-                        desc = L(
-                            "Automatically skip tasks in which you don't have the required quest pre-requisites\n(Requires Questie)"),
+                        desc =
+                            L"Automatically skip tasks in which you don't have the required quest pre-requisites\n(Requires Questie)",
                         type = "toggle",
                         width = optionsWidth,
                         order = 10,
@@ -3675,8 +3711,8 @@ function addon.settings:UpdateMinimapButton()
         end,
         OnTooltipShow = function(tooltip)
             tooltip:AddLine(addon.title)
-            tooltip:AddLine("|cff909090Left Click: |cffffcc00Toggle Guide|r")
-            tooltip:AddLine("|cff909090Right Click: |cffffcc00Show Menu|r")
+            tooltip:AddLine(L"|cff909090Left Click: |cffffcc00Toggle Guide|r")
+            tooltip:AddLine(L"|cff909090Right Click: |cffffcc00Show Menu|r")
         end
     })
 
@@ -3735,6 +3771,29 @@ function addon.GetXPBonuses(ignoreBuffs,playerLevel)
         local warbandBuff = C_UnitAuras.GetPlayerAuraBySpellID(430191)
         --1,2: xp buff, 3: max level
         local warbandBonus = warbandBuff and warbandBuff.points[1] or 0
+        local function AchComplete(id)
+            local _, _, _, completed = GetAchievementInfo(id)
+            return completed
+        end
+        if addon.game == "RETAIL" and warbandBonus == 0 then
+            --TODO: fix it from the midnight beta
+            if UnitLevel('player') <= 80 then
+                warbandBonus =
+            --Midnight:
+                        AchComplete(42332) and 25 or
+                        AchComplete(42331) and 20 or
+                        AchComplete(42330) and 15 or
+                        AchComplete(42329) and 10 or
+                        AchComplete(42328) and 5 or
+            --War within:
+                        AchComplete(19477) and 25 or
+                        AchComplete(19476) and 20 or
+                        AchComplete(19475) and 15 or
+                        AchComplete(19460) and 10 or
+                        AchComplete(19470) and 5 or
+                        0
+            end
+        end
         local legionRemix = C_UnitAuras.GetPlayerAuraBySpellID(1232454)
         legionRemix = legionRemix and legionRemix.points[10] or 0
         calculatedRate = calculatedRate + (cloakBonus + warModeBonus + warbandBonus + legionRemix)/100
@@ -3874,8 +3933,8 @@ function addon.settings:DetectXPRate(softUpdate)
         return
     end
 
-    addon.comms.PrettyPrint(L(
-                                "Experience rate change detected, reloading guide for %.2fx"),
+    addon.comms.PrettyPrint(
+                                L"Experience rate change detected, reloading guide for %.2fx",
                             calculatedRate)
 
     if addon.currentGuide and addon.currentGuide.name then
@@ -3893,8 +3952,8 @@ function addon.settings:RefreshProfile()
     addon.settings.defaultProfileKey = false
 
     if loadedProfileKey ~= settingsDB.keys.profile then
-        addon.comms.PrettyPrint(L(
-                                    "Profile changed, Reload UI for settings to take effect"))
+        addon.comms.PrettyPrint(
+                                    L"Profile changed, Reload UI for settings to take effect")
     end
 
     if addon.currentGuide and addon.currentGuide.name then
@@ -3911,8 +3970,8 @@ function addon.settings:RefreshProfile()
 end
 
 function addon.settings:CopyProfile()
-    addon.comms.PrettyPrint(L(
-                                "Profile changed, Reload UI for settings to take effect"))
+    addon.comms.PrettyPrint(
+                                L"Profile changed, Reload UI for settings to take effect")
 
     if addon.currentGuide and addon.currentGuide.name then
         addon:LoadGuide(addon.currentGuide)
@@ -3929,8 +3988,8 @@ end
 
 function addon.settings:ResetProfile()
     settingsDB.isResetting = true
-    addon.comms.PrettyPrint(L(
-                                "Profile changed, Reload UI for settings to take effect"))
+    addon.comms.PrettyPrint(
+                                L"Profile changed, Reload UI for settings to take effect")
 
     --resets to the actual defaults, in case the profile is bricked or frames are offscreen
     settingsDBDefaults.profile.framePositions = {

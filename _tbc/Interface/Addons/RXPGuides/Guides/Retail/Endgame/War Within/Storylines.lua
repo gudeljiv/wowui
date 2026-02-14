@@ -1,4 +1,5 @@
 -- Fate of the Kirin Tor
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
@@ -7,6 +8,8 @@ RXPGuides.RegisterGuide([[
 #name a) Fate of Kirin Tor
 #displayname Fate of Kirin Tor
 #next a) Horrific Visions
+
+
 step
     .isQuestAvailable 82702
     #completewith next
@@ -156,7 +159,7 @@ step
 step
     .goto 2248,29.71,58
     >>|TInterface/cursor/crosshair/interact.blp:20|tClick on the |cRXP_PICK_Banner|r.
-    .complete 83539,4,6 --6/6 Items placed in the outpost 
+    .complete 83539,4,6 --6/6 Items placed in the outpost
 step
     .goto 2248,29.78,57.84
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kalecgos|r.
@@ -405,6 +408,7 @@ step
     .turnin 83773 >>Turn in Farewell, City of Magic
     .target Archmage Khadgar
 ]])
+
 --Story Mode: Queen Ansurek
 RXPGuides.RegisterGuide([[
 #retail
@@ -414,6 +418,8 @@ RXPGuides.RegisterGuide([[
 #name a) Story Mode: Queen Ansurek
 #displayname Story Mode: Queen Ansurek
 #next a) Fate of Kirin Tor
+
+
 step
     .goto 2339,31.62,63.16
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Webster|r
@@ -581,6 +587,7 @@ step
     .turnin 82141 >>Turn in To Kill a Queen
     .target Executor Nizrek
 ]])
+
 --Horrific Visions
 RXPGuides.RegisterGuide([[
 #retail
@@ -590,6 +597,7 @@ RXPGuides.RegisterGuide([[
 #name a) Horrific Visions
 #displayname Horrific Vision Intro
 #next a) Nightfall Radiance
+
 step
     .goto 2339,42.51,28.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Researcher Onermu|r
@@ -653,7 +661,7 @@ step
     .goto 2404,51.72,49.68,10,0
     .goto 2404,51.63,48.56,10,0
     .goto 2404,50.13,45.71
-    .scenario 4171,1 >>Kill |cRXP_ENEMY_Fallen Riftwalker|r to open the door to |cRXP_ENEMY_Alleria Windrunner|r and kill her. 
+    .scenario 4171,1 >>Kill |cRXP_ENEMY_Fallen Riftwalker|r to open the door to |cRXP_ENEMY_Alleria Windrunner|r and kill her.
     .mob Alleria Windrunner
     .mob Fallen Riftwalker
 step
@@ -756,6 +764,7 @@ step
     >>Kill |cRXP_ENEMY_Bosses|r inside the Horrific Vision and open the crates at the end to loot them for |T3528446:0|t[|cRXP_LOOT_Black Blood Residue|r].
     .complete 90719,1
 ]])
+
 --Nightfall Radiance
 RXPGuides.RegisterGuide([[
 #retail
@@ -764,6 +773,7 @@ RXPGuides.RegisterGuide([[
 #subgroup |cFFFCDC00(80)|r Storylines
 #name a) Nightfall Radiance
 #displayname Nightfall Radiance
+
 step
     >>Open the Adventure Guide (default: Shift + J), navigate to Suggested Content, and look for the quest Nightfall Radiance. Accept it.
     .accept 85005 >>Accept A Radiant Call
@@ -779,7 +789,7 @@ step
     .accept 89295 >>Accept The Flame Burns Eternal
  step
     .goto 2215,28.26,56.11
-    +|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mylton Wyldbraun|r 
+    +|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mylton Wyldbraun|r
     .questcount <3 87477,87475,87480,88711,88916,88945 >> |cRXP_WARN_Pick up the 3 available dailies |r
     .target Mylton Wyldbraun
     -- .accept 87477 >>Accept Sureki Incursion: Southern Swarm
@@ -948,6 +958,7 @@ step
     .turnin 89331 >>Turn in Flame Fortification
     .target Mylton Wyldbraun
 ]])
+
 --Rise of the Red Dawn
 RXPGuides.RegisterGuide([[
 #retail
@@ -956,6 +967,8 @@ RXPGuides.RegisterGuide([[
 #subgroup |cFFFCDC00(80)|r Storylines
 #name a) Rise of the Red Dawn
 #displayname Rise of the Red Dawn
+
+
 -- step
 --     #completewith next
 --     #label Faerin
@@ -1059,7 +1072,7 @@ step
 step
     #completewith next
     #label Ellie
-    >>|TInterface/cursor/crosshair/interact.blp:20|tClick on |cRXP_PICK_Ellie|r   
+    >>|TInterface/cursor/crosshair/interact.blp:20|tClick on |cRXP_PICK_Ellie|r
     .complete 84658,3 --1/1 Ellie found
     .target Ellie
 step
@@ -1070,7 +1083,7 @@ step
 step
     #requires Ellie
     .goto 2372,14.24,41.88
-    >>|TInterface/cursor/crosshair/interact.blp:20|tClick on |cRXP_PICK_Ellie|r   
+    >>|TInterface/cursor/crosshair/interact.blp:20|tClick on |cRXP_PICK_Ellie|r
     .complete 84658,3 --1/1 Ellie found
     .target Ellie
 step
@@ -1161,7 +1174,7 @@ step
 step
     #completewith Brewston2
     #title |cFFFCDC00Leave the house|r
-    .goto 2372,19.86,66.17,5,0 
+    .goto 2372,19.86,66.17,5,0
     .goto 2372,19.63,65.94,5,0
     .goto 2372,19.45,65.12,5 >>Leave the house
 step
@@ -1511,7 +1524,7 @@ step
     #label Blacksmith
     >>Use the |T971277:0|t[|cRXP_WARN_ExtraActionButton|r].
     .complete 85451,4 --1/1 Blacksmith saved
-step    
+step
     #completewith Blacksmith
     #title |cFFFCDC00Leave the house|r
     .goto 2372,69.02,33.06,10 >>Leave the house
@@ -1600,7 +1613,7 @@ step
     .timer 12,RP
     .skipgossipid 131973
     .target Nials in the Stromgarde barracks
-step   
+step
     >>|cRXP_WARN_Wait for the Roleplay|r.
     .complete 84657,2 --1/1 Await rescue
 step
@@ -1828,7 +1841,7 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Faerin Lothar|r
     .turnin 85529 >>Turn in Past Glory
     .target Faerin Lothar
-step 
+step
     .goto 2372,20.66,44.97
     .zone 2339 >>Click on the Portal to Dornogal
 ]])

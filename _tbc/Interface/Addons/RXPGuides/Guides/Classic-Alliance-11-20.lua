@@ -4,9 +4,11 @@ if faction == "Horde" then return end
 ----Start of <1.5x Westfall----
 ----Night Elves and Hunters stay in Darkshore and Grind----
 
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #xprate <1.5
 #classic
+#tbc
 #season 0,1
 #version 1
 << Alliance
@@ -727,6 +729,7 @@ step
 
 RXPGuides.RegisterGuide([[
 #classic
+#tbc
 #season 0,1
 #version 1
 << Alliance
@@ -3075,6 +3078,7 @@ step << Druid
 
 RXPGuides.RegisterGuide([[
 #classic
+#tbc
 #season 0,1
 #version 1
 << Alliance
@@ -5015,7 +5019,7 @@ step << Rogue
     #label Rendevous
     .goto Redridge Mountains,28.07,52.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lucius|r
-    .turnin 2281 >> Turn in Redridge Rendevous
+    .turnin 2281 >> Turn in Redridge Rendezvous
     .accept 2282 >> Accept Alther's Mill
     .target Lucius
     .dungeon !DM
@@ -7022,7 +7026,7 @@ step << Rogue
     #xprate >1.59
     .goto Redridge Mountains,28.07,52.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lucius|r
-    .turnin 2281 >> Turn in Redridge Rendevous
+    .turnin 2281 >> Turn in Redridge Rendezvous
     .accept 2282 >> Accept Alther's Mill
     .target Lucius
     .dungeon DM
@@ -8314,6 +8318,7 @@ step << !Hunter
 RXPGuides.RegisterGuide([[
 #xprate <1.59
 #classic
+#tbc
 #season 0,1
 #version 1
 << Alliance !Hunter
@@ -9188,7 +9193,7 @@ step << Warlock
 step << Rogue
     .goto Redridge Mountains,28.07,52.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lucius|r
-    .turnin 2281 >> Turn in Redridge Rendevous
+    .turnin 2281 >> Turn in Redridge Rendezvous
     .accept 2282 >> Accept Alther's Mill
     .target Lucius
 step
@@ -9963,6 +9968,7 @@ step
 
 RXPGuides.RegisterGuide([[
 #classic
+#tbc
 #season 0,1
 #version 1
 #season 0
@@ -10743,6 +10749,7 @@ step << Dwarf Hunter
 
 RXPGuides.RegisterGuide([[
 #classic
+#tbc
 #season 0
 #version 1
 << Alliance !Hunter

@@ -2,6 +2,8 @@ local _,addon = ...
 if addon.gameVersion < 40000 or addon.player.faction == 'Alliance' then return end
 local faction = UnitFactionGroup("player")
 if faction == "Alliance" then return end
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #cata
 #mop
@@ -14,6 +16,8 @@ RXPGuides.RegisterGuide([[
 #group RXP Cataclysm 1-80 (H) << cata
 #group RXP MoP 1-60 (H) << mop
 #subweight 10000
+
+
 step << !Orc
     #completewith next
     +You have selected a guide meant for Orcs. You should choose the same starter zone that you start in
@@ -491,7 +495,9 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thazz'ril|r
     .turnin 25135 >>Turn in Thazz'ril's Pick
     .target Foreman Thazz'ril
+
     ]])
+
 RXPGuides.RegisterGuide([[
 #cata
 #mop
@@ -504,6 +510,7 @@ RXPGuides.RegisterGuide([[
 #group RXP Cataclysm 1-80 (H) << cata
 #group RXP MoP 1-60 (H) << mop
 #subweight 10000
+
 step << !Troll
     #completewith next
     +|cRXP_WARN_You have selected a guide meant for Trolls. You should choose the same starter zone that you start in|r
@@ -1385,6 +1392,7 @@ step << skip
     .accept 25073 >>Accept Sen'jin Village
     .isQuestTurnedIn 25035
     ]])
+
 RXPGuides.RegisterGuide([[
 #cata
 #mop
@@ -1397,6 +1405,7 @@ RXPGuides.RegisterGuide([[
 #group RXP Cataclysm 1-80 (H) << cata
 #group RXP MoP 1-60 (H) << mop
 #subweight 10000
+
 step << skip
     #completewith BreakingtheChain
     .goto 1411,67.21,86.10,60,0
@@ -2604,7 +2613,9 @@ step
 step
     #optional
     .abandon 25227 >>Abandon Thonk
+
     --Next section if user isn't lvl 10 yet
+
 step
     #xprate <1.2
     #optional
@@ -2733,7 +2744,9 @@ step
     --.accept 25648 >>Accept Beyond Durotar
     .target Gor the Enforcer
     .maxlevel 9
+
     --BB Quest 25205 currently bugged on beta
+
 step << skip
     .goto 1411,44.90,14.83
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shin|r
@@ -2853,4 +2866,5 @@ step << skip
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gryshka|r
     .turnin 6384 >>Turn in Ride to Orgrimmar
     .target Innkeeper Gryshka
+
     ]])

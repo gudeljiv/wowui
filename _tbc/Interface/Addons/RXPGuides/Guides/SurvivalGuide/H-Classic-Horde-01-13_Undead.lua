@@ -1,8 +1,11 @@
 local faction = UnitFactionGroup("player")
 if faction == "Alliance" then return end
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 << Horde
 #name 1-6 Undead
 #version 1
@@ -10,6 +13,7 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 #defaultfor Undead
 #next 6-13 Undead
+
 step << !Undead
     #completewith next
     +|cRXP_WARN_You have selected a guide meant for Undead. It is recommended you choose the same starter zone that you start in|r
@@ -622,10 +626,13 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Calvin|r
     .accept 8 >> Accept A Rogue's Deal
     .target Calvin Montague
+
 ]])
+
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 << Horde
 #name 6-13 Undead
 #version 1
@@ -633,6 +640,7 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 #defaultfor Undead
 #next 13-15 Silverpine Forest
+
 step
     .goto Tirisfal Glades,40.91,54.17
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Simmer|r
@@ -3765,4 +3773,5 @@ step
     #label Entersilverpine
     .zone Silverpine Forest >> Travel to Silverpine Forest
     .zoneskip Silverpine Forest
+
 ]])

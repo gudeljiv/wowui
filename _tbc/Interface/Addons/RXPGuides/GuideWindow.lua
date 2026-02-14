@@ -1459,7 +1459,7 @@ function addon.ProcessGuideTable(guide)
     function IncludeGuide(group,name)
         local startAt, stopAt
         if type(group) == "table" then
-            if not group.include then
+            if not group.include or group.include:sub(1,1) == "*" then
                 return
             end
             local step = group
@@ -1495,6 +1495,20 @@ function addon.ProcessGuideTable(guide)
     function ProcessSteps(guide,startAt,stopAt)
         for _, step in ipairs(guide.steps) do
             local isShown = addon.IsStepShown(step)
+            if step.inlcude and step.include:sub(1,1) == "*" then
+                step.include = false
+                local stepToInclude = addon.labels[step.include]
+                if stepToInclude then
+                    for i,v in pairs(stepToInclude) do
+                        if not step[i] then
+                            step[i] = v
+                        end
+                    end
+                    for _,element in ipairs(stepToInclude.elements) do
+                        table.insert(step.elements,element)
+                    end
+                end
+            end
             if isShown and startAt and (step.label == startAt or startAt == step.stepId) then
                 startAt = nil
             end
@@ -1503,7 +1517,7 @@ function addon.ProcessGuideTable(guide)
                     if step.tip then
                         tinsert(currentGuide.tips,step)
                         lastTip = step
-                        step.title = step.title or "Tip"
+                        step.title = step.title or L"Tip"
                     else
                         tinsert(currentGuide.steps, step)
                         step.tipWindow = lastTip
@@ -1840,7 +1854,7 @@ function addon:ReloadGuide(keepStep)
     return guide and addon:LoadGuide(guide,keepStep)
 end
 
-function BottomFrame.UpdateFrame(self, stepn)
+function BottomFrame.UpdateFrame(self, stepn, startFrom, skip)
     local level = UnitLevel("player")
 
     if stepPos[0] and ((not self and stepn) or (self and self.step)) and IsFrameShown(self,self and self.step) then
@@ -1861,8 +1875,15 @@ function BottomFrame.UpdateFrame(self, stepn)
 
         local text, rawtext, icon
         local stepDiff
+        local start = startFrom or 1
+        local n = 0
+        local elements = frame.step.elements
+        local nElements = elements and #elements or 0
 
-        for _, element in ipairs(frame.step.elements or {}) do
+        for i = start,nElements do
+            local element = elements[i]
+            if element.text or element.tooltipText or element.requestFromServer or step.active then
+
             stepDiff = element.step.index - RXPCData.currentStep
             element.element = element
 
@@ -1900,6 +1921,7 @@ function BottomFrame.UpdateFrame(self, stepn)
                     text = text .. "\n   " .. rawtext
                 end
             end
+            end
         end
 
         if hideStep then
@@ -1914,9 +1936,11 @@ function BottomFrame.UpdateFrame(self, stepn)
         end
 
         if hideStep then
+            frame.text:Hide()
             fheight = 1
             frame:SetAlpha(0)
         else
+            frame.text:Show()
             fheight = math.ceil(frame.text:GetStringHeight() + 8)
             frame:SetAlpha(1)
         end
@@ -2116,7 +2140,15 @@ function RXPFrame:GenerateMenuTable(menu)
     local farmGuides = {}
     local unusedGuides = {}
     local defaultGuide, defaultGuideHC
-
+    local function OnClick(self,...)
+        local guide = addon.GetGuideTable(...)
+        local func = guide.OnClick
+        if func then
+            addon.functions[func](guide)
+        else
+            addon:LoadGuide(guide)
+        end
+    end
     for group in pairs(addon.guideList) do
         local firstChar = group:sub(1, 1)
         if RXPCData and RXPCData.GA then
@@ -2146,7 +2178,7 @@ function RXPFrame:GenerateMenuTable(menu)
 
     local menuIndex = 1
     local function ProcessChapters(guide,tbl,activeChapters)
-        if guide.chapters then
+        if guide.chapters and addon.IsGuideActive(guide) then
             if not activeChapters then activeChapters = {} end
             for chapterName in string.gmatch(guide.chapters,"%s*([^;]+)%s*") do
                 local chapter = addon.GetGuideTable(guide.group, chapterName)
@@ -2161,7 +2193,7 @@ function RXPFrame:GenerateMenuTable(menu)
                     local item = {
                         arg1 = guide.group,
                         arg2 = chapterName,
-                        func = addon.LoadGuideTable,
+                        func = OnClick,
                         text = addon.GetGuideName(chapter),
                         notCheckable = 1,
                     }
@@ -2221,7 +2253,7 @@ function RXPFrame:GenerateMenuTable(menu)
                     if guide.disabled then
                         subitem.isTitle = 1
                     else
-                        subitem.func = addon.LoadGuideTable
+                        subitem.func = OnClick
                         subitem.arg1 = guide.group
                         subitem.arg2 = guideName
                     end
@@ -2238,7 +2270,7 @@ function RXPFrame:GenerateMenuTable(menu)
                     if guide.disabled then
                         subitem.isTitle = 1
                     else
-                        subitem.func = addon.LoadGuideTable
+                        subitem.func = OnClick
                         subitem.arg1 = guide.group
                         subitem.arg2 = guideName
                     end
@@ -2312,7 +2344,7 @@ function RXPFrame:GenerateMenuTable(menu)
     local tips = addon.currentGuide and addon.currentGuide.tips
     if tips and #tips > 0 then
         tinsert(menuList, {
-            text = "Display Tips",
+            text = L"Display Tips",
             func = addon.ShowTips,
             arg1 = "toggle",
             checked = function()

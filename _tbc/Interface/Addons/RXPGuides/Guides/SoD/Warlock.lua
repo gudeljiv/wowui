@@ -1,3 +1,4 @@
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Warlock SoD
@@ -5,6 +6,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Haunt - 3 (Elwynn Forest)
 #title Haunt
+
 step << Warlock
     #season 2
     .goto Elwynn Forest,52.544,51.922
@@ -19,6 +21,7 @@ step << Warlock
     .itemcount 205230,1
     .train 403919,1
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Warlock SoD
@@ -26,6 +29,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Haunt - 1 (Dun Morogh)
 #title Haunt
+
 step << Warlock
     #season 2
     .goto Dun Morogh,26.733,72.552
@@ -38,6 +42,7 @@ step << Warlock
     .use 205230
     .itemcount 205230,1 -- Rune of Haunting (1)
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Warlock SoD
@@ -45,7 +50,10 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Haunt - 2 (Durotar)
 #title Haunt
+
+
     --Rune of Haunt
+
 step << Orc
     #season 2
     .goto Durotar,40.65,68.52
@@ -72,6 +80,7 @@ step << Orc
     .target Nartok
     .isOnQuest 77586
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Warlock SoD
@@ -79,7 +88,10 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Haunt - 2 (Tirisfal Glades)
 #title Haunt
+
+
     --Rune of Haunt
+
 step << Undead
     #season 2
     .goto Tirisfal Glades,30.91,66.34
@@ -103,7 +115,10 @@ step << Undead
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maximillion|r
     .turnin 77672 >>Turn in The Lost Rune
     .target Maximillion
+
+
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Warlock SoD
@@ -111,6 +126,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Soul Siphon - 13 (Durotar)
 #title Soul Siphon
+
 step
     #completewith next
     .zone Durotar >>Travel to Durotar
@@ -137,6 +153,7 @@ step
     .itemcount 205022,1
     .train 403920 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Soul Siphon|r] |cRXP_WARN_to train|r |T136169:0|t[Soul Siphon]
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Warlock SoD
@@ -144,6 +161,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Soul Siphon - 9 (Tirisfal Glades)
 #title Soul Siphon
+
 step
     #completewith next
     .zone Tirisfal Glades >>Travel to the Tirisfal Glades
@@ -169,6 +187,7 @@ step
     .itemcount 205022,1
     .train 403920 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Soul Siphon|r] |cRXP_WARN_to train|r |T136169:0|t[Soul Siphon]
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Warlock SoD
@@ -176,6 +195,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Demonic Tactics - 4 (Tirisfal Glades)
 #title Demonic Tactics
+
 step
     #completewith next
     .zone Tirisfal Glades >>Travel to the Tirisfal Glades
@@ -213,6 +233,7 @@ step
     .itemcount 205215,1
     .train 416009 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Tactics|r] |cRXP_WARN_to train|r |T136150:0|t[Demonic Tactics]
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Warlock SoD
@@ -220,6 +241,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Demonic Grace - 8 (Durotar)
 #title Demonic Grace
+
 step
     #completewith DemonicGraceDurotarTome
     .zone Durotar >>Travel to Durotar
@@ -265,6 +287,7 @@ step
     .itemcount 204912,1
     .train 425477 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Grace|r] |cRXP_WARN_to train|r |T236293:0|t[Demonic Grace]
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Warlock SoD
@@ -272,6 +295,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Demonic Grace - 8 (Tirisfal Glades)
 #title Demonic Grace
+
 step
     .train 425477,1
     #completewith DemonicGraceTirisfalGladesTome
@@ -325,6 +349,7 @@ step
     .itemcount 204912,1
     .train 425477 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Grace|r] |cRXP_WARN_to train|r |T236293:0|t[Demonic Grace]
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Warlock SoD
@@ -335,6 +360,7 @@ RXPGuides.RegisterGuide([[
 #name Chaos Bolt - 8 (Tirisfal Glades) << Warlock
 #title Chaos Bolt << Warlock
 --Permok: Dont load it for mages for now
+
 step << Mage
     >>Buy a (or multiple) |T135933:0|t[Comprehension Charm] from a Reagent Vendor
     .collect 211779,1
@@ -360,6 +386,7 @@ step
     .train 403925 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Chaos Bolt|r] |cRXP_WARN_to train|r |T236291:0|t[Chaos Bolt]  << Warlock
     .train 401759 >>Use the |T134939:0|t[|cRXP_FRIENDLY_Spell Notes: Burnout|r] |cRXP_WARN_to train|r |T236207:0|t[Burnout] << Mage
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -367,6 +394,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Lake of Fire - 25 (Hillsbrad Foothills)
 #title Lake of Fire
+
 step
     #completewith next
     .zone Hillsbrad Foothills >>Travel to Hillsbrad Foothills (e.g. from Undercity through Silverpine Forest) << Horde
@@ -390,6 +418,7 @@ step
     .itemcount 211476,1
     .train 403937 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Fires Wake|r] |cRXP_WARN_to train|r |T135826:0|t[Lake of Fire]
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -397,6 +426,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Bracers
 #name Incinerate - 22 (Redridge Mountains)
 #title Incinerate
+
 step
     #completewith next
     .zone Redridge Mountains >>Travel to the Redridge Mountains
@@ -413,6 +443,7 @@ step
     .itemcount 211477,1
     .train 416015 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Incinerate|r] |cRXP_WARN_to train|r |T135789:0|t[Incinerate]
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Warlock SoD
@@ -420,6 +451,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Master Channeler - 12 (The Barrens)
 #title Master Channeler
+
 step
     #completewith next
     .zone The Barrens >>Travel to The Barrens
@@ -436,6 +468,7 @@ step
     .itemcount 208750,1
     .train 403932 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Channeling|r] |cRXP_WARN_to train|r |T136168:0|t[Master Channeler]
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Warlock SoD
@@ -443,6 +476,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Master Channeler - 14 (Silverpine Forest)
 #title Master Channeler
+
 step
     #completewith next
     .zone Silverpine Forest >>Travel to the Silverpine Forest
@@ -457,6 +491,7 @@ step
     .itemcount 208750,1
     .train 403932 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Channeling|r] |cRXP_WARN_to train|r |T136168:0|t[Master Channeler]
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Warlock SoD
@@ -464,6 +499,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Shadow Bolt Volley - 16 (The Barrens)
 #title Shadow Bolt Volley
+
 step
     #completewith next
     .zone The Barrens >>Travel to The Barrens
@@ -485,6 +521,7 @@ step
     .itemcount 208744,1
     .train 403936 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Shadowbolts|r] |cRXP_WARN_to train|r |T136195:0|t[Shadow Bolt Volley]
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Horde Warlock SoD
@@ -492,6 +529,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Shadow Bolt Volley - 18 (Silverpine Forest)
 #title Shadow Bolt Volley
+
 step
     #completewith next
     .zone Silverpine Forest >>Travel to the Silverpine Forest
@@ -516,6 +554,7 @@ step
     .itemcount 208744,1
     .train 403936 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Shadowbolts|r] |cRXP_WARN_to train|r |T136195:0|t[Shadow Bolt Volley]
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -523,6 +562,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Metamorphosis - 25 (Azeroth)
 #title Metamorphosis
+
 step
     #completewith WarlockRuneMetamorphosisA
     +|cRXP_WARN_It is recommended to do all these steps in a group. Some steps can be completed solo.|r
@@ -635,6 +675,7 @@ step
     .itemcount 210980,1
     .train 403938 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Metamorphosis|r] |cRXP_WARN_to train|r |T237558:0|t[Metamorphosis]
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -642,6 +683,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Belt
 #name Grimoire of Synergy - 40 (Azeroth)
 #title Grimoire of Synergy
+
 step
     #optional
     #completewith next
@@ -776,6 +818,7 @@ step
     .train 426445 >> |cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Synergy|r] |cRXP_WARN_to train|r |T133738:0|t[Grimoire of Synergy]
     .use 213090
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Warlock SoD
@@ -783,6 +826,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Master Channeler - 10 (Loch Modan)
 #title Master Channeler
+
 step << Warlock
     .line Loch Modan,22.87,70.89,24.69,68.20,28.02,65.41,29.47,59.92,31.56,56.66,32.36,50.09,34.94,47.10,32.36,50.09,31.36,47.60,31.54,44.72,32.29,42.34,32.25,41.14,31.08,38.57,30.04,31.45,27.96,25.37,26.73,23.07,26.04,19.16,25.95,15.13,25.53,11.66
     .goto Loch Modan,22.87,70.89,50,0
@@ -818,6 +862,7 @@ step << Warlock
     .use 208750
     .itemcount 208750,1
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Warlock SoD
@@ -825,6 +870,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Master Channeler - 15 (Darkshore)
 #title Master Channeler
+
 step << Warlock
     .goto Darkshore,55.27,27.74,40,0
     .goto Darkshore,56.92,27.27,40,0
@@ -840,6 +886,7 @@ step << Warlock
     .use 208750
     .itemcount 208750,1
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Warlock SoD
@@ -847,6 +894,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Cloak
 #name Soul Siphon - 10 (Dun Morogh)
 #title Soul Siphon
+
 step << Warlock
     #completewith next
     >>|cRXP_WARN_Cast|r |T136163:0|t[Drain Soul] |cRXP_WARN_on any critter to receive a|r |T134095:0|t[|cRXP_LOOT_Pure Soul Shard|r]
@@ -876,6 +924,7 @@ step << Warlock
     .use 208750
     .itemcount 208750,1
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Warlock SoD
@@ -883,6 +932,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Soul Siphon - 10 (Elwynn Forest)
 #title Soul Siphon
+
 step << Warlock
     #completewith next
     >>|cRXP_WARN_Cast|r |T136163:0|t[Drain Soul] |cRXP_WARN_on any critter to receive a|r |T134095:0|t[|cRXP_LOOT_Pure Soul Shard|r]
@@ -923,6 +973,7 @@ step << Warlock
     .use 208750
     .itemcount 208750,1
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Warlock SoD
@@ -930,6 +981,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Chest
 #name Demonic Tactics - 1 (Elwynn Forest)
 #title Demonic Tactics
+
 step << Warlock
     .goto Elwynn Forest,56.743,57.650
     >>Loot the |cRXP_FRIENDLY_Dead Acolyte|r for the |T133625:0|t[|cRXP_LOOT_Acolyte's Knapsack|r]
@@ -976,6 +1028,7 @@ step << Warlock
     .use 205215
     .itemcount 205215,1
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Warlock SoD
@@ -983,6 +1036,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Demonic Grace - 10 (Elwynn Forest)
 #title Demonic Grace
+
 step << Warlock
     .goto Elwynn Forest,61.6,53.8
     >>Kill |cRXP_ENEMY_Kobold Geomancers|r. Loot them for a |T133733:0|t[|cRXP_LOOT_Ominous Tome|r]
@@ -1047,6 +1101,7 @@ step << Warlock
     .use 204912
     .itemcount 204912,1
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Warlock SoD
@@ -1054,6 +1109,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Legs
 #name Demonic Grace - 10 (Dun Morogh)
 #title Demonic Grace
+
 step << Warlock
     .goto Dun Morogh,22.8,50.6
     >>Kill |cRXP_ENEMY_Frostmane Shadowcasters|r. Loot them for a |T133733:0|t[|cRXP_LOOT_Ominous Tome|r]
@@ -1101,6 +1157,7 @@ step << Warlock
     .use 204912
     .itemcount 204912,1
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Warlock SoD
@@ -1108,6 +1165,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Shadow Bolt Volley - 16 (Darkshore)
 #title Shadow Bolt Volley
+
 step << Warlock
     .goto Darkshore,56.8,27.6,60,0
     .goto Darkshore,57.6,26.0
@@ -1120,6 +1178,7 @@ step << Warlock
     .use 208744
     .itemcount 208744,1
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Warlock SoD
@@ -1127,6 +1186,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Chaos Bolt - 8 (Dun Morogh)
 #title Chaos Bolt
+
 step << Warlock
     .goto Dun Morogh,69.365,58.302
     >>Kill the |cRXP_ENEMY_Frozen Trogg|r. Loot it for the |T134419:0|t[|cRXP_FRIENDLY_Rune of Chaos Bolt|r]
@@ -1140,6 +1200,7 @@ step << Warlock
     .use 208744
     .itemcount 208744,1
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Alliance Warlock SoD
@@ -1147,6 +1208,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Gloves
 #name Chaos Bolt - 8 (Elwynn Forest)
 #title Chaos Bolt
+
 step << Warlock
     .goto Elwynn Forest,77.010,51.897
     >>Kill the |cRXP_ENEMY_Frozen Murloc|r. Loot it for the |T134419:0|t[|cRXP_FRIENDLY_Rune of Chaos Bolt|r]
@@ -1160,6 +1222,7 @@ step << Warlock
     .use 208744
     .itemcount 208744,1
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -1167,7 +1230,9 @@ RXPGuides.RegisterGuide([[
 #subgroup Belt
 #name Invocation - 35 (Arathi Highlands)
 #title Invocation
+
 -- Invocation
+
 step
     .train 426443,1
     #completewith SyndicateConjuror
@@ -1212,6 +1277,7 @@ step
     .train 426443 >> |cRXP_WARN_Use the|r |T134419:0|t[|cRXP_LOOT_Rune of Invocation|r] |cRXP_WARN_to train|r |T136133:0|t[Invocation]
     .use 213098
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -1219,7 +1285,9 @@ RXPGuides.RegisterGuide([[
 #subgroup Boots
 #name Dance of the Wicked - 35 (Desolace)
 #title Dance of the Wicked
+
 -- Dance of the Wicked
+
 step
     .train 416017,1
     #completewith next
@@ -1240,6 +1308,7 @@ step
     .train 416017 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Wickedness|r] |cRXP_WARN_to learn|r |T236295:0|t[Dance of the Wicked]
     .use 416017
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -1247,7 +1316,9 @@ RXPGuides.RegisterGuide([[
 #subgroup Boots
 #name Dance of the Wicked - 35 (Stranglethorn)
 #title Dance of the Wicked
+
 -- Dance of the Wicked
+
 step
     .train 416017,1
     #completewith next
@@ -1268,6 +1339,7 @@ step
     .train 416017 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Wickedness|r] |cRXP_WARN_to learn|r |T236295:0|t[Dance of the Wicked]
     .use 416017
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -1275,7 +1347,10 @@ RXPGuides.RegisterGuide([[
 #subgroup Boots
 #name Shadowflame - 40 (Desolace)
 #title Shadowflame
+
+
 -- Shadowflame
+
 step
     .train 426467,1
     #completewith next
@@ -1300,6 +1375,7 @@ step
     .train 426467 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Shadowflames|r] |cRXP_WARN_to learn|r |T236302:0|t[Shadowflame]
     .use 213101
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -1307,6 +1383,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Bracers
 #title Immolation Aura
 #name Immolation Aura - 40 (Ashenvale)
+
 step
     #completewith next
     .zone Ashenvale >> Travel to Ashenvale
@@ -1331,6 +1408,7 @@ step
     .train 431758 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of the Immolation Aura|r] |cRXP_WARN_to learn|r |T135802:0|t[Immolation Aura]
     .use 220618
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -1338,6 +1416,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Bracers
 #title Summon Felguard
 #name Summon Felguard - 10 (Azeroth)
+
 step
     #completewith next
     +|cRXP_WARN_In order to receive this rune you will need to have found an|r |T236294:0|t|cRXP_FRIENDLY_Explorer Imp|r. |cRXP_WARN_If you don't already have one cast|r |T136163:0|t|cRXP_FRIENDLY_[Drain Soul]|r |cRXP_WARN_on mobs. On each tick of the spell you will have a chance to obtain an|r |T133257:0|t|cRXP_LOOT_Explorer's Soul|r. |cRXP_WARN_Use it to learn how to summon your|r |T236294:0|t|cRXP_FRIENDLY_Explorer Imp|r
@@ -1516,6 +1595,7 @@ step
     .goto Azshara,25.0,81.4,0
     .goto Azshara,30.2,79.8,0
     .goto Azshara,33.0,81.4,0
+
     .collect 221499,1 --Rune of the felguard
     .use 223148 --Otherworldy Treasure
     .unitscan Fel Sliver
@@ -1526,7 +1606,9 @@ step
 step
     .train 431756 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of the Felguard|r] |cRXP_WARN_to learn|r |T136216:0|t[Summon Felguard]
     .use 221499
+
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -1534,11 +1616,12 @@ RXPGuides.RegisterGuide([[
 #subgroup Helmet
 #title Pandemic
 #name Pandemic - 40 (Feralas)
+
 step
     #completewith next
     .zone Feralas >> Travel to Feralas
 step
-    .goto Feralas,69.6,43.3 
+    .goto Feralas,69.6,43.3
     >>Head to the marked location west of Camp Mojache. Look for a |cRXP_ENEMY_Dead Diseased Grimtotem Shaman|r laying next to a tree. Next to the corpse you will find a |cRXP_PICK_Grimtotem Chest|r, loot it for |T133291:0|t|cRXP_LOOT_Grimtotem Necklace|r
     .collect 221974,1 --Grimtotem Necklace 1/1
     .unitscan Dead Diseased Grimtotem Shaman
@@ -1570,6 +1653,7 @@ step
     .train 431743 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Pandemic|r] |cRXP_WARN_to learn|r |T136227:0|t[Pandemic]
     .use 220617
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -1577,6 +1661,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Cloak
 #title Decimation
 #name Decimation - 55 (Azeroth)
+
 step
     #completewith next
     .zone Burning Steppes >> Travel to Burning Steppes
@@ -1635,6 +1720,7 @@ step
     .train 440922 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Decimation|r] |cRXP_WARN_to learn|r |T135808:0|t[Decimation]
     .use 225686
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -1642,6 +1728,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Cloak
 #title Mark of Chaos
 #name Mark of Chaos - 50 (Western Plaguelands)
+
 step
     #completewith next
     .zone Western Plaguelands >> Travel to Western Plaguelands
@@ -1665,6 +1752,7 @@ step
     .train 440924 >>|cRXP_WARN_Use the|r |T134419:0|t[|cRXP_FRIENDLY_Rune of Mark of Chaos|r] |cRXP_WARN_to learn|r |T136226:0|t[Mark of Chaos]
     .use 225688
 ]])
+
 RXPGuides.RegisterGuide([[
 #classic
 << Warlock SoD
@@ -1672,6 +1760,7 @@ RXPGuides.RegisterGuide([[
 #subgroup Cloak
 #title Infernal Armor
 #name Infernal Armor - 55 (Blasted Lands)
+
 step
     #completewith next
     .zone Blasted Lands >> Travel to Blasted Lands
@@ -1697,7 +1786,7 @@ step
     .goto Blasted Lands,68.050,28.667
     >>Head to the |cRXP_PICK_Altar|r at the back of the cave
     >>|cRXP_WARN_Before clicking the |cRXP_PICK_Altar|r, ensure you have used your|r |T134131:0|t[Greater Spellstone]|cRXP_WARN_,|r |T136121:0|t[Shadow Ward] |cRXP_WARN_and|r |T136190:0|t[Sacrifice] |cRXP_WARN_as you are about to take substantial damage upon clicking the |cRXP_PICK_Altar|r, and summoning |cRXP_ENEMY_Heliath|r in the process. |cRXP_ENEMY_Heliath|r is a level 56 elite|r
-    >>Kill |cRXP_ENEMY_Heliath|r. Loot him for the |T134419:0|t[|cRXP_FRIENDLY_Rune of Infernal Armor|r] 
+    >>Kill |cRXP_ENEMY_Heliath|r. Loot him for the |T134419:0|t[|cRXP_FRIENDLY_Rune of Infernal Armor|r]
     .collect 225687,1
     .mob Heliath
 step

@@ -1,13 +1,15 @@
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #tbc
 #version 7
-#group RestedXP Survival Guide (H)
+#group RXP TBC Survival Guide (H)
 << Horde
 #name 1-6 Durotar
 #version 7
-#subgroup RestedXP Survival Guide 1-30
+#subgroup RXP TBC Survival Guide 1-30
 #defaultfor Orc/Troll
 #next 6-10 Durotar
+
 step << !Orc !Troll
     #completewith next
     +|cRXP_WARN_You have selected a guide meant for Orcs and Trolls. You should choose the same starter zone that you start in|r
@@ -52,13 +54,6 @@ step << Warrior/Shaman
     .target Frang << Warrior
     .target Shikrik << Shaman
 step << Warlock
-    #completewith Nartok
-    .goto Durotar,41.52,68.36,12,0
-    .goto Durotar,41.24,68.16,12,0
-    .goto Durotar,40.82,68.03,12,0
-    .goto Durotar,40.65,68.52,12 >>Travel toward |cRXP_FRIENDLY_Nartok|r
-    .money <0.01
-step << Warlock
     #completewith next
     .goto Durotar,41.52,68.36,12,0
     .goto Durotar,41.24,68.16,12,0
@@ -71,6 +66,13 @@ step << Warlock
     .vendor >>Vendor Trash
     .target Hraug
     .money >0.01
+step << Warlock
+    #completewith Nartok
+    .goto Durotar,41.52,68.36,12,0
+    .goto Durotar,41.24,68.16,12,0
+    .goto Durotar,40.82,68.03,12,0
+    .goto Durotar,40.65,68.52,12 >>Travel toward |cRXP_FRIENDLY_Nartok|r
+    .money <0.01
 step << Warlock
     #label Nartok
     .goto Durotar,40.65,68.52
@@ -300,7 +302,6 @@ step << Warlock
     .train 172 >> Train |T136118:0|t[Corruption]
     .target Nartok
 step
-    #sticky
     #label Galgar
     .goto Durotar,42.73,67.23,0,0
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Galgar|r
@@ -955,17 +956,20 @@ step
     .goto Durotar,49.02,69.13,20,0
     .goto Durotar,49.90,68.43,25 >>Exit the Valley of Trials
     .isOnQuest 805
+
 ]])
+
 RXPGuides.RegisterGuide([[
 #tbc
 #version 7
-#group RestedXP Survival Guide (H)
+#group RXP TBC Survival Guide (H)
 << Horde
 #name 6-10 Durotar
 #version 7
-#subgroup RestedXP Survival Guide 1-30
+#subgroup RXP TBC Survival Guide 1-30
 #defaultfor Orc/Troll
 #next 10-12 Eversong Woods
+
 step
     .goto Durotar,52.06,68.30
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ukor|r
@@ -2540,7 +2544,7 @@ step
     .accept 844 >>Accept Plainstrider Menace
 step
     .goto The Barrens,51.99,29.89
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Boorand|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Innkeeper Boorand|r
     .home >>Set your Hearthstone to Crossroads
     .target Innkeeper Boorand Plainswind
     .bindlocation 380
@@ -2798,14 +2802,5 @@ step << Paladin
     .trainer >>Train your class spells
 	.target Ithelis
 	.target Osselan
-step
-    #completewith next
-    .goto Silvermoon City,78.28,59.34,8,0
-    .goto Silvermoon City,78.36,60.14,8 >> Go inside the Inn
-step
-    .goto Silvermoon City,79.50,58.52
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Suntouched|r
-    >>|cRXP_BUY_Buy the|r |T132798:0|t[Suntouched Special Reserve] |cRXP_BUY_from him|r
-    .collect 22775,1,9067,1 --Suntouched Special Reserve (1)
-    .target Vinemaster Suntouched
+
 ]])

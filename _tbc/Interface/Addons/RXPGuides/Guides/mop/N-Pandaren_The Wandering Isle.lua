@@ -1,12 +1,17 @@
 local _,addon = ...
 if addon.player.race ~= "Pandaren" then return end
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #mop
 #version 1
 #group RXP Starting Zone (Pandaren)
 #name 1-12 The Wandering Isle
 #next RXP Cataclysm 1-80 (A)\10-20 Loch Modan;RXP Cataclysm 1-80 (H)\10-22 Azshara;RXP MoP 1-80 (A)\10-20 Loch Modan;RXP MoP 1-80 (H)\10-22 Azshara;skip
+
+
 << Pandaren !DK
+
 step
     .goto 378,56.67,18.20
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Master Shang Xi|r

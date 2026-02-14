@@ -53,7 +53,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 11) Landfall Intro
-#internal
 step << Alliance
 #completewith Meet the Scout
 .isOnQuest 29940
@@ -192,7 +191,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 1) Monk Quests
-#internal
 step
 .isQuestAvailable 31834
 .zoneskip 379
@@ -398,7 +396,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 3) Krasarang Crane Wing
-#internal
 step
 .xp >34,1
 .isQuestTurnedIn 30178
@@ -644,7 +641,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 3) Krasarang Wilds Dojani
-#internal
 step
 .convertquest 30349,30127 << Horde
 #completewith Dojani Dominator
@@ -770,7 +766,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 3) Krasarang Wilds Horde Campaign
-#internal
 << Horde
 step
 .isOnQuest 32249
@@ -848,7 +843,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 3) Krasarang Wilds Hozen
-#internal
 step
 .goto 418,51.66,75.31
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tony Tuna|r.
@@ -1101,7 +1095,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 3) Krasarang Wilds Ik'thik
-#internal
 step << Alliance
 #completewith Ik'thik Mantid
 #hidewindow
@@ -1162,7 +1155,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 3) Krasarang Wilds Korjan
-#internal
 step << Alliance
 #completewith Korjan Reclaimer
 #hidewindow
@@ -1253,7 +1245,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 3) Mazu Breath
-#internal
 step
 #label Mazu's Breath
 .goto 422,54.73,72.17
@@ -1502,7 +1493,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 3) Timeless Isle & Lorewalker Cho
-#internal
 step << Horde
 .isQuestAvailable 80447
 .goto 391,21.13,40.76
@@ -3638,7 +3628,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 7) Kun-Lai Summit Defense Shado-Pan
-#internal
 step
 #title Enter Castle
 #completewith DefenseShadopan
@@ -3807,7 +3796,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 7) Kun-Lai Summit Despoiler
-#internal
 step
 #loop
 .goto 379,71.57,74.97,40,0
@@ -4164,7 +4152,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 7) Kun-Lai Summit My Son
-#internal
 step
 .goto 379,74.97,88.87
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Merchant Shi,|r.
@@ -4344,7 +4331,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 7) Main Campaign Jade Forest Neutral
-#internal
 step
 .goto 371,46.65,46.15
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_An Windfur|r.
@@ -4831,7 +4817,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name 7) Main Campaign Jade Forest Neutral 2
-#internal
 step
 >>Use the |T133305:0|t[Cho Family Heirloom].
 .goto 371,44.50,66.94
@@ -12517,7 +12502,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Azjkahet Adventure Mode
-#internal
 step
 .zoneskip 2215,1
 .goto 2215,42.25,83.02,50,0
@@ -12874,7 +12858,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Azj-kahet Campaign
-#internal
 step
 #label AzjkahetA
 .goto 2255,29.39,42.21
@@ -13735,7 +13718,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Azj-kahet Campaign Multibox
-#internal
 step
 #label AzjkahetA
 .goto 2255,29.39,42.21
@@ -14599,7 +14581,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Azj-kahet Campaign + Side Quests
-#internal
 step
 #include RestedXP Speed Leveling\a) Azj-kahet Campaign@AzjkahetA-AzjkahetB
 step
@@ -15057,7 +15038,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Azj-kahet Campaign + Side Quests MB
-#internal
 step
 #include RestedXP Speed Leveling\a) Azj-kahet Campaign Multibox@AzjkahetA-AzjkahetB
 step
@@ -15494,7 +15474,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) BfA Intro
-#internal
 << Horde
 step << DK !Orc !Undead !Tauren !Troll !BloodElf !Goblin
 .goto 1602,49.55,90.80
@@ -16161,7 +16140,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) DF Alliance Intro
-#internal
 step << Alliance
 .goto 84,79.81,27.04
 >>The quest appears when you enter Stormwind.
@@ -16389,7 +16367,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) DF Horde Intro
-#internal
 step << Horde
 >>|cRXP_WARN_If this quest didn't automatically appear in your questlog|r.
 *|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ebyssian|r.
@@ -16646,7 +16623,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Drustvar
-#internal
 << Alliance
 step
 >>Abandon this Quest to get a Teleport to near the next objectives
@@ -17592,7 +17568,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Duskwood
-#internal
 <<Alliance
 step
 .goto 47,93.30,12.00
@@ -18671,7 +18646,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Duskwood 2
-#internal
 << Alliance
 step
 #completewith next
@@ -19098,7 +19072,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Elwynn Forest
-#internal
 << Alliance
 step
 #veteran
@@ -20160,7 +20133,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Hallowfall Adventure Mode
-#internal
 step
 .isOnQuest 83551
 .zoneskip 2255,1
@@ -20874,7 +20846,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Hallowfall Campaign
-#internal
 step
 #label HallowfallA
 .goto 2214,42.92,32.22
@@ -21959,7 +21930,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Hallowfall Campaign Multibox
-#internal
 step
 #label HallowfallA
 .goto 2214,42.92,32.22
@@ -23046,7 +23016,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Hallowfall Campaign + Side Quests
-#internal
 step
 #include RestedXP Speed Leveling\a) Hallowfall Campaign@HallowfallA-HallowfallB
 step
@@ -23551,7 +23520,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Hallowfall Campaign + Side Quests MB
-#internal
 step
 #include RestedXP Speed Leveling\a) Hallowfall Campaign Multibox@HallowfallA-HallowfallB
 step
@@ -24013,7 +23981,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Horde Draenor Garrison
-#internal
 << Horde
 step
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Farseer Drek'Thar|r.
@@ -24315,7 +24282,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Horde Draenor Scenario
-#internal
 << Horde
 step
 .isQuestAvailable 36881
@@ -24882,7 +24848,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Horde Gorgrond
-#internal
 << Horde
 step
 .zoneskip 590
@@ -26099,7 +26064,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Horde Hillsbrad Foothills
-#internal
 << Horde
 step
 .zoneskip 85,1
@@ -27041,7 +27005,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Horde Kun-Lai Summit
-#internal
 << Horde
 step
 .isQuestAvailable 30460
@@ -28699,7 +28662,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Horde Silverpine Forest
-#internal
 << Horde
 step
 #title Fly to Dazar'alor
@@ -29630,7 +29592,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Horde Spires of Arak
-#internal
 << Horde
 step
 .zoneskip 590
@@ -30358,7 +30319,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Horde Zuldazar
-#internal
 << Horde
 step
 .isQuestAvailable 51443
@@ -32608,7 +32568,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Intro Scenario War Within
-#internal
 step
 #label IsleOfDornA
 >>This quests should automatically appear in your quest log
@@ -33069,7 +33028,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Isle of Dorn Adventure Mode
-#internal
 step
 .zoneskip 2339
 .isNotOnQuest 78529
@@ -33935,7 +33893,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Isle of Dorn Campaign
-#internal
 step
 #label IsleOfDornA
 >>This quests should automatically appear in your quest log
@@ -35583,7 +35540,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Isle of Dorn Campaign Multibox
-#internal
 step
 #label IsleOfDornA
 >>This quests should automatically appear in your quest log
@@ -37216,7 +37172,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Isle of Dorn Campaign + Side Quests (1/2)
-#internal
 step
 #include RestedXP Speed Leveling\a) Isle of Dorn Campaign@IsleOfDornA-IsleOfDornB
 step
@@ -37802,7 +37757,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Isle of Dorn Campaign + Side Quests (2/2)
-#internal
 step
 #completewith next
 #optional
@@ -38046,7 +38000,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Isle of Dorn Campaign + Side Quests MB (1/2)
-#internal
 step
 #include RestedXP Speed Leveling\a) Isle of Dorn Campaign Multibox@IsleOfDornA-IsleOfDornB
 step
@@ -38465,7 +38418,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) Isle of Dorn Campaign + Side Quests MB (2/2)
-#internal
 step
 #include RestedXP War Within Loremaster\a) Behind Closed Doors Multibox@BehindClosedDoorsB-BehindClosedDoorsC
 step
@@ -38583,7 +38535,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Northern Stranglethorn
-#internal
 << Alliance
 step
 .goto 50,51.86,12.01
@@ -39337,7 +39288,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name a) Ohn'ahran Plains
-#internal
 step
 #completewith Ohn'ahran Plains Campaign
 +Welcome to the Ohn'ahran Plains Guide of RestedXP.
@@ -41344,7 +41294,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Redridge Mountains
-#internal
 << Alliance
 step
 #completewith next
@@ -42723,7 +42672,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Redridge Mountains 2
-#internal
 << Alliance
 step
 #completewith RedridgeStart
@@ -43083,7 +43031,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name a) Thaldraszus
-#internal
 step
 #completewith next
 +Welcome to the Thaldraszus Guide of RestedXP.
@@ -44890,7 +44837,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name a) The Azure Span
-#internal
 step
 #completewith TheAzureSpanTotheAzureSpan
 +Welcome to the Azure Span Guide of RestedXP.
@@ -47900,7 +47846,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) The Ringing Deeps Adventure Mode
-#internal
 step
 .zoneskip 2215
 #title Fly down
@@ -48179,7 +48124,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) The Ringing Deeps Campaign
-#internal
 step
 #label TheRingingDeepsA
 .goto 2339,31.97,59.85
@@ -49399,7 +49343,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) The Ringing Deeps Campaign Multibox
-#internal
 step
 #label TheRingingDeepsA
 .goto 2339,31.97,59.85
@@ -50587,7 +50530,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Speed Leveling
 #name a) The Ringing Deeps Campaign + Side Quests
-#internal
 step
 #include RestedXP Speed Leveling\a) The Ringing Deeps Campaign@TheRingingDeepsA-TheRingingDeepsB
 step
@@ -51024,7 +50966,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Speed Leveling
 #name a) The Ringing Deeps Campaign + Side Quests MB
-#internal
 step
 #include RestedXP Speed Leveling\a) The Ringing Deeps Campaign Multibox@TheRingingDeepsA-TheRingingDeepsB
 step
@@ -51324,7 +51265,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) The Waking Shores
-#internal
 step
 #completewith point1
 +|cRXP_WARN_We Accept the quests in this area only during roleplay. Strictly follow the arrow for maximum efficieny|r.
@@ -53717,7 +53657,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Tiragarde Sound
-#internal
 << Alliance
 step << DarkIronDwarf
 #completewith Herald
@@ -55885,7 +55824,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Tiragarde Sound Part 2
-#internal
 << Alliance
 step
 .goto 1161,73.52,13.72,5,0
@@ -57657,7 +57595,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Speed Leveling
 #name a) Zuldazar WarCampaign
-#internal
 << Alliance
 step
 #completewith Brigadier Thom
@@ -58651,7 +58588,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Tips & Tricks
 #name a) Alterac Valley Quests
-#internal
 step
 #sticky
 *|cRXP_WARN_Chapter 2:|r Alterac Valley Quests
@@ -59025,7 +58961,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Tips & Tricks
 #name a) How to Use & Essential Tips
-#internal
 step
 *Welcome to the RestedXP War Within Preparation Guide!
 *|cFFFF0000Attention!|r |cRXP_WARN_Please take a moment to read this chapter, as it will greatly assist you in navigating and using the guide effectively|r.
@@ -59104,7 +59039,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Tips & Tricks
 #name a) Item Information
-#internal
 step
 #sticky
 *|cRXP_WARN_Chapter 5:|r Item Showcase
@@ -59148,7 +59082,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Tips & Tricks
 #name a) Item Setup
-#internal
 step
 #sticky
 *|cRXP_WARN_Chapter 6:|r Item Preparation
@@ -59999,7 +59932,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Tips & Tricks
 #name a) Miscellaneous Quests
-#internal
 step
 #sticky
 *|cRXP_WARN_Chapter 1:|r Miscellaneous Quests
@@ -60838,7 +60770,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Tips & Tricks
 #name a) Pet Battle Setup
-#internal
 step
 #sticky
 *|cRXP_WARN_Chapter 3:|r Pet Battle Quests
@@ -62818,7 +62749,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Tips & Tricks
 #name a) PoP-UP Quests Turnins
-#internal
 step
 #completewith Silas' Secret Stash
 +Turning in these quests during the leveling route is slightly faster. However, you can choose to turn them in at any time, as long as XP is already enabled.
@@ -62930,7 +62860,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Tips & Tricks
 #name a) Pre Patch Quests
-#internal
 step
 #sticky
 *|cRXP_WARN_Chapter 0:|r Pre Patch Quests
@@ -63569,7 +63498,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Tips & Tricks
 #name a) Turnin Route Alliance
-#internal
 << Alliance
 step
 *|cRXP_WARN_Chapter 8:|r Turnin Route
@@ -64094,7 +64022,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Tips & Tricks
 #name a) Turnin Route Hearthstone Locations
-#internal
 step
 #sticky
 *|cRXP_WARN_Chapter 7:|r Hearthstone Locations
@@ -64232,7 +64159,6 @@ RXPGuides.RegisterGuide([[
 #version 4
 #group RestedXP Tips & Tricks
 #name a) Turnin Route Horde
-#internal
 << Horde
 step
 *|cRXP_WARN_Chapter 8:|r Turnin Route
@@ -64992,7 +64918,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Abysmal Extraction
-#internal
 step
 .goto 2214,59.61,79.21
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospera Cogwail|r.
@@ -65046,7 +64971,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Abysmal Extraction Multibox
-#internal
 step
 .goto 2214,59.61,79.21
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prospera Cogwail|r.
@@ -65100,7 +65024,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) All Good Things
-#internal
 step
 .goto 2255,55.73,43.84
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Widow Arak'nai|r.
@@ -65317,7 +65240,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) All Ore Nothing
-#internal
 step
 .goto 2248,41.04,72.10
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Germira|r.
@@ -65435,7 +65357,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) All Ore Nothing Multibox
-#internal
 step
 .goto 2248,41.04,72.10
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Germira|r.
@@ -65553,7 +65474,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) An Orphan's Dilemma
-#internal
 step
 #completewith next
 #title Enter the House
@@ -65648,7 +65568,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) Anyway, Here's Firewall
-#internal
 step
 .isQuestAvailable 86196
 .goto 2371,75.87,33.11,-1 
@@ -65751,7 +65670,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Apart for Purpose
-#internal
 step
 .goto 2215,49.12,61.95
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orren Masyn|r.
@@ -65895,7 +65813,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Apart for Purpose Multibox
-#internal
 step
 .goto 2215,49.12,61.95
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Orren Masyn|r.
@@ -66035,7 +65952,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) A Stranger's Gift
-#internal
 step
 .subzoneskip 15791
 .isQuestAvailable 85238
@@ -66160,7 +66076,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) A Titanic Expedition
-#internal
 step
 .goto 2248,58.79,28.27
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rannan Korren|r.
@@ -66298,7 +66213,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) A Titanic Expedition Multibox
-#internal
 step
 .goto 2248,58.79,28.27
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rannan Korren|r.
@@ -66436,7 +66350,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) Avoiding the Void
-#internal
 step
 .isQuestAvailable 84972
 .goto 2371,75.87,33.11,-1 
@@ -66675,7 +66588,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Behind Closed Doors
-#internal
 step
 #label BehindClosedDoorsA
 .goto 2339,62.71,21.75
@@ -67161,7 +67073,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Behind Closed Doors Multibox
-#internal
 step
 #label BehindClosedDoorsA
 .goto 2339,62.71,21.75
@@ -67320,7 +67231,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Broken Tools
-#internal
 step
 #completewith next
 .goto 2214,43.98,33.68,10,0 >> Enter the House
@@ -67395,7 +67305,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Brotherhood in the Skolzgal Wood
-#internal
 step
 .goto 2248,55.36,55.79
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dornogal Citizen|r.
@@ -67771,7 +67680,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) Campaign & Storylines 1
-#internal
 step
 #include RestedXP War Within Campaigns\an) Chapter 1 - A Shadowy Invitation
 step
@@ -67895,7 +67803,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) Campaign & Storylines 2
-#internal
 step
 #title Skyriding Glyph: Serrated Peaks
 #completewith next
@@ -68002,7 +67909,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) Campaign & Storylines 3
-#internal
 step
 #label KareshCampaignSkipB
 #completewith next
@@ -68200,7 +68106,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) Campaign & Storylines 4
-#internal
 step
 #include RestedXP War Within Campaigns\aq) Chapter 4 - Shadows En Garde@StartShadowPointDarkmend1-EndShadowPointDarkmend1
 step
@@ -69211,7 +69116,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) Campaign & Storylines 5
-#internal
 step
 .isOnQuest 84974
 .goto 2371,58.89,57.89
@@ -69756,7 +69660,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) Chasing Echoes
-#internal
 step
 .isQuestAvailable 85006
 .goto 2371,75.87,33.11,-1 
@@ -69907,7 +69810,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Cloud Fishing
-#internal
 step
 .goto 2248,60.17,28.38
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Harmot|r.
@@ -69968,7 +69870,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Cloud Fishing Multibox
-#internal
 step
 .goto 2248,60.17,28.38
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Harmot|r.
@@ -70029,7 +69930,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Copyright Infringement
-#internal
 step
 .goto 2346,32.23,31.00
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Snap Vellumgrease|r.
@@ -70158,7 +70058,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Crushing Depths
-#internal
 step
 #loop
 .goto 2215,53.97,29.9,10,0
@@ -70260,7 +70159,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Crushing Depths Multibox
-#internal
 step
 .goto 2215,54.19,29.20
 >>Kill the |cRXP_ENEMY_Kobyss Shadeshaper|r |cRXP_WARN_(they are invisible)|r. Loot them for the |T237325:0|t[|cRXP_LOOT_Gasping Fish|r].
@@ -70544,7 +70442,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Dread in the Den
-#internal
 step
 .goto 2214,58.50,45.63
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Scrit|r.
@@ -70823,7 +70720,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Dread in the Den Multibox
-#internal
 step
 #label DreadInTheDenA
 .goto 2214,58.50,45.63
@@ -71199,7 +71095,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Envenomed Invasion
-#internal
 step
 #label EnvenomedInvasionA
 .goto 2214,61.70,42.64
@@ -71383,7 +71278,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Envenomed Invasion Multibox
-#internal
 step
 #label EnvenomedInvsaionA
 .goto 2214,61.70,42.64
@@ -71704,7 +71598,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Fearbreaker
-#internal
 step
 >>|cRXP_WARN_You have to complete the Ringing Deeps campaign in order to do these quests|r.
 .turnin 81689 >>Complete 'The Ringing Deeps' campaign
@@ -71912,7 +71805,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Fearbreaker Multibox
-#internal
 step
 .goto 2214,43.01,34.11
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Moira Thaurissan|r.
@@ -72140,7 +72032,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Fore!
-#internal
 step
 .goto 2346,65.19,59.91
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ripsnoodle|r
@@ -72199,7 +72090,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Frolicking in the Fetid Grotto
-#internal
 step
 #completewith next
 #optional
@@ -72249,7 +72139,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Frolicking in the Fetid Grotto Multibox
-#internal
 step
 .goto 2214,58.29,47.98
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Hrandaz|r.
@@ -72390,7 +72279,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) G.E.T.A.
-#internal
 step
 .goto 2346,39.08,30.56
 >>|TInterface/cursor/crosshair/interact.blp:20|tClick on the |cRXP_PICK_Poster|r
@@ -72579,7 +72467,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Grieve & Weave
-#internal
 step
 .goto 2213,64.09,15.92
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arax'ne|r.
@@ -72629,7 +72516,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Grieve & Weave Multibox
-#internal
 step
 .goto 2213,64.09,15.92
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arax'ne|r.
@@ -72727,7 +72613,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Gutter Work
-#internal
 step
 #label GutterWorkA
 .goto 2255,59.99,66.18
@@ -72823,7 +72708,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Gutter Work Multibox
-#internal
 step
 #label GutterWorkA
 .goto 2255,59.99,66.18
@@ -72916,7 +72800,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Haggling with Mmarl
-#internal
 step
 .goto 2255,55.77,43.73
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Linny Leadfinger|r.
@@ -73141,7 +73024,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Hard Ways at the Gallagio
-#internal
 step
 .goto 2346,43.35,51.67
 >>|TInterface/cursor/crosshair/interact.blp:20|tClick on the |cRXP_PICK_Letter|r on the counter.
@@ -73767,7 +73649,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Hazards of Slimediving
-#internal
 step
 .goto 2346,40.64,87.08
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Slimediver Kazzandra|r.
@@ -73830,7 +73711,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Heart of Stone
-#internal
 step
 #label FreywoldVillageLoveofGems
 .goto 2248,43.04,70.04
@@ -73962,7 +73842,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Heart of Stone Multibox
-#internal
 step
 #label FreywoldVillageLoveofGems
 .goto 2248,43.04,70.04
@@ -74144,7 +74023,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Hope, An Anomaly
-#internal
 step
 #label HopeAnAnomalyA
 .goto 2248,41.74,70.85
@@ -74303,7 +74181,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Hope, An Anomaly Multibox
-#internal
 step
 #label HopeAnAnomalyA
 .goto 2248,41.74,70.85
@@ -74706,7 +74583,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) In Search of Darkness
-#internal
 step
 .isQuestAvailable 90972
 .goto 2371,75.87,33.11,-1 
@@ -75066,7 +74942,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Into the Fog
-#internal
 step
 .goto 2214,54.29,62.37
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Noli Marlen|r.
@@ -75185,7 +75060,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Into the Fog Multibox
-#internal
 step
 #label IntoTheFogA
 .goto 2214,54.29,62.37
@@ -75328,14 +75202,12 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Isle of Dorn - Cinderbrew Meadery
-#internal
 ]]);
 RXPGuides.RegisterGuide([[
 #retail
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Isle of Dorn - Extra Quests
-#internal
 step
 .goto 2248,35.79,77.18
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Discarded Botanist Notes|r.
@@ -75462,7 +75334,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Isle of Dorn - Extra Quests Multibox
-#internal
 step
 .goto 2248,35.79,77.18
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Discarded Botanist Notes|r.
@@ -75757,7 +75628,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Kaja 'Curiosity
-#internal
 step
 .goto 2346,42.78,52.84
 >>|TInterface/cursor/crosshair/interact.blp:20|tClick on the |cRXP_PICK_Gig Sheets|r.
@@ -76086,7 +75956,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Kobold Candles/Crew/Story
-#internal
 step
 #completewith next
 #label HomeIsCandleIs
@@ -76779,7 +76648,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Kobold Candles/Crew/Story Multibox
-#internal
 step
 .goto 2214,43.01,34.16
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Skitter|r.
@@ -77477,7 +77345,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Light of Velhan's Claim
-#internal
 step
 #label LightOfVelhansClaimA
 .goto 2215,49.19,41.10
@@ -77812,7 +77679,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Light of Velhan's Claim Multibox
-#internal
 step
 #label LightOfVelhansClaimA
 .goto 2215,49.19,41.10
@@ -78118,7 +77984,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) Lost and Found Storage
-#internal
 step
 .subzoneskip 15781
 .isQuestAvailable 85052
@@ -78268,7 +78133,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Lost in the Darkness
-#internal
 step
 .goto 2215,61.18,30.50
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aliya Hillhelm|r.
@@ -78327,7 +78191,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Lost Lord of the Storm
-#internal
 step
 .goto 2339,32.77,33.65
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rooktender Otwin|r.
@@ -78470,7 +78333,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Lost Lord of the Storm Multibox
-#internal
 step
 .goto 2339,32.77,33.65
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Rooktender Otwin|r.
@@ -78702,7 +78564,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Magma-nificence
-#internal
 step
 #label MagmanificenceA
 .goto 2214,37.20,22.46
@@ -78848,7 +78709,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Magma-nificence Multibox
-#internal
 step
 #label MagmanificenceA
 .goto 2214,37.20,22.46
@@ -79012,7 +78872,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Melody of Madness
-#internal
 step
 .goto 2255,59.37,19.36
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Faerin Lothar|r.
@@ -79294,7 +79153,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Melody of Madness Multibox
-#internal
 step
 .goto 2255,59.37,19.36
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Faerin Lothar|r.
@@ -79585,7 +79443,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Memories of the Sky
-#internal
 step
 .goto 2215,60.49,60.21
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maera Ashyld|r.
@@ -79701,7 +79558,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Mr. Sunflower's Therapy
-#internal
 step
 #label MrSunflowersTherapyA
 .goto 2216,63.32,37.45
@@ -79758,7 +79614,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Mr. Sunflower's Therapy Multibox
-#internal
 step
 #label MrSunflowersTherapyA
 .goto 2216,63.32,37.45
@@ -80017,7 +79872,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) Of Boughs and Bonds
-#internal
 step
 .isQuestAvailable 84740
 .goto 2371,75.87,33.11,-1 
@@ -80247,7 +80101,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Oh, Rats!
-#internal
 step
 .goto 2346,38.18,88.48
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Humphrey Shortswig|r
@@ -80450,7 +80303,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) On a Technicality
-#internal
 step
 .isQuestAvailable 85429
 .goto 2371,75.87,33.11,-1 
@@ -80751,7 +80603,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Pawns and Puppetry
-#internal
 step
 .goto 2255,57.34,42.25
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brann Bronzebeard|r.
@@ -81000,7 +80851,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Pillar-nest of Horrors
-#internal
 step
 #completewith next
 #label ArachnophobicA
@@ -81074,7 +80924,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Pillar-nest Vosh
-#internal
 step
 #label PillarnestVoshA
 .goto 2255,57.78,19.77
@@ -81243,7 +81092,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Pillar-nest Vosh Multibox
-#internal
 step
 #label PillarnestVoshA
 .goto 2255,57.78,19.77
@@ -81412,7 +81260,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) Priest of the Old Ways
-#internal
 step
 .isQuestAvailable 85019
 .goto 2371,75.87,33.11,-1 
@@ -81551,7 +81398,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Property Devalued
-#internal
 step
 .goto 2346,41.87,66.03
 >>|TInterface/cursor/crosshair/interact.blp:20|tClick on the |cRXP_PICK_Wanted Poster|r
@@ -81825,7 +81671,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Rak-Ush Swarmery
-#internal
 step
 .goto 2255,55.90,42.16
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Anub'okki|r.
@@ -82091,7 +81936,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Rak-Ush Swarmery Multibox
-#internal
 step
 .goto 2255,76.02,82.33
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kish'nal|r.
@@ -82337,7 +82181,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Rampage at Nibelgaz Mine
-#internal
 step
 #label RampageAtNibelgazMineA
 .goto 2214,46.87,14.87
@@ -82520,7 +82363,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Rampage at Nibelgaz Mine Multibox
-#internal
 step
 #label RampageAtNibelgazMineA
 .goto 2214,46.87,14.87
@@ -82697,7 +82539,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Remember Me, Earthen
-#internal
 step
 .goto 2248,55.75,56.05
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Urtago|r.
@@ -83191,7 +83032,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Remember Me, Earthen Multibox
-#internal
 step
 .goto 2248,55.75,56.05
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Urtago|r.
@@ -83677,7 +83517,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Rest At Last
-#internal
 step
 .goto 2215,43.16,52.41
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Great Kyron|r.
@@ -83828,7 +83667,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Revenge in the Rumbling Wastes
-#internal
 step
 .goto 2214,58.03,46.89
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Kagfritha|r.
@@ -83909,7 +83747,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Revenge in the Rumbling Wastes Multibox
-#internal
 step
 #label RevengeInTheRumblingWastesA
 .goto 2214,58.03,46.89
@@ -83994,7 +83831,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Routine Maintenance
-#internal
 step
 .goto 2214,54.79,64.18
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Danagh|r.
@@ -84262,7 +84098,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Routine Maintenance Multibox
-#internal
 step
 #label RoutineMaintenanceA
 .goto 2214,54.79,64.18
@@ -84557,7 +84392,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Sanity's Rest
-#internal
 step
 #completewith next
 #label SanitysRest
@@ -84750,7 +84584,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Seven Soldiers
-#internal
 step
 .goto 2248,42.73,71.74
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Aggartha|r.
@@ -84956,7 +84789,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Seven Soldiers Multibox
-#internal
 step
 #label SevenSoldiersAA
 .goto 2248,42.73,71.74
@@ -85183,7 +85015,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Silken Ward
-#internal
 step
 .goto 2255,55.78,43.71
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Linny Leadfinger|r.
@@ -85316,7 +85147,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Silken Ward Multibox
-#internal
 step
 .goto 2255,55.78,43.71
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Linny Leadfinger|r.
@@ -85449,7 +85279,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Spores of Dread
-#internal
 step
 #completewith next
 #label SporesOfDreadA
@@ -85682,7 +85511,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Spores of Dread Multibox
-#internal
 step
 #completewith next
 #label SporesOfDreadA
@@ -85888,7 +85716,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Striking Steel
-#internal
 step
 #label StrikingSteelA
 .goto 2215,41.27,53.05
@@ -86206,7 +86033,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Striking Steel Multibox
-#internal
 step
 #label StrikingSteelA
 .goto 2215,41.27,53.05
@@ -86348,7 +86174,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Subterfuge in Silk
-#internal
 step
 #completewith next
 #optional
@@ -86621,7 +86446,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Subterfuge in Silk Multibox
-#internal
 step
 #label SubterfugeInSilkA
 .goto 2255,56.90,38.91
@@ -86878,7 +86702,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Suspicious Minds
-#internal
 step
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Derill Fayn|r and |cRXP_FRIENDLY_Lerrenai Fayn|r.
 .accept 83247 >>Accept Suspicious Minds
@@ -86948,7 +86771,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Suspicious Minds Multibox
-#internal
 step
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Derill Fayn|r and |cRXP_FRIENDLY_Lerrenai Fayn|r.
 .accept 83247 >>Accept Suspicious Minds
@@ -87018,7 +86840,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) That Tazavesh Taste
-#internal
 step
 .isQuestAvailable 85383
 .goto 2371,75.87,33.11,-1 
@@ -87195,7 +87016,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Caretaker of Brunwin's Terrace
-#internal
 step
 .goto 2214,47.11,30.21
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Batzvara|r.
@@ -87451,7 +87271,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Caretaker of Brunwin's Terrace Multibox
-#internal
 step
 .goto 2214,47.11,30.21
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Batzvara|r.
@@ -87685,7 +87504,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The G.O.L.E.M of Progress
-#internal
 step
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Pitz Lowe|r and |cRXP_FRIENDLY_Old Man Lowe|r.
 .accept 84672 >>Accept Garbage Day
@@ -87854,7 +87672,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Hermit
-#internal
 step
 #label TheHermitA
 .goto 2248,55.54,56.50
@@ -87993,7 +87810,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Hermit Multibox
-#internal
 step
 #label TheHermitA
 .goto 2248,55.54,56.50
@@ -88133,7 +87949,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Highst
-#internal
 step
 .goto 2346,43.24,82.87
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Skedgit Cinderbangs|r.
@@ -88307,7 +88122,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Last Mage of Hallowfall
-#internal
 step
 .goto 2215,48.79,64.51
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wenren Althal|r.
@@ -88479,7 +88293,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Last Mage of Hallowfall Multibox
-#internal
 step
 .goto 2215,48.79,64.51
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wenren Althal|r.
@@ -88648,7 +88461,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Mysterious Chef
-#internal
 step
 .goto 2215,69.94,32.58
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dolena|r.
@@ -88712,7 +88524,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Mysterious Chef Multibox
-#internal
 step
 .goto 2215,69.94,32.58
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dolena|r.
@@ -88776,7 +88587,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Opalcreg
-#internal
 step
 #label TheOpalcregA
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dagran Thaurissan II|r and |cRXP_FRIENDLY_Peacekeeper Hektare|r.
@@ -88989,7 +88799,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Opalcreg Multibox
-#internal
 step
 #label TheOpalcregA
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dagran Thaurissan II|r and |cRXP_FRIENDLY_Peacekeeper Hektare|r.
@@ -89204,7 +89013,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Perfect Wedding
-#internal
 step
 .goto 2346,44.02,50.10
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gerry Clogcraw|r
@@ -89451,7 +89259,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Priory
-#internal
 step
 .goto 2215,40.51,50.75
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_General Steelstrike|r.
@@ -89660,7 +89467,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Priory Multibox
-#internal
 step
 .goto 2215,30.94,55.61
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baron Sybaestan Braunpyke|r.
@@ -89851,7 +89657,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Second Front
-#internal
 step
 #label TheSecondFrontA
 .goto 2255,29.44,41.65
@@ -89919,7 +89724,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Second Front Multibox
-#internal
 step
 #label TheSecondFrontA
 .goto 2255,29.44,41.65
@@ -89987,7 +89791,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Sky's the Limit
-#internal
 step
 .goto 2215,69.26,43.83
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Barahl Lynflayme|r.
@@ -90148,7 +89951,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Sky's the Limit Multibox
-#internal
 step
 #label TheSkysTheLimitA
 .goto 2215,69.26,43.83
@@ -90319,7 +90121,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Verdigrease Knight
-#internal
 step
 #label TheVerdigreaseKnightA
 #completewith next
@@ -90579,7 +90380,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Weight of Duty
-#internal
 step
 #completewith next
 #title Enter the Church
@@ -90635,7 +90435,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Wild Camp
-#internal
 step
 .goto 2255,23.62,52.18
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ysabel Gleamgaard|r.
@@ -90708,7 +90507,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Wild Camp Multibox
-#internal
 step
 .goto 2255,23.62,52.18
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ysabel Gleamgaard|r.
@@ -90780,7 +90578,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Wormlands
-#internal
 step
 .goto 2255,42.27,42.50
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Greenspeaker Na'layro|r.
@@ -90971,7 +90768,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) The Wormlands Multibox
-#internal
 step
 .goto 2255,42.27,42.50
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Greenspeaker Na'layro|r.
@@ -91167,7 +90963,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Tired of Rest
-#internal
 step
 .goto 2214,56.27,45.70
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Haimaz|r.
@@ -91332,7 +91127,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) Tired of Rest Multibox
-#internal
 step
 #label TiredOfRestA
 .goto 2214,56.27,45.70
@@ -91511,7 +91305,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Loremaster
 #name a) Untethered Potential
-#internal
 step
 #include a) Phase Diving Unlock
 step
@@ -91623,7 +91416,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) What Grows in the Dark
-#internal
 step
 #label WhatGrowsInTheDarkA
 .goto 2215,70.50,44.91
@@ -91732,7 +91524,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name a) What Grows in the Dark Multibox
-#internal
 step
 #label WhatGrowsInTheDarkA
 .goto 2215,70.50,44.91
@@ -91839,7 +91630,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name Fungal Folly Delve
-#internal
 step
 .isInScenario 2311
 .goto 2249,60.94,79.81
@@ -91978,7 +91768,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP War Within Loremaster
 #name Fungal Folly Delve Multibox
-#internal
 step
 .goto 2249,60.94,79.81
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Benston|r.
@@ -92058,7 +91847,6 @@ RXPGuides.RegisterGuide([[
 #subgroup K'aresh
 #name u) The Bees Knees
 #displayname |cFF00CCFF11|r - The Bees Knees
-#internal
 step
 #completewith next
 .hs >>Hearth to Tazavesh, the Veiled Market
@@ -92618,7 +92406,6 @@ RXPGuides.RegisterGuide([[
 #subgroup K'aresh
 #name v) Nesingwary Necessities
 #displayname |cFF00CCFF12|r - Nesingwary Necessities
-#internal
 step
 .goto 2371,75.90,34.18
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ve'nari|r
@@ -92745,7 +92532,6 @@ RXPGuides.RegisterGuide([[
 #subgroup K'aresh
 #name v) Roaming Free
 #displayname |cFF00CCFF13|r - Roaming Free
-#internal
 step
 .goto 2371,75.89,34.18
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ve'nari|r
@@ -93096,7 +92882,6 @@ RXPGuides.RegisterGuide([[
 #subgroup K'aresh
 #name w) Fox-strut
 #displayname |cFF00CCFF14|r - Fox-strut
-#internal
 step
 .goto 2371,75.89,34.18
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ve'nari|r
@@ -93308,7 +93093,6 @@ RXPGuides.RegisterGuide([[
 #subgroup K'aresh
 #name x) Lil'Lapbugs
 #displayname |cFF00CCFF15|r - Lil'Lapbugs
-#internal
 step
 .goto 2371,75.89,34.18
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ve'nari|r
@@ -93605,7 +93389,6 @@ RXPGuides.RegisterGuide([[
 #subgroup K'aresh
 #name y) Rays of Sunshine
 #displayname |cFF00CCFF16|r - Rays of Sunshine
-#internal
 step
 .goto 2371,75.89,34.18
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ve'nari|r
@@ -93647,7 +93430,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Azj-Kahet - Tak-Rethan Abyss
-#internal
 step
 .goto 2255,54.91,72.55,10,0
 .goto 2216,67.69,24.65
@@ -93942,7 +93724,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Azj-Kahet - The Spiral Weave
-#internal
 step
 .goto 2255,45.06,18.76
 .zone 2347 >> Enter the |cRXP_WARN_Spiral Weave|r on any difficulty.
@@ -94419,7 +94200,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Azj-Kahet - The Underkeep
-#internal
 step
 .goto 2213,57.18,64.51,10,0
 .goto 2213,58.63,66.6
@@ -94743,7 +94523,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #name a) Delve The Underkeep
 #group RestedXP War Within Miscellaenous
-#internal
 step
 .isInScenario 2426
 .goto 2299,45.44,41.83
@@ -94812,7 +94591,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Excavation Site 9
-#internal
 step
 .goto 2214,74.5,96.46,40,0
 .wpradius 2214,74.5,96.46,100,0
@@ -95116,7 +94894,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Hallowfall - Mycomancer Cavern
-#internal
 step
 .goto 2215,70.82,31.02,10,0
 .goto 2215,71.38,31.2
@@ -95461,7 +95238,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Hallowfall - Nightfall Sanctum
-#internal
 step
 .goto 2215,35.2,46.06,15,0
 .wpradius 2215,35.2,46.06,60,0
@@ -95968,7 +95744,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Hallowfall - Skittering Breach
-#internal
 step
 .isQuestAvailable 83768
 .goto 2310,72.30,55.18
@@ -96310,7 +96085,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Hallowfall - The Sinkhole
-#internal
 step
 .goto 2215,50.64,52.6,20,0
 .wpradius 2215,50.64,52.6,45
@@ -96658,7 +96432,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Isle of Dorn - Earthcrawl Mines
-#internal
 step
 .isQuestAvailable 85648
 .goto 2269,44.49,12.17
@@ -97078,7 +96851,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Isle of Dorn - Earthcrawl Mines Bugs and Grubs
-#internal
 step
 .isInScenario 2847
 .goto 2269,43.92,14.24
@@ -97190,7 +96962,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Isle of Dorn - Earthcrawl Mines Fiery Grounds
-#internal
 step
 .isInScenario 2389
 .goto 2269,44.38,13.67
@@ -97282,7 +97053,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Isle of Dorn - Earthcrawl Mines Looking For Treasure
-#internal
 step
 .isInScenario 2390
 .goto 2269,43.88,14.31
@@ -97435,7 +97205,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Isle of Dorn - Earthcrawl Mines Precious Ore
-#internal
 step
 .isInScenario 2385
 #completewith next
@@ -97499,7 +97268,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Isle of Dorn - Fungal Folly
-#internal
 step
 .isQuestAvailable 83758
 .goto 2249,61.35,79.96
@@ -97877,7 +97645,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Isle of Dorn - Kriegval's Rest
-#internal
 step
 #completewith next
 #optional
@@ -98316,7 +98083,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) K'aresh - Archival Assault
-#internal
 step
 .isInScenario 3065
 .goto 2452,40.65,84.61
@@ -98782,7 +98548,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) The Ringing Deeps - The Dread Pit
-#internal
 step
 .isQuestAvailable 83766
 .goto 2302,30.05,54.68
@@ -99063,7 +98828,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) The Ringing Deeps - Waterworks
-#internal
 step
 .goto 2214,42.07,48.08,10,0
 .goto 2214,42.19,48.67
@@ -99468,7 +99232,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP War Within Miscellaenous
 #name a) Undermine - Sidestreet Sluice
-#internal
 step
 .goto 2346,34.14,54.17,30,0
 .goto 2346,35.2,53.66,15,0

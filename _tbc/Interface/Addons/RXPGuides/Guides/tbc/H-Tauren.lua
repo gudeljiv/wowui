@@ -1,3 +1,4 @@
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #tbc
 #version 7
@@ -8,6 +9,8 @@ RXPGuides.RegisterGuide([[
 #subgroup RestedXP Horde 1-30
 #defaultfor Tauren
 #next 6-10 Mulgore
+
+
 step << !Tauren
     #completewith next
     .goto Mulgore,44.92,77.12
@@ -434,7 +437,9 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Antur|r
     .accept 1656 >>Accept A Task Unfinished
     .target Antur Fallow
+
     ]])
+
 RXPGuides.RegisterGuide([[
 #tbc
 #version 7
@@ -444,8 +449,9 @@ RXPGuides.RegisterGuide([[
 #version 7
 #subgroup RestedXP Horde 1-30
 #defaultfor Tauren
-#next 10-20 Eversong Woods / Ghostlands << !Warrior !Shaman
+#next 10-20 Eversong Woods/Ghostlands << !Warrior !Shaman
 #next 10-13 Mulgore << Warrior/Shaman
+
 step
     #softcore
 	#completewith BloodhoofHome
@@ -455,6 +461,7 @@ step
 	#completewith BloodhoofHome
     .subzone 222 >> Run to Bloodhoof Village
 step
+    #softcore
     .goto Mulgore,48.2,53.4
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ahab|r
     .accept 11129 >>Accept Kyle's Gone Missing!
@@ -466,16 +473,19 @@ step
     .accept 766 >>Accept Mazzranache
     .target Maur Raincaller
 step
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baine|r and |cRXP_FRIENDLY_Ruul|r
+    #hardcore
+    .goto Mulgore,47.35,62.01
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ruul|r
+    .accept 743 >>Accept Dangers of the Windfury
+    .target Ruul Eagletalon
+step
+    .goto Mulgore,47.51,60.16
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baine|r
     .turnin 763 >>Turn in Rites of the Earthmother
     .accept 745 >>Accept Sharing the Land
     .accept 767 >>Accept Rite of Vision
     .accept 746 >>Accept Dwarven Digging
-    .target +Baine Bloodhoof
-    .accept 743 >>Accept Dangers of the Windfury
-    .target +Ruul Eagletalon
-    .goto Mulgore,47.36,62.01
-    .goto Mulgore,47.51,60.16
+    .target Baine Bloodhoof
 step
     #label BloodhoofHome
     .goto Mulgore,46.63,61.09
@@ -560,33 +570,40 @@ step << Hunter
     .itemcount 2509,1
     .itemStat 18,QUALITY,<7
     .itemStat 18,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<3.0
+step
+    #hardcore
+    .goto Mulgore,46.97,57.07
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maur|r
+    .accept 766 >>Accept Mazzranache
+    .target Maur Raincaller
+step
+    .goto Mulgore,47.76,57.53
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Zarlman|r
+    .turnin 767 >>Turn in Rite of Vision
+    .accept 771 >>Accept Rite of Vision
+    .target Zarlman Two-Moons
+step
+    #hardcore
+    .goto Mulgore,48.2,53.4
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ahab|r
+    .accept 11129 >>Accept Kyle's Gone Missing!
+    .target Ahab Wheathoof
+step
+    .goto Mulgore,48.71,59.32
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to cRXP_FRIENDLY_Harken|r
+    .accept 761 >>Accept Swoop Hunting
+    .target Harken Windtotem
 step << Tauren
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maur|r, |cRXP_FRIENDLY_Zarlman|r, |cRXP_FRIENDLY_Harken|r and |cRXP_FRIENDLY_Mull|r
-    .accept 766 >>Accept Mazzranache
-    .target +Maur Raincaller
-    .goto Mulgore,46.97,57.07
-    .turnin 767 >>Turn in Rite of Vision
-    .accept 771 >>Accept Rite of Vision
-    .target +Zarlman Two-Moons
-    .goto Mulgore,47.76,57.53
-    .accept 761 >>Accept Swoop Hunting
-    .target +Harken Windtotem
-    .goto Mulgore,48.71,59.32
-    .accept 748 >>Accept Poison Water
-    .target +Mull Thunderhorn
     .goto Mulgore,48.53,60.40
-step << !Tauren
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Maur|r, |cRXP_FRIENDLY_Zarlman|r and |cRXP_FRIENDLY_Harken|r
-    .accept 766 >>Accept Mazzranache
-    .target +Maur Raincaller
-    .goto Mulgore,46.97,57.07
-    .turnin 767 >>Turn in Rite of Vision
-    .accept 771 >>Accept Rite of Vision
-    .target +Zarlman Two-Moons
-    .goto Mulgore,47.76,57.53
-    .accept 761 >>Accept Swoop Hunting
-    .target +Harken Windtotem
-    .goto Mulgore,48.71,59.32
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mull|r
+    .accept 748 >>Accept Poison Water
+    .target Mull Thunderhorn
+step
+    #softcore
+    .goto Mulgore,47.35,62.01
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ruul|r
+    .accept 743 >>Accept Dangers of the Windfury
+    .target Ruul Eagletalon
 step
     #sticky
     #completewith Well
@@ -597,7 +614,7 @@ step
     .complete 766,4 --Swoop Gizzard (1)
 step << Tauren
     #completewith Ambercorns
-    >>Kill |cRXP_ENEMY_Prairie Wolves|r and . Loot them for their |cRXP_LOOT_Paws|r
+    >>Kill |cRXP_ENEMY_Prairie Wolves|r. Loot them for their |cRXP_LOOT_Paws|r
     >>Kill |cRXP_ENEMY_Adult Plainstriders|r. Loot them for their |T134028:0|t[|cRXP_LOOT_Tender Strider Meat|r] and |cRXP_LOOT_Talons|r
     .complete 748,1 --Prairie Wolf Paw (6)
     .mob +Prairie Wolf
@@ -642,7 +659,7 @@ step << Tauren
 	.goto Mulgore,48.60,69.43,60,0
 	.goto Mulgore,45.98,69.70,60,0
 	.goto Mulgore,48.58,67.37,60,0
-    >>Kill |cRXP_ENEMY_Prairie Wolves|r and . Loot them for their |cRXP_LOOT_Paws|r
+    >>Kill |cRXP_ENEMY_Prairie Wolves|r. Loot them for their |cRXP_LOOT_Paws|r
     >>Loot |cRXP_ENEMY_Adult Plainstriders|r. Loot them for their |T134028:0|t[|cRXP_LOOT_Tender Strider Meat|r] and |cRXP_LOOT_Talons|r
     .complete 748,1 --Prairie Wolf Paw (6)
     .mob +Prairie Wolf
@@ -678,9 +695,9 @@ step << Tauren
     .goto Mulgore,48.53,60.40
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mull|r
     .turnin 748 >>Turn in Poison Water
+    .timer 8,Poison Water RP
     .accept 754 >>Accept Winterhoof Cleansing
     .target Mull Thunderhorn
-    --TODO: RP timer 748 turnin
 step << Tauren
     #completewith next
     >>Collect the |cRXP_PICK_Well Stones|r around the Well
@@ -1385,6 +1402,7 @@ step << Tauren
     .target +Ruul Eagletalon
     .goto Mulgore,47.35,62.02
     .turnin 758 >>Turn in Thunderhorn Cleansing
+    .timer 8,Thunderhorn Cleansing RP
     .accept 759 >>Accept Wildmane Totem
     .target +Mull Thunderhorn
     .goto Mulgore,48.54,60.38
@@ -1392,7 +1410,6 @@ step << Tauren
     .target +Harken Windtotem
     .goto Mulgore,48.71,59.32
     .isQuestComplete 761
-    --TODO: Add RP timer 758
 step << Tauren
     #label Bloodhoofturnins1
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baine|r, |cRXP_FRIENDLY_Ruul|r, and |cRXP_FRIENDLY_Mull|r
@@ -1403,10 +1420,10 @@ step << Tauren
     .target +Ruul Eagletalon
     .goto Mulgore,47.35,62.02
     .turnin 758 >>Turn in Thunderhorn Cleansing
+    .timer 8,Thunderhorn Cleansing RP
     .accept 759 >>Accept Wildmane Totem
     .target +Mull Thunderhorn
     .goto Mulgore,48.54,60.38
-    --TODO: Add RP timer 758
 step << !Tauren
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Baine|r, |cRXP_FRIENDLY_Ruul|r and |cRXP_FRIENDLY_Harken|r
     .turnin 746 >>Turn in Dwarven Digging
@@ -1940,6 +1957,7 @@ step << Paladin
 	.target Ithelis
 	.target Osselan
 ]])
+
 RXPGuides.RegisterGuide([[
 #tbc
 #version 7
@@ -1950,6 +1968,7 @@ RXPGuides.RegisterGuide([[
 #subgroup RestedXP Horde 1-30
 #defaultfor Tauren
 #next 13-18 The Barrens
+
 step
     .goto Thunder Bluff,60.0,51.7
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Cairne|r
@@ -2100,8 +2119,8 @@ step
     .line Mulgore,51.50,59.23,53.00,60.24,55.14,60.65,57.47,61.26,59.65,62.40
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Morin|r
     >>|cRXP_WARN_He patrols along the eastern road|r
-    .accept 764 >>Accept in The Venture Co.
-    .accept 765 >>Accept in Supervisor Fizsprocket
+    .accept 764 >>Accept The Venture Co.
+    .accept 765 >>Accept Supervisor Fizsprocket
 	.unitscan Morin Cloudstalker
 step
     #completewith Fizsprocket
@@ -2277,4 +2296,5 @@ step << Warrior
     .turnin 1498 >>Turn in Path of Defense
     .accept 1502 >>Accept Thun'grim Firegaze
     .target Uzzek
+
 ]])

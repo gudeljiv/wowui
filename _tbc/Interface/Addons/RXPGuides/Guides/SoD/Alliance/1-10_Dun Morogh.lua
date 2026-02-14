@@ -1,5 +1,7 @@
 local faction = UnitFactionGroup("player")
 if faction == "Horde" then return end
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #classic
 #version 1
@@ -10,6 +12,7 @@ RXPGuides.RegisterGuide([[
 #next 6-11 Dun Morogh SoD
 #displayname 1-7 Coldridge Valley
 #defaultfor Dwarf/Gnome
+
 step << !Gnome !Dwarf
     #completewith next
     +You have selected a guide meant for Gnomes and Dwarves. You should choose the same starter zone that you start in
@@ -854,7 +857,15 @@ step << !Paladin !Warlock !Hunter
 --  .vendor >> Vendor Trash
     .target Durnan Furcutter
     .isQuestAvailable 317
+
+
+
+
 ----Start of >1.59x training section----
+
+
+
+
 step << Mage
     #xprate >1.59
     #season 0,1
@@ -907,8 +918,18 @@ step << Warrior
     >>If you have 2 silver train |T132155:0|t[Rend] as well
     .train 100,1 << Warrior --Charge
     .target Thran Khorman
+
+
+
+
+
 ----End of >1.59x training section----
 ----Start of <1.59x training section----
+
+
+
+
+
 step << Mage
     #xprate <1.59
     #season 0,1
@@ -993,7 +1014,16 @@ step << Warrior
     .train 100 >> Train |T132337:0|t[Charge]
     .train 772 >> Train |T132155:0|t[Rend]
     .target Thran Khorman
+
+
+
+
 ----End of <1.59x training section----
+
+
+
+
+
 step << !Paladin !Warlock !Hunter
     #optional
     #completewith Stolen
@@ -1075,6 +1105,7 @@ step
     .subzoneskip 800,1
     .isOnQuest 2160
 ]])
+
 RXPGuides.RegisterGuide([[
 #season 2
 #classic
@@ -1085,6 +1116,7 @@ RXPGuides.RegisterGuide([[
 #displayname 7-12 Dun Morogh
 #next 12-13 Dun Morogh SoD
 #defaultfor Dwarf/Gnome
+
 step
     #optional
     #label BoarMeatQuest
@@ -1563,6 +1595,7 @@ step << Hunter
     .train 1130 >> Train |T132212:0|t[Hunter's Mark]
     >>|cRXP_WARN_If you don't have enough money, farm mobs around Kharanos. You'll need this spell for a rune later|r
     .target Grif Wildheart
+
 step
     #optional
     #completewith next
@@ -1944,4 +1977,5 @@ step << Warrior
     .use 2946
     .itemcount 2946,1
     .itemStat 18,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<3.0
+
 ]])

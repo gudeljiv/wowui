@@ -4,6 +4,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP ADV AoE Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 22-26 ADV Wetlands 1 Mage AoE
 #next 26-27 ADV Redridge 2 Mage AoE
@@ -695,6 +696,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP ADV AoE Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 26-27 ADV Redridge 2 Mage AoE
 #next 27-32 ADV Duskwood Mage AoE
@@ -940,6 +942,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP ADV AoE Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 27-32 ADV Duskwood Mage AoE
 #next 32-33 ADV Hillsbrad Mage AoE
@@ -2288,6 +2291,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP ADV AoE Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 32-33 ADV Hillsbrad Mage AoE
 #next 33-37 ADV Arathi Mage AoE
@@ -3134,6 +3138,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP ADV AoE Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 33-37 ADV Arathi Mage AoE
 #next 37-41 ADV Dustwallow Mage AoE
@@ -3471,6 +3476,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP ADV AoE Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 37-41 ADV Dustwallow Mage AoE
 #next 41-41 ADV Dustwallow/Alterac Mage AoE
@@ -4191,6 +4197,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP ADV AoE Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 41-41 ADV Dustwallow/Alterac Mage AoE
 #next 41-42 ADV Badlands Mage AoE
@@ -4752,6 +4759,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP ADV AoE Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 41-42 ADV Badlands Mage AoE
 #next 42-50 ADV Tanaris Mage AoE
@@ -5333,6 +5341,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP ADV AoE Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 42-50 ADV Tanaris Mage AoE
 #next 50-51 ADV Searing Gorge Mage AoE
@@ -5986,6 +5995,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP ADV AoE Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 50-51 ADV Searing Gorge Mage AoE
 #next 51-52 ADV Tanaris/Un'Goro Mage AoE
@@ -6972,6 +6982,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP ADV AoE Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 51-52 ADV Tanaris/Un'Goro Mage AoE
 #next 52-60 ADV Plaguelands Mage AoE
@@ -7825,6 +7836,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP ADV AoE Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 52-60 ADV Plaguelands Mage AoE
 step
@@ -9587,6 +9599,7 @@ RXPGuides.RegisterGuide([[
 #version 23
 #classic
 #tbc
+#mop
 << Alliance
 #name 21-22 Ashenvale SoD
 #displayname 21-22 Ashenvale
@@ -10435,6 +10448,7 @@ RXPGuides.RegisterGuide([[
 #version 23
 #classic
 #tbc
+#mop
 << Alliance Hunter
 #name 21-23 Ashenvale/Stonetalon
 #next 23-24 Wetlands
@@ -11077,6 +11091,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 20-30
 #classic
 #tbc
+#mop
 << Alliance !Hunter
 #name 21-23 Stonetalon/Ashenvale
 #next 23-24 Wetlands
@@ -12319,6 +12334,7 @@ RXPGuides.RegisterGuide([[
 #version 23
 #classic
 #tbc
+#mop
 << Alliance
 #name 22-24 Wetlands
 #displayname 22-24 Wetlands << SoD
@@ -13499,6 +13515,7 @@ RXPGuides.RegisterGuide([[
 #season 2
 #classic
 #tbc
+#mop
 #version 23
 << Alliance
 #group RestedXP Alliance 20-30
@@ -14960,6 +14977,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 20-30
 #classic
 #tbc
+#mop
 << Alliance Hunter
 #name 23-24 Wetlands
 #next 24-27 Duskwood/Redridge
@@ -15522,6 +15540,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 20-30
 #classic
 #tbc
+#mop
 << Alliance !Hunter
 #name 23-24 Wetlands
 #next 24-27 Duskwood/Redridge
@@ -15955,6 +15974,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 24-27 Duskwood/Redridge
 #next 27-29 Wetlands/Hillsbrad;RestedXP Alliance 30-40\29-32 Duskwood
@@ -18463,6 +18483,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 20-30
 #classic
 #tbc
+#mop
 << Alliance
 #name 24-28 Redridge/Duskwood SoD
 #displayname 24-28 Redridge/Duskwood
@@ -20333,6 +20354,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #xprate <1.99
 #name 27-29 Wetlands/Hillsbrad
@@ -21359,6 +21381,7 @@ RXPGuides.RegisterGuide([[
 #season 2
 #classic
 #tbc
+#mop
 << Alliance
 #name 28-32 Duskwood SoD
 #displayname 28-32 Duskwood
@@ -22796,6 +22819,7 @@ RXPGuides.RegisterGuide([[
 << Alliance !Hunter
 #classic
 #tbc
+#mop
 #xprate <1.99
 #name 29-30 Ashenvale
 #next RestedXP Alliance 30-40\29-32 Duskwood
@@ -23315,6 +23339,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 29-32 Duskwood
 #next 32-33 Hillsbrad/Arathi
@@ -25006,6 +25031,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 32-33 Hillsbrad/Arathi
 #next 33-34 Thousand Needles
@@ -26035,6 +26061,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 30-40
 #classic
 #tbc
+#mop
 << Alliance
 #name 32-34 Wetlands/Hillsbrad SoD
 #displayname 32-34 Wetlands/Hillsbrad
@@ -26656,6 +26683,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 33-34 Thousand Needles
 #next 34-35 Stranglethorn Vale I
@@ -27268,6 +27296,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 34-35 Stranglethorn Vale I
 #next 35-36 Desolace;36-38 Stranglethorn Vale II << Hunter
@@ -28182,6 +28211,7 @@ RXPGuides.RegisterGuide([[
 #season 2
 #classic
 #tbc
+#mop
 << Alliance
 #name 34-36 Thousand Needles SoD
 #displayname 34-36 Thousand Needles
@@ -29432,6 +29462,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance Hunter
 #name 35-36 Desolace
 #next 36-38 Stranglethorn Vale II
@@ -30212,6 +30243,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance !Hunter
 #name 35-37 Desolace
 #next 36-38 Stranglethorn Vale II
@@ -30923,6 +30955,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 36-38 Stranglethorn Vale II
 #next 38-39 Swamp of Sorrows
@@ -31652,6 +31685,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 30-40
 #classic
 #tbc
+#mop
 #season 2
 << Alliance
 #name 36-38 Stranglethorn Vale I SoD
@@ -32281,6 +32315,7 @@ RXPGuides.RegisterGuide([[
 #season 2
 #classic
 #tbc
+#mop
 << Alliance
 #name 38-39 Stranglethorn Vale II SoD
 #displayname 38-39 Stranglethorn Vale II
@@ -32819,6 +32854,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 38-39 Swamp of Sorrows
 #next 39-40 Alterac/Arathi
@@ -33422,6 +33458,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 39-40 Alterac/Arathi
 #next RestedXP Alliance 40-50\40-40 Dustwallow Marsh;RestedXP Alliance 40-50\40-40 Dustwallow Marsh2
@@ -34956,6 +34993,7 @@ RXPGuides.RegisterGuide([[
 #season 2
 #classic
 #tbc
+#mop
 << Alliance
 #name 39-41 Alterac/Arathi SoD
 #displayname 39-41 Alterac/Arathi
@@ -36897,6 +36935,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #xprate >1.99 << !Hunter
 #name 40-40 Dustwallow Marsh
@@ -37473,6 +37512,7 @@ RXPGuides.RegisterGuide([[
 #version 23
 #classic
 #tbc
+#mop
 << Alliance !Hunter
 #name 40-40 Dustwallow Marsh2
 #next 40-41 Desolace
@@ -37944,6 +37984,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 #xprate <1.99
 #era/som << !Warlock
 << Alliance !Hunter
@@ -38274,6 +38315,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 41-41 Badlands
 #next 41-43 STV/Swamp of Sorrows
@@ -38979,6 +39021,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 40-50
 #classic
 #tbc
+#mop
 << Alliance
 #name 41-43 STV SoD
 #displayname 41-43 STV
@@ -39621,6 +39664,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 41-43 STV/Swamp of Sorrows
 #somname 41-44 STV/Swamp of Sorrows
@@ -40606,6 +40650,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance !Warlock
 #name 43-44 Tanaris
 #somname 44-45 Tanaris
@@ -41159,6 +41204,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance Warlock
 #name 43-44 Tanaris/Dustwallow
 #somname 44-45 Tanaris/Dustwallow
@@ -41653,6 +41699,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 40-50
 #classic
 #tbc
+#mop
 << Alliance Warlock
 #name 43-44 Tanaris/Dustwallow SoD
 #name 43-44 Tanaris/Dustwallow
@@ -42105,6 +42152,7 @@ RXPGuides.RegisterGuide([[
 #season 2
 #classic
 #tbc
+#mop
 << Alliance !Warlock
 #name 43-44 Tanaris SoD
 #displayname 43-44 Tanaris
@@ -42610,6 +42658,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 40-50
 #classic
 #tbc
+#mop
 << Alliance
 #name 44-46 Feralas SoD
 #displayname 44-46 Feralas
@@ -43787,6 +43836,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 44-48 Feralas
 #somname 45-47 Feralas
@@ -44864,6 +44914,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 40-50
 #classic
 #tbc
+#mop
 << Alliance
 #name 46-48 Tanaris SoD
 #displayname 46-48 Tanaris
@@ -45078,6 +45129,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 48-49 Tanaris/Hinterlands
 #somname 47-49 Tanaris/Hinterlands
@@ -45467,6 +45519,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 40-50
 #classic
 #tbc
+#mop
 << Alliance
 #name 48-50 Tanaris/UnGoro/Hinterlands SoD
 #displayname 48-50 Tanaris/UnGoro/Hinterlands
@@ -46893,6 +46946,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 49-50 Tanaris/Un'Goro
 #next RestedXP Alliance 50-60\50-50 Stranglethorn Vale
@@ -47847,6 +47901,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 50-50 Stranglethorn Vale
 #next 50-51 Searing Gorge
@@ -48207,6 +48262,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 50-51 Searing Gorge
 #next 51-51 Blasted Lands
@@ -48750,6 +48806,7 @@ RXPGuides.RegisterGuide([[
 #next 51-52 Searing Gorge SoD
 #classic
 #tbc
+#mop
 << Alliance
 step
 .goto Stranglethorn Vale,26.694,73.613
@@ -49363,6 +49420,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 #era/som
 << Alliance
 #name 51-51 Blasted Lands
@@ -49652,6 +49710,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 50-60
 #classic
 #tbc
+#mop
 << Alliance
 #name 51-52 Searing Gorge SoD
 #displayname 51-53 Searing Gorge
@@ -50703,6 +50762,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 51-52 WPL
 #next 52-52 Felwood
@@ -51209,6 +51269,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 52-52 Felwood
 #next 52-53 Feralas
@@ -52072,6 +52133,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 50-60
 #classic
 #tbc
+#mop
 << Alliance
 #name 52-53 Felwood SoD
 #displayname 52-53 Felwood
@@ -53216,6 +53278,7 @@ RXPGuides.RegisterGuide([[
 << Alliance
 #classic
 #tbc
+#mop
 #era/som
 #name 52-53 Feralas
 #next 53-53 Azshara
@@ -53848,6 +53911,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #era/som
 #name 53-53 Azshara
@@ -54348,6 +54412,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 53-54 UnGoro Crater
 #next 54-55 Felwood/Winterspring
@@ -55180,6 +55245,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 50-60
 #classic
 #tbc
+#mop
 << Alliance
 #name 53-54 UnGoro Crater SoD
 #displayname 53-54 UnGoro Crater
@@ -56048,6 +56114,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 54-55 Felwood/Winterspring
 #next 55-56 Winterspring
@@ -57049,6 +57116,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 50-60
 #classic
 #tbc
+#mop
 << Alliance
 #name 54-55 Felwood/Winterspring SoD
 #displayname 54-55 Felwood/Winterspring
@@ -57593,6 +57661,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 55-56 Winterspring
 #next 56-57 Burning Steppes
@@ -57954,6 +58023,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 50-60
 #classic
 #tbc
+#mop
 << Alliance
 #name 55-57 Winterspring SoD
 #displayname 55-57 Winterspring
@@ -58261,6 +58331,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 56-57 Burning Steppes
 #next 57-59 Western/Eastern Plaguelands
@@ -59324,6 +59395,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 50-60
 #classic
 #tbc
+#mop
 << Alliance
 #name 57-58 Burning Steppes SoD
 #displayname 54-56 Burning Steppes
@@ -60187,6 +60259,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 57-59 Western/Eastern Plaguelands
 #next 59-59 Winterspring/Silithus part 1
@@ -61399,6 +61472,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance 50-60
 #classic
 #tbc
+#mop
 << Alliance
 #name 58-60 Western/Eastern Plaguelands SoD
 #displayname 56-60 Western/Eastern Plaguelands
@@ -63071,6 +63145,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 59-59 Winterspring/Silithus part 1
 #next 59-60 Winterspring/Silithus part 2
@@ -64403,6 +64478,7 @@ RXPGuides.RegisterGuide([[
 #season 0,1
 #classic
 #tbc
+#mop
 << Alliance
 #name 59-60 Winterspring/Silithus part 2
 step
@@ -65276,6 +65352,7 @@ RXPGuides.RegisterGuide([[
 #version 23
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 21-22 Duskwood Mage AoE
 #next 22-26 Wetlands Mage AoE
@@ -65647,6 +65724,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 22-26 Wetlands Mage AoE
 #next 26-31 Duskwood Mage AoE
@@ -66071,6 +66149,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 26-31 Duskwood Part 2 Mage AoE
 #next 31-33 Hillsbrad Mage AoE
@@ -66676,6 +66755,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 31-33 Hillsbrad Mage AoE
 #next 33-60 Mage AoE
@@ -67117,6 +67197,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Alliance Mage
 #classic
 #tbc
+#mop
 << Alliance Mage
 #name 33-60 Mage AoE
 step
@@ -68245,6 +68326,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 22-30
 #classic
 #tbc
+#mop
 << Horde
 #name 22-24 Hillsbrad
 #somname 22-24 Hillsbrad (Optional)
@@ -70133,6 +70215,7 @@ RXPGuides.RegisterGuide([[
 #xprate >1.99
 #classic
 #tbc
+#mop
 << Horde Shaman/Horde Rogue
 #name 23-24 Hillsbrad Class Quests
 #next 24-26 Southern Barrens
@@ -71036,6 +71119,7 @@ step
 RXPGuides.RegisterGuide([[
 #classic
 #tbc
+#mop
 << Horde
 #xprate >1.99
 #name 24-26 Southern Barrens
@@ -72264,6 +72348,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 22-30
 #classic
 #tbc
+#mop
 << Horde
 #name 24-26 Southern Barrens/Stonetalon
 #next 26-28 Ashenvale
@@ -73861,6 +73946,7 @@ RXPGuides.RegisterGuide([[
 #xprate <1.99
 #classic
 #tbc
+#mop
 << Horde
 #name 26-28 Ashenvale
 #next 28-30 Thousand Needles
@@ -74989,6 +75075,7 @@ RXPGuides.RegisterGuide([[
 #xprate >1.99
 #classic
 #tbc
+#mop
 << Horde
 #name 26-28 SoD Ashenvale
 #next 28-30 Thousand Needles
@@ -75591,6 +75678,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 22-30
 #classic
 #tbc
+#mop
 << Horde
 #name 28-30 Thousand Needles
 #displayname 28-33 Thousand Needles << sod
@@ -78035,6 +78123,7 @@ RXPGuides.RegisterGuide([[
 #xprate <1.99
 #classic
 #tbc
+#mop
 << Horde
 #name 30-33 Hillsbrad/Arathi
 #next 33-34 Shimmering Flats
@@ -79468,6 +79557,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 30-40
 #classic
 #tbc
+#mop
 << Horde
 #name 33-34 Shimmering Flats
 #displayname 33-35 Shimmering Flats << sod
@@ -80102,6 +80192,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 30-40
 #classic
 #tbc
+#mop
 << Horde
 #xprate <2.1
 #name 34-35 Desolace
@@ -81180,6 +81271,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 30-40
 #classic
 #tbc
+#mop
 << Horde
 #name 35-37 Northern Stranglethorn
 #displayname 35-38 Northern Stranglethorn << sod
@@ -82754,6 +82846,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 30-40
 #classic
 #tbc
+#mop
 << Horde
 #name 37-38 Dustwallow Marsh
 #displayname 38-40 Dustwallow Marsh << sod
@@ -83923,6 +84016,7 @@ RXPGuides.RegisterGuide([[
 #xprate <1.99
 #classic
 #tbc
+#mop
 << Horde
 #name 38-39 Alterac/Arathi
 #next 39-40 Badlands
@@ -85103,6 +85197,7 @@ RXPGuides.RegisterGuide([[
 #xprate <1.99
 #classic
 #tbc
+#mop
 << Horde
 #name 39-40 Badlands
 #next RestedXP Horde 40-50\40-41 Stranglethorn Vale
@@ -85812,6 +85907,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 40-50
 #classic
 #tbc
+#mop
 << Horde
 #name 40-41 Stranglethorn Vale
 #next 41-400_41-41 Swamp of Sorrows
@@ -86515,6 +86611,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 40-50
 #classic
 #tbc
+#mop
 << Horde
 #name 41-400_41-41 Swamp of Sorrows
 #displayname 41-41 Swamp of Sorrows << !sod
@@ -87381,6 +87478,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 40-50
 #classic
 #tbc
+#mop
 << Horde
 #name 41-41 Desolace II
 #next 41-43 Tanaris/Dustwallow
@@ -87680,6 +87778,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 40-50
 #classic
 #tbc
+#mop
 << Horde
 #name 41-43 Tanaris/Dustwallow
 #displayname 42-44 Tanaris/Dustwallow << sod
@@ -88856,6 +88955,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 40-50
 #classic
 #tbc
+#mop
 << Horde
 #name 43-44 Feralas
 #displayname 44-48 Feralas << sod
@@ -90335,6 +90435,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 40-50
 #classic
 #tbc
+#mop
 << Horde
 #xprate <2.1
 #name 44-45 Southern Stranglethorn
@@ -91037,6 +91138,7 @@ RXPGuides.RegisterGuide([[
 #version 23
 #classic
 #tbc
+#mop
 << Horde
 #xprate <2.1
 #name 45-46 Swamp of Sorrows
@@ -91515,6 +91617,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 40-50
 #classic
 #tbc
+#mop
 << Horde
 #name 46-48 Tanaris
 #displayname 48-50 Tanaris << sod
@@ -93216,6 +93319,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 50-60 << Sod
 #classic
 #tbc
+#mop
 << Horde
 #name 48-49 The Hinterlands
 #displayname 50-52 The Hinterlands << Sod
@@ -95171,6 +95275,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 50-60 << sod
 #classic
 #tbc
+#mop
 << Horde
 #name 49-50 Feralas
 #displayname 52-53 Un'Goro Crater << sod
@@ -96183,6 +96288,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 50-60
 #classic
 #tbc
+#mop
 << Horde
 #name 50-51 Stranglethorn/Blasted Lands
 #next 51-52 Searing Gorge/Burning Steppes
@@ -96830,6 +96936,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 50-60
 #classic
 #tbc
+#mop
 << Horde
 #name 51-52 Searing Gorge/Burning Steppes
 #next 52-53 Azshara
@@ -98003,6 +98110,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 50-60
 #classic
 #tbc
+#mop
 << Horde
 #name 52-53 Azshara
 #displayname 53-54 Azshara << sod
@@ -98959,6 +99067,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 50-60
 #classic
 #tbc
+#mop
 << Horde
 #name 53-54 Felwood
 #displayname 54-54 Felwood << sod
@@ -99657,6 +99766,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 50-60
 #classic
 #tbc
+#mop
 << Horde
 #name 54-55 Un'Goro Crater
 #displayname 54-56 Un'Goro Crater << sod
@@ -100659,6 +100769,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 50-60
 #classic
 #tbc
+#mop
 << Horde
 #name 55-56 Felwood/Winterspring
 #displayname 56-57 Felwood/Winterspring << sod
@@ -102484,6 +102595,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 50-60
 #classic
 #tbc
+#mop
 << Horde
 #name 56-58 Western PL/Eastern PL
 #displayname 57-59 Western PL/Eastern PL << sod
@@ -104566,6 +104678,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 50-60
 #classic
 #tbc
+#mop
 << Horde
 #name 58-59 Winterspring/Silithus I
 #next 59-60 Winterspring/Silithus II
@@ -106118,6 +106231,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde 50-60
 #classic
 #tbc
+#mop
 << Horde
 #name 59-60 Winterspring/Silithus II
 step
@@ -106325,6 +106439,7 @@ RXPGuides.RegisterGuide([[
 #version 23
 #classic
 #tbc
+#mop
 << Horde Mage
 #name 21-30 Silverpine/Hillsbrad AoE
 #next 30-36 Arathi/Alterac AoE
@@ -106823,6 +106938,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde Mage AoE
 #classic
 #tbc
+#mop
 << Horde Mage
 #name 30-36 Arathi/Alterac AoE
 #next 36-60 Mage AoE
@@ -107128,6 +107244,7 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Horde Mage AoE
 #classic
 #tbc
+#mop
 << Horde Mage
 #name 36-60 Mage AoE
 step

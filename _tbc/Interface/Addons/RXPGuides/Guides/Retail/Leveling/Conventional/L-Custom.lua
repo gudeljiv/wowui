@@ -117,7 +117,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Legion Remix
 #name a) Accept Scouting Map
-#internal
 step
 .goto 709,52.91,60.16
 >>|TInterface/cursor/crosshair/interact.blp:20|tClick on the |cRXP_PICK_Scouting Map|r
@@ -2347,7 +2346,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Legion Remix
 #name a) A "Noble" Event
-#internal
 step
 .goto 619,45.81,68.30
 .accept 44057 >>Accept A "Noble" Event
@@ -29088,7 +29086,6 @@ RXPGuides.RegisterGuide([[
 #subgroup |cFFFCDC00(10-80+)|r Storylines
 #name a) Excavationssdds
 #displayname Excavations
-#internal
 ]]);
 RXPGuides.RegisterGuide([[
 #retail
@@ -31282,7 +31279,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Legion Remix
 #subgroup |cFFFCDC00(10-80+)|r Storylines
 #name a) Infinite Epilogue
-#internal
 step
 .goto 619,45.64,67.71
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Moratari|r
@@ -32238,7 +32234,6 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Legion Remix
 #name ak) Suramar Lorerunner 4
 #displayname |cFF00CCFF11|r - Suramar 4
-#internal
 ]]);
 RXPGuides.RegisterGuide([[
 #df
@@ -36912,7 +36907,6 @@ RXPGuides.RegisterGuide([[
 #name a) Origins
 #displayname |cFF00CCFF2|r - Origins
 #next a) The Hunt for Illidan Stormrage
-#internal
 #chapter
 step
 #completewith Glaive Attack
@@ -39835,7 +39829,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Legion Remix
 #name a) Strange Humming Crystal
-#internal
 step
 .goto 627,44.06,24.07
 >>Kill |cRXP_ENEMY_Li-An Skymirror|r
@@ -39893,7 +39886,6 @@ RXPGuides.RegisterGuide([[
 #version 1
 #group RestedXP Legion Remix
 #name a) Suramar1
-#internal
 step
 .goto 680,43.41,60.54
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Unpowered Telemancy Beacon|r
@@ -46785,7 +46777,6 @@ RXPGuides.RegisterGuide([[
 #subgroup |cFFFCDC00(10-80+)|r Storylines
 #name aZ) Fragments of Memory
 #displayname Fragments of Memory
-#internal
 step
 .goto 680,49.12,34.31
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Shattered Burial Urn|r
@@ -46807,7 +46798,6 @@ RXPGuides.RegisterGuide([[
 #subgroup |cFFFCDC00(10-80+)|r Storylines
 #name aZ) Fragments of Memory
 #displayname Fragments of Memory
-#internal
 step
 .goto 883,46.89,22.81
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Prophet Velen|r
@@ -46937,7 +46927,6 @@ RXPGuides.RegisterGuide([[
 #subgroup |cFFFCDC00(10-80+)|r Storylines
 #name aZ) Fragments of Memory
 #displayname Fragments of Memory
-#internal
 step
 .goto 883,45.94,23.94
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_High Exarch Turalyon|r
@@ -46991,7 +46980,6 @@ RXPGuides.RegisterGuide([[
 #name b) Assault on Broken Shore
 #displayname |cFF00CCFF3|r - Broken Shore Intro
 #next a) The Assault Begins
-#internal
 step
 .goto 627,28.51,48.30
 .achievementComplete 42301,1
@@ -47024,7 +47012,6 @@ RXPGuides.RegisterGuide([[
 #name b) Assault on Broken Shore Skip
 #displayname |cFF00CCFF3|r - Broken Shore Intro Skip
 #next a) The Assault Begins
-#internal
 step
 .goto 627,69.33,43.90
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Archmage Khadgar|r
@@ -47429,7 +47416,6 @@ RXPGuides.RegisterGuide([[
 #name df) Stormheim Speedrun 2 C
 #displayname |cFF00CCFF10|r - Stormheim 2
 #next dg) Stormheim Speedrun 3 D
-#internal
 step
 #include RestedXP Speed Leveling\cf) Stormheim Speedrun 2@StormheimSpeedrun2A-StormheimSpeedrun2Z
 ]]);
@@ -50775,7 +50761,6 @@ RXPGuides.RegisterGuide([[
 #name dc) Highmountain Speedrun
 #displayname |cFF00CCFF8|r - Highmountain 1
 #next dd) Highmountain Speedrun 2
-#internal
 step
 #include RestedXP Speed Leveling\cc) Highmountain Speedrun@HighmountainSpeedrun1A-HighmountainSpeedrun1Z
 ]]);

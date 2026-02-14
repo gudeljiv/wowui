@@ -1,8 +1,12 @@
 local faction = UnitFactionGroup("player")
 if faction == "Alliance" then return end
+
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 #era/som--h
 << Horde
 #name 1-6 Tauren
@@ -11,6 +15,7 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 #defaultfor Tauren
 #next 6-13 Tauren
+
 step << !Tauren
     #completewith next
     .goto Mulgore,44.92,77.12
@@ -418,9 +423,12 @@ step
     .accept 1656 >>Accept A Task Unfinished
     .target Antur Fallow
 ]])
+
+
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 #era/som--h
 << Horde
 #name 6-13 Tauren
@@ -429,6 +437,8 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 #defaultfor Tauren
 #next 13-15 Silverpine Forest
+
+
 step
 	#completewith next
     .goto Mulgore,47.35,60.70,120 >> Run to Bloodhoof Village
@@ -601,6 +611,7 @@ step << Tauren
     .goto Mulgore,48.53,60.40
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mull|r
     .turnin 748 >>Turn in Poison Water
+    .timer 8,Poison Water RP
     .accept 754 >>Accept Winterhoof Cleansing
     .target Mull Thunderhorn
 step << Tauren
@@ -1157,7 +1168,7 @@ step
 	.goto Mulgore,58.79,28.52,60,0
 	.goto Mulgore,60.56,25.88,60,0
 	.goto Mulgore,59.52,23.36,60,0
-    .xp 9+4400 >> Grind to 3020+/6500xp
+    .xp 9+3020 >> Grind to 3020+/6500xp
     .isQuestComplete 761
     .isQuestComplete 766
 step
@@ -1180,7 +1191,7 @@ step
 	.goto Mulgore,58.79,28.52,60,0
 	.goto Mulgore,60.56,25.88,60,0
 	.goto Mulgore,59.52,23.36,60,0
-    .xp 9+4400 >> Grind to 3720+/6500xp
+    .xp 9+3720 >> Grind to 3720+/6500xp
     .isQuestComplete 761
 step
     #optional
@@ -1202,7 +1213,7 @@ step
 	.goto Mulgore,58.79,28.52,60,0
 	.goto Mulgore,60.56,25.88,60,0
 	.goto Mulgore,59.52,23.36,60,0
-    .xp 9+4400 >> Grind to 3700+/6500xp
+    .xp 9+3700 >> Grind to 3700+/6500xp
     .isQuestComplete 766
 step
     #optional
@@ -1250,6 +1261,7 @@ step << Tauren
     .target +Ruul Eagletalon
     .goto Mulgore,47.35,62.02
     .turnin 758 >>Turn in Thunderhorn Cleansing
+    .timer 8,Thunderhorn Cleansing RP
     .target +Mull Thunderhorn
     .goto Mulgore,48.54,60.38
     .turnin 761 >>Turn in Swoop Hunting
@@ -1266,6 +1278,7 @@ step << Tauren
     .target +Ruul Eagletalon
     .goto Mulgore,47.35,62.02
     .turnin 758 >>Turn in Thunderhorn Cleansing
+    .timer 8,Thunderhorn Cleansing RP
     .target +Mull Thunderhorn
     .goto Mulgore,48.54,60.38
 step << !Tauren
@@ -1436,7 +1449,7 @@ step
     #label Fizsprocket
     .goto Mulgore,64.95,43.33
     >>Kill |cRXP_ENEMY_Supervisor Fizsprocket|r. Loot him for his |cRXP_LOOT_Clipboard|r
-    >>|cRXP_WARN_Run into the mine and hug the right/east side to each him|r
+    >>|cRXP_WARN_Run into the mine and hug the right/east side to reach him|r
     .complete 765,1 --Fizsprocket's Clipboard (1)
     .mob Supervisor Fizsprocket
     .group 2
@@ -3250,3 +3263,4 @@ step
     .zone Silverpine Forest >> Travel to Silverpine Forest
     .zoneskip Silverpine Forest
     ]])
+

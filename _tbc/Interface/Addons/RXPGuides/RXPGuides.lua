@@ -1,4 +1,4 @@
-﻿local addonName, addon = ...
+local addonName, addon = ...
 
 local _G = _G
 local UnitInRaid = UnitInRaid
@@ -22,6 +22,8 @@ if C_Spell and C_Spell.GetSpellInfo then
 else
     GetSpellInfo = _G.GetSpellInfo
 end
+
+
 local GetSpellTexture = C_Spell and C_Spell.GetSpellTexture or _G.GetSpellTexture
 local GetSpellSubtext = C_Spell and C_Spell.GetSpellSubtext or _G.GetSpellSubtext
 local IsCurrentSpell = C_Spell and C_Spell.IsCurrentSpell or _G.IsCurrentSpell
@@ -104,7 +106,7 @@ end
 local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or _G.GetAddOnMetadata
 addon.release = GetAddOnMetadata(addonName, "Version")
 addon.title = GetAddOnMetadata(addonName, "Title")
-local cacheVersion = 27
+local cacheVersion = 29
 local L = addon.locale.Get
 local locale = GetLocale()
 
@@ -167,6 +169,7 @@ addon.activeItems = {}
 addon.activeSpells = {}
 addon.activeMacros = {}
 addon.functions = {}
+addon.separators = {}
 addon.enabledFrames = {} -- Hold all enabled frame/features for Hide/Show
 addon.player = {
     localeClass = select(1, UnitClass("player")),
@@ -1105,17 +1108,24 @@ end
 
 function addon:CreateMetaDataTable(wipe)
     if wipe or addon.release ~= RXPData.release or RXPData.cacheVersion ~= cacheVersion or not cacheVersion or addon.IsNewCharacter() or addon.settings.profile.preLoadData then
-        RXPCData.guideMetaData = nil
-        RXPCData.guideDisabled = nil
+        RXPCData.guideMetaData = {}
+        RXPCData.guideDisabled = {}
         local deleteIndexes = {}
+        local insertItems = {}
         local guides = addon.db.profile.guides
         for key,v in pairs(guides) do
             --print(i,v)
-            local grp = addon.GroupOverride(key)
-            if grp ~= key then
-                guides[grp] = v
+            local group,subgroup,name = key:match("^(.-)|([^|]*)|(.-)")
+
+            local newgrp,newsubgrp = addon.GroupOverride(group,subgroup)
+            if newgrp ~= group or newsubgrp ~= subgroup then
+                local newkey = addon.BuildGuideKey(newgrp,newsubgrp,name)
+                insertItems[newkey] = v
                 table.insert(deleteIndexes,key)
             end
+        end
+        for i,v in pairs(insertItems) do
+            guides[i] = v
         end
         for _,i in ipairs(deleteIndexes) do
             guides[i] = nil
@@ -1130,6 +1140,8 @@ function addon:CreateMetaDataTable(wipe)
     guideMetaData.enabledDungeons.Horde = guideMetaData.enabledDungeons.Horde or {}
     guideMetaData.enabledDungeons.Alliance = guideMetaData.enabledDungeons.Alliance or {}
     guideMetaData.enableGroupQuests = guideMetaData.enableGroupQuests or {}
+
+    guideMetaData.multibox = guideMetaData.multibox or {}
 
     guideMetaData.professionGuides = guideMetaData.professionGuides or {}
     guideMetaData.enabledProfessions = guideMetaData.enabledProfessions or {}
@@ -1355,6 +1367,8 @@ function addon:PLAYER_ENTERING_WORLD(_, isInitialLogin)
                          not (addon.RXPFrame and addon.RXPFrame:IsShown())
 
     C_Timer.After(2, function()
+        addon.player.maxlevel = _G.GetMaxPlayerLevel()
+
         if addon.LoadDefaultGuide and addon.currentGuide.empty then
             addon.LoadDefaultGuide()
         end
@@ -1368,7 +1382,9 @@ function addon:PLAYER_ENTERING_WORLD(_, isInitialLogin)
         C_Timer.After(20, function()
             addon.settings:CheckAddonCompatibility()
         end)
+    end
 
+    if addon.gameVersion < 30000 then
         addon.ui.v2.LaunchConfigurator(true)
     end
 
@@ -1530,7 +1546,7 @@ function addon.UpdateScheduledTasks()
                 addon.scheduledTasks[ref] = nil
                 local element = ref.element or ref
                 if element and addon.functions[element.tag] then
-                    addon.Call(element.tag,addon.functions[element.tag],ref)
+                    addon.Call(element.tag,addon.functions[element.tag],ref,"TaskUpdate")
                 end
                 return
             end
@@ -1574,6 +1590,7 @@ local updateError
 local errorCount = 0
 local event = ""
 local busy = 0
+local updateStepIndex = 0
 
 function addon.LegacyUpdateLoop()
     -- NewTicker calls function every updateFrequency, making diff/updateTick/tickRate logic obsolete
@@ -1712,25 +1729,39 @@ function addon.LegacyUpdateLoop()
 
         event = event .. "/istep"
         local max = #addon.currentGuide.steps
-        local offset = RXPCData.currentStep + 1
-        if stepCounter == offset then
-            stepCounter = stepCounter + 8
+
+        if stepCounter == RXPCData.currentStep then
+            stepCounter = stepCounter + 4
+        end
+        local batchMax = 10
+        if (addon.settings.profile.updateFrequency or 0) > 75 then
+            batchMax = 2
         end
 
-        addon.RXPFrame.BottomFrame.UpdateFrame(nil,offset + stepCounter % 8)
-
-        for n = stepCounter,stepCounter + batchSize - 1 do
-            addon.RXPFrame.BottomFrame.UpdateFrame(nil,n)
+        if updateStepIndex < 5 then
+            addon.RXPFrame.BottomFrame.UpdateFrame(nil,RXPCData.currentStep + updateStepIndex)
         end
+
         stepCounter = stepCounter + batchSize
+
+        for n = stepCounter,stepCounter + batchSize do
+            if n <= max then
+                C_Timer.After(0,function()
+                    addon.RXPFrame.BottomFrame.UpdateFrame(nil,n)
+                end)
+            end
+        end
+        updateStepIndex = (updateStepIndex + 1) % 8
+        --print(stepCounter,updateStepIndex)
+        --updateStepList[offset + stepCounter % 8] = true
         if stepCounter > max then
+            stepCounter = 1
             local time = GetTime()
             local tdiff = time - updateTimer
-            stepCounter = 1
             --print(tdiff,batchSize)
 
             if tdiff > 10 then
-                batchSize = math.min(batchSize + 1*(math.ceil(tdiff/8)),10)
+                batchSize = math.min(batchSize + 1*(math.ceil(tdiff/8)),batchMax)
             elseif batchSize > 2 then
                 batchSize = batchSize - 1
             end
@@ -1738,7 +1769,6 @@ function addon.LegacyUpdateLoop()
             updateTimer = time
             skip = skip % 4096
         end
-
     end
 
     updateError = false
@@ -2044,7 +2074,7 @@ function addon.stepLogic.SeasonCheck(step)
 end
 
 function addon.stepLogic.HardcoreCheck(step)
-    local hc = addon.settings.profile.hardcore
+    local hc = addon.settings.profile.hardcore or (step.elements and addon.currentGuide and addon.currentGuide.hardcore)
     local hcserver = C_GameRules and C_GameRules.IsHardcoreActive and C_GameRules.IsHardcoreActive()
     if step.softcoreserver and hcserver or step.hardcoreserver and not hcserver then return false end
     if step.softcore and hc or step.hardcore and not hc then return false end

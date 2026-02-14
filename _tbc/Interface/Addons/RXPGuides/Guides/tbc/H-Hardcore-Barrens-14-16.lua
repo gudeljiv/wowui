@@ -1,12 +1,14 @@
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #tbc
 #version 7
-#group RestedXP Survival Guide (H)
+#group RXP TBC Survival Guide (H)
 << Horde
 #name 14-16 The Barrens
 #version 7
-#subgroup RestedXP Survival Guide 1-30
+#subgroup RXP TBC Survival Guide 1-30
 #next 16-18 Ghostlands
+
 step << BloodElf/Undead
     #completewith next
     .goto Orgrimmar,48.97,92.84,50,0
@@ -1348,6 +1350,7 @@ step << Rogue
     .accept 10372 >> Accept A Discreet Inquiry
     .train 6761 >>Train your class spells
     .target Zelanis
+    .xp <16,1
 step << !BloodElf !Undead
     #completewith next
     .goto Eversong Woods,56.43,49.91
@@ -1370,4 +1373,5 @@ step << BloodElf Rogue/Undead Rogue
     .fly Tranquillien >> Fly to Tranquillien
     .target Skymistress Gloaming
     .zoneskip Ghostlands
+
 ]])

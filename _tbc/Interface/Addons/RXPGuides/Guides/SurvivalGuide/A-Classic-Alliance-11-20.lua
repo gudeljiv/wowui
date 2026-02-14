@@ -1,8 +1,12 @@
 local faction = UnitFactionGroup("player")
 if faction == "Horde" then return end
+
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 << Alliance
 #name 13-15 Westfall
 #version 1
@@ -10,6 +14,7 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 #defaultfor Human/Gnome/Dwarf/NightElf
 #next 15-18 Darkshore
+
 step
     #sticky
     .goto Elwynn Forest,19.00,81.00
@@ -532,9 +537,11 @@ step << NightElf Hunter
 step << NightElf
     .hs >> Hearth to Auberdine
 ]])
+
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 << Alliance
 #name 15-18 Darkshore
 #version 1
@@ -542,6 +549,7 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 --#defaultfor !NightElf
 #next 18-19 Loch Modan
+
 step
 #map Darkshore
 	>>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gwennyth Bly'Leggonde|r
@@ -996,6 +1004,7 @@ step
 #map Darkshore
     .goto Felwood,22.39,29.45
     .xp 16 >> Grind to level 16
+
 step
 #map Darkshore
     .goto Felwood,19.64,39.52
@@ -1635,15 +1644,19 @@ step
     .zoneskip Dun Morogh
     .zoneskip Ironforge
 ]])
+
+
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 << Alliance
 #name 20-21 Darkshore/Ashenvale
 #version 1
 #group RestedXP Survival Guide (A)
 #subgroup RXP Survival Guide 1-20
 #next 21-23 Stonetalon/Ashenvale
+
 step << Druid
 	#completewith next
 	.cast 18960 >> Cast Teleport: Moonglade

@@ -1,12 +1,15 @@
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #tbc
-#group RestedXP Survival Guide (H)
+#group RXP TBC Survival Guide (H)
 << Horde
 #name 1-6 Tirisfal Glades
 #version 7
-#subgroup RestedXP Survival Guide 1-30
+#subgroup RXP TBC Survival Guide 1-30
 #defaultfor Scourge
 #next 6-10 Eversong Woods
+
+
 step << !Undead
     #completewith next
     +|cRXP_WARN_You have selected a guide meant for Undead. It is recommended you choose the same starter zone that you start in|r
@@ -461,12 +464,6 @@ step
 	.complete 380,2 --Kill Night Web Spider (x8)
     .mob Night Web Spider
 step
-    #softcore
-    #completewith Scavenging
-    .deathskip >> Die and respawn at the |cRXP_FRIENDLY_Spirit Healer|r or run back to Deathknell
-    .target Spirit Healer
-step
-    #hardcore
     #completewith Scavenging
     .goto Tirisfal Glades,31.61,65.62,80 >>Return to Deathknell
 step
@@ -530,12 +527,6 @@ step
     .collect 16333,1,6395,1 --Collect Samuel's Remains
     .mob Samuel Fipps
 step
-    #softcore
-    #completewith next
-    .deathskip >> Die and respawn at the |cRXP_FRIENDLY_Spirit Healer|r
-    .target Spirit Healer
-step
-    #hardcore
     #completewith next
     .goto Tirisfal Glades,31.17,65.08,80 >>Return to Deathknell
 step
@@ -609,12 +600,6 @@ step
     .accept 8 >>Accept A Rogue's Deal
     .target Calvin Montague
 step
-    #softcore
-    #completewith next
-    .deathskip >> Die and respawn at the |cRXP_FRIENDLY_Spirit Healer|r or run to Brill
-    .target Spirit Healer
-step
-    #hardcore
     #completewith next
     .subzone 159 >>Travel to Brill
 step

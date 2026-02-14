@@ -1,21 +1,25 @@
 -- ================================================ -
 -- ==============  GROUP: LEGION REMIX  =========== -
 -- ================================================ -
+
 ---Tips & Tricks
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
 #group RestedXP Legion Remix
+#groupweight 998
 #name 1a) Tips & Tricks
 #displayname |cFF8888880|r - Tips & Tricks|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next a) Intro
+
 step
     +|cRXP_WARN_|cRXP_WARN_|T1411837:0|t[Infinite Power]|r|r is the Artifact Power of Legion Remix. It fuels your Artifact Weapon, allowing you to unlock upgrades and grow stronger as you play.
 step
     +|cRXP_WARN_|T1411837:0|t[Infinite Power]|r is gained from most activities e.g looting enemies, completing quests, dungeons, treasures or reward boxes.
 step
-    +|cRXP_WARN_|T1411833:0|t[Infinite Knowledge]|r increases the rate at which you gain |cRXP_WARN_|T1411837:0|t[Infinite Power]|r |cRXP_WARN_(Artifact Power)|r. 
+    +|cRXP_WARN_|T1411833:0|t[Infinite Knowledge]|r increases the rate at which you gain |cRXP_WARN_|T1411837:0|t[Infinite Power]|r |cRXP_WARN_(Artifact Power)|r.
     *The more ranks of |cRXP_WARN_|T1411833:0|t[Infinite Knowledge]|r you have, the more |cRXP_WARN_|T1411837:0|t[Infinite Power]|r you earn from every activity.
 step
     +Since every activity rewards more |cRXP_WARN_|T1411837:0|t[Infinite Power]|r with each rank of |cRXP_WARN_|T1411833:0|t[Infinite Knowledge]|r, it’s best to unlock as much |cRXP_WARN_|T1411833:0|t[Infinite Knowledge]|r as early as possible.
@@ -95,6 +99,7 @@ step
     .macro Temporal Retreat,4571434 >>Follow the Arrow
     .macro Unraveling Sands,4643984 >>Follow the Arrow
 ]])
+
 ---Intro
 RXPGuides.RegisterGuide([[
 #retail
@@ -104,6 +109,7 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF001|r - Intro|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next aa) Skyriding
+
 step
     #completewith Fixed Point in Time
     #hidewindow
@@ -480,7 +486,7 @@ step
     .accept 90901 >>Accept As A Matter of Artifact
     .goto 627,42.46,28.05
     .target +Momentus
-step 
+step
     .isQuestComplete 90901
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Momentus|r
     .turnin 90901 >>Turn in As A Matter of Artifact
@@ -790,7 +796,7 @@ step
     .macro Leave Vehicle,6656430 >> /leavevehicle
 step
     .goto 619,45.86,68.00
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lidamorrutu|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lidamorrutu|r
     *|cRXP_WARN_You can skip this and do it later; completing it at level 80 with higher ilvl gives better gear, but since it’s a daily, you might not want to miss it|r.
     .daily 92855 >>Accept in Make Haste, Not Waste
     .dailyturnin 92855 >>Turn in Make Haste, Not Waste
@@ -867,13 +873,16 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF001|r - Intro Skip|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next aa) Skyriding
+
 step
     .goto 627,72.46,45.90
     .achievementComplete 42313,1
     .gossipoption 134056 >>Before talking to |cRXP_FRIENDLY_Moratari|r, make sure you have your desired specialization selected.
     *|cRXP_WARN_This will grant you the Artifact Weapon for your chosen spec; you can obtain others later, but there’s no immediate access|r.
     .target Moratari
+
 ]])
+
 ---Skyriding
 RXPGuides.RegisterGuide([[
 #retail
@@ -894,6 +903,7 @@ RXPGuides.RegisterGuide([[
 #next ab) Order Hall Shaman Part 1 << Shaman
 #next ab) Order Hall Warlock Part 1 << Warlock
 #next ab) Order Hall Warrior Part 1 << Warrior
+
 step
     .goto 627,72.06,41.69
     .isQuestTurnedIn account,80018
@@ -902,6 +912,8 @@ step
     .clicknext RestedXP Legion Remix\aa) Skyriding Skip >>CLICK HERE FOR GUIDE
 step
     #include RestedXP Legion Remix\a) Skyriding Panda
+
+
 ]])
 ---Skyriding Skip
 RXPGuides.RegisterGuide([[
@@ -924,20 +936,27 @@ RXPGuides.RegisterGuide([[
 #next ab) Order Hall Shaman Part 1 << Shaman
 #next ab) Order Hall Warlock Part 1 << Warlock
 #next ab) Order Hall Warrior Part 1 << Warrior
+
 step
     .goto 627,72.05,41.65
     .gossipoption 133762 >>Talk to |cRXP_FRIENDLY_Moratari|r
     .target Moratari
+
+
+
 ]])
+
 ---Monk Order Hall Intro 1
 RXPGuides.RegisterGuide([[
 #retail
 #version 1
 #group RestedXP Legion Remix
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
-#name ab) Order Hall Monk Part 1 
+#name ab) Order Hall Monk Part 1
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
+
 << Monk
+
 step
     .isQuestTurnedIn account,91955
     .achievementComplete 61108,1
@@ -1168,6 +1187,7 @@ step
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Windwalker >>Windwalker(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Brewmaster >>Brewmaster(Tank) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Mistweaver >>Mistweaver(Healer) Questline
+
 ]])
 ---Monk Order Hall Intro 2
 RXPGuides.RegisterGuide([[
@@ -1178,7 +1198,9 @@ RXPGuides.RegisterGuide([[
 #name ac) Order Hall Monk Part 2
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #next ad) Infinite Bazaar
+
 << Monk
+
 step
     #completewith Dalaran
     #hidewindow
@@ -1267,14 +1289,14 @@ step << Alliance
     #label Dalaran
     .goto 709,52.4,57.17
     >>|TInterface/cursor/crosshair/interact.blp:20|tClick on the |cRXP_PICK_Portal|r
-    -- .complete 39735,1 --1/1 Travel to Dalaran 
-    .complete 39718,1 --1/1 Travel to Dalaran 
+    -- .complete 39735,1 --1/1 Travel to Dalaran
+    .complete 39718,1 --1/1 Travel to Dalaran
     .timer 8,RP
 step << Horde
     #label Dalaran
     .goto 709,52.4,57.17
     >>|TInterface/cursor/crosshair/interact.blp:20|tClick on the |cRXP_PICK_Portal|r
-    .complete 39718,1 --1/1 Travel to Dalaran 
+    .complete 39718,1 --1/1 Travel to Dalaran
     .timer 8,RP
 step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Initiate Da-Nel|r |cRXP_WARN_next to you|r
@@ -1289,7 +1311,9 @@ RXPGuides.RegisterGuide([[
 #name ab) Order Hall Death Knight Part 1
 #displayname |cFF00FF004|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
+
 << DeathKnight
+
 step
     .isQuestTurnedIn account,91955
     .achievementComplete 61108,1
@@ -1316,6 +1340,7 @@ step
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Frost DK >> Frost(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Unholy >> Unholy(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Blood >> Blood(Tank) Questline
+
 ]])
 ---Death Knight Order Hall Intro 2
 RXPGuides.RegisterGuide([[
@@ -1326,7 +1351,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF3|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next ad) Infinite Bazaar
+
 << DeathKnight
+
 step
     #optional
     .isQuestAvailable 40715
@@ -1361,7 +1388,7 @@ step
     .accept 58989 >>Accept Runeforging 101
     .target Highlord Darion Mograine
 step
-    .goto 648,36.25,38.53    
+    .goto 648,36.25,38.53
     .complete 58989,1 --1/1 Use the portal to the 2nd floor (Optional)
 step
     .goto 647,44.08,66.33
@@ -1467,7 +1494,9 @@ RXPGuides.RegisterGuide([[
 #name ab) Order Hall Demon Hunter Part 1
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
+
 << DemonHunter
+
 step
     .isQuestTurnedIn account,91955
     .achievementComplete 61108,1
@@ -1550,6 +1579,7 @@ step
     *|cFFFF0000You can't progress if you don't select one|r.
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Havoc >> Havoc(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Vengeance >> Vengeance(DPS) Questline
+
 ]])
 ---Demon Hunter Order Hall Intro 2
 RXPGuides.RegisterGuide([[
@@ -1560,7 +1590,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next ae) First Zone
+
 << DemonHunter
+
 step
     #optional
     .convertquest 39261,39047
@@ -1711,7 +1743,7 @@ step
 step
     #requires Burning Legion
     >>|cRXP_WARN_Wait for the Roleplay|r.
-    .complete 41066,1 --1/1 Gaze upon the Burning Legion    
+    .complete 41066,1 --1/1 Gaze upon the Burning Legion
 step
     .goto 721,59.34,51.31
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Allari the Souleater|r
@@ -1921,7 +1953,9 @@ RXPGuides.RegisterGuide([[
 #name ab) Order Hall Druid Part 1
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
+
 << Druid
+
 step
     .isQuestTurnedIn account,91955
     .achievementComplete 61108,1
@@ -2040,6 +2074,7 @@ step
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Feral Druid >> Feral(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Guardian Druid >> Guardian(Tank) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Restoration Druid >> Restoration(Healer) Questline
+
 ]])
 ---Druid Order Hall Intro 2
 RXPGuides.RegisterGuide([[
@@ -2050,7 +2085,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next ad) Infinite Bazaar
+
 << Druid
+
 step
     #optional
     .isQuestAvailable 40646
@@ -2122,7 +2159,9 @@ RXPGuides.RegisterGuide([[
 #name ab) Order Hall Hunter Part 1
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
+
 << Hunter
+
 step
     .isQuestTurnedIn account,91955
     .achievementComplete 61108,1
@@ -2174,7 +2213,7 @@ step
     .skipgossipid 45259
 step
     #completewith next
-    #label TheHuntersCallB    
+    #label TheHuntersCallB
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Apata Highmountain|r.
     .complete 41415,3 --1/1 Speak to Apata Highmountain
     .target Apata Highmountain
@@ -2232,6 +2271,7 @@ step
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Beast Mastery >> Beast Mastery(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Marksmanship >> Marksmanship(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Survival >> Survival(DPS) Questline
+
 ]])
 ---Hunter Order Hall Intro 2
 RXPGuides.RegisterGuide([[
@@ -2242,7 +2282,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next ad) Infinite Bazaar
+
 << Hunter
+
 step
     #optional
     .isQuestAvailable 40618
@@ -2340,7 +2382,9 @@ RXPGuides.RegisterGuide([[
 #name ab) Order Hall Mage Part 1
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
+
 << Mage
+
 step
     .isQuestTurnedIn account,91955
     .achievementComplete 61108,1
@@ -2497,7 +2541,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next ad) Infinite Bazaar
+
 << Mage
+
 step
     #completewith Champion: Archmage Modera
     #hidewindow
@@ -2569,7 +2615,7 @@ step
     .complete 41112,2 --1/1 Akazamzarak bribed
 step
     #completewith Akazamzarak bribed
-    .goto 734,57.29,90.56 
+    .goto 734,57.29,90.56
     >>Use |T1535374:0|t[Teleport: Dalaran - Broken Isles] or click on the |cRXP_PICK_Portal|r.
     .complete 41112,1 --1/1 Portal to Dalaran Taken (Optional)
     .usespell 224869
@@ -2704,7 +2750,9 @@ RXPGuides.RegisterGuide([[
 #name ab) Order Hall Paladin Part 1
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
+
 << Paladin
+
 step
     .isQuestTurnedIn account,91955
     .achievementComplete 61108,1
@@ -2778,6 +2826,7 @@ step
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Retribution >> Retribution(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Paladin Protection >> Protection(Tank) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Holy Paladin >> Holy(Healer) Questline
+
 ]])
 ---Paladin Order Hall Intro 2
 RXPGuides.RegisterGuide([[
@@ -2788,7 +2837,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next ad) Infinite Bazaar
+
 << Paladin
+
 step
     #completewith Order Hall Paladin Part 2
     #hidewindow
@@ -2917,7 +2968,9 @@ RXPGuides.RegisterGuide([[
 #name ab) Order Hall Priest Part 1
 #displayname |cFF00FF004|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
+
 << Priest
+
 step
     .isQuestTurnedIn account,91955
     .achievementComplete 61108,1
@@ -2980,7 +3033,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF4|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next ad) Infinite Bazaar
+
 << Priest
+
 step
     #optional
     .isQuestAvailable 40706
@@ -3076,7 +3131,9 @@ RXPGuides.RegisterGuide([[
 #name ab) Order Hall Rogue Part 1
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
+
 << Rogue
+
 step
     .isQuestTurnedIn account,91955
     .achievementComplete 61108,1
@@ -3133,7 +3190,7 @@ step
     .holiday 324
     .goto 627,47.96,41.70
     >>|TInterface/cursor/crosshair/interact.blp:20|tClick on the |cRXP_PICK_Candy Bucket|r
-    .turnin 43055 >>Turn in Candy Bucket 
+    .turnin 43055 >>Turn in Candy Bucket
     .target Candy Bucket
 step << Alliance
     #requires whispered2
@@ -3235,6 +3292,7 @@ step
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Assassination >> Assassination(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Outlaw >> Outlaw(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Subtlety >> Subtlety(DPS) Questline
+
 ]])
 ---Rogue Order Hall Intro 2
 RXPGuides.RegisterGuide([[
@@ -3245,7 +3303,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next ad) Infinite Bazaar
+
 << Rogue
+
 step
     #completewith Order Hall Rogue Part 2
     #hidewindow
@@ -3359,7 +3419,9 @@ RXPGuides.RegisterGuide([[
 #name ab) Order Hall Shaman Part 1
 #displayname |cFF00FF004|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
+
 << Shaman
+
 step
     .isQuestTurnedIn account,91955
     .achievementComplete 61108,1
@@ -3449,6 +3511,7 @@ step
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Elemental >> Elemental(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Enhancement >> Enhancement(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Restoration Shaman >> Restoration(Healer) Questline
+
 ]])
 ---Shaman Order Hall Intro 2
 RXPGuides.RegisterGuide([[
@@ -3459,7 +3522,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF003|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next ad) Infinite Bazaar
+
 << Shaman
+
 step
     #optional
     .isQuestAvailable 41335
@@ -3513,7 +3578,9 @@ RXPGuides.RegisterGuide([[
 #name ab) Order Hall Warlock Part 1
 #displayname |cFF00FF004|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
+
 << Warlock
+
 step
     .isQuestTurnedIn account,91955
     .achievementComplete 61108,1
@@ -3649,6 +3716,7 @@ step
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Affliction >> Affliction(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Demonology >> Demonology(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Destruction >> Destruction(DPS) Questline
+
 ]])
 ---Warlock Order Hall Intro 2
 RXPGuides.RegisterGuide([[
@@ -3659,7 +3727,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00CCFF3|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next ad) Infinite Bazaar
+
 << Warlock
+
 step
     #optional
     .isQuestAvailable 40684
@@ -3781,7 +3851,9 @@ RXPGuides.RegisterGuide([[
 #name ab) Order Hall Warrior Part 1
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
+
 << Warrior
+
 step
     .isQuestTurnedIn account,91955
     .achievementComplete 61108,1
@@ -3827,7 +3899,7 @@ step << Horde
     .accept 41052 >>Accept A Desperate Plea
     .target Eitrigg
 step
-    #optional 
+    #optional
     .convertquest 42815,38904 << Horde
 step << Horde
     .goto 627,75.06,46.25
@@ -3945,7 +4017,7 @@ step
     .goto 695,58.59,72.24
     #title |cFFFCDC00Follow the Arrow|r
     .complete 39654,2 --1/1 Go to the Great Mead Hall
-step 
+step
     #label Order Hall Warrior Part 1
     .goto 695,58.33,84.38
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Odyn|r
@@ -3968,6 +4040,7 @@ step
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Arms >> Arms(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Fury >> Fury(DPS) Questline
     .clicknext RestedXP Legion Remix\z) Artifact Weapon: Warrior Protection >> Protection(Tank) Questline
+
 ]])
 ---Warrior Order Hall Intro 2
 RXPGuides.RegisterGuide([[
@@ -3978,7 +4051,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Speedrun Route
 #next ad) Infinite Bazaar
+
 << Warrior
+
 step
     #completewith Accept The Eye of Odyn
     #hidewindow
@@ -4091,6 +4166,7 @@ step
     .gossipoption 44733 >>Talk to |cRXP_FRIENDLY_Aerylia|r
     .target Aerylia
 ]])
+
 ---Infinite Bazaar
 RXPGuides.RegisterGuide([[
 #retail
@@ -4100,6 +4176,9 @@ RXPGuides.RegisterGuide([[
 #name ad) Infinite Bazaar
 #displayname |cFF00FF005|r - Infinite Bazaar|r
 #next ae) First Zone
+
+
+
 step
     #completewith Heroic World Tier
     #hidewindow
@@ -4169,7 +4248,7 @@ step
     .target Momentus
 step
     .goto 619,45.86,68.00
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lidamorrutu|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lidamorrutu|r
     *|cRXP_WARN_You can skip this and do it later; completing it at level 80 with higher ilvl gives better gear, but since it’s a daily, you might not want to miss it|r.
     .daily 92855 >>Accept in Make Haste, Not Waste
     .dailyturnin 92855 >>Turn in Make Haste, Not Waste
@@ -4219,17 +4298,17 @@ step <<!DemonHunter
     .skipgossipid 134865
 step
     .goto 619,45.68,68.49
-    .isQuestTurnedIn account,91721 
+    .isQuestTurnedIn account,91721
     .isQuestAvailable account,91722
     +|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Eternus|r and select a quest based on your preference.
     .questcount <3,89540,91613,90100,90112,90113,89600,89679,90102,90103,89524,89590,89678,89541,89607,90114,89521,89539,89683,90109,89528,89543,89544,89545,89550,89553,89554,89556,89558,89597,92439,89465,89469,89476,89523,89527,89533,89538,89549,89552,89592,89594,89599,89601,89605,89680,90101,90108,90110,90111,89464,89466,89516,89518,89519,89522,89525,89526,89529,89530,89531,89532,89534,89535,89542,89546,89547,89548,89551,89555,89557,89591,89593,89595,89598,89602,89604,89606,89665,89676,89677,89682,90096,90098,90099,90115,91439,91441,91449,89517,89520,89536,89537,89644,89681,90097,91438,91443,91446,91612,91848,91849,89596,89603,89622,91440,91444,91445,91447,91448,92441,91847,92440,92442,89467,89468 >>Accept 1 of the 100 Quests.
-    .target Eternus 
+    .target Eternus
 step
     .isQuestTurnedIn account,91722
     .goto 619,45.68,68.49
     +|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Eternus|r and select a quest based on your preference.
     .questcount <4,89540,91613,90100,90112,90113,89600,89679,90102,90103,89524,89590,89678,89541,89607,90114,89521,89539,89683,90109,89528,89543,89544,89545,89550,89553,89554,89556,89558,89597,92439,89465,89469,89476,89523,89527,89533,89538,89549,89552,89592,89594,89599,89601,89605,89680,90101,90108,90110,90111,89464,89466,89516,89518,89519,89522,89525,89526,89529,89530,89531,89532,89534,89535,89542,89546,89547,89548,89551,89555,89557,89591,89593,89595,89598,89602,89604,89606,89665,89676,89677,89682,90096,90098,90099,90115,91439,91441,91449,89517,89520,89536,89537,89644,89681,90097,91438,91443,91446,91612,91848,91849,89596,89603,89622,91440,91444,91445,91447,91448,92441,91847,92440,92442,89467,89468 >>Accept 3 of the 100 Quests.
-    .target Eternus 
+    .target Eternus
 step
     #completewith next
     #hidewindow
@@ -4258,6 +4337,7 @@ step
     .use 254320
     .aura 1257698
 ]])
+
 ---Azsuna 1
 RXPGuides.RegisterGuide([[
 #retail
@@ -4267,6 +4347,7 @@ RXPGuides.RegisterGuide([[
 #name ae) First Zone
 #displayname |cFF00FF006|r - Azsuna|r
 #next cb) Val'sharah Speedrun 2
+
 step
     #completewith AzsunaSpeedrunY
     #hidewindow
@@ -4694,6 +4775,7 @@ RXPGuides.RegisterGuide([[
 #name ae) First Zone 2
 #displayname |cFF00FF006|r - Azsuna|r
 #next cb) Val'sharah Speedrun 2
+
 step
     #completewith Let's Make A DealZ
     #hidewindow
@@ -4925,9 +5007,11 @@ step
     .accept 38232 >>Accept Minion! Kill Them!
     .target Daglop
 ]])
+
 -- ======================================
 -- ==============  AZSUNA  ==============
 -- ======================================
+
 --Behind Legion Lines
 RXPGuides.RegisterGuide([[
 #retail
@@ -4936,6 +5020,7 @@ RXPGuides.RegisterGuide([[
 #name b) Behind Legion Lines
 #displayname |cFF00CCFF1|r - Behind Legion Lines
 #internal
+
 step
     #completewith BehindLegionLinesZ
     #hidewindow
@@ -5192,6 +5277,7 @@ RXPGuides.RegisterGuide([[
 #name b) Defending Azurewing Repose
 #displayname |cFF00CCFF2|r - Defending Azurewing Repose
 #internal
+
 step
     #completewith DefendingAzurewingReposeZ
     #hidewindow
@@ -5610,6 +5696,7 @@ RXPGuides.RegisterGuide([[
 #name b) Azsuna versus Azshara
 #displayname |cFF00CCFF3|r - Azsuna versus Azshara
 #internal
+
 step
     #completewith AzsunaVersusAzsharaZ
     #hidewindow
@@ -6065,6 +6152,7 @@ RXPGuides.RegisterGuide([[
 #name b) Against Giants
 #displayname |cFF00CCFF4|r - Against Giants
 #internal
+
 step
     #completewith AgainstGiantsZ
     #hidewindow
@@ -6265,6 +6353,7 @@ RXPGuides.RegisterGuide([[
 #name b) Mak'rana and the Fate of the Queen's Reprisal
 #displayname |cFF00CCFF5|r - Mak'rana and the Fate of the Queen's Reprisal
 #internal
+
 step
     #completewith MakranaFateQueenReprisalZ
     #hidewindow
@@ -6433,9 +6522,11 @@ step << Alliance
     .turnin 40794 >>Turn in Fate of the Queen's Reprisal
     .target Lieutenant Surtees
 ]])
+
 -- ======================================
 -- ======= SOJOURNER: AZSUNA ============
 -- ======================================
+
 --Challiane Vineyards
 RXPGuides.RegisterGuide([[
 #retail
@@ -6445,6 +6536,7 @@ RXPGuides.RegisterGuide([[
 #subgroup |cFFFCDC00(10-80+)|r Sojourner
 #displayname |cFF00CCFF1|r - Challiane Vineyards
 #internal
+
 step
     #completewith ChallianeVineyardsZ
     #hidewindow
@@ -6512,6 +6604,7 @@ RXPGuides.RegisterGuide([[
 #subgroup |cFFFCDC00(10-80+)|r Sojourner
 #displayname |cFF00CCFF1|r - Kirin Tor Reconnaissance
 #internal
+
 step
     #completewith KirinTorReconnaissanceZ
     #hidewindow
@@ -6640,8 +6733,10 @@ RXPGuides.RegisterGuide([[
 #group RestedXP Legion Remix
 #name b) A Rather Long Walk
 #subgroup |cFFFCDC00(10-80+)|r Sojourner
+
 #displayname |cFF00CCFF1|r - A Rather Long Walk
 #internal
+
 step
     #completewith A Rather Long Walk
     #hidewindow
@@ -6696,6 +6791,7 @@ RXPGuides.RegisterGuide([[
 #subgroup |cFFFCDC00(10-80+)|r Sojourner
 #displayname |cFF00CCFF1|r - Crumbled Palace Cocktails
 #internal
+
 step
     #completewith Crumbled Palace Cocktails
     #hidewindow
@@ -6765,6 +6861,7 @@ RXPGuides.RegisterGuide([[
 #subgroup |cFFFCDC00(10-80+)|r Sojourner
 #displayname |cFF00CCFF6|r - Felblaze Ingress
 #internal
+
 step
     #label FelblazeIngressA
     .goto 630,63.85,28.93
@@ -6859,9 +6956,11 @@ step
     .goto 630,63.85,28.94
     .target +Tehd Shoemaker
 ]])
+
 -- ================================================= -
 -- ==============  GROUP: SPEED LEVELING: ========== -
 -- ================================================= -
+
 ---Tips & Tricks
 RXPGuides.RegisterGuide([[
 #retail
@@ -6871,9 +6970,12 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF8888880|r - Tips & Tricks|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next b) Intro
+
 step
     #include RestedXP Legion Remix\1a) Tips & Tricks
+
 ]])
+
 ---Intro
 RXPGuides.RegisterGuide([[
 #retail
@@ -6883,9 +6985,11 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF001|r - Intro|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next ba) Skyriding
+
 step
     #include RestedXP Legion Remix\a) Intro
 ]])
+
 ---Skyriding
 RXPGuides.RegisterGuide([[
 #retail
@@ -6906,9 +7010,11 @@ RXPGuides.RegisterGuide([[
 #next bb) Order Hall Shaman Part 1<< Shaman
 #next bb) Order Hall Warlock Part 1 << Warlock
 #next bb) Order Hall Warrior Part 1 << Warrior
+
 step
     #include RestedXP Legion Remix\aa) Skyriding
 ]])
+
 ---Monk Part 1
 RXPGuides.RegisterGuide([[
 #retail
@@ -6918,7 +7024,9 @@ RXPGuides.RegisterGuide([[
 #name bb) Order Hall Monk Part 1
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #next bc) Order Hall Monk Part 2
+
 << Monk
+
 step
     #include RestedXP Legion Remix\ab) Order Hall Monk Part 1
 ]])
@@ -6931,7 +7039,9 @@ RXPGuides.RegisterGuide([[
 #name bc) Order Hall Monk Part 2
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #next bd) Infinite Bazaar
+
 << Monk
+
 step
     #include RestedXP Legion Remix\ac) Order Hall Monk Part 2
 ]])
@@ -6944,9 +7054,12 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bc) Order Hall Death Knight Part 2
+
 << DeathKnight
+
 step
     #include ab) Order Hall Death Knight Part 1
+
 ]])
 ---Death Knight 2
 RXPGuides.RegisterGuide([[
@@ -6957,9 +7070,12 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bd) Infinite Bazaar
+
 << DeathKnight
+
 step
     #include ac) Order Hall Death Knight Part 2
+
 ]])
 ---Demon Hunter 1
 RXPGuides.RegisterGuide([[
@@ -6970,9 +7086,13 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bc) Order Hall Demon Hunter Part 2
+
 << DemonHunter
+
 step
     #include RestedXP Legion Remix\ab) Order Hall Demon Hunter Part 1
+
+
 ]])
 ---Demon Hunter 2
 RXPGuides.RegisterGuide([[
@@ -6983,9 +7103,13 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bd) Infinite Bazaar
+
 << DemonHunter
+
 step
     #include RestedXP Legion Remix\ac) Order Hall Demon Hunter Part 2
+
+
 ]])
 ---Druid 1
 RXPGuides.RegisterGuide([[
@@ -6996,7 +7120,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bc) Order Hall Druid Part 2
+
 << Druid
+
 step
     #include RestedXP Legion Remix\ab) Order Hall Druid Part 1
 ]])
@@ -7009,7 +7135,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bd) Infinite Bazaar
+
 << Druid
+
 step
     #include RestedXP Legion Remix\ac) Order Hall Druid Part 2
 ]])
@@ -7022,7 +7150,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bc) Order Hall Druid Part 2
+
 << Hunter
+
 step
     #include RestedXP Legion Remix\ab) Order Hall Hunter Part 1
 ]])
@@ -7035,7 +7165,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bd) Infinite Bazaar
+
 << Hunter
+
 step
     #include RestedXP Legion Remix\ac) Order Hall Hunter Part 2
 ]])
@@ -7048,7 +7180,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bc) Order Hall Mage Part 2
+
 << Mage
+
 step
     #include RestedXP Legion Remix\ab) Order Hall Mage Part 1
 ]])
@@ -7061,7 +7195,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bd) Infinite Bazaar
+
 << Mage
+
 step
     #include RestedXP Legion Remix\ac) Order Hall Mage Part 2
 ]])
@@ -7074,7 +7210,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bc) Order Hall Paladin Part 2
+
 << Paladin
+
 step
     #include RestedXP Legion Remix\ab) Order Hall Paladin Part 1
 ]])
@@ -7087,7 +7225,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bd) Infinite Bazaar
+
 << Paladin
+
 step
     #include RestedXP Legion Remix\ac) Order Hall Paladin Part 2
 ]])
@@ -7100,7 +7240,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bc) Order Hall Priest Part 2
+
 << Priest
+
 step
     #include RestedXP Legion Remix\ab) Order Hall Priest Part 1
 ]])
@@ -7113,7 +7255,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bd) Infinite Bazaar
+
 << Priest
+
 step
     #include RestedXP Legion Remix\ac) Order Hall Priest Part 2
 ]])
@@ -7126,9 +7270,13 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bc) Order Hall Rogue Part 2
+
 << Rogue
+
 step
     #include RestedXP Legion Remix\ab) Order Hall Rogue Part 1
+
+
 ]])
 ---Rogue 2
 RXPGuides.RegisterGuide([[
@@ -7139,9 +7287,13 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bd) Infinite Bazaar
+
 << Rogue
+
 step
     #include RestedXP Legion Remix\ac) Order Hall Rogue Part 2
+
+
 ]])
 ---Shaman 1
 RXPGuides.RegisterGuide([[
@@ -7152,7 +7304,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bc) Order Hall Shaman Part 2
+
 <<Shaman
+
 step
     #include RestedXP Legion Remix\ab) Order Hall Shaman Part 1
 ]])
@@ -7165,7 +7319,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bd) Infinite Bazaar
+
 <<Shaman
+
 step
     #include RestedXP Legion Remix\ac) Order Hall Shaman Part 2
 ]])
@@ -7178,7 +7334,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bc) Order Hall Warlock Part 2
+
 << Warlock
+
 step
     #include RestedXP Legion Remix\ab) Order Hall Warlock Part 1
 ]])
@@ -7191,7 +7349,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bd) Infinite Bazaar
+
 << Warlock
+
 step
     #include RestedXP Legion Remix\ac) Order Hall Warlock Part 2
 ]])
@@ -7204,7 +7364,9 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF003|r - Order Hall Intro 1|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bc) Order Hall Warrior Part 2
+
 << Warrior
+
 step
     #include RestedXP Legion Remix\ab) Order Hall Warrior Part 1
 ]])
@@ -7217,10 +7379,13 @@ RXPGuides.RegisterGuide([[
 #displayname |cFF00FF004|r - Order Hall Intro 2|r
 #subgroup |cFFFCDC00(10-80)|r Legion Remix
 #next bd) Infinite Bazaar
+
 << Warrior
+
 step
     #include RestedXP Legion Remix\ac) Order Hall Warrior Part 2
 ]])
+
 ---Infinite Bazaar
 RXPGuides.RegisterGuide([[
 #retail
@@ -7230,9 +7395,11 @@ RXPGuides.RegisterGuide([[
 #name bd) Infinite Bazaar
 #displayname |cFF00FF005|r - Infinite Bazaar|r
 #next be) First Zone
+
 step
     #include RestedXP Legion Remix\ad) Infinite Bazaar
 ]])
+
 ---Azsuna
 RXPGuides.RegisterGuide([[
 #retail
@@ -7242,6 +7409,7 @@ RXPGuides.RegisterGuide([[
 #name be) First Zone
 #displayname |cFF00FF006|r - Azsuna|r
 #next cb) Val'sharah Speedrun
+
 step
     #include RestedXP Legion Remix\ae) First Zone
 ]])

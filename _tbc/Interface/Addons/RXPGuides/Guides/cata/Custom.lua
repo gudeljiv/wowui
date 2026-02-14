@@ -70877,7 +70877,6 @@ RXPGuides.RegisterGuide([[
 #group RXPGuides
 #cata
 #mop
-#internal
 step
 #completewith next
 .goto 23,9.03,66.52
@@ -72228,7 +72227,6 @@ RXPGuides.RegisterGuide([[
 #group RXPGuides
 #cata
 #mop
-#internal
 step
 #completewith next
 .goto 32,68.58,53.37
@@ -73165,7 +73163,6 @@ RXPGuides.RegisterGuide([[
 #group RXPGuides
 #name 67-68 Netherstorm
 #version 9
-#internal
 step
 #completewith A529
 +Abandon any leftover quests you have from Blade's Edge Mountains
@@ -74088,7 +74085,6 @@ RXPGuides.RegisterGuide([[
 #group RXPGuides
 #name 67-69 Netherstorm
 #version -5
-#internal
 step
 #completewith A529
 +Abandon any leftover quests you have from Blade's Edge Mountains
@@ -77931,7 +77927,6 @@ RXPGuides.RegisterGuide([[
 #name 77-78 Sholazar Basin
 #version 9
 #group RXPGuides
-#internal
 step
 #optional
 #sticky
@@ -79899,7 +79894,6 @@ RXPGuides.RegisterGuide([[
 #group RXPGuides
 #name 79-80 Icecrown
 #version 9
-#internal
 step
 #completewith next
 .zone IcecrownGlacier >>Travel to Icecrown
@@ -88875,7 +88869,6 @@ step << wotlk
 RXPGuides.RegisterGuide([[
 #version 9
 #group RXPGuides
-#internal
 #cata
 #mop
 #name 80-82 Mount Hyjal
@@ -91341,7 +91334,6 @@ step
 RXPGuides.RegisterGuide([[
 #version 9
 #group RXPGuides
-#internal
 #cata
 #mop
 #name 80-82 Vashj'ir
@@ -95819,7 +95811,6 @@ step << Horde Rogue
 RXPGuides.RegisterGuide([[
 #version 9
 #group RXPGuides
-#internal
 #cata
 #mop
 #name 82-83 Deepholm
@@ -97842,7 +97833,6 @@ step << Horde Rogue
 RXPGuides.RegisterGuide([[
 #version 9
 #group RXPGuides
-#internal
 #cata
 #mop
 #name 83-84 Uldum
@@ -100636,7 +100626,6 @@ step << !Mage
 RXPGuides.RegisterGuide([[
 #version 9
 #group RXPGuides
-#internal
 #cata
 #mop
 #name 84-85 Twilight Highlands
@@ -104711,7 +104700,6 @@ RXPGuides.RegisterGuide([[
 #name i75-77 Zul'Drak
 #version 9
 #group RXPGuides
-#internal
 step
 #label zdpt1start
 #completewith LightsB1

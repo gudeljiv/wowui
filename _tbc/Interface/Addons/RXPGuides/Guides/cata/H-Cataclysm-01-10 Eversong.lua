@@ -2,6 +2,8 @@ local _,addon = ...
 if addon.gameVersion < 40000 or addon.player.faction == 'Alliance' then return end
 local faction = UnitFactionGroup("player")
 if faction == "Alliance" then return end
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #cata
 #mop
@@ -14,6 +16,8 @@ RXPGuides.RegisterGuide([[
 #group RXP Cataclysm 1-80 (H) << cata
 #group RXP MoP 1-60 (H) << mop
 #subweight 10000
+
+
 step
     #label SunstriderIsleFirstQuestCheck
     .goto Eversong Woods,38.02,21.01
@@ -511,7 +515,10 @@ step
     .turnin 9705 >>Turn in Package Recovery
     .accept 8350 >>Accept Completing the Delivery
     .target Outrunner Alarion
+
+
 ]])
+
 RXPGuides.RegisterGuide([[
 #cata
 #mop
@@ -520,10 +527,12 @@ RXPGuides.RegisterGuide([[
 #next 10-22 Azshara
 #version 1
 --#group RXP Cataclysm (H) << cata
+
 #defaultfor BloodElf/Undead
 #group RXP Cataclysm 1-80 (H) << cata
 #group RXP MoP 1-60 (H) << mop
 #subweight 10000
+
 step << Undead
     .goto Eversong Woods,50.331,50.770
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Ranger Jaela|r
@@ -1135,7 +1144,9 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Degolien|r
     .turnin 8892 >>Turn in Situation at Sunsail Anchorage
     .target Ranger Degolien
+
     --Section below for users who are not level 10 yet
+
 step
     #xprate <1.2
     .goto Eversong Woods,43.675,71.309

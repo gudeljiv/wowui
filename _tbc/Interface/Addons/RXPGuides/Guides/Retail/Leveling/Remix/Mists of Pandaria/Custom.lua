@@ -6,7 +6,6 @@ RXPGuides.RegisterGuide([[
 #displayname Chapter 2 - Landfall Intro
 #title Landfall
 #next 5) Krasarang Wilds 1
-#internal
 step
 .isOnQuest 29940
 .goto 418,76.65,5.18 >> |cRXP_WARN_Follow the Arrow|r
@@ -89,7 +88,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Panda Remix
 #name 1) Dragonriding
-#internal
 step << Alliance
 .goto 371,45.8,84.6
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Moratari|r
@@ -357,7 +355,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Panda Remix
 #name 1) Monk Quests
-#internal
 step
 .isQuestAvailable 31834
 .zoneskip 379
@@ -563,7 +560,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Panda Remix
 #name 3) Krasarang Crane Wing
-#internal
 step
 .xp >34,1
 .goto 418,44.20,42.87
@@ -789,7 +785,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Panda Remix
 #name 3) Krasarang Wilds Dojani
-#internal
 step
 .convertquest 30349,30127 << Horde
 #completewith Dojani Dominator
@@ -915,7 +910,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Panda Remix
 #name 3) Krasarang Wilds Horde Campaign
-#internal
 << Horde
 step
 .goto 390,62.92,28.21
@@ -1057,7 +1051,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Panda Remix
 #name 3) Krasarang Wilds Hozen
-#internal
 step
 .goto 418,51.66,75.31
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Tony Tuna|r
@@ -1310,7 +1303,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Panda Remix
 #name 3) Krasarang Wilds Ik'thik
-#internal
 step << Alliance
 #completewith Ik'thik Mantid
 #hidewindow
@@ -1371,7 +1363,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Panda Remix
 #name 3) Krasarang Wilds Korjan
-#internal
 step << Alliance
 #completewith Korjan Reclaimer
 #hidewindow
@@ -3375,7 +3366,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Panda Remix
 #name 7) Kun-Lai Summit Defense Shado-Pan
-#internal
 step
 #completewith DefenseShadopan
 .goto 379,45.05,89.96,20 >> Enter the Castle
@@ -3543,7 +3533,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Panda Remix
 #name 7) Kun-Lai Summit Despoiler
-#internal
 step
 #loop
 .goto 379,71.57,74.97,40,0
@@ -3896,7 +3885,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Panda Remix
 #name 7) Kun-Lai Summit My Son
-#internal
 step
 .goto 379,74.97,88.87
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Merchant Shi,|r
@@ -4117,7 +4105,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Panda Remix
 #name 7) Main Campaign Jade Forest Neutral
-#internal
 step
 .goto 371,46.65,46.15
 >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_An Windfur|r
@@ -4604,7 +4591,6 @@ RXPGuides.RegisterGuide([[
 #version 3
 #group RestedXP Panda Remix
 #name 7) Main Campaign Jade Forest Neutral 2
-#internal
 step
 >>Use the |T133305:0|t[Cho Family Heirloom]
 .goto 371,44.50,66.94

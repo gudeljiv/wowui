@@ -1,3 +1,4 @@
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #tbc
 #wotlk
@@ -7,6 +8,7 @@ RXPGuides.RegisterGuide([[
 #name 23-24 Wetlands
 #subgroup RestedXP Alliance 20-32
 #next 24-27 Redridge/Duskwood
+
 step
 .dungeon SFK
     #completewith FinalAccept
@@ -193,7 +195,7 @@ step
     .complete 943,2 -- Flagongut's Fossil (1)
 step
     .isOnQuest 943
-    #loop    
+    #loop
     .goto Wetlands,22.4,50.0,0
     .goto Wetlands,23.0,55.2,0
     .goto Wetlands,26.2,47.7,0
@@ -216,7 +218,7 @@ step
     .mob +Mottled Raptor
     .mob +Mottled Screecher
 step
-    #loop    
+    #loop
     .goto Wetlands,22.4,50.0,0
     .goto Wetlands,23.0,55.2,0
     .goto Wetlands,26.2,47.7,0
@@ -443,7 +445,7 @@ step << skip --logout skip NightElf/Draenei
 	#completewith next
 	.goto Wetlands,63.9,78.6
     >>Head to the cave at the base of the dam in eastern Wetlands
-	.zone Loch Modan >> Logout on top of the mushrooms at the back of the cave. 
+	.zone Loch Modan >> Logout on top of the mushrooms at the back of the cave.
     >>When you log back in, this will teleport you to Thelsamar
 	.link https://www.youtube.com/watch?v=21CuGto26Mk >> |cRXP_WARN_CLICK HERE for a reference|r
 step << NightElf/Draenei
@@ -756,6 +758,7 @@ step << skip
 	.goto Ironforge,76.4,51.2,50 >> Hop ontop of the gryphon's head then logout and back in to logout skip to the tram.
     .zone Stormwind City >>Take the tram to Stormwind
 ]])
+
 RXPGuides.RegisterGuide([[
 #tbc
 #wotlk
@@ -765,6 +768,7 @@ RXPGuides.RegisterGuide([[
 #name 24-27 Redridge/Duskwood
 #subgroup RestedXP Alliance 20-32
 #next 27-30 Wetlands/Hillsbrad
+
 step
     .goto Stormwind City,55.21,7.04
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Billibub Cogspinner|r
@@ -777,7 +781,7 @@ step << Draenei
     .goto Stormwind City,71.68,25.60,40 >> Travel to the Stormwind Keep
 step << Draenei
     .goto Stormwind City,78.508,18.312
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Emissary Taluun|r  
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Emissary Taluun|r
     .accept 9429 >> Accept Travel to Darkshire
     .target Emissary Taluun
 step << Rogue
@@ -817,6 +821,43 @@ step << Paladin
     .goto Stormwind City,41.385,31.547,15,0
     .goto Stormwind City,39.810,29.788,15,0
     .goto Stormwind City,42.51,33.51,20 >> Travel to |cRXP_FRIENDLY_Duthorian Rall|r inside the Stormwind Cathedral
+step << Human Paladin
+    .goto StormwindClassic,39.80,29.77
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Duthorian Rall|r
+    .accept 1641 >> Accept The Tome of Divinity
+    .turnin 1641 >> Turn in The Tome of Divinity
+    .target Duthorian Rall
+step << Human Paladin
+    .goto StormwindClassic,39.80,29.77
+    >>|cRXP_WARN_Use the |T133739:0|t[|cRXP_LOOT_The Tome of Divinity|r] to start the quest|r
+    .accept 1642 >>Accept The Tome of Divinity
+    .use 6775
+step << Human Paladin
+    .goto StormwindClassic,39.80,29.77
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Duthorian Rall|r
+    .turnin 1642 >>Turn in The Tome of Divinity
+    .accept 1643 >>Accept The Tome of Divinity
+    .target Duthorian Rall
+step << Human Paladin
+    .goto StormwindClassic,57.08,61.74
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Stephanie Turner|r
+    .turnin 1643 >> Turn in The Tome of Divinity
+    .accept 1644 >> Accept The Tome of Divinity
+    .turnin 1644 >> Turn in The Tome of Divinity
+    .accept 1780 >> Accept The Tome of Divinity
+    .target Stephanie Turner
+step << Human Paladin
+    .goto StormwindClassic,40.1,29.9
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Duthorian Rall|r
+    .turnin 1780 >>Turn in The Tome of Divinity
+    .target Duthorian Rall
+    .accept 1781 >>Accept The Tome of Divinity
+step << Human Paladin
+    .goto StormwindClassic,38.7,26.6
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gazin Tenorm|r
+    .turnin 1781 >>Turn in The Tome of Divinity
+    .target Gazin Tenorm
+    .accept 1786 >>Accept The Tome of Divinity
 step << Paladin
     .goto StormwindClassic,39.80,29.77
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Duthorian Rall|r. He will give you the |T133739:0|t[|cRXP_LOOT_Tome of Valor|r]
@@ -840,10 +881,11 @@ step
     #optional
     .goto Stormwind City,64.201,60.575
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Felicia Gump|r
+    >>|cRXP_WARN_If you do not plan on leveling your |T133971:0|t[Cooking] to at least 50, skip this step|r
     >>|cRXP_BUY_Buy|r |T133849:0|t[Stormwind Seasoning Herbs]
     .collect 2665,1,90,1 --Stormwind Seasoning Herbs (1)
     .target Felicia Gump
-    .skill cooking,<50,1 -- step only displays if skill is 50 or higher than 50
+    --.skill cooking,<50,1 -- step only displays if skill is 50 or higher than 50
 step << Warlock
     #sticky
     #completewith next
@@ -857,7 +899,7 @@ step << Warlock
 step << Warlock
     .goto StormwindClassic,25.665,77.649
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Spackle Thornberry|r
-    .vendor >> |cRXP_BUY_Buy|r |T133738:0|t[Grimoires] |cRXP_BUY_for your|r |T136220:0|t[Succubus]|cRXP_BUY_ which you will have in a second. If you have extra gold also buy them for your|r |T136221:0|t[Voidwalker]   
+    .vendor >> |cRXP_BUY_Buy|r |T133738:0|t[Grimoires] |cRXP_BUY_for your|r |T136220:0|t[Succubus]|cRXP_BUY_ which you will have in a second. If you have extra gold also buy them for your|r |T136221:0|t[Voidwalker]
     .target Spackle Thornberry
 step << Warlock
     .goto Stormwind City,25.25,78.55
@@ -1029,7 +1071,7 @@ step
 step << Rogue
     .goto Redridge Mountains,28.07,52.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lucius|r
-    .turnin 2281 >> Turn in Redridge Rendevous
+    .turnin 2281 >> Turn in Redridge Rendezvous
     .accept 2282 >> Accept Alther's Mill
     .target Lucius
 step
@@ -1143,7 +1185,7 @@ step
     .target Clerk Daltry
 step << Draenei
     .goto Duskwood,71.815,46.373
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Anchorite Delan|r  
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Anchorite Delan|r
     .turnin 9429 >> Turn in Travel to Darkshire
     .target Anchorite Delan
 step
@@ -1406,7 +1448,7 @@ step << Rogue
     .goto 1436,70.421,74.031
     >>|cRXP_WARN_Travel up to 2nd top floor of the tower. Whilst in|r |T132320:0|t[Stealth] |cRXP_WARN_and the |cRXP_ENEMY_Defias Tower Sentries|r aren't next to you, Jump onto the chair, then onto the lamp, then onto the bookshelf on top of the waypoint location|r
     >>|cRXP_WARN_Manually|r |T132320:0|t[Unstealth]|cRXP_WARN_, then press your "Interact with Target" keybind to open the |cRXP_PICK_Duskwood Chest|r. Loot it for|r |cRXP_LOOT_Klaven Mortwake's Journal|r
-    >>|cRXP_WARN_NOTE: Your|r |T132320:0|t[Stealth] |cRXP_WARN_will temporarily stop working after looting|r |cRXP_LOOT_Klaven Mortwake's Journal|r 
+    >>|cRXP_WARN_NOTE: Your|r |T132320:0|t[Stealth] |cRXP_WARN_will temporarily stop working after looting|r |cRXP_LOOT_Klaven Mortwake's Journal|r
     >>|cRXP_WARN_Be prepared to run if you don't kill the |cRXP_ENEMY_Defias Tower Sentries|r on the 2nd floor. They will most likely aggro you permanently (but not attack you) when you are on top of the bookshelf as it is an evade spot|r
     >>|cRXP_WARN_If you have a|r |T135641:0|t[Dagger] |cRXP_WARN_in your bags or equipped, you can cast|r |T132282:0|t[Ambush] |cRXP_WARN_on the |cRXP_ENEMY_Defias Tower Patrollers|r and |cRXP_ENEMY_Defias Tower Sentries|r inside to kill them instantly. Be prepared to run after you kill the first |cRXP_ENEMY_Defias Tower Sentry|r and remember you can be hit from above. This is slower, but a LOT safer|r
     >>|cRXP_WARN_Be careful as the |cRXP_ENEMY_Malformed Defias Drone|r and |cRXP_ENEMY_Defias Drones|r can be at the entrance of the tower if you have to run out of it|r
@@ -1477,14 +1519,14 @@ step << Druid
     .target Mathrengyl Bearwalker
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mathrengyl Bearwalker|r
     .turnin 5061 >> Turn in Aquatic Form
-step 
+step
     .isOnQuest 68,225,148,95,56
     .isQuestTurnedIn 2359 << Rogue -- going straight to duskwood if already completed poison quest earlier
 	.hs >> Hearth to Darkshire
     >>|cRXP_BUY_Buy food/water if needed|r << !Warrior !Rogue
 	>>|cRXP_BUY_Buy food if needed|r << Warrior/Rogue
 	.cooldown item,6948,>0,1
-step 
+step
     .isQuestTurnedIn 2359 << Rogue -- going straight to duskwood if already completed poison quest earlier
     .goto Westfall,56.55,52.64
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Thor|r
@@ -1575,6 +1617,7 @@ step << Rogue
     .home >> Set your hearthstone to Darkshire
     .target Innkeeper Trelayne
     --xx nosubzone. check on ptr
+
 --
 step << Rogue skip
     .goto Stormwind City,75.9,59.9
@@ -1613,6 +1656,7 @@ step << Rogue skip
     .goto Stormwind City,78.0,58.9
     .turnin 2609 >> Turn in The Touch of Zanzil
 --
+
 step
     .goto Duskwood,73.83,44.05
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Chef Grual|r
@@ -1733,7 +1777,7 @@ step
     .goto Duskwood,49.85,77.71
     >>Click the |cRXP_PICK_Mound of loose dirt|r on the ground
     .turnin 95 >> Turn in Sven's Revenge
-    .accept 230 >> Accept Sven's Camp   
+    .accept 230 >> Accept Sven's Camp
 step
     .goto Duskwood,28.108,31.469
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Abercrombie|r
@@ -1928,7 +1972,7 @@ step
     .mob Gath'Ilzogg
     .isOnQuest 169
 step
-    .goto Redridge Mountains,66.68,56.26    
+    .goto Redridge Mountains,66.68,56.26
     >>Kill |cRXP_ENEMY_Blackrock Shadowcasters|r. Loot them for their |cRXP_LOOT_Orbs|r
     .complete 115,1 -- Midnight Orb (3)
     .mob Blackrock Shadowcaster
@@ -2232,7 +2276,7 @@ step
     .isOnQuest 69
 step << Warrior
     .goto Elwynn Forest,41.087,65.768
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lyria Du Lac|r   
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lyria Du Lac|r
     .trainer >> Train your class spells
     .target Lyria Du Lac
 step << Paladin
@@ -2615,6 +2659,8 @@ step
     .turnin 396 >> Turn in An Audience with the King
     .target Lady Katrana Prestor
     .isQuestTurnedIn 391
+
+
 --xx
 step << Rogue skip
     .goto Ironforge,45.2,6.6
@@ -2630,6 +2676,8 @@ step << Hunter/Warrior/Paladin/Shaman/Rogue
     .train 54 >> Train Maces << Rogue/Shaman
     .train 44 >> Train Axes << Shaman
 --xx
+
+
 step
 .dungeon Stockades
     #completewith next
@@ -2901,6 +2949,7 @@ step
     >>Click the |cRXP_PICK_The Sparklematic 5200|r one more time
     .accept 2947 >> Accept Return of the Ring
     .isQuestTurnedIn 2945
+
 -- Turn ins:
 step
 .dungeon Gnomer
@@ -2963,6 +3012,7 @@ step
     .zone Ironforge >> Travel to Ironforge
 step
 .dungeon Gnomer
+    .goto Ironforge,36.377,3.614
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Talvash del Kissel|r
     .turnin 2947 >> Turn in Return of the Ring
     .accept 2948 >> Accept Gnome Improvement
@@ -2970,6 +3020,7 @@ step
     .isOnQuest 2947
 step
 .dungeon Gnomer
+    .goto Ironforge,36.377,3.614
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Talvash del Kissel|r
     >>|cRXP_WARN_If you are able to obtain a|r |T133215:0|t[Silver Bar] |cRXP_WARN_and a|r |T134105:0|t[Moss Agate] |cRXP_WARN_finish this quest. If not, abandon it|r
     .collect 2842,1,2948,1 -- Silver Bar (1)
@@ -3000,6 +3051,7 @@ step
     .target Gryth Thurden
     .zoneskip Wetlands
 ]])
+
 RXPGuides.RegisterGuide([[
 #tbc
 #wotlk
@@ -3009,6 +3061,7 @@ RXPGuides.RegisterGuide([[
 #name 27-30 Wetlands/Hillsbrad
 #subgroup RestedXP Alliance 20-32
 #next 30-32 Duskwood/STV
+
 step
     .isQuestComplete 279
     .goto Wetlands,8.359,58.526
@@ -3128,7 +3181,7 @@ step
     .mob Crimson Ooze
     .mob Monstrous Ooze
     .mob Black Ooze
-step    
+step
     #loop
     .goto Wetlands,30.8,31.0,0
     .goto Wetlands,37.8,29.6,0
@@ -3356,7 +3409,7 @@ step
     .goto Wetlands,48.8,37.2,0
     .goto Wetlands,54.8,37.8,0
     .goto Wetlands,20.72,28.74,50,0
-    >>Kill |cRXP_ENEMY_Fen Creepers|r 
+    >>Kill |cRXP_ENEMY_Fen Creepers|r
     >>|cRXP_ENEMY_Fen Creepers|r |cRXP_WARN_are in|r |T132320:0|t[Stealth] |cRXP_WARN_along the river streams|r
     .complete 275,1 --12/12 Fen Creeper
     .mob Fen Creeper
@@ -3525,6 +3578,9 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Loremaster Dibbs|r
     .turnin 538 >> Turn in Southshore
     .target Loremaster Dibbs
+step
+    #completewith SSFP
+    .subzone 271 >> Travel to Southshore
 step << Hunter
     #completewith next
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Wesley|r
@@ -3618,11 +3674,11 @@ step << Hunter
     .accept 563 >> Accept Reassignment
     .target Lieutenant Farren Orinelle
 step
+    #label SSFP
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Darla Harris|r
     .goto Hillsbrad Foothills,49.338,52.272
     .fp Southshore >>Get the Southshore Flight Path
     .target Darla Harris
-    .zoneskip Hillsbrad Foothills,1
 step
     #completewith next
     .goto Hillsbrad Foothills,56.8,50.2,85,0
@@ -3735,6 +3791,7 @@ step
     .accept 689 >> Accept A King's Tribute
     .target Grand Mason Marblesten
 ]])
+
 RXPGuides.RegisterGuide([[
 #tbc
 #wotlk
@@ -3744,6 +3801,7 @@ RXPGuides.RegisterGuide([[
 #name 30-32 Duskwood/STV
 #subgroup RestedXP Alliance 20-32
 #next 32-33 Shimmering Flats
+
 step
     .goto Ironforge,67.844,42.499
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gearcutter Cogspinner|r
@@ -3845,7 +3903,7 @@ step << Paladin
     .trainer >> Train your class spells
     .target Arthur the Faithful
 step << Priest
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brother Joshua|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brother Joshua|r
     .goto StormwindClassic,38.54,26.86
     .trainer >> Train your class spells
     .target Brother Joshua
@@ -4008,7 +4066,7 @@ step
     .turnin 175 >> Turn in Look To The Stars
     .accept 177 >> Accept Look To The Stars
     .isQuestTurnedIn 174
-    .target Blind Mary 
+    .target Blind Mary
 step
     .goto Duskwood,79.73,70.64,30,0
     .goto Duskwood,80.98,71.65
@@ -4080,8 +4138,8 @@ step
     .accept 1244 >> Accept The Missing Diplomat
     .target Watcher Backus
 step
-    #completewith next 
-    .goto Elwynn Forest,84.60,69.37,100 >> Travel to the Eastvale Logging Camp 
+    #completewith next
+    .goto Elwynn Forest,84.60,69.37,100 >> Travel to the Eastvale Logging Camp
 step
     .goto Elwynn Forest,84.60,69.37
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Marshal Haggard|r
@@ -4168,17 +4226,25 @@ step << Shaman
     .goto Duskwood,77.49,44.28
     .fly Westfall>> Fly to Westfall
     .target Felicia Maline
---xx
 step << Human Paladin
-    .goto Elwynn Forest,72.7,51.5
-    >>Use the Symbol of Life on Henze Faulk
+    .goto 1429/0,-983.900,-9129.800
+    .use 6866 >> |cRXP_WARN_Use the|r |T133439:0|t[Symbol of Life] |cRXP_WARN_on|r |cRXP_FRIENDLY_Henze Faulk|r
+    .complete 1786,1 -- resurrect Henze Faulk in Elwynn.
+    .target Henze Faulk
+step << Human Paladin
+    .goto 1429/0,-983.900,-9129.800
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Henze Faulk|r
     .turnin 1786 >>Turn in The Tome of Divinity
     .accept 1787 >>Accept The Tome of Divinity
+    .target Henze Faulk
 step << Human Paladin
-    .goto Elwynn Forest,73.5,51.3
-    >>Kill Defias Wizards around the island
+    #loop
+    .goto Elwynn Forest,74.2,46.8,60,0
+    .goto Elwynn Forest,76.6,53.6,60,0
+    .goto Elwynn Forest,73.0,54.2,60,0
+    >>Kill |cRXP_ENEMY_Defias Rogue Wizards|r. Loot them for the |cRXP_LOOT_Defias Script|r
     .complete 1787,1 --Defias Script (1)
---xx
+    .mob Defias Rogue Wizard
 step << !Shaman
     #completewith next
     .goto Duskwood,28.10,31.46,100 >> Travel towards |cRXP_FRIENDLY_Abercrombie|r in Duskwood
@@ -4369,9 +4435,8 @@ step << !Shaman
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Commander Althea Ebonlocke|r
     .turnin 97 >> Turn in The Legend of Stalvan
     .accept 98 >> Accept The Legend of Stalvan
-    .turnin 101 >> Turn in The Totem of Infliction
     .target Commander Althea Ebonlocke
-step << Shaman
+step
     .goto Duskwood,75.81,45.29
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Madame Eva|r inside
     .turnin 101 >> Turn in The Totem of Infliction
@@ -4610,7 +4675,7 @@ step << Mage
     .bankwithdraw 2784,5849,23750 >> Withdraw the following items from your bank:
     >>|T134187:0|t[Musquash Root] -- 2784
     >>|T132765:0|t[Crate of Crash Helmets] -- 5849
-    .target Newton Burnside    
+    .target Newton Burnside
 step << Shaman
 	.goto Stormwind City,61.822,83.991
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Farseer Umbrua|r
@@ -4672,7 +4737,7 @@ step << !Mage
     .bankwithdraw 2784,5849,23750 >> Withdraw the following items from your bank:
     >>|T134187:0|t[Musquash Root] -- 2784
     >>|T132765:0|t[Crate of Crash Helmets] -- 5849
-    >>|T132824:0|t[Filled Bota Bag] << Shaman -- 23750 
+    >>|T132824:0|t[Filled Bota Bag] << Shaman -- 23750
     .target Newton Burnside
 step << !Mage
     .goto Stormwind City,39.843,81.446
@@ -4713,17 +4778,24 @@ step << Warlock
 step << Priest/Paladin
     #completewith next
     .goto StormwindClassic,42.51,33.51,20 >> Travel to the Stormwind Cathedral
+step << Human Paladin
+    .goto StormwindClassic,38.7,26.6
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gazin Tenorm|r
+    .turnin 1787 >>Turn in The Tome of Divinity
+    .target Gazin Tenorm
+    .accept 1788 >>Accept The Tome of Divinity
 step << Paladin
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Arthur the Faithful|r
-    .goto StormwindClassic,38.82,31.27,10,0
+    .goto StormwindClassic,38.82,31.27,10,0 << !Human
     .goto StormwindClassic,38.67,32.82
+    .turnin 1788 >>Turn in The Tome of Divinity << Human
     .trainer >> Train your class spells
     .target Arthur the Faithful
 step << Priest
-    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brother Joshua|r 
+    >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brother Joshua|r
     .goto StormwindClassic,38.54,26.86
     .trainer >> Train your class spells
-    .target Brother Joshua    
+    .target Brother Joshua
 step
     .goto Stormwind City,75.226,31.670
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lord Baurles K. Wishock|r
@@ -4756,17 +4828,8 @@ step
     >>Buy the following items for faster turn ins at Southshore soon
     >>This will save you time as you won't need to run around looking for mobs to kill. Skip this step if you wish to not buy any
     >>10 |T134026:0|t[Turtle Meat]
-    .collect 3712,10,555,1 
+    .collect 3712,10,555,1
     .target Auctioneer Jaxon
---xx
-step << Human Paladin
-    .goto Stormwind City,38.6,26.7
-    .turnin 1787 >>Turn in The Tome of Divinity
-    .accept 1788 >>Accept The Tome of Divinity
-step << Human Paladin
-    .goto Stormwind City,39.9,29.8
-    .turnin 1788 >>Turn in The Tome of Divinity
---xx
 step << Druid
     #completewith DruidMount
 	.cast 18960 >> |cRXP_WARN_Cast|r |T135758:0|t[Teleport: Moonglade]
@@ -4826,7 +4889,7 @@ step << !Mage
     .zoneskip Wetlands
 step << Mage
     #completewith FlyWetlands
-    .zone Ironforge >> |cRXP_WARN_Cast|r |T135757:0|t[Teleport: Ironforge]  
+    .zone Ironforge >> |cRXP_WARN_Cast|r |T135757:0|t[Teleport: Ironforge]
 step << Gnome !Warlock/Dwarf !Paladin
     #completewith next
     .zone Dun Morogh >>|cRXP_WARN_Travel to Kharanos and buy your|r |T132247:0|t[Mechanostrider] << Gnome !Warlock

@@ -1,6 +1,10 @@
 local _,addon = ...
 if addon.gameVersion < 40000 or addon.player.faction == 'Horde' then return end
+
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
+
 #version 1
 #group RXP Cataclysm 1-80 (A) << cata
 #group RXP MoP 1-60 (A) << mop
@@ -10,6 +14,8 @@ RXPGuides.RegisterGuide([[
 #next 15-20 Redridge
 #defaultfor NightElf/Worgen/Draenei
 << Alliance
+
+
 step
     #optional
     .goto 62,51.785,18.012
@@ -400,6 +406,7 @@ step
     .xp 13
 --Grinding checkpoint, likely won't be needed at all
 ----CENTRAL DARKSHORE
+
 step
     .isOnQuest 13601
     .goto 62,42.596,45.155
@@ -461,6 +468,7 @@ step
     .turnin 13543 >>Turn in Three Hammers to Break
     .goto 62,42.681,45.151
     .target +Corvine Moonrise
+
 --
 step
     .goto 62,43.662,53.441
@@ -515,6 +523,7 @@ step
     .target Elder Brownpaw
     .turnin 13575 >>Turn in The Land Is in Their Blood
     .accept 13576 >>Accept Mutual Aid
+
 step
 #loop
     .goto 62,40.288,61.724,0
@@ -627,6 +636,7 @@ step
     .target Malfurion Stormrage
     .turnin 13588 >>Turn in The Eye of All Storms
     .usespell 65579--landing spell, not sure if it works
+
 ----
 step
     #completewith next
@@ -663,6 +673,7 @@ step << skip--terrible xp/hr
     .target Gary
     >>Use the robot to kill murlocs around the sunken ships nearby
     .complete 13560,1
+
 step << Priest
     .goto 62,50.647,19.840
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Irlara Morninglight|r
@@ -731,6 +742,7 @@ step
     .unitscan Shatterspear Overseer
     .collect 44979,1,13506
     .accept 13506 >>Accept Reason to Worry
+
 step
 #loop
     .goto 62,60.342,17.689,45,0
@@ -992,6 +1004,7 @@ step << Druid
 step
     #optional
     #label DarkshoreEnd
+
 --NORTHERN DARKSHORE END
 step
 #questguide

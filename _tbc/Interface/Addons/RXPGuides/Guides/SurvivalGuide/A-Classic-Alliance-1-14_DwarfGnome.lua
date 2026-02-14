@@ -1,8 +1,11 @@
 local faction = UnitFactionGroup("player")
 if faction == "Horde" then return end
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #hardcore
 #classic
+#tbc
 #era/som--h
 << Alliance
 #name 1-6 Coldridge Valley
@@ -404,10 +407,12 @@ step
     .goto Dun Morogh,34.32,70.95,15,0
     .goto Dun Morogh,35.65,65.79,15 >> Travel through Coldridge Pass
 ]])
+
 RXPGuides.RegisterGuide([[
 #hardcore
 #era/som--h
 #classic
+#tbc
 << Alliance
 #name 6-10 Dun Morogh
 #version 1
@@ -1689,10 +1694,12 @@ step << Rogue
     .vendor >> |cRXP_BUY_Buy a|r |T135425:0|t[Keen Throwing Knife]|cRXP_BUY_. Equip it when you're level 11|r
     .target Thurman Mullby
 ]])
+
 RXPGuides.RegisterGuide([[
 #hardcore
 #era/som--h
 #classic
+#tbc
 << Alliance
 #name 10-11 Elwynn (Dwarf/Gnome)
 #version 1
@@ -1700,6 +1707,7 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 #defaultfor Gnome/Dwarf
 #next 11-13 Loch Modan (Dwarf/Gnome)
+
 step
     .goto StormwindClassic,66.277,62.137
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Dungar Longdrink|r
@@ -2349,10 +2357,12 @@ step << Dwarf Paladin
     .zone Ironforge >> Enter the Deeprun Tram. Take the Tram to Ironforge
     --.link https://www.youtube.com/watch?v=M_tXROi9nMQ >> |cRXP_WARN_Do a logout skip inside the Tram. Click here for video reference|r
 ]])
+
 RXPGuides.RegisterGuide([[
 #hardcore
 #era/som--h
 #classic
+#tbc
 << Alliance
 #name 11-13 Loch Modan (Dwarf/Gnome)
 #version 1
@@ -2360,6 +2370,7 @@ RXPGuides.RegisterGuide([[
 #subgroup RXP Survival Guide 1-20
 #defaultfor Gnome/Dwarf
 #next 13-15 Westfall
+
 step << Dwarf Paladin
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Brandur Ironhammer|r
     .target Brandur Ironhammer

@@ -1,5 +1,7 @@
 local faction = UnitFactionGroup("player")
 if faction == "Horde" then return end
+
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #classic
 #version 1
@@ -12,6 +14,7 @@ RXPGuides.RegisterGuide([[
 #displayname 15-18 Darkshore << !NightElf SoD
 #next 20-22 Darkshore SoD << !sod/Warrior/Rogue/Druid/Hunter
 #next 22-24 RestedXP Alliance 20-30\Wetlands SoD << sod Priest
+
 -- #displayname 11-16 Darkshore << NightElf/Dwarf Hunter !SoD
 -- #displayname 15-17 Darkshore << !NightElf !Dwarf/!Hunter !SoD
 -- #displayname 13-18 Darkshore << Dwarf Hunter/!NightElf sod
@@ -542,7 +545,11 @@ step
     .accept 985 >> Accept How Big a Threat?
     .accept 4761 >> Accept Thundris Windweaver
     .target Terenthis
+
+
 ----Start of Optional Early Level 14 Druid Turnin/train----
+
+
 step << Druid
     #optional
     #completewith DruidEarlyNessa
@@ -668,7 +675,13 @@ step << Druid
     #completewith AmethStart
     .hs >> Hearth to Darkshore
     .isQuestTurnedIn 6001
+
+
+
 ----End of Optional Early Level 14 Druid Turnin/train----
+
+
+
 step << NightElf Warrior/NightElf Rogue
     #sticky
     #season 0
@@ -796,7 +809,10 @@ step << skip --logout skip !Warrior !Rogue
     #season 2
     .goto 1439/1,-79.100,6134.300
     .goto 1439,41.705,36.507,20 >>|cRXP_WARN_Kill the Moonkin Oracle inside and jump on top of the large mushroom at the back of the cave, then perform a Logout Skip by logging out and back in|r
+
+
 ----Start of SoD Druid Starsurge segment----
+
 step << Druid
     #optional
     #season 2
@@ -985,7 +1001,10 @@ step << skip --logout skip Druid
     #season 2
     .goto 1439/1,-79.100,6134.300
     .goto 1439,41.705,36.507,20 >>|cRXP_WARN_Kill the Moonkin Oracle inside and jump on top of the large mushroom at the back of the cave, then perform a Logout Skip by logging out and back in|r
+
+
 ----End of SoD Druid Starsurge segment----
+
 step
     #xprate >1.49
     #optional
@@ -1218,7 +1237,10 @@ step << !Warrior !Rogue
     .turnin 4762 >> Turn in The Cliffspring River
     .accept 4763 >> Accept The Blackwood Corrupted
     .target Thundris Windweaver
+
 ----Start of Early Red Crystal turnin Section (NE below 14 for xp, Hunters/Druids for staff wep upgrade)/Druid bear q final if not done earlier----
+
+
 step << NightElf/Hunter/Druid/Warrior
     #season 2 << Warrior/Rogue
     #optional
@@ -1369,7 +1391,11 @@ step << Hunter/Druid/Warrior
     .itemcount 15397,1
     .itemStat 16,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<9.5
     .isQuestTurnedIn 4811
+
+
 ----Start of forced Level 14 Druid Turnin/train----
+
+
 step << Druid
     #season 0
     .goto 1439,36.767,44.285
@@ -1456,8 +1482,11 @@ step << Druid
     #completewith AmethStart
     .hs >> Hearth to Darkshore
     .zoneskip Darkshore
+
 ----End of forced Level 14 Druid Turnin/train----
 ----End of Early Red Crystal turnin Section (NE for xp, Hunters/Druids for staff)/Druid bear q final if not done earlier----
+
+
 step
     #season 0
     #optional
@@ -1467,7 +1496,11 @@ step
     .collect 5469,5,2178,1 -- Strider Meat (5)
     .mob Foreststrider Fledgling
     .subzoneskip 447
+
+
 ----Start of alternate section if early Red Crystal turnin----
+
+
 step << NightElf/Hunter/Druid
     #xprate <1.5 --<< !NightElf/Hunter
     #completewith EarlyBlackwood
@@ -1540,8 +1573,11 @@ step
     .target Sentinel Tysha Moonblade
     .isQuestTurnedIn 4811
     .xp >17,1
+
 ----End of alternate section if early Red Crystal turnin----
+
 ----Start of small south loop for ERA and SoD Warrior/Rogue/Priest----
+
 step
     #xprate <1.5 --<< !NightElf/Hunter
     #optional
@@ -1938,7 +1974,10 @@ step << !sod/Warrior/Rogue/Priest
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Sentinel Elissa Starbreeze|r upstairs
     .accept 965 >> Accept The Tower of Althalaxx
     .target Sentinel Elissa Starbreeze
+
+
 ----Start of SoD Priest early level 18 wand quest + meditation quest detour----
+
 step << Priest
     #season 2
     .goto 1439,44.168,36.289
@@ -2140,7 +2179,10 @@ step << Priest
     .use 15204
     .itemcount 15204,1
     .itemStat 18,ITEM_MOD_DAMAGE_PER_SECOND_SHORT,<13.61
+
 ----End of SoD Priest early level 18 wand quest + meditation quest detour----
+
+
 step << !Hunter
     #season 0 << Druid/Priest
     #season 2 << Warrior/Rogue
@@ -2197,7 +2239,10 @@ step << !sod/Rogue
     .accept 4763 >> Accept The Blackwood Corrupted << sod
     .target Thundris Windweaver
     .isQuestComplete 958
+
 ----End of small south loop for ERA and SoD Warrior/Rogue/Priest----
+
+
 step
     #season 0 << !Warrior !Rogue
     #label BashalEnd
@@ -2254,6 +2299,8 @@ step
     .complete 4762,1 --Cliffspring River Sample (1)
     .use 12350
 ----Start of Hunter/Druid 1x and SoD Warrior/Rogue early Althalaxx section (for money+xp)----
+
+
 step << Hunter/Druid/Warrior/Rogue
 	#xprate <1.5 << Hunter/Druid
     #season 2 << Warrior/Rogue
@@ -2352,7 +2399,9 @@ step << Hunter/Druid/Warrior/Rogue
     >>Kill |cRXP_ENEMY_Foreststriders|r. Loot them for their |cRXP_LOOT_Strider Meat|r
     .collect 5469,5,2178,1 -- Strider Meat (5)
     .mob Foreststrider
+
 ----End of Hunter/Druid 1x and SoD Warrior early Althalaxx section (for money+xp)----
+
 step
     #optional
     #completewith CliffCave
@@ -2497,7 +2546,9 @@ step
     #label CavetoAuber
     #completewith CliffspringEnd
     .subzone 442 >> Travel to Auberdine
+
 ----Start of SoD 250% xp buff early southern Darkshore one loop----
+
 step << Warrior/Rogue
     #label CliffspringEnd
     #season 2
@@ -2889,7 +2940,10 @@ step << !Warrior !Rogue !Priest
 step << skip -- Hunter
     .goto Darkshore,39.5,55.5
     .xp 19+800 >> Grind untill you're 800 xp into level 19. This way you will have level 20 for training in Darnassus after turning in all the quests
+
 ----Start of SoD Priest Ashenvale Meditation quest section----
+
+
 step << Priest
     .goto 1439,43.555,76.293
     #season 2
@@ -3004,7 +3058,11 @@ step << Priest
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daelyshia|r
     .fly Auberdine >> Fly back to Auberdine
 	.target Daelyshia
+
+
 ----End of SoD Priest Ashenvale Meditation quest section----
+
+
 step
     #season 2
     #completewith CleansingTharnariunSod
@@ -3250,7 +3308,10 @@ step << !Druid !Hunter
     .target Vesprystus
     .zoneskip Darkshore
     .isQuestComplete 741 << Rogue
+
 ----Start of Druid/Hunter Quest+SoD rune section----
+
+
 step << Druid
     #optional
     #season 2
@@ -3414,7 +3475,11 @@ step << Druid/Hunter
     #optional
     .hs >> Hearth to Darkshore
     .zoneskip Darkshore
+
+
 ----End of Druid Quest+SoD rune section----
+
+
 step << Priest
     #season 2
     #label TravelMenethilNoDMBoat
@@ -3434,11 +3499,16 @@ step << Priest
     .zoneskip Stormwind City
     .zoneskip Westfall
     .dungeon !DM
+
+
 ----End of SoD 250% xp buff early southern Darkshore one loop----
+
 ]])
+
 ----End of Darkshore Part 1----
 ----Start of Darkshore Part 2----
 ----Hunters stay in Darkshore/Ashenvale and Grind, 2x skips Redridge----
+
 RXPGuides.RegisterGuide([[
 #classic
 #version 1
@@ -3450,6 +3520,7 @@ RXPGuides.RegisterGuide([[
 #displayname 20-22 Darkshore << sod !Warrior
 #displayname 20-22 Darkshore/Ashenvale << sod Warrior
 #next RestedXP Alliance 20-30\22-24 Wetlands SoD
+
 step
     .goto Darkshore,37.78,44.06
     .use 12346 >>|cRXP_WARN_Use the|r |T133748:0|t[Empty Cleansing Bowl] |cRXP_WARN_at the|r |cRXP_PICK_Auberdine Moonwell|r
@@ -3892,7 +3963,11 @@ step << Druid
     >>|cRXP_WARN_Swim out in the water|r
     >>Open the |cRXP_PICK_Strange Lockbox|r. Loot it for the |cRXP_LOOT_Half Pendant of Aquatic Agility|r
     .collect 15883,1,272,1 --Collect Half Pendant of Aquatic Agility (x1)
+
+
 ----Start of Darkshire 2x 20 Turnins & Druid Training----
+
+
 step << Druid
     #xprate >1.59
     #optional
@@ -4019,7 +4094,11 @@ step
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Gwennyth Bly'Leggonde|r
     .turnin 4727 >> Turn in Beached Sea Turtle
     .target Gwennyth Bly'Leggonde
+
+
 ----Start of SoD Warrior short ashenvale bit to catch up xp----
+
+
 step << Warrior
     .goto 1439,43.555,76.293
     #season 2
@@ -4124,8 +4203,13 @@ step << Warrior
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Daelyshia|r
     .fly Auberdine >> Fly back to Auberdine
 	.target Daelyshia
+
+
 ----End of SoD Warrior short ashenvale bit to catch up xp----
+
+
 ----Start of Druid SoD Wild Strikes run segment----
+
 step << Druid
     #season 2
     #optional
@@ -4250,9 +4334,16 @@ step << Druid
     #optional
     .hs >> Hearth to Darkshore
     .zoneskip Darkshore
+
 ----End of Druid SoD Wild Strikes run segment----
+
+
+
 ----End of Darkshore 2x 20 Turnins & Druid Training----
 ----Start of Rogue Poison Quest Section----
+
+
+
 step
     #xprate >1.59
     #label TravelMenethilNoDMBoat
@@ -4340,7 +4431,14 @@ step << NightElf Rogue
     .zoneskip Ironforge
     .zoneskip Westfall
     .dungeon !DM
+
+
+
+
 ----Start of NE Rogue 2x No Deadmines swim to Westfall Alternative section----
+
+
+
 step << NightElf Rogue
     #xprate >1.59
     #optional
@@ -4433,7 +4531,14 @@ step << NightElf Rogue
     .zoneskip Wetlands
     .zoneskip Ironforge
     .dungeon !DM
+
+
+
+
 ----End of NE Rogue 2x No Deadmines swim to Westfall Alternative section----
+
+
+
 step << NightElf Rogue
     #xprate >1.59
     .goto Ironforge,55.491,47.751
@@ -4744,7 +4849,7 @@ step << Rogue
     #label Rendevous
     .goto Redridge Mountains,28.07,52.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lucius|r
-    .turnin 2281 >> Turn in Redridge Rendevous
+    .turnin 2281 >> Turn in Redridge Rendezvous
     .accept 2282 >> Accept Alther's Mill
     .target Lucius
     .dungeon !DM
@@ -5066,7 +5171,11 @@ step << Rogue
     .train 1785 >> Train |T132320:0|t[Stealth](rank 2)
     .target Osborne the Night Man
     .dungeon !DM
+
+
 ----End of 2x Non-Deadmines Rogue Class q section----
+
+
 step << Rogue
     #xprate >1.59
     #optional
@@ -5160,8 +5269,10 @@ step << NightElf Rogue
     .zoneskip Wetlands
     .isOnQuest 968
     .dungeon !DM
+
 ----End of 2x Non-Deadmines Training/Class q section----
 ----Start of 2x Non-Deadmines (Darnassus) training section----
+
 step << NightElf Rogue
     #xprate >1.59
     #optional
@@ -5184,8 +5295,11 @@ step << NightElf Rogue
     .zoneskip Westfall
     .cooldown item,6948,<0
     .dungeon !DM
+
+
 ----End of 2x no DM Return to Darkshore Steps----
 ----End of 2x Non-Deadmines (Darnassus) training section----
+
 ----Start of Hunter Deadmines/All 2x Deadmines Section----
 step
     #xprate >1.59 << !Hunter
@@ -5242,7 +5356,12 @@ step << NightElf
     .zoneskip Ironforge
     .zoneskip Westfall
     .dungeon DM
+
+
 ----Start of Hunter/All Night Elves 2x Deadmines swim to Westfall Alternative section----
+
+
+
 step << NightElf
     #xprate >1.59 << !Hunter
     #optional
@@ -5337,7 +5456,16 @@ step << NightElf Priest
     .zoneskip Stormwind City,1
     .dungeon DM
 --XX Alt if NE priest cant website unstuck
+
+
+
+
 ----End of Hunter/All Night Elves 2x Deadmines swim to Westfall Alternative (and Alt NE Priest Training) section----
+
+
+
+
+
 step << NightElf Warrior/NightElf Hunter
     #xprate >1.59 << !Hunter
     #optional
@@ -6130,7 +6258,7 @@ step << Rogue
     #xprate >1.59
     .goto Redridge Mountains,28.07,52.02
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Lucius|r
-    .turnin 2281 >> Turn in Redridge Rendevous
+    .turnin 2281 >> Turn in Redridge Rendezvous
     .accept 2282 >> Accept Alther's Mill
     .target Lucius
     .dungeon DM
@@ -7140,5 +7268,8 @@ step
     .hs >> Hearth to Darkshore
     .zoneskip Darkshore
     .dungeon DM
+
+
 ----End of Hunter/All 2x Deadmines section----
+
     ]])

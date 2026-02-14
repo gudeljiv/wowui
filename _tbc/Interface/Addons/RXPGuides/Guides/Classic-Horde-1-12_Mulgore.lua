@@ -2,8 +2,10 @@ local faction = UnitFactionGroup("player")
 if faction == "Alliance" then return end
 
 
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #classic
+#tbc
 #xprate <1.99
 #era/som--h
 << Horde
@@ -577,6 +579,7 @@ step
 
 RXPGuides.RegisterGuide([[
 #classic
+#tbc
 #xprate <1.99
 << Horde
 #name 6-12 Mulgore
@@ -804,6 +807,7 @@ step << Tauren
     .goto Mulgore,48.53,60.40
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mull|r
     .turnin 748 >>Turn in Poison Water
+    .timer 8,Poison Water RP
     .accept 754 >>Accept Winterhoof Cleansing
     .target Mull Thunderhorn
 step << Tauren
@@ -1722,6 +1726,7 @@ step << Tauren
     .target +Ruul Eagletalon
     .goto Mulgore,47.35,62.02
     .turnin 758 >>Turn in Thunderhorn Cleansing
+    .timer 8,Thunderhorn Cleansing RP
     .accept 759 >>Accept Wildmane Totem
     .target +Mull Thunderhorn
     .goto Mulgore,48.54,60.38
@@ -1739,6 +1744,7 @@ step << Tauren
     .target +Ruul Eagletalon
     .goto Mulgore,47.35,62.02
     .turnin 758 >>Turn in Thunderhorn Cleansing
+    .timer 8,Thunderhorn Cleansing RP
     .accept 759 >>Accept Wildmane Totem
     .target +Mull Thunderhorn
     .goto Mulgore,48.54,60.38
@@ -2349,7 +2355,7 @@ step << Shaman
     #label Fizsprocket1
     .goto Mulgore,64.95,43.33
     >>Kill |cRXP_ENEMY_Supervisor Fizsprocket|r. Loot him for his |cRXP_LOOT_Clipboard|r
-    >>|cRXP_WARN_Run into the mine and hug the right/east side to each him|r
+    >>|cRXP_WARN_Run into the mine and hug the right/east side to reach him|r
     .complete 765,1 --Fizsprocket's Clipboard (1)
     .mob Supervisor Fizsprocket
 step << Shaman
@@ -2738,7 +2744,7 @@ step
     #label Fizsprocket
     .goto Mulgore,64.95,43.33
     >>Kill |cRXP_ENEMY_Supervisor Fizsprocket|r. Loot him for his |cRXP_LOOT_Clipboard|r
-    >>|cRXP_WARN_Run into the mine and hug the right/east side to each him|r
+    >>|cRXP_WARN_Run into the mine and hug the right/east side to reach him|r
     .complete 765,1 --Fizsprocket's Clipboard (1)
     .mob Supervisor Fizsprocket
 step
@@ -2937,6 +2943,7 @@ if faction == "Alliance" then return end
 
 RXPGuides.RegisterGuide([[
 #classic
+#tbc
 << Horde
 #xprate >1.99
 #version 1
@@ -3633,6 +3640,7 @@ step
 
 RXPGuides.RegisterGuide([[
 #classic
+#tbc
 << Horde
 #xprate >1.99
 #version 1
@@ -3872,6 +3880,7 @@ step << Tauren
     .goto Mulgore,48.53,60.40
     >>|Tinterface/worldmap/chatbubble_64grey.blp:20|tTalk to |cRXP_FRIENDLY_Mull|r
     .turnin 748 >>Turn in Poison Water
+    .timer 8,Poison Water RP
     .accept 754 >>Accept Winterhoof Cleansing
     .target Mull Thunderhorn
 step << Tauren
@@ -5173,7 +5182,7 @@ step
     #label Fizsprocket1
     .goto Mulgore,64.95,43.33
     >>Kill |cRXP_ENEMY_Supervisor Fizsprocket|r. Loot him for his |cRXP_LOOT_Clipboard|r
-    >>|cRXP_WARN_Run into the mine and hug the right/east side to each him|r
+    >>|cRXP_WARN_Run into the mine and hug the right/east side to reach him|r
     .complete 765,1 --Fizsprocket's Clipboard (1)
     .mob Supervisor Fizsprocket
 step

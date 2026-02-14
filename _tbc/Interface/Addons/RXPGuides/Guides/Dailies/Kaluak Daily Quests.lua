@@ -1,3 +1,4 @@
+if GetLocale() == "zhCN" then return end
 RXPGuides.RegisterGuide([[
 #version 1
 #group +RestedXP Northrend Daily Quests
@@ -5,6 +6,7 @@ RXPGuides.RegisterGuide([[
 #wotlk
 #cata
 #name The Kalu'ak Daily Quests
+
 step
 	>>Travel to Moa'ki Harbor in Dragonblight. Talk to Mau'i
     .daily 11960 >>Accept Planning for the Future
