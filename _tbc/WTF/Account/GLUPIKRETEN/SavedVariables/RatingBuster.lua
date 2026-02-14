@@ -65,9 +65,9 @@ RatingBusterDB = {
 },
 ["PRIEST"] = {
 },
-["Druid"] = {
-},
 ["Warlock"] = {
+},
+["Druid"] = {
 },
 ["WARLOCK"] = {
 },

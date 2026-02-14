@@ -12,10 +12,6 @@ ItemRackUser = {
 ["equip"] = {
 },
 },
-["~Unequip"] = {
-["equip"] = {
-},
-},
 ["DPS"] = {
 ["equip"] = {
 0,
@@ -41,10 +37,13 @@ nil,
 ["old"] = {
 },
 },
+["~Unequip"] = {
+["equip"] = {
+},
+},
 },
 ["EnableQueues"] = "ON",
-["Queues"] = {
-},
+["EnablePerSetQueues"] = "OFF",
 ["Buttons"] = {
 },
 ["ItemsUsed"] = {
@@ -55,10 +54,11 @@ nil,
 ["Set"] = {
 },
 },
-["EnableEvents"] = "ON",
+["Alpha"] = 1,
 ["Hidden"] = {
 },
-["Alpha"] = 1,
+["EnableEvents"] = "ON",
 ["MenuScale"] = 1.200000047683716,
-["EnablePerSetQueues"] = "OFF",
+["Queues"] = {
+},
 }

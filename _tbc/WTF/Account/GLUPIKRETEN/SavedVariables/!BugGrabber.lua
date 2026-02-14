@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 13993,
+["session"] = 13999,
 ["errors"] = {
 {
 ["message"] = "Interface/AddOns/ACP/ACP.lua:280: attempt to concatenate a nil value",
