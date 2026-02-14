@@ -358,18 +358,31 @@ xVermin.Enraged = function(unit)
 end
 xEnraged = xVermin.Enraged
 
-xVermin.Magic = function(unit)
-	unit = unit and unit or "player"
+xVermin.Magic = function(unit, enemy)
+	unit = unit or "player"
+	if enemy == nil then
+		enemy = true
+	end
 
-	local count = 0
-	for i = 1, MAX_TARGET_BUFFS do
-		local name, _, _, type = UnitBuff(unit, i)
-		if name and type == "Magic" then
-			count = count + 1
+	if enemy then
+		-- Purgeable buffs on enemy (Purge, Spellsteal)
+		for i = 1, MAX_TARGET_BUFFS do
+			local name, _, _, _, _, _, _, _, isStealable = UnitBuff(unit, i)
+			if name and isStealable then
+				return true
+			end
+		end
+	else
+		-- Magic debuffs on friendly (dispellable)
+		for i = 1, MAX_TARGET_DEBUFFS do
+			local name, _, _, _, debuffType = UnitDebuff(unit, i)
+			if name and debuffType == "Magic" then
+				return true
+			end
 		end
 	end
 
-	return count > 0 and true or false
+	return false
 end
 xMagic = xVermin.Magic
 

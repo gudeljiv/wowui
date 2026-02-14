@@ -173,6 +173,12 @@ xVerminSavedData = {
 "Pounce",
 "Starfire Stun",
 },
+["Sneed's Shredder"] = {
+"Rend",
+"Deep Wound",
+"Garrote",
+"Serpent Sting",
+},
 ["Charlga Razorflank"] = {
 "Charge Stun",
 "Earth Shock",
@@ -187,12 +193,6 @@ xVerminSavedData = {
 "Hunter's Mark",
 "Arcane Explosion",
 },
-["Sneed's Shredder"] = {
-"Rend",
-"Deep Wound",
-"Garrote",
-"Serpent Sting",
-},
 ["Stone Behemoth"] = {
 "Rend",
 },
@@ -204,11 +204,15 @@ xVerminSavedData = {
 ["Cracked Golem"] = {
 "Rend",
 },
+["Corrupt Minor Manifestation of Water"] = {
+"Frost Shock",
+},
 ["Whirlwind Stormwalker"] = {
 "Deep Wound",
 },
-["Corrupt Minor Manifestation of Water"] = {
-"Frost Shock",
+["Burning Destroyer"] = {
+"Lava Lash",
+"Serpent Sting",
 },
 ["Scalding Elemental"] = {
 "Rend",
@@ -233,10 +237,6 @@ xVerminSavedData = {
 "Lightning Shield",
 "Chain Lightning",
 },
-["Burning Destroyer"] = {
-"Lava Lash",
-"Serpent Sting",
-},
 ["Bristleback Geomancer"] = {
 "Firebolt",
 "Incinerate",
@@ -248,11 +248,14 @@ xVerminSavedData = {
 ["Wandering Spirit"] = {
 "Fear",
 },
+["Shadowfang Darksoul"] = {
+"Shadow Word: Pain",
+},
 ["Landslide"] = {
 "Blackout",
 },
-["Shadowfang Darksoul"] = {
-"Shadow Word: Pain",
+["Burning Exile"] = {
+"Serpent Sting",
 },
 ["Bloodmage Thalnos"] = {
 "Charge Stun",
@@ -267,9 +270,6 @@ xVerminSavedData = {
 "Lava Lash",
 "Rend",
 "Serpent Sting",
-},
-["Unfettered Spirit"] = {
-"Deep Wound",
 },
 ["Writhing Highborne"] = {
 "Rend",
@@ -288,12 +288,16 @@ xVerminSavedData = {
 "Earth Shock",
 "Intimidation",
 },
-["Primordial Behemoth"] = {
-"Concussive Shot",
-},
 ["Lord Vyletongue"] = {
 "Blackout",
 "Impact",
+},
+["Primordial Behemoth"] = {
+"Concussive Shot",
+},
+["Thepalalol"] = {
+"Cheap Shot",
+"Mutilate",
 },
 ["Shadowshard Rumbler"] = {
 "Lightning Shield",
@@ -301,10 +305,6 @@ xVerminSavedData = {
 },
 ["XT:9"] = {
 "Serpent Sting",
-},
-["Thepalalol"] = {
-"Cheap Shot",
-"Mutilate",
 },
 ["Dianastalion"] = {
 "Stormstrike",
@@ -327,6 +327,10 @@ xVerminSavedData = {
 "Serpent Sting",
 "Thunder Clap",
 },
+["Whirlwind Ripper"] = {
+"Lightning Shield",
+"Serpent Sting",
+},
 ["Fire Elemental"] = {
 "Flametongue Attack",
 "Magma Totem",
@@ -335,9 +339,9 @@ xVerminSavedData = {
 "Deep Wound",
 "Explosive Trap Effect",
 },
-["Whirlwind Ripper"] = {
+["Bound Elemental"] = {
 "Lightning Shield",
-"Serpent Sting",
+"Rend",
 },
 ["Larsera"] = {
 "Serpent Sting",
@@ -351,9 +355,24 @@ xVerminSavedData = {
 "Electrocutioner's Shock",
 "Chimera Shot",
 },
-["Bound Elemental"] = {
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
+"Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
 "Lightning Shield",
-"Rend",
+"Living Bomb",
+"Molten Blast",
+"Serpent Sting",
+"Flame Shock",
+"Corruption",
+"Curse of Agony",
 },
 ["Sea Spray"] = {
 "Frost Shock",
@@ -382,8 +401,9 @@ xVerminSavedData = {
 ["Galgann Firehammer"] = {
 "War Stomp",
 },
-["Sandfury Shadowcaster"] = {
-"Earthbind",
+["Minor Manifestation of Fire"] = {
+"Flame Shock",
+"Flametongue Attack",
 },
 ["Entropic Horror"] = {
 "Lava Lash",
@@ -396,13 +416,8 @@ xVerminSavedData = {
 "Rend",
 "Deep Wound",
 },
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
+["Sandfury Shadowcaster"] = {
+"Earthbind",
 },
 ["Mutanus the Devourer"] = {
 "Shadow Word: Pain",
@@ -453,24 +468,13 @@ xVerminSavedData = {
 "Concussive Shot",
 "Entrapment",
 },
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
-"Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
-"Serpent Sting",
-"Flame Shock",
-"Corruption",
-"Curse of Agony",
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
 },
 ["Nelyz"] = {
 "Concussive Shot",
@@ -536,8 +540,8 @@ xVerminSavedData = {
 ["Glutton"] = {
 "Starfire Stun",
 },
-["Burning Exile"] = {
-"Serpent Sting",
+["Unfettered Spirit"] = {
+"Deep Wound",
 },
 ["Entropic Beast"] = {
 "Lava Lash",

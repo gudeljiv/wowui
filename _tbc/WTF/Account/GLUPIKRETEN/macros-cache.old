@@ -61,7 +61,7 @@ VER 3 0000000000000041 "prospect" "134400"
 /use Copper Ore
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Morin Cloudstalker
+/targetexact Gazlowe
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
@@ -71,7 +71,8 @@ VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
 /click StaticPopup1Button1
 END
 VER 3 000000000000000B "TEST" "132089"
-/run local b,e=UnitArmor("target")print("Armor: "..e.." (base: "..b..")")
+/run SUFUnittargetAuradebuffs5Cooldown:ClearAllPoints()
+/run SUFUnittargetAuradebuffs5Cooldown:SetPoint(")
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

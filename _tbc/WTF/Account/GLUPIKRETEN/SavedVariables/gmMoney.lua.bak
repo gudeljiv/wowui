@@ -46,7 +46,7 @@ GMMONEY = {
 ["CLASS"] = "PALADIN",
 },
 ["Poklopac"] = {
-["GOLD"] = 7013,
+["GOLD"] = 5847,
 ["CLASS"] = "SHAMAN",
 },
 ["Dopeclaw"] = {
@@ -54,7 +54,7 @@ GMMONEY = {
 ["CLASS"] = "DRUID",
 },
 ["Dopecure"] = {
-["GOLD"] = 102601,
+["GOLD"] = 105891,
 ["CLASS"] = "PRIEST",
 },
 ["Doperage"] = {

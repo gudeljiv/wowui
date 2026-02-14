@@ -197,9 +197,9 @@ W: 1024
 H: 712
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
-Anchor: TOPRIGHT
+Anchor: RIGHT
 X: -351
-Y: -175
+Y: 175
 W: 607
 H: 672
 Frame: PallyPowerBlessingsFrame
@@ -209,6 +209,13 @@ X: 0
 Y: 0
 W: 1010
 H: 1200
+Frame: MailFrame
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 13
+Y: -97
+W: 338
+H: 424
 Frame: GameMenuFrame
 FrameLevel: 1
 Anchor: CENTER

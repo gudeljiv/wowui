@@ -562,7 +562,7 @@ nil,
 ["TrackerTimeHeight"] = 12,
 ["CDTimersOnButtons"] = true,
 ["LastTotems"] = {
-10437,
+3599,
 8075,
 10462,
 8835,

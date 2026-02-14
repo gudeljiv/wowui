@@ -20,8 +20,7 @@ _detalhes_database = {
 ["dps_started"] = false,
 ["total"] = 120.00149,
 ["colocacao"] = 1,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04889C6A",
 ["damage_from"] = {
@@ -43,20 +42,20 @@ _detalhes_database = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 4,
 ["targets"] = {
 ["Clattering Scorpid"] = 120,
 },
 ["n_total"] = 105,
 ["DODGE"] = 3,
-["MISS"] = 1,
-["n_min"] = 2,
 ["a_amt"] = 0,
+["n_min"] = 2,
+["g_dmg"] = 8,
 ["counter"] = 52,
-["c_max"] = 7,
+["b_dmg"] = 0,
 ["total"] = 120,
+["c_max"] = 7,
 ["spellschool"] = 1,
-["r_amt"] = 0,
 ["id"] = 1,
 ["r_dmg"] = 0,
 ["extra"] = {
@@ -68,14 +67,15 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 7,
 ["n_amt"] = 37,
-["n_max"] = 4,
-["g_dmg"] = 8,
+["r_amt"] = 0,
+["MISS"] = 1,
 },
 },
 ["tipo"] = 2,
 },
 ["grupo"] = true,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1769887648,
@@ -91,10 +91,9 @@ _detalhes_database = {
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 82.008139,
 ["last_dps_realtime"] = 0,
-["monster"] = true,
+["dps_started"] = true,
 ["total"] = 82.008139,
-["friendlyfire"] = {
-},
+["on_hold"] = true,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6423-1-34241-3125-00007E51B4",
 ["damage_from"] = {
@@ -106,7 +105,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["dps_started"] = true,
+["monster"] = true,
 ["fight_component"] = true,
 ["totalabsorbed"] = 0.008139,
 ["aID"] = "3125",
@@ -117,7 +116,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["targets"] = {
 ["Dopecure"] = 76,
 },
@@ -139,14 +138,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 10,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [11918] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["targets"] = {
 ["Dopecure"] = 6,
 },
@@ -167,13 +166,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["n_max"] = 2,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = true,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1769887654,
@@ -202,8 +202,7 @@ _detalhes_database = {
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
+["buff_uptime"] = 42,
 ["buff_uptime_targets"] = {
 },
 ["aID"] = "6409-04889C6A",
@@ -236,7 +235,8 @@ _detalhes_database = {
 },
 ["nome"] = "Dopecure",
 ["grupo"] = true,
-["buff_uptime"] = 42,
+["pets"] = {
+},
 ["tipo"] = 4,
 ["classe"] = "PRIEST",
 ["serial"] = "Player-6409-04889C6A",
@@ -250,7 +250,9 @@ _detalhes_database = {
 ["_ActorTable"] = {
 },
 },
-["boss_hp"] = 1,
+["raid_roster"] = {
+["Dopecure"] = "Player-6409-04889C6A",
+},
 ["tempo_start"] = 1769887628,
 ["last_events_tables"] = {
 },
@@ -264,7 +266,7 @@ _detalhes_database = {
 ["playerTalents"] = {
 },
 ["totals"] = {
-48217,
+53399,
 6957,
 {
 0,
@@ -455,9 +457,7 @@ false,
 },
 ["start_time"] = 251065.877,
 ["contra"] = "Clattering Scorpid",
-["raid_roster"] = {
-["Dopecure"] = "Player-6409-04889C6A",
-},
+["boss_hp"] = 1,
 },
 {
 {
@@ -473,8 +473,7 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 0.005647,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04889C6A",
 ["damage_from"] = {
@@ -495,7 +494,8 @@ false,
 ["tipo"] = 2,
 },
 ["grupo"] = true,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 0,
@@ -511,7 +511,7 @@ false,
 ["classe"] = "UNKNOW",
 ["total_without_pet"] = 85.005022,
 ["last_dps_realtime"] = 0,
-["monster"] = true,
+["dps_started"] = false,
 ["total"] = 85.005022,
 ["friendlyfire"] = {
 },
@@ -537,7 +537,7 @@ false,
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 25,
 ["targets"] = {
 ["Dopecure"] = 85,
 },
@@ -558,13 +558,13 @@ false,
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["n_max"] = 25,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["dps_started"] = false,
+["monster"] = true,
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1769887437,
@@ -581,12 +581,12 @@ false,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["targets_overheal"] = {
+["healing_from"] = {
 },
 ["pets"] = {
 },
 ["iniciar_hps"] = false,
-["heal_enemy_amt"] = 37,
+["aID"] = "6409-04889C6A",
 ["totalover"] = 0.003363,
 ["total_without_pet"] = 0.003363,
 ["total"] = 0.003363,
@@ -613,14 +613,14 @@ false,
 ["tipo"] = 3,
 },
 ["grupo"] = true,
-["healing_from"] = {
+["targets_overheal"] = {
 },
-["classe"] = "PRIEST",
+["heal_enemy_amt"] = 37,
 ["custom"] = 0,
 ["tipo"] = 2,
 ["start_time"] = 1769887628,
 ["delay"] = 0,
-["aID"] = "6409-04889C6A",
+["classe"] = "PRIEST",
 },
 },
 },
@@ -636,8 +636,7 @@ false,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
+["buff_uptime"] = 26,
 ["buff_uptime_targets"] = {
 },
 ["aID"] = "6409-04889C6A",
@@ -670,7 +669,8 @@ false,
 },
 ["nome"] = "Dopecure",
 ["grupo"] = true,
-["buff_uptime"] = 26,
+["pets"] = {
+},
 ["tipo"] = 4,
 ["classe"] = "PRIEST",
 ["serial"] = "Player-6409-04889C6A",
@@ -684,7 +684,9 @@ false,
 ["_ActorTable"] = {
 },
 },
-["boss_hp"] = 1,
+["raid_roster"] = {
+["Dopecure"] = "Player-6409-04889C6A",
+},
 ["CombatStartedAt"] = 251064.339,
 ["tempo_start"] = 1769887431,
 ["last_events_tables"] = {
@@ -799,9 +801,7 @@ false,
 },
 ["start_time"] = 250870.106,
 ["contra"] = "Venomtail Scorpid",
-["raid_roster"] = {
-["Dopecure"] = "Player-6409-04889C6A",
-},
+["boss_hp"] = 1,
 },
 },
 },
@@ -821,7 +821,7 @@ false,
 ["utility"] = false,
 },
 ["enabled"] = false,
-["group_frames"] = true,
+["lines_per_column"] = 12,
 ["show_options"] = false,
 ["frames"] = {
 ["defensive-raid"] = {
@@ -855,7 +855,7 @@ false,
 ["only_inside_instance"] = true,
 ["only_in_group"] = true,
 },
-["lines_per_column"] = 12,
+["group_frames"] = true,
 ["pos"] = {
 },
 },
@@ -875,8 +875,7 @@ false,
 },
 ["arena_data_index_selected"] = 1,
 ["on_death_menu"] = true,
-["cached_roles"] = {
-},
+["last_day"] = "14",
 ["nick_tag_cache"] = {
 ["nextreset"] = 1772125307,
 ["last_version"] = 16,
@@ -885,10 +884,10 @@ false,
 ["data_harvest_for_charsts"] = {
 ["players"] = {
 {
-["combatObjectContainer"] = 1,
 ["playerOnly"] = true,
-["name"] = "Damage of Each Individual Player",
+["combatObjectContainer"] = 1,
 ["playerKey"] = "total",
+["name"] = "Damage of Each Individual Player",
 },
 },
 ["totals"] = {
@@ -922,24 +921,29 @@ false,
 ["force_font_outline"] = "",
 ["data_harvested_for_charts"] = {
 },
+["announce_damagerecord"] = {
+["enabled"] = true,
+["channel"] = "SELF",
+},
 ["damage_meter_session_info"] = {
-},
-["benchmark_db"] = {
-["frame"] = {
-},
 },
 ["combat_log"] = {
 ["inverse_deathlog_mplus"] = false,
-["track_hunter_frenzy"] = false,
 ["merge_gemstones_1007"] = false,
+["track_hunter_frenzy"] = false,
 ["inverse_deathlog_raid"] = false,
 ["merge_critical_heals"] = false,
 ["calc_evoker_damage"] = true,
 ["evoker_show_realtimedps"] = false,
 ["inverse_deathlog_overalldata"] = false,
 },
-["last_realversion"] = 168,
+["benchmark_db"] = {
+["frame"] = {
+},
+},
 ["mythic_plus_log"] = {
+},
+["cached_talents"] = {
 },
 ["local_instances_config"] = {
 {
@@ -1013,16 +1017,17 @@ false,
 },
 },
 },
-["arena_data_compressed"] = {
+["character_data"] = {
+["logons"] = 135,
 },
 ["plugin_database"] = {
 ["DETAILS_PLUGIN_TINY_THREAT"] = {
 ["enabled"] = true,
 ["only_my_group"] = false,
 ["animate"] = false,
-["author"] = "Terciob",
+["show_party_pets"] = false,
 ["hide_pull_bar"] = false,
-["useclasscolors"] = false,
+["author"] = "Terciob",
 ["playercolor"] = {
 1,
 1,
@@ -1036,7 +1041,7 @@ false,
 ["absolute_mode"] = false,
 ["playSound"] = false,
 ["playSoundFile"] = "Details Threat Warning Volume 3",
-["show_party_pets"] = false,
+["useclasscolors"] = false,
 },
 ["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 ["enabled"] = true,
@@ -1046,11 +1051,11 @@ false,
 ["last_section_selected"] = "main",
 ["author"] = "Terciob",
 ["window_scale"] = 1,
-["hide_on_combat"] = false,
-["show_icon"] = 5,
-["opened"] = 0,
 ["encounter_timers_dbm"] = {
 },
+["show_icon"] = 5,
+["opened"] = 0,
+["hide_on_combat"] = false,
 },
 ["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
 ["enabled"] = true,
@@ -1073,37 +1078,29 @@ false,
 1,
 0.5,
 },
+["use_square_mode"] = false,
 ["arrow_anchor_y"] = 0,
-["main_frame_size"] = {
-249.999740600586,
-89.9999694824219,
-},
 ["minimap"] = {
 ["minimapPos"] = 160,
 ["radius"] = 160,
 ["hide"] = true,
 },
-["main_frame_locked"] = true,
+["row_height"] = 18,
 ["arrow_anchor_x"] = 0,
-["scale"] = 1,
+["point"] = "RIGHT",
 ["row_texture"] = "xVerminClean",
 ["square_grow_direction"] = "right",
-["y"] = -183.107162475586,
-["main_frame_strata"] = "LOW",
+["author"] = "Details! Team",
+["row_color"] = {
+0.443137254901961,
+0.592156862745098,
+1,
+0.480826139450073,
+},
 ["square_amount"] = 5,
 ["enabled"] = false,
 ["arrow_size"] = 10,
-["per_second"] = {
-["enabled"] = false,
-["point"] = "CENTER",
-["scale"] = 1,
-["font_shadow"] = true,
-["y"] = -6.103515625e-05,
-["x"] = 0.00311279296875,
-["attribute_type"] = 1,
-["update_speed"] = 0.05,
-["size"] = 32,
-},
+["use_spark"] = false,
 ["row_spacement"] = 19,
 ["main_frame_color"] = {
 0,
@@ -1111,28 +1108,38 @@ false,
 0,
 0,
 },
-["row_color"] = {
-0.443137254901961,
-0.592156862745098,
-1,
-0.480826139450073,
-},
+["main_frame_strata"] = "LOW",
 ["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-["use_spark"] = false,
 ["font_size"] = 10,
+["y"] = -183.107162475586,
 ["x"] = -4.001220703125,
 ["font_face"] = "Friz Quadrata TT",
 ["square_size"] = 32,
-["author"] = "Details! Team",
-["point"] = "RIGHT",
-["row_height"] = 18,
-["use_square_mode"] = false,
+["per_second"] = {
+["enabled"] = false,
+["point"] = "CENTER",
+["scale"] = 1,
+["font_shadow"] = true,
+["y"] = -6.103515625e-05,
+["x"] = 0.00311279296875,
+["size"] = 32,
+["update_speed"] = 0.05,
+["attribute_type"] = 1,
+},
+["scale"] = 1,
+["main_frame_locked"] = true,
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
+},
 },
 },
 ["damage_meter_sessions"] = {
 },
-["ignore_nicktag"] = false,
-["combat_counter"] = 422,
+["announce_firsthit"] = {
+["enabled"] = true,
+["channel"] = "SELF",
+},
 ["announce_prepots"] = {
 ["enabled"] = false,
 ["channel"] = "SELF",
@@ -1574,11 +1581,8 @@ false,
 },
 },
 },
-["announce_firsthit"] = {
-["enabled"] = true,
-["channel"] = "SELF",
-},
-["last_day"] = "14",
+["combat_counter"] = 422,
+["ignore_nicktag"] = false,
 ["announce_deaths"] = {
 ["enabled"] = false,
 ["last_hits"] = 1,
@@ -1606,8 +1610,7 @@ false,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
+["buff_uptime"] = 0,
 ["nome"] = "Dopecure",
 ["classe"] = "PRIEST",
 ["buff_uptime_spells"] = {
@@ -1630,7 +1633,8 @@ false,
 ["buff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["buff_uptime"] = 0,
+["pets"] = {
+},
 ["last_event"] = 0,
 ["aID"] = "6409-04889C6A",
 ["serial"] = "Player-6409-04889C6A",
@@ -1650,11 +1654,11 @@ false,
 },
 ["alternate_power"] = {
 },
-["trinketProcs"] = {
-},
+["combat_counter"] = 420,
 ["bossTimers"] = {
 },
-["combat_counter"] = 420,
+["trinketProcs"] = {
+},
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -1716,15 +1720,15 @@ false,
 },
 ["zoneName"] = "Kalimdor",
 ["boss_hp"] = 1,
-["frags"] = {
+["spells_cast_timeline"] = {
 },
 ["is_challenge"] = false,
-["spells_cast_timeline"] = {
+["segments_added"] = {
 },
 ["data_fim"] = 0,
 ["cleu_timeline"] = {
 },
-["segments_added"] = {
+["frags"] = {
 },
 ["PhaseData"] = {
 {
@@ -1748,17 +1752,15 @@ false,
 ["player_last_events"] = {
 },
 },
-["character_data"] = {
-["logons"] = 134,
+["arena_data_compressed"] = {
 },
 ["arena_data_headers"] = {
 },
-["cached_talents"] = {
-},
+["last_realversion"] = 168,
 ["announce_cooldowns"] = {
+["enabled"] = false,
 ["ignored_cooldowns"] = {
 },
-["enabled"] = false,
 ["custom"] = "",
 ["channel"] = "RAID",
 },
@@ -1766,9 +1768,7 @@ false,
 ["last_difficulty"] = 15,
 ["last_raid"] = "",
 },
-["announce_damagerecord"] = {
-["enabled"] = true,
-["channel"] = "SELF",
+["cached_roles"] = {
 },
 ["cached_specs"] = {
 },
