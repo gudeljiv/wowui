@@ -159,16 +159,16 @@ Postal3DB = {
 },
 },
 ["Dopecure - Thunderstrike"] = {
-["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
-"Doperage|Thunderstrike|Horde",
 "Dopesnare|Thunderstrike|Horde",
+"Doperage|Thunderstrike|Horde",
 "Poklopac|Thunderstrike|Horde",
 "Dopeseal|Thunderstrike|Horde",
 "Dopecoil|Thunderstrike|Horde",
 },
 },
+["OpenSpeed"] = 0,
 },
 ["Dopedot - Lone Wolf"] = {
 },

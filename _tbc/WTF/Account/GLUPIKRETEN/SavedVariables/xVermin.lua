@@ -207,8 +207,8 @@ xVerminSavedData = {
 ["Freezing Spirit"] = {
 "Deep Wound",
 },
-["Amnennar the Coldbringer"] = {
-"Intimidation",
+["Healing Ward IV"] = {
+"Rend",
 },
 ["Shadowshard Smasher"] = {
 "Lightning Shield",
@@ -300,6 +300,13 @@ xVerminSavedData = {
 ["XT:9"] = {
 "Serpent Sting",
 },
+["Ambershard Crusher"] = {
+"Chain Lightning",
+"Serpent Sting",
+},
+["Befouled Water Elemental"] = {
+"Serpent Sting",
+},
 ["Larsera"] = {
 "Serpent Sting",
 "Intimidation",
@@ -312,18 +319,6 @@ xVerminSavedData = {
 "Electrocutioner's Shock",
 "Chimera Shot",
 },
-["Fire Elemental"] = {
-"Flametongue Attack",
-"Magma Totem",
-"Serpent Sting",
-"Lava Lash",
-"Deep Wound",
-"Explosive Trap Effect",
-},
-["Ambershard Crusher"] = {
-"Chain Lightning",
-"Serpent Sting",
-},
 ["Gahz'rilla"] = {
 "Impact",
 "Intimidation",
@@ -333,8 +328,13 @@ xVerminSavedData = {
 ["Sandfury Shadowcaster"] = {
 "Earthbind",
 },
-["Befouled Water Elemental"] = {
+["Fire Elemental"] = {
+"Flametongue Attack",
+"Magma Totem",
 "Serpent Sting",
+"Lava Lash",
+"Deep Wound",
+"Explosive Trap Effect",
 },
 ["Overlord Ramtusk"] = {
 "Concussive Shot",
@@ -344,11 +344,8 @@ xVerminSavedData = {
 "Frostbolt",
 "Frost Nova",
 },
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
-"Corruption",
-"Curse of Agony",
-"Shadow Bolt",
+["Jade Sludge"] = {
+"Concussive Shot",
 },
 ["Sea Spray"] = {
 "Frost Shock",
@@ -385,9 +382,8 @@ xVerminSavedData = {
 "Flame Shock",
 "Flametongue Attack",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
-"Deep Wound",
+["Healing Ward"] = {
+"Faerie Fire (Feral)",
 },
 ["Ironspine"] = {
 "Rend",
@@ -404,11 +400,14 @@ xVerminSavedData = {
 "Raptor Strike",
 "Void Plague",
 },
-["Jade Sludge"] = {
-"Concussive Shot",
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
+"Corruption",
+"Curse of Agony",
+"Shadow Bolt",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Rock Elemental"] = {
+"Serpent Sting",
 },
 ["Entropic Horror"] = {
 "Lava Lash",
@@ -424,18 +423,20 @@ xVerminSavedData = {
 ["Enraged Stone Spirit"] = {
 "Rend",
 },
-["Enraged Voidwalker"] = {
-"Poison Cloud",
-},
-["Rock Elemental"] = {
+["Whirlwind Ripper"] = {
+"Lightning Shield",
 "Serpent Sting",
+},
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Cracked Skull Soldier"] = {
 "Rend",
 "Fear",
 },
-["Healing Ward"] = {
-"Faerie Fire (Feral)",
+["Remote-Controlled Golem"] = {
+"Rend",
+"Deep Wound",
 },
 ["Jazzter"] = {
 "Fireball",
@@ -466,9 +467,8 @@ xVerminSavedData = {
 "Lightning Shield",
 "Rend",
 },
-["Whirlwind Ripper"] = {
-"Lightning Shield",
-"Serpent Sting",
+["Enraged Voidwalker"] = {
+"Poison Cloud",
 },
 ["Nelyz"] = {
 "Concussive Shot",
@@ -523,8 +523,8 @@ xVerminSavedData = {
 "Firebolt",
 "Incinerate",
 },
-["Healing Ward IV"] = {
-"Rend",
+["Amnennar the Coldbringer"] = {
+"Intimidation",
 },
 ["Theradrim Shardling"] = {
 "Chain Lightning",

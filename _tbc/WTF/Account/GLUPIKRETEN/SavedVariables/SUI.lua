@@ -6,8 +6,8 @@ SUIDB = {
 ["Poklopac - Thunderstrike"] = "Default",
 ["Dopeclaw - Thunderstrike"] = "Default",
 ["Dopecure - Thunderstrike"] = "Default",
-["Dopesnare - Thunderstrike"] = "Default",
 ["Dopecoil - Thunderstrike"] = "Default",
+["Dopesnare - Thunderstrike"] = "Default",
 },
 ["profiles"] = {
 ["Default"] = {

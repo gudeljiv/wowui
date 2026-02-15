@@ -109,12 +109,12 @@ local function Refresh()
 					frame:SetSize(36, 36)
 					frame:RegisterForClicks("AnyUp", "AnyDown")
 
-					frame:CreateBeautyBorder(6)
+					-- frame:CreateBeautyBorder(6)
 
 					-- Icon texture
-					frame.icon = frame:CreateTexture(nil, "BACKGROUND")
-					frame.icon:SetAllPoints()
-					frame.icon:SetTexture(GetSpellTexture(buff.spell_id))
+					-- frame.icon = frame:CreateTexture(nil, "BACKGROUND")
+					-- frame.icon:SetAllPoints()
+					-- frame.icon:SetTexture(GetSpellTexture(buff.spell_id))
 
 					-- -- Cooldown frame (the swipe animation)
 					-- frame.cooldown = CreateFrame("Cooldown", nil, frame, "CooldownFrameTemplate")
@@ -137,10 +137,10 @@ local function Refresh()
 					frame:GetHighlightTexture():SetBlendMode("ADD")
 
 					-- Pushed texture
-					frame:SetPushedTexture("Interface\\Buttons\\UI-Quickslot-Depress")
+					-- frame:SetPushedTexture("Interface\\Buttons\\UI-Quickslot-Depress")
 
 					-- Normal texture (the border)
-					frame:SetNormalTexture("Interface\\Buttons\\UI-Quickslot2")
+					-- frame:SetNormalTexture("Interface\\Buttons\\UI-Quickslot2")
 
 					-- Optional: Check if spell is ready
 					-- frame:SetScript("OnUpdate", function(self, elapsed)
