@@ -3310,6 +3310,7 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
+["DurationMinEnabled"] = true,
 ["DurationMin"] = 15,
 ["Conditions"] = {
 {
@@ -3319,7 +3320,6 @@ nil,
 },
 ["n"] = 1,
 },
-["DurationMinEnabled"] = true,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -3447,6 +3447,7 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
+["DurationMinEnabled"] = true,
 ["DurationMin"] = 15,
 ["Conditions"] = {
 {
@@ -3456,7 +3457,6 @@ nil,
 },
 ["n"] = 1,
 },
-["DurationMinEnabled"] = true,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -3762,8 +3762,6 @@ nil,
 },
 ["ROGUE"] = {
 ["Locked"] = true,
-["NumGroups"] = 5,
-["Version"] = 11001001,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -5017,6 +5015,8 @@ nil,
 ["Scale"] = 0.4,
 },
 },
+["NumGroups"] = 5,
+["Version"] = 11001001,
 },
 ["MAGE"] = {
 ["Groups"] = {
@@ -5702,6 +5702,7 @@ nil,
 },
 ["SHAMAN test"] = {
 ["Locked"] = true,
+["Version"] = 101600,
 ["NumGroups"] = 5,
 ["Groups"] = {
 {
@@ -7053,7 +7054,6 @@ nil,
 },
 },
 },
-["Version"] = 101600,
 },
 ["Dopesnare - Stitches"] = {
 ["Version"] = 101600,
@@ -7078,6 +7078,7 @@ nil,
 },
 ["WARLOCK"] = {
 ["Locked"] = true,
+["NumGroups"] = 5,
 ["Version"] = 12000603,
 ["Groups"] = {
 {
@@ -10312,7 +10313,6 @@ nil,
 },
 },
 },
-["NumGroups"] = 5,
 },
 ["Dopeclaw - Living Flame"] = {
 ["Version"] = 11001001,
@@ -10340,6 +10340,7 @@ nil,
 },
 ["SHAMAN"] = {
 ["Locked"] = true,
+["Version"] = 12000603,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -12011,7 +12012,6 @@ nil,
 },
 },
 ["NumGroups"] = 5,
-["Version"] = 12000603,
 },
 ["Dopetrap - Lone Wolf"] = {
 ["Version"] = 102000,
@@ -12039,6 +12039,7 @@ nil,
 },
 ["DRUID"] = {
 ["Locked"] = true,
+["NumGroups"] = 5,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -13216,9 +13217,9 @@ nil,
 ["Type"] = "STANCE",
 },
 {
+["Operator"] = ">=",
 ["Level"] = 85,
 ["Type"] = "THREATSCALED",
-["Operator"] = ">=",
 ["Unit"] = "target",
 },
 {
@@ -14891,7 +14892,6 @@ nil,
 },
 },
 ["Version"] = 12000603,
-["NumGroups"] = 5,
 },
 ["Vermin - Zandalar Tribe"] = {
 ["Version"] = 110401,
@@ -14903,8 +14903,6 @@ nil,
 ["Version"] = 110001,
 },
 ["DEATHKNIGHT"] = {
-["NumGroups"] = 5,
-["Version"] = 101600,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -18324,6 +18322,8 @@ nil,
 },
 },
 },
+["NumGroups"] = 5,
+["Version"] = 101600,
 },
 ["HUNTER"] = {
 ["Groups"] = {
@@ -18365,8 +18365,8 @@ nil,
 ["Checked"] = true,
 ["PrtsAfter"] = 1,
 ["Unit"] = "target",
-["AndOr"] = "OR",
 ["Operator"] = "<=",
+["AndOr"] = "OR",
 ["Name"] = "Serpent Sting",
 ["Level"] = 0.2,
 },
@@ -18829,7 +18829,7 @@ nil,
 },
 ["n"] = 5,
 },
-["ManaCheck"] = true,
+["GUID"] = "TMW:icon:1X=OmHlbqz67",
 ["States"] = {
 {
 },
@@ -18842,7 +18842,7 @@ nil,
 },
 },
 ["Name"] = "Mend Pet",
-["GUID"] = "TMW:icon:1X=OmHlbqz67",
+["ManaCheck"] = true,
 ["SettingsPerView"] = {
 ["icon"] = {
 ["TextLayout"] = "icon1",
@@ -18872,10 +18872,10 @@ nil,
 },
 },
 ["Name"] = "Enraged",
-["GUID"] = "TMW:icon:1ZuahEVFckqw",
+["ManaCheck"] = true,
 ["CustomTex"] = "19801",
 ["RangeCheck"] = true,
-["ManaCheck"] = true,
+["GUID"] = "TMW:icon:1ZuahEVFckqw",
 },
 {
 ["Type"] = "cooldown",
@@ -21778,6 +21778,7 @@ nil,
 ["Alpha"] = 0,
 ["Name"] = "SPELLS",
 ["Locked"] = true,
+["Columns"] = 20,
 ["Icons"] = {
 {
 ["ManaCheck"] = true,
@@ -21826,12 +21827,12 @@ nil,
 ["Operator"] = "<",
 },
 {
-["Unit"] = "mouseover",
 ["Type"] = "EXISTS",
+["Unit"] = "mouseover",
 },
 {
-["Unit"] = "mouseover",
 ["Type"] = "ALIVE",
+["Unit"] = "mouseover",
 },
 {
 ["Type"] = "REACT",
@@ -21905,12 +21906,12 @@ nil,
 ["Unit"] = "mouseover",
 },
 {
-["Unit"] = "mouseover",
 ["Type"] = "EXISTS",
+["Unit"] = "mouseover",
 },
 {
-["Unit"] = "mouseover",
 ["Type"] = "ALIVE",
+["Unit"] = "mouseover",
 },
 {
 ["Type"] = "REACT",
@@ -21995,14 +21996,14 @@ nil,
 ["RangeCheck"] = true,
 ["Conditions"] = {
 {
-["Name"] = "Void Plague",
-["Type"] = "DEBUFFDUR",
 ["Checked"] = true,
+["Type"] = "DEBUFFDUR",
+["Name"] = "Void Plague",
 ["Unit"] = "target",
 },
 {
-["Level"] = 1,
 ["Type"] = "CREATURETYPE",
+["Level"] = 1,
 ["Name"] = "Totem; Non-combat Pet; Gas Cloud; Critter",
 ["Unit"] = "target",
 },
@@ -22229,14 +22230,14 @@ nil,
 ["RangeCheck"] = true,
 ["Conditions"] = {
 {
-["Name"] = "Shadow Word: Pain",
-["Type"] = "DEBUFFDUR",
 ["Checked"] = true,
+["Type"] = "DEBUFFDUR",
+["Name"] = "Shadow Word: Pain",
 ["Unit"] = "target",
 },
 {
-["Level"] = 1,
 ["Type"] = "CREATURETYPE",
+["Level"] = 1,
 ["Name"] = "Totem; Non-combat Pet; Gas Cloud; Critter",
 ["Unit"] = "target",
 },
@@ -22272,14 +22273,14 @@ nil,
 ["RangeCheck"] = true,
 ["Conditions"] = {
 {
-["Name"] = "Devouring Plague",
-["Type"] = "DEBUFFDUR",
 ["Checked"] = true,
+["Type"] = "DEBUFFDUR",
+["Name"] = "Devouring Plague",
 ["Unit"] = "target",
 },
 {
-["Level"] = 1,
 ["Type"] = "CREATURETYPE",
+["Level"] = 1,
 ["Name"] = "Totem; Non-combat Pet; Gas Cloud; Critter",
 ["Unit"] = "target",
 },
@@ -22634,14 +22635,14 @@ nil,
 ["Enabled"] = true,
 ["Conditions"] = {
 {
-["Name"] = "Shadow Word: Pain",
-["Type"] = "DEBUFFDUR",
 ["Checked"] = true,
+["Type"] = "DEBUFFDUR",
+["Name"] = "Shadow Word: Pain",
 ["Unit"] = "mouseover",
 },
 {
-["Unit"] = "mouseover",
 ["Type"] = "EXISTS",
+["Unit"] = "mouseover",
 },
 {
 ["Type"] = "REACT",
@@ -22649,8 +22650,8 @@ nil,
 ["Unit"] = "mouseover",
 },
 {
-["Unit"] = "mouseover",
 ["Type"] = "ALIVE",
+["Unit"] = "mouseover",
 },
 {
 ["Name"] = "xInRange(30,\"mouseover\")",
@@ -22888,7 +22889,6 @@ nil,
 },
 },
 },
-["Columns"] = 20,
 },
 {
 ["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -23203,27 +23203,27 @@ nil,
 ["Alpha"] = 0,
 ["TextureName"] = "Details Flat",
 ["LayoutDirection"] = 2,
-["SortPriorities"] = {
-{
-["Order"] = -1,
-},
-},
+["Columns"] = 1,
 ["Name"] = "ROTATION CENTER",
 ["SettingsPerView"] = {
 ["icon"] = {
-["BorderColor"] = "00000000",
 ["BorderInset"] = false,
+["BorderColor"] = "00000000",
 },
 },
 ["Locked"] = true,
 ["Conditions"] = {
 {
-["Level"] = 1,
 ["Type"] = "MOUNTED",
+["Level"] = 1,
 },
 ["n"] = 1,
 },
-["Columns"] = 1,
+["SortPriorities"] = {
+{
+["Order"] = -1,
+},
+},
 ["OnlyInCombat"] = true,
 },
 {
@@ -23318,14 +23318,14 @@ nil,
 },
 {
 ["GUID"] = "TMW:group:1ZHnkWuhaAG=",
-["Name"] = "ROTATION QUEUE",
 ["Point"] = {
 ["x"] = 30,
 ["point"] = "TOPLEFT",
 ["relativePoint"] = "TOPLEFT",
 },
-["Locked"] = true,
+["Name"] = "ROTATION QUEUE",
 ["Scale"] = 0.4,
+["Locked"] = true,
 ["Columns"] = 1,
 ["Icons"] = {
 {
@@ -23345,10 +23345,7 @@ nil,
 {
 ["GUID"] = "TMW:group:1ZM=EKbLryuK",
 ["Columns"] = 1,
-["Point"] = {
-["point"] = "LEFT",
-["relativePoint"] = "LEFT",
-},
+["Scale"] = 0.4,
 ["Locked"] = true,
 ["Name"] = "DEBUG",
 ["Icons"] = {
@@ -23364,7 +23361,10 @@ nil,
 },
 },
 },
-["Scale"] = 0.4,
+["Point"] = {
+["point"] = "LEFT",
+["relativePoint"] = "LEFT",
+},
 },
 {
 ["Icons"] = {
@@ -23389,8 +23389,6 @@ nil,
 },
 ["PALADIN"] = {
 ["Locked"] = true,
-["NumGroups"] = 5,
-["Version"] = 12000302,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -25088,6 +25086,8 @@ nil,
 },
 },
 },
+["NumGroups"] = 5,
+["Version"] = 12000302,
 },
 ["Doperage - Lone Wolf"] = {
 ["Version"] = 102000,

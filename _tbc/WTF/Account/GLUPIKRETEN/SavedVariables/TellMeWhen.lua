@@ -3310,8 +3310,6 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
-["DurationMinEnabled"] = true,
-["DurationMin"] = 15,
 ["Conditions"] = {
 {
 ["Type"] = "RAGE_ABS",
@@ -3320,6 +3318,8 @@ nil,
 },
 ["n"] = 1,
 },
+["DurationMinEnabled"] = true,
+["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -3447,8 +3447,6 @@ nil,
 ["Type"] = "buff",
 ["Sort"] = -1,
 ["Name"] = "Battle Shout",
-["DurationMinEnabled"] = true,
-["DurationMin"] = 15,
 ["Conditions"] = {
 {
 ["Type"] = "RAGE_ABS",
@@ -3457,6 +3455,8 @@ nil,
 },
 ["n"] = 1,
 },
+["DurationMinEnabled"] = true,
+["DurationMin"] = 15,
 ["States"] = {
 {
 ["Alpha"] = 0,
@@ -3762,6 +3762,7 @@ nil,
 },
 ["ROGUE"] = {
 ["Locked"] = true,
+["Version"] = 11001001,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -5016,7 +5017,6 @@ nil,
 },
 },
 ["NumGroups"] = 5,
-["Version"] = 11001001,
 },
 ["MAGE"] = {
 ["Groups"] = {
@@ -5702,8 +5702,6 @@ nil,
 },
 ["SHAMAN test"] = {
 ["Locked"] = true,
-["Version"] = 101600,
-["NumGroups"] = 5,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -7054,6 +7052,8 @@ nil,
 },
 },
 },
+["Version"] = 101600,
+["NumGroups"] = 5,
 },
 ["Dopesnare - Stitches"] = {
 ["Version"] = 101600,
@@ -7078,8 +7078,6 @@ nil,
 },
 ["WARLOCK"] = {
 ["Locked"] = true,
-["NumGroups"] = 5,
-["Version"] = 12000603,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TWYPj24VzCn",
@@ -10313,6 +10311,8 @@ nil,
 },
 },
 },
+["NumGroups"] = 5,
+["Version"] = 12000603,
 },
 ["Dopeclaw - Living Flame"] = {
 ["Version"] = 11001001,
@@ -10340,6 +10340,7 @@ nil,
 },
 ["SHAMAN"] = {
 ["Locked"] = true,
+["NumGroups"] = 5,
 ["Version"] = 12000603,
 ["Groups"] = {
 {
@@ -12011,7 +12012,6 @@ nil,
 },
 },
 },
-["NumGroups"] = 5,
 },
 ["Dopetrap - Lone Wolf"] = {
 ["Version"] = 102000,
@@ -12030,6 +12030,7 @@ nil,
 },
 ["PALADIN"] = {
 ["Locked"] = true,
+["Version"] = 12000302,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -13728,7 +13729,6 @@ nil,
 },
 },
 ["NumGroups"] = 5,
-["Version"] = 12000302,
 },
 ["Vermins - Stitches"] = {
 ["Version"] = 101600,
@@ -15358,6 +15358,7 @@ nil,
 },
 ["DRUID"] = {
 ["Locked"] = true,
+["Version"] = 12000603,
 ["NumGroups"] = 5,
 ["Groups"] = {
 {
@@ -18210,7 +18211,6 @@ nil,
 },
 },
 },
-["Version"] = 12000603,
 },
 ["Vermin - Zandalar Tribe"] = {
 ["Version"] = 110401,
@@ -18222,6 +18222,7 @@ nil,
 ["Version"] = 110001,
 },
 ["DEATHKNIGHT"] = {
+["Version"] = 101600,
 ["Groups"] = {
 {
 ["GUID"] = "TMW:group:1TeVAjjUoOOh",
@@ -21642,7 +21643,6 @@ nil,
 },
 },
 ["NumGroups"] = 5,
-["Version"] = 101600,
 },
 ["Vermin - Celebras"] = {
 ["Version"] = 110401,
@@ -22125,7 +22125,7 @@ nil,
 },
 },
 {
-["ManaCheck"] = true,
+["GUID"] = "TMW:icon:1X=OmHlbqz67",
 ["Type"] = "cooldown",
 ["RangeCheck"] = true,
 ["Unit"] = "pet",
@@ -22166,7 +22166,7 @@ nil,
 },
 ["n"] = 5,
 },
-["GUID"] = "TMW:icon:1X=OmHlbqz67",
+["ManaCheck"] = true,
 ["States"] = {
 {
 },
@@ -22185,9 +22185,9 @@ nil,
 ["BuffOrDebuff"] = "EITHER",
 ["Unit"] = "target",
 ["Name"] = "Enraged",
-["ManaCheck"] = true,
-["RangeCheck"] = true,
 ["GUID"] = "TMW:icon:1ZuahEVFckqw",
+["RangeCheck"] = true,
+["ManaCheck"] = true,
 ["CustomTex"] = "19801",
 ["States"] = {
 {

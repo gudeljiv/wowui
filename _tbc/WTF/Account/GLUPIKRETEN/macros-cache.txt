@@ -51,9 +51,9 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:2287
+#showtooltip item:0
 /cast feed pet
-/use item:2287
+/use item:0
 END
 VER 3 0000000000000041 "prospect" "134400"
 #showtooltip Prospecting
