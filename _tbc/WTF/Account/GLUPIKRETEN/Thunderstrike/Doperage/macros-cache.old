@@ -1,4 +1,4 @@
-VER 3 010000000100001A "buffs" "134400"
+VER 3 010000000100001A "CDs" "134400"
 #showtooltip
 /cast [stance:3] Recklessness
 /cast [stance:1] Retaliation

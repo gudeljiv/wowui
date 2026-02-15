@@ -5,17 +5,17 @@ SUIDB = {
 ["Dopeseal - Thunderstrike"] = "Default",
 ["Poklopac - Thunderstrike"] = "Default",
 ["Dopeclaw - Thunderstrike"] = "Default",
+["Dopecure - Thunderstrike"] = "Default",
 ["Dopesnare - Thunderstrike"] = "Default",
 ["Dopecoil - Thunderstrike"] = "Default",
-["Dopecure - Thunderstrike"] = "Default",
 },
 ["profiles"] = {
 ["Default"] = {
 ["general"] = {
+["font"] = "Fonts\\ARIALN.TTF",
 ["cosmetic"] = {
 ["afkscreen"] = false,
 },
-["font"] = "Fonts\\ARIALN.TTF",
 ["display"] = {
 ["ilvl"] = false,
 },
@@ -24,10 +24,10 @@ SUIDB = {
 ["style"] = "Default",
 },
 ["castbars"] = {
-["targetCastbar"] = false,
+["focusCastbar"] = false,
 ["style"] = "Default",
 ["icon"] = false,
-["focusCastbar"] = false,
+["targetCastbar"] = false,
 },
 ["install"] = true,
 ["actionbar"] = {

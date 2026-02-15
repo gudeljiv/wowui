@@ -1,6 +1,6 @@
 VER 3 0000000000000033 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:3531
+/cast item:6451
 END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
@@ -34,7 +34,7 @@ VER 3 0000000000000011 "inspect" "136106"
 END
 VER 3 0000000000000037 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:3385
+/cast item:0
 END
 VER 3 000000000000003A "pattack" "132152"
 #showtooltip
@@ -61,7 +61,7 @@ VER 3 0000000000000041 "prospect" "134400"
 /use Copper Ore
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Undertaker Mordo
+/targetexact Torm Ragetotem
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
