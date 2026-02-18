@@ -1583,7 +1583,7 @@ end
 
 function GUI.RefreshVersionUpdate()
 	if not GUI.frame then return end
-	if AtlasLoot.IsAddonUpdateAviable() then
+	if AtlasLoot.IsAddonUpdateAvailable() then
 		GUI.frame.titleFrame.newVersion:Show()
 	else
 		GUI.frame.titleFrame.newVersion:Hide()

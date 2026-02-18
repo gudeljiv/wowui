@@ -140,4 +140,4 @@ ALPrivate.LOC_CLASSES = {}
 FillLocalizedClassList(ALPrivate.LOC_CLASSES)
 
 -- Updated the message so we don't conflict with other versions of AtlasLoot forks
-ALPrivate.ADDON_MSG_PREFIX = "ATLASLOOT_F_MSG_ANNIVERSARY"
+ALPrivate.ADDON_MSG_PREFIX = "AL_ANNIVERSARY"

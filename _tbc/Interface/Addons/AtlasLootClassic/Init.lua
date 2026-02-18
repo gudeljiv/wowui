@@ -50,11 +50,11 @@ addonRevision = tonumber(addonRevision) or 0
 _G.AtlasLoot = {
 	__addonrevision = addonRevision,
 
-	__addonversion = (buildOrTag == "dev")
+	__addonversion = (buildOrTag == "dev")	
 		and ("dev-" .. (GetServerTime() or 0))
 		or addonVersion,
 
-	IsDevVersion  = (buildOrTag == "dev")   and true or nil,
+	IsDevVersion  = addonRevision == 1000, --(buildOrTag == "dev")   and true or nil,
 	IsTestVersion = (buildOrTag == "beta" or buildOrTag == "alpha") and true or nil,
 }
 

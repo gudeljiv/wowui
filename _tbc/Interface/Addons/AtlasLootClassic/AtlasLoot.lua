@@ -169,51 +169,42 @@ end
 local UpdateSendMsg = "#v:"
 local UpdateGetMsg = "#v:(%d+)"
 local UpdateCheckerFrame = CreateFrame("FRAME")
-local IsAddonUpdateAviable = false
+local IsAddonUpdateAvailable = false
 local UpdatedVersionRev = AtlasLoot.__addonrevision
 
-local function UpdateCheckFrameOnEvent(frame, event, arg1, ...)
-	-- DEV BUILD, we don't care about the auto updater
-	if UpdatedVersionRev == 1000 then 
-		-- if event == "CHAT_MSG_ADDON" and arg1 == ALPrivate.ADDON_MSG_PREFIX then
-		-- 	print ("AtlasLootClassic: Dev Build detected, auto update check disabled.")
-		-- 	local text, channel, sender, target, zoneChannelID, localID, name, instanceID = ...
-		-- 	local v = text:match(UpdateGetMsg)
-		-- 	v = tonumber(v or 0)
-		-- 	if v and v > 0 then
-		-- 		print(format("AtlasLootClassic: Player '|cff00FAF6%s|r' sends version '|cff00FF96%d|r'!", sender, v))
-		-- 	end
-		-- end
-		return 
-	end
-
+local function UpdateCheckFrameOnEvent(frame, event, ...)
+	local arg1, _ = ...
 	if event == "CHAT_MSG_ADDON" and arg1 == ALPrivate.ADDON_MSG_PREFIX then
 		local text, channel, sender, target, zoneChannelID, localID, name, instanceID = ...
-		--if sender ~= ALPrivate.PLAYER_NAME then
+		if sender ~= ALPrivate.PLAYER_NAME then
 			local v = text:match(UpdateGetMsg)
 			v = tonumber(v or 0)
-			if v and v > 0 and AtlasLoot.IsDevVersion then
-				AtlasLoot:DevPrint(format("Player '|cff00FAF6%s|r' sends version '|cff00FF96%d|r'!", sender, v))
+			if v and v > 0 then
+				if AtlasLoot.IsDevVersion then
+					AtlasLoot:DevPrint(format("Player '|cff00FAF6%s|r' sends version '|cff00FF96%d|r'!", sender, v))
+				elseif v > UpdatedVersionRev then
+					AtlasLoot:Print("An update is available! Please update to the latest version!")
+					IsAddonUpdateAvailable = true
+					UpdatedVersionRev = v
+					AtlasLoot.GUI.RefreshVersionUpdate()
+				end
 			end
-			-- 100000 is the DEV version, this number is now managed by the build server
-			if v and v > 0 and v > UpdatedVersionRev and v < 99999999 then
-				IsAddonUpdateAviable = true
-				UpdatedVersionRev = v
-				AtlasLoot.GUI.RefreshVersionUpdate()
-			end
-		--end
+		end
 	elseif event == "GROUP_JOINED" then
 		AtlasLoot.SendAddonVersion("RAID")
 		AtlasLoot.SendAddonVersion("PARTY")
 	elseif event == "RAID_ROSTER_UPDATE" then
 		AtlasLoot.SendAddonVersion("RAID")
+	elseif event == "PLAYER_LOGIN" then
+		AtlasLoot.SendAddonVersion("GUILD")
 	end
 end
 
-UpdateCheckerFrame:SetScript("OnEvent", UpdateCheckFrameOnEvent)
 UpdateCheckerFrame:RegisterEvent("CHAT_MSG_ADDON")
 UpdateCheckerFrame:RegisterEvent("GROUP_JOINED")
 UpdateCheckerFrame:RegisterEvent("RAID_ROSTER_UPDATE")
+UpdateCheckerFrame:RegisterEvent("PLAYER_LOGIN")
+UpdateCheckerFrame:SetScript("OnEvent", UpdateCheckFrameOnEvent)
 
 function AtlasLoot.SendAddonVersion(channel, target)
 	if AtlasLoot.IsDevVersion then return end
@@ -224,8 +215,8 @@ function AtlasLoot.SendAddonVersion(channel, target)
 	SendAddonMessage(ALPrivate.ADDON_MSG_PREFIX, UpdateSendMsg..UpdatedVersionRev, channel, target)
 end
 
-function AtlasLoot.IsAddonUpdateAviable()
-	return IsAddonUpdateAviable
+function AtlasLoot.IsAddonUpdateAvailable()
+	return IsAddonUpdateAvailable
 end
 
 -- ##############################
