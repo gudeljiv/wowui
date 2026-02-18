@@ -133,3 +133,4 @@ SortBags: enabled
 Blizzard_CombatText: enabled
 ConcreteConsumeTracker: disabled
 !ConcreteOptions: disabled
+QuickRack: disabled

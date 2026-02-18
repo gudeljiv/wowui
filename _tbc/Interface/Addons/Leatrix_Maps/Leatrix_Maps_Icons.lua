@@ -428,7 +428,7 @@
 			{"Spirit", 45.3, 7.6, L["Spirit Healer"], nil, spTex, nil, nil},
 			{"Spirit", 50.0, 56.0, L["Spirit Healer"], nil, spTex, nil, nil},
 			{"Spirit", 80.3, 50.3, L["Spirit Healer"], nil, spTex, nil, nil},
-			{"Arrow", 70.5, 78.6, L["Tanaris"], nil, arTex, nil, nil, nil, nil, nil, 3.3, 1446},
+			{"Arrow", 71.4, 77.3, L["Tanaris"], nil, arTex, nil, nil, nil, nil, nil, 4.3, 1446},
 			{"Arrow", 29.4, 22.3, L["Silithus"], nil, arTex, nil, nil, nil, nil, nil, 0.9, 1451},
 		},
 		--[[Moonglade]] [1450] =  {

@@ -53,6 +53,9 @@ function QuestieTBCQuestFixes:Load()
         [172] = {
             [questKeys.questLevel] = -1,
         },
+        [176] = { -- Wanted:  "Hogger"
+            [questKeys.startedBy] = {nil,{68,156561}},
+        },
         [201] = {
             [questKeys.triggerEnd] = {"Locate the hunters' camp", {[zoneIDs.STRANGLETHORN_VALE]={{35.73,10.82}}}},
         },
@@ -221,6 +224,12 @@ function QuestieTBCQuestFixes:Load()
         [1220] = {
             [questKeys.startedBy] = {{23951}},
         },
+        [1268] = { -- Suspicious Hoofprints
+            [questKeys.startedBy] = {nil,{187273}},
+        },
+        [1284] = { -- Suspicious Hoofprints
+            [questKeys.startedBy] = {nil,{187273}},
+        },
         [1322] = {
             [questKeys.objectivesText] = {"Acquire 5 Acidic Venom Sacs for Do'gol in Brackenwall Village."},
         },
@@ -341,31 +350,48 @@ function QuestieTBCQuestFixes:Load()
         [1821] = { -- Agamand Heirlooms
             [questKeys.nextQuestInChain] = 1822,
         },
-        [1858] = {
+        [1858] = { -- The Shattered Hand
             [questKeys.requiredRaces] = raceIDs.ORC + raceIDs.TROLL,
         },
-        [1859] = {
+        [1859] = { -- Therzok
+            [questKeys.requiredRaces] = raceIDs.ORC,
+        },
+        [1860] = { -- Speak with Jennea
+            [questKeys.exclusiveTo] = {1880,9595},
+            [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
+        },
+        [1861] = { -- Mirror Lake
+            [questKeys.exclusiveTo] = {1880,9595},
+            [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
+        },
+        [1879] = { -- Speak with Bink
+            [questKeys.exclusiveTo] = {1861,9595},
+        },
+        [1880] = { -- Mage-tastic Gizmonitor
+            [questKeys.exclusiveTo] = {1861,9595},
+        },
+        [1885] = { -- Mennet Carkad
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
+        [1886] = { -- The Deathstalkers
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
+        [1898] = { -- The Deathstalkers
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
+        [1899] = { -- The Deathstalkers
+            [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
+        [1963] = { -- The Shattered Hand
             [questKeys.requiredRaces] = raceIDs.ORC + raceIDs.TROLL,
         },
-        [1886] = {
+        [1978] = { -- The Deathstalkers
             [questKeys.requiredRaces] = raceIDs.UNDEAD,
         },
-        [1898] = {
+        [1998] = { -- Fenwick Thatros
             [questKeys.requiredRaces] = raceIDs.UNDEAD,
         },
-        [1899] = {
-            [questKeys.requiredRaces] = raceIDs.UNDEAD,
-        },
-        [1963] = {
-            [questKeys.requiredRaces] = raceIDs.ORC + raceIDs.TROLL,
-        },
-        [1978] = {
-            [questKeys.requiredRaces] = raceIDs.UNDEAD,
-        },
-        [1998] = {
-            [questKeys.requiredRaces] = raceIDs.UNDEAD,
-        },
-        [1999] = {
+        [1999] = { -- Tools of the Trade
             [questKeys.requiredRaces] = raceIDs.UNDEAD,
         },
         [2205] = { -- Seek out SI: 7
@@ -402,11 +428,20 @@ function QuestieTBCQuestFixes:Load()
             [questKeys.name] = "Horns of Nez'ra",
             [questKeys.startedBy] = {{7009}},
         },
-        [2381] = {
+        [2379] = { -- Zando'zan
+            [questKeys.exclusiveTo] = {9491},
+        },
+        [2381] = { -- Plundering the Plunderers
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
+        },
+        [2382] = { -- Wrenix of Ratchet
+            [questKeys.preQuestSingle] = {2379,9491},
         },
         [2399] = {
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
+        },
+        [2460] = {
+            [questKeys.breadcrumbs] = {10794},
         },
         [2501] = {
             [questKeys.zoneOrSort] = sortKeys.ALCHEMY,
@@ -598,7 +633,7 @@ function QuestieTBCQuestFixes:Load()
         [6421] = {
             [questKeys.triggerEnd] = {"Investigate Cave in Boulderslide Ravine", {[zoneIDs.STONETALON_MOUNTAINS]={{58.96,90.16}}}},
         },
-        [6681] = {
+        [6681] = { -- The Manor, Ravenholdt
             [questKeys.startedBy] = {{332,918,3327,3328,3401,4214,4215,4163,4582,4583,4584,5165,5166,5167,6467,13283,16684,16685,16686},nil,{17126}},
         },
         [6761] = {
@@ -809,13 +844,13 @@ function QuestieTBCQuestFixes:Load()
         [8484] = {
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
         },
-        [8487] = {
+        [8487] = { -- Corrupted Soil
             [questKeys.preQuestSingle] = {},
             [questKeys.breadcrumbs] = {9254},
             [questKeys.nextQuestInChain] = 8488,
         },
-        [8488] = {
-            [questKeys.objectives] = {{{15402,nil,Questie.ICON_TYPE_EVENT}}},
+        [8488] = { -- Unexpected Results
+            [questKeys.objectives] = {{{15958}}},
         },
         [8490] = {
             [questKeys.preQuestSingle] = {},
@@ -1132,36 +1167,37 @@ function QuestieTBCQuestFixes:Load()
         },
         [8863] = {
             [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = -1,
         },
         [8866] = {
             [questKeys.questLevel] = -1,
         },
         [8867] = {
-            [questKeys.questLevel] = -1,
+            [questKeys.questLevel] = 70,
         },
         [8870] = {
-            [questKeys.questLevel] = -1,
+            [questKeys.questLevel] = 70,
         },
         [8871] = {
-            [questKeys.questLevel] = -1,
+            [questKeys.questLevel] = 70,
         },
         [8872] = {
-            [questKeys.questLevel] = -1,
+            [questKeys.questLevel] = 70,
         },
         [8873] = {
-            [questKeys.questLevel] = -1,
+            [questKeys.questLevel] = 70,
         },
         [8874] = {
-            [questKeys.questLevel] = -1,
+            [questKeys.questLevel] = 70,
         },
         [8875] = {
-            [questKeys.questLevel] = -1,
+            [questKeys.questLevel] = 70,
         },
         [8876] = {
             [questKeys.requiredLevel] = 25,
         },
-        [8883] = {
-            [questKeys.questLevel] = -1,
+        [8883] = { -- Valadar Starsong
+            [questKeys.questLevel] = 70,
         },
         [8887] = {
             [questKeys.startedBy] = {nil,nil,{21776}},
@@ -1530,9 +1566,8 @@ function QuestieTBCQuestFixes:Load()
         [9457] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use the Gift of Naias near the Altar of Naias"), 0, {{"object", 181636}}}},
         },
-        [9460] = {
-            [questKeys.requiredRaces] = raceIDs.BLOOD_ELF,
-            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_LOOT, l10n("Pickpocket the Lacy Handkerchief from the Sentinel Leader"), 0, {{"monster", 17210}}}},
+        [9460] = { -- Combining Forces
+            [questKeys.objectives] = {nil,nil,{{23686,nil,Questie.ICON_TYPE_INTERACT}}}, -- has to be pickpocketed, using interact icon
         },
         [9467] = {
             [questKeys.requiredSourceItems] = {24335},
@@ -1558,8 +1593,10 @@ function QuestieTBCQuestFixes:Load()
         [9489] = {
             [questKeys.requiredRaces] = raceIDs.BLOOD_ELF,
         },
-        [9491] = {
+        [9491] = { -- Greed
             [questKeys.preQuestSingle] = {},
+            [questKeys.breadcrumbs] = {10372},
+            [questKeys.exclusiveTo] = {2379},
         },
         [9492] = { -- Turning the Tide
             [questKeys.zoneOrSort] = zoneIDs.HELLFIRE_CITADEL,
@@ -1636,9 +1673,6 @@ function QuestieTBCQuestFixes:Load()
         },
         [9531] = {
             [questKeys.objectives] = {nil,{{181694}}},
-        },
-        [9532] = {
-            [questKeys.requiredRaces] = raceIDs.BLOOD_ELF,
         },
         [9538] = {
             [questKeys.triggerEnd] = {"Stillpine Furbolg Language Primer Read", {[zoneIDs.AZUREMYST_ISLE]={{49.29,51.07}}}},
@@ -1718,6 +1752,11 @@ function QuestieTBCQuestFixes:Load()
         [9594] = {
             [questKeys.startedBy] = {nil,nil,{23900}},
         },
+        [9595] = { -- Control
+            [questKeys.exclusiveTo] = {1861,1880},
+            [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_SLAY, l10n("Kill Siltfin Murlocs to summon a Quel'dorei Magewrath"), 0, {{"monster", 17190},{"monster", 17191},{"monster", 17192}}}},
+        },
         [9598] = { -- Redemption
             [questKeys.breadcrumbs] = {10366},
         },
@@ -1742,9 +1781,6 @@ function QuestieTBCQuestFixes:Load()
         [9617] = { -- Seek the Farstriders
             [questKeys.startedBy] = {{3038,3171,3407,16673}},
             [questKeys.breadcrumbForQuestId] = 9484,
-        },
-        [9618] = {
-            [questKeys.requiredRaces] = raceIDs.BLOOD_ELF,
         },
         [9619] = {
             [questKeys.requiredSourceItems] = {},
@@ -2390,6 +2426,9 @@ function QuestieTBCQuestFixes:Load()
             [questKeys.triggerEnd] = {"Siphon Bloodgem Crystal", {[zoneIDs.NETHERSTORM]={{25.42,66.51},{22.37,65.73}}}},
             [questKeys.requiredSourceItems] = {28452},
         },
+        [10210] = {
+            [questKeys.nextQuestInChain] = 10211,
+        },
         [10211] = {
             [questKeys.triggerEnd] = {"City of Light", {[zoneIDs.SHATTRATH_CITY]={{50.45,42.93}}}},
         },
@@ -2586,6 +2625,10 @@ function QuestieTBCQuestFixes:Load()
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.exclusiveTo] = {1698},
             [questKeys.breadcrumbForQuestId] = 1699,
+        },
+        [10372] = { -- A Discreet Inquiry
+            [questKeys.requiredLevel] = 16,
+            [questKeys.breadcrumbForQuestId] = 9491,
         },
         [10373] = {
             [questKeys.startedBy] = {{20722}},
@@ -2830,6 +2873,9 @@ function QuestieTBCQuestFixes:Load()
         },
         [10545] = {
             [questKeys.objectives] = {nil,nil,nil,nil,{{{19998,20334,20723,20726,20730,20731,20732,21296,21975,19995},19995,nil,Questie.ICON_TYPE_INTERACT}}},
+        },
+        [10548] = { -- The Sad Truth
+            [questKeys.preQuestSingle] = {2379,9491},
         },
         [10554] = {
             [questKeys.requiredMinRep]= {932,0},
@@ -3145,6 +3191,9 @@ function QuestieTBCQuestFixes:Load()
         },
         [10793] = {
             [questKeys.startedBy] = {nil,nil,{31345}},
+        },
+        [10794] = {
+            [questKeys.breadcrumbForQuestId] = 2460,
         },
         [10797] = {
             [questKeys.startedBy] = {{20753}},
@@ -3834,6 +3883,9 @@ function QuestieTBCQuestFixes:Load()
         [11123] = {
             [questKeys.preQuestSingle] = {},
         },
+        [11126] = { -- Traitors Among Us
+            [questKeys.objectives] = {{{23602,nil,Questie.ICON_TYPE_TALK}}},
+        },
         [11129] = { -- Kyle's Gone Missing!
             [questKeys.objectives] = {{{23616,nil,Questie.ICON_TYPE_INTERACT}}},
         },
@@ -3841,6 +3893,12 @@ function QuestieTBCQuestFixes:Load()
             [questKeys.triggerEnd] = {"Put Out the Fires", {[zoneIDs.DUN_MOROGH]={{44.8,52.1},{47.5,51.6}},[zoneIDs.ELWYNN_FOREST]={{41.3,65.2},{43.6,65.8}},[zoneIDs.AZUREMYST_ISLE]={{49.8,52.3},{48.8,50}}}},
             [questKeys.requiredSourceItems] = {32971},
             [questKeys.exclusiveTo] = {12133},
+        },
+        [11133] = { -- Discrediting the Deserters
+            [questKeys.objectives] = {{{4979,nil,Questie.ICON_TYPE_TALK}}},
+        },
+        [11134] = { -- The End of the Deserters
+            [questKeys.nextQuestInChain] = 11136,
         },
         [11140] = {
             [questKeys.requiredSourceItems] = {33040},

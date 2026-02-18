@@ -511,6 +511,9 @@ function QuestieNPCFixes:Load()
         [3154] = { -- Jen'shan
             [npcKeys.questStarts] = {},
         },
+        [3203] = { -- Fizzle Darkstorm
+            [npcKeys.waypoints] = {},
+        },
         [3204] = { -- Gazz'uz
             [npcKeys.spawns] = {[zoneIDs.DUROTAR]={{52.61,8.82}}},
         },
@@ -1228,6 +1231,10 @@ function QuestieNPCFixes:Load()
             [npcKeys.spawns] = {[zoneIDs.FELWOOD] = {{41.47,42.16},{43.69,39.06}}},
         },
         [7167] = { -- Polly
+            [npcKeys.zoneID] = zoneIDs.THE_BARRENS,
+            [npcKeys.spawns] = {[zoneIDs.THE_BARRENS] = {{64.78,45.5}}},
+        },
+        [7168] = { -- Polly
             [npcKeys.zoneID] = zoneIDs.THE_BARRENS,
             [npcKeys.spawns] = {[zoneIDs.THE_BARRENS] = {{64.78,45.5}}},
         },
@@ -2900,6 +2907,9 @@ function QuestieNPCFixes:Load()
         [15565] = { -- Elder Stormbrow
             [npcKeys.spawns] = {[zoneIDs.ELWYNN_FOREST]={{39.79,63.67}}},
         },
+        [15569] = { -- Elder Goldwell
+            [npcKeys.spawns] = {[zoneIDs.DUN_MOROGH] = {{46.82,51.61}}},
+        },
         [15570] = { -- Elder Primestone
             [npcKeys.spawns] = {[zoneIDs.SILITHUS]={{23.08,11.84}}},
         },
@@ -2970,6 +2980,7 @@ function QuestieNPCFixes:Load()
                 [zoneIDs.THUNDER_BLUFF]={{38.37,63.42}},
                 [zoneIDs.UNDERCITY]={{66.73,43.37}},
             },
+            [npcKeys.questStarts] = {8873},
         },
         [15892] = { -- Lunar Festival Emissary
             [npcKeys.spawns] = {
@@ -2977,6 +2988,7 @@ function QuestieNPCFixes:Load()
                 [zoneIDs.IRONFORGE]={{30.93,61.59}},
                 [zoneIDs.DARNASSUS]={{42.16,43.97}},
             },
+            [npcKeys.questStarts] = {8870},
         },
         [15893] = { -- Lunar Firework Credit Marker
             [npcKeys.spawns] = {},

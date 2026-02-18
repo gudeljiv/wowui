@@ -4164,6 +4164,7 @@ end
 --Also reused some terokkar assets from TBC for new intergrasp timers, so naming schemes may look strange too.
 
 NWB.extraMapMarkers = {};
+NWB.terokkarMapMarkers = {};
 local terokkarMapMarkerTypes;
 if (NWB.isTBC) then
 	terokkarMapMarkerTypes = {
@@ -4479,7 +4480,7 @@ function NWB:createTerokkarMarker(type, data, layer, count)
 			obj.timerFrame:SetScript("OnLeave", function(self)
 				obj.tooltip:Hide();
 			end)
-			NWB.extraMapMarkers[obj:GetName()] = true;
+			NWB.terokkarMapMarkers[obj:GetName()] = true;
 		end
 	else
 		if (not _G[type .. "NWBTerokkarMap"]) then
@@ -4599,7 +4600,7 @@ function NWB:createTerokkarMarker(type, data, layer, count)
 			obj.timerFrame:SetScript("OnLeave", function(self)
 				obj.tooltip:Hide();
 			end)
-			NWB.extraMapMarkers[obj:GetName()] = true;
+			NWB.terokkarMapMarkers[obj:GetName()] = true;
 		end
 	end
 end
@@ -4613,11 +4614,11 @@ function NWB:refreshTerokkarMarkers()
 		--If we're looking at the shat map.
 		if (NWB.db.global.showShatWorldmapMarkersTerok and WorldMapFrame and WorldMapFrame:GetMapID() == 1955) then
 			terokkarMapMarkerTypes = {
-				["towers"] = {x = 93, y = 75, mapID = 1955, icon = "Interface\\worldstateframe\\neutraltower.blp", name = L["rend"]},
+				["towers"] = {x = 93, y = 79, mapID = 1955, icon = "Interface\\worldstateframe\\neutraltower.blp", name = L["rend"]},
 			};
 		else
 			terokkarMapMarkerTypes = {
-				["towers"] = {x = 87, y = 82, mapID = 1952, icon = "Interface\\worldstateframe\\neutraltower.blp", name = L["rend"]},
+				["towers"] = {x = 94, y = 82, mapID = 1952, icon = "Interface\\worldstateframe\\neutraltower.blp", name = L["rend"]},
 			};
 		end
 		if (WorldMapFrame and hookWorldMap) then
@@ -4666,7 +4667,7 @@ function NWB:refreshTerokkarMarkers()
 								v.mapID, v.x / 100, (v.y + 9 + offset) / 100, HBD_PINS_WORLDMAP_SHOW_PARENT);
 					end
 				end
-				offset = offset - 10;
+				offset = offset - 7.5;
 			end
 			--This will add layer icons and remove default non-layer icons when we go from having no timer info to got new layers timer info.
 			if (not foundLayers) then

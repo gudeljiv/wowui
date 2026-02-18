@@ -184,3 +184,4 @@ Dominos_Cast: disabled
 Farmer: disabled
 LortiUI: disabled
 UberUI: disabled
+QuickRack: disabled

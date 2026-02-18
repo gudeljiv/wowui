@@ -1,4 +1,7 @@
-﻿2.5.03 - 28th January 2026
+﻿2.5.07 - 18th February 2026
+- For 'Show points of interest', updated the points of interest icons.
+
+2.5.03 - 28th January 2026
 - For 'Show zone levels', updated the zone levels for the new zones added in Burning Crusade Anniversary.
 - For 'Show points of interest', updated the points of interest icons.
 

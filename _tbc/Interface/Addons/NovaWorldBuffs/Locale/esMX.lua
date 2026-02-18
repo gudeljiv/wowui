@@ -106,8 +106,8 @@ L["Sayge's Dark Fortune of Strength"] = "Fuerza de fortuna de las Sombras de Say
 L["Sayge's Dark Fortune of Armor"] = "Armadura de fortuna de las Sombras de Sayge";
 L["Sayge's Dark Fortune of Resistance"] = "Resistencia de fortuna de las Sombras de Sayge";
 L["Sayge's Dark Fortune of Damage"] = "Daño de fortuna de las Sombras de Sayge";
-L["dmfBuffCooldownMsg"] = "A tu tiempo de reutilización del beneficio de la Feria de la Luna Negra le quedan %s";
-L["dmfBuffCooldownMsg2"] = "A tu tiempo de reutilización del beneficio de la Feria de la Luna Negra le queda %s"; --/wb frame.
+L["dmfBuffCooldownMsg"] = "Beneficio de la Feria de la Luna Negra disponible en %s";
+L["dmfBuffCooldownMsg2"] = "Beneficio de la Feria de la Luna Negra disponible en %s"; --/wb frame.
 L["dmfBuffCooldownMsg3"] = "El tiempo de reutilización del beneficio de la Feria de la Luna Negra también se reinicia con el reinicio semanal del servidor."; --/wb frame 2nd msg.
 L["dmfBuffReady"] = "Tu beneficio de la Feria de la Luna Negra está fuera de tiempo de reutilización."; --These 2 buff msgs are slightly different for a reason.
 L["dmfBuffReset"] = "El tiempo de reutilización de tu beneficio de la Feria de la Luna Negra se ha reiniciado."; --These 2 buff msgs are slightly different for a reason.
@@ -170,7 +170,7 @@ L["hourShort"] = "h"; --Used in short timers like 1h30m (single letter only, usu
 L["dayShort"] = "d"; --Used in short timers like 1d8h (single letter only, usually the first letter of days).
 L["startsIn"] = "Comenzará en %s"; --"Starts in 1hour".
 L["endsIn"] = "Terminará en %s"; --"Ends in 1hour".
-L["versionOutOfDate"] = "Nova World Buffs está desactualizado, actualícelo en https://www.curseforge.com/wow/addons/nova-world-buffs";
+L["versionOutOfDate"] = "Nova World Buffs está desactualizado, actualízalo en https://www.curseforge.com/wow/addons/nova-world-buffs";
 L["Your Current World Buffs"] = "Beneficios de mundo actuales";
 L["Options"] = "Opciones";
 
@@ -221,7 +221,7 @@ L["You are currently on"] = "Actualmente estás en"; --You are currently on [Lay
 --Desc can be any length.
 
 ---Description at the top---
-L["mainTextDesc"] = "Escribe /wb para mostrarte los temporizadores.\nEscribe /wb <canal> para mostrar los temporizadores del canal especificado.\nDesplácese hacia abajo para ver más opciones.";
+L["mainTextDesc"] = "Escribe /wb para mostrarte los temporizadores.\nEscribe /wb <canal> para mostrar los temporizadores del canal especificado.\nDesplázate hacia abajo para ver más opciones.";
 
 ---Show Buffs Button
 L["showBuffsTitle"] = "Beneficios actuales";
@@ -888,7 +888,7 @@ L["ashenvaleOverlayScaleDesc"] = "Establece el tamaño de la superposición de t
 L["ashenvaleOverlayText"] = "|cFFFFFF00-Superposición para mostrar siempre los temporizadores en tu interfaz de usuario-";
 L["layersNoteText"] = "|cFFFF6900Nota sobre capas:|r |cFF9CD6DENWB tiene un límite de seguimiento de 10 capas como máximo, esto es para que el tamaño de los datos no sea demasiado grande para compartirlo fácilmente entre los jugadores. En la mayoría de los reinos Temporada con una gran población en este momento hay más de 10 capas, por lo que si no muestra en qué capa estás, entonces la razón es porque no estás en una de las 10 capas registradas. Es probable que vuelva a bajar por debajo de 10 una vez que el entusiasmo por el lanzamiento se desvanezca un poco, pero hasta entonces puede que no sea confiable, lo siento.|r";
 
-L["Mouseover char names for extra info"] = "Pasar el ratón sobre nombres de personajes para más info.";
+L["Mouseover char names for extra info"] = "Pasa el ratón sobre nombres de personajes para más info.";
 L["Show Stats"] = "Estadísticas"; --Can't be any longer than this.
 L["Event Running"] = "En progreso";
 

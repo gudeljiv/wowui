@@ -416,6 +416,21 @@ xVermin.Disease = function(unit)
 end
 xDisease = xVermin.Disease
 
+xVermin.Curse = function(unit)
+	unit = unit and unit or "player"
+
+	local count = 0
+	for i = 1, MAX_TARGET_DEBUFFS do
+		local name, _, _, type = UnitDebuff(unit, i)
+		if name and type == "Curse" then
+			count = count + 1
+		end
+	end
+
+	return count > 0 and true or false
+end
+xCurse = xVermin.Curse
+
 xVermin.Immune = function(spellName, name)
 	if not name then
 		name = UnitExists("target") and UnitName("target") or ""

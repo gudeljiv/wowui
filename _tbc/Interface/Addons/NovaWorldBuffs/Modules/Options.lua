@@ -2063,7 +2063,7 @@ NWB.optionDefaults = {
 		disableFlashAllLevels = false,
 		disableLogonAboveMaxBuffLevel = true,
 		disableLogonAllLevels = false,
-		guildTerok10 = 1,
+		guildTerok10 = 0,
 		showExpiredTimersTerok = true,
 		
 		
@@ -2336,13 +2336,14 @@ end
 
 function NWB:checkNewVersion()
 	--NWB.db.global.versions = {};
-	local newVersionNotes = 3.29;
+	local newVersionNotes = 3.30;
 	if (NWB.version and NWB.version == newVersionNotes) then
 		if (not NWB.db.global.versions[NWB.version]) then
 			if (NWB.isTBC) then
 				--if (NWB:GetCurrentRegion() == 1 and not string.match(NWB.realm, "(AU)")) then
 					local notes = {
-						"Changed the Terokkat Tower timer msgs off by default for chat and middle of the screen, there's far more layers than the last TBC and its a bit spammy. You can turn them on in options if you want to see those msgs.",
+						"Disabled guild msgs for Terokkar towers by default, it's a bit spammy with so many layers compared to original TBC classic, can be enabled near the top in config if your guild wants them.",
+						"Made the shat and terokkar map icons smaller and off to the side a bit more, reminder they can be hidden in config if you want.",
 					};
 					loadNewVersionFrame(NWB.version, notes, "Nova World Buffs", "Interface\\Icons\\inv_misc_head_dragon_01", -50, 350);
 				--end

@@ -681,10 +681,10 @@ function QuestieTracker:Update()
                     -- Set Zone Title and default Min/Max states
                     if Questie.db.char.collapsedZones[zoneName] then
                         line.expandZone:SetMode(0)
-                        line.label:SetText("|cFFC0C0C0" .. l10n(zoneName) .. " +|r")
+                        line.label:SetText("|cFFC0C0C0" .. zoneName .. " +|r")
                     else
                         line.expandZone:SetMode(1)
-                        line.label:SetText("|cFFC0C0C0" .. l10n(zoneName) .. "|r")
+                        line.label:SetText("|cFFC0C0C0" .. zoneName .. "|r")
                     end
 
                     -- Checks the minAllQuestsInZone[zone] table and if empty, zero out the table.
@@ -768,7 +768,7 @@ function QuestieTracker:Update()
                         end
 
                         -- Completion Text should always be green
-                        completionText = "|cFF4CFF4C" .. completionText
+                        completionText = "|cFF28FF28" .. completionText
                     end
 
                     -- Set minimizable quest flag
@@ -1102,7 +1102,7 @@ function QuestieTracker:Update()
                                 end
                             else
                                 if complete == 1 or (#quest.Objectives == 0 and quest.isComplete == true and completionText == nil and complete ~= -1) then
-                                    line.label:SetText(Questie:Colorize(l10n("Quest Complete!"), "green"))
+                                    line.label:SetText(Questie:Colorize(l10n("Quest Complete!"), "28FF28"))
                                 elseif complete == -1 then
                                     line.label:SetText(Questie:Colorize(l10n("Quest Failed!"), "red"))
                                 end

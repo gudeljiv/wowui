@@ -7022,6 +7022,9 @@ function NWB:updateWorldbuffMarkersScale()
 			--Extra markers defined in NWBData.lua are 20% bigger.
 			_G[k]:SetScale(scale + (scale * 0.2));
 		end
+		for k, v in pairs(NWB.terokkarMapMarkers) do
+			_G[k]:SetScale(scale);
+		end
 		--Update Felwood markers.
 		if (createdFelwoodMarkers) then
 			for k, v in pairs(NWB.songFlowers) do

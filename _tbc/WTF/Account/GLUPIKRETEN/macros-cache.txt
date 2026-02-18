@@ -1,6 +1,6 @@
 VER 3 0000000000000033 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:3530
 END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
@@ -11,11 +11,11 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:1708
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:3771
 END
 VER 3 000000000000003F "gather" "134400"
 #showtooltip
@@ -23,7 +23,7 @@ VER 3 000000000000003F "gather" "134400"
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:929
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -61,7 +61,9 @@ VER 3 0000000000000041 "prospect" "134400"
 /use Copper Ore
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Undertaker Mordo
+/targetexact Felmusk Satyr
+/targetexact Felmusk Felsworn
+/targetexact Felmusk Shadowstalker
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
