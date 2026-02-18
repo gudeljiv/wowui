@@ -63,10 +63,10 @@ nil,
 ["r"] = 1,
 },
 },
-["eventColoring"] = {
-},
 ["highlightedEvents"] = {
 ["PARTY_KILL"] = true,
+},
+["eventColoring"] = {
 },
 ["defaults"] = {
 ["damage"] = {
@@ -155,12 +155,12 @@ nil,
 ["schoolNameHighlighting"] = true,
 ["unitBraces"] = true,
 ["noMeleeSwingColoring"] = false,
-["unitIcons"] = true,
+["hideBuffs"] = false,
 ["hideDebuffs"] = false,
 ["amountSchoolColoring"] = true,
 ["amountColoring"] = true,
 ["unitColoring"] = true,
-["hideBuffs"] = false,
+["unitIcons"] = true,
 ["timestampFormat"] = "%H:%M:%S",
 ["braces"] = true,
 ["actionActorColoring"] = false,
@@ -307,10 +307,10 @@ nil,
 ["r"] = 1,
 },
 },
-["eventColoring"] = {
-},
 ["highlightedEvents"] = {
 ["PARTY_KILL"] = true,
+},
+["eventColoring"] = {
 },
 ["defaults"] = {
 ["damage"] = {
@@ -399,12 +399,12 @@ nil,
 ["schoolNameHighlighting"] = true,
 ["unitBraces"] = true,
 ["noMeleeSwingColoring"] = false,
-["unitIcons"] = true,
+["hideBuffs"] = false,
 ["hideDebuffs"] = false,
 ["amountSchoolColoring"] = true,
 ["amountColoring"] = true,
 ["unitColoring"] = true,
-["hideBuffs"] = false,
+["unitIcons"] = true,
 ["timestampFormat"] = "%H:%M:%S",
 ["braces"] = true,
 ["actionActorColoring"] = false,
@@ -595,7 +595,8 @@ nil,
 ["b"] = 0.7,
 },
 },
-["eventColoring"] = {
+["highlightedEvents"] = {
+["PARTY_KILL"] = true,
 },
 ["defaults"] = {
 ["spell"] = {
@@ -611,8 +612,7 @@ nil,
 ["b"] = 0,
 },
 },
-["highlightedEvents"] = {
-["PARTY_KILL"] = true,
+["eventColoring"] = {
 },
 },
 ["settings"] = {
@@ -642,8 +642,8 @@ nil,
 ["braces"] = true,
 ["schoolNameHighlighting"] = true,
 ["unitBraces"] = true,
-["hideBuffs"] = false,
 ["unitIcons"] = true,
+["hideBuffs"] = false,
 ["unitColoring"] = true,
 ["amountSchoolColoring"] = true,
 ["amountColoring"] = true,
@@ -839,7 +839,8 @@ nil,
 ["b"] = 1,
 },
 },
-["eventColoring"] = {
+["highlightedEvents"] = {
+["PARTY_KILL"] = true,
 },
 ["defaults"] = {
 ["spell"] = {
@@ -855,8 +856,7 @@ nil,
 ["b"] = 0,
 },
 },
-["highlightedEvents"] = {
-["PARTY_KILL"] = true,
+["eventColoring"] = {
 },
 },
 ["settings"] = {
@@ -887,12 +887,12 @@ nil,
 ["schoolNameHighlighting"] = true,
 ["unitBraces"] = true,
 ["actionHighlighting"] = false,
-["hideBuffs"] = false,
+["unitIcons"] = true,
 ["abilityHighlighting"] = true,
 ["amountSchoolColoring"] = true,
 ["amountColoring"] = true,
 ["hideDebuffs"] = false,
-["unitIcons"] = true,
+["hideBuffs"] = false,
 ["timestampFormat"] = "%H:%M:%S",
 ["schoolNameActorColoring"] = false,
 ["actionActorColoring"] = false,

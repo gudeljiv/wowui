@@ -1,13 +1,17 @@
 
 SUIDB = {
 ["profileKeys"] = {
-["Doperage - Thunderstrike"] = "Default",
 ["Dopeseal - Thunderstrike"] = "Default",
-["Poklopac - Thunderstrike"] = "Default",
-["Dopeclaw - Thunderstrike"] = "Default",
 ["Dopecure - Thunderstrike"] = "Default",
+["Pitchwise - Thunderstrike"] = "Default",
 ["Dopecoil - Thunderstrike"] = "Default",
+["Handrmandr - Thunderstrike"] = "Default",
+["Doperage - Thunderstrike"] = "Default",
+["Dopeclaw - Thunderstrike"] = "Default",
+["Moolatz - Thunderstrike"] = "Default",
+["Poklopac - Thunderstrike"] = "Default",
 ["Dopesnare - Thunderstrike"] = "Default",
+["Vermins - Thunderstrike"] = "Default",
 },
 ["profiles"] = {
 ["Default"] = {

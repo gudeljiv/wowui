@@ -11,11 +11,11 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:1708
+/cast item:1205
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:3771
+/cast item:4538
 END
 VER 3 000000000000003F "gather" "134400"
 #showtooltip
@@ -61,9 +61,7 @@ VER 3 0000000000000041 "prospect" "134400"
 /use Copper Ore
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Felmusk Satyr
-/targetexact Felmusk Felsworn
-/targetexact Felmusk Shadowstalker
+/targetexact Torek
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"

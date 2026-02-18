@@ -1,0 +1,2 @@
+
+ABT_SpellDB = nil

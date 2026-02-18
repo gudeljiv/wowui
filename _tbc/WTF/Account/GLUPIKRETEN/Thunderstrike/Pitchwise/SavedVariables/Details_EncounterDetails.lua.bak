@@ -1,0 +1,23 @@
+
+EncounterDetailsDB = {
+["chartData"] = {
+[485] = {
+["Raid Damage Done"] = {
+76,
+0,
+0,
+110,
+13,
+0,
+0,
+103,
+["max_value"] = 110,
+["__time"] = 1771421373,
+},
+},
+},
+["encounter_spells"] = {
+},
+["emotes"] = {
+},
+}
