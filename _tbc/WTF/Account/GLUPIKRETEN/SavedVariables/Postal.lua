@@ -43,7 +43,7 @@ Postal3DB = {
 "Moolatz|Thunderstrike|Horde|28|DRUID",
 "Mq|Celebras|Alliance|26|HUNTER",
 "Mxzq|Golemagg|Horde|35|HUNTER",
-"Pitchwise|Thunderstrike|Horde|15|SHAMAN",
+"Pitchwise|Thunderstrike|Horde|16|SHAMAN",
 "Poklopac|Thunderstrike|Horde|15|SHAMAN",
 "Turbonac|Celebras|Alliance|7|WARLOCK",
 "Vbank|Celebras|Alliance|1|WARRIOR",
@@ -166,6 +166,7 @@ Postal3DB = {
 },
 },
 ["Dopecure - Thunderstrike"] = {
+["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Pitchwise|Thunderstrike|Horde",
@@ -176,7 +177,6 @@ Postal3DB = {
 "Dopecoil|Thunderstrike|Horde",
 },
 },
-["OpenSpeed"] = 0,
 },
 ["Dopedot - Lone Wolf"] = {
 },

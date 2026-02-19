@@ -1,19 +1,30 @@
 ## Interface: @toc-version-retail@, @toc-version-midnight@
 #@debug@
 ## Interface: 120000
-#@end-debug@>
-## Interface-Retail: @toc-version-retail@
+#@end-debug@
+## Interface-Retail: @toc-version-retail@, @toc-version-midnight@
 ## Interface-Classic: @toc-version-classic@
 ## Interface-BCC: @toc-version-bcc@
 ## Interface-Wrath: @toc-version-wrath@
 ## Interface-Mists: @toc-version-mists@
 ## Title: Broker: |cff00ff00MicroMenu|r
-## Version: v2.1.2
+## Version: v2.1.3
 ## Notes: Shows the micro menu and game menu in a clickable broker tooltip.
 ## Author: github.com/Kiatra
 ## OptionalDeps: LibQTip-1.0
 ## SavedVariables: Broker_MicroMenuDB
 ## X-Curse-Project-ID: 21420
+
+## Category: Data Broker
+## Category-deDE: Datenbroker
+## Category-esES: Intermediario de Datos
+## Category-esMX: Intermediario de Datos
+## Category-frFR: Courtier de Données
+## Category-itIT: Data Broker
+## Category-ptBR: Corretor de Dados
+## Category-ruRU: Посредник данных
+## Category-zhCN: 数据管理
+## Category-zhTW: 資料管理
 
 #@no-lib-strip@
 libs\libs.xml

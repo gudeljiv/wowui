@@ -1,8 +1,10 @@
 
 SigmaHelmAndCloak = {
+["|cff1eff00|Hitem:5343::::::::17::::::::::|h[Barkeeper's Cloak]|h|r"] = "Off",
 ["|cffffffff|Hitem:9761::::::::11::::::::::|h[]|h|r"] = "Off",
 ["|cffffffff|Hitem:9761::::::::12::::::::::|h[Cadet Cloak]|h|r"] = "Off",
 ["|cffffffff|Hitem:9761::::::::13::::::::::|h[]|h|r"] = "Off",
+["|cff1eff00|Hitem:15309::::::16:754326784:17::::::::::|h[Feral Cloak of Spirit]|h|r"] = "Off",
 ["|cff1eff00|Hitem:15309::::::16:754326784:16::::::::::|h[Feral Cloak of Spirit]|h|r"] = "Off",
 ["|cffffffff|Hitem:9761::::::::14::::::::::|h[Cadet Cloak]|h|r"] = "Off",
 ["|cffffffff|Hitem:9761::::::::13::::::::::|h[Cadet Cloak]|h|r"] = "Off",

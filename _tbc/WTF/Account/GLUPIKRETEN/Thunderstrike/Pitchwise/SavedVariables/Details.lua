@@ -7,8 +7,8 @@ _detalhes_database = {
 ["tabelas"] = {
 {
 {
-["combatId"] = 487,
 ["tipo"] = 2,
+["combatId"] = 487,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -20,6 +20,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 1345.004238,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -31,16 +32,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Ornery Plainstrider"] = 1345,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422989,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 4,
@@ -184,16 +182,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 48.64567391229983,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422988,
 ["damage_taken"] = 390.004238,
 ["start_time"] = 1771422961,
 ["delay"] = 0,
-["last_event"] = 1771422988,
+["last_dps"] = 48.64567391229983,
 },
 {
 ["flag_original"] = 2632,
@@ -205,27 +205,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 390.007137,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3245-000015B616",
-["aID"] = "3245",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 390,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422989,
+["aID"] = "3245",
 ["nome"] = "Ornery Plainstrider",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
@@ -258,134 +258,134 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422988,
 ["damage_taken"] = 1345.007137,
 ["start_time"] = 1771422965,
 ["delay"] = 0,
-["last_event"] = 1771422988,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 487,
 ["tipo"] = 3,
+["combatId"] = 487,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 487,
 ["tipo"] = 7,
+["combatId"] = 487,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 487,
 ["tipo"] = 9,
+["combatId"] = 487,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 17,
-["appliedamt"] = 2,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["serial"] = "Player-6409-04BC9882",
-["buff_uptime_targets"] = {
-},
+["buff_uptime"] = 140,
 ["pets"] = {
 },
-["debuff_uptime_targets"] = {
-},
 ["classe"] = "SHAMAN",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [3219] = {
-["activedamt"] = 1,
-["id"] = 3219,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 28,
-["appliedamt"] = 1,
+["id"] = 3219,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [2374] = {
-["activedamt"] = 1,
-["id"] = 2374,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 28,
-["appliedamt"] = 1,
+["id"] = 2374,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [355366] = {
-["activedamt"] = 1,
-["id"] = 355366,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 28,
-["appliedamt"] = 1,
+["id"] = 355366,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 28,
-["appliedamt"] = 1,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 3,
-["id"] = 324,
+["appliedamt"] = 3,
 ["targets"] = {
 },
+["activedamt"] = 3,
 ["uptime"] = 28,
-["appliedamt"] = 3,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 140,
 ["debuff_uptime"] = 17,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["aID"] = "6409-04BC9882",
-["nome"] = "Pitchwise",
-["last_event"] = 1771422989,
 ["tipo"] = 4,
+["last_event"] = 1771422989,
+["serial"] = "Player-6409-04BC9882",
+["nome"] = "Pitchwise",
 },
 },
 },
 {
-["combatId"] = 487,
 ["tipo"] = 2,
+["combatId"] = 487,
 ["_ActorTable"] = {
 },
 },
@@ -405,7 +405,7 @@ _detalhes_database = {
 ["playerTalents"] = {
 },
 ["totals"] = {
-1735,
+2341,
 0,
 {
 0,
@@ -417,10 +417,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -440,10 +440,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -477,7 +477,8 @@ _detalhes_database = {
 ["combat_id"] = 487,
 ["timeStart"] = 1771422962,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Ornery Plainstrider"] = 3,
@@ -490,13 +491,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -507,14 +508,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786373.604,
-["TimeData"] = {
-},
 ["contra"] = "Ornery Plainstrider",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 486,
 ["tipo"] = 2,
+["combatId"] = 486,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -526,6 +526,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 357.0042,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -537,16 +538,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Ornery Plainstrider"] = 357,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422935,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
@@ -633,16 +631,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 167.6863316144593,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422935,
 ["damage_taken"] = 17.0042,
 ["start_time"] = 1771422933,
 ["delay"] = 0,
-["last_event"] = 1771422935,
+["last_dps"] = 167.6863316144593,
 },
 {
 ["flag_original"] = 68168,
@@ -654,27 +654,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 17.003878,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3245-000015BB42",
-["aID"] = "3245",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 17,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422935,
+["aID"] = "3245",
 ["nome"] = "Ornery Plainstrider",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -706,93 +706,93 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422935,
 ["damage_taken"] = 357.003878,
 ["start_time"] = 1771422935,
 ["delay"] = 0,
-["last_event"] = 1771422935,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 486,
 ["tipo"] = 3,
+["combatId"] = 486,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 486,
 ["tipo"] = 7,
+["combatId"] = 486,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 486,
 ["tipo"] = 9,
+["combatId"] = 486,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 6,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [355366] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
 ["activedamt"] = 1,
+["uptime"] = 2,
 ["id"] = 355366,
-["targets"] = {
-},
-["uptime"] = 2,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-[355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
-["targets"] = {
-},
-["uptime"] = 2,
-["appliedamt"] = 1,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 2,
+["id"] = 324,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[355363] = {
 ["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 2,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 6,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
-["last_event"] = 1771422935,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1771422935,
 },
 },
 },
 {
-["combatId"] = 486,
 ["tipo"] = 2,
+["combatId"] = 486,
 ["_ActorTable"] = {
 },
 },
@@ -825,10 +825,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -848,10 +848,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -881,7 +881,8 @@ _detalhes_database = {
 ["combat_id"] = 486,
 ["timeStart"] = 1771422934,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Ornery Plainstrider"] = 1,
@@ -894,13 +895,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -911,14 +912,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786345.314,
-["TimeData"] = {
-},
 ["contra"] = "Ornery Plainstrider",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 485,
 ["tipo"] = 2,
+["combatId"] = 485,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -930,6 +930,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 384.001557,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -941,16 +942,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Ornery Plainstrider"] = 384,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422926,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -1065,16 +1063,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 61.66718435888176,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422926,
 ["damage_taken"] = 45.001557,
 ["start_time"] = 1771422920,
 ["delay"] = 0,
-["last_event"] = 1771422926,
+["last_dps"] = 61.66718435888176,
 },
 {
 ["flag_original"] = 68168,
@@ -1086,27 +1086,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 45.006134,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3245-000015BABB",
-["aID"] = "3245",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 45,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422926,
+["aID"] = "3245",
 ["nome"] = "Ornery Plainstrider",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -1137,112 +1137,112 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422925,
 ["damage_taken"] = 384.006134,
 ["start_time"] = 1771422922,
 ["delay"] = 0,
-["last_event"] = 1771422925,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 485,
 ["tipo"] = 3,
+["combatId"] = 485,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 485,
 ["tipo"] = 7,
+["combatId"] = 485,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 485,
 ["tipo"] = 9,
+["combatId"] = 485,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["serial"] = "Player-6409-04BC9882",
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 18,
 ["pets"] = {
 },
-["buff_uptime_targets"] = {
-},
 ["classe"] = "SHAMAN",
-["buff_uptime"] = 18,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [355366] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
 ["activedamt"] = 1,
+["uptime"] = 6,
 ["id"] = 355366,
-["targets"] = {
-},
-["uptime"] = 6,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-[355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
-["targets"] = {
-},
-["uptime"] = 6,
-["appliedamt"] = 1,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 6,
-["appliedamt"] = 2,
+["id"] = 324,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[355363] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 6,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 6,
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 6,
 ["aID"] = "6409-04BC9882",
-["nome"] = "Pitchwise",
-["last_event"] = 1771422926,
 ["tipo"] = 4,
+["last_event"] = 1771422926,
+["serial"] = "Player-6409-04BC9882",
+["nome"] = "Pitchwise",
 },
 },
 },
 {
-["combatId"] = 485,
 ["tipo"] = 2,
+["combatId"] = 485,
 ["_ActorTable"] = {
 },
 },
@@ -1275,10 +1275,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1298,10 +1298,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1334,7 +1334,8 @@ _detalhes_database = {
 ["combat_id"] = 485,
 ["timeStart"] = 1771422921,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Ornery Plainstrider"] = 1,
@@ -1347,13 +1348,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -1364,14 +1365,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786332.702,
-["TimeData"] = {
-},
 ["contra"] = "Ornery Plainstrider",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 484,
 ["tipo"] = 2,
+["combatId"] = 484,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -1383,6 +1383,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 390.008543,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -1394,16 +1395,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Ornery Plainstrider"] = 390,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422914,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
@@ -1447,12 +1445,12 @@ _detalhes_database = {
 ["counter"] = 2,
 ["total"] = 0,
 ["c_max"] = 0,
-["RESIST"] = 2,
+["spellschool"] = 8,
 ["id"] = 26364,
 ["r_dmg"] = 0,
-["spellschool"] = 8,
 ["extra"] = {
 },
+["RESIST"] = 2,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
@@ -1476,12 +1474,12 @@ _detalhes_database = {
 ["counter"] = 2,
 ["total"] = 16,
 ["c_max"] = 0,
-["RESIST"] = 1,
+["spellschool"] = 4,
 ["id"] = 29469,
 ["r_dmg"] = 0,
-["spellschool"] = 4,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
@@ -1492,16 +1490,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 80.21566083974473,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422914,
 ["damage_taken"] = 62.008543,
 ["start_time"] = 1771422909,
 ["delay"] = 0,
-["last_event"] = 1771422914,
+["last_dps"] = 80.21566083974473,
 },
 {
 ["flag_original"] = 68168,
@@ -1513,27 +1513,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 62.006113,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3245-000015C4A4",
-["aID"] = "3245",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 62,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422914,
+["aID"] = "3245",
 ["nome"] = "Ornery Plainstrider",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -1564,93 +1564,93 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422913,
 ["damage_taken"] = 390.006113,
 ["start_time"] = 1771422909,
 ["delay"] = 0,
-["last_event"] = 1771422913,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 484,
 ["tipo"] = 3,
+["combatId"] = 484,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 484,
 ["tipo"] = 7,
+["combatId"] = 484,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 484,
 ["tipo"] = 9,
+["combatId"] = 484,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 12,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [355366] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
 ["activedamt"] = 1,
+["uptime"] = 4,
 ["id"] = 355366,
-["targets"] = {
-},
-["uptime"] = 4,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-[355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
-["targets"] = {
-},
-["uptime"] = 4,
-["appliedamt"] = 1,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 4,
+["id"] = 324,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[355363] = {
 ["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 4,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 12,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
-["last_event"] = 1771422914,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1771422914,
 },
 },
 },
 {
-["combatId"] = 484,
 ["tipo"] = 2,
+["combatId"] = 484,
 ["_ActorTable"] = {
 },
 },
@@ -1682,10 +1682,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1705,10 +1705,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -1738,7 +1738,8 @@ _detalhes_database = {
 ["combat_id"] = 484,
 ["timeStart"] = 1771422910,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Ornery Plainstrider"] = 1,
@@ -1751,13 +1752,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -1768,14 +1769,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786321.902,
-["TimeData"] = {
-},
 ["contra"] = "Ornery Plainstrider",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 483,
 ["tipo"] = 2,
+["combatId"] = 483,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -1787,6 +1787,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 384.003673,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -1798,16 +1799,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Ornery Plainstrider"] = 384,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422892,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -1851,12 +1849,12 @@ _detalhes_database = {
 ["counter"] = 3,
 ["total"] = 45,
 ["c_max"] = 38,
-["RESIST"] = 1,
+["spellschool"] = 4,
 ["id"] = 8050,
 ["r_dmg"] = 0,
-["spellschool"] = 4,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 38,
@@ -1923,16 +1921,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 60.53975611026997,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422908,
 ["damage_taken"] = 46.003673,
 ["start_time"] = 1771422886,
 ["delay"] = 0,
-["last_event"] = 1771422908,
+["last_dps"] = 60.53975611026997,
 },
 {
 ["flag_original"] = 68168,
@@ -1944,27 +1944,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 46.008563,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3245-000015BE47",
-["aID"] = "3245",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 46,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422892,
+["aID"] = "3245",
 ["nome"] = "Ornery Plainstrider",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -1995,112 +1995,112 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422890,
 ["damage_taken"] = 384.008563,
 ["start_time"] = 1771422887,
 ["delay"] = 0,
-["last_event"] = 1771422890,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 483,
 ["tipo"] = 3,
+["combatId"] = 483,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 483,
 ["tipo"] = 7,
+["combatId"] = 483,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 483,
 ["tipo"] = 9,
+["combatId"] = 483,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 5,
-["appliedamt"] = 1,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["serial"] = "Player-6409-04BC9882",
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 17,
 ["pets"] = {
 },
-["buff_uptime_targets"] = {
-},
 ["classe"] = "SHAMAN",
-["buff_uptime"] = 17,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [355366] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
 ["activedamt"] = 1,
+["uptime"] = 6,
 ["id"] = 355366,
-["targets"] = {
-},
-["uptime"] = 6,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-[355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
-["targets"] = {
-},
-["uptime"] = 6,
-["appliedamt"] = 1,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 5,
-["appliedamt"] = 2,
+["id"] = 324,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[355363] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 6,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 5,
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 5,
 ["aID"] = "6409-04BC9882",
-["nome"] = "Pitchwise",
-["last_event"] = 1771422892,
 ["tipo"] = 4,
+["last_event"] = 1771422892,
+["serial"] = "Player-6409-04BC9882",
+["nome"] = "Pitchwise",
 },
 },
 },
 {
-["combatId"] = 483,
 ["tipo"] = 2,
+["combatId"] = 483,
 ["_ActorTable"] = {
 },
 },
@@ -2133,10 +2133,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2156,10 +2156,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2192,7 +2192,8 @@ _detalhes_database = {
 ["combat_id"] = 483,
 ["timeStart"] = 1771422886,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Ornery Plainstrider"] = 1,
@@ -2205,13 +2206,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -2222,14 +2223,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786298.123,
-["TimeData"] = {
-},
 ["contra"] = "Ornery Plainstrider",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 482,
 ["tipo"] = 2,
+["combatId"] = 482,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -2241,6 +2241,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 421.00771,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -2252,16 +2253,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Sunscale Scytheclaw"] = 421,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422865,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
@@ -2348,16 +2346,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 81.38560023273563,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422864,
 ["damage_taken"] = 49.00771,
 ["start_time"] = 1771422860,
 ["delay"] = 0,
-["last_event"] = 1771422864,
+["last_dps"] = 81.38560023273563,
 },
 {
 ["flag_original"] = 68168,
@@ -2369,27 +2369,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 49.00343,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3256-000115C460",
-["aID"] = "3256",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 49,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422865,
+["aID"] = "3256",
 ["nome"] = "Sunscale Scytheclaw",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -2420,93 +2420,93 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422862,
 ["damage_taken"] = 421.00343,
 ["start_time"] = 1771422860,
 ["delay"] = 0,
-["last_event"] = 1771422862,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 482,
 ["tipo"] = 3,
+["combatId"] = 482,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 482,
 ["tipo"] = 7,
+["combatId"] = 482,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 482,
 ["tipo"] = 9,
+["combatId"] = 482,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 15,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [355366] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
 ["activedamt"] = 1,
+["uptime"] = 5,
 ["id"] = 355366,
-["targets"] = {
-},
-["uptime"] = 5,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-[355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
-["targets"] = {
-},
-["uptime"] = 5,
-["appliedamt"] = 1,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 5,
+["id"] = 324,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[355363] = {
 ["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 5,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 15,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
-["last_event"] = 1771422865,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1771422865,
 },
 },
 },
 {
-["combatId"] = 482,
 ["tipo"] = 2,
+["combatId"] = 482,
 ["_ActorTable"] = {
 },
 },
@@ -2538,10 +2538,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2561,10 +2561,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -2594,7 +2594,8 @@ _detalhes_database = {
 ["combat_id"] = 482,
 ["timeStart"] = 1771422861,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Sunscale Scytheclaw"] = 1,
@@ -2607,13 +2608,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -2624,14 +2625,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786272.222,
-["TimeData"] = {
-},
 ["contra"] = "Sunscale Scytheclaw",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 481,
 ["tipo"] = 2,
+["combatId"] = 481,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -2643,6 +2643,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 370.005635,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -2654,16 +2655,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Sunscale Scytheclaw"] = 370,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422855,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -2763,12 +2761,12 @@ _detalhes_database = {
 ["counter"] = 1,
 ["total"] = 0,
 ["c_max"] = 0,
-["RESIST"] = 1,
+["spellschool"] = 8,
 ["id"] = 26364,
 ["r_dmg"] = 0,
-["spellschool"] = 8,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
@@ -2779,16 +2777,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 56.68846866859114,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422854,
 ["damage_taken"] = 51.005635,
 ["start_time"] = 1771422848,
 ["delay"] = 0,
-["last_event"] = 1771422854,
+["last_dps"] = 56.68846866859114,
 },
 {
 ["flag_original"] = 68168,
@@ -2800,27 +2800,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 51.008652,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3256-000015C460",
-["aID"] = "3256",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 51,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422855,
+["aID"] = "3256",
 ["nome"] = "Sunscale Scytheclaw",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -2851,134 +2851,134 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422852,
 ["damage_taken"] = 370.008652,
 ["start_time"] = 1771422850,
 ["delay"] = 0,
-["last_event"] = 1771422852,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 481,
 ["tipo"] = 3,
+["combatId"] = 481,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 481,
 ["tipo"] = 7,
+["combatId"] = 481,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 481,
 ["tipo"] = 9,
+["combatId"] = 481,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["serial"] = "Player-6409-04BC9882",
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 35,
 ["pets"] = {
 },
-["buff_uptime_targets"] = {
-},
 ["classe"] = "SHAMAN",
-["buff_uptime"] = 35,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [3219] = {
-["activedamt"] = 1,
-["id"] = 3219,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 7,
-["appliedamt"] = 1,
+["id"] = 3219,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [2374] = {
-["activedamt"] = 1,
-["id"] = 2374,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 7,
-["appliedamt"] = 1,
+["id"] = 2374,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [355366] = {
-["activedamt"] = 1,
-["id"] = 355366,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 7,
-["appliedamt"] = 1,
+["id"] = 355366,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 7,
-["appliedamt"] = 1,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 7,
-["appliedamt"] = 1,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 6,
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 6,
 ["aID"] = "6409-04BC9882",
-["nome"] = "Pitchwise",
-["last_event"] = 1771422855,
 ["tipo"] = 4,
+["last_event"] = 1771422855,
+["serial"] = "Player-6409-04BC9882",
+["nome"] = "Pitchwise",
 },
 },
 },
 {
-["combatId"] = 481,
 ["tipo"] = 2,
+["combatId"] = 481,
 ["_ActorTable"] = {
 },
 },
@@ -3011,10 +3011,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3034,10 +3034,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3067,7 +3067,8 @@ _detalhes_database = {
 ["combat_id"] = 481,
 ["timeStart"] = 1771422849,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Sunscale Scytheclaw"] = 1,
@@ -3080,13 +3081,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -3097,14 +3098,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786260.66,
-["TimeData"] = {
-},
 ["contra"] = "Sunscale Scytheclaw",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 480,
 ["tipo"] = 2,
+["combatId"] = 480,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -3116,6 +3116,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 523.001613,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -3127,16 +3128,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Sunscale Scytheclaw"] = 523,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422839,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -3253,16 +3251,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 34.96935096281122,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422839,
 ["damage_taken"] = 255.001613,
 ["start_time"] = 1771422824,
 ["delay"] = 0,
-["last_event"] = 1771422839,
+["last_dps"] = 34.96935096281122,
 },
 {
 ["flag_original"] = 68168,
@@ -3274,27 +3274,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 255.00853,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3256-000095C460",
-["aID"] = "3256",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 255,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422839,
+["aID"] = "3256",
 ["nome"] = "Sunscale Scytheclaw",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -3352,147 +3352,147 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422837,
 ["damage_taken"] = 523.0085300000001,
 ["start_time"] = 1771422825,
 ["delay"] = 0,
-["last_event"] = 1771422837,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 480,
 ["tipo"] = 3,
+["combatId"] = 480,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 480,
 ["tipo"] = 7,
+["combatId"] = 480,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 480,
 ["tipo"] = 9,
+["combatId"] = 480,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 10,
-["appliedamt"] = 1,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["serial"] = "Player-6409-04BC9882",
-["buff_uptime_targets"] = {
-},
+["buff_uptime"] = 75,
 ["pets"] = {
 },
-["debuff_uptime_targets"] = {
-},
 ["classe"] = "SHAMAN",
-["grupo"] = true,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [3219] = {
-["activedamt"] = 1,
-["id"] = 3219,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 3219,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [2374] = {
-["activedamt"] = 1,
-["id"] = 2374,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 2374,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [355366] = {
-["activedamt"] = 1,
-["id"] = 355366,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 355366,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 15,
-["appliedamt"] = 1,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 3,
-["id"] = 324,
+["appliedamt"] = 3,
 ["targets"] = {
 },
+["activedamt"] = 3,
 ["uptime"] = 15,
-["appliedamt"] = 3,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 75,
 ["debuff_uptime"] = 10,
+["debuff_uptime_targets"] = {
+},
+["buff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["aID"] = "6409-04BC9882",
-["nome"] = "Pitchwise",
-["last_event"] = 1771422839,
 ["tipo"] = 4,
+["last_event"] = 1771422839,
+["serial"] = "Player-6409-04BC9882",
+["nome"] = "Pitchwise",
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-6414-1-85-3256-000095C460",
 ["classe"] = "UNKNOW",
 ["fight_component"] = true,
-["monster"] = true,
-["aID"] = "3256",
 ["nome"] = "Sunscale Scytheclaw",
-["last_event"] = 0,
+["monster"] = true,
 ["tipo"] = 4,
+["aID"] = "3256",
+["serial"] = "Creature-0-6414-1-85-3256-000095C460",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 480,
 ["tipo"] = 2,
+["combatId"] = 480,
 ["_ActorTable"] = {
 },
 },
@@ -3525,10 +3525,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3548,10 +3548,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -3588,7 +3588,8 @@ _detalhes_database = {
 ["combat_id"] = 480,
 ["timeStart"] = 1771422825,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Sunscale Scytheclaw"] = 1,
@@ -3601,13 +3602,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -3618,14 +3619,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786236.471,
-["TimeData"] = {
-},
 ["contra"] = "Sunscale Scytheclaw",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 479,
 ["tipo"] = 2,
+["combatId"] = 479,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -3637,6 +3637,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 948.001719,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -3648,16 +3649,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Sunscale Scytheclaw"] = 948,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422816,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
@@ -3702,12 +3700,12 @@ _detalhes_database = {
 ["counter"] = 4,
 ["total"] = 51,
 ["c_max"] = 37,
-["RESIST"] = 1,
+["spellschool"] = 4,
 ["id"] = 8050,
 ["r_dmg"] = 0,
-["spellschool"] = 4,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 37,
@@ -3731,12 +3729,12 @@ _detalhes_database = {
 ["counter"] = 5,
 ["total"] = 52,
 ["c_max"] = 0,
-["RESIST"] = 1,
+["spellschool"] = 8,
 ["id"] = 26364,
 ["r_dmg"] = 0,
-["spellschool"] = 8,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
@@ -3775,16 +3773,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 44.56989746117394,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422815,
 ["damage_taken"] = 307.001719,
 ["start_time"] = 1771422794,
 ["delay"] = 0,
-["last_event"] = 1771422815,
+["last_dps"] = 44.56989746117394,
 },
 {
 ["flag_original"] = 68168,
@@ -3796,27 +3796,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 307.001198,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3256-000115C437",
-["aID"] = "3256",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 307,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422816,
+["aID"] = "3256",
 ["nome"] = "Sunscale Scytheclaw",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -3847,25 +3847,28 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422814,
 ["damage_taken"] = 948.0011979999999,
 ["start_time"] = 1771422796,
 ["delay"] = 0,
-["last_event"] = 1771422814,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 479,
 ["tipo"] = 3,
+["combatId"] = 479,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
+["healing_from"] = {
+["Pitchwise"] = true,
+},
 ["pets"] = {
 },
 ["iniciar_hps"] = false,
@@ -3877,30 +3880,23 @@ _detalhes_database = {
 },
 ["heal_enemy"] = {
 },
+["colocacao"] = 1,
 ["on_hold"] = false,
+["serial"] = "Player-6409-04BC9882",
 ["totalabsorb"] = 0.003781,
 ["last_hps"] = 11.09561734836828,
-["aID"] = "6409-04BC9882",
-["fight_component"] = true,
 ["targets"] = {
 ["Pitchwise"] = 236,
 },
-["serial"] = "Player-6409-04BC9882",
-["colocacao"] = 1,
 ["totalover_without_pet"] = 0.003781,
-["healing_from"] = {
-["Pitchwise"] = true,
-},
+["last_event"] = 1771422806,
 ["healing_taken"] = 236.003781,
-["grupo"] = true,
-["classe"] = "SHAMAN",
+["fight_component"] = true,
 ["end_time"] = 1771422816,
 ["targets_overheal"] = {
 },
-["start_time"] = 1771422815,
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 3,
 ["_ActorTable"] = {
 [547] = {
 ["c_amt"] = 1,
@@ -3928,103 +3924,107 @@ _detalhes_database = {
 ["absorbed"] = 0,
 },
 },
+["tipo"] = 3,
 },
+["grupo"] = true,
+["start_time"] = 1771422815,
+["classe"] = "SHAMAN",
 ["custom"] = 0,
-["last_event"] = 1771422806,
+["tipo"] = 2,
 ["totaldenied"] = 0.003781,
 ["delay"] = 1771422806,
-["tipo"] = 2,
+["aID"] = "6409-04BC9882",
 },
 },
 },
 {
-["combatId"] = 479,
 ["tipo"] = 7,
+["combatId"] = 479,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 479,
 ["tipo"] = 9,
+["combatId"] = 479,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["serial"] = "Player-6409-04BC9882",
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 8,
-["appliedamt"] = 1,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 },
-["fight_component"] = true,
-["buff_uptime_targets"] = {
-},
-["classe"] = "SHAMAN",
-["buff_uptime"] = 61,
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [355366] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
 ["activedamt"] = 1,
+["uptime"] = 21,
 ["id"] = 355366,
-["targets"] = {
-},
-["uptime"] = 21,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-[355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
-["targets"] = {
-},
-["uptime"] = 21,
-["appliedamt"] = 1,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 19,
-["appliedamt"] = 2,
+["id"] = 324,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[355363] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 21,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["fight_component"] = true,
+["debuff_uptime"] = 8,
+["buff_uptime"] = 61,
+["tipo"] = 4,
+["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 8,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["last_event"] = 1771422816,
-["tipo"] = 4,
+["buff_uptime_targets"] = {
+},
+["serial"] = "Player-6409-04BC9882",
+["classe"] = "SHAMAN",
 },
 },
 },
 {
-["combatId"] = 479,
 ["tipo"] = 2,
+["combatId"] = 479,
 ["_ActorTable"] = {
 },
 },
@@ -4057,10 +4057,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4080,10 +4080,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4118,7 +4118,8 @@ _detalhes_database = {
 ["combat_id"] = 479,
 ["timeStart"] = 1771422795,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Sunscale Scytheclaw"] = 2,
@@ -4131,14 +4132,14 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 ["Pitchwise"] = 236.003781,
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -4149,14 +4150,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786206.685,
-["TimeData"] = {
-},
 ["contra"] = "Sunscale Scytheclaw",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 478,
 ["tipo"] = 2,
+["combatId"] = 478,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -4168,6 +4168,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 393.003112,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -4179,16 +4180,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Sunscale Scytheclaw"] = 393,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422793,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
@@ -4232,12 +4230,12 @@ _detalhes_database = {
 ["counter"] = 3,
 ["total"] = 40,
 ["c_max"] = 24,
-["RESIST"] = 1,
+["spellschool"] = 4,
 ["id"] = 29469,
 ["r_dmg"] = 0,
-["spellschool"] = 4,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 24,
@@ -4276,16 +4274,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 63.6854824168378,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422791,
 ["damage_taken"] = 54.003112,
 ["start_time"] = 1771422787,
 ["delay"] = 0,
-["last_event"] = 1771422791,
+["last_dps"] = 63.6854824168378,
 },
 {
 ["flag_original"] = 68168,
@@ -4297,27 +4297,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 54.001306,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3256-000015C437",
-["aID"] = "3256",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 54,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422793,
+["aID"] = "3256",
 ["nome"] = "Sunscale Scytheclaw",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -4348,93 +4348,93 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422789,
 ["damage_taken"] = 393.001306,
 ["start_time"] = 1771422787,
 ["delay"] = 0,
-["last_event"] = 1771422789,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 478,
 ["tipo"] = 3,
+["combatId"] = 478,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 478,
 ["tipo"] = 7,
+["combatId"] = 478,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 478,
 ["tipo"] = 9,
+["combatId"] = 478,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 18,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [355366] = {
-["activedamt"] = 1,
-["id"] = 355366,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 355366,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 18,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
-["last_event"] = 1771422793,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1771422793,
 },
 },
 },
 {
-["combatId"] = 478,
 ["tipo"] = 2,
+["combatId"] = 478,
 ["_ActorTable"] = {
 },
 },
@@ -4466,10 +4466,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4489,10 +4489,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4525,7 +4525,8 @@ _detalhes_database = {
 ["combat_id"] = 478,
 ["timeStart"] = 1771422787,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Sunscale Scytheclaw"] = 1,
@@ -4538,13 +4539,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -4555,14 +4556,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786199.115,
-["TimeData"] = {
-},
 ["contra"] = "Sunscale Scytheclaw",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 477,
 ["tipo"] = 2,
+["combatId"] = 477,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -4574,6 +4574,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 878.007827,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -4585,16 +4586,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Sunscale Scytheclaw"] = 878,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422774,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 5,
@@ -4638,12 +4636,12 @@ _detalhes_database = {
 ["counter"] = 5,
 ["total"] = 79,
 ["c_max"] = 24,
-["RESIST"] = 1,
+["spellschool"] = 4,
 ["id"] = 29469,
 ["r_dmg"] = 0,
-["spellschool"] = 4,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 24,
@@ -4682,16 +4680,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 94.50089624163057,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422774,
 ["damage_taken"] = 98.00782699999999,
 ["start_time"] = 1771422765,
 ["delay"] = 0,
-["last_event"] = 1771422774,
+["last_dps"] = 94.50089624163057,
 },
 {
 ["flag_original"] = 68168,
@@ -4703,27 +4703,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 98.002544,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3256-000015C3F2",
-["aID"] = "3256",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 98,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422774,
+["aID"] = "3256",
 ["nome"] = "Sunscale Scytheclaw",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -4755,93 +4755,93 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422772,
 ["damage_taken"] = 878.002544,
 ["start_time"] = 1771422765,
 ["delay"] = 0,
-["last_event"] = 1771422772,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 477,
 ["tipo"] = 3,
+["combatId"] = 477,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 477,
 ["tipo"] = 7,
+["combatId"] = 477,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 477,
 ["tipo"] = 9,
+["combatId"] = 477,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 27,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [355366] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
 ["activedamt"] = 1,
+["uptime"] = 9,
 ["id"] = 355366,
-["targets"] = {
-},
-["uptime"] = 9,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-[355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
-["targets"] = {
-},
-["uptime"] = 9,
-["appliedamt"] = 1,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 9,
+["id"] = 324,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[355363] = {
 ["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 9,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 27,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
-["last_event"] = 1771422774,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1771422774,
 },
 },
 },
 {
-["combatId"] = 477,
 ["tipo"] = 2,
+["combatId"] = 477,
 ["_ActorTable"] = {
 },
 },
@@ -4874,10 +4874,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4897,10 +4897,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -4930,7 +4930,8 @@ _detalhes_database = {
 ["combat_id"] = 477,
 ["timeStart"] = 1771422765,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Sunscale Scytheclaw"] = 2,
@@ -4943,13 +4944,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -4960,14 +4961,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786176.866,
-["TimeData"] = {
-},
 ["contra"] = "Sunscale Scytheclaw",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 476,
 ["tipo"] = 2,
+["combatId"] = 476,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -4979,6 +4979,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 1019.001841,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -4990,16 +4991,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Sunscale Scytheclaw"] = 1019,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422759,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 4,
@@ -5100,12 +5098,12 @@ _detalhes_database = {
 ["counter"] = 5,
 ["total"] = 52,
 ["c_max"] = 0,
-["RESIST"] = 1,
+["spellschool"] = 8,
 ["id"] = 26364,
 ["r_dmg"] = 0,
-["spellschool"] = 8,
 ["extra"] = {
 },
+["RESIST"] = 1,
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
 ["c_min"] = 0,
@@ -5116,16 +5114,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 44.65389312039815,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422759,
 ["damage_taken"] = 456.001841,
 ["start_time"] = 1771422737,
 ["delay"] = 0,
-["last_event"] = 1771422759,
+["last_dps"] = 44.65389312039815,
 },
 {
 ["flag_original"] = 68168,
@@ -5137,27 +5137,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 456.005165,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3256-000095BC18",
-["aID"] = "3256",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 456,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422759,
+["aID"] = "3256",
 ["nome"] = "Sunscale Scytheclaw",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
@@ -5215,25 +5215,28 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422758,
 ["damage_taken"] = 1019.005165,
 ["start_time"] = 1771422738,
 ["delay"] = 0,
-["last_event"] = 1771422758,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 476,
 ["tipo"] = 3,
+["combatId"] = 476,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
+["healing_from"] = {
+["Pitchwise"] = true,
+},
 ["pets"] = {
 },
 ["iniciar_hps"] = false,
@@ -5245,30 +5248,23 @@ _detalhes_database = {
 },
 ["heal_enemy"] = {
 },
+["colocacao"] = 1,
 ["on_hold"] = false,
+["serial"] = "Player-6409-04BC9882",
 ["totalabsorb"] = 0.007125,
 ["last_hps"] = 16.52090819468753,
-["aID"] = "6409-04BC9882",
-["fight_component"] = true,
 ["targets"] = {
 ["Pitchwise"] = 377,
 },
-["serial"] = "Player-6409-04BC9882",
-["colocacao"] = 1,
 ["totalover_without_pet"] = 0.007125,
-["healing_from"] = {
-["Pitchwise"] = true,
-},
+["last_event"] = 1771422756,
 ["healing_taken"] = 377.007125,
-["grupo"] = true,
-["classe"] = "SHAMAN",
+["fight_component"] = true,
 ["end_time"] = 1771422759,
 ["targets_overheal"] = {
 },
-["start_time"] = 1771422751,
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 3,
 ["_ActorTable"] = {
 [547] = {
 ["c_amt"] = 1,
@@ -5296,116 +5292,120 @@ _detalhes_database = {
 ["absorbed"] = 0,
 },
 },
+["tipo"] = 3,
 },
+["grupo"] = true,
+["start_time"] = 1771422751,
+["classe"] = "SHAMAN",
 ["custom"] = 0,
-["last_event"] = 1771422756,
+["tipo"] = 2,
 ["totaldenied"] = 0.007125,
 ["delay"] = 0,
-["tipo"] = 2,
+["aID"] = "6409-04BC9882",
 },
 },
 },
 {
-["combatId"] = 476,
 ["tipo"] = 7,
+["combatId"] = 476,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 476,
 ["tipo"] = 9,
+["combatId"] = 476,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["serial"] = "Player-6409-04BC9882",
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 11,
-["appliedamt"] = 2,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
-},
-["debuff_uptime_targets"] = {
+["tipo"] = 9,
 },
 ["pets"] = {
 },
-["fight_component"] = true,
-["buff_uptime_targets"] = {
-},
-["classe"] = "SHAMAN",
-["buff_uptime"] = 64,
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [355366] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
 ["activedamt"] = 1,
+["uptime"] = 22,
 ["id"] = 355366,
-["targets"] = {
-},
-["uptime"] = 22,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-[355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
-["targets"] = {
-},
-["uptime"] = 22,
-["appliedamt"] = 1,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 3,
-["id"] = 324,
+["appliedamt"] = 3,
 ["targets"] = {
 },
+["activedamt"] = 3,
 ["uptime"] = 20,
-["appliedamt"] = 3,
+["id"] = 324,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[355363] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 22,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["fight_component"] = true,
+["debuff_uptime"] = 11,
+["buff_uptime"] = 64,
+["tipo"] = 4,
+["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 11,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["last_event"] = 1771422759,
-["tipo"] = 4,
+["buff_uptime_targets"] = {
+},
+["serial"] = "Player-6409-04BC9882",
+["classe"] = "SHAMAN",
 },
 {
 ["flag_original"] = 2632,
 ["pets"] = {
 },
-["serial"] = "Creature-0-6414-1-85-3256-000115BC18",
 ["classe"] = "UNKNOW",
 ["fight_component"] = true,
-["monster"] = true,
-["aID"] = "3256",
 ["nome"] = "Sunscale Scytheclaw",
-["last_event"] = 0,
+["monster"] = true,
 ["tipo"] = 4,
+["aID"] = "3256",
+["serial"] = "Creature-0-6414-1-85-3256-000115BC18",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 476,
 ["tipo"] = 2,
+["combatId"] = 476,
 ["_ActorTable"] = {
 },
 },
@@ -5438,10 +5438,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5461,10 +5461,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5502,7 +5502,8 @@ _detalhes_database = {
 ["combat_id"] = 476,
 ["timeStart"] = 1771422737,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Sunscale Scytheclaw"] = 2,
@@ -5515,14 +5516,14 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 ["Pitchwise"] = 377.007125,
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -5533,14 +5534,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786148.812,
-["TimeData"] = {
-},
 ["contra"] = "Sunscale Scytheclaw",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 475,
 ["tipo"] = 2,
+["combatId"] = 475,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -5552,6 +5552,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 929.007991,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -5563,16 +5564,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Sunscale Scytheclaw"] = 929,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422727,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 4,
@@ -5660,16 +5658,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 65.51537313147186,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422726,
 ["damage_taken"] = 257.007991,
 ["start_time"] = 1771422713,
 ["delay"] = 0,
-["last_event"] = 1771422726,
+["last_dps"] = 65.51537313147186,
 },
 {
 ["flag_original"] = 68168,
@@ -5681,27 +5681,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 257.005591,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3256-000015C135",
-["aID"] = "3256",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 257,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422727,
+["aID"] = "3256",
 ["nome"] = "Sunscale Scytheclaw",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -5759,106 +5759,106 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422726,
 ["damage_taken"] = 929.005591,
 ["start_time"] = 1771422713,
 ["delay"] = 0,
-["last_event"] = 1771422726,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 475,
 ["tipo"] = 3,
+["combatId"] = 475,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 475,
 ["tipo"] = 7,
+["combatId"] = 475,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 475,
 ["tipo"] = 9,
+["combatId"] = 475,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 41,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [355366] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
 ["activedamt"] = 1,
+["uptime"] = 14,
 ["id"] = 355366,
-["targets"] = {
-},
-["uptime"] = 14,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-[355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
-["targets"] = {
-},
-["uptime"] = 14,
-["appliedamt"] = 1,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 13,
-["appliedamt"] = 2,
+["id"] = 324,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[355363] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 14,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 41,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
-["last_event"] = 1771422727,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1771422727,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-6414-1-85-3256-000015C14A",
 ["classe"] = "UNKNOW",
 ["fight_component"] = true,
-["monster"] = true,
-["aID"] = "3256",
 ["nome"] = "Sunscale Scytheclaw",
-["last_event"] = 0,
+["monster"] = true,
 ["tipo"] = 4,
+["aID"] = "3256",
+["serial"] = "Creature-0-6414-1-85-3256-000015C14A",
+["last_event"] = 0,
 },
 },
 },
 {
-["combatId"] = 475,
 ["tipo"] = 2,
+["combatId"] = 475,
 ["_ActorTable"] = {
 },
 },
@@ -5890,10 +5890,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5913,10 +5913,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -5952,7 +5952,8 @@ _detalhes_database = {
 ["combat_id"] = 475,
 ["timeStart"] = 1771422713,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Sunscale Scytheclaw"] = 2,
@@ -5965,13 +5966,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -5982,14 +5983,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786125.059,
-["TimeData"] = {
-},
 ["contra"] = "Sunscale Scytheclaw",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 474,
 ["tipo"] = 2,
+["combatId"] = 474,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -6001,6 +6001,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 403.001657,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -6012,16 +6013,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Ornery Plainstrider"] = 403,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422676,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -6136,16 +6134,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 65.1789838245793,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422675,
 ["damage_taken"] = 50.001657,
 ["start_time"] = 1771422670,
 ["delay"] = 0,
-["last_event"] = 1771422675,
+["last_dps"] = 65.1789838245793,
 },
 {
 ["flag_original"] = 68168,
@@ -6157,27 +6157,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 50.005468,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3245-000015952E",
-["aID"] = "3245",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 50,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422676,
+["aID"] = "3245",
 ["nome"] = "Ornery Plainstrider",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -6208,112 +6208,112 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422674,
 ["damage_taken"] = 403.005468,
 ["start_time"] = 1771422672,
 ["delay"] = 0,
-["last_event"] = 1771422674,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 474,
 ["tipo"] = 3,
+["combatId"] = 474,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 474,
 ["tipo"] = 7,
+["combatId"] = 474,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 474,
 ["tipo"] = 9,
+["combatId"] = 474,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 5,
-["appliedamt"] = 1,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["serial"] = "Player-6409-04BC9882",
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 18,
 ["pets"] = {
 },
-["buff_uptime_targets"] = {
-},
 ["classe"] = "SHAMAN",
-["buff_uptime"] = 18,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [355366] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
 ["activedamt"] = 1,
+["uptime"] = 6,
 ["id"] = 355366,
-["targets"] = {
-},
-["uptime"] = 6,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-[355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
-["targets"] = {
-},
-["uptime"] = 6,
-["appliedamt"] = 1,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 6,
+["id"] = 324,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[355363] = {
 ["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 6,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 5,
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 5,
 ["aID"] = "6409-04BC9882",
-["nome"] = "Pitchwise",
-["last_event"] = 1771422676,
 ["tipo"] = 4,
+["last_event"] = 1771422676,
+["serial"] = "Player-6409-04BC9882",
+["nome"] = "Pitchwise",
 },
 },
 },
 {
-["combatId"] = 474,
 ["tipo"] = 2,
+["combatId"] = 474,
 ["_ActorTable"] = {
 },
 },
@@ -6346,10 +6346,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -6369,10 +6369,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -6402,7 +6402,8 @@ _detalhes_database = {
 ["combat_id"] = 474,
 ["timeStart"] = 1771422670,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Ornery Plainstrider"] = 1,
@@ -6415,13 +6416,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -6432,14 +6433,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786081.94,
-["TimeData"] = {
-},
 ["contra"] = "Ornery Plainstrider",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 473,
 ["tipo"] = 2,
+["combatId"] = 473,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
@@ -6451,6 +6451,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 381.004176,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -6462,16 +6463,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Theramore Marine"] = 381,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422659,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -6586,16 +6584,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 48.89683983489907,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422658,
 ["damage_taken"] = 43.004176,
 ["start_time"] = 1771422651,
 ["delay"] = 0,
-["last_event"] = 1771422658,
+["last_dps"] = 48.89683983489907,
 },
 {
 ["flag_original"] = 68168,
@@ -6607,27 +6607,27 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 43.006954,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3385-000015BE93",
-["aID"] = "3385",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 },
 ["targets"] = {
 ["Pitchwise"] = 43,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422659,
+["aID"] = "3385",
 ["nome"] = "Theramore Marine",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -6658,134 +6658,134 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422655,
 ["damage_taken"] = 381.006954,
 ["start_time"] = 1771422653,
 ["delay"] = 0,
-["last_event"] = 1771422655,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 473,
 ["tipo"] = 3,
+["combatId"] = 473,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 473,
 ["tipo"] = 7,
+["combatId"] = 473,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 473,
 ["tipo"] = 9,
+["combatId"] = 473,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8050] = {
-["activedamt"] = 0,
-["id"] = 8050,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 7,
-["appliedamt"] = 1,
+["id"] = 8050,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["serial"] = "Player-6409-04BC9882",
-["debuff_uptime_targets"] = {
-},
+["buff_uptime"] = 40,
 ["pets"] = {
 },
-["buff_uptime_targets"] = {
-},
 ["classe"] = "SHAMAN",
-["buff_uptime"] = 40,
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [3219] = {
-["activedamt"] = 1,
-["id"] = 3219,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 8,
-["appliedamt"] = 1,
+["id"] = 3219,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [2374] = {
-["activedamt"] = 1,
-["id"] = 2374,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 8,
-["appliedamt"] = 1,
+["id"] = 2374,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [355366] = {
-["activedamt"] = 1,
-["id"] = 355366,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 8,
-["appliedamt"] = 1,
+["id"] = 355366,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 2,
-["id"] = 324,
+["appliedamt"] = 2,
 ["targets"] = {
 },
+["activedamt"] = 2,
 ["uptime"] = 8,
-["appliedamt"] = 2,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 8,
-["appliedamt"] = 1,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
+},
+["debuff_uptime"] = 7,
+["buff_uptime_targets"] = {
+},
+["debuff_uptime_targets"] = {
 },
 ["grupo"] = true,
-["debuff_uptime"] = 7,
 ["aID"] = "6409-04BC9882",
-["nome"] = "Pitchwise",
-["last_event"] = 1771422659,
 ["tipo"] = 4,
+["last_event"] = 1771422659,
+["serial"] = "Player-6409-04BC9882",
+["nome"] = "Pitchwise",
 },
 },
 },
 {
-["combatId"] = 473,
 ["tipo"] = 2,
+["combatId"] = 473,
 ["_ActorTable"] = {
 },
 },
@@ -6818,10 +6818,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -6841,10 +6841,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -6877,7 +6877,8 @@ _detalhes_database = {
 ["combat_id"] = 473,
 ["timeStart"] = 1771422651,
 ["playing_solo"] = true,
-["boss_hp"] = 1,
+["TimeData"] = {
+},
 ["is_challenge"] = false,
 ["frags"] = {
 ["Theramore Marine"] = 1,
@@ -6890,13 +6891,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -6907,14 +6908,13 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786062.923,
-["TimeData"] = {
-},
 ["contra"] = "Theramore Marine",
+["boss_hp"] = 1,
 },
 {
 {
-["combatId"] = 472,
 ["tipo"] = 2,
+["combatId"] = 472,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1298,
@@ -6926,6 +6926,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 224.008527,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04CF2155",
@@ -6937,16 +6938,13 @@ _detalhes_database = {
 ["targets"] = {
 ["Theramore Marine"] = 224,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04CF2155",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422613,
+["aID"] = "6409-04CF2155",
 ["nome"] = "Treaxi",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -7005,16 +7003,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 10.64780525718295,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422595,
 ["damage_taken"] = 89.008527,
 ["start_time"] = 1771422609,
 ["delay"] = 1771422595,
-["last_event"] = 1771422595,
+["last_dps"] = 10.64780525718295,
 },
 {
 ["flag_original"] = 2632,
@@ -7026,13 +7026,13 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 267.008567,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3385-000015C33E",
-["aID"] = "3385",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Zhar'krast"] = true,
 ["Podlystefan"] = true,
@@ -7046,14 +7046,14 @@ _detalhes_database = {
 ["Zhar'krast"] = 76,
 ["Podlystefan"] = 112,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422651,
+["aID"] = "3385",
 ["nome"] = "Theramore Marine",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
@@ -7115,23 +7115,22 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422641,
 ["damage_taken"] = 1543.008567,
 ["start_time"] = 1771422619,
 ["delay"] = 1771422641,
-["last_event"] = 1771422641,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 2600,
-["totalabsorbed"] = 0.00755,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "3386",
 ["total_without_pet"] = 89.00755000000001,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
@@ -7141,7 +7140,6 @@ _detalhes_database = {
 ["serial"] = "Creature-0-6414-1-85-3386-000015C346",
 ["avoidable_damage"] = {
 },
-["aID"] = "3386",
 ["damage_from"] = {
 ["Gilthares Firebough"] = true,
 ["Krenex"] = true,
@@ -7149,14 +7147,15 @@ _detalhes_database = {
 ["targets"] = {
 ["Treaxi"] = 89,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["classe"] = "UNKNOW",
+["fight_component"] = true,
 ["end_time"] = 1771422613,
+["totalabsorbed"] = 0.00755,
 ["nome"] = "Theramore Preserver",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [9734] = {
 ["c_amt"] = 0,
@@ -7187,105 +7186,106 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
 ["friendlyfire"] = {
 },
-["last_dps"] = 0,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422597,
 ["damage_taken"] = 64.00755,
 ["start_time"] = 1771422609,
 ["delay"] = 1771422597,
-["last_event"] = 1771422597,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 472,
 ["tipo"] = 3,
+["combatId"] = 472,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 472,
 ["tipo"] = 7,
+["combatId"] = 472,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 472,
 ["tipo"] = 9,
+["combatId"] = 472,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 63,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [355366] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
 ["activedamt"] = 1,
+["uptime"] = 21,
 ["id"] = 355366,
-["targets"] = {
-},
-["uptime"] = 21,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-[355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
-["targets"] = {
-},
-["uptime"] = 21,
-["appliedamt"] = 1,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 21,
+["id"] = 324,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[355363] = {
 ["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 21,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 63,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
-["last_event"] = 1771422613,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1771422613,
 },
 {
 ["flag_original"] = 1298,
 ["pets"] = {
 },
 ["classe"] = "ROGUE",
-["serial"] = "Player-6409-04CF2155",
+["nome"] = "Treaxi",
 ["grupo"] = true,
 ["aID"] = "6409-04CF2155",
-["nome"] = "Treaxi",
 ["last_event"] = 0,
+["serial"] = "Player-6409-04CF2155",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 472,
 ["tipo"] = 2,
+["combatId"] = 472,
 ["_ActorTable"] = {
 },
 },
@@ -7300,9 +7300,7 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
+["combat_counter"] = 534,
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -7318,10 +7316,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7341,10 +7339,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7381,7 +7379,8 @@ _detalhes_database = {
 ["Theramore Preserver"] = 1,
 ["Theramore Marine"] = 1,
 },
-["combat_counter"] = 534,
+["TimeData"] = {
+},
 ["player_last_events"] = {
 },
 ["PhaseData"] = {
@@ -7389,13 +7388,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -7406,14 +7405,15 @@ _detalhes_database = {
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1786003.775,
-["TimeData"] = {
-},
 ["contra"] = "Theramore Marine",
+["cleu_events"] = {
+["n"] = 1,
+},
 },
 {
 {
-["combatId"] = 471,
 ["tipo"] = 2,
+["combatId"] = 471,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1298,
@@ -7425,6 +7425,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 453.005879,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04CF2155",
@@ -7439,16 +7440,13 @@ _detalhes_database = {
 ["Theramore Preserver"] = 215,
 ["Cannoneer Smythe"] = 238,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04CF2155",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422558,
+["aID"] = "6409-04CF2155",
 ["nome"] = "Treaxi",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
@@ -7510,16 +7508,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 56.51976032511418,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422556,
 ["damage_taken"] = 278.005879,
 ["start_time"] = 1771422550,
 ["delay"] = 0,
-["last_event"] = 1771422556,
+["last_dps"] = 56.51976032511418,
 },
 {
 ["flag_original"] = 1297,
@@ -7531,6 +7531,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 395.003727,
+["colocacao"] = 2,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -7544,16 +7545,13 @@ _detalhes_database = {
 ["Theramore Preserver"] = 167,
 ["Cannoneer Smythe"] = 228,
 },
-["colocacao"] = 2,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422558,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
@@ -7670,16 +7668,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 49.2830601378726,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422556,
 ["damage_taken"] = 353.003727,
 ["start_time"] = 1771422550,
 ["delay"] = 0,
-["last_event"] = 1771422556,
+["last_dps"] = 49.2830601378726,
 },
 {
 ["flag_original"] = 2632,
@@ -7691,13 +7691,13 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 90.006601,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3454-000015C222",
-["aID"] = "3454",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Treaxi"] = true,
 ["Pitchwise"] = true,
@@ -7706,14 +7706,14 @@ _detalhes_database = {
 ["Treaxi"] = 23,
 ["Pitchwise"] = 67,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422558,
+["aID"] = "3454",
 ["nome"] = "Cannoneer Smythe",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -7745,16 +7745,16 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422555,
 ["damage_taken"] = 466.006601,
 ["start_time"] = 1771422551,
 ["delay"] = 0,
-["last_event"] = 1771422555,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 68168,
@@ -7766,13 +7766,13 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 23.005115,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3386-000015C30F",
-["aID"] = "3386",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Treaxi"] = true,
 ["Pitchwise"] = true,
@@ -7780,14 +7780,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Treaxi"] = 23,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422558,
+["aID"] = "3386",
 ["nome"] = "Theramore Preserver",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -7818,105 +7818,105 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422552,
 ["damage_taken"] = 382.005115,
 ["start_time"] = 1771422552,
 ["delay"] = 0,
-["last_event"] = 1771422552,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 471,
 ["tipo"] = 3,
+["combatId"] = 471,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 471,
 ["tipo"] = 7,
+["combatId"] = 471,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 471,
 ["tipo"] = 9,
+["combatId"] = 471,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-},
-["serial"] = "Player-6409-04BC9882",
+["buff_uptime"] = 24,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "SHAMAN",
+["aID"] = "6409-04BC9882",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [355366] = {
+["appliedamt"] = 1,
+["targets"] = {
+},
 ["activedamt"] = 1,
+["uptime"] = 8,
 ["id"] = 355366,
-["targets"] = {
-},
-["uptime"] = 8,
-["appliedamt"] = 1,
-["refreshamt"] = 0,
-["actived"] = false,
-["counter"] = 0,
-},
-[355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
-["targets"] = {
-},
-["uptime"] = 8,
-["appliedamt"] = 1,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 8,
+["id"] = 324,
+["refreshamt"] = 0,
+["actived"] = false,
+["counter"] = 0,
+},
+[355363] = {
 ["appliedamt"] = 1,
+["targets"] = {
+},
+["activedamt"] = 1,
+["uptime"] = 8,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 24,
-["grupo"] = true,
-["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
-["last_event"] = 1771422558,
+["grupo"] = true,
+["pets"] = {
+},
 ["tipo"] = 4,
+["classe"] = "SHAMAN",
+["serial"] = "Player-6409-04BC9882",
+["last_event"] = 1771422558,
 },
 {
 ["flag_original"] = 1298,
 ["pets"] = {
 },
 ["classe"] = "ROGUE",
-["serial"] = "Player-6409-04CF2155",
+["nome"] = "Treaxi",
 ["grupo"] = true,
 ["aID"] = "6409-04CF2155",
-["nome"] = "Treaxi",
 ["last_event"] = 0,
+["serial"] = "Player-6409-04CF2155",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 471,
 ["tipo"] = 2,
+["combatId"] = 471,
 ["_ActorTable"] = {
 },
 },
@@ -7931,9 +7931,7 @@ _detalhes_database = {
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
+["combat_counter"] = 533,
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -7949,10 +7947,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -7972,10 +7970,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -8013,7 +8011,8 @@ _detalhes_database = {
 ["Theramore Preserver"] = 1,
 ["Cannoneer Smythe"] = 1,
 },
-["combat_counter"] = 533,
+["TimeData"] = {
+},
 ["player_last_events"] = {
 ["Treaxi"] = {
 {
@@ -8175,13 +8174,13 @@ false,
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -8193,14 +8192,15 @@ false,
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1785961.596,
-["TimeData"] = {
-},
 ["contra"] = "Theramore Preserver",
+["cleu_events"] = {
+["n"] = 1,
+},
 },
 {
 {
-["combatId"] = 470,
 ["tipo"] = 2,
+["combatId"] = 470,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1298,
@@ -8212,6 +8212,7 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 267.004011,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04CF2155",
@@ -8223,16 +8224,13 @@ false,
 ["Theramore Preserver"] = 130,
 ["Theramore Marine"] = 137,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04CF2155",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422537,
+["aID"] = "6409-04CF2155",
 ["nome"] = "Treaxi",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -8323,16 +8321,18 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 14.80148627983119,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422531,
 ["damage_taken"] = 0.004011,
 ["start_time"] = 1771422519,
 ["delay"] = 0,
-["last_event"] = 1771422531,
+["last_dps"] = 14.80148627983119,
 },
 {
 ["flag_original"] = 1297,
@@ -8344,6 +8344,7 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 235.006559,
+["colocacao"] = 2,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04BC9882",
@@ -8355,16 +8356,13 @@ false,
 ["targets"] = {
 ["Theramore Marine"] = 235,
 },
-["colocacao"] = 2,
-["aID"] = "6409-04BC9882",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1771422537,
+["aID"] = "6409-04BC9882",
 ["nome"] = "Pitchwise",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -8452,16 +8450,18 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 13.02769327577194,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422525,
 ["damage_taken"] = 123.006559,
 ["start_time"] = 1771422529,
 ["delay"] = 1771422525,
-["last_event"] = 1771422525,
+["last_dps"] = 13.02769327577194,
 },
 {
 ["flag_original"] = 2632,
@@ -8473,13 +8473,13 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 145.00796,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3385-000015C265",
-["aID"] = "3385",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Pitchwise"] = true,
 ["Sanguinata"] = true,
@@ -8489,14 +8489,14 @@ false,
 ["Sanguinata"] = 22,
 ["Pitchwise"] = 123,
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422537,
+["aID"] = "3385",
 ["nome"] = "Theramore Marine",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 1,
@@ -8554,16 +8554,16 @@ false,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1771422524,
 ["damage_taken"] = 645.00796,
 ["start_time"] = 1771422530,
 ["delay"] = 1771422524,
-["last_event"] = 1771422524,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 2632,
@@ -8575,66 +8575,64 @@ false,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 0.007597,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6414-1-85-3386-000015C236",
-["aID"] = "3386",
 ["avoidable_damage"] = {
 },
-["fight_component"] = true,
+["on_hold"] = false,
 ["damage_from"] = {
 ["Sanguinata"] = true,
 ["Treaxi"] = true,
 },
 ["targets"] = {
 },
-["monster"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["fight_component"] = true,
 ["end_time"] = 1771422537,
+["aID"] = "3386",
 ["nome"] = "Theramore Preserver",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["monster"] = true,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 0,
 ["damage_taken"] = 133.007597,
 ["start_time"] = 1771422537,
 ["delay"] = 0,
-["last_event"] = 0,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 470,
 ["tipo"] = 3,
+["combatId"] = 470,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 470,
 ["tipo"] = 7,
+["combatId"] = 470,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 470,
 ["tipo"] = 9,
+["combatId"] = 470,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["interrupt_cast_overlap"] = 0,
-["pets"] = {
-},
+["buff_uptime"] = 95,
 ["aID"] = "6409-04BC9882",
 ["interrupt_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [8042] = {
 ["id"] = 8042,
@@ -8647,121 +8645,120 @@ false,
 ["counter"] = 1,
 },
 },
+["tipo"] = 9,
 },
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [3219] = {
-["activedamt"] = 1,
-["id"] = 3219,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 19,
-["appliedamt"] = 1,
+["id"] = 3219,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [2374] = {
-["activedamt"] = 1,
-["id"] = 2374,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 19,
-["appliedamt"] = 1,
+["id"] = 2374,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [355366] = {
-["activedamt"] = 1,
-["id"] = 355366,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 19,
-["appliedamt"] = 1,
+["id"] = 355366,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [324] = {
-["activedamt"] = 1,
-["id"] = 324,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 19,
-["appliedamt"] = 1,
+["id"] = 324,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [355363] = {
-["activedamt"] = 1,
-["id"] = 355363,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 19,
-["appliedamt"] = 1,
+["id"] = 355363,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
 ["interrompeu_oque"] = {
 [9734] = 1,
 },
-["nome"] = "Pitchwise",
+["buff_uptime_targets"] = {
+},
 ["interrupt_targets"] = {
 ["Theramore Preserver"] = 1,
 },
 ["grupo"] = true,
-["buff_uptime_targets"] = {
+["pets"] = {
 },
-["buff_uptime"] = 95,
-["tipo"] = 4,
-["interrupt"] = 1.007759,
 ["classe"] = "SHAMAN",
-["serial"] = "Player-6409-04BC9882",
+["tipo"] = 4,
+["nome"] = "Pitchwise",
 ["last_event"] = 1771422550,
+["serial"] = "Player-6409-04BC9882",
+["interrupt"] = 1.007759,
 },
 {
 ["flag_original"] = 68168,
 ["pets"] = {
 },
-["serial"] = "Creature-0-6414-1-85-3385-000015C295",
 ["classe"] = "UNKNOW",
 ["fight_component"] = true,
-["monster"] = true,
-["aID"] = "3385",
 ["nome"] = "Theramore Marine",
-["last_event"] = 0,
+["monster"] = true,
 ["tipo"] = 4,
+["aID"] = "3385",
+["serial"] = "Creature-0-6414-1-85-3385-000015C295",
+["last_event"] = 0,
 },
 {
 ["flag_original"] = 1298,
 ["debuff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [1777] = {
-["activedamt"] = 0,
-["id"] = 1777,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 0,
 ["uptime"] = 6,
-["appliedamt"] = 1,
+["id"] = 1777,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["serial"] = "Player-6409-04CF2155",
 ["pets"] = {
 },
-["grupo"] = true,
 ["cc_done_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [1777] = {
 ["id"] = 1777,
@@ -8771,25 +8768,28 @@ false,
 ["counter"] = 1,
 },
 },
+["tipo"] = 9,
 },
 ["classe"] = "ROGUE",
-["debuff_uptime_targets"] = {
-},
-["aID"] = "6409-04CF2155",
 ["debuff_uptime"] = 6,
 ["cc_done"] = 1.002647,
-["nome"] = "Treaxi",
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
 ["cc_done_targets"] = {
 ["Theramore Marine"] = 1,
 },
+["aID"] = "6409-04CF2155",
 ["last_event"] = 1771422531,
+["nome"] = "Treaxi",
+["serial"] = "Player-6409-04CF2155",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 470,
 ["tipo"] = 2,
+["combatId"] = 470,
 ["_ActorTable"] = {
 },
 },
@@ -8805,9 +8805,7 @@ false,
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
+["combat_counter"] = 532,
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -8823,10 +8821,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 1,
 ["dispell"] = 0,
+["interrupt"] = 1,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -8846,10 +8844,10 @@ false,
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 1,
 ["dispell"] = 0,
+["interrupt"] = 1,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -8894,7 +8892,8 @@ false,
 ["Theramore Preserver"] = 1,
 ["Theramore Marine"] = 2,
 },
-["combat_counter"] = 532,
+["TimeData"] = {
+},
 ["player_last_events"] = {
 },
 ["PhaseData"] = {
@@ -8902,13 +8901,13 @@ false,
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -8920,9 +8919,10 @@ false,
 ["spells_cast_timeline"] = {
 },
 ["start_time"] = 1785930.313,
-["TimeData"] = {
-},
 ["contra"] = "Theramore Marine",
+["cleu_events"] = {
+["n"] = 1,
+},
 },
 },
 },
@@ -8950,8 +8950,9 @@ false,
 ["show_options"] = false,
 ["ignored_cooldowns"] = {
 },
-["height"] = 18,
 ["framme_locked"] = false,
+["cooldowns"] = {
+},
 ["own_frame"] = {
 ["defensive-raid"] = false,
 ["ofensive"] = false,
@@ -8959,8 +8960,7 @@ false,
 ["utility"] = false,
 ["defensive-personal"] = false,
 },
-["cooldowns"] = {
-},
+["height"] = 18,
 ["show_conditions"] = {
 ["only_inside_instance"] = true,
 ["only_in_group"] = true,
@@ -9059,7 +9059,10 @@ false,
 },
 },
 },
-["ignore_nicktag"] = false,
+["benchmark_db"] = {
+["frame"] = {
+},
+},
 ["announce_firsthit"] = {
 ["enabled"] = true,
 ["channel"] = "SELF",
@@ -9106,13 +9109,11 @@ false,
 ["dungeon_zone_id"] = 0,
 ["previous_boss_killed_at"] = 0,
 },
-["last_day"] = "18",
-["data_harvested_for_charts"] = {
-},
+["last_day"] = "19",
+["ignore_nicktag"] = false,
 ["cached_roles"] = {
 },
-["SoloTablesSaved"] = {
-["Mode"] = 1,
+["data_harvested_for_charts"] = {
 },
 ["combat_log"] = {
 ["inverse_deathlog_overalldata"] = false,
@@ -9124,25 +9125,138 @@ false,
 ["evoker_show_realtimedps"] = false,
 ["inverse_deathlog_mplus"] = false,
 },
-["on_death_menu"] = false,
-["mythic_plus_log"] = {
+["SoloTablesSaved"] = {
+["Mode"] = 1,
 },
-["announce_damagerecord"] = {
+["plugin_database"] = {
+["DETAILS_PLUGIN_TINY_THREAT"] = {
 ["enabled"] = true,
-["channel"] = "SELF",
+["only_my_group"] = false,
+["animate"] = false,
+["updatespeed"] = 1,
+["hide_pull_bar"] = false,
+["useclasscolors"] = false,
+["playercolor"] = {
+1,
+1,
+1,
+},
+["usefocus"] = false,
+["disable_gouge"] = false,
+["playSound"] = false,
+["showamount"] = false,
+["useplayercolor"] = false,
+["absolute_mode"] = false,
+["show_party_pets"] = false,
+["playSoundFile"] = "Details Threat Warning Volume 3",
+["author"] = "Terciob",
+},
+["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
+["enabled"] = true,
+["encounter_timers_bw"] = {
+},
+["max_emote_segments"] = 3,
+["last_section_selected"] = "main",
+["author"] = "Terciob",
+["window_scale"] = 1,
+["hide_on_combat"] = false,
+["show_icon"] = 5,
+["opened"] = 0,
+["encounter_timers_dbm"] = {
+},
+},
+["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
+["enabled"] = true,
+["author"] = "Terciob",
+["max_compares"] = 4,
+["compare_type"] = 1,
+},
+["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
+["use_square_mode"] = false,
+["is_first_run"] = false,
+["grow_direction"] = "right",
+["arrow_color"] = {
+1,
+1,
+1,
+0.5,
+},
+["scale"] = 1,
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
+},
+["minimap"] = {
+["minimapPos"] = 160,
+["radius"] = 160,
+["hide"] = true,
+},
+["row_height"] = 18,
+["arrow_anchor_x"] = 0,
+["font_color"] = {
+1,
+1,
+1,
+1,
+},
+["row_texture"] = "xVerminClean",
+["square_grow_direction"] = "right",
+["point"] = "RIGHT",
+["main_frame_strata"] = "LOW",
+["square_amount"] = 5,
+["enabled"] = false,
+["arrow_size"] = 10,
+["use_spark"] = false,
+["row_spacement"] = 19,
+["main_frame_color"] = {
+0,
+0,
+0,
+0,
+},
+["author"] = "Details! Team",
+["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+["font_size"] = 10,
+["y"] = -183.107162475586,
+["x"] = -4.001220703125,
+["font_face"] = "Friz Quadrata TT",
+["square_size"] = 32,
+["per_second"] = {
+["enabled"] = false,
+["point"] = "CENTER",
+["scale"] = 1,
+["font_shadow"] = true,
+["y"] = -6.103515625e-05,
+["x"] = 0.00311279296875,
+["size"] = 32,
+["update_speed"] = 0.05,
+["attribute_type"] = 1,
+},
+["row_color"] = {
+0.443137254901961,
+0.592156862745098,
+1,
+0.480826139450073,
+},
+["main_frame_locked"] = true,
+["arrow_anchor_y"] = 0,
+},
+},
+["on_death_menu"] = false,
+["coach"] = {
+["enabled"] = false,
+["welcome_panel_pos"] = {
+},
+["last_coach_name"] = false,
 },
 ["nick_tag_cache"] = {
 ["last_version"] = 16,
 ["nextreset"] = 1772303696,
 },
+["cached_talents"] = {
+},
 ["character_data"] = {
-["logons"] = 93,
-},
-["player_stats"] = {
-},
-["benchmark_db"] = {
-["frame"] = {
-},
+["logons"] = 95,
 },
 ["last_realversion"] = 169,
 ["last_version"] = "2.5.5 14604",
@@ -9167,7 +9281,7 @@ false,
 1,
 },
 ["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-["skin_custom"] = "vermin",
+["bars_sort_direction"] = 1,
 ["use_auto_align_multi_fontstrings"] = true,
 ["tooltip"] = {
 ["n_abilities"] = 3,
@@ -9347,13 +9461,13 @@ false,
 },
 },
 ["micro_displays_side"] = 2,
-["version"] = 3,
+["name"] = "vermin",
 ["switch_tank_in_combat"] = {
 1,
 1,
 1,
 },
-["bg_alpha"] = 0,
+["version"] = 3,
 ["fontstrings_text4_anchor"] = 4,
 ["plugins_grow_direction"] = 1,
 ["menu_alpha"] = {
@@ -9376,7 +9490,7 @@ false,
 },
 ["backdrop_texture"] = "Details Ground",
 ["hide_in_combat_alpha"] = 0,
-["bars_sort_direction"] = 1,
+["micro_displays_locked"] = false,
 ["strata"] = "LOW",
 ["libwindow"] = {
 ["y"] = -20,
@@ -9392,11 +9506,15 @@ false,
 0.07058823529411765,
 },
 },
+["row_show_animation"] = {
+["anim"] = "Fade",
+["options"] = {
+},
+},
 ["menu_anchor_down"] = {
 16,
 -3,
 },
-["bars_grow_direction"] = 1,
 ["grab_on_top"] = false,
 ["auto_hide_menu"] = {
 ["left"] = false,
@@ -9413,13 +9531,9 @@ false,
 1,
 1,
 },
-["row_show_animation"] = {
-["anim"] = "Fade",
-["options"] = {
-},
-},
+["bars_grow_direction"] = 1,
 ["auto_current"] = true,
-["micro_displays_locked"] = false,
+["skin_custom"] = "vermin",
 ["row_info"] = {
 ["show_arena_role_icon"] = false,
 ["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -9532,7 +9646,7 @@ false,
 ["textR_separator"] = "NONE",
 ["texture_custom_file"] = "Interface\\",
 },
-["name"] = "vermin",
+["bg_alpha"] = 0,
 ["hide_in_combat"] = false,
 ["switch_damager"] = {
 1,
@@ -9583,119 +9697,7 @@ false,
 },
 },
 ["last_instance_time"] = 0,
-["plugin_database"] = {
-["DETAILS_PLUGIN_TINY_THREAT"] = {
-["enabled"] = true,
-["only_my_group"] = false,
-["animate"] = false,
-["disable_gouge"] = false,
-["hide_pull_bar"] = false,
-["author"] = "Terciob",
-["playercolor"] = {
-1,
-1,
-1,
-},
-["usefocus"] = false,
-["updatespeed"] = 1,
-["playSound"] = false,
-["showamount"] = false,
-["useplayercolor"] = false,
-["absolute_mode"] = false,
-["show_party_pets"] = false,
-["playSoundFile"] = "Details Threat Warning Volume 3",
-["useclasscolors"] = false,
-},
-["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
-["enabled"] = true,
-["encounter_timers_bw"] = {
-},
-["max_emote_segments"] = 3,
-["last_section_selected"] = "main",
-["author"] = "Terciob",
-["window_scale"] = 1,
-["hide_on_combat"] = false,
-["show_icon"] = 5,
-["opened"] = 0,
-["encounter_timers_dbm"] = {
-},
-},
-["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
-["enabled"] = true,
-["author"] = "Terciob",
-["max_compares"] = 4,
-["compare_type"] = 1,
-},
-["DETAILS_PLUGIN_STREAM_OVERLAY"] = {
-["use_square_mode"] = false,
-["is_first_run"] = false,
-["grow_direction"] = "right",
-["arrow_color"] = {
-1,
-1,
-1,
-0.5,
-},
-["scale"] = 1,
-["arrow_anchor_y"] = 0,
-["minimap"] = {
-["minimapPos"] = 160,
-["radius"] = 160,
-["hide"] = true,
-},
-["row_height"] = 18,
-["arrow_anchor_x"] = 0,
-["font_color"] = {
-1,
-1,
-1,
-1,
-},
-["row_texture"] = "xVerminClean",
-["square_grow_direction"] = "right",
-["point"] = "RIGHT",
-["main_frame_strata"] = "LOW",
-["square_amount"] = 5,
-["enabled"] = false,
-["arrow_size"] = 10,
-["font_size"] = 10,
-["row_spacement"] = 19,
-["main_frame_color"] = {
-0,
-0,
-0,
-0,
-},
-["row_color"] = {
-0.443137254901961,
-0.592156862745098,
-1,
-0.480826139450073,
-},
-["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-["per_second"] = {
-["enabled"] = false,
-["point"] = "CENTER",
-["scale"] = 1,
-["font_shadow"] = true,
-["y"] = -6.103515625e-05,
-["x"] = 0.00311279296875,
-["size"] = 32,
-["update_speed"] = 0.05,
-["attribute_type"] = 1,
-},
-["use_spark"] = false,
-["x"] = -4.001220703125,
-["font_face"] = "Friz Quadrata TT",
-["square_size"] = 32,
-["y"] = -183.107162475586,
-["author"] = "Details! Team",
-["main_frame_locked"] = true,
-["main_frame_size"] = {
-249.999740600586,
-89.9999694824219,
-},
-},
+["player_stats"] = {
 },
 ["announce_deaths"] = {
 ["enabled"] = false,
@@ -9724,42 +9726,168 @@ false,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
+["debuff_uptime_spells"] = {
+["_ActorTable"] = {
+[8050] = {
+["id"] = 8050,
+["targets"] = {
+},
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
 ["pets"] = {
 },
 ["aID"] = "6409-04BC9882",
-["serial"] = "Player-6409-04BC9882",
-["buff_uptime_spells"] = {
-["tipo"] = 9,
+["interrupt_spells"] = {
 ["_ActorTable"] = {
+[8042] = {
+["id"] = 8042,
+["interrompeu_oque"] = {
+},
+["targets"] = {
+["Theramore Preserver"] = 0,
+},
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["buff_uptime_spells"] = {
+["_ActorTable"] = {
+[3219] = {
+["id"] = 3219,
+["targets"] = {
+},
+["counter"] = 0,
+},
+[2374] = {
+["id"] = 2374,
+["targets"] = {
+},
+["counter"] = 0,
+},
+[355366] = {
+["id"] = 355366,
+["targets"] = {
+},
+["counter"] = 0,
+},
 [324] = {
 ["id"] = 324,
 ["targets"] = {
 },
 ["counter"] = 0,
 },
+[355363] = {
+["id"] = 355363,
+["targets"] = {
+},
+["counter"] = 0,
 },
 },
-["tipo"] = 4,
+["tipo"] = 9,
+},
+["interrompeu_oque"] = {
+},
+["debuff_uptime"] = 0,
 ["buff_uptime_targets"] = {
 },
+["interrupt_targets"] = {
+["Theramore Preserver"] = 0,
+},
+["serial"] = "Player-6409-04BC9882",
 ["buff_uptime"] = 0,
-["classe"] = "SHAMAN",
-["nome"] = "Pitchwise",
+["interrupt"] = 0,
 ["grupo"] = true,
+["nome"] = "Pitchwise",
+["classe"] = "SHAMAN",
+["tipo"] = 4,
+["debuff_uptime_targets"] = {
+},
 ["last_event"] = 0,
 },
 {
 ["flag_original"] = 68168,
-["serial"] = "Creature-0-6414-1-85-3381-000015BD1F",
-["fight_component"] = true,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
-["tipo"] = 4,
-["monster"] = true,
-["aID"] = "3381",
+["fight_component"] = true,
 ["nome"] = "Southsea Brigand",
+["monster"] = true,
 ["last_event"] = 0,
+["aID"] = "3381",
+["serial"] = "Creature-0-6414-1-85-3381-000015BD1F",
+["tipo"] = 4,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["monster"] = true,
+["nome"] = "Sunscale Scytheclaw",
+["fight_component"] = true,
+["tipo"] = 4,
+["last_event"] = 0,
+["serial"] = "Creature-0-6414-1-85-3256-000095C460",
+["aID"] = "3256",
+},
+{
+["flag_original"] = 1298,
+["debuff_uptime_spells"] = {
+["_ActorTable"] = {
+[1777] = {
+["id"] = 1777,
+["targets"] = {
+},
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["pets"] = {
+},
+["cc_done_spells"] = {
+["_ActorTable"] = {
+[1777] = {
+["id"] = 1777,
+["targets"] = {
+["Theramore Marine"] = 0,
+},
+["counter"] = 0,
+},
+},
+["tipo"] = 9,
+},
+["classe"] = "ROGUE",
+["debuff_uptime"] = 0,
+["cc_done"] = 0,
+["debuff_uptime_targets"] = {
+},
+["grupo"] = true,
+["cc_done_targets"] = {
+["Theramore Marine"] = 0,
+},
+["nome"] = "Treaxi",
+["last_event"] = 0,
+["aID"] = "6409-04CF2155",
+["serial"] = "Player-6409-04CF2155",
+["tipo"] = 4,
+},
+{
+["flag_original"] = 68168,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["monster"] = true,
+["nome"] = "Theramore Marine",
+["fight_component"] = true,
+["tipo"] = 4,
+["last_event"] = 0,
+["serial"] = "Creature-0-6414-1-85-3385-000015C295",
+["aID"] = "3385",
 },
 },
 },
@@ -9776,9 +9904,7 @@ false,
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
+["combat_counter"] = 484,
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -9821,29 +9947,16 @@ false,
 },
 ["compressed_charts"] = {
 },
-["PhaseData"] = {
-{
-1,
-1,
-},
-["damage_section"] = {
-},
-["heal_section"] = {
-},
-["heal"] = {
-},
-["damage"] = {
-},
-},
+["data_inicio"] = 0,
 ["mapId"] = 1,
-["segments_added"] = {
-},
 ["raid_roster"] = {
 },
 ["is_challenge"] = false,
 ["spells_cast_timeline"] = {
 },
-["combat_counter"] = 484,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 0,
 0,
@@ -9865,24 +9978,37 @@ false,
 ["dead"] = 0,
 },
 },
-["data_inicio"] = 0,
+["PhaseData"] = {
+{
+1,
+1,
+},
+["damage_section"] = {
+},
+["heal_section"] = {
+},
+["heal"] = {
+},
+["damage"] = {
+},
+},
+["frags"] = {
+},
 ["start_time"] = 0,
 ["TimeData"] = {
 ["Raid Damage Done"] = {
 },
 },
-["frags"] = {
+["segments_added"] = {
 },
 },
-["cached_talents"] = {
+["announce_damagerecord"] = {
+["enabled"] = true,
+["channel"] = "SELF",
 },
 ["arena_data_headers"] = {
 },
-["coach"] = {
-["enabled"] = false,
-["welcome_panel_pos"] = {
-},
-["last_coach_name"] = false,
+["mythic_plus_log"] = {
 },
 ["announce_cooldowns"] = {
 ["enabled"] = false,

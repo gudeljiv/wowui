@@ -46,7 +46,7 @@ GMMONEY = {
 ["CLASS"] = "PALADIN",
 },
 ["Pitchwise"] = {
-["GOLD"] = 2931,
+["GOLD"] = 2832,
 ["CLASS"] = "SHAMAN",
 },
 ["Moolatz"] = {
@@ -58,7 +58,7 @@ GMMONEY = {
 ["CLASS"] = "WARLOCK",
 },
 ["Dopecure"] = {
-["GOLD"] = 21874,
+["GOLD"] = 24495,
 ["CLASS"] = "PRIEST",
 },
 ["Handrmandr"] = {
@@ -66,7 +66,7 @@ GMMONEY = {
 ["CLASS"] = "HUNTER",
 },
 ["Vermins"] = {
-["GOLD"] = 57296,
+["GOLD"] = 97296,
 ["CLASS"] = "WARRIOR",
 },
 },

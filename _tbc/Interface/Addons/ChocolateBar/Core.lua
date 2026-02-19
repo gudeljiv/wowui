@@ -45,7 +45,7 @@ local defaults = {
 	profile = {
 		petBattleHideBars = true, combatopacity = 1, scale = 1,
 		height = 21, iconSize = 0.75, moveFrames = true, adjustCenter = true,
-		strata = "BACKGROUND", barRightClick = "OPTIONS",
+		strata = "BACKGROUND", barRightClick = "BLIZZ",
 		gap = 7, textOffset = 1, moreBar = "none", moreBarDelay = 4,
 		fontPath = " ", fontSize = 12, labelColor = {r=1, g=0.82, b=0, a=1},
 		background = {
@@ -84,7 +84,7 @@ local defaults = {
 }
 
 function ChocolateBar:WoWHasEditMode()
-	return LE_EXPANSION_LEVEL_CURRENT >= LE_EXPANSION_DRAGONFLIGHT
+	return _G.C_EditMode ~= nil
 end
 
 --------
@@ -103,7 +103,8 @@ function ChocolateBar:OnInitialize()
 	debug("isNewInstall()=", self:isNewInstall())
 
 	local AceCfgDlg = LibStub("AceConfigDialog-3.0")
-	AceCfgDlg:AddToBlizOptions("ChocolateBar", "ChocolateBar")
+	local _, categoryID = AceCfgDlg:AddToBlizOptions("ChocolateBar", "ChocolateBar")
+	self.BlizzardOptionsCategoryID = categoryID
 
 	LSM:Register("statusbar", "ChocolateBar Gold", "Interface\\AddOns\\ChocolateBar\\pics\\chocolatebar")
 	LSM:Register("statusbar", "ChocolateBar Gray", "Interface\\AddOns\\ChocolateBar\\pics\\chocolatebargray")
@@ -171,14 +172,14 @@ function ChocolateBar:EnableModules()
 end
 
 function ChocolateBar:EnableModule(name)
-	ChocolateBar.modules[name]:EnableModule()	
-	
-	local subModuleOptions = ChocolateBar:GetAceOptions().args.moduleOptions.args[name].args		
+	ChocolateBar.modules[name]:EnableModule()
+
+	local subModuleOptions = ChocolateBar:GetAceOptions().args.moduleOptions.args[name].args
 	subModuleOptions.Options = ChocolateBar.modules[name].optionsExtended
 
 	-- in case the module was enabled in this seesion before but was disabled we need to enable it again
 	local obj = broker:GetDataObjectByName(name)
-	if obj then 
+	if obj then
 		ChocolateBar:EnableDataObject(name, obj)
 	end
 end
@@ -207,7 +208,7 @@ local function SetModuleEnabled(info, value)
 	local name = info[#info-1]
 	debug("SetModuleEnabled", name)
 	ChocolateBar.db.profile.moduleSettings[name].enabled = value
-	
+
 	if value then
 		ChocolateBar:EnableModule(name)
 	else
@@ -220,7 +221,7 @@ function ChocolateBar:NewModule(name, values)
 	debug("NewModule Name:", name)
 	local module = self.modules[name] or {}
 	module.defaults = values.moduleDefaults
-	
+
 	local moduleName = name
 	local baseOptions = {
 		inline = true,
@@ -243,7 +244,7 @@ function ChocolateBar:NewModule(name, values)
 			},
 		},
 	}
-	
+
 	module.options = baseOptions
 	module.optionsExtended = values.options
 	module.name = moduleName
@@ -420,7 +421,7 @@ function ChocolateBar:EnableDataObject(name, obj, noupdate)
 		end
 	end
 	obj.name = name
-	
+
 	local choco = chocolateObjects[name] or Chocolate:New(name, obj, settings, db)
 	chocolateObjects[name] = choco
 

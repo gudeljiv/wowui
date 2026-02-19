@@ -1,13 +1,10 @@
 # ChocolateBar
 
-## [v4.2.3](https://github.com/Kiatra/ChocolateBar/tree/v4.2.3) (2025-12-07)
-[Full Changelog](https://github.com/Kiatra/ChocolateBar/compare/v.4.2.1...v4.2.3) 
+## [v4.3.1](https://github.com/Kiatra/ChocolateBar/tree/v4.3.1) (2026-02-19)
+[Full Changelog](https://github.com/Kiatra/ChocolateBar/compare/v4.2.3...v4.3.1) 
 
-- Update ChocolateBar.toc  
-- add oc-version-midnight  
-- Merge branch 'master' of https://github.com/Kiatra/ChocolateBar  
-- Merge pull request #47 from KyrosKrane/master  
-    Add category to TOC   
-- Fix a harmless typo  
-- Add category to TOC  
-- Update ChocolateBar.toc  
+- Expand bar options per default  
+    Expand bar options per default so its more clear that there are options for each bar.  
+- Fix option to open blizzards option dialog  
+- TBC Buffs moving fix  
+    Fix user placed buffs moving down in TBC.  

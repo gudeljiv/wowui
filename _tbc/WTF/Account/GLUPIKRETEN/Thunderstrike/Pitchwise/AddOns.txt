@@ -59,7 +59,7 @@ GatherMate2_Data: enabled
 gmMoney: enabled
 GrimoireKeeper: enabled
 Immersion: enabled
-ItemRack: enabled
+ItemRack: disabled
 ItemRack_BankFix: enabled
 ItemRackOptions: enabled
 Leatrix_Maps: enabled
@@ -131,4 +131,4 @@ AdiBags: enabled
 AdiBags_Config: enabled
 SortBags: enabled
 Blizzard_CombatText: enabled
-QuickRack: disabled
+QuickRack: enabled

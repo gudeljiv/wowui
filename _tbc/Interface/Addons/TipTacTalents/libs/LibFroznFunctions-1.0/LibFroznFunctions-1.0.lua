@@ -9,7 +9,7 @@
 
 -- create new library
 local LIB_NAME = "LibFroznFunctions-1.0";
-local LIB_MINOR = 57; -- bump on changes
+local LIB_MINOR = 58; -- bump on changes
 
 if (not LibStub) then
 	error(LIB_NAME .. " requires LibStub.");
@@ -3246,7 +3246,13 @@ function LibFroznFunctions:RecalculateSizeOfGameTooltip(tip)
 		return;
 	end
 	
-	tip:SetPadding(tip:GetPadding());
+	local paddingRight, paddingBottom, paddingLeft, paddingTop = tip:GetPadding();
+	
+	if (self:IsSecretValue(paddingRight)) then
+		return;
+	end
+	
+	tip:SetPadding(paddingRight, paddingBottom, paddingLeft, paddingTop);
 	tip:GetWidth(); -- possible blizzard bug (tested under df 10.2.7): tooltip is sometimes invisible after SetPadding() is called in OnShow. Calling e.g. GetWidth() after SetPadding() fixes this. reproduced with addon "Total RP 3" where the player's unit tooltip isn't shown any more.
 end
 
@@ -3994,11 +4000,11 @@ end
 -- @param  newUnitID   optional. new unit id, e.g. "player", "target" or "mouseover".
 -- @return unitRecord, see LibFroznFunctions:CreateUnitRecord()
 function LibFroznFunctions:UpdateUnitRecord(unitRecord, newUnitID)
-	-- no valid unit any more (e.g. during fading out) or not the same unit
+	-- no valid unit any more (e.g. during fading out), not the same unit or unit guid is a secret value
 	local unitID = (newUnitID) or (unitRecord.id);
 	local unitGUID = UnitGUID(unitID);
 	
-	if (not unitGUID) or (unitGUID ~= unitRecord.guid) then
+	if (self:IsSecretValue(unitGUID)) or (not unitGUID) or (unitGUID ~= unitRecord.guid) then
 		return;
 	end
 	
@@ -4090,6 +4096,14 @@ function LibFroznFunctions:GetAuraDataByIndex(unitID, index, filter)
 	
 	-- since df 10.2.5
 	if (C_UnitAuras) and (C_UnitAuras.GetAuraDataByIndex) then
+		-- check if unit id is restricted for addons
+		local success = pcall(C_UnitAuras.GetAuraDataByIndex, unitID, index, filter);
+		
+		if (not success) then
+			return nil;
+		end
+		
+		-- returns the buffs/debuffs for the unit
 		return C_UnitAuras.GetAuraDataByIndex(unitID, index, filter);
 	end
 	
@@ -4144,6 +4158,14 @@ function LibFroznFunctions:ForEachAura(unitID, filter, maxCount, func, usePacked
 	
 	-- since df 10.0.0
 	if (AuraUtil) and (AuraUtil.ForEachAura) then
+		-- check if unit id is restricted for addons
+		local success = pcall(C_UnitAuras.GetAuraSlots, unitID, filter, maxCount);
+		
+		if (not success) then
+			return;
+		end
+		
+		-- iterate through unit's auras
 		local function callbackFunc(nameOrAuraData, ...)
 			if (usePackedAura) then
 				if (not nameOrAuraData) or (not nameOrAuraData.name) then
@@ -4360,12 +4382,14 @@ function LibFroznFunctions:GetPlayerGuildClubMemberInfo(unitGUID)
 			if (playerGuildClubIDCache) then
 				local playerGuildClubMemberIDs = C_Club.GetClubMembers(playerGuildClubIDCache);
 				
-				for _, playerGuildClubMemberID in ipairs(playerGuildClubMemberIDs) do
-					local playerGuildClubMemberInfo = C_Club.GetMemberInfo(playerGuildClubIDCache, playerGuildClubMemberID);
-					
-					if (playerGuildClubMemberInfo) and (playerGuildClubMemberInfo.guid) then
-						playerGuildClubMemberInfosCache[playerGuildClubMemberInfo.guid] = playerGuildClubMemberInfo;
-					end
+				if (not self:IsSecretValue(playerGuildClubMemberIDs)) then
+    				for _, playerGuildClubMemberID in ipairs(playerGuildClubMemberIDs) do
+    					local playerGuildClubMemberInfo = C_Club.GetMemberInfo(playerGuildClubIDCache, playerGuildClubMemberID);
+
+    					if (playerGuildClubMemberInfo) and (playerGuildClubMemberInfo.guid) then
+    						playerGuildClubMemberInfosCache[playerGuildClubMemberInfo.guid] = playerGuildClubMemberInfo;
+    					end
+    				end
 				end
 			end
 		end
@@ -4509,8 +4533,8 @@ end
 
 -- get record in unit cache
 function frameForDelayedInspection:GetUnitCacheRecord(unitID, unitGUID)
-	-- no unit guid
-	if (not unitGUID) then
+	-- no unit guid or unit guid is a secret value
+	if (LibFroznFunctions:IsSecretValue(unitGUID)) or (not unitGUID) then
 		return;
 	end
 	

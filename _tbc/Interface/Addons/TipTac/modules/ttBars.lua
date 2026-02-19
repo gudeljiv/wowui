@@ -148,7 +148,7 @@ local function setExtraPaddingRightForMinimumWidth(self, TT_CacheForFrames, tip,
 			if (bar:GetParent() == tip) and (bar:IsShown()) then
 				local barWidth = bar:GetWidth();
 				
-				if (barWidth > 0) then -- bar width of health bar is 0 after fading out the cast bar
+				if (not LibFroznFunctions:IsSecretValue(barWidth)) and (barWidth > 0) then -- bar width of health bar is 0 after fading out the cast bar
 					local newExtraPaddingRightForMinimumWidth = cfg.barTipMinimumWidth - barWidth + (currentDisplayParams.extraPaddingRightForMinimumWidth or 0);
 					
 					if (newExtraPaddingRightForMinimumWidth <= 0) then
@@ -305,6 +305,12 @@ local function barInitFunc(bar, tblMixin)
 		statusBarTexture:SetHorizTile(false); -- Az: 3.3.3 fix
 		statusBarTexture:SetVertTile(false);  -- Az: 3.3.3 fix
 		self:SetHeight(cfg.barHeight);
+		
+		-- set default font if font of bar in config is not valid
+		if (not LibFroznFunctions:FontExists(cfg.barFontFace)) then
+			cfg.barFontFace = nil;
+			tt:AddMessageToChatFrame("{caption:" .. MOD_NAME .. "}: {error:No valid Font set in option tab {highlight:Bars}. Switching to default Font.}");
+		end
 		
 		-- set font of bar
 		self.text:SetFont(cfg.barFontFace, cfg.barFontSize, cfg.barFontFlags);

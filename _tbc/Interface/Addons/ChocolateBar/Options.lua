@@ -1404,6 +1404,7 @@ function ChocolateBar:RegisterOptions(data, chocolateBars, modules)
 	self.db.RegisterCallback(self, "OnProfileReset", "OnProfileChanged")
 
 	AceCfgDlg:SelectGroup("ChocolateBar", "chocolates")
+	AceCfgDlg:SelectGroup("ChocolateBar", "bars")
 	AceCfgDlg:SelectGroup("ChocolateBar", "general")
 
 	for name, module in pairs(modules) do
@@ -1422,7 +1423,7 @@ function ChocolateBar:OpenOptions(chocolateBars, data, input, pluginName, module
 	end
 
 	if blizzard then
-		InterfaceOptionsFrame_OpenToCategory("ChocolateBar");
+		Settings.OpenToCategory(self.BlizzardOptionsCategoryID)
 	elseif not input or input:trim() == "" then
 		AceCfgDlg:Open("ChocolateBar")
 	else
