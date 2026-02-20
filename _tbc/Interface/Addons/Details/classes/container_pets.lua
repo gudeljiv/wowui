@@ -224,9 +224,6 @@ end
 
 function petContainer.PetScan(from)
 	Details222.Profiling.ProfileStart("petContainer.PetScan." .. from)
-	if not detailsFramework.IsAddonApocalypseWow() then
-		return
-	end
 	if (IsInRaid()) then
 		local unitIds = Details222.UnitIdCache.Raid
 		for i = 1, #unitIds do
@@ -494,9 +491,6 @@ end
 
 local bHasSchedule = false
 function Details:UpdatePets()
-	if not detailsFramework.IsAddonApocalypseWow() then
-		return
-	end
 	Details222.Profiling.ProfileStart("Details:UpdatePets")
 	bHasSchedule = false
 	petContainer.PetScan("UpdatePets")

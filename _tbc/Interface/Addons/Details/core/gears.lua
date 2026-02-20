@@ -573,10 +573,7 @@ function ilvl_core:HasQueuedInspec(unitName)
 end
 
 local inspect_frame = CreateFrame("frame")
-
-if not detailsFramework.IsAddonApocalypseWow() then
-	inspect_frame:RegisterEvent("INSPECT_READY")
-end
+inspect_frame:RegisterEvent("INSPECT_READY")
 
 local two_hand = {
 	["INVTYPE_2HWEAPON"] = true,
@@ -748,12 +745,6 @@ Details.ilevel.CalcItemLevel = ilvl_core.CalcItemLevel
 
 inspect_frame:SetScript("OnEvent", function(self, event, ...)
 	local guid = select(1, ...)
-
-	if detailsFramework.IsAddonApocalypseWow() then
-		if issecretvalue(guid) then
-			return
-		end
-	end
 
 	if (inspecting [guid]) then
 		local unitid, cancel_tread = inspecting [guid] [1], inspecting [guid] [2]

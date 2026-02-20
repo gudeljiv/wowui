@@ -4,11 +4,11 @@ local cfg = {
 	fontSize = 15,
 	fontOutline = false,
 	position = {
-		'BOTTOMRIGHT',
+		"BOTTOMRIGHT",
 		UIParent,
-		'BOTTOMRIGHT',
+		"BOTTOMRIGHT",
 		-27.35,
-		27.35
+		27.35,
 	},
 	disableFade = false, -- Can cause errors or a buggy tooltip!
 	showOnMouseover = true,
@@ -25,122 +25,109 @@ local cfg = {
 	showSpecializationIcon = false,
 	healthbar = {
 		showHealthValue = true,
-		healthFormat = '$cur / $max', -- Possible: $cur, $max, $deficit, $perc, $smartperc, $smartcolorperc, $colorperc
-		healthFullFormat = '$cur', -- if the tooltip unit has 100% hp
+		healthFormat = "$cur / $max", -- Possible: $cur, $max, $deficit, $perc, $smartperc, $smartcolorperc, $colorperc
+		healthFullFormat = "$cur", -- if the tooltip unit has 100% hp
 		fontSize = 13,
-		font = 'Fonts\\ARIALN.ttf',
+		font = "Fonts\\ARIALN.ttf",
 		showOutline = true,
-		textPos = 'CENTER', -- Possible 'TOP' 'BOTTOM' 'CENTER'
+		textPos = "CENTER", -- Possible 'TOP' 'BOTTOM' 'CENTER'
 		reactionColoring = false, -- Overrides customColor
 		customColor = {
 			apply = false,
 			r = 0,
 			g = 1,
-			b = 1
-		}
+			b = 1,
+		},
 	},
 	reaction = {
-		[1] = {182 / 255, 34 / 255, 32 / 255},
-		[2] = {182 / 255, 34 / 255, 32 / 255},
-		[3] = {182 / 255, 92 / 255, 32 / 255},
-		[4] = {220 / 225, 180 / 255, 52 / 255},
-		[5] = {132 / 255, 181 / 255, 26 / 255},
-		[6] = {132 / 255, 181 / 255, 26 / 255},
-		[7] = {132 / 255, 181 / 255, 26 / 255},
-		[8] = {132 / 255, 181 / 255, 26 / 255},
-		['grey'] = {128 / 255, 128 / 255, 128 / 255}
-	}
+		[1] = { 182 / 255, 34 / 255, 32 / 255 },
+		[2] = { 182 / 255, 34 / 255, 32 / 255 },
+		[3] = { 182 / 255, 92 / 255, 32 / 255 },
+		[4] = { 220 / 225, 180 / 255, 52 / 255 },
+		[5] = { 132 / 255, 181 / 255, 26 / 255 },
+		[6] = { 132 / 255, 181 / 255, 26 / 255 },
+		[7] = { 132 / 255, 181 / 255, 26 / 255 },
+		[8] = { 132 / 255, 181 / 255, 26 / 255 },
+		["grey"] = { 128 / 255, 128 / 255, 128 / 255 },
+	},
 }
 
-for _, tooltip in pairs(
-	{
-		GameTooltip,
-		BattlePetTooltip,
-		EmbeddedItemTooltip,
-		ItemRefTooltip,
-		ItemRefShoppingTooltip1,
-		ItemRefShoppingTooltip2,
-		ShoppingTooltip1,
-		ShoppingTooltip2,
-		DropDownList1MenuBackdrop,
-		DropDownList2MenuBackdrop,
-		ConsolidatedBuffsTooltip,
-		AutoCompleteBox,
-		ChatMenu,
-		EmoteMenu,
-		LanguageMenu,
-		VoiceMacroMenu,
-		FriendsTooltip,
-		FloatingGarrisonFollowerTooltip,
-		FloatingBattlePetTooltip,
-		FloatingPetBattleAbilityTooltip,
-		ReputationParagonTooltip,
-		LibDBIconTooltip,
-		SmallTextTooltip,
-		LibItemUpdateInfoTooltip,
-		NamePlateTooltip,
-		AtlasLootTooltip
-	}
-) do
-	xVermin.CheckIfLoadedWithTimer(
-		tooltip:GetName(),
-		function()
-			if not tooltip:HasBeautyBorder() then
-				tooltip:CreateBeautyBorder(12)
+for _, tooltip in pairs({
+	GameTooltip,
+	BattlePetTooltip,
+	EmbeddedItemTooltip,
+	ItemRefTooltip,
+	ItemRefShoppingTooltip1,
+	ItemRefShoppingTooltip2,
+	ShoppingTooltip1,
+	ShoppingTooltip2,
+	DropDownList1MenuBackdrop,
+	DropDownList2MenuBackdrop,
+	ConsolidatedBuffsTooltip,
+	AutoCompleteBox,
+	ChatMenu,
+	EmoteMenu,
+	LanguageMenu,
+	VoiceMacroMenu,
+	FriendsTooltip,
+	FloatingGarrisonFollowerTooltip,
+	FloatingBattlePetTooltip,
+	FloatingPetBattleAbilityTooltip,
+	ReputationParagonTooltip,
+	LibDBIconTooltip,
+	SmallTextTooltip,
+	LibItemUpdateInfoTooltip,
+	NamePlateTooltip,
+	AtlasLootTooltip,
+}) do
+	xVermin.CheckIfLoadedWithTimer(tooltip:GetName(), function()
+		if not tooltip:HasBeautyBorder() then
+			tooltip:CreateBeautyBorder(12)
 
-				local bgOffset, borderSize = 3, 12
-				tooltip.Background = tooltip:CreateTexture('TooltipBackground', 'BORDER')
-				tooltip.Background:SetColorTexture(0.0, 0.0, 0.0, 0.70)
-				tooltip.Background:SetPoint('TOPLEFT', tooltip, bgOffset, -bgOffset)
-				tooltip.Background:SetPoint('BOTTOMRIGHT', tooltip, -bgOffset, bgOffset)
-			end
+			local bgOffset, borderSize = 3, 12
+			tooltip.Background = tooltip:CreateTexture("TooltipBackground", "BORDER")
+			tooltip.Background:SetColorTexture(0.0, 0.0, 0.0, 0.70)
+			tooltip.Background:SetPoint("TOPLEFT", tooltip, bgOffset, -bgOffset)
+			tooltip.Background:SetPoint("BOTTOMRIGHT", tooltip, -bgOffset, bgOffset)
 		end
-	)
+	end)
 end
 
-for _, tooltip in pairs(
-	{
-		GameTooltip,
-		BattlePetTooltip,
-		EmbeddedItemTooltip,
-		ItemRefTooltip,
-		ItemRefShoppingTooltip1,
-		ItemRefShoppingTooltip2,
-		ShoppingTooltip1,
-		ShoppingTooltip2,
-		AtlasLootTooltip
-	}
-) do
-	xVermin.CheckIfLoadedWithTimer(
-		tooltip:GetName(),
-		function()
-			tooltip:HookScript(
-				'OnTooltipSetItem', 
-				function (self, ...)
-					local _, itemLink = self:GetItem()
-					if itemLink ~= nil then
-						local itemId, _, _, _, _, _, _ = GetItemInfoInstant(itemLink)
-						local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent = GetItemInfo(itemLink)
-						if itemId then
-							if itemQuality and itemQuality > 1 then
-								local r, g, b = GetItemQualityColor(itemQuality)
-								self:SetBeautyBorderTexture('white')
-								self:SetBeautyBorderColor(r, g, b)
-							elseif itemType and itemType == 'Quest' then
-								self:SetBeautyBorderTexture('white')
-								self:SetBeautyBorderColor(1, 0.964, 0, 1)
-							else 
-								self:SetBeautyBorderTexture('default')
-								self:SetBeautyBorderColor(1, 1, 1)
-							end
-						end
+for _, tooltip in pairs({
+	GameTooltip,
+	BattlePetTooltip,
+	EmbeddedItemTooltip,
+	ItemRefTooltip,
+	ItemRefShoppingTooltip1,
+	ItemRefShoppingTooltip2,
+	ShoppingTooltip1,
+	ShoppingTooltip2,
+	AtlasLootTooltip,
+}) do
+	xVermin.CheckIfLoadedWithTimer(tooltip:GetName(), function()
+		tooltip:HookScript("OnTooltipSetItem", function(self, ...)
+			local _, itemLink = self:GetItem()
+			if itemLink ~= nil then
+				local itemId, _, _, _, _, _, _ = GetItemInfoInstant(itemLink)
+				local itemName, itemLink, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, sellPrice, classID, subclassID, bindType, expacID, setID, isCraftingReagent =
+					GetItemInfo(itemLink)
+				if itemId then
+					if itemQuality and itemQuality > 1 then
+						local r, g, b = GetItemQualityColor(itemQuality)
+						self:SetBeautyBorderTexture("white")
+						self:SetBeautyBorderColor(r, g, b)
+					elseif itemType and itemType == "Quest" then
+						self:SetBeautyBorderTexture("white")
+						self:SetBeautyBorderColor(1, 0.964, 0, 1)
+					else
+						self:SetBeautyBorderTexture("default")
+						self:SetBeautyBorderColor(1, 1, 1)
 					end
 				end
-			)
-		end
-	)
+			end
+		end)
+	end)
 end
-
 
 local function SetHealthBarColor(unit)
 	local r, g, b = 0, 1, 0
@@ -149,10 +136,10 @@ local function SetHealthBarColor(unit)
 		local classColor = RAID_CLASS_COLORS[select(2, UnitClass(unit))]
 		r, g, b = classColor.r, classColor.g, classColor.b
 	end
-	
+
 	-- if UnitIsTrivial(unit) and UnitIsEnemy(unit, 'player') then
 	if UnitIsTrivial(unit) then
-		r, g, b = unpack(cfg.reaction['grey'])
+		r, g, b = unpack(cfg.reaction["grey"])
 	end
 
 	-- if cfg.healthbar.customColor.apply and not cfg.healthbar.reactionColoring then
@@ -173,15 +160,15 @@ local function HandleUnit(self, ...)
 	-- print(self:GetUnit())
 
 	if UnitExists(unit) and UnitName(unit) ~= UNKNOWN then
-		local specIcon = ''
+		local specIcon = ""
 
 		local name, realm = UnitName(unit)
-		mainSpeed, offSpeed = UnitAttackSpeed(unit);
+		mainSpeed, offSpeed = UnitAttackSpeed(unit)
 
 		if UnitIsAFK(unit) then
-			self:AppendText('|cff00ff00 <' .. CHAT_MSG_AFK .. '>|r')
+			self:AppendText("|cff00ff00 <" .. CHAT_MSG_AFK .. ">|r")
 		elseif UnitIsDND(unit) then
-			self:AppendText('|cff00ff00 <' .. DEFAULT_DND_MESSAGE .. '>|r')
+			self:AppendText("|cff00ff00 <" .. DEFAULT_DND_MESSAGE .. ">|r")
 		end
 
 		-- add attack speed
@@ -190,10 +177,10 @@ local function HandleUnit(self, ...)
 
 		-- Move the healthbar inside the tooltip
 		if GameTooltipStatusBar:IsShown() then
-			self:AddLine('                         ') -- min width empty spaces :)
+			self:AddLine("                         ") -- min width empty spaces :)
 			GameTooltipStatusBar:ClearAllPoints()
-			GameTooltipStatusBar:SetPoint('LEFT', self:GetName() .. 'TextLeft' .. self:NumLines(), 1, 0)
-			GameTooltipStatusBar:SetPoint('RIGHT', self, -10, 0)
+			GameTooltipStatusBar:SetPoint("LEFT", self:GetName() .. "TextLeft" .. self:NumLines(), 1, 0)
+			GameTooltipStatusBar:SetPoint("RIGHT", self, -10, 0)
 			-- GameTooltipStatusBar:AddTexture('Interface\\Addons\\SharedMedia\\statusbar\\Glamour2.tga')
 			SetHealthBarColor(unit)
 		end
@@ -201,22 +188,25 @@ local function HandleUnit(self, ...)
 		-- Border coloring
 		if UnitIsPlayer(unit) then
 			local classColor = RAID_CLASS_COLORS[select(2, UnitClass(unit))]
-			self:SetBeautyBorderTexture('white')
+			self:SetBeautyBorderTexture("white")
 			self:SetBeautyBorderColor(classColor.r, classColor.g, classColor.b)
 		else
-			if UnitReaction('mouseover', 'player') and UnitReaction('mouseover', 'player') > 0 and UnitReaction('mouseover', 'player') < 9 then
-				self:SetBeautyBorderTexture('white')
-				self:SetBeautyBorderColor(unpack(cfg.reaction[UnitReaction('mouseover', 'player')]))
+			if
+				UnitReaction("mouseover", "player")
+				and UnitReaction("mouseover", "player") > 0
+				and UnitReaction("mouseover", "player") < 9
+			then
+				self:SetBeautyBorderTexture("white")
+				self:SetBeautyBorderColor(unpack(cfg.reaction[UnitReaction("mouseover", "player")]))
 			end
 		end
 
 		-- Dead or ghost or trivial recoloring
 		-- if UnitIsDead(unit) or UnitIsGhost(unit) or (UnitIsTrivial(unit) and UnitIsEnemy(unit, 'player')) then
 		if UnitIsDead(unit) or UnitIsGhost(unit) or UnitIsTrivial(unit) then
-			self:SetBeautyBorderTexture('white')
-			self:SetBeautyBorderColor(unpack(cfg.reaction['grey']))
+			self:SetBeautyBorderTexture("white")
+			self:SetBeautyBorderColor(unpack(cfg.reaction["grey"]))
 		end
-
 	end
 end
 
@@ -226,14 +216,14 @@ local function HandleShow(self, ...)
 	if not self:HasBeautyBorder() then
 		self:CreateBeautyBorder(12)
 		local bgOffset, borderSize = 3, 12
-		self.Background = self:CreateTexture('TooltipBackground', 'BORDER')
+		self.Background = self:CreateTexture("TooltipBackground", "BORDER")
 		self.Background:SetColorTexture(0.0, 0.0, 0.0, 0.70)
-		self.Background:SetPoint('TOPLEFT', tooltip, bgOffset, -bgOffset)
-		self.Background:SetPoint('BOTTOMRIGHT', tooltip, -bgOffset, bgOffset)
+		self.Background:SetPoint("TOPLEFT", tooltip, bgOffset, -bgOffset)
+		self.Background:SetPoint("BOTTOMRIGHT", tooltip, -bgOffset, bgOffset)
 	end
 
-	self:SetBeautyBorderTexture('white')
-	self:SetBeautyBorderColor(unpack(cfg.reaction['grey']))
+	self:SetBeautyBorderTexture("white")
+	self:SetBeautyBorderColor(unpack(cfg.reaction["grey"]))
 end
 
 local function HandleStatusBar(self, ...)
@@ -243,20 +233,17 @@ local function HandleStatusBar(self, ...)
 	end
 end
 
-GameTooltip:HookScript('OnTooltipSetUnit', HandleUnit)
-GameTooltip:HookScript('OnUpdate', HandleStatusBar)
-ItemRefTooltip:HookScript('OnShow', HandleShow)
+GameTooltip:HookScript("OnTooltipSetUnit", HandleUnit)
+GameTooltip:HookScript("OnUpdate", HandleStatusBar)
+ItemRefTooltip:HookScript("OnShow", HandleShow)
 -- ItemRefTooltip:HookScript('OnUpdate', HandleShow)
 
-GameTooltip:HookScript(
-	'OnTooltipCleared',
-	function(self)
-		GameTooltipStatusBar:ClearAllPoints()
-		GameTooltipStatusBar:SetPoint('BOTTOMLEFT', self, 'TOPLEFT', 0.5, 3)
-		GameTooltipStatusBar:SetPoint('BOTTOMRIGHT', self, 'TOPRIGHT', -1, 3)
-		-- GameTooltipStatusBar:SetBackdropColor(0, 1, 0, 0.3)
+GameTooltip:HookScript("OnTooltipCleared", function(self)
+	GameTooltipStatusBar:ClearAllPoints()
+	GameTooltipStatusBar:SetPoint("BOTTOMLEFT", self, "TOPLEFT", 0.5, 3)
+	GameTooltipStatusBar:SetPoint("BOTTOMRIGHT", self, "TOPRIGHT", -1, 3)
+	-- GameTooltipStatusBar:SetBackdropColor(0, 1, 0, 0.3)
 
-		self:SetBeautyBorderTexture('default')
-		self:SetBeautyBorderColor(1, 1, 1)
-	end
-)
+	self:SetBeautyBorderTexture("default")
+	self:SetBeautyBorderColor(1, 1, 1)
+end)

@@ -63,24 +63,6 @@ function Details222.StartUp.StartMeUp()
 		LIB_OPEN_RAID_MYTHIC_PLUS_DND = true
 	end
 
-	if detailsFramework.IsAddonApocalypseWow() then
-		if (Details.breakdown_spell_tab.spellcontainer_headers["casts"]) then
-			Details.breakdown_spell_tab.spellcontainer_headers["casts"].enabled = false
-		end
-		if (Details.breakdown_spell_tab.spellcontainer_headers["critpercent"]) then
-			Details.breakdown_spell_tab.spellcontainer_headers["critpercent"].enabled = false
-		end
-		if (Details.breakdown_spell_tab.spellcontainer_headers["hits"]) then
-			Details.breakdown_spell_tab.spellcontainer_headers["hits"].enabled = false
-		end
-		if (Details.breakdown_spell_tab.spellcontainer_headers["castavg"]) then
-			Details.breakdown_spell_tab.spellcontainer_headers["castavg"].enabled = false
-		end
-		if (Details.breakdown_spell_tab.spellcontainer_headers["uptime"]) then
-			Details.breakdown_spell_tab.spellcontainer_headers["uptime"].enabled = false
-		end
-	end
-
 	-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	--row single click, this determines what happen when the user click on a bar
 
@@ -312,7 +294,7 @@ function Details222.StartUp.StartMeUp()
 		--need to refresh wallpaper a few frames or seconds after the game starts
 		function Details:CheckWallpaperAfterStartup()
 			if (not Details.profile_loaded) then
-				Details.Schedules.NewTimer(2, Details.CheckWallpaperAfterStartup, Details)
+				Details.Schedules.NewTimer(5, Details.CheckWallpaperAfterStartup, Details)
 			end
 
 			for instanceId = 1, Details.instances_amount do
@@ -333,10 +315,10 @@ function Details222.StartUp.StartMeUp()
 			Details.profile_loaded = nil
 		end
 
-		Details.Schedules.NewTimer(2, Details.CheckWallpaperAfterStartup, Details)
+		Details.Schedules.NewTimer(5, Details.CheckWallpaperAfterStartup, Details)
 	end
 
-	Details.Schedules.NewTimer(1, function() DetailsSwitchPanel:Hide() Details.RefreshAfterStartup(Details) end)
+	Details.Schedules.NewTimer(5, Details.RefreshAfterStartup, Details)
 
 	--start garbage collector
 	Details222.GarbageCollector.lastCollectTime = 0
@@ -467,6 +449,7 @@ function Details222.StartUp.StartMeUp()
 			end
 		end
 	end
+
 	--check is this is the first run of this version
 	if (Details.is_version_first_run) then
 		if (Details.build_counter == 13096) then
@@ -477,36 +460,12 @@ function Details222.StartUp.StartMeUp()
 		if (lowerInstanceId) then
 			lowerInstanceId = Details:GetInstance(lowerInstanceId)
 			if (lowerInstanceId) then
-				if Details.build_counter >= 14356 then
-					if not Details.righttext_simple_formatting.first_run then
-						Details:Msg("The right text has been converted to a new formatting system. You can customize it in the options window -> Bar Texts.")
-						if lowerInstanceId.use_multi_fontstrings then
-							Details.righttext_simple_formatting.enabled = false
-							Details.righttext_simple_formatting.use_alignment = true
-						else
-							Details.righttext_simple_formatting.enabled = true
-							Details.righttext_simple_formatting.use_alignment = false
-
-							local bars_show_data = lowerInstanceId.row_info.textR_show_data
-							if (not bars_show_data [3]) then --no percent
-								local template = {"%s (%s)", "%s (%s)", "%s"}
-								local profileTable = Details.righttext_simple_formatting
-								profileTable.format_tsp = template[1]
-								profileTable.format_ts = template[2]
-								profileTable.format_tp = template[3]
-							end
-						end
-
-						Details.righttext_simple_formatting.first_run = true
-					end
-				end
-
 				--check if there's changes in the size of the news string
 				if (false and Details.last_changelog_size ~= #Loc["STRING_VERSION_LOG"]) then
 					Details.last_changelog_size = #Loc["STRING_VERSION_LOG"]
 
 					if (Details.auto_open_news_window) then
-						C_Timer.After(1, function()
+						C_Timer.After(5, function()
 							Details.OpenNewsWindow()
 						end)
 					end
@@ -981,8 +940,6 @@ function Details222.StartUp.StartMeUp()
 
 	--all in one window
 	Details222.AllInOneWindow:Initialize()
-
-	Details.__initialized = true
 end
 
 Details.AddOnLoadFilesTime = _G.GetTime()

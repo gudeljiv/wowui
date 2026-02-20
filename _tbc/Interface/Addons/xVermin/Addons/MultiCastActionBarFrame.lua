@@ -12,12 +12,4 @@ xVermin.CheckIfLoadedWithTimer("MultiCastActionBarFrame and MultiBarBottomRightB
 	f:RegisterEvent("PLAYER_REGEN_DISABLED")
 	f:RegisterEvent("PLAYER_REGEN_ENABLED")
 	f:SetScript("OnEvent", UpdateMultiCastActionBarFrame)
-	-- UIParent:HookScript('OnUpdate', Update_Questie_BaseFrame)
-
-	-- hooksecurefunc(
-	-- 	'ActionButton_UpdateHotkeys',
-	-- 	function(self)
-	-- 		UpdateMultiCastActionBarFrame()
-	-- 	end
-	-- )
 end)

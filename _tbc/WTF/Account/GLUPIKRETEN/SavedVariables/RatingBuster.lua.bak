@@ -2,6 +2,10 @@
 RatingBusterDB = {
 ["namespaces"] = {
 },
+["global"] = {
+["showSum"] = false,
+["calcSum"] = false,
+},
 ["profileKeys"] = {
 ["Mxzq - Golemagg"] = "HUNTER",
 ["Dopeclaw - Living Flame"] = "Druid",
@@ -24,32 +28,32 @@ RatingBusterDB = {
 ["Jutarnjedrvo - Lone Wolf"] = "SHAMAN",
 ["Moolatz - Thunderstrike"] = "Druid",
 ["Dopesnare - Lone Wolf"] = "HUNTER",
-["Dopesnare - Thunderstrike"] = "Hunter",
+["Dopeseal - Thunderstrike"] = "Paladin",
 ["Dopesnare - Living Flame"] = "Hunter",
-["Mq - Celebras"] = "HUNTER",
 ["Doperage - Thunderstrike"] = "Warrior",
-["Dopemend - Living Flame"] = "Priest",
+["Mq - Celebras"] = "HUNTER",
+["Dopeah - Stitches"] = "SHAMAN",
 ["Vermins - Stitches"] = "WARRIOR",
-["Dopestab - Lone Wolf"] = "ROGUE",
-["Jutarnjedrvo - Living Flame"] = "Shaman",
-["Vermin - Zandalar Tribe"] = "WARRIOR",
-["Dopetrap - Lone Wolf"] = "HUNTER",
+["Dopeclaw - Thunderstrike"] = "Druid",
+["Doperage - Lone Wolf"] = "WARRIOR",
+["Dopede - Stitches"] = "SHAMAN",
+["Dopeclaw - Lone Wolf"] = "DRUID",
 ["Battitude - Zandalar Tribe"] = "ROGUE",
-["Handrmandr - Thunderstrike"] = "Hunter",
-["Doperage - Living Flame"] = "Warrior",
+["Dopebolt - Living Flame"] = "Mage",
 ["Pitchwise - Thunderstrike"] = "Shaman",
 ["Vermin - Celebras"] = "WARRIOR",
 ["Turbonac - Celebras"] = "Warlock",
+["Doperage - Living Flame"] = "Warrior",
 ["Battlenac - Zandalar Tribe"] = "PRIEST",
 ["Dopecoil - Thunderstrike"] = "Warlock",
-["Dopebolt - Living Flame"] = "Mage",
-["Dopeclaw - Lone Wolf"] = "DRUID",
-["Dopede - Stitches"] = "SHAMAN",
-["Doperage - Lone Wolf"] = "WARRIOR",
-["Dopeclaw - Thunderstrike"] = "Druid",
-["Dopeah - Stitches"] = "SHAMAN",
+["Handrmandr - Thunderstrike"] = "Hunter",
+["Dopetrap - Lone Wolf"] = "HUNTER",
+["Vermin - Zandalar Tribe"] = "WARRIOR",
+["Jutarnjedrvo - Living Flame"] = "Shaman",
+["Dopestab - Lone Wolf"] = "ROGUE",
+["Dopemend - Living Flame"] = "Priest",
 ["Dopeclaw - Stitches"] = "DRUID",
-["Dopeseal - Thunderstrike"] = "Paladin",
+["Dopesnare - Thunderstrike"] = "Hunter",
 ["Vermins - Thunderstrike"] = "Warrior",
 },
 ["profiles"] = {
@@ -65,25 +69,25 @@ RatingBusterDB = {
 },
 ["Mage"] = {
 },
-["Paladin"] = {
+["Warrior"] = {
 },
 ["PRIEST"] = {
 },
-["Warlock"] = {
+["SHAMAN"] = {
 },
-["Druid"] = {
+["Warlock"] = {
 },
 ["WARLOCK"] = {
 },
-["DRUID"] = {
+["Hunter"] = {
 },
 ["Priest"] = {
 },
-["Hunter"] = {
+["DRUID"] = {
 },
-["SHAMAN"] = {
+["Druid"] = {
 },
-["Warrior"] = {
+["Paladin"] = {
 },
 },
 }

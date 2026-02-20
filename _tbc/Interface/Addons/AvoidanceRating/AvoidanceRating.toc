@@ -1,0 +1,8 @@
+## Interface: 20501
+## Title: AvoidanceRating
+## Version: 1.1
+## Author: Walord
+## Notes: Calculates your total Avoidance Rating
+## DefaultState: enabled
+
+AvoidanceRating.lua

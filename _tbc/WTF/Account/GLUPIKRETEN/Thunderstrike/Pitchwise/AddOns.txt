@@ -1,7 +1,7 @@
 nBuff: disabled
 nMainbar: disabled
 nMinimap: enabled
-SpellActivationOverlay: enabled
+SpellActivationOverlay: disabled
 !Beautycase: enabled
 !Colorz: enabled
 DBM-Core: enabled
@@ -59,7 +59,7 @@ GatherMate2_Data: enabled
 gmMoney: enabled
 GrimoireKeeper: enabled
 Immersion: enabled
-ItemRack: disabled
+ItemRack: enabled
 ItemRack_BankFix: enabled
 ItemRackOptions: enabled
 Leatrix_Maps: enabled
@@ -131,4 +131,4 @@ AdiBags: enabled
 AdiBags_Config: enabled
 SortBags: enabled
 Blizzard_CombatText: enabled
-QuickRack: enabled
+QuickRack: disabled

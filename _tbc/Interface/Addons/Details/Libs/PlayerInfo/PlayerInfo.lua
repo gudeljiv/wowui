@@ -757,34 +757,9 @@ for i = 1, 4 do
     partyUnitIdStringCache[i] = "party" .. i
 end
 
-local refreshCacheUnitId
-local waitSecretDropTicker
-local startWaitSecretDrop = function()
-    if not waitSecretDropTicker then
-        waitSecretDropTicker = C_Timer.NewTicker(1, function(ticker)
-            local stateCombat = C_RestrictedActions.GetAddOnRestrictionState(Enum.AddOnRestrictionType.Combat)
-            if stateCombat == 0 then
-                refreshCacheUnitId()
-                waitSecretDropTicker:Cancel()
-                waitSecretDropTicker = nil
-            end
-        end)
-    end
-end
-
---/dump "" .. (issecretvalue(UnitName("player")) and "true" or "false") .. (issecretvalue(UnitName("party1")) and " true" or " false")
-
 ---@type table<string, string> [unitId] = playerName
 local cacheUnitId = {}
-refreshCacheUnitId = function()
-    if issecretvalue and IsInGroup() then
-        local stateCombat = C_RestrictedActions.GetAddOnRestrictionState(Enum.AddOnRestrictionType.Combat)
-        if stateCombat > 0 then
-            startWaitSecretDrop()
-            return
-        end
-    end
-
+local refreshCacheUnitId = function()
     wipe(cacheUnitId)
 
     local amountPlayersInGroup = GetNumGroupMembers()

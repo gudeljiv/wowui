@@ -160,22 +160,37 @@ aoe_casting.text:SetTextColor(1, 1, 1, 1)
 aoe_casting.text:SetShadowColor(0, 0, 0, 1.0)
 aoe_casting.text:SetShadowOffset(2, -2)
 
-local aoe_number, aoe_casting_number
-
-UIParent:HookScript("OnUpdate", function()
-	-- local red, green, blue, alpha = RotationFrame_AOERANGECASTING:GetBackdropColor()
-	-- ChatFrame7:AddMessage(xVermin.Round(red, 2) .. ' ' .. xVermin.Round(green, 2) .. ' ' .. xVermin.Round(blue, 2))
-
+local haveBuff = false
+local buffFrame = CreateFrame("Frame")
+buffFrame:RegisterEvent("UNIT_AURA")
+buffFrame:SetScript("OnEvent", function(self, event, unit)
+	if unit ~= "player" then
+		return
+	end
 	haveBuff = false
-
 	for buff in pairs(buffs) do
 		for i = 1, 40 do
 			local B = UnitBuff("player", i)
-			if B and B == buff then
+			if not B then
+				break
+			end
+			if B == buff then
 				haveBuff = true
 			end
 		end
 	end
+end)
+
+local aoe_number, aoe_casting_number
+local elapsed = 0
+local updater = CreateFrame("Frame")
+
+updater:SetScript("OnUpdate", function(self, dt)
+	elapsed = elapsed + dt
+	if elapsed < 1 then
+		return
+	end
+	elapsed = 0
 
 	aoe_number = 0
 	aoe_casting_number = 0

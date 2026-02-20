@@ -160,33 +160,35 @@ local function Refresh()
 			end
 		end
 
-		UIParent:HookScript("OnUpdate", function()
-			local name, duration, expirationTime
-			local player_buffs = {}
-
-			if InCombatLockdown() then
+		local f = CreateFrame("Frame")
+		f:RegisterEvent("UNIT_AURA")
+		f:SetScript("OnEvent", function(self, event, unit)
+			if unit ~= "player" then
 				return
 			end
+
+			local player_buffs = {}
 
 			for index, buff in pairs(buffs) do
 				if IsSpellKnownOrOverridesKnown(buff.spell_id) then
 					buff.found = false
 					for i = 1, 40 do
-						name, _, _, _, duration, expirationTime = UnitBuff("player", i)
+						local name, _, _, _, duration, expirationTime = UnitBuff("player", i)
+						if not name then
+							break
+						end -- no need to keep scanning after nil
 						if name == buff.name then
-							buff.found = true
 							local timeRemaining = expirationTime - GetTime()
-							buff.timeRemaining = timeRemaining
-							if timeRemaining <= 30 then
-								buff.found = false
+							if timeRemaining > 30 then
+								buff.found = true
 							end
+							break
 						end
 					end
 				end
 			end
 
 			for index, buff in pairs(buffs) do
-				-- print(buff.short_name .. " found: " .. tostring(buff.found), buff.spell_id)
 				if IsSpellKnownOrOverridesKnown(buff.spell_id) then
 					if not buff.found then
 						table.insert(player_buffs, buff.short_name)
@@ -196,13 +198,13 @@ local function Refresh()
 				end
 			end
 
-			for i, short_name in pairs(player_buffs) do
+			for i, short_name in ipairs(player_buffs) do
 				local x = (i - 1) * shift
-				local f = _G["buffbutton_" .. short_name]
-				if f then
-					f:ClearAllPoints()
-					f:SetPoint("BOTTOMRIGHT", SUFUnitplayer, "TOPRIGHT", x, 70)
-					f:Show()
+				local btn = _G["buffbutton_" .. short_name]
+				if btn then
+					btn:ClearAllPoints()
+					btn:SetPoint("BOTTOMRIGHT", SUFUnitplayer, "TOPRIGHT", x, 70)
+					btn:Show()
 				end
 			end
 		end)

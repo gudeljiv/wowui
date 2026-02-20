@@ -101,58 +101,50 @@ DF:Mixin(DropDownMetaFunctions, DF.Language.LanguageMixin)
 		--unknown
 	end
 
---[=[
-	set and get members using dot.
-	Example:
-		local myDropdown = DF:CreateDropdown(parent, func)
-		myDropdown.shown return true if the dropdown is shown
-		myDropdown.width adjust the width of the dropdown frame
---]=]
-
 ------------------------------------------------------------------------------------------------------------
 --members
 	--selected value
-	local gmemberValue = function(object) -- dropdown.value
+	local gmemberValue = function(object)
 		return object:GetValue()
 	end
 
 	--tooltip
-	local gmemberTooltip = function(object) -- dropdown.tooltip
+	local gmemberTooltip = function(object)
 		return object:GetTooltip()
 	end
 
 	--shown
-	local gmemberShown = function(object) -- dropdown.shown
+	local gmemberShown = function(object)
 		return object:IsShown()
 	end
 
 	--frame width
-	local gmemberWidth = function(object) -- dropdown.width
+	local gmemberWidth = function(object)
 		return object.button:GetWidth()
 	end
 
 	--frame height
-	local gmemberHeight = function(object) -- dropdown.height
+	local gmemberHeight = function(object)
 		return object.button:GetHeight()
 	end
 
 	--current text
-	local gmemberText = function(object) -- dropdown.text
+	local gmemberText = function(object)
 		return object.label:GetText()
 	end
 
 	--menu creation function
-	local gmemberFunction = function(object) -- dropdown.func
+	local gmemberFunction = function(object)
 		return object:GetFunction()
 	end
 
 	--menu width
-	local gmemberMenuWidth = function(object) -- dropdown.menuwidth
+	local gmemberMenuWidth = function(object)
 		return rawget(object, "realsizeW")
 	end
 
 	--menu height
-	local gmemberMenuHeight = function(object) -- dropdown.menuheight
+	local gmemberMenuHeight = function(object)
 		return rawget(object, "realsizeH")
 	end
 
@@ -184,12 +176,12 @@ DF:Mixin(DropDownMetaFunctions, DF.Language.LanguageMixin)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 	--tooltip
-	local smemberTooltip = function(object, value) -- dropdown.tooltip
+	local smemberTooltip = function(object, value)
 		return object:SetTooltip(value)
 	end
 
 	--show
-	local smemberShow = function(object, value) -- dropdown.show
+	local smemberShow = function(object, value)
 		if (value) then
 			return object:Show()
 		else
@@ -198,7 +190,7 @@ DF:Mixin(DropDownMetaFunctions, DF.Language.LanguageMixin)
 	end
 
 	--hide
-	local smemberHide = function(object, value) -- dropdown.hide
+	local smemberHide = function(object, value)
 		if (not value) then
 			return object:Show()
 		else
@@ -207,27 +199,27 @@ DF:Mixin(DropDownMetaFunctions, DF.Language.LanguageMixin)
 	end
 
 	--frame width
-	local smemberWidth = function(object, value) -- dropdown.width
+	local smemberWidth = function(object, value)
 		return object.dropdown:SetWidth(value)
 	end
 
 	--frame height
-	local smemberHeight = function(object, value) -- dropdown.height
+	local smemberHeight = function(object, value)
 		return object.dropdown:SetHeight(value)
 	end
 
 	--menu creation function
-	local smemberFunction = function(object, value) -- dropdown.func
+	local smemberFunction = function(object, value)
 		return object:SetFunction(value)
 	end
 
 	--menu width
-	local smemberMenuWidth = function(object, value) -- dropdown.menuwidth
+	local smemberMenuWidth = function(object, value)
 		object:SetMenuSize(value, nil)
 	end
 
 	--menu height
-	local smemberMenuHeight = function(object, value) -- dropdown.menuheight
+	local smemberMenuHeight = function(object, value)
 		object:SetMenuSize(nil, value)
 	end
 
@@ -258,7 +250,6 @@ end
 
 
 --menu width and height
---example: Set the menu size to 451x500: dropdown:SetMenuSize(451, 500)
 	function DropDownMetaFunctions:SetMenuSize(width, height)
 		if (width) then
 			rawset(self, "realsizeW", width)
@@ -268,13 +259,11 @@ end
 		end
 	end
 
---get menu width and height
 	function DropDownMetaFunctions:GetMenuSize()
 		return rawget(self, "realsizeW"), rawget(self, "realsizeH")
 	end
 
 --function
---the function that creates the menu options, example: dropdown:SetFunction(function(self) return {} end)
 	function DropDownMetaFunctions:SetFunction(func)
 		return rawset(self, "func", func)
 	end
@@ -283,8 +272,7 @@ end
 		return rawget(self, "func")
 	end
 
---set the selected value in the dropdown
---normally the value is set when selecting an option in the dropdown, use: dropdown:SetValue(value) to manually select
+--value
 	function DropDownMetaFunctions:GetValue()
 		return rawget(self, "myvalue")
 	end
@@ -294,7 +282,6 @@ end
 	end
 
 --frame levels
---usage: set the frame level to +3 relative to UIParent: dropdown:SetFrameLevel(3, UIParent)
 	function DropDownMetaFunctions:SetFrameLevel(level, frame)
 		if (not frame) then
 			return self.dropdown:SetFrameLevel(level)
@@ -305,12 +292,10 @@ end
 	end
 
 --enabled
---is the dropdown enabled?: dropdown:IsEnabled(); use dropdown:Disable() and dropdown:Enable() to change the state
 	function DropDownMetaFunctions:IsEnabled()
 		return self.dropdown:IsEnabled()
 	end
 
---enabled the dropdown: dropdown:Enable()
 	function DropDownMetaFunctions:Enable()
 		self:SetAlpha(1)
 		rawset(self, "lockdown", false)
@@ -324,7 +309,6 @@ end
 		end
 	end
 
---disable the dropdown: dropdown:Disable()
 	function DropDownMetaFunctions:Disable()
 		self:SetAlpha(.4)
 		rawset(self, "lockdown", true)
@@ -338,7 +322,7 @@ end
 		end
 	end
 
---fixed value, is a value that is set by dropdown:SetFixedParameter(any) and is sent as 2nd argument to the callback function of the options, the value is the same no matter which option is selected
+--fixed value
 	function DropDownMetaFunctions:SetFixedParameter(value)
 		rawset(self, "FixedValue", value)
 	end
@@ -364,14 +348,12 @@ local isOptionVisible = function(self, thisOption)
 end
 
 --return a table containing all frames of options in the menu
---get frames used in the menu of the dropdown: dropdown:GetMenuFrames()
 function DropDownMetaFunctions:GetMenuFrames() --not tested
 	if (self.MyObject) then
 		self = self.MyObject
 	end
 	return self.menus
 end
-
 
 function DropDownMetaFunctions:GetFrameForOption(optionsTable, value) --not tested
 	if (self.MyObject) then
@@ -391,7 +373,6 @@ function DropDownMetaFunctions:GetFrameForOption(optionsTable, value) --not test
 	end
 end
 
---rebuild the options menu, options are dynamic and may change, example: refresh the dropdown: dropdown:Refresh()
 function DropDownMetaFunctions:Refresh()
 	assert(type(self.func) == "function", "Dropdown without options initializator function, check 2nd parameter (function) on CreateDropdown().")
 	local state, optionsTable = xpcall(self.func, geterrorhandler(), self)
@@ -411,7 +392,6 @@ function DropDownMetaFunctions:Refresh()
 	return true
 end
 
---this is called internally and isn't a user api
 function DropDownMetaFunctions:NoOptionSelected()
 	if (self.no_options) then
 		return
@@ -432,7 +412,6 @@ function DropDownMetaFunctions:NoOptionSelected()
 	self.last_select = nil
 end
 
---this is called internally and isn't a user api
 function DropDownMetaFunctions:NoOption(state)
 	if (state) then
 		self:Disable()
@@ -472,15 +451,12 @@ local canRunCallbackFunctionForOption = function(canRunCallback, optionTable, dr
 	end
 end
 
---set the selected value in the dropdown after a short delay
---example: select the option "option name" on the dropdown aftert a small delay: dropdown:SelectDelayed("option name", false, false, true)
 function DropDownMetaFunctions:SelectDelayed(optionName, byOptionNumber, bOnlyShown, runCallback)
 	DF.Schedules.After(DF.Math.RandomFraction(0.016, 0.3), function()
 		self:Select(optionName, byOptionNumber, bOnlyShown, runCallback)
 	end)
 end
 
---set the selected value in the dropdown, example: select the option "option name" on the dropdown: dropdown:Select("option name", false, false, true)
 ---if bOnlyShown is true it'll first create a table with visible options that has .shown and then select in this table the index passed (if byOptionNumber)
 ---@param optionName string value or string shown in the name of the option
 ---@param byOptionNumber number the option name is considered a number and selects the index of the menu
@@ -567,9 +543,6 @@ function DropDownMetaFunctions:Select(optionName, byOptionNumber, bOnlyShown, ru
 	return false
 end
 
---when there is no option, an icon and text is shown in the dropdown
---this function set a new text and a new icon
---example: set the empty text and icon of the dropdown: dropdown:SetEmptyTextAndIcon("no options available", "Interface\\COMMON\\UI-ModelControlPanel")
 function DropDownMetaFunctions:SetEmptyTextAndIcon(text, icon)
 	if (text) then
 		self.empty_text = text

@@ -43,8 +43,9 @@ Postal3DB = {
 "Moolatz|Thunderstrike|Horde|28|DRUID",
 "Mq|Celebras|Alliance|26|HUNTER",
 "Mxzq|Golemagg|Horde|35|HUNTER",
-"Pitchwise|Thunderstrike|Horde|16|SHAMAN",
+"Pitchwise|Thunderstrike|Horde|17|SHAMAN",
 "Poklopac|Thunderstrike|Horde|15|SHAMAN",
+"Testvermin|Thunderstrike|Horde|1|ROGUE",
 "Turbonac|Celebras|Alliance|7|WARLOCK",
 "Vbank|Celebras|Alliance|1|WARRIOR",
 "Vermins|Stitches|Horde|27|WARRIOR",
@@ -61,6 +62,7 @@ Postal3DB = {
 ["Vbank - Celebras"] = "Vbank - Celebras",
 ["Dopesick - Stitches"] = "Dopesick - Stitches",
 ["Dopenac - Lone Wolf"] = "Dopenac - Lone Wolf",
+["Testvermin - Thunderstrike"] = "Testvermin - Thunderstrike",
 ["Dopetrap - Living Flame"] = "Dopetrap - Living Flame",
 ["Dopecure - Stitches"] = "Dopecure - Stitches",
 ["Dopemend - Lone Wolf"] = "Dopemend - Lone Wolf",
@@ -87,10 +89,10 @@ Postal3DB = {
 ["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 ["Dopebolt - Living Flame"] = "Dopebolt - Living Flame",
-["Pitchwise - Thunderstrike"] = "Pitchwise - Thunderstrike",
-["Turbonac - Celebras"] = "Turbonac - Celebras",
 ["Doperage - Living Flame"] = "Doperage - Living Flame",
 ["Vermin - Celebras"] = "Vermin - Celebras",
+["Pitchwise - Thunderstrike"] = "Pitchwise - Thunderstrike",
+["Turbonac - Celebras"] = "Turbonac - Celebras",
 ["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
 ["Dopecoil - Thunderstrike"] = "Dopecoil - Thunderstrike",
 ["Handrmandr - Thunderstrike"] = "Handrmandr - Thunderstrike",
@@ -140,6 +142,8 @@ Postal3DB = {
 },
 ["Dopenac - Lone Wolf"] = {
 },
+["Testvermin - Thunderstrike"] = {
+},
 ["Dopetrap - Living Flame"] = {
 },
 ["Dopecure - Stitches"] = {
@@ -166,7 +170,6 @@ Postal3DB = {
 },
 },
 ["Dopecure - Thunderstrike"] = {
-["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Pitchwise|Thunderstrike|Horde",
@@ -177,6 +180,7 @@ Postal3DB = {
 "Dopecoil|Thunderstrike|Horde",
 },
 },
+["OpenSpeed"] = 0,
 },
 ["Dopedot - Lone Wolf"] = {
 },
@@ -284,10 +288,6 @@ Postal3DB = {
 },
 ["Dopebolt - Living Flame"] = {
 },
-["Pitchwise - Thunderstrike"] = {
-},
-["Turbonac - Celebras"] = {
-},
 ["Doperage - Living Flame"] = {
 },
 ["Vermin - Celebras"] = {
@@ -299,9 +299,19 @@ Postal3DB = {
 },
 },
 },
+["Pitchwise - Thunderstrike"] = {
+["BlackBook"] = {
+["recent"] = {
+"Dopecure|Thunderstrike|Horde",
+},
+},
+},
+["Turbonac - Celebras"] = {
+},
 ["Battlenac - Zandalar Tribe"] = {
 },
 ["Dopecoil - Thunderstrike"] = {
+["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Dopecure|Thunderstrike|Horde",
@@ -311,6 +321,12 @@ Postal3DB = {
 },
 },
 ["Handrmandr - Thunderstrike"] = {
+["BlackBook"] = {
+["recent"] = {
+"Dopecure|Thunderstrike|Horde",
+},
+},
+["OpenSpeed"] = 0,
 },
 ["Dopede - Stitches"] = {
 ["BlackBook"] = {

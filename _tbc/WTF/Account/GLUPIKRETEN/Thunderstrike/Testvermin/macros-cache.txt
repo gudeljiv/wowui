@@ -1,0 +1,13 @@
+VER 3 0100000000000001 "att1" "Inv_misc_questionmark"
+#showtooltip
+/startattack
+/use Backstab
+END
+VER 3 0100000000000002 "att2" "Inv_misc_questionmark"
+#showtooltip
+/use Backstab
+END
+VER 3 0100000000000003 "tease" "Inv_misc_questionmark"
+#showtooltip
+/cast Feint
+END
