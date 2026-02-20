@@ -1,4 +1,13 @@
-﻿2.5.05 - 8th February 2026
+﻿2.5.09 - 20th February 2026
+- Released again due to another packaging issue with CurseForge (second one now).
+- Recommend you keep the addon updated using CurseForge App as it works perfectly.  Downloading updates from the CurseForge website is still an issue because it is not currently tagging BCC releases correctly.
+
+2.5.07 - 18th February 2026
+- For 'Enhance tooltip' ('Interface'), fixed an issue which caused the game settings tooltips to be scaled incorrectly.
+- For 'Class colored frames' ('Frames'), the target frame setting will now apply to the focus frame too.
+- For 'Hide gryphons' ('Frames'), fixed an issue which may have caused it not to work depending on Edit Mode action bar configuration.
+
+2.5.05 - 8th February 2026
 - For 'Automate quests' ('Automation'), excluded lots of NPCs from automation (escort quests, repeatable quests, etc).
 - For 'Mute game sounds' ('System'), updated the sound file ID for the 'Login' setting.
 

@@ -2097,6 +2097,7 @@ do
 		-------------------------
 		-- Substitution Lookup --
 		-------------------------
+		local statText = ""
 		if not found then
 			text, length = trimPrefixes(text, addon.IgnoreSum)
 			offset = offset + length
@@ -2109,7 +2110,8 @@ do
 
 			-- Replace numbers with %s
 			local valuePositions = {}
-			local statText, count = text:gsub(numberPattern, function(match, position)
+			local count = 0
+			statText, count = text:gsub(numberPattern, function(match, position)
 				match = match:gsub(large_sep, ""):gsub(dec_sep, ".")
 				local value = tonumber(match)
 				if value then
@@ -2179,6 +2181,7 @@ do
 			-- it might be a missing stat we want to add.
 			if not found then
 				log(rawText, "Fail", "Missed")
+				log(statText, "Fail", "Missed")
 			end
 		end
 

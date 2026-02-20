@@ -51,9 +51,9 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:0
+#showtooltip item:3730
 /cast feed pet
-/use item:0
+/use item:3730
 END
 VER 3 0000000000000041 "prospect" "134400"
 #showtooltip Prospecting
@@ -61,7 +61,7 @@ VER 3 0000000000000041 "prospect" "134400"
 /use Copper Ore
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Torek
+/targetexact Torm Ragetotem
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"

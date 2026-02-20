@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 2.5.06 (11th February 2026)
+-- 	Leatrix Plus 2.5.09 (20th February 2026)
 ----------------------------------------------------------------------
 
 --	01:Functions 02:Locks   03:Restart 40:Player   45:Rest
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "2.5.06"
+	LeaPlusLC["AddonVer"] = "2.5.09"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -3097,17 +3097,28 @@
 					local c = LeaPlusLC["RaidColors"][select(2, UnitClass("target"))]
 					if c then TargetFrameNameBackground:SetVertexColor(c.r, c.g, c.b) end
 				end
+				if UnitIsPlayer("focus") then
+					local c = LeaPlusLC["RaidColors"][select(2, UnitClass("focus"))]
+					if c then FocusFrameNameBackground:SetVertexColor(c.r, c.g, c.b) end
+				end
 			end
 
 			local ColTar = CreateFrame("FRAME")
 			ColTar:SetScript("OnEvent", TargetFrameCol) -- Events are registered if target option is enabled
+
+			-- Refresh color if focus frame size changes
+			hooksecurefunc(FocusFrame, "SetSmallSize", function()
+				if LeaPlusLC["ClassColTarget"] == "On" then
+					TargetFrameCol()
+				end
+			end)
 
 			-- Create configuration panel
 			local ClassFrame = LeaPlusLC:CreatePanel("Class colored frames", "ClassFrame")
 
 			LeaPlusLC:MakeTx(ClassFrame, "Settings", 16, -72)
 			LeaPlusLC:MakeCB(ClassFrame, "ClassColPlayer", "Show player frame in class color", 16, -92, false, "If checked, the player frame background will be shown in class color.")
-			LeaPlusLC:MakeCB(ClassFrame, "ClassColTarget", "Show target frame in class color", 16, -112, false, "If checked, the target frame background will be shown in class color.")
+			LeaPlusLC:MakeCB(ClassFrame, "ClassColTarget", "Show target frame and focus frame in class color", 16, -112, false, "If checked, the target frame background and focus frame background will be shown in class color.")
 
 			-- Help button hidden
 			ClassFrame.h:Hide()
@@ -3126,15 +3137,17 @@
 				else
 					PlayFN:Hide()
 				end
-				-- Target frame
+				-- Target and focus frames
 				if LeaPlusLC["ClassColTarget"] == "On" then
 					ColTar:RegisterEvent("GROUP_ROSTER_UPDATE")
 					ColTar:RegisterEvent("PLAYER_TARGET_CHANGED")
+					ColTar:RegisterEvent("PLAYER_FOCUS_CHANGED")
 					ColTar:RegisterEvent("UNIT_FACTION")
 					TargetFrameCol()
 				else
 					ColTar:UnregisterAllEvents()
-					TargetFrame:CheckFaction() -- Reset target frame colors
+					TargetFrame.CheckFaction(TargetFrame) -- Reset target frame colors
+					TargetFrame.CheckFaction(FocusFrame) -- Reset focus frame colors
 				end
 			end
 
@@ -3515,8 +3528,13 @@
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["NoGryphons"] == "On" and not LeaLockList["NoGryphons"] then
-			MainMenuBarLeftEndCap:Hide();
-			MainMenuBarRightEndCap:Hide();
+
+			-- Different textures depending on hiding bar scrolling in Edit Mode settings
+			MainMenuBarLeftEndCap:Hide()
+			MainMenuBarRightEndCap:Hide()
+			MainActionBar.EndCaps.LeftEndCap:Hide()
+			MainActionBar.EndCaps.RightEndCap:Hide()
+
 		end
 
 		----------------------------------------------------------------------
@@ -10680,9 +10698,6 @@
 				-- Nameplate tooltip
 				if NamePlateTooltip then NamePlateTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"]) end
 
-				-- Game settings panel tooltip
-				if SettingsTooltip then SettingsTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"]) end
-
 				-- LibDBIcon
 				if LibDBIconTooltip then LibDBIconTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"]) end
 
@@ -10711,6 +10726,15 @@
 			-- Set tooltip scale when slider or checkbox changes and on startup
 			LeaPlusCB["LeaPlusTipSize"]:HookScript("OnValueChanged", SetTipScale)
 			SetTipScale()
+
+			----------------------------------------------------------------------
+			-- Blizzard Settings tooltip
+			----------------------------------------------------------------------
+
+			-- Set tooltip scale when tooltip is shown
+			SettingsTooltip:HookScript("OnShow", function()
+				SettingsTooltip:SetScale(LeaPlusLC["LeaPlusTipSize"] * UIParent:GetScale())
+			end)
 
 			---------------------------------------------------------------------------------------------------------
 			-- Other tooltip code
@@ -13594,15 +13618,17 @@
 				return
 			elseif str == "tooltip" then
 				-- Print tooltip frame name
-				local enumf = EnumerateFrames()
-				while enumf do
-					if (enumf:GetObjectType() == "GameTooltip" or strfind((enumf:GetName() or ""):lower(),"tip")) and enumf:IsVisible() and enumf:GetPoint() then
-						print(enumf:GetName())
+				pcall(function()
+					local enumf = EnumerateFrames()
+					while enumf do
+						if (enumf:GetObjectType() == "GameTooltip" or strfind((enumf:GetName() or ""):lower(),"tip")) and enumf:IsVisible() and enumf:GetPoint() then
+							print(enumf:GetName())
+						end
+						enumf = EnumerateFrames(enumf)
 					end
-					enumf = EnumerateFrames(enumf)
-				end
-				collectgarbage()
-				return
+					collectgarbage()
+					return
+				end)
 			elseif str == "rsnd" then
 				-- Restart sound system
 				if LeaPlusCB["StopMusicBtn"] then LeaPlusCB["StopMusicBtn"]:Click() end

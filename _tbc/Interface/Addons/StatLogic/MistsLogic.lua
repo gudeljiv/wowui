@@ -1056,8 +1056,15 @@ if addon.class == "DRUID" then
 			},
 		},
 		["ADD_AGI_MOD_INT"] = {
-			-- Passive: Killer Instinct
+			-- Passive: Killer Instinct (Bear Form)
 			{
+				["aura"] = 5487,
+				["known"] = 108299,
+				["value"] = 1,
+			},
+			-- Passive: Killer Instinct (Cat Form)
+			{
+				["aura"] = 768,
 				["known"] = 108299,
 				["value"] = 1,
 			},

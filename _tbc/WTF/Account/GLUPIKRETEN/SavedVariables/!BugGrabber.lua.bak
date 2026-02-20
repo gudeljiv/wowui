@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 14049,
+["session"] = 14055,
 ["errors"] = {
 {
 ["message"] = "Interface/AddOns/TomTom/TomTom_Waypoints.lua:442: HereBeDragons-Pins-2.0: AddMinimapIconMap: 'uiMapID', 'x' and 'y' must be numbers",

@@ -23,6 +23,12 @@ local statPatternMeta = {
 	end
 }
 
+local lowerMeta = {
+	__newindex = function(t, k, v)
+		rawset(t, k:utf8lower(), v)
+	end,
+}
+
 -----------------------
 -- Whole Text Lookup --
 -----------------------
@@ -135,7 +141,7 @@ setPrefixPatterns(trimmedPrefixes, addon.TrimmedPrefixes)
 
 -- Patterns that should be matched for breakdowns, but ignord for summaries
 ---@type table<string, true>
-addon.IgnoreSum = setmetatable({}, statPatternMeta)
+addon.IgnoreSum = setmetatable({}, lowerMeta)
 
 local ignoreSumPrefixes = {
 	ITEM_SPELL_TRIGGER_ONUSE, -- "Use:"
@@ -339,6 +345,6 @@ end
 ---------------------
 -- Iterates all patterns, matching the whole string. Expensive so try not to use.
 -- Used to reduce noise while debugging missing patterns
-addon.PreScanPatterns = setmetatable({}, statPatternMeta)
+addon.PreScanPatterns = setmetatable({}, lowerMeta)
 local itemSetNamePattern = ITEM_SET_NAME:gsub("%%%d?%$?s", ".+"):gsub("%%%d?%$?d", "%%d+"):gsub("[()]", "%%%1")
 addon.PreScanPatterns[itemSetNamePattern] = false
