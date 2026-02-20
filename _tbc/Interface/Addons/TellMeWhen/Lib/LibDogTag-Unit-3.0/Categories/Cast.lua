@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-Unit-3.0"
-local MINOR_VERSION = tonumber(("20260211235932"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20260220032839"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_Unit_MINOR_VERSION then
 	_G.DogTag_Unit_MINOR_VERSION = MINOR_VERSION
@@ -16,7 +16,7 @@ local L = DogTag_Unit.L
 local newList = DogTag.newList
 local del = DogTag.del
 local castData = {}
-local UnitGUID = UnitGUID
+local UnitGUID = DogTag_Unit.UnitGUIDSafe
 local IsNormalUnit = DogTag_Unit.IsNormalUnit
 local issecretvalue = DogTag.issecretvalue
 local hasSecrets = C_Secrets and C_Secrets.HasSecretRestrictions()

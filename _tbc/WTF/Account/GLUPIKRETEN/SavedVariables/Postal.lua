@@ -35,7 +35,7 @@ Postal3DB = {
 "Dopestab|Lone Wolf|Horde|41|ROGUE",
 "Dopetrap|Living Flame|Horde|1|HUNTER",
 "Dopetrap|Lone Wolf|Horde|1|HUNTER",
-"Handrmandr|Thunderstrike|Horde|29|HUNTER",
+"Handrmandr|Thunderstrike|Horde|30|HUNTER",
 "Jutarnjedrvo|Living Flame|Horde|50|SHAMAN",
 "Jutarnjedrvo|Lone Wolf|Horde|50|SHAMAN",
 "Lonac|Stitches|Horde|1|WARRIOR",
@@ -172,6 +172,7 @@ Postal3DB = {
 ["Dopecure - Thunderstrike"] = {
 ["BlackBook"] = {
 ["recent"] = {
+"Handrmandr|Thunderstrike|Horde",
 "Pitchwise|Thunderstrike|Horde",
 "Dopesnare|Thunderstrike|Horde",
 "Doperage|Thunderstrike|Horde",
@@ -227,6 +228,12 @@ Postal3DB = {
 },
 ["Moolatz - Thunderstrike"] = {
 ["OpenSpeed"] = 0,
+["BlackBook"] = {
+["recent"] = {
+"Dopeseal|Thunderstrike|Horde",
+"Dopecure|Thunderstrike|Horde",
+},
+},
 },
 ["Dopesnare - Living Flame"] = {
 },
@@ -380,13 +387,13 @@ Postal3DB = {
 },
 },
 ["Dopeseal - Thunderstrike"] = {
-["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Vermins|Thunderstrike|Horde",
 "Dopecure|Thunderstrike|Horde",
 },
 },
+["OpenSpeed"] = 0,
 },
 ["Vermins - Thunderstrike"] = {
 ["OpenSpeed"] = 0,

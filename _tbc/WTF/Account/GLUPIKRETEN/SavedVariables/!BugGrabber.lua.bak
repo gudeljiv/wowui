@@ -1,16 +1,8 @@
 
 BugGrabberDB = {
-["session"] = 14100,
+["session"] = 14116,
 ["lastSanitation"] = 3,
 ["errors"] = {
-{
-["message"] = "[string \"print(isSpellKnown(407993))\"]:1: attempt to call global 'isSpellKnown' (a nil value)",
-["time"] = "2024/01/07 13:22:57",
-["locals"] = "(*temporary) = <function> defined @Interface/FrameXML/RestrictedInfrastructure.lua:124\n(*temporary) = nil\n(*temporary) = 407993\n(*temporary) = \"attempt to call global 'isSpellKnown' (a nil value)\"\n",
-["stack"] = "[string \"print(isSpellKnown(407993))\"]:1: in main chunk\n[string \"=[C]\"]: in function `RunScript'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:2234: in function `?'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4975: in function `ChatEdit_ParseText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4638: in function `ChatEdit_SendText'\n[string \"@Interface/FrameXML/ChatFrame.lua\"]:4674: in function `ChatEdit_OnEnterPressed'\n[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1: in function <[string \"*ChatFrame.xml:121_OnEnterPressed\"]:1>",
-["session"] = 11138,
-["counter"] = 1,
-},
 {
 ["message"] = "[string \"print(IsSpellKnown(\"Mangle\"))\"]:1: Usage: IsSpellKnown(spellID[, isPet])",
 ["time"] = "2024/01/07 13:23:36",
@@ -7698,6 +7690,14 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:498: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:416: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:416>\n",
 ["session"] = 14081,
 ["counter"] = 2,
+},
+{
+["message"] = "[string \"print(UnitAttack(\"pet\"))\"]:1: attempt to call global 'UnitAttack' (a nil value)",
+["time"] = "2026/02/20 20:18:10",
+["locals"] = "msg = \"print(UnitAttack(\"pet\"))\"\nuserScriptsDisabled = false\n",
+["stack"] = "[Interface/AddOns/Blizzard_ChatFrameBase/Shared/SlashCommands.lua]:1171: in function '?'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:227: in function 'ParseText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:252: in function 'SendText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:370: in function <...s/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua:366>\n",
+["session"] = 14108,
+["counter"] = 1,
 },
 },
 }

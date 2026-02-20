@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-3.0"
-local MINOR_VERSION = tonumber(("20260211235932"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20260220032839"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_Unit_MINOR_VERSION then
 	_G.DogTag_Unit_MINOR_VERSION = MINOR_VERSION
@@ -8,8 +8,8 @@ end
 local _G, unpack, select, tonumber = _G, unpack, select, tonumber
 local UnitClass, UnitRace, UnitIsPlayer, UnitIsFriend, UnitIsUnit, UnitClassBase, UnitName, UnitExists, GetRealmName, UnitLevel = 
 	  UnitClass, UnitRace, UnitIsPlayer, UnitIsFriend, UnitIsUnit, UnitClassBase, UnitName, UnitExists, GetRealmName, UnitLevel
-local UnitCanAttack, UnitCreatureFamily, UnitCreatureType, UnitClassification, UnitGUID, UnitSex, UnitPlayerControlled, UnitPlayerOrPetInRaid = 
-	  UnitCanAttack, UnitCreatureFamily, UnitCreatureType, UnitClassification, UnitGUID, UnitSex, UnitPlayerControlled, UnitPlayerOrPetInRaid
+local UnitCanAttack, UnitCreatureFamily, UnitCreatureType, UnitClassification, UnitSex, UnitPlayerControlled, UnitPlayerOrPetInRaid = 
+	  UnitCanAttack, UnitCreatureFamily, UnitCreatureType, UnitClassification, UnitSex, UnitPlayerControlled, UnitPlayerOrPetInRaid
 local GetGuildInfo, UnitIsPVP, UnitIsTapped, UnitIsTappedByPlayer, UnitIsDead, UnitReaction, UnitSelectionColor, UnitPVPName, UnitIsTapDenied =
 	  GetGuildInfo, UnitIsPVP, UnitIsTapped, UnitIsTappedByPlayer, UnitIsDead, UnitReaction, UnitSelectionColor, UnitPVPName, UnitIsTapDenied
 
@@ -21,6 +21,7 @@ local wow_build = select(4, GetBuildInfo())
 local wow_800 = wow_build >= 80000
 -- The mere presence of WOW_PROJECT_ID tells us how "modern" the client is.
 local WOW_PROJECT_ID = _G.WOW_PROJECT_ID
+local UnitGUID = DogTag_Unit.UnitGUIDSafe
 
 local GetQuestDifficultyColor = GetQuestDifficultyColor or GetDifficultyColor
 

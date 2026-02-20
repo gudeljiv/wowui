@@ -34,6 +34,9 @@ WT_LearnedPetAbilities = {
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
+["Cobra Reflexes"] = {
+[""] = true,
+},
 ["Frost Resistance"] = {
 ["Rank 3"] = true,
 ["Rank 1"] = true,
@@ -63,6 +66,9 @@ WT_LearnedPetAbilities = {
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
+["Dive"] = {
+["Rank 1"] = true,
+},
 ["Gore"] = {
 ["Rank 3"] = true,
 ["Rank 2"] = true,
@@ -76,9 +82,6 @@ WT_LearnedPetAbilities = {
 ["Rank 6"] = true,
 ["Rank 1"] = true,
 ["Rank 2"] = true,
-},
-["Dive"] = {
-["Rank 1"] = true,
 },
 ["Claw"] = {
 ["Rank 3"] = true,
