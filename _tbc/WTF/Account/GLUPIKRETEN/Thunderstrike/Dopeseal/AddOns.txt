@@ -84,7 +84,7 @@ Myslot: disabled
 NovaConsumesHelper: disabled
 NovaWorldBuffs: enabled
 NugKeyFeedback: enabled
-OmniCC: enabled
+OmniCC: disabled
 OmniCC_Config: enabled
 Open-Sesame: enabled
 picoFPS: enabled
