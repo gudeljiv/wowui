@@ -56,7 +56,7 @@ TomTomDB = {
 ["Dopecoil - Thunderstrike"] = "Default",
 ["Mxzq - Golemagg"] = "Default",
 ["Dopebolt - Lone Wolf"] = "Default",
-["Moolatz - Dreadnaught"] = "Default",
+["Battlenac - Celebras"] = "Default",
 ["Dopeclaw - Thunderstrike"] = "Default",
 ["Moolatz - Celebras"] = "Default",
 ["Jutarnjedrvo - Lone Wolf"] = "Default",
@@ -85,7 +85,7 @@ TomTomDB = {
 ["Battlearm - Jin'do"] = "Default",
 ["Turbonac - Celebras"] = "Default",
 ["Dopestab - Lone Wolf"] = "Default",
-["Battlenac - Celebras"] = "Default",
+["Moolatz - Dreadnaught"] = "Default",
 ["Doperage - Living Flame"] = "Default",
 ["Dopemend - Living Flame"] = "Default",
 ["Vermins - Thunderstrike"] = "Default",
@@ -182,7 +182,7 @@ TomTomWaypointsM = {
 ["Dopecoil - Thunderstrike"] = "Dopecoil - Thunderstrike",
 ["Mxzq - Golemagg"] = "Mxzq - Golemagg",
 ["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
-["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
+["Battlenac - Celebras"] = "Battlenac - Celebras",
 ["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
 ["Moolatz - Celebras"] = "Moolatz - Celebras",
 ["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
@@ -211,7 +211,7 @@ TomTomWaypointsM = {
 ["Battlearm - Jin'do"] = "Battlearm - Jin'do",
 ["Turbonac - Celebras"] = "Turbonac - Celebras",
 ["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
-["Battlenac - Celebras"] = "Battlenac - Celebras",
+["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
 ["Doperage - Living Flame"] = "Doperage - Living Flame",
 ["Dopemend - Living Flame"] = "Dopemend - Living Flame",
 ["Vermins - Thunderstrike"] = "Vermins - Thunderstrike",
@@ -327,7 +327,7 @@ TomTomWaypointsM = {
 },
 ["Dopebolt - Lone Wolf"] = {
 },
-["Moolatz - Dreadnaught"] = {
+["Battlenac - Celebras"] = {
 },
 ["Dopeclaw - Thunderstrike"] = {
 },
@@ -410,7 +410,7 @@ TomTomWaypointsM = {
 },
 ["Dopestab - Lone Wolf"] = {
 },
-["Battlenac - Celebras"] = {
+["Moolatz - Dreadnaught"] = {
 },
 ["Doperage - Living Flame"] = {
 },

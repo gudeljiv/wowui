@@ -1,4 +1,11 @@
 Version: 1
+Frame: RXPItemFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 439
+Y: 140
+W: 73
+H: 40
 Frame: RXPFrame
 FrameLevel: 1
 Anchor: BOTTOMRIGHT
@@ -9,7 +16,7 @@ H: 28
 Frame: PallyPowerFrame
 FrameLevel: 1
 Anchor: RIGHT
-X: -412
+X: -450
 Y: 363
 W: 1
 H: 1
@@ -85,9 +92,9 @@ W: 344
 H: 446
 Frame: LootFrame
 FrameLevel: 2
-Anchor: TOPLEFT
-X: 16
-Y: -116
+Anchor: CENTER
+X: 480
+Y: 254
 W: 170
 H: 240
 Frame: ItemTextFrame
@@ -218,9 +225,9 @@ W: 300
 H: 180
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
-Anchor: TOPRIGHT
+Anchor: RIGHT
 X: -351
-Y: -175
+Y: 175
 W: 607
 H: 672
 Frame: PallyPowerBlessingsFrame

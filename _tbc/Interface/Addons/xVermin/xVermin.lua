@@ -291,13 +291,15 @@ f:SetScript("OnEvent", function(self, event, isInitialLogin, isReloadingUi)
 	-- end
 end)
 
-local orig = ToggleGameMenu
-ToggleGameMenu = function()
-	if GameMenuFrame:IsShown() then
-		ChatFrame7:AddMessage("|cffff0000Hiding Game Menu|r")
-		GameMenuFrame:Hide()
-	else
-		ChatFrame7:AddMessage("|cff00ff00Showing Game Menu|r")
-		GameMenuFrame:Show()
-	end
-end
+-- local orig = ToggleGameMenu
+-- ToggleGameMenu = function()
+-- 	if GameMenuFrame:IsShown() then
+-- 		ChatFrame7:AddMessage("|cffff0000Hiding Game Menu|r")
+-- 		GameMenuFrame:Hide()
+-- 	else
+-- 		orig() -- handles closing other windows, then shows game menu if nothing was closed
+-- 		if GameMenuFrame:IsShown() then
+-- 			ChatFrame7:AddMessage("|cff00ff00Showing Game Menu|r")
+-- 		end
+-- 	end
+-- end

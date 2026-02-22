@@ -1,5 +1,21 @@
 local _, xVermin = ...
 
+local function formatTTD(seconds)
+	if seconds >= 99999 then
+		return "∞"
+	elseif seconds >= 3600 then
+		local h = floor(seconds / 3600)
+		local m = floor((seconds % 3600) / 60)
+		return string.format("%d:%02d:%02d", h, m, floor(seconds % 60))
+	elseif seconds >= 60 then
+		local m = floor(seconds / 60)
+		local s = floor(seconds % 60)
+		return string.format("%d:%02d", m, s)
+	else
+		return string.format("%ds", floor(seconds))
+	end
+end
+
 xTTD = 99999
 
 local healthRecord = {}

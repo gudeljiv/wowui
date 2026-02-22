@@ -240,10 +240,10 @@ updater:SetScript("OnUpdate", function(self, dt)
 	end
 
 	if ttd > 0 then
-		if ttd <= 60 then
-			_ttd = format("%0.2d", ttd)
-		elseif ttd > 60 then
-			_ttd = format("%d:%0.2d", ttd / 60, ttd % 60)
+		if ttd < 60 then
+			_ttd = format("%d", floor(ttd))
+		else
+			_ttd = format("%d:%02d", floor(ttd / 60), floor(ttd % 60))
 		end
 
 		-- aoe_casting.text:SetText(xVermin.Round(_ttd, 1))

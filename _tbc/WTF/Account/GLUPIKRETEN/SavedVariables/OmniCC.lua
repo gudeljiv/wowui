@@ -39,10 +39,10 @@ OmniCCDB = {
 ["Dopede - Stitches"] = "Default",
 ["Battitude - Zandalar Tribe"] = "Default",
 ["Dopebolt - Living Flame"] = "Default",
-["Doperage - Living Flame"] = "Default",
-["Vermin - Celebras"] = "Default",
 ["Pitchwise - Thunderstrike"] = "Default",
 ["Turbonac - Celebras"] = "Default",
+["Doperage - Living Flame"] = "Default",
+["Vermin - Celebras"] = "Default",
 ["Battlenac - Zandalar Tribe"] = "Default",
 ["Dopecoil - Thunderstrike"] = "Default",
 ["Handrmandr - Thunderstrike"] = "Default",
@@ -161,7 +161,6 @@ OmniCCDB = {
 },
 }
 OmniCC4Config = {
-["engine"] = "AniUpdater",
 ["groups"] = {
 {
 ["id"] = "Ignore",
@@ -172,7 +171,7 @@ OmniCC4Config = {
 ["enabled"] = true,
 },
 },
-["version"] = "8.1.1",
+["engine"] = "AniUpdater",
 ["groupSettings"] = {
 ["base"] = {
 ["enabled"] = true,
@@ -222,14 +221,14 @@ OmniCC4Config = {
 ["mmSSDuration"] = 0,
 ["minSize"] = 0.5,
 ["spiralOpacity"] = 1.00999997742474,
-["yOff"] = 0,
+["scaleText"] = true,
 ["xOff"] = 0,
 ["tenthsDuration"] = 0,
 ["fontOutline"] = "OUTLINE",
 ["anchor"] = "CENTER",
 ["minEffectDuration"] = 30,
+["yOff"] = 0,
 ["minDuration"] = 2,
-["scaleText"] = true,
 },
 ["Ignore"] = {
 ["enabled"] = false,
@@ -272,13 +271,13 @@ OmniCC4Config = {
 ["controlled"] = {
 },
 },
-["scaleText"] = true,
-["effect"] = "pulse",
 ["minDuration"] = 3,
+["effect"] = "pulse",
+["yOff"] = 0,
 ["minEffectDuration"] = 30,
 ["anchor"] = "CENTER",
 ["spiralOpacity"] = 1,
-["yOff"] = 0,
+["scaleText"] = true,
 ["xOff"] = 0,
 ["tenthsDuration"] = 0,
 ["fontOutline"] = "OUTLINE",
@@ -288,4 +287,5 @@ OmniCC4Config = {
 ["fontSize"] = 18,
 },
 },
+["version"] = "8.1.1",
 }

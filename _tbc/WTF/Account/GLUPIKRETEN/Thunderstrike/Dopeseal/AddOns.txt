@@ -84,7 +84,7 @@ Myslot: disabled
 NovaConsumesHelper: disabled
 NovaWorldBuffs: enabled
 NugKeyFeedback: enabled
-OmniCC: disabled
+OmniCC: enabled
 OmniCC_Config: enabled
 Open-Sesame: enabled
 picoFPS: enabled
@@ -134,3 +134,4 @@ Blizzard_CombatText: enabled
 ConcreteConsumeTracker: disabled
 !ConcreteOptions: disabled
 QuickRack: disabled
+TradeSkillMaster: enabled
