@@ -15,7 +15,7 @@ VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:4593
+/cast item:4538
 END
 VER 3 000000000000003F "gather" "134400"
 #showtooltip
@@ -34,7 +34,7 @@ VER 3 0000000000000011 "inspect" "136106"
 END
 VER 3 0000000000000037 "mpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:2455
+/cast item:0
 END
 VER 3 000000000000003A "pattack" "132152"
 #showtooltip
@@ -65,8 +65,8 @@ VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
-#showtooltip item:0
-/use item:0
+#showtooltip item:2862
+/use item:2862
 /use [button:2] 17; 16
 /click StaticPopup1Button1
 END
