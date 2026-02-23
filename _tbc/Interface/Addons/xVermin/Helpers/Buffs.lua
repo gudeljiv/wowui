@@ -2,31 +2,12 @@ local _, xVermin = ...
 
 local shift = -38
 local buffs = {}
+local ticker = nil
+local initialized = false
+local pendingRefresh = false
 
-local loadSpells = function()
+local function loadSpells()
 	buffs = {}
-	-- if xVermin.Class == "PALADIN" then
-	-- 	buffs = {
-	-- 		{
-	-- 			["spell_id"] = xVermin.GetSpellID("Blessing of Might"),
-	-- 			["short_name"] = "bom",
-	-- 			["name"] = "Blessing of Might",
-	-- 			["found"] = false,
-	-- 		},
-	-- 		{
-	-- 			["spell_id"] = xVermin.GetSpellID("Blessing of Kings"),
-	-- 			["short_name"] = "bok",
-	-- 			["name"] = "Blessing of Kings",
-	-- 			["found"] = false,
-	-- 		},
-	-- 		{
-	-- 			["spell_id"] = xVermin.GetSpellID("Blessing of Wisdom"),
-	-- 			["short_name"] = "bow",
-	-- 			["name"] = "Blessing of Wisdom",
-	-- 			["found"] = false,
-	-- 		},
-	-- 	}
-	-- end
 	if xVermin.Class == "PRIEST" then
 		buffs = {
 			{
@@ -88,142 +69,169 @@ local loadSpells = function()
 	end
 end
 
-local function Refresh()
-	loadSpells()
-	xVermin.CheckIfLoadedWithTimer("SUFUnitplayer", function()
-		loadSpells()
+local function UpdateBuffs()
+	-- ChatFrame7:AddMessage("--------------------------------------------------------------")
+	-- ChatFrame7:AddMessage("Event: UpdateBuffs")
 
-		if not buffs or #buffs == 0 then
-			return
-		end
+	local player_buffs = {}
 
-		for index, buff in pairs(buffs) do
-			if IsSpellKnownOrOverridesKnown(buff.spell_id) then
-				local frame = _G["buffbutton_" .. buff.short_name]
-				if not frame then
-					frame =
-						CreateFrame("Button", "buffbutton_" .. buff.short_name, UIParent, "SecureActionButtonTemplate")
-					frame:SetAttribute("type1", "macro")
-					frame:SetAttribute("macrotext1", "/cast [@player] " .. buff.name)
-					frame:SetFrameStrata("MEDIUM")
-					frame:SetSize(36, 36)
-					frame:RegisterForClicks("AnyUp", "AnyDown")
-
-					-- frame:CreateBeautyBorder(6)
-
-					-- Icon texture
-					-- frame.icon = frame:CreateTexture(nil, "BACKGROUND")
-					-- frame.icon:SetAllPoints()
-					-- frame.icon:SetTexture(GetSpellTexture(buff.spell_id))
-
-					-- -- Cooldown frame (the swipe animation)
-					-- frame.cooldown = CreateFrame("Cooldown", nil, frame, "CooldownFrameTemplate")
-					-- frame.cooldown:SetAllPoints()
-					-- frame.cooldown:SetDrawEdge(true)
-
-					-- -- Count text (for charges/stacks)
-					-- frame.count = frame:CreateFontString(nil, "OVERLAY")
-					-- frame.count:SetFontObject("NumberFontNormal")
-					-- frame.count:SetPoint("BOTTOMRIGHT", -2, 2)
-
-					-- -- Hotkey text
-					-- frame.hotkey = frame:CreateFontString(nil, "OVERLAY")
-					-- frame.hotkey:SetFontObject("NumberFontNormalSmallGray")
-					-- frame.hotkey:SetPoint("TOPLEFT", 2, -2)
-					-- frame.hotkey:SetText("") -- Set keybind here if needed
-
-					-- Highlight when moused over
-					frame:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square")
-					frame:GetHighlightTexture():SetBlendMode("ADD")
-
-					-- Pushed texture
-					-- frame:SetPushedTexture("Interface\\Buttons\\UI-Quickslot-Depress")
-
-					-- Normal texture (the border)
-					-- frame:SetNormalTexture("Interface\\Buttons\\UI-Quickslot2")
-
-					-- Optional: Check if spell is ready
-					-- frame:SetScript("OnUpdate", function(self, elapsed)
-					--  local start, duration = GetSpellCooldown(buff.spell_id)
-					--  if start and duration then
-					--      if duration > 0 then
-					--          self.cooldown:SetCooldown(start, duration)
-					--      else
-					--          self.cooldown:Clear()
-					--      end
-					--  end
-					-- end)
+	for index, buff in pairs(buffs) do
+		-- ChatFrame7:AddMessage("Checking buff: " .. buff.name)
+		if IsSpellKnownOrOverridesKnown(buff.spell_id) then
+			buff.found = false
+			for i = 1, 40 do
+				local name, _, _, _, duration, expirationTime = UnitBuff("player", i)
+				if not name then
+					break
 				end
-
-				local x = (index - 1) * shift
-				frame:SetPoint("BOTTOMRIGHT", SUFUnitplayer, "TOPRIGHT", x, 120)
+				if name == buff.name then
+					local timeRemaining = expirationTime - GetTime()
+					if timeRemaining > 30 then
+						buff.found = true
+					end
+					break
+				end
 			end
 		end
+	end
 
-		local f = CreateFrame("Frame")
-		f:RegisterEvent("UNIT_AURA")
-		f:SetScript("OnEvent", function(self, event, unit)
-			if unit ~= "player" then
-				return
+	for index, buff in pairs(buffs) do
+		if IsSpellKnownOrOverridesKnown(buff.spell_id) then
+			-- ChatFrame7:AddMessage("Buff: " .. buff.name .. " found: " .. tostring(buff.found))
+			if not buff.found then
+				table.insert(player_buffs, buff.short_name)
+			else
+				_G["buffbutton_" .. buff.short_name]:Hide()
 			end
+		end
+	end
 
-			local player_buffs = {}
+	for i, short_name in ipairs(player_buffs) do
+		local x = (i - 1) * shift
+		local btn = _G["buffbutton_" .. short_name]
+		-- ChatFrame7:AddMessage("Showing buff button for: " .. short_name)
+		if btn then
+			btn:ClearAllPoints()
+			btn:SetPoint("BOTTOMRIGHT", SUFUnitplayer, "TOPRIGHT", x, 70)
+			btn:Show()
+		end
+	end
+end
 
-			for index, buff in pairs(buffs) do
-				if IsSpellKnownOrOverridesKnown(buff.spell_id) then
-					buff.found = false
-					for i = 1, 40 do
-						local name, _, _, _, duration, expirationTime = UnitBuff("player", i)
-						if not name then
-							break
-						end -- no need to keep scanning after nil
-						if name == buff.name then
-							local timeRemaining = expirationTime - GetTime()
-							if timeRemaining > 30 then
-								buff.found = true
-							end
-							break
-						end
-					end
-				end
-			end
-
-			for index, buff in pairs(buffs) do
-				if IsSpellKnownOrOverridesKnown(buff.spell_id) then
-					if not buff.found then
-						table.insert(player_buffs, buff.short_name)
-					else
-						_G["buffbutton_" .. buff.short_name]:Hide()
-					end
-				end
-			end
-
-			for i, short_name in ipairs(player_buffs) do
-				local x = (i - 1) * shift
-				local btn = _G["buffbutton_" .. short_name]
-				if btn then
-					btn:ClearAllPoints()
-					btn:SetPoint("BOTTOMRIGHT", SUFUnitplayer, "TOPRIGHT", x, 70)
-					btn:Show()
-				end
-			end
-		end)
+local function StartTicker()
+	-- ChatFrame7:AddMessage("Starting buff check ticker...")
+	if ticker then
+		ticker:Cancel()
+	end
+	ticker = C_Timer.NewTicker(1, function()
+		if not InCombatLockdown() then
+			UpdateBuffs()
+		end
 	end)
 end
 
+local function Refresh()
+	loadSpells()
+
+	if not buffs or #buffs == 0 then
+		return
+	end
+
+	for index, buff in pairs(buffs) do
+		if IsSpellKnownOrOverridesKnown(buff.spell_id) then
+			local frame = _G["buffbutton_" .. buff.short_name]
+			if not frame then
+				frame = CreateFrame("Button", "buffbutton_" .. buff.short_name, UIParent, "SecureActionButtonTemplate")
+				frame:SetAttribute("type1", "macro")
+				frame:SetAttribute("macrotext1", "/cast [@player] " .. buff.name)
+				frame:SetFrameStrata("MEDIUM")
+				frame:SetSize(36, 36)
+				frame:RegisterForClicks("AnyDown")
+
+				-- frame:CreateBeautyBorder(6)
+
+				-- Icon texture
+				-- frame.icon = frame:CreateTexture(nil, "BACKGROUND")
+				-- frame.icon:SetAllPoints()
+				-- frame.icon:SetTexture(GetSpellTexture(buff.spell_id))
+
+				-- -- Cooldown frame (the swipe animation)
+				-- frame.cooldown = CreateFrame("Cooldown", nil, frame, "CooldownFrameTemplate")
+				-- frame.cooldown:SetAllPoints()
+				-- frame.cooldown:SetDrawEdge(true)
+
+				-- -- Count text (for charges/stacks)
+				-- frame.count = frame:CreateFontString(nil, "OVERLAY")
+				-- frame.count:SetFontObject("NumberFontNormal")
+				-- frame.count:SetPoint("BOTTOMRIGHT", -2, 2)
+
+				-- -- Hotkey text
+				-- frame.hotkey = frame:CreateFontString(nil, "OVERLAY")
+				-- frame.hotkey:SetFontObject("NumberFontNormalSmallGray")
+				-- frame.hotkey:SetPoint("TOPLEFT", 2, -2)
+				-- frame.hotkey:SetText("") -- Set keybind here if needed
+
+				-- Highlight when moused over
+				frame:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square")
+				frame:GetHighlightTexture():SetBlendMode("ADD")
+
+				-- Pushed texture
+				-- frame:SetPushedTexture("Interface\\Buttons\\UI-Quickslot-Depress")
+
+				-- Normal texture (the border)
+				-- frame:SetNormalTexture("Interface\\Buttons\\UI-Quickslot2")
+
+				-- Optional: Check if spell is ready
+				-- frame:SetScript("OnUpdate", function(self, elapsed)
+				--  local start, duration = GetSpellCooldown(buff.spell_id)
+				--  if start and duration then
+				--      if duration > 0 then
+				--          self.cooldown:SetCooldown(start, duration)
+				--      else
+				--          self.cooldown:Clear()
+				--      end
+				--  end
+				-- end)
+			end
+
+			local x = (index - 1) * shift
+			frame:SetPoint("BOTTOMRIGHT", SUFUnitplayer, "TOPRIGHT", x, 70)
+		end
+	end
+
+	UpdateBuffs()
+end
+
+-- Events registered at load time so nothing is missed
 local ev = CreateFrame("Frame")
-local pendingRefresh = false
 ev:RegisterEvent("PLAYER_LOGIN")
+ev:RegisterEvent("PLAYER_ENTERING_WORLD")
 ev:RegisterEvent("SPELLS_CHANGED")
--- ev:RegisterEvent("LEARNED_SPELL_IN_TAB")
 ev:RegisterEvent("PLAYER_LEVEL_UP")
 ev:RegisterEvent("PLAYER_REGEN_ENABLED")
+ev:RegisterEvent("UNIT_AURA")
 
 ev:SetScript("OnEvent", function(self, event)
+	if not initialized then
+		return
+	end -- wait for CheckIfLoadedWithTimer
+
+	-- ChatFrame7:AddMessage("Event triggered: " .. event)
+
+	if event == "UNIT_AURA" then
+		if not InCombatLockdown() then
+			UpdateBuffs()
+		end
+		return
+	end
+
 	if event == "PLAYER_REGEN_ENABLED" then
 		if pendingRefresh then
 			pendingRefresh = false
-			C_Timer.After(0.5, Refresh)
+			Refresh()
+			StartTicker()
+		else
+			UpdateBuffs()
 		end
 		return
 	end
@@ -231,6 +239,15 @@ ev:SetScript("OnEvent", function(self, event)
 	if InCombatLockdown() then
 		pendingRefresh = true
 	else
-		C_Timer.After(0.5, Refresh)
+		Refresh()
+		StartTicker()
 	end
+end)
+
+-- Frame creation waits for SUF, then unlocks event processing
+xVermin.CheckIfLoadedWithTimer("SUFUnitplayer", function()
+	-- ChatFrame7:AddMessage("SUFUnitplayer loaded, initializing buff helper...")
+	Refresh()
+	StartTicker()
+	initialized = true
 end)

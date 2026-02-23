@@ -17,16 +17,7 @@ local UnitPosition = UnitPosition
 -- ----------------------------------------------------------------------------
 local AtlasLoot = _G.AtlasLoot
 local AL = AtlasLoot.Locales
-
 local LibStub = _G.LibStub
-
--- lua
-
--- WoW
-local SendAddonMessage = C_ChatInfo.SendAddonMessage
-local RegisterAddonMessagePrefix = C_ChatInfo.RegisterAddonMessagePrefix
-
--- DisableAddOn
 
 local EventFrame = CreateFrame("FRAME")
 EventFrame:RegisterEvent("ADDON_LOADED")
@@ -82,7 +73,7 @@ function AtlasLoot:OnInitialize()
 
 	self.dbGlobal.__addonrevision = self.IsDevVersion and 0 or self.__addonrevision
 
-	RegisterAddonMessagePrefix(ALPrivate.ADDON_MSG_PREFIX)
+	C_ChatInfo.RegisterAddonMessagePrefix(ALPrivate.ADDON_MSG_PREFIX)
 
 	-- bindings
 	BINDING_HEADER_ATLASLOOT = AL["AtlasLoot"]
@@ -172,39 +163,38 @@ local UpdateCheckerFrame = CreateFrame("FRAME")
 local IsAddonUpdateAvailable = false
 local UpdatedVersionRev = AtlasLoot.__addonrevision
 
-local function UpdateCheckFrameOnEvent(frame, event, ...)
-	local arg1, _ = ...
-	if event == "CHAT_MSG_ADDON" and arg1 == ALPrivate.ADDON_MSG_PREFIX then
-		local text, channel, sender, target, zoneChannelID, localID, name, instanceID = ...
-		if sender ~= ALPrivate.PLAYER_NAME then
-			local v = text:match(UpdateGetMsg)
-			v = tonumber(v or 0)
-			if v and v > 0 then
-				if AtlasLoot.IsDevVersion then
-					AtlasLoot:DevPrint(format("Player '|cff00FAF6%s|r' sends version '|cff00FF96%d|r'!", sender, v))
-				elseif v > UpdatedVersionRev then
-					AtlasLoot:Print("An update is available! Please update to the latest version!")
-					IsAddonUpdateAvailable = true
-					UpdatedVersionRev = v
-					AtlasLoot.GUI.RefreshVersionUpdate()
-				end
-			end
-		end
-	elseif event == "GROUP_JOINED" then
-		AtlasLoot.SendAddonVersion("RAID")
-		AtlasLoot.SendAddonVersion("PARTY")
-	elseif event == "RAID_ROSTER_UPDATE" then
-		AtlasLoot.SendAddonVersion("RAID")
-	elseif event == "PLAYER_LOGIN" then
-		AtlasLoot.SendAddonVersion("GUILD")
+-- /dump C_ChatInfo.SendAddonMessage("AL_ANNIVERSARY", "v1.0.0.0", "GUILD")
+function AtlasLoot.UpdateCheckFrameOnEvent(frame, event, ...)
+    if event == "CHAT_MSG_ADDON" then
+        local prefix, text, channel, sender = ...
+        if prefix == ALPrivate.ADDON_MSG_PREFIX then
+            if sender ~= ALPrivate.PLAYER_NAME then
+				--AtlasLoot:DevPrint(format("Player '|cff00FAF6%s|r' sends '|cff00FF96%s|r'!", sender, text))
+                local v = tonumber(text:match(UpdateGetMsg) or 0)
+                if v and v > 0 then
+                    if AtlasLoot.IsDevVersion then
+                        AtlasLoot:DevPrint(format("Player '|cff00FAF6%s|r' sends version '|cff00FF96%d|r'!", sender, v))
+                    elseif v > UpdatedVersionRev then
+                        AtlasLoot:Print("An update is available! Please update to the latest version!")
+                        IsAddonUpdateAvailable = true
+                        UpdatedVersionRev = v
+                        AtlasLoot.GUI.RefreshVersionUpdate()
+                    end
+                end
+            end
+        end
+    elseif event == "GROUP_JOINED" then
+        AtlasLoot.SendAddonVersion("RAID")
+        AtlasLoot.SendAddonVersion("PARTY")
+    elseif event == "RAID_ROSTER_UPDATE" then
+        AtlasLoot.SendAddonVersion("RAID")
 	end
 end
 
 UpdateCheckerFrame:RegisterEvent("CHAT_MSG_ADDON")
 UpdateCheckerFrame:RegisterEvent("GROUP_JOINED")
 UpdateCheckerFrame:RegisterEvent("RAID_ROSTER_UPDATE")
-UpdateCheckerFrame:RegisterEvent("PLAYER_LOGIN")
-UpdateCheckerFrame:SetScript("OnEvent", UpdateCheckFrameOnEvent)
+UpdateCheckerFrame:SetScript("OnEvent", AtlasLoot.UpdateCheckFrameOnEvent)
 
 function AtlasLoot.SendAddonVersion(channel, target)
 	if AtlasLoot.IsDevVersion then return end
@@ -212,7 +202,7 @@ function AtlasLoot.SendAddonVersion(channel, target)
 	if channel == "GUILD" and not IsInGuild() then return end
 	if channel == "PARTY" and not IsInGroup() then return end
 	if channel == "RAID" and not IsInRaid() then return end
-	SendAddonMessage(ALPrivate.ADDON_MSG_PREFIX, UpdateSendMsg..UpdatedVersionRev, channel, target)
+	C_ChatInfo.SendAddonMessage(ALPrivate.ADDON_MSG_PREFIX, UpdateSendMsg..UpdatedVersionRev, channel, target)
 end
 
 function AtlasLoot.IsAddonUpdateAvailable()

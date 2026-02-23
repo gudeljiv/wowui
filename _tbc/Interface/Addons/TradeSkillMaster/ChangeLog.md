@@ -1,6 +1,6 @@
-## v4.14.57 Changes
+## v4.14.58 Changes
 
-* [Retail] Fixed issue with item level of timewalking items
-* [Retail] Various error fixes
+* [Retail] Updates for Midnight crafting
+* [Retail] Fixed issue with Crafting and AH tooltips
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

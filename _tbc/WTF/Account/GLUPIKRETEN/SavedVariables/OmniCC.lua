@@ -35,10 +35,10 @@ OmniCCDB = {
 ["Dopesnare - Lone Wolf"] = "Default",
 ["Battitude - Zandalar Tribe"] = "Default",
 ["Handrmandr - Thunderstrike"] = "Default",
-["Turbonac - Celebras"] = "Default",
-["Doperage - Living Flame"] = "Default",
 ["Vermin - Celebras"] = "Default",
 ["Pitchwise - Thunderstrike"] = "Default",
+["Turbonac - Celebras"] = "Default",
+["Doperage - Living Flame"] = "Default",
 ["Battlenac - Zandalar Tribe"] = "Default",
 ["Dopecoil - Thunderstrike"] = "Default",
 ["Dopebolt - Living Flame"] = "Default",
@@ -161,7 +161,6 @@ OmniCCDB = {
 },
 }
 OmniCC4Config = {
-["version"] = "8.1.1",
 ["groupSettings"] = {
 ["base"] = {
 ["enabled"] = true,
@@ -277,6 +276,8 @@ OmniCC4Config = {
 ["yOff"] = 0,
 },
 },
+["version"] = "8.1.1",
+["engine"] = "AniUpdater",
 ["groups"] = {
 {
 ["id"] = "Ignore",
@@ -287,5 +288,4 @@ OmniCC4Config = {
 ["enabled"] = true,
 },
 },
-["engine"] = "AniUpdater",
 }

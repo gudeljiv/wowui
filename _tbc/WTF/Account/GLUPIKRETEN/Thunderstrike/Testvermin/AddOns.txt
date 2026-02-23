@@ -125,3 +125,4 @@ Blizzard_CompactRaidFrames: enabled
 LortiUI: disabled
 UberUI: disabled
 Blizzard_CombatText: enabled
+TradeSkillMaster: enabled

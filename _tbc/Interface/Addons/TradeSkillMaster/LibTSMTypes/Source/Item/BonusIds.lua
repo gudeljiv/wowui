@@ -25,6 +25,9 @@ local DROP_LEVEL_MODIFIER_TYPE = 9
 -- Module Functions
 -- ============================================================================
 
+---Filters a bonus string to only those that impact the calculated item level.
+---@param bonusIds string Colon-separated bonus IDs
+---@return string
 function BonusIds.Filter(bonusIds)
 	private.bonusIdCache[bonusIds] = private.bonusIdCache[bonusIds] or {}
 	local cache = private.bonusIdCache[bonusIds]
@@ -50,14 +53,30 @@ function BonusIds.Filter(bonusIds)
 	return cache.value
 end
 
+---Removes TREE_BONUS_ID from the list if the item has no tree bonuses.
+---@param bonusIds number[] The bonus IDs
+---@param itemId number The item ID
+function BonusIds.FilterTreeBonusId(bonusIds, itemId)
+	LibBonusId.FilterTreeBonusId(bonusIds, itemId)
+end
+
+---Calculates the item level from an itemString's bonus IDs.
+---@param itemString string The item string
+---@return number?
 function BonusIds.GetItemLevel(itemString)
 	return private.GetItemLevelHelper(strsplit(":", itemString))
 end
 
+---Returns a bonus string that produces the given item level.
+---@param itemLevel number The target item level
+---@return string?
 function BonusIds.GetBonusStringForLevel(itemLevel)
 	return LibBonusId.GetBonusStringForLevel(itemLevel)
 end
 
+---Returns the crafting stat modifier value for a bonus ID, if applicable.
+---@param bonusId number The bonus ID
+---@return number?
 function BonusIds.GetCraftingStatModifier(bonusId)
 	return BONUS_ID_TO_CRAFTING_STAT_MODIFIER[bonusId]
 end

@@ -1,3 +1,5 @@
+---@diagnostic disable
+
 local LINK_DATA = [[
 |cnIQ4:|Hitem:60211::::::::61:259::5:1:9052:2:9:35:28:2660:::::|h[Bracers of the Dark Pool]|h|r
 |cnIQ4:|Hitem:60211::::::::61:259::6:1:9053:2:9:35:28:2660:::::|h[Bracers of the Dark Pool]|h|r
@@ -31356,3 +31358,5 @@ function LibBonusIdTest(command)
 		print("[ERROR] Unknown command (%s)", tostring(command))
 	end
 end
+
+---@diagnostic enable

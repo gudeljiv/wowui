@@ -72,7 +72,7 @@ TacoTip: enabled
 TellMeWhen: enabled
 TellMeWhen_Options: enabled
 ThreatClassic2: enabled
-TradeSkillMaster: disabled
+TradeSkillMaster: enabled
 TradeSkillMaster_AppHelper: disabled
 WeakAuras: enabled
 WeakAurasModelPaths: enabled

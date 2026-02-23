@@ -333,6 +333,8 @@ function private.FixPet(itemString)
 end
 
 function private.FilterBonusIdsAndModifiers(itemString, itemType, itemId, rand, numBonusIds, ...)
+	itemId = tonumber(itemId)
+	assert(itemId)
 	numBonusIds = tonumber(numBonusIds) or 0
 	local numParts = select("#", ...)
 	if numParts == 0 then
@@ -398,6 +400,7 @@ function private.FilterBonusIdsAndModifiers(itemString, itemType, itemId, rand, 
 		for i = 1, numBonusIds do
 			private.bonusIdsTemp[i] = select(i, ...)
 		end
+		BonusIds.FilterTreeBonusId(private.bonusIdsTemp, itemId)
 		bonusIdsStr = BonusIds.Filter(table.concat(private.bonusIdsTemp, ":"))
 	end
 

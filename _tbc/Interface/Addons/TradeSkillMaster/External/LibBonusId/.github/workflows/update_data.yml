@@ -1,6 +1,8 @@
 name: Update Data.lua
 
 on:
+  schedule:
+    - cron: "0 12 * * *"
   workflow_dispatch:
 
 jobs:
@@ -57,3 +59,10 @@ jobs:
           git add Data.lua
           git commit -m "Update Data.lua for build ${{ steps.build.outputs.build }}"
           git push
+
+      - name: Notify Slack
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+            --data '{"text":"<@${{ secrets.SLACK_USER_ID }}> LibBonusId Data.lua updated for build ${{ steps.build.outputs.build }}"}' \
+            "${{ secrets.SLACK_WEBHOOK_URL }}"

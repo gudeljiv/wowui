@@ -42,7 +42,7 @@ local ITEM_INFO_INTERVAL = 0.05
 local MAX_REQUESTED_ITEM_INFO = 50
 local MAX_REQUESTS_PER_ITEM = 5
 local UNKNOWN_ITEM_TEXTURE = 136254
-local DB_VERSION = 16
+local DB_VERSION = 17
 local PENDING_STATE = EnumType.New("ITEM_INFO_PENDING_STATE", {
 	NEW = EnumType.NewValue(),
 	CREATED = EnumType.NewValue(),
@@ -255,21 +255,28 @@ end
 
 ---Gets the crafted quality.
 ---@param item string The item
----@return number?
+---@return number? craftedQuality
+---@return boolean? useMidnightIcon
 function ItemInfo.GetCraftedQuality(item)
 	if not ClientInfo.HasFeature(ClientInfo.FEATURES.CRAFTING_QUALITY) then
-		return nil
+		return nil, nil
 	end
 	local itemString = ItemString.Get(item)
 	if not itemString then
-		return nil
+		return nil, nil
 	elseif itemString == ItemString.GetUnknown() or itemString == ItemString.GetPlaceholder() then
-		return nil
+		return nil, nil
 	elseif ItemString.ParseLevel(itemString) then
 		itemString = ItemString.GetBaseFast(itemString)
 	end
-	local craftedQuality = private.GetFieldValueHelper(itemString, "craftedQuality", false, false, 0)
-	return (craftedQuality or 0) > 0 and craftedQuality or nil
+	local craftedQuality = private.GetFieldValueHelper(itemString, "craftedQuality", false, false, 0) --[[@as number?]]
+	if not craftedQuality or craftedQuality < 1 then
+		return nil, nil
+	elseif craftedQuality > 10 then
+		return craftedQuality - 10, true
+	else
+		return craftedQuality, nil
+	end
 end
 
 ---Get the quality.
@@ -1000,12 +1007,13 @@ function private.StoreGetItemInfo(itemString)
 		vendorSell = 0
 	end
 	local craftedQuality = nil
+	local craftedQualityExp = nil
 	if not ClientInfo.HasFeature(ClientInfo.FEATURES.CRAFTING_QUALITY) then
 		expansionId = -1
 		craftedQuality = -1
 	elseif link then
-		craftedQuality = strmatch(link, "\124A:Professions%-ChatIcon%-Quality%-Tier([0-9]+)")
-		craftedQuality = tonumber(craftedQuality) or -1
+		craftedQualityExp, craftedQuality = strmatch(link, "\124A:Professions%-ChatIcon%-Quality([%-%d]*)-Tier([0-9]+)")
+		craftedQuality = (tonumber(craftedQualityExp) and craftedQuality) and tonumber(craftedQuality) + 10 or tonumber(craftedQuality) or -1
 	end
 	isCraftingReagent = isCraftingReagent and 1 or 0
 
