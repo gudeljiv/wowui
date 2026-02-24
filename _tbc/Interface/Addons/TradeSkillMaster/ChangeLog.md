@@ -1,6 +1,5 @@
-## v4.14.58 Changes
+## v4.14.59 Changes
 
-* [Retail] Updates for Midnight crafting
-* [Retail] Fixed issue with Crafting and AH tooltips
+* [Retail] Fixed issue with adding specific items to a group
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

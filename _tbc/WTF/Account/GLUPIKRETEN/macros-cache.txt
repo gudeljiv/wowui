@@ -55,11 +55,6 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /cast feed pet
 /use item:3730
 END
-VER 3 0000000000000041 "prospect" "134400"
-#showtooltip Prospecting
-/cast Prospecting
-/use Tin Ore
-END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
 /targetexact Undertaker Mordo
 /targetlasttarget [dead]
@@ -76,7 +71,7 @@ END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy
 END
-VER 3 000000000000001E "TSMMacro" "133938"
+VER 3 000000000000001E "TSMMacro" "INV_Misc_Flower_01"
 /click TSMShoppingBuyoutBtn
 /click TSMAuctioningBtn
 /click TSMDestroyBtn

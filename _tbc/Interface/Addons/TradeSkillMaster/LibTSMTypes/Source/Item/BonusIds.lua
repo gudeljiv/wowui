@@ -25,7 +25,7 @@ local DROP_LEVEL_MODIFIER_TYPE = 9
 -- Module Functions
 -- ============================================================================
 
----Filters a bonus string to only those that impact the calculated item level.
+---Filters a bonus string to only those that have any effective impact on the item.
 ---@param bonusIds string Colon-separated bonus IDs
 ---@return string
 function BonusIds.Filter(bonusIds)
@@ -39,7 +39,7 @@ function BonusIds.Filter(bonusIds)
 				tinsert(private.bonusIdTemp, id)
 			end
 		end
-		LibBonusId.FilterItemLevelBonusIds(private.bonusIdTemp)
+		LibBonusId.FilterEffectiveBonusIds(private.bonusIdTemp)
 		sort(private.bonusIdTemp)
 		cache.num = #private.bonusIdTemp
 		if cache.num == 0 then

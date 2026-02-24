@@ -11,7 +11,7 @@ local private = {
 	bonusesTemp = {}, ---@type BonusEntry[]
 	filterTemp = {}, ---@type number[]
 }
-local DATA_VERSION = 1
+local DATA_VERSION = 2
 local OP_GROUP = { scale = "level", set = "level", add = "add" }
 local DEFAULT_DROP_LEVEL = 80
 local TREE_BONUS_ID = 3524
@@ -54,6 +54,7 @@ local TREE_BONUS_ID = 3524
 ---@field itemRangeStarts number[]
 ---@field itemRangeLevels number[]
 ---@field midnightItems table<number, boolean>
+---@field tooltipBonuses table<number, boolean>
 ---@field treeBonusLists number[][]
 ---@field itemTreeBonuses table<number, number>
 ---@field levelToBonusString table<number, string>
@@ -116,6 +117,18 @@ function Lib.FilterTreeBonusId(bonusIds, itemId)
 			if tonumber(bonusIds[i]) == TREE_BONUS_ID then
 				tremove(bonusIds, i)
 			end
+		end
+	end
+end
+
+---Filters a list of bonus IDs to only those that have any effect (item level or tooltip).
+---Removes bonus IDs that have no visible effect on the item whatsoever.
+---@param bonusIds number[] The bonus IDs to filter
+function Lib.FilterEffectiveBonusIds(bonusIds)
+	for i = #bonusIds, 1, -1 do
+		local bonusId = bonusIds[i]
+		if bonusId ~= TREE_BONUS_ID and not private.data.bonuses[bonusId] and not private.data.tooltipBonuses[bonusId] then
+			tremove(bonusIds, i)
 		end
 	end
 end

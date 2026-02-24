@@ -516,7 +516,6 @@ L.Area_HideBlizzard					= "Desativar e ocultar outras inconveniências de Blizza
 L.HideBossEmoteFrame				= "Ocultar quadro de emotes de chefes de raide durante combate contra chefes"
 L.HideWatchFrame					= "Ocultar quadro de acompanhamento (objetivos) durante combate contra chefes se nenhum feito estiver sendo rastreado e se não estiver em um Mítico+"
 L.HideQuestTooltips					= "Ocultar objetivos de missões das dicas durante combate contra chefes"
-L.HideTooltips						= "Ocultar completamente as dicas durante lutas contra chefes"
 L.HideBlizzardTimeline				= "Ocultar a linha do tempo da raide da Blizzard durante lutas contra chefes"
 
 L.DisableSFX						= "Desativar o canal de efeitos sonoros durante lutas contra chefes"
@@ -633,11 +632,9 @@ L.Area_Advanced				= "Opções avançadas"
 L.FakeBW					= "Fingir ser BigWigs em checagens de versão ao invés de ser DBM"
 --
 L.Area_Tooltip              = "Integração com dicas"
-L.EnableTooltip             = "Adicionar estatísticas do DBM às dicas dos chefes compatíveis"
-L.EnableTooltipInCombat     = "Exibir informações da dica durante o combate"
-L.EnableTooltipHeader       = "Incluir cabeçalho do DBM na dica"
 --
 L.Area_CombatAlerts			= "Opções de alertas de combate"
+L.Area_CombatAlertsRetail   = "Opções de alertas de combate (somente em áreas externas)"
 L.AFKHealthWarning			= "Reproduzir som de alerta e fazer o ícone do aplicativo piscar quando você estiver perdendo vida (em qualquer porcentagem) enquanto estiver LDT"
 L.HealthWarningLow			= "Reproduzir som de alerta e fazer o ícone do aplicativo piscar quando você estiver perdendo vida (quando estiver abaixo de 35%) enquanto estiver LDT"
 L.EnteringCombatAlert		= "Reproduzir som de alerta e fazer o ícone do aplicativo piscar ao entrar em combate"

@@ -63,9 +63,9 @@ TomTomDB = {
 ["Vermin - Zandalar Tribe"] = "Default",
 ["Dopetrap - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
-["Doperage - Thunderstrike"] = "Default",
 ["Mxys - Golemagg"] = "Default",
 ["Mq - Celebras"] = "Default",
+["Doperage - Thunderstrike"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
 ["Vermins - Stitches"] = "Default",
 ["Pitchwise - Dreadnaught"] = "Default",
@@ -189,9 +189,9 @@ TomTomWaypointsM = {
 ["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
-["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
 ["Mxys - Golemagg"] = "Mxys - Golemagg",
 ["Mq - Celebras"] = "Mq - Celebras",
+["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
 ["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
 ["Vermins - Stitches"] = "Vermins - Stitches",
 ["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
@@ -341,11 +341,11 @@ TomTomWaypointsM = {
 },
 ["Nitwit - Dreadnaught"] = {
 },
-["Doperage - Thunderstrike"] = {
-},
 ["Mxys - Golemagg"] = {
 },
 ["Mq - Celebras"] = {
+},
+["Doperage - Thunderstrike"] = {
 },
 ["Doperage - Lone Wolf"] = {
 },

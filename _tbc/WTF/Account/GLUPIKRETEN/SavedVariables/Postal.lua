@@ -318,7 +318,6 @@ Postal3DB = {
 ["Battlenac - Zandalar Tribe"] = {
 },
 ["Dopecoil - Thunderstrike"] = {
-["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Dopecure|Thunderstrike|Horde",
@@ -326,6 +325,7 @@ Postal3DB = {
 "Dopeclaw|Thunderstrike|Horde",
 },
 },
+["OpenSpeed"] = 0,
 },
 ["Handrmandr - Thunderstrike"] = {
 ["OpenSpeed"] = 0,
@@ -387,14 +387,14 @@ Postal3DB = {
 },
 },
 ["Dopeseal - Thunderstrike"] = {
+["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
-"Handrmandr|Thunderstrike|Horde",
 "Vermins|Thunderstrike|Horde",
+"Handrmandr|Thunderstrike|Horde",
 "Dopecure|Thunderstrike|Horde",
 },
 },
-["OpenSpeed"] = 0,
 },
 ["Vermins - Thunderstrike"] = {
 ["OpenSpeed"] = 0,

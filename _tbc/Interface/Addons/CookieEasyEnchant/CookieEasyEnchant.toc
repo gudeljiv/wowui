@@ -1,0 +1,10 @@
+## Interface: 20505
+## Title: Cookie Easy Enchant
+## Notes: Spam enchants easily for leveling enchanting. Select an enchant and item, then spam click/keybind to repeatedly enchant.
+## Author: FrugalPenguin
+## Version: v3.2.3
+## X-Curse-Project-ID: 1407799
+## SavedVariablesPerCharacter: CookieEasyEnchantDB
+
+CookieEasyEnchant.lua
+CookieEasyEnchant_Disenchant.lua

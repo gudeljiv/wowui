@@ -148,6 +148,7 @@ L.RLReadyCheckSound					= "When a ready check is performed, play sound through M
 L.AutoReplySound					= "Play alert sound and flash application icon when receiving DBM auto reply whisper"
 
 L.Area_CombatAlerts					= "Combat Alert Options"
+L.Area_CombatAlertsRetail			= "Combat Alert Options (outdoor only)"
 L.AFKHealthWarning					= "Play alert sound and flash application icon if you are losing health (at any percent) while AFK flag present"
 L.HealthWarningLow					= "Play alert sound and flash application icon if you are losing health (while below 35 percent)"
 L.EnteringCombatAlert				= "Play alert sound and flash application icon when you enter combat"
@@ -168,9 +169,7 @@ L.Area_Advanced						= "Advanced Options"
 L.FakeBW							= "Pretend to be BigWigs in version checks instead of DBM (Useful for guilds that force using BigWigs)"
 --
 L.Area_Tooltip						= "Tooltip integration"
-L.EnableTooltip						= "Add DBM stats to tooltips for bosses supported by DBM"
-L.EnableTooltipInCombat				= "Show tooltip information while in combat"
-L.EnableTooltipHeader				= "Include DBM header in tooltip"
+
 
 
 -- Panel: Profiles
@@ -600,7 +599,6 @@ L.Area_HideBlizzard					= "Disable & Hide other Blizzard Annoyances"
 L.HideBossEmoteFrame				= "Hide Blizzard Raid Warnings during boss fights"
 L.HideWatchFrame					= "Hide watch (objectives) frame during boss fights if no achievements are being tracked and if not in a Mythic+"
 L.HideQuestTooltips					= "Hide quest objectives from tooltips during boss fights"--Currently hidden (NYI)
-L.HideTooltips						= "Completely hide tooltips during boss fights"
 L.HideBlizzardTimeline				= "Hide the Blizzard Raid Timeline during boss fights"
 
 -- Panel: Raid Leader Controls

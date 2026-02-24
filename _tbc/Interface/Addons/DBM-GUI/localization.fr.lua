@@ -140,15 +140,16 @@ L.LogChallenges						= "Défis spéciaux actuels"--Retail Only
 L.Panel_ExtraFeatures		= "Fonctionnalités supplémentaires"
 
 L.Area_SoundAlerts			= "Options des alertes sonores/clignotement"
-L.LFDEnhance				= "Faire clignoter le bouton de l'application et jouer le son d'appel lors des vérif. de rôle et des invitations (Recherche de groupe, CB, etc) dans les canaux audio principal ou dialogue"
-L.WorldBossNearAlert		= "Faire clignoter le bouton de l'application et jouer le son d'appel quand un boss mondial proche de vous est engagé"
-L.RLReadyCheckSound			= "Faire clignoter le bouton de l'application et jouer le son via les canaux audio principal ou dialogue quand un appel est lancé par le chef de raid"
-L.AutoReplySound			= "Faire clignoter le bouton de l'application et jouer un son d'alerte quand vous recevez une réponse DBM automatique par chuchotement"
+L.LFDEnhance				= "Jouer le son d'appel lors des vérif. de rôle et des invitations (Recherche de groupe, CB, etc) dans les canaux audio principal ou dialogue"
+L.WorldBossNearAlert		= "Jouer le son d'appel quand un boss mondial proche de vous est engagé"
+L.RLReadyCheckSound			= "Jouer le son via les canaux audio principal ou dialogue quand un appel est lancé par le chef de raid"
+L.AutoReplySound			= "Jouer un son d'alerte quand vous recevez une réponse DBM automatique par chuchotement"
 --
-L.Area_CombatAlerts			= "Options d'alertes de combat"
-L.AFKHealthWarning			= "Faire clignoter le bouton de l'application et jouer un son d'alerte si vous perdez de la vie (à n'importe quel pourcentage) alors que vous êtes ABS"
-L.HealthWarningLow			= "Faire clignoter le bouton de l'application et jouer un son d'alerte si vous perdez de la vie (quand vous êtes en dessous de 35 %) alors que vous êtes ABS"
-L.EnteringCombatAlert		= "Faire clignoter le bouton de l'application et jouer un son d'alerte lorsque vous entrez en combat"
+L.Area_CombatAlerts			= "Options des alertes de combat"
+L.Area_CombatAlertsRetail   = "Options des alertes de combat (extérieur uniquement)"
+L.AFKHealthWarning			= "Jouer un son d'alerte si vous perdez de la vie (à n'importe quel pourcentage) alors que vous êtes ABS"
+L.HealthWarningLow			= "Jouer un son d'alerte si vous perdez de la vie (quand vous êtes en dessous de 35 %) alors que vous êtes ABS"
+L.EnteringCombatAlert		= "Jouer un son d'alerte lorsque vous entrez en combat"
 L.LeavingCombatAlert		= "Jouer un son d'alerte lorsque vous quittez le combat"
 
 L.TimerGeneral 				= "Options de décompte"
@@ -166,9 +167,7 @@ L.Area_Advanced				= "Options avancées"
 L.FakeBW					= "Prétendre utiliser BigWigs lors des vérifications de versions au lieu de DBM"
 --
 L.Area_Tooltip              = "Intégration à l'infobulle"
-L.EnableTooltip             = "Ajouter les statistiques de DBM aux infobulles des boss pris en charge"
-L.EnableTooltipInCombat     = "Afficher les informations de l'infobulle en combat"
-L.EnableTooltipHeader       = "Inclure l’en-tête DBM dans l’infobulle"
+
 
 -- Panel: Profiles
 L.Panel_Profile				= "Profils"
@@ -578,7 +577,6 @@ L.Area_HideBlizzard 				= "Désactiver et cacher d'autres irritants Blizzard"
 L.HideBossEmoteFrame 				= "Cacher le cadre des émotes de boss de raid pendant les combats de boss"
 L.HideWatchFrame 					= "Cacher le cadre de suivi (objectifs) pendant les combats de boss s'il n'y a pas d'exploits en cours de suivi et si ce n'est pas dans une Mythique+"
 L.HideQuestTooltips 				= "Cacher les objectifs de quête des infobulles pendant les combats de boss" --Currently hidden (NYI)
-L.HideTooltips 						= "Cacher les infobulles pendant les combats de boss"
 L.HideBlizzardTimeline				= "Cacher la ligne du temps de la raid de Blizzard pendant les combats de boss"
 
 -- Panel: Raid Leader Controls
