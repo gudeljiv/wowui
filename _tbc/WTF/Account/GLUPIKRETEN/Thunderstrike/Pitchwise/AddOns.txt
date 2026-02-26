@@ -133,3 +133,5 @@ SortBags: enabled
 Blizzard_CombatText: enabled
 QuickRack: disabled
 TradeSkillMaster: enabled
+SUI: enabled
+mUI: disabled

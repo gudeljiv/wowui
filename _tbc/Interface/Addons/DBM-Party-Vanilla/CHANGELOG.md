@@ -1,9 +1,15 @@
 # DBM - Dungeons, Delves, & Events
 
-## [r232](https://github.com/DeadlyBossMods/DBM-Dungeons/tree/r232) (2026-02-23)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-Dungeons/compare/r231...r232) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Dungeons/releases)
+## [r233](https://github.com/DeadlyBossMods/DBM-Dungeons/tree/r233) (2026-02-26)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Dungeons/compare/r232...r233) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Dungeons/releases)
 
-- one audio tweak  
-- Add midnight support for Maisara Caverns  
-- enable encounter ID for apothecary trio  
-- Fix some ID mismatches on lord chamberlain that caused some halariously bad advice.  
+- Update dungeon apis in sync with core changes  
+    Fixed a couple invalid spellid options  
+    Added full support for Voidscar Arena  
+    Fixed a bug on Taahbat and Awazj that caused tank defensive sound to play for non tank specs  
+- Fix reported bugs on Lura in SoT  
+    Fix reported bugs on Lothaxion in NPX  
+    Updated midnight support for Murder Row  
+    Updated midnight support for Blinding Vale  
+- update toc files  
+- Push Den of Nalorakk midnight mod  

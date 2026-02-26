@@ -1,28 +1,10 @@
-## Interface: 11302
-## Title: |cffCC3333 n|rMainBar
-## Notes: Yet another Blizzbar mod
+## Interface: 120001
+## Title: |cffCC3333 n|rMainbar
+## Author: Original by: Nightcracker, Neal, ballagarba - (Updated for Midnight: Imithat (WoWInterface.com), selias2k (Curseforge.com))
+## Version: r13.1
+## Notes: Customizable action bar addon for World of Warcraft
+## SavedVariables: BagsShown, nMainbarSettings, nMainbarConfig
+## X-Category: ActionBars
+## IconTexture: Interface\Icons\INV_Misc_QuestionMark
 
-bindings.xml
-config.lua
-
-modules\bags.lua
-modules\core.lua
-modules\bottomLeft.lua
-modules\bottomRight.lua
-modules\extrabar.lua
-modules\left.lua
-modules\right.lua
-modules\skins.lua
-modules\expbar.lua
-modules\hotkey.lua
-modules\mouseover.lua
-modules\petbar.lua
-modules\possessbar.lua
-modules\repbar.lua
-modules\slash.lua
-modules\stancebar.lua
-modules\picomenu.lua
-
-modules\short\short.lua
-modules\short\extras.lua
-modules\short\totem.lua
+nMainbar.xml

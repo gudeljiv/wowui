@@ -136,7 +136,7 @@ bind K MULTIACTIONBAR1BUTTON8
 bind K NONE HousingEditor
 bind I MULTIACTIONBAR4BUTTON12
 bind I NONE HousingEditor
-bind J NONE
+bind J MULTIACTIONBAR7BUTTON10
 bind J NONE HousingEditor
 bind J NONE HousingEditorBasicDecorMode
 bind NUMPADPLUS NONE

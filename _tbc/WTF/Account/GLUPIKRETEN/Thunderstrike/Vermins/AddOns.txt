@@ -201,3 +201,4 @@ Farmer: disabled
 LortiUI: disabled
 UberUI: disabled
 QuickRack: disabled
+Dominos: enabled

@@ -232,7 +232,7 @@ function QuestieLib:GetQuestTypeSuffix(questId)
 
     if questTagId == questTagIds.ELITE then
         return "+"
-    elseif questTagId == questTagIds.PVP or questTagId == questTagIds.CLASS then
+    elseif questTagId == questTagIds.PVP or questTagId == questTagIds.CLASS or questTagId == questTagIds.ESCORT then
         return ""
     elseif questTagId == questTagIds.LEGENDARY then
         return "++"
@@ -647,7 +647,7 @@ function QuestieLib:TextWrap(line, prefix, combineTrailing, desiredWidth)
             --This combines a trailing word to the previous line if it is the only word of the line
             --We check lastSpaceIndex here because the logic will be faulty (chinese client)
             if (row == numberOfRows - 1 and combineTrailing and lastSpaceIndex) then
-                --Get the last line, in it's full
+                --Get the last line, in its full
                 local lastLine = string.sub(useLine, endIndex - 2, strlen(useLine))
 
                 --Does the line not contain any space we combine it into the previous line
@@ -727,6 +727,33 @@ function QuestieLib.UpdateLastKnownDailyReset()
     local realmName = GetRealmName()
 
     Questie.db.global.lastKnownDailyReset[realmName] = GetServerTime() + GetQuestResetTime()
+end
+
+---@param timeStamp number
+---@return string|osdate formattedDate The date formatted based on the player's locale
+function QuestieLib.FormatDate(timeStamp)
+    local langCode = l10n:GetUILocale()
+
+    local weekDay = CALENDAR_WEEKDAY_NAMES[tonumber(date("%w", timeStamp)) + 1]
+    local monthName = CALENDAR_FULLDATE_MONTH_NAMES[tonumber(date("%m", timeStamp))]
+
+    if langCode == "deDE" then
+        return date(weekDay .. ", %d. " .. monthName .. " %Y um %H:%M", timeStamp)
+    elseif langCode == "esES" or langCode == "esMX" then
+        return date(weekDay .. ", %d de " .. monthName .. " de %Y a las %H:%M", timeStamp)
+    elseif langCode == "frFR" then
+        return date(weekDay .. " %d " .. monthName .. " %Y à %H:%M", timeStamp)
+    elseif langCode == "koKR" then
+        return date("%Y년 " .. monthName .. " %d일" .. " " .. weekDay .." %H:%M", timeStamp)
+    elseif langCode == "ptBR" then
+        return date(weekDay .. ", %d de " .. monthName .. " de %Y às %H:%M", timeStamp)
+    elseif langCode == "ruRU" then
+        return date(weekDay .. ", %d " .. monthName .. " %Y, %H:%M", timeStamp)
+    elseif langCode == "zhCN" or langCode == "zhTW" then
+        return date("%Y年" .. monthName .. "%d日 " .. weekDay .. " %H:%M", timeStamp)
+    end
+
+    return date(weekDay .. ", " .. monthName .. " %d, %Y at %H:%M", timeStamp)
 end
 
 return QuestieLib

@@ -1,4 +1,7 @@
-﻿2.5.07 - 14th February 2026
+﻿2.5.10 - 25th February 2026
+- CurseForge website is now tagging BCC releases correctly.
+
+2.5.07 - 14th February 2026
 - Sounds updated to game version 2.5.5.65895 (Feb 11 2026) (20505).
 
 2.5.05 - 8th February 2026

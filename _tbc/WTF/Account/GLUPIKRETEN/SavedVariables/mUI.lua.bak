@@ -1,0 +1,62 @@
+
+mUIDB = {
+["profileKeys"] = {
+["Pitchwise - Thunderstrike"] = "Default",
+["Dopeclaw - Stitches"] = "Dopeclaw - Stitches",
+},
+["profiles"] = {
+["Default"] = {
+["map"] = {
+["enabled"] = false,
+},
+["general"] = {
+["font"] = "Arial Narrow",
+["automation"] = {
+["duel"] = false,
+},
+["fontpath"] = "Fonts\\ARIALN.TTF",
+},
+["edit"] = {
+["VERMIN"] = {
+["statsframe"] = {
+["y"] = 0,
+["x"] = 0,
+["point"] = "BOTTOMLEFT",
+},
+["gametooltip"] = {
+["y"] = 0,
+["x"] = 0,
+["point"] = "BOTTOMRIGHT",
+},
+},
+},
+["castbars"] = {
+["enabled"] = false,
+},
+["install"] = true,
+["actionbars"] = {
+["enabled"] = false,
+["style"] = "Default",
+["mouseover"] = {
+["bagbuttons"] = "Hidden",
+["micromenu"] = "Hidden",
+},
+},
+["unitframes"] = {
+["enabled"] = false,
+},
+["tooltips"] = {
+["enabled"] = false,
+},
+["nameplates"] = {
+["enabled"] = false,
+},
+["chat"] = {
+["enabled"] = false,
+},
+["reset"] = true,
+},
+["Dopeclaw - Stitches"] = {
+},
+},
+}

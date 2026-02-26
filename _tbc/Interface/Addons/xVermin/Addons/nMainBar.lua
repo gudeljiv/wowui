@@ -1,6 +1,6 @@
 local _, xVermin = ...
 
-if C_AddOns.IsAddOnLoaded("nMainBar") then
+if C_AddOns.IsAddOnLoaded("nMainBarX") then
 	MainStatusTrackingBarContainer:Hide()
 	MainStatusTrackingBarContainer:HookScript("OnShow", function(self)
 		self:Hide()

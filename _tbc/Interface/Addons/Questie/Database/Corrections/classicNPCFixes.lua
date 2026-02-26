@@ -184,6 +184,9 @@ function QuestieNPCFixes:Load()
         [1364] = { -- Balgaras the Foul
             [npcKeys.spawns] = {[zoneIDs.WETLANDS]={{47,17},{49,15},{60,26},{61.6,29.8},{61.6,31.6},{62.49,28.42}}},
         },
+        [1373] = { -- Jarven Thunderbrew
+            [npcKeys.waypoints] = {},
+        },
         [1416] = { -- Grimand Elmore
             [npcKeys.waypoints] = {},
         },
@@ -478,10 +481,10 @@ function QuestieNPCFixes:Load()
             [npcKeys.questStarts] = {8250},
         },
         [3048] = { -- Ursyn Ghull
-            [npcKeys.questStarts] = {},
+            [npcKeys.questStarts] = {1947,1953},
         },
         [3049] = { -- Thurston Xane
-            [npcKeys.questStarts] = {1959},
+            [npcKeys.questStarts] = {1883,1959},
         },
         [3060] = { -- Gart Mistrunner
             [npcKeys.questStarts] = {},
@@ -864,6 +867,9 @@ function QuestieNPCFixes:Load()
         [4565] = { -- Richard Kerwin
             [npcKeys.questStarts] = {},
         },
+        [4568] = { -- Anastasia Hartwell
+            [npcKeys.questStarts] = {1882,1943,1947,1953,1960,1961,2861},
+        },
         [4582] = { -- Carolyn Ward
             [npcKeys.questStarts] = {6681},
         },
@@ -985,7 +991,7 @@ function QuestieNPCFixes:Load()
             [npcKeys.questStarts] = {},
         },
         [5144] = { -- Bink
-            [npcKeys.questStarts] = {1880,1939,1953,2861},
+            [npcKeys.questStarts] = {1880,1939,1947,1953,2861},
         },
         [5145] = { -- Juli Stormkettle
             [npcKeys.questStarts] = {},
@@ -1104,6 +1110,9 @@ function QuestieNPCFixes:Load()
         [5883] = { -- Enyo
             [npcKeys.questStarts] = {},
         },
+        [5885] = { -- Deino
+            [npcKeys.questStarts] = {1944,1945,1947,1953,2861},
+        },
         [5895] = { -- Minor Manifestation of Water
             [npcKeys.zoneID] = zoneIDs.SILVERPINE_FOREST,
             [npcKeys.spawns] = {[zoneIDs.SILVERPINE_FOREST] = {{38.65,44.58}}},
@@ -1196,6 +1205,9 @@ function QuestieNPCFixes:Load()
             [npcKeys.zoneID] = zoneIDs.TIRISFAL_GLADES,
             [npcKeys.spawns] = {[zoneIDs.TIRISFAL_GLADES] = {{59.47,48.28}}},
         },
+        [6546] = { -- Tabetha
+            [npcKeys.waypoints] = {},
+        },
         [6549] = { -- Demon of the Orb
             [npcKeys.zoneID] = zoneIDs.DUSTWALLOW_MARSH,
             [npcKeys.spawns] = {[zoneIDs.DUSTWALLOW_MARSH] = {{45.79,56.97}}},
@@ -1258,7 +1270,7 @@ function QuestieNPCFixes:Load()
             [npcKeys.spawns] = {[zoneIDs.ZUL_FARRAK] = {{-1,-1}}},
         },
         [7311] = { -- Uthel'nay <Mage Trainer>
-            [npcKeys.questStarts] = {1883,1953,1959,7068,8250},
+            [npcKeys.questStarts] = {1883,1959,7068,8250},
         },
         [7312] = { -- Dink <Mage Trainer>
             [npcKeys.questStarts] = {1919,8250},
@@ -1729,6 +1741,10 @@ function QuestieNPCFixes:Load()
             [npcKeys.spawns] = {[zoneIDs.WESTERN_PLAGUELANDS]={{45.15,62.28},{45.21,62.83},{46.38,62.33},{46.69,62.08},{47.03,61.96},{47.21,65.86},{47.76,66.51},{47.83,63.45},{47.92,65.91},{48.23,64.39},{48.26,65.77},{48.45,62.81},{48.57,63.98},{49.02,69.3},{49.1,68.86},{49.4,68.84},{49.95,66.1},{50.15,66.77},{50.2,66.34},{50.31,67.23}}},
             [npcKeys.zoneID] = zoneIDs.WESTERN_PLAGUELANDS,
         },
+        [10720] = { -- Galak Assassin
+            [npcKeys.spawns] = {[zoneIDs.THOUSAND_NEEDLES] = {{21.06,31.7},{21.22,31.54},{21.26,31.81}}},
+            [npcKeys.zoneID] = zoneIDs.THOUSAND_NEEDLES,
+        },
         [10737] = { -- Shy-Rotam
             [npcKeys.zoneID] = zoneIDs.WINTERSPRING,
             [npcKeys.spawns] = {[zoneIDs.WINTERSPRING] = {{49.81,9.8}}},
@@ -1827,6 +1843,14 @@ function QuestieNPCFixes:Load()
         },
         [11039] = { -- Duke Nicholas Zverenhoff
             [npcKeys.questStarts] = {5251,5263,5264,5405,5508,5509,5510},
+        },
+        [11048] = { -- Victor Ward
+            [npcKeys.questStarts] = {1962},
+            [npcKeys.questEnds] = {1962},
+        },
+        [11049] = { -- Rhiannon Davis
+            [npcKeys.questStarts] = {1962},
+            [npcKeys.questEnds] = {1962},
         },
         [11058] = { -- Ezra Grimm
             [npcKeys.name] = "Ezra Grimm",
@@ -3309,6 +3333,10 @@ function QuestieNPCFixes:LoadFactionFixes()
     local zoneIDs = ZoneDB.zoneIDs
 
     local npcFixesHorde = {
+        [6492] = { -- Rift Spawn
+            [npcKeys.spawns] = {[zoneIDs.UNDERCITY] = {{53.29,74.56},{53.67,76.81},{52.01,75.96},{53.2,71.44}}},
+            [npcKeys.zoneID] = zoneIDs.UNDERCITY,
+        },
         [12138] = { -- Lunaclaw
             [npcKeys.spawns] = {[zoneIDs.THE_BARRENS] = {{41.96,60.79}}},
             [npcKeys.zoneID] = zoneIDs.THE_BARRENS,
@@ -3340,6 +3368,10 @@ function QuestieNPCFixes:LoadFactionFixes()
     }
 
     local npcFixesAlliance = {
+        [6492] = { -- Rift Spawn
+            [npcKeys.spawns] = {[zoneIDs.STORMWIND_CITY] = {{40.87,89.04},{40.75,92.13},{41.27,90.54},{40.26,88.13},{40.89,87.75},{40.47,91.94}}},
+            [npcKeys.zoneID] = zoneIDs.STORMWIND_CITY,
+        },
         [12138] = { -- Lunaclaw
             [npcKeys.spawns] = {[zoneIDs.DARKSHORE] = {{43.33,45.85}}},
             [npcKeys.zoneID] = zoneIDs.DARKSHORE,

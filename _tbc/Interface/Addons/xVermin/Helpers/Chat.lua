@@ -562,6 +562,24 @@ end
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- Modify the editbox -----------------------------------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+local function UpdateEditBoxBorderColor(editBox)
+	editBox = editBox or ChatFrame1EditBox
+	local chatType = editBox:GetAttribute("chatType")
+	if not chatType then
+		return
+	end
+
+	local info = ChatTypeInfo[chatType]
+	if not info then
+		return
+	end
+
+	local r, g, b = info.r, info.g, info.b
+
+	editBox:SetBeautyBorderTexture("white")
+	editBox:SetBeautyBorderColor(r, g, b)
+end
+
 if not ChatFrame1EditBox.SetBackdrop then
 	Mixin(ChatFrame1EditBox, BackdropTemplateMixin)
 end
@@ -584,14 +602,26 @@ ChatFrame1EditBox:CreateBeautyBorder(8)
 -- ChatFrame1EditBox:SetBeautyBorderPadding(-2, -1, -2, -1, -2, -1, -2, -1)
 ChatFrame1EditBox:SetBeautyBorderTexture("white")
 
-hooksecurefunc("ChatEdit_UpdateHeader", function(editBox)
-	local type = editBox:GetAttribute("chatType")
-	if not type then
+local lastChatType = nil
+local elapsed = 0
+
+ChatFrame1EditBox:HookScript("OnUpdate", function(self, dt)
+	elapsed = elapsed + dt
+	if elapsed < 0.1 then
 		return
 	end
+	elapsed = 0
 
-	local info = ChatTypeInfo[type]
-	ChatFrame1EditBox:SetBeautyBorderColor(info.r, info.g, info.b)
+	local chatType = self:GetAttribute("chatType")
+	if chatType ~= lastChatType then
+		lastChatType = chatType
+		UpdateEditBoxBorderColor(self)
+	end
+end)
+
+ChatFrame1EditBox:HookScript("OnShow", function(self)
+	lastChatType = nil -- force refresh on open
+	elapsed = 0
 end)
 
 ChatFrame1EditBoxMid:Hide()

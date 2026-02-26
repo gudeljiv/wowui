@@ -102,6 +102,24 @@ function TrackerLinePool.ResetButtonsForChange()
     buttonIndex = 0
 end
 
+---@param callback function
+function TrackerLinePool.UpdateObjectiveLines(callback)
+    for _, line in pairs(linePool) do
+        if line.mode == "objective" then
+            callback(line)
+        end
+    end
+end
+
+---@param callback function
+function TrackerLinePool.UpdateQuestTitleLines(callback)
+    for _, line in pairs(linePool) do
+        if line.mode == "quest" then
+            callback(line)
+        end
+    end
+end
+
 function TrackerLinePool.UpdateWrappedLineWidths(trackerLineWidth)
     local trackerFontSizeQuest = Questie.db.profile.trackerFontSizeQuest
     local trackerMarginLeft = 14
@@ -216,6 +234,7 @@ function TrackerLinePool.HideUnusedLines()
             line.Objective = nil
             line.Button = nil
             line.altButton = nil
+            line.questHasSecondaryQIB = false
             line.trackTimedQuest = nil
             line.expandQuest.mode = nil
             line.expandQuest.questId = nil
@@ -360,7 +379,7 @@ function TrackerLinePool.UpdateQuestLines(questId)
             local objective = line.Objective
             local lineEnding = tostring(objective.Collected) .. "/" .. tostring(objective.Needed)
 
-            local objDesc = objective.Description:gsub("%.", "")
+            local objDesc = objective.Description:gsub("%.$", "")
             line.label:SetText(QuestieLib:GetRGBForObjective(objective) .. objDesc .. ": " .. lineEnding)
         end
     end

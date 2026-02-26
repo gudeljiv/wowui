@@ -133,7 +133,7 @@ function QuestieWotlkNpcFixes:Load()
             [npcKeys.questEnds] = {64028,64031,64034,64035,70395,70397,70398,70401,70870,78136,78140,78157,78164},
         },
         [5885] = { -- Deino
-            [npcKeys.questStarts] = {1944,1945,1947,2861,64048,64050,64052,64063,64064,70734,70735,70736,70737,70865,70869,78167,78168},
+            [npcKeys.questStarts] = {1944,1945,1947,1953,2861,64048,64050,64052,64063,64064,70734,70735,70736,70737,70865,70869,78167,78168},
             [npcKeys.questEnds] = {1943,1944,64046,64048,64050,64052,70396,70734,70735,70736,70869,78137,78167},
         },
         [5994] = { -- Zayus
@@ -316,7 +316,7 @@ function QuestieWotlkNpcFixes:Load()
             },
             [npcKeys.questStarts] = {8870},
         },
-        [15895] = {
+        [15895] = { -- Lunar Festival Harbinger
             [npcKeys.spawns] = {
                 [zoneIDs.DARNASSUS]={{32.59,12}},
                 [zoneIDs.UNDERCITY]={{65.62,36.0}},
@@ -3738,6 +3738,10 @@ function QuestieWotlkNpcFixes:LoadFactionFixes()
     }
 
     local npcFixesAlliance = {
+        [6492] = { -- Rift Spawn
+            [npcKeys.spawns] = {[zoneIDs.STORMWIND_CITY] = {{51.32,92.34},{50.83,92.63},{51.61,94.5},{51.21,95.73},{50.99,95.58},{51.3,93.34}}},
+            [npcKeys.zoneID] = zoneIDs.STORMWIND_CITY,
+        },
         [15898] = {
             [npcKeys.spawns] = {
                 [zoneIDs.STORMWIND_CITY]={{37.32,64.04}},

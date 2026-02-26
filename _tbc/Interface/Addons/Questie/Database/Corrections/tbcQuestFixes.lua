@@ -14,9 +14,8 @@ local QuestieCorrections = QuestieLoader:ImportModule("QuestieCorrections")
 local l10n = QuestieLoader:ImportModule("l10n")
 
 
-QuestieCorrections.killCreditObjectiveFirst = {
-    [10503] = true, -- The Bladespire Threat
-}
+QuestieCorrections.killCreditObjectiveFirst[10503] = true -- The Bladespire Threat
+
 
 function QuestieTBCQuestFixes:Load()
     _QuestieTBCQuestFixes:InsertMissingQuestIds()
@@ -107,8 +106,14 @@ function QuestieTBCQuestFixes:Load()
         [532] = { -- Battle of Hillsbrad
             [questKeys.objectivesText] = {"Kill Magistrate Burnside and 4 Hillsbrad Councilmen. Destroy the Hillsbrad Proclamation. Steal the Hillsbrad Town Registry. Report back to Darthalia in Tarren Mill afterwards."},
         },
+        [549] = { -- WANTED: Syndicate Personnel
+            [questKeys.requiredLevel] = 17,
+        },
         [558] = {
             [questKeys.questLevel] = -1,
+        },
+        [566] = { -- WANTED: Baron Vardus
+            [questKeys.requiredLevel] = 17,
         },
         [578] = {
             [questKeys.triggerEnd] = {"Locate the haunted island", {[zoneIDs.STRANGLETHORN_VALE]={{21.56,21.98}}}},
@@ -229,6 +234,9 @@ function QuestieTBCQuestFixes:Load()
         },
         [1284] = { -- Suspicious Hoofprints
             [questKeys.startedBy] = {nil,{187273}},
+        },
+        [1287] = { -- The Deserters
+            [questKeys.nextQuestInChain] = 11143,
         },
         [1322] = {
             [questKeys.objectivesText] = {"Acquire 5 Acidic Venom Sacs for Do'gol in Brackenwall Village."},
@@ -370,6 +378,18 @@ function QuestieTBCQuestFixes:Load()
         [1880] = { -- Mage-tastic Gizmonitor
             [questKeys.exclusiveTo] = {1861,9595},
         },
+        [1881] = { -- Speak with Anastasia
+            [questKeys.exclusiveTo] = {1884,9402},
+        },
+        [1882] = { -- The Balnir Farmstead
+            [questKeys.exclusiveTo] = {1884,9402},
+        },
+        [1883] = { -- Speak with Un'thuwa
+            [questKeys.exclusiveTo] = {1882,9402},
+        },
+        [1884] = { -- Ju-Ju Heaps
+            [questKeys.exclusiveTo] = {1882,9402},
+        },
         [1885] = { -- Mennet Carkad
             [questKeys.requiredRaces] = raceIDs.UNDEAD,
         },
@@ -381,6 +401,15 @@ function QuestieTBCQuestFixes:Load()
         },
         [1899] = { -- The Deathstalkers
             [questKeys.requiredRaces] = raceIDs.UNDEAD,
+        },
+        [1939] = { -- High Sorcerer Andromath
+            [questKeys.startedBy] = {{5144,5497,17513}},
+        },
+        [1947] = { -- Journey to the Marsh
+            [questKeys.startedBy] = {{3048,4568,5885,16652,5144,5497,17513}}, -- further split in faction fixes below
+        },
+        [1953] = { -- Return to the Marsh
+            [questKeys.startedBy] = {{5144,5497,3048,4568,5885,16652,17513}}, -- further split in faction fixes below
         },
         [1963] = { -- The Shattered Hand
             [questKeys.requiredRaces] = raceIDs.ORC + raceIDs.TROLL,
@@ -586,6 +615,9 @@ function QuestieTBCQuestFixes:Load()
         [5168] = {
             [questKeys.preQuestSingle] = {5210},
         },
+        [5386] = { -- Catch of the Day
+            [questKeys.childQuests] = {},
+        },
         [5401] = {
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.exclusiveTo] = {5405,5503},
@@ -593,6 +625,9 @@ function QuestieTBCQuestFixes:Load()
         [5405] = {
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
             [questKeys.exclusiveTo] = {5401,5503},
+        },
+        [5421] = { -- Fish in a Bucket
+            [questKeys.parentQuest] = 0,
         },
         [5502] = {
             [questKeys.questLevel] = -1,
@@ -1520,6 +1555,12 @@ function QuestieTBCQuestFixes:Load()
             [questKeys.triggerEnd] = nil,
             [questKeys.objectives] = {{{17062,nil,Questie.ICON_TYPE_EVENT}}},
         },
+        [9402] = { -- Fetch!
+            [questKeys.exclusiveTo] = {1882,1884},
+        },
+        [9403] = { -- The Purest Water
+            [questKeys.preQuestSingle] = {1882,1884,9402},
+        },
         [9410] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use the Wolf Totem at the location where you found Krun Spinebreaker's body and follow the Ancestral Spirit Wolf."), 0, {{"monster", 17062}}}},
         },
@@ -1588,6 +1629,9 @@ function QuestieTBCQuestFixes:Load()
             [questKeys.objectives] = {{{15652,nil,Questie.ICON_TYPE_INTERACT}}},
         },
         [9487] = {
+            [questKeys.requiredRaces] = raceIDs.BLOOD_ELF,
+        },
+        [9488] = {
             [questKeys.requiredRaces] = raceIDs.BLOOD_ELF,
         },
         [9489] = {
@@ -1674,6 +1718,9 @@ function QuestieTBCQuestFixes:Load()
         [9531] = {
             [questKeys.objectives] = {nil,{{181694}}},
         },
+        [9534] = { -- Destroy the Legion
+            [questKeys.requiredLevel] = 27,
+        },
         [9538] = {
             [questKeys.triggerEnd] = {"Stillpine Furbolg Language Primer Read", {[zoneIDs.AZUREMYST_ISLE]={{49.29,51.07}}}},
         },
@@ -1704,7 +1751,7 @@ function QuestieTBCQuestFixes:Load()
         },
         [9565] = {
             [questKeys.preQuestGroup] = {},
-            [questKeys.preQuestSingle] = {9560,9562},
+            [questKeys.preQuestSingle] = {9560,9562}, -- check if also 9564
         },
         [9570] = { -- The Kurken is Lurkin'
             [questKeys.preQuestSingle] = {9565,9573},
@@ -1713,7 +1760,7 @@ function QuestieTBCQuestFixes:Load()
             [questKeys.zoneOrSort] = zoneIDs.HELLFIRE_CITADEL,
         },
         [9573] = {
-            [questKeys.preQuestSingle] = {9560,9562},
+            [questKeys.preQuestSingle] = {9560,9562}, -- check if also 9564
         },
         [9575] = { -- Weaken the Ramparts
             [questKeys.zoneOrSort] = zoneIDs.HELLFIRE_CITADEL,
@@ -1851,9 +1898,6 @@ function QuestieTBCQuestFixes:Load()
         },
         [9671] = {
             [questKeys.requiredLevel] = 15,
-        },
-        [9672] = {
-            [questKeys.startedBy] = {nil,{410001}},
         },
         [9678] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Light the brazier"), 0, {{"object", 181956}}}},
@@ -2940,6 +2984,10 @@ function QuestieTBCQuestFixes:Load()
         [10605] = {
             [questKeys.exclusiveTo] = {1472,1507},
         },
+        [10606] = { -- The Art of Fel Reaver Maintenance
+            [questKeys.objectives] = {nil,nil,{{30713},{30712}}},
+            [questKeys.requiredSourceItems] = {},
+        },
         [10607] = {
             [questKeys.objectives] = {nil,{{184950},{184967},{184968},{184969}}},
         },
@@ -2947,6 +2995,10 @@ function QuestieTBCQuestFixes:Load()
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Open Nether Drake Eggs and use the Temporal Phase Modulator on whatever hatches"), 0, {{"object", 184867}}},
                                            {nil, Questie.ICON_TYPE_SLAY, l10n("Use the Temporal Phase Modulator"), 0, {{"monster", 20021}}},
             },
+        },
+        [10611] = { -- The Art of Fel Reaver Maintenance
+            [questKeys.objectives] = {nil,nil,{{30713},{30712}}},
+            [questKeys.requiredSourceItems] = {},
         },
         [10612] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use a Fel Reaver Control Console to take control of a Fel Reaver Sentinel"), 0, {{"object", 185057}}}},
@@ -3318,6 +3370,7 @@ function QuestieTBCQuestFixes:Load()
             },
         },
         [10872] = {
+            [questKeys.name] = "Zuluhed the Whacked",
             [questKeys.finishedBy] = {{22112}},
         },
         [10873] = {
@@ -3900,8 +3953,9 @@ function QuestieTBCQuestFixes:Load()
         [11134] = { -- The End of the Deserters
             [questKeys.nextQuestInChain] = 11136,
         },
-        [11140] = {
+        [11140] = { -- Recover the Cargo!
             [questKeys.requiredSourceItems] = {33040},
+            [questKeys.nextQuestInChain] = 11141,
         },
         [11142] = {
             [questKeys.objectives] = {{{23704,nil,Questie.ICON_TYPE_TALK}}},
@@ -3914,9 +3968,11 @@ function QuestieTBCQuestFixes:Load()
         [11146] = {
             [questKeys.objectives] = {nil,nil,nil,nil,{{{4351,4352},4351,nil,Questie.ICON_TYPE_INTERACT}}},
         },
+        [11150] = { -- Raze Direhorn Post!
+            [questKeys.objectives] = {{{23751,nil,Questie.ICON_TYPE_INTERACT},{23752,nil,Questie.ICON_TYPE_INTERACT},{23753,nil,Questie.ICON_TYPE_INTERACT}}}
+        },
         [11152] = {
             [questKeys.objectives] = {nil,{{186322,nil,Questie.ICON_TYPE_EVENT}}},
-            [questKeys.extraObjectives] = {{nil,Questie.ICON_TYPE_INTERACT,l10n("Use the cannon"),0,{{"object",186432}}}},
         },
         [11159] = {
             [questKeys.preQuestSingle] = {11161},
@@ -3931,11 +3987,13 @@ function QuestieTBCQuestFixes:Load()
         [11169] = {
             [questKeys.objectives] = {nil,nil,nil,nil,{{{4344,4345},4344,nil,Questie.ICON_TYPE_INTERACT}}},
         },
-        [11172] = {
+        [11172] = { -- The Zeppelin Crash
             [questKeys.nextQuestInChain] = 11174,
+            [questKeys.breadcrumbForQuestId] = 11174,
         },
-        [11174] = {
+        [11174] = { -- Corrosion Prevention
             [questKeys.preQuestSingle] = {},
+            [questKeys.breadcrumbs] = {11172},
             [questKeys.objectives] = {nil,nil,nil,nil,{{{4392,4393,4394},4392,nil,Questie.ICON_TYPE_INTERACT}}},
         },
         [11177] = {
@@ -3953,8 +4011,9 @@ function QuestieTBCQuestFixes:Load()
         [11186] = {
             [questKeys.startedBy] = {{23881}},
         },
-        [11198] = {
+        [11198] = { -- Take Down Tethyr!
             [questKeys.objectives] = {{{23899}}},
+            [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_OBJECT, l10n("Use the cannon"), 0, {{"object",186432}}}},
         },
         [11203] = {
             [questKeys.preQuestSingle] = {},
@@ -3968,6 +4027,9 @@ function QuestieTBCQuestFixes:Load()
         },
         [11211] = {
             [questKeys.exclusiveTo] = {11158,11214,11215},
+        },
+        [11213] = { -- Check Up on Tabetha
+            [questKeys.requiredLevel] = 37,
         },
         [11214] = {
             [questKeys.exclusiveTo] = {11158,11211,11215},
@@ -3983,6 +4045,12 @@ function QuestieTBCQuestFixes:Load()
             [questKeys.triggerEnd] = {"Put Out the Fires", {[zoneIDs.DUROTAR]={{52.12,43.59},{53.21,42.56},{51.58,42.08}},[zoneIDs.TIRISFAL_GLADES]={{60.32,53.29},{61.11,51.25},{61.64,51.97}},[zoneIDs.EVERSONG_WOODS]={{47.76,47.3},{48.21,46.16}}}},
             [questKeys.requiredSourceItems] = {32971},
             [questKeys.exclusiveTo] = {12155},
+        },
+        [11222] = { -- Warn Bolvar!
+            [questKeys.nextQuestInChain] = 11223,
+        },
+        [11225] = { -- The Hermit of Witch Hill
+            [questKeys.requiredLevel] = 32,
         },
         [11242] = {
             [questKeys.startedBy] = {{23904}},
@@ -6542,13 +6610,25 @@ function QuestieTBCQuestFixes:LoadFactionFixes()
     local raceIDs = QuestieDB.raceKeys
 
     local questFixesHorde = {
-        [2861] = {
+        [1947] = { -- Journey to the Marsh
+            [questKeys.startedBy] = {{3048,4568,5885,16652}},
+        },
+        [1953] = { -- Return to the Marsh
+            [questKeys.startedBy] = {{3048,4568,5885,16652}},
+        },
+        [2861] = { -- Tabetha's Task
             [questKeys.startedBy] = {{4568,5885,16651}}
         },
     }
 
     local questFixesAlliance = {
-        [2861] = {
+        [1947] = { -- Journey to the Marsh
+            [questKeys.startedBy] = {{5144,5497,17513}},
+        },
+        [1953] = { -- Return to the Marsh
+            [questKeys.startedBy] = {{5144,5497,17513}},
+        },
+        [2861] = { -- Tabetha's Task
             [questKeys.startedBy] = {{5144,5497,17514}}
         },
     }

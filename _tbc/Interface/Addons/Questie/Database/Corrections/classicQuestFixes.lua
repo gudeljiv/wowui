@@ -14,6 +14,7 @@ local QuestieCorrections = QuestieLoader:ImportModule("QuestieCorrections")
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
 
+QuestieCorrections.itemObjectiveFirst[503] = true
 QuestieCorrections.itemObjectiveFirst[5088] = true
 
 -- Further information on how to use this can be found at the wiki
@@ -51,12 +52,18 @@ function QuestieQuestFixes:Load()
             [questKeys.preQuestSingle] = {},
             [questKeys.breadcrumbs] = {163} -- #1198
         },
+        [7] = { -- Kobold Camp Cleanup
+            [questKeys.nextQuestInChain] = 15,
+        },
         [11] = {
             [questKeys.preQuestSingle] = {76}, -- #7364
             [questKeys.breadcrumbs] = {239},
         },
         [17] = {
             [questKeys.requiredLevel] = 38, -- #2437
+        },
+        [21] = { -- Skirmish at Echo Ridge
+            [questKeys.nextQuestInChain] = 54,
         },
         [25] = {
             [questKeys.triggerEnd] = {"Scout the gazebo on Mystral Lake that overlooks the nearby Alliance outpost.",{[zoneIDs.ASHENVALE]={{48.92,69.56}}}},
@@ -207,7 +214,6 @@ function QuestieQuestFixes:Load()
              [questKeys.breadcrumbs] = {436}, -- #2492
         },
         [308] = {
-            [questKeys.exclusiveTo] = {311}, -- distracting jarven can't be completed once you get the followup
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
             [questKeys.preQuestSingle] = {},
             [questKeys.parentQuest] = 310
@@ -251,8 +257,10 @@ function QuestieQuestFixes:Load()
         [374] = {
             [questKeys.preQuestSingle] = {427}, -- proof of demise requires at war with the scarlet crusade
         },
+        [384] = { -- Beer Basted Boar Ribs
+            [questKeys.zoneOrSort] = sortKeys.COOKING,
+        },
         [403] = {
-            [questKeys.exclusiveTo] = {311}, -- #6998
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
             [questKeys.parentQuest] = 310,
         },
@@ -306,6 +314,9 @@ function QuestieQuestFixes:Load()
             [questKeys.preQuestSingle] = {}, -- #1858
             [questKeys.breadcrumbs] = {468},
         },
+        [456] = { -- The Balance of Nature
+            [questKeys.nextQuestInChain] = 457,
+        },
         [463] = {
             [questKeys.nextQuestInChain] = 276,
             [questKeys.breadcrumbForQuestId] = 276,
@@ -339,6 +350,9 @@ function QuestieQuestFixes:Load()
         },
         [495] = {
             [questKeys.breadcrumbForQuestId] = 518,
+        },
+        [503] = { -- Gol'dir
+            [questKeys.objectives] = {{{2316,nil,Questie.ICON_TYPE_EVENT}},nil,{{3704}}},
         },
         [504] = {
             [questKeys.objectivesText] = {"Slay 15 Crushridge Warmongers, then return to Marshal Redpath in Southshore."},
@@ -393,6 +407,9 @@ function QuestieQuestFixes:Load()
             [questKeys.preQuestSingle] = {},
             [questKeys.preQuestGroup] = {596,629},
         },
+        [602] = { -- Magical Analysis
+            [questKeys.nextQuestInChain] = 603,
+        },
         [619] = {
             [questKeys.parentQuest] = 8554, -- #1691
             [questKeys.requiredLevel] = 35,
@@ -427,11 +444,12 @@ function QuestieQuestFixes:Load()
         [667] = {
             [questKeys.triggerEnd] = {"Defend Shakes O'Breen", {[zoneIDs.ARATHI_HIGHLANDS]={{31.93,81.82}}}},
         },
-        [676] = {
-            [questKeys.exclusiveTo] = {677},
+        [676] = { -- The Hammer May Fall
+            [questKeys.breadcrumbForQuestId] = 677,
         },
-        [677] = {
+        [677] = { -- Call to Arms
             [questKeys.preQuestSingle] = {}, -- #1162
+            [questKeys.breadcrumbs] = {676},
         },
         [680] = {
             [questKeys.preQuestSingle] = {678}, -- #1062
@@ -585,9 +603,6 @@ function QuestieQuestFixes:Load()
             [questKeys.childQuests] = {},
             [questKeys.parentQuest] = 0,
         },
-        [917] = {
-            [questKeys.nextQuestInChain] = 920,
-        },
         [918] = {
             [questKeys.preQuestSingle] = {},
         },
@@ -685,13 +700,13 @@ function QuestieQuestFixes:Load()
             [questKeys.exclusiveTo] = {1000,1018},
         },
         [1007] = { -- The Ancient Statuette
-            [questKeys.nextQuestInChain] = 1009
+            [questKeys.nextQuestInChain] = 1009,
         },
         [1008] = { -- The Zoram Strand
-            [questKeys.nextQuestInChain] = 1134
+            [questKeys.nextQuestInChain] = 1134,
         },
         [1010] = { -- Bathran's Hair
-            [questKeys.nextQuestInChain] = 1020
+            [questKeys.nextQuestInChain] = 1020,
         },
         [1011] = {
             [questKeys.preQuestSingle] = {},
@@ -707,7 +722,10 @@ function QuestieQuestFixes:Load()
             [questKeys.exclusiveTo] = {1015,1047},
         },
         [1020] = { -- Orendil's Cure
-            [questKeys.nextQuestInChain] = 1033
+            [questKeys.nextQuestInChain] = 1033,
+        },
+        [1023] = { -- Raene's Cleansing
+            [questKeys.nextQuestInChain] = 1024,
         },
         [1026] = {
             [questKeys.requiredSourceItems] = {5475},
@@ -716,10 +734,10 @@ function QuestieQuestFixes:Load()
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_SLAY, l10n("Slay slimes until they leave behind a Rusty Chest"), 0, {{"monster", 3928}}}},
         },
         [1033] = { -- Elune's Tear
-            [questKeys.nextQuestInChain] = 1034
+            [questKeys.nextQuestInChain] = 1034,
         },
         [1034] = { -- The Ruins of Stardust
-            [questKeys.nextQuestInChain] = 1035
+            [questKeys.nextQuestInChain] = 1035,
         },
         [1036] = {
             [questKeys.requiredMinRep] = {87,3000},
@@ -785,7 +803,7 @@ function QuestieQuestFixes:Load()
         },
         [1107] = {
             [questKeys.preQuestSingle] = {},
-            [questKeys.preQuestGroup] = {1104,1105} -- #2444
+            [questKeys.preQuestGroup] = {1104,1105}, -- #2444
         },
         [1118] = {
             [questKeys.inGroupWith] = {}, -- #886
@@ -1423,20 +1441,21 @@ function QuestieQuestFixes:Load()
             [questKeys.exclusiveTo] = {1861},
             [questKeys.breadcrumbs] = {1879},
         },
-        [1881] = {
+        [1881] = { -- Speak with Anastasia
             [questKeys.breadcrumbForQuestId] = 1882,
-            [questKeys.exclusiveTo] = {},
+            [questKeys.exclusiveTo] = {1884},
         },
-        [1882] = {
+        [1882] = { -- The Balnir Farmstead
             [questKeys.preQuestSingle] = {},
             [questKeys.exclusiveTo] = {1884},
             [questKeys.breadcrumbs] = {1881},
         },
-        [1883] = {
+        [1883] = { -- Speak with Un'thuwa
             [questKeys.breadcrumbForQuestId] = 1884,
-            [questKeys.exclusiveTo] = {},
+            [questKeys.exclusiveTo] = {1882},
+            [questKeys.startedBy] = {{3049,7311}},
         },
-        [1884] = {
+        [1884] = { -- Ju-Ju Heaps
             [questKeys.preQuestSingle] = {},
             [questKeys.exclusiveTo] = {1882},
             [questKeys.breadcrumbs] = {1883},
@@ -1457,13 +1476,19 @@ function QuestieQuestFixes:Load()
             [questKeys.breadcrumbs] = {1919}, -- #1328
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use Cantation of Manifestation to reveal Rift Spawn. Use Chest of Containment Coffers on stunned Rift Spawn"), 0, {{"monster", 6492}}}},
         },
-        [1938] = {
+        [1921] = { -- Gathering Materials
+            [questKeys.nextQuestInChain] = 1941,
+        },
+        [1938] = { -- Ur's Treatise on Shadow Magic
             [questKeys.preQuestSingle] = {},
             [questKeys.breadcrumbs] = {1939},
         },
-        [1939] = {
+        [1939] = { -- High Sorcerer Andromath
             [questKeys.startedBy] = {{5144,5497}},
             [questKeys.breadcrumbForQuestId] = 1938,
+        },
+        [1940] = { -- Pristine Spider Silk
+            [questKeys.nextQuestInChain] = 1942,
         },
         [1943] = {
             [questKeys.breadcrumbForQuestId] = 1944, -- #2253
@@ -1472,17 +1497,35 @@ function QuestieQuestFixes:Load()
             [questKeys.preQuestSingle] = {}, -- #2253
             [questKeys.breadcrumbs] = {1943},
         },
-        [1948] = {
+        [1945] = { -- Laughing Sisters
+            [questKeys.nextQuestInChain] = 1946,
+        },
+        [1947] = { -- Journey to the Marsh
+            [questKeys.startedBy] = {{3048,4568,5885,5144,5497}}, -- further split in faction fixes below
+        },
+        [1948] = { -- Items of Power
             [questKeys.preQuestSingle] = {1947},
         },
-        [1950] = {
+        [1950] = { -- Get the Scoop
             [questKeys.objectives] = {{{6626,nil,Questie.ICON_TYPE_EVENT}}},
         },
-        [1954] = {
+        [1952] = { -- Mage's Wand
             [questKeys.preQuestSingle] = {},
+            [questKeys.preQuestGroup] = {1948,1951},
+        },
+        [1953] = { -- Return to the Marsh
+            [questKeys.breadcrumbForQuestId] = 1954,
+            [questKeys.startedBy] = {{3048,4568,5885,5144,5497}}, -- further split in faction fixes below
+        },
+        [1954] = { -- The Infernal Orb
+            [questKeys.preQuestSingle] = {},
+            [questKeys.breadcrumbs] = {1953},
         },
         [1955] = {
             [questKeys.triggerEnd] = {"Kill the Demon of the Orb", {[zoneIDs.DUSTWALLOW_MARSH]={{45.6,57.2}}}},
+        },
+        [1957] = { -- Mana Surges
+            [questKeys.nextQuestInChain] = 1958,
         },
         [1959] = {
             [questKeys.startedBy] = {{2128,3049,5880,7311}},
@@ -1492,6 +1535,13 @@ function QuestieQuestFixes:Load()
             [questKeys.preQuestSingle] = {},
             [questKeys.breadcrumbs] = {1959},
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use Cantation of Manifestation to reveal Rift Spawn. Use Chest of Containment Coffers on stunned Rift Spawn"), 0, {{"monster", 6492}}}},
+        },
+        [1961] = { -- Gathering Materials
+            [questKeys.nextQuestInChain] = 1962,
+        },
+        [1962] = { -- Spellfire Robes
+            [questKeys.startedBy] = {{4576,11048,11049}},
+            [questKeys.finishedBy] = {{4576,11048,11049}},
         },
         [1963] = { -- The Shattered Hand
             [questKeys.preQuestSingle] = {},
@@ -2405,8 +2455,8 @@ function QuestieQuestFixes:Load()
             [questKeys.requiredRaces] = raceIDs.ALL_ALLIANCE,
             [questKeys.breadcrumbForQuestId] = 1799,
         },
-        [4966] = {
-            [questKeys.triggerEnd] = {"Protect Kanati Greycloud", {[zoneIDs.THOUSAND_NEEDLES]={{21.38,31.98}}}},
+        [4966] = { -- Protect Kanati Greycloud
+            [questKeys.objectives] = {{{10720}}},
         },
         [4967] = {
             [questKeys.requiredRaces] = raceIDs.ALL_HORDE,
@@ -3119,6 +3169,9 @@ function QuestieQuestFixes:Load()
         },
         [6482] = {
             [questKeys.triggerEnd] = {"Escort Ruul from the Thistlefurs.", {[zoneIDs.ASHENVALE]={{38.53,37.32}}}},
+        },
+        [6504] = { -- The Lost Pages
+            [questKeys.requiredSourceItems] = {16645,16646,16647,16648,16649,16650,16651,16652,16653,16654,16655,16656},
         },
         [6523] = {
             [questKeys.triggerEnd] = {"Kaya Escorted to Camp Aparaje", {[zoneIDs.STONETALON_MOUNTAINS]={{77.1,90.85}}}},
@@ -4457,9 +4510,10 @@ function QuestieQuestFixes:Load()
         [8574] = {
             [questKeys.preQuestSingle] = {8800},
         },
-        [8575] = {
+        [8575] = { -- Azuregos's Magical Ledger
             [questKeys.startedBy] = {{15481}},
             [questKeys.preQuestSingle] = {8555}, -- #2365
+            [questKeys.nextQuestInChain] = 8576,
         },
         [8580] = {
             [questKeys.requiredLevel] = 1,
@@ -4551,6 +4605,10 @@ function QuestieQuestFixes:Load()
         },
         [8620] = {
             [questKeys.requiredSourceItems] = {21103,21104,21105,21106,21107,21108,21109,21110},
+        },
+        [8728] = { -- The Good News and The Bad News
+            [questKeys.preQuestSingle] = {},
+            [questKeys.preQuestGroup] = {8578,8587,8620},
         },
         [8729] = {
             [questKeys.extraObjectives] = {{nil, Questie.ICON_TYPE_EVENT, l10n("Use Arcanite Buoy"),0,{{"object", 180669}}}},
@@ -5046,6 +5104,9 @@ function QuestieQuestFixes:Load()
             [questKeys.startedBy] = {{3033,4217,5505,12042}},
             [questKeys.breadcrumbForQuestId] = 9052,
         },
+        [9068] = {
+            [questKeys.specialFlags] = specialFlags.REPEATABLE,
+        },
         [9069] = {
             [questKeys.specialFlags] = specialFlags.REPEATABLE,
         },
@@ -5534,7 +5595,7 @@ function QuestieQuestFixes:LoadFactionFixes()
         [1718] = {
             [questKeys.startedBy] = {{3041,3354,4595}},
         },
-        [1947] = {
+        [1947] = { -- Journey to the Marsh
             [questKeys.startedBy] = {{3048,4568,5885}},
         },
         [1953] = {
@@ -5589,7 +5650,7 @@ function QuestieQuestFixes:LoadFactionFixes()
         [1718] = {
             [questKeys.startedBy] = {{5113,5479}},
         },
-        [1947] = {
+        [1947] = { -- Journey to the Marsh
             [questKeys.startedBy] = {{5144,5497}},
         },
         [1953] = {

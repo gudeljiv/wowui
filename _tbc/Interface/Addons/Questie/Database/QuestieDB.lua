@@ -59,6 +59,7 @@ QuestieDB.questTagIds = {
     RAID = 62,
     DUNGEON = 81,
     LEGENDARY = 83,
+    ESCORT = 84,
     HEROIC = 85,
     RAID_10 = 88,
     RAID_25 = 89,
@@ -495,6 +496,15 @@ function QuestieDB.GetQuestTagInfo(questId)
         questTagId, questTagName = questTagCorrections[questId][1], questTagCorrections[questId][2]
     else
         questTagId, questTagName = GetQuestTagInfo(questId)
+
+        if questTagId == nil and questTagName == nil then
+            -- Retry the API call after a short delay, as the API tends to incorrectly return nil on the first call.
+            -- Doing it here asserts, we only call the API twice per quest at most.
+            C_Timer.After(1, function()
+                local retryQuestTagId, retryQuestTagName = GetQuestTagInfo(questId)
+                questTagInfoCache[questId] = {retryQuestTagId, retryQuestTagName}
+            end)
+        end
     end
 
     -- cache the result to avoid hitting the API throttling limit

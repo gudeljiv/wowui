@@ -87,6 +87,55 @@ QuestieItemDropCorrections.Era = {
         [1988] = DropKeys.WOWHEAD,
         [1989] = 100,
     },
+    [3348] = { -- Giant Crocolisk Skin
+        [2089] = 100,
+    },
+    [3476] = { -- Gray Bear Tongue
+        [2351] = DropKeys.WOWHEAD,
+        [2354] = DropKeys.WOWHEAD,
+        [2356] = DropKeys.WOWHEAD,
+        [14280] = DropKeys.WOWHEAD,
+    },
+    [3477] = { -- Creeper Ichor
+        [2348] = DropKeys.WOWHEAD,
+        [2349] = DropKeys.WOWHEAD,
+        [2350] = DropKeys.WOWHEAD,
+        [14279] = DropKeys.WOWHEAD,
+    },
+    [3692] = { -- Hillsbrad Human Skull
+        [232] = DropKeys.WOWHEAD,
+        [2244] = DropKeys.WOWHEAD,
+        [2260] = DropKeys.WOWHEAD,
+        [2261] = DropKeys.WOWHEAD,
+        [2264] = DropKeys.WOWHEAD,
+        [2265] = DropKeys.WOWHEAD,
+        [2266] = DropKeys.WOWHEAD,
+        [2267] = DropKeys.WOWHEAD,
+        [2268] = DropKeys.WOWHEAD,
+        [2269] = DropKeys.WOWHEAD,
+        [2270] = DropKeys.WOWHEAD,
+        [2305] = DropKeys.WOWHEAD,
+        [2335] = DropKeys.WOWHEAD,
+        [2360] = DropKeys.WOWHEAD,
+        [2387] = DropKeys.WOWHEAD,
+        [2403] = DropKeys.WOWHEAD,
+        [2404] = DropKeys.WOWHEAD,
+        [2427] = DropKeys.WOWHEAD,
+        [2428] = DropKeys.WOWHEAD,
+        [2448] = DropKeys.WOWHEAD,
+        [2449] = DropKeys.WOWHEAD,
+        [2450] = DropKeys.WOWHEAD,
+        [2451] = DropKeys.WOWHEAD,
+        [2503] = DropKeys.WOWHEAD,
+    },
+    [3917] = { -- Singing Blue Crystal
+        [674] = DropKeys.WOWHEAD,
+        [675] = DropKeys.WOWHEAD,
+        [676] = DropKeys.WOWHEAD,
+        [677] = DropKeys.WOWHEAD,
+        [4723] = DropKeys.WOWHEAD,
+        [14492] = DropKeys.WOWHEAD,
+    },
     [3918] = { -- Singing Crystal Shard
         [688] = DropKeys.WOWHEAD,
         [689] = DropKeys.WOWHEAD,
@@ -105,6 +154,16 @@ QuestieItemDropCorrections.Era = {
         [1021] = 1.5,
         [1022] = 1.5,
         [1023] = 1.5,
+    },
+    [7267] = { -- Pristine Spider Silk
+        [930] = 18,
+        [949] = 100,
+    },
+    [7291] = { -- Infernal Orb
+        [4668] = 100,
+    },
+    [10639] = { -- Hyacinth Mushroom
+        [1988] = 80,
     },
     [15852] = { -- Kodo Horn
         [3234] = 100,
@@ -125,6 +184,15 @@ QuestieItemDropCorrections.Tbc = {
     [23676] = { -- Moongraze Stag Tenderloin
         [17200] = 100,
         [17201] = 100,
+    },
+    [23706] = { -- Arcane Fragment
+        [16339] = 100,
+    },
+    [23849] = { -- Stillpine Grain
+        [17190] = DropKeys.WOWHEAD,
+        [17191] = DropKeys.WOWHEAD,
+        [17192] = DropKeys.WOWHEAD,
+        [17475] = DropKeys.WOWHEAD,
     },
     [24372] = { -- Diaphanous Wing
         [18132] = DropKeys.WOWHEAD,
@@ -147,6 +215,9 @@ QuestieItemDropCorrections.Tbc = {
         [18133] = DropKeys.WOWHEAD,
         [20198] = DropKeys.WOWHEAD,
     },
+    [25891] = { -- Pristine Shimmerscale Eel
+        [18750] = DropKeys.WOWHEAD,
+    },
     [28668] = { -- Aged Clefthoof Blubber
         [17133] = DropKeys.WOWHEAD,
     },
@@ -165,6 +236,10 @@ QuestieItemDropCorrections.Tbc = {
         [16925] = DropKeys.WOWHEAD,
         [18952] = DropKeys.WOWHEAD,
         [19701] = DropKeys.WOWHEAD,
+    },
+    [31812] = { -- Doom Skull
+        [21242] = DropKeys.WOWHEAD,
+        [21285] = DropKeys.WOWHEAD,
     },
 }
 

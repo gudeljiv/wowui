@@ -1,4 +1,7 @@
-﻿2.5.09 - 20th February 2026
+﻿2.5.10 - 25th February 2026
+- CurseForge website is now tagging BCC releases correctly.
+
+2.5.09 - 20th February 2026
 - Released again due to another packaging issue with CurseForge (second one now).
 - Recommend you keep the addon updated using CurseForge App as it works perfectly.  Downloading updates from the CurseForge website is still an issue because it is not currently tagging BCC releases correctly.
 

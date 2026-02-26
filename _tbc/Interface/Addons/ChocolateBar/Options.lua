@@ -90,8 +90,8 @@ local aceoptions = {
 							adjustBlizzardFrames = {
 								type = 'toggle',
 								order = 2,
-								name = L["Adjust Blizzard Frames"],
-								desc = L["Move Blizzard frames above/below bars"],
+								name = L["Move Minimap, Bags and other Frames"],
+								desc = L["Moves Minimap, Bags and other frames above/below visible ChocolateBars. \n\nDisable this if you have issues and use WoW's \"Edit Mode\" instead to place the frames away from the Bars."],
 								get = function(info, value)
 										return db.moveFrames
 								end,
@@ -1408,7 +1408,6 @@ function ChocolateBar:RegisterOptions(data, chocolateBars, modules)
 	AceCfgDlg:SelectGroup("ChocolateBar", "general")
 
 	for name, module in pairs(modules) do
-		debug("Adding Module Options: ", name)
 		self:AddModuleOptions(name, module.options)
 		if module.OnOpenOptions then module:OnOpenOptions() end
 	end

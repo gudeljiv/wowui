@@ -1,0 +1,90 @@
+
+BagsShown = false
+nMainbarSettings = {
+["firstRun"] = false,
+}
+nMainbarConfig = {
+["multiBarRight"] = {
+["scale"] = 1,
+["alpha"] = 1,
+["mouseover"] = false,
+["hiddenAlpha"] = 0,
+},
+["multiBarBottomLeft"] = {
+["alpha"] = 1,
+["mouseover"] = false,
+["hiddenAlpha"] = 0,
+},
+["showPicomenu"] = true,
+["button"] = {
+["countFont"] = "Interface\\AddOns\\nMainbar\\Media\\font.ttf",
+["hotkeyFontsize"] = 16,
+["showMacroNames"] = true,
+["macronameFontsize"] = 14,
+["watchbarFontsize"] = 12,
+["showKeybinds"] = true,
+["showVehicleKeybinds"] = true,
+["macronameFont"] = "Interface\\AddOns\\nMainbar\\Media\\font.ttf",
+["hotkeyFont"] = "Interface\\AddOns\\nMainbar\\Media\\font.ttf",
+["petHotKeyFontsize"] = 15,
+["watchbarFont"] = "Fonts\\FRIZQT__.TTF",
+["countFontsize"] = 18,
+["buttonOutOfRange"] = false,
+},
+["petBar"] = {
+["vertical"] = false,
+["scale"] = 1,
+["alpha"] = 1,
+["mouseover"] = false,
+["hiddenAlpha"] = 0,
+},
+["debug"] = false,
+["MainMenuBar"] = {
+["moveableExtraBars"] = false,
+["hideGryphons"] = false,
+},
+["mouseoverColor"] = {
+["a"] = 1,
+["b"] = 1,
+["g"] = 1,
+["r"] = 1,
+},
+["microMenu"] = {
+["alpha"] = 1,
+["mouseover"] = true,
+["hiddenAlpha"] = 0,
+},
+["defaultMouseoverColor"] = {
+["a"] = 1,
+["b"] = 1,
+["g"] = 1,
+["r"] = 1,
+},
+["vehicleBar"] = {
+["scale"] = 0.8,
+},
+["combinedBags"] = false,
+["possessBar"] = {
+["scale"] = 1,
+["alpha"] = 1,
+},
+["multiBarBottomRight"] = {
+["alpha"] = 1,
+["mouseover"] = false,
+["hiddenAlpha"] = 0,
+},
+["stanceBar"] = {
+["scale"] = 1,
+["alpha"] = 1,
+["hide"] = false,
+},
+["minimap"] = {
+["minimapPos"] = 220,
+["radius"] = 80,
+["hide"] = false,
+},
+["picomenu"] = {
+["offsetX"] = 300,
+["offsetY"] = 8,
+},
+}
