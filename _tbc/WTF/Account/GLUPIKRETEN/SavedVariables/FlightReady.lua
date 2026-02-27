@@ -1,10 +1,6 @@
 
 FlightReadyDB = {
 ["offsetX"] = 0,
-["uiMode"] = "CUSTOM",
-["offsetY"] = 0,
-["individual"] = {
-},
 ["profiles"] = {
 ["LEATRIX"] = {
 ["offsetX"] = 0,
@@ -31,4 +27,8 @@ FlightReadyDB = {
 },
 },
 },
+["offsetY"] = 0,
+["individual"] = {
+},
+["uiMode"] = "CUSTOM",
 }
