@@ -109,6 +109,13 @@ function MatString.ContainsItem(matString, itemId)
 	return String.SeparatedContains(matList, ",", tostring(itemId))
 end
 
+---Gets the number of quality tiers for a quality mat string.
+---@param matString string The mat string
+---@return number
+function MatString.GetNumQualities(matString)
+	return private.IsMidnightMaterial(matString) and 2 or 3
+end
+
 ---Gets the itemString for a specific quality.
 ---@param matString string The mat string
 ---@param quality number The quality
@@ -140,5 +147,5 @@ function private.SingleItemIterator(itemString, prev)
 end
 
 function private.IsMidnightMaterial(matString)
-	return strmatch(matString, "^q:%d+:%d+,%d+$")
+	return strmatch(matString, QUALITY_MAT_STRING_ITEM_ID_PATTERNS_MIDNIGHT[1]) and true or false
 end
