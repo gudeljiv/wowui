@@ -3,17 +3,6 @@ RXPData = {
 ["gameVersion"] = 20505,
 ["cache"] = "Mxyzptlk#21477",
 ["cacheVersion"] = 29,
-["realmData"] = {
-["Thunderstrike"] = {
-},
-["Stitches"] = {
-},
-},
-["release"] = "v4.10.2",
-["trainGenericSpells"] = true,
-["questNames"] = {
-["locale"] = "enUS",
-},
 ["defaultProfile"] = {
 ["profile"] = {
 ["enableDrowningWarningSound"] = true,
@@ -24,6 +13,712 @@ RXPData = {
 ["enableEnemyMarking"] = true,
 ["compareTotalTimeSplit"] = true,
 ["hardcore"] = false,
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-151.0001068115234,
+-23.99999046325684,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+468.5708618164063,
+-74.2860336303711,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+352.4122314453125,
+65.3967514038086,
+},
+},
+},
+["worldMapPinScale"] = 1,
+["enableAddonIncompatibilityCheck"] = true,
+["anchorOrientation"] = "top",
+["vendorTreasurePinScale"] = 0.8,
+["hightlightTalentPlan"] = true,
+["activeItemsScale"] = 1,
+["enableQuestChoiceGoldRecommendation"] = true,
+["enableTips"] = true,
+["season"] = 0,
+["enableVendorTreasure"] = true,
+["enableQuestAutomation"] = true,
+["checkVersions"] = true,
+["distanceBetweenPins"] = 1,
+["lockFrames"] = true,
+["enableTracker"] = true,
+["guideFontSize"] = 9,
+["enableBindAutomation"] = true,
+["worldMapPinBackgroundOpacity"] = 0.35,
+["previewTalents"] = true,
+["xprate"] = 1,
+["notifyOnRares"] = true,
+["alwaysSendBranded"] = false,
+["frameSizes"] = {
+["activeTargetFrame"] = {
+84.79988861083984,
+18.00000190734863,
+},
+["RXPFrame"] = {
+253.0314331054688,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+39.99988174438477,
+},
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+},
+["enableXpStepSkipping"] = true,
+["enableAutomaticXpRate"] = true,
+["drowningThreshold"] = 0.2,
+["phase"] = 1,
+["levelSplitsOpacity"] = 0.9,
+["enableLevelingReportInspections"] = true,
+["enableEmergencyActions"] = true,
+["emergencyThreshold"] = 0.2,
+["activeTargetScale"] = 1.25,
+["windowScale"] = 1,
+["activeTheme"] = "Default",
+["updateFrequency"] = 75,
+["itemUpgradeSpec"] = "Retribution",
+["batchSize"] = 6,
+["arrowScale"] = 1,
+["enableTargetMarking"] = true,
+["enableFPAutomation"] = true,
+["soundOnFindChannel"] = "Master",
+["soundOnFind"] = 3175,
+["enableWorldMapButton"] = true,
+["enableLevelUpAnnounceGroup"] = false,
+["dungeons"] = {
+["WC"] = true,
+},
+["enableNonLeadMarking"] = true,
+["levelSplitsHistory"] = 10,
+["enableDrowningWarning"] = true,
+["textFriendlyColor"] = "FF00FF25",
+["enableEmergencyIconAnimations"] = true,
+["enableMinimapButton"] = false,
+["chromieTime"] = "auto",
+["textBuyColor"] = "FF0E8312",
+["frameHeight"] = 207.4602813720703,
+["upcomingTalentCount"] = 5,
+["textWarnColor"] = "FFFCDC00",
+["levelSplitsFontSize"] = 11,
+["textEnemyColor"] = "FFFF5722",
+["enableTalentGuides"] = true,
+["enableThemeLiveReload"] = true,
+["minimap"] = {
+["minimapPos"] = 146,
+},
+["enableTargetAutomation"] = true,
+["enableGroupQuests"] = true,
+["enableFriendlyTargeting"] = true,
+["preLoadData"] = false,
+["customTheme"] = {
+["bottomFrameBG"] = {
+0.07058823529411765,
+0.07058823529411765,
+0.1568627450980392,
+1,
+},
+["bottomFrameHighlight"] = {
+0.2117647058823529,
+0.2431372549019608,
+0.4274509803921568,
+1,
+},
+["mapPins"] = {
+0.9809523809523809,
+0.5857142857142857,
+1,
+1,
+},
+["author"] = "Dopecoil",
+["edges"] = {
+["edge"] = "Interface/AddOns/RXPGuides/Textures/rxp-borders",
+["guideName"] = "Interface/AddOns/RXPGuides/Textures/rxp-borders",
+},
+["bgTextures"] = {
+["guideName"] = "Interface/BUTTONS/WHITE8X8",
+["edge"] = "Interface/BUTTONS/WHITE8X8",
+["bottom"] = "Interface/BUTTONS/WHITE8X8",
+},
+["font"] = "Fonts\\FRIZQT__.TTF",
+["name"] = "Custom",
+["applicable"] = true,
+["tooltip"] = "|cFFCE7BFF",
+["background"] = {
+0.04705882352941176,
+0.04705882352941176,
+0.1058823529411765,
+1,
+},
+["texturePath"] = "Interface/AddOns/RXPGuides/Textures/",
+["textColor"] = {
+1,
+1,
+1,
+},
+},
+["enableTargetMacro"] = true,
+["showEnabled"] = true,
+["enableEnemyTargeting"] = true,
+["arrowText"] = 9,
+["textPickColor"] = "FFDB2EEF",
+["enableFlyStepAnnouncements"] = false,
+["macroAnnounced"] = true,
+["notifyOnTargetUpdates"] = true,
+["scanForRares"] = true,
+["enableItemUpgrades"] = true,
+["textLootColor"] = "FF00BCD4",
+["enableLevelUpAnnounceSolo"] = false,
+["enableDrowningScreenFlash"] = true,
+["showFlightTimers"] = true,
+["numMapPins"] = 7,
+["shareQuests"] = false,
+["enableMobMarking"] = true,
+["enableQuestChoiceRecommendation"] = true,
+["showTargetingOnProximity"] = false,
+},
+},
+["release"] = "v4.10.2",
+["trainGenericSpells"] = true,
+["realmData"] = {
+["Thunderstrike"] = {
+},
+["Stitches"] = {
+},
+},
+["questNames"] = {
+["locale"] = "enUS",
+},
+}
+RXPDB = {
+["profileKeys"] = {
+["Vermin - Zandalar Tribe"] = "global",
+["Dopeclaw - Living Flame"] = "global",
+["Poklopac - Thunderstrike"] = "global",
+["Vbank - Celebras"] = "global",
+["Dopesick - Stitches"] = "global",
+["Dopenac - Lone Wolf"] = "global",
+["Testvermin - Thunderstrike"] = "global",
+["Dopetrap - Living Flame"] = "global",
+["Dopecure - Stitches"] = "global",
+["Dopemend - Lone Wolf"] = "global",
+["Dopesnare - Stitches"] = "global",
+["Dopecure - Thunderstrike"] = "global",
+["Dopedot - Lone Wolf"] = "global",
+["Dopecoil - Lone Wolf"] = "global",
+["Lonac - Stitches"] = "global",
+["Dopestab - Living Flame"] = "global",
+["Dopesnare - Thunderstrike"] = "global",
+["Battlenac - Celebras"] = "global",
+["Moolatz - Celebras"] = "global",
+["Jutarnjedrvo - Lone Wolf"] = "global",
+["Dopesnare - Lone Wolf"] = "global",
+["Moolatz - Thunderstrike"] = "global",
+["Dopesnare - Living Flame"] = "global",
+["Mq - Celebras"] = "global",
+["Doperage - Thunderstrike"] = "global",
+["Dopeseal - Thunderstrike"] = "global",
+["Vermins - Stitches"] = "global",
+["Dopemend - Living Flame"] = "global",
+["Dopestab - Lone Wolf"] = "global",
+["Jutarnjedrvo - Living Flame"] = "global",
+["Doperage - Lone Wolf"] = "global",
+["Battitude - Zandalar Tribe"] = "global",
+["Mxzq - Golemagg"] = "global",
+["Handrmandr - Thunderstrike"] = "global",
+["Doperage - Living Flame"] = "global",
+["Pitchwise - Thunderstrike"] = "global",
+["Turbonac - Celebras"] = "global",
+["Battlenac - Zandalar Tribe"] = "global",
+["Dopecoil - Thunderstrike"] = "global",
+["Dopebolt - Living Flame"] = "global",
+["Vermin - Celebras"] = "global",
+["Dopetrap - Lone Wolf"] = "global",
+["Dopede - Stitches"] = "global",
+["Dopeclaw - Thunderstrike"] = "global",
+["Dopeah - Stitches"] = "global",
+["Dopeclaw - Stitches"] = "global",
+["Dopeclaw - Lone Wolf"] = "global",
+["Vermins - Thunderstrike"] = "global",
+},
+["profiles"] = {
+["global"] = {
+},
+},
+}
+RXPSettings = {
+["profileKeys"] = {
+["Vermin - Zandalar Tribe"] = "Default",
+["Dopeclaw - Living Flame"] = "Default",
+["Poklopac - Thunderstrike"] = "Default",
+["Vbank - Celebras"] = "Default",
+["Dopesick - Stitches"] = "Default",
+["Dopenac - Lone Wolf"] = "Default",
+["Testvermin - Thunderstrike"] = "Testvermin - Thunderstrike",
+["Dopetrap - Living Flame"] = "Default",
+["Dopecure - Stitches"] = "Default",
+["Dopemend - Lone Wolf"] = "Default",
+["Dopesnare - Stitches"] = "Default",
+["Dopecure - Thunderstrike"] = "Default",
+["Dopedot - Lone Wolf"] = "Default",
+["Dopecoil - Lone Wolf"] = "Default",
+["Lonac - Stitches"] = "Default",
+["Dopestab - Living Flame"] = "Default",
+["Dopesnare - Thunderstrike"] = "Default",
+["Battlenac - Celebras"] = "Default",
+["Moolatz - Celebras"] = "Default",
+["Jutarnjedrvo - Lone Wolf"] = "Default",
+["Dopesnare - Lone Wolf"] = "Default",
+["Moolatz - Thunderstrike"] = "Moolatz - Thunderstrike",
+["Dopesnare - Living Flame"] = "Default",
+["Mq - Celebras"] = "Default",
+["Doperage - Thunderstrike"] = "Default",
+["Dopeseal - Thunderstrike"] = "Default",
+["Vermins - Stitches"] = "Default",
+["Dopemend - Living Flame"] = "Default",
+["Dopestab - Lone Wolf"] = "Default",
+["Jutarnjedrvo - Living Flame"] = "Default",
+["Doperage - Lone Wolf"] = "Default",
+["Battitude - Zandalar Tribe"] = "Default",
+["Mxzq - Golemagg"] = "Default",
+["Handrmandr - Thunderstrike"] = "Handrmandr - Thunderstrike",
+["Doperage - Living Flame"] = "Default",
+["Pitchwise - Thunderstrike"] = "Pitchwise - Thunderstrike",
+["Turbonac - Celebras"] = "Default",
+["Battlenac - Zandalar Tribe"] = "Default",
+["Dopecoil - Thunderstrike"] = "Default",
+["Dopebolt - Living Flame"] = "Dopebolt - Living Flame",
+["Vermin - Celebras"] = "Default",
+["Dopetrap - Lone Wolf"] = "Default",
+["Dopede - Stitches"] = "Default",
+["Dopeclaw - Thunderstrike"] = "Default",
+["Dopeah - Stitches"] = "Default",
+["Dopeclaw - Stitches"] = "Default",
+["Dopeclaw - Lone Wolf"] = "Default",
+["Vermins - Thunderstrike"] = "Vermins - Thunderstrike",
+},
+["profiles"] = {
+["Vermin - Zandalar Tribe"] = {
+["showDangerousMobsMap"] = false,
+["macroAnnounced"] = true,
+["hardcore"] = false,
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-159,
+-170,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-226,
+-260,
+},
+},
+},
+["season"] = 0,
+["enableGroupQuests"] = false,
+["soloSelfFound"] = true,
+["showDangerousUnitscan"] = false,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+67.99996185302734,
+},
+},
+["enableMinimapButton"] = false,
+["frameHeight"] = 125.0000152587891,
+},
+["Dopeclaw - Living Flame"] = {
+["showEnabled"] = false,
+["frameHeight"] = 125.0000152587891,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+40.00000762939453,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+},
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+},
+["itemUpgradeSpec"] = "Feral",
+["season"] = 2,
+},
+["Poklopac - Thunderstrike"] = {
+["enableGroupQuests"] = true,
+["enableXpStepSkipping"] = false,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+39.99988174438477,
+},
+["activeTargetFrame"] = {
+84.79988861083984,
+43.00002288818359,
+},
+},
+["itemUpgradeSpec"] = "Enhancement",
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+222.7615203857422,
+-184.6823272705078,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+465.3964233398438,
+-90.79390716552734,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-427.2859191894531,
+-95.07903289794922,
+},
+},
+},
+},
+["Vbank - Celebras"] = {
+["macroAnnounced"] = true,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+40.00004959106445,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+67.99996185302734,
+},
+},
+["enableMinimapButton"] = false,
+["season"] = 0,
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-159,
+-170,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+455,
+-82,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-192,
+-261.0000305175781,
+},
+},
+},
+},
+["Dopesick - Stitches"] = {
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+},
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+},
+["season"] = 0,
+["frameHeight"] = 125.0000152587891,
+},
+["Dopenac - Lone Wolf"] = {
+["frameHeight"] = 125.0000152587891,
+["season"] = 2,
+["frameSizes"] = {
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+40.00000762939453,
+},
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+},
+["itemUpgradeSpec"] = "Discipline ",
+["framePositions"] = {
+["activeTargetFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+},
+},
+["Testvermin - Thunderstrike"] = {
+["goblinTele"] = false,
+["gnomeTele"] = false,
+["skipQuest"] = {
+},
+["frameSizes"] = {
+["activeTargetFrame"] = {
+84.79988861083984,
+42.99992370605469,
+},
+["RXPFrame"] = {
+253.0314331054688,
+207.4602813720703,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+39.99988174438477,
+},
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+},
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -62,280 +757,129 @@ nil,
 },
 },
 },
-["worldMapPinScale"] = 1,
-["enableAddonIncompatibilityCheck"] = true,
-["anchorOrientation"] = "top",
-["vendorTreasurePinScale"] = 0.8,
-["hightlightTalentPlan"] = true,
-["activeItemsScale"] = 1,
-["enableQuestChoiceGoldRecommendation"] = true,
-["enableTips"] = true,
-["season"] = 0,
-["enableVendorTreasure"] = true,
-["enableQuestAutomation"] = true,
-["checkVersions"] = true,
-["distanceBetweenPins"] = 1,
-["lockFrames"] = true,
-["enableTracker"] = true,
-["guideFontSize"] = 9,
-["enableBindAutomation"] = true,
-["worldMapPinBackgroundOpacity"] = 0.35,
-["previewTalents"] = true,
-["xprate"] = 1,
-["notifyOnRares"] = true,
-["alwaysSendBranded"] = false,
+["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
+["portalTele"] = false,
+["dungeons"] = {
+["MT"] = true,
+["RAMPARTS"] = true,
+["BF"] = true,
+["DM"] = true,
+["RFC"] = true,
+["CRYPTS"] = true,
+["ST"] = true,
+["RFK"] = true,
+["SFK"] = true,
+["BFD"] = true,
+["UB"] = true,
+["SP"] = true,
+["SM"] = true,
+["GNOMER"] = true,
+["ULDA"] = true,
+["RFD"] = true,
+["BRD"] = true,
+["MARA"] = true,
+["ZF"] = true,
+},
+["tbcStart"] = 2,
+["itemUpgradeSpec"] = "Rogue",
+["soloSelfFound"] = false,
+["customTheme"] = {
+["displayName"] = "Default",
+},
+["questPrio"] = {
+},
+["questPrioIndex"] = {
+},
+["enableXpStepSkipping"] = false,
+["tbcWBF"] = true,
+},
+["Dopetrap - Living Flame"] = {
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+},
 ["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000152587891,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+},
+["macroAnnounced"] = true,
+},
+["Dopecure - Stitches"] = {
+["frameHeight"] = 125.0000152587891,
+["frameSizes"] = {
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
 ["arrowFrame"] = {
 32.00003814697266,
 31.99995613098145,
 },
-["RXPFrame"] = {
-253.0314331054688,
-27.99999809265137,
 },
-["activeItemFrame"] = {
-72.69862365722656,
-39.99988174438477,
-},
-["activeTargetFrame"] = {
-84.79988861083984,
-18.00000190734863,
-},
-},
-["enableXpStepSkipping"] = true,
-["enableAutomaticXpRate"] = true,
-["drowningThreshold"] = 0.2,
-["showTargetingOnProximity"] = false,
-["levelSplitsOpacity"] = 0.9,
-["enableLevelingReportInspections"] = true,
-["enableQuestChoiceRecommendation"] = true,
-["enableMobMarking"] = true,
-["numMapPins"] = 7,
-["updateFrequency"] = 75,
-["activeTheme"] = "Default",
-["enableWorldMapButton"] = true,
-["itemUpgradeSpec"] = "Retribution",
-["enableNonLeadMarking"] = true,
-["arrowScale"] = 1,
-["levelSplitsHistory"] = 10,
-["enableFPAutomation"] = true,
-["soundOnFindChannel"] = "Master",
-["soundOnFind"] = 3175,
-["showFlightTimers"] = true,
-["enableLevelUpAnnounceGroup"] = false,
-["dungeons"] = {
-["WC"] = true,
-},
-["batchSize"] = 6,
-["textLootColor"] = "FF00BCD4",
-["enableItemUpgrades"] = true,
-["enableMinimapButton"] = false,
-["enableEmergencyIconAnimations"] = true,
-["scanForRares"] = true,
-["notifyOnTargetUpdates"] = true,
-["textBuyColor"] = "FF0E8312",
-["enableFlyStepAnnouncements"] = false,
-["levelSplitsFontSize"] = 11,
-["textWarnColor"] = "FFFCDC00",
-["textPickColor"] = "FFDB2EEF",
-["arrowText"] = 9,
-["minimap"] = {
-["minimapPos"] = 146,
-},
-["enableGroupQuests"] = true,
-["enableEnemyTargeting"] = true,
-["enableTargetMacro"] = true,
-["showEnabled"] = true,
-["preLoadData"] = false,
-["customTheme"] = {
-["bottomFrameBG"] = {
-0.07058823529411765,
-0.07058823529411765,
-0.1568627450980392,
-1,
-},
-["bottomFrameHighlight"] = {
-0.2117647058823529,
-0.2431372549019608,
-0.4274509803921568,
-1,
-},
-["mapPins"] = {
-0.9809523809523809,
-0.5857142857142857,
-1,
-1,
-},
-["author"] = "Dopecoil",
-["applicable"] = true,
-["bgTextures"] = {
-["guideName"] = "Interface/BUTTONS/WHITE8X8",
-["edge"] = "Interface/BUTTONS/WHITE8X8",
-["bottom"] = "Interface/BUTTONS/WHITE8X8",
-},
-["font"] = "Fonts\\FRIZQT__.TTF",
-["name"] = "Custom",
-["background"] = {
-0.04705882352941176,
-0.04705882352941176,
-0.1058823529411765,
-1,
-},
-["tooltip"] = "|cFFCE7BFF",
-["edges"] = {
-["edge"] = "Interface/AddOns/RXPGuides/Textures/rxp-borders",
-["guideName"] = "Interface/AddOns/RXPGuides/Textures/rxp-borders",
-},
-["texturePath"] = "Interface/AddOns/RXPGuides/Textures/",
-["textColor"] = {
-1,
-1,
-1,
-},
-},
-["enableFriendlyTargeting"] = true,
-["enableTargetAutomation"] = true,
-["enableThemeLiveReload"] = true,
-["enableTalentGuides"] = true,
-["textEnemyColor"] = "FFFF5722",
-["upcomingTalentCount"] = 5,
-["frameHeight"] = 207.4602813720703,
-["macroAnnounced"] = true,
-["chromieTime"] = "auto",
-["textFriendlyColor"] = "FF00FF25",
-["enableDrowningWarning"] = true,
-["enableTargetMarking"] = true,
-["enableLevelUpAnnounceSolo"] = false,
-["enableDrowningScreenFlash"] = true,
-["shareQuests"] = false,
-["windowScale"] = 1,
-["activeTargetScale"] = 1.25,
-["emergencyThreshold"] = 0.2,
-["enableEmergencyActions"] = true,
-["phase"] = 1,
-},
-},
-}
-RXPDB = {
-["profileKeys"] = {
-["Vermin - Zandalar Tribe"] = "global",
-["Dopeclaw - Living Flame"] = "global",
-["Poklopac - Thunderstrike"] = "global",
-["Vbank - Celebras"] = "global",
-["Dopesick - Stitches"] = "global",
-["Dopenac - Lone Wolf"] = "global",
-["Testvermin - Thunderstrike"] = "global",
-["Dopetrap - Living Flame"] = "global",
-["Dopecure - Stitches"] = "global",
-["Dopemend - Lone Wolf"] = "global",
-["Dopesnare - Stitches"] = "global",
-["Dopecure - Thunderstrike"] = "global",
-["Dopedot - Lone Wolf"] = "global",
-["Dopecoil - Lone Wolf"] = "global",
-["Lonac - Stitches"] = "global",
-["Dopestab - Living Flame"] = "global",
-["Dopesnare - Thunderstrike"] = "global",
-["Battlenac - Celebras"] = "global",
-["Moolatz - Celebras"] = "global",
-["Jutarnjedrvo - Lone Wolf"] = "global",
-["Dopesnare - Lone Wolf"] = "global",
-["Moolatz - Thunderstrike"] = "global",
-["Dopesnare - Living Flame"] = "global",
-["Dopeclaw - Lone Wolf"] = "global",
-["Doperage - Thunderstrike"] = "global",
-["Dopeseal - Thunderstrike"] = "global",
-["Vermins - Stitches"] = "global",
-["Dopeah - Stitches"] = "global",
-["Dopeclaw - Thunderstrike"] = "global",
-["Dopede - Stitches"] = "global",
-["Dopetrap - Lone Wolf"] = "global",
-["Battitude - Zandalar Tribe"] = "global",
-["Pitchwise - Thunderstrike"] = "global",
-["Dopebolt - Living Flame"] = "global",
-["Doperage - Living Flame"] = "global",
-["Vermin - Celebras"] = "global",
-["Turbonac - Celebras"] = "global",
-["Battlenac - Zandalar Tribe"] = "global",
-["Dopecoil - Thunderstrike"] = "global",
-["Handrmandr - Thunderstrike"] = "global",
-["Mxzq - Golemagg"] = "global",
-["Doperage - Lone Wolf"] = "global",
-["Jutarnjedrvo - Living Flame"] = "global",
-["Dopestab - Lone Wolf"] = "global",
-["Dopemend - Living Flame"] = "global",
-["Dopeclaw - Stitches"] = "global",
-["Mq - Celebras"] = "global",
-["Vermins - Thunderstrike"] = "global",
-},
-["profiles"] = {
-["global"] = {
-},
-},
-}
-RXPSettings = {
-["profileKeys"] = {
-["Vermin - Zandalar Tribe"] = "Default",
-["Dopeclaw - Living Flame"] = "Default",
-["Poklopac - Thunderstrike"] = "Default",
-["Vbank - Celebras"] = "Default",
-["Dopesick - Stitches"] = "Default",
-["Dopenac - Lone Wolf"] = "Default",
-["Testvermin - Thunderstrike"] = "Testvermin - Thunderstrike",
-["Dopetrap - Living Flame"] = "Default",
-["Dopecure - Stitches"] = "Default",
-["Dopemend - Lone Wolf"] = "Default",
-["Dopesnare - Stitches"] = "Default",
-["Dopecure - Thunderstrike"] = "Default",
-["Dopedot - Lone Wolf"] = "Default",
-["Dopecoil - Lone Wolf"] = "Default",
-["Lonac - Stitches"] = "Default",
-["Dopestab - Living Flame"] = "Default",
-["Dopesnare - Thunderstrike"] = "Default",
-["Battlenac - Celebras"] = "Default",
-["Moolatz - Celebras"] = "Default",
-["Jutarnjedrvo - Lone Wolf"] = "Default",
-["Dopesnare - Lone Wolf"] = "Default",
-["Moolatz - Thunderstrike"] = "Moolatz - Thunderstrike",
-["Dopesnare - Living Flame"] = "Default",
-["Dopeclaw - Lone Wolf"] = "Default",
-["Doperage - Thunderstrike"] = "Default",
-["Dopeseal - Thunderstrike"] = "Default",
-["Vermins - Stitches"] = "Default",
-["Dopeah - Stitches"] = "Default",
-["Dopeclaw - Thunderstrike"] = "Default",
-["Dopede - Stitches"] = "Default",
-["Dopetrap - Lone Wolf"] = "Default",
-["Battitude - Zandalar Tribe"] = "Default",
-["Pitchwise - Thunderstrike"] = "Pitchwise - Thunderstrike",
-["Dopebolt - Living Flame"] = "Dopebolt - Living Flame",
-["Doperage - Living Flame"] = "Default",
-["Vermin - Celebras"] = "Default",
-["Turbonac - Celebras"] = "Default",
-["Battlenac - Zandalar Tribe"] = "Default",
-["Dopecoil - Thunderstrike"] = "Default",
-["Handrmandr - Thunderstrike"] = "Handrmandr - Thunderstrike",
-["Mxzq - Golemagg"] = "Default",
-["Doperage - Lone Wolf"] = "Default",
-["Jutarnjedrvo - Living Flame"] = "Default",
-["Dopestab - Lone Wolf"] = "Default",
-["Dopemend - Living Flame"] = "Default",
-["Dopeclaw - Stitches"] = "Default",
-["Mq - Celebras"] = "Default",
-["Vermins - Thunderstrike"] = "Vermins - Thunderstrike",
-},
-["profiles"] = {
-["Vermin - Zandalar Tribe"] = {
-["showDangerousMobsMap"] = false,
-["macroAnnounced"] = true,
-["hardcore"] = false,
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
 "CENTER",
-nil,
+"UIParent",
 "CENTER",
--226,
--260,
+0,
+0,
 },
 },
 ["RXPFrame"] = {
@@ -361,40 +905,16 @@ nil,
 "CENTER",
 nil,
 "CENTER",
--159,
--170,
+-163,
+-162.0000152587891,
 },
 },
 },
+["itemUpgradeSpec"] = "Discipline ",
 ["season"] = 0,
-["enableGroupQuests"] = false,
-["soloSelfFound"] = true,
-["showDangerousUnitscan"] = false,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-67.99996185302734,
 },
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
+["Dopemend - Lone Wolf"] = {
 ["frameHeight"] = 125.0000152587891,
-["enableMinimapButton"] = false,
-},
-["Dopeclaw - Living Flame"] = {
-["showEnabled"] = false,
-["frameHeight"] = 125.0000152587891,
-["itemUpgradeSpec"] = "Feral",
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -445,19 +965,84 @@ nil,
 },
 ["activeItemFrame"] = {
 72.69829559326172,
-40.00000762939453,
+39.99991989135742,
 },
 ["arrowFrame"] = {
 32.00003814697266,
 32.00003814697266,
 },
 },
+["itemUpgradeSpec"] = "Discipline ",
+["enableMinimapButton"] = false,
 },
-["Poklopac - Thunderstrike"] = {
-["enableGroupQuests"] = true,
+["Dopesnare - Stitches"] = {
+["frameHeight"] = 125.0000152587891,
+["enableMinimapButton"] = false,
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+},
+["season"] = 0,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+},
+},
+["Dopecure - Thunderstrike"] = {
+["enableGroupQuests"] = false,
+["soloSelfFound"] = true,
+["showDangerousMobsMap"] = false,
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
-84.79988861083984,
+84.80022430419922,
 43.00002288818359,
 },
 ["RXPFrame"] = {
@@ -479,8 +1064,8 @@ nil,
 "CENTER",
 nil,
 "CENTER",
--427.2859191894531,
--95.07903289794922,
+441.0000305175781,
+2,
 },
 },
 ["RXPFrame"] = {
@@ -506,102 +1091,22 @@ nil,
 "CENTER",
 nil,
 "CENTER",
-222.7615203857422,
--184.6823272705078,
+-153,
+-27,
 },
 },
 },
-["itemUpgradeSpec"] = "Enhancement",
-["enableXpStepSkipping"] = false,
+["itemUpgradeSpec"] = "Discipline ",
+["frameHeight"] = 125.0000228881836,
 },
-["Vbank - Celebras"] = {
-["macroAnnounced"] = true,
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--192,
--261.0000305175781,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-455,
--82,
-},
-},
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--159,
--170,
-},
-},
-},
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-67.99996185302734,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-40.00004959106445,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
-["season"] = 0,
-["enableMinimapButton"] = false,
-},
-["Dopesick - Stitches"] = {
-["season"] = 0,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-["RXPFrame"] = {
-235.0001068115234,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-},
+["Dopedot - Lone Wolf"] = {
 ["frameHeight"] = 125.0000152587891,
 ["framePositions"] = {
-["activeTargetFrame"] = {
+["arrowFrame"] = {
 {
-"CENTER",
+"TOP",
 "UIParent",
-"CENTER",
+"TOP",
 0,
 0,
 },
@@ -624,19 +1129,16 @@ nil,
 0,
 },
 },
-["arrowFrame"] = {
+["activeTargetFrame"] = {
 {
-"TOP",
+"CENTER",
 "UIParent",
-"TOP",
+"CENTER",
 0,
 0,
 },
 },
 },
-},
-["Dopenac - Lone Wolf"] = {
-["frameHeight"] = 125.0000152587891,
 ["frameSizes"] = {
 ["arrowFrame"] = {
 32.00003814697266,
@@ -655,6 +1157,667 @@ nil,
 68,
 },
 },
+["season"] = 2,
+["itemUpgradeSpec"] = "Affliction",
+},
+["Dopecoil - Lone Wolf"] = {
+["frameHeight"] = 125.0000152587891,
+["itemUpgradeSpec"] = "Elemental",
+["framePositions"] = {
+["activeTargetFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+},
+["season"] = 2,
+["frameSizes"] = {
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+40.00000762939453,
+},
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+},
+},
+["Lonac - Stitches"] = {
+["showDangerousMobsMap"] = false,
+["macroAnnounced"] = true,
+["framePositions"] = {
+["activeTargetFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+},
+["season"] = 0,
+["enableGroupQuests"] = false,
+["soloSelfFound"] = true,
+["showDangerousUnitscan"] = false,
+["frameSizes"] = {
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+},
+["frameHeight"] = 125.0000152587891,
+},
+["Dopestab - Living Flame"] = {
+["framePositions"] = {
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-210,
+-248.0000305175781,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+514,
+-30,
+},
+},
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-159,
+-157.0000152587891,
+},
+},
+},
+["frameSizes"] = {
+["activeTargetFrame"] = {
+85.2649154663086,
+67.99996185302734,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000152587891,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+40.00004959106445,
+},
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+},
+["season"] = 2,
+["macroAnnounced"] = true,
+},
+["Dopesnare - Thunderstrike"] = {
+["showDangerousMobsMap"] = true,
+["macroAnnounced"] = true,
+["phase"] = 1,
+["framePositions"] = {
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+379.0475463867188,
+-88.88884735107422,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+},
+["season"] = 0,
+["dungeons"] = {
+["RFK"] = true,
+["MARA"] = true,
+["GNOMER"] = true,
+["BFD"] = true,
+["WC"] = true,
+["ST"] = true,
+["ZF"] = true,
+},
+["enableGroupQuests"] = true,
+["soloSelfFound"] = false,
+["frameSizes"] = {
+["activeTargetFrame"] = {
+84.79988861083984,
+43.00002288818359,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+40.00000762939453,
+},
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+},
+["itemUpgradeSpec"] = "Hunter",
+["frameHeight"] = 125.0000152587891,
+},
+["Battlenac - Celebras"] = {
+["enableMinimapButton"] = false,
+["macroAnnounced"] = true,
+["itemUpgradeSpec"] = "Discipline ",
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+40.00004959106445,
+},
+},
+["season"] = 0,
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-163,
+-162.0000152587891,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-184,
+-258,
+},
+},
+},
+},
+["Moolatz - Celebras"] = {
+["showDangerousMobsMap"] = true,
+["macroAnnounced"] = true,
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-203.1743774414063,
+-257.777587890625,
+},
+},
+},
+["season"] = 0,
+["dungeons"] = {
+["ULDA"] = true,
+["STOCKS"] = true,
+["RFD"] = true,
+["GNOMER"] = true,
+["DM"] = true,
+["MARA"] = true,
+["SM"] = true,
+["RFK"] = true,
+["BFD"] = true,
+["ST"] = true,
+["ZF"] = true,
+},
+["enableGroupQuests"] = true,
+["soloSelfFound"] = false,
+["showDangerousUnitscan"] = true,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+40.00004959106445,
+},
+},
+["itemUpgradeSpec"] = "Feral",
+["frameHeight"] = 125.0000152587891,
+},
+["Jutarnjedrvo - Lone Wolf"] = {
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99988174438477,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+67.99996185302734,
+},
+},
+["itemUpgradeSpec"] = "Enhance",
+["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
+["hardcore"] = true,
+["enableMinimapButton"] = false,
+["season"] = 2,
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-168.8886566162109,
+-169.6510009765625,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-253.3332214355469,
+-172.6985778808594,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-216.5078277587891,
+-253.3335876464844,
+},
+},
+},
+},
+["Moolatz - Thunderstrike"] = {
+["gnomeTele"] = false,
+["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
+["tbcStart"] = 2,
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-151.0001068115234,
+-23.99999046325684,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+468.5708618164063,
+-74.2860336303711,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+352.4122314453125,
+65.3967514038086,
+},
+},
+},
+["itemUpgradeSpec"] = "Feral",
+["customTheme"] = {
+["displayName"] = "Default",
+},
+["portalTele"] = false,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+253.0314331054688,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+39.99988174438477,
+},
+["activeTargetFrame"] = {
+84.79988861083984,
+42.99992370605469,
+},
+},
+["goblinTele"] = false,
+["tbcWBF"] = true,
+},
+["Doperage - Lone Wolf"] = {
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-159.9999694824219,
+-165.8410797119141,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+490.1585083007813,
+-91.42863464355469,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-253.3331756591797,
+-252.0639038085938,
+},
+},
+},
+["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
+["hardcore"] = false,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+234.9999084472656,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+39.99988174438477,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+67.99996185302734,
+},
+},
+["season"] = 2,
+["enableMinimapButton"] = false,
+},
+["Dopeseal - Thunderstrike"] = {
+["frameSizes"] = {
+["activeTargetFrame"] = {
+84.80022430419922,
+43.00002288818359,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+39.99988174438477,
+},
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+},
+["framePositions"] = {
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+545.411865234375,
+26.82563781738281,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+465.3964233398438,
+-90.79390716552734,
+},
+},
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-149.9366760253906,
+-27.22196769714356,
+},
+},
+},
+["itemUpgradeSpec"] = "Retribution",
+["frameHeight"] = 125.0000228881836,
+},
+["Dopesnare - Living Flame"] = {
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -693,18 +1856,609 @@ nil,
 },
 },
 },
-["itemUpgradeSpec"] = "Discipline ",
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+},
 ["season"] = 2,
+["frameHeight"] = 125.0000152587891,
 },
-["Testvermin - Thunderstrike"] = {
-["skipQuest"] = {
+["Dopede - Stitches"] = {
+["frameHeight"] = 125.0000152587891,
+["season"] = 0,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
 },
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+},
+["itemUpgradeSpec"] = "Elemental",
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+},
+},
+["Mq - Celebras"] = {
+["showDangerousMobsMap"] = true,
+["macroAnnounced"] = true,
+["hardcore"] = true,
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-158.0948333740234,
+-197.5883026123047,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+460.3171691894531,
+-93.3332748413086,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-281.9044799804688,
+-202.5396575927734,
+},
+},
+},
+["season"] = 0,
+["dungeons"] = {
+["ULDA"] = true,
+["SFK"] = true,
+["STOCKS"] = true,
+["RFD"] = true,
+["WC"] = true,
+["GNOMER"] = true,
+["DM"] = true,
+["SM"] = true,
+["MARA"] = true,
+["BFD"] = true,
+["RFK"] = true,
+["BRD"] = true,
+["ST"] = true,
+["ZF"] = true,
+},
+["enableGroupQuests"] = true,
+["soloSelfFound"] = false,
+["showDangerousUnitscan"] = true,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+39.99988174438477,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+40.00004959106445,
+},
+},
+["frameHeight"] = 125.0000152587891,
+["enableMinimapButton"] = false,
+},
+["Dopemend - Living Flame"] = {
+["frameHeight"] = 125.0000152587891,
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+},
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+40.00000762939453,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+},
+["season"] = 2,
+["itemUpgradeSpec"] = "Discipline ",
+},
+["Vermins - Stitches"] = {
+["season"] = 0,
+["frameSizes"] = {
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+["RXPFrame"] = {
+250.9999389648438,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+40.00004959106445,
+},
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+},
+["frameHeight"] = 133,
+["framePositions"] = {
+["activeTargetFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+363,
+-90.0000228881836,
+},
+},
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-152.0000457763672,
+-150,
+},
+},
+},
+},
+["Dopestab - Lone Wolf"] = {
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-159.2857513427734,
+-157.1746673583984,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+513.5549926757812,
+-29.68246841430664,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-210.0000762939453,
+-248.0000610351563,
+},
+},
+},
+["enableMinimapButton"] = false,
+["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
+["hardcore"] = false,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+39.99988174438477,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+68.00004577636719,
+},
+},
+["season"] = 2,
+["lockFrames"] = false,
+},
+["Jutarnjedrvo - Living Flame"] = {
+["enableMinimapButton"] = false,
+["macroAnnounced"] = true,
+["hardcore"] = true,
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-169,
+-170,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-253,
+-173.0000305175781,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-217,
+-253,
+},
+},
+},
+["itemUpgradeSpec"] = "Enhance",
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000152587891,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+40.00004959106445,
+},
+["activeTargetFrame"] = {
+86.8570556640625,
+68.00004577636719,
+},
+},
+},
+["Mxzq - Golemagg"] = {
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+},
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+},
+["frameHeight"] = 125.0000152587891,
+["season"] = 0,
+},
+["Dopeclaw - Lone Wolf"] = {
+["showEnabled"] = false,
+["frameHeight"] = 125.0000152587891,
+["framePositions"] = {
+["activeTargetFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["arrowFrame"] = {
+{
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
+},
+},
+},
+["season"] = 2,
+["frameSizes"] = {
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+["RXPFrame"] = {
+235.0001068115234,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+},
+["itemUpgradeSpec"] = "Feral",
+["minimap"] = {
+["minimapPos"] = 221.28373803974,
+},
+},
+["Battitude - Zandalar Tribe"] = {
+["macroAnnounced"] = true,
+["enableGroupQuests"] = false,
+["showDangerousMobsMap"] = false,
+["showDangerousUnitscan"] = false,
+["frameHeight"] = 125.0000152587891,
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
+["activeTargetFrame"] = {
+85.2649154663086,
+40.00004959106445,
+},
+},
+["framePositions"] = {
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-163.1743927001953,
+-175.3653259277344,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-193.0157318115234,
+-289.523681640625,
+},
+},
+},
+["soloSelfFound"] = true,
+},
+["Handrmandr - Thunderstrike"] = {
 ["gnomeTele"] = false,
-["enableXpStepSkipping"] = false,
-["questPrioIndex"] = {
-},
-["questPrio"] = {
-},
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -744,34 +2498,12 @@ nil,
 },
 },
 ["tbcStart"] = 2,
-["dungeons"] = {
-["MT"] = true,
-["RAMPARTS"] = true,
-["BF"] = true,
-["DM"] = true,
-["RFC"] = true,
-["CRYPTS"] = true,
-["ST"] = true,
-["RFK"] = true,
-["SFK"] = true,
-["BFD"] = true,
-["UB"] = true,
-["SP"] = true,
-["SM"] = true,
-["MARA"] = true,
-["ULDA"] = true,
-["RFD"] = true,
-["BRD"] = true,
-["GNOMER"] = true,
-["ZF"] = true,
-},
-["portalTele"] = false,
-["itemUpgradeSpec"] = "Rogue",
-["soloSelfFound"] = false,
+["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
+["itemUpgradeSpec"] = "Hunter",
 ["customTheme"] = {
 ["displayName"] = "Default",
 },
-["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
+["portalTele"] = false,
 ["frameSizes"] = {
 ["arrowFrame"] = {
 32.00003814697266,
@@ -786,642 +2518,16 @@ nil,
 39.99988174438477,
 },
 ["activeTargetFrame"] = {
-84.79988861083984,
+89,
 42.99992370605469,
 },
 },
 ["goblinTele"] = false,
 ["tbcWBF"] = true,
 },
-["Dopetrap - Living Flame"] = {
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-},
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000152587891,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-},
+["Turbonac - Celebras"] = {
 ["macroAnnounced"] = true,
-},
-["Dopecure - Stitches"] = {
-["frameHeight"] = 125.0000152587891,
-["itemUpgradeSpec"] = "Discipline ",
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--163,
--162.0000152587891,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-},
-["season"] = 0,
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-["RXPFrame"] = {
-235.0001068115234,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-},
-},
-["Dopemend - Lone Wolf"] = {
-["frameHeight"] = 125.0000152587891,
-["enableMinimapButton"] = false,
-["itemUpgradeSpec"] = "Discipline ",
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-},
-["season"] = 2,
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-["RXPFrame"] = {
-235.0001068115234,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-},
-},
-["Dopesnare - Stitches"] = {
-["frameHeight"] = 125.0000152587891,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-["RXPFrame"] = {
-235.0001068115234,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-},
-["enableMinimapButton"] = false,
-["season"] = 0,
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-},
-},
-["Dopecure - Thunderstrike"] = {
-["enableGroupQuests"] = false,
-["soloSelfFound"] = true,
-["frameHeight"] = 125.0000228881836,
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--153,
--27,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-465.3964233398438,
--90.79390716552734,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-441.0000305175781,
-2,
-},
-},
-},
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-39.99988174438477,
-},
-["activeTargetFrame"] = {
-84.80022430419922,
-43.00002288818359,
-},
-},
-["itemUpgradeSpec"] = "Discipline ",
-["showDangerousMobsMap"] = false,
-},
-["Dopedot - Lone Wolf"] = {
-["frameHeight"] = 125.0000152587891,
-["season"] = 2,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-["RXPFrame"] = {
-235.0001068115234,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-40.00000762939453,
-},
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-},
 ["itemUpgradeSpec"] = "Affliction",
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-},
-},
-["Dopecoil - Lone Wolf"] = {
-["frameHeight"] = 125.0000152587891,
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-},
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-["RXPFrame"] = {
-235.0001068115234,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-40.00000762939453,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-},
-["season"] = 2,
-["itemUpgradeSpec"] = "Elemental",
-},
-["Lonac - Stitches"] = {
-["showDangerousMobsMap"] = false,
-["macroAnnounced"] = true,
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-},
-["season"] = 0,
-["enableGroupQuests"] = false,
-["soloSelfFound"] = true,
-["showDangerousUnitscan"] = false,
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-},
-["frameHeight"] = 125.0000152587891,
-},
-["Dopestab - Living Flame"] = {
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000152587891,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-40.00004959106445,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-67.99996185302734,
-},
-},
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--159,
--157.0000152587891,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-514,
--30,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--210,
--248.0000305175781,
-},
-},
-},
-["season"] = 2,
-["macroAnnounced"] = true,
-},
-["Dopesnare - Thunderstrike"] = {
-["showDangerousMobsMap"] = true,
-["macroAnnounced"] = true,
-["phase"] = 1,
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-379.0475463867188,
--88.88884735107422,
-},
-},
-},
-["season"] = 0,
-["dungeons"] = {
-["RFK"] = true,
-["MARA"] = true,
-["ZF"] = true,
-["BFD"] = true,
-["ST"] = true,
-["WC"] = true,
-["GNOMER"] = true,
-},
-["enableGroupQuests"] = true,
-["soloSelfFound"] = false,
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-40.00000762939453,
-},
-["activeTargetFrame"] = {
-84.79988861083984,
-43.00002288818359,
-},
-},
-["itemUpgradeSpec"] = "Hunter",
-["frameHeight"] = 125.0000152587891,
-},
-["Battlenac - Celebras"] = {
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -1460,22 +2566,19 @@ nil,
 },
 },
 },
-["macroAnnounced"] = true,
 ["season"] = 0,
-["enableMinimapButton"] = false,
-["itemUpgradeSpec"] = "Discipline ",
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 85.2649154663086,
-40.00004959106445,
+67.99996185302734,
 },
 ["RXPFrame"] = {
 235.0001068115234,
-125.0000228881836,
+125.0000076293945,
 },
 ["activeItemFrame"] = {
 72.69829559326172,
-39.99991989135742,
+40.00000762939453,
 },
 ["arrowFrame"] = {
 32.00003814697266,
@@ -1483,17 +2586,15 @@ nil,
 },
 },
 },
-["Moolatz - Celebras"] = {
-["showDangerousMobsMap"] = true,
-["macroAnnounced"] = true,
+["Doperage - Living Flame"] = {
 ["framePositions"] = {
-["activeTargetFrame"] = {
+["arrowFrame"] = {
 {
 "CENTER",
 nil,
 "CENTER",
--203.1743774414063,
--257.777587890625,
+-160,
+-166.0000305175781,
 },
 },
 ["RXPFrame"] = {
@@ -1514,63 +2615,48 @@ nil,
 0,
 },
 },
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-},
-["season"] = 0,
-["dungeons"] = {
-["ULDA"] = true,
-["STOCKS"] = true,
-["RFD"] = true,
-["GNOMER"] = true,
-["DM"] = true,
-["MARA"] = true,
-["SM"] = true,
-["RFK"] = true,
-["BFD"] = true,
-["ST"] = true,
-["ZF"] = true,
-},
-["enableGroupQuests"] = true,
-["soloSelfFound"] = false,
-["showDangerousUnitscan"] = true,
-["frameSizes"] = {
 ["activeTargetFrame"] = {
-85.2649154663086,
-40.00004959106445,
+{
+"CENTER",
+"UIParent",
+"CENTER",
+0,
+0,
+},
+},
+},
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
 },
 ["RXPFrame"] = {
 235.0001068115234,
-125.0000228881836,
+125.0000152587891,
 },
 ["activeItemFrame"] = {
 72.69829559326172,
 39.99991989135742,
 },
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
+["activeTargetFrame"] = {
+85.2649154663086,
+68,
 },
 },
-["itemUpgradeSpec"] = "Feral",
-["frameHeight"] = 125.0000152587891,
+["macroAnnounced"] = true,
 },
-["Jutarnjedrvo - Lone Wolf"] = {
+["Vermin - Celebras"] = {
+["showDangerousMobsMap"] = false,
+["macroAnnounced"] = true,
+["hardcore"] = false,
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
 "CENTER",
 nil,
 "CENTER",
--216.5078277587891,
--253.3335876464844,
+-276.793701171875,
+-199.6824188232422,
 },
 },
 ["RXPFrame"] = {
@@ -1587,8 +2673,8 @@ nil,
 "CENTER",
 nil,
 "CENTER",
--253.3332214355469,
--172.6985778808594,
+454.6026611328125,
+-81.90412902832031,
 },
 },
 ["arrowFrame"] = {
@@ -1596,15 +2682,31 @@ nil,
 "CENTER",
 nil,
 "CENTER",
--168.8886566162109,
--169.6510009765625,
+-159,
+-170,
 },
 },
 },
-["season"] = 2,
-["frameHeight"] = 125.0000152587891,
-["macroAnnounced"] = true,
-["hardcore"] = true,
+["season"] = 0,
+["dungeons"] = {
+["RFK"] = true,
+["SFK"] = true,
+["STOCKS"] = true,
+["BFD"] = true,
+["WC"] = true,
+["GNOMER"] = true,
+["DM"] = true,
+["MARA"] = true,
+["ULDA"] = true,
+["SM"] = true,
+["RFD"] = true,
+["BRD"] = true,
+["ST"] = true,
+["ZF"] = true,
+},
+["enableGroupQuests"] = true,
+["soloSelfFound"] = true,
+["showDangerousUnitscan"] = false,
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 85.2649154663086,
@@ -1615,7 +2717,7 @@ nil,
 125.0000228881836,
 },
 ["activeItemFrame"] = {
-72.69829559326172,
+72.69862365722656,
 39.99988174438477,
 },
 ["arrowFrame"] = {
@@ -1623,13 +2725,14 @@ nil,
 31.99995613098145,
 },
 },
-["itemUpgradeSpec"] = "Enhance",
 ["enableMinimapButton"] = false,
+["frameHeight"] = 125.0000152587891,
 },
-["Moolatz - Thunderstrike"] = {
-["gnomeTele"] = false,
+["Pitchwise - Thunderstrike"] = {
 ["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
 ["tbcStart"] = 2,
+["questPrioIndex"] = {
+},
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -1654,8 +2757,8 @@ nil,
 "CENTER",
 nil,
 "CENTER",
-468.5708618164063,
--74.2860336303711,
+438.7293090820313,
+139.6820526123047,
 },
 },
 ["arrowFrame"] = {
@@ -1668,15 +2771,13 @@ nil,
 },
 },
 },
-["goblinTele"] = false,
-["customTheme"] = {
-["displayName"] = "Default",
+["skipQuest"] = {
 },
-["portalTele"] = false,
+["lockFrames"] = false,
 ["frameSizes"] = {
-["activeTargetFrame"] = {
-84.79988861083984,
-42.99992370605469,
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
 },
 ["RXPFrame"] = {
 253.0314331054688,
@@ -1684,252 +2785,35 @@ nil,
 },
 ["activeItemFrame"] = {
 72.69862365722656,
-39.99988174438477,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
-["itemUpgradeSpec"] = "Feral",
-["tbcWBF"] = true,
-},
-["Doperage - Lone Wolf"] = {
-["enableMinimapButton"] = false,
-["frameHeight"] = 125.0000152587891,
-["macroAnnounced"] = true,
-["hardcore"] = false,
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--253.3331756591797,
--252.0639038085938,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-490.1585083007813,
--91.42863464355469,
-},
-},
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--159.9999694824219,
--165.8410797119141,
-},
-},
-},
-["season"] = 2,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-67.99996185302734,
-},
-["RXPFrame"] = {
-234.9999084472656,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-39.99988174438477,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
-},
-["Mq - Celebras"] = {
-["showDangerousMobsMap"] = true,
-["macroAnnounced"] = true,
-["hardcore"] = true,
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--281.9044799804688,
--202.5396575927734,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-460.3171691894531,
--93.3332748413086,
-},
-},
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--158.0948333740234,
--197.5883026123047,
-},
-},
-},
-["season"] = 0,
-["dungeons"] = {
-["ULDA"] = true,
-["SFK"] = true,
-["STOCKS"] = true,
-["RFD"] = true,
-["WC"] = true,
-["GNOMER"] = true,
-["DM"] = true,
-["SM"] = true,
-["MARA"] = true,
-["BFD"] = true,
-["RFK"] = true,
-["BRD"] = true,
-["ST"] = true,
-["ZF"] = true,
-},
-["enableGroupQuests"] = true,
-["soloSelfFound"] = false,
-["showDangerousUnitscan"] = true,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-40.00004959106445,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-39.99988174438477,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
-["enableMinimapButton"] = false,
-["frameHeight"] = 125.0000152587891,
-},
-["Dopesnare - Living Flame"] = {
-["season"] = 2,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-["RXPFrame"] = {
-235.0001068115234,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-},
-["frameHeight"] = 125.0000152587891,
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-},
-},
-["Doperage - Thunderstrike"] = {
-["enableGroupQuests"] = false,
-["showDangerousMobsMap"] = false,
-["soloSelfFound"] = true,
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-39.99988174438477,
+39.9996337890625,
 },
 ["activeTargetFrame"] = {
 84.79988861083984,
-43.00002288818359,
+42.99992370605469,
 },
 },
+["itemUpgradeSpec"] = "Enhancement",
+["goblinTele"] = false,
+["tbcWBF"] = true,
+["gnomeTele"] = false,
+["portalTele"] = false,
+["customTheme"] = {
+["displayName"] = "Default",
+},
+["questPrio"] = {
+},
+},
+["Battlenac - Zandalar Tribe"] = {
+["showDangerousMobsMap"] = false,
+["macroAnnounced"] = true,
 ["framePositions"] = {
-["arrowFrame"] = {
+["activeTargetFrame"] = {
 {
 "CENTER",
 nil,
 "CENTER",
-222.7615203857422,
--184.6823272705078,
+547.9361572265625,
+-83.17451477050781,
 },
 },
 ["RXPFrame"] = {
@@ -1944,35 +2828,35 @@ nil,
 ["activeItemFrame"] = {
 {
 "CENTER",
-nil,
+"UIParent",
 "CENTER",
-465.3964233398438,
--90.79390716552734,
+0,
+0,
 },
 },
-["activeTargetFrame"] = {
+["arrowFrame"] = {
 {
 "CENTER",
 nil,
 "CENTER",
--427.2859191894531,
--95.07903289794922,
+-163,
+-162.0000152587891,
 },
 },
 },
-["itemUpgradeSpec"] = "Warrior",
-["frameHeight"] = 125.0000228881836,
-},
-["Dopede - Stitches"] = {
+["season"] = 0,
+["enableGroupQuests"] = false,
+["soloSelfFound"] = true,
+["showDangerousUnitscan"] = false,
 ["frameHeight"] = 125.0000152587891,
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
-85.2649154663086,
-68,
+85.26507568359375,
+67.99996185302734,
 },
 ["RXPFrame"] = {
 235.0001068115234,
-27.99999809265137,
+125.0000228881836,
 },
 ["activeItemFrame"] = {
 72.69829559326172,
@@ -1980,61 +2864,23 @@ nil,
 },
 ["arrowFrame"] = {
 32.00003814697266,
-32.00003814697266,
+31.99995613098145,
 },
 },
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
+["itemUpgradeSpec"] = "Discipline ",
+["enableMinimapButton"] = false,
 },
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-},
-["itemUpgradeSpec"] = "Elemental",
-["season"] = 0,
-},
-["Dopeah - Stitches"] = {
-["showDangerousMobsMap"] = false,
+["Dopecoil - Thunderstrike"] = {
+["showDangerousMobsMap"] = true,
 ["macroAnnounced"] = true,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
+"CENTER",
+nil,
+"CENTER",
+-226.6663818359375,
+-191.2382202148438,
 },
 },
 ["RXPFrame"] = {
@@ -2058,163 +2904,32 @@ nil,
 ["activeTargetFrame"] = {
 {
 "CENTER",
-"UIParent",
+nil,
 "CENTER",
-0,
-0,
+-395.5552673339844,
+28.57151603698731,
 },
 },
 },
-["season"] = 2,
-["enableGroupQuests"] = false,
-["soloSelfFound"] = true,
+["season"] = 11,
+["dungeons"] = {
+["RFK"] = true,
+["SFK"] = true,
+["BFD"] = true,
+["WC"] = true,
+["SM"] = true,
+["RFC"] = true,
+["MARA"] = true,
+["ST"] = true,
+["RFD"] = true,
+},
+["enableGroupQuests"] = true,
+["soloSelfFound"] = false,
 ["showDangerousUnitscan"] = false,
 ["frameSizes"] = {
 ["arrowFrame"] = {
 32.00003814697266,
-32.00003814697266,
-},
-["RXPFrame"] = {
-235.0001068115234,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-},
-["itemUpgradeSpec"] = "Elemental",
-["frameHeight"] = 125.0000228881836,
-},
-["Vermins - Stitches"] = {
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
 31.99995613098145,
-},
-["RXPFrame"] = {
-250.9999389648438,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-40.00004959106445,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-},
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--152.0000457763672,
--150,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-363,
--90.0000228881836,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-},
-["frameHeight"] = 133,
-["season"] = 0,
-},
-["Dopeclaw - Thunderstrike"] = {
-["showDangerousMobsMap"] = true,
-["macroAnnounced"] = true,
-["hardcore"] = true,
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-454.6032104492188,
--38.09531021118164,
-},
-},
-},
-["season"] = 0,
-["dungeons"] = {
-["ULDA"] = true,
-["SFK"] = true,
-["BFD"] = true,
-["WC"] = true,
-["GNOMER"] = true,
-["DM"] = true,
-["SM"] = true,
-["RFK"] = true,
-["RFC"] = true,
-["MARA"] = true,
-["RFD"] = true,
-["ST"] = true,
-["ZF"] = true,
-},
-["enableGroupQuests"] = true,
-["soloSelfFound"] = false,
-["phase"] = 1,
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
 },
 ["RXPFrame"] = {
 235.0001068115234,
@@ -2225,77 +2940,16 @@ nil,
 39.99991989135742,
 },
 ["activeTargetFrame"] = {
-84.80022430419922,
-43.00002288818359,
+89.00010681152344,
+67.99992370605469,
 },
 },
-["itemUpgradeSpec"] = "Balance",
+["itemUpgradeSpec"] = "Affliction",
 ["frameHeight"] = 125.0000152587891,
 },
-["Jutarnjedrvo - Living Flame"] = {
-["frameSizes"] = {
-["activeTargetFrame"] = {
-86.8570556640625,
-68.00004577636719,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000152587891,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-40.00004959106445,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
-["macroAnnounced"] = true,
-["hardcore"] = true,
-["enableMinimapButton"] = false,
-["itemUpgradeSpec"] = "Enhance",
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--217,
--253,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--253,
--173.0000305175781,
-},
-},
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--169,
--170,
-},
-},
-},
-},
-["Dopesnare - Lone Wolf"] = {
+["Dopebolt - Living Flame"] = {
 ["frameHeight"] = 125.0000152587891,
+["itemUpgradeSpec"] = "Fire",
 ["framePositions"] = {
 ["activeTargetFrame"] = {
 {
@@ -2358,11 +3012,11 @@ nil,
 ["showDangerousMobsMap"] = false,
 ["macroAnnounced"] = true,
 ["framePositions"] = {
-["activeTargetFrame"] = {
+["arrowFrame"] = {
 {
-"CENTER",
+"TOP",
 "UIParent",
-"CENTER",
+"TOP",
 0,
 0,
 },
@@ -2385,11 +3039,11 @@ nil,
 0,
 },
 },
-["arrowFrame"] = {
+["activeTargetFrame"] = {
 {
-"TOP",
+"CENTER",
 "UIParent",
-"TOP",
+"CENTER",
 0,
 0,
 },
@@ -2400,129 +3054,26 @@ nil,
 ["soloSelfFound"] = true,
 ["showDangerousUnitscan"] = false,
 ["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
+},
+["RXPFrame"] = {
+235.0001068115234,
+125.0000228881836,
+},
+["activeItemFrame"] = {
+72.69829559326172,
+39.99991989135742,
+},
 ["activeTargetFrame"] = {
 85.2649154663086,
 68,
 },
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
 },
 ["frameHeight"] = 125.0000152587891,
 },
-["Battitude - Zandalar Tribe"] = {
-["showDangerousMobsMap"] = false,
-["enableGroupQuests"] = false,
-["soloSelfFound"] = true,
-["showDangerousUnitscan"] = false,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-40.00004959106445,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-},
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--193.0157318115234,
--289.523681640625,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--163.1743927001953,
--175.3653259277344,
-},
-},
-},
-["frameHeight"] = 125.0000152587891,
-["macroAnnounced"] = true,
-},
-["Dopebolt - Living Flame"] = {
-["frameHeight"] = 125.0000152587891,
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-},
+["Dopesnare - Lone Wolf"] = {
 ["frameSizes"] = {
 ["arrowFrame"] = {
 32.00003814697266,
@@ -2541,19 +3092,14 @@ nil,
 68,
 },
 },
-["season"] = 2,
-["itemUpgradeSpec"] = "Fire",
-},
-["Pitchwise - Thunderstrike"] = {
-["gnomeTele"] = false,
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
-"CENTER",
-nil,
-"CENTER",
--151.0001068115234,
--23.99999046325684,
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
 },
 },
 ["RXPFrame"] = {
@@ -2568,22 +3114,32 @@ nil,
 ["activeItemFrame"] = {
 {
 "CENTER",
-nil,
+"UIParent",
 "CENTER",
-438.7293090820313,
-139.6820526123047,
+0,
+0,
 },
 },
 ["activeTargetFrame"] = {
 {
 "CENTER",
-nil,
+"UIParent",
 "CENTER",
-352.4122314453125,
-65.3967514038086,
+0,
+0,
 },
 },
 },
+["frameHeight"] = 125.0000152587891,
+["season"] = 2,
+},
+["Default"] = {
+["gnomeTele"] = false,
+["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
+["questPrio"] = {
+},
+["goblinTele"] = false,
+["tbcStart"] = 2,
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 84.79988861083984,
@@ -2595,100 +3151,73 @@ nil,
 },
 ["activeItemFrame"] = {
 72.69862365722656,
-39.99979782104492,
+39.99988174438477,
 },
 ["arrowFrame"] = {
 32.00003814697266,
 31.99995613098145,
 },
 },
-["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
-["portalTele"] = false,
-["tbcWBF"] = true,
-["tbcStart"] = 2,
-["goblinTele"] = false,
-["itemUpgradeSpec"] = "Enhancement",
+["framePositions"] = {
+["activeTargetFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+352.4122314453125,
+65.3967514038086,
+},
+},
+["RXPFrame"] = {
+{
+"BOTTOMRIGHT",
+"ChatFrame3",
+"BOTTOMLEFT",
+0,
+-10,
+},
+},
+["activeItemFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+468.5708618164063,
+-74.2860336303711,
+},
+},
+["arrowFrame"] = {
+{
+"CENTER",
+nil,
+"CENTER",
+-151.0001068115234,
+-23.99999046325684,
+},
+},
+},
 ["customTheme"] = {
 ["displayName"] = "Default",
 },
-["questPrio"] = {
-},
+["portalTele"] = false,
 ["questPrioIndex"] = {
 },
 ["skipQuest"] = {
 },
-["lockFrames"] = false,
+["tbcWBF"] = true,
 },
-["Turbonac - Celebras"] = {
+["Dopeclaw - Thunderstrike"] = {
+["showDangerousMobsMap"] = true,
 ["macroAnnounced"] = true,
+["hardcore"] = true,
 ["framePositions"] = {
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--163,
--162.0000152587891,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
 ["activeTargetFrame"] = {
 {
 "CENTER",
 nil,
 "CENTER",
--184,
--258,
-},
-},
-},
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000076293945,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-40.00000762939453,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-67.99996185302734,
-},
-},
-["season"] = 0,
-["itemUpgradeSpec"] = "Affliction",
-},
-["Doperage - Living Flame"] = {
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
+454.6032104492188,
+-38.09531021118164,
 },
 },
 ["RXPFrame"] = {
@@ -2711,128 +3240,65 @@ nil,
 },
 ["arrowFrame"] = {
 {
-"CENTER",
-nil,
-"CENTER",
--160,
--166.0000305175781,
-},
-},
-},
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000152587891,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
-["macroAnnounced"] = true,
-},
-["Vermin - Celebras"] = {
-["showDangerousMobsMap"] = false,
-["macroAnnounced"] = true,
-["hardcore"] = false,
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--159,
--170,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
+"TOP",
+"UIParent",
+"TOP",
 0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-454.6026611328125,
--81.90412902832031,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--276.793701171875,
--199.6824188232422,
+0,
 },
 },
 },
 ["season"] = 0,
 ["dungeons"] = {
-["RFK"] = true,
+["ULDA"] = true,
 ["SFK"] = true,
-["STOCKS"] = true,
 ["BFD"] = true,
 ["WC"] = true,
 ["GNOMER"] = true,
 ["DM"] = true,
-["MARA"] = true,
-["ULDA"] = true,
 ["SM"] = true,
+["RFK"] = true,
+["RFC"] = true,
+["MARA"] = true,
 ["RFD"] = true,
-["BRD"] = true,
 ["ST"] = true,
 ["ZF"] = true,
 },
 ["enableGroupQuests"] = true,
-["soloSelfFound"] = true,
-["showDangerousUnitscan"] = false,
+["soloSelfFound"] = false,
+["frameHeight"] = 125.0000152587891,
 ["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
+["activeTargetFrame"] = {
+84.80022430419922,
+43.00002288818359,
 },
 ["RXPFrame"] = {
 235.0001068115234,
 125.0000228881836,
 },
 ["activeItemFrame"] = {
-72.69862365722656,
-39.99988174438477,
+72.69829559326172,
+39.99991989135742,
 },
-["activeTargetFrame"] = {
-85.2649154663086,
-67.99996185302734,
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
 },
 },
-["frameHeight"] = 125.0000152587891,
-["enableMinimapButton"] = false,
+["itemUpgradeSpec"] = "Balance",
+["phase"] = 1,
 },
-["Battlenac - Zandalar Tribe"] = {
+["Dopeah - Stitches"] = {
 ["showDangerousMobsMap"] = false,
 ["macroAnnounced"] = true,
 ["framePositions"] = {
-["arrowFrame"] = {
+["activeTargetFrame"] = {
 {
 "CENTER",
-nil,
+"UIParent",
 "CENTER",
--163,
--162.0000152587891,
+0,
+0,
 },
 },
 ["RXPFrame"] = {
@@ -2853,294 +3319,21 @@ nil,
 0,
 },
 },
-["activeTargetFrame"] = {
+["arrowFrame"] = {
 {
-"CENTER",
-nil,
-"CENTER",
-547.9361572265625,
--83.17451477050781,
+"TOP",
+"UIParent",
+"TOP",
+0,
+0,
 },
 },
 },
-["season"] = 0,
+["season"] = 2,
 ["enableGroupQuests"] = false,
 ["soloSelfFound"] = true,
 ["showDangerousUnitscan"] = false,
 ["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["activeTargetFrame"] = {
-85.26507568359375,
-67.99996185302734,
-},
-},
-["enableMinimapButton"] = false,
-["itemUpgradeSpec"] = "Discipline ",
-["frameHeight"] = 125.0000152587891,
-},
-["Dopecoil - Thunderstrike"] = {
-["showDangerousMobsMap"] = true,
-["macroAnnounced"] = true,
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--395.5552673339844,
-28.57151603698731,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--226.6663818359375,
--191.2382202148438,
-},
-},
-},
-["season"] = 11,
-["dungeons"] = {
-["RFK"] = true,
-["SFK"] = true,
-["BFD"] = true,
-["WC"] = true,
-["SM"] = true,
-["RFC"] = true,
-["RFD"] = true,
-["ST"] = true,
-["MARA"] = true,
-},
-["enableGroupQuests"] = true,
-["soloSelfFound"] = false,
-["showDangerousUnitscan"] = false,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-89.00010681152344,
-67.99992370605469,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
-["itemUpgradeSpec"] = "Affliction",
-["frameHeight"] = 125.0000152587891,
-},
-["Handrmandr - Thunderstrike"] = {
-["gnomeTele"] = false,
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-352.4122314453125,
-65.3967514038086,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-468.5708618164063,
--74.2860336303711,
-},
-},
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--151.0001068115234,
--23.99999046325684,
-},
-},
-},
-["tbcStart"] = 2,
-["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
-["goblinTele"] = false,
-["customTheme"] = {
-["displayName"] = "Default",
-},
-["portalTele"] = false,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-89,
-42.99992370605469,
-},
-["RXPFrame"] = {
-253.0314331054688,
-207.4602813720703,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-39.99988174438477,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
-["itemUpgradeSpec"] = "Hunter",
-["tbcWBF"] = true,
-},
-["Dopeclaw - Lone Wolf"] = {
-["showEnabled"] = false,
-["frameHeight"] = 125.0000152587891,
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-["RXPFrame"] = {
-235.0001068115234,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-39.99991989135742,
-},
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-},
-["itemUpgradeSpec"] = "Feral",
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-},
-["season"] = 2,
-["minimap"] = {
-["minimapPos"] = 221.28373803974,
-},
-},
-["Mxzq - Golemagg"] = {
-["frameHeight"] = 125.0000152587891,
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-},
-["season"] = 0,
-["frameSizes"] = {
 ["activeTargetFrame"] = {
 85.2649154663086,
 68,
@@ -3158,211 +3351,16 @@ nil,
 32.00003814697266,
 },
 },
-},
-["Default"] = {
-["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
-["tbcStart"] = 2,
-["questPrioIndex"] = {
-},
-["framePositions"] = {
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--151.0001068115234,
--23.99999046325684,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-468.5708618164063,
--74.2860336303711,
-},
-},
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-352.4122314453125,
-65.3967514038086,
-},
-},
-},
-["skipQuest"] = {
-},
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-["RXPFrame"] = {
-253.0314331054688,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-39.99988174438477,
-},
-["activeTargetFrame"] = {
-84.79988861083984,
-18.00000190734863,
-},
-},
-["goblinTele"] = false,
-["tbcWBF"] = true,
-["gnomeTele"] = false,
-["portalTele"] = false,
-["customTheme"] = {
-["displayName"] = "Default",
-},
-["questPrio"] = {
-},
-},
-["Dopestab - Lone Wolf"] = {
-["enableMinimapButton"] = false,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-68.00004577636719,
-},
-["RXPFrame"] = {
-235.0001068115234,
-125.0000228881836,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-39.99988174438477,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
-["frameHeight"] = 125.0000152587891,
-["macroAnnounced"] = true,
-["hardcore"] = false,
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--210.0000762939453,
--248.0000610351563,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
-513.5549926757812,
--29.68246841430664,
-},
-},
-["arrowFrame"] = {
-{
-"CENTER",
-nil,
-"CENTER",
--159.2857513427734,
--157.1746673583984,
-},
-},
-},
-["season"] = 2,
-["lockFrames"] = false,
-},
-["Dopemend - Living Flame"] = {
-["frameHeight"] = 125.0000152587891,
-["season"] = 2,
-["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
-},
-["RXPFrame"] = {
-235.0001068115234,
-27.99999809265137,
-},
-["activeItemFrame"] = {
-72.69829559326172,
-40.00000762939453,
-},
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-},
-["itemUpgradeSpec"] = "Discipline ",
-["framePositions"] = {
-["activeTargetFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["RXPFrame"] = {
-{
-"BOTTOMRIGHT",
-"ChatFrame3",
-"BOTTOMLEFT",
-0,
--10,
-},
-},
-["activeItemFrame"] = {
-{
-"CENTER",
-"UIParent",
-"CENTER",
-0,
-0,
-},
-},
-["arrowFrame"] = {
-{
-"TOP",
-"UIParent",
-"TOP",
-0,
-0,
-},
-},
-},
+["itemUpgradeSpec"] = "Elemental",
+["frameHeight"] = 125.0000228881836,
 },
 ["Dopeclaw - Stitches"] = {
 ["frameHeight"] = 125.0000152587891,
+["season"] = 0,
 ["frameSizes"] = {
-["activeTargetFrame"] = {
-85.2649154663086,
-68,
+["arrowFrame"] = {
+32.00003814697266,
+32.00003814697266,
 },
 ["RXPFrame"] = {
 235.0001068115234,
@@ -3372,17 +3370,18 @@ nil,
 72.69829559326172,
 39.99991989135742,
 },
-["arrowFrame"] = {
-32.00003814697266,
-32.00003814697266,
-},
-},
-["framePositions"] = {
 ["activeTargetFrame"] = {
+85.2649154663086,
+68,
+},
+},
+["itemUpgradeSpec"] = "Feral",
+["framePositions"] = {
+["arrowFrame"] = {
 {
-"CENTER",
+"TOP",
 "UIParent",
-"CENTER",
+"TOP",
 0,
 0,
 },
@@ -3405,29 +3404,29 @@ nil,
 0,
 },
 },
-["arrowFrame"] = {
+["activeTargetFrame"] = {
 {
-"TOP",
+"CENTER",
 "UIParent",
-"TOP",
+"CENTER",
 0,
 0,
 },
 },
 },
-["itemUpgradeSpec"] = "Feral",
-["season"] = 0,
 },
-["Dopeseal - Thunderstrike"] = {
-["itemUpgradeSpec"] = "Retribution",
+["Doperage - Thunderstrike"] = {
+["enableGroupQuests"] = false,
+["showDangerousMobsMap"] = false,
+["frameHeight"] = 125.0000228881836,
 ["framePositions"] = {
-["arrowFrame"] = {
+["activeTargetFrame"] = {
 {
 "CENTER",
 nil,
 "CENTER",
--149.9366760253906,
--27.22196769714356,
+-427.2859191894531,
+-95.07903289794922,
 },
 },
 ["RXPFrame"] = {
@@ -3448,21 +3447,20 @@ nil,
 -90.79390716552734,
 },
 },
-["activeTargetFrame"] = {
+["arrowFrame"] = {
 {
 "CENTER",
 nil,
 "CENTER",
-545.411865234375,
-26.82563781738281,
+222.7615203857422,
+-184.6823272705078,
 },
 },
 },
-["frameHeight"] = 125.0000228881836,
 ["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
+["activeTargetFrame"] = {
+84.79988861083984,
+43.00002288818359,
 },
 ["RXPFrame"] = {
 235.0001068115234,
@@ -3472,23 +3470,24 @@ nil,
 72.69862365722656,
 39.99988174438477,
 },
-["activeTargetFrame"] = {
-84.80022430419922,
-43.00002288818359,
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
 },
 },
+["itemUpgradeSpec"] = "Warrior",
+["soloSelfFound"] = true,
 },
 ["Vermins - Thunderstrike"] = {
 ["gnomeTele"] = false,
-["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
 ["framePositions"] = {
-["arrowFrame"] = {
+["activeTargetFrame"] = {
 {
 "CENTER",
 nil,
 "CENTER",
--151.0001068115234,
--23.99999046325684,
+352.4122314453125,
+65.3967514038086,
 },
 },
 ["RXPFrame"] = {
@@ -3509,32 +3508,22 @@ nil,
 -74.2860336303711,
 },
 },
-["activeTargetFrame"] = {
+["arrowFrame"] = {
 {
 "CENTER",
 nil,
 "CENTER",
-352.4122314453125,
-65.3967514038086,
+-151.0001068115234,
+-23.99999046325684,
 },
 },
 },
-["skipQuest"] = {
-},
-["questPrioIndex"] = {
-},
-["portalTele"] = false,
-["tbcStart"] = 2,
-["goblinTele"] = false,
-["customTheme"] = {
-["displayName"] = "Default",
-},
-["questPrio"] = {
-},
+["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
+["itemUpgradeSpec"] = "Warrior",
 ["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
+["activeTargetFrame"] = {
+84.79988861083984,
+42.99992370605469,
 },
 ["RXPFrame"] = {
 253.0314331054688,
@@ -3544,12 +3533,23 @@ nil,
 72.69862365722656,
 39.99988174438477,
 },
-["activeTargetFrame"] = {
-84.79988861083984,
-42.99992370605469,
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
 },
 },
-["itemUpgradeSpec"] = "Warrior",
+["portalTele"] = false,
+["questPrio"] = {
+},
+["goblinTele"] = false,
+["customTheme"] = {
+["displayName"] = "Default",
+},
+["tbcStart"] = 2,
+["questPrioIndex"] = {
+},
+["skipQuest"] = {
+},
 ["tbcWBF"] = true,
 },
 },

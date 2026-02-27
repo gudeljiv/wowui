@@ -1,16 +1,8 @@
 
 BugGrabberDB = {
+["session"] = 14244,
 ["lastSanitation"] = 3,
-["session"] = 14239,
 ["errors"] = {
-{
-["message"] = "Interface/AddOns/TellMeWhen/TellMeWhen.lua:2614: ...lizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua:25: bad argument #1 to 'IsSpellInSpellBook' (Usage: local isInSpellBook = C_SpellBook.IsSpellInSpellBook(spellID [, spellBank, includeOverrides]))",
-["time"] = "2025/12/27 20:17:25",
-["locals"] = "self = TMW {\n modules = <table> {\n }\n DS = <table> {\n }\n db = <table> {\n }\n ALLOW_LOCKDOWN_CONFIG = true\n operators = <table> {\n }\n isNumber = <table> {\n }\n COMMON = <table> {\n }\n TEXT = <table> {\n }\n EquivFullIDLookup = <table> {\n }\n InitializedDatabase = true\n name = \"TellMeWhen\"\n Defaults = <table> {\n }\n C = <table> {\n }\n BackupDate = \"07:56:56 PM\"\n SNIPPETS = <table> {\n }\n L = <table> {\n }\n OrderedTypes = <table> {\n }\n justifyVPoints = <table> {\n }\n Views = <table> {\n }\n CHANGELOG = \"## v11.2.8\n* Fix #2310 spec checking broken below level 10 on Classic Era.\n\n## v11.2.7\n* Fix #2309 Additional assorted talent/spec errors on Classic Era.\n\n## v11.2.6\n* Fix #2307 C_SpecializationInfo.GetTalent: query.specializationIndex must be specified.\n\n## v11.2.5\n* New condition: Armor Repair Level - Checks the lowest durability percentage of any equipped gear.\n* Meta Icons and Icon Shown conditions now use pure event-driven updates. This is made possible by dynamic, dependency-aware ordering of icon update checks. If you have circular dependencies between icons, you may find that some updates may be delayed by at least one update interval. \n* While Condition Set Passing and On Condition Set Passing triggers for notifications no longer evaluate while their icon's group is not shown/active. This now matches the behavior of all other notification triggers.\n* Unit Conditions no longer evaluate while the icon that requested them is not shown/active.\n\n## v11.2.4\n* Fix Spells.lua:27: attempt to in defaultModuleState = true\n CHANGELOG_LASTVER = \"10.0.0\"\n HELP = <table> {\n }\n UPD_INTV = 0.051000\n Locked = true\n NAMES = <table> {\n }\n GUIDToOwner = <table> {\n }\n justifyPoints = <table> {\n }\n EventList = <table> {\n }\n EVENTS = <table> {\n }\n EquivOriginalLookup = <table> {\n }\n CONST = <table> {\n }\n indentLib = <table> {\n }\n GroupsToUpdate = <table> {\n }\n GCDSpell = 53\n Classes = <table> {\n }\n Backupdb = <table> {\n }\n Group_Defaults = <table> {\n }\n SpellTexturesMetaIndex = <table> {\n }\n Warned = true\n performedEvent = \"TMW_UPGRADE_PERFORMED\"\n UNITS = <table> {\n }\n profile = <table> {\n }\n DOGTAG = <table> {\n }\n IconStateArbitrator = <table> {\n }\n time = 103129.928000\n baseName = \"TellMeWhen\"\n TIMERS = <table> {\n }\n SUG = <table> {\n }\n strlowerCache = <table> {\n }\n DD = <table> {\n }\n DROPDOWNMENU = <table> {\n }\n CNDT = <table> {\n }\n points = <table> {\n }\n IE = TellMeWhen_IconEditor {\n }\n enabledState = true\n CI = <table> {\n }\n spellTextureCache = <table> {\n }\n Initialized = true\n EquivFirstIDLookup = <table> {\n }\n EquivFullNameLookup = <table> {\n }\n DEFAULT_ICON_SETTINGS = <table> {\n }\n Icon_Defaults = <table> {\n }\n BE = <table> {\n }\n IconEventUpdateEngine = Frame {\n }\n PreviousGUIDToOwner = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n COUNTERS = <table> {\n }\n global = <table> {\n }\n IconsToUpdate = <table> {\n }\n ValidityCheckQueue = <table> {\n }\n IconDragger = <table> {\n }\n OrderedViews = <table> {\n }\n Types = <table> {\n }\n CompareFuncs = <table> {\n }\n callbackregistry = <table> {\n }\n orderedModules = <table> {\n }\n}\nstart = 103129929.142700\nCoroutine = <no value>\ncoroutine = <table> {\n}\nTMW = TMW {\n modules = <table> {\n }\n DS = <table> {\n }\n db = <table> {\n }\n ALLOW_LOCKDOWN_CONFIG = true\n operators = <table> {\n }\n isNumber = <table> {\n }\n COMMON = <table> {\n }\n TEXT = <table> {\n }\n EquivFullIDLookup = <table> {\n }\n InitializedDatabase = true\n name = \"TellMeWhen\"\n Defaults = <table> {\n }\n C = <table> {\n }\n BackupDate = \"07:56:56 PM\"\n SNIPPETS = <table> {\n }\n L = <table> {\n }\n OrderedTypes = <table> {\n }\n justifyVPoints = <table> {\n }\n Views = <table> {\n }\n CHANGELOG = \"## v11.2.8\n* Fix #2310 spec checking broken below level 10 on Classic Era.\n\n## v11.2.7\n* Fix #2309 Additional assorted talent/spec errors on Classic Era.\n\n## v11.2.6\n* Fix #2307 C_SpecializationInfo.GetTalent: query.specializationIndex must be specified.\n\n## v11.2.5\n* New condition: Armor Repair Level - Checks the lowest durability percentage of any equipped gear.\n* Meta Icons and Icon Shown conditions now use pure event-driven updates. This is made possible by dynamic, depen",
-["stack"] = "[Interface/AddOns/TellMeWhen/TellMeWhen.lua]:2614: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2603>",
-["session"] = 13116,
-["counter"] = 1,
-},
 {
 ["message"] = "...lizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua:25: bad argument #1 to 'IsSpellInSpellBook' (Usage: local isInSpellBook = C_SpellBook.IsSpellInSpellBook(spellID [, spellBank, includeOverrides]))",
 ["time"] = "2025/12/27 20:15:58",
@@ -149,98 +141,98 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:3 Unrecognized XML attribute: category",
-["time"] = "2026/01/02 18:16:52",
 ["session"] = 13151,
+["time"] = "2026/01/02 18:16:52",
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:6 Unrecognized XML: Binding",
-["time"] = "2026/01/02 18:16:52",
 ["session"] = 13151,
+["time"] = "2026/01/02 18:16:52",
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:6 Unrecognized XML attribute: name",
-["time"] = "2026/01/02 18:16:52",
 ["session"] = 13151,
+["time"] = "2026/01/02 18:16:52",
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:6 Unrecognized XML attribute: category",
-["time"] = "2026/01/02 18:16:52",
 ["session"] = 13151,
+["time"] = "2026/01/02 18:16:52",
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:9 Unrecognized XML attribute: category",
-["time"] = "2026/01/02 18:16:52",
 ["session"] = 13151,
+["time"] = "2026/01/02 18:16:52",
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:3 Unrecognized XML: Binding",
-["time"] = "2026/01/02 18:16:52",
 ["session"] = 13158,
+["time"] = "2026/01/02 18:16:52",
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:3 Unrecognized XML attribute: name",
-["time"] = "2026/01/02 18:16:52",
 ["session"] = 13158,
+["time"] = "2026/01/02 18:16:52",
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:3 Unrecognized XML attribute: header",
-["time"] = "2026/01/02 18:16:52",
 ["session"] = 13158,
+["time"] = "2026/01/02 18:16:52",
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:5 Unrecognized XML: Binding",
-["session"] = 13158,
 ["time"] = "2026/01/02 18:23:19",
+["session"] = 13158,
 ["counter"] = 7,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:5 Unrecognized XML attribute: name",
-["session"] = 13158,
 ["time"] = "2026/01/02 18:23:19",
+["session"] = 13158,
 ["counter"] = 7,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:7 Unrecognized XML: Binding",
-["session"] = 13158,
 ["time"] = "2026/01/02 18:23:19",
+["session"] = 13158,
 ["counter"] = 7,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:7 Unrecognized XML attribute: name",
-["session"] = 13158,
 ["time"] = "2026/01/02 18:23:19",
+["session"] = 13158,
 ["counter"] = 7,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:9 Unrecognized XML: Binding",
-["time"] = "2026/01/02 18:16:52",
 ["session"] = 13158,
+["time"] = "2026/01/02 18:16:52",
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:9 Unrecognized XML attribute: name",
-["time"] = "2026/01/02 18:16:52",
 ["session"] = 13158,
+["time"] = "2026/01/02 18:16:52",
 ["counter"] = 10,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:11 Unrecognized XML: Binding",
-["session"] = 13158,
 ["time"] = "2026/01/02 18:23:19",
+["session"] = 13158,
 ["counter"] = 7,
 },
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:1 Interface/AddOns/ExtraActionBars/Bindings.xml(28): error: not well-formed (invalid token)",
-["time"] = "2026/01/02 18:38:02",
 ["session"] = 13159,
+["time"] = "2026/01/02 18:38:02",
 ["counter"] = 2,
 },
 {
@@ -501,44 +493,44 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/ls_Toasts/init.lua:1 Interface/AddOns/ls_Toasts/init.lua:20: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Masque_BeautyBorder/skin.lua:1 Interface/AddOns/Masque_BeautyBorder/skin.lua:13: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Masque_Brownstone/skin.lua:1 Interface/AddOns/Masque_Brownstone/skin.lua:13: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Masque_Muq/Skins.lua:1 Interface/AddOns/Masque_Muq/Skins.lua:6: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/MikScrollingBattleText/MikSBT.lua:1 Interface/AddOns/MikScrollingBattleText/MikSBT.lua:29: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/MikScrollingBattleText/Localization/localization.lua:1 ...MikScrollingBattleText/Localization/localization.lua:28: attempt to index local 'L' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/MikScrollingBattleText/MSBTProfiles.lua:1 ...rface/AddOns/MikScrollingBattleText/MSBTProfiles.lua:70: attempt to call local 'GetSkillName' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
@@ -567,32 +559,32 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/NovaWorldBuffs/Modules/Data.lua:1 Interface/AddOns/NovaWorldBuffs/Modules/Data.lua:369: attempt to concatenate field 'i' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/NovaWorldBuffs/Modules/BuffsWindow.lua:1 ...erface/AddOns/NovaWorldBuffs/Modules/BuffsWindow.lua:13: attempt to call method 'addBackdrop' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/picoFPS/picoFPS.lua:1 Interface/AddOns/picoFPS/picoFPS.lua:11: attempt to call global 'GetNumAddOns' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Plater/libs/LibRangeCheck-2.0-100217/LibRangeCheck-2.0.lua:1 Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RangeDisplay/libs/LibRangeCheck-3.0-31/LibRangeCheck-3.0.lua:1 Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
@@ -605,50 +597,50 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/ShadowedUnitFrames/modules/auraindicators.lua:1 ...ace/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua:589: attempt to call global 'IsAddOnLoaded' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/SkillInfoPlus/SkillInfoPlus.lua:1 Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TacoTip/options.lua:1 Interface/AddOns/TacoTip/options.lua:3: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TacoTip/main.lua:1 Interface/AddOns/TacoTip/main.lua:3: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/ThreatClassic2/core/init.lua:1 Interface/AddOns/ThreatClassic2/core/init.lua:13: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/CustomContainers.lua:1 Interface/AddOns/xVermin/Frames/CustomContainers.lua:28: attempt to call method 'CreateBeautyBorder' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesDarker.lua:1 ...erface/AddOns/xVermin/Frames/DefaultFramesDarker.lua:50: attempt to index global 'CastingBarFrame' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/KillCount.lua:1 Interface/AddOns/xVermin/Frames/KillCount.lua:40: attempt to call method 'CreateBeautyBorder' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
@@ -669,14 +661,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Details/Details_TBC.toc:191 Duplicate File Load Detected. [Interface/AddOns/Details/core/parser_nocleu.lua] first loaded at [Interface/AddOns/Details/Details_TBC.toc:83]",
-["session"] = 13287,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13287,
 ["counter"] = 4,
 },
 {
 ["message"] = "Interface/AddOns/Details/Details_TBC.toc:192 Duplicate File Load Detected. [Interface/AddOns/Details/core/parser_nocleu1.lua] first loaded at [Interface/AddOns/Details/Details_TBC.toc:162]",
-["session"] = 13287,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13287,
 ["counter"] = 4,
 },
 {
@@ -1353,8 +1345,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nBuff/core.lua:1 Interface/AddOns/nBuff/core.lua:102: '<eof>' expected near 'TemporaryEnchantFrame'",
-["time"] = "2026/01/15 19:10:57",
 ["session"] = 13353,
+["time"] = "2026/01/15 19:10:57",
 ["counter"] = 1,
 },
 {
@@ -1367,8 +1359,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nBuff/core.lua:1 Interface/AddOns/nBuff/core.lua:62: unexpected symbol near ')'",
-["time"] = "2026/01/15 19:14:00",
 ["session"] = 13361,
+["time"] = "2026/01/15 19:14:00",
 ["counter"] = 1,
 },
 {
@@ -1501,14 +1493,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/TellMeWhen/TellMeWhen.lua:1 Interface/AddOns/TellMeWhen/TellMeWhen.lua:21: unexpected symbol near '.'",
-["time"] = "2026/01/15 19:39:20",
 ["session"] = 13377,
+["time"] = "2026/01/15 19:39:20",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/TellMeWhen/Components/IconModules/IconModule_CooldownSweep/CooldownSweep.lua:1 ...MeWhen/Components/IconModules/IconModule_CooldownSweep/CooldownSweep.lua:22: unexpected symbol near '.'",
-["time"] = "2026/01/15 19:39:20",
 ["session"] = 13377,
+["time"] = "2026/01/15 19:39:20",
 ["counter"] = 1,
 },
 {
@@ -1553,8 +1545,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Masque_BeautyBorder/Masque_BeautyBorder.toc:22 Error loading Interface/AddOns/Masque_BeautyBorder/Skins.lua",
-["time"] = "2026/01/15 19:53:54",
 ["session"] = 13387,
+["time"] = "2026/01/15 19:53:54",
 ["counter"] = 1,
 },
 {
@@ -1639,14 +1631,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/AdiBags/modules/Junk.lua:1 Interface/AddOns/AdiBags/modules/Junk.lua:32: unexpected symbol near '.'",
-["session"] = 13398,
 ["time"] = "2026/01/15 20:04:47",
+["session"] = 13398,
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/AdiBags/modules/CurrencyFrame.lua:1 Interface/AddOns/AdiBags/modules/CurrencyFrame.lua:42: unexpected symbol near '.'",
-["session"] = 13398,
 ["time"] = "2026/01/15 20:04:47",
+["session"] = 13398,
 ["counter"] = 3,
 },
 {
@@ -1747,38 +1739,38 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/WorldMapTaintWorkaround.lua:1 Interface/AddOns/Questie/Modules/WorldMapTaintWorkaround.lua:4: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/QuestieCoordinates.lua:1 Interface/AddOns/Questie/Modules/QuestieCoordinates.lua:20: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Tracker/QuestieTracker.lua:1 Interface/AddOns/Questie/Modules/Tracker/QuestieTracker.lua:84: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Tracker/TrackerUtils.lua:1 Interface/AddOns/Questie/Modules/Tracker/TrackerUtils.lua:36: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Tracker/TrackerHeaderFrame.lua:1 Interface/AddOns/Questie/Modules/Tracker/TrackerHeaderFrame.lua:29: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Options/TrackerTab/QuestieOptionsTracker.lua:1 ...face/AddOns/Questie/Modules/Options/TrackerTab/QuestieOptionsTracker.lua:28: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
@@ -1799,8 +1791,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:109: ')' expected (to close '(' at line 103) near 'end'",
-["time"] = "2026/01/16 11:11:25",
 ["session"] = 13423,
+["time"] = "2026/01/16 11:11:25",
 ["counter"] = 1,
 },
 {
@@ -1909,62 +1901,62 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:28 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:29 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:32 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:55 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:56 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:77 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:79 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:232 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:233 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:260 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
@@ -2121,8 +2113,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/AtlasLootClassic/Loader.lua:1 Interface/AddOns/AtlasLootClassic/Loader.lua:11: unexpected symbol near '.'",
-["session"] = 13446,
 ["time"] = "2026/01/16 12:06:09",
+["session"] = 13446,
 ["counter"] = 1,
 },
 {
@@ -2279,8 +2271,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Dejunk/src/consts.lua:1 Interface/AddOns/Dejunk/src/consts.lua:7: unexpected symbol near '.'",
-["session"] = 13456,
 ["time"] = "2026/01/16 12:15:12",
+["session"] = 13456,
 ["counter"] = 1,
 },
 {
@@ -2309,8 +2301,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Dejunk/src/bags.lua:1 Interface/AddOns/Dejunk/src/bags.lua:9: unexpected symbol near '.'",
-["session"] = 13458,
 ["time"] = "2026/01/16 12:15:12",
+["session"] = 13458,
 ["counter"] = 3,
 },
 {
@@ -2379,8 +2371,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/NugKeyFeedback/NugKeyFeedback.lua:1 Interface/AddOns/NugKeyFeedback/NugKeyFeedback.lua:51: unexpected symbol near '.'",
-["time"] = "2026/01/16 12:28:12",
 ["session"] = 13463,
+["time"] = "2026/01/16 12:28:12",
 ["counter"] = 1,
 },
 {
@@ -2625,8 +2617,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/FarmHud_TrailPath/FarmHud_TrailPath.xml:7 Deferred XML Node object named FarmHudTrailPathPinTemplate already exists",
-["time"] = "2026/01/21 16:46:57",
 ["session"] = 13667,
+["time"] = "2026/01/21 16:46:57",
 ["counter"] = 1,
 },
 {
@@ -2823,8 +2815,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Addons/SUI.lua:1 Interface/AddOns/xVermin/Addons/SUI.lua:17: unexpected symbol near ')'",
-["session"] = 13752,
 ["time"] = "2026/01/22 12:11:04",
+["session"] = 13752,
 ["counter"] = 1,
 },
 {
@@ -2933,8 +2925,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/xVermin.toc:113 Couldn't open Interface/AddOns/xVermin/Helpers/WeaponBuff",
-["time"] = "2026/01/23 18:05:21",
 ["session"] = 13791,
+["time"] = "2026/01/23 18:05:21",
 ["counter"] = 1,
 },
 {
@@ -3387,8 +3379,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/AdiBags/AdiBags_TBC.toc:51 Duplicate File Load Detected. [Interface/AddOns/AdiBags/core/EventHandlers.lua] first loaded at [Interface/AddOns/AdiBags/AdiBags_TBC.toc:47]",
-["session"] = 13848,
 ["time"] = "2026/01/27 22:23:43",
+["session"] = 13848,
 ["counter"] = 1,
 },
 {
@@ -3421,14 +3413,6 @@ BugGrabberDB = {
 ["locals"] = "(*temporary) = nil\n(*temporary) = \"attempt to call global 'SortBags' (a nil value)\"\n",
 ["stack"] = "[Interface/AddOns/xVermin/Addons/AdiBags.lua]:165: in function <Interface/AddOns/xVermin/Addons/AdiBags.lua:164>",
 ["session"] = 13865,
-["counter"] = 2,
-},
-{
-["message"] = "Interface/AddOns/TotemTimers/Masque.lua:83: attempt to index local 'skin' (a nil value)",
-["time"] = "2026/01/28 19:34:22",
-["locals"] = "skinID = \"Brownstone\"\nskin = nil\nbuttons = <table> {\n 1 = XiTimers_Timer8 {\n }\n 2 = TT_ActionButton61 {\n }\n 3 = TT_ActionButton62 {\n }\n 4 = TT_ActionButton63 {\n }\n 5 = TT_ActionButton64 {\n }\n 6 = TT_ActionButton65 {\n }\n 7 = TT_ActionButton66 {\n }\n 8 = TT_ActionButton67 {\n }\n 9 = TT_ActionButton68 {\n }\n}\nactionBarButtons = <table> {\n 1 = TT_ActionButton61 {\n }\n 2 = TT_ActionButton62 {\n }\n 3 = TT_ActionButton63 {\n }\n 4 = TT_ActionButton64 {\n }\n 5 = TT_ActionButton65 {\n }\n 6 = TT_ActionButton66 {\n }\n 7 = TT_ActionButton67 {\n }\n 8 = TT_ActionButton68 {\n }\n}\n(for state) = <table> {\n 1 = XiTimers_Timer8 {\n }\n 2 = TT_ActionButton61 {\n }\n 3 = TT_ActionButton62 {\n }\n 4 = TT_ActionButton63 {\n }\n 5 = TT_ActionButton64 {\n }\n 6 = TT_ActionButton65 {\n }\n 7 = TT_ActionButton66 {\n }\n 8 = TT_ActionButton67 {\n }\n 9 = TT_ActionButton68 {\n }\n}\n(for control) = 1\nk = 1\nbutton = XiTimers_Timer8 {\n popupDirection = \"UP\"\n NewActionTexture = Texture {\n }\n BorderShadow = Texture {\n }\n icon = XiTimers_Timer8Icon {\n }\n closedArrowOffset = 4\n popupOffset = -4\n enableSpellFX = false\n count = XiTimers_Timer8Count {\n }\n arrowCrossAxisSize = 7\n miniIconFrame = XiTimers_Timer8Mini {\n }\n hotkeyTextGamepadX = 3\n IconMask = MaskTexture {\n }\n arrowMainAxisSize = 18\n SpellHighlightAnim = AnimationGroup {\n }\n hotkeyTextKeyboardX = -2\n _MSQ_Hook_UpdateButtonArt = true\n PushedTexture = Texture {\n }\n _MSQ_CFG = <table> {\n }\n hotkeyTextKeyboardY = -2\n tooltip = <table> {\n }\n icons = <table> {\n }\n hotkey = XiTimers_Timer8HotKey {\n }\n arrowDownTexture = \"UI-HUD-ActionBar-Flyout-Down\"\n AutoCastOverlay = Frame {\n }\n time = XiTimers_Timer8Time {\n }\n Border = XiTimers_Timer8Border {\n }\n openArrowOffset = 2\n arrowNormalTexture = \"UI-HUD-ActionBar-Flyout\"\n Count = XiTimers_Timer8Count {\n }\n rangeCount = XiTimers_Timer8RangeCount {\n }\n bar = XiTimers_Timer8Bar {\n }\n miniIcon = XiTimers_Timer8MiniIcon {\n }\n anchorframe = TotemTimers_TrackerFrame {\n }\n element = 8\n HotKey = XiTimers_Timer8HotKey {\n }\n TextOverlayContainer = Frame {\n }\n arrowOverTexture = \"UI-HUD-ActionBar-Flyout-Mouseover\"\n timer = <table> {\n }\n HighlightTexture = Texture {\n }\n NormalTexture = XiTimers_Timer8NormalTexture {\n }\n normalTexture = XiTimers_Timer8NormalTexture {\n }\n action = 0\n Arrow = Texture {\n }\n LevelLinkLockIcon = Texture {\n }\n enableLOCCooldown = false\n hotkeyTextGamepadY = 0\n Name = XiTimers_Timer8Name {\n }\n Flash = XiTimers_Timer8Flash {\n }\n popupCrossAxisSize = 47\n SpellHighlightTexture = Texture {\n }\n SlotBackground = Texture {\n }\n cooldown = XiTimers_Timer8Cooldown {\n }\n}\nxScale = 1\nyScale = 1\n(*temporary) = XiTimers_Timer8Icon2 {\n flashAnim = Animation {\n }\n animation = AnimationGroup {\n }\n}\n(*temporary) = XiTimers_Timer8 {\n popupDirection = \"UP\"\n NewActionTexture = Texture {\n }\n BorderShadow = Texture {\n }\n icon = XiTimers_Timer8Icon {\n }\n closedArrowOffset = 4\n popupOffset = -4\n enableSpellFX = false\n count = XiTimers_Timer8Count {\n }\n arrowCrossAxisSize = 7\n miniIconFrame = XiTimers_Timer8Mini {\n }\n hotkeyTextGamepadX = 3\n IconMask = MaskTexture {\n }\n arrowMainAxisSize = 18\n SpellHighlightAnim = AnimationGroup {\n }\n hotkeyTextKeyboardX = -2\n _MSQ_Hook_UpdateButtonArt = true\n PushedTexture = Texture {\n }\n _MSQ_CFG = <table> {\n }\n hotkeyTextKeyboardY = -2\n tooltip = <table> {\n }\n icons = <table> {\n }\n hotkey = XiTimers_Timer8HotKey {\n }\n arrowDownTexture = \"UI-HUD-ActionBar-Flyout-Down\"\n AutoCastOverlay = Frame {\n }\n time = XiTimers_Timer8Time {\n }\n Border = XiTimers_Timer8Border {\n }\n openArrowOffset = 2\n arrowNormalTexture = \"UI-HUD-ActionBar-Flyout\"\n Count = XiTimers_Timer8Count {\n }\n rangeCount = XiTimers_Timer8RangeCount {\n }\n bar = XiTimers_Timer8Bar {\n }\n miniIcon = XiTimers_Timer8MiniIcon {\n }\n anchorframe = TotemTimers_TrackerFrame {\n }\n element = 8\n HotKey = XiTimers_Timer8HotKey {\n }\n TextOverlayContainer = Frame {\n }\n arrowOverTexture = \"UI-HUD-ActionBar-Flyout-Mouseover\"\n timer = <table> {\n }\n HighlightTexture = Texture {\n }\n NormalTexture = XiTimers_Timer8NormalTexture {\n }\n normalTexture = XiTimers_Timer8NormalTexture {\n }\n action = 0\n Arrow = Texture {\n }\n LevelLinkLo",
-["stack"] = "[Interface/AddOns/TotemTimers/Masque.lua]:83: in function 'SkinWeaponTracker'\n[Interface/AddOns/TotemTimers/Masque.lua]:92: in function <Interface/AddOns/TotemTimers/Masque.lua:90>\n[C]: in function 'ReSkin'\n[Interface/AddOns/TotemTimers/Masque.lua]:125: in function 'InitMasque'\n[Interface/AddOns/TotemTimers/TotemTimers.lua]:182: in function 'SetupGlobals'\n[Interface/AddOns/TotemTimers/TotemTimers.lua]:39: in function <Interface/AddOns/TotemTimers/TotemTimers.lua:36>",
-["session"] = 13876,
 ["counter"] = 2,
 },
 {
@@ -3593,8 +3577,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/_Misc.lua:1 File Interface/AddOns/xVermin/Helpers/_Misc.lua is empty.",
-["time"] = "2026/02/13 19:15:53",
 ["session"] = 13947,
+["time"] = "2026/02/13 19:15:53",
 ["counter"] = 1,
 },
 {
@@ -3676,22 +3660,6 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/Plater/Plater.lua]:6034: in function 'QuickHealthUpdate'\n[Interface/AddOns/Plater/Plater_Designer.lua]:758: in function 'UpdatePreview'\n[Interface/AddOns/Plater/Plater_Designer.lua]:637: in function 'CreatePreview'\n[Interface/AddOns/Plater/Plater_Designer.lua]:307: in function <Interface/AddOns/Plater/Plater_Designer.lua:107>\n[C]: in function 'xpcall'\n[Interface/AddOns/Details/Libs/DF/tabcontainer.lua]:348: in function <Interface/AddOns/Details/Libs/DF/tabcontainer.lua:346>\n[C]: in function 'Show'\n[Interface/AddOns/Details/Libs/DF/tabcontainer.lua]:156: in function 'SelectTabByIndex'\n[Interface/AddOns/Details/Libs/DF/tabcontainer.lua]:373: in function <Interface/AddOns/Details/Libs/DF/tabcontainer.lua:373>\n[C]: in function 'xpcall'\n[Interface/AddOns/Details/Libs/DF/button.lua]:765: in function <Interface/AddOns/Details/Libs/DF/button.lua:701>",
 ["session"] = 14026,
 ["counter"] = 1,
-},
-{
-["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'CompactPartyFrameMember5:SetSize()'.",
-["time"] = "2026/01/20 15:37:27",
-["locals"] = "self = <table> {\n}\nevent = \"ADDON_ACTION_BLOCKED\"\naddonName = \"xVermin\"\naddonFunc = \"CompactPartyFrameMember5:SetSize()\"\nname = \"xVermin\"\nbadAddons = <table> {\n xVermin = true\n}\nL = <table> {\n ADDON_CALL_PROTECTED_MATCH = \"^%[(.*)%] (AddOn '.*' tried to call the protected function '.*'.)$\"\n NO_DISPLAY_2 = \"|cffffff00The standard display is called BugSack, and can probably be found on the same site where you found !BugGrabber.|r\"\n ERROR_DETECTED = \"%s |cffffff00captured, click the link for more information.|r\"\n USAGE = \"|cffffff00Usage: /buggrabber <1-%d>.|r\"\n BUGGRABBER_STOPPED = \"|cffffff00There are too many errors in your UI. As a result, your game experience may be degraded. Disable or update the failing addons if you don't want to see this message again.|r\"\n STOP_NAG = \"|cffffff00!BugGrabber will not nag about missing a display addon again until next patch.|r\"\n ADDON_DISABLED = \"|cffffff00!BugGrabber and %s cannot coexist; %s has been forcefully disabled. If you want to, you may log out, disable !BugGrabber, and enable %s.|r\"\n NO_DISPLAY_STOP = \"|cffffff00If you don't want to be reminded about this again, run /stopnag.|r\"\n NO_DISPLAY_1 = \"|cffffff00You seem to be running !BugGrabber with no display addon to go along with it. Although a slash command is provided for accessing error reports, a display can help you manage these errors in a more convenient way.|r\"\n ERROR_UNABLE = \"|cffffff00!BugGrabber is unable to retrieve errors from other players by itself. Please install BugSack or a similar display addon that might give you this functionality.|r\"\n ADDON_CALL_PROTECTED = \"[%s] AddOn '%s' tried to call the protected function '%s'.\"\n}\n",
-["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:583: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:507: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:507>\n[C]: in function 'SetSize'\n[Interface/AddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua]:2002: in function 'updateAllSetupFunc'\n[Interface/AddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua]:422: in function 'CompactUnitFrame_UpdateAll'\n[Interface/AddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua]:66: in function <...ddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua:57>",
-["session"] = 14030,
-["counter"] = 5,
-},
-{
-["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ShadowedUnitFrames' tried to call the protected function 'UNKNOWN()'.",
-["time"] = "2025/12/20 21:25:16",
-["locals"] = "self = <table> {\n}\nevent = \"ADDON_ACTION_BLOCKED\"\naddonName = \"ShadowedUnitFrames\"\naddonFunc = \"UNKNOWN()\"\nname = \"ShadowedUnitFrames\"\nbadAddons = <table> {\n ShadowedUnitFrames = true\n}\nL = <table> {\n ADDON_CALL_PROTECTED_MATCH = \"^%[(.*)%] (AddOn '.*' tried to call the protected function '.*'.)$\"\n NO_DISPLAY_2 = \"|cffffff00The standard display is called BugSack, and can probably be found on the same site where you found !BugGrabber.|r\"\n ERROR_DETECTED = \"%s |cffffff00captured, click the link for more information.|r\"\n USAGE = \"|cffffff00Usage: /buggrabber <1-%d>.|r\"\n BUGGRABBER_STOPPED = \"|cffffff00There are too many errors in your UI. As a result, your game experience may be degraded. Disable or update the failing addons if you don't want to see this message again.|r\"\n STOP_NAG = \"|cffffff00!BugGrabber will not nag about missing a display addon again until next patch.|r\"\n ADDON_DISABLED = \"|cffffff00!BugGrabber and %s cannot coexist; %s has been forcefully disabled. If you want to, you may log out, disable !BugGrabber, and enable %s.|r\"\n NO_DISPLAY_STOP = \"|cffffff00If you don't want to be reminded about this again, run /stopnag.|r\"\n NO_DISPLAY_1 = \"|cffffff00You seem to be running !BugGrabber with no display addon to go along with it. Although a slash command is provided for accessing error reports, a display can help you manage these errors in a more convenient way.|r\"\n ERROR_UNABLE = \"|cffffff00!BugGrabber is unable to retrieve errors from other players by itself. Please install BugSack or a similar display addon that might give you this functionality.|r\"\n ADDON_CALL_PROTECTED = \"[%s] AddOn '%s' tried to call the protected function '%s'.\"\n}\n",
-["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:583: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:507: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:507>\n[C]: ?\n[C]: in function 'RegisterForClicks'\n[Interface/AddOns/ShadowedUnitFrames/modules/units.lua]:592: in function 'CreateUnit'\n[Interface/AddOns/ShadowedUnitFrames/modules/units.lua]:520: in function 'method'\n[Interface/AddOns/Blizzard_FrameXML/RestrictedFrames.lua]:791: in function <...erface/AddOns/Blizzard_FrameXML/RestrictedFrames.lua:783>\n[C]: ?\n[C]: ?\n[Interface/AddOns/Blizzard_FrameXML/RestrictedFrames.lua]:810: in function 'CallMethod'\n[	local header = self:GetParent()\n\n	self:SetHeight(header:GetAttribute(\"style-height\"))\n	self:SetWidth(header:GetAttribute(\"style-width\"))\n	self:SetScale(header:GetAttribute(\"style-scale\"))\n\n	self:SetAttribute(\"*type1\", \"target\")\n	self:SetAttribute(\"*type2\", \"togglemenu\")\n	self:SetAttribute(\"type2\", \"togglemenu\")\n\n	self:SetAttribute(\"isHeaderDriven\", true)\n\n	-- initialize frame\n	header:CallMethod(\"initialConfigFunction\", self:GetName())\n\n	-- Clique integration\n	local clickHeader = header:GetFrameRef(\"clickcast_header\")\n	if( clickHeader ) then\n		clickHeader:SetAttribute(\"clickcast_button\", self)\n		clickHeader:RunAttribute(\"clickcast_register\")\n	end\n]:14: in function <[string \"	local header = self:GetParent()...\"]:1>\n[tail call]: ?\n[C]: ?\n[Interface/AddOns/Blizzard_FrameXML/RestrictedExecution.lua]:483: in function <...ace/AddOns/Blizzard_FrameXML/RestrictedExecution.lua:446>\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:116: in function <...face/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua:110>\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:173: in function <...face/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua:130>\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:495: in function 'SecureGroupHeader_Update'\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:62: in function <...face/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua:60>",
-["session"] = 14030,
-["counter"] = 25,
 },
 {
 ["message"] = "TellMeWhen: [string \"return xBehindTarget()\"]:1: attempt to call global 'xBehindTarget' (a nil value)",
@@ -3860,6 +3828,38 @@ BugGrabberDB = {
 ["stack"] = "",
 ["session"] = 14236,
 ["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/TotemTimers/Masque.lua:83: attempt to index local 'skin' (a nil value)",
+["time"] = "2026/02/27 22:20:50",
+["locals"] = "skinID = \"BeautyBorder\"\nskin = nil\nbuttons = <table> {\n 1 = XiTimers_Timer8 {\n }\n 2 = TT_ActionButton61 {\n }\n 3 = TT_ActionButton62 {\n }\n 4 = TT_ActionButton63 {\n }\n 5 = TT_ActionButton64 {\n }\n 6 = TT_ActionButton65 {\n }\n 7 = TT_ActionButton66 {\n }\n 8 = TT_ActionButton67 {\n }\n 9 = TT_ActionButton68 {\n }\n}\nactionBarButtons = <table> {\n 1 = TT_ActionButton61 {\n }\n 2 = TT_ActionButton62 {\n }\n 3 = TT_ActionButton63 {\n }\n 4 = TT_ActionButton64 {\n }\n 5 = TT_ActionButton65 {\n }\n 6 = TT_ActionButton66 {\n }\n 7 = TT_ActionButton67 {\n }\n 8 = TT_ActionButton68 {\n }\n}\n(for state) = <table> {\n 1 = XiTimers_Timer8 {\n }\n 2 = TT_ActionButton61 {\n }\n 3 = TT_ActionButton62 {\n }\n 4 = TT_ActionButton63 {\n }\n 5 = TT_ActionButton64 {\n }\n 6 = TT_ActionButton65 {\n }\n 7 = TT_ActionButton66 {\n }\n 8 = TT_ActionButton67 {\n }\n 9 = TT_ActionButton68 {\n }\n}\n(for control) = 1\nk = 1\nbutton = XiTimers_Timer8 {\n popupDirection = \"UP\"\n NewActionTexture = Texture {\n }\n BorderShadow = Texture {\n }\n icon = XiTimers_Timer8Icon {\n }\n closedArrowOffset = 4\n popupOffset = -4\n enableSpellFX = false\n count = XiTimers_Timer8Count {\n }\n arrowCrossAxisSize = 7\n miniIconFrame = XiTimers_Timer8Mini {\n }\n hotkeyTextGamepadX = 3\n IconMask = MaskTexture {\n }\n arrowMainAxisSize = 18\n SpellHighlightAnim = AnimationGroup {\n }\n hotkeyTextKeyboardX = -2\n _MSQ_Hook_UpdateButtonArt = true\n PushedTexture = Texture {\n }\n _MSQ_CFG = <table> {\n }\n hotkeyTextKeyboardY = -2\n tooltip = <table> {\n }\n icons = <table> {\n }\n hotkey = XiTimers_Timer8HotKey {\n }\n arrowDownTexture = \"UI-HUD-ActionBar-Flyout-Down\"\n AutoCastOverlay = Frame {\n }\n time = XiTimers_Timer8Time {\n }\n Border = XiTimers_Timer8Border {\n }\n openArrowOffset = 2\n arrowNormalTexture = \"UI-HUD-ActionBar-Flyout\"\n Count = XiTimers_Timer8Count {\n }\n rangeCount = XiTimers_Timer8RangeCount {\n }\n bar = XiTimers_Timer8Bar {\n }\n miniIcon = XiTimers_Timer8MiniIcon {\n }\n anchorframe = TotemTimers_TrackerFrame {\n }\n element = 8\n HotKey = XiTimers_Timer8HotKey {\n }\n TextOverlayContainer = Frame {\n }\n arrowOverTexture = \"UI-HUD-ActionBar-Flyout-Mouseover\"\n timer = <table> {\n }\n HighlightTexture = Texture {\n }\n NormalTexture = XiTimers_Timer8NormalTexture {\n }\n normalTexture = XiTimers_Timer8NormalTexture {\n }\n action = 0\n Arrow = Texture {\n }\n LevelLinkLockIcon = Texture {\n }\n enableLOCCooldown = false\n hotkeyTextGamepadY = 0\n Name = XiTimers_Timer8Name {\n }\n Flash = XiTimers_Timer8Flash {\n }\n popupCrossAxisSize = 47\n SpellHighlightTexture = Texture {\n }\n SlotBackground = Texture {\n }\n cooldown = XiTimers_Timer8Cooldown {\n }\n}\nxScale = 1\nyScale = 1\n(*temporary) = XiTimers_Timer8Icon2 {\n flashAnim = Animation {\n }\n animation = AnimationGroup {\n }\n}\n(*temporary) = XiTimers_Timer8 {\n popupDirection = \"UP\"\n NewActionTexture = Texture {\n }\n BorderShadow = Texture {\n }\n icon = XiTimers_Timer8Icon {\n }\n closedArrowOffset = 4\n popupOffset = -4\n enableSpellFX = false\n count = XiTimers_Timer8Count {\n }\n arrowCrossAxisSize = 7\n miniIconFrame = XiTimers_Timer8Mini {\n }\n hotkeyTextGamepadX = 3\n IconMask = MaskTexture {\n }\n arrowMainAxisSize = 18\n SpellHighlightAnim = AnimationGroup {\n }\n hotkeyTextKeyboardX = -2\n _MSQ_Hook_UpdateButtonArt = true\n PushedTexture = Texture {\n }\n _MSQ_CFG = <table> {\n }\n hotkeyTextKeyboardY = -2\n tooltip = <table> {\n }\n icons = <table> {\n }\n hotkey = XiTimers_Timer8HotKey {\n }\n arrowDownTexture = \"UI-HUD-ActionBar-Flyout-Down\"\n AutoCastOverlay = Frame {\n }\n time = XiTimers_Timer8Time {\n }\n Border = XiTimers_Timer8Border {\n }\n openArrowOffset = 2\n arrowNormalTexture = \"UI-HUD-ActionBar-Flyout\"\n Count = XiTimers_Timer8Count {\n }\n rangeCount = XiTimers_Timer8RangeCount {\n }\n bar = XiTimers_Timer8Bar {\n }\n miniIcon = XiTimers_Timer8MiniIcon {\n }\n anchorframe = TotemTimers_TrackerFrame {\n }\n element = 8\n HotKey = XiTimers_Timer8HotKey {\n }\n TextOverlayContainer = Frame {\n }\n arrowOverTexture = \"UI-HUD-ActionBar-Flyout-Mouseover\"\n timer = <table> {\n }\n HighlightTexture = Texture {\n }\n NormalTexture = XiTimers_Timer8NormalTexture {\n }\n normalTexture = XiTimers_Timer8NormalTexture {\n }\n action = 0\n Arrow = Texture {\n }\n LevelLink",
+["stack"] = "[Interface/AddOns/TotemTimers/Masque.lua]:83: in function 'SkinWeaponTracker'\n[Interface/AddOns/TotemTimers/Masque.lua]:92: in function <Interface/AddOns/TotemTimers/Masque.lua:90>\n[C]: in function 'ReSkin'\n[Interface/AddOns/TotemTimers/Masque.lua]:125: in function 'InitMasque'\n[Interface/AddOns/TotemTimers/TotemTimers.lua]:182: in function 'SetupGlobals'\n[Interface/AddOns/TotemTimers/TotemTimers.lua]:39: in function <Interface/AddOns/TotemTimers/TotemTimers.lua:36>\n",
+["session"] = 14240,
+["counter"] = 3,
+},
+{
+["message"] = "TellMeWhen: [string \"return xInRange(30)\"]:1: attempt to call global 'xInRange' (a nil value)",
+["time"] = "2026/02/27 22:20:51",
+["locals"] = "self = TMW {\n modules = <table> {\n }\n DS = <table> {\n }\n db = <table> {\n }\n ALLOW_LOCKDOWN_CONFIG = true\n operators = <table> {\n }\n TEXT = <table> {\n }\n EquivFullIDLookup = <table> {\n }\n InitializedDatabase = true\n name = \"TellMeWhen\"\n Defaults = <table> {\n }\n C = <table> {\n }\n BackupDate = \"10:20:51 PM\"\n SNIPPETS = <table> {\n }\n L = <table> {\n }\n OrderedTypes = <table> {\n }\n justifyVPoints = <table> {\n }\n Views = <table> {\n }\n CHANGELOG = \"## v12.0.8\n* Fix assorted errors\n\n## v12.0.7\n* Fix assorted errors\n* Adjusted mana bar color on Resource Display icons\n* Added \"Raid\" aura filter\n\n## v12.0.6\n* Added \"Class or Primary Resource\" as an option to Resource Display icons.\n* Added new WoW 12.0.1 filters to the Buff/Debuff icon type.\n* Added native integration with TullaCTC for styling timer text.\n* Specialization settings are now available to global groups.\n* Fix aura events not getting registered when tracking auras on many different units across all TMW icons.\n* Fix items sometimes showing with a ? texture.\n* Workaround a Blizzard bug where secret recharge durations for a max-charge ability are ignored.\n* Masque settings are now stored against TMW groups' unique identifiers instead of against group IDs. Masque will absorb any per-group customizations into the first TMW profile you log in with.\n* The Edit Mode \"TMW: Always Hide\" CDM setting has been deprecated in favor of new settings on TMW groups that allow greater flexibility.\n\n# defaultModuleState = true\n CHANGELOG_LASTVER = \"10.0.0\"\n HELP = <table> {\n }\n UPD_INTV = 0.051000\n Locked = true\n NAMES = <table> {\n }\n GUIDToOwner = <table> {\n }\n justifyPoints = <table> {\n }\n EventList = <table> {\n }\n EVENTS = <table> {\n }\n EquivOriginalLookup = <table> {\n }\n CONST = <table> {\n }\n indentLib = <table> {\n }\n GroupsToUpdate = <table> {\n }\n GCDSpell = 53\n Classes = <table> {\n }\n Backupdb = <table> {\n }\n Group_Defaults = <table> {\n }\n SpellTexturesMetaIndex = <table> {\n }\n performedEvent = \"TMW_UPGRADE_PERFORMED\"\n UNITS = <table> {\n }\n profile = <table> {\n }\n DOGTAG = <table> {\n }\n IconStateArbitrator = <table> {\n }\n time = 253754.371000\n baseName = \"TellMeWhen\"\n SUG = <table> {\n }\n TIMERS = <table> {\n }\n DD = <table> {\n }\n DROPDOWNMENU = <table> {\n }\n OrderedViews = <table> {\n }\n strlowerCache = <table> {\n }\n IE = TellMeWhen_IconEditor {\n }\n points = <table> {\n }\n CI = <table> {\n }\n enabledState = true\n wowMajor = 2\n Initialized = true\n EquivFirstIDLookup = <table> {\n }\n EquivFullNameLookup = <table> {\n }\n isNumber = <table> {\n }\n spellTextureCache = <table> {\n }\n DEFAULT_ICON_SETTINGS = <table> {\n }\n BE = <table> {\n }\n CNDT = <table> {\n }\n Icon_Defaults = <table> {\n }\n COUNTERS = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n PreviousGUIDToOwner = <table> {\n }\n global = <table> {\n }\n IconEventUpdateEngine = Frame {\n }\n IconsToUpdate = <table> {\n }\n COMMON = <table> {\n }\n ValidityCheckQueue = <table> {\n }\n IconDragger = <table> {\n }\n Types = <table> {\n }\n CompareFuncs = <table> {\n }\n callbackregistry = <table> {\n }\n orderedModules = <table> {\n }\n}\ntext = \"[string \"return xInRange(30)\"]:1: attempt to call global 'xInRange' (a nil value)\"\nsuccess = true\nresult = \"[string \"return xInRange(30)\"]:1: attempt to call global 'xInRange' (a nil value)\"\n",
+["stack"] = "[Interface/AddOns/TellMeWhen/Components/Core/Utils.lua]:453: in function 'Error'\n[Interface/AddOns/TellMeWhen/TellMeWhen.lua]:2724: in function <Interface/AddOns/TellMeWhen/TellMeWhen.lua:2681>\n",
+["session"] = 14240,
+["counter"] = 1,
+},
+{
+["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'CompactPartyFrameMember5:SetSize()'.",
+["time"] = "2026/02/27 22:41:34",
+["locals"] = "self = <table> {\n}\nevent = \"ADDON_ACTION_BLOCKED\"\naddonName = \"xVermin\"\naddonFunc = \"CompactPartyFrameMember5:SetSize()\"\nname = \"xVermin\"\nbadAddons = <table> {\n xVermin = true\n}\nL = <table> {\n ADDON_CALL_PROTECTED_MATCH = \"^%[(.*)%] (AddOn '.*' tried to call the protected function '.*'.)$\"\n NO_DISPLAY_2 = \"|cffffff00The standard display is called BugSack, and can probably be found on the same site where you found !BugGrabber.|r\"\n ERROR_DETECTED = \"%s |cffffff00captured, click the link for more information.|r\"\n USAGE = \"|cffffff00Usage: /buggrabber <1-%d>.|r\"\n BUGGRABBER_STOPPED = \"|cffffff00There are too many errors in your UI. As a result, your game experience may be degraded. Disable or update the failing addons if you don't want to see this message again.|r\"\n STOP_NAG = \"|cffffff00!BugGrabber will not nag about missing a display addon again until next patch.|r\"\n ADDON_DISABLED = \"|cffffff00!BugGrabber and %s cannot coexist; %s has been forcefully disabled. If you want to, you may log out, disable !BugGrabber, and enable %s.|r\"\n NO_DISPLAY_STOP = \"|cffffff00If you don't want to be reminded about this again, run /stopnag.|r\"\n NO_DISPLAY_1 = \"|cffffff00You seem to be running !BugGrabber with no display addon to go along with it. Although a slash command is provided for accessing error reports, a display can help you manage these errors in a more convenient way.|r\"\n ERROR_UNABLE = \"|cffffff00!BugGrabber is unable to retrieve errors from other players by itself. Please install BugSack or a similar display addon that might give you this functionality.|r\"\n ADDON_CALL_PROTECTED = \"[%s] AddOn '%s' tried to call the protected function '%s'.\"\n}\n",
+["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:488: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:412: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:412>\n[C]: in function 'SetSize'\n[Interface/AddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua]:2002: in function 'updateAllSetupFunc'\n[Interface/AddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua]:422: in function <...ddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua:420>\n[C]: in function 'CompactUnitFrame_UpdateAll'\n[Interface/AddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua]:66: in function <...ddOns/Blizzard_UnitFrame/Shared/CompactUnitFrame.lua:57>\n",
+["session"] = 14244,
+["counter"] = 6,
+},
+{
+["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ShadowedUnitFrames' tried to call the protected function 'UNKNOWN()'.",
+["time"] = "2026/02/27 22:41:34",
+["locals"] = "self = <table> {\n}\nevent = \"ADDON_ACTION_BLOCKED\"\naddonName = \"ShadowedUnitFrames\"\naddonFunc = \"UNKNOWN()\"\nname = \"ShadowedUnitFrames\"\nbadAddons = <table> {\n xVermin = true\n ShadowedUnitFrames = true\n}\nL = <table> {\n ADDON_CALL_PROTECTED_MATCH = \"^%[(.*)%] (AddOn '.*' tried to call the protected function '.*'.)$\"\n NO_DISPLAY_2 = \"|cffffff00The standard display is called BugSack, and can probably be found on the same site where you found !BugGrabber.|r\"\n ERROR_DETECTED = \"%s |cffffff00captured, click the link for more information.|r\"\n USAGE = \"|cffffff00Usage: /buggrabber <1-%d>.|r\"\n BUGGRABBER_STOPPED = \"|cffffff00There are too many errors in your UI. As a result, your game experience may be degraded. Disable or update the failing addons if you don't want to see this message again.|r\"\n STOP_NAG = \"|cffffff00!BugGrabber will not nag about missing a display addon again until next patch.|r\"\n ADDON_DISABLED = \"|cffffff00!BugGrabber and %s cannot coexist; %s has been forcefully disabled. If you want to, you may log out, disable !BugGrabber, and enable %s.|r\"\n NO_DISPLAY_STOP = \"|cffffff00If you don't want to be reminded about this again, run /stopnag.|r\"\n NO_DISPLAY_1 = \"|cffffff00You seem to be running !BugGrabber with no display addon to go along with it. Although a slash command is provided for accessing error reports, a display can help you manage these errors in a more convenient way.|r\"\n ERROR_UNABLE = \"|cffffff00!BugGrabber is unable to retrieve errors from other players by itself. Please install BugSack or a similar display addon that might give you this functionality.|r\"\n ADDON_CALL_PROTECTED = \"[%s] AddOn '%s' tried to call the protected function '%s'.\"\n}\n",
+["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:488: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:412: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:412>\n[C]: ?\n[C]: in function 'RegisterForClicks'\n[Interface/AddOns/ShadowedUnitFrames/modules/units.lua]:592: in function 'CreateUnit'\n[Interface/AddOns/ShadowedUnitFrames/modules/units.lua]:520: in function 'method'\n[Interface/AddOns/Blizzard_FrameXML/RestrictedFrames.lua]:791: in function <...erface/AddOns/Blizzard_FrameXML/RestrictedFrames.lua:783>\n[C]: ?\n[C]: ?\n[Interface/AddOns/Blizzard_FrameXML/RestrictedFrames.lua]:810: in function 'CallMethod'\n[	local header = self:GetParent()\n\n	self:SetHeight(header:GetAttribute(\"style-height\"))\n	self:SetWidth(header:GetAttribute(\"style-width\"))\n	self:SetScale(header:GetAttribute(\"style-scale\"))\n\n	self:SetAttribute(\"*type1\", \"target\")\n	self:SetAttribute(\"*type2\", \"togglemenu\")\n	self:SetAttribute(\"type2\", \"togglemenu\")\n\n	self:SetAttribute(\"isHeaderDriven\", true)\n\n	-- initialize frame\n	header:CallMethod(\"initialConfigFunction\", self:GetName())\n\n	-- Clique integration\n	local clickHeader = header:GetFrameRef(\"clickcast_header\")\n	if( clickHeader ) then\n		clickHeader:SetAttribute(\"clickcast_button\", self)\n		clickHeader:RunAttribute(\"clickcast_register\")\n	end\n]:14: in function <[string \"	local header = self:GetParent()...\"]:1>\n[tail call]: ?\n[C]: ?\n[Interface/AddOns/Blizzard_FrameXML/RestrictedExecution.lua]:483: in function <...ace/AddOns/Blizzard_FrameXML/RestrictedExecution.lua:446>\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:116: in function <...face/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua:110>\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:173: in function <...face/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua:130>\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:495: in function 'SecureGroupHeader_Update'\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:62: in function <...face/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua:60>\n",
+["session"] = 14244,
+["counter"] = 26,
 },
 },
 }

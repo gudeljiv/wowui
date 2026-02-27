@@ -238,6 +238,7 @@ Postal3DB = {
 ["Dopesnare - Living Flame"] = {
 },
 ["Dopeseal - Thunderstrike"] = {
+["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Pitchwise|Thunderstrike|Horde",
@@ -246,7 +247,6 @@ Postal3DB = {
 "Dopecure|Thunderstrike|Horde",
 },
 },
-["OpenSpeed"] = 0,
 },
 ["Mq - Celebras"] = {
 ["BlackBook"] = {

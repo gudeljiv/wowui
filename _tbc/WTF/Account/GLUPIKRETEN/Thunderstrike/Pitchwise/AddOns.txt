@@ -1,7 +1,7 @@
 nBuff: disabled
 nMainbar: disabled
 nMinimap: enabled
-SpellActivationOverlay: disabled
+SpellActivationOverlay: enabled
 !Beautycase: enabled
 !Colorz: enabled
 DBM-Core: enabled
@@ -135,3 +135,4 @@ QuickRack: disabled
 TradeSkillMaster: enabled
 SUI: enabled
 mUI: disabled
+DmgFontChanger: disabled

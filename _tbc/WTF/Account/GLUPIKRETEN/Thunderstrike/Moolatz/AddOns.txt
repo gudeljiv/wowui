@@ -305,3 +305,4 @@ Farmer: disabled
 LortiUI: disabled
 UberUI: disabled
 QuickRack: disabled
+DmgFontChanger: disabled

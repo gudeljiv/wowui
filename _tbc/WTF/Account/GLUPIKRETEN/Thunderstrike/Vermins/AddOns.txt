@@ -202,3 +202,4 @@ LortiUI: disabled
 UberUI: disabled
 QuickRack: disabled
 Dominos: enabled
+DmgFontChanger: disabled

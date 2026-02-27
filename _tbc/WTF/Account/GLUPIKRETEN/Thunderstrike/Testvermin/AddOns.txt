@@ -126,3 +126,4 @@ LortiUI: disabled
 UberUI: disabled
 Blizzard_CombatText: enabled
 TradeSkillMaster: enabled
+DmgFontChanger: disabled

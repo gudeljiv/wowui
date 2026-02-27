@@ -135,3 +135,4 @@ ConcreteConsumeTracker: disabled
 !ConcreteOptions: disabled
 QuickRack: disabled
 TradeSkillMaster: enabled
+DmgFontChanger: disabled
