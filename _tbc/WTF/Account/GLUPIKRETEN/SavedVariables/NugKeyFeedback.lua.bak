@@ -1,4 +1,0 @@
-
-NugKeyFeedbackDB = {
-["forceUseActionHook"] = true,
-}

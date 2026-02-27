@@ -1,5 +1,0 @@
-
-SigmaProfessionFilter_SavedVariables = {
-	["UNKNOWN"] = {
-	},
-}

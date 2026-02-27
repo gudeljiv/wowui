@@ -1,2 +1,0 @@
-
-oUF_NeavDB = nil

@@ -1,3 +1,0 @@
-
-MegaMacroConfig = nil
-MegaMacroGlobalData = nil

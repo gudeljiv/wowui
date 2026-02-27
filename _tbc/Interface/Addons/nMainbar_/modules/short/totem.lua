@@ -1,3 +1,0 @@
-
-local _, nMainbar = ...
-local cfg = nMainbar.Config

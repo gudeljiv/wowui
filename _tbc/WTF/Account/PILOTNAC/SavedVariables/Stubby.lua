@@ -1,7 +1,0 @@
-
-StubbyConfig = {
-	["addinfo"] = {
-	},
-	["inspected"] = {
-	},
-}

@@ -1,3 +1,0 @@
-LBIS.TierSources =
-{
-}

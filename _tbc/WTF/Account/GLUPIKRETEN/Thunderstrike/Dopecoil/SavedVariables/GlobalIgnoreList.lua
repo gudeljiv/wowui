@@ -1,2 +1,0 @@
-
-GlobalIgnoreImported = true

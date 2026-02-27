@@ -1,5 +1,0 @@
-
-BuffetDB = {
-["ignoredItems"] = {
-},
-}

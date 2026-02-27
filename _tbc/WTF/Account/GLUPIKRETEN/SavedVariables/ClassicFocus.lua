@@ -1,2 +1,0 @@
-
-ClassicFocusSettings = nil

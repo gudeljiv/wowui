@@ -1,4 +1,0 @@
-
-KuiNameplatesCoreCharacterSaved = {
-	["profile"] = "default",
-}

@@ -1,3 +1,0 @@
-
-BiS_Settings = {
-}

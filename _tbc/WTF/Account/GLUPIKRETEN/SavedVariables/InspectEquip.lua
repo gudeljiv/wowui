@@ -1,5 +1,0 @@
-
-InspectEquipConfig = {
-}
-InspectEquipLocalDB = {
-}

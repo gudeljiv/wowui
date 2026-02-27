@@ -1,2 +1,0 @@
-
-AuctioneerUtilAppraiserData = nil
