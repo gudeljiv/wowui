@@ -1,0 +1,10 @@
+lightweight tag 9db794752d8fc4b085b5a162b3ad0bf824c3c476 v2.2.0
+Author:	Simon Hirsig <simon.hirsig@gmail.com>
+Date:	Mon Jan 19 19:13:28 2026 +0100
+
+commit 9db794752d8fc4b085b5a162b3ad0bf824c3c476
+Author: Simon Hirsig <simon.hirsig@gmail.com>
+Date:   Mon Jan 19 19:13:28 2026 +0100
+
+    tbc client version
+

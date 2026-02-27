@@ -1,0 +1,4 @@
+
+VUHDO_OPTIONS_SETTINGS = {
+	["scale"] = 1.200000047683716,
+}

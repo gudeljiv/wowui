@@ -1,0 +1,2 @@
+
+characterSettings = nil

@@ -1,0 +1,4 @@
+VER 3 0000000001000001 "TT Cast" "INV_MISC_QUESTIONMARK"
+#showtooltips
+/castsequence reset=combat/1
+END

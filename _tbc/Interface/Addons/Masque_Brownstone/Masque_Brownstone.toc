@@ -1,0 +1,7 @@
+## Interface: 80300
+## Title: Masque: Brownstone
+## Author: d87
+## Version: 3.0
+## Dependencies: Masque
+
+skin.lua

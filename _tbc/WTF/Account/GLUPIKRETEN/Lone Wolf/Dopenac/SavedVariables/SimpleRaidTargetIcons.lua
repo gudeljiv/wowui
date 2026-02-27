@@ -1,0 +1,27 @@
+
+SRTISaved = {
+["alt"] = false,
+["bindinghover"] = false,
+["radialscale"] = 1,
+["double"] = true,
+["ctrl"] = true,
+["hovertime"] = 0.2000000029802322,
+["shift"] = false,
+["doublehover"] = false,
+["speed"] = 0.25,
+["singlehover"] = false,
+}
+SRTIExternalUF = {
+["shadowedunitframes"] = {
+"SUFUnittarget",
+"SUFHeaderpartyUnitButton1",
+"SUFHeaderpartyUnitButton2",
+},
+["elvui"] = {
+"ElvUF_Target",
+"ElvUF_PartyGroup1UnitButton1",
+"ElvUF_PartyGroup1UnitButton2",
+"ElvUF_PartyGroup1UnitButton3",
+"ElvUF_PartyGroup1UnitButton4",
+},
+}

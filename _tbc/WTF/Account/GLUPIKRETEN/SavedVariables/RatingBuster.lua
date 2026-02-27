@@ -1,0 +1,93 @@
+
+RatingBusterDB = {
+["namespaces"] = {
+},
+["profileKeys"] = {
+["Mxzq - Golemagg"] = "HUNTER",
+["Dopeclaw - Living Flame"] = "Druid",
+["Poklopac - Thunderstrike"] = "Shaman",
+["Vbank - Celebras"] = "WARRIOR",
+["Dopesick - Stitches"] = "WARRIOR",
+["Dopenac - Lone Wolf"] = "PRIEST",
+["Dopetrap - Living Flame"] = "Hunter",
+["Dopecure - Stitches"] = "PRIEST",
+["Dopemend - Lone Wolf"] = "PRIEST",
+["Dopesnare - Stitches"] = "HUNTER",
+["Dopecure - Thunderstrike"] = "Priest",
+["Dopedot - Lone Wolf"] = "WARLOCK",
+["Dopecoil - Lone Wolf"] = "SHAMAN",
+["Lonac - Stitches"] = "WARRIOR",
+["Dopestab - Living Flame"] = "Rogue",
+["Dopebolt - Lone Wolf"] = "MAGE",
+["Battlenac - Celebras"] = "PRIEST",
+["Moolatz - Celebras"] = "Druid",
+["Jutarnjedrvo - Lone Wolf"] = "SHAMAN",
+["Moolatz - Thunderstrike"] = "Druid",
+["Dopesnare - Lone Wolf"] = "HUNTER",
+["Dopesnare - Thunderstrike"] = "Hunter",
+["Dopesnare - Living Flame"] = "Hunter",
+["Mq - Celebras"] = "HUNTER",
+["Doperage - Thunderstrike"] = "Warrior",
+["Dopemend - Living Flame"] = "Priest",
+["Vermins - Stitches"] = "WARRIOR",
+["Dopestab - Lone Wolf"] = "ROGUE",
+["Jutarnjedrvo - Living Flame"] = "Shaman",
+["Vermin - Zandalar Tribe"] = "WARRIOR",
+["Dopetrap - Lone Wolf"] = "HUNTER",
+["Battitude - Zandalar Tribe"] = "ROGUE",
+["Handrmandr - Thunderstrike"] = "Hunter",
+["Vermin - Celebras"] = "WARRIOR",
+["Turbonac - Celebras"] = "Warlock",
+["Doperage - Living Flame"] = "Warrior",
+["Pitchwise - Thunderstrike"] = "Shaman",
+["Battlenac - Zandalar Tribe"] = "PRIEST",
+["Dopecoil - Thunderstrike"] = "Warlock",
+["Dopebolt - Living Flame"] = "Mage",
+["Dopeclaw - Lone Wolf"] = "DRUID",
+["Dopede - Stitches"] = "SHAMAN",
+["Doperage - Lone Wolf"] = "WARRIOR",
+["Dopeclaw - Thunderstrike"] = "Druid",
+["Dopeah - Stitches"] = "SHAMAN",
+["Dopeclaw - Stitches"] = "DRUID",
+["Dopeseal - Thunderstrike"] = "Paladin",
+["Vermins - Thunderstrike"] = "Warrior",
+},
+["global"] = {
+["showSum"] = false,
+["calcSum"] = false,
+},
+["profiles"] = {
+["HUNTER"] = {
+},
+["WARRIOR"] = {
+},
+["Shaman"] = {
+},
+["ROGUE"] = {
+},
+["Rogue"] = {
+},
+["Mage"] = {
+},
+["Paladin"] = {
+},
+["PRIEST"] = {
+},
+["Druid"] = {
+},
+["Warlock"] = {
+},
+["WARLOCK"] = {
+},
+["DRUID"] = {
+},
+["Priest"] = {
+},
+["Hunter"] = {
+},
+["SHAMAN"] = {
+},
+["Warrior"] = {
+},
+},
+}

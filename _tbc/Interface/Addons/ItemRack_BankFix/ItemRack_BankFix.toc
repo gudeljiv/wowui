@@ -1,0 +1,8 @@
+## Interface: 100105
+## Title: ItemRack - Classic |cff00ccff[Bank Fix]|r
+## Notes: Fixes the AppendRuneID function in ItemRack to prevent errors.
+## Author: Rubyqt - Wildgrowth
+## Dependencies: ItemRack
+## LoadWith: ItemRack
+
+ItemRack_BankFix.lua

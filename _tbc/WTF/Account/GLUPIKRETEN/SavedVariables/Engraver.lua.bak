@@ -1,0 +1,22 @@
+
+EngraverFilters = {
+["Warrior"] = {
+},
+["Shaman"] = {
+},
+["Rogue"] = {
+},
+}
+EngraverSharedOptions = {
+["ShowFilterSelector"] = false,
+["LayoutDirection"] = 1,
+["HideTooltip"] = false,
+["HideSlotLabels"] = false,
+["DisplayMode"] = 1,
+["HideDragTab"] = true,
+["PreventSpellPlacement"] = false,
+["HideUndiscoveredRunes"] = false,
+["EnableRightClickDrag"] = true,
+["VisibilityMode"] = "ShowAlways",
+["UIScale"] = 1.009999990463257,
+}

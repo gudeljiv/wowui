@@ -1,0 +1,18 @@
+tag 14e886b1708682ab6ed89af17663162df8716a12 v1.10.29
+Author:	Talyrius <contact@talyrius.net>
+Date:	Sat Sep 7 19:19:48 2024 -0700
+
+commit 10808e8343d69e165c64c0983be22d8c766b9cbe
+Author: Talyrius <contact@talyrius.net>
+Date:   Sat Sep 7 19:17:32 2024 -0700
+
+    Implemented support for the `AddonCompartmentFrame`.
+
+commit 1961cbc4c51bd5aabe2b833d0262669c71fdc493
+Author: Talyrius <contact@talyrius.net>
+Date:   Sat Sep 7 18:50:14 2024 -0700
+
+    Updated for Patch 11.0.2.
+    
+    Closes #1021 and #1022.
+

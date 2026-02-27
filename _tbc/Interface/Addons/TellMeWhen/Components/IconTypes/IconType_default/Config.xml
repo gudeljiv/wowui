@@ -1,0 +1,14 @@
+﻿<Ui>
+	
+	<Frame name="TellMeWhen_DefaultInstructions" inherits="TellMeWhen_TextPanel" virtual="true">
+		<Scripts>
+			<OnLoad>
+				TMW:CInit(self)
+				
+				self:SetTitle(TMW.L["ICONTYPE_DEFAULT_HEADER"])
+				self.text:SetText(TMW.L["ICONTYPE_DEFAULT_INSTRUCTIONS"])
+			</OnLoad>
+		</Scripts>
+	</Frame>
+	
+</Ui>

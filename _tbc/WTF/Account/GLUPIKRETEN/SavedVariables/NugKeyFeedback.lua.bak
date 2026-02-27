@@ -1,0 +1,4 @@
+
+NugKeyFeedbackDB = {
+["forceUseActionHook"] = true,
+}

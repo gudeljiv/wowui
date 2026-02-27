@@ -1,0 +1,6 @@
+
+MyslotSettings = {
+	["minimap"] = {
+		["hide"] = false,
+	},
+}

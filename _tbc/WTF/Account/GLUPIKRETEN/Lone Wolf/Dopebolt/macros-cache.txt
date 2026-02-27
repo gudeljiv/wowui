@@ -1,0 +1,9 @@
+VER 3 0000000001000001 " " "134400"
+#showtooltip
+/startattack
+/cast [@mouseover,exists,help][] fireball
+END
+VER 3 0000000001000004 " " "134400"
+#showtooltip Shoot
+/cast !Shoot
+END

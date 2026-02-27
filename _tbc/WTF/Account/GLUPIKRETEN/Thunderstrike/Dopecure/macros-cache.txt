@@ -1,0 +1,20 @@
+VER 3 0100000001000005 "attack" "133478"
+#showtooltip 
+/startattack
+END
+VER 3 0100000001000001 "lesser" "134400"
+#showtooltip
+/cast [@mouseover,exists,help][] Lesser Heal
+END
+VER 3 0100000001000003 "renew" "134400"
+#showtooltip
+/cast [@mouseover,exists,help][] Renew
+END
+VER 3 0100000001000002 "shield" "134400"
+#showtooltip
+/cast [@mouseover,exists,help][] Power Word: Shield
+END
+VER 3 0100000001000004 "wand" "134400"
+#showtooltip Shoot
+/cast !Shoot
+END

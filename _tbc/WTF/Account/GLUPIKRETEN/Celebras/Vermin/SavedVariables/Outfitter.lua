@@ -1,0 +1,2 @@
+
+gOutfitter_Settings = nil

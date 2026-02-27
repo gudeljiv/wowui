@@ -1,0 +1,2 @@
+
+MegaMacroCharacterData = nil

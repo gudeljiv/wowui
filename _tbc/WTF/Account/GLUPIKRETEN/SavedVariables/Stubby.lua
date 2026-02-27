@@ -1,0 +1,7 @@
+
+StubbyConfig = {
+	["addinfo"] = {
+	},
+	["inspected"] = {
+	},
+}

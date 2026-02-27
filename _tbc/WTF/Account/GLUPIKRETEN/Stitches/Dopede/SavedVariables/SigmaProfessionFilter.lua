@@ -1,0 +1,5 @@
+
+SigmaProfessionFilter_SavedVariables = {
+	["UNKNOWN"] = {
+	},
+}

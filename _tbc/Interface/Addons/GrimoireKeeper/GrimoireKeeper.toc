@@ -1,0 +1,11 @@
+## Interface: 11503
+## Title: GrimoireKeeper
+## Author: Entropy, based upon vanilla addon GrimoireKeeper by Artur91425
+## Version: 1.2
+## Notes: Tracks which grimoires your warlock pets have learned.
+## SavedVariablesPerCharacter: GrimoireKeeperData
+## DefaultState: enabled
+## LoadOnDemand: 0
+
+localization.lua
+GrimoireKeeper.lua

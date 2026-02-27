@@ -1,0 +1,23 @@
+## Interface: 90207
+
+## Title: Masque: Muq
+## Notes: Muq skin for Masque.
+## Notes-deDE: Muq-Skin für Masque.
+## Notes-esMX: Skin Muq para Masque.
+## Notes-esES: Skin Muq para Masque.
+## Notes-frFR: Skin de Muq pour Masque.
+## Notes-itIT: Skin Muq per Masque.
+## Notes-ruRU: Скин Muq для Masque.
+## Notes-zhTW: Masque的Muq皮膚。
+
+## Version: @project-version@
+## Author: Constantine32
+## Dependencies: Masque
+
+## X-Website: https://github.com/christian-callau/masque-muq
+## X-Category: Interface Enhancements
+## X-Credits: Muq
+## X-Curse-Project-ID: 86874
+
+# Skins
+Skins.lua

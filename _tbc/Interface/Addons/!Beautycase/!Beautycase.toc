@@ -1,0 +1,4 @@
+## Interface: 60000
+## Title: !|cff99CCFFBeautycase|r
+
+!Beautycase.lua

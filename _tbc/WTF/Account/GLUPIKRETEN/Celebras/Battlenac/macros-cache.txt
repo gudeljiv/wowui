@@ -1,0 +1,24 @@
+VER 3 0000000001000003 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,help][] Renew
+END
+VER 3 0000000001000004 " " "134400"
+#showtooltip Shoot
+/cast !Shoot
+END
+VER 3 0000000001000001 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,help][] Lesser Heal
+END
+VER 3 0000000001000005 " " "134400"
+#showtooltip
+/startattack
+/cast smite
+END
+VER 3 0000000001000002 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,help][] Power Word: Shield
+END
+VER 3 0000000001000006 "beg" "134400"
+/2 Is there any kind soul that i can shamelessly beg for Lesser Magic Wand and Greate Magic Wand? It would be of great help. Thank you
+END

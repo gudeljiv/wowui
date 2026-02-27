@@ -1,0 +1,39 @@
+VER 3 0100000000000009 " " "134400"
+#show Disenchant
+/cast Disenchant
+/use Ring of Silver Might
+END
+VER 3 010000000000000A " " "134400"
+#show Prospecting
+/cast Prospecting
+/use Tin Ore
+END
+VER 3 0100000000000007 "destroy" "134153"
+/tsm destroy
+END
+VER 3 0100000000000008 "enchant" "136222"
+/click TradeSkillCreateButton
+/use 0 1
+/click StaticPopup1Button1
+END
+VER 3 0100000000000006 "flash" "134400"
+#showtooltip
+/cast [@mouseover,help,nodead][] Flash of Light
+END
+VER 3 0100000000000002 "heal" "134400"
+#showtooltip
+/cast [@mouseover,help,nodead][] Holy Light
+END
+VER 3 0100000000000001 "judge" "134400"
+#showtooltip
+/startattack
+/cast Judgement
+END
+VER 3 0100000000000003 "purify" "134400"
+#showtooltip
+/cast [@mouseover,help,nodead][] Purify
+END
+VER 3 0100000000000005 "taunt" "134400"
+#showtooltip
+/cast Righteous Defense
+END

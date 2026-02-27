@@ -1,0 +1,23 @@
+
+RadialWheelDB = {
+["multipleWheelsOpen"] = false,
+["wheelCount"] = 1,
+}
+RadialWheelProfiles = {
+{
+["dismissOnUse"] = false,
+["slotStart"] = 13,
+["bgSize"] = 1.5,
+["rotation"] = 0,
+["binding"] = "J",
+["slotCount"] = 12,
+["quickCast"] = false,
+["bgTint"] = {
+["green"] = 0,
+["alpha"] = 0.5,
+["blue"] = 0,
+["red"] = 0,
+},
+["size"] = 100,
+},
+}

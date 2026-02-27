@@ -1,0 +1,9 @@
+## Author: soFFe51
+## Title: Set Role Buttons
+## SavedVariables: SetRoleButtonsConfig
+## Version: 1.0.0
+## Interface: 20505
+## Notes: Primitively adds Role Buttons to Unit Context Menus
+## IconTexture: Interface\MINIMAP\Dungeon
+
+SetRoleButtons.lua

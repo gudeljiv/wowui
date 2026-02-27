@@ -1,0 +1,7 @@
+## Interface: 20505
+## Title: SortBags
+## Version: v2.2.0
+## Notes: Sorts and stacks your items
+## Author: shirsig
+## SavedVariablesPerCharacter: SortBagsRightToLeft
+SortBags.lua

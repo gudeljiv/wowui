@@ -1,0 +1,3 @@
+
+oUFPhanxConfig = nil
+oUFPhanxUnitConfig = nil

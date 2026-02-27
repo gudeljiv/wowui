@@ -1,0 +1,9 @@
+VER 3 0000000001000001 " " "134400"
+#showtooltip
+/startattack
+/cast lightning bolt
+END
+VER 3 0000000001000002 " " "134400"
+#showtooltip
+/cast [@mouseover,exists,help][] healing wave
+END
