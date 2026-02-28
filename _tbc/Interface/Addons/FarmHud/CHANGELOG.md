@@ -1,6 +1,6 @@
 # FarmHud
 
-## [10.1.7-release](https://github.com/HizurosWoWAddOns/FarmHud/tree/10.1.7-release) (2026-01-22)
-[Full Changelog](https://github.com/HizurosWoWAddOns/FarmHud/commits/10.1.7-release) [Previous Releases](https://github.com/HizurosWoWAddOns/FarmHud/releases)
+## [10.1.8-release](https://github.com/HizurosWoWAddOns/FarmHud/tree/10.1.8-release) (2026-02-27)
+[Full Changelog](https://github.com/HizurosWoWAddOns/FarmHud/commits/10.1.8-release) [Previous Releases](https://github.com/HizurosWoWAddOns/FarmHud/releases)
 
-- Update toc file  
+- Fix problem with disappearing gathermate2 pins. Sorry, that was my mistake.  

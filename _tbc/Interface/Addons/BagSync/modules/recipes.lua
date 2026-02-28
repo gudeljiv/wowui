@@ -1,0 +1,260 @@
+--[[
+	recipes.lua
+		A recipes frame for BagSync
+
+		BagSync - All Rights Reserved - (c) 2025
+		License included with addon.
+--]]
+
+local BSYC = select(2, ...) --grab the addon namespace
+local UI = BSYC:GetModule("UI")
+local Recipes = BSYC:NewModule("Recipes")
+local Tooltip = BSYC:GetModule("Tooltip")
+local Professions = BSYC:GetModule("Professions")
+
+local function Debug(level, ...)
+    if BSYC.DEBUG then BSYC.DEBUG(level, "Recipes", ...) end
+end
+
+local L = BSYC.L
+
+function Recipes:OnEnable()
+	local recipesFrame = UI:CreateModuleFrame(Recipes, {
+		template = "BagSyncFrameTemplate",
+		globalName = "BagSyncRecipesFrame",
+		title = "BagSync - "..L.Recipes,
+		height = 500,
+		width = 570,
+		point = { "TOPLEFT", Professions.frame, "TOPRIGHT", 10, 0 },
+		onShow = function() Recipes:OnShow() end,
+	})
+	Recipes.frame = recipesFrame
+
+	recipesFrame.infoText = UI:CreateFontString(recipesFrame, {
+		template = "GameFontHighlightSmall",
+		text = L.ProfessionInformation,
+		font = { STANDARD_TEXT_FONT, 12, "" },
+		textColor = { 1, 165/255, 0 },
+		point = { "LEFT", recipesFrame, "TOPLEFT", 15, -35 },
+		justifyH = "CENTER",
+		width = recipesFrame:GetWidth() - 15,
+	})
+
+	Recipes.scrollFrame = UI:CreateHybridScrollFrame(recipesFrame, {
+		width = 527,
+		pointTopLeft = { "TOPLEFT", recipesFrame, "TOPLEFT", 13, -48 },
+		-- set ScrollFrame height by altering the distance from the bottom of the frame
+		pointBottomLeft = { "BOTTOMLEFT", recipesFrame, "BOTTOMLEFT", -25, 15 },
+		buttonTemplate = "BagSyncListItemTemplate",
+		update = function() Recipes:RefreshList(); end,
+	})
+	--the items we will work with
+	Recipes.recipesList = {}
+
+	recipesFrame:Hide()
+end
+
+function Recipes:OnShow()
+	BSYC:SetBSYC_FrameLevel(Recipes)
+end
+
+function Recipes:ViewRecipes(data)
+	Recipes.frame:Show()
+	Recipes:CreateList(data)
+    Recipes:RefreshList()
+
+	--scroll to top when shown
+	HybridScrollFrame_SetOffset(Recipes.scrollFrame, 0)
+	Recipes.scrollFrame.scrollBar:SetValue(0)
+end
+
+
+function Recipes:CreateList(data)
+	if not data then return end
+	if not data.skillData.categories then return end
+
+	Recipes.recipesList = {}
+	Recipes.frame.infoText:SetText(data.colorized.." | "..data.skillData.name)
+
+	local getSpellInfo = BSYC.API and BSYC.API.GetSpellInfo
+	local getRecipeInfo = BSYC.API and BSYC.API.GetRecipeInfo
+	local recipeData = {}
+
+	for k, v in pairs(data.skillData.categories) do
+		if v.recipes then
+			local recipeList = {strsplit("|", v.recipes)}
+
+			if #recipeList > 0 then
+				for idx = 1, #recipeList do
+					if recipeList[idx] and recipeList[idx] ~= "" then
+						local recipeID = tonumber(recipeList[idx]) or recipeList[idx]
+						local recipe_info = getRecipeInfo and getRecipeInfo(recipeID) or nil
+						local recipeName = recipeID
+						local iconTexture = "Interface\\Icons\\INV_Misc_QuestionMark"
+
+						local gName, _, gIcon
+						if getSpellInfo then
+							gName, _, gIcon = getSpellInfo(recipeID)
+						end
+
+						if recipe_info and recipe_info.name then
+							recipeName = recipe_info.name
+							iconTexture = recipe_info.icon
+						elseif gName then
+							recipeName = gName
+							iconTexture = gIcon
+						else
+							recipeName = L.RecipesFailedRequest:format(recipeID)
+						end
+
+						table.insert(recipeData, {
+							tierID = k,
+							tierData = v,
+							tierIndex = v.orderIndex,
+							recipeName = recipeName,
+							recipeID = recipeID,
+							recipeIcon = iconTexture,
+							hasRecipes = true
+						})
+					end
+				end
+			end
+		else
+			--we have no recipes but the tier is learned and is leveled.  So display it as a header (don't pass hasRecipes)
+			table.insert(recipeData, {
+				tierID = k,
+				tierData = v,
+				tierIndex = v.orderIndex,
+				recipeName = v.name,
+			})
+		end
+	end
+
+	if #recipeData > 0 then
+		table.sort(recipeData, function(a, b)
+			if a.tierIndex  == b.tierIndex then
+				return a.recipeName < b.recipeName;
+			end
+			return a.tierIndex < b.tierIndex;
+		end)
+
+		local lastHeader = ""
+		for i=1, #recipeData do
+			if not recipeData[i].hasRecipes or lastHeader ~= recipeData[i].tierData.name then
+				--add header
+				table.insert(Recipes.recipesList, {
+					header = recipeData[i].tierData.name,
+					skillLineCurrentLevel = recipeData[i].tierData.skillLineCurrentLevel,
+					skillLineMaxLevel = recipeData[i].tierData.skillLineMaxLevel,
+					isHeader = true
+				})
+				lastHeader = recipeData[i].tierData.name
+			end
+			if recipeData[i].hasRecipes then
+				--only add recipe data if we have recipes to work with
+				table.insert(Recipes.recipesList, {
+					tierID = recipeData[i].tierID,
+					tierData = recipeData[i].tierData,
+					tierIndex = recipeData[i].tierIndex,
+					recipeName = recipeData[i].recipeName,
+					recipeID = recipeData[i].recipeID,
+					recipeIcon = recipeData[i].recipeIcon
+				})
+			end
+		end
+	end
+end
+
+function Recipes:RefreshList()
+    local items = Recipes.recipesList
+    local buttons = HybridScrollFrame_GetButtons(Recipes.scrollFrame)
+    local offset = HybridScrollFrame_GetOffset(Recipes.scrollFrame)
+	if not buttons then return end
+
+    for buttonIndex = 1, #buttons do
+        local button = buttons[buttonIndex]
+		UI:AttachListItemHandlers(button, Recipes)
+
+        local itemIndex = buttonIndex + offset
+
+        if itemIndex <= #items then
+            local item = items[itemIndex]
+
+            button:SetID(itemIndex)
+			button.data = item
+			button.Text:SetFont(STANDARD_TEXT_FONT, 14, "")
+            button:SetWidth(Recipes.scrollFrame.scrollChild:GetWidth())
+			button.DetailsButton:Hide()
+
+			if item.isHeader then
+				button.Icon:SetTexture(nil)
+				button.Icon:Hide()
+				button.Text:SetJustifyH("CENTER")
+				button.Text:SetTextColor(1, 1, 1)
+				button.Text:SetText(item.header..format("   |cFF52D386[ %s / %s ]|r", item.skillLineCurrentLevel or 0, item.skillLineMaxLevel or 0))
+				--button.HeaderHighlight:SetVertexColor(0.8, 0.7, 0, 1)
+				button.HeaderHighlight:SetAlpha(0.75)
+				button.isHeader = true
+			else
+				button.Icon:SetTexture(item.recipeIcon or nil)
+				button.Icon:Show()
+				button.Text:SetJustifyH("LEFT")
+				button.Text:SetTextColor(0.25, 0.88, 0.82)
+				button.Text:SetText(item.recipeName or "")
+				button.HeaderHighlight:SetAlpha(0)
+				button.isHeader = nil
+			end
+
+			--while we are updating the scrollframe, is the mouse currently over a button?
+			--if so we need to force the OnEnter as the items will scroll up in data but the button remains the same position on our cursor
+			if BSYC:IsMouseOver(button) then
+				Recipes:Item_OnLeave() --hide first
+				Recipes:Item_OnEnter(button)
+			end
+
+            button:Show()
+        else
+            button:Hide()
+        end
+    end
+
+    local buttonHeight = Recipes.scrollFrame.buttonHeight
+    local totalHeight = #items * buttonHeight
+    local shownHeight = #buttons * buttonHeight
+
+    HybridScrollFrame_Update(Recipes.scrollFrame, totalHeight, shownHeight)
+end
+
+function Recipes:Item_OnEnter(btn)
+	if btn.isHeader and btn.Highlight:IsVisible() then
+		btn.Highlight:Hide()
+	elseif not btn.isHeader and not btn.Highlight:IsVisible() then
+		btn.Highlight:Show()
+	end
+    if not btn.isHeader then
+		GameTooltip:SetOwner(btn, "ANCHOR_RIGHT")
+		local recipeID = tonumber(btn.data.recipeID)
+		if recipeID then
+			GameTooltip:SetSpellByID(recipeID)
+		else
+			GameTooltip:AddLine(btn.data.recipeName or "")
+		end
+		GameTooltip:Show()
+		return
+	end
+	GameTooltip:Hide()
+end
+
+function Recipes:Item_OnLeave()
+	GameTooltip:Hide()
+end
+
+function Recipes:Item_OnClick(btn)
+	if not btn.isHeader and IsModifiedClick("CHATLINK") then
+		local recipeID = tonumber(btn.data.recipeID) or btn.data.recipeID
+		local link = GetSpellLink(recipeID)
+		if link then
+			ChatEdit_InsertLink(link)
+		end
+	end
+end

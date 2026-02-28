@@ -1,5 +1,5 @@
 
-local MAJOR, MINOR = "HizurosSharedTools", tonumber((gsub("r51","r",""))) or 9999;
+local MAJOR, MINOR = "HizurosSharedTools", tonumber((gsub("r57","r",""))) or 9999;
 ---@class HizurosSharedTools
 local lib = LibStub:NewLibrary(MAJOR, MINOR);
 if not lib then return end
@@ -150,6 +150,23 @@ local ns = {debugMode=true};
 lib.RegisterPrint(ns,MAJOR,"HzST");
 
 
+
+-- misc functions
+function lib.C_Table_Search(find)
+	local n,c="C_Table_Search",0;
+	lib.debug(n,"results for",find)
+	for gname, gvalue in pairs(_G)do
+		if tostring(gname):match("^C_") and type(gvalue)=="table" then
+			for fname in pairs(_G[gname]) do
+				if fname:match(find) then
+					c=c+1;
+					lib.debug(n,c,gname,fname)
+				end
+			end
+		end
+	end
+end
+
 --== shared credits page ==--
 do -- 013088, 0070E0
 	local donation_platforms = {PP="|cff375388Pay|cff5a9de0Pal|r",PA="Patreon",GH="Github"};
@@ -181,10 +198,12 @@ do -- 013088, 0070E0
 		{"github","tucomel (Github)"},false,false,false,{github_pr_s,6},
  		{"github","QartemisT (Github)"},false,false,false,{github_pr_s,13},
 		{"github","lkshrk (Github)"},false,false,false,{github_pr_p:format(2),16},
+		{"github","malfurion (Github)"},false,false,false,{github_pr_p:format(2),1},
 
 		-- donations
 		{"paypal","Nanci"}, false, {"PP",true}, false, false,
 		{"paypal","Michael"}, false, {"PP",true}, false, false,
+		{"paypal","Chris"}, false, {"PP",true}, false,false,
 
 		-- localizations
 		{"curseforge","Nelfym"},		{"frFR",1},false,false,false,
@@ -457,21 +476,6 @@ do
 	end
 end
 
-function lib.C_Table_Search(find)
-	local n,c="C_Table_Search",0;
-	lib.debug(n,"results for",find)
-	for gname, gvalue in pairs(_G)do
-		if tostring(gname):match("^C_") and type(gvalue)=="table" then
-			for fname in pairs(_G[gname]) do
-				if fname:match(find) then
-					c=c+1;
-					lib.debug(n,c,gname,fname)
-				end
-			end
-		end
-	end
-end
-
 --== Compatibility between clients ==--
 do
 	lib.deprecated = {
@@ -674,6 +678,52 @@ do
 				end
 			end
 		end
+	end
+end
+
+--== Blizzards new "Secure Value" System is big bullshit      ==--
+--== Restricts access on more than only combat relevant data. ==--
+do
+
+	local functions = {
+
+		-- HST.BullShitDetector("UnitIsPlayer",unit)
+		UnitIsPlayer = function(unit) -- not direct the function UnitIsPlayer but i've used the unit value from another function.
+			unit = tostring(unit);
+			return gsub(unit,"??","") and UnitIsPlayer(unit);
+		end,
+
+		-- HST.BullShitDetector("ChatMsgSystem",msg)
+		ChatMsgSystem = function(msg)
+			return msg and gsub(msg,"^.+$","");
+		end,
+
+		-- HST.BullShitDetector("CalendarGetDayEvent",event)
+		CalendarGetDayEvent = function(event)
+			-- secret table? WHY??? what impact has it on raid combats???
+			return event and event.title;
+		end,
+
+		-- HST.BullShitDetector("generalTesting",value)
+		generalTesting = function(value)
+			--if C_Secrets and C_Secrets.HasSecretRestrictions and C_Secrets.HasSecretRestrictions(value) then -- can be secret
+				-- C_Secrets.HasSecretRestrictions is only can be make problems. It makes problems mostly while and after combats.
+				local tValue = type(value);
+				-- try to trigger the evil
+				if value and ((tValue=="number" and value+1>0) or (gsub(tostring(value),"#",""))) then
+					return value;
+				end
+			--end
+			return false;
+		end,
+	}
+
+	function lib.BullShitDetector(funcName,...)
+		local result = {pcall(functions[funcName],...)};
+		if table.remove(result,1) then
+			return unpack(result)
+		end
+		return false;
 	end
 end
 

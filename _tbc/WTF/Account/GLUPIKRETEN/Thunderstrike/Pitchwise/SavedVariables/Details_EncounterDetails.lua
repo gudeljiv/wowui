@@ -53,8 +53,6 @@ EncounterDetailsDB = {
 ["__time"] = 1772227721,
 },
 },
-[605] = {
-},
 [621] = {
 ["Raid Damage Done"] = {
 96,
@@ -71,8 +69,6 @@ EncounterDetailsDB = {
 ["max_value"] = 96,
 ["__time"] = 1772227737,
 },
-},
-[606] = {
 },
 [622] = {
 ["Raid Damage Done"] = {
@@ -106,8 +102,6 @@ EncounterDetailsDB = {
 ["__time"] = 1772227893,
 },
 },
-[607] = {
-},
 [623] = {
 ["Raid Damage Done"] = {
 54,
@@ -120,8 +114,6 @@ EncounterDetailsDB = {
 ["max_value"] = 92,
 ["__time"] = 1772228384,
 },
-},
-[608] = {
 },
 [624] = {
 ["Raid Damage Done"] = {
@@ -140,8 +132,6 @@ EncounterDetailsDB = {
 ["max_value"] = 102,
 ["__time"] = 1772228412,
 },
-},
-[609] = {
 },
 [625] = {
 ["Raid Damage Done"] = {
@@ -164,8 +154,6 @@ EncounterDetailsDB = {
 ["max_value"] = 125,
 ["__time"] = 1772228453,
 },
-},
-[610] = {
 },
 [626] = {
 ["Raid Damage Done"] = {

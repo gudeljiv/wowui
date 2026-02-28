@@ -1,0 +1,8 @@
+
+RoutesDB = {
+["profileKeys"] = {
+["Pitchwise - Thunderstrike"] = "Default",
+["Dopeseal - Thunderstrike"] = "Default",
+["Handrmandr - Thunderstrike"] = "Default",
+},
+}

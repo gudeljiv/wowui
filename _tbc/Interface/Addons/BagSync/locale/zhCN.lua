@@ -1,0 +1,468 @@
+local _, BSYC = ...
+local L = BSYC:NewLocale("zhCN")
+if not L then return end
+
+--  zhCN client (NGA-[男爵凯恩])
+--  Last update: 2025/01/04
+
+L.Yes = "Yes"
+L.No = "No"
+L.Realm = "服务器:"
+L.TooltipCR_Tag = "CR"
+L.TooltipBNET_Tag = "BNet"
+L.Tooltip_bag = "背包"
+L.Tooltip_bank = "银行"
+L.Tooltip_equip = "已装备"
+L.Tooltip_guild = "公会"
+L.Tooltip_mailbox = "信箱"
+L.Tooltip_void = "虚空仓库"
+L.Tooltip_reagents = "材料银行"
+L.Tooltip_auction = "拍卖"
+L.Tooltip_warband = "战团"
+L.TooltipSmall_bag = "包"
+L.TooltipSmall_bank = "银"
+L.TooltipSmall_reagents = "材"
+L.TooltipSmall_equip = "装"
+L.TooltipSmall_guild = "公"
+L.TooltipSmall_mailbox = "邮"
+L.TooltipSmall_void = "虚"
+L.TooltipSmall_auction = "拍"
+L.TooltipSmall_warband = "战"
+--do not touch these unless requiring a new image for a specific localization
+L.TooltipIcon_bag = [[|TInterface\AddOns\BagSync\media\bag:13:13|t]]
+L.TooltipIcon_bank = [[|TInterface\AddOns\BagSync\media\bank:13:13|t]]
+L.TooltipIcon_reagents = [[|TInterface\AddOns\BagSync\media\reagents:13:13|t]]
+L.TooltipIcon_equip = [[|TInterface\AddOns\BagSync\media\equip:13:13|t]]
+L.TooltipIcon_guild = [[|TInterface\AddOns\BagSync\media\guild:13:13|t]]
+L.TooltipIcon_mailbox = [[|TInterface\AddOns\BagSync\media\mailbox:13:13|t]]
+L.TooltipIcon_void = [[|TInterface\AddOns\BagSync\media\void:13:13|t]]
+L.TooltipIcon_auction = [[|TInterface\AddOns\BagSync\media\auction:13:13|t]]
+L.TooltipIcon_warband = [[|TInterface\AddOns\BagSync\media\warband:13:13|t]]
+L.TooltipTotal = "总计:"
+L.TooltipTabs = "标签:"
+L.TooltipItemID = "[物品ID]:"
+L.TooltipCurrencyID = "[货币ID]:"
+L.TooltipFakeID = "[虚拟ID]:"
+L.TooltipExpansion = "[资料片]:"
+L.TooltipItemType = "[类型]:"
+L.TooltipDelimiter = ", "
+L.TooltipRealmKey = "服务器:"
+L.TooltipDetailsInfo = "物品详细信息"
+L.DetailsBagID = "背包位:"
+L.DetailsSlot = "位置:"
+L.DetailsTab = "标签:"
+L.DebugEnable = "启用 Debug"
+L.DebugCache = "禁用缓存"
+L.DebugDumpOptions = "存储选项 |cff3587ff[Debug]|r"
+L.DebugIterateUnits = "重复单位 |cff3587ff[Debug]|r"
+L.DebugDBTotals = "数据库总计 |cff3587ff[Debug]|r"
+L.DebugAddonList = "插件列表 |cff3587ff[Debug]|r"
+L.DebugExport = "导出"
+L.DebugWarning = "|cFFDF2B2B警告:|R BagSync Debug 当前已启用！ |cFFDF2B2B（会导致滞后/卡顿）|r"
+L.Search = "搜索"
+L.Debug = "DeBug"
+L.Reset = "重置"
+L.Clear = "清除"
+L.SearchFilters = "搜索筛选"
+L.SearchFiltersInformation = "* 使用 BagSync 的|cffff7d0a[CR]|r 和 |cff3587ff[BNet]|r 设置"
+L.SearchFiltersLocationInformation = "* 选择所有因为无默认"
+L.Units = "名字:"
+L.Locations = "位置:"
+L.Profiles = "角色文档"
+L.SortOrder = "排序"
+L.Professions = "专业"
+L.Currency = "货币"
+L.Blacklist = "黑名单"
+L.Whitelist = "白名单"
+L.Recipes = "配方"
+L.Details = "详细信息"
+L.Gold = "金币"
+L.Close = "关闭"
+L.FixDB = "优化数据库"
+L.Config = "设置"
+L.DeleteWarning = "选择要删除的角色文档。注意: 这是不可逆的！"
+L.Delete = "删除"
+L.SelectAll = "全选"
+L.FixDBComplete = "已执行FixDB, 数据库已优化！"
+L.ResetDBInfo = "BagSync:\n您确定要重置数据库吗 ？\n|cFFDF2B2B注意: 这是不可逆的！|r"
+L.ON = "开[ON]"
+L.OFF = "关[OFF]"
+L.LeftClickSearch = "|cffddff00左键|r |cff00ff00= 搜索窗|r"
+L.RightClickBagSyncMenu = "|cffddff00右键|r |cff00ff00= 菜单|r"
+L.ProfessionInformation = "|cffddff00左键|r |cff00ff00查看专业配方|r"
+L.ErrorUserNotFound = "BagSync: 错误,未找到用户！"
+L.EnterItemID = "输入物品ID（请用 http://Wowhead.com/ 查询。）"
+L.AddGuild = "添加公会"
+L.AddItemID = "添加物品ID"
+L.PleaseRescan = "|cFF778899[请重新扫描]|r"
+L.UseFakeID = "使用虚拟ID[FakeID]用于战斗宠物的物品ID[ItemID]。"
+L.ItemIDNotValid = "[%s] 物品ID无效或者查询服务器未响应。再试一次！"
+L.ItemIDRemoved = "[%s] 物品ID已删除"
+L.ItemIDAdded = "[%s] 已添加物品ID"
+L.ItemIDExistBlacklist = "[%s] 物品ID已在黑名单数据库中。"
+L.ItemIDExistWhitelist = "[%s] 物品ID 已在白名单数据库中。"
+L.GuildExist = "公会 [%s] 已在黑名单数据库中"
+L.GuildAdded = "公会 [%s] 添加"
+L.GuildRemoved = "公会 [%s] 删除"
+L.BlackListRemove = "删除黑名单 [%s] ？"
+L.WhiteListRemove = "删除白名单 [%s] ？"
+L.BlackListErrorRemove = "黑名单删除时出错。"
+L.WhiteListErrorRemove = "白名单删除时出错。"
+L.ProfilesRemove = "删除 [%s][|cFF99CC33%s|r] 在 BagSync 个人数据？"
+L.ProfileBeenRemoved = "[%s][|cFF99CC33%s|r] 从 BagSync 中删除个人数据！"
+L.ProfessionHasRecipes = "左键点击查看专业。"
+L.ProfessionHasNoRecipes = "没有查看内容。"
+L.KeybindBlacklist = "显示黑名单窗口。"
+L.KeybindWhitelist = "显示白名单窗口。"
+L.KeybindCurrency = "显示货币窗口。"
+L.KeybindGold = "显示金币窗口。"
+L.KeybindProfessions = "显示专业窗口。"
+L.KeybindProfiles = "显示角色文档。"
+L.KeybindSearch = "显示搜索窗口。"
+L.ObsoleteWarning = "\n\n注意：过时的物品将继续显示为缺失。 要修复此问题,请再次扫描您的角色以删除过时的物品。\n（背包、银行、虚空银行等 ...)"
+L.DatabaseReset = "由于数据库的变化。您的BagSync数据库已重置。"
+L.UnitDBAuctionReset = "所有角色的拍卖数据已重置。 "
+L.ScanGuildBankDone = "公会银行扫描完成！"
+L.ScanGuildBankError = "警告: 公会银行扫描不完整。"
+L.DefaultColors = "默认颜色"
+-- ----THESE ARE FOR SLASH COMMANDS OPERATORS
+L.SlashItemName = "[物品名称]"
+L.SlashSearch = "搜索"
+L.SlashGold = "金币"
+L.SlashMoney = "钱"
+L.SlashConfig = "配置"
+L.SlashCurrency = "货币"
+L.SlashFixDB = "优化数据库"
+L.SlashProfiles = "角色"
+L.SlashProfessions = "专业"
+L.SlashBlacklist = "黑名单"
+L.SlashWhitelist = "白名单"
+L.SlashResetDB = "重置"
+L.SlashDebug = "Debug"
+L.SlashResetPOS = "重置各模块" 
+L.SlashSortOrder = "排序"
+------------------------
+-- ----THESE USE THE SLASH OPERATOR COMMANDS FOUND ABOVE
+L.HelpSearchItemName = "快速搜索一件物品"
+L.HelpSearchWindow = "打开搜索窗口"
+L.HelpGoldTooltip = "显示各角色的金钱统计。"
+L.HelpCurrencyWindow = "打开货币窗口。"
+L.HelpProfilesWindow = "打开角色资料窗口。"
+L.HelpFixDB = "在BagSync内运行数据库修复。"
+L.HelpResetDB = "重置BagSync内的数据库。"
+L.HelpConfigWindow = "打开配置文件。"
+L.HelpProfessionsWindow = "打开专业窗口。"
+L.HelpBlacklistWindow = "打开黑名单窗口。"
+L.HelpWhitelistWindow = "打开白名单窗口。"
+L.HelpDebug = "打开 BagSync Debug 窗口。"
+L.HelpResetPOS = "重置BagSync所有模块的窗口位置。"
+L.HelpSortOrder = "角色和公会的自定义排序。"
+------------------------
+L.EnableBagSyncTooltip = "启用BagSync鼠标提示"
+L.ShowOnModifier = "设置BagSync提示快捷键:"
+L.ShowOnModifierDesc = "显示在BagSync提示上快捷键设置。"
+L.ModValue_NONE = "无（始终显示）"
+L.ModValue_ALT = "ALT"
+L.ModValue_CTRL = "CTRL"
+L.ModValue_SHIFT = "SHIFT"
+L.EnableExtTooltip = "在单独窗口上显示物品统计数据"
+L.EnableLoginVersionInfo = "显示BagSync的登录信息"
+L.FocusSearchEditBox = "打开搜索窗口时专注搜索框"
+L.AlwaysShowSearchFilters = "始终显示BagSync搜索筛选窗口"
+L.DisplayTotal = "显示[总计]金额。"
+L.DisplayGuildGoldInGoldWindow = "显示[公会]金币总数。"
+L.Display_GSC = "显示[详细]金额（|cFFFFD700金|r， |cFFC0C0C0银|r 和 |cFFB87333铜|r）。"
+L.DisplayMinimap = "显示[小地图]图标。"
+L.EnableAddonCompartment = "启用暴雪插件收纳整合功能。"
+L.ResetMinimapBtn = "重置小地图按钮位置。"
+L.AddonCompartmentReloadMsg = "插件收纳整合设置更改需要重载界面。输入 /reload 重载。"
+L.DisplayFaction = "显示[双方阵营]物品 （|cff3587ff联盟|r/|cFFDF2B2B部落|r）。"
+L.DisplayClassColor = "显示职业颜色。"
+L.DisplayItemTotalsByClassColor = "根据角色的职业颜色显示物品总计。"
+L.DisplayTooltipOnlySearch = "在搜索窗内|cFF99CC33（仅）|r显示BagSync提示。"
+L.DisplayTooltipCurrencyData = "在暴雪货币窗口中显示BagSync数据。"
+L.DisplayLineSeparator = "显示空行分割线。"
+L.DisplayCurrentCharacter = "当前角色" 
+L.DisplayCurrentCharacterOnly = "|cFFFFD700仅限！|r鼠标提示上显示\"当前\"角色的BagSync数据。|cFFDF2B2B（不推荐）|r"
+L.DisplayBlacklistCurrentCharOnly = "|cFFFFD700仅限！|r显示\"当前\"角色的黑名单物品数量。|cFFDF2B2B（不推荐）|r"
+L.DisplayCurrentRealmName = "显示玩家的\"当前\"|cFF4CBB17[服务器]|r。"
+L.DisplayCurrentRealmShortName = "为\"当前\"|cFF4CBB17[服务器]|r使用一个简短的名称。"
+L.DisplayCR = "显示\"合并\"|cffff7d0a[服务器]|r信息。|cffff7d0a[CR]|r"
+L.DisplayBNET = "显示所有[战网账号]信息 。|cff3587ff[BNet]|r |cFFDF2B2B(不推荐)|r"
+L.DisplayItemID = "显示[物品ID]。"
+L.DisplayWhiteListOnly = "在鼠标提示中仅显示[白名单]的物品。"
+L.DisplaySourceExpansion = "在鼠标提示中显示[游戏内容]。 |cFF99CC33[仅正式服]|r"
+L.DisplayItemTypes = "在鼠标提示中显示[物品类型|子类型]。"
+L.DisplayTooltipTags = "标识符"
+L.DisplayTooltipStorage = "仓库"
+L.DisplayTooltipExtra = "其他统计"
+L.DisplaySortOrderHelp = "排序帮助"
+L.DisplaySortOrderStatus = "当前排序: [%s]"
+L.DisplayWhitelistHelp = "白名单帮助"
+L.DisplayWhitelistStatus = "当前白名单: [%s]"
+L.DisplayWhitelistHelpInfo = "你只能在白名单数据库中输入物品ID. \n\n输入战斗宠物请使用虚拟ID[FakeID]而不是物品ID[ItemID], 你可以通过在BagSync设置内启用鼠标提示物品ID[ItemID]功能来获取虚拟ID[FakeID]。\n\n|cFFDF2B2B这对货币窗口不起作用。|r"
+L.DisplayWhitelistHelpInfo2 = "\n\n\n\n|cFFFF7D0A警告：此白名单功能将阻止|cFFFFFFFF--所有--|r 物品被BagSync统计，但在此列表中找到的物品除外。|r\n|cFF09DBE0这是一个反向黑名单！|r"
+L.DisplayTooltipAccountWide = "账号信息"
+L.DisplayAccountWideTagOpts = "|cFF99CC33选项 ( |cffff7d0a[CR]|r和|cff3587ff[BNet]|r )|r"
+L.DisplayGreenCheck = "在当前角色名前显示 %s 。"
+L.DisplayRealmIDTags = "显示 |cffff7d0a[CR]|r和|cff3587ff[BNet]|r 符号。"
+L.DisplayRealmNames = "显示[服务器]名字。"
+L.DisplayRealmAstrick = "显示[*]而不是显示 |cffff7d0a[CR]|r和|cff3587ff[BNet]|r。"
+L.DisplayShortRealmName = "显示短位名字 |cffff7d0a[CR]|r和|cff3587ff[BNet]|r。"
+L.DisplayFactionIcons = "显示[阵营]图标。"
+L.DisplayGuildBankTabs = "在鼠标提示中显示[银行]标签[1,2,3, 等...]。"
+L.DisplayWarbandBankTabs = "在鼠标提示中显示[战团银行]标签[1,2,3, 等...]。"
+L.DisplayEquipBagSlots = "在鼠标提示中显示[装备]背包栏位<1,2,3, 等...>。"
+L.DisplayBankTabs = "在鼠标提示中显示[银行]标签 [1,2,3, 等...] 。"
+L.DisplayRaceIcons = "在鼠标提示中显示角色种族图标。"
+L.DisplaySingleCharLocs = "|cff31d54f[简写]|r 显示物品存储的位置。"
+L.DisplayIconLocs = "|cff31d54f[图标]|r 显示物品存储的位置。"
+L.DisplayAccurateBattlePets = "启用精准扫描公会银行和邮箱中的战斗宠物。|cFFDF2B2B（可能导致滞后/卡顿）|r |cff3587ff[详见 BagSync FAQ]|r"
+L.DisplaySortCurrencyByExpansionFirst = "BagSync 的货币窗口是依据游戏资料片顺序而不是字母顺序来进行排序。"
+L.DisplaySorting = "鼠标提示排序"
+L.DisplaySortInfo = "默认: 鼠标提示排序是根据服务器名的字母顺序，然后是角色名称来排序。"
+L.SortMode = "排序模式"
+L.SortMode_RealmCharacter = "服务器然后角色（默认）"
+L.SortMode_Character = "角色"
+L.SortMode_ClassCharacter = "职业然后角色"
+L.SortCurrentPlayerOnTop = "启用默认排序，始终将当前角色显示在首列。"
+L.SortTooltipByTotals = "按照总数进行排序，而不是字母顺序排列。"
+L.SortByCustomSortOrder = "按照自定义顺序排序。"
+L.CustomSortInfo = "列表使用升序排列 (1,2,3)"
+L.CustomSortInfoWarn = "|cFF99CC33注意: 仅使用数字！ (-1,0,3,4)|r"
+L.DisplayShowUniqueItemsTotals = "启用该选项将允许物品总数量增加独特的物品,无论物品的统计信息。|cFF99CC33（推荐）|r"
+L.DisplayShowUniqueItemsTotals_2 = [[
+某些物品例如 |cffff7d0a[传说物品]|r 可以共享相同的名字但具有不同的统计数据。由于这些物品是彼此独立处理,因此有时不计入总物品数。启用此选项将完全忽略独特的物品统计数据并一视同仁,只要它们共享相同的物品名称。
+
+禁用此选项将独立显示物品计数,因此将考虑物品统计信息。物品总数将只显示每个游戏角色共享相同的唯一物品和完全相同的统计数据|cFFDF2B2B(不推荐)|r
+]]
+L.DisplayShowUniqueItemsTotalsTitle = "在鼠标提示上显示唯一物品的总数"
+L.DisplayShowUniqueItemsEnableText = "启用唯一物品的总数。"
+L.ColorPrimary = "BagSync [主功能]  提示颜色。"
+L.ColorSecondary = "BagSync [辅助]  提示颜色。"
+L.ColorTotal = "BagSync [总计] 提示颜色。"
+L.ColorGuild = "BagSync [公会] 提示颜色。"
+L.ColorWarband = "BagSync [战团] 提示颜色"
+L.ColorCurrentRealm = "BagSync \"当前\"[服务器] 提示颜色。"
+L.ColorCR = "BagSync \"合并\"[服务器] 提示颜色。"
+L.ColorBNET = "BagSync [战网] 提示颜色。"
+L.ColorItemID = "BagSync [物品ID] 提示颜色。"
+L.ColorExpansion = "BagSync [游戏内容] 提示颜色。"
+L.ColorItemTypes = "BagSync [物品类型] 提示颜色。"
+L.ColorGuildTabs = "公会标签 [1,2,3, 等...] 提示颜色。"
+L.ColorWarbandTabs = "战团标签 [1,2,3, 等...] 提示颜色。"
+L.ColorBankTabs = "银行标签 [1,2,3, 等...] 提示颜色。"
+L.ColorBagSlots = "背包位 <1,2,3, 等...> 提示颜色。"
+L.ConfigDisplay = "显示"
+L.ConfigTooltipHeader = "显示的 BagSync 提示信息的设置。"
+L.ConfigColor = "颜色"
+L.ConfigColorHeader = "BagSync 提示信息的颜色设置。"
+L.ConfigCache = "缓存"
+L.ConfigCacheHeader = "BagSync 物品缓存与节流设置。"
+L.ConfigCacheHowTitle = "缓存如何工作"
+L.ConfigCacheHowText_1 = "登录时物品信息并不完整可用。像 |cFFB19CD9GetItemInfo|r 或 |cFFB19CD9C_Item.GetItemInfo|r 这样的 API 会返回 nil（或没有内容），直到该物品在本次会话中被缓存。"
+L.ConfigCacheHowText_2 = "BagSync 会以小批量请求缺失的物品数据，并等待客户端接收（同样会触发 GET_ITEM_INFO_RECEIVED）。"
+L.ConfigCacheHowText_3 = "节流可在缓存逐步填充时保持性能稳定，使搜索和提示逐步完整。"
+L.ConfigCacheRatesTitle = "当前速率"
+L.ConfigCacheSpeedTitle = "缓存速度"
+L.ConfigCacheSpeedLabel = "节流"
+L.ConfigCacheSpeedHelp = "|cFFB19CD9慢|r 为默认且最有利于性能，但搜索需要更久的时间才能完全缓存。\n|cFFB19CD9中|r 更快，但可能在登录时产生小峰值。\n|cFFB19CD9快|r 最激进，可能在登录时产生卡顿峰值。\n|cFFFF4D4D禁用|r |cFFFF4D4D不推荐|r（|cFFFFFFFF当搜索窗口打开或进行搜索时，BagSync 将使用 |cFFB19CD9快|r。|r）"
+L.CacheSpeedSlow = "慢（后台 + 递增）"
+L.CacheSpeedMedium = "中"
+L.CacheSpeedFast = "快"
+L.CacheSpeedDisabled = "禁用（无后台缓存）"
+L.CacheSpeedRampIntro = "慢速模式每 %d 秒递增。"
+L.CacheSpeedRampLine = "第 %d 步：每 %.2fs %d 件（约每秒 %d 件）。"
+L.CacheSpeedSingleLine = "每 %.2fs %d 件（约每秒 %d 件）。"
+L.CacheSpeedDisabledSummary = "后台缓存已禁用。打开 BagSync 会使用“快”，搜索也会使用“快”。"
+L.ConfigMain = "主设置"
+L.ConfigMainHeader = "BagSync 的主设置。"
+L.ConfigKeybindings = "快捷键设置"
+L.ConfigKeybindingsHeader = "BagSync 各模块快捷键设置"
+L.ConfigExternalTooltip = "外部鼠标提示"
+L.ConfigFont = "字体"
+L.ConfigExtTooltipAnchor = "GameTooltip 位置"
+L.ConfigExtTipPositionSettings = "外部提示位置设置"
+L.ConfigExtTipCustomAnchorEnable = "启用自定义锚点位置"
+L.ConfigExtTipCustomAnchorLocation = "自定义位置"
+L.ConfigExtTipCustomAnchorShow = "显示 ExtTip 锚点"
+L.ExtTipCustomAnchor_TopLeft = "左上"
+L.ExtTipCustomAnchor_TopRight = "右上"
+L.ExtTipCustomAnchor_BottomLeft = "左下"
+L.ExtTipCustomAnchor_BottomRight = "右下"
+L.ExtTipCustomAnchor_Center = "居中"
+L.ExtTipCustomAnchor_CenterTop = "上方居中"
+L.ExtTipCustomAnchor_CenterBottom = "下方居中"
+L.ExtTipCustomAnchor_UseAnchor = "使用 ExtTip 锚点"
+L.ExtTipAnchorLabel = "BagSync ExtTip 锚点\n\n(右键保存位置)"
+L.ConfigFontSize = "字体大小"
+L.ConfigFontOutline = "轮廓"
+L.ConfigFontOutline_NONE = "无"
+L.ConfigFontOutline_OUTLINE = "细"
+L.ConfigFontOutline_THICKOUTLINE = "粗"
+L.ConfigFontMonochrome = "单一颜色"
+L.ExtTooltipAnchor_Bottom = "下方"
+L.ExtTooltipAnchor_Left = "左侧"
+L.ExtTooltipAnchor_Right = "右侧"
+L.ExtTipNoticeTitle = "外部提示(ExtTip)提示"
+L.ExtTipNoticeText = "|cFFFFFFFF暴雪的 |cFFFF0000秘密值（Secret Values）|r|cFFFFFFFF 可能会影响 ExtTip 的定位。BagSync 已加入防护，但若找不到安全的提示，将在 |cFFFF0000GameTooltip|r|cFFFFFFFF 中显示计数。更多信息请查看 FAQ 中的 |cFFFF0000'秘密值（Secret Values）'|r|cFFFFFFFF。|r"
+L.ConfigTracking = "追踪"
+L.ConfigTrackingHeader = "追踪BagSync存储数据位置的设置。"
+L.ConfigTrackingCaution = "警告"
+L.ConfigTrackingModules = "模块"
+L.ConfigTrackingInfo = [[
+|cFFDF2B2B注意|r: 禁用模块会导致BagSync停止追踪并将模块存储到数据库中。
+禁用的模块不会在任何BagSync窗口，斜杠命令，鼠标提示或小地图按钮中显示。
+]]
+L.TrackingModule_Bag = "背包"
+L.TrackingModule_Bank = "银行"
+L.TrackingModule_Reagents = "材料银行"
+L.TrackingModule_Equip = "已装备"
+L.TrackingModule_Mailbox = "信箱"
+L.TrackingModule_Void = "虚空仓库"
+L.TrackingModule_Auction = "拍卖行"
+L.TrackingModule_Guild = "公会银行"
+L.TrackingModule_WarbandBank = "战团银行（战团）"
+L.TrackingModule_Professions = "专业/交易"
+L.TrackingModule_Currency = "货币"
+L.WarningItemSearch = "警告：共有 [|cFFFFFFFF%s|r] 个物品未被搜索！\n\nBagSync 仍在等待服务器/数据库响应\n\n按“搜索”或“刷新”按钮。"
+L.CachingItemData = "正在缓存物品数据...（剩余%d）"
+L.WarningCurrencyUpt = "更新货币时出错。请登录到角色： "
+L.WarningHeader = "警告！"
+L.SavedSearch = "保存的搜索"
+L.SavedSearch_Add = "添加搜索"
+L.SavedSearch_Warn = "您必须在搜索框中输入一些信息。"
+---------------------------------------
+--Blizzard doesn't return the same header title in the Currency/Token window that is used in their expansion globals.
+--Meaning that, "The Burning Crusade" is listed as "Burning Crusade" in the Currency/Token window.  The same for "The War Within" being shown as "War Within"
+--In order to do a proper sorting of the Currency/Token Window for BagSync.  I've done the following steps
+--1) Removed all spaces and special characters from the expansion name
+--2) forced all characters to be lower case
+--3) Use the filter below to remove any other additional words in the name to match it to the currency/token window.
+--
+--Example: "The War Within" and "War Within" gets matched as "warwithin".  "Battle for Azeroth" gets matched as "battleforazeroth"
+--You can add as many words as you want below, just make sure it's lowercase, no spaces or symbols and to follow each entry with a comma
+---------------------------------------
+L.CurrencySortFilters = {
+	"the",
+}
+---------------------------------------
+--Localization Note:  Please be advised that the commands for the SearchHelp are english only, however the variables can be any language.  Example: class:<name of class in your locale>
+--This includes name searches like name:<name in your locale>
+---------------------------------------
+L.SearchHelpHeader = "搜索帮助"
+L.SearchHelp = [[
+|cffff7d0a搜索选项|r：
+|cFFDF2B2B（注意: 所有命令及标点符号只能是英文！）|r
+
+|cFF99CC33物品在角色位置的顺序|r:
+@bag <背包>
+@bank <银行>
+@reagents <材料银行>
+@equip <已装备>
+@mailbox <信箱>
+@void <虚空仓库>
+@auction <拍卖行>
+@guild <公会>
+
+|cffff7d0a搜索筛选|r （|cFF99CC33命令|r | |cFFFFD580示例|r）：
+
+|cff00ffff<物品名称>|r = |cFF99CC33n|r ; |cFF99CC33name|r | 示例：|cFFFFD580[输入简称]:矿石|r ;  |cFFFFD580[输入全称]:宁铁矿石|r 
+
+|cff00ffff<物品已装备>|r = |cFF99CC33bind|r | 示例|cFFFFD580bind:boe|r ; types（boe, bop, bou, boq）i.e   boe = 已绑定装备
+
+|cff00ffff<品质>|r = |cFF99CC33q|r ; |cFF99CC33quality|r | 示例：|cFFFFD580q:史诗|r 
+
+|cff00ffff<物品等级>|r = |cFF99CC33l|r ; |cFF99CC33level|r ; |cFF99CC33lvl|r ; |cFF99CC33ilvl|r |示例： |cFFFFD580ilvl:382|r  ;  |cFFFFD580lvl:>=370|r 
+
+|cff00ffff<需要的等级>|r = |cFF99CC33r|r ; |cFF99CC33req|r ; |cFF99CC33rl|r ; |cFF99CC33reql|r ; |cFF99CC33reqlvl|r | 示例：|cFFFFD580r:>5|r  ;  |cFFFFD580req:>=20|r 
+
+|cff00ffff<种类/部位>|r = |cFF99CC33t|r ; |cFF99CC33type|r ; 示例：|cFF99CC33饰品|r  ;  |cFFFFD580t:脚|r 
+
+|cff00ffff<提示>|r = |cFF99CC33tt|r ; |cFF99CC33tip|r ; |cFF99CC33tooltip|r | |cFFFFD580tt:<text>|r（tt:summon）
+
+|cff00ffff<item set>|r = |cFF99CC33s|r ; |cFF99CC33set|r | |cFFFFD580s:<setname>|r（setname can be * for all sets）
+
+|cff00ffff<游戏内容>|r = |cFF99CC33x|r ; |cFF99CC33xpac|r ; |cFF99CC33expansion|r | 示例： |cFFFFD580x:巨龙时代|r  ;   |cFFFFD580xpac:暗影国度|r 
+
+|cff00ffff<关键字>|r = |cFF99CC33k|r ; |cFF99CC33key|r ; |cFF99CC33keyword|r | 示例：|cFFFFD580k:任务|r（关键字: soulbound, bound, boe, bop, bou, boa, quest, unique, toy, reagent, crafting, naval, follower, follow, power, appearance, apperance）
+
+|cff00ffff<职业>|r = |cFF99CC33c|r ; |cFF99CC33class|r | 示例：|cFFFFD580class:战士|r  ;  |cFFFFD580c:恶魔猎手|r
+
+|cffff7d0a函数 <op>|r:
+|cFF99CC33:|r | |cFF99CC33=|r | |cFF99CC33==|r | |cFF99CC33!=|r | |cFF99CC33~=|r | |cFF99CC33<|r | |cFF99CC33>|r | |cFF99CC33<=|r | |cFF99CC33>=|r
+|cFFDF2B2BNote:|r |cFF99CC33!=|r and |cFF99CC33~=|r are supported (not equal).
+
+
+|cffff7d0a否定命令|r:
+示例: |cFF99CC33!|r|cFFFFD580bind:boe|r（不是已绑定装备）
+示例: |cFF99CC33!|r|cFFFFD580bind:boe|r |cFF99CC33&&|r |cFFFFD580lvl:>20|r（不是已绑定装备且物品等级大于20）
+
+|cffff7d0a联合搜索（和搜索）：|r
+（使用 |cFF99CC33&&|r 符号）
+示例: |cFFFFD580bind:boe|r |cFF99CC33&&|r |cFFFFD580lvl:>20|r
+
+|cffff7d0a交叉搜索 (或搜索):|r
+（使用竖 |cFF99CC33|||||r 符号）
+示例: |cFFFFD580bind:boe|r |cFF99CC33|||||r |cFFFFD580lvl:>20|r
+
+|cffff7d0a复杂搜索示例:|r
+（已绑定装备, 物品等级正好是20名字中带有'长袍' 一词）
+|cFFFFD580bind:boe|r|cFF99CC33&|r|cFFFFD580lvl:20|r|cFF99CC33&|r|cFFFFD580长袍|r
+|cFFFFD580bind:boe|r |cFF99CC33&&|r |cFFFFD580lvl:20|r |cFF99CC33&&|r |cFFFFD580name:长袍|r
+
+]]
+L.ConfigFAQ= " FAQ / 帮助 "
+L.ConfigFAQHeader = "BagSync 的常见问题和帮助介绍。"
+L.FAQ_Question_1 = "我在鼠标提示上遇到卡顿/滞后。"
+L.FAQ_Question_1_p1 = [[
+当数据库中有旧的和损坏的数据 BagSync 无法解读时,通常会发生此问题。当 BagSync 需要处理大量的数据时,也会出现该问题,如果您在多个数据中数千个物品,那么在一秒钟内需要处理大量数据.这可能会导致您的计算机在短时间内滞后。最后,此问题的另一个原因是您拥有一台非常旧的计算机。当 BagSync 处理数以千计的物品和角色数据时,较旧的计算机会遇到滞后/卡顿的情况。通常具有更快的CPU和更大的内存的计算机不会出现这些问题。
+
+为了解决这个问题,您可以尝试重置数据库。通常可以解决问题。使用以下命令： |cFF99CC33/bgs 重置|r
+如果这不能解决您的问题,请在 GitHub 上的 BagSync 提交问题报告。
+]]
+L.FAQ_Question_2 = " 在|cFFDF2B2B单独|r |cff3587ff战网|r 账号中。找不到我的其他魔兽世界账号的物品数据。"
+L.FAQ_Question_2_p1 = [[
+插件无法从其他魔兽世界帐户读取数据。这是因为它们不共享相同的 SavedVariable 文件夹。这是暴雪魔兽世界客户端的内置限制。因此,您将无法在 |cFFDF2B2B单独|r |cff3587ffBattle.net|r 下看到多个魔兽世界帐户的物品数据。 BagSync 将只能读取同一魔兽世界帐户内同服务器内多个的角色数据,而不是整个战网帐户。|cFF99CC33https://www.wowhead.com/guide=934|r
+
+有一种方法可以在 |cFFDF2B2B单独|r |cff3587ffBattle.net|r 帐户内连接多个魔兽世界帐户,以便它们共享相同的 SavedVariables 文件夹。这涉及创建服务器链接文件夹。我不会在这方面提供帮助。所以别问了！请访问以下指南了解更多详情。 
+]]
+L.FAQ_Question_3 = "可以查看来自 |cFFDF2B2B多个|r |cff3587ff战网|r 账号内的物品数据吗 ？"
+L.FAQ_Question_3_p1 = "不,这不可能。我不会在这方面提供帮助。所以不要问！"
+L.FAQ_Question_4 = "我可以在|cFFDF2B2B当前登录|r的账号查看多个魔兽世界账户的物品数据吗 ？"
+L.FAQ_Question_4_p1 = "目前 BagSync 不支持在多个登录的魔兽世界帐户之间传输数据。这在未来可能会改变。"
+L.FAQ_Question_5 = "为什么会提示公会银行扫描未完成 ？"
+L.FAQ_Question_5_p1 = [[
+BagSync 必须向服务器查询您的公会银行的 |cFF99CC33全部|r 信息。服务器传输所有数据需要时间。为了让 BagSync 正确存储您的所有物品,您必须等到服务器查询完成。扫描过程完成后,BagSync 将在聊天栏通知您。在扫描过程完成之前关闭公会银行窗口,将导致为您的公会银行存储不完整的数据。 
+]]
+L.FAQ_Question_6 = "为什么我看到战斗宠物是虚拟ID[FakeID]而不是物品ID[ItemID] ？"
+L.FAQ_Question_6_p1 = [[
+暴雪不会将物品ID[ItemID]分配给魔兽世界的战斗宠物。相反,魔兽世界中的战斗宠物会从服务器分配到一个临时的宠物ID[PetID]。这个宠物ID[PetID]不是唯一的,会在服务器重置时更改。为了跟踪战斗宠物,BagSync 会生成一个虚拟ID[FakeID]。 虚拟ID[FakeID]是根据与战斗宠物相关联的静态数字生成的。使用虚拟ID[FakeID]可以保证BagSync在服务器重置期间跟踪到战斗宠物。
+]]
+L.FAQ_Question_7 = "什么是公会银行和邮箱中准确的扫描战斗宠物 ？"
+L.FAQ_Question_7_p1 = [[
+暴雪不会将战斗宠物存储在公会银行或邮箱中，并带有适当的物品ID或种类ID。事实上，战斗宠物以|cFF99CC33[宠物笼]|r的形式存储在公会银行和邮箱中，物品ID：|cFF99CC3382800|r。这也使有关插件作者难以进行特定战斗宠物的抓取任何数据。您可以在公会银行交易日志中看到，您会注意到战斗宠物被存储为|cFF99CC33[宠物笼]|r。如果您从公会银行链接一个，它也将显示为|cFF99CC33[宠物笼]|r。为了解决这个问题，可以使用两种方法。第一种方法是将战斗宠物分配给鼠标提示，然后从那里找到。这要求服务器响应WOW客户端，并可能导致大量滞后，尤其是在公会银行中有很多战斗宠物的情况下。第二种方法使用战斗宠物的图标试图找到。有时由于某些战斗宠物共享相同的图标，这有时是不准确的。示例：毒毒与翡翠软泥怪具有相同的图标。启用此选项将迫使鼠标提示扫描方法尽可能准确，但可能会导致滞后。|cFF99CC33除非暴雪为我们提供更多数据来使用。|r
+]]
+L.FAQ_Question_8 = "秘密值错误与暴雪插件限制"
+L.FAQ_Question_8_p1 = [[
+暴雪新的 |cFFDF2B2B“秘密值”|r 系统旨在让插件能够 |cFF99CC33显示|r 某些战斗相关数据，但 |cFFDF2B2B无法安全地检查或计算这些数据|r。在被污染的代码路径中，算术运算、比较，甚至对这些值的某些索引操作都会立即触发 Lua 错误。这些值还会通过秘密的方面/锚点“感染”框体和提示，从而导致 |cFF99CC33同一个提示|r 之后开始返回秘密坐标——即使触碰该提示的插件并不是最先创建秘密值的。也就是说，指向 BagSync 的调用堆栈 |cFFDF2B2B并不能|r 证明 BagSync 引入了秘密值；它往往只是说明 BagSync 是下一个触碰到已被污染对象的插件。
+
+这并不是 BagSync 独有的问题。暴雪自带界面即使在没有第三方插件的情况下，也会抛出同样的 “attempt to perform arithmetic on a secret value” 错误（例如 MoneyFrame / GameTooltip）。其他插件也在积极发布针对 |cFF99CC33同一类错误|r 的紧急修复或防护，这些错误由提示和金钱框体中的秘密值触发。|cFFDF2B2B总之：这是一个广泛的平台问题，不是 BagSync 独有的 bug|r。
+
+我 |cFFDF2B2B已经尽力|r 添加了尽可能多的防护和防御性检查，以降低 BagSync 触发这些错误的概率，但暴雪在混合插件环境中 |cFFDF2B2B刻意让秘密值极难追踪和控制|r。该系统会主动阻止插件可靠地检查该值，甚至无法确认它 |cFF99CC33从何处|r 产生。这正是这些错误难以复现，并且往往只有在错误发生时才出现的原因。
+]]
+L.BagSyncInfoWindow = [[
+在默认情况下，BagSync 只显示来自合并服务器角色的数据。( |cffff7d0a[CR]|r )
+
+合并服务器( |cffff7d0a[CR]|r )是指数据互通服务器的角色
+
+如需详细的合并服务器列表信息，请访问：
+(|cFF99CC33 https://tinyurl.com/msncc7j6 |r)
+
+
+|cFFfd5c63默认情况下，BagSync 不会显示您战网( |cff3587ff[BNet]|r )所有账号的数据。您需要启用此功能！
+|r( |cff3587ff[BNet]|r )
+
+|cFF52D386如果您想查看整个战网内所有的角色( |cff3587ff[BNet]|r )，则需要在BagSync的“显示”选项里面启用[所有战网]选项。|r
+该选项标记为：
+]]
