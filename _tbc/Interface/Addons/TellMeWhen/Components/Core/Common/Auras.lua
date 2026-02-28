@@ -31,7 +31,7 @@ local IsAuraFilteredOutByInstanceID = C_UnitAuras.IsAuraFilteredOutByInstanceID
 local GetAuraDataByAuraInstanceID = C_UnitAuras.GetAuraDataByAuraInstanceID
 local GetAuraDataBySlot = C_UnitAuras.GetAuraDataBySlot
 local GetAuraSlots = C_UnitAuras.GetAuraSlots or UnitAuraSlots
-local UnitGUID = UnitGUID
+local UnitGUID = TMW.UnitGUID
 
 local GetSpellName = TMW.GetSpellName
 
@@ -121,12 +121,16 @@ if TMW.clientHasSecrets then
 
     local fixes = {
         [445474] = function()
-            -- 445474: Wither (Hellcaller warlock) (overrides Immolate)
+            -- 445474: Wither (Hellcaller warlock) (overrides Immolate/Corruption)
             -- 348: Immolation
+            -- 172: Corruption
             -- IsPlayerSpell doesn't work on wither, so we have to check overrides.
             -- If Wither isn't the active override, don't use wither, force this to immolate.
-            if C_Spell.GetOverrideSpell(348) == 348 then
+            if IsPlayerSpell(348) and C_Spell.GetOverrideSpell(348) == 348 then
                 return 348
+            end
+            if IsPlayerSpell(172) and C_Spell.GetOverrideSpell(172) == 172 then
+                return 172
             end
         end
     }

@@ -1,5 +1,5 @@
 local MAJOR_VERSION = "LibDogTag-Unit-3.0"
-local MINOR_VERSION = tonumber(("20260220032839"):match("%d+")) or 33333333333333
+local MINOR_VERSION = tonumber(("20260228175548"):match("%d+")) or 33333333333333
 
 if MINOR_VERSION > _G.DogTag_Unit_MINOR_VERSION then
 	_G.DogTag_Unit_MINOR_VERSION = MINOR_VERSION
@@ -10,6 +10,9 @@ local wrap, yield = coroutine.wrap, coroutine.yield
 
 local GetWatchedFactionInfo = C_Reputation and C_Reputation.GetWatchedFactionData and function()
 	local data = C_Reputation.GetWatchedFactionData()
+	if not data then
+		return nil, 0, 0, 0, 0
+	end
 	return data.name, data.reaction, data.currentReactionThreshold, data.nextReactionThreshold, data.currentStanding
 end or _G.GetWatchedFactionInfo
 

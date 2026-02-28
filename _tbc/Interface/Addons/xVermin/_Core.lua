@@ -154,12 +154,29 @@ local keywords = {
 	["and"] = "and",
 	["or"] = "or",
 }
-xVermin.CheckIfLoadedWithTimer = function(condition, callback, timer, waittime)
+local function resolveGlobal(path)
+	local val
+	for part in path:gmatch("[^.]+") do
+		if val == nil then
+			val = _G[part]
+		else
+			val = val[part]
+		end
+		if val == nil then
+			return nil
+		end
+	end
+	return val
+end
+
+xVermin.CheckIfLoadedWithTimer = function(condition, callback, timer, waittime, debug)
 	local count = 0
+	debug = debug or false
 
 	C_Timer.NewTicker(timer or 1, function(self)
 		if count > (waittime or xVermin.WaitTimeUntillAddonLoaded) then
 			self:Cancel()
+			return
 		end
 		count = count + 1
 
@@ -171,7 +188,15 @@ xVermin.CheckIfLoadedWithTimer = function(condition, callback, timer, waittime)
 		condition_table["and"] = {}
 		condition_table["or"] = {}
 
+		if debug then
+			print("Checking condition:", condition)
+		end
+
 		condition:gsub("[_.%w%-]+", function(word)
+			if debug then
+				print("Found word:", word)
+			end
+
 			-- return keywords[word] or string.format("_G[%q]", word)
 			-- text.keywords[word] = string.format('_G[%q]', word)
 			if type(condition) == "string" and condition:sub(1, 9) == "ChatFrame" then
@@ -189,18 +214,38 @@ xVermin.CheckIfLoadedWithTimer = function(condition, callback, timer, waittime)
 		end)
 
 		for k, v in ipairs(condition_table) do
-			c = _G[v]
+			if debug then
+				print("Evaluating condition:", v)
+			end
+			c = resolveGlobal(v)
 		end
 		for k, v in ipairs(condition_table["and"]) do
-			c = c and _G[v]
+			if debug then
+				print("Evaluating AND condition:", v)
+			end
+			c = c and resolveGlobal(v)
 		end
 		for k, v in ipairs(condition_table["or"]) do
-			c = c or _G[v]
+			if debug then
+				print("Evaluating OR condition:", v)
+			end
+			c = c or resolveGlobal(v)
+		end
+
+		if debug then
+			print("Condition table:", condition_table)
+			print("Condition table AND:", condition_table["and"])
+			print("Condition table OR:", condition_table["or"])
+			print("Condition result:", c)
 		end
 
 		if c then
 			callback()
 			self:Cancel()
+			if debug then
+				print("Condition met, executing callback and stopping timer.")
+			end
+			return
 		else
 			-- print(condition, c)
 		end
