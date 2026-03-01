@@ -42,7 +42,7 @@ local ITEM_INFO_INTERVAL = 0.05
 local MAX_REQUESTED_ITEM_INFO = 50
 local MAX_REQUESTS_PER_ITEM = 5
 local UNKNOWN_ITEM_TEXTURE = 136254
-local DB_VERSION = 18
+local DB_VERSION = 19
 local PENDING_STATE = EnumType.New("ITEM_INFO_PENDING_STATE", {
 	NEW = EnumType.NewValue(),
 	CREATED = EnumType.NewValue(),
@@ -338,18 +338,9 @@ function ItemInfo.GetItemLevel(item)
 	if not itemString then
 		return nil
 	end
-	local itemStringLevel, itemStringLevelIsAbs = ItemString.ParseLevel(itemString)
+	local itemStringLevel = ItemString.ParseLevel(itemString)
 	if itemStringLevel then
-		if itemStringLevelIsAbs then
-			return itemStringLevel
-		else
-			-- Level is relative to the base item
-			local baseItemLevel = ItemInfo.GetItemLevel(ItemString.GetBaseFast(itemString))
-			if not baseItemLevel then
-				return nil
-			end
-			return baseItemLevel + itemStringLevel
-		end
+		return itemStringLevel
 	end
 	local itemLevel = private.cache:GetField(itemString, "itemLevel")
 	if itemLevel then

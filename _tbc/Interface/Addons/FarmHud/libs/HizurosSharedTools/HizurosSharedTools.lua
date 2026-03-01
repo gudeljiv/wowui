@@ -1,5 +1,5 @@
 
-local MAJOR, MINOR = "HizurosSharedTools", tonumber((gsub("r57","r",""))) or 9999;
+local MAJOR, MINOR = "HizurosSharedTools", tonumber((gsub("r60","r",""))) or 9999;
 ---@class HizurosSharedTools
 local lib = LibStub:NewLibrary(MAJOR, MINOR);
 if not lib then return end
@@ -706,21 +706,30 @@ do
 
 		-- HST.BullShitDetector("generalTesting",value)
 		generalTesting = function(value)
-			--if C_Secrets and C_Secrets.HasSecretRestrictions and C_Secrets.HasSecretRestrictions(value) then -- can be secret
-				-- C_Secrets.HasSecretRestrictions is only can be make problems. It makes problems mostly while and after combats.
-				local tValue = type(value);
-				-- try to trigger the evil
-				if value and ((tValue=="number" and value+1>0) or (gsub(tostring(value),"#",""))) then
-					return value;
-				end
-			--end
+			-- try to trigger the evil
+			if value == nil or value == true or value == false then
+				return value==true;
+			end
+			local tValue = type(value);
+			if tValue=="number" and value+1>0 then
+				return value;
+			end
+			local tmp = strsplit("-",gsub(tostring(value),"#",""));
+			if tmp then
+				return value;
+			end
 			return false;
 		end,
 	}
 
 	function lib.BullShitDetector(funcName,...)
-		local result = {pcall(functions[funcName],...)};
-		if table.remove(result,1) then
+		local result
+		if functions[funcName] then
+			result = {pcall(functions[funcName],...)};
+		elseif _G[funcName] then
+			result = {pcall(_G[funcName],...)}
+		end
+		if result and table.remove(result,1) then
 			return unpack(result)
 		end
 		return false;

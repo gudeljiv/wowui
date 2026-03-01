@@ -1,7 +1,7 @@
 # TomTom
 
-## [v4.2.21-release](https://github.com/jnwhiteh/TomTom/tree/v4.2.21-release) (2026-02-20)
-[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v4.2.21-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
+## [v4.2.22-release](https://github.com/jnwhiteh/TomTom/tree/v4.2.22-release) (2026-02-20)
+[Full Changelog](https://github.com/jnwhiteh/TomTom/commits/v4.2.22-release) [Previous Releases](https://github.com/jnwhiteh/TomTom/releases)
 
 - Fix some issues with the minimap button and compartment  
     This should more reliably respect the users settings  

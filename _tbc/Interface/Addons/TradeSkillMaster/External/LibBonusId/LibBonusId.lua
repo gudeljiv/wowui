@@ -253,7 +253,7 @@ function private.Calculate(itemId, modifierDropLevel, modifierContentTuningId)
 			assert(itemLevel)
 		elseif op == "scale" then
 			local dropLevel = bonus.defaultLevel or modifierDropLevel or DEFAULT_DROP_LEVEL
-			if bonus.contentTuningKey and (not bonus.contentTuningDefaultOnly or not modifierDropLevel) then
+			if not bonus.defaultLevel and bonus.contentTuningKey and (not bonus.contentTuningDefaultOnly or not modifierDropLevel) then
 				local contentTuningId = modifierContentTuningId or bonus.contentTuningId
 				dropLevel = private.ApplyContentTuning(dropLevel, contentTuningId, bonus.contentTuningKey)
 			end
