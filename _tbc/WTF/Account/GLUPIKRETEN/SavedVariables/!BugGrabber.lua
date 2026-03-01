@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 14259,
+["session"] = 14261,
 ["errors"] = {
 {
 ["message"] = "TellMeWhen: ...lizzard_DeprecatedSpellBook/Deprecated_SpellBook.lua:19: bad argument #1 to 'IsSpellInSpellBook' (Usage: local isInSpellBook = C_SpellBook.IsSpellInSpellBook(spellID [, spellBank, includeOverrides]))",

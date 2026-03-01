@@ -54,18 +54,18 @@ TomTomDB = {
 ["Antun - Golemagg"] = "Default",
 ["Provokator - Jin'do"] = "Default",
 ["Doperage - Living Flame"] = "Default",
-["Battlenac - Celebras"] = "Default",
-["Dopebolt - Lone Wolf"] = "Default",
 ["Moolatz - Dreadnaught"] = "Default",
+["Dopebolt - Lone Wolf"] = "Default",
+["Battlenac - Celebras"] = "Default",
 ["Dopestab - Lone Wolf"] = "Default",
 ["Moolatz - Celebras"] = "Default",
 ["Jutarnjedrvo - Lone Wolf"] = "Default",
 ["Turbonac - Celebras"] = "Default",
 ["Dopetrap - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
+["Doperage - Thunderstrike"] = "Default",
 ["Mxys - Golemagg"] = "Default",
 ["Mq - Celebras"] = "Default",
-["Doperage - Thunderstrike"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
 ["Vermins - Stitches"] = "Default",
 ["Vermin - Golemagg"] = "Default",
@@ -180,18 +180,18 @@ TomTomWaypointsM = {
 ["Antun - Golemagg"] = "Antun - Golemagg",
 ["Provokator - Jin'do"] = "Provokator - Jin'do",
 ["Doperage - Living Flame"] = "Doperage - Living Flame",
-["Battlenac - Celebras"] = "Battlenac - Celebras",
-["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
 ["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
+["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
+["Battlenac - Celebras"] = "Battlenac - Celebras",
 ["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
 ["Moolatz - Celebras"] = "Moolatz - Celebras",
 ["Jutarnjedrvo - Lone Wolf"] = "Jutarnjedrvo - Lone Wolf",
 ["Turbonac - Celebras"] = "Turbonac - Celebras",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
+["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
 ["Mxys - Golemagg"] = "Mxys - Golemagg",
 ["Mq - Celebras"] = "Mq - Celebras",
-["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
 ["Doperage - Lone Wolf"] = "Doperage - Lone Wolf",
 ["Vermins - Stitches"] = "Vermins - Stitches",
 ["Vermin - Golemagg"] = "Vermin - Golemagg",
@@ -323,11 +323,11 @@ TomTomWaypointsM = {
 },
 ["Doperage - Living Flame"] = {
 },
-["Battlenac - Celebras"] = {
+["Moolatz - Dreadnaught"] = {
 },
 ["Dopebolt - Lone Wolf"] = {
 },
-["Moolatz - Dreadnaught"] = {
+["Battlenac - Celebras"] = {
 },
 ["Dopestab - Lone Wolf"] = {
 },
@@ -341,11 +341,11 @@ TomTomWaypointsM = {
 },
 ["Nitwit - Dreadnaught"] = {
 },
+["Doperage - Thunderstrike"] = {
+},
 ["Mxys - Golemagg"] = {
 },
 ["Mq - Celebras"] = {
-},
-["Doperage - Thunderstrike"] = {
 },
 ["Doperage - Lone Wolf"] = {
 },
