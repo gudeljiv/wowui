@@ -188,3 +188,4 @@ LortiUI: disabled
 UberUI: disabled
 QuickRack: disabled
 DmgFontChanger: disabled
+Raven: disabled

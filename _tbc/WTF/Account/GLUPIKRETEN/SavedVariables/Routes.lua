@@ -4,7 +4,8 @@ RoutesDB = {
 ["Dopeseal - Thunderstrike"] = "Default",
 ["Dopecure - Thunderstrike"] = "Default",
 ["Pitchwise - Thunderstrike"] = "Default",
-["Moolatz - Thunderstrike"] = "Default",
 ["Handrmandr - Thunderstrike"] = "Default",
+["Moolatz - Thunderstrike"] = "Default",
+["Vermins - Thunderstrike"] = "Default",
 },
 }

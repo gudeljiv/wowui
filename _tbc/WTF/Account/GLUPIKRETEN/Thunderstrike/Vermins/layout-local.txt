@@ -2,7 +2,7 @@ Version: 1
 Frame: PallyPowerFrame
 FrameLevel: 1
 Anchor: RIGHT
-X: -409
+X: -414
 Y: 363
 W: 1
 H: 1

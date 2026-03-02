@@ -7,8 +7,8 @@ _detalhes_database = {
 ["tabelas"] = {
 {
 {
-["combatId"] = 510,
 ["tipo"] = 2,
+["combatId"] = 510,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 4369,
@@ -20,26 +20,24 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 264.008827,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-6426-1-54333-17527-0100EE5500",
-["colocacao"] = 1,
-["aID"] = "",
 ["damage_from"] = {
 ["Greater Plainstrider"] = true,
 },
 ["targets"] = {
 ["Greater Plainstrider"] = 264,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1772264884,
+["aID"] = "",
 ["ownerName"] = "Handrmandr",
 ["nome"] = "PEPE <Handrmandr>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -98,20 +96,21 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 55.34776247425382,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1772264883,
 ["damage_taken"] = 15.008827,
 ["start_time"] = 1772264880,
 ["delay"] = 0,
-["last_event"] = 1772264883,
+["last_dps"] = 55.34776247425382,
 },
 {
 ["flag_original"] = 1300,
-["totalabsorbed"] = 0.003739,
 ["pets"] = {
 "PEPE <Handrmandr>",
 },
@@ -120,6 +119,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 264.003739,
+["colocacao"] = 2,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04889BA2",
@@ -128,35 +128,34 @@ _detalhes_database = {
 ["targets"] = {
 ["Greater Plainstrider"] = 264,
 },
-["colocacao"] = 2,
-["aID"] = "6409-04889BA2",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1772264884,
+["totalabsorbed"] = 0.003739,
+["aID"] = "6409-04889BA2",
 ["nome"] = "Handrmandr",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 55.34669580758715,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1772264883,
 ["damage_taken"] = 0.003739,
 ["start_time"] = 1772264880,
 ["delay"] = 0,
-["last_event"] = 1772264883,
+["last_dps"] = 55.34669580758715,
 },
 {
 ["flag_original"] = 2600,
-["totalabsorbed"] = 0.006066,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "3244",
 ["total_without_pet"] = 15.006066,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
@@ -164,21 +163,21 @@ _detalhes_database = {
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6426-1-54333-3244-0000229B26",
-["aID"] = "3244",
 ["damage_from"] = {
 ["PEPE <Handrmandr>"] = true,
 },
 ["targets"] = {
 ["PEPE <Handrmandr>"] = 15,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["classe"] = "UNKNOW",
+["fight_component"] = true,
 ["end_time"] = 1772264884,
+["totalabsorbed"] = 0.006066,
 ["nome"] = "Greater Plainstrider",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -211,96 +210,165 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
 ["friendlyfire"] = {
 },
-["last_dps"] = 0,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1772264883,
 ["damage_taken"] = 264.006066,
 ["start_time"] = 1772264881,
 ["delay"] = 0,
-["last_event"] = 1772264883,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 510,
 ["tipo"] = 3,
+["combatId"] = 510,
 ["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["targets_overheal"] = {
+["Handrmandr"] = 800,
+},
+["pets"] = {
+},
+["iniciar_hps"] = true,
+["classe"] = "HUNTER",
+["totalover"] = 800.002191,
+["total_without_pet"] = 0.002191,
+["total"] = 0.002191,
+["targets_absorbs"] = {
+},
+["heal_enemy"] = {
+},
+["on_hold"] = true,
+["serial"] = "Player-6409-04889BA2",
+["totalabsorb"] = 0.002191,
+["last_hps"] = 0,
+["targets"] = {
+},
+["start_time"] = 1772475897,
+["totalover_without_pet"] = 0.002191,
+["healing_taken"] = 0.002191,
+["healing_from"] = {
+},
+["nome"] = "Handrmandr",
+["spells"] = {
+["_ActorTable"] = {
+[7926] = {
+["c_amt"] = 0,
+["totalabsorb"] = 0,
+["targets_overheal"] = {
+["Handrmandr"] = 800,
+},
+["n_max"] = 0,
+["targets"] = {
+["Handrmandr"] = 0,
+},
+["n_total"] = 0,
+["n_min"] = 0,
+["counter"] = 16,
+["overheal"] = 800,
+["total"] = 0,
+["spellschool"] = 1,
+["id"] = 7926,
+["targets_absorbs"] = {
+},
+["c_min"] = 0,
+["c_max"] = 0,
+["c_total"] = 0,
+["totaldenied"] = 0,
+["n_amt"] = 16,
+["absorbed"] = 0,
+},
+},
+["tipo"] = 3,
+},
+["grupo"] = true,
+["aID"] = "6409-04889BA2",
+["heal_enemy_amt"] = 0,
+["custom"] = 0,
+["tipo"] = 2,
+["totaldenied"] = 0.002191,
+["delay"] = 1772475911,
+["last_event"] = 1772475911,
+},
 },
 },
 {
-["combatId"] = 510,
 ["tipo"] = 7,
+["combatId"] = 510,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 510,
 ["tipo"] = 9,
+["combatId"] = 510,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-"PEPE <Handrmandr>",
-},
-["serial"] = "Player-6409-04889BA2",
+["buff_uptime"] = 8,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "HUNTER",
+["aID"] = "6409-04889BA2",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [349981] = {
-["activedamt"] = 1,
-["id"] = 349981,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 4,
-["appliedamt"] = 1,
+["id"] = 349981,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 8,
-["grupo"] = true,
-["aID"] = "6409-04889BA2",
 ["nome"] = "Handrmandr",
-["last_event"] = 1772264884,
+["grupo"] = true,
+["pets"] = {
+"PEPE <Handrmandr>",
+},
 ["tipo"] = 4,
+["classe"] = "HUNTER",
+["serial"] = "Player-6409-04889BA2",
+["last_event"] = 1772264884,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
 ["classe"] = "PET",
-["aID"] = "",
-["serial"] = "Pet-0-6426-1-54333-17527-0100EE5500",
-["grupo"] = true,
 ["ownerName"] = "Handrmandr",
 ["nome"] = "PEPE <Handrmandr>",
+["grupo"] = true,
 ["last_event"] = 0,
+["aID"] = "",
+["serial"] = "Pet-0-6426-1-54333-17527-0100EE5500",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 510,
 ["tipo"] = 2,
+["combatId"] = 510,
 ["_ActorTable"] = {
 },
 },
@@ -318,10 +386,9 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
-361,
+642,
 0,
 {
 0,
@@ -333,10 +400,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -356,10 +423,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -369,13 +436,13 @@ _detalhes_database = {
 ["PEPE <Handrmandr>"] = {
 ["Gore"] = 1,
 },
-["PEPE"] = {
-["Growl"] = 1,
-["Gore"] = 2,
-},
 ["Handrmandr"] = {
 ["Gore"] = 3,
 ["Growl"] = 1,
+},
+["PEPE"] = {
+["Growl"] = 1,
+["Gore"] = 2,
 },
 },
 ["instance_type"] = "none",
@@ -400,10 +467,11 @@ _detalhes_database = {
 ["combat_id"] = 510,
 ["timeStart"] = 1772264880,
 ["timeEnd"] = 1772264885,
-["playing_solo"] = true,
-["is_challenge"] = false,
 ["frags"] = {
 ["Greater Plainstrider"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
 },
 ["boss_hp"] = 1,
 ["combat_counter"] = 10742,
@@ -414,13 +482,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -432,17 +500,16 @@ _detalhes_database = {
 ["start_time"] = 291385.036,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
+["playerTalents"] = {
 },
 },
 {
 {
-["combatId"] = 509,
 ["tipo"] = 2,
+["combatId"] = 509,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1300,
-["totalabsorbed"] = 0.006364,
 ["pets"] = {
 "PEPE <Handrmandr>",
 },
@@ -451,6 +518,7 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 222.006364,
+["colocacao"] = 1,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04889BA2",
@@ -459,16 +527,14 @@ _detalhes_database = {
 ["targets"] = {
 ["Greater Plainstrider"] = 222,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04889BA2",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1772264866,
+["totalabsorbed"] = 0.006364,
+["aID"] = "6409-04889BA2",
 ["nome"] = "Handrmandr",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 [75] = {
 ["c_amt"] = 0,
@@ -499,16 +565,18 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 62.60754765981132,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1772264865,
 ["damage_taken"] = 0.006364,
 ["start_time"] = 1772264863,
 ["delay"] = 0,
-["last_event"] = 1772264865,
+["last_dps"] = 62.60754765981132,
 },
 {
 ["flag_original"] = 4369,
@@ -520,25 +588,23 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 149.002369,
+["colocacao"] = 2,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Pet-0-6426-1-54333-17527-0100EE5500",
-["colocacao"] = 2,
-["aID"] = "",
 ["damage_from"] = {
 },
 ["targets"] = {
 ["Greater Plainstrider"] = 149,
 },
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1772264866,
+["aID"] = "",
 ["ownerName"] = "Handrmandr",
 ["nome"] = "PEPE <Handrmandr>",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -597,23 +663,24 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
+["grupo"] = true,
 ["friendlyfire"] = {
 },
-["last_dps"] = 42.01984461396923,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1772264865,
 ["damage_taken"] = 0.002369,
 ["start_time"] = 1772264863,
 ["delay"] = 0,
-["last_event"] = 1772264865,
+["last_dps"] = 42.01984461396923,
 },
 {
 ["flag_original"] = 68136,
-["totalabsorbed"] = 0.008587,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "3244",
 ["total_without_pet"] = 0.008587,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
@@ -621,21 +688,21 @@ _detalhes_database = {
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6426-1-54333-3244-0000229C59",
-["aID"] = "3244",
 ["damage_from"] = {
 ["PEPE <Handrmandr>"] = true,
 ["Handrmandr"] = true,
 },
 ["targets"] = {
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["classe"] = "UNKNOW",
+["fight_component"] = true,
 ["end_time"] = 1772264866,
+["totalabsorbed"] = 0.008587,
 ["nome"] = "Greater Plainstrider",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
@@ -667,96 +734,97 @@ _detalhes_database = {
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
 ["friendlyfire"] = {
 },
-["last_dps"] = 0,
-["custom"] = 0,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1772264864,
 ["damage_taken"] = 222.008587,
 ["start_time"] = 1772264866,
 ["delay"] = 0,
-["last_event"] = 1772264864,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 509,
 ["tipo"] = 3,
+["combatId"] = 509,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 509,
 ["tipo"] = 7,
+["combatId"] = 509,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 509,
 ["tipo"] = 9,
+["combatId"] = 509,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1047,
-["pets"] = {
-"PEPE <Handrmandr>",
-},
-["serial"] = "Player-6409-04889BA2",
+["buff_uptime"] = 6,
 ["buff_uptime_targets"] = {
 },
-["classe"] = "HUNTER",
+["aID"] = "6409-04889BA2",
 ["buff_uptime_spells"] = {
-["tipo"] = 9,
 ["_ActorTable"] = {
 [5118] = {
-["activedamt"] = 1,
-["id"] = 5118,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 3,
-["appliedamt"] = 1,
+["id"] = 5118,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 [349981] = {
-["activedamt"] = 1,
-["id"] = 349981,
+["appliedamt"] = 1,
 ["targets"] = {
 },
+["activedamt"] = 1,
 ["uptime"] = 3,
-["appliedamt"] = 1,
+["id"] = 349981,
 ["refreshamt"] = 0,
 ["actived"] = false,
 ["counter"] = 0,
 },
 },
+["tipo"] = 9,
 },
-["buff_uptime"] = 6,
-["grupo"] = true,
-["aID"] = "6409-04889BA2",
 ["nome"] = "Handrmandr",
-["last_event"] = 1772264866,
+["grupo"] = true,
+["pets"] = {
+"PEPE <Handrmandr>",
+},
 ["tipo"] = 4,
+["classe"] = "HUNTER",
+["serial"] = "Player-6409-04889BA2",
+["last_event"] = 1772264866,
 },
 {
 ["flag_original"] = 4369,
 ["pets"] = {
 },
 ["classe"] = "PET",
-["aID"] = "",
-["serial"] = "Pet-0-6426-1-54333-17527-0100EE5500",
-["grupo"] = true,
 ["ownerName"] = "Handrmandr",
 ["nome"] = "PEPE <Handrmandr>",
+["grupo"] = true,
 ["last_event"] = 0,
+["aID"] = "",
+["serial"] = "Pet-0-6426-1-54333-17527-0100EE5500",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 509,
 ["tipo"] = 2,
+["combatId"] = 509,
 ["_ActorTable"] = {
 },
 },
@@ -774,8 +842,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 222,
 0,
@@ -789,10 +856,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -812,10 +879,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -856,10 +923,11 @@ _detalhes_database = {
 ["combat_id"] = 509,
 ["timeStart"] = 1772264863,
 ["timeEnd"] = 1772264867,
-["playing_solo"] = true,
-["is_challenge"] = false,
 ["frags"] = {
 ["Greater Plainstrider"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
 },
 ["boss_hp"] = 1,
 ["combat_counter"] = 10741,
@@ -870,13 +938,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -888,7 +956,7 @@ _detalhes_database = {
 ["start_time"] = 291368.037,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
+["playerTalents"] = {
 },
 },
 {
@@ -1047,10 +1115,11 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 109.006114,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6422-1-54243-3381-000018C1A1",
-["totalabsorbed"] = 0.006114,
+["on_hold"] = false,
 ["damage_from"] = {
 ["PEPE <Handrmandr>"] = true,
 ["Searing Totem <Keuler>"] = true,
@@ -1063,7 +1132,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["monster"] = true,
+["totalabsorbed"] = 0.006114,
 ["fight_component"] = true,
 ["end_time"] = 1772264863,
 ["aID"] = "3381",
@@ -1104,8 +1173,7 @@ _detalhes_database = {
 },
 ["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
+["monster"] = true,
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1771619121,
@@ -5755,10 +5823,6 @@ false,
 ["PEPE <Handrmandr>"] = {
 ["Growl"] = 1,
 },
-["Bristleback Hunter"] = {
-["Shoot"] = 3,
-["Poisoned Shot"] = 1,
-},
 ["PEPE"] = {
 ["Gore"] = 5,
 },
@@ -5768,6 +5832,10 @@ false,
 ["Arcane Shot"] = 1,
 ["Gore"] = 5,
 ["Serpent Sting"] = 1,
+},
+["Bristleback Hunter"] = {
+["Shoot"] = 3,
+["Poisoned Shot"] = 1,
 },
 },
 ["instance_type"] = "none",
@@ -7662,9 +7730,6 @@ false,
 ["PEPE <Handrmandr>"] = {
 ["Gore"] = 1,
 },
-["Razormane Stalker"] = {
-["Sinister Strike"] = 1,
-},
 ["PEPE"] = {
 ["Growl"] = 2,
 ["Gore"] = 2,
@@ -7676,6 +7741,9 @@ false,
 ["Arcane Shot"] = 1,
 ["Auto Shot"] = 1,
 ["Serpent Sting"] = 1,
+},
+["Razormane Stalker"] = {
+["Sinister Strike"] = 1,
 },
 },
 ["instance_type"] = "none",
@@ -8802,9 +8870,6 @@ false,
 ["PEPE <Handrmandr>"] = {
 ["Growl"] = 1,
 },
-["Razormane Stalker"] = {
-["Sinister Strike"] = 1,
-},
 ["Handrmandr"] = {
 ["Growl"] = 1,
 ["Gore"] = 5,
@@ -8814,6 +8879,9 @@ false,
 },
 ["PEPE"] = {
 ["Gore"] = 5,
+},
+["Razormane Stalker"] = {
+["Sinister Strike"] = 1,
 },
 },
 ["instance_type"] = "none",
@@ -9335,10 +9403,6 @@ false,
 ["PEPE <Handrmandr>"] = {
 ["Growl"] = 1,
 },
-["PEPE"] = {
-["Gore"] = 4,
-["Growl"] = 1,
-},
 ["Handrmandr"] = {
 ["Gore"] = 4,
 ["Raptor Strike"] = 1,
@@ -9346,6 +9410,10 @@ false,
 },
 ["Razormane Stalker"] = {
 ["Sinister Strike"] = 1,
+},
+["PEPE"] = {
+["Gore"] = 4,
+["Growl"] = 1,
 },
 },
 ["instance_type"] = "none",
@@ -9477,8 +9545,7 @@ false,
 },
 ["arena_data_index_selected"] = 1,
 ["on_death_menu"] = false,
-["character_data"] = {
-["logons"] = 753,
+["damage_meter_sessions"] = {
 },
 ["cached_talents"] = {
 },
@@ -9509,22 +9576,13 @@ false,
 },
 ["last_instance_time"] = 1769081351,
 ["active_profile"] = "xVermin",
-["last_day"] = "28",
-["last_realversion"] = 167,
-["data_harvested_for_charts"] = {
+["last_day"] = "02",
+["arena_data_compressed"] = {
 },
+["ignore_nicktag"] = false,
 ["damage_meter_session_info"] = {
 },
-["mythic_dungeon_currentsaved"] = {
-["dungeon_name"] = "",
-["started"] = false,
-["segment_id"] = 0,
-["ej_id"] = 0,
-["started_at"] = 0,
-["run_id"] = 0,
-["level"] = 0,
-["dungeon_zone_id"] = 0,
-["previous_boss_killed_at"] = 0,
+["data_harvested_for_charts"] = {
 },
 ["combat_log"] = {
 ["merge_gemstones_1007"] = false,
@@ -9537,8 +9595,76 @@ false,
 ["evoker_show_realtimedps"] = false,
 ["inverse_deathlog_mplus"] = false,
 },
-["benchmark_db"] = {
-["frame"] = {
+["local_instances_config"] = {
+{
+["modo"] = 2,
+["sub_attribute"] = 1,
+["horizontalSnap"] = true,
+["verticalSnap"] = false,
+["isLocked"] = true,
+["is_open"] = true,
+["sub_atributo_last"] = {
+1,
+1,
+1,
+1,
+1,
+},
+["snap"] = {
+[3] = 2,
+},
+["segment"] = 0,
+["mode"] = 2,
+["attribute"] = 1,
+["pos"] = {
+["normal"] = {
+["y"] = 596.4414672851562,
+["x"] = -1101.599021911621,
+["w"] = 234.8974151611328,
+["h"] = 138.5456237792969,
+},
+["solo"] = {
+["y"] = 2,
+["x"] = 1,
+["w"] = 300,
+["h"] = 200,
+},
+},
+},
+{
+["modo"] = 2,
+["sub_attribute"] = 1,
+["horizontalSnap"] = true,
+["verticalSnap"] = false,
+["isLocked"] = true,
+["is_open"] = true,
+["sub_atributo_last"] = {
+1,
+1,
+1,
+1,
+1,
+},
+["snap"] = {
+1,
+},
+["segment"] = 0,
+["mode"] = 2,
+["attribute"] = 2,
+["pos"] = {
+["normal"] = {
+["y"] = 596.4414672851562,
+["x"] = -869.6630859375,
+["w"] = 228.9744262695313,
+["h"] = 138.5456237792969,
+},
+["solo"] = {
+["y"] = 2,
+["x"] = 1,
+["w"] = 300,
+["h"] = 200,
+},
+},
 },
 },
 ["plugin_database"] = {
@@ -9624,7 +9750,7 @@ false,
 ["square_amount"] = 5,
 ["enabled"] = false,
 ["arrow_size"] = 10,
-["y"] = -183.107162475586,
+["font_size"] = 10,
 ["row_spacement"] = 19,
 ["main_frame_color"] = {
 0,
@@ -9634,7 +9760,6 @@ false,
 },
 ["main_frame_strata"] = "LOW",
 ["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-["use_spark"] = false,
 ["per_second"] = {
 ["enabled"] = false,
 ["point"] = "CENTER",
@@ -9646,23 +9771,35 @@ false,
 ["update_speed"] = 0.05,
 ["attribute_type"] = 1,
 },
+["use_spark"] = false,
 ["x"] = -4.001220703125,
 ["font_face"] = "Friz Quadrata TT",
 ["square_size"] = 32,
-["font_size"] = 10,
+["y"] = -183.107162475586,
 ["scale"] = 1,
 ["main_frame_locked"] = true,
 ["arrow_anchor_y"] = 0,
 },
 },
+["last_realversion"] = 167,
+["mythic_dungeon_currentsaved"] = {
+["dungeon_name"] = "",
+["started"] = false,
+["segment_id"] = 0,
+["ej_id"] = 0,
+["started_at"] = 0,
+["run_id"] = 0,
+["level"] = 0,
+["dungeon_zone_id"] = 0,
+["previous_boss_killed_at"] = 0,
+},
+["announce_firsthit"] = {
+["enabled"] = true,
+["channel"] = "SELF",
+},
 ["mythic_plus_log"] = {
 },
 ["cached_roles"] = {
-},
-["damage_meter_sessions"] = {
-},
-["ignore_nicktag"] = false,
-["arena_data_compressed"] = {
 },
 ["combat_counter"] = 10742,
 ["announce_prepots"] = {
@@ -9673,7 +9810,7 @@ false,
 ["combat_id"] = 510,
 ["savedStyles"] = {
 {
-["show_statusbar"] = false,
+["hide_in_combat_type"] = 1,
 ["clickthrough_window"] = false,
 ["titlebar_shown"] = false,
 ["menu_anchor"] = {
@@ -9691,7 +9828,7 @@ false,
 1,
 },
 ["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-["bars_sort_direction"] = 1,
+["micro_displays_locked"] = false,
 ["use_auto_align_multi_fontstrings"] = true,
 ["tooltip"] = {
 ["n_abilities"] = 3,
@@ -9703,42 +9840,30 @@ false,
 1,
 },
 ["clickthrough_toolbaricons"] = false,
-["attribute_text"] = {
-["enabled"] = true,
-["shadow"] = false,
-["side"] = 1,
-["text_color"] = {
-1,
-1,
-1,
-1,
-},
-["custom_text"] = "{name}",
-["text_face"] = "Arial Narrow",
-["anchor"] = {
-56,
-3,
-},
-["text_size"] = 12,
-["enable_custom_text"] = false,
-["show_timer"] = false,
-},
+["clickthrough_rows"] = false,
 ["titlebar_texture"] = "xVerminClean",
-["ignore_mass_showhide"] = false,
-["fontstrings_text_limit_offset"] = -10,
+["switch_tank"] = {
+1,
+1,
+1,
+},
+["switch_all_roles_after_wipe"] = {
+1,
+1,
+1,
+},
 ["icon_desaturated"] = false,
 ["desaturated_menu"] = false,
-["show_sidebars"] = false,
+["micro_displays_side"] = 2,
 ["window_scale"] = 1,
 ["hide_icon"] = true,
 ["toolbar_side"] = 1,
 ["bg_g"] = 0.1333333333333333,
 ["menu_icons_alpha"] = 0.92,
 ["bg_b"] = 0.1333333333333333,
-["rowareaborder_color"] = {
-0,
-0,
-0,
+["switch_healer_in_combat"] = {
+1,
+1,
 1,
 },
 ["color"] = {
@@ -9826,12 +9951,12 @@ false,
 },
 ["skin"] = "Minimalistic",
 ["following"] = {
-["enabled"] = false,
 ["bar_color"] = {
 1,
 1,
 1,
 },
+["enabled"] = false,
 ["text_color"] = {
 1,
 1,
@@ -9856,8 +9981,9 @@ false,
 ["space"] = -4,
 ["shadow"] = false,
 },
-["instance_button_anchor"] = {
--27,
+["switch_tank_in_combat"] = {
+1,
+1,
 1,
 },
 ["total_bar"] = {
@@ -9870,11 +9996,10 @@ false,
 1,
 },
 },
-["micro_displays_side"] = 2,
-["name"] = "vermin",
-["switch_tank_in_combat"] = {
-1,
-1,
+["show_sidebars"] = false,
+["bg_alpha"] = 0,
+["instance_button_anchor"] = {
+-27,
 1,
 },
 ["version"] = 3,
@@ -9888,7 +10013,26 @@ false,
 ["onenter"] = 1,
 },
 ["fullborder_shown"] = false,
-["clickthrough_rows"] = false,
+["attribute_text"] = {
+["show_timer"] = false,
+["shadow"] = false,
+["side"] = 1,
+["text_color"] = {
+1,
+1,
+1,
+1,
+},
+["custom_text"] = "{name}",
+["text_face"] = "Arial Narrow",
+["anchor"] = {
+56,
+3,
+},
+["text_size"] = 12,
+["enable_custom_text"] = false,
+["enabled"] = true,
+},
 ["rowareaborder_shown"] = false,
 ["rowareaborder_size"] = 0.5,
 ["clickthrough_incombatonly"] = false,
@@ -9900,7 +10044,7 @@ false,
 },
 ["backdrop_texture"] = "Details Ground",
 ["hide_in_combat_alpha"] = 0,
-["micro_displays_locked"] = false,
+["skin_custom"] = "vermin",
 ["strata"] = "LOW",
 ["libwindow"] = {
 ["y"] = -20,
@@ -9930,31 +10074,35 @@ false,
 ["left"] = false,
 ["right"] = true,
 },
-["hide_in_combat_type"] = 1,
+["show_statusbar"] = false,
 ["switch_damager_in_combat"] = {
 1,
 1,
 1,
 },
-["switch_healer_in_combat"] = {
-1,
-1,
+["rowareaborder_color"] = {
+0,
+0,
+0,
 1,
 },
 ["bars_grow_direction"] = 1,
 ["auto_current"] = true,
-["skin_custom"] = "vermin",
+["bars_sort_direction"] = 1,
+["switch_damager"] = {
+1,
+1,
+1,
+},
+["name"] = "vermin",
+["hide_in_combat"] = false,
 ["row_info"] = {
-["show_arena_role_icon"] = false,
+["textR_outline"] = false,
 ["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 ["textL_outline"] = false,
-["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-["textR_show_data"] = {
-true,
-true,
-false,
-},
-["percent_type"] = 1,
+["textR_outline_small"] = true,
+["textL_outline_small"] = true,
+["textL_enable_custom_text"] = false,
 ["fixed_text_color"] = {
 1,
 1,
@@ -9966,12 +10114,7 @@ false,
 ["between"] = 1,
 },
 ["texture_background_class_color"] = false,
-["textL_outline_small_color"] = {
-0,
-0,
-0,
-1,
-},
+["start_after_icon"] = true,
 ["font_face_file"] = "Fonts\\ARIALN.TTF",
 ["faction_icon_size_offset"] = -10,
 ["backdrop"] = {
@@ -9985,6 +10128,8 @@ false,
 ["enabled"] = false,
 ["texture"] = "ThreatPlatesBorder",
 },
+["font_size"] = 11,
+["textL_custom_text"] = "{data1}. {data3}{data2}",
 ["models"] = {
 ["upper_model"] = "Spells\\AcidBreath_SuperGreen.M2",
 ["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
@@ -9993,13 +10138,16 @@ false,
 ["lower_alpha"] = 0.1,
 ["upper_enabled"] = false,
 },
-["textL_custom_text"] = "{data1}. {data3}{data2}",
-["font_size"] = 11,
 ["textL_translit_text"] = false,
-["height"] = 19,
+["texture_custom_file"] = "Interface\\",
 ["texture_file"] = "Interface\\AddOns\\WeakAuras\\Media\\Textures\\Statusbar_Clean",
 ["icon_size_offset"] = 0,
-["start_after_icon"] = true,
+["textL_outline_small_color"] = {
+0,
+0,
+0,
+1,
+},
 ["show_faction_icon"] = true,
 ["overlay_color"] = {
 0.7,
@@ -10007,14 +10155,18 @@ false,
 0.7,
 0,
 },
-["textL_outline_small"] = true,
-["textR_outline_small"] = true,
-["arena_role_icon_size_offset"] = -10,
+["textR_show_data"] = {
+true,
+true,
+false,
+},
+["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+["icon_file"] = "",
 ["icon_grayscale"] = false,
 ["textR_bracket"] = "(",
 ["use_spec_icons"] = false,
 ["texture_custom"] = "",
-["textR_outline"] = false,
+["show_arena_role_icon"] = false,
 ["fixed_texture_color"] = {
 0,
 0,
@@ -10048,33 +10200,23 @@ false,
 0,
 0,
 },
-["icon_file"] = "",
+["arena_role_icon_size_offset"] = -10,
 ["font_face"] = "Arial Narrow",
 ["texture_class_colors"] = true,
-["textL_enable_custom_text"] = false,
+["percent_type"] = 1,
 ["fast_ps_update"] = false,
 ["textR_separator"] = "NONE",
-["texture_custom_file"] = "Interface\\",
+["height"] = 19,
 },
-["bg_alpha"] = 0,
-["hide_in_combat"] = false,
-["switch_damager"] = {
-1,
-1,
-1,
-},
-["switch_tank"] = {
-1,
-1,
-1,
-},
-["switch_all_roles_after_wipe"] = {
-1,
-1,
-1,
-},
+["ignore_mass_showhide"] = false,
+["fontstrings_text_limit_offset"] = -10,
 ["wallpaper"] = {
-["enabled"] = false,
+["overlay"] = {
+1,
+1,
+1,
+1,
+},
 ["alpha"] = 0.5,
 ["width"] = 283.000183105469,
 ["texcoord"] = {
@@ -10086,12 +10228,7 @@ false,
 ["height"] = 114.042518615723,
 ["anchor"] = "all",
 ["level"] = 2,
-["overlay"] = {
-1,
-1,
-1,
-1,
-},
+["enabled"] = false,
 ["texture"] = "Interface\\AddOns\\Details\\images\\background",
 },
 ["stretch_button_side"] = 2,
@@ -10107,77 +10244,9 @@ false,
 },
 },
 ["force_font_outline"] = "",
-["local_instances_config"] = {
-{
-["modo"] = 2,
-["sub_attribute"] = 1,
-["horizontalSnap"] = true,
-["verticalSnap"] = false,
-["isLocked"] = true,
-["is_open"] = true,
-["sub_atributo_last"] = {
-1,
-1,
-1,
-1,
-1,
-},
-["snap"] = {
-[3] = 2,
-},
-["segment"] = 0,
-["mode"] = 2,
-["attribute"] = 1,
-["pos"] = {
-["normal"] = {
-["y"] = 596.4414672851562,
-["x"] = -1101.599021911621,
-["w"] = 234.8974151611328,
-["h"] = 138.5456237792969,
-},
-["solo"] = {
-["y"] = 2,
-["x"] = 1,
-["w"] = 300,
-["h"] = 200,
-},
-},
-},
-{
-["modo"] = 2,
-["sub_attribute"] = 1,
-["horizontalSnap"] = true,
-["verticalSnap"] = false,
-["isLocked"] = true,
-["is_open"] = true,
-["sub_atributo_last"] = {
-1,
-1,
-1,
-1,
-1,
-},
-["snap"] = {
-1,
-},
-["segment"] = 0,
-["mode"] = 2,
-["attribute"] = 2,
-["pos"] = {
-["normal"] = {
-["y"] = 596.4414672851562,
-["x"] = -869.6630859375,
-["w"] = 228.9744262695313,
-["h"] = 138.5456237792969,
-},
-["solo"] = {
-["y"] = 2,
-["x"] = 1,
-["w"] = 300,
-["h"] = 200,
-},
-},
-},
+["nick_tag_cache"] = {
+["last_version"] = 16,
+["nextreset"] = 1773771223,
 },
 ["announce_deaths"] = {
 ["enabled"] = false,
@@ -10713,9 +10782,7 @@ false,
 },
 ["bossTimers"] = {
 },
-["cleu_events"] = {
-["n"] = 1,
-},
+["combat_counter"] = 10571,
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -10765,7 +10832,9 @@ false,
 ["is_challenge"] = false,
 ["spells_cast_timeline"] = {
 },
-["combat_counter"] = 10571,
+["cleu_events"] = {
+["n"] = 1,
+},
 ["totals_grupo"] = {
 0,
 0,
@@ -10811,15 +10880,14 @@ false,
 ["segments_added"] = {
 },
 },
-["nick_tag_cache"] = {
-["last_version"] = 16,
-["nextreset"] = 1772302740,
+["benchmark_db"] = {
+["frame"] = {
+},
 },
 ["arena_data_headers"] = {
 },
-["announce_firsthit"] = {
-["enabled"] = true,
-["channel"] = "SELF",
+["character_data"] = {
+["logons"] = 757,
 },
 ["announce_cooldowns"] = {
 ["enabled"] = false,

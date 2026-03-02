@@ -897,11 +897,6 @@ function Details222.StartUp.StartMeUp()
 
 	pcall(Details222.ClassCache.MakeCache)
 
-	if (time() > 1740761826 + 31622400) then
-		wipe(Details)
-		return
-	end
-
 	Details:BuildSpecsNameCache()
 
 	Details222.Cache.DoMaintenance()
