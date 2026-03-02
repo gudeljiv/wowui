@@ -1,1 +1,0 @@
-@ py .\_robot\rotation.py wotlk
