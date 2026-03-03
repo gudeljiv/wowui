@@ -1,6 +1,6 @@
 VER 3 0000000000000033 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:6450
+/cast item:3530
 END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
@@ -54,14 +54,12 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:3730
+#showtooltip item:12203
 /cast feed pet
-/use item:3730
+/use item:12203
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Galak Windchaser
-/targetexact Galak Wrangler
-/targetexact Galak Scout
+/targetexact Kravel Koalbeard
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
@@ -71,11 +69,9 @@ VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
 /click StaticPopup1Button1
 END
 VER 3 0000000000000041 "TEST" "132123"
-/run PlayerCastingBarFrame:Show()
-/run PlayerCastingBarFrame.timer:Show()
 /run PlayerCastingBarFrame.timer:ClearAllPoints()
-/run PlayerCastingBarFrame.timer:SetScale(1.2)
-/run PlayerCastingBarFrame.timer:SetPoint("RIGHT", 34, 2)
+/run  PlayerCastingBarFrame.timer:SetScale(1.2)
+/run PlayerCastingBarFrame.timer:SetPoint("LEFT", PlayerCastingBarFrame, "RIGHT", 10, 2)
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

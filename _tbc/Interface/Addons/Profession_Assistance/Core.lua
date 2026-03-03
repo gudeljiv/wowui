@@ -20,7 +20,8 @@ local expansionIcon = {
 	'|TInterface\\AddOns\\Profession_Assistance\\Images\\bfa.tga:10:38:0:|t',
 	'|TInterface\\AddOns\\Profession_Assistance\\Images\\sl.tga:16:32:0:|t',
 	'|TInterface\\AddOns\\Profession_Assistance\\Images\\df.tga:16:32:0:|t',
-	'|TInterface\\AddOns\\Profession_Assistance\\Images\\tww.tga:16:38:0:|t'
+	'|TInterface\\AddOns\\Profession_Assistance\\Images\\tww.tga:16:38:0:|t',
+	'|TInterface\\AddOns\\Profession_Assistance\\Images\\mn.tga:16:32:0:|t'
 }
 
 local typeInfo = {

@@ -1,5 +1,5 @@
 
-local dversion = 674
+local dversion = 682
 local major, minor = "DetailsFramework-1.0", dversion
 local DF, oldminor = LibStub:NewLibrary(major, minor)
 
@@ -350,7 +350,9 @@ function DF:GetRoleByClassicTalentTree()
 	local MIN_SPECS = 4
 
 	--put the spec with more talent point to the top
-	table.sort(pointsPerSpec, function(t1, t2) return t1[2] > t2[2] end)
+	table.sort(pointsPerSpec, function(t1, t2)
+		return t1[2] > t2[2]
+	end)
 
 	--get the spec with more points spent
 	local spec = pointsPerSpec[1]
@@ -1722,10 +1724,10 @@ function DF:AddTextureToText(text, textureInfo, bAddSpace, bAddAfterText)
 	bottom = bottom or 1
 
 	if (bAddAfterText) then
-		local newString = text .. (bAddSpace and " " or "") .. "|T" .. texture .. ":" .. textureWidth .. ":" .. textureHeight .. ":0:0:" .. imageWidth .. ":" .. imageHeight .. ":" .. (left * imageWidth) .. ":" .. (right * imageWidth) .. ":" .. (top * imageHeight) .. ":" .. (bottom * imageHeight) .. "|t"
+		local newString = text .. (bAddSpace and " " or "") .. "|T" .. texture .. ":" .. textureHeight .. ":" .. textureWidth .. ":0:0:" .. imageWidth .. ":" .. imageHeight .. ":" .. (left * imageWidth) .. ":" .. (right * imageWidth) .. ":" .. (top * imageHeight) .. ":" .. (bottom * imageHeight) .. "|t"
 		return newString
 	else
-		local newString = "|T" .. texture .. ":" .. textureWidth .. ":" .. textureHeight .. ":0:0:" .. imageWidth .. ":" .. imageHeight .. ":" .. (left * imageWidth) .. ":" .. (right * imageWidth) .. ":" .. (top * imageHeight) .. ":" .. (bottom * imageHeight) .. "|t" .. (bAddSpace and " " or "") .. text
+		local newString = "|T" .. texture .. ":" .. textureHeight .. ":" .. textureWidth .. ":0:0:" .. imageWidth .. ":" .. imageHeight .. ":" .. (left * imageWidth) .. ":" .. (right * imageWidth) .. ":" .. (top * imageHeight) .. ":" .. (bottom * imageHeight) .. "|t" .. (bAddSpace and " " or "") .. text
 		return newString
 	end
 end

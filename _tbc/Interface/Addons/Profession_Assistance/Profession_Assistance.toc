@@ -2,7 +2,7 @@
 ## Title: Profession Assistance
 ## Author: Dragonfreaky
 ## Notes: Giving extra details to professions!
-## Version: 6.1.1
+## Version: 6.2.2
 ## X-Credits: Misstory
 ## SavedVariables: PA_SavedSettings
 

@@ -795,6 +795,7 @@ PLATER_DEFAULT_SETTINGS = {
 		health_cutoff_upper = true,
 		health_cutoff_extra_glow = false,
 		health_cutoff_hide_divisor = false,
+		health_cutoff_alpha = 0.3,
 		
 		update_throttle = 0.25,
 		culling_distance = 100,
@@ -3057,6 +3058,7 @@ PLATER_DEFAULT_SETTINGS = {
 		cast_statusbar_bgcolor = {0.113725, 0.113725, 0.113725, 0.891240},
 		cast_statusbar_color = {1, .7, 0, 0.96},
 		cast_statusbar_color_channeling = {0, 1, 0, 0.96},
+		cast_statusbar_color_empowered = {0, 1, 0, 0.96},
 		cast_statusbar_color_important = {.5, .0, .5, 0.96},
 		cast_statusbar_color_nointerrupt = {.5, .5, .5, 0.96},
 		cast_statusbar_color_interrupted = {1, .1, .1, 1},

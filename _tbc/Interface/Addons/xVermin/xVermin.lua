@@ -304,6 +304,14 @@ end)
 -- 	end
 -- end
 
+-- hooksecurefunc("ToggleGameMenu", function()
+-- 	if not GameMenuFrame:IsShown() then
+-- 		GameMenuFrame:Show()
+-- 	else
+-- 		GameMenuFrame:Hide()
+-- 	end
+-- end)
+
 hooksecurefunc(StaticPopupDialogs["DELETE_GOOD_ITEM"], "OnShow", function(s)
 	local editBox = _G[s:GetName() .. "EditBox"]
 	if editBox then

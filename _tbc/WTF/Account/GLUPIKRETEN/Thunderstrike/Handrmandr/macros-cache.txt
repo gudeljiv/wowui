@@ -29,6 +29,10 @@ VER 3 0100000001000005 "blast" "134400"
 /use 13
 /use 14
 END
+VER 3 010000000100001A "eagle" "134400"
+#showtooltip
+/cast !Eagle Eye
+END
 VER 3 0100000001000001 "fd" "134400"
 #showtooltip
 /cast Feign Death

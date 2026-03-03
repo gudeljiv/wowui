@@ -1,12 +1,10 @@
 
 RXPCData = {
 ["completedWaypoints"] = {
-[2] = {
-},
-[3] = {
+[7] = {
 },
 },
-["currentStep"] = 3,
+["currentStep"] = 7,
 ["questObjectivesCache"] = {
 [3901] = {
 {
@@ -48,19 +46,20 @@ RXPCData = {
 },
 ["finished"] = false,
 },
+[0] = 9,
 [376] = {
 {
 ["type"] = "item",
 ["numRequired"] = 6,
-["text"] = "Scavenger Paw: 0/6",
 ["finished"] = false,
+["text"] = "Scavenger Paw: 0/6",
 ["numFulfilled"] = 0,
 },
 {
 ["type"] = "item",
 ["numRequired"] = 6,
-["text"] = "Duskbat Wing: 0/6",
 ["finished"] = false,
+["text"] = "Duskbat Wing: 0/6",
 ["numFulfilled"] = 0,
 },
 ["finished"] = false,
@@ -82,7 +81,16 @@ RXPCData = {
 },
 ["finished"] = false,
 },
-[0] = 8,
+[363] = {
+{
+["type"] = "event",
+["numRequired"] = 1,
+["generated"] = true,
+["text"] = "Objective Complete",
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
 [364] = {
 {
 ["type"] = "monster",
@@ -119,6 +127,7 @@ RXPCData = {
 [381] = "The Scarlet Crusade",
 [3902] = "Scavenging Deathknell",
 [6395] = "Marla's Last Wish",
+[3096] = "Encrypted Scroll",
 [376] = "The Damned",
 [380] = "Night Web's Hollow",
 [363] = "Rude Awakening",
@@ -4745,8 +4754,10 @@ RXPCData = {
 },
 ["currentGuideName"] = "01-06 Tirisfal Glades",
 ["stepSkip"] = {
+true,
+true,
 },
-["currentStepId"] = 842862143,
+["currentStepId"] = 842862330,
 ["guideDisabled"] = {
 34325,
 101302,
@@ -5100,6 +5111,10 @@ RXPCTrackingData = {
 ["groupExperience"] = 0,
 ["deaths"] = 0,
 ["mobs"] = {
+["Tirisfal Glades"] = {
+["xp"] = 442,
+["count"] = 8,
+},
 },
 ["timestamp"] = {
 ["dateStarted"] = {
@@ -5111,7 +5126,44 @@ RXPCTrackingData = {
 ["hour"] = 16,
 ["minute"] = 42,
 },
+["finished"] = 1173,
+["dateFinished"] = {
+["monthDay"] = 3,
+["day"] = 0,
+["month"] = 3,
+["minute"] = 26,
+["year"] = 2026,
+["hour"] = 17,
+["weekday"] = 3,
+},
 ["started"] = 0,
+},
+["quests"] = {
+["Tirisfal Glades"] = {
+[363] = 40,
+},
+},
+},
+{
+["groupExperience"] = 0,
+["deaths"] = 0,
+["mobs"] = {
+["Tirisfal Glades"] = {
+["xp"] = 506,
+["count"] = 11,
+},
+},
+["timestamp"] = {
+["dateStarted"] = {
+["monthDay"] = 3,
+["day"] = 0,
+["month"] = 3,
+["minute"] = 26,
+["year"] = 2026,
+["hour"] = 17,
+["weekday"] = 3,
+},
+["started"] = 1174,
 },
 ["quests"] = {
 },

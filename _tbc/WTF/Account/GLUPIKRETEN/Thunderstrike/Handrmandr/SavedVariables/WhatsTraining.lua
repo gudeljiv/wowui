@@ -13,12 +13,12 @@ WT_LearnedPetAbilities = {
 },
 ["Great Stamina"] = {
 ["Rank 3"] = true,
-["Rank 8"] = true,
 ["Rank 4"] = true,
+["Rank 8"] = true,
 ["Rank 5"] = true,
 ["Rank 7"] = true,
-["Rank 6"] = true,
 ["Rank 1"] = true,
+["Rank 6"] = true,
 ["Rank 2"] = true,
 },
 ["Screech"] = {
@@ -42,6 +42,9 @@ WT_LearnedPetAbilities = {
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
+["Avoidance"] = {
+["Rank 1"] = true,
+},
 ["Thunderstomp"] = {
 ["Rank 2"] = true,
 },
@@ -54,14 +57,15 @@ WT_LearnedPetAbilities = {
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
-["Growl"] = {
+["Bite"] = {
 ["Rank 3"] = true,
 ["Rank 4"] = true,
 ["Rank 5"] = true,
+["Rank 6"] = true,
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
-["Fire Resistance"] = {
+["Shadow Resistance"] = {
 ["Rank 3"] = true,
 ["Rank 1"] = true,
 ["Rank 2"] = true,
@@ -75,12 +79,12 @@ WT_LearnedPetAbilities = {
 },
 ["Natural Armor"] = {
 ["Rank 3"] = true,
-["Rank 8"] = true,
 ["Rank 4"] = true,
+["Rank 8"] = true,
 ["Rank 5"] = true,
 ["Rank 7"] = true,
-["Rank 6"] = true,
 ["Rank 1"] = true,
+["Rank 6"] = true,
 ["Rank 2"] = true,
 },
 ["Claw"] = {
@@ -91,16 +95,15 @@ WT_LearnedPetAbilities = {
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
-["Shadow Resistance"] = {
+["Fire Resistance"] = {
 ["Rank 3"] = true,
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },
-["Bite"] = {
+["Growl"] = {
 ["Rank 3"] = true,
 ["Rank 4"] = true,
 ["Rank 5"] = true,
-["Rank 6"] = true,
 ["Rank 1"] = true,
 ["Rank 2"] = true,
 },

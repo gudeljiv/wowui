@@ -8,6 +8,7 @@ __TAMED_ADDON_DB__ = {
 ["Handrmandr - Thunderstrike"] = "Handrmandr - Thunderstrike",
 ["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
 ["Testvermin - Thunderstrike"] = "Testvermin - Thunderstrike",
+["Battitude - Thunderstrike"] = "Battitude - Thunderstrike",
 ["Dopeclaw - Thunderstrike"] = "Dopeclaw - Thunderstrike",
 ["Moolatz - Thunderstrike"] = "Moolatz - Thunderstrike",
 ["Dopecure - Thunderstrike"] = "Dopecure - Thunderstrike",

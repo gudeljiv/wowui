@@ -8,6 +8,7 @@ SUIDB = {
 ["Handrmandr - Thunderstrike"] = "Default",
 ["Doperage - Thunderstrike"] = "Default",
 ["Testvermin - Thunderstrike"] = "Default",
+["Battitude - Thunderstrike"] = "Default",
 ["Dopeclaw - Thunderstrike"] = "Default",
 ["Moolatz - Thunderstrike"] = "Default",
 ["Poklopac - Thunderstrike"] = "Default",

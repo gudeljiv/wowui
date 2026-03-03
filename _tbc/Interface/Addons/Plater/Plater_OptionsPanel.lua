@@ -1988,7 +1988,7 @@ local debuff_options = {
 	
 	{type = "blank"},
 
-	{type = "label", get = function() return "Automatic Aura Tracking:" end, text_template = DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE"), hidden = IS_WOW_PROJECT_MIDNIGHT},
+	{type = "label", get = function() return "Automatic Aura Tracking:" end, text_template = DF:GetTemplate ("font", "ORANGE_FONT_TEMPLATE")},
 
 	{
 		type = "toggle",
@@ -3719,7 +3719,6 @@ Plater.CreateAuraTesting()
 				end,
 				name = "Defensive player CDs",
 				desc = "When the unit has a defensive effect on it, show it.",
-				hidden = IS_WOW_PROJECT_MIDNIGHT,
 			},
 			
 			{type = "breakline"},
@@ -3923,6 +3922,7 @@ do
 			nocombat = true,
 			name = "Always Show" .. CVarIcon,
 			desc = "If enabled, the personal health bar is always shown.\n\n|cFFFFFF00 Important |r: 'Personal Health and Mana Bars' (in the Main Menu tab) must be enabled." .. CVarDesc,
+			hidden = true,
 		},
 
 		{
@@ -3938,6 +3938,7 @@ do
 			nocombat = true,
 			name = "Show When you Have a Target" .. CVarIcon,
 			desc = "If enabled, show the personal bar when you have a target.\n\n|cFFFFFF00 Important |r: 'Personal Health and Mana Bars' (in the Main Menu tab) must be enabled." .. CVarDesc,
+			hidden = true,
 		},
 		{
 			type = "toggle",
@@ -3952,6 +3953,7 @@ do
 			nocombat = true,
 			name = "Show In Combat" .. CVarIcon,
 			desc = "If enabled, show the personal bar when you are in combat.\n\n|cFFFFFF00 Important |r: 'Personal Health and Mana Bars' (in the Main Menu tab) must be enabled." .. CVarDesc,
+			hidden = true,
 		},
 		{
 			type = "range",
@@ -3971,6 +3973,7 @@ do
 			name = L["OPTIONS_ALPHA"] .. CVarIcon,
 			desc = "Alpha" .. CVarDesc,
 			nocombat = true,
+			hidden = true,
 		},
 		{
 			type = "range",
@@ -3990,6 +3993,7 @@ do
 			name = "Scale" .. CVarIcon,
 			desc = "Scale" .. CVarDesc,
 			nocombat = true,
+			hidden = true,
 		},
 
 		{type = "blank"},
@@ -4120,7 +4124,7 @@ do
 			name = "Reset to Automatic Position" .. CVarIcon,
 			nocombat = true,
 			width = 140,
-			hidden = IS_WOW_PROJECT_MIDNIGHT,
+			hidden = true,
 		},
 		
 		{
@@ -4189,7 +4193,7 @@ do
 			nocombat = true,
 			name = "Fixed Position" .. CVarIcon,
 			desc = "With a fixed position, personal bar won't move.\n\nTo revert this, click the button above." .. CVarDesc,
-			hidden = IS_WOW_PROJECT_MIDNIGHT,
+			hidden = true,
 		},
 		
 		--{type = "blank"},
@@ -5319,6 +5323,7 @@ local targetOptions = {
 			name = "TARGET_CVAR_LOCKTOSCREEN",
 			desc = "TARGET_CVAR_LOCKTOSCREEN_DESC",
 			nocombat = true,
+			hidden = true,
 		},
 		
 		{
@@ -5347,6 +5352,7 @@ local targetOptions = {
 			name = "Lock to Screen (Bottom Side)|cFFFF7700*|r",
 			desc = "Min space between the nameplate and the bottom of the screen. Increase this if some part of the nameplate are going out of the screen.\n\n|cFFFFFFFFDefault: 0.065|r\n\n|cFFFFFF00 Important |r: if you're having issue, manually set using these macros:\n/run SetCVar ('nameplateOtherBottomInset', '0.1')\n/run SetCVar ('nameplateLargeBottomInset', '0.15')\n\n|cFFFFFF00 Important |r: setting to 0 disables this feature.\n\n|cFFFF7700[*]|r |cFFa0a0a0CVar, saved within Plater profile and restored when loading the profile.|r",
 			nocombat = true,
+			hidden = true,
 		},
 		
 		{
@@ -5645,6 +5651,7 @@ local relevance_options = {
 			name = "OPTIONS_NAMEPLATE_HIDE_FRIENDLY_HEALTH",
 			desc = "OPTIONS_NAMEPLATE_HIDE_FRIENDLY_HEALTH_DESC",
 			nocombat = true,
+			hidden = IS_WOW_PROJECT_MIDNIGHT,
 		},
 		
 		{
@@ -6165,6 +6172,7 @@ local relevance_options = {
 			name = "Occluded Alpha Multiplier" .. CVarIcon,
 			desc = "Alpha multiplyer for 'occluded' plates (when they are not in line of sight)." .. CVarDesc,
 			nocombat = true,
+			disableif = function() return not Plater.db.profile.honor_blizzard_plate_alpha end,
 		},		
 
 		{type = "blank"},
@@ -6220,6 +6228,7 @@ local relevance_options = {
 			name = "OPTIONS_AMOUNT", --No Combat Alpha Amount
 			desc = "OPTIONS_NOCOMBATALPHA_AMOUNT_DESC",
 			usedecimals = true,
+			disableif = function() return not Plater.db.profile.not_affecting_combat_enabled end,
 		},
 
 		{type = "blank"},
@@ -6794,6 +6803,25 @@ local relevance_options = {
 			name = "OPTIONS_YOFFSET",
 			desc = "OPTIONS_MOVE_VERTICAL",
 		},
+
+		{type = "blank"},
+
+		{
+		type = "range",
+		get = function() return Plater.db.profile.health_cutoff_alpha end,
+		set = function (self, fixedparam, value) 
+			Plater.db.profile.health_cutoff_alpha = value
+			Plater.RefreshDBUpvalues()
+			Plater.GetHealthCutoffValue()
+		end,
+		min = 0,
+		max = 1,
+		step = 0.01,
+		usedecimals = true,
+		thumbscale = 1.8,
+		name = "Execute Alpha",
+		desc = "Execute Alpha",
+	},
 	}
 
 	for _, t in ipairs (options_table1_continue2) do
@@ -6925,6 +6953,7 @@ end
 			end,
 			name = "Only Damaged Players",
 			desc = "Hide the health bar when a friendly character has full health.",
+			hidden = IS_WOW_PROJECT_MIDNIGHT,
 		},
 		{
 			type = "toggle",
@@ -11715,6 +11744,7 @@ end
 			end,
 			name = "OPTIONS_THREAT_AGGROSTATE_ANOTHERTANK",
 			desc = "OPTIONS_THREAT_COLOR_TANK_ANOTHERTANK_DESC",
+			hidden = IS_WOW_PROJECT_MIDNIGHT,
 		},
 		{
 			type = "color",
@@ -11754,6 +11784,7 @@ end
 			end,
 			name = "OPTIONS_THREAT_PULL_FROM_ANOTHER_TANK",
 			desc = "OPTIONS_THREAT_PULL_FROM_ANOTHER_TANK_DESC",
+			hidden = IS_WOW_PROJECT_MIDNIGHT,
 		},
 		
 		{type = "blank"},
@@ -11832,6 +11863,7 @@ end
 			end,
 			name = "OPTIONS_THREAT_DPS_CANCHECKNOTANK",
 			desc = "OPTIONS_THREAT_DPS_CANCHECKNOTANK_DESC",
+			hidden = IS_WOW_PROJECT_MIDNIGHT,
 		},
 		{
 			type = "color",
@@ -11845,6 +11877,7 @@ end
 			end,
 			name = "OPTIONS_THREAT_AGGROSTATE_NOTANK",
 			desc = "OPTIONS_THREAT_COLOR_DPS_NOTANK_DESC",
+			hidden = IS_WOW_PROJECT_MIDNIGHT,
 		},		
 
 
@@ -11997,6 +12030,7 @@ end
 			end,
 			name = "Don't override Threat colors",
 			desc = "Threat coloring will have priority over unit type colors.",
+			disableif = function() return not Plater.db.profile.unit_type_coloring_enabled end,
 		},
 		
 		{type = "blank"},
@@ -12014,6 +12048,7 @@ end
 			end,
 			name = "Boss",
 			desc = "Color for raid or dungeon bosses.",
+			disableif = function() return not Plater.db.profile.unit_type_coloring_enabled end,
 		},
 		{
 			type = "color",
@@ -12028,6 +12063,7 @@ end
 			end,
 			name = "Miniboss",
 			desc = "Color for minibosses.",
+			disableif = function() return not Plater.db.profile.unit_type_coloring_enabled end,
 		},
 		{
 			type = "color",
@@ -12042,6 +12078,7 @@ end
 			end,
 			name = "Caster",
 			desc = "Color for caster units.",
+			disableif = function() return not Plater.db.profile.unit_type_coloring_enabled end,
 		},
 
 		{type = "blank"},
@@ -12060,6 +12097,7 @@ end
 			end,
 			name = "Enable elite",
 			desc = "Will override non-elite colors as 'elite'.",
+			disableif = function() return not Plater.db.profile.unit_type_coloring_enabled end,
 		},
 		{
 			type = "color",
@@ -12075,6 +12113,7 @@ end
 			name = "Elite",
 			desc = "Color for elite units.",
 			id = "UNIT_TYPE_ELITE_COLOR_PICKER",
+			disableif = function() return not Plater.db.profile.unit_type_coloring_enabled end,
 		},
 
 		{type = "blank"},
@@ -12093,6 +12132,7 @@ end
 			end,
 			name = "Enable trivial",
 			desc = "Will override non-elite colors as 'trivial'.",
+			disableif = function() return not Plater.db.profile.unit_type_coloring_enabled end,
 		},
 		{
 			type = "color",
@@ -12108,6 +12148,7 @@ end
 			name = "Trivial",
 			desc = "Color for non-elite/trivial units.",
 			id = "UNIT_TYPE_TRIVIAL_COLOR_PICKER",
+			disableif = function() return not Plater.db.profile.unit_type_coloring_enabled end,
 		},
 	}
 	

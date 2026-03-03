@@ -1268,6 +1268,99 @@ table_herb = {
 			['node'] = { 210796, 210799, 210802, 210805, 210808 },
 		},
 	},
+	
+	-- Midnight herbs --
+	[236761] = { -- Tranquility Bloom *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 245807 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[236767] = { -- Tranquility Bloom *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 245808 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[236770] = { -- Sanguithorn *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 245865 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[236772] = { -- Sanguithorn *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 245864 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[236774] = { -- Azeroot *1
+		['skill'] = 1,
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[236775] = { -- Azeroot *2
+		['skill'] = 1,
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[236776] = { -- Argentleaf *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 245803 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[236777] = { -- Argentleaf *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 245804 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[236778] = { -- Mana Lily *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 245867 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[236779] = { -- Mana Lily *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 245866 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[236780] = { -- Nocturnal Lotus
+		['skill'] = 1,
+		['found'] = {
+			['chance'] = '±1.5% - ±5%',
+			['node'] = { 236761, 236770, 236774, 236776, 236778 },
+		},
+	},
 };
 
 table_milling = {
@@ -1629,6 +1722,56 @@ table_milling = {
 		['skill'] = 1,
 		['items'] = {
 			[1] = { ['chance'] = '100%', 210807 },
+		},
+	},
+	
+	-- Midnight pigments --
+	[245803] = { -- Argentleaf Pigment *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 236776 },
+		},
+	},
+	[245804] = { -- Argentleaf Pigment *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 236777 },
+		},
+	},
+	[245807] = { -- Powder Pigment *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 236761 },
+		},
+	},
+	[245808] = { -- Powder Pigment *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 236767 },
+		},
+	},
+	[245865] = { -- Sanguithorn Pigment *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 236770 },
+		},
+	},
+	[245864] = { -- Sanguithorn Pigment *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 236771 },
+		},
+	},
+	[245867] = { -- Mana Lily Pigment *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 236778 },
+		},
+	},
+	[245866] = { -- Mana Lily Pigment *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '100%', 236779 },
 		},
 	},
 };
@@ -2187,6 +2330,84 @@ table_ore = {
 		['found'] = {
 			['chance'] = '±1.5%',
 			['node'] = { 210930, 210933, 210936 },
+		},
+	},
+	
+	-- Midnight ores --
+	[237359] = { -- Refulgent Copper Ore *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±10%', 242553, 242554, 242606, 242607 },
+			[2] = { ['chance'] = '±2.5% (Prof)', 242608 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[237361] = { -- Refulgent Copper Ore *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±10%', 242720, 242721, 242722, 242723 },
+			[2] = { ['chance'] = '±2.5% (Prof)', 242712 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[237362] = { -- Umbral Tin Ore *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±15%', 242606, 242607 },
+			[2] = { ['chance'] = '±15%', 242610, 242611 },
+			[3] = { ['chance'] = '±5% (Prof)', 242608 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[237363] = { -- Umbral Tin Ore *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±15%', 242720, 242721 },
+			[2] = { ['chance'] = '±15%', 242725, 242726 },
+			[3] = { ['chance'] = '±5% (Prof)', 242712 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[237364] = { -- Brilliant Silver Ore *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±15%', 242553, 242554 },
+			[2] = { ['chance'] = '±15%', 242612, 242613 },
+			[3] = { ['chance'] = '±5% (Prof)', 242608 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[237365] = { -- Brilliant Silver Ore *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±15%', 242720, 242721 },
+			[2] = { ['chance'] = '±15%', 242724, 242727 },
+			[3] = { ['chance'] = '±5% (Prof)', 242712 },
+		},
+		['found'] = {
+			['location'] = { 'Eversong Woods', 'Harandar', 'Zul\'Aman', 'Voidstorm' },
+		},
+	},
+	[237366] = { -- Dazzling Thorium
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±15%', 242610, 242611, 242612, 242613 },
+			[2] = { ['chance'] = '±15%', 242720, 242721, 242724, 242727 },
+			[3] = { ['chance'] = '±20% (Prof)', 242608, 242712 },
+		},
+		['found'] = {
+			['chance'] = '±2.5%',
+			['node'] = { 237359, 237362, 237364 },
 		},
 	},
 };
@@ -3231,6 +3452,128 @@ table_prospecting = {
 		['skill'] = 1,
 		['items'] = {
 			[1] = { ['chance'] = '?% (Unknown)', 210936, 210939 },
+		},
+	},
+	
+	-- Midnight gems --
+	[242553] = { -- Sanguine Garnet *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±10%', 237359 },
+			[2] = { ['chance'] = '±15%', 237364 },
+		},
+	},
+	[242723] = { -- Sanguine Garnet *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±10%', 237361 },
+			[2] = { ['chance'] = '±15%', 237365 },
+		},
+	},
+	[242554] = { -- Amani Lapis *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±10%', 237359 },
+			[2] = { ['chance'] = '±15%', 237364 },
+		},
+	},
+	[242722] = { -- Amani Lapis *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±10%', 237361 },
+			[2] = { ['chance'] = '±15%', 237365 },
+		},
+	},
+	[242606] = { -- Tenebrous Amethyst *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±10%', 237359 },
+			[2] = { ['chance'] = '±15%', 237362 },
+		},
+	},
+	[242721] = { -- Tenebrous Amethyst *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±10%', 237361 },
+			[2] = { ['chance'] = '±15%', 237363 },
+		},
+	},
+	[242607] = { -- Harandar Peridot *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±10%', 237359 },
+			[2] = { ['chance'] = '±15%', 237362 },
+		},
+	},
+	[242720] = { -- Harandar Peridot *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±10%', 237361 },
+			[2] = { ['chance'] = '±15%', 237363 },
+		},
+	},
+	[242610] = { -- Flawless Harandar Peridot *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±15%', 237362, 237366 },
+		},
+	},
+	[242726] = { -- Flawless Harandar Peridot *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±10%', 237363, 237366 },
+		},
+	},
+	[242611] = { -- Flawless Tenebrous Amethyst *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±15%', 237362, 237366 },
+		},
+	},
+	[242725] = { -- Flawless Tenebrous Amethyst *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±15%', 237363, 237366 },
+		},
+	},
+	[242612] = { -- Flawless Amani Lapis *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±15%', 237364, 237366 },
+		},
+	},
+	[242727] = { -- Flawless Amani Lapis *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±15%', 237365, 237366 },
+		},
+	},
+	[242613] = { -- Flawless Sanguine Garnet *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±15%', 237364, 237366 },
+		},
+	},
+	[242724] = { -- Flawless Sanguine Garnet *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±15%', 237365, 237366 },
+		},
+	},
+	[242608] = { -- Eversong Diamond *1
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±2.5% (Prof)', 237359 },
+			[2] = { ['chance'] = '±5% (Prof)', 237362, 237364 },
+			[3] = { ['chance'] = '±20% (Prof)', 237366 },
+		},
+	},
+	[242712] = { -- Eversong Diamond *2
+		['skill'] = 1,
+		['items'] = {
+			[1] = { ['chance'] = '±2.5% (Prof)', 237361 },
+			[2] = { ['chance'] = '±5% (Prof)', 237363, 237365 },
+			[3] = { ['chance'] = '±20% (Prof)', 237366 },
 		},
 	},
 };
@@ -4471,6 +4814,23 @@ else
 					}
 				}
 			},
+			
+			-- Midnight results --
+			{
+				['expansion'] = 11,
+				['weapon'] = {
+					['items'] = {
+						[1] = { ['chance'] = '100%', 243599, 243600 },
+						[2] = { ['chance'] = '±35%', 243602, 243603 },
+					},
+				},
+				['armor'] = {
+					['items'] = {
+						[1] = { ['chance'] = '100%', 243599, 243600 },
+						[2] = { ['chance'] = '±35%', 243602, 243603 },
+					}
+				}
+			},
 		},
 		[3] = {
 			{
@@ -4644,6 +5004,23 @@ else
 					}
 				}
 			},
+			
+			-- Midnight results --
+			{
+				['expansion'] = 11,
+				['weapon'] = {
+					['items'] = {
+						[1] = { ['chance'] = '100%', 243602, 243603 },
+						[2] = { ['chance'] = '±30%', 243605, 243606 },
+					},
+				},
+				['armor'] = {
+					['items'] = {
+						[1] = { ['chance'] = '100%', 243602, 243603 },
+						[2] = { ['chance'] = '±30%', 243605, 243606 },
+					}
+				}
+			},
 		},
 		[4] = {
 			{
@@ -4814,6 +5191,23 @@ else
 					['items'] = {
 						[1] = { ['chance'] = '100%', 219952, 219954, 219955 },
 						[2] = { ['chance'] = '±30%', 219949, 219950, 219951 },
+					}
+				}
+			},
+			
+			-- Midnight results --
+			{
+				['expansion'] = 10,
+				['weapon'] = {
+					['items'] = {
+						[1] = { ['chance'] = '100%', 243605, 243606 },
+						[2] = { ['chance'] = '±30%', 243602, 243603 },
+					},
+				},
+				['armor'] = {
+					['items'] = {
+						[1] = { ['chance'] = '100%', 243605, 243606 },
+						[2] = { ['chance'] = '±30%', 243602, 243603 },
 					}
 				}
 			},
@@ -5165,6 +5559,42 @@ else
 			},
 		},
 		[219955] = { -- Refulgent Crystal *3
+			['text'] = {
+				[1] = { ['chance'] = '100%', ['quality'] = 4, ['type'] = { _G['ARMOR'], _G['WEAPON'] } },
+				[2] = { ['chance'] = '±30%', ['quality'] = 3, ['type'] = { _G['ARMOR'], _G['WEAPON'] } },
+			},
+		},
+		
+		-- Midnight materials --
+		[243599] = { -- Eversinging Dust *1
+			['text'] = {
+				[1] = { ['chance'] = '100%', ['quality'] = 2, ['type'] = { _G['ARMOR'], _G['WEAPON'] } },
+			},
+		},
+		[243600] = { -- Eversinging Dust *2
+			['text'] = {
+				[1] = { ['chance'] = '100%', ['quality'] = 2, ['type'] = { _G['ARMOR'], _G['WEAPON'] } },
+			},
+		},
+		[243602] = { -- Radiant Shard *1
+			['text'] = {
+				[1] = { ['chance'] = '100%', ['quality'] = 3, ['type'] = { _G['ARMOR'], _G['WEAPON'] } },
+				[2] = { ['chance'] = '±35%', ['quality'] = 2, ['type'] = { _G['ARMOR'], _G['WEAPON'] } },
+			},
+		},
+		[243603] = { -- Radiant Shard *2
+			['text'] = {
+				[1] = { ['chance'] = '100%', ['quality'] = 3, ['type'] = { _G['ARMOR'], _G['WEAPON'] } },
+				[2] = { ['chance'] = '±35%', ['quality'] = 2, ['type'] = { _G['ARMOR'], _G['WEAPON'] } },
+			},
+		},
+		[243605] = { -- Dawn Crystal *1
+			['text'] = {
+				[1] = { ['chance'] = '100%', ['quality'] = 4, ['type'] = { _G['ARMOR'], _G['WEAPON'] } },
+				[2] = { ['chance'] = '±30%', ['quality'] = 3, ['type'] = { _G['ARMOR'], _G['WEAPON'] } },
+			},
+		},
+		[243606] = { -- Dawn Crystal *2
 			['text'] = {
 				[1] = { ['chance'] = '100%', ['quality'] = 4, ['type'] = { _G['ARMOR'], _G['WEAPON'] } },
 				[2] = { ['chance'] = '±30%', ['quality'] = 3, ['type'] = { _G['ARMOR'], _G['WEAPON'] } },

@@ -162,7 +162,7 @@ table_mapID = {
 	},
 	['Eversong Woods'] = {
 		[1] = 1941,
-		[2] = 94
+		[2] = 2395
 	},
 	['Ghostlands'] = {
 		[1] = 1942,
@@ -519,5 +519,17 @@ table_mapID = {
 	['Azj-Kahet'] = {
 		[1] = nil,
 		[2] = 2255
+	},
+	['Zul\'Aman'] = {
+		[1] = nil,
+		[2] = 2437
+	},
+	['Harandar'] = {
+		[1] = nil,
+		[2] = 2413
+	},
+	['Voidstorm'] = {
+		[1] = nil,
+		[2] = 2405
 	}
 }

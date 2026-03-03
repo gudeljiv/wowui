@@ -41,16 +41,24 @@ GMMONEY = {
 },
 },
 ["Thunderstrike"] = {
+["Testvermin"] = {
+["GOLD"] = 14,
+["CLASS"] = "ROGUE",
+},
+["Handrmandr"] = {
+["GOLD"] = 532220,
+["CLASS"] = "HUNTER",
+},
+["Vermins"] = {
+["GOLD"] = 77741,
+["CLASS"] = "WARRIOR",
+},
 ["Dopeseal"] = {
-["GOLD"] = 2228408,
+["GOLD"] = 1523433,
 ["CLASS"] = "PALADIN",
 },
-["Pitchwise"] = {
-["GOLD"] = 7552,
-["CLASS"] = "SHAMAN",
-},
 ["Moolatz"] = {
-["GOLD"] = 155827,
+["GOLD"] = 205878,
 ["CLASS"] = "DRUID",
 },
 ["Dopecoil"] = {
@@ -58,20 +66,16 @@ GMMONEY = {
 ["CLASS"] = "WARLOCK",
 },
 ["Dopecure"] = {
-["GOLD"] = 214684,
+["GOLD"] = 240155,
 ["CLASS"] = "PRIEST",
 },
-["Testvermin"] = {
-["GOLD"] = 0,
+["Battitude"] = {
+["GOLD"] = 41,
 ["CLASS"] = "ROGUE",
 },
-["Handrmandr"] = {
-["GOLD"] = 34384,
-["CLASS"] = "HUNTER",
-},
-["Vermins"] = {
-["GOLD"] = 77741,
-["CLASS"] = "WARRIOR",
+["Pitchwise"] = {
+["GOLD"] = 7552,
+["CLASS"] = "SHAMAN",
 },
 },
 ["Living Flame"] = {
