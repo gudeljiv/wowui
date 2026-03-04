@@ -4613,7 +4613,7 @@ function Plater.OnInit() --private --~oninit ~init
 	hooksecurefunc(LibSharedMedia, 'Register', function(_, mediaType, key, data)
 		if not mediaType or type(mediaType) ~= 'string' then return end
 		if mediaType:lower() == 'font' then
-			Plater.UpdateBlizzardNameplateFonts(key)
+			Plater.UpdateBlizzardNameplateFonts(key, true)
 		end
 	end)
 	
@@ -8778,9 +8778,44 @@ end
 	end
 	
 	--Blizzard default font settings
-	function Plater.UpdateBlizzardNameplateFonts(updateFont)
+	function Plater.UpdateBlizzardNameplateFonts(updateFont, skipSmall)
 		local profile = Plater.db.profile
 		if profile.blizzard_nameplate_font_override_enabled and (updateFont == true or profile.blizzard_nameplate_font == updateFont or profile.blizzard_nameplate_large_font == updateFont)then
+			if IS_WOW_PROJECT_MIDNIGHT then
+				for _, plateFrame in ipairs (Plater.GetAllShownPlates()) do
+					DF:SetFontFace (plateFrame.UnitFrame.name, profile.blizzard_nameplate_font)
+					DF:SetFontOutline (plateFrame.UnitFrame.name, profile.blizzard_nameplate_font_outline)
+					DF:SetFontSize (plateFrame.UnitFrame.name, profile.blizzard_nameplate_font_size)
+				end
+
+				--set fonts once with smaller to update
+				if not skipSmall then
+					local font = LibSharedMedia:Fetch("font", profile.blizzard_nameplate_font, true)
+					DF:SetFontFace (_G.SystemFont_NamePlate, profile.blizzard_nameplate_font)
+					DF:SetFontOutline (_G.SystemFont_NamePlate, profile.blizzard_nameplate_font_outline)
+					DF:SetFontSize (_G.SystemFont_NamePlate, profile.blizzard_nameplate_font_size - 1)
+					
+					DF:SetFontFace (_G.SystemFont_NamePlateFixed, profile.blizzard_nameplate_font)
+					DF:SetFontOutline (_G.SystemFont_NamePlateFixed, profile.blizzard_nameplate_font_outline)
+					DF:SetFontSize (_G.SystemFont_NamePlateFixed, profile.blizzard_nameplate_font_size - 1)
+					
+					DF:SetFontFace (_G.SystemFont_LargeNamePlate, profile.blizzard_nameplate_large_font)
+					DF:SetFontOutline (_G.SystemFont_LargeNamePlate, profile.blizzard_nameplate_large_font_outline)
+					DF:SetFontSize (_G.SystemFont_LargeNamePlate, profile.blizzard_nameplate_large_font_size - 1)
+					
+					DF:SetFontFace (_G.SystemFont_LargeNamePlateFixed, profile.blizzard_nameplate_large_font)
+					DF:SetFontOutline (_G.SystemFont_LargeNamePlateFixed, profile.blizzard_nameplate_large_font_outline)
+					DF:SetFontSize (_G.SystemFont_LargeNamePlateFixed, profile.blizzard_nameplate_large_font_size - 1)
+
+					DF:SetFontFace (_G.SystemFont_NamePlate_Outlined, profile.blizzard_nameplate_font)
+					DF:SetFontOutline (_G.SystemFont_NamePlate_Outlined, profile.blizzard_nameplate_font_outline)
+					DF:SetFontSize (_G.SystemFont_NamePlate_Outlined, profile.blizzard_nameplate_font_size - 1)
+					
+					C_Timer.After(0.1, function() Plater.UpdateBlizzardNameplateFonts(true, true) end)
+					return
+				end
+			end
+
 			DF:SetFontFace (_G.SystemFont_NamePlate, profile.blizzard_nameplate_font)
 			DF:SetFontOutline (_G.SystemFont_NamePlate, profile.blizzard_nameplate_font_outline)
 			DF:SetFontSize (_G.SystemFont_NamePlate, profile.blizzard_nameplate_font_size)
@@ -8798,11 +8833,9 @@ end
 			DF:SetFontSize (_G.SystemFont_LargeNamePlateFixed, profile.blizzard_nameplate_large_font_size)
 
 			if IS_WOW_PROJECT_MIDNIGHT then
-				for _, plateFrame in ipairs (Plater.GetAllShownPlates()) do
-					DF:SetFontFace (plateFrame.UnitFrame.name, profile.blizzard_nameplate_font)
-					DF:SetFontOutline (plateFrame.UnitFrame.name, profile.blizzard_nameplate_font_outline)
-					DF:SetFontSize (plateFrame.UnitFrame.name, profile.blizzard_nameplate_font_size)
-				end
+				DF:SetFontFace (_G.SystemFont_NamePlate_Outlined, profile.blizzard_nameplate_font)
+				DF:SetFontOutline (_G.SystemFont_NamePlate_Outlined, profile.blizzard_nameplate_font_outline)
+				DF:SetFontSize (_G.SystemFont_NamePlate_Outlined, profile.blizzard_nameplate_font_size)
 			end
 		end
 	end

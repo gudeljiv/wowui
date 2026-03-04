@@ -46,10 +46,10 @@ ChocolateBarDB = {
 ["Judawise - Golemagg"] = "Default",
 ["Dopemend - Living Flame"] = "Default",
 ["Dopeclaw - Stitches"] = "Default",
-["Battledog - Gehennas"] = "Default",
+["Dopeseal - Thunderstrike"] = "Default",
 ["Dopestab - Lone Wolf"] = "Default",
 ["Dotwise - Golemagg"] = "Default",
-["Dopeseal - Thunderstrike"] = "Default",
+["Blooq - Genesis"] = "Default",
 ["Poklopac - Thunderstrike"] = "Default",
 ["Doperage - Living Flame"] = "Default",
 ["Testvermin - Thunderstrike"] = "Default",
@@ -77,23 +77,23 @@ ChocolateBarDB = {
 ["Antun - Golemagg"] = "Default",
 ["Provokator - Jin'do"] = "Default",
 ["Dopesnare - Stitches"] = "Default",
-["Moolatz - Dreadnaught"] = "Default",
-["Dopebolt - Lone Wolf"] = "Default",
 ["Battlenac - Celebras"] = "Default",
+["Dopebolt - Lone Wolf"] = "Default",
+["Whatevs - Stonespine"] = "Default",
 ["Jutarnjedrvo - Lone Wolf"] = "Default",
 ["Moolatz - Celebras"] = "Default",
 ["Tukac - Genesis"] = "Default",
 ["Pitchwise - Golemagg"] = "Default",
 ["Dopetrap - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
-["Mq - Celebras"] = "Default",
-["Pepecocorita - Genesis"] = "Default",
 ["Doperage - Thunderstrike"] = "Default",
+["Pepecocorita - Genesis"] = "Default",
+["Mxys - Golemagg"] = "Default",
 ["Battlearm - Gehennas"] = "Default",
 ["Vermins - Stitches"] = "Default",
-["Mxys - Golemagg"] = "Default",
+["Mq - Celebras"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
-["Whatevs - Stonespine"] = "Default",
+["Moolatz - Dreadnaught"] = "Default",
 ["Battitude - Thunderstrike"] = "Default",
 ["Tudum - Jin'do"] = "Default",
 ["Dopesick - Stitches"] = "Default",
@@ -108,7 +108,7 @@ ChocolateBarDB = {
 ["Battlearm - Jin'do"] = "Default",
 ["Dopedot - Lone Wolf"] = "Default",
 ["Dopeclaw - Thunderstrike"] = "Default",
-["Blooq - Genesis"] = "Default",
+["Battledog - Gehennas"] = "Default",
 ["Vermin - Zandalar Tribe"] = "Default",
 ["Testxv - Golemagg"] = "Default",
 ["Vermins - Thunderstrike"] = "Default",
@@ -353,6 +353,13 @@ ChocolateBarDB = {
 ["isNew"] = false,
 ["barName"] = "ChocolateBar1",
 },
+["BagnonLauncher"] = {
+["enabled"] = false,
+["align"] = "right",
+["isNew"] = false,
+["showText"] = false,
+["barName"] = "ChocolateBar1",
+},
 ["gmEquipSet"] = {
 ["index"] = 1,
 ["isNew"] = false,
@@ -377,13 +384,6 @@ ChocolateBarDB = {
 ["isNew"] = false,
 ["barName"] = "ChocolateBar1",
 },
-["BagnonLauncher"] = {
-["enabled"] = false,
-["align"] = "right",
-["isNew"] = false,
-["showText"] = false,
-["barName"] = "ChocolateBar1",
-},
 ["AskMrRobotClassic"] = {
 ["align"] = "right",
 ["isNew"] = false,
@@ -398,11 +398,6 @@ ChocolateBarDB = {
 ["isNew"] = false,
 ["barName"] = "ChocolateBar1",
 },
-["GPS"] = {
-["enabled"] = false,
-["isNew"] = false,
-["barName"] = "ChocolateBar1",
-},
 ["RangeDisplay"] = {
 ["enabled"] = false,
 ["align"] = "right",
@@ -410,9 +405,9 @@ ChocolateBarDB = {
 ["showText"] = false,
 ["barName"] = "ChocolateBar1",
 },
-["TestNoText"] = {
+["GPS"] = {
 ["enabled"] = false,
-["index"] = 4,
+["isNew"] = false,
 ["barName"] = "ChocolateBar1",
 },
 ["Friends"] = {
@@ -420,7 +415,19 @@ ChocolateBarDB = {
 ["isNew"] = false,
 ["barName"] = "ChocolateBar1",
 },
+["TestNoText"] = {
+["enabled"] = false,
+["index"] = 4,
+["barName"] = "ChocolateBar1",
+},
 ["Masque"] = {
+["enabled"] = false,
+["align"] = "right",
+["isNew"] = false,
+["showText"] = false,
+["barName"] = "ChocolateBar1",
+},
+["Leatrix_Maps"] = {
 ["enabled"] = false,
 ["align"] = "right",
 ["isNew"] = false,
@@ -436,12 +443,14 @@ ChocolateBarDB = {
 ["widthBehavior"] = "free",
 ["customLabel"] = "",
 },
-["Leatrix_Maps"] = {
-["enabled"] = false,
-["align"] = "right",
+["Buffet"] = {
+["index"] = 5,
 ["isNew"] = false,
+["showLabel"] = true,
+["showIcon"] = false,
+["barName"] = "ChocolateBar2",
 ["showText"] = false,
-["barName"] = "ChocolateBar1",
+["customLabel"] = "B",
 },
 ["TipTac"] = {
 ["index"] = 3,
@@ -452,18 +461,6 @@ ChocolateBarDB = {
 ["barName"] = "ChocolateBar1",
 ["showIcon"] = false,
 ["customLabel"] = "T",
-},
-["Buffet"] = {
-["index"] = 5,
-["isNew"] = false,
-["showLabel"] = true,
-["showIcon"] = false,
-["barName"] = "ChocolateBar2",
-["showText"] = false,
-["customLabel"] = "B",
-},
-["MusicVolume"] = {
-["enabled"] = false,
 },
 ["GDKPd"] = {
 ["enabled"] = false,
@@ -476,6 +473,9 @@ ChocolateBarDB = {
 ["showIcon"] = false,
 ["customLabel"] = "GD",
 },
+["MusicVolume"] = {
+["enabled"] = false,
+},
 ["TradeSkillMaster"] = {
 ["index"] = 3,
 ["isNew"] = false,
@@ -486,6 +486,13 @@ ChocolateBarDB = {
 ["disableTooltip"] = false,
 ["showText"] = false,
 ["customLabel"] = "TSM",
+},
+["BagSync"] = {
+["enabled"] = false,
+["align"] = "right",
+["isNew"] = false,
+["showText"] = false,
+["barName"] = "ChocolateBar1",
 },
 ["Guild"] = {
 ["enabled"] = false,
@@ -500,13 +507,6 @@ ChocolateBarDB = {
 ["barName"] = "ChocolateBar2",
 ["showIcon"] = false,
 ["customLabel"] = "OS",
-},
-["BagSync"] = {
-["enabled"] = false,
-["align"] = "right",
-["isNew"] = false,
-["showText"] = false,
-["barName"] = "ChocolateBar1",
 },
 ["LFGBulletinBoard"] = {
 ["enabled"] = false,
@@ -529,16 +529,6 @@ ChocolateBarDB = {
 ["showText"] = false,
 ["customLabel"] = "AL",
 },
-["DBM"] = {
-["enabled"] = false,
-["index"] = 1,
-["isNew"] = false,
-["showLabel"] = true,
-["showText"] = false,
-["barName"] = "ChocolateBar2",
-["showIcon"] = false,
-["customLabel"] = "DBM",
-},
 ["Plater"] = {
 ["enabled"] = false,
 ["index"] = 3,
@@ -549,14 +539,29 @@ ChocolateBarDB = {
 ["showIcon"] = false,
 ["customLabel"] = "P",
 },
-["Outfitter"] = {
-["barName"] = "ChocolateBar1",
+["DBM"] = {
+["enabled"] = false,
+["index"] = 1,
+["isNew"] = false,
+["showLabel"] = true,
+["showText"] = false,
+["barName"] = "ChocolateBar2",
+["showIcon"] = false,
+["customLabel"] = "DBM",
 },
 ["VuhDo"] = {
 ["enabled"] = false,
 ["align"] = "right",
 ["isNew"] = false,
 ["showText"] = false,
+["barName"] = "ChocolateBar1",
+},
+["Outfitter"] = {
+["barName"] = "ChocolateBar1",
+},
+["PlayedTime"] = {
+["enabled"] = false,
+["index"] = 6,
 ["barName"] = "ChocolateBar1",
 },
 ["Gold"] = {
@@ -637,10 +642,15 @@ ChocolateBarDB = {
 ["showText"] = false,
 ["barName"] = "ChocolateBar1",
 },
-["RatingBuster!"] = {
-["enabled"] = false,
+["AtlasLoot"] = {
+["index"] = 1,
+["align"] = "right",
 ["isNew"] = false,
+["showLabel"] = true,
+["showText"] = false,
 ["barName"] = "ChocolateBar1",
+["showIcon"] = false,
+["customLabel"] = "AL",
 },
 ["Track Everything"] = {
 ["enabled"] = false,
@@ -658,22 +668,6 @@ ChocolateBarDB = {
 ["isNew"] = false,
 ["barName"] = "ChocolateBar1",
 },
-["AtlasLoot"] = {
-["index"] = 1,
-["align"] = "right",
-["isNew"] = false,
-["showLabel"] = true,
-["showText"] = false,
-["barName"] = "ChocolateBar1",
-["showIcon"] = false,
-["customLabel"] = "AL",
-},
-["nMainbar"] = {
-["align"] = "right",
-["isNew"] = false,
-["showText"] = false,
-["barName"] = "ChocolateBar1",
-},
 ["|cff00fe00LootAppraiser Wrath|r"] = {
 ["enabled"] = false,
 ["index"] = 3,
@@ -682,6 +676,12 @@ ChocolateBarDB = {
 ["barName"] = "ChocolateBar2",
 ["showText"] = false,
 ["customLabel"] = "LA",
+},
+["nMainbar"] = {
+["align"] = "right",
+["isNew"] = false,
+["showText"] = false,
+["barName"] = "ChocolateBar1",
 },
 ["PoisonCharges"] = {
 ["enabled"] = false,
@@ -694,6 +694,13 @@ ChocolateBarDB = {
 ["showIcon"] = false,
 ["customLabel"] = "BIS",
 },
+["Details!"] = {
+["index"] = 3,
+["align"] = "center",
+["showText"] = false,
+["barName"] = "ChocolateBar1",
+["widthBehavior"] = "free",
+},
 ["Broker_KillTrack"] = {
 ["index"] = 2,
 ["showLabel"] = true,
@@ -702,21 +709,21 @@ ChocolateBarDB = {
 ["showText"] = false,
 ["customLabel"] = "KT",
 },
-["Details!"] = {
-["index"] = 3,
-["align"] = "center",
+["RareScannerLDB"] = {
+["enabled"] = false,
+["index"] = 2,
+["isNew"] = false,
 ["showText"] = false,
 ["barName"] = "ChocolateBar1",
-["widthBehavior"] = "free",
 },
 ["Dugi Guides Tracking"] = {
 ["enabled"] = false,
 ["isNew"] = false,
 ["barName"] = "ChocolateBar1",
 },
-["RareScannerLDB"] = {
+["MoreChocolate"] = {
 ["enabled"] = false,
-["index"] = 2,
+["align"] = "right",
 ["isNew"] = false,
 ["showText"] = false,
 ["barName"] = "ChocolateBar1",
@@ -725,11 +732,8 @@ ChocolateBarDB = {
 ["enabled"] = false,
 ["barName"] = "ChocolateBar1",
 },
-["MoreChocolate"] = {
-["enabled"] = false,
-["align"] = "right",
+["NPCScan"] = {
 ["isNew"] = false,
-["showText"] = false,
 ["barName"] = "ChocolateBar1",
 },
 ["BugSack"] = {
@@ -740,11 +744,6 @@ ChocolateBarDB = {
 ["barName"] = "ChocolateBar1",
 ["widthBehavior"] = "free",
 ["customLabel"] = "",
-},
-["gmSpecs"] = {
-["enabled"] = false,
-["isNew"] = false,
-["barName"] = "ChocolateBar1",
 },
 ["kRestack"] = {
 ["index"] = 3,
@@ -761,18 +760,14 @@ ChocolateBarDB = {
 ["showText"] = false,
 ["barName"] = "ChocolateBar1",
 },
-["CB_ItemLevel"] = {
+["gmSpecs"] = {
 ["enabled"] = false,
-["index"] = 5,
-["barName"] = "ChocolateBar1",
-},
-["NPCScan"] = {
 ["isNew"] = false,
 ["barName"] = "ChocolateBar1",
 },
-["CB_Entertainer"] = {
+["CB_ItemLevel"] = {
 ["enabled"] = false,
-["index"] = 2,
+["index"] = 5,
 ["barName"] = "ChocolateBar1",
 },
 ["Volume"] = {
@@ -783,6 +778,11 @@ ChocolateBarDB = {
 ["barName"] = "ChocolateBar2",
 ["showText"] = false,
 ["customLabel"] = "V",
+},
+["CB_Entertainer"] = {
+["enabled"] = false,
+["index"] = 2,
+["barName"] = "ChocolateBar1",
 },
 ["CB_PlayedTime"] = {
 ["enabled"] = false,
@@ -804,6 +804,11 @@ ChocolateBarDB = {
 ["showText"] = false,
 ["barName"] = "ChocolateBar1",
 },
+["RatingBuster!"] = {
+["enabled"] = false,
+["isNew"] = false,
+["barName"] = "ChocolateBar1",
+},
 ["TellMeWhen"] = {
 ["enabled"] = false,
 ["index"] = 2,
@@ -814,9 +819,10 @@ ChocolateBarDB = {
 ["showIcon"] = false,
 ["customLabel"] = "TMW",
 },
-["PlayedTime"] = {
-["enabled"] = false,
-["index"] = 6,
+["NAG"] = {
+["align"] = "right",
+["isNew"] = false,
+["showText"] = false,
 ["barName"] = "ChocolateBar1",
 },
 ["AdiBags"] = {

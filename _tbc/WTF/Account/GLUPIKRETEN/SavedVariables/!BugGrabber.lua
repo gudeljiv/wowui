@@ -1,26 +1,8 @@
 
 BugGrabberDB = {
-["session"] = 14304,
+["session"] = 14312,
 ["lastSanitation"] = 3,
 ["errors"] = {
-{
-["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:7 Unrecognized XML attribute: name",
-["time"] = "2026/01/02 18:23:19",
-["session"] = 13158,
-["counter"] = 7,
-},
-{
-["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:9 Unrecognized XML: Binding",
-["session"] = 13158,
-["time"] = "2026/01/02 18:16:52",
-["counter"] = 10,
-},
-{
-["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:9 Unrecognized XML attribute: name",
-["session"] = 13158,
-["time"] = "2026/01/02 18:16:52",
-["counter"] = 10,
-},
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:11 Unrecognized XML: Binding",
 ["time"] = "2026/01/02 18:23:19",
@@ -844,14 +826,6 @@ BugGrabberDB = {
 ["stack"] = "",
 ["session"] = 13309,
 ["counter"] = 9,
-},
-{
-["message"] = "Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
-["time"] = "2026/01/14 19:09:39",
-["locals"] = "self = <table> {\n friendNoItemsRC = <table> {\n }\n harmNoItemsRC = <table> {\n }\n frame = Frame {\n }\n miscRCInCombat = <table> {\n }\n friendRCInCombat = <table> {\n }\n MeleeRange = 2\n friendNoItemsRCInCombat = <table> {\n }\n checkerCache_Spell = <table> {\n }\n miscRC = <table> {\n }\n petRC = <table> {\n }\n checkerCache_Item = <table> {\n }\n friendRC = <table> {\n }\n harmRC = <table> {\n }\n petRCInCombat = <table> {\n }\n resRC = <table> {\n }\n harmRCInCombat = <table> {\n }\n resRCInCombat = <table> {\n }\n failedItemRequests = <table> {\n }\n CHECKERS_CHANGED = \"CHECKERS_CHANGED\"\n harmNoItemsRCInCombat = <table> {\n }\n}\nframe = Frame {\n}\nisEra = false\nisCata = false\nisRetail = false\nlastUpdate = 0\nUpdateDelay = 0.500000\n",
-["stack"] = "[Interface/AddOns/RangeDisplay/libs/LibRangeCheck-3.0-28/LibRangeCheck-3.0.lua]:4593: in function '?'\n[Interface/AddOns/RangeDisplay/libs/LibRangeCheck-3.0-28/LibRangeCheck-3.0.lua]:4658: in main chunk",
-["session"] = 13309,
-["counter"] = 32,
 },
 {
 ["message"] = "Interface/AddOns/nMainbar/modules/hotkey.lua:57: hooksecurefunc(): ActionButton_UpdateHotkeys is not a function",
@@ -3882,6 +3856,38 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:477: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:401: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:401>\n[C]: ?\n[C]: in function 'RegisterForClicks'\n[Interface/AddOns/ShadowedUnitFrames/modules/units.lua]:592: in function 'CreateUnit'\n[Interface/AddOns/ShadowedUnitFrames/modules/units.lua]:520: in function 'method'\n[Interface/AddOns/Blizzard_FrameXML/RestrictedFrames.lua]:791: in function <...erface/AddOns/Blizzard_FrameXML/RestrictedFrames.lua:783>\n[C]: ?\n[C]: ?\n[Interface/AddOns/Blizzard_FrameXML/RestrictedFrames.lua]:810: in function 'CallMethod'\n[	local header = self:GetParent()\n\n	self:SetHeight(header:GetAttribute(\"style-height\"))\n	self:SetWidth(header:GetAttribute(\"style-width\"))\n	self:SetScale(header:GetAttribute(\"style-scale\"))\n\n	self:SetAttribute(\"*type1\", \"target\")\n	self:SetAttribute(\"*type2\", \"togglemenu\")\n	self:SetAttribute(\"type2\", \"togglemenu\")\n\n	self:SetAttribute(\"isHeaderDriven\", true)\n\n	-- initialize frame\n	header:CallMethod(\"initialConfigFunction\", self:GetName())\n\n	-- Clique integration\n	local clickHeader = header:GetFrameRef(\"clickcast_header\")\n	if( clickHeader ) then\n		clickHeader:SetAttribute(\"clickcast_button\", self)\n		clickHeader:RunAttribute(\"clickcast_register\")\n	end\n]:14: in function <[string \"	local header = self:GetParent()...\"]:1>\n[tail call]: ?\n[C]: ?\n[Interface/AddOns/Blizzard_FrameXML/RestrictedExecution.lua]:483: in function <...ace/AddOns/Blizzard_FrameXML/RestrictedExecution.lua:446>\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:116: in function <...face/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua:110>\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:173: in function <...face/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua:130>\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:495: in function 'SecureGroupHeader_Update'\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:62: in function <...face/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua:60>\n",
 ["session"] = 14288,
 ["counter"] = 27,
+},
+{
+["message"] = "Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
+["time"] = "2026/03/04 22:50:15",
+["locals"] = "self = <table> {\n friendNoItemsRC = <table> {\n }\n harmNoItemsRC = <table> {\n }\n frame = Frame {\n }\n miscRCInCombat = <table> {\n }\n friendRCInCombat = <table> {\n }\n MeleeRange = 2\n friendNoItemsRCInCombat = <table> {\n }\n checkerCache_Spell = <table> {\n }\n miscRC = <table> {\n }\n petRC = <table> {\n }\n checkerCache_Item = <table> {\n }\n friendRC = <table> {\n }\n harmRC = <table> {\n }\n petRCInCombat = <table> {\n }\n resRC = <table> {\n }\n harmRCInCombat = <table> {\n }\n resRCInCombat = <table> {\n }\n failedItemRequests = <table> {\n }\n CHECKERS_CHANGED = \"CHECKERS_CHANGED\"\n harmNoItemsRCInCombat = <table> {\n }\n}\nframe = Frame {\n}\nisEra = false\nisCata = false\nisRetail = false\nlastUpdate = 0\nUpdateDelay = 0.500000\n",
+["stack"] = "[Interface/AddOns/NAG/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua]:1408: in function '?'\n[Interface/AddOns/NAG/Libs/LibRangeCheck-3.0/LibRangeCheck-3.0.lua]:1473: in main chunk\n",
+["session"] = 14310,
+["counter"] = 33,
+},
+{
+["message"] = "Interface/AddOns/NAG/Modules/DataLoader.lua:137: attempt to concatenate field 'gameType' (a nil value)",
+["time"] = "2026/03/04 22:50:15",
+["locals"] = "",
+["stack"] = "[tail call]: ?\n[Interface/AddOns/NAG/Modules/DataLoader.lua]:137: in function 'LoadVersionSpecificData'\n[Interface/AddOns/NAG/Modules/DataLoader.lua]:131: in function 'ModuleInitialize'\n[Interface/AddOns/NAG/Modules/ModuleBase.lua]:175: in function <Interface/AddOns/NAG/Modules/ModuleBase.lua:137>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua]:66: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:61>\n[Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua]:494: in function 'InitializeAddon'\n[Interface/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua]:619: in function <...ce/AddOns/AdiBags/libs/AceAddon-3.0/AceAddon-3.0.lua:611>\n",
+["session"] = 14310,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/NAG/NAG.lua:476: attempt to concatenate field 'gameType' (a nil value)",
+["time"] = "2026/03/04 22:50:28",
+["locals"] = "self = <table> {\n defaults = <table> {\n }\n modules = <table> {\n }\n defaultModulePrototype = <table> {\n }\n sequencePosition = <table> {\n }\n Throttle = <table> {\n }\n optionsFrame = Frame {\n }\n waitInProgress = false\n strictSequencePosition = <table> {\n }\n X = false\n lastEclipsePhase = \"NeutralPhase\"\n defaultModuleState = true\n KM = <table> {\n }\n strictSequenceSpells = <table> {\n }\n options = <table> {\n }\n RM = <table> {\n }\n secondarySpells = <table> {\n }\n TTD = <table> {\n }\n lastSpecID = 361\n state = <table> {\n }\n Timer = <table> {\n }\n PT = <table> {\n }\n RBM = <table> {\n }\n BTM = <table> {\n }\n DebugManager = <table> {\n }\n SpellTracker = <table> {\n }\n State = <table> {\n }\n debugMenuFrame = NAGDebugMenuFrame {\n }\n db = <table> {\n }\n baseName = \"NAG\"\n Version = <table> {\n }\n migrations = <table> {\n }\n trinketFunctionsUsed = false\n spellss = <table> {\n }\n activeSequences = <table> {\n }\n isSequenceActive = false\n Frame = NAGParentFrame {\n }\n CLASS = \"HUNTER\"\n Trinket = <table> {\n }\n isPooling = false\n GUID = \"Player-6409-04889BA2\"\n SPECID = 361\n waitUntilTime = 0\n defaultModuleLibraries = <table> {\n }\n name = \"NAG\"\n sequenceSpells = <table> {\n }\n orderedModules = <table> {\n }\n Types = <table> {\n }\n enabledState = true\n}\nversion = 40101\nversionStr = \"4.1.1\"\nmoduleOptions = <table> {\n acknowledgements = <table> {\n }\n general = <table> {\n }\n features = <table> {\n }\n display = <table> {\n }\n class = <table> {\n }\n debug = <table> {\n }\n reset = <table> {\n }\n}\n(*temporary) = <table> {\n type = \"group\"\n}\n(*temporary) = \"Next Action Guide \"\n(*temporary) = \"4.1.1\"\n(*temporary) = \" (\"\n(*temporary) = nil\n(*temporary) = \")\"\n(*temporary) = <table> {\n expansion = \"tbc\"\n isRetail = false\n date = \"Feb 25 2026\"\n isWrath = false\n interfaceVersion = 20505\n version = \"2.5.5\"\n isCata = false\n isClassicEra = false\n isClassicEraSoD = false\n build = \"66150\"\n}\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to concatenate field 'gameType' (a nil value)\"\nns = <table> {\n EXPERIMENTAL_FEATURES = false\n OverlayManager = <table> {\n }\n COLORS = <table> {\n }\n KeybindManager = <table> {\n }\n ThrottleManager = <table> {\n }\n MODULE_TYPES = <table> {\n }\n DEBUG_LEVELS = <table> {\n }\n DataLoader = <table> {\n }\n eating = false\n AtlasInfo = <table> {\n }\n Types = <table> {\n }\n TrinketTracker = <table> {\n }\n APLEditor = <table> {\n }\n APLMonitor = <table> {\n }\n EventDebugger = <table> {\n }\n Version = <table> {\n }\n CLEUDebugger = <table> {\n }\n EntityBehaviorTester = <table> {\n }\n BurstTrackerManager = <table> {\n }\n RotationManager = <table> {\n }\n MODULE_CATEGORIES = <table> {\n }\n Data = <table> {\n }\n DebugManager = <table> {\n }\n TimerManager = <table> {\n }\n messages = <table> {\n }\n ProfilingUtility = <table> {\n }\n msgSentTime = 296752.943000\n msgSent = false\n capitals = <table> {\n }\n GlowManager = <table> {\n }\n EncounterStopwatch = <table> {\n }\n NCAV = \"9.8.39\"\n EntityBehaviors = <table> {\n }\n SpellTracker = <table> {\n }\n BTK = <table> {\n }\n ResourceBarManager = <table> {\n }\n PullTimerManager = <table> {\n }\n TTDManager = <table> {\n }\n StateManager = <table> {\n }\n framedBorders = <table> {\n }\n DataManager = <table> {\n }\n pf = false\n ImportExport = <table> {\n }\n}\nAceConfigRegistry = <table> {\n validated = <table> {\n }\n tables = <table> {\n }\n callbacks = <table> {\n }\n}\n",
+["stack"] = "[Interface/AddOns/NAG/NAG.lua]:476: in function <Interface/AddOns/NAG/NAG.lua:449>\n[tail call]: ?\n[Interface/AddOns/ChocolateBar/libs/AceConfig-3.0/AceConfigRegistry-3.0/AceConfigRegistry-3.0.lua]:335: in function 'app'\n[Interface/AddOns/ChocolateBar/libs/AceConfig-3.0/AceConfigDialog-3.0/AceConfigDialog-3.0.lua]:1865: in function 'Open'\n[Interface/AddOns/NAG/NAG.lua]:309: in function 'OnClick'\n[Interface/AddOns/DBM-Core/Libs/LibDBIcon-1.0/LibDBIcon-1.0.lua]:179: in function <...AddOns/DBM-Core/Libs/LibDBIcon-1.0/LibDBIcon-1.0.lua:177>\n",
+["session"] = 14310,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/NAG/Modules/StateManager.lua:954: attempt to call field 'HUNTER_UpdateStablePets' (a nil value)",
+["time"] = "2026/03/04 22:51:51",
+["locals"] = "self = <table> {\n modules = <table> {\n }\n defaultState = <table> {\n }\n debug = false\n state = <table> {\n }\n defaultModuleState = true\n enabledState = true\n optionsOrder = 20\n baseName = \"NAG\"\n defaultModuleLibraries = <table> {\n }\n eventHandlers = <table> {\n }\n name = \"NAG_StateManager\"\n childGroups = \"tree\"\n orderedModules = <table> {\n }\n optionsCategory = \"general\"\n moduleType = \"core\"\n moduleName = \"StateManager\"\n}\n_ = \"UNIT_PET\"\nunit = \"player\"\n(*temporary) = nil\n(*temporary) = \"attempt to call field 'HUNTER_UpdateStablePets' (a nil value)\"\nNAG = <table> {\n defaults = <table> {\n }\n modules = <table> {\n }\n defaultModulePrototype = <table> {\n }\n sequencePosition = <table> {\n }\n Throttle = <table> {\n }\n optionsFrame = Frame {\n }\n waitInProgress = false\n strictSequencePosition = <table> {\n }\n X = false\n lastEclipsePhase = \"NeutralPhase\"\n defaultModuleState = true\n KM = <table> {\n }\n strictSequenceSpells = <table> {\n }\n options = <table> {\n }\n RM = <table> {\n }\n secondarySpells = <table> {\n }\n TTD = <table> {\n }\n lastSpecID = 361\n state = <table> {\n }\n Timer = <table> {\n }\n PT = <table> {\n }\n RBM = <table> {\n }\n BTM = <table> {\n }\n DebugManager = <table> {\n }\n SpellTracker = <table> {\n }\n State = <table> {\n }\n debugMenuFrame = NAGDebugMenuFrame {\n }\n db = <table> {\n }\n baseName = \"NAG\"\n Version = <table> {\n }\n migrations = <table> {\n }\n trinketFunctionsUsed = false\n spellss = <table> {\n }\n activeSequences = <table> {\n }\n isSequenceActive = false\n Frame = NAGParentFrame {\n }\n CLASS = \"HUNTER\"\n Trinket = <table> {\n }\n isPooling = false\n GUID = \"Player-6409-04889BA2\"\n SPECID = 361\n waitUntilTime = 0\n defaultModuleLibraries = <table> {\n }\n name = \"NAG\"\n sequenceSpells = <table> {\n }\n orderedModules = <table> {\n }\n Types = <table> {\n }\n enabledState = true\n}\nns = <table> {\n EXPERIMENTAL_FEATURES = false\n OverlayManager = <table> {\n }\n COLORS = <table> {\n }\n KeybindManager = <table> {\n }\n ThrottleManager = <table> {\n }\n MODULE_TYPES = <table> {\n }\n DEBUG_LEVELS = <table> {\n }\n DataLoader = <table> {\n }\n eating = false\n AtlasInfo = <table> {\n }\n Types = <table> {\n }\n TrinketTracker = <table> {\n }\n APLEditor = <table> {\n }\n APLMonitor = <table> {\n }\n EventDebugger = <table> {\n }\n Version = <table> {\n }\n CLEUDebugger = <table> {\n }\n EntityBehaviorTester = <table> {\n }\n BurstTrackerManager = <table> {\n }\n RotationManager = <table> {\n }\n MODULE_CATEGORIES = <table> {\n }\n Data = <table> {\n }\n DebugManager = <table> {\n }\n TimerManager = <table> {\n }\n messages = <table> {\n }\n ProfilingUtility = <table> {\n }\n msgSentTime = 296752.943000\n msgSent = false\n capitals = <table> {\n }\n GlowManager = <table> {\n }\n EncounterStopwatch = <table> {\n }\n NCAV = \"9.8.39\"\n EntityBehaviors = <table> {\n }\n SpellTracker = <table> {\n }\n BTK = <table> {\n }\n ResourceBarManager = <table> {\n }\n PullTimerManager = <table> {\n }\n TTDManager = <table> {\n }\n StateManager = <table> {\n }\n framedBorders = <table> {\n }\n DataManager = <table> {\n }\n pf = false\n ImportExport = <table> {\n }\n}\nDataManager = <table> {\n modules = <table> {\n }\n EntityTypes = <table> {\n }\n debug = false\n state = <table> {\n }\n defaultModuleState = true\n enabledState = true\n optionsOrder = 100\n defaultModuleLibraries = <table> {\n }\n baseName = \"NAG\"\n eventHandlers = <table> {\n }\n name = \"NAG_DataManager\"\n childGroups = \"tree\"\n orderedModules = <table> {\n }\n storage = <table> {\n }\n SpellPosition = <table> {\n }\n optionsCategory = \"debug\"\n moduleType = \"core\"\n messageHandlers = <table> {\n }\n moduleName = \"DataManager\"\n}\n",
+["stack"] = "[Interface/AddOns/NAG/Modules/StateManager.lua]:954: in function '?'\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua]:54: in function 'Fire'\n[Interface/AddOns/ChocolateBar/libs/AceEvent-3.0/AceEvent-3.0.lua]:120: in function <...dOns/ChocolateBar/libs/AceEvent-3.0/AceEvent-3.0.lua:119>\n",
+["session"] = 14310,
+["counter"] = 6,
 },
 },
 }

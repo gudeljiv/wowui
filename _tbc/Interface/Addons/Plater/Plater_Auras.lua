@@ -1346,8 +1346,8 @@ end
 	--if the icon is more of a retangular shape, it'll cut the top and bottom sides of the icon giving a wide view
 	function Plater.UpdateIconAspecRatio (auraIconFrame)
 		local width, height = auraIconFrame:GetSize()
-		local ratio = width > height and min (max (abs (width / height - 2) + 0.05, 0.6), 1) or .95
-		auraIconFrame.Icon:SetTexCoord (.05, .95, .09, ratio)
+		local ratio = width > height and min (max (abs (width / height - 2) + 0.08, 0.6), 1) or .92
+		auraIconFrame.Icon:SetTexCoord (.08, .92, .08, ratio)
 	end
 
 	function platerInternal.CreateAuraIcon (parent, name) --private ~createicon ~icon
@@ -2826,6 +2826,9 @@ end
 						Plater.AddExtraIcon (self, name, icon, applications, dispelName, duration, expirationTime, sourceUnit, isStealable, nameplateShowPersonal, spellId, true, "HELPFUL", id, timeMod)
 					elseif Plater.db.profile.extra_icon_show_defensive and (self.unitFrame.ActorType == "enemyplayer" or self.unitFrame.ActorType == "friendlyplayer") and (not C_UnitAuras.IsAuraFilteredOutByInstanceID(unit, aura.auraInstanceID, "HELPFUL|BIG_DEFENSIVE") or not C_UnitAuras.IsAuraFilteredOutByInstanceID(unit, aura.auraInstanceID, "HELPFUL|EXTERNAL_DEFENSIVE")) then
 						Plater.AddExtraIcon (self, name, icon, applications, dispelName, duration, expirationTime, sourceUnit, isStealable, nameplateShowPersonal, spellId, true, "HELPFUL", id, timeMod)
+					elseif Plater.db.profile.aura_show_defensive_cd and (self.unitFrame.ActorType == "enemyplayer" or self.unitFrame.ActorType == "friendlyplayer") and (not C_UnitAuras.IsAuraFilteredOutByInstanceID(unit, aura.auraInstanceID, "HELPFUL|BIG_DEFENSIVE") or not C_UnitAuras.IsAuraFilteredOutByInstanceID(unit, aura.auraInstanceID, "HELPFUL|EXTERNAL_DEFENSIVE")) then
+						local auraIconFrame, buffFrame = Plater.GetAuraIcon (self, true)
+						Plater.AddAura (buffFrame, auraIconFrame, id, name, icon, applications, auraType, duration, expirationTime, sourceUnit, isFromPlayerOrPlayerPet, isStealable, nameplateShowPersonal, spellId, true, nil, nil, nil, dispelName, timeMod)
 					elseif DB_AURA_SHOW_BUFFS_AS_BLIZZARD and blizzardBuffs[id] then
 						local auraIconFrame, buffFrame = Plater.GetAuraIcon (self, true)
 						Plater.AddAura (buffFrame, auraIconFrame, id, name, icon, applications, auraType, duration, expirationTime, sourceUnit, isFromPlayerOrPlayerPet, isStealable, nameplateShowPersonal, spellId, true, nil, nil, nil, dispelName, timeMod)

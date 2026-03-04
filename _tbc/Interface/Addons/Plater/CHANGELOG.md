@@ -1,7 +1,6 @@
-@Terciob:
-- Additions and fixes for the Designer.
-
 @cont1nuity:
+- Fixing font override options not working correctly.
+- Hiding unneeded or disabled options.
 - Hiding Friendly NPCs healthbars works in dungeons now.
 - Blizard font override is working now.
 - Fixing an issue with now secret soft-interact information.
@@ -12,4 +11,7 @@
 - Adding option for 'Empowered' cast color.
 - The 'Only Damaged' option for friendly players is no longer available in Midnight.
 - Fixing Midnight CC aura tracking filter option.
+
+@Terciob:
+- Additions and fixes for the Designer.
 
