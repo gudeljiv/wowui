@@ -3,7 +3,7 @@
 ## Title: Leatrix Maps
 ## Notes: curseforge.com/wow/addons/leatrix-maps
 
-## Version: 2.5.10
+## Version: 2.5.11
 ## Author: Leatrix
 ## SavedVariables: LeaMapsDB
 ## LoadSavedVariablesFirst: true

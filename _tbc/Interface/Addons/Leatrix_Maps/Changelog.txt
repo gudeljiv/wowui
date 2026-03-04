@@ -1,4 +1,7 @@
-﻿2.5.10 - 25th February 2026
+﻿2.5.11 - 4th March 2026
+- Updated LibDBIcon library.
+
+2.5.10 - 25th February 2026
 - CurseForge website is now tagging BCC releases correctly.
 
 2.5.07 - 18th February 2026

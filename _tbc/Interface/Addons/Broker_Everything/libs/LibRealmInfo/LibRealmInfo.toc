@@ -1,0 +1,40 @@
+## Interface: 120001, 50503, 38000, 20505, 11508
+## Title: Lib: Realm Info
+## Notes: Library to provide information about realms.
+## Notes-deDE: Bibliothek, um Informationen über Realms zu liefern.
+## Notes-esES: Biblioteca para proporcionar información sobre reinos.
+## Notes-esMX: Biblioteca para proporcionar información sobre reinos.
+## IconTexture: 986485
+## Version: r32
+
+## Category-enUS: Libraries
+## Category-deDE: Bibliotheken
+## Category-esES: Bibliotecas
+## Category-esMX: Bibliotecas
+## Category-frFR: Bibliothèques
+## Category-itIT: Biblioteche
+## Category-koKR: 도서관
+## Category-ptBR: Bibliotecas
+## Category-ruRU: Библиотеки
+## Category-zhCN: 函数库
+## Category-zhTW: 函式庫
+
+## Former-Author-1: Phanx
+## X-Website-1: https://github.com/phanx-wow/LibRealmInfo
+
+## Former-Author-2: janekjl
+## X-Email-2: 4iamking@gmail.com
+## X-Website-2: https://github.com/janekjl/LibRealmInfo
+
+## Author: Hizuro
+## X-Email: hizuro@gmx.net
+## X-Website: https://github.com/HizurosWoWAddOns/LibRealmInfo
+
+## X-License: Zlib
+## X-Curse-Project-ID: 8#3224
+## X-WoWI-ID: 2#2987
+
+## OptionalDeps: LibStub
+LibStub\LibStub.lua
+
+LibRealmInfo.lua

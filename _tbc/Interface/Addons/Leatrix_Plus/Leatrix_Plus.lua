@@ -1,5 +1,5 @@
 ﻿----------------------------------------------------------------------
--- 	Leatrix Plus 2.5.10 (25th February 2026)
+-- 	Leatrix Plus 2.5.11 (4th March 2026)
 ----------------------------------------------------------------------
 
 --	01:Functions 02:Locks   03:Restart 40:Player   45:Rest
@@ -19,7 +19,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "2.5.10"
+	LeaPlusLC["AddonVer"] = "2.5.11"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -3658,12 +3658,11 @@
 			easyDelFrame:SetScript("OnEvent", function()
 				if StaticPopup1EditBox:IsShown() then
 					-- Item requires player to type delete so hide editbox and show link
-					StaticPopup1:SetHeight(StaticPopup1:GetHeight() - 10)
 					StaticPopup1EditBox:Hide()
 					StaticPopup1Button1:Enable()
 					local link = select(3, GetCursorInfo())
 					if link then
-						StaticPopup1Text:SetText(gsub(StaticPopup1Text:GetText(), gsub(TypeDeleteLine, "@", ""), "") .. "|n" .. link)
+						StaticPopup1Text:SetText(gsub(StaticPopup1Text:GetText(), gsub(TypeDeleteLine, "@", ""), "") .. link)
 					end
 				else
 					-- Item does not require player to type delete so just show item link
@@ -3672,7 +3671,7 @@
 					StaticPopup1Button1:Enable()
 					local link = select(3, GetCursorInfo())
 					if link then
-						StaticPopup1Text:SetText(gsub(StaticPopup1Text:GetText(), gsub(TypeDeleteLine, "@", ""), "") .. "|n|n" .. link)
+						StaticPopup1Text:SetText(gsub(StaticPopup1Text:GetText(), gsub(TypeDeleteLine, "@", ""), "") .. "|n|n" .. link .. "|n|n")
 					end
 				end
 			end)

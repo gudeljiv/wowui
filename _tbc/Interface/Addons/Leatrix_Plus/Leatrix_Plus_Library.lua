@@ -2,16 +2,16 @@
 -- L00: Leatrix Plus Library for Burning Crusade Anniversary
 ----------------------------------------------------------------------
 
--- LibDBIcon 10.0.1:
+-- LibDBIcon 12.0.0:
 -- 11: LibStub: (?s)-- LibStubStart\R?\K.*?(?=-- LibStubEnd)
 -- 12: LibCallbackHandler: (?s)-- CallbackStart\R?\K.*?(?=-- CallbackEnd)
 -- 13: LibDataBroker: (?s)-- DataBrokerStart\R?\K.*?(?=-- DataBrokerEnd)
 -- 14: LibDBIcon: (?s)-- LibDBIconStart\R?\K.*?(?=-- LibDBIconEnd)
 
--- LibChatAnims 10.0.1:
+-- LibChatAnims 12.0.0:
 -- 15: LibChatAnims: (?s)-- LibChatAnimsStart\R?\K.*?(?=-- LibChatAnimsEnd)
 
--- LibCandyBar 10.0.1:
+-- LibCandyBar 12.0.1:
 -- 16: LibCandyBar: (?s)-- LibCandyBarStart\R?\K.*?(?=-- LibCandyBarEnd)
 
 local void, Leatrix_Plus = ...
@@ -410,7 +410,7 @@ local function LeaLibDBIcon()
 --
 
 local DBICON10 = "LibDBIcon-1.0"
-local DBICON10_MINOR = 51 -- Bump on changes
+local DBICON10_MINOR = 56 -- Bump on changes
 if not LibStub then error(DBICON10 .. " requires LibStub.") end
 local ldb = LibStub("LibDataBroker-1.1", true)
 if not ldb then error(DBICON10 .. " requires LibDataBroker-1.1.") end
@@ -429,6 +429,15 @@ function lib:IconCallback(event, name, key, value)
 	if lib.objects[name] then
 		if key == "icon" then
 			lib.objects[name].icon:SetTexture(value)
+			if lib:IsButtonInCompartment(name) and lib:IsButtonCompartmentAvailable() then
+				local addonList = AddonCompartmentFrame.registeredAddons
+				for i =1, #addonList do
+					if addonList[i].text == name then
+						addonList[i].icon = value
+						return
+					end
+				end
+			end
 		elseif key == "iconCoords" then
 			lib.objects[name].icon:UpdateCoord()
 		elseif key == "iconR" then
@@ -498,8 +507,8 @@ local function onLeave(self)
 	end
 end
 
-local function onEnterCompartment(self)
-	local buttonName = self.value
+local function onEnterCompartment(self, menu)
+	local buttonName = menu.text
 	local object = lib.objects[buttonName]
 	if object and object.dataObject then
 		if object.dataObject.OnTooltipShow then
@@ -513,10 +522,10 @@ local function onEnterCompartment(self)
 	end
 end
 
-local function onLeaveCompartment(self)
+local function onLeaveCompartment(self, menu)
 	lib.tooltip:Hide()
 
-	local buttonName = self.value
+	local buttonName = menu.text
 	local object = lib.objects[buttonName]
 	if object and object.dataObject then
 		if object.dataObject.OnLeave then
@@ -647,51 +656,35 @@ local function createButton(name, object, db, customCompartmentIcon)
 	local button = CreateFrame("Button", "LibDBIcon10_"..name, Minimap)
 	button.dataObject = object
 	button.db = db
+	lib.objects[name] = button
+
 	button:SetFrameStrata("MEDIUM")
 	button:SetFixedFrameStrata(true)
 	button:SetFrameLevel(8)
 	button:SetFixedFrameLevel(true)
-	button:SetSize(31, 31)
 	button:RegisterForClicks("anyUp")
 	button:RegisterForDrag("LeftButton")
-	button:SetHighlightTexture(136477) --"Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight"
-	if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
-		local overlay = button:CreateTexture(nil, "OVERLAY")
-		overlay:SetSize(50, 50)
-		overlay:SetTexture(136430) --"Interface\\Minimap\\MiniMap-TrackingBorder"
-		overlay:SetPoint("TOPLEFT", button, "TOPLEFT", 0, 0)
-		local background = button:CreateTexture(nil, "BACKGROUND")
-		background:SetSize(24, 24)
-		background:SetTexture(136467) --"Interface\\Minimap\\UI-Minimap-Background"
-		background:SetPoint("CENTER", button, "CENTER", 0, 1)
-		local icon = button:CreateTexture(nil, "ARTWORK")
-		icon:SetSize(18, 18)
-		icon:SetTexture(object.icon)
-		icon:SetPoint("CENTER", button, "CENTER", 0, 1)
-		button.icon = icon
-	else
-		local overlay = button:CreateTexture(nil, "OVERLAY")
-		overlay:SetSize(53, 53)
-		overlay:SetTexture(136430) --"Interface\\Minimap\\MiniMap-TrackingBorder"
-		overlay:SetPoint("TOPLEFT")
-		local background = button:CreateTexture(nil, "BACKGROUND")
-		background:SetSize(20, 20)
-		background:SetTexture(136467) --"Interface\\Minimap\\UI-Minimap-Background"
-		background:SetPoint("TOPLEFT", 7, -5)
-		local icon = button:CreateTexture(nil, "ARTWORK")
-		icon:SetSize(17, 17)
-		icon:SetTexture(object.icon)
-		icon:SetPoint("TOPLEFT", 7, -6)
-		button.icon = icon
-	end
+	lib:ResetButtonHighlightTexture(name)
+	lib:ResetButtonSize(name)
+
+	local border = button:CreateTexture(nil, "OVERLAY")
+	button.border = border
+	lib:ResetButtonBorder(name)
+
+	local background = button:CreateTexture(nil, "BACKGROUND")
+	button.background = background
+	lib:ResetButtonBackground(name)
+
+	local icon = button:CreateTexture(nil, "ARTWORK")
+	icon:SetTexture(object.icon)
+	local r, g, b = icon:GetVertexColor()
+	icon:SetVertexColor(object.iconR or r, object.iconG or g, object.iconB or b)
+	icon.UpdateCoord = updateCoord
+	icon:UpdateCoord()
+	button.icon = icon
+	lib:ResetButtonIcon(name)
 
 	button.isMouseDown = false
-	local r, g, b = button.icon:GetVertexColor()
-	button.icon:SetVertexColor(object.iconR or r, object.iconG or g, object.iconB or b)
-
-	button.icon.UpdateCoord = updateCoord
-	button.icon:UpdateCoord()
-
 	button:SetScript("OnEnter", onEnter)
 	button:SetScript("OnLeave", onLeave)
 	button:SetScript("OnClick", onClick)
@@ -710,8 +703,6 @@ local function createButton(name, object, db, customCompartmentIcon)
 	animOut:SetToAlpha(0)
 	animOut:SetStartDelay(1)
 	button.fadeOut:SetToFinalAlpha(true)
-
-	lib.objects[name] = button
 
 	if lib.loggedIn then
 		updatePosition(button, db and db.minimapPos)
@@ -882,6 +873,153 @@ function lib:SetButtonToPosition(button, position)
 	updatePosition(lib.objects[button] or button, position)
 end
 
+-- Button Configuration
+function lib:SetButtonSize(name, size)
+	local button = lib:GetMinimapButton(name)
+	if button and type(size) == "number" then
+		button:SetSize(size, size)
+	end
+end
+
+function lib:ResetButtonSize(name)
+	local button = lib:GetMinimapButton(name)
+	if button then
+		button:SetSize(31, 31)
+	end
+end
+
+function lib:SetButtonHighlightTexture(name, highlightTexture)
+	local button = lib:GetMinimapButton(name)
+	if button and (type(highlightTexture) == "number" or type(highlightTexture) == "string") then
+		button:SetHighlightTexture(highlightTexture)
+	end
+end
+
+function lib:ResetButtonHighlightTexture(name)
+	local button = lib:GetMinimapButton(name)
+	if button then
+		button:SetHighlightTexture(136477) --"Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight"
+	end
+end
+
+-- Border configuration
+function lib:RemoveButtonBorder(name)
+	local button = lib:GetMinimapButton(name)
+	if button.border then
+		button.border:Hide()
+	end
+end
+
+function lib:SetButtonBorder(name, borderTexture, size, framePoint, offsetX, offsetY)
+	local button = lib:GetMinimapButton(name)
+	if button.border then
+		lib:ResetButtonBorder(name)
+		if type(borderTexture) == "number" or type(borderTexture) == "string" then
+			button.border:SetTexture(borderTexture)
+		end
+		if type(size) == "number" then
+			button.border:SetSize(size, size)
+		end
+		if type(framePoint) == "string" then
+			button.border:ClearAllPoints()
+			button.border:SetPoint(framePoint, type(offsetX) == "number" and offsetX or 0, type(offsetY) == "number" and offsetY or 0)
+		end
+	end
+end
+
+function lib:ResetButtonBorder(name)
+	local button = lib:GetMinimapButton(name)
+	if button.border then
+		button.border:Show()
+		button.border:ClearAllPoints()
+		button.border:SetPoint("TOPLEFT", 0, 0)
+		button.border:SetTexture(136430) --"Interface\\Minimap\\MiniMap-TrackingBorder"
+		if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
+			button.border:SetSize(50, 50)
+		else
+			button.border:SetSize(53, 53)
+		end
+	end
+end
+
+-- Background configuration
+function lib:RemoveButtonBackground(name)
+	local button = lib:GetMinimapButton(name)
+	if button.background then
+		button.background:Hide()
+	end
+end
+
+function lib:SetButtonBackground(name, backgroundTexture, size, framePoint, offsetX, offsetY)
+	local button = lib:GetMinimapButton(name)
+	if button.background then
+		lib:ResetButtonBackground(name)
+		if type(backgroundTexture) == "number" or type(backgroundTexture) == "string" then
+			button.background:SetTexture(backgroundTexture)
+		end
+		if type(size) == "number" then
+			button.background:SetSize(size, size)
+		end
+		if type(framePoint) == "string" then
+			button.background:ClearAllPoints()
+			button.background:SetPoint(framePoint, type(offsetX) == "number" and offsetX or 0, type(offsetY) == "number" and offsetY or 0)
+		end
+	end
+end
+
+function lib:ResetButtonBackground(name)
+	local button = lib:GetMinimapButton(name)
+	if button.background then
+		button.background:Show()
+		button.background:ClearAllPoints()
+		button.background:SetTexture(136467) --"Interface\\Minimap\\UI-Minimap-Background"
+		if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
+			button.background:SetSize(24, 24)
+			button.background:SetPoint("CENTER", 0, 0)
+		else
+			button.background:SetSize(20, 20)
+			button.background:SetPoint("TOPLEFT", 7, -5)
+		end
+	end
+end
+
+-- Icon Configuration
+function lib:SetButtonIcon(name, iconTexture, size, framePoint, offsetX, offsetY)
+	local button = lib:GetMinimapButton(name)
+	if button.icon then
+		lib:ResetButtonIcon(name)
+		if type(iconTexture) == "number" or type(iconTexture) == "string" then
+			button.icon:SetTexture(iconTexture)
+		end
+		if type(size) == "number" then
+			button.icon:SetSize(size, size)
+		end
+		if type(framePoint) == "string" then
+			button.icon:ClearAllPoints()
+			button.icon:SetPoint(framePoint, type(offsetX) == "number" and offsetX or 0, type(offsetY) == "number" and offsetY or 0)
+		end
+	end
+end
+
+function lib:ResetButtonIcon(name)
+	local button = lib:GetMinimapButton(name)
+	if button.icon then
+		button.icon:SetTexture(button.dataObject.icon)
+		button.icon:UpdateCoord()
+		local r, g, b = button.icon:GetVertexColor()
+		button.icon:SetVertexColor(button.dataObject.iconR or r, button.dataObject.iconG or g, button.dataObject.iconB or b)
+		if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
+			button.icon:SetSize(18, 18)
+			button.icon:ClearAllPoints()
+			button.icon:SetPoint("CENTER")
+		else
+			button.icon:SetSize(17, 17)
+			button.icon:ClearAllPoints()
+			button.icon:SetPoint("TOPLEFT", 7, -6)
+		end
+	end
+end
+
 --------------------------------------------------------------------------------
 -- Addon Compartment API
 --
@@ -901,39 +1039,43 @@ function lib:IsButtonInCompartment(buttonName)
 end
 
 function lib:AddButtonToCompartment(buttonName, customIcon)
-	local object = lib.objects[buttonName]
-	if object and not object.compartmentData and AddonCompartmentFrame then
-		if object.db then
-			object.db.showInCompartment = true
+	if lib:IsButtonCompartmentAvailable() then
+		local object = lib.objects[buttonName]
+		if object and not object.compartmentData then
+			if object.db then
+				object.db.showInCompartment = true
+			end
+			object.compartmentData = {
+				text = buttonName,
+				icon = customIcon or object.dataObject.icon,
+				notCheckable = true,
+				registerForAnyClick = true,
+				func = function(_, menuInputData, menu)
+					object.dataObject.OnClick(menu, menuInputData.buttonName)
+				end,
+				funcOnEnter = onEnterCompartment,
+				funcOnLeave = onLeaveCompartment,
+			}
+			AddonCompartmentFrame:RegisterAddon(object.compartmentData)
 		end
-		object.compartmentData = {
-			text = buttonName,
-			icon = customIcon or object.dataObject.icon,
-			notCheckable = true,
-			registerForAnyClick = true,
-			func = function(frame, _, _, _, clickType)
-				object.dataObject.OnClick(frame, clickType)
-			end,
-			funcOnEnter = onEnterCompartment,
-			funcOnLeave = onLeaveCompartment,
-		}
-		AddonCompartmentFrame:RegisterAddon(object.compartmentData)
 	end
 end
 
 function lib:RemoveButtonFromCompartment(buttonName)
-	local object = lib.objects[buttonName]
-	if object and object.compartmentData then
-		for i = 1, #AddonCompartmentFrame.registeredAddons do
-			local entry = AddonCompartmentFrame.registeredAddons[i]
-			if entry == object.compartmentData then
-				object.compartmentData = nil
-				if object.db then
-					object.db.showInCompartment = nil
+	if lib:IsButtonCompartmentAvailable() then
+		local object = lib.objects[buttonName]
+		if object and object.compartmentData then
+			for i = 1, #AddonCompartmentFrame.registeredAddons do
+				local entry = AddonCompartmentFrame.registeredAddons[i]
+				if entry == object.compartmentData then
+					object.compartmentData = nil
+					if object.db then
+						object.db.showInCompartment = nil
+					end
+					table.remove(AddonCompartmentFrame.registeredAddons, i)
+					AddonCompartmentFrame:UpdateDisplay()
+					return
 				end
-				table.remove(AddonCompartmentFrame.registeredAddons, i)
-				AddonCompartmentFrame:UpdateDisplay()
-				return
 			end
 		end
 	end
@@ -987,7 +1129,7 @@ function Leatrix_Plus:LeaPlusLCA()
 
 -- LibChatAnimsStart
 --@curseforge-project-slug: libchatanims@
-local MAJOR, MINOR = "LibChatAnims", 4 -- Bump minor on changes
+local MAJOR, MINOR = "LibChatAnims", 6 -- Bump minor on changes
 local LCA = LibStub:NewLibrary(MAJOR, MINOR)
 if not LCA then return end -- No upgrade needed
 
@@ -1121,7 +1263,12 @@ end
 --	button:Show()
 --end
 
+local issecretvalue = issecretvalue or function() return false end
 FCF_StartAlertFlash = function(chatFrame)
+	if issecretvalue(chatFrame) then
+		return
+	end
+
 	local chatTab = _G[chatFrame:GetName().."Tab"]
 
 	if chatFrame.minFrame then
@@ -1191,6 +1338,10 @@ FCF_StartAlertFlash = function(chatFrame)
 end
 
 FCF_StopAlertFlash = function(chatFrame)
+	if issecretvalue(chatFrame) then
+		return
+	end
+
 	local chatTab = _G[chatFrame:GetName().."Tab"]
 
 	if chatFrame.minFrame then
@@ -1228,6 +1379,60 @@ FCF_StopAlertFlash = function(chatFrame)
 	--FCFDockOverflowButton_UpdatePulseState(GENERAL_CHAT_DOCK.overflowButton)
 end
 
+if WOW_PROJECT_ID == 1 then -- Retail only, dealing with a "secret" bug
+	LCA.dedicatedWindows = LCA.dedicatedWindows or {}
+
+	local function FCFManager_GetToken(chatType, chatTarget)
+		return string.lower(chatType)..(chatTarget and ";;"..string.lower(chatTarget) or "")
+	end
+
+	function LCA:FCFManager_RegisterDedicatedFrame(chatFrame, chatType, chatTarget)
+		if issecretvalue(chatTarget) then
+			return
+		end
+
+		local token = FCFManager_GetToken(chatType, chatTarget)
+		if not LCA.dedicatedWindows[token] then
+			LCA.dedicatedWindows[token] = {}
+		end
+
+		if not LCA.dedicatedWindows[token][chatFrame] then
+			LCA.dedicatedWindows[token][chatFrame] = true
+		end
+	end
+
+	function LCA:FCFManager_UnregisterDedicatedFrame(chatFrame, chatType, chatTarget)
+		if issecretvalue(chatTarget) then
+			return
+		end
+
+		local token = FCFManager_GetToken(chatType, chatTarget)
+		local windowList = LCA.dedicatedWindows[token]
+		if windowList then
+			LCA.dedicatedWindows[token][chatFrame] = nil
+		end
+	end
+
+	function FCFManager_StopFlashOnDedicatedWindows(chatType, chatTarget)
+		if issecretvalue(chatTarget) then
+			return
+		end
+
+		local token = FCFManager_GetToken(chatType, chatTarget)
+		local windowList = LCA.dedicatedWindows[token]
+		if windowList then
+			for chatFrame in next, windowList do
+				FCF_StopAlertFlash(chatFrame)
+			end
+		end
+	end
+
+	if not LCA.FCFHooked then
+		LCA.FCFHooked = true
+		hooksecurefunc("FCFManager_RegisterDedicatedFrame", function(...) LCA:FCFManager_RegisterDedicatedFrame(...) end)
+		hooksecurefunc("FCFManager_UnregisterDedicatedFrame", function(...) LCA:FCFManager_UnregisterDedicatedFrame(...) end)
+	end
+end
 -- LibChatAnimsEnd
 
 end
@@ -1262,7 +1467,7 @@ local CreateFrame, error, setmetatable, UIParent = CreateFrame, error, setmetata
 if not LibStub then error("LibCandyBar-3.0 requires LibStub.") end
 local cbh = LibStub:GetLibrary("CallbackHandler-1.0")
 if not cbh then error("LibCandyBar-3.0 requires CallbackHandler-1.0") end
-local lib = LibStub:NewLibrary("LibCandyBar-3.0", 100) -- Bump minor on changes
+local lib = LibStub:NewLibrary("LibCandyBar-3.0", 108) -- Bump minor on changes
 if not lib then return end
 lib.callbacks = lib.callbacks or cbh:New(lib)
 local cb = lib.callbacks
@@ -1289,14 +1494,8 @@ local _fontShadowX, _fontShadowY = GameFontHighlightSmallOutline:GetShadowOffset
 local _fontShadowR, _fontShadowG, _fontShadowB, _fontShadowA = GameFontHighlightSmallOutline:GetShadowColor()
 local SetWidth, SetHeight, SetSize = lib.dummyFrame.SetWidth, lib.dummyFrame.SetHeight, lib.dummyFrame.SetSize
 
-local function stopBar(bar)
-	bar.updater:Stop()
-	bar.data = nil
-	bar.funcs = nil
-	bar.running = nil
-	bar.paused = nil
-	bar:Hide()
-	bar:SetParent(UIParent)
+local issecretvalue = issecretvalue or function() -- 12.0 compatibility
+	return false
 end
 
 local tformat1 = "%d:%02d:%02d"
@@ -1307,7 +1506,21 @@ local function barUpdate(updater)
 	local bar = updater.parent
 	local t = GetTime()
 	if t >= bar.exp then
-		bar:Stop()
+		if bar.pauseWhenDone then
+			bar:Pause()
+			bar.candyBarBar:SetMinMaxValues(-1, 0)
+			bar.candyBarBar:SetValue(0)
+			bar:SetDuration(0)
+			bar:SetTimeVisibility(false)
+			if bar.maxPauseDuration then
+				bar.maxPauseDurationCallback = C_Timer.NewTimer(bar.maxPauseDuration, function()
+					bar.maxPauseDurationCallback = nil
+					bar:Stop()
+				end)
+			end
+		else
+			bar:Stop()
+		end
 	else
 		local time = bar.exp - t
 		bar.remaining = time
@@ -1329,6 +1542,12 @@ local function barUpdate(updater)
 			bar.candyBarDuration:SetFormattedText(tformat4, time)
 		end
 
+		if bar.timeCallback and time < bar.timeCallbackTrigger then
+			bar.timeCallbackTrigger = 0
+			bar.timeCallback(bar)
+			bar.timeCallback = nil
+		end
+
 		if bar.funcs then
 			for i = 1, #bar.funcs do
 				bar.funcs[i](bar)
@@ -1345,7 +1564,15 @@ local function barUpdateApprox(updater)
 	local bar = updater.parent
 	local t = GetTime()
 	if t >= bar.exp then
-		bar:Stop()
+		if bar.pauseWhenDone then
+			bar:Pause()
+			bar.candyBarBar:SetMinMaxValues(-1, 0)
+			bar.candyBarBar:SetValue(0)
+			bar:SetDuration(0)
+			bar:SetTimeVisibility(false)
+		else
+			bar:Stop()
+		end
 	else
 		local time = bar.exp - t
 		bar.remaining = time
@@ -1367,6 +1594,12 @@ local function barUpdateApprox(updater)
 			bar.candyBarDuration:SetFormattedText(atformat4, time)
 		end
 
+		if bar.timeCallback and time < bar.timeCallbackTrigger then
+			bar.timeCallbackTrigger = 0
+			bar.timeCallback(bar)
+			bar.timeCallback = nil
+		end
+
 		if bar.funcs then
 			for i = 1, #bar.funcs do
 				bar.funcs[i](bar)
@@ -1384,7 +1617,7 @@ local function restyleBar(self)
 	self.candyBarIconFrame:ClearAllPoints()
 	self.candyBarBar:ClearAllPoints()
 	-- In the past we used a :GetTexture check here, but as of WoW v5 it randomly returns nil, so use our own trustworthy variable.
-	if self.candyBarIconFrame.icon then
+	if issecretvalue(self.candyBarIconFrame.icon) or self.candyBarIconFrame.icon then
 		self.candyBarIconFrame:SetWidth(self.height)
 		if self.iconPosition == "RIGHT" then
 			self.candyBarIconFrame:SetPoint("TOPRIGHT", self)
@@ -1407,7 +1640,7 @@ local function restyleBar(self)
 		self.candyBarBar:SetPoint("BOTTOMRIGHT", self)
 		self.candyBarIconFrame:Hide()
 	end
-	if self.showLabel and self.candyBarLabel.text then
+	if self.showLabel and (issecretvalue(self.candyBarLabel.text) or self.candyBarLabel.text) then
 		self.candyBarLabel:Show()
 	else
 		self.candyBarLabel:Hide()
@@ -1438,13 +1671,21 @@ function barPrototype:Set(key, data) if not self.data then self.data = {} end; s
 -- @param key Key to retrieve
 function barPrototype:Get(key) return self.data and self.data[key] end
 --- Sets the color of the bar.
--- This is basically a wrapper to SetStatusBarColor.
+-- This is basically a wrapper to candyBarBar:SetStatusBarColor.
 -- @paramsig r, g, b, a
 -- @param r Red component (0-1)
 -- @param g Green component (0-1)
 -- @param b Blue component (0-1)
 -- @param a Alpha (0-1)
 function barPrototype:SetColor(...) self.candyBarBar:SetStatusBarColor(...) end
+--- Sets the background color of the bar.
+-- This is basically a wrapper to candyBarBackground:SetVertexColor.
+-- @paramsig r, g, b, a
+-- @param r Red component (0-1)
+-- @param g Green component (0-1)
+-- @param b Blue component (0-1)
+-- @param a Alpha (0-1)
+function barPrototype:SetBackgroundColor(...) self.candyBarBackground:SetVertexColor(...) end
 --- Sets the color of the bar label and bar duration text.
 -- @paramsig r, g, b, a
 -- @param r Red component (0-1)
@@ -1464,6 +1705,21 @@ end
 function barPrototype:SetShadowColor(...)
 	self.candyBarLabel:SetShadowColor(...)
 	self.candyBarDuration:SetShadowColor(...)
+end
+--- Sets the shadow offset of the bar label and bar duration text.
+-- @number offsetX
+-- @number offsetY
+function barPrototype:SetShadowOffset(...)
+	self.candyBarLabel:SetShadowOffset(...)
+	self.candyBarDuration:SetShadowOffset(...)
+end
+--- Sets the font of the bar label and bar duration text.
+-- @string fontFile
+-- @number height
+-- @string flags
+function barPrototype:SetFont(...)
+	self.candyBarLabel:SetFont(...)
+	self.candyBarDuration:SetFont(...)
 end
 --- Sets the texture of the bar.
 -- This should only be needed on running bars that get changed on the fly.
@@ -1506,7 +1762,7 @@ end
 function barPrototype:SetLabel(text)
 	self.candyBarLabel.text = text
 	self.candyBarLabel:SetText(text)
-	if text then
+	if issecretvalue(text) or text then
 		self.candyBarLabel:Show()
 	else
 		self.candyBarLabel:Hide()
@@ -1535,6 +1791,10 @@ function barPrototype:SetIconPosition(position)
 	self.iconPosition = position
 	restyleBar(self)
 end
+--- Returns the side of the bar where the icon should appear.
+function barPrototype:GetIconPosition()
+	return self.iconPosition
+end
 --- Sets wether or not the time indicator on the right of the bar should be shown.
 -- Time is shown by default.
 -- @param bool true to show the time, false/nil to hide the time.
@@ -1556,6 +1816,25 @@ function barPrototype:SetLabelVisibility(bool)
 	else
 		self.candyBarLabel:Hide()
 	end
+end
+--- Sets wether or not the bar should pause when its done.
+-- It will show as full and the time label will be hidden
+-- @param value Seconds to pause the bar when done or true for indefinitely
+function barPrototype:SetPauseWhenDone(value)
+	if type(value) == "number" then
+		self.maxPauseDuration = value
+		self.pauseWhenDone = true
+	else
+		self.maxPauseDuration = nil
+		self.pauseWhenDone = value or nil
+	end
+end
+--- Sets a one-time callback to fire after reaching a certain time remaining on the bar
+-- @param func The callback function to fire
+-- @number time The time the bar will have remaining when the callback triggers
+function barPrototype:SetTimeCallback(func, time)
+	self.timeCallback = func
+	self.timeCallbackTrigger = time
 end
 --- Sets the duration of the bar.
 -- This can also be used while the bar is running to adjust the time remaining, within the bounds of the original duration.
@@ -1628,20 +1907,41 @@ function barPrototype:Resume()
 		self.paused = nil
 	end
 end
---- Stops the bar.
--- This will stop the bar, fire the LibCandyBar_Stop callback, and recycle the bar into the candybar pool.
--- Note: make sure you remove all references to the bar in your addon upon receiving the LibCandyBar_Stop callback.
--- @usage
--- -- The example below shows the use of the LibCandyBar_Stop callback by printing the contents of the label in the chatframe
--- local function barstopped( callback, bar )
---   print( bar:GetLabel(), "stopped")
--- end
--- LibStub("LibCandyBar-3.0"):RegisterCallback(myaddonobject, "LibCandyBar_Stop", barstopped)
--- @param ... Optional args to pass across in the LibCandyBar_Stop callback.
-function barPrototype:Stop(...)
-	cb:Fire("LibCandyBar_Stop", self, ...)
-	stopBar(self)
-	barCache[self] = true
+
+do
+	local function stopBar(bar)
+		bar.updater:Stop()
+		bar.data = nil
+		bar.funcs = nil
+		bar.running = nil
+		bar.paused = nil
+		bar.pauseWhenDone = nil
+		bar.maxPauseDuration = nil
+		if bar.maxPauseDurationCallback then
+			bar.maxPauseDurationCallback:Cancel()
+			bar.maxPauseDurationCallback = nil
+		end
+		bar.timeCallback = nil
+		bar.timeCallbackTrigger = nil
+		bar:Hide()
+		bar:SetParent(UIParent)
+	end
+
+	--- Stops the bar.
+	-- This will stop the bar, fire the LibCandyBar_Stop callback, and recycle the bar into the candybar pool.
+	-- Note: make sure you remove all references to the bar in your addon upon receiving the LibCandyBar_Stop callback.
+	-- @usage
+	-- -- The example below shows the use of the LibCandyBar_Stop callback by printing the contents of the label in the chatframe
+	-- local function barstopped( callback, bar )
+	--   print( bar:GetLabel(), "stopped")
+	-- end
+	-- LibStub("LibCandyBar-3.0"):RegisterCallback(myaddonobject, "LibCandyBar_Stop", barstopped)
+	-- @param ... Optional args to pass across in the LibCandyBar_Stop callback.
+	function barPrototype:Stop(...)
+		cb:Fire("LibCandyBar_Stop", self, ...)
+		stopBar(self)
+		barCache[self] = true
+	end
 end
 
 -- ------------------------------------------------------------------------------
@@ -1681,18 +1981,13 @@ function lib:New(texture, width, height)
 		bar.candyBarBackdrop = backdrop
 
 		local iconBackdrop = CreateFrame("Frame", nil, bar, "BackdropTemplate") -- Used by bar stylers for backdrops
-		iconBackdrop:SetFrameLevel(0)
 		bar.candyBarIconFrameBackdrop = iconBackdrop
 
-		local duration = statusbar:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmallOutline")
-		duration:SetPoint("TOPLEFT", statusbar, "TOPLEFT", 2, 0)
-		duration:SetPoint("BOTTOMRIGHT", statusbar, "BOTTOMRIGHT", -2, 0)
-		bar.candyBarDuration = duration
-
 		local label = statusbar:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmallOutline")
-		label:SetPoint("TOPLEFT", statusbar, "TOPLEFT", 2, 0)
-		label:SetPoint("BOTTOMRIGHT", statusbar, "BOTTOMRIGHT", -2, 0)
 		bar.candyBarLabel = label
+
+		local duration = statusbar:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmallOutline")
+		bar.candyBarDuration = duration
 
 		local updater = bar:CreateAnimationGroup()
 		updater:SetLooping("REPEAT")
@@ -1703,6 +1998,23 @@ function lib:New(texture, width, height)
 		bar.repeater = anim
 	else
 		barCache[bar] = nil
+
+		-- Clear secrets from icon textures
+		if bar.candyBarIconFrame.SetToDefaults then
+			bar.candyBarIconFrame:SetToDefaults()
+		end
+		bar.candyBarIconFrame:ClearAllPoints()
+		bar.candyBarIconFrameBackdrop:ClearAllPoints()
+
+		-- Clear secrets from fontstrings
+		if bar.candyBarLabel.ClearText then
+			bar.candyBarLabel:ClearText()
+		end
+		bar.candyBarLabel:ClearAllPoints()
+		if bar.candyBarDuration.ClearText then
+			bar.candyBarDuration:ClearText()
+		end
+		bar.candyBarDuration:ClearAllPoints()
 	end
 
 	bar:SetFrameStrata("MEDIUM")
@@ -1711,6 +2023,10 @@ function lib:New(texture, width, height)
 	bar.candyBarBackground:SetTexture(texture)
 	bar.width = width
 	bar.height = height
+	bar.candyBarLabel:SetPoint("TOPLEFT", bar.candyBarBar, "TOPLEFT", 2, 0)
+	bar.candyBarLabel:SetPoint("BOTTOMRIGHT", bar.candyBarBar, "BOTTOMRIGHT", -2, 0)
+	bar.candyBarDuration:SetPoint("TOPLEFT", bar.candyBarBar, "TOPLEFT", 2, 0)
+	bar.candyBarDuration:SetPoint("BOTTOMRIGHT", bar.candyBarBar, "BOTTOMRIGHT", -2, 0)
 
 	-- RESET ALL THE THINGS!
 	bar.fill = nil
@@ -1721,8 +2037,9 @@ function lib:New(texture, width, height)
 		bar:SetScript(scripts[i], nil)
 	end
 
-	bar.candyBarBackground:SetVertexColor(0.5, 0.5, 0.5, 0.3)
-	bar.candyBarBar:SetStatusBarColor(0.5, 0.5, 0.5, 1)
+	bar:SetBackgroundColor(0.5, 0.5, 0.5, 0.3)
+	bar:SetColor(0.5, 0.5, 0.5, 1)
+	bar:SetTextColor(1,1,1,1)
 	bar:ClearAllPoints()
 	SetWidth(bar, width)
 	SetHeight(bar, height)
@@ -1731,21 +2048,17 @@ function lib:New(texture, width, height)
 	bar:SetAlpha(1)
 	bar:SetClampedToScreen(false)
 	bar:EnableMouse(false)
+	bar:SetFont(_fontName, _fontSize)
+	bar:SetShadowOffset(_fontShadowX, _fontShadowY)
+	bar:SetShadowColor(_fontShadowR, _fontShadowG, _fontShadowB, _fontShadowA)
 
-	bar.candyBarLabel:SetTextColor(1,1,1,1)
+	bar.candyBarIconFrameBackdrop:SetFrameLevel(0)
+
 	bar.candyBarLabel:SetJustifyH("LEFT")
 	bar.candyBarLabel:SetJustifyV("MIDDLE")
-	bar.candyBarLabel:SetFont(_fontName, _fontSize)
-	bar.candyBarLabel:SetShadowOffset(_fontShadowX, _fontShadowY)
-	bar.candyBarLabel:SetShadowColor(_fontShadowR, _fontShadowG, _fontShadowB, _fontShadowA)
 
-	bar.candyBarDuration:SetTextColor(1,1,1,1)
 	bar.candyBarDuration:SetJustifyH("RIGHT")
 	bar.candyBarDuration:SetJustifyV("MIDDLE")
-	bar.candyBarDuration:SetFont(_fontName, _fontSize)
-	bar.candyBarDuration:SetShadowOffset(_fontShadowX, _fontShadowY)
-	bar.candyBarDuration:SetShadowColor(_fontShadowR, _fontShadowG, _fontShadowB, _fontShadowA)
-
 
 	bar:SetLabel()
 	bar:SetIcon()
@@ -1753,7 +2066,6 @@ function lib:New(texture, width, height)
 
 	return bar
 end
-
 -- LibCandyBarEnd
 
 end
