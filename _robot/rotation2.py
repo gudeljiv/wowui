@@ -31,44 +31,45 @@ from libs.ctypes_custom import KeyPress as cKeyPress
 
 # --- Constants ---
 SCORE_THRESHOLD = 0.90
-COLOR_DISTANCE  = 10
-WOW_WINDOW      = "World of Warcraft"
-COMBAT_SKIP     = (255, 255, 255)
+COLOR_DISTANCE = 10
+WOW_WINDOW = "World of Warcraft"
+COMBAT_SKIP = (255, 255, 255)
 INTERRUPT_COLOR = (0, 255, 0)
-INTERRUPT_KEY   = "F9"
+INTERRUPT_KEY = "F9"
 
 # --- State ---
-dprint    = False
-debug     = False
-pause     = True
+dprint = False
+debug = False
+pause = False
 wow_class = "warrior"
+out_of_combat = False
 
 # --- Screen / monitor setup ---
-screen_width  = GetSystemMetrics(0)
+screen_width = GetSystemMetrics(0)
 screen_height = GetSystemMetrics(1)
-monitor       = str(screen_width)
+monitor = str(screen_width)
 
-x               = monitor_settings[monitor]["x"]
-y               = monitor_settings[monitor]["y"]
-c_width         = monitor_settings[monitor]["c_width"]
-c_height        = monitor_settings[monitor]["c_height"]
-p_offgcd_left   = monitor_settings[monitor]["p_offgcd_left"]
-p_combat_left   = monitor_settings[monitor]["p_combat_left"]
+x = monitor_settings[monitor]["x"]
+y = monitor_settings[monitor]["y"]
+c_width = monitor_settings[monitor]["c_width"]
+c_height = monitor_settings[monitor]["c_height"]
+p_offgcd_left = monitor_settings[monitor]["p_offgcd_left"]
+p_combat_left = monitor_settings[monitor]["p_combat_left"]
 p_interrupt_left = monitor_settings[monitor]["p_interrupt_left"]
-p_behind_left   = monitor_settings[monitor]["p_behind_left"]
-p_clss_left     = monitor_settings[monitor]["p_clss_left"]
+p_behind_left = monitor_settings[monitor]["p_behind_left"]
+p_clss_left = monitor_settings[monitor]["p_clss_left"]
 
-dir_path         = os.path.dirname(os.path.realpath(__file__))
+dir_path = os.path.dirname(os.path.realpath(__file__))
 abilities_folder = os.path.join(dir_path, "images", mode, monitor)
-debug_folder     = os.path.join(dir_path, "images", "_")
+debug_folder = os.path.join(dir_path, "images", "_")
 
 # Pre-compute static capture regions — these never change, no need to rebuild each loop
-p_main      = {"top": 2, "left": 2,               "width": x,       "height": y}
-p_offgcd    = {"top": 2, "left": p_offgcd_left,    "width": x,       "height": y}
-p_combat    = {"top": 0, "left": p_combat_left,    "width": c_width, "height": c_height}
+p_main = {"top": 2, "left": 2, "width": x, "height": y}
+p_offgcd = {"top": 2, "left": p_offgcd_left, "width": x, "height": y}
+p_combat = {"top": 0, "left": p_combat_left, "width": c_width, "height": c_height}
 p_interrupt = {"top": 0, "left": p_interrupt_left, "width": c_width, "height": c_height}
-p_behind    = {"top": 0, "left": p_behind_left,    "width": c_width, "height": c_height}
-p_clss      = {"top": 0, "left": p_clss_left,      "width": c_width, "height": c_height}
+p_behind = {"top": 0, "left": p_behind_left, "width": c_width, "height": c_height}
+p_clss = {"top": 0, "left": p_clss_left, "width": c_width, "height": c_height}
 
 # Pre-compute center pixel coordinates for small region grabs
 cx = math.floor(c_width / 2)
@@ -140,28 +141,29 @@ def get_class(clss, distance):
 # --- Unified skill loader ---
 _SKILL_SUFFIX = {"healing": " H.png", "globals": " G.png", "main": " M.png", "secondary": " O.png"}
 
+
 def load_skills(wow_class, skill_type):
     skills = {}
     try:
         if skill_type in ("healing", "globals"):
             skill_list = data[skill_type]
-            subfolder  = skill_type
+            subfolder = skill_type
         else:
             skill_list = data[wow_class][skill_type]
-            subfolder  = wow_class
+            subfolder = wow_class
 
         suffix = _SKILL_SUFFIX[skill_type]
 
         for skill in skill_list:
-            name       = skill["name"]
+            name = skill["name"]
             image_path = os.path.join(abilities_folder, subfolder, name + suffix)
             if not isfile(image_path):
                 print(name, "MISSING")
                 continue
             entry = {
                 "image": cv2.imread(image_path),
-                "key":   skill["key"],
-                "name":  name,
+                "key": skill["key"],
+                "name": name,
             }
             if "modifier" in skill:
                 entry["modifier"] = skill["modifier"]
@@ -178,11 +180,11 @@ def load_skills(wow_class, skill_type):
 
 # --- Debug printer ---
 def print_debug(ability, score, start_time):
-    skill    = f"{ability['name']:<25}"
+    skill = f"{ability['name']:<25}"
     modifier = f"{ability.get('modifier', 'none'):<8}"
-    key      = f"{ability['key']:<5}"
-    sc       = f"{score * 100:.2f}%"
-    ms       = f"{round(1000 * (time.time() - start_time))} ms"
+    key = f"{ability['key']:<5}"
+    sc = f"{score * 100:.2f}%"
+    ms = f"{round(1000 * (time.time() - start_time))} ms"
     print(skill, modifier, key, sc, ms, dt.now().strftime("%H:%M:%S"))
 
 
@@ -220,9 +222,9 @@ def run_rotation(main_skill, secondary_skill, main_abilities, secondary_abilitie
 
 
 # --- Initial skill load ---
-healing             = load_skills(wow_class, "healing")
-global_skills       = load_skills(wow_class, "globals")
-main_abilities      = {**load_skills(wow_class, "main"), **healing, **global_skills}
+healing = load_skills(wow_class, "healing")
+global_skills = load_skills(wow_class, "globals")
+main_abilities = {**load_skills(wow_class, "main"), **healing, **global_skills}
 secondary_abilities = load_skills(wow_class, "secondary")
 
 
@@ -240,14 +242,14 @@ with keyboard.Listener(on_press=on_press) as listener:
                     continue
 
                 # Grab screen regions
-                main_image   = sct.grab(p_main)
+                main_image = sct.grab(p_main)
                 offgcd_image = sct.grab(p_offgcd)
-                combat       = sct.grab(p_combat).pixel(cx, cy)
-                interrupt    = sct.grab(p_interrupt).pixel(cx, cy)
-                clss         = sct.grab(p_clss).pixel(cx, cy)
+                combat = sct.grab(p_combat).pixel(cx, cy)
+                interrupt = sct.grab(p_interrupt).pixel(cx, cy)
+                clss = sct.grab(p_clss).pixel(cx, cy)
 
                 if debug:
-                    mss.tools.to_png(main_image.rgb,   main_image.size,   output=os.path.join(debug_folder, "1. main.png"))
+                    mss.tools.to_png(main_image.rgb, main_image.size, output=os.path.join(debug_folder, "1. main.png"))
                     mss.tools.to_png(offgcd_image.rgb, offgcd_image.size, output=os.path.join(debug_folder, "6. offgcd.png"))
 
                 # Class detection
@@ -260,20 +262,27 @@ with keyboard.Listener(on_press=on_press) as listener:
                 # Reload skills if class changed
                 if wow_class_loaded != wow_class:
                     print("CLASS:", wow_class_loaded.upper(), "->", wow_class.upper())
-                    main_abilities      = {**load_skills(wow_class, "main"), **healing, **global_skills}
+                    main_abilities = {**load_skills(wow_class, "main"), **healing, **global_skills}
                     secondary_abilities = load_skills(wow_class, "secondary")
-                    wow_class_loaded    = wow_class
+                    wow_class_loaded = wow_class
                     pyautogui.hotkey("end" if pause else "home")
 
                 if not pause:
                     if combat == COMBAT_SKIP:
+                        if not out_of_combat:
+                            out_of_combat = True
+                            pyautogui.hotkey("end")
                         continue
+                    else:
+                        if out_of_combat:
+                            out_of_combat = False
+                            pyautogui.hotkey("home")
 
                     if interrupt == INTERRUPT_COLOR:
                         press_interception_key(INTERRUPT_KEY)
                         continue
 
-                    main_skill      = numpy.array(main_image)[:, :, :3]
+                    main_skill = numpy.array(main_image)[:, :, :3]
                     secondary_skill = numpy.array(offgcd_image)[:, :, :3]
 
                     t = threading.Thread(

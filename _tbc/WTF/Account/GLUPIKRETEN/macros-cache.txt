@@ -54,12 +54,12 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:12203
+#showtooltip item:0
 /cast feed pet
-/use item:12203
+/use item:0
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Undertaker Mordo
+/targetexact Dorn Plainstalker
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
@@ -69,9 +69,7 @@ VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
 /click StaticPopup1Button1
 END
 VER 3 0000000000000041 "TEST" "132123"
-/run PlayerCastingBarFrame.timer:ClearAllPoints()
-/run  PlayerCastingBarFrame.timer:SetScale(1.2)
-/run PlayerCastingBarFrame.timer:SetPoint("LEFT", PlayerCastingBarFrame, "RIGHT", 10, 2)
+/run print(xGetRange("mouseover", "max"))
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy
