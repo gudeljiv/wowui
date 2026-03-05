@@ -1,27 +1,55 @@
 local _, xVermin = ...
 
-local start = CreateFrame("BUTTON", "RotBotF1")
-local stop = CreateFrame("BUTTON", "RotBotF2")
+local start_a = CreateFrame("BUTTON", "RotBotF1a")
+local stop_a = CreateFrame("BUTTON", "RotBotF2a")
 
-SetBindingClick("HOME", "RotBotF1")
-SetBindingClick("END", "RotBotF2")
+local start_b = CreateFrame("BUTTON", "RotBotF1b")
+local stop_b = CreateFrame("BUTTON", "RotBotF2b")
 
-start:SetScript("OnClick", function(self, event)
-	RotationFrame1:SetBackdropColor(0, 1, 0, 0.9)
+SetBindingClick("HOME", "RotBotF1b")
+SetBindingClick("END", "RotBotF2b")
+
+SetBindingClick("ALT-F12", "RotBotF1a")
+SetBindingClick("CTRL-F12", "RotBotF2a")
+
+start_a:SetScript("OnClick", function(self, event)
+	RotationFrame1a:SetBackdropColor(0, 1, 0, 0.9)
 end)
-
-stop:SetScript("OnClick", function(self, event)
-	RotationFrame1:SetBackdropColor(1, 0, 0, 0.9)
+stop_a:SetScript("OnClick", function(self, event)
+	RotationFrame1a:SetBackdropColor(1, 0, 0, 0.9)
+end)
+start_b:SetScript("OnClick", function(self, event)
+	RotationFrame1b:SetBackdropColor(0, 1, 0, 0.9)
+end)
+stop_b:SetScript("OnClick", function(self, event)
+	RotationFrame1b:SetBackdropColor(1, 0, 0, 0.9)
 end)
 
 local f
 
-f = CreateFrame("Frame", "RotationFrame1", UIParent, BackdropTemplateMixin and "BackdropTemplate")
+f = CreateFrame("Frame", "RotationFrame1a", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 f:SetFrameStrata("TOOLTIP")
 f:SetWidth(3)
-f:SetHeight(35)
+f:SetHeight(17)
 f:ClearAllPoints()
-f:SetPoint("CENTER", UIParent, "CENTER", -135, -90)
+f:SetPoint("CENTER", UIParent, "CENTER", -135, -80)
+f:SetFrameStrata("BACKGROUND")
+f:SetBackdrop({
+	bgFile = xVermin.Config.background.white,
+	edgeFile = "",
+	tile = false,
+	tileSize = 0,
+	edgeSize = 0,
+	insets = { left = 0, right = 0, top = 0, bottom = 0 },
+})
+f:SetBackdropColor(1, 0, 0, 0.9)
+
+f = CreateFrame("Frame", "RotationFrame1b", UIParent, BackdropTemplateMixin and "BackdropTemplate")
+f:SetFrameStrata("TOOLTIP")
+f:SetWidth(3)
+f:SetHeight(17)
+f:ClearAllPoints()
+f:SetPoint("CENTER", UIParent, "CENTER", -135, -100)
 f:SetFrameStrata("BACKGROUND")
 f:SetBackdrop({
 	bgFile = xVermin.Config.background.white,

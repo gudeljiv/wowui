@@ -82,9 +82,10 @@ wow_class_loaded = wow_class
 print("Script loaded and ready.", "Monitor:", screen_width, screen_height, dt.now().strftime("%H:%M:%S"))
 print("PRINT:", dprint)
 print("DEBUG:", debug)
-print("ROTATION:", not pause)
+print("F12: ACTIVE")
 print("MODE:", mode.upper())
 print("CLASS:", wow_class_loaded.upper())
+pyautogui.hotkey("ctrl", "f12")
 
 
 # --- Key press ---
@@ -94,7 +95,7 @@ def press_interception_key(key, modifier=False):
 
 # --- Hotkey listener ---
 def on_press(key):
-    global dprint, pause, debug
+    global dprint, pause, debug, out_of_combat
     try:
         if key == keyboard.Key.f8:
             dprint = not dprint
@@ -106,11 +107,13 @@ def on_press(key):
             pause = not pause
             print("ROTATION:", not pause)
             if pause:
+                pyautogui.hotkey("alt", "f12")
                 pyautogui.hotkey("end")
+                out_of_combat = True
                 pyautogui.PAUSE = 1
                 pyautogui.FAILSAFE = False
             else:
-                pyautogui.hotkey("home")
+                pyautogui.hotkey("ctrl", "f12")
                 pyautogui.PAUSE = 0.05
                 pyautogui.FAILSAFE = True
     except Exception:

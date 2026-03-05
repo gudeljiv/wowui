@@ -160,8 +160,11 @@ local function FixBindings()
 	-- SetBinding('CTRL-F11', 'EXTRABARBUTTON11', 1)
 	-- SetBinding('CTRL-F12', 'EXTRABARBUTTON12', 1)
 
-	SetBindingClick("HOME", "RotBotF1")
-	SetBindingClick("END", "RotBotF2")
+	SetBindingClick("HOME", "RotBotF1b")
+	SetBindingClick("END", "RotBotF2b")
+
+	SetBindingClick("ALT-F12", "RotBotF1a")
+	SetBindingClick("CTRL-F12", "RotBotF2a")
 end
 
 local function ClearAllBindings()
