@@ -1,12 +1,12 @@
-VER 3 010000000000000A " " "134400"
-#show Prospecting
-/cast Prospecting
-/use Tin Ore
-END
 VER 3 0100000000000009 " " "134400"
 #show Disenchant
 /cast Disenchant
 /use Ring of Silver Might
+END
+VER 3 010000000000000A " " "134400"
+#show Prospecting
+/cast Prospecting
+/use Tin Ore
 END
 VER 3 0100000000000007 "destroy" "134153"
 /tsm destroy
