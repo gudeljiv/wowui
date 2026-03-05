@@ -1,8 +1,8 @@
-## Interface: 120001, 120001, 50503, 40402, 30403, 20505, 11508
+## Interface: 120001
 ## Title: ChocolateBar
 ## Notes: A display for LibDataBroker-1.1
 ## Author: Kiatra - github.com/Kiatra/ChocolateBar/
-## Version: v4.4.1
+## Version: v4.6
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, LibQTip-1.0
 ## X-WoWI-ID: 12326
 ## X-Curse-Project-ID: 17424
@@ -37,8 +37,7 @@ localization\ptBR.lua
 localization\ruRU.lua
 
 Core.lua
-JostleClassic.lua
-JostleEditMode.lua
+JostleMainline.lua
 DragAndDrop.lua
 Chocolate.lua
 Bar.lua

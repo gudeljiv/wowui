@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 14317,
+["session"] = 14319,
 ["errors"] = {
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:11 Unrecognized XML: Binding",
