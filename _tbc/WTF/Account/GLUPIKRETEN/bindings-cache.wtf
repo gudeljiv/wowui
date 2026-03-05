@@ -21,7 +21,7 @@ bind 9 MULTIACTIONBAR2BUTTON3
 bind 9 NONE HousingEditor
 bind 0 MULTIACTIONBAR2BUTTON4
 bind 0 NONE HousingEditor
-bind - NONE
+bind - CLICK RotBotF2a:LeftButton
 bind - NONE HousingEditor
 bind = NONE
 bind = NONE HousingEditor
@@ -217,7 +217,7 @@ bind SHIFT-0 NONE
 bind SHIFT-0 NONE HousingEditor
 bind CTRL-F11 NONE
 bind CTRL-F11 NONE HousingEditor
-bind CTRL-F12 NONE
+bind CTRL-F12 CLICK RotBotF2a:LeftButton
 bind CTRL-F12 NONE HousingEditor
 bind CTRL-SHIFT-B NONE
 bind CTRL-SHIFT-B NONE HousingEditor
@@ -308,3 +308,5 @@ bind ; QUESTIE_TOGGLE_JOURNEY
 bind BACKSPACE NONE
 bind CTRL-SHIFT-S TOGGLEMUSIC
 bind ALT-CTRL-B NBAGS_TOGGLE
+bind ALT-F12 CLICK RotBotF1a:LeftButton
+bind + CLICK RotBotF1a:LeftButton

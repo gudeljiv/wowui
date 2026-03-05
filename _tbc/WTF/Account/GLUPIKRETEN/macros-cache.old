@@ -69,7 +69,8 @@ VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
 /click StaticPopup1Button1
 END
 VER 3 0000000000000041 "TEST" "132123"
-/run print(xGetRange("mouseover", "max"))
+/run RotationFrame1a:SetPoint("CENTER", UIParent, "CENTER", -135, -80)
+/run RotationFrame1b:SetPoint("CENTER", UIParent, "CENTER", -135, -100)
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

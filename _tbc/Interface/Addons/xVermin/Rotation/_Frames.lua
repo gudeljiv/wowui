@@ -9,8 +9,8 @@ local stop_b = CreateFrame("BUTTON", "RotBotF2b")
 SetBindingClick("HOME", "RotBotF1b")
 SetBindingClick("END", "RotBotF2b")
 
-SetBindingClick("ALT-F12", "RotBotF1a")
-SetBindingClick("CTRL-F12", "RotBotF2a")
+SetBindingClick("+", "RotBotF1a")
+SetBindingClick("-", "RotBotF2a")
 
 start_a:SetScript("OnClick", function(self, event)
 	RotationFrame1a:SetBackdropColor(0, 1, 0, 0.9)

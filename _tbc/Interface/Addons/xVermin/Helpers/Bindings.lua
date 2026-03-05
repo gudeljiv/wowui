@@ -163,8 +163,8 @@ local function FixBindings()
 	SetBindingClick("HOME", "RotBotF1b")
 	SetBindingClick("END", "RotBotF2b")
 
-	SetBindingClick("ALT-F12", "RotBotF1a")
-	SetBindingClick("CTRL-F12", "RotBotF2a")
+	SetBindingClick("+", "RotBotF1a")
+	SetBindingClick("-", "RotBotF2a")
 end
 
 local function ClearAllBindings()

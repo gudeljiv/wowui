@@ -42,7 +42,7 @@ dprint = False
 debug = False
 pause = False
 wow_class = "warrior"
-out_of_combat = False
+out_of_combat = True
 
 # --- Screen / monitor setup ---
 screen_width = GetSystemMetrics(0)
@@ -94,30 +94,40 @@ def press_interception_key(key, modifier=False):
 
 
 # --- Hotkey listener ---
+_modifiers = set()
+
+
 def on_press(key):
     global dprint, pause, debug, out_of_combat
     try:
-        if key == keyboard.Key.f8:
+        if key in (keyboard.Key.ctrl_l, keyboard.Key.ctrl_r, keyboard.Key.alt_l, keyboard.Key.alt_r, keyboard.Key.alt_gr):
+            _modifiers.add(key)
+        elif key == keyboard.Key.f8:
             dprint = not dprint
             print("PRINT:", dprint)
         elif key == keyboard.Key.f11:
             debug = not debug
             print("DEBUG:", debug)
         elif key == keyboard.Key.f12:
+            if _modifiers:
+                return  # synthetic ctrl+f12 or alt+f12 from pyautogui
             pause = not pause
-            print("ROTATION:", not pause)
             if pause:
-                pyautogui.hotkey("alt", "f12")
+                pyautogui.hotkey("-")
                 pyautogui.hotkey("end")
                 out_of_combat = True
-                pyautogui.PAUSE = 1
+                pyautogui.PAUSE = 0.05
                 pyautogui.FAILSAFE = False
             else:
-                pyautogui.hotkey("ctrl", "f12")
+                pyautogui.hotkey("+")
                 pyautogui.PAUSE = 0.05
                 pyautogui.FAILSAFE = True
     except Exception:
         pass
+
+
+def on_release(key):
+    _modifiers.discard(key)
 
 
 # --- Color helpers ---
@@ -232,7 +242,7 @@ secondary_abilities = load_skills(wow_class, "secondary")
 
 
 # --- Main loop ---
-with keyboard.Listener(on_press=on_press) as listener:
+with keyboard.Listener(on_press=on_press, on_release=on_release) as listener:
     with mss.mss() as sct:
         while True:
             try:
@@ -242,6 +252,9 @@ with keyboard.Listener(on_press=on_press) as listener:
                 active_window = win32gui.GetWindowText(win32gui.GetForegroundWindow())
                 if active_window != WOW_WINDOW:
                     time.sleep(2)
+                    continue
+
+                if pause:
                     continue
 
                 # Grab screen regions
@@ -259,7 +272,6 @@ with keyboard.Listener(on_press=on_press) as listener:
                 found_class, wow_class = get_class(clss, COLOR_DISTANCE)
                 if not found_class:
                     time.sleep(0.5)
-                    pyautogui.hotkey("end" if pause else "home")
                     continue
 
                 # Reload skills if class changed
@@ -268,32 +280,30 @@ with keyboard.Listener(on_press=on_press) as listener:
                     main_abilities = {**load_skills(wow_class, "main"), **healing, **global_skills}
                     secondary_abilities = load_skills(wow_class, "secondary")
                     wow_class_loaded = wow_class
-                    pyautogui.hotkey("end" if pause else "home")
 
-                if not pause:
-                    if combat == COMBAT_SKIP:
-                        if not out_of_combat:
-                            out_of_combat = True
-                            pyautogui.hotkey("end")
-                        continue
-                    else:
-                        if out_of_combat:
-                            out_of_combat = False
-                            pyautogui.hotkey("home")
+                if combat == COMBAT_SKIP:
+                    if not out_of_combat:
+                        out_of_combat = True
+                        pyautogui.hotkey("end")
+                    continue
+                else:
+                    if out_of_combat:
+                        out_of_combat = False
+                        pyautogui.hotkey("home")
 
-                    if interrupt == INTERRUPT_COLOR:
-                        press_interception_key(INTERRUPT_KEY)
-                        continue
+                if interrupt == INTERRUPT_COLOR:
+                    press_interception_key(INTERRUPT_KEY)
+                    continue
 
-                    main_skill = numpy.array(main_image)[:, :, :3]
-                    secondary_skill = numpy.array(offgcd_image)[:, :, :3]
+                main_skill = numpy.array(main_image)[:, :, :3]
+                secondary_skill = numpy.array(offgcd_image)[:, :, :3]
 
-                    t = threading.Thread(
-                        target=run_rotation,
-                        args=(main_skill, secondary_skill, main_abilities, secondary_abilities, start_time),
-                        daemon=True,
-                    )
-                    t.start()
+                t = threading.Thread(
+                    target=run_rotation,
+                    args=(main_skill, secondary_skill, main_abilities, secondary_abilities, start_time),
+                    daemon=True,
+                )
+                t.start()
 
             except KeyboardInterrupt:
                 print("Script unloaded and closed.", "Monitor:", screen_width, screen_height, dt.now().strftime("%H:%M:%S"))
