@@ -11,11 +11,11 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:1205
+/cast item:0
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:4593
+/cast item:0
 END
 VER 3 000000000000003F "gather" "134400"
 #showtooltip
@@ -23,7 +23,7 @@ VER 3 000000000000003F "gather" "134400"
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:929
+/cast item:0
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -59,7 +59,10 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3771
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Verog the Dervish
+/targetexact Mangy Duskbat
+/targetexact Duskbat
+/targetexact Ragged Scavenger
+/targetexact Young Scavenger
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
@@ -70,7 +73,7 @@ VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000041 "TEST" "132123"
 /run RotationFrame1a:SetPoint("CENTER", UIParent, "CENTER", -135, -80)
-/run RotationFrame1b:SetPoint("CENTER", UIParent, "CENTER", -135, -100)
+/run RotationFrame1b:SetPoint("CENTER", UIParent, "CENTER", -135, -98)
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy

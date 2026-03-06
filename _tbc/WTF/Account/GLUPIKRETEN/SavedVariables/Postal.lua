@@ -46,7 +46,7 @@ Postal3DB = {
 "Mxzq|Golemagg|Horde|35|HUNTER",
 "Pitchwise|Thunderstrike|Horde|19|SHAMAN",
 "Poklopac|Thunderstrike|Horde|15|SHAMAN",
-"Testvermin|Thunderstrike|Horde|2|ROGUE",
+"Testvermin|Thunderstrike|Horde|3|ROGUE",
 "Turbonac|Celebras|Alliance|7|WARLOCK",
 "Vbank|Celebras|Alliance|1|WARRIOR",
 "Vermins|Stitches|Horde|27|WARRIOR",
@@ -91,10 +91,10 @@ Postal3DB = {
 ["Vermin - Zandalar Tribe"] = "Vermin - Zandalar Tribe",
 ["Dopebolt - Living Flame"] = "Dopebolt - Living Flame",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
-["Vermin - Celebras"] = "Vermin - Celebras",
-["Pitchwise - Thunderstrike"] = "Pitchwise - Thunderstrike",
-["Doperage - Living Flame"] = "Doperage - Living Flame",
 ["Turbonac - Celebras"] = "Turbonac - Celebras",
+["Vermin - Celebras"] = "Vermin - Celebras",
+["Doperage - Living Flame"] = "Doperage - Living Flame",
+["Pitchwise - Thunderstrike"] = "Pitchwise - Thunderstrike",
 ["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
 ["Dopecoil - Thunderstrike"] = "Dopecoil - Thunderstrike",
 ["Handrmandr - Thunderstrike"] = "Handrmandr - Thunderstrike",
@@ -172,6 +172,7 @@ Postal3DB = {
 },
 },
 ["Dopecure - Thunderstrike"] = {
+["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Dopeseal|Thunderstrike|Horde",
@@ -183,7 +184,6 @@ Postal3DB = {
 "Dopecoil|Thunderstrike|Horde",
 },
 },
-["OpenSpeed"] = 0,
 },
 ["Dopedot - Lone Wolf"] = {
 },
@@ -231,13 +231,13 @@ Postal3DB = {
 },
 },
 ["Moolatz - Thunderstrike"] = {
-["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Dopeseal|Thunderstrike|Horde",
 "Dopecure|Thunderstrike|Horde",
 },
 },
+["OpenSpeed"] = 0,
 },
 ["Dopesnare - Living Flame"] = {
 },
@@ -299,6 +299,8 @@ Postal3DB = {
 },
 ["Dopetrap - Lone Wolf"] = {
 },
+["Turbonac - Celebras"] = {
+},
 ["Vermin - Celebras"] = {
 ["BlackBook"] = {
 ["recent"] = {
@@ -308,16 +310,16 @@ Postal3DB = {
 },
 },
 },
+["Doperage - Living Flame"] = {
+},
 ["Pitchwise - Thunderstrike"] = {
+["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Dopecure|Thunderstrike|Horde",
+"Dopeseal|Thunderstrike|Horde",
 },
 },
-},
-["Doperage - Living Flame"] = {
-},
-["Turbonac - Celebras"] = {
 },
 ["Battlenac - Zandalar Tribe"] = {
 },

@@ -127,3 +127,7 @@ UberUI: disabled
 Blizzard_CombatText: enabled
 TradeSkillMaster: enabled
 DmgFontChanger: disabled
+BagSync: enabled
+CookieEasyEnchant: enabled
+Profession_Assistance: enabled
+Routes: enabled

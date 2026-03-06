@@ -40,9 +40,9 @@ INTERRUPT_KEY = "F9"
 # --- State ---
 dprint = False
 debug = False
-pause = False
-wow_class = "warrior"
+pause = True
 out_of_combat = True
+wow_class = "warrior"
 
 # --- Screen / monitor setup ---
 screen_width = GetSystemMetrics(0)

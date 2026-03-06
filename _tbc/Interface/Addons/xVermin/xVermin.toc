@@ -15,7 +15,7 @@ _Core.lua
 _Debug.lua
 
 Frames/_Misc_Frames.lua
-Frames/_Moveable_Frames.lua
+# Frames/_Moveable_Frames.lua
 Frames/BetterRunesFrame.lua
 Frames/BuffFrame.lua
 Frames/CharacterFrame.lua

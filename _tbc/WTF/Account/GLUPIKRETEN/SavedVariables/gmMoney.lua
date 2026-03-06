@@ -54,11 +54,11 @@ GMMONEY = {
 ["CLASS"] = "WARRIOR",
 },
 ["Dopeseal"] = {
-["GOLD"] = 1028804,
+["GOLD"] = 1621652,
 ["CLASS"] = "PALADIN",
 },
 ["Moolatz"] = {
-["GOLD"] = 405539,
+["GOLD"] = 403340,
 ["CLASS"] = "DRUID",
 },
 ["Dopecoil"] = {
@@ -74,7 +74,7 @@ GMMONEY = {
 ["CLASS"] = "ROGUE",
 },
 ["Pitchwise"] = {
-["GOLD"] = 7552,
+["GOLD"] = 12451,
 ["CLASS"] = "SHAMAN",
 },
 },

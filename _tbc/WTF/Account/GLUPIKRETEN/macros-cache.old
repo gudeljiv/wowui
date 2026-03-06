@@ -59,7 +59,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3771
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Sunscale Scytheclaw
+/targetexact Regthar Deathgate
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
@@ -70,7 +70,7 @@ VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
 END
 VER 3 0000000000000041 "TEST" "132123"
 /run RotationFrame1a:SetPoint("CENTER", UIParent, "CENTER", -135, -80)
-/run RotationFrame1b:SetPoint("CENTER", UIParent, "CENTER", -135, -100)
+/run RotationFrame1b:SetPoint("CENTER", UIParent, "CENTER", -135, -98)
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy
