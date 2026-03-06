@@ -190,8 +190,9 @@ xVerminSavedData = {
 ["Whirlwind Stormwalker"] = {
 "Deep Wound",
 },
-["Corrupt Minor Manifestation of Water"] = {
-"Frost Shock",
+["Burning Destroyer"] = {
+"Lava Lash",
+"Serpent Sting",
 },
 ["Scalding Elemental"] = {
 "Rend",
@@ -209,8 +210,8 @@ xVerminSavedData = {
 ["Freezing Spirit"] = {
 "Deep Wound",
 },
-["Amnennar the Coldbringer"] = {
-"Intimidation",
+["Healing Ward IV"] = {
+"Rend",
 },
 ["Shadowshard Smasher"] = {
 "Lightning Shield",
@@ -310,6 +311,18 @@ xVerminSavedData = {
 ["XT:9"] = {
 "Serpent Sting",
 },
+["Shadowfang Whitescalp"] = {
+"Frostbolt",
+"Frost Nova",
+},
+["Fire Elemental"] = {
+"Flametongue Attack",
+"Magma Totem",
+"Serpent Sting",
+"Lava Lash",
+"Deep Wound",
+"Explosive Trap Effect",
+},
 ["Larsera"] = {
 "Serpent Sting",
 "Intimidation",
@@ -322,23 +335,15 @@ xVerminSavedData = {
 "Electrocutioner's Shock",
 "Chimera Shot",
 },
-["Fire Elemental"] = {
-"Flametongue Attack",
-"Magma Totem",
+["Theradrim Guardian"] = {
+"Lightning Shield",
+"Chain Lightning",
+"Deadly Poison II",
+"Instant Poison IV",
+"Poison",
+"Chimera Shot",
 "Serpent Sting",
-"Lava Lash",
-"Deep Wound",
-"Explosive Trap Effect",
-},
-["Shadowfang Whitescalp"] = {
-"Frostbolt",
-"Frost Nova",
-},
-["Gahz'rilla"] = {
-"Impact",
-"Intimidation",
-"Charge Stun",
-"Counterspell",
+"Thunder Clap",
 },
 ["Overlord Ramtusk"] = {
 "Concussive Shot",
@@ -347,31 +352,15 @@ xVerminSavedData = {
 ["Befouled Water Elemental"] = {
 "Serpent Sting",
 },
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
+["Sandfury Shadowcaster"] = {
 "Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
-"Serpent Sting",
-"Flame Shock",
-"Corruption",
-"Curse of Agony",
 },
 ["Ambershard Crusher"] = {
 "Chain Lightning",
 "Serpent Sting",
 },
-["Rock Elemental"] = {
-"Serpent Sting",
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Sea Spray"] = {
 "Frost Shock",
@@ -383,15 +372,11 @@ xVerminSavedData = {
 "Charge Stun",
 "Bash",
 },
-["Theradrim Guardian"] = {
-"Lightning Shield",
-"Chain Lightning",
-"Deadly Poison II",
-"Instant Poison IV",
-"Poison",
-"Chimera Shot",
-"Serpent Sting",
-"Thunder Clap",
+["Gahz'rilla"] = {
+"Impact",
+"Intimidation",
+"Charge Stun",
+"Counterspell",
 },
 ["Stone Rumbler"] = {
 "Lightning Shield",
@@ -412,26 +397,27 @@ xVerminSavedData = {
 "Lava Lash",
 "Flame Shock",
 },
-["Whirlwind Ripper"] = {
-"Lightning Shield",
-"Serpent Sting",
+["Remote-Controlled Golem"] = {
+"Rend",
+"Deep Wound",
 },
 ["Mordresh Fire Eye"] = {
 "Rend",
 "Deep Wound",
 },
-["Sandfury Shadowcaster"] = {
-"Earthbind",
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
 },
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
-"Corruption",
-"Curse of Agony",
-"Shadow Bolt",
+["Jade Sludge"] = {
+"Concussive Shot",
 },
-["Cracked Skull Soldier"] = {
-"Rend",
-"Fear",
+["Rock Elemental"] = {
+"Serpent Sting",
 },
 ["Ironspine"] = {
 "Rend",
@@ -446,18 +432,19 @@ xVerminSavedData = {
 ["Enraged Stone Spirit"] = {
 "Rend",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
-"Deep Wound",
+["Enraged Voidwalker"] = {
+"Poison Cloud",
 },
 ["Healing Ward"] = {
 "Faerie Fire (Feral)",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Cracked Skull Soldier"] = {
+"Rend",
+"Fear",
 },
-["Enraged Voidwalker"] = {
-"Poison Cloud",
+["Whirlwind Ripper"] = {
+"Lightning Shield",
+"Serpent Sting",
 },
 ["Jazzter"] = {
 "Fireball",
@@ -465,20 +452,34 @@ xVerminSavedData = {
 ["Razorlash"] = {
 "Blackout",
 },
-["Jade Sludge"] = {
-"Concussive Shot",
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
+"Corruption",
+"Curse of Agony",
+"Shadow Bolt",
 },
 ["Bound Elemental"] = {
 "Lightning Shield",
 "Rend",
 },
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
+"Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
+"Serpent Sting",
+"Flame Shock",
+"Corruption",
+"Curse of Agony",
 },
 ["Nelyz"] = {
 "Concussive Shot",
@@ -522,12 +523,11 @@ xVerminSavedData = {
 "Firebolt",
 "Incinerate",
 },
-["Healing Ward IV"] = {
-"Rend",
+["Amnennar the Coldbringer"] = {
+"Intimidation",
 },
-["Burning Destroyer"] = {
-"Lava Lash",
-"Serpent Sting",
+["Corrupt Minor Manifestation of Water"] = {
+"Frost Shock",
 },
 ["Theradrim Shardling"] = {
 "Chain Lightning",
