@@ -352,15 +352,21 @@ xVerminSavedData = {
 ["Befouled Water Elemental"] = {
 "Serpent Sting",
 },
-["Sandfury Shadowcaster"] = {
-"Earthbind",
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
 },
 ["Ambershard Crusher"] = {
 "Chain Lightning",
 "Serpent Sting",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Cracked Skull Soldier"] = {
+"Rend",
+"Fear",
 },
 ["Sea Spray"] = {
 "Frost Shock",
@@ -397,70 +403,12 @@ xVerminSavedData = {
 "Lava Lash",
 "Flame Shock",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
-"Deep Wound",
+["Enraged Voidwalker"] = {
+"Poison Cloud",
 },
 ["Mordresh Fire Eye"] = {
 "Rend",
 "Deep Wound",
-},
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
-},
-["Jade Sludge"] = {
-"Concussive Shot",
-},
-["Rock Elemental"] = {
-"Serpent Sting",
-},
-["Ironspine"] = {
-"Rend",
-},
-["Ruuzlu"] = {
-"Charge Stun",
-"Impact",
-},
-["Dust Devil"] = {
-"Serpent Sting",
-},
-["Enraged Stone Spirit"] = {
-"Rend",
-},
-["Enraged Voidwalker"] = {
-"Poison Cloud",
-},
-["Healing Ward"] = {
-"Faerie Fire (Feral)",
-},
-["Cracked Skull Soldier"] = {
-"Rend",
-"Fear",
-},
-["Whirlwind Ripper"] = {
-"Lightning Shield",
-"Serpent Sting",
-},
-["Jazzter"] = {
-"Fireball",
-},
-["Razorlash"] = {
-"Blackout",
-},
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
-"Corruption",
-"Curse of Agony",
-"Shadow Bolt",
-},
-["Bound Elemental"] = {
-"Lightning Shield",
-"Rend",
 },
 ["Evolving Ectoplasm"] = {
 "Attack",
@@ -480,6 +428,58 @@ xVerminSavedData = {
 "Flame Shock",
 "Corruption",
 "Curse of Agony",
+},
+["Jade Sludge"] = {
+"Concussive Shot",
+},
+["Sea Elemental"] = {
+"Frost Shock",
+},
+["Ironspine"] = {
+"Rend",
+},
+["Ruuzlu"] = {
+"Charge Stun",
+"Impact",
+},
+["Dust Devil"] = {
+"Serpent Sting",
+},
+["Enraged Stone Spirit"] = {
+"Rend",
+},
+["Whirlwind Ripper"] = {
+"Lightning Shield",
+"Serpent Sting",
+},
+["Healing Ward"] = {
+"Faerie Fire (Feral)",
+},
+["Rock Elemental"] = {
+"Serpent Sting",
+},
+["Remote-Controlled Golem"] = {
+"Rend",
+"Deep Wound",
+},
+["Jazzter"] = {
+"Fireball",
+},
+["Razorlash"] = {
+"Blackout",
+},
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
+"Corruption",
+"Curse of Agony",
+"Shadow Bolt",
+},
+["Bound Elemental"] = {
+"Lightning Shield",
+"Rend",
+},
+["Sandfury Shadowcaster"] = {
+"Earthbind",
 },
 ["Nelyz"] = {
 "Concussive Shot",

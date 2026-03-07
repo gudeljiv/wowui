@@ -1,14 +1,8 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 14345,
+["session"] = 14353,
 ["errors"] = {
-{
-["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:11 Unrecognized XML: Binding",
-["session"] = 13158,
-["time"] = "2026/01/02 18:23:19",
-["counter"] = 7,
-},
 {
 ["message"] = "Interface/AddOns/ExtraActionBars/Bindings.xml:1 Interface/AddOns/ExtraActionBars/Bindings.xml(28): error: not well-formed (invalid token)",
 ["time"] = "2026/01/02 18:38:02",
@@ -3888,6 +3882,14 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/NAG/Modules/StateManager.lua]:954: in function '?'\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua]:109: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[C]: ?\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua]:19: in function <...ags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n[Interface/AddOns/AdiBags/libs/CallbackHandler-1.0/CallbackHandler-1.0.lua]:54: in function 'Fire'\n[Interface/AddOns/ChocolateBar/libs/AceEvent-3.0/AceEvent-3.0.lua]:120: in function <...dOns/ChocolateBar/libs/AceEvent-3.0/AceEvent-3.0.lua:119>\n",
 ["session"] = 14310,
 ["counter"] = 6,
+},
+{
+["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'WhatsTraining' tried to call the protected function 'SpellBookSpellIconsFrame:Show()'.",
+["time"] = "2026/03/07 11:30:02",
+["locals"] = "self = <table> {\n}\nevent = \"ADDON_ACTION_BLOCKED\"\naddonName = \"WhatsTraining\"\naddonFunc = \"SpellBookSpellIconsFrame:Show()\"\nname = \"WhatsTraining\"\nbadAddons = <table> {\n WhatsTraining = true\n}\nL = <table> {\n ADDON_CALL_PROTECTED_MATCH = \"^%[(.*)%] (AddOn '.*' tried to call the protected function '.*'.)$\"\n NO_DISPLAY_2 = \"|cffffff00The standard display is called BugSack, and can probably be found on the same site where you found !BugGrabber.|r\"\n ERROR_DETECTED = \"%s |cffffff00captured, click the link for more information.|r\"\n USAGE = \"|cffffff00Usage: /buggrabber <1-%d>.|r\"\n BUGGRABBER_STOPPED = \"|cffffff00There are too many errors in your UI. As a result, your game experience may be degraded. Disable or update the failing addons if you don't want to see this message again.|r\"\n STOP_NAG = \"|cffffff00!BugGrabber will not nag about missing a display addon again until next patch.|r\"\n ADDON_DISABLED = \"|cffffff00!BugGrabber and %s cannot coexist; %s has been forcefully disabled. If you want to, you may log out, disable !BugGrabber, and enable %s.|r\"\n NO_DISPLAY_STOP = \"|cffffff00If you don't want to be reminded about this again, run /stopnag.|r\"\n NO_DISPLAY_1 = \"|cffffff00You seem to be running !BugGrabber with no display addon to go along with it. Although a slash command is provided for accessing error reports, a display can help you manage these errors in a more convenient way.|r\"\n ERROR_UNABLE = \"|cffffff00!BugGrabber is unable to retrieve errors from other players by itself. Please install BugSack or a similar display addon that might give you this functionality.|r\"\n ADDON_CALL_PROTECTED = \"[%s] AddOn '%s' tried to call the protected function '%s'.\"\n}\n",
+["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:477: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:401: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:401>\n[C]: in function 'Show'\n[Interface/AddOns/Blizzard_UIPanels_Game/Vanilla/SpellBookFrame.lua]:94: in function <...ns/Blizzard_UIPanels_Game/Vanilla/SpellBookFrame.lua:58>\n[C]: in function 'Update'\n[Interface/AddOns/WhatsTraining/WhatsTrainingUI.lua]:173: in function <Interface/AddOns/WhatsTraining/WhatsTrainingUI.lua:166>\n[C]: ?\n",
+["session"] = 14350,
+["counter"] = 1,
 },
 },
 }
