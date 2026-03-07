@@ -1,13 +1,12 @@
-## Interface: 120001
-## Title: ChocolateBar
-## Notes: A display for LibDataBroker-1.1
-## Author: Kiatra - github.com/Kiatra/ChocolateBar/
-## Version: v4.6
-## OptionalDeps: Ace3, LibSharedMedia-3.0, LibQTip-1.0
-## X-WoWI-ID: 12326
-## X-Curse-Project-ID: 17424
-## SavedVariables: ChocolateBarDB, CB_PlayedTime
-## IconTexture: Interface/AddOns/ChocolateBar/pics/ChocolatePiece
+## Interface: 120001, 120001, 50503, 40402, 30403, 20505, 11508
+## Title: Arcana: ChocolateBar Profile Migration (Required)
+## Notes: A stub with the old folder and toc name for profile migration. Makes WoW also load ChocolateBarDB from ChocolateBar.lua in the SavedVariables folder under WTF if present.
+## Author: Kiatra - https://github.com/Kiatra/Arcana
+## Version: v5.2.1
+## RequiredDeps: Arcana
+## Group: Arcana
+## SavedVariables: ChocolateBarDB
+## IconTexture: Interface/AddOns/Arcana/pics/ChocolatePiece
 
 ## Category: Data Broker
 ## Category-deDE: Datenbroker
@@ -20,41 +19,5 @@
 ## Category-zhCN: 数据管理
 ## Category-zhTW: 資料管理
 
-#@no-lib-strip@
-libs\libs.xml
-#@end-no-lib-strip@
 
-libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
-
-localization\enUS.lua
-localization\deDE.lua
-localization\esES.lua
-localization\frFr.lua
-localization\koKR.lua
-localization\zhCN.lua
-localization\zhTW.lua
-localization\ptBR.lua
-localization\ruRU.lua
-
-Core.lua
-JostleMainline.lua
-DragAndDrop.lua
-Chocolate.lua
-Bar.lua
-DropPoints.lua
-modules\Placeholder.lua
-modules\MoreChocolate.lua
-
-
-
-modules\PlayedTime_Loc.lua
-modules\PlayedTime.lua
-modules\PlayedTime_Options.lua
-
-modules\PlayerCoordinates\PlayerCoordinates.lua
-
-modules\MasterVolume\MasterVolume.lua
-modules\MusicVolume\MusicVolume.lua
-modules\SoundVolume\SoundVolume.lua
-
-Options.lua
+ChocolateBar_Migration.lua

@@ -1,0 +1,1 @@
+﻿--migration stub to make WoW load ChocolateBarDB from ChocolateBar.lua under the SavedVariables folder.
