@@ -8,7 +8,9 @@ rmdir "C:\Games\World of Warcraft\_classic_era_\Fonts"
 rmdir "C:\Games\World of Warcraft\_classic_era_\Interface"
 rmdir "C:\Games\World of Warcraft\_classic_era_\WTF"
 
-
+@REM mklink /D "G:\_IVAN\World of Warcraft\_anniversary_\Fonts" "G:\_IVAN\UI\_tbc\Fonts"
+@REM mklink /D "G:\_IVAN\World of Warcraft\_anniversary_\Interface" "G:\_IVAN\UI\_tbc\Interface"
+@REM mklink /D "G:\_IVAN\World of Warcraft\_anniversary_\WTF" "G:\_IVAN\UI\_tbc\WTF"
 
 mklink /D "C:\Games\World of Warcraft\_anniversary_\Fonts" "C:\Games\wowui\_tbc\Fonts"
 mklink /D "C:\Games\World of Warcraft\_anniversary_\Interface" "C:\Games\wowui\_tbc\Interface"
