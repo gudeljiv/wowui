@@ -337,9 +337,9 @@ Postal3DB = {
 ["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
-"Pitchwise|Thunderstrike|Horde",
 "Dopeseal|Thunderstrike|Horde",
 "Dopecure|Thunderstrike|Horde",
+"Pitchwise|Thunderstrike|Horde",
 },
 },
 },
@@ -395,6 +395,7 @@ Postal3DB = {
 },
 },
 ["Dopeseal - Thunderstrike"] = {
+["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Pitchwise|Thunderstrike|Horde",
@@ -403,7 +404,6 @@ Postal3DB = {
 "Vermins|Thunderstrike|Horde",
 },
 },
-["OpenSpeed"] = 0,
 },
 ["Vermins - Thunderstrike"] = {
 ["OpenSpeed"] = 0,

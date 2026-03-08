@@ -589,7 +589,9 @@ function Units:CreateUnit(...)
 	frame.OnEnter = SUF_OnEnter
 	frame.OnLeave = SUF_OnLeave
 
-	frame:RegisterForClicks("AnyUp")
+	if not frame:GetAttribute("isHeaderDriven") then
+		frame:RegisterForClicks("AnyUp")
+	end
 	-- non-header frames don't set those, so we need to do it
 	if( not InCombatLockdown() and not frame:GetAttribute("isHeaderDriven") ) then
 		frame:SetAttribute("*type1", "target")

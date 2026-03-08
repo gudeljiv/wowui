@@ -82,7 +82,7 @@ wow_class_loaded = wow_class
 print("Script loaded and ready.", "Monitor:", screen_width, screen_height, dt.now().strftime("%H:%M:%S"))
 print("PRINT:", dprint)
 print("DEBUG:", debug)
-print("F12: ACTIVE")
+print("F12: ", pause, "(PAUSED)" if pause else "(ACTIVE)")
 print("MODE:", mode.upper())
 print("CLASS:", wow_class_loaded.upper())
 pyautogui.hotkey("ctrl", "f12")

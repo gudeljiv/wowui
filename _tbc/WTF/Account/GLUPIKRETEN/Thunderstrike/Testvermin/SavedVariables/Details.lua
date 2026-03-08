@@ -7,29 +7,27 @@ _detalhes_database = {
 ["tabelas"] = {
 {
 {
-["combatId"] = 13,
+["combatId"] = 14,
 ["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.002919,
+["totalabsorbed"] = 0.008677,
 ["pets"] = {
 },
 ["classe"] = "ROGUE",
-["total_without_pet"] = 208.002919,
+["total_without_pet"] = 42.008677,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
-["total"] = 208.002919,
+["total"] = 42.008677,
 ["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04E45BE7",
 ["damage_from"] = {
 ["Mindless Zombie"] = true,
-["Wretched Zombie"] = true,
 },
 ["targets"] = {
-["Mindless Zombie"] = 134,
-["Wretched Zombie"] = 74,
+["Mindless Zombie"] = 42,
 },
 ["colocacao"] = 1,
 ["aID"] = "6409-04E45BE7",
@@ -37,26 +35,25 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["end_time"] = 1772789825,
+["end_time"] = 1772972584,
 ["nome"] = "Testvermin",
 ["spells"] = {
 ["tipo"] = 2,
 ["_ActorTable"] = {
 {
-["c_amt"] = 2,
+["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
 ["n_max"] = 5,
 ["targets"] = {
-["Mindless Zombie"] = 53,
-["Wretched Zombie"] = 30,
+["Mindless Zombie"] = 18,
 },
-["n_total"] = 63,
+["n_total"] = 18,
 ["n_min"] = 4,
 ["g_dmg"] = 0,
-["counter"] = 15,
-["total"] = 83,
-["c_max"] = 10,
+["counter"] = 4,
+["total"] = 18,
+["c_max"] = 0,
 ["id"] = 1,
 ["r_dmg"] = 0,
 ["spellschool"] = 1,
@@ -64,28 +61,27 @@ _detalhes_database = {
 },
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
-["c_min"] = 10,
+["c_min"] = 0,
 ["successful_casted"] = 0,
-["c_total"] = 20,
-["n_amt"] = 13,
+["c_total"] = 0,
+["n_amt"] = 4,
 ["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [1752] = {
-["c_amt"] = 1,
+["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["n_max"] = 8,
 ["targets"] = {
-["Mindless Zombie"] = 70,
-["Wretched Zombie"] = 25,
+["Mindless Zombie"] = 24,
 },
-["n_total"] = 80,
-["n_min"] = 7,
+["n_total"] = 24,
+["n_min"] = 8,
 ["g_dmg"] = 0,
-["counter"] = 11,
-["total"] = 95,
-["c_max"] = 15,
+["counter"] = 3,
+["total"] = 24,
+["c_max"] = 0,
 ["id"] = 1752,
 ["r_dmg"] = 0,
 ["spellschool"] = 1,
@@ -93,39 +89,10 @@ _detalhes_database = {
 },
 ["a_dmg"] = 0,
 ["a_amt"] = 0,
-["c_min"] = 15,
+["c_min"] = 0,
 ["successful_casted"] = 0,
-["c_total"] = 15,
-["n_amt"] = 10,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-[2764] = {
-["c_amt"] = 1,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 5,
-["targets"] = {
-["Mindless Zombie"] = 11,
-["Wretched Zombie"] = 19,
-},
-["n_total"] = 22,
-["n_min"] = 3,
-["g_dmg"] = 0,
-["counter"] = 6,
-["total"] = 30,
-["c_max"] = 8,
-["id"] = 2764,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 8,
-["successful_casted"] = 0,
-["c_total"] = 8,
-["n_amt"] = 5,
+["c_total"] = 0,
+["n_amt"] = 3,
 ["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
@@ -133,43 +100,41 @@ _detalhes_database = {
 },
 ["friendlyfire"] = {
 },
-["last_dps"] = 4.784205878969004,
+["last_dps"] = 6.377512828298614,
 ["custom"] = 0,
 ["tipo"] = 1,
-["damage_taken"] = 30.002919,
-["start_time"] = 1772789782,
+["damage_taken"] = 3.008677,
+["start_time"] = 1772972577,
 ["delay"] = 0,
-["last_event"] = 1772789824,
+["last_event"] = 1772972582,
 },
 {
-["flag_original"] = 2600,
-["totalabsorbed"] = 0.00226,
+["flag_original"] = 68136,
+["totalabsorbed"] = 0.00402,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
-["total_without_pet"] = 32.00226,
+["total_without_pet"] = 3.00402,
 ["last_dps_realtime"] = 0,
-["dps_started"] = true,
-["total"] = 32.00226,
+["dps_started"] = false,
+["total"] = 3.00402,
 ["on_hold"] = false,
 ["total_extra"] = 0,
-["serial"] = "Creature-0-6424-0-25191-1502-00002A9FC1",
-["aID"] = "1502",
+["serial"] = "Creature-0-6427-0-109273-1501-00002D6874",
+["aID"] = "1501",
 ["damage_from"] = {
-["Maatse"] = true,
+["Deathguard Randolph"] = true,
 ["Testvermin"] = true,
-["Slapsgiver"] = true,
 },
 ["targets"] = {
-["Maatse"] = 6,
-["Testvermin"] = 10,
-["Slapsgiver"] = 16,
+["Testvermin"] = 3,
 },
 ["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["nome"] = "Wretched Zombie",
+["end_time"] = 1772972584,
+["nome"] = "Mindless Zombie",
 ["spells"] = {
 ["tipo"] = 2,
 ["_ActorTable"] = {
@@ -179,16 +144,15 @@ _detalhes_database = {
 ["g_amt"] = 0,
 ["n_max"] = 2,
 ["targets"] = {
-["Maatse"] = 6,
-["Testvermin"] = 10,
-["Slapsgiver"] = 16,
+["Deathguard Randolph"] = 0,
+["Testvermin"] = 3,
 },
-["n_total"] = 32,
+["n_total"] = 3,
 ["n_min"] = 1,
 ["g_dmg"] = 0,
-["counter"] = 20,
-["BLOCK"] = 1,
-["total"] = 32,
+["counter"] = 4,
+["MISS"] = 1,
+["total"] = 3,
 ["c_max"] = 0,
 ["DODGE"] = 1,
 ["id"] = 1,
@@ -201,7 +165,7 @@ _detalhes_database = {
 ["c_min"] = 0,
 ["successful_casted"] = 0,
 ["c_total"] = 0,
-["n_amt"] = 18,
+["n_amt"] = 2,
 ["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
@@ -212,102 +176,27 @@ _detalhes_database = {
 ["last_dps"] = 0,
 ["custom"] = 0,
 ["tipo"] = 1,
-["damage_taken"] = 354.00226,
-["start_time"] = 1772789804,
-["delay"] = 1772789798,
-["last_event"] = 1772789850,
-},
-{
-["flag_original"] = 68136,
-["totalabsorbed"] = 0.008413,
-["pets"] = {
-},
-["classe"] = "UNKNOW",
-["total_without_pet"] = 29.008413,
-["last_dps_realtime"] = 0,
-["dps_started"] = false,
-["total"] = 29.008413,
-["on_hold"] = false,
-["total_extra"] = 0,
-["serial"] = "Creature-0-6424-0-25191-1501-0000AA9FD6",
-["aID"] = "1501",
-["damage_from"] = {
-["Slapsgiver"] = true,
-["Testvermin"] = true,
-},
-["targets"] = {
-["Slapsgiver"] = 9,
-["Testvermin"] = 20,
-},
-["fight_component"] = true,
-["friendlyfire_total"] = 0,
-["raid_targets"] = {
-},
-["end_time"] = 1772789825,
-["nome"] = "Mindless Zombie",
-["spells"] = {
-["tipo"] = 2,
-["_ActorTable"] = {
-{
-["c_amt"] = 0,
-["b_amt"] = 0,
-["g_amt"] = 0,
-["n_max"] = 2,
-["targets"] = {
-["Slapsgiver"] = 9,
-["Testvermin"] = 20,
-},
-["n_total"] = 29,
-["MISS"] = 2,
-["n_min"] = 1,
-["g_dmg"] = 0,
-["counter"] = 25,
-["BLOCK"] = 1,
-["total"] = 29,
-["c_max"] = 0,
-["DODGE"] = 4,
-["id"] = 1,
-["r_dmg"] = 0,
-["spellschool"] = 1,
-["extra"] = {
-},
-["a_dmg"] = 0,
-["a_amt"] = 0,
-["c_min"] = 0,
-["successful_casted"] = 0,
-["c_total"] = 0,
-["n_amt"] = 18,
-["b_dmg"] = 0,
-["r_amt"] = 0,
-},
-},
-},
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
-["tipo"] = 1,
-["damage_taken"] = 294.008413,
-["start_time"] = 1772789782,
+["damage_taken"] = 445.00402,
+["start_time"] = 1772972577,
 ["delay"] = 0,
-["last_event"] = 1772789823,
+["last_event"] = 1772972583,
 },
 },
 },
 {
-["combatId"] = 13,
+["combatId"] = 14,
 ["tipo"] = 3,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 13,
+["combatId"] = 14,
 ["tipo"] = 7,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 13,
+["combatId"] = 14,
 ["tipo"] = 9,
 ["_ActorTable"] = {
 {
@@ -325,7 +214,7 @@ _detalhes_database = {
 },
 },
 {
-["combatId"] = 13,
+["combatId"] = 14,
 ["tipo"] = 2,
 ["_ActorTable"] = {
 },
@@ -333,8 +222,8 @@ _detalhes_database = {
 ["raid_roster"] = {
 ["Testvermin"] = "Player-6409-04E45BE7",
 },
-["CombatStartedAt"] = 425606.98,
-["tempo_start"] = 1772789782,
+["CombatStartedAt"] = 16936.415,
+["tempo_start"] = 1772972577,
 ["last_events_tables"] = {
 },
 ["alternate_power"] = {
@@ -347,7 +236,7 @@ _detalhes_database = {
 ["playerTalents"] = {
 },
 ["totals"] = {
-712,
+448,
 0,
 {
 0,
@@ -370,7 +259,7 @@ _detalhes_database = {
 ["voidzone_damage"] = 0,
 },
 ["totals_grupo"] = {
-208,
+42,
 0,
 {
 0,
@@ -386,6 +275,459 @@ _detalhes_database = {
 ["cooldowns_defensive"] = 0,
 ["interrupt"] = 0,
 ["dispell"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+},
+["frags_need_refresh"] = true,
+["amountCasts"] = {
+["Testvermin"] = {
+["Sinister Strike"] = 3,
+},
+},
+["instance_type"] = "none",
+["zoneName"] = "Eastern Kingdoms",
+["data_fim"] = "13:23:04",
+["pvp"] = true,
+["bIsClosed"] = true,
+["cleu_timeline"] = {
+},
+["enemy"] = "Mindless Zombie",
+["trinketProcs"] = {
+},
+["TotalElapsedCombatTime"] = 6.485000000000582,
+["CombatEndedAt"] = 16942.9,
+["aura_timeline"] = {
+},
+["compressed_charts"] = {
+},
+["data_inicio"] = "13:22:58",
+["end_time"] = 16942.9,
+["mapId"] = 0,
+["combat_id"] = 14,
+["timeStart"] = 1772972578,
+["timeEnd"] = 1772972584,
+["playing_solo"] = true,
+["is_challenge"] = false,
+["frags"] = {
+["Mindless Zombie"] = 2,
+},
+["boss_hp"] = 1,
+["combat_counter"] = 37,
+["player_last_events"] = {
+},
+["PhaseData"] = {
+{
+1,
+1,
+},
+["heal_section"] = {
+},
+["heal"] = {
+{
+},
+},
+["damage_section"] = {
+},
+["damage"] = {
+{
+["Testvermin"] = 42.008677,
+},
+},
+},
+["start_time"] = 16936.313,
+["TimeData"] = {
+},
+["spells_cast_timeline"] = {
+},
+},
+{
+{
+["tipo"] = 2,
+["combatId"] = 13,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "ROGUE",
+["total_without_pet"] = 208.002919,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 208.002919,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Player-6409-04E45BE7",
+["damage_from"] = {
+["Mindless Zombie"] = true,
+["Wretched Zombie"] = true,
+},
+["targets"] = {
+["Mindless Zombie"] = 134,
+["Wretched Zombie"] = 74,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["end_time"] = 1772789825,
+["totalabsorbed"] = 0.002919,
+["aID"] = "6409-04E45BE7",
+["nome"] = "Testvermin",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 2,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Mindless Zombie"] = 53,
+["Wretched Zombie"] = 30,
+},
+["n_total"] = 63,
+["n_min"] = 4,
+["g_dmg"] = 0,
+["counter"] = 15,
+["total"] = 83,
+["c_max"] = 10,
+["id"] = 1,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 10,
+["successful_casted"] = 0,
+["c_total"] = 20,
+["n_amt"] = 13,
+["n_max"] = 5,
+["r_amt"] = 0,
+},
+[1752] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Mindless Zombie"] = 70,
+["Wretched Zombie"] = 25,
+},
+["n_total"] = 80,
+["n_min"] = 7,
+["g_dmg"] = 0,
+["counter"] = 11,
+["total"] = 95,
+["c_max"] = 15,
+["id"] = 1752,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 15,
+["successful_casted"] = 0,
+["c_total"] = 15,
+["n_amt"] = 10,
+["n_max"] = 9,
+["r_amt"] = 0,
+},
+[2764] = {
+["c_amt"] = 1,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Mindless Zombie"] = 11,
+["Wretched Zombie"] = 19,
+},
+["n_total"] = 22,
+["n_min"] = 3,
+["g_dmg"] = 0,
+["counter"] = 6,
+["total"] = 30,
+["c_max"] = 8,
+["id"] = 2764,
+["r_dmg"] = 0,
+["spellschool"] = 1,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["c_min"] = 8,
+["successful_casted"] = 0,
+["c_total"] = 8,
+["n_amt"] = 5,
+["n_max"] = 5,
+["r_amt"] = 0,
+},
+},
+["tipo"] = 2,
+},
+["grupo"] = true,
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1772789824,
+["damage_taken"] = 30.002919,
+["start_time"] = 1772789782,
+["delay"] = 0,
+["last_dps"] = 4.784205878969004,
+},
+{
+["flag_original"] = 2600,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 32.00226,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 32.00226,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-6424-0-25191-1502-00002A9FC1",
+["damage_from"] = {
+["Maatse"] = true,
+["Testvermin"] = true,
+["Slapsgiver"] = true,
+["Deathguard Randolph"] = true,
+},
+["targets"] = {
+["Maatse"] = 6,
+["Testvermin"] = 10,
+["Slapsgiver"] = 16,
+},
+["aID"] = "1502",
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["fight_component"] = true,
+["end_time"] = 1772972577,
+["totalabsorbed"] = 0.00226,
+["nome"] = "Wretched Zombie",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Maatse"] = 6,
+["Testvermin"] = 10,
+["Slapsgiver"] = 16,
+["Deathguard Randolph"] = 0,
+},
+["n_total"] = 32,
+["MISS"] = 1,
+["n_min"] = 1,
+["g_dmg"] = 0,
+["counter"] = 21,
+["DODGE"] = 1,
+["r_amt"] = 0,
+["c_max"] = 0,
+["spellschool"] = 1,
+["id"] = 1,
+["r_dmg"] = 0,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["a_amt"] = 0,
+["BLOCK"] = 1,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 18,
+["n_max"] = 2,
+["total"] = 32,
+},
+},
+["tipo"] = 2,
+},
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1772972560,
+["damage_taken"] = 692.00226,
+["start_time"] = 1772972530,
+["delay"] = 1772972560,
+["last_dps"] = 0,
+},
+{
+["flag_original"] = 68136,
+["pets"] = {
+},
+["classe"] = "UNKNOW",
+["total_without_pet"] = 29.008413,
+["last_dps_realtime"] = 0,
+["dps_started"] = false,
+["total"] = 29.008413,
+["friendlyfire"] = {
+},
+["total_extra"] = 0,
+["serial"] = "Creature-0-6424-0-25191-1501-0000AA9FD6",
+["damage_from"] = {
+["Testvermin"] = true,
+["Slapsgiver"] = true,
+["Deathguard Randolph"] = true,
+},
+["targets"] = {
+["Slapsgiver"] = 9,
+["Testvermin"] = 20,
+},
+["friendlyfire_total"] = 0,
+["raid_targets"] = {
+},
+["aID"] = "1501",
+["fight_component"] = true,
+["end_time"] = 1772789825,
+["totalabsorbed"] = 0.008413,
+["nome"] = "Mindless Zombie",
+["spells"] = {
+["_ActorTable"] = {
+{
+["c_amt"] = 0,
+["b_amt"] = 0,
+["g_amt"] = 0,
+["b_dmg"] = 0,
+["targets"] = {
+["Testvermin"] = 20,
+["Slapsgiver"] = 9,
+["Deathguard Randolph"] = 0,
+},
+["n_total"] = 29,
+["g_dmg"] = 0,
+["n_min"] = 1,
+["MISS"] = 3,
+["counter"] = 26,
+["DODGE"] = 4,
+["total"] = 29,
+["c_max"] = 0,
+["r_amt"] = 0,
+["id"] = 1,
+["r_dmg"] = 0,
+["extra"] = {
+},
+["a_dmg"] = 0,
+["BLOCK"] = 1,
+["a_amt"] = 0,
+["c_min"] = 0,
+["successful_casted"] = 0,
+["c_total"] = 0,
+["n_amt"] = 18,
+["spellschool"] = 1,
+["n_max"] = 2,
+},
+},
+["tipo"] = 2,
+},
+["on_hold"] = false,
+["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1772972518,
+["damage_taken"] = 688.008413,
+["start_time"] = 1772789782,
+["delay"] = 0,
+["last_dps"] = 0,
+},
+},
+},
+{
+["tipo"] = 3,
+["combatId"] = 13,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 7,
+["combatId"] = 13,
+["_ActorTable"] = {
+},
+},
+{
+["tipo"] = 9,
+["combatId"] = 13,
+["_ActorTable"] = {
+{
+["flag_original"] = 1297,
+["pets"] = {
+},
+["classe"] = "ROGUE",
+["nome"] = "Testvermin",
+["grupo"] = true,
+["aID"] = "6409-04E45BE7",
+["last_event"] = 0,
+["serial"] = "Player-6409-04E45BE7",
+["tipo"] = 4,
+},
+},
+},
+{
+["tipo"] = 2,
+["combatId"] = 13,
+["_ActorTable"] = {
+},
+},
+["raid_roster"] = {
+["Testvermin"] = "Player-6409-04E45BE7",
+},
+["CombatStartedAt"] = 425606.98,
+["tempo_start"] = 1772789782,
+["last_events_tables"] = {
+},
+["alternate_power"] = {
+},
+["bossTimers"] = {
+},
+["cleu_events"] = {
+["n"] = 1,
+},
+["playerTalents"] = {
+},
+["totals"] = {
+1510,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
+["cc_break"] = 0,
+["dead"] = 0,
+},
+["frags_total"] = 0,
+["voidzone_damage"] = 0,
+},
+["totals_grupo"] = {
+208,
+0,
+{
+0,
+[0] = 0,
+["alternatepower"] = 0,
+[3] = 0,
+[6] = 0,
+},
+{
+["buff_uptime"] = 0,
+["ress"] = 0,
+["cooldowns_defensive"] = 0,
+["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -419,11 +761,12 @@ _detalhes_database = {
 ["combat_id"] = 13,
 ["timeStart"] = 1772789782,
 ["timeEnd"] = 1772789825,
-["playing_solo"] = true,
-["is_challenge"] = false,
 ["frags"] = {
 ["Mindless Zombie"] = 7,
 ["Wretched Zombie"] = 3,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
 },
 ["boss_hp"] = 1,
 ["combat_counter"] = 36,
@@ -434,13 +777,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -451,17 +794,15 @@ _detalhes_database = {
 ["start_time"] = 425606.98,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
-},
+["playing_solo"] = true,
 },
 {
 {
-["combatId"] = 12,
 ["tipo"] = 2,
+["combatId"] = 12,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
-["totalabsorbed"] = 0.004337,
 ["pets"] = {
 },
 ["classe"] = "ROGUE",
@@ -469,7 +810,9 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 105.004337,
-["on_hold"] = false,
+["colocacao"] = 1,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04E45BE7",
 ["damage_from"] = {
@@ -480,22 +823,20 @@ _detalhes_database = {
 ["Mindless Zombie"] = 49,
 ["Wretched Zombie"] = 56,
 },
-["colocacao"] = 1,
-["aID"] = "6409-04E45BE7",
-["grupo"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
 ["end_time"] = 1772789776,
+["totalabsorbed"] = 0.004337,
+["aID"] = "6409-04E45BE7",
 ["nome"] = "Testvermin",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 2,
 ["b_amt"] = 0,
 ["g_amt"] = 2,
-["n_max"] = 5,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Mindless Zombie"] = 38,
 ["Wretched Zombie"] = 19,
@@ -517,14 +858,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 18,
 ["n_amt"] = 6,
-["b_dmg"] = 0,
+["n_max"] = 5,
 ["r_amt"] = 0,
 },
 [1752] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Mindless Zombie"] = 8,
 ["Wretched Zombie"] = 32,
@@ -546,14 +887,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["r_amt"] = 0,
 },
 [2764] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 5,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Mindless Zombie"] = 3,
 ["Wretched Zombie"] = 5,
@@ -575,24 +916,24 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 5,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 5.729175960267563,
-["custom"] = 0,
+["grupo"] = true,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1772789776,
 ["damage_taken"] = 13.004337,
 ["start_time"] = 1772789758,
 ["delay"] = 0,
-["last_event"] = 1772789776,
+["last_dps"] = 5.729175960267563,
 },
 {
 ["flag_original"] = 2600,
-["totalabsorbed"] = 0.001994,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -600,10 +941,10 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 8.001994,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6424-0-25191-1501-00002A97AB",
-["aID"] = "1501",
 ["damage_from"] = {
 ["Slapsgiver"] = true,
 ["Testvermin"] = true,
@@ -612,20 +953,21 @@ _detalhes_database = {
 ["Slapsgiver"] = 1,
 ["Testvermin"] = 7,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "1501",
+["fight_component"] = true,
 ["end_time"] = 1772789782,
+["totalabsorbed"] = 0.001994,
 ["nome"] = "Mindless Zombie",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 2,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Slapsgiver"] = 1,
 ["Testvermin"] = 7,
@@ -648,24 +990,23 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1772789780,
 ["damage_taken"] = 68.001994,
 ["start_time"] = 1772789766,
 ["delay"] = 0,
-["last_event"] = 1772789780,
+["last_dps"] = 0,
 },
 {
 ["flag_original"] = 68136,
-["totalabsorbed"] = 0.004643,
 ["pets"] = {
 },
 ["classe"] = "UNKNOW",
@@ -673,30 +1014,31 @@ _detalhes_database = {
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 6.004643,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6424-0-25191-1502-00002A97BC",
-["aID"] = "1502",
 ["damage_from"] = {
 ["Testvermin"] = true,
 },
 ["targets"] = {
 ["Testvermin"] = 6,
 },
-["fight_component"] = true,
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
+["aID"] = "1502",
+["fight_component"] = true,
 ["end_time"] = 1772789776,
+["totalabsorbed"] = 0.004643,
 ["nome"] = "Wretched Zombie",
 ["spells"] = {
-["tipo"] = 2,
 ["_ActorTable"] = {
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["n_max"] = 2,
+["b_dmg"] = 0,
 ["targets"] = {
 ["Testvermin"] = 6,
 },
@@ -718,56 +1060,56 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["r_amt"] = 0,
 },
 },
+["tipo"] = 2,
 },
-["friendlyfire"] = {
-},
-["last_dps"] = 0,
-["custom"] = 0,
+["on_hold"] = false,
 ["tipo"] = 1,
+["custom"] = 0,
+["last_event"] = 1772789766,
 ["damage_taken"] = 56.004643,
 ["start_time"] = 1772789771,
 ["delay"] = 1772789766,
-["last_event"] = 1772789766,
+["last_dps"] = 0,
 },
 },
 },
 {
-["combatId"] = 12,
 ["tipo"] = 3,
+["combatId"] = 12,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 12,
 ["tipo"] = 7,
+["combatId"] = 12,
 ["_ActorTable"] = {
 },
 },
 {
-["combatId"] = 12,
 ["tipo"] = 9,
+["combatId"] = 12,
 ["_ActorTable"] = {
 {
 ["flag_original"] = 1297,
 ["pets"] = {
 },
 ["classe"] = "ROGUE",
-["serial"] = "Player-6409-04E45BE7",
+["nome"] = "Testvermin",
 ["grupo"] = true,
 ["aID"] = "6409-04E45BE7",
-["nome"] = "Testvermin",
 ["last_event"] = 0,
+["serial"] = "Player-6409-04E45BE7",
 ["tipo"] = 4,
 },
 },
 },
 {
-["combatId"] = 12,
 ["tipo"] = 2,
+["combatId"] = 12,
 ["_ActorTable"] = {
 },
 },
@@ -799,10 +1141,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -822,10 +1164,10 @@ _detalhes_database = {
 {
 ["buff_uptime"] = 0,
 ["ress"] = 0,
-["debuff_uptime"] = 0,
 ["cooldowns_defensive"] = 0,
-["interrupt"] = 0,
 ["dispell"] = 0,
+["interrupt"] = 0,
+["debuff_uptime"] = 0,
 ["cc_break"] = 0,
 ["dead"] = 0,
 },
@@ -859,11 +1201,12 @@ _detalhes_database = {
 ["combat_id"] = 12,
 ["timeStart"] = 1772789758,
 ["timeEnd"] = 1772789777,
-["playing_solo"] = true,
-["is_challenge"] = false,
 ["frags"] = {
 ["Mindless Zombie"] = 1,
 ["Wretched Zombie"] = 1,
+},
+["is_challenge"] = false,
+["spells_cast_timeline"] = {
 },
 ["boss_hp"] = 1,
 ["combat_counter"] = 35,
@@ -874,13 +1217,13 @@ _detalhes_database = {
 1,
 1,
 },
+["damage_section"] = {
+},
 ["heal_section"] = {
 },
 ["heal"] = {
 {
 },
-},
-["damage_section"] = {
 },
 ["damage"] = {
 {
@@ -891,8 +1234,7 @@ _detalhes_database = {
 ["start_time"] = 425583.295,
 ["TimeData"] = {
 },
-["spells_cast_timeline"] = {
-},
+["playing_solo"] = true,
 },
 {
 {
@@ -909,8 +1251,7 @@ _detalhes_database = {
 ["dps_started"] = false,
 ["total"] = 42.002942,
 ["colocacao"] = 1,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04E45BE7",
 ["damage_from"] = {
@@ -933,7 +1274,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 5,
 ["targets"] = {
 ["Young Scavenger"] = 19,
 },
@@ -954,14 +1295,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["n_max"] = 5,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [1752] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 8,
 ["targets"] = {
 ["Young Scavenger"] = 23,
 },
@@ -982,14 +1323,15 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["n_max"] = 8,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
 ["grupo"] = true,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772789745,
@@ -1002,13 +1344,12 @@ _detalhes_database = {
 ["flag_original"] = 68136,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "1508",
 ["total_without_pet"] = 3.003796,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 3.003796,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6424-0-25191-1508-00002A9934",
 ["damage_from"] = {
@@ -1020,7 +1361,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["aID"] = "1508",
+["classe"] = "UNKNOW",
 ["fight_component"] = true,
 ["end_time"] = 1772789746,
 ["totalabsorbed"] = 0.003796,
@@ -1031,7 +1372,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 1,
 ["targets"] = {
 ["Testvermin"] = 3,
 },
@@ -1052,13 +1393,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["n_max"] = 1,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772789745,
@@ -1119,8 +1461,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 45,
 0,
@@ -1225,7 +1566,8 @@ _detalhes_database = {
 ["start_time"] = 425566.077,
 ["TimeData"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 },
 {
 {
@@ -1242,8 +1584,7 @@ _detalhes_database = {
 ["dps_started"] = false,
 ["total"] = 42.00721,
 ["colocacao"] = 1,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04E45BE7",
 ["damage_from"] = {
@@ -1266,7 +1607,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 5,
 ["targets"] = {
 ["Wretched Zombie"] = 13,
 },
@@ -1287,14 +1628,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["n_max"] = 5,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [1752] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 7,
 ["targets"] = {
 ["Wretched Zombie"] = 29,
 },
@@ -1315,14 +1656,15 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 15,
 ["n_amt"] = 2,
-["n_max"] = 7,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
 ["grupo"] = true,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555319,
@@ -1335,13 +1677,12 @@ _detalhes_database = {
 ["flag_original"] = 68136,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "1502",
 ["total_without_pet"] = 3.006169,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 3.006169,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6425-0-116326-1502-0000270765",
 ["damage_from"] = {
@@ -1353,7 +1694,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["aID"] = "1502",
+["classe"] = "UNKNOW",
 ["fight_component"] = true,
 ["end_time"] = 1772555320,
 ["totalabsorbed"] = 0.006169,
@@ -1364,7 +1705,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 1,
 ["targets"] = {
 ["Testvermin"] = 3,
 },
@@ -1385,13 +1726,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["n_max"] = 1,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555318,
@@ -1452,8 +1794,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 54,
 0,
@@ -1558,7 +1899,8 @@ _detalhes_database = {
 ["start_time"] = 191143.421,
 ["TimeData"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 },
 {
 {
@@ -1575,8 +1917,7 @@ _detalhes_database = {
 ["dps_started"] = false,
 ["total"] = 86.00296,
 ["colocacao"] = 1,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04E45BE7",
 ["damage_from"] = {
@@ -1599,7 +1940,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 5,
 ["targets"] = {
 ["Wretched Zombie"] = 42,
 },
@@ -1620,14 +1961,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 9,
-["n_max"] = 5,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [1752] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 8,
 ["targets"] = {
 ["Wretched Zombie"] = 40,
 },
@@ -1648,14 +1989,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 16,
 ["n_amt"] = 3,
-["n_max"] = 8,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [2764] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 4,
 ["targets"] = {
 ["Wretched Zombie"] = 4,
 },
@@ -1676,14 +2017,15 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["n_max"] = 4,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
 ["grupo"] = true,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555289,
@@ -1696,13 +2038,12 @@ _detalhes_database = {
 ["flag_original"] = 68136,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "1502",
 ["total_without_pet"] = 10.003666,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 10.003666,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6425-0-116326-1502-0000A6FCFE",
 ["damage_from"] = {
@@ -1715,7 +2056,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["aID"] = "1502",
+["classe"] = "UNKNOW",
 ["fight_component"] = true,
 ["end_time"] = 1772555289,
 ["totalabsorbed"] = 0.003666,
@@ -1726,7 +2067,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["targets"] = {
 ["Deathguard Randolph"] = 0,
 ["Testvermin"] = 10,
@@ -1736,12 +2077,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 10,
 ["MISS"] = 2,
-["r_amt"] = 0,
-["spellschool"] = 1,
+["total"] = 10,
+["c_max"] = 0,
 ["DODGE"] = 2,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["c_max"] = 0,
+["spellschool"] = 1,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -1750,13 +2091,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["n_max"] = 2,
-["total"] = 10,
+["b_dmg"] = 0,
+["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555290,
@@ -1817,8 +2159,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 498,
 0,
@@ -1924,7 +2265,8 @@ _detalhes_database = {
 ["start_time"] = 191104.246,
 ["TimeData"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 },
 {
 {
@@ -1941,8 +2283,7 @@ _detalhes_database = {
 ["dps_started"] = false,
 ["total"] = 160.007917,
 ["colocacao"] = 1,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04E45BE7",
 ["damage_from"] = {
@@ -1965,7 +2306,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 2,
-["b_dmg"] = 0,
+["n_max"] = 5,
 ["targets"] = {
 ["Wretched Zombie"] = 81,
 },
@@ -1986,14 +2327,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 17,
-["n_max"] = 5,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [1752] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 8,
 ["targets"] = {
 ["Wretched Zombie"] = 76,
 },
@@ -2014,14 +2355,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 15,
 ["n_amt"] = 8,
-["n_max"] = 8,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [2764] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["targets"] = {
 ["Wretched Zombie"] = 3,
 },
@@ -2042,14 +2383,15 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
 ["grupo"] = true,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555270,
@@ -2062,13 +2404,12 @@ _detalhes_database = {
 ["flag_original"] = 68136,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "1502",
 ["total_without_pet"] = 43.00623,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 43.00623,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6425-0-116326-1502-000026FEA1",
 ["damage_from"] = {
@@ -2080,7 +2421,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["aID"] = "1502",
+["classe"] = "UNKNOW",
 ["fight_component"] = true,
 ["end_time"] = 1772555271,
 ["totalabsorbed"] = 0.00623,
@@ -2091,7 +2432,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["targets"] = {
 ["Testvermin"] = 43,
 },
@@ -2113,13 +2454,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 22,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555269,
@@ -2179,8 +2521,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 221,
 0,
@@ -2287,7 +2628,8 @@ _detalhes_database = {
 ["start_time"] = 191067.636,
 ["TimeData"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 },
 {
 {
@@ -2304,8 +2646,7 @@ _detalhes_database = {
 ["dps_started"] = false,
 ["total"] = 43.004854,
 ["colocacao"] = 1,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04E45BE7",
 ["damage_from"] = {
@@ -2328,7 +2669,7 @@ _detalhes_database = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 4,
 ["targets"] = {
 ["Mindless Zombie"] = 16,
 },
@@ -2349,14 +2690,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 8,
 ["n_amt"] = 2,
-["n_max"] = 4,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 0,
 ["targets"] = {
 ["Wretched Zombie"] = 0,
 },
@@ -2378,14 +2719,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 0,
-["n_max"] = 0,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [2764] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 5,
 ["targets"] = {
 ["Mindless Zombie"] = 5,
 },
@@ -2406,14 +2747,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["n_max"] = 5,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [1752] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 7,
 ["targets"] = {
 ["Mindless Zombie"] = 22,
 },
@@ -2434,14 +2775,15 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 15,
 ["n_amt"] = 1,
-["n_max"] = 7,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
 ["grupo"] = true,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555236,
@@ -2454,13 +2796,12 @@ _detalhes_database = {
 ["flag_original"] = 68136,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "1501",
 ["total_without_pet"] = 1.002488,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 1.002488,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6425-0-116326-1501-0000270BC6",
 ["damage_from"] = {
@@ -2472,7 +2813,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["aID"] = "1501",
+["classe"] = "UNKNOW",
 ["fight_component"] = true,
 ["end_time"] = 1772555229,
 ["totalabsorbed"] = 0.002488,
@@ -2483,7 +2824,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 1,
 ["targets"] = {
 ["Testvermin"] = 1,
 },
@@ -2505,13 +2846,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 1,
-["n_max"] = 1,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555227,
@@ -2572,8 +2914,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 44,
 0,
@@ -2678,7 +3019,8 @@ _detalhes_database = {
 ["start_time"] = 191054.063,
 ["TimeData"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 },
 {
 {
@@ -2695,8 +3037,7 @@ _detalhes_database = {
 ["dps_started"] = false,
 ["total"] = 225.003294,
 ["colocacao"] = 1,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04E45BE7",
 ["damage_from"] = {
@@ -2722,7 +3063,7 @@ _detalhes_database = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 5,
 ["targets"] = {
 ["Mindless Zombie"] = 73,
 ["Wretched Zombie"] = 32,
@@ -2745,14 +3086,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 7,
 ["n_amt"] = 21,
-["n_max"] = 5,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [1752] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 9,
 ["targets"] = {
 ["Mindless Zombie"] = 52,
 ["Wretched Zombie"] = 54,
@@ -2775,14 +3116,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 14,
-["n_max"] = 9,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [2764] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 4,
 ["targets"] = {
 ["Mindless Zombie"] = 10,
 ["Wretched Zombie"] = 4,
@@ -2804,14 +3145,15 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["n_max"] = 4,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
 ["grupo"] = true,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555221,
@@ -2824,13 +3166,12 @@ _detalhes_database = {
 ["flag_original"] = 2600,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "1501",
 ["total_without_pet"] = 20.004391,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 20.004391,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6425-0-116326-1501-0000270B2F",
 ["damage_from"] = {
@@ -2843,7 +3184,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["aID"] = "1501",
+["classe"] = "UNKNOW",
 ["fight_component"] = true,
 ["end_time"] = 1772555221,
 ["totalabsorbed"] = 0.004391,
@@ -2854,7 +3195,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["targets"] = {
 ["Testvermin"] = 20,
 ["Deathguard Randolph"] = 0,
@@ -2864,12 +3205,12 @@ _detalhes_database = {
 ["g_dmg"] = 0,
 ["counter"] = 21,
 ["MISS"] = 1,
-["r_amt"] = 0,
-["spellschool"] = 1,
+["total"] = 20,
+["c_max"] = 0,
 ["DODGE"] = 5,
 ["id"] = 1,
 ["r_dmg"] = 0,
-["c_max"] = 0,
+["spellschool"] = 1,
 ["extra"] = {
 },
 ["a_dmg"] = 0,
@@ -2878,13 +3219,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 15,
-["n_max"] = 2,
-["total"] = 20,
+["b_dmg"] = 0,
+["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555221,
@@ -2897,13 +3239,12 @@ _detalhes_database = {
 ["flag_original"] = 68136,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "1502",
 ["total_without_pet"] = 15.008609,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 15.008609,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6425-0-116326-1502-0000270747",
 ["damage_from"] = {
@@ -2916,7 +3257,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["aID"] = "1502",
+["classe"] = "UNKNOW",
 ["fight_component"] = true,
 ["end_time"] = 1772555221,
 ["totalabsorbed"] = 0.008609,
@@ -2927,7 +3268,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["targets"] = {
 ["Deathguard Randolph"] = 0,
 ["Testvermin"] = 15,
@@ -2950,13 +3291,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 12,
-["n_max"] = 2,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555221,
@@ -3017,8 +3359,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 949,
 0,
@@ -3126,7 +3467,8 @@ _detalhes_database = {
 ["start_time"] = 190997.672,
 ["TimeData"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 },
 {
 {
@@ -3143,8 +3485,7 @@ _detalhes_database = {
 ["dps_started"] = false,
 ["total"] = 47.00615,
 ["colocacao"] = 1,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04E45BE7",
 ["damage_from"] = {
@@ -3167,7 +3508,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 4,
 ["targets"] = {
 ["Mindless Zombie"] = 16,
 },
@@ -3188,14 +3529,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["n_max"] = 4,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [1752] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 8,
 ["targets"] = {
 ["Mindless Zombie"] = 31,
 },
@@ -3217,14 +3558,15 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["n_max"] = 8,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
 ["grupo"] = true,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555132,
@@ -3237,13 +3579,12 @@ _detalhes_database = {
 ["flag_original"] = 68136,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "1501",
 ["total_without_pet"] = 7.001408,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 7.001408,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6425-0-116326-1501-0000270B36",
 ["damage_from"] = {
@@ -3255,7 +3596,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["aID"] = "1501",
+["classe"] = "UNKNOW",
 ["fight_component"] = true,
 ["end_time"] = 1772555133,
 ["totalabsorbed"] = 0.001408,
@@ -3266,7 +3607,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["targets"] = {
 ["Testvermin"] = 7,
 },
@@ -3288,13 +3629,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 5,
-["n_max"] = 2,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555132,
@@ -3355,8 +3697,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 59,
 0,
@@ -3461,7 +3802,8 @@ _detalhes_database = {
 ["start_time"] = 190951.27,
 ["TimeData"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 },
 {
 {
@@ -3478,8 +3820,7 @@ _detalhes_database = {
 ["dps_started"] = false,
 ["total"] = 85.007429,
 ["colocacao"] = 1,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04E45BE7",
 ["damage_from"] = {
@@ -3502,7 +3843,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 5,
 ["targets"] = {
 ["Mindless Zombie"] = 32,
 },
@@ -3523,14 +3864,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 7,
-["n_max"] = 5,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [1752] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 8,
 ["targets"] = {
 ["Mindless Zombie"] = 42,
 },
@@ -3551,14 +3892,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 14,
 ["n_amt"] = 4,
-["n_max"] = 8,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [2764] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 3,
 ["targets"] = {
 ["Mindless Zombie"] = 11,
 },
@@ -3579,14 +3920,15 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 8,
 ["n_amt"] = 1,
-["n_max"] = 3,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
 ["grupo"] = true,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555056,
@@ -3599,13 +3941,12 @@ _detalhes_database = {
 ["flag_original"] = 68136,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "1501",
 ["total_without_pet"] = 10.006343,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 10.006343,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6425-0-116326-1501-000026F586",
 ["damage_from"] = {
@@ -3617,7 +3958,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["aID"] = "1501",
+["classe"] = "UNKNOW",
 ["fight_component"] = true,
 ["end_time"] = 1772555057,
 ["totalabsorbed"] = 0.006343,
@@ -3628,7 +3969,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["targets"] = {
 ["Testvermin"] = 10,
 },
@@ -3650,13 +3991,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["n_max"] = 2,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555056,
@@ -3716,8 +4058,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 462,
 0,
@@ -3823,7 +4164,8 @@ _detalhes_database = {
 ["start_time"] = 190871.564,
 ["TimeData"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 },
 {
 {
@@ -3840,8 +4182,7 @@ _detalhes_database = {
 ["dps_started"] = false,
 ["total"] = 42.003505,
 ["colocacao"] = 1,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04E45BE7",
 ["damage_from"] = {
@@ -3864,7 +4205,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 5,
 ["targets"] = {
 ["Mindless Zombie"] = 28,
 },
@@ -3885,14 +4226,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 6,
-["n_max"] = 5,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [1752] = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 7,
 ["targets"] = {
 ["Mindless Zombie"] = 14,
 },
@@ -3913,14 +4254,15 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["n_max"] = 7,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
 ["grupo"] = true,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555024,
@@ -3933,13 +4275,12 @@ _detalhes_database = {
 ["flag_original"] = 68136,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "1501",
 ["total_without_pet"] = 4.005187,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 4.005187,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6425-0-116326-1501-0000270723",
 ["damage_from"] = {
@@ -3951,7 +4292,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["aID"] = "1501",
+["classe"] = "UNKNOW",
 ["fight_component"] = true,
 ["end_time"] = 1772555026,
 ["totalabsorbed"] = 0.005187,
@@ -3962,7 +4303,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 1,
 ["targets"] = {
 ["Testvermin"] = 4,
 },
@@ -3984,13 +4325,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["n_max"] = 1,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555023,
@@ -4051,8 +4393,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 46,
 0,
@@ -4157,7 +4498,8 @@ _detalhes_database = {
 ["start_time"] = 190845.045,
 ["TimeData"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 },
 {
 {
@@ -4174,8 +4516,7 @@ _detalhes_database = {
 ["dps_started"] = false,
 ["total"] = 46.00351600000001,
 ["colocacao"] = 1,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04E45BE7",
 ["damage_from"] = {
@@ -4198,7 +4539,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 5,
 ["targets"] = {
 ["Mindless Zombie"] = 17,
 },
@@ -4219,14 +4560,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 4,
-["n_max"] = 5,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [1752] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 8,
 ["targets"] = {
 ["Mindless Zombie"] = 29,
 },
@@ -4247,14 +4588,15 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 14,
 ["n_amt"] = 2,
-["n_max"] = 8,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
 ["grupo"] = true,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555012,
@@ -4267,13 +4609,12 @@ _detalhes_database = {
 ["flag_original"] = 68136,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "1501",
 ["total_without_pet"] = 2.008989,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 2.008989,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6425-0-116326-1501-00002706ED",
 ["damage_from"] = {
@@ -4285,7 +4626,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["aID"] = "1501",
+["classe"] = "UNKNOW",
 ["fight_component"] = true,
 ["end_time"] = 1772555013,
 ["totalabsorbed"] = 0.008989,
@@ -4296,7 +4637,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 1,
 ["targets"] = {
 ["Testvermin"] = 2,
 },
@@ -4318,13 +4659,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 2,
-["n_max"] = 1,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772555011,
@@ -4385,8 +4727,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 48,
 0,
@@ -4491,7 +4832,8 @@ _detalhes_database = {
 ["start_time"] = 190837.578,
 ["TimeData"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 },
 {
 {
@@ -4508,8 +4850,7 @@ _detalhes_database = {
 ["dps_started"] = false,
 ["total"] = 44.005776,
 ["colocacao"] = 1,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Player-6409-04E45BE7",
 ["damage_from"] = {
@@ -4531,7 +4872,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 1,
-["b_dmg"] = 0,
+["n_max"] = 4,
 ["targets"] = {
 ["Duskbat"] = 16,
 },
@@ -4552,14 +4893,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["n_max"] = 4,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 [1752] = {
 ["c_amt"] = 1,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 7,
 ["targets"] = {
 ["Duskbat"] = 28,
 },
@@ -4580,14 +4921,15 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 14,
 ["n_amt"] = 2,
-["n_max"] = 7,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
 ["grupo"] = true,
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772554672,
@@ -4600,13 +4942,12 @@ _detalhes_database = {
 ["flag_original"] = 68136,
 ["pets"] = {
 },
-["classe"] = "UNKNOW",
+["aID"] = "1512",
 ["total_without_pet"] = 6.00338,
 ["last_dps_realtime"] = 0,
 ["dps_started"] = false,
 ["total"] = 6.00338,
-["friendlyfire"] = {
-},
+["on_hold"] = false,
 ["total_extra"] = 0,
 ["serial"] = "Creature-0-6425-0-116326-1512-00002708BD",
 ["damage_from"] = {
@@ -4618,7 +4959,7 @@ _detalhes_database = {
 ["friendlyfire_total"] = 0,
 ["raid_targets"] = {
 },
-["aID"] = "1512",
+["classe"] = "UNKNOW",
 ["fight_component"] = true,
 ["end_time"] = 1772554674,
 ["totalabsorbed"] = 0.00338,
@@ -4629,7 +4970,7 @@ _detalhes_database = {
 ["c_amt"] = 0,
 ["b_amt"] = 0,
 ["g_amt"] = 0,
-["b_dmg"] = 0,
+["n_max"] = 2,
 ["targets"] = {
 ["Testvermin"] = 6,
 },
@@ -4650,13 +4991,14 @@ _detalhes_database = {
 ["successful_casted"] = 0,
 ["c_total"] = 0,
 ["n_amt"] = 3,
-["n_max"] = 2,
+["b_dmg"] = 0,
 ["r_amt"] = 0,
 },
 },
 ["tipo"] = 2,
 },
-["on_hold"] = false,
+["friendlyfire"] = {
+},
 ["tipo"] = 1,
 ["custom"] = 0,
 ["last_event"] = 1772554671,
@@ -4717,8 +5059,7 @@ _detalhes_database = {
 ["cleu_events"] = {
 ["n"] = 1,
 },
-["playerTalents"] = {
-},
+["playing_solo"] = true,
 ["totals"] = {
 474,
 0,
@@ -4823,17 +5164,18 @@ _detalhes_database = {
 ["start_time"] = 190496.662,
 ["TimeData"] = {
 },
-["playing_solo"] = true,
+["playerTalents"] = {
+},
 },
 },
 },
 ["ocd_tracker"] = {
-["show_title"] = true,
+["enabled"] = false,
 ["current_cooldowns"] = {
 },
 ["lines_per_column"] = 12,
 ["group_frames"] = true,
-["show_options"] = false,
+["width"] = 120,
 ["frames"] = {
 ["defensive-raid"] = {
 },
@@ -4848,7 +5190,7 @@ _detalhes_database = {
 ["defensive-personal"] = {
 },
 },
-["width"] = 120,
+["show_options"] = false,
 ["ignored_cooldowns"] = {
 },
 ["framme_locked"] = false,
@@ -4866,7 +5208,7 @@ _detalhes_database = {
 ["only_inside_instance"] = true,
 ["only_in_group"] = true,
 },
-["enabled"] = false,
+["show_title"] = true,
 ["filters"] = {
 ["itemutil"] = false,
 ["itempower"] = false,
@@ -4879,7 +5221,7 @@ _detalhes_database = {
 ["utility"] = false,
 },
 },
-["combat_counter"] = 36,
+["combat_counter"] = 37,
 ["damage_meter_sessions"] = {
 },
 ["force_font_outline"] = "",
@@ -4960,8 +5302,16 @@ _detalhes_database = {
 },
 },
 },
-["SoloTablesSaved"] = {
-["Mode"] = 1,
+["mythic_dungeon_currentsaved"] = {
+["dungeon_name"] = "",
+["started"] = false,
+["segment_id"] = 0,
+["ej_id"] = 0,
+["started_at"] = 0,
+["run_id"] = 0,
+["level"] = 0,
+["dungeon_zone_id"] = 0,
+["previous_boss_killed_at"] = 0,
 },
 ["announce_firsthit"] = {
 ["enabled"] = true,
@@ -4971,10 +5321,10 @@ _detalhes_database = {
 ["data_harvest_for_charsts"] = {
 ["players"] = {
 {
-["playerKey"] = "total",
-["combatObjectContainer"] = 1,
 ["name"] = "Damage of Each Individual Player",
 ["playerOnly"] = true,
+["playerKey"] = "total",
+["combatObjectContainer"] = 1,
 },
 },
 ["totals"] = {
@@ -4998,12 +5348,30 @@ _detalhes_database = {
 ["reverse"] = false,
 },
 ["active_profile"] = "xVermin",
-["last_day"] = "06",
-["on_death_menu"] = false,
+["last_day"] = "08",
+["SoloTablesSaved"] = {
+["Mode"] = 1,
+},
+["data_harvested_for_charts"] = {
+},
+["cached_roles"] = {
+},
+["benchmark_db"] = {
+["frame"] = {
+},
+},
+["combat_log"] = {
+["inverse_deathlog_overalldata"] = false,
+["track_hunter_frenzy"] = false,
+["merge_gemstones_1007"] = false,
+["merge_critical_heals"] = false,
+["inverse_deathlog_raid"] = false,
+["calc_evoker_damage"] = true,
+["evoker_show_realtimedps"] = false,
+["inverse_deathlog_mplus"] = false,
+},
 ["ignore_nicktag"] = false,
-["announce_damagerecord"] = {
-["enabled"] = true,
-["channel"] = "SELF",
+["mythic_plus_log"] = {
 },
 ["coach"] = {
 ["enabled"] = false,
@@ -5011,44 +5379,20 @@ _detalhes_database = {
 },
 ["last_coach_name"] = false,
 },
-["combat_log"] = {
-["inverse_deathlog_overalldata"] = false,
-["merge_gemstones_1007"] = false,
-["track_hunter_frenzy"] = false,
-["merge_critical_heals"] = false,
-["inverse_deathlog_raid"] = false,
-["calc_evoker_damage"] = true,
-["evoker_show_realtimedps"] = false,
-["inverse_deathlog_mplus"] = false,
-},
 ["nick_tag_cache"] = {
-["nextreset"] = 1772898205,
+["nextreset"] = 1774268478,
 ["last_version"] = 16,
-},
-["mythic_plus_log"] = {
 },
 ["damage_meter_session_info"] = {
 },
 ["cached_talents"] = {
 },
-["player_stats"] = {
+["character_data"] = {
+["logons"] = 17,
 },
-["mythic_dungeon_currentsaved"] = {
-["dungeon_name"] = "",
-["started"] = false,
-["segment_id"] = 0,
-["ej_id"] = 0,
-["started_at"] = 0,
-["run_id"] = 0,
-["level"] = 0,
-["dungeon_zone_id"] = 0,
-["previous_boss_killed_at"] = 0,
-},
-["data_harvested_for_charts"] = {
-},
-["last_instance_time"] = 0,
+["last_realversion"] = 167,
 ["last_version"] = "2.5.5 14350",
-["combat_id"] = 13,
+["combat_id"] = 14,
 ["savedStyles"] = {
 {
 ["show_statusbar"] = false,
@@ -5069,7 +5413,7 @@ _detalhes_database = {
 1,
 },
 ["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-["skin_custom"] = "vermin",
+["bars_sort_direction"] = 1,
 ["use_auto_align_multi_fontstrings"] = true,
 ["tooltip"] = {
 ["n_abilities"] = 3,
@@ -5250,12 +5594,12 @@ false,
 },
 },
 ["micro_displays_side"] = 2,
-["name"] = "vermin",
+["version"] = 3,
 ["instance_button_anchor"] = {
 -27,
 1,
 },
-["bg_alpha"] = 0,
+["name"] = "vermin",
 ["fontstrings_text4_anchor"] = 4,
 ["plugins_grow_direction"] = 1,
 ["menu_alpha"] = {
@@ -5278,7 +5622,7 @@ false,
 },
 ["backdrop_texture"] = "Details Ground",
 ["hide_in_combat_alpha"] = 0,
-["bars_sort_direction"] = 1,
+["micro_displays_locked"] = false,
 ["strata"] = "LOW",
 ["libwindow"] = {
 ["y"] = -20,
@@ -5294,12 +5638,11 @@ false,
 0.07058823529411765,
 },
 },
+["menu_anchor_down"] = {
+16,
+-3,
+},
 ["bars_grow_direction"] = 1,
-["row_show_animation"] = {
-["anim"] = "Fade",
-["options"] = {
-},
-},
 ["grab_on_top"] = false,
 ["auto_hide_menu"] = {
 ["left"] = false,
@@ -5316,12 +5659,13 @@ false,
 1,
 1,
 },
-["menu_anchor_down"] = {
-16,
--3,
+["row_show_animation"] = {
+["anim"] = "Fade",
+["options"] = {
+},
 },
 ["auto_current"] = true,
-["micro_displays_locked"] = false,
+["skin_custom"] = "vermin",
 ["row_info"] = {
 ["show_arena_role_icon"] = false,
 ["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -5434,7 +5778,7 @@ false,
 ["textR_separator"] = "NONE",
 ["texture_custom_file"] = "Interface\\",
 },
-["version"] = 3,
+["bg_alpha"] = 0,
 ["hide_in_combat"] = false,
 ["switch_damager"] = {
 1,
@@ -5484,10 +5828,8 @@ false,
 },
 },
 },
-["last_realversion"] = 167,
-["benchmark_db"] = {
-["frame"] = {
-},
+["last_instance_time"] = 0,
+["player_stats"] = {
 },
 ["announce_deaths"] = {
 ["enabled"] = false,
@@ -5540,11 +5882,11 @@ false,
 },
 ["alternate_power"] = {
 },
-["trinketProcs"] = {
-},
+["combat_counter"] = 23,
 ["bossTimers"] = {
 },
-["combat_counter"] = 23,
+["trinketProcs"] = {
+},
 ["playerTalents"] = {
 },
 ["totals"] = {
@@ -5638,17 +5980,12 @@ false,
 ["player_last_events"] = {
 },
 },
-["character_data"] = {
-["logons"] = 14,
-},
-["arena_data_headers"] = {
-},
 ["plugin_database"] = {
 ["DETAILS_PLUGIN_TINY_THREAT"] = {
 ["enabled"] = true,
 ["only_my_group"] = false,
 ["animate"] = false,
-["useclasscolors"] = false,
+["disable_gouge"] = false,
 ["hide_pull_bar"] = false,
 ["author"] = "Terciob",
 ["playercolor"] = {
@@ -5657,14 +5994,14 @@ false,
 1,
 },
 ["usefocus"] = false,
-["disable_gouge"] = false,
+["updatespeed"] = 1,
 ["playSound"] = false,
 ["showamount"] = false,
 ["useplayercolor"] = false,
 ["absolute_mode"] = false,
 ["show_party_pets"] = false,
 ["playSoundFile"] = "Details Threat Warning Volume 3",
-["updatespeed"] = 1,
+["useclasscolors"] = false,
 },
 ["DETAILS_PLUGIN_ENCOUNTER_DETAILS"] = {
 ["enabled"] = true,
@@ -5674,11 +6011,11 @@ false,
 ["last_section_selected"] = "main",
 ["author"] = "Terciob",
 ["window_scale"] = 1,
-["encounter_timers_dbm"] = {
-},
+["hide_on_combat"] = false,
 ["show_icon"] = 5,
 ["opened"] = 0,
-["hide_on_combat"] = false,
+["encounter_timers_dbm"] = {
+},
 },
 ["DETAILS_PLUGIN_COMPARETWO_WINDOW"] = {
 ["enabled"] = true,
@@ -5696,42 +6033,29 @@ false,
 1,
 0.5,
 },
-["main_frame_size"] = {
-249.999740600586,
-89.9999694824219,
-},
+["scale"] = 1,
 ["arrow_anchor_y"] = 0,
 ["minimap"] = {
 ["minimapPos"] = 160,
 ["radius"] = 160,
 ["hide"] = true,
 },
-["main_frame_locked"] = true,
+["row_height"] = 18,
 ["arrow_anchor_x"] = 0,
-["author"] = "Details! Team",
+["font_color"] = {
+1,
+1,
+1,
+1,
+},
 ["row_texture"] = "xVerminClean",
 ["square_grow_direction"] = "right",
-["y"] = -183.107162475586,
-["row_color"] = {
-0.443137254901961,
-0.592156862745098,
-1,
-0.480826139450073,
-},
+["point"] = "RIGHT",
+["main_frame_strata"] = "LOW",
 ["square_amount"] = 5,
 ["enabled"] = false,
 ["arrow_size"] = 10,
-["per_second"] = {
-["enabled"] = false,
-["point"] = "CENTER",
-["scale"] = 1,
-["font_shadow"] = true,
-["y"] = -6.103515625e-05,
-["x"] = 0.00311279296875,
-["attribute_type"] = 1,
-["update_speed"] = 0.05,
-["size"] = 32,
-},
+["y"] = -183.107162475586,
 ["row_spacement"] = 19,
 ["main_frame_color"] = {
 0,
@@ -5739,28 +6063,44 @@ false,
 0,
 0,
 },
-["main_frame_strata"] = "LOW",
+["row_color"] = {
+0.443137254901961,
+0.592156862745098,
+1,
+0.480826139450073,
+},
 ["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 ["use_spark"] = false,
-["font_size"] = 10,
+["per_second"] = {
+["enabled"] = false,
+["point"] = "CENTER",
+["scale"] = 1,
+["font_shadow"] = true,
+["y"] = -6.103515625e-05,
+["x"] = 0.00311279296875,
+["size"] = 32,
+["update_speed"] = 0.05,
+["attribute_type"] = 1,
+},
 ["x"] = -4.001220703125,
 ["font_face"] = "Friz Quadrata TT",
 ["square_size"] = 32,
-["point"] = "RIGHT",
-["font_color"] = {
-1,
-1,
-1,
-1,
-},
-["row_height"] = 18,
-["scale"] = 1,
+["font_size"] = 10,
+["author"] = "Details! Team",
+["main_frame_locked"] = true,
+["main_frame_size"] = {
+249.999740600586,
+89.9999694824219,
 },
 },
+},
+["arena_data_headers"] = {
+},
+["on_death_menu"] = false,
 ["announce_cooldowns"] = {
+["enabled"] = false,
 ["ignored_cooldowns"] = {
 },
-["enabled"] = false,
 ["custom"] = "",
 ["channel"] = "RAID",
 },
@@ -5768,7 +6108,9 @@ false,
 ["last_difficulty"] = 15,
 ["last_raid"] = "",
 },
-["cached_roles"] = {
+["announce_damagerecord"] = {
+["enabled"] = true,
+["channel"] = "SELF",
 },
 ["cached_specs"] = {
 },
