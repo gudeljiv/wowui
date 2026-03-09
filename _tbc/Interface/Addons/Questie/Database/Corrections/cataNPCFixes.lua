@@ -1053,6 +1053,9 @@ function CataNpcFixes.Load()
         [5641] = { -- Takata Steelblade
             [npcKeys.questStarts] = {1433,1434,1436},
         },
+        [5688] = { -- Innkeeper Renee
+            [npcKeys.spawns] = {[zoneIDs.TIRISFAL_GLADES] = {{60.87,51.5}}},
+        },
         [5709] = { -- Shade of Eranikus
             [npcKeys.spawns] = {[zoneIDs.THE_TEMPLE_OF_ATAL_HAKKAR] = {{68.56,87.31},{-1,-1}}},
         },
@@ -1122,9 +1125,6 @@ function CataNpcFixes.Load()
         },
         [6566] = { -- Estelle Gendry
             [npcKeys.questEnds] = {},
-        },
-        [6577] = { -- Bingles Blastenheimer
-            [npcKeys.waypoints] = {},
         },
         [6735] = { -- Innkeeper Saelienne
             [npcKeys.questStarts] = {3763,8357},

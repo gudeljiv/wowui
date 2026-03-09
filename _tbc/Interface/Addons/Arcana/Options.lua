@@ -1,6 +1,5 @@
 local LibStub = LibStub
 local ChocolateBar = LibStub("AceAddon-3.0"):GetAddon("Arcana")
-local debug = ChocolateBar and ChocolateBar.Debug or function() end
 local AceCfgDlg = LibStub("AceConfigDialog-3.0")
 local Drag = ChocolateBar.Drag
 local broker = LibStub("LibDataBroker-1.1")
@@ -65,7 +64,6 @@ local function createPlaceholder()
     local placeholderNames = db.placeholderNames
     local name = L["Placeholder"] .. tablelength(placeholderNames)
     placeholderNames[name] = true
-    ChocolateBar:Debug("createPlaceholder", name, tablelength(placeholderNames))
     ChocolateBar:AddObjectOptions(name, ChocolateBar:NewPlaceholder(name))
 end
 
@@ -102,6 +100,7 @@ local function showURLPopup(url)
 end
 ---@diagnostic disable-next-line: undefined-global
 local increment = CreateCounter();
+local opacityTimer = nil
 
 local aceoptions = {
     name = "Arcana - Quel'dorei Observatory",
@@ -153,6 +152,17 @@ local aceoptions = {
                     name = L["2026 March 7"],
                 },
                 text26March7 = {
+                    order = increment(),
+                    type = "description",
+                    name =
+                        L["Added option to set the opacity of the bars."],
+                },
+                header26March7_2 = {
+                    order = increment(),
+                    type = "header",
+                    name = L["2026 March 7"],
+                },
+                text26March7_2 = {
                     order = increment(),
                     type = "description",
                     name =
@@ -486,7 +496,7 @@ local aceoptions = {
                                     type = 'range',
                                     order = 3,
                                     name = L["Opacity"],
-                                    desc = L["Set the opacity of the bars during combat."],
+                                    desc = L["Set the opacity of the bars during combat. Set to 100% to disable."],
                                     min = 0,
                                     max = 1,
                                     step = 0.001,
@@ -506,6 +516,12 @@ local aceoptions = {
                                             bar.tempHide = bar:GetAlpha()
                                             bar:SetAlpha(db.combatopacity)
                                         end
+                                        ChocolateBar:CancelTimer(opacityTimer)
+                                        opacityTimer = ChocolateBar:ScheduleTimer(function(plugin)
+                                            for _, bar in pairs(ChocolateBar:GetBars()) do
+                                                bar:SetAlpha(bar.settings.opacity)
+                                            end
+                                        end, 2)
                                     end,
                                 },
                             },
@@ -910,7 +926,6 @@ local placeholderOptions = {
 local function addPlaceholderOption(cleanName)
     for k, _ in pairs(db.placeholderNames) do
         if cleanName == k then
-            ChocolateBar:Debug("addPlaceholderOption", k)
             table.insert(chocolateOptions[cleanName].args, placeholderOptions)
         end
     end
@@ -1031,6 +1046,50 @@ local function setAutoHide(info, value)
     db.barSettings[name].autohide = value
     local bar = ChocolateBar:GetBar(name)
     bar:UpdateAutoHide(db)
+end
+
+------- Bar Opacity -----------------------------------
+local function getOpacity(info)
+    local name = info[#info - 2]
+    return db.barSettings[name].opacity or 1
+end
+
+local function setOpacity(info, value)
+    local name = info[#info - 2]
+    if value > 1 then
+        value = 1
+    elseif value < 0.01 then
+        value = 0.001
+    end
+    db.barSettings[name].opacity = value
+    local bar = ChocolateBar:GetBar(name)
+    bar:SetAlpha(value)
+end
+
+------- Bar OpacityMouseOver --------------------------
+local function getOpacityMouseOver(info)
+    local name = info[#info - 2]
+    return db.barSettings[name].opacityMouseOver or 1
+end
+
+local function setOpacityMouseOver(info, value)
+    local name = info[#info - 2]
+    if value > 1 then
+        value = 1
+    elseif value < 0.01 then
+        value = 0.001
+    end
+    db.barSettings[name].opacityMouseOver = value
+
+    local bar = ChocolateBar:GetBar(name)
+    bar:SetAlpha(value)
+
+    ChocolateBar:CancelTimer(opacityTimer)
+    opacityTimer = ChocolateBar:ScheduleTimer(function(plugin)
+        for _, bar in pairs(ChocolateBar:GetBars()) do
+            bar:SetAlpha(db.barSettings[name].opacity or 1)
+        end
+    end, 2)
 end
 
 --hide bar during combat
@@ -1569,11 +1628,40 @@ function ChocolateBar:AddBarOptions(name)
                 args = {
                     autohide = {
                         type = 'toggle',
-                        order = 5,
+                        order = 1,
                         name = L["Autohide"],
                         desc = L["Autohide"],
                         get = getAutoHide,
-                        set = setAutoHide,
+                        set = setAutoHide
+                    },
+                    opacity = {
+                        type = 'range',
+                        order = 2,
+                        name = L["Opacity"],
+                        desc = L
+                            ["Set the opacity of the the bars. You can set the alpha of the bar background unter textures."],
+                        min = 0,
+                        max = 1,
+                        step = 0.001,
+                        bigStep = 0.05,
+                        isPercent = true,
+                        get = getOpacity,
+                        set = setOpacity,
+                        disabled = getAutoHide
+                    },
+                    opacityMouseOver = {
+                        type = 'range',
+                        order = 3,
+                        name = L["Mouseover Opacity"],
+                        desc = L["Set the opacity of the the bars when the mouse is over a bar."],
+                        min = 0,
+                        max = 1,
+                        step = 0.001,
+                        bigStep = 0.05,
+                        isPercent = true,
+                        get = getOpacityMouseOver,
+                        set = setOpacityMouseOver,
+                        disabled = getAutoHide
                     },
                     eatBar = {
                         type = 'execute',
@@ -1673,7 +1761,7 @@ local widthBehaviorTypes = { free = L["Free"], fixed = L["Fixed"], max = L["Max"
 
 function ChocolateBar:AddObjectOptions(name, obj)
     if not obj or not obj.type or (obj.type ~= "data source" and obj.type ~= "launcher") then
-        ChocolateBar:Debug("Not adding plugin object: ", obj)
+        ChocolateBar:Log("Not adding plugin object: ", obj)
         return
     end
     --local curse = C_AddOns.GetAddOnMetadata(name,"X-Curse-Packaged-Version") or ""

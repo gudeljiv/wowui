@@ -17,7 +17,7 @@ function QuestieWotlkNpcFixes:Load()
 
     return {
         [376] = { -- High Priestess Laurena
-            [npcKeys.questStarts] = {5634,64031,64034,64035,64037,64038,70397,70398,70401,70411,70865,70870,78140,78157,78164,78166},
+            [npcKeys.questStarts] = {5631,5634,64031,64034,64035,64037,64038,70397,70398,70401,70411,70865,70870,78140,78157,78164,78166},
             [npcKeys.questEnds] = {5640,5678,64028,64031,64034,64035,70395,70397,70398,70401,70870,78136,78140,78157,78164},
         },
         [658] = {
@@ -43,7 +43,10 @@ function QuestieWotlkNpcFixes:Load()
         [1748] = { -- Highlord Bolvar Fordragon
             [npcKeys.questStarts] = {6182,6501,7496,7782},
         },
-        [1755] = {
+        [1754] = { -- Lord Gregor Lescovar
+            [npcKeys.spawns] = {[zoneIDs.STORMWIND_CITY] = {{72.3,35.11}}},
+        },
+        [1755] = { -- Marzon the Silent Blade
             [npcKeys.spawns] = {[zoneIDs.STORMWIND_CITY] = {{71.97,35.39}}},
         },
         [2079] = {
@@ -199,7 +202,7 @@ function QuestieWotlkNpcFixes:Load()
             [npcKeys.zoneID] = zoneIDs.EASTERN_PLAGUELANDS,
         },
         [11406] = { -- High Priest Rohan
-            [npcKeys.questStarts] = {7639,8254},
+            [npcKeys.questStarts] = {5633,7639,8254},
         },
         [11407] = { -- Var'jun
             [npcKeys.questStarts] = {},

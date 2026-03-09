@@ -91,7 +91,7 @@ local commands = {
 	version = {
 		desc = L["CmdVersion"],
 		func = function()
-			ns:print(GAME_VERSION_LABEL,"4.30.0-release");
+			ns:print(GAME_VERSION_LABEL,"4.30.1-release");
 		end
 	}
 }

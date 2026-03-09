@@ -52,7 +52,7 @@ function QuestieNPCFixes:Load()
             [npcKeys.questStarts] = {141,350,395,2206,2360,2607,6183,6184,6681},
         },
         [376] = { -- High Priestess Laurena
-            [npcKeys.questStarts] = {5634,5645,5673,5676},
+            [npcKeys.questStarts] = {5631,5634,5645,5673,5676},
             [npcKeys.questEnds] = {5634,5635,5636,5637,5638,5639,5640,5676,5677,5678},
         },
         [377] = { -- Priestess Josetta
@@ -217,15 +217,19 @@ function QuestieNPCFixes:Load()
         [1721] = { -- Nikova Raskol
             [npcKeys.zoneID] = zoneIDs.STORMWIND_CITY,
             [npcKeys.spawns] = {[zoneIDs.STORMWIND_CITY] = {{73.34,50.7}}},
-            [npcKeys.waypoints] = {[zoneIDs.STORMWIND_CITY]={{{70.26,40.3},{70.93,41.1},{71.47,42.0},{72.18,43.06},{72.69,43.74},{73.02,44.76},{73.28,45.54},{73.22,46.21},{73.57,46.53},{73.57,46.53},{72.85,46.81},{72.47,48.95},{72.47,49.72},{73.34,50.7},{72.57,49.9},{71.26,49.69},{68.81,48.66},{66.63,44.9},{65.69,43.28},{66.57,41.67},{68.1,39.87},{68.76,39.44},{69.25,40.16},{69.25,40.16},{69.8,39.55},{70.26,40.3}}}},
+            [npcKeys.waypoints] = {[zoneIDs.STORMWIND_CITY] = {{{70.26,40.3},{70.93,41.1},{71.47,42.0},{72.18,43.06},{72.69,43.74},{73.02,44.76},{73.28,45.54},{73.22,46.21},{73.57,46.53},{73.57,46.53},{72.85,46.81},{72.47,48.95},{72.47,49.72},{73.34,50.7},{72.57,49.9},{71.26,49.69},{68.81,48.66},{66.63,44.9},{65.69,43.28},{66.57,41.67},{68.1,39.87},{68.76,39.44},{69.25,40.16},{69.25,40.16},{69.8,39.55},{70.26,40.3}}}},
+        },
+        [1754] = { -- Lord Gregor Lescovar
+            [npcKeys.spawns] = {[zoneIDs.STORMWIND_CITY] = {{68.09,13.81}}},
+            [npcKeys.waypoints] = {},
         },
         [1755] = { -- Marzon the Silent Blade
+            [npcKeys.spawns] = {[zoneIDs.STORMWIND_CITY] = {{67.75,14.08}}},
             [npcKeys.zoneID] = zoneIDs.STORMWIND_CITY,
-            [npcKeys.spawns] = {[zoneIDs.STORMWIND_CITY] = {{68.22,14.34}}},
         },
         [1853] = { -- Darkmaster Gandling
-            [npcKeys.zoneID] = zoneIDs.SCHOLOMANCE,
             [npcKeys.spawns] = {[zoneIDs.SCHOLOMANCE] = {{-1,-1}}},
+            [npcKeys.zoneID] = zoneIDs.SCHOLOMANCE,
         },
         [1892] = { -- Moonrage Watcher
             [npcKeys.zoneID] = zoneIDs.SILVERPINE_FOREST,
@@ -723,7 +727,7 @@ function QuestieNPCFixes:Load()
             [npcKeys.waypoints] = {[zoneIDs.STONETALON_MOUNTAINS]={{{67.2,46.69},{66.44,46.95},{66.01,45.73},{65.79,45.08},{65.11,44.76},{63.71,45.05},{63.77,45.99},{63.37,46.14},{63.47,46.55},{64.7,46.43},{64.79,47.69},{65.2,48.34},{65.94,48.57},{66.29,49.62},{66.61,49.61},{66.85,48.84},{67.28,49.21},{68.25,49.51},{68.44,49.55},{68.9,48.35},{69.14,47.32},{69.38,46.52},{70.04,47.47},{70.24,48.58},{70.97,48.65},{71.16,48.27},{71.24,47.04},{71.44,45.68},{71.27,44.91},{71.25,43.55}}}},
         },
         [4090] = { -- Astarii Starseeker
-            [npcKeys.questStarts] = {5674}, -- Doesn't actually start 5674, but that quest is blacklisted until it can be proven who starts that quest
+            [npcKeys.questStarts] = {},
         },
         [4091] = { -- Jandria
             [npcKeys.questStarts] = {},
@@ -985,7 +989,7 @@ function QuestieNPCFixes:Load()
             [npcKeys.questStarts] = {},
         },
         [5142] = { -- Braenna Flintcrag
-            [npcKeys.questStarts] = {5633},
+            [npcKeys.questStarts] = {},
         },
         [5143] = { -- Toldren Deepiron
             [npcKeys.questStarts] = {},
@@ -1029,7 +1033,7 @@ function QuestieNPCFixes:Load()
             [npcKeys.waypoints] = {[zoneIDs.SWAMP_OF_SORROWS]={{{54.9,34.1},{55.7,36.1},{55.7,37.7},{54.5,38.7},{52.9,38.7},{51.3,38.5},{49.7,38.5},{48.3,38.5},{47,38.5},{45.3,37.7},{43.9,36},{43.1,34},{42.9,32.1},{41.5,31.9},{40,33},{39.1,35.0},{38.3,36.9},{37.7,38.7},{37.7,40.8},{37.6,42.8},{37.2,44.5},{36.1,45.5},{34.7,45.1},{33.7,43.1},{33.2,40.6},{32.9,38.7},{32.3,36.1}}}},
         },
         [5489] = { -- Brother Joshua
-            [npcKeys.questStarts] = {5631,8254},
+            [npcKeys.questStarts] = {8254},
         },
         [5491] = { -- Arthur the Faithful
             [npcKeys.questStarts] = {},
@@ -1075,6 +1079,9 @@ function QuestieNPCFixes:Load()
                 [zoneIDs.STORMWIND_CITY] = {{25.2,77.52}},
                 [zoneIDs.ORGRIMMAR] = {{49.73,50.14}},
             },
+        },
+        [5688] = { -- Innkeeper Renee
+            [npcKeys.spawns] = {[zoneIDs.TIRISFAL_GLADES] = {{61.72,52.05}}},
         },
         [5693] = { -- Godrick Farsan
             [npcKeys.questStarts] = {1476,65593},
@@ -1219,6 +1226,9 @@ function QuestieNPCFixes:Load()
         [6575] = { -- Scarlet Trainee
             [npcKeys.zoneID] = zoneIDs.SCARLET_MONASTERY,
             [npcKeys.spawns] = {[zoneIDs.SCARLET_MONASTERY] = {{-1,-1}}},
+        },
+        [6577] = { -- Bingles Blastenheimer
+            [npcKeys.waypoints] = {},
         },
         [6746] = { -- Innkeeper Pala
             [npcKeys.questStarts] = {3762,5926,8360},
@@ -1907,11 +1917,15 @@ function QuestieNPCFixes:Load()
             [npcKeys.zoneID] = zoneIDs.WESTERN_PLAGUELANDS,
             [npcKeys.spawns] = {[zoneIDs.WESTERN_PLAGUELANDS] = {{69.01,72.8}}},
         },
+        [11397] = { -- Nara Meideros
+            [npcKeys.questStarts] = {5632,5638,5674},
+        },
         [11401] = { -- Priestess Alathea
             [npcKeys.questStarts] = {5627,5640,5647,5672,5678},
         },
         [11406] = { -- High Priest Rohan
-            [npcKeys.questStarts] = {5639,5641,5675,5677,7639,8254},
+            [npcKeys.questStarts] = {5633,5639,5641,5675,5677,7639,8254},
+            [npcKeys.waypoints] = {},
         },
         [11407] = { -- Var'jun
             [npcKeys.questStarts] = {5655,5661},

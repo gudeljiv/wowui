@@ -31,7 +31,7 @@ local GetCVar,SetCVar = C_CVar and C_CVar.GetCVar or GetCVar,C_CVar and C_CVar.S
 local LibStub = _G.LibStub
 
 -- Init shared lib and debug mode
-ns.debugMode = "4.30.0-release"=="@".."project-version".."@";
+ns.debugMode = "4.30.1-release"=="@".."project-version".."@";
 ns.HST = LibStub("HizurosSharedTools")
 ns.HST.RegisterPrint(ns,addon,"BE");
 

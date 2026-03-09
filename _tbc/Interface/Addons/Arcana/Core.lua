@@ -40,6 +40,10 @@ function ChocolateBar:Debug(...)
     debug(self, ...)
 end
 
+function ChocolateBar:Log(...)
+    debug(self, ...)
+end
+
 local defaults = {
     profile = {
         petBattleHideBars = true,
@@ -75,10 +79,10 @@ local defaults = {
         },
         barSettings = {
             ['*'] = {
-                barName = "Arcana1", align = "top", enabled = true, index = 10, width = 0,
+                barName = "Arcana1", align = "top", enabled = true, index = 10, width = 0, opacity = 1, opacityMouseOver = 1,
             },
             ['Arcana1'] = {
-                barName = "Arcana1", align = "top", enabled = true, index = 1, width = 0,
+                barName = "Arcana1", align = "top", enabled = true, index = 1, width = 0, opacity = 1, opacityMouseOver = 1,
             },
         },
         placeholderNames = {},
@@ -164,20 +168,16 @@ function ChocolateBar:AddonLoaded()
             if not ChocolateBarDB.arcanaMigrated then
                 ArcanaDB = ChocolateBarDB
                 ChocolateBarDB.arcanaMigrated = true
-                print("|cff88ccffArcana Debug|r", "Doing profile migration...")
+                print("|cff88ccffArcana|r ", "Doing profile migration...")
             end
         end
     end
 
-    print("|cff88ccffArcana Debug|r", "AceDB-3.0:New Table:", ArcanaDB)
     self.db = LibStub("AceDB-3.0"):New("ArcanaDB", defaults, "Default")
     self.db.RegisterCallback(self, "OnDatabaseShutdown", "OnDatabaseShutdown")
 
     self:RegisterChatCommand("Arcana", "ChatCommand")
     db = self.db.profile
-
-    debug("ArcanaDB.addonVersion=", ArcanaDB.addonVersion)
-    debug("isNewInstall()=", self:isNewInstall())
 
     local AceCfgDlg = LibStub("AceConfigDialog-3.0")
     local _, categoryID = AceCfgDlg:AddToBlizOptions("Arcana", "Arcana")
@@ -273,9 +273,6 @@ end
 
 function ChocolateBar:GetModule(name)
     local module = ChocolateBar.modules[name]
-    if not module then
-        debug("Invalide Module:", name)
-    end
     return module
 end
 
@@ -286,7 +283,6 @@ end
 
 local function SetModuleEnabled(info, value)
     local name = info[#info - 1]
-    debug("SetModuleEnabled", name)
     ChocolateBar.db.profile.moduleSettings[name].enabled = value
 
     if value then
@@ -298,7 +294,6 @@ end
 
 
 function ChocolateBar:NewModule(name, values)
-    debug("NewModule Name:", name)
     local module = self.modules[name] or {}
     module.defaults = values.moduleDefaults
 
@@ -438,7 +433,7 @@ function ChocolateBar:OnLeaveCombat()
             end
         elseif combatOpacityAllBars < 1 then
             if bar.tempHide then
-                bar:SetAlpha(1)
+                bar:SetAlpha(bar.settings.opacity or 1)
             end
         end
     end
@@ -459,18 +454,17 @@ function ChocolateBar:LibDataBroker_DataObjectCreated(event, name, obj, noupdate
         end
 
         if db.objSettings[name].enabled then
-            --debug("EnableDataObject", name)
             self:EnableDataObject(name, obj, noupdate)
         end
     else
-        debug("Unknown type", t, name)
+        ChocolateBar:Log("Unknown type", t, name)
     end
 end
 
 function ChocolateBar:EnableDataObject(name, obj, noupdate)
     local t = obj.type
     if t ~= "data source" and t ~= "launcher" then
-        debug("Unknown type", t, name)
+        ChocolateBar:Log("Unknown type", t, name)
         return 0
     end
 
@@ -541,7 +535,6 @@ end
 function ChocolateBar:AttributeChanged(event, name, key, value)
     local settings = db.objSettings[name]
     if not settings.enabled then
-        debug("not settings.enabled")
         return
     end
     local choco = chocolateObjects[name]
@@ -600,7 +593,6 @@ local function getFreeBarName()
         end
         used = false
     end
-    debug("no free bar name found ")
 end
 
 function ChocolateBar:UpdateChoclates(key, val)
@@ -728,7 +720,6 @@ function ChocolateBar:NewPlaceholder(name)
         OnClick = onRightClick,
     })
 
-    ChocolateBar:Debug("NewPlaceholder Name:", name, "db count:", tablelength(db.placeholderNames), "obj:", obj)
     return obj
 end
 

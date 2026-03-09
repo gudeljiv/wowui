@@ -3,7 +3,7 @@
 ## IconTexture: 892831
 ## Notes: A collection of modules to display various informations as Broker-buttons on Broker Display AddOns or minimap buttons.
 ## Author: Hizuro, Ekaterina, Hungtar
-## Version: 4.30.0-release
+## Version: 4.30.1-release
 
 # https://warcraft.wiki.gg/wiki/Addon_Categories
 ## Category: Data Broker (need translation on https://warcraft.wiki.gg/wiki/Addon_Categories)

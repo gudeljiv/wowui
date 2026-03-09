@@ -11,7 +11,6 @@ QuestieQuestBlacklist.HIDE_ON_MAP = HIDE_ON_MAP
 
 ---@return table<QuestId, boolean|string>
 function QuestieQuestBlacklist:Load()
-    local locale = GetLocale()
     local questsToBlacklist = {
         [7462] = true, -- Duplicate of 7877. See #1583
         [2358] = Expansions.Current == Expansions.Era or Expansions.Current >= Expansions.Wotlk, -- available in TBC anniversary (!)
@@ -1313,10 +1312,6 @@ function QuestieQuestBlacklist:Load()
         [1661] = Expansions.Current >= Expansions.Tbc,
         [3366] = true,
         [3381] = true,
-        [5627] = true,
-        [5641] = Expansions.Current >= Expansions.Tbc,
-        [5645] = Expansions.Current >= Expansions.Tbc,
-        [5647] = Expansions.Current >= Expansions.Tbc,
         [6131] = true,
         [6221] = true,
         [6241] = true,
@@ -1403,13 +1398,6 @@ function QuestieQuestBlacklist:Load()
         [6823] = Expansions.Current >= Expansions.Wotlk, -- Not in the game
         [6824] = Expansions.Current >= Expansions.Wotlk, -- Not in the game
         [7486] = Expansions.Current >= Expansions.Wotlk, -- Not in the game
-        [5634] = Expansions.Current >= Expansions.Wotlk, -- removed since wotlk
-        [5635] = Expansions.Current >= Expansions.Wotlk, -- removed since wotlk
-        [5636] = Expansions.Current >= Expansions.Wotlk, -- removed since wotlk
-        [5637] = Expansions.Current >= Expansions.Wotlk, -- removed since wotlk
-        [5638] = Expansions.Current >= Expansions.Wotlk, -- removed since wotlk
-        [5639] = Expansions.Current >= Expansions.Wotlk, -- removed since wotlk
-        [5640] = Expansions.Current >= Expansions.Wotlk, -- removed since wotlk
         [12881] = true, -- Not in the game
         [14351] = true, -- Not in the game
         [14353] = true, -- Not in the game
@@ -1663,14 +1651,14 @@ function QuestieQuestBlacklist:Load()
         --[26013] = true, -- Assault on the Sanctum
 
         --- Chinese servers wotlk only
-        [78752] = (locale == "zhCN" or locale == "zhTW") and Expansions.Current >= Expansions.Cata, -- Proof of Demise: Titan Rune Protocol Gamma
-        [78753] = (locale == "zhCN" or locale == "zhTW") and Expansions.Current >= Expansions.Cata, -- Proof of Demise: Threats to Azeroth
+        [78752] = Questie.IsTitanReforged, -- Proof of Demise: Titan Rune Protocol Gamma -- not available on Titan servers
+        [78753] = Questie.IsTitanReforged, -- Proof of Demise: Threats to Azeroth -- not available on Titan servers
         [83713] = Expansions.Current >= Expansions.Wotlk, -- Proof of Demise: Titan Rune Protocol Alpha (new version to reward correct emblems)
         [83714] = Expansions.Current >= Expansions.Wotlk, -- Proof of Demise: Threats to Azeroth (new version to reward correct emblems)
         [83717] = Expansions.Current >= Expansions.Wotlk, -- Proof of Demise: Titan Rune Protocol Gamma (not available anymore)
         [87379] = Expansions.Current >= Expansions.Wotlk, -- Proof of Demise: Threats to Azeroth (not available anymore)
-        [93975] = Expansions.Current >= Expansions.Wotlk, -- Ragnaros Must Die!
-        [94577] = Expansions.Current >= Expansions.Wotlk, -- Kael'thas Must Die!
+        [93975] = not Questie.IsTitanReforged, -- Ragnaros Must Die! -- only present on Titan servers
+        [94577] = not Questie.IsTitanReforged, -- Kael'thas Must Die! -- only present on Titan servers
 
         --- Daily quests
         [24788] = true, -- Daily Heroic Random (1st)
@@ -4034,16 +4022,27 @@ function QuestieQuestBlacklist:Load()
         [5624] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [5625] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [5626] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5628] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5629] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5630] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5631] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5632] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5633] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5642] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5643] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5644] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5646] = Expansions.Current >= Expansions.Cata, -- Removed with cata
+        [5627] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5628] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5629] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5630] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5631] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5632] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5633] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5634] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5635] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5636] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5637] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5638] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5639] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5640] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5641] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5642] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5643] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5644] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5645] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5646] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5647] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
         [5648] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [5649] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [5650] = Expansions.Current >= Expansions.Cata, -- Removed with cata
@@ -4068,15 +4067,15 @@ function QuestieQuestBlacklist:Load()
         [5669] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [5670] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [5671] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5672] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5673] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5674] = true, -- I have not found evidence that this quest actually exists in the game. I checked Laurna Morninglight and Astarii Starseeker and they did not give the quest.
-        [5675] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5676] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5677] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5678] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5679] = Expansions.Current >= Expansions.Cata, -- Removed with cata
-        [5680] = Expansions.Current >= Expansions.Cata, -- Removed with cata
+        [5672] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5673] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5674] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5675] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5676] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5677] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5678] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5679] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
+        [5680] = Expansions.Current >= Expansions.Wotlk, -- Removed with Wotlk
         [5681] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [5682] = Expansions.Current >= Expansions.Cata, -- Removed with cata
         [5683] = Expansions.Current >= Expansions.Cata, -- Removed with cata

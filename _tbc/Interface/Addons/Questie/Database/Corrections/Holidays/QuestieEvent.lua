@@ -72,7 +72,7 @@ local QuestieNPCFixes = QuestieLoader:ImportModule("QuestieNPCFixes")
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
 
-local _WithinDates, _LoadDarkmoonFaire, _GetDarkmoonFaireLocation, _GetDarkmoonFaireLocationEra, _GetDarkmoonFaireLocationSoD
+local _WithinDates, _LoadDarkmoonFaire, _GetDarkmoonFaireLocation, _GetDarkmoonFaireLocationEra, _GetDarkmoonFaireLocationSoD, _GetLunarFestivalDates
 
 local DMF_LOCATIONS = {
     NONE = 0,
@@ -106,9 +106,12 @@ end
 
 function QuestieEvent:Load()
     local year = date("%y")
+    local lunarData = _GetLunarFestivalDates(year)
 
-    -- We want to replace the Lunar Festival date with the date that we estimate
-    QuestieEvent.eventDates["Lunar Festival"] = QuestieEvent.lunarFestival[year]
+    if lunarData then
+        QuestieEvent.eventDates["Lunar Festival"] = lunarData
+    end
+
     local activeEvents = {}
 
     local eventCorrections
@@ -198,6 +201,16 @@ function QuestieEvent:Load()
 
     -- Clear the quests to save memory
     QuestieEvent.eventQuests = nil
+end
+
+---@param year string
+---@return QuestieEventDateRange|nil
+_GetLunarFestivalDates = function(year)
+    if Questie.IsTitanReforged and QuestieEvent.lunarFestival.TITAN[year] then
+        return QuestieEvent.lunarFestival.TITAN[year]
+    end
+
+    return QuestieEvent.lunarFestival.DEFAULT[year]
 end
 
 ---@return boolean
@@ -371,8 +384,6 @@ function QuestieEvent.IsEventActiveForQuest(questId)
     return QuestieEvent.activeQuests[questId] == true
 end
 
-local isChinaRegion = GetCurrentRegion() == 5
-
 -- EUROPEAN FORMAT! NO FUCKING AMERICAN SHIDAZZLE FORMAT!
 QuestieEvent.eventDates = {
     ["Love is in the Air"] = { -- WARNING THIS DATE VARIES!!!!
@@ -384,7 +395,7 @@ QuestieEvent.eventDates = {
         endDate = "26/4"
     },
     ["Children's Week"] = {startDate = "28/4", endDate = "12/5"}, -- TODO: Usually it is only a week long
-    ["Midsummer"] = (isChinaRegion and Questie.IsWotlk) and {startDate = "21/6", endDate = "28/7"} or {startDate = "21/6", endDate = "4/7"},
+    ["Midsummer"] = (Questie.IsChinaRegion and Questie.IsWotlk) and {startDate = "21/6", endDate = "28/7"} or {startDate = "21/6", endDate = "4/7"},
     ["Brewfest"] = {startDate = "20/9", endDate = "5/10"}, -- TODO: This might be different (retail date)
     ["Harvest Festival"] = { -- WARNING THIS DATE VARIES!!!!
         startDate = "2/10",
@@ -410,18 +421,31 @@ QuestieEvent.eventDateCorrections = {
     },
 }
 
+---@class QuestieEventDateRange
+---@field startDate string
+---@field endDate string
+
+---@class QuestieLunarFestivalTable
+---@field DEFAULT table<string, QuestieEventDateRange>
+---@field TITAN table<string, QuestieEventDateRange>
 QuestieEvent.lunarFestival = {
-    ["19"] = {startDate = "5/2", endDate = "19/2"},
-    ["20"] = {startDate = "23/1", endDate = "10/2"},
-    ["21"] = {startDate = "5/2", endDate = "19/2"}, --when this was for real?
-    ["22"] = {startDate = "30/1", endDate = "18/2"},
-    -- Below are estimates
-    ["23"] = {startDate = "20/1", endDate = "10/2"},
-    ["24"] = {startDate = "3/2", endDate = "23/2"},
-    ["25"] = {startDate = "28/1", endDate = "17/2"},
-    ["26"] = {startDate = "16/2", endDate = "9/3"},
-    ["27"] = {startDate = "7/2", endDate = "21/2"},
-    ["28"] = {startDate = "27/1", endDate = "10/2"}
+    DEFAULT = { -- Global default (US/EU, etc.)
+        ["19"] = {startDate = "5/2", endDate = "19/2"},
+        ["20"] = {startDate = "23/1", endDate = "10/2"},
+        ["21"] = {startDate = "5/2", endDate = "19/2"},
+        ["22"] = {startDate = "30/1", endDate = "18/2"},
+        ["23"] = {startDate = "20/1", endDate = "10/2"},
+        ["24"] = {startDate = "3/2", endDate = "23/2"},
+        ["25"] = {startDate = "28/1", endDate = "17/2"},
+        ["26"] = {startDate = "16/2", endDate = "9/3"},
+        ["27"] = {startDate = "5/2", endDate = "19/2"},
+        ["28"] = {startDate = "24/1", endDate = "14/2"},
+    },
+    TITAN = { -- Chinese Titan Reforged
+        ["26"] = {startDate = "29/1", endDate = "25/2"},
+        ["27"] = {startDate = "5/2", endDate = "19/2"},
+        ["28"] = {startDate = "24/1", endDate = "14/2"},
+    }
 }
 
 return QuestieEvent

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 14367,
+["session"] = 14369,
 ["errors"] = {
 {
 ["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'StanceButton1:ClearAllPoints()'.",

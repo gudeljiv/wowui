@@ -21,5 +21,5 @@ nil,
 ["CodexBrowserIcon"] = true,
 ["TrinketMenu_IconFrame"] = true,
 },
-["autohide"] = 0,
+["autohide"] = -0,
 }
