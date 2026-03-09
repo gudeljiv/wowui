@@ -1,9 +1,5 @@
 
 OmniCCDB = {
-["global"] = {
-["dbVersion"] = 6,
-["addonVersion"] = "11.2.8",
-},
 ["profileKeys"] = {
 ["Mxzq - Golemagg"] = "Default",
 ["Dopeclaw - Living Flame"] = "Default",
@@ -26,35 +22,39 @@ OmniCCDB = {
 ["Battitude - Thunderstrike"] = "Default",
 ["Moolatz - Celebras"] = "Default",
 ["Jutarnjedrvo - Lone Wolf"] = "Default",
-["Moolatz - Thunderstrike"] = "Default",
+["Jutarnjedrvo - Living Flame"] = "Default",
 ["Doperage - Lone Wolf"] = "Default",
 ["Dopeclaw - Lone Wolf"] = "Default",
 ["Dopesnare - Living Flame"] = "Default",
-["Dopemend - Living Flame"] = "Default",
+["Dopeah - Stitches"] = "Default",
 ["Mq - Celebras"] = "Default",
-["Dopestab - Lone Wolf"] = "Default",
+["Dopeclaw - Thunderstrike"] = "Default",
 ["Vermins - Stitches"] = "Default",
-["Dopeseal - Thunderstrike"] = "Default",
-["Vermin - Zandalar Tribe"] = "Default",
-["Dopetrap - Lone Wolf"] = "Default",
-["Dopebolt - Living Flame"] = "Default",
+["Doperage - Thunderstrike"] = "Default",
+["Dopesnare - Thunderstrike"] = "Default",
+["Dopesnare - Lone Wolf"] = "Default",
+["Handrmandr - Thunderstrike"] = "Default",
 ["Battitude - Zandalar Tribe"] = "Default",
 ["Dopede - Stitches"] = "Default",
-["Pitchwise - Thunderstrike"] = "Default",
-["Turbonac - Celebras"] = "Default",
-["Doperage - Living Flame"] = "Default",
 ["Vermin - Celebras"] = "Default",
+["Pitchwise - Thunderstrike"] = "Default",
+["Doperage - Living Flame"] = "Default",
+["Turbonac - Celebras"] = "Default",
 ["Battlenac - Zandalar Tribe"] = "Default",
 ["Dopecoil - Thunderstrike"] = "Default",
-["Handrmandr - Thunderstrike"] = "Default",
-["Dopesnare - Lone Wolf"] = "Default",
-["Dopesnare - Thunderstrike"] = "Default",
-["Doperage - Thunderstrike"] = "Default",
-["Dopeclaw - Thunderstrike"] = "Default",
-["Dopeah - Stitches"] = "Default",
+["Dopebolt - Living Flame"] = "Default",
+["Dopetrap - Lone Wolf"] = "Default",
+["Vermin - Zandalar Tribe"] = "Default",
+["Dopeseal - Thunderstrike"] = "Default",
+["Dopestab - Lone Wolf"] = "Default",
+["Dopemend - Living Flame"] = "Default",
 ["Dopeclaw - Stitches"] = "Default",
-["Jutarnjedrvo - Living Flame"] = "Default",
+["Moolatz - Thunderstrike"] = "Default",
 ["Vermins - Thunderstrike"] = "Default",
+},
+["global"] = {
+["dbVersion"] = 6,
+["addonVersion"] = "11.2.8",
 },
 ["profiles"] = {
 ["Default"] = {
@@ -108,9 +108,9 @@ OmniCCDB = {
 ["themes"] = {
 ["Plater Nameplates Theme"] = {
 ["textStyles"] = {
-["seconds"] = {
-},
 ["soon"] = {
+},
+["seconds"] = {
 },
 ["minutes"] = {
 },
@@ -120,9 +120,9 @@ OmniCCDB = {
 ["textStyles"] = {
 ["soon"] = {
 },
-["minutes"] = {
-},
 ["seconds"] = {
+},
+["minutes"] = {
 },
 ["charging"] = {
 ["r"] = 1,
@@ -139,9 +139,9 @@ OmniCCDB = {
 },
 ["Ignore"] = {
 ["textStyles"] = {
-["seconds"] = {
-},
 ["soon"] = {
+},
+["seconds"] = {
 },
 ["minutes"] = {
 },
@@ -161,24 +161,23 @@ OmniCCDB = {
 },
 }
 OmniCC4Config = {
-["engine"] = "AniUpdater",
-["groups"] = {
-{
-["id"] = "Ignore",
-["rules"] = {
-"LossOfControl",
-"TotemFrame",
-},
-["enabled"] = true,
-},
-},
 ["version"] = "8.1.1",
 ["groupSettings"] = {
 ["base"] = {
 ["enabled"] = true,
 ["fontSize"] = 18,
-["fontFace"] = "Fonts\\ARIALN.TTF",
+["scaleText"] = true,
 ["effect"] = "pulse",
+["minDuration"] = 2,
+["minEffectDuration"] = 30,
+["anchor"] = "CENTER",
+["spiralOpacity"] = 1.00999997742474,
+["yOff"] = 0,
+["xOff"] = 0,
+["tenthsDuration"] = 0,
+["fontOutline"] = "OUTLINE",
+["minSize"] = 0.5,
+["mmSSDuration"] = 0,
 ["styles"] = {
 ["seconds"] = {
 ["a"] = 1,
@@ -219,17 +218,7 @@ OmniCC4Config = {
 ["scale"] = 1.20000004768372,
 },
 },
-["mmSSDuration"] = 0,
-["minSize"] = 0.5,
-["spiralOpacity"] = 1.00999997742474,
-["scaleText"] = true,
-["xOff"] = 0,
-["tenthsDuration"] = 0,
-["fontOutline"] = "OUTLINE",
-["anchor"] = "CENTER",
-["minEffectDuration"] = 30,
-["yOff"] = 0,
-["minDuration"] = 2,
+["fontFace"] = "Fonts\\ARIALN.TTF",
 },
 ["Ignore"] = {
 ["enabled"] = false,
@@ -272,20 +261,31 @@ OmniCC4Config = {
 ["controlled"] = {
 },
 },
-["minDuration"] = 3,
+["fontSize"] = 18,
 ["effect"] = "pulse",
-["yOff"] = 0,
-["minEffectDuration"] = 30,
-["anchor"] = "CENTER",
+["fontFace"] = "Fonts\\FRIZQT__.TTF",
+["mmSSDuration"] = 0,
+["minSize"] = 0.5,
 ["spiralOpacity"] = 1,
 ["scaleText"] = true,
 ["xOff"] = 0,
 ["tenthsDuration"] = 0,
 ["fontOutline"] = "OUTLINE",
-["minSize"] = 0.5,
-["mmSSDuration"] = 0,
-["fontFace"] = "Fonts\\FRIZQT__.TTF",
-["fontSize"] = 18,
+["anchor"] = "CENTER",
+["minEffectDuration"] = 30,
+["yOff"] = 0,
+["minDuration"] = 3,
 },
 },
+["groups"] = {
+{
+["id"] = "Ignore",
+["rules"] = {
+"LossOfControl",
+"TotemFrame",
+},
+["enabled"] = true,
+},
+},
+["engine"] = "AniUpdater",
 }

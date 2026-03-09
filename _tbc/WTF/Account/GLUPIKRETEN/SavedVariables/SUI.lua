@@ -8,20 +8,21 @@ SUIDB = {
 ["Handrmandr - Thunderstrike"] = "Default",
 ["Doperage - Thunderstrike"] = "Default",
 ["Testvermin - Thunderstrike"] = "Default",
-["Dopesnare - Thunderstrike"] = "Default",
+["Battitude - Thunderstrike"] = "Default",
 ["Dopeclaw - Thunderstrike"] = "Default",
 ["Moolatz - Thunderstrike"] = "Default",
 ["Poklopac - Thunderstrike"] = "Default",
-["Battitude - Thunderstrike"] = "Default",
+["Dopesnare - Thunderstrike"] = "Default",
 ["Vermins - Thunderstrike"] = "Default",
 },
 ["profiles"] = {
 ["Default"] = {
 ["general"] = {
+["font"] = "Fonts\\ARIALN.TTF",
 ["cosmetic"] = {
 ["afkscreen"] = false,
+["errors"] = true,
 },
-["font"] = "Fonts\\ARIALN.TTF",
 ["display"] = {
 ["ilvl"] = false,
 },
@@ -30,10 +31,10 @@ SUIDB = {
 ["style"] = "Default",
 },
 ["castbars"] = {
-["targetCastbar"] = false,
+["focusCastbar"] = false,
 ["style"] = "Default",
 ["icon"] = false,
-["focusCastbar"] = false,
+["targetCastbar"] = false,
 },
 ["install"] = true,
 ["actionbar"] = {
