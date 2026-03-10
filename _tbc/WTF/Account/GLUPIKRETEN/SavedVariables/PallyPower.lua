@@ -12,12 +12,12 @@ PallyPowerDB = {
 ["Moolatz - Thunderstrike"] = "Other",
 ["Dopesnare - Thunderstrike"] = "Other",
 ["Dopeseal - Thunderstrike"] = "Default",
-["Pitchwise - Thunderstrike"] = "Other",
+["Battlearm - Gehennas"] = "Other",
 ["Miqa - Golemagg"] = "Other",
-["Tudum - Ashbringer"] = "Other",
+["Pitchwise - Thunderstrike"] = "Other",
 ["Dopecure - Thunderstrike"] = "Other",
 ["Vermin - Golemagg"] = "Other",
-["Battlearm - Gehennas"] = "Other",
+["Tudum - Ashbringer"] = "Other",
 ["Augustin - Golemagg"] = "Other",
 ["Moolatz - Golemagg"] = "Other",
 ["Handrmandr - Thunderstrike"] = "Other",
@@ -62,6 +62,17 @@ PallyPowerDB = {
 },
 }
 PallyPower_Assignments = {
+["Dopeseal"] = {
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+0,
+},
 }
 PallyPower_NormalAssignments = {
 }
@@ -167,13 +178,13 @@ PallyPower_AuraAssignments = {
 ["Vermina"] = 2,
 ["Getfe"] = 6,
 ["Palablynx"] = 0,
-["Emerity"] = 0,
 ["Foxholy"] = 0,
+["Miracle"] = 0,
 ["Salad"] = 1,
 ["Wowax"] = 0,
 ["Pìtbull"] = 7,
 ["Ðîvâ"] = 0,
-["Miracle"] = 0,
+["Emerity"] = 0,
 ["Ewulcek"] = 0,
 ["Mcgiver"] = 0,
 ["Xporz"] = 0,
@@ -217,8 +228,8 @@ PallyPower_AuraAssignments = {
 ["Rubyrag"] = 0,
 ["Tökfilkó"] = 0,
 ["Czarnuszy"] = 0,
+["Valtyria"] = 0,
 ["Hjørdís"] = 0,
-["Doctør"] = 0,
 ["Menttolka"] = 0,
 ["Veribig"] = 0,
 ["Filifjonkman"] = 0,
@@ -256,7 +267,7 @@ PallyPower_AuraAssignments = {
 ["Holychock"] = 0,
 ["Fatalitý"] = 0,
 ["Whit"] = 6,
-["Valtyria"] = 0,
+["Doctør"] = 0,
 ["Zivvy"] = 0,
 ["Lubiven"] = 0,
 ["Ethyr"] = 0,
@@ -326,7 +337,7 @@ PallyPower_SavedPresets = {
 }
 PallyPower_ChanNames = {
 [0] = "None",
-[4] = "Layer",
+[6] = "Layer",
 }
 LCD_Data = nil
 LCD_GUIDAccess = nil

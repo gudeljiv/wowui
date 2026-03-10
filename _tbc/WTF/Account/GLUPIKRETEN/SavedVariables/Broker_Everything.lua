@@ -7,14 +7,142 @@ Broker_Everything_DataDB = {
 },
 }
 Broker_Everything_CharacterDB = {
+["order"] = {
+"Dopeseal-Thunderstrike",
+"Handrmandr-Thunderstrike",
+"Dopecure-Thunderstrike",
+"Pitchwise-Thunderstrike",
+"Testvermin-Thunderstrike",
+"Moolatz-Thunderstrike",
+},
+["Dopecure-Thunderstrike"] = {
+["orderId"] = 3,
+["lastLogin"] = 1773161986,
+["class"] = "PRIEST",
+["race"] = "Scourge",
+["name"] = "Dopecure",
+["faction"] = "Horde",
+["professions"] = {
+["cooldowns"] = {
+},
+["cooldown_locks"] = {
+},
+["hasCooldowns"] = false,
+},
+["level"] = 5,
+["Professions"] = {
+["learnedRecipes"] = {
+},
+},
+["Gold"] = {
+["money"] = 709456,
+["profit"] = {
+["monthly"] = {
+[1774994399] = 0,
+[1772319599] = "0",
+},
+["daily"] = {
+[1772578799] = "0",
+[1772665199] = 0,
+[1773097199] = "0",
+[1773183599] = 0,
+},
+["weekly"] = {
+[1773010799] = "666763",
+[1772405999] = "0",
+[1773615599] = 0,
+},
+},
+["profitv2"] = {
+["monthly"] = {
+[1772319599] = 353032,
+[1769900399] = 353032,
+[1774994399] = 353032,
+},
+["daily"] = {
+[1773183599] = 666763,
+[1773097199] = 666763,
+[1773010799] = 666763,
+[1772665199] = 353032,
+[1772578799] = 353032,
+},
+["weekly"] = {
+[1773010799] = 353032,
+[1772405999] = 353032,
+[1773615599] = 666763,
+[1771801199] = 353032,
+},
+},
+},
+},
+["Pitchwise-Thunderstrike"] = {
+["orderId"] = 4,
+["lastLogin"] = 1773133035,
+["class"] = "SHAMAN",
+["race"] = "Orc",
+["name"] = "Pitchwise",
+["faction"] = "Horde",
+["professions"] = {
+["cooldowns"] = {
+},
+["cooldown_locks"] = {
+},
+["hasCooldowns"] = false,
+},
+["level"] = 22,
+["Professions"] = {
+["learnedRecipes"] = {
+},
+},
+["Gold"] = {
+["money"] = 215811,
+["profit"] = {
+["monthly"] = {
+[1774994399] = 0,
+[1772319599] = "0",
+},
+["daily"] = {
+[1772924399] = 0,
+[1773097199] = "0",
+[1773183599] = 0,
+[1772837999] = "0",
+},
+["weekly"] = {
+[1773010799] = "216429",
+[1772405999] = "0",
+[1773615599] = 0,
+},
+},
+["profitv2"] = {
+["monthly"] = {
+[1772319599] = 186080,
+[1769900399] = 186080,
+[1774994399] = 186080,
+},
+["daily"] = {
+[1773183599] = 216429,
+[1773097199] = 216429,
+[1773010799] = 216429,
+[1772837999] = 186080,
+[1772924399] = 186080,
+},
+["weekly"] = {
+[1773010799] = 186080,
+[1772405999] = 186080,
+[1773615599] = 216429,
+[1771801199] = 186080,
+},
+},
+},
+},
 ["Dopeseal-Thunderstrike"] = {
 ["orderId"] = 1,
-["lastLogin"] = 1773132829,
+["lastLogin"] = 1773159702,
 ["faction"] = "Horde",
 ["race"] = "BloodElf",
 ["name"] = "Dopeseal",
 ["Gold"] = {
-["money"] = 3352790,
+["money"] = 1973591,
 ["profit"] = {
 ["monthly"] = {
 [1774994399] = 0,
@@ -64,185 +192,22 @@ Broker_Everything_CharacterDB = {
 ["level"] = 21,
 ["Professions"] = {
 ["learnedRecipes"] = {
+[25620] = true,
+[25613] = true,
+[25617] = true,
+[25621] = true,
+[32808] = true,
+[25615] = true,
+[34955] = true,
+[7934] = true,
+[3277] = true,
 },
 },
 ["class"] = "PALADIN",
 },
-["Dopecure-Thunderstrike"] = {
-["orderId"] = 3,
-["lastLogin"] = 1772636217,
-["class"] = "PRIEST",
-["race"] = "Scourge",
-["name"] = "Dopecure",
-["faction"] = "Horde",
-["professions"] = {
-["cooldowns"] = {
-},
-["cooldown_locks"] = {
-},
-["hasCooldowns"] = false,
-},
-["level"] = 5,
-["Professions"] = {
-["learnedRecipes"] = {
-},
-},
-["Gold"] = {
-["money"] = 353032,
-["profit"] = {
-["monthly"] = {
-[1774994399] = 0,
-[1772319599] = "0",
-},
-["daily"] = {
-[1772665199] = 0,
-[1772578799] = "0",
-},
-["weekly"] = {
-[1773010799] = 0,
-[1772405999] = "0",
-},
-},
-["profitv2"] = {
-["monthly"] = {
-[1772319599] = 353032,
-[1769900399] = 353032,
-[1774994399] = 353032,
-},
-["daily"] = {
-[1772578799] = 353032,
-[1772665199] = 353032,
-[1772492399] = 353032,
-},
-["weekly"] = {
-[1773010799] = 353032,
-[1772405999] = 353032,
-[1771801199] = 353032,
-},
-},
-},
-},
-["Pitchwise-Thunderstrike"] = {
-["orderId"] = 4,
-["lastLogin"] = 1773133035,
-["class"] = "SHAMAN",
-["race"] = "Orc",
-["name"] = "Pitchwise",
-["faction"] = "Horde",
-["professions"] = {
-["cooldowns"] = {
-},
-["cooldown_locks"] = {
-},
-["hasCooldowns"] = false,
-},
-["level"] = 22,
-["Professions"] = {
-["learnedRecipes"] = {
-},
-},
-["Gold"] = {
-["money"] = 215811,
-["profit"] = {
-["monthly"] = {
-[1774994399] = 0,
-[1772319599] = "0",
-},
-["daily"] = {
-[1773097199] = "0",
-[1772837999] = "0",
-[1773183599] = 0,
-[1772924399] = 0,
-},
-["weekly"] = {
-[1773010799] = "216429",
-[1772405999] = "0",
-[1773615599] = 0,
-},
-},
-["profitv2"] = {
-["monthly"] = {
-[1772319599] = 186080,
-[1769900399] = 186080,
-[1774994399] = 186080,
-},
-["daily"] = {
-[1773183599] = 216429,
-[1773010799] = 216429,
-[1772837999] = 186080,
-[1773097199] = 216429,
-[1772924399] = 186080,
-},
-["weekly"] = {
-[1773010799] = 186080,
-[1772405999] = 186080,
-[1773615599] = 216429,
-[1771801199] = 186080,
-},
-},
-},
-},
-["Handrmandr-Thunderstrike"] = {
-["orderId"] = 2,
-["lastLogin"] = 1772978143,
-["class"] = "HUNTER",
-["race"] = "Orc",
-["name"] = "Handrmandr",
-["Gold"] = {
-["money"] = 390841,
-["profit"] = {
-["monthly"] = {
-[1774994399] = 0,
-[1772319599] = "0",
-},
-["daily"] = {
-[1772578799] = "0",
-[1772665199] = 0,
-[1772924399] = "0",
-[1773010799] = 0,
-},
-["weekly"] = {
-[1773010799] = 0,
-[1772405999] = "0",
-},
-},
-["profitv2"] = {
-["monthly"] = {
-[1772319599] = 532220,
-[1769900399] = 532220,
-[1774994399] = 532220,
-},
-["daily"] = {
-[1772924399] = 387535,
-[1773010799] = 387535,
-[1772837999] = 387535,
-[1772578799] = 532220,
-[1772665199] = 532220,
-},
-["weekly"] = {
-[1773010799] = 532220,
-[1772405999] = 532220,
-[1771801199] = 532220,
-},
-},
-},
-["professions"] = {
-["cooldowns"] = {
-},
-["cooldown_locks"] = {
-},
-["hasCooldowns"] = false,
-},
-["level"] = 34,
-["Professions"] = {
-["learnedRecipes"] = {
-},
-},
-["faction"] = "Horde",
-},
 ["Moolatz-Thunderstrike"] = {
 ["orderId"] = 6,
-["lastLogin"] = 1773068988,
+["lastLogin"] = 1773162236,
 ["class"] = "DRUID",
 ["race"] = "Tauren",
 ["name"] = "Moolatz",
@@ -260,15 +225,16 @@ Broker_Everything_CharacterDB = {
 },
 },
 ["Gold"] = {
-["money"] = 404107,
+["money"] = 406945,
 ["profit"] = {
 ["monthly"] = {
 [1774994399] = 0,
 [1772319599] = "0",
 },
 ["daily"] = {
-[1773097199] = 0,
 [1773010799] = "0",
+[1773097199] = "404107",
+[1773183599] = 0,
 },
 ["weekly"] = {
 [1773615599] = 0,
@@ -284,6 +250,7 @@ Broker_Everything_CharacterDB = {
 ["daily"] = {
 [1773010799] = 433803,
 [1773097199] = 433803,
+[1773183599] = 404107,
 [1772924399] = 433803,
 },
 ["weekly"] = {
@@ -348,13 +315,66 @@ Broker_Everything_CharacterDB = {
 },
 ["class"] = "ROGUE",
 },
-["order"] = {
-"Dopeseal-Thunderstrike",
-"Handrmandr-Thunderstrike",
-"Dopecure-Thunderstrike",
-"Pitchwise-Thunderstrike",
-"Testvermin-Thunderstrike",
-"Moolatz-Thunderstrike",
+["Handrmandr-Thunderstrike"] = {
+["orderId"] = 2,
+["lastLogin"] = 1773162196,
+["class"] = "HUNTER",
+["race"] = "Orc",
+["name"] = "Handrmandr",
+["Gold"] = {
+["money"] = 390841,
+["profit"] = {
+["monthly"] = {
+[1774994399] = 0,
+[1772319599] = "0",
+},
+["daily"] = {
+[1773183599] = 0,
+[1772924399] = "0",
+[1773010799] = 0,
+[1772665199] = 0,
+[1773097199] = "0",
+},
+["weekly"] = {
+[1773010799] = "390841",
+[1772405999] = "0",
+[1773615599] = 0,
+},
+},
+["profitv2"] = {
+["monthly"] = {
+[1772319599] = 532220,
+[1769900399] = 532220,
+[1774994399] = 532220,
+},
+["daily"] = {
+[1773183599] = 390841,
+[1772924399] = 387535,
+[1773010799] = 387535,
+[1772837999] = 387535,
+[1773097199] = 390841,
+},
+["weekly"] = {
+[1773010799] = 532220,
+[1772405999] = 532220,
+[1771801199] = 532220,
+[1773615599] = 390841,
+},
+},
+},
+["professions"] = {
+["cooldowns"] = {
+},
+["cooldown_locks"] = {
+},
+["hasCooldowns"] = false,
+},
+["level"] = 34,
+["Professions"] = {
+["learnedRecipes"] = {
+},
+},
+["faction"] = "Horde",
 },
 }
 Broker_Everything_AceDB = {

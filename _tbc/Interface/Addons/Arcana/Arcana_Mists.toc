@@ -1,13 +1,13 @@
 ## Interface: 50503
 ## Title: Arcana — Quel'dorei Observatory
 ## Notes: A display for broker plugins. Formerly ChocolateBar.
-## Author: Kiatra - https://github.com/Kiatra/Arcana
-## Version: v5.3
+## Author: Made with love by Kiatra - https://github.com/Kiatra/Arcana
+## Version: v5.3.3
 ## OptionalDeps: Ace3, LibSharedMedia-3.0, LibQTip-1.0
 ## X-WoWI-ID: 12326
 ## X-Curse-Project-ID: 17424
 ## SavedVariables: ArcanaDB, ChocolateBarDB, CB_PlayedTime
-## IconTexture: Interface/AddOns/Arcana/pics/ChocolatePiece
+## IconTexture: Interface/AddOns/Arcana/Media/Icons/ArcanaKnowledge
 
 ## Category: Data Broker
 ## Category-deDE: Datenbroker
@@ -36,10 +36,10 @@ localization\zhTW.lua
 localization\ptBR.lua
 localization\ruRU.lua
 
-Core.lua
+TheHeart.lua
 JostleClassic.lua
 DragAndDrop.lua
-Arcana.lua
+ArcanaPiece.lua
 Bar.lua
 DropPoints.lua
 modules\Placeholder.lua

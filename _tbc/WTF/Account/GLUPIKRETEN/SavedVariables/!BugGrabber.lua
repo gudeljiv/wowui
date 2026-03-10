@@ -1,16 +1,8 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 14383,
+["session"] = 14387,
 ["errors"] = {
-{
-["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'xVermin' tried to call the protected function 'StanceButton1:ClearAllPoints()'.",
-["time"] = "2026/01/02 18:46:31",
-["locals"] = "self = <table> {\n}\nevent = \"ADDON_ACTION_BLOCKED\"\naddonName = \"xVermin\"\naddonFunc = \"StanceButton1:ClearAllPoints()\"\nname = \"xVermin\"\nbadAddons = <table> {\n xVermin = true\n}\nL = <table> {\n ADDON_CALL_PROTECTED_MATCH = \"^%[(.*)%] (AddOn '.*' tried to call the protected function '.*'.)$\"\n NO_DISPLAY_2 = \"|cffffff00The standard display is called BugSack, and can probably be found on the same site where you found !BugGrabber.|r\"\n ERROR_DETECTED = \"%s |cffffff00captured, click the link for more information.|r\"\n USAGE = \"|cffffff00Usage: /buggrabber <1-%d>.|r\"\n BUGGRABBER_STOPPED = \"|cffffff00There are too many errors in your UI. As a result, your game experience may be degraded. Disable or update the failing addons if you don't want to see this message again.|r\"\n STOP_NAG = \"|cffffff00!BugGrabber will not nag about missing a display addon again until next patch.|r\"\n ADDON_DISABLED = \"|cffffff00!BugGrabber and %s cannot coexist; %s has been forcefully disabled. If you want to, you may log out, disable !BugGrabber, and enable %s.|r\"\n NO_DISPLAY_STOP = \"|cffffff00If you don't want to be reminded about this again, run /stopnag.|r\"\n NO_DISPLAY_1 = \"|cffffff00You seem to be running !BugGrabber with no display addon to go along with it. Although a slash command is provided for accessing error reports, a display can help you manage these errors in a more convenient way.|r\"\n ERROR_UNABLE = \"|cffffff00!BugGrabber is unable to retrieve errors from other players by itself. Please install BugSack or a similar display addon that might give you this functionality.|r\"\n ADDON_CALL_PROTECTED = \"[%s] AddOn '%s' tried to call the protected function '%s'.\"\n}\n",
-["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:583: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:507: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:507>\n[C]: in function 'ClearAllPoints'\n[Interface/AddOns/xVermin/Addons/nMainBar.lua]:14: in function <Interface/AddOns/xVermin/Addons/nMainBar.lua:13>\n[Interface/AddOns/xVermin/_Core.lua]:199: in function <Interface/AddOns/xVermin/_Core.lua:160>",
-["session"] = 13166,
-["counter"] = 1,
-},
 {
 ["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'ExtraActionBars' tried to call the protected function 'UNKNOWN()'.",
 ["time"] = "2026/01/02 18:46:46",
@@ -3892,6 +3884,14 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:477: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:401: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:401>\n[C]: ?\n[C]: in function 'RegisterForClicks'\n[Interface/AddOns/ShadowedUnitFrames/modules/units.lua]:592: in function 'CreateUnit'\n[Interface/AddOns/ShadowedUnitFrames/modules/units.lua]:520: in function 'method'\n[Interface/AddOns/Blizzard_FrameXML/RestrictedFrames.lua]:791: in function <...erface/AddOns/Blizzard_FrameXML/RestrictedFrames.lua:783>\n[C]: ?\n[C]: ?\n[Interface/AddOns/Blizzard_FrameXML/RestrictedFrames.lua]:810: in function 'CallMethod'\n[	local header = self:GetParent()\n\n	self:SetHeight(header:GetAttribute(\"style-height\"))\n	self:SetWidth(header:GetAttribute(\"style-width\"))\n	self:SetScale(header:GetAttribute(\"style-scale\"))\n\n	self:SetAttribute(\"*type1\", \"target\")\n	self:SetAttribute(\"*type2\", \"togglemenu\")\n	self:SetAttribute(\"type2\", \"togglemenu\")\n\n	self:SetAttribute(\"isHeaderDriven\", true)\n\n	-- initialize frame\n	header:CallMethod(\"initialConfigFunction\", self:GetName())\n\n	-- Clique integration\n	local clickHeader = header:GetFrameRef(\"clickcast_header\")\n	if( clickHeader ) then\n		clickHeader:SetAttribute(\"clickcast_button\", self)\n		clickHeader:RunAttribute(\"clickcast_register\")\n	end\n]:14: in function <[string \"	local header = self:GetParent()...\"]:1>\n[tail call]: ?\n[C]: ?\n[Interface/AddOns/Blizzard_FrameXML/RestrictedExecution.lua]:483: in function <...ace/AddOns/Blizzard_FrameXML/RestrictedExecution.lua:446>\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:116: in function <...face/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua:110>\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:173: in function <...face/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua:130>\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:495: in function 'SecureGroupHeader_Update'\n[Interface/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua]:62: in function <...face/AddOns/Blizzard_FrameXML/SecureGroupHeaders.lua:60>\n",
 ["session"] = 14366,
 ["counter"] = 28,
+},
+{
+["message"] = "[string \"print(GetComboPoints())\"]:1: Usage: GetComboPoints(\"unit\"[, \"target\"]",
+["time"] = "2026/03/10 18:33:59",
+["locals"] = "msg = \"print(GetComboPoints())\"\nuserScriptsDisabled = false\n",
+["stack"] = "[Interface/AddOns/Blizzard_ChatFrameBase/Shared/SlashCommands.lua]:1171: in function '?'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:227: in function 'ParseText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:252: in function 'SendText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:370: in function <...s/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua:366>\n",
+["session"] = 14387,
+["counter"] = 1,
 },
 },
 }

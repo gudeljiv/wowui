@@ -1,12 +1,11 @@
 # BagSync
 
-## [v20.8](https://github.com/Xruptor/BagSync/tree/v20.8) (2026-02-12)
-[Full Changelog](https://github.com/Xruptor/BagSync/compare/v20.7...v20.8) [Previous Releases](https://github.com/Xruptor/BagSync/releases)
+## [v20.10](https://github.com/Xruptor/BagSync/tree/v20.10) (2026-03-09)
+[Full Changelog](https://github.com/Xruptor/BagSync/compare/v20.9...v20.10) [Previous Releases](https://github.com/Xruptor/BagSync/releases)
 
-- Slight Code Improvements.  
-    * Added LibSharedMedia as optional dependency.  BagSync will check for it and load it if available to fill up the font list with additional fronts.  
-    * Some code improvements across the addon.  
-    * Updated Unit and Events wireframe modules.  
-- Merge pull request #452 from nanjuekaien1/patch-92  
-    Update zhCN.lua  
-- Update zhCN.lua  
+- Updated the Race Icons in BagSync Tooltips.  
+    * I increased the size of the race icons a tiny bit.  
+    * I updated the icons to use the High resolution icons provided by Blizzard.  
+    * I completed reworked the logic behind how the race icons are generated.  It's quite sophisticated now and will take future races into account.  
+    * I added fallbacks to show default icons when no race icons are provided by Blizzard. (Happens a lot with allied races).  
+    * Added support for the new Haranir race.  It should work properly.  (Fixes #456)  

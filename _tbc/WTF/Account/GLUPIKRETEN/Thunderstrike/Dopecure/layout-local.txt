@@ -188,6 +188,13 @@ X: 12
 Y: -45
 W: 1024
 H: 712
+Frame: BrokerEverythingNotesEditor
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 410
+H: 240
 Frame: ItemRackButton10
 FrameLevel: 1
 Anchor: CENTER
@@ -218,9 +225,9 @@ W: 36
 H: 36
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
-Anchor: TOPRIGHT
+Anchor: RIGHT
 X: -351
-Y: -175
+Y: 175
 W: 607
 H: 672
 Frame: PallyPowerBlessingsFrame
