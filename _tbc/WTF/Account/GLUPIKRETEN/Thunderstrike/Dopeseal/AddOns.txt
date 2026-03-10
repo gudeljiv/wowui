@@ -139,7 +139,7 @@ DmgFontChanger: disabled
 Arcana: enabled
 AtlasLootClassic_BiS: enabled
 AvoidanceRating: enabled
-BaganatorCustomSkin: enabled
+BaganatorCustomSkin: disabled
 BagSync: enabled
 Broker_Everything: enabled
 CookieEasyEnchant: enabled
