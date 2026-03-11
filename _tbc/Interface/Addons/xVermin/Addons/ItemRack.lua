@@ -27,7 +27,7 @@ local irbf
 -- )
 
 xVermin.CheckIfLoadedWithTimer("LibDBIcon10_ItemRack", function()
-	LibDBIcon10_ItemRack:Hide()
+	-- LibDBIcon10_ItemRack:Hide()
 end)
 
 xVermin.CheckIfLoadedWithTimer("ItemRack", function()

@@ -1,7 +1,7 @@
 local _, xVermin = ...
 
 xVermin.CheckIfLoadedWithTimer("LibDBIcon10_PoisonCharges", function()
-	LibDBIcon10_PoisonCharges:Hide()
+	-- LibDBIcon10_PoisonCharges:Hide()
 end)
 
 if C_AddOns.IsAddOnLoaded("Bistooltip") then

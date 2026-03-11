@@ -1,40 +1,8 @@
 
 BugGrabberDB = {
+["session"] = 14402,
 ["lastSanitation"] = 3,
-["session"] = 14387,
 ["errors"] = {
-{
-["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'ExtraActionBars' tried to call the protected function 'UNKNOWN()'.",
-["time"] = "2026/01/02 18:46:46",
-["locals"] = "self = <table> {\n}\nevent = \"ADDON_ACTION_FORBIDDEN\"\naddonName = \"ExtraActionBars\"\naddonFunc = \"UNKNOWN()\"\nname = \"ExtraActionBars\"\nbadAddons = <table> {\n xVermin = true\n ExtraActionBars = true\n}\nL = <table> {\n ADDON_CALL_PROTECTED_MATCH = \"^%[(.*)%] (AddOn '.*' tried to call the protected function '.*'.)$\"\n NO_DISPLAY_2 = \"|cffffff00The standard display is called BugSack, and can probably be found on the same site where you found !BugGrabber.|r\"\n ERROR_DETECTED = \"%s |cffffff00captured, click the link for more information.|r\"\n USAGE = \"|cffffff00Usage: /buggrabber <1-%d>.|r\"\n BUGGRABBER_STOPPED = \"|cffffff00There are too many errors in your UI. As a result, your game experience may be degraded. Disable or update the failing addons if you don't want to see this message again.|r\"\n STOP_NAG = \"|cffffff00!BugGrabber will not nag about missing a display addon again until next patch.|r\"\n ADDON_DISABLED = \"|cffffff00!BugGrabber and %s cannot coexist; %s has been forcefully disabled. If you want to, you may log out, disable !BugGrabber, and enable %s.|r\"\n NO_DISPLAY_STOP = \"|cffffff00If you don't want to be reminded about this again, run /stopnag.|r\"\n NO_DISPLAY_1 = \"|cffffff00You seem to be running !BugGrabber with no display addon to go along with it. Although a slash command is provided for accessing error reports, a display can help you manage these errors in a more convenient way.|r\"\n ERROR_UNABLE = \"|cffffff00!BugGrabber is unable to retrieve errors from other players by itself. Please install BugSack or a similar display addon that might give you this functionality.|r\"\n ADDON_CALL_PROTECTED = \"[%s] AddOn '%s' tried to call the protected function '%s'.\"\n}\n",
-["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:583: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:507: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:507>\n[C]: ?\n[C]: ?\n[C]: ?\n[C]: in function 'UseAction'\n[Interface/AddOns/Blizzard_FrameXML/Classic/SecureTemplates_Shared.lua]:329: in function 'handler'\n[Interface/AddOns/Blizzard_FrameXML/Classic/SecureTemplates_Shared.lua]:606: in function 'SecureActionButton_OnClick'\n[*ActionBarFrame.xml:15_OnClick]:4: in function <[string \"*ActionBarFrame.xml:15_OnClick\"]:1>",
-["session"] = 13166,
-["counter"] = 1,
-},
-{
-["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'ExtraActionBars' tried to call the protected function 'CustomBar7:Show()'.",
-["time"] = "2026/01/02 18:42:46",
-["locals"] = "self = <table> {\n}\nevent = \"ADDON_ACTION_BLOCKED\"\naddonName = \"ExtraActionBars\"\naddonFunc = \"CustomBar7:Show()\"\nname = \"ExtraActionBars\"\nbadAddons = <table> {\n ExtraActionBars = true\n}\nL = <table> {\n ADDON_CALL_PROTECTED_MATCH = \"^%[(.*)%] (AddOn '.*' tried to call the protected function '.*'.)$\"\n NO_DISPLAY_2 = \"|cffffff00The standard display is called BugSack, and can probably be found on the same site where you found !BugGrabber.|r\"\n ERROR_DETECTED = \"%s |cffffff00captured, click the link for more information.|r\"\n USAGE = \"|cffffff00Usage: /buggrabber <1-%d>.|r\"\n BUGGRABBER_STOPPED = \"|cffffff00There are too many errors in your UI. As a result, your game experience may be degraded. Disable or update the failing addons if you don't want to see this message again.|r\"\n STOP_NAG = \"|cffffff00!BugGrabber will not nag about missing a display addon again until next patch.|r\"\n ADDON_DISABLED = \"|cffffff00!BugGrabber and %s cannot coexist; %s has been forcefully disabled. If you want to, you may log out, disable !BugGrabber, and enable %s.|r\"\n NO_DISPLAY_STOP = \"|cffffff00If you don't want to be reminded about this again, run /stopnag.|r\"\n NO_DISPLAY_1 = \"|cffffff00You seem to be running !BugGrabber with no display addon to go along with it. Although a slash command is provided for accessing error reports, a display can help you manage these errors in a more convenient way.|r\"\n ERROR_UNABLE = \"|cffffff00!BugGrabber is unable to retrieve errors from other players by itself. Please install BugSack or a similar display addon that might give you this functionality.|r\"\n ADDON_CALL_PROTECTED = \"[%s] AddOn '%s' tried to call the protected function '%s'.\"\n}\n",
-["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:583: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:507: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:507>\n[C]: in function 'Show'\n[Interface/AddOns/xVermin/Helpers/Buffs.lua]:147: in function <Interface/AddOns/xVermin/Helpers/Buffs.lua:98>\n[C]: ?",
-["session"] = 13169,
-["counter"] = 2,
-},
-{
-["message"] = "...erface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua:566: Usage: SendCommMessage(addon, \"prefix\", \"text\", \"distribution\"[, \"target\"[, \"prio\"[, callbackFn, callbackarg]]])",
-["time"] = "2026/01/03 20:54:14",
-["locals"] = "self = <table> {\n}\nprefix = \"PITB\"\ntext = \"c1MGAA==\"\ndistribution = nil\ntarget = nil\nprio = \"NORMAL\"\ncallbackFn = nil\ncallbackArg = nil\nCTL = <table> {\n bChoking = false\n avail = 3788\n securelyHookedBNGameData = true\n securelyHookedLogged = true\n MSG_OVERHEAD = 40\n BlockedQueuesDelay = 0\n BURST = 4000\n MIN_FPS = 20\n securelyHooked = true\n MAX_CPS = 800\n LastAvailUpdate = 333306.716000\n OnUpdateDelay = 0\n nBypass = 784\n Prio = <table> {\n }\n version = 31\n nTotalSent = 0\n Frame = Frame {\n }\n HardThrottlingBeginTime = 328871.635000\n}\nMSG_MULTI_FIRST = \"\"\nMSG_MULTI_NEXT = \"\"\nMSG_MULTI_LAST = \"\"\n",
-["stack"] = "[Interface/AddOns/BugSack/Libs/AceComm-3.0-14/AceComm-3.0.lua]:91: in function 'SendCommMessage'\n[Interface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua]:566: in function 'SendData'\n[Interface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua]:395: in function 'SetSendingFullUpdate'\n[Interface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua]:1333: in function <...erface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua:1326>\n[Interface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua]:1343: in function <...erface/AddOns/Details/Libs/PlayerInfo/PlayerInfo.lua:1342>",
-["session"] = 13179,
-["counter"] = 1,
-},
-{
-["message"] = "[string \"print(xGetSpellID(\"Mark of the Wild\"))\"]:1: attempt to call global 'xGetSpellID' (a nil value)",
-["time"] = "2026/01/04 13:18:33",
-["locals"] = "msg = \"print(xGetSpellID(\"Mark of the Wild\"))\"\nuserScriptsDisabled = false\n",
-["stack"] = "[Interface/AddOns/Blizzard_ChatFrameBase/Shared/SlashCommands.lua]:859: in function '?'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2786: in function 'ChatEdit_ParseText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2438: in function 'ChatEdit_SendText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Classic/ChatFrame.lua]:2474: in function 'ChatEdit_OnEnterPressed'\n[*ChatFrame.xml:120_OnEnterPressed]:1: in function <[string \"*ChatFrame.xml:120_OnEnterPressed\"]:1>",
-["session"] = 13190,
-["counter"] = 1,
-},
 {
 ["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Myslot' tried to call the protected function 'UNKNOWN()'.",
 ["time"] = "2026/01/04 13:57:37",
@@ -229,44 +197,44 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/ls_Toasts/init.lua:1 Interface/AddOns/ls_Toasts/init.lua:20: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Masque_BeautyBorder/skin.lua:1 Interface/AddOns/Masque_BeautyBorder/skin.lua:13: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Masque_Brownstone/skin.lua:1 Interface/AddOns/Masque_Brownstone/skin.lua:13: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Masque_Muq/Skins.lua:1 Interface/AddOns/Masque_Muq/Skins.lua:6: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/MikScrollingBattleText/MikSBT.lua:1 Interface/AddOns/MikScrollingBattleText/MikSBT.lua:29: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/MikScrollingBattleText/Localization/localization.lua:1 ...MikScrollingBattleText/Localization/localization.lua:28: attempt to index local 'L' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/MikScrollingBattleText/MSBTProfiles.lua:1 ...rface/AddOns/MikScrollingBattleText/MSBTProfiles.lua:70: attempt to call local 'GetSkillName' (a nil value)",
-["session"] = 13284,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13284,
 ["counter"] = 1,
 },
 {
@@ -295,32 +263,32 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/NovaWorldBuffs/Modules/Data.lua:1 Interface/AddOns/NovaWorldBuffs/Modules/Data.lua:369: attempt to concatenate field 'i' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/NovaWorldBuffs/Modules/BuffsWindow.lua:1 ...erface/AddOns/NovaWorldBuffs/Modules/BuffsWindow.lua:13: attempt to call method 'addBackdrop' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/picoFPS/picoFPS.lua:1 Interface/AddOns/picoFPS/picoFPS.lua:11: attempt to call global 'GetNumAddOns' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Plater/libs/LibRangeCheck-2.0-100217/LibRangeCheck-2.0.lua:1 Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RangeDisplay/libs/LibRangeCheck-3.0-31/LibRangeCheck-3.0.lua:1 Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
@@ -333,50 +301,50 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/ShadowedUnitFrames/modules/auraindicators.lua:1 ...ace/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua:589: attempt to call global 'IsAddOnLoaded' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/SkillInfoPlus/SkillInfoPlus.lua:1 Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TacoTip/options.lua:1 Interface/AddOns/TacoTip/options.lua:3: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TacoTip/main.lua:1 Interface/AddOns/TacoTip/main.lua:3: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/ThreatClassic2/core/init.lua:1 Interface/AddOns/ThreatClassic2/core/init.lua:13: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/CustomContainers.lua:1 Interface/AddOns/xVermin/Frames/CustomContainers.lua:28: attempt to call method 'CreateBeautyBorder' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesDarker.lua:1 ...erface/AddOns/xVermin/Frames/DefaultFramesDarker.lua:50: attempt to index global 'CastingBarFrame' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/KillCount.lua:1 Interface/AddOns/xVermin/Frames/KillCount.lua:40: attempt to call method 'CreateBeautyBorder' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
@@ -397,14 +365,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Details/Details_TBC.toc:191 Duplicate File Load Detected. [Interface/AddOns/Details/core/parser_nocleu.lua] first loaded at [Interface/AddOns/Details/Details_TBC.toc:83]",
-["session"] = 13287,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13287,
 ["counter"] = 4,
 },
 {
 ["message"] = "Interface/AddOns/Details/Details_TBC.toc:192 Duplicate File Load Detected. [Interface/AddOns/Details/core/parser_nocleu1.lua] first loaded at [Interface/AddOns/Details/Details_TBC.toc:162]",
-["session"] = 13287,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13287,
 ["counter"] = 4,
 },
 {
@@ -1073,8 +1041,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nBuff/core.lua:1 Interface/AddOns/nBuff/core.lua:102: '<eof>' expected near 'TemporaryEnchantFrame'",
-["time"] = "2026/01/15 19:10:57",
 ["session"] = 13353,
+["time"] = "2026/01/15 19:10:57",
 ["counter"] = 1,
 },
 {
@@ -1087,8 +1055,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nBuff/core.lua:1 Interface/AddOns/nBuff/core.lua:62: unexpected symbol near ')'",
-["time"] = "2026/01/15 19:14:00",
 ["session"] = 13361,
+["time"] = "2026/01/15 19:14:00",
 ["counter"] = 1,
 },
 {
@@ -1221,14 +1189,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/TellMeWhen/TellMeWhen.lua:1 Interface/AddOns/TellMeWhen/TellMeWhen.lua:21: unexpected symbol near '.'",
-["time"] = "2026/01/15 19:39:20",
 ["session"] = 13377,
+["time"] = "2026/01/15 19:39:20",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/TellMeWhen/Components/IconModules/IconModule_CooldownSweep/CooldownSweep.lua:1 ...MeWhen/Components/IconModules/IconModule_CooldownSweep/CooldownSweep.lua:22: unexpected symbol near '.'",
-["time"] = "2026/01/15 19:39:20",
 ["session"] = 13377,
+["time"] = "2026/01/15 19:39:20",
 ["counter"] = 1,
 },
 {
@@ -1273,8 +1241,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Masque_BeautyBorder/Masque_BeautyBorder.toc:22 Error loading Interface/AddOns/Masque_BeautyBorder/Skins.lua",
-["time"] = "2026/01/15 19:53:54",
 ["session"] = 13387,
+["time"] = "2026/01/15 19:53:54",
 ["counter"] = 1,
 },
 {
@@ -1359,14 +1327,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/AdiBags/modules/Junk.lua:1 Interface/AddOns/AdiBags/modules/Junk.lua:32: unexpected symbol near '.'",
-["session"] = 13398,
 ["time"] = "2026/01/15 20:04:47",
+["session"] = 13398,
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/AdiBags/modules/CurrencyFrame.lua:1 Interface/AddOns/AdiBags/modules/CurrencyFrame.lua:42: unexpected symbol near '.'",
-["session"] = 13398,
 ["time"] = "2026/01/15 20:04:47",
+["session"] = 13398,
 ["counter"] = 3,
 },
 {
@@ -1467,38 +1435,38 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/WorldMapTaintWorkaround.lua:1 Interface/AddOns/Questie/Modules/WorldMapTaintWorkaround.lua:4: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/QuestieCoordinates.lua:1 Interface/AddOns/Questie/Modules/QuestieCoordinates.lua:20: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Tracker/QuestieTracker.lua:1 Interface/AddOns/Questie/Modules/Tracker/QuestieTracker.lua:84: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Tracker/TrackerUtils.lua:1 Interface/AddOns/Questie/Modules/Tracker/TrackerUtils.lua:36: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Tracker/TrackerHeaderFrame.lua:1 Interface/AddOns/Questie/Modules/Tracker/TrackerHeaderFrame.lua:29: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Options/TrackerTab/QuestieOptionsTracker.lua:1 ...face/AddOns/Questie/Modules/Options/TrackerTab/QuestieOptionsTracker.lua:28: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
@@ -1519,8 +1487,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:109: ')' expected (to close '(' at line 103) near 'end'",
-["time"] = "2026/01/16 11:11:25",
 ["session"] = 13423,
+["time"] = "2026/01/16 11:11:25",
 ["counter"] = 1,
 },
 {
@@ -1629,62 +1597,62 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:28 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:29 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:32 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:55 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:56 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:77 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:79 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:232 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:233 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:260 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
@@ -1841,8 +1809,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/AtlasLootClassic/Loader.lua:1 Interface/AddOns/AtlasLootClassic/Loader.lua:11: unexpected symbol near '.'",
-["session"] = 13446,
 ["time"] = "2026/01/16 12:06:09",
+["session"] = 13446,
 ["counter"] = 1,
 },
 {
@@ -1999,8 +1967,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Dejunk/src/consts.lua:1 Interface/AddOns/Dejunk/src/consts.lua:7: unexpected symbol near '.'",
-["session"] = 13456,
 ["time"] = "2026/01/16 12:15:12",
+["session"] = 13456,
 ["counter"] = 1,
 },
 {
@@ -2029,8 +1997,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Dejunk/src/bags.lua:1 Interface/AddOns/Dejunk/src/bags.lua:9: unexpected symbol near '.'",
-["session"] = 13458,
 ["time"] = "2026/01/16 12:15:12",
+["session"] = 13458,
 ["counter"] = 3,
 },
 {
@@ -2099,8 +2067,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/NugKeyFeedback/NugKeyFeedback.lua:1 Interface/AddOns/NugKeyFeedback/NugKeyFeedback.lua:51: unexpected symbol near '.'",
-["time"] = "2026/01/16 12:28:12",
 ["session"] = 13463,
+["time"] = "2026/01/16 12:28:12",
 ["counter"] = 1,
 },
 {
@@ -2345,8 +2313,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/FarmHud_TrailPath/FarmHud_TrailPath.xml:7 Deferred XML Node object named FarmHudTrailPathPinTemplate already exists",
-["time"] = "2026/01/21 16:46:57",
 ["session"] = 13667,
+["time"] = "2026/01/21 16:46:57",
 ["counter"] = 1,
 },
 {
@@ -2543,8 +2511,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Addons/SUI.lua:1 Interface/AddOns/xVermin/Addons/SUI.lua:17: unexpected symbol near ')'",
-["session"] = 13752,
 ["time"] = "2026/01/22 12:11:04",
+["session"] = 13752,
 ["counter"] = 1,
 },
 {
@@ -2653,8 +2621,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/xVermin.toc:113 Couldn't open Interface/AddOns/xVermin/Helpers/WeaponBuff",
-["time"] = "2026/01/23 18:05:21",
 ["session"] = 13791,
+["time"] = "2026/01/23 18:05:21",
 ["counter"] = 1,
 },
 {
@@ -3107,8 +3075,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/AdiBags/AdiBags_TBC.toc:51 Duplicate File Load Detected. [Interface/AddOns/AdiBags/core/EventHandlers.lua] first loaded at [Interface/AddOns/AdiBags/AdiBags_TBC.toc:47]",
-["session"] = 13848,
 ["time"] = "2026/01/27 22:23:43",
+["session"] = 13848,
 ["counter"] = 1,
 },
 {
@@ -3305,8 +3273,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/_Misc.lua:1 File Interface/AddOns/xVermin/Helpers/_Misc.lua is empty.",
-["time"] = "2026/02/13 19:15:53",
 ["session"] = 13947,
+["time"] = "2026/02/13 19:15:53",
 ["counter"] = 1,
 },
 {
@@ -3891,6 +3859,38 @@ BugGrabberDB = {
 ["locals"] = "msg = \"print(GetComboPoints())\"\nuserScriptsDisabled = false\n",
 ["stack"] = "[Interface/AddOns/Blizzard_ChatFrameBase/Shared/SlashCommands.lua]:1171: in function '?'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:227: in function 'ParseText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:252: in function 'SendText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:370: in function <...s/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua:366>\n",
 ["session"] = 14387,
+["counter"] = 1,
+},
+{
+["message"] = "Plater Mod |cFFAAAA22Combo Points Number|r code for |cFFBB8800Nameplate Updated|r error: \nMod/Script URL: https://wago.io/LW22M-yiX/2\nPlater-v635-TBC - DF v683 - 2.5.5 - xVermin\n[string \"Nameplate Updated for Combo Points Number\"]:2: attempt to index field 'ComboPointFrame' (a nil value)",
+["time"] = "2026/03/11 12:56:24",
+["locals"] = "errorMessage = \"[string \"Nameplate Updated for Combo Points Number\"]:2: attempt to index field 'ComboPointFrame' (a nil value)\"\nsecretError = false\nmsg = \"Plater Mod |cFFAAAA22Combo Points Number|r code for |cFFBB8800Nameplate Updated|r error: [string \"Nameplate Updated for Combo Points Number\"]:2: attempt to index field 'ComboPointFrame' (a nil value)\"\nlastTime = nil\ncurTime = 274538.928000\nmodscript = <table> {\n OptionsValues = <table> {\n }\n LastHookEdited = \"Nameplate Created\"\n UID = \"0x61c2355223d60a\"\n Hooks = <table> {\n }\n scriptId = \"table: 0000014B6336F1F0\"\n Time = 1773230184\n LoadConditions = <table> {\n }\n url = \"https://wago.io/LW22M-yiX/2\"\n Icon = 136189\n Enabled = true\n Revision = 558\n semver = \"1.0.1\"\n Author = \"Izimode-Azralon\"\n Desc = \"Show combo point number on top left of nameplate\"\n Prio = 99\n Name = \"Combo Points Number\"\n PlaterCore = 1\n version = 2\n HooksTemp = <table> {\n }\n Options = <table> {\n }\n}\nmodscriptInfo = \"Mod/Script URL: https://wago.io/LW22M-yiX/2\n\"\nerrorContext = <table> {\n message = \"Plater Mod |cFFAAAA22Combo Points Number|r code for |cFFBB8800Nameplate Updated|r error: \"\n globalScriptObject = <table> {\n }\n}\nprevErrors = <table> {\n Plater Mod |cFFAAAA22Combo Points Number|r code for |cFFBB8800Nameplate Updated|r error: [string \"Nameplate Updated for Combo Points Number\"]:2: attempt to index field 'ComboPointFrame' (a nil value) = 274538.928000\n}\nPlater = <table> {\n ActorTypeSettingsCache = <table> {\n }\n ScriptAura = <table> {\n }\n AnchorNames = <table> {\n }\n db = <table> {\n }\n fullVersionInfo = \"Plater-v635-TBC - DF v683 - 2.5.5 - xVermin\"\n Export_CastColors = \"CastColor\"\n PostponeRestoreCVar = <table> {\n }\n SpellIndexTable = <table> {\n }\n CurrentlyLoadedHooks = <table> {\n }\n CooldownEdgeTextures = <table> {\n }\n PlayerHasTargetNonSelf = false\n ZoneInstanceType = \"none\"\n PERF_UNIT_OVERRIDES_BITS_ALL = 7\n Auras = <table> {\n }\n CombatTime = 274478.438000\n HookScriptsDesc = <table> {\n }\n SPELL_WITH_ANIMATIONS = <table> {\n }\n ScriptCastBar = <table> {\n }\n AllHookGlobalContainers = <table> {\n }\n SpecList = <table> {\n }\n MaxAurasPerRow = 7\n AnchorSides = <table> {\n }\n DefaultSpellRangeList = <table> {\n }\n table = <table> {\n }\n COMM_NPC_COLOR_EXPORTED = \"NC\"\n versionString = \"Plater-v635-TBC\"\n BossModsTimeBarBW = <table> {\n }\n AnchorNamesByPhraseId = <table> {\n }\n QuestCache = <table> {\n }\n EventHandlerFrame = Frame {\n }\n WideIconCoords = <table> {\n }\n baseName = \"Plater\"\n COMM_NPC_NAME_EXPORTED = \"NN\"\n DefaultSpellRangeListF = <table> {\n }\n Masque = <table> {\n }\n ForceBlizzardNameplateUnits = <table> {\n }\n PERF_UNIT_OVERRIDES_BIT = <table> {\n }\n PostponeSetCVar = <table> {\n }\n orderedModules = <table> {\n }\n PerformanceUnits = <table> {\n }\n SparkTextures = <table> {\n }\n TargetHighlights = <table> {\n }\n COMM_SCRIPT_GROUP_EXPORTED = \"GE\"\n RangeCheckRangeEnemy = 10\n name = \"Plater\"\n FrameworkList = <table> {\n }\n ChangeLogTable = <table> {\n }\n APIList = <table> {\n }\n MDTSettings = <table> {\n }\n Resources = <table> {\n }\n defaultModuleState = true\n UnitFrameMembers = <table> {\n }\n NpcBlackList = <table> {\n }\n PlayerHasTarget = false\n SpellSameNameTable = <table> {\n }\n PlayerIsTank = false\n PlayerHasFocusTargetNonSelf = false\n PlayerHasFocusTarget = false\n TargetIndicators = <table> {\n }\n PlayerClass = \"ROGUE\"\n RangeCheckRangeFriendly = 10\n ZoneName = \"Eastern Kingdoms\"\n CanOverride_Functions = <table> {\n }\n CodeTypeNames = <table> {\n }\n CanOverrideColor = true\n Media = <table> {\n }\n databroker = <table> {\n }\n API_Description = <table> {\n }\n HookScripts = <table> {\n }\n Locale = \"enUS\"\n CastBarTestFrame = Frame {\n }\n PlayerGUID = \"Player-6409-04E45BE7\"\n NameplateComponents = <table> {\n }\n FPSData = <table> {\n }\n __name = \"Plater\"\n Export_CastSoundAlerts = \"CastSounds\"\n ScriptMetaFunctions = <table> {\n }\n modules = <table> {\n }\n COMM_NPC_OR_CAST_CUSTOMIZATION = \"NCC\"\n CompanionDataSlugs = <table> {\n }\n CanOverride_Members = <table> {\n }\n TriggerDefaultMembers = <table> {\n }\n BorderLessIconCoords = <table> {\n }\n BossModsTimeBarDBM = <table> {\n }\n COMM_PLATER_PREFIX = \"PLT\"\n ScriptUnit = <table> {\n }\n enab",
+["stack"] = "[Interface/AddOns/Plater/Plater.lua]:12035: in function <Interface/AddOns/Plater/Plater.lua:12016>\n[Nameplate Updated for Combo Points Number]:2: in function <[string \"Nameplate Updated for Combo Points Number\"]:1>\n[C]: ?\n[Interface/AddOns/Plater/Plater.lua]:12260: in function 'ScriptRunHook'\n[Interface/AddOns/Plater/Plater.lua]:6628: in function 'TriggerNameplateUpdatedEvent'\n[Interface/AddOns/Plater/Plater.lua]:7370: in function '?'\n[Interface/AddOns/Plater/Plater.lua]:9313: in function 'UpdatePlateFrame'\n[Interface/AddOns/Plater/Plater.lua]:4150: in function 'func'\n[Interface/AddOns/Plater/Plater.lua]:4423: in function 'EventHandler'\n[Interface/AddOns/Plater/Plater.lua]:4454: in function 'RunFunctionForEvent'\n[Interface/AddOns/Plater/Plater.lua]:1415: in function 'RunScheduledUpdate'\n[Interface/AddOns/Plater/Plater.lua]:6654: in function 'FullRefreshAllPlates'\n[Interface/AddOns/Plater/Plater_ScriptingPanels.lua]:2218: in function 'SaveScript'\n[Interface/AddOns/Plater/Plater_ScriptingPanels.lua]:2451: in function <Interface/AddOns/Plater/Plater_ScriptingPanels.lua:2447>\n[C]: in function 'Hide'\n[Interface/AddOns/Plater/libs/DF/panel.lua]:2041: in function <Interface/AddOns/Plater/libs/DF/panel.lua:2040>\n",
+["session"] = 14392,
+["counter"] = 1,
+},
+{
+["message"] = "Mod: |cFFAAAA22Combo Points [Plater]|r Combo Points [Plater] error: \nPlater-v635-TBC - DF v683 - 2.5.5 - xVermin\n[string \"Destructor for Combo Points [Plater]\"]:3: attempt to index field 'ComboPointFrame' (a nil value)",
+["time"] = "2026/03/11 13:01:40",
+["locals"] = "errorMessage = \"[string \"Destructor for Combo Points [Plater]\"]:3: attempt to index field 'ComboPointFrame' (a nil value)\"\nsecretError = false\nmsg = \"Mod: |cFFAAAA22Combo Points [Plater]|r Combo Points [Plater] error: [string \"Destructor for Combo Points [Plater]\"]:3: attempt to index field 'ComboPointFrame' (a nil value)\"\nlastTime = nil\ncurTime = 274840.403000\nmodscript = nil\nmodscriptInfo = nil\nerrorContext = <table> {\n message = \"Mod: |cFFAAAA22Combo Points [Plater]|r Combo Points [Plater] error: \"\n globalScriptObject = <table> {\n }\n}\nprevErrors = <table> {\n Mod: |cFFAAAA22Combo Points [Plater]|r Combo Points [Plater] error: [string \"Destructor for Combo Points [Plater]\"]:3: attempt to index field 'ComboPointFrame' (a nil value) = 274840.403000\n}\nPlater = <table> {\n ActorTypeSettingsCache = <table> {\n }\n ScriptAura = <table> {\n }\n AnchorNames = <table> {\n }\n db = <table> {\n }\n fullVersionInfo = \"Plater-v635-TBC - DF v683 - 2.5.5 - xVermin\"\n Export_CastColors = \"CastColor\"\n PostponeRestoreCVar = <table> {\n }\n SpellIndexTable = <table> {\n }\n CurrentlyLoadedHooks = <table> {\n }\n CooldownEdgeTextures = <table> {\n }\n PlayerHasTargetNonSelf = false\n ZoneInstanceType = \"none\"\n PERF_UNIT_OVERRIDES_BITS_ALL = 7\n Auras = <table> {\n }\n CombatTime = 274757.090000\n HookScriptsDesc = <table> {\n }\n SPELL_WITH_ANIMATIONS = <table> {\n }\n ScriptCastBar = <table> {\n }\n AllHookGlobalContainers = <table> {\n }\n SpecList = <table> {\n }\n MaxAurasPerRow = 7\n AnchorSides = <table> {\n }\n DefaultSpellRangeList = <table> {\n }\n table = <table> {\n }\n COMM_NPC_COLOR_EXPORTED = \"NC\"\n versionString = \"Plater-v635-TBC\"\n BossModsTimeBarBW = <table> {\n }\n AnchorNamesByPhraseId = <table> {\n }\n QuestCache = <table> {\n }\n EventHandlerFrame = Frame {\n }\n WideIconCoords = <table> {\n }\n baseName = \"Plater\"\n COMM_NPC_NAME_EXPORTED = \"NN\"\n DefaultSpellRangeListF = <table> {\n }\n Masque = <table> {\n }\n ForceBlizzardNameplateUnits = <table> {\n }\n PERF_UNIT_OVERRIDES_BIT = <table> {\n }\n PostponeSetCVar = <table> {\n }\n orderedModules = <table> {\n }\n PerformanceUnits = <table> {\n }\n SparkTextures = <table> {\n }\n TargetHighlights = <table> {\n }\n COMM_SCRIPT_GROUP_EXPORTED = \"GE\"\n RangeCheckRangeEnemy = 10\n name = \"Plater\"\n FrameworkList = <table> {\n }\n ChangeLogTable = <table> {\n }\n APIList = <table> {\n }\n MDTSettings = <table> {\n }\n Resources = <table> {\n }\n defaultModuleState = true\n UnitFrameMembers = <table> {\n }\n NpcBlackList = <table> {\n }\n PlayerHasTarget = false\n SpellSameNameTable = <table> {\n }\n PlayerHasFocusTargetNonSelf = false\n PlayerHasFocusTarget = false\n TargetIndicators = <table> {\n }\n PlayerClass = \"ROGUE\"\n RangeCheckRangeFriendly = 10\n ZoneName = \"Eastern Kingdoms\"\n CanOverride_Functions = <table> {\n }\n CodeTypeNames = <table> {\n }\n CanOverrideColor = true\n Media = <table> {\n }\n databroker = <table> {\n }\n API_Description = <table> {\n }\n HookScripts = <table> {\n }\n Locale = \"enUS\"\n CastBarTestFrame = Frame {\n }\n PlayerGUID = \"Player-6409-04E45BE7\"\n NameplateComponents = <table> {\n }\n FPSData = <table> {\n }\n __name = \"Plater\"\n Export_CastSoundAlerts = \"CastSounds\"\n ScriptMetaFunctions = <table> {\n }\n modules = <table> {\n }\n COMM_NPC_OR_CAST_CUSTOMIZATION = \"NCC\"\n CompanionDataSlugs = <table> {\n }\n CanOverride_Members = <table> {\n }\n TriggerDefaultMembers = <table> {\n }\n BorderLessIconCoords = <table> {\n }\n BossModsTimeBarDBM = <table> {\n }\n COMM_PLATER_PREFIX = \"PLT\"\n ScriptUnit = <table> {\n }\n enabledState = true\n UnitReaction = <table> {\n }\n COMM_SCRIPT_MSG = \"PLTM\"\n fullVersionInfoContainsName = true\n LastCombat = <table> {\n }\n defaultModuleLibraries = <table> {\n }\n Export_NpcColors = \"NpcColor\"\n ForceInCombatUnits = <table> {\n }\n CoreVersion = 1\n QuestCacheCampaign = <table> {\n }\n PlayerGuildName = \"ThePlayerHasNoGuildName/30Char\"\n PlayerPetCache = <table> {\n }\n SpellHashTable = <table> {\n }\n FriendsCache = <table> {\n }\n DBRefreshCallback = <table> {\n }\n}\n",
+["stack"] = "[Interface/AddOns/Plater/Plater.lua]:12035: in function <Interface/AddOns/Plater/Plater.lua:12016>\n[Destructor for Combo Points [Plater]]:3: in function <[string \"Destructor for Combo Points [Plater]\"]:1>\n[C]: ?\n[Interface/AddOns/Plater/Plater.lua]:13067: in function 'RunDestructorForHook'\n[Interface/AddOns/Plater/Plater.lua]:13146: in function 'CompileHook'\n[Interface/AddOns/Plater/Plater.lua]:12464: in function 'CompileAllScripts'\n[Interface/AddOns/Plater/Plater.lua]:12918: in function 'WipeAndRecompileAllScripts'\n[Interface/AddOns/Plater/Plater_ScriptingPanels.lua]:1223: in function <Interface/AddOns/Plater/Plater_ScriptingPanels.lua:1218>\n[C]: in function 'xpcall'\n[Interface/AddOns/Plater/libs/DF/slider.lua]:830: in function <Interface/AddOns/Plater/libs/DF/slider.lua:781>\n",
+["session"] = 14394,
+["counter"] = 2,
+},
+{
+["message"] = "...ce/AddOns/Broker_Everything/modules/ammo_classic.lua:56: attempt to compare number with boolean",
+["time"] = "2026/03/11 18:17:18",
+["locals"] = "tt = Frame {\n parent = <table> {\n }\n scrollChild = Frame {\n }\n labelProvider = <table> {\n }\n height = 19.968254\n lines = <table> {\n }\n layoutType = \"TooltipDefaultLayout\"\n headerFont = GameTooltipHeaderText {\n }\n mode = <table> {\n }\n scrollFrame = ScrollFrame {\n }\n NineSlice = Frame {\n }\n colspans = <table> {\n }\n width = 9\n scripts = <table> {\n }\n regularFont = GameTooltipText {\n }\n key = \"AmmoTT\"\n columns = <table> {\n }\n}\nupdate = nil\n(*temporary) = false\n(*temporary) = Frame {\n parent = <table> {\n }\n scrollChild = Frame {\n }\n labelProvider = <table> {\n }\n height = 19.968254\n lines = <table> {\n }\n layoutType = \"TooltipDefaultLayout\"\n headerFont = GameTooltipHeaderText {\n }\n mode = <table> {\n }\n scrollFrame = ScrollFrame {\n }\n NineSlice = Frame {\n }\n colspans = <table> {\n }\n width = 9\n scripts = <table> {\n }\n regularFont = GameTooltipText {\n }\n key = \"AmmoTT\"\n columns = <table> {\n }\n}\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 2\n(*temporary) = 1\n(*temporary) = Frame {\n Center = Texture {\n }\n BottomEdge = Texture {\n }\n cells = <table> {\n }\n RightEdge = Texture {\n }\n TopLeftCorner = Texture {\n }\n BottomRightCorner = Texture {\n }\n BottomLeftCorner = Texture {\n }\n TopRightCorner = Texture {\n }\n TopEdge = Texture {\n }\n backdropInfo = <table> {\n }\n height = 1\n LeftEdge = Texture {\n }\n}\n(*temporary) = <table> {\n a = 1\n b = 0\n g = 0.819608\n r = 1\n}\n(*temporary) = 2\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = 0.819608\n(*temporary) = 0\n(*temporary) = 1\n(*temporary) = \"attempt to compare number with boolean\"\nttName = \"AmmoTT\"\nammo = <table> {\n itemInfo = <table> {\n }\n sum = false\n inUse = 0\n}\nthrown = <table> {\n itemInfo = <table> {\n }\n sum = false\n inUse = 0\n}\nL = <table> {\n}\nns = <table> {\n}\nname = \"Ammo\"\n",
+["stack"] = "[Interface/AddOns/Broker_Everything/modules/ammo_classic.lua]:56: in function <...ce/AddOns/Broker_Everything/modules/ammo_classic.lua:51>\n[Interface/AddOns/Broker_Everything/modules/ammo_classic.lua]:180: in function 'OnEnter'\n[Interface/AddOns/Broker_Everything/libs/LibDBIcon-1.0/LibDBIcon-1.0.lua]:85: in function <...oker_Everything/libs/LibDBIcon-1.0/LibDBIcon-1.0.lua:68>\n",
+["session"] = 14400,
+["counter"] = 2,
+},
+{
+["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'CookieEasyEnchant' tried to call the protected function 'UNKNOWN()'.",
+["time"] = "2026/03/11 18:31:40",
+["locals"] = "self = <table> {\n}\nevent = \"ADDON_ACTION_BLOCKED\"\naddonName = \"CookieEasyEnchant\"\naddonFunc = \"UNKNOWN()\"\nname = \"CookieEasyEnchant\"\nbadAddons = <table> {\n CookieEasyEnchant = true\n}\nL = <table> {\n ADDON_CALL_PROTECTED_MATCH = \"^%[(.*)%] (AddOn '.*' tried to call the protected function '.*'.)$\"\n NO_DISPLAY_2 = \"|cffffff00The standard display is called BugSack, and can probably be found on the same site where you found !BugGrabber.|r\"\n ERROR_DETECTED = \"%s |cffffff00captured, click the link for more information.|r\"\n USAGE = \"|cffffff00Usage: /buggrabber <1-%d>.|r\"\n BUGGRABBER_STOPPED = \"|cffffff00There are too many errors in your UI. As a result, your game experience may be degraded. Disable or update the failing addons if you don't want to see this message again.|r\"\n STOP_NAG = \"|cffffff00!BugGrabber will not nag about missing a display addon again until next patch.|r\"\n ADDON_DISABLED = \"|cffffff00!BugGrabber and %s cannot coexist; %s has been forcefully disabled. If you want to, you may log out, disable !BugGrabber, and enable %s.|r\"\n NO_DISPLAY_STOP = \"|cffffff00If you don't want to be reminded about this again, run /stopnag.|r\"\n NO_DISPLAY_1 = \"|cffffff00You seem to be running !BugGrabber with no display addon to go along with it. Although a slash command is provided for accessing error reports, a display can help you manage these errors in a more convenient way.|r\"\n ERROR_UNABLE = \"|cffffff00!BugGrabber is unable to retrieve errors from other players by itself. Please install BugSack or a similar display addon that might give you this functionality.|r\"\n ADDON_CALL_PROTECTED = \"[%s] AddOn '%s' tried to call the protected function '%s'.\"\n}\n",
+["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:477: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:401: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:401>\n[C]: ?\n[C]: in function 'SetParent'\n[Interface/AddOns/CookieEasyEnchant/CookieEasyEnchant.lua]:308: in function <...rface/AddOns/CookieEasyEnchant/CookieEasyEnchant.lua:303>\n[Interface/AddOns/CookieEasyEnchant/CookieEasyEnchant.lua]:335: in function <...rface/AddOns/CookieEasyEnchant/CookieEasyEnchant.lua:330>\n[Interface/AddOns/CookieEasyEnchant/CookieEasyEnchant.lua]:523: in function <...rface/AddOns/CookieEasyEnchant/CookieEasyEnchant.lua:522>\n",
+["session"] = 14400,
 ["counter"] = 1,
 },
 },
