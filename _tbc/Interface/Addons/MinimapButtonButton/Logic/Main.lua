@@ -328,9 +328,7 @@ local function hideButtonsAfterDelay (delay)
 end
 
 local function showButtons ()
-  if (options.autohide > 0) then
-    hideButtonsAfterDelay(options.autohide);
-  else
+  if (options.autohide <= 0) then
     options.buttonsShown = true;
   end
 
@@ -398,6 +396,21 @@ local function initButtonContainer ()
   buttonContainer:SetParent(mainButton);
   buttonContainer:SetFrameLevel(Constants.FRAME_LEVEL);
   buttonContainer:Hide();
+
+  local wasMouseOver = false;
+  buttonContainer:SetScript('OnUpdate', function (self)
+    if (options == nil or options.autohide <= 0) then
+      wasMouseOver = false;
+      return;
+    end
+    local isOver = _G.MouseIsOver(self);
+    if (isOver and not wasMouseOver) then
+      hideCallback = nil;
+    elseif (not isOver and wasMouseOver) then
+      hideButtonsAfterDelay(options.autohide);
+    end
+    wasMouseOver = isOver;
+  end);
 end
 
 local function initLogo ()
