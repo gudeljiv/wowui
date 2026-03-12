@@ -1,6 +1,6 @@
 VER 3 0000000000000033 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:6450
+/cast item:3530
 END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
@@ -15,7 +15,7 @@ VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:4599
+/cast item:3771
 END
 VER 3 000000000000003F "gather" "134400"
 #showtooltip
@@ -59,8 +59,7 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3771
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Apothecary Lydon
-/targetexact Urda
+/targetexact High Executor Darthalia
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"

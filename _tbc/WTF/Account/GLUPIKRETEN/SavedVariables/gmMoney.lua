@@ -46,7 +46,7 @@ GMMONEY = {
 ["CLASS"] = "ROGUE",
 },
 ["Handrmandr"] = {
-["GOLD"] = 353267,
+["GOLD"] = 361905,
 ["CLASS"] = "HUNTER",
 },
 ["Vermins"] = {
@@ -54,11 +54,11 @@ GMMONEY = {
 ["CLASS"] = "WARRIOR",
 },
 ["Dopeseal"] = {
-["GOLD"] = 3557646,
+["GOLD"] = 3676143,
 ["CLASS"] = "PALADIN",
 },
 ["Moolatz"] = {
-["GOLD"] = 414722,
+["GOLD"] = 423313,
 ["CLASS"] = "DRUID",
 },
 ["Dopecoil"] = {
@@ -66,7 +66,7 @@ GMMONEY = {
 ["CLASS"] = "WARLOCK",
 },
 ["Dopecure"] = {
-["GOLD"] = 871164,
+["GOLD"] = 870769,
 ["CLASS"] = "PRIEST",
 },
 ["Pitchwise"] = {
