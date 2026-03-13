@@ -76,7 +76,7 @@ local options = {
 
 module = Arcana:NewModule("Placeholder", nil, options)
 
-local function addPlaceholderOptionsToPlugins()
+local function addPlaceholderOptionsToOptions()
     for name, _ in pairs(placeholderNames) do
         Arcana:AddCustomPluginOptions(name, placeholderPluginOptions)
     end
@@ -96,11 +96,15 @@ function module:NewPlaceholder(name)
         type    = "data source",
         label   = name,
         text    = "",
-        OnClick = onRightClick,
+        OnClick = function(button)
+            if button == "RightButton" then
+                Arcana:LoadOptions()
+            end
+        end
     })
     return placeholder
 end
 
 function module:OnOpenOptions()
-    addPlaceholderOptionsToPlugins()
+    addPlaceholderOptionsToOptions()
 end

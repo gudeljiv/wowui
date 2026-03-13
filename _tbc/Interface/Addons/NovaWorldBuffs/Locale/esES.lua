@@ -1234,9 +1234,10 @@ L["Dec"] = "Dic";
 
 L["for"] = "por";
 L["by"] = "por";
+L["Crossroads"] = "El Cruce";
 
 L["For help or suggestions"] = "Ayuda o sugerencias";
 
-L["recentlyKilledMsg"] = "Nuevo temporizador de PNJ de %s recién muerta recibido, murió hace %s";
+L["recentlyKilledMsg"] = "Nuevo temporizador de PNJ de %s recién muerto recibido, murió hace %s";
 
 L["Shattrath City"] = "Ciudad de Shattrath";

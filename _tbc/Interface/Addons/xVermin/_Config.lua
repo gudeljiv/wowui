@@ -18,6 +18,7 @@ xVermin.Config = {
 		arial = "Fonts\\ARIALN.ttf",
 		atari = "Interface\\AddOns\\xVermin\\Media\\Atari.ttf",
 		damage = "Interface\\AddOns\\xVermin\\Media\\Damage.ttf",
+		coalition = "Interface\\AddOns\\xVermin\\Media\\Coalition.ttf",
 	},
 	texture = {
 		coins = "Interface\\AddOns\\xVermin\\Media\\Coins",

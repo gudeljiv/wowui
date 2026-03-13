@@ -874,6 +874,10 @@ NWB.companionCreatures = {
 	[214589] = "Cozy Sleeping Bag",
 	[187832] = "Skeletal Hitching Post",
 	[6491] = "Spirit Healer",
+	
+	--TBC other stuff.
+	[18483] = "Empoor's Bodyguard",
+	[18482] = "Empoor",
 }
 
 if (NWB.isTBC) then

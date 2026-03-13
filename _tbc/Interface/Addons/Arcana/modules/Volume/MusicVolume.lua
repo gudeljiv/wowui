@@ -33,7 +33,7 @@ function Module:EnableModule()
     if not dataobj then
         dataobj = LibStub("LibDataBroker-1.1"):NewDataObject(addonName, {
             type         = "data source",
-            icon         = "Interface\\AddOns\\Arcana\\modules\\MusicVolume\\icon.tga",
+            icon         = "Interface\\AddOns\\Arcana\\Modules\\Volume\\icon.tga",
             label        = addonName,
             text         = volumeText,
             OnMouseWheel = OnMouseWheel,

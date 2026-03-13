@@ -59,7 +59,13 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3771
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact High Executor Darthalia
+/targetexact Scorpid Terror
+/targetexact Scorpid Reaver
+/targetexact Sparkleshell Tortoise
+/targetexact Sparkleshell Borer
+/targetexact Sparkleshell Snapper
+/targetexact Salt Flats Vulture
+/targetexact Salt Flats Scavenger
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"

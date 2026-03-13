@@ -3817,7 +3817,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 					and (GetServerTime() - lastPew) > 120) then
 				NWB:getTerokkarData();
 			end
-			NWB:getTerokkarData();
+			--NWB:getTerokkarData();
 		end
 		--Widget 3112 is capture stage.
 		--[[if (NWB.isDebug and data and data.widgetID == 3112) then
@@ -5093,7 +5093,8 @@ elseif (NWB.isTBC or NWB.isWrathPrepatch) then
 					.. "Shattrath's Lower City to collect the reward.",
 		},
 	};
-	NWB.pvpDailies = {
+	--These worked in original tbc classic, but now they're changed to hare ids with the wrath versions?
+	--[[NWB.pvpDailies = {
 		--Horde.
 		[14183] = {
 			id = 1,
@@ -5135,6 +5136,69 @@ elseif (NWB.isTBC or NWB.isWrathPrepatch) then
 			id = 8,
 			name = "Call to Arms: Eye of the Storm",
 			desc = "Win an Eye of the Storm battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},]]
+	NWB.pvpDailies = {
+		--Horde.
+		[11342] = {
+			id = 1,
+			name = "Call to Arms: Warsong Gulch",
+			desc = "Win a Warsong Gulch battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		[11339] = {
+			id = 2,
+			name = "Call to Arms: Arathi Basin",
+			desc = "Win an Arathi Basin battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		[11340] = {
+			id = 3,
+			name = "Call to Arms: Alterac Valley",
+			desc = "Win an Alterac Valley battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		[11341] = {
+			id = 4,
+			name = "Call to Arms: Eye of the Storm",
+			desc = "Win an Eye of the Storm battleground match and return to a Horde Warbringer at any Horde capital city.",
+		},
+		[13407] = {
+			id = 9,
+			name = "Call to Arms: Strand of the Ancients",
+			desc = "Win a Strand of the Ancients battleground match and return to an Horde Warbringer at any Horde capital city.",
+		},
+		[14164] = {
+			id = 10,
+			name = "Call to Arms: Isle of Conquest",
+			desc = "Win an Isle of Conquest battleground match and return to an Horde Warbringer at any Horde capital city.",
+		},
+		--Alliance.
+		[11338] = {
+			id = 5,
+			name = "Call to Arms: Warsong Gulch",
+			desc = "Win a Warsong Gulch battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[11335] = {
+			id = 6,
+			name = "Call to Arms: Arathi Basin",
+			desc = "Win an Arathi Basin battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[11336] = {
+			id = 7,
+			name = "Call to Arms: Alterac Valley",
+			desc = "Win an Alterac Valley battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[11337] = {
+			id = 8,
+			name = "Call to Arms: Eye of the Storm",
+			desc = "Win an Eye of the Storm battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[13405] = {
+			id = 11,
+			name = "Call to Arms: Strand of the Ancients",
+			desc = "Win a Strand of the Ancients battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
+		},
+		[14163] = {
+			id = 12,
+			name = "Call to Arms: Isle of Conquest",
+			desc = "Win an Isle of Conquest battleground match and return to an Alliance Brigadier General at any Alliance capital city.",
 		},
 	};
 else

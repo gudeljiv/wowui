@@ -5213,7 +5213,11 @@ function NWB:setSongFlowers()
 		["flower10"] = {x = 52.9, y = 87.8, subZone = L["South of Emerald Sanctuary"]}, --x 52.893336145267, y 87.825217631218
 	}
 	if (NWB.faction == "Horde") then
-		NWB.songFlowers.flower6.subZone = L["Bloodvenom Post"] .. " FP";
+		local fp = "";
+		if (GetLocale() == "enUS") then
+			fp = " FP"
+		end
+		NWB.songFlowers.flower6.subZone = L["Bloodvenom Post"] .. fp;
 	end
 end
 
