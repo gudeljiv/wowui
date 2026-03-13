@@ -1,0 +1,1196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_NAG">Class NAG </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/APLAction_Casting.html">APLAction_Casting</a></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><a href="../modules/APLAction_Misc.html">APLAction_Misc</a></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><a href="../modules/APLDRW.html">APLDRW</a></li>
+  <li><a href="../modules/APLSequences.html">APLSequences</a></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><a href="../modules/APLValues_Aura.html">APLValues_Aura</a></li>
+  <li><a href="../modules/APLValues_AuraSets.html">APLValues_AuraSets</a></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><a href="../modules/APLValues_Boss.html">APLValues_Boss</a></li>
+  <li><a href="../modules/APLValues_Dot.html">APLValues_Dot</a></li>
+  <li><a href="../modules/APLValues_Encounter.html">APLValues_Encounter</a></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><a href="../modules/APLValues_Resources.html">APLValues_Resources</a></li>
+  <li><a href="../modules/APLValues_Runes.html">APLValues_Runes</a></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><strong>APLValues_Unit</strong></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><a href="../modules/APL_Class.html">APL_Class</a></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><a href="../modules/NAG.EnhancedAuraHandlers.html">NAG.EnhancedAuraHandlers</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>APLValues_Unit</code></h1>
+<p>
+
+</p>
+<p>"
+ Unit-related APL value functions for the NAG addon</p>
+
+<p> This module provides utility functions for unit movement, distance, casting, and other unit-related operations.</p>
+
+<p> License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: Rakizi, Fonsas
+ Discord: https://discord.gg/ebonhold</p>
+
+<p> luacheck: ignore GetSpellInfo</p>
+
+
+<h2><a href="#Class_NAG">Class NAG </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GroupNeedsHealing">NAG:GroupNeedsHealing (healthThreshold)</a></td>
+	<td class="summary">True if any group member is below health threshold.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:LowHealthMemberCount">NAG:LowHealthMemberCount (healthThreshold)</a></td>
+	<td class="summary">Number of group members below health threshold.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MouseoverBuffRemains">NAG:MouseoverBuffRemains (auraId, exactIdMatch)</a></td>
+	<td class="summary">Remaining duration in seconds of buff on mouseover.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MouseoverDispelType">NAG:MouseoverDispelType ()</a></td>
+	<td class="summary">Dispel type of first dispellable debuff on mouseover (Magic, Curse, Disease, Poison).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MouseoverEffectiveHealthPercent">NAG:MouseoverEffectiveHealthPercent ()</a></td>
+	<td class="summary">Mouseover unit effective health as 0-100 (health after absorb; MoP+ when available).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MouseoverFriendlyExists">NAG:MouseoverFriendlyExists ()</a></td>
+	<td class="summary">True if mouseover unit exists and is friendly.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MouseoverHasBuff">NAG:MouseoverHasBuff (auraId, exactIdMatch)</a></td>
+	<td class="summary">True if mouseover has the given buff.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MouseoverHealthPercent">NAG:MouseoverHealthPercent ()</a></td>
+	<td class="summary">Mouseover unit health as 0-100.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MouseoverIsSelf">NAG:MouseoverIsSelf ()</a></td>
+	<td class="summary">True if mouseover unit is the player.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MouseoverIsTank">NAG:MouseoverIsTank ()</a></td>
+	<td class="summary">True if mouseover unit is assigned as tank.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MouseoverNeedsDispel">NAG:MouseoverNeedsDispel ()</a></td>
+	<td class="summary">True if mouseover has a dispellable debuff.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:SpellIsCasting">NAG:SpellIsCasting (spellId)</a></td>
+	<td class="summary">Checks if the player is currently casting a specific spell.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ThreatPercent">NAG:ThreatPercent (source, target)</a></td>
+	<td class="summary">Returns normalized threat percent for a source unit on a target unit.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitCanAttack">NAG:UnitCanAttack (sourceUnit, targetUnit)</a></td>
+	<td class="summary">Checks if one unit can attack another unit</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitCastTimeRemaining">NAG:UnitCastTimeRemaining (unit)</a></td>
+	<td class="summary">Gets the remaining cast time for a unit's current spell.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitChannelTimeRemaining">NAG:UnitChannelTimeRemaining (unit)</a></td>
+	<td class="summary">Gets the remaining channel time for a unit's current spell.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitDistance">NAG:UnitDistance (unit, maxRange)</a></td>
+	<td class="summary">Gets the distance to a specific unit with optional range capping.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitExists">NAG:UnitExists (unit)</a></td>
+	<td class="summary">Checks if a unit exists</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitIsCasting">NAG:UnitIsCasting (unit, spellId)</a></td>
+	<td class="summary">Checks if a unit is currently casting any spell or a specific spell.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitIsCastingOrChanneling">NAG:UnitIsCastingOrChanneling (unit)</a></td>
+	<td class="summary">Checks if a unit is currently casting or channeling any spell.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitIsChanneling">NAG:UnitIsChanneling (unit, spellId)</a></td>
+	<td class="summary">Checks if a unit is currently channeling any spell or a specific spell.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitIsInterruptible">NAG:UnitIsInterruptible (unit)</a></td>
+	<td class="summary">Checks if a unit's cast or channel is interruptible.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitIsMobType">NAG:UnitIsMobType (unit, mobType)</a></td>
+	<td class="summary">Checks if a unit is of a specific mob type.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitIsMoving">NAG:UnitIsMoving (unit)</a></td>
+	<td class="summary">Checks if a unit is currently moving.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitIsPrimaryTarget">NAG:UnitIsPrimaryTarget (source, target)</a></td>
+	<td class="summary">Checks if a source unit is the primary target (has aggro) on a target unit.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitIsStealthed">NAG:UnitIsStealthed (unit)</a></td>
+	<td class="summary">Checks if a unit is currently stealthed by checking known stealth abilities.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitThreatPercent">NAG:UnitThreatPercent (source, target)</a></td>
+	<td class="summary">Returns the detailed threat percent for a source unit on a target unit.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitThreatRawPercent">NAG:UnitThreatRawPercent (source, target)</a></td>
+	<td class="summary">Returns the raw threat percent for a source unit on a target unit.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitThreatValue">NAG:UnitThreatValue (source, target)</a></td>
+	<td class="summary">Returns the raw threat value for a source unit on a target unit.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_NAG"></a>Class NAG </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:GroupNeedsHealing"></a>
+    <strong>NAG:GroupNeedsHealing (healthThreshold)</strong>
+    </dt>
+    <dd>
+    True if any group member is below health threshold.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">healthThreshold</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil 0-100 (default from HealingStateManager)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:LowHealthMemberCount"></a>
+    <strong>NAG:LowHealthMemberCount (healthThreshold)</strong>
+    </dt>
+    <dd>
+    Number of group members below health threshold.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">healthThreshold</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil 0-100 (default from HealingStateManager)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:MouseoverBuffRemains"></a>
+    <strong>NAG:MouseoverBuffRemains (auraId, exactIdMatch)</strong>
+    </dt>
+    <dd>
+    Remaining duration in seconds of buff on mouseover.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         Spell ID of the buff
+        </li>
+        <li><span class="parameter">exactIdMatch</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:MouseoverDispelType"></a>
+    <strong>NAG:MouseoverDispelType ()</strong>
+    </dt>
+    <dd>
+    Dispel type of first dispellable debuff on mouseover (Magic, Curse, Disease, Poison).
+ Lets rotations choose the correct spell (e.g. Cure Disease vs Purify).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        |nil dispelType or nil if none or no dispel manager
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:MouseoverEffectiveHealthPercent"></a>
+    <strong>NAG:MouseoverEffectiveHealthPercent ()</strong>
+    </dt>
+    <dd>
+    Mouseover unit effective health as 0-100 (health after absorb; MoP+ when available).
+ Falls back to MouseoverHealthPercent when effective health is not in state.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:MouseoverFriendlyExists"></a>
+    <strong>NAG:MouseoverFriendlyExists ()</strong>
+    </dt>
+    <dd>
+    True if mouseover unit exists and is friendly.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:MouseoverHasBuff"></a>
+    <strong>NAG:MouseoverHasBuff (auraId, exactIdMatch)</strong>
+    </dt>
+    <dd>
+    True if mouseover has the given buff.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         Spell ID of the buff
+        </li>
+        <li><span class="parameter">exactIdMatch</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:MouseoverHealthPercent"></a>
+    <strong>NAG:MouseoverHealthPercent ()</strong>
+    </dt>
+    <dd>
+    Mouseover unit health as 0-100.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:MouseoverIsSelf"></a>
+    <strong>NAG:MouseoverIsSelf ()</strong>
+    </dt>
+    <dd>
+    True if mouseover unit is the player.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:MouseoverIsTank"></a>
+    <strong>NAG:MouseoverIsTank ()</strong>
+    </dt>
+    <dd>
+    True if mouseover unit is assigned as tank.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:MouseoverNeedsDispel"></a>
+    <strong>NAG:MouseoverNeedsDispel ()</strong>
+    </dt>
+    <dd>
+    True if mouseover has a dispellable debuff.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:SpellIsCasting"></a>
+    <strong>NAG:SpellIsCasting (spellId)</strong>
+    </dt>
+    <dd>
+    Checks if the player is currently casting a specific spell.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the player is casting the spell, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">SpellIsCasting</span>(<span class="number">12345</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ThreatPercent"></a>
+    <strong>NAG:ThreatPercent (source, target)</strong>
+    </dt>
+    <dd>
+    Returns normalized threat percent for a source unit on a target unit.
+ Value is typically 0-1, and can be above 1 when above 100% threat (e.g. 1.3 = 130%).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">source</span>
+        ? string The unit to check threat for (default: "player")
+        </li>
+        <li><span class="parameter">target</span>
+        ? string The unit to check threat against (default: "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        normalized threat value, or 0 if unavailable
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ThreatPercent</span>(<span class="string">"player"</span>, <span class="string">"target"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitCanAttack"></a>
+    <strong>NAG:UnitCanAttack (sourceUnit, targetUnit)</strong>
+    </dt>
+    <dd>
+    Checks if one unit can attack another unit
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sourceUnit</span>
+        ? string The source unit (default: "player")
+        </li>
+        <li><span class="parameter">targetUnit</span>
+        ? string The target unit (default: "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the source unit can attack the target unit, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">UnitCanAttack</span>(<span class="string">"player"</span>, <span class="string">"target"</span>)</pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitCanAttack</span>()</pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitCastTimeRemaining"></a>
+    <strong>NAG:UnitCastTimeRemaining (unit)</strong>
+    </dt>
+    <dd>
+    Gets the remaining cast time for a unit's current spell.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check (e.g., "player", "target", "focus")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        cast time in seconds, or 0 if not casting
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">UnitCastTimeRemaining</span>(<span class="string">"target"</span>) &lt;= <span class="number">2.5</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitCastTimeRemaining</span>(<span class="string">"player"</span>) &gt;= <span class="number">1.0</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitChannelTimeRemaining"></a>
+    <strong>NAG:UnitChannelTimeRemaining (unit)</strong>
+    </dt>
+    <dd>
+    Gets the remaining channel time for a unit's current spell.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check (e.g., "player", "target", "focus")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        channel time in seconds, or 0 if not channeling
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">UnitChannelTimeRemaining</span>(<span class="string">"target"</span>) &lt;= <span class="number">3.0</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitChannelTimeRemaining</span>(<span class="string">"player"</span>) &gt;= <span class="number">0.5</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitDistance"></a>
+    <strong>NAG:UnitDistance (unit, maxRange)</strong>
+    </dt>
+    <dd>
+    Gets the distance to a specific unit with optional range capping.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+        ? string The unit to check distance to (e.g., "target", "focus", "player", etc.)
+        </li>
+        <li><span class="parameter">maxRange</span>
+        ? number Optional maximum range to cap the result at
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        to the unit in yards, or -1 if unavailable
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">UnitDistance</span>(<span class="string">"target"</span>) &lt;= <span class="number">30</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitDistance</span>(<span class="string">"focus"</span>, <span class="number">40</span>) &lt;= <span class="number">30</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitExists"></a>
+    <strong>NAG:UnitExists (unit)</strong>
+    </dt>
+    <dd>
+    Checks if a unit exists
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+        ? string The unit to check (e.g., "player", "target", "focus") (default: "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the unit exists, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">UnitExists</span>(<span class="string">"target"</span>)</pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitExists</span>(<span class="string">"player"</span>)</pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitIsCasting"></a>
+    <strong>NAG:UnitIsCasting (unit, spellId)</strong>
+    </dt>
+    <dd>
+    Checks if a unit is currently casting any spell or a specific spell.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check (e.g., "player", "target", "focus")
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional spell ID to check for specific spell
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the unit is casting (any spell or specific spell), false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsCasting</span>(<span class="string">"target"</span>) <span class="comment">-- Check if casting any spell</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsCasting</span>(<span class="string">"target"</span>, <span class="number">12345</span>) <span class="comment">-- Check if casting specific spell</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitIsCastingOrChanneling"></a>
+    <strong>NAG:UnitIsCastingOrChanneling (unit)</strong>
+    </dt>
+    <dd>
+    Checks if a unit is currently casting or channeling any spell.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check (e.g., "player", "target", "focus")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the unit is casting or channeling, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsCastingOrChanneling</span>(<span class="string">"target"</span>)</pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsCastingOrChanneling</span>(<span class="string">"player"</span>)</pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitIsChanneling"></a>
+    <strong>NAG:UnitIsChanneling (unit, spellId)</strong>
+    </dt>
+    <dd>
+    Checks if a unit is currently channeling any spell or a specific spell.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check (e.g., "player", "target", "focus")
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional spell ID to check for specific spell
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the unit is channeling (any spell or specific spell), false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsChanneling</span>(<span class="string">"target"</span>) <span class="comment">-- Check if channeling any spell</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsChanneling</span>(<span class="string">"target"</span>, <span class="number">12345</span>) <span class="comment">-- Check if channeling specific spell</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitIsInterruptible"></a>
+    <strong>NAG:UnitIsInterruptible (unit)</strong>
+    </dt>
+    <dd>
+    Checks if a unit's cast or channel is interruptible.
+ This function robustly checks both casting and channeling states, handling version differences in the WoW API.
+ In modern clients, uses the 'notInterruptible' (8th return value) from both UnitCastingInfo and UnitChannelInfo.
+ In Classic, these fields may be nil, so the function returns false (not interruptible) if the info is unavailable.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+        ? string The unit to check (e.g., "target", "focus", "player") (default: "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the unit is currently casting or channeling and is interruptible, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsInterruptible</span>(<span class="string">"target"</span>)</pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsInterruptible</span>(<span class="string">"focus"</span>)</pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitIsMobType"></a>
+    <strong>NAG:UnitIsMobType (unit, mobType)</strong>
+    </dt>
+    <dd>
+    Checks if a unit is of a specific mob type.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+        ? string The unit to check (e.g., "target", "focus", "player") (default: "target")
+        </li>
+        <li><span class="parameter">mobType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The type of mob to check for
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the unit is of the specified mob type, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsMobType</span>(<span class="string">"target"</span>, NAG.Types:<span class="function-name">GetType</span>(<span class="string">"MobType"</span>).Undead)</pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsMobType</span>(<span class="string">"focus"</span>, NAG.Types:<span class="function-name">GetType</span>(<span class="string">"MobType"</span>).Mechanical)</pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsMobType</span>(<span class="keyword">nil</span>, mobType) <span class="comment">-- Check target (default)</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitIsMoving"></a>
+    <strong>NAG:UnitIsMoving (unit)</strong>
+    </dt>
+    <dd>
+    Checks if a unit is currently moving.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+        ? string The unit identifier (e.g., "player", "target", "party1") (default: "player")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the unit is moving, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsMoving</span>(<span class="string">"player"</span>) <span class="comment">-- Check if player is moving</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsMoving</span>(<span class="string">"target"</span>) <span class="comment">-- Check if target is moving</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitIsPrimaryTarget"></a>
+    <strong>NAG:UnitIsPrimaryTarget (source, target)</strong>
+    </dt>
+    <dd>
+    Checks if a source unit is the primary target (has aggro) on a target unit.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">source</span>
+        ? string The unit to check threat for (default: "player")
+        </li>
+        <li><span class="parameter">target</span>
+        ? string The unit to check threat against (default: "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the source unit is tanking the target, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsPrimaryTarget</span>(<span class="string">"player"</span>, <span class="string">"target"</span>) <span class="comment">-- Check if player has aggro on target</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsPrimaryTarget</span>(<span class="string">"focus"</span>, <span class="string">"target"</span>) <span class="comment">-- Check if focus has aggro on target</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsPrimaryTarget</span>() <span class="comment">-- Check if player has aggro on target (defaults)</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitIsStealthed"></a>
+    <strong>NAG:UnitIsStealthed (unit)</strong>
+    </dt>
+    <dd>
+    Checks if a unit is currently stealthed by checking known stealth abilities.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+        ? string The unit to check (e.g., "player", "target", "focus") (default: "player")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the unit is stealthed, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsStealthed</span>(<span class="string">"player"</span>) <span class="comment">-- Check if player is stealthed</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsStealthed</span>(<span class="string">"target"</span>) <span class="comment">-- Check if target is stealthed (PvP)</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">UnitIsStealthed</span>() <span class="comment">-- Check if player is stealthed (default)</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitThreatPercent"></a>
+    <strong>NAG:UnitThreatPercent (source, target)</strong>
+    </dt>
+    <dd>
+    Returns the detailed threat percent for a source unit on a target unit.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">source</span>
+        ? string The unit to check threat for (default: "player")
+        </li>
+        <li><span class="parameter">target</span>
+        ? string The unit to check threat against (default: "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        threat percent (0-100), or 0 if unavailable
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">UnitThreatPercent</span>(<span class="string">"player"</span>, <span class="string">"target"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitThreatRawPercent"></a>
+    <strong>NAG:UnitThreatRawPercent (source, target)</strong>
+    </dt>
+    <dd>
+    Returns the raw threat percent for a source unit on a target unit.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">source</span>
+        ? string The unit to check threat for (default: "player")
+        </li>
+        <li><span class="parameter">target</span>
+        ? string The unit to check threat against (default: "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        raw threat percent (0-100), or 0 if unavailable
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">UnitThreatRawPercent</span>(<span class="string">"player"</span>, <span class="string">"target"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitThreatValue"></a>
+    <strong>NAG:UnitThreatValue (source, target)</strong>
+    </dt>
+    <dd>
+    Returns the raw threat value for a source unit on a target unit.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">source</span>
+        ? string The unit to check threat for (default: "player")
+        </li>
+        <li><span class="parameter">target</span>
+        ? string The unit to check threat against (default: "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        raw threat value, or 0 if unavailable
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">UnitThreatValue</span>(<span class="string">"player"</span>, <span class="string">"target"</span>)</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

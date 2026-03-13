@@ -1,0 +1,2591 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_NAG">Class NAG </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><strong>APLAction_Casting</strong></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><a href="../modules/APLAction_Misc.html">APLAction_Misc</a></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><a href="../modules/APLDRW.html">APLDRW</a></li>
+  <li><a href="../modules/APLSequences.html">APLSequences</a></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><a href="../modules/APLValues_Aura.html">APLValues_Aura</a></li>
+  <li><a href="../modules/APLValues_AuraSets.html">APLValues_AuraSets</a></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><a href="../modules/APLValues_Boss.html">APLValues_Boss</a></li>
+  <li><a href="../modules/APLValues_Dot.html">APLValues_Dot</a></li>
+  <li><a href="../modules/APLValues_Encounter.html">APLValues_Encounter</a></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><a href="../modules/APLValues_Resources.html">APLValues_Resources</a></li>
+  <li><a href="../modules/APLValues_Runes.html">APLValues_Runes</a></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><a href="../modules/APLValues_Unit.html">APLValues_Unit</a></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><a href="../modules/APL_Class.html">APL_Class</a></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><a href="../modules/NAG.EnhancedAuraHandlers.html">NAG.EnhancedAuraHandlers</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>APLAction_Casting</code></h1>
+<p>
+
+</p>
+<p>"
+ Core APL logic, utility, funnel, and casting handlers for the NAG addon</p>
+
+<p> This module provides utility functions for spell casting, last cast tracking, and aura cancellation.</p>
+
+<p> License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: Rakizi, Fonsas
+ Discord: https://discord.gg/ebonhold</p>
+
+<p> luacheck: ignore GetSpellInfo</p>
+
+
+<h2><a href="#Class_NAG">Class NAG </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AutocastOtherCooldowns">NAG:AutocastOtherCooldowns (enableTrinketSlot1, enableTrinketSlot2, enableDefaultBattlePotion, enableGloveSlot, enableBeltSlot)</a></td>
+	<td class="summary">Automatically casts other cooldowns based on settings and availability.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastAllStatBuffCooldowns">NAG:CastAllStatBuffCooldowns (statType1, statType2, statType3)</a></td>
+	<td class="summary">Casts all stat buff cooldowns that match the specified stat types.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastBuff">NAG:CastBuff (id, tolerance)</a></td>
+	<td class="summary">Attempts to cast a buff spell if available and ready, with optional tolerance.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastDebuff">NAG:CastDebuff (id, tolerance)</a></td>
+	<td class="summary">Attempts to cast a debuff spell if available and ready, with optional tolerance.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastPlaceHolder">NAG:CastPlaceHolder (spellId, tolerance, position, overlayType, overlayText)</a></td>
+	<td class="summary">Backward-compatible placeholder alias with extended argument support.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastPlaceHolderWithArrow">NAG:CastPlaceHolderWithArrow (id, position, orientation, durationSeconds)</a></td>
+	<td class="summary">Legacy alias for CastPlaceholderWithArrow (kept for naming consistency).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastPlaceholder">NAG:CastPlaceholder (spellId, tolerance, position)</a></td>
+	<td class="summary">Attempts to cast the specified spell and sets it as the next spell to cast.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastPlaceholderWithArrow">NAG:CastPlaceholderWithArrow (id, position, orientation, durationSeconds)</a></td>
+	<td class="summary">Convenience function to add a placeholder spell and show an arrow overlay on its icon.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastPlaceholderWithOverlay">NAG:CastPlaceholderWithOverlay (id, text, position)</a></td>
+	<td class="summary">Placeholder helper that also assigns cast overlay text.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastSpell">NAG:CastSpell (id, tolerance, position, hideWhileCasting, overlayText)</a></td>
+	<td class="summary">Attempts to cast a spell, trinket, tinker, or item.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastWithArrow">NAG:CastWithArrow (id, position, orientation, durationSeconds)</a></td>
+	<td class="summary">Convenience function to cast a spell and show an arrow overlay on its icon.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastWithOverlay">NAG:CastWithOverlay (id, text, position)</a></td>
+	<td class="summary">Convenience function to cast a spell with overlay text.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastWithSecondary">NAG:CastWithSecondary (id1, id2)</a></td>
+	<td class="summary">Cast a spell and, once casting/channeling begins, immediately queue a follow-up
+ spell as the next primary action (casters only).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastWithSwingOverlay">NAG:CastWithSwingOverlay (id, text, position)</a></td>
+	<td class="summary">Convenience function to cast a spell with overlay text AND a swing-timer swipe overlay.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ChannelSpell">NAG:ChannelSpell (spellId, interruptCondition, recast)</a></td>
+	<td class="summary">Attempts to cast a channeled spell if it is available and ready, with optional interrupt condition and recast flag.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ClearCustomOverlay">NAG:ClearCustomOverlay ()</a></td>
+	<td class="summary">Clears the custom primary overlay text, if present.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ClearSecondarySpellOverlays">NAG:ClearSecondarySpellOverlays (secondarySpells)</a></td>
+	<td class="summary">Clears overlay text for all secondary spell entries using normalized display ID (spellId or itemId).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetLastPlayerSpellSucceededInfo">NAG:GetLastPlayerSpellSucceededInfo ()</a></td>
+	<td class="summary">Returns the most recent successful player spellcast ID and how long ago it happened.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:HideManaOverlay">NAG:HideManaOverlay ()</a></td>
+	<td class="summary">Hides the dedicated MANA overlay and clears its refresh marker.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:HoldForTwist">NAG:HoldForTwist (message, throttleSeconds)</a></td>
+	<td class="summary">Prints a "HOLD" indicator to chat (throttled) for rotations that want to explicitly
+ instruct the player to wait for a timing window (e.g., seal twisting gap).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:IsCasting">NAG:IsCasting ()</a></td>
+	<td class="summary">True if the player is currently casting or channeling anything.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:IsGCDOrCastingRecently">NAG:IsGCDOrCastingRecently (graceSeconds, requireSucceededSpellId)</a></td>
+	<td class="summary">True if the player is casting OR on GCD now, OR if that was true within the last <code>graceSeconds</code>.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:IsQueued">NAG:IsQueued (spellID)</a></td>
+	<td class="summary">True if the given spell is currently "queued"/current (e.g., on-next-swing style).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:IsTotemActiveResolved">NAG:IsTotemActiveResolved (spellId)</a></td>
+	<td class="summary">Backward-compatibility: IsTotemActive with any-rank pre-check (APLTotemTracking resolves at entry).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:Multidot">NAG:Multidot (spellId, maxDots, maxOverlap, position, range)</a></td>
+	<td class="summary">Attempts to cast a spell on multiple targets (multidot) if conditions are met.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:Multishield">NAG:Multishield (spellId, maxShields, maxOverlap, position, range)</a></td>
+	<td class="summary">Attempts to cast a shield spell on multiple friendly targets (multishield).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:NotSpamCast">NAG:NotSpamCast (id, tolerance, position)</a></td>
+	<td class="summary">Convenience function to cast a spell with hideWhileCasting automatically enabled.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ProtTwistGetSoRSealId">NAG:ProtTwistGetSoRSealId ()</a></td>
+	<td class="summary">Returns the Seal of Righteousness spell ID to use for casting (highest known).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ProtTwistHold">NAG:ProtTwistHold ()</a></td>
+	<td class="summary">HOLD helper for Prot twisting: show SoR with overlay "HOLD" during the div boundary.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ProtTwistIsSoRActive">NAG:ProtTwistIsSoRActive ()</a></td>
+	<td class="summary">Returns true if any Seal of Righteousness rank/variant is currently active.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ProtTwistNow">NAG:ProtTwistNow ()</a></td>
+	<td class="summary">NOW helper for Prot twisting: twist from SoC -> SoR (overlay "NOW").</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ProtTwistNowWithOverlay">NAG:ProtTwistNowWithOverlay (overlayText)</a></td>
+	<td class="summary">Cast Seal of Righteousness with a custom overlay text (Prot twist UX helper).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ResolveEffectiveSpellId">NAG:ResolveEffectiveSpellId (spellId)</a></td>
+	<td class="summary">Resolves an APL spell ID (often lowest-rank) to the player's current effective spellbook ID.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistClearSoCHoldVisuals">NAG:RetTwistClearSoCHoldVisuals ()</a></td>
+	<td class="summary">Clears SoC setup HOLD visuals/state.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistGetSoCSealId">NAG:RetTwistGetSoCSealId ()</a></td>
+	<td class="summary">Returns the Seal of Command spell ID to use for casting (highest known).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistGetSoCrusaderSealId">NAG:RetTwistGetSoCrusaderSealId ()</a></td>
+	<td class="summary">Returns the highest known Seal of the Crusader spell ID for casting.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistGetTwistSealId">NAG:RetTwistGetTwistSealId ()</a></td>
+	<td class="summary">Selects the "twist seal" to cast during a twist (SoB/SoM).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistHasJudgementOfCrusaderDebuff">NAG:RetTwistHasJudgementOfCrusaderDebuff ()</a></td>
+	<td class="summary">Returns true if Judgement of the Crusader debuff is active on the target.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistHold">NAG:RetTwistHold ()</a></td>
+	<td class="summary">HOLD helper for Ret twisting: show the twist seal with overlay "HOLD".</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistHoldBURST">NAG:RetTwistHoldBURST ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistHoldSoBToSoCTransition">NAG:RetTwistHoldSoBToSoCTransition (windowSeconds)</a></td>
+	<td class="summary">HOLD helper for SoB -> SoC transitions in sensitive swing regions.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistIsSoBActive">NAG:RetTwistIsSoBActive ()</a></td>
+	<td class="summary">Returns true if <em>any</em> Seal of Blood, Seal of the Martyr, or Seal of Righteousness is currently active.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistIsSoCActive">NAG:RetTwistIsSoCActive ()</a></td>
+	<td class="summary">Returns true if <em>any</em> Seal of Command rank/variant is currently active.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistIsSoCrusaderActive">NAG:RetTwistIsSoCrusaderActive ()</a></td>
+	<td class="summary">Returns true if any Seal of the Crusader rank is currently active on the player.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistJudgeHold">NAG:RetTwistJudgeHold (holdSeconds)</a></td>
+	<td class="summary">HOLD helper for Ret Judge -> SoC setup timing.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistJudgeSetupCanDisplay">NAG:RetTwistJudgeSetupCanDisplay (maxToleranceSeconds, twistWindowSeconds, hysteresisSeconds, safetySeconds, fillerBufferSeconds)</a></td>
+	<td class="summary">Shared gate for displaying the Judge+SoC split recommendation.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistJudgeSetupRecentlyDisplayable">NAG:RetTwistJudgeSetupRecentlyDisplayable (graceSeconds)</a></td>
+	<td class="summary">Returns true if Judge+SoC setup was displayable recently.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistNow">NAG:RetTwistNow ()</a></td>
+	<td class="summary">NOW helper for Ret twisting: show the twist seal with overlay "NOW".</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistNowBURST">NAG:RetTwistNowBURST ()</a></td>
+	<td class="summary">
+
+</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistNowWithOverlay">NAG:RetTwistNowWithOverlay (overlayText)</a></td>
+	<td class="summary">Cast the twist seal (SoB/SoM) with a custom overlay text.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistShouldSelfApplyImpSoC">NAG:RetTwistShouldSelfApplyImpSoC ()</a></td>
+	<td class="summary">Returns true if the self-apply Judgement of the Crusader mode should be active.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RetTwistSoCSetupHold">NAG:RetTwistSoCSetupHold (windowSeconds)</a></td>
+	<td class="summary">HOLD helper for generic SoC setup when current swing pre-div is missed.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ShouldMultidot">NAG:ShouldMultidot (spellId, maxDots, maxOverlap, range)</a></td>
+	<td class="summary">Determines if a spell should be used for multidotting without casting it.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ShowArrowOverlay">NAG:ShowArrowOverlay (spellId, position, orientation, durationSeconds, requireSpellMatch)</a></td>
+	<td class="summary">Shows an arrow overlay on the frame where a spell is displayed.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ShowCustomOverlay">NAG:ShowCustomOverlay (text, options)</a></td>
+	<td class="summary">Shows custom overlay text on the PRIMARY icon frame.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ShowManaOverlay">NAG:ShowManaOverlay ()</a></td>
+	<td class="summary">Shows a dedicated MANA overlay on PRIMARY, independent from cast/custom text overlays.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:StrictMultidot">NAG:StrictMultidot (spellId, maxDots, maxOverlap, position, range)</a></td>
+	<td class="summary">Attempts to cast a spell on multiple targets with strict ordering (strict multidot).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:Twist">NAG:Twist ()</a></td>
+	<td class="summary">Attempts to perform a Paladin seal twist by swapping to the "opposite" seal and marking it
+ with overlay text "TWIST".</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WarriorSlamWeave">NAG:WarriorSlamWeave ()</a></td>
+	<td class="summary">Slam weave helper: show Slam with a custom swipe (no overlay text).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WarriorSlamWeaveGetSlamId">NAG:WarriorSlamWeaveGetSlamId ()</a></td>
+	<td class="summary">Returns the Slam spell ID to use for weaving (highest known).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WarriorSlamWeaveHasRageAfterSlam">NAG:WarriorSlamWeaveHasRageAfterSlam (spellId)</a></td>
+	<td class="summary">Check rage after Slam will be paid while Slam is casting.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WarriorSlamWeaveHold">NAG:WarriorSlamWeaveHold ()</a></td>
+	<td class="summary">Legacy alias: Slam weave HOLD (no overlay text).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WarriorSlamWeaveNow">NAG:WarriorSlamWeaveNow ()</a></td>
+	<td class="summary">Legacy alias: Slam weave NOW (no overlay text).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WarriorSlamWeaveWait">NAG:WarriorSlamWeaveWait ()</a></td>
+	<td class="summary">Slam weave wait helper: show Slam with overlay text while waiting.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_NAG"></a>Class NAG </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:AutocastOtherCooldowns"></a>
+    <strong>NAG:AutocastOtherCooldowns (enableTrinketSlot1, enableTrinketSlot2, enableDefaultBattlePotion, enableGloveSlot, enableBeltSlot)</strong>
+    </dt>
+    <dd>
+    Automatically casts other cooldowns based on settings and availability.
+ Maps to APLActionAutocastOtherCooldowns in Go.
+ When enableRacials is true, suggests throughput racials (Blood Fury, Berserking, etc.) when ready;
+ position comes from class specSpellLocations (LEFT) so APLs that call this get racials without listing them.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">enableTrinketSlot1</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil Whether to use trinket slot 1 (default: from settings).
+        </li>
+        <li><span class="parameter">enableTrinketSlot2</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil Whether to use trinket slot 2 (default: from settings).
+        </li>
+        <li><span class="parameter">enableDefaultBattlePotion</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil Whether to use default battle potion (default: from settings).
+        </li>
+        <li><span class="parameter">enableGloveSlot</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil Whether to use the glove slot item (default: true)
+        </li>
+        <li><span class="parameter">enableBeltSlot</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil Whether to use the belt slot item (default: false)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns false (adds items to secondary spells list).
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AutocastOtherCooldowns</span>(<span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <span class="keyword">true</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CastAllStatBuffCooldowns"></a>
+    <strong>NAG:CastAllStatBuffCooldowns (statType1, statType2, statType3)</strong>
+    </dt>
+    <dd>
+    Casts all stat buff cooldowns that match the specified stat types.
+ Maps to APLActionCastAllStatBuffCooldowns in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">statType1</span>
+            <span class="types"><span class="type">number</span></span>
+         |string|nil First stat type to match (supports strings like "str", numbers, or nil).
+        </li>
+        <li><span class="parameter">statType2</span>
+            <span class="types"><span class="type">number</span></span>
+         |string|nil Second stat type to match (supports strings like "crit", numbers, or nil).
+        </li>
+        <li><span class="parameter">statType3</span>
+            <span class="types"><span class="type">number</span></span>
+         |string|nil Third stat type to match (supports strings like "haste", numbers, or nil).
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns false (adds to secondary only).
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CastAllStatBuffCooldowns</span>(-<span class="number">1</span>, -<span class="number">1</span>, -<span class="number">1</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CastBuff"></a>
+    <strong>NAG:CastBuff (id, tolerance)</strong>
+    </dt>
+    <dd>
+    Attempts to cast a buff spell if available and ready, with optional tolerance.  Checks for existing buffs of the same type.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the buff spell.
+        </li>
+        <li><span class="parameter">tolerance</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional casting tolerance in seconds.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the buff was set to cast; otherwise false.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CastBuff</span>(<span class="number">6673</span>, <span class="number">0</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CastDebuff"></a>
+    <strong>NAG:CastDebuff (id, tolerance)</strong>
+    </dt>
+    <dd>
+    Attempts to cast a debuff spell if available and ready, with optional tolerance.  Checks for existing debuffs of the same type.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the debuff spell.
+        </li>
+        <li><span class="parameter">tolerance</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional casting tolerance in seconds.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the debuff was set to cast; otherwise false.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CastDebuff</span>(<span class="number">7386</span>, <span class="number">0</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CastPlaceHolder"></a>
+    <strong>NAG:CastPlaceHolder (spellId, tolerance, position, overlayType, overlayText)</strong>
+    </dt>
+    <dd>
+    Backward-compatible placeholder alias with extended argument support.
+ Accepts Cast-like shape:
+ <code>spellId, tolerance, position, overlayType, overlayText</code>.
+ This wrapper preserves CastPlaceholder semantics and only adds optional overlay text support.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the spell to display.
+        </li>
+        <li><span class="parameter">tolerance</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional casting tolerance (passed through).
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional position override.
+        </li>
+        <li><span class="parameter">overlayType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Reserved for compatibility (currently ignored).
+        </li>
+        <li><span class="parameter">overlayText</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional overlay text to assign.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:CastPlaceHolderWithArrow"></a>
+    <strong>NAG:CastPlaceHolderWithArrow (id, position, orientation, durationSeconds)</strong>
+    </dt>
+    <dd>
+    Legacy alias for CastPlaceholderWithArrow (kept for naming consistency).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the spell to place.
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional position override (use NAG.SPELL_POSITIONS constants)
+        </li>
+        <li><span class="parameter">orientation</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil "LEFT" or "RIGHT" (default: "RIGHT")
+        </li>
+        <li><span class="parameter">durationSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional minimum time to keep the arrow visible.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the placeholder was applied to PRIMARY, false otherwise.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:CastPlaceholder"></a>
+    <strong>NAG:CastPlaceholder (spellId, tolerance, position)</strong>
+    </dt>
+    <dd>
+    Attempts to cast the specified spell and sets it as the next spell to cast.
+ This is a placeholder function that bypasses normal validation checks but supports position overrides.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the spell to cast.
+        </li>
+        <li><span class="parameter">tolerance</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional casting tolerance in seconds (default: 0)
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional position override (use NAG.SPELL_POSITIONS constants)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the spell ID is valid and set, false otherwise.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:CastPlaceholderWithArrow"></a>
+    <strong>NAG:CastPlaceholderWithArrow (id, position, orientation, durationSeconds)</strong>
+    </dt>
+    <dd>
+    Convenience function to add a placeholder spell and show an arrow overlay on its icon.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the spell to place.
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional position override (use NAG.SPELL_POSITIONS constants)
+        </li>
+        <li><span class="parameter">orientation</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil "LEFT" or "RIGHT" (default: "RIGHT")
+        </li>
+        <li><span class="parameter">durationSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional minimum time to keep the arrow visible.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the placeholder was applied to PRIMARY, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CastPlaceholderWithArrow</span>(<span class="number">6603</span>, ns.SPELL_POSITIONS.PRIMARY, <span class="string">"RIGHT"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CastPlaceholderWithOverlay"></a>
+    <strong>NAG:CastPlaceholderWithOverlay (id, text, position)</strong>
+    </dt>
+    <dd>
+    Placeholder helper that also assigns cast overlay text.
+ Unlike CastSpell(), this bypasses readiness/validation and is safe to use for
+ out-of-combat reminders (e.g. weapon poisons) where we still want the icon +
+ overlay text to display reliably even without a target.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell or item ID to display.
+        </li>
+        <li><span class="parameter">text</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The overlay text to display.
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional position override (use NAG.SPELL_POSITIONS constants).
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if displayed as PRIMARY, false if displayed as secondary.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CastPlaceholderWithOverlay</span>(<span class="number">22054</span>, <span class="string">"OH"</span>) <span class="comment">-- Deadly Poison VII reminder</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CastSpell"></a>
+    <strong>NAG:CastSpell (id, tolerance, position, hideWhileCasting, overlayText)</strong>
+    </dt>
+    <dd>
+    Attempts to cast a spell, trinket, tinker, or item.
+ This is the primary casting API and maps to APLActionCastSpell in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+            <span class="types"><span class="type">number</span></span>
+         |number[] The ID of the spell, trinket, tinker, or item, or an ordered list of spell IDs to try.
+        </li>
+        <li><span class="parameter">tolerance</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional casting tolerance in seconds (default: 0)
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional position override (use NAG.SPELL_POSITIONS constants)
+        </li>
+        <li><span class="parameter">hideWhileCasting</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil Optional: if true, returns false if the spell is currently being cast or channeled.
+        </li>
+        <li><span class="parameter">overlayText</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional: overlay text to display with the spell cast.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the cast was successful, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">CastSpell</span>(<span class="number">12345</span>) <span class="comment">-- Normal cast</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">CastSpell</span>(<span class="number">12345</span>, <span class="number">0.5</span>) <span class="comment">-- With tolerance</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">CastSpell</span>(<span class="number">12345</span>, <span class="keyword">nil</span>, ns.SPELL_POSITIONS.RIGHT) <span class="comment">-- With position</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">CastSpell</span>(<span class="number">12345</span>, <span class="number">0.5</span>, ns.SPELL_POSITIONS.RIGHT) <span class="comment">-- With both</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">CastSpell</span>(<span class="number">12345</span>, <span class="keyword">nil</span>, <span class="keyword">nil</span>, <span class="keyword">nil</span>, <span class="string">"TEXT"</span>) <span class="comment">-- With overlay text</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CastWithArrow"></a>
+    <strong>NAG:CastWithArrow (id, position, orientation, durationSeconds)</strong>
+    </dt>
+    <dd>
+    Convenience function to cast a spell and show an arrow overlay on its icon.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the spell, trinket, tinker, or item.
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional position override (use NAG.SPELL_POSITIONS constants)
+        </li>
+        <li><span class="parameter">orientation</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil "LEFT" or "RIGHT" (default: "RIGHT")
+        </li>
+        <li><span class="parameter">durationSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional minimum time to keep the arrow visible.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the cast was successful, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CastWithArrow</span>(<span class="number">12345</span>, ns.SPELL_POSITIONS.RIGHT, <span class="string">"LEFT"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CastWithOverlay"></a>
+    <strong>NAG:CastWithOverlay (id, text, position)</strong>
+    </dt>
+    <dd>
+    Convenience function to cast a spell with overlay text.
+ This is equivalent to calling NAG:CastSpell(id, nil, position, nil, text).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+            <span class="types"><span class="type">number</span></span>
+         |number[] The ID of the spell, trinket, tinker, or item, or an ordered list of spell IDs to try.
+        </li>
+        <li><span class="parameter">text</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The overlay text to display with the spell cast.
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional position override (use NAG.SPELL_POSITIONS constants)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the cast was successful, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">CastWithOverlay</span>(<span class="number">12345</span>, <span class="string">"BURST"</span>) <span class="comment">-- Cast with overlay text</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">CastWithOverlay</span>(<span class="number">12345</span>, <span class="string">"BURST"</span>, ns.SPELL_POSITIONS.RIGHT) <span class="comment">-- Cast with overlay text at specific position</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CastWithSecondary"></a>
+    <strong>NAG:CastWithSecondary (id1, id2)</strong>
+    </dt>
+    <dd>
+    Cast a spell and, once casting/channeling begins, immediately queue a follow-up
+ spell as the next primary action (casters only).  This temporarily forces both
+ spells to display in the PRIMARY slot.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id1</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to cast first
+        </li>
+        <li><span class="parameter">id2</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to show as primary while id1 is being cast/channelled
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the first cast was accepted as main, false otherwise
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:CastWithSwingOverlay"></a>
+    <strong>NAG:CastWithSwingOverlay (id, text, position)</strong>
+    </dt>
+    <dd>
+    Convenience function to cast a spell with overlay text AND a swing-timer swipe overlay.
+ This is intended for "hold/pool" placeholders where the desired visualization is
+ "wait until next auto attack" rather than a spell cooldown.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+            <span class="types"><span class="type">number</span></span>
+         |number[] The spell/item id (typically 6603 for Auto Attack placeholders).
+        </li>
+        <li><span class="parameter">text</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The overlay text to display.
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional position override (use NAG.SPELL_POSITIONS constants)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the cast was successful, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CastWithSwingOverlay</span>(<span class="number">6603</span>, <span class="string">"Pooling\\nRage"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ChannelSpell"></a>
+    <strong>NAG:ChannelSpell (spellId, interruptCondition, recast)</strong>
+    </dt>
+    <dd>
+    Attempts to cast a channeled spell if it is available and ready, with optional interrupt condition and recast flag.
+ Maps to APLActionChannelSpell in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the spell.
+        </li>
+        <li><span class="parameter">interruptCondition</span>
+            <span class="types"><span class="type">function</span></span>
+         |boolean|nil Optional interrupt condition function or recast flag.
+        </li>
+        <li><span class="parameter">recast</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil Optional flag to allow recasting on interrupt.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the spell was set to cast successfully.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ChannelSpell</span>(<span class="number">73643</span>, <span class="keyword">function</span>() <span class="keyword">return</span> <span class="keyword">true</span> <span class="keyword">end</span>, <span class="keyword">true</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ClearCustomOverlay"></a>
+    <strong>NAG:ClearCustomOverlay ()</strong>
+    </dt>
+    <dd>
+    Clears the custom primary overlay text, if present.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ClearSecondarySpellOverlays"></a>
+    <strong>NAG:ClearSecondarySpellOverlays (secondarySpells)</strong>
+    </dt>
+    <dd>
+    Clears overlay text for all secondary spell entries using normalized display ID (spellId or itemId).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">secondarySpells</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         |nil
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:GetLastPlayerSpellSucceededInfo"></a>
+    <strong>NAG:GetLastPlayerSpellSucceededInfo ()</strong>
+    </dt>
+    <dd>
+    Returns the most recent successful player spellcast ID and how long ago it happened.
+ Intended for debugging/rotation gating (e.g., “ensure SS happened recently”).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><span class="type">number</span></span>
+        |nil spellId</li>
+        <li>
+           <span class="types"><span class="type">number</span></span>
+        |nil secondsAgo</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:HideManaOverlay"></a>
+    <strong>NAG:HideManaOverlay ()</strong>
+    </dt>
+    <dd>
+    Hides the dedicated MANA overlay and clears its refresh marker.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns false.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:HoldForTwist"></a>
+    <strong>NAG:HoldForTwist (message, throttleSeconds)</strong>
+    </dt>
+    <dd>
+    Prints a "HOLD" indicator to chat (throttled) for rotations that want to explicitly
+ instruct the player to wait for a timing window (e.g., seal twisting gap).
+ Intended as a temporary debug/UX hook; can later be replaced by an overlay system.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">message</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional message (default: "HOLD")
+        </li>
+        <li><span class="parameter">throttleSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Minimum seconds between prints (default: 1.0)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns true (so it can be used in <code>and</code> chains without blocking).
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">(cond) <span class="keyword">and</span> NAG:<span class="function-name">HoldForTwist</span>() <span class="keyword">and</span> NAG:<span class="function-name">Cast</span>(<span class="number">20375</span>) <span class="comment">-- show HOLD + suggest Seal of Command</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:IsCasting"></a>
+    <strong>NAG:IsCasting ()</strong>
+    </dt>
+    <dd>
+    True if the player is currently casting or channeling anything.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:IsGCDOrCastingRecently"></a>
+    <strong>NAG:IsGCDOrCastingRecently (graceSeconds, requireSucceededSpellId)</strong>
+    </dt>
+    <dd>
+    True if the player is casting OR on GCD now, OR if that was true within the last <code>graceSeconds</code>.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">graceSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil
+        </li>
+        <li><span class="parameter">requireSucceededSpellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil If provided, this returns true only if that spell was the last successful player spellcast recently.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:IsQueued"></a>
+    <strong>NAG:IsQueued (spellID)</strong>
+    </dt>
+    <dd>
+    True if the given spell is currently "queued"/current (e.g., on-next-swing style).
+ Primarily for debugging/testing across clients.
+ Resolves to spellbook ID so we check the spell the player actually has.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellID</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:IsTotemActiveResolved"></a>
+    <strong>NAG:IsTotemActiveResolved (spellId)</strong>
+    </dt>
+    <dd>
+    Backward-compatibility: IsTotemActive with any-rank pre-check (APLTotemTracking resolves at entry).
+ Other *Resolved aliases are defined in APL_Aliases.lua as direct references to the base functions.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:Multidot"></a>
+    <strong>NAG:Multidot (spellId, maxDots, maxOverlap, position, range)</strong>
+    </dt>
+    <dd>
+    Attempts to cast a spell on multiple targets (multidot) if conditions are met.
+ Maps to APLActionMultidot in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the spell.
+        </li>
+        <li><span class="parameter">maxDots</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Maximum number of dots to maintain (defaults to 1).
+        </li>
+        <li><span class="parameter">maxOverlap</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Maximum overlap time in seconds (defaults to 1).
+        </li>
+        <li><span class="parameter">position</span>
+        ? string Optional position for display (defaults to nil).
+        </li>
+        <li><span class="parameter">range</span>
+        ? number Optional additional range beyond target distance (defaults to dynamic calculation).
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the spell was cast, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">Multidot</span>(<span class="number">8050</span>, <span class="number">2</span>, <span class="number">1.5</span>) <span class="comment">-- Uses dynamic range (targetDistance + 5 for ranged, 7 or targetDistance + 5 for melee)</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">Multidot</span>(<span class="number">8050</span>, <span class="number">2</span>, <span class="number">1.5</span>, ns.SPELL_POSITIONS.RIGHT) <span class="comment">-- With position, dynamic range</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">Multidot</span>(<span class="number">8050</span>, <span class="number">2</span>, <span class="number">1.5</span>, ns.SPELL_POSITIONS.AOE, <span class="number">10</span>) <span class="comment">-- With position and targetDistance + 10 yard range</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:Multishield"></a>
+    <strong>NAG:Multishield (spellId, maxShields, maxOverlap, position, range)</strong>
+    </dt>
+    <dd>
+    Attempts to cast a shield spell on multiple friendly targets (multishield).
+ Maps to APLActionMultishield in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the spell.
+        </li>
+        <li><span class="parameter">maxShields</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Maximum number of shields to maintain (defaults to 1).
+        </li>
+        <li><span class="parameter">maxOverlap</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Maximum overlap time in seconds (defaults to 1).
+        </li>
+        <li><span class="parameter">position</span>
+        ? string Optional position for display (defaults to nil).
+        </li>
+        <li><span class="parameter">range</span>
+        ? number Optional additional range beyond target distance (defaults to dynamic calculation).
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns false (not yet implemented).
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">Multishield</span>(<span class="number">73643</span>, <span class="number">3</span>, <span class="number">1</span>) <span class="comment">-- Uses dynamic range</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">Multishield</span>(<span class="number">73643</span>, <span class="number">3</span>, <span class="number">1</span>, ns.SPELL_POSITIONS.RIGHT) <span class="comment">-- With position, dynamic range</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">Multishield</span>(<span class="number">73643</span>, <span class="number">3</span>, <span class="number">1</span>, ns.SPELL_POSITIONS.AOE, <span class="number">10</span>) <span class="comment">-- With position and targetDistance + 10 yard range</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:NotSpamCast"></a>
+    <strong>NAG:NotSpamCast (id, tolerance, position)</strong>
+    </dt>
+    <dd>
+    Convenience function to cast a spell with hideWhileCasting automatically enabled.
+ Prevents the spell from being displayed repeatedly while it's already casting/channeling.
+ This is equivalent to calling NAG:CastSpell(id, tolerance, position, true).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+            <span class="types"><span class="type">number</span></span>
+         |number[] The ID of the spell, trinket, tinker, or item, or an ordered list of spell IDs to try.
+        </li>
+        <li><span class="parameter">tolerance</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional casting tolerance in seconds (default: 0)
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional position override (use NAG.SPELL_POSITIONS constants)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the cast was successful, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">NotSpamCast</span>(<span class="number">12345</span>) <span class="comment">-- Cast without showing if already casting</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">NotSpamCast</span>(<span class="number">12345</span>, <span class="number">0.5</span>) <span class="comment">-- With tolerance</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">NotSpamCast</span>(<span class="number">12345</span>, <span class="keyword">nil</span>, ns.SPELL_POSITIONS.RIGHT) <span class="comment">-- With position</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ProtTwistGetSoRSealId"></a>
+    <strong>NAG:ProtTwistGetSoRSealId ()</strong>
+    </dt>
+    <dd>
+    Returns the Seal of Righteousness spell ID to use for casting (highest known).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ProtTwistHold"></a>
+    <strong>NAG:ProtTwistHold ()</strong>
+    </dt>
+    <dd>
+    HOLD helper for Prot twisting: show SoR with overlay "HOLD" during the div boundary.
+ Uses tolerance so the HOLD recommendation can display during GCD (we are "holding", not casting immediately).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ProtTwistIsSoRActive"></a>
+    <strong>NAG:ProtTwistIsSoRActive ()</strong>
+    </dt>
+    <dd>
+    Returns true if any Seal of Righteousness rank/variant is currently active.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ProtTwistNow"></a>
+    <strong>NAG:ProtTwistNow ()</strong>
+    </dt>
+    <dd>
+    NOW helper for Prot twisting: twist from SoC -> SoR (overlay "NOW").
+ Uses tolerance so the recommendation can display even if GCD is still ticking.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ProtTwistNowWithOverlay"></a>
+    <strong>NAG:ProtTwistNowWithOverlay (overlayText)</strong>
+    </dt>
+    <dd>
+    Cast Seal of Righteousness with a custom overlay text (Prot twist UX helper).
+ Useful for special UX cases (e.g. startattack macro reminders) without changing normal "NOW" behavior.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">overlayText</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ResolveEffectiveSpellId"></a>
+    <strong>NAG:ResolveEffectiveSpellId (spellId)</strong>
+    </dt>
+    <dd>
+    Resolves an APL spell ID (often lowest-rank) to the player's current effective spellbook ID.
+ This allows rotations to use stable/lowest-rank IDs while still matching active auras/dots/cooldowns
+ for the rank the player will actually cast.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistClearSoCHoldVisuals"></a>
+    <strong>NAG:RetTwistClearSoCHoldVisuals ()</strong>
+    </dt>
+    <dd>
+    Clears SoC setup HOLD visuals/state.
+ Safe no-op when no SoC HOLD state exists.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistGetSoCSealId"></a>
+    <strong>NAG:RetTwistGetSoCSealId ()</strong>
+    </dt>
+    <dd>
+    Returns the Seal of Command spell ID to use for casting (highest known).
+ We keep the rank list for aura detection, but casting should prefer the best rank available.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistGetSoCrusaderSealId"></a>
+    <strong>NAG:RetTwistGetSoCrusaderSealId ()</strong>
+    </dt>
+    <dd>
+    Returns the highest known Seal of the Crusader spell ID for casting.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistGetTwistSealId"></a>
+    <strong>NAG:RetTwistGetTwistSealId ()</strong>
+    </dt>
+    <dd>
+    Selects the "twist seal" to cast during a twist (SoB/SoM).
+ Prefers whichever the player actually knows.
+ Leveling fallback: if SoB/SoM are not known at all, falls back to Seal of Righteousness.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistHasJudgementOfCrusaderDebuff"></a>
+    <strong>NAG:RetTwistHasJudgementOfCrusaderDebuff ()</strong>
+    </dt>
+    <dd>
+    Returns true if Judgement of the Crusader debuff is active on the target.
+ This checks for the debuff applied by judging Seal of the Crusader.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistHold"></a>
+    <strong>NAG:RetTwistHold ()</strong>
+    </dt>
+    <dd>
+    HOLD helper for Ret twisting: show the twist seal with overlay "HOLD".
+ This is intended to be used in the WA-style "div boundary" region where we want to avoid spending a GCD.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistHoldBURST"></a>
+    <strong>NAG:RetTwistHoldBURST ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistHoldSoBToSoCTransition"></a>
+    <strong>NAG:RetTwistHoldSoBToSoCTransition (windowSeconds)</strong>
+    </dt>
+    <dd>
+    HOLD helper for SoB -> SoC transitions in sensitive swing regions.
+ When we are post-div or already inside twist gap, show SoC with HOLD until current swing is sent.
+ This avoids spending the swap too late in the same swing.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">windowSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Default 0.4
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistIsSoBActive"></a>
+    <strong>NAG:RetTwistIsSoBActive ()</strong>
+    </dt>
+    <dd>
+    Returns true if <em>any</em> Seal of Blood, Seal of the Martyr, or Seal of Righteousness is currently active.
+ Used for twist-state detection (the "twist seal" side of the rotation).
+ SoR is always accepted as a valid replacement: (1) leveling when SoB/SoM not learned;
+ (2) player choice (e.g. Prince boss where SoB self-damage would kill).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistIsSoCActive"></a>
+    <strong>NAG:RetTwistIsSoCActive ()</strong>
+    </dt>
+    <dd>
+    Returns true if <em>any</em> Seal of Command rank/variant is currently active.
+ This avoids false negatives when the player has a higher rank active (e.g. level 70 uses 27170).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistIsSoCrusaderActive"></a>
+    <strong>NAG:RetTwistIsSoCrusaderActive ()</strong>
+    </dt>
+    <dd>
+    Returns true if any Seal of the Crusader rank is currently active on the player.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistJudgeHold"></a>
+    <strong>NAG:RetTwistJudgeHold (holdSeconds)</strong>
+    </dt>
+    <dd>
+    HOLD helper for Ret Judge -> SoC setup timing.
+ Shows Judgement on PRIMARY with HOLD text and a tolerance-based wait window.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">holdSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         Required hold duration in seconds.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistJudgeSetupCanDisplay"></a>
+    <strong>NAG:RetTwistJudgeSetupCanDisplay (maxToleranceSeconds, twistWindowSeconds, hysteresisSeconds, safetySeconds, fillerBufferSeconds)</strong>
+    </dt>
+    <dd>
+    Shared gate for displaying the Judge+SoC split recommendation.
+ Computes the effective hold seconds once per call and stores it for downstream consumers.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">maxToleranceSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil
+        </li>
+        <li><span class="parameter">twistWindowSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil
+        </li>
+        <li><span class="parameter">hysteresisSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil
+        </li>
+        <li><span class="parameter">safetySeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil
+        </li>
+        <li><span class="parameter">fillerBufferSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistJudgeSetupRecentlyDisplayable"></a>
+    <strong>NAG:RetTwistJudgeSetupRecentlyDisplayable (graceSeconds)</strong>
+    </dt>
+    <dd>
+    Returns true if Judge+SoC setup was displayable recently.
+ Used to avoid one-tick fallback jumps into plain SoC after a valid Judge setup signal.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">graceSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Default 0.15
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistNow"></a>
+    <strong>NAG:RetTwistNow ()</strong>
+    </dt>
+    <dd>
+    NOW helper for Ret twisting: show the twist seal with overlay "NOW".
+ This is intended to be used inside the actual twist window (last ~0.4s before swing).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistNowBURST"></a>
+    <strong>NAG:RetTwistNowBURST ()</strong>
+    </dt>
+    <dd>
+
+
+
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistNowWithOverlay"></a>
+    <strong>NAG:RetTwistNowWithOverlay (overlayText)</strong>
+    </dt>
+    <dd>
+    Cast the twist seal (SoB/SoM) with a custom overlay text.
+ Useful for special UX cases (e.g. out-of-combat startattack macros) without changing normal "NOW" behavior.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">overlayText</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistShouldSelfApplyImpSoC"></a>
+    <strong>NAG:RetTwistShouldSelfApplyImpSoC ()</strong>
+    </dt>
+    <dd>
+    Returns true if the self-apply Judgement of the Crusader mode should be active.
+ Requires:
+ - setting enabled, AND
+ - if solo: explicit "force while solo" setting, OR
+ - if grouped: (≤2 paladins in group OR forced/assignment override).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RetTwistSoCSetupHold"></a>
+    <strong>NAG:RetTwistSoCSetupHold (windowSeconds)</strong>
+    </dt>
+    <dd>
+    HOLD helper for generic SoC setup when current swing pre-div is missed.
+ Shows SoC with HOLD and a next-swing countdown.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">windowSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Default 0.4
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ShouldMultidot"></a>
+    <strong>NAG:ShouldMultidot (spellId, maxDots, maxOverlap, range)</strong>
+    </dt>
+    <dd>
+    Determines if a spell should be used for multidotting without casting it.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the spell.
+        </li>
+        <li><span class="parameter">maxDots</span>
+            <span class="types"><span class="type">number</span></span>
+         The maximum number of DoTs allowed.
+        </li>
+        <li><span class="parameter">maxOverlap</span>
+            <span class="types"><span class="type">number</span></span>
+         The maximum allowed overlap time in seconds.
+        </li>
+        <li><span class="parameter">range</span>
+        ? number Optional range for target counting.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the spell should be used for multidotting, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ShouldMultidot</span>(<span class="number">8050</span>, <span class="number">3</span>, <span class="number">3</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ShowArrowOverlay"></a>
+    <strong>NAG:ShowArrowOverlay (spellId, position, orientation, durationSeconds, requireSpellMatch)</strong>
+    </dt>
+    <dd>
+    Shows an arrow overlay on the frame where a spell is displayed.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to match against the frame.
+        </li>
+        <li><span class="parameter">position</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional position override (use NAG.SPELL_POSITIONS constants)
+        </li>
+        <li><span class="parameter">orientation</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil "LEFT" or "RIGHT" (default: "RIGHT")
+        </li>
+        <li><span class="parameter">durationSeconds</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional minimum time to keep the arrow visible.
+        </li>
+        <li><span class="parameter">requireSpellMatch</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil If false, only checks frame visibility (default: true).
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">nil</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ShowCustomOverlay"></a>
+    <strong>NAG:ShowCustomOverlay (text, options)</strong>
+    </dt>
+    <dd>
+    Shows custom overlay text on the PRIMARY icon frame.
+ Intended to be called frequently; uses a stable overlay key and auto-expires if not refreshed.
+ Cast overlays (CastSpell overlayText) have priority and will clear/suppress this overlay.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">text</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil The text to display. Pass nil/empty to clear.
+        </li>
+        <li><span class="parameter">options</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         |nil Optional display config (<code>centered</code>, <code>textColor</code>, <code>textSize</code>).
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ShowManaOverlay"></a>
+    <strong>NAG:ShowManaOverlay ()</strong>
+    </dt>
+    <dd>
+    Shows a dedicated MANA overlay on PRIMARY, independent from cast/custom text overlays.
+ Uses OverlayManager's own "mana" overlay channel to avoid conflicts with HOLD/cast text.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns false.
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:StrictMultidot"></a>
+    <strong>NAG:StrictMultidot (spellId, maxDots, maxOverlap, position, range)</strong>
+    </dt>
+    <dd>
+    Attempts to cast a spell on multiple targets with strict ordering (strict multidot).
+ Maps to APLActionStrictMultidot in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the spell.
+        </li>
+        <li><span class="parameter">maxDots</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Maximum number of dots to maintain (defaults to 1).
+        </li>
+        <li><span class="parameter">maxOverlap</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Maximum overlap time in seconds (defaults to 1).
+        </li>
+        <li><span class="parameter">position</span>
+        ? string Optional position for display (defaults to nil).
+        </li>
+        <li><span class="parameter">range</span>
+        ? number Optional additional range beyond target distance (defaults to dynamic calculation).
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the action was successful.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">StrictMultidot</span>(<span class="number">73643</span>, <span class="number">3</span>, <span class="number">2</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:Twist"></a>
+    <strong>NAG:Twist ()</strong>
+    </dt>
+    <dd>
+    Attempts to perform a Paladin seal twist by swapping to the "opposite" seal and marking it
+ with overlay text "TWIST". </p>
+
+<p> Intended usage:
+ - During the twist window: if SoC is active, <code>Twist()</code> will recommend SoB/SoM with "TWIST".
+ - During pre-twist HOLD: <code>HoldForTwist()</code> + <code>Twist()</code> shows the upcoming twist press.</p>
+
+<p> This helper is intentionally self-contained and additive (does not modify consolidated logic).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if a primary recommendation was set, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">(NAG:<span class="function-name">CanTwist</span>(<span class="number">0.4</span>) <span class="keyword">and</span> NAG:<span class="function-name">IsActive</span>(<span class="number">20375</span>)) <span class="keyword">and</span> NAG:<span class="function-name">Twist</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:WarriorSlamWeave"></a>
+    <strong>NAG:WarriorSlamWeave ()</strong>
+    </dt>
+    <dd>
+    Slam weave helper: show Slam with a custom swipe (no overlay text).
+ Intended to be used in both HOLD and NOW windows.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:WarriorSlamWeaveGetSlamId"></a>
+    <strong>NAG:WarriorSlamWeaveGetSlamId ()</strong>
+    </dt>
+    <dd>
+    Returns the Slam spell ID to use for weaving (highest known).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:WarriorSlamWeaveHasRageAfterSlam"></a>
+    <strong>NAG:WarriorSlamWeaveHasRageAfterSlam (spellId)</strong>
+    </dt>
+    <dd>
+    Check rage after Slam will be paid while Slam is casting.
+ Falls back to HasRage when Slam is not casting.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:WarriorSlamWeaveHold"></a>
+    <strong>NAG:WarriorSlamWeaveHold ()</strong>
+    </dt>
+    <dd>
+    Legacy alias: Slam weave HOLD (no overlay text).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:WarriorSlamWeaveNow"></a>
+    <strong>NAG:WarriorSlamWeaveNow ()</strong>
+    </dt>
+    <dd>
+    Legacy alias: Slam weave NOW (no overlay text).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:WarriorSlamWeaveWait"></a>
+    <strong>NAG:WarriorSlamWeaveWait ()</strong>
+    </dt>
+    <dd>
+    Slam weave wait helper: show Slam with overlay text while waiting.
+ Intended for the "nothing else to do" fallback.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

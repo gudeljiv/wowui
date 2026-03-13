@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_NAG">Class NAG </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/APLAction_Casting.html">APLAction_Casting</a></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><a href="../modules/APLAction_Misc.html">APLAction_Misc</a></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><strong>APLDRW</strong></li>
+  <li><a href="../modules/APLSequences.html">APLSequences</a></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><a href="../modules/APLValues_Aura.html">APLValues_Aura</a></li>
+  <li><a href="../modules/APLValues_AuraSets.html">APLValues_AuraSets</a></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><a href="../modules/APLValues_Boss.html">APLValues_Boss</a></li>
+  <li><a href="../modules/APLValues_Dot.html">APLValues_Dot</a></li>
+  <li><a href="../modules/APLValues_Encounter.html">APLValues_Encounter</a></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><a href="../modules/APLValues_Resources.html">APLValues_Resources</a></li>
+  <li><a href="../modules/APLValues_Runes.html">APLValues_Runes</a></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><a href="../modules/APLValues_Unit.html">APLValues_Unit</a></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><a href="../modules/APL_Class.html">APL_Class</a></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><a href="../modules/NAG.EnhancedAuraHandlers.html">NAG.EnhancedAuraHandlers</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>APLDRW</code></h1>
+<p>
+
+</p>
+<p>"
+ Dancing Rune Weapon (DRW) tracking system for Death Knight</p>
+
+<p> This module provides tracking for DRW summons, debuffs, and expiration for the NAG addon.</p>
+
+<p> License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: Rakizi, Fonsas
+ Discord: https://discord.gg/ebonhold</p>
+
+
+<h2><a href="#Class_NAG">Class NAG </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:NumberTargetsWithDRWDebuff">NAG:NumberTargetsWithDRWDebuff (spellId, range)</a></td>
+	<td class="summary">Gets the number of targets in range that have a specific debuff applied by DRW.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:TargetDRWDebuffRemainingTime">NAG:TargetDRWDebuffRemainingTime (spellId)</a></td>
+	<td class="summary">Gets the remaining time for a DRW-applied debuff on the current target.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:TargetHasDRWDebuff">NAG:TargetHasDRWDebuff (spellId)</a></td>
+	<td class="summary">Checks if the current target has a specific debuff applied by Dancing Rune Weapon (DRW).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#nag:CheckDRWExpiration">nag:CheckDRWExpiration (self)</a></td>
+	<td class="summary">Checks if the DRW has expired and clears data if so.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#nag:ClearDRWData">nag:ClearDRWData (self)</a></td>
+	<td class="summary">Clears all DRW tracking data.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#nag:CountTargetsWithDRWDebuff">nag:CountTargetsWithDRWDebuff (spellId, range)</a></td>
+	<td class="summary">Counts the number of targets with a DRW-applied debuff, optionally within a given range.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#nag:EstimateDebuffDuration">nag:EstimateDebuffDuration (spellId)</a></td>
+	<td class="summary">Estimates the duration of a DRW-applied debuff based on spell ID.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#nag:GetDRWDebuffRemainingTime">nag:GetDRWDebuffRemainingTime (targetGUID, spellId)</a></td>
+	<td class="summary">Gets the remaining time for a DRW-applied debuff on a target.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#nag:HasDRWDebuff">nag:HasDRWDebuff (targetGUID, spellId)</a></td>
+	<td class="summary">Checks if a target has a DRW-applied debuff.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#nag:Initialize">nag:Initialize (self)</a></td>
+	<td class="summary">Initializes the DRW tracking system and registers event handlers.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#nag:ProcessCombatLogEvent">nag:ProcessCombatLogEvent (timestamp, subevent, sourceGUID, sourceName, sourceFlags, destGUID, destName, destFlags, spellId, spellName, auraType)</a></td>
+	<td class="summary">Processes combat log events to track DRW summons, debuffs, and expiration.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#nag:TrackDRWDebuff">nag:TrackDRWDebuff (targetGUID, spellId, isRefresh)</a></td>
+	<td class="summary">Tracks a DRW-applied debuff on a target, updating or creating the debuff entry.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_NAG"></a>Class NAG </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:NumberTargetsWithDRWDebuff"></a>
+    <strong>NAG:NumberTargetsWithDRWDebuff (spellId, range)</strong>
+    </dt>
+    <dd>
+    Gets the number of targets in range that have a specific debuff applied by DRW.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the debuff to check for.
+        </li>
+        <li><span class="parameter">range</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional range to use for counting targets (default: 15).
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        number of targets with the DRW-applied debuff.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">NumberTargetsWithDRWDebuff</span>(<span class="number">55095</span>) <span class="comment">-- Count targets with DRW's Frost Fever</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">NumberTargetsWithDRWDebuff</span>(<span class="number">55078</span>, <span class="number">10</span>) <span class="comment">-- Count targets within 10 yards with DRW's Blood Plague</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:TargetDRWDebuffRemainingTime"></a>
+    <strong>NAG:TargetDRWDebuffRemainingTime (spellId)</strong>
+    </dt>
+    <dd>
+    Gets the remaining time for a DRW-applied debuff on the current target.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the debuff to check for.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        remaining time in seconds, or 0 if not found.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">TargetDRWDebuffRemainingTime</span>(<span class="number">55095</span>) <span class="comment">-- Get remaining time for DRW's Frost Fever</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:TargetHasDRWDebuff"></a>
+    <strong>NAG:TargetHasDRWDebuff (spellId)</strong>
+    </dt>
+    <dd>
+    Checks if the current target has a specific debuff applied by Dancing Rune Weapon (DRW).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the debuff to check for.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the target has the DRW-applied debuff, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">TargetHasDRWDebuff</span>(<span class="number">55095</span>) <span class="comment">-- Check if target has DRW's Frost Fever</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "nag:CheckDRWExpiration"></a>
+    <strong>nag:CheckDRWExpiration (self)</strong>
+    </dt>
+    <dd>
+    Checks if the DRW has expired and clears data if so.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">nil</span></span>
+
+
+
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">DRW_Tracking:<span class="function-name">CheckDRWExpiration</span>() <span class="comment">-- Called periodically to check expiration</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "nag:ClearDRWData"></a>
+    <strong>nag:ClearDRWData (self)</strong>
+    </dt>
+    <dd>
+    Clears all DRW tracking data.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">nil</span></span>
+
+
+
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">DRW_Tracking:<span class="function-name">ClearDRWData</span>() <span class="comment">-- Clear all DRW tracking information</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "nag:CountTargetsWithDRWDebuff"></a>
+    <strong>nag:CountTargetsWithDRWDebuff (spellId, range)</strong>
+    </dt>
+    <dd>
+    Counts the number of targets with a DRW-applied debuff, optionally within a given range.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID of the debuff
+        </li>
+        <li><span class="parameter">range</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional range to use for counting targets
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        number of targets with the DRW-applied debuff
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> count = DRW_Tracking:<span class="function-name">CountTargetsWithDRWDebuff</span>(<span class="number">55095</span>, <span class="number">15</span>) <span class="comment">-- Count targets with Frost Fever in 15yd</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "nag:EstimateDebuffDuration"></a>
+    <strong>nag:EstimateDebuffDuration (spellId)</strong>
+    </dt>
+    <dd>
+    Estimates the duration of a DRW-applied debuff based on spell ID.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        estimated duration in seconds
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> duration = DRW_Tracking:<span class="function-name">EstimateDebuffDuration</span>(<span class="number">55095</span>) <span class="comment">-- Get duration for Frost Fever</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "nag:GetDRWDebuffRemainingTime"></a>
+    <strong>nag:GetDRWDebuffRemainingTime (targetGUID, spellId)</strong>
+    </dt>
+    <dd>
+    Gets the remaining time for a DRW-applied debuff on a target.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">targetGUID</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The GUID of the target
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID of the debuff
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        time in seconds, or 0 if not found
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> remaining = DRW_Tracking:<span class="function-name">GetDRWDebuffRemainingTime</span>(<span class="string">"targetGUID"</span>, <span class="number">55095</span>) <span class="comment">-- Get Frost Fever time</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "nag:HasDRWDebuff"></a>
+    <strong>nag:HasDRWDebuff (targetGUID, spellId)</strong>
+    </dt>
+    <dd>
+    Checks if a target has a DRW-applied debuff.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">targetGUID</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The GUID of the target
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID of the debuff
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the debuff is present and not expired
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> hasDebuff = DRW_Tracking:<span class="function-name">HasDRWDebuff</span>(<span class="string">"targetGUID"</span>, <span class="number">55095</span>) <span class="comment">-- Check for Frost Fever</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "nag:Initialize"></a>
+    <strong>nag:Initialize (self)</strong>
+    </dt>
+    <dd>
+    Initializes the DRW tracking system and registers event handlers.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">nil</span></span>
+
+
+
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">DRW_Tracking:<span class="function-name">Initialize</span>() <span class="comment">-- Called automatically during addon initialization</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "nag:ProcessCombatLogEvent"></a>
+    <strong>nag:ProcessCombatLogEvent (timestamp, subevent, sourceGUID, sourceName, sourceFlags, destGUID, destName, destFlags, spellId, spellName, auraType)</strong>
+    </dt>
+    <dd>
+    Processes combat log events to track DRW summons, debuffs, and expiration.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">timestamp</span>
+            <span class="types"><span class="type">number</span></span>
+         Event timestamp
+        </li>
+        <li><span class="parameter">subevent</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Combat log subevent
+        </li>
+        <li><span class="parameter">sourceGUID</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Source GUID
+        </li>
+        <li><span class="parameter">sourceName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Source name
+        </li>
+        <li><span class="parameter">sourceFlags</span>
+            <span class="types"><span class="type">number</span></span>
+         Source flags
+        </li>
+        <li><span class="parameter">destGUID</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Destination GUID
+        </li>
+        <li><span class="parameter">destName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Destination name
+        </li>
+        <li><span class="parameter">destFlags</span>
+            <span class="types"><span class="type">number</span></span>
+         Destination flags
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         Spell ID
+        </li>
+        <li><span class="parameter">spellName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Spell name
+        </li>
+        <li><span class="parameter">auraType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Aura type
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">nil</span></span>
+
+
+
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">DRW_Tracking:<span class="function-name">ProcessCombatLogEvent</span>(timestamp, subevent, ...) <span class="comment">-- Called by event handler</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "nag:TrackDRWDebuff"></a>
+    <strong>nag:TrackDRWDebuff (targetGUID, spellId, isRefresh)</strong>
+    </dt>
+    <dd>
+    Tracks a DRW-applied debuff on a target, updating or creating the debuff entry.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">targetGUID</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The GUID of the target
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID of the debuff
+        </li>
+        <li><span class="parameter">isRefresh</span>
+            <span class="types"><span class="type">boolean</span></span>
+         True if the debuff is being refreshed
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">nil</span></span>
+
+
+
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">DRW_Tracking:<span class="function-name">TrackDRWDebuff</span>(<span class="string">"targetGUID"</span>, <span class="number">55095</span>, <span class="keyword">false</span>) <span class="comment">-- Track new DRW debuff</span></pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

@@ -1,0 +1,13 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <!-- Data Files - mists 5.5.0.62232 -->
+    <Script file="ClassSpells.lua"/>
+    <Script file="Items.lua"/>
+    <Script file="Racials.lua"/>
+    <Script file="schema.lua"/>
+    <Script file="Spells.lua"/>
+    <Script file="Talents.lua"/>
+    <!-- <Script file="SpellRequirementsOverrides.lua"/> -->
+    <!-- <Script file="ConsumableItems.lua"/> -->
+    <!-- <Script file="ai-classspells.lua"/> -->
+</Ui>

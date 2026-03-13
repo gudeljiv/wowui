@@ -1,0 +1,466 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_NAG">Class NAG </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/APLAction_Casting.html">APLAction_Casting</a></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><a href="../modules/APLAction_Misc.html">APLAction_Misc</a></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><a href="../modules/APLDRW.html">APLDRW</a></li>
+  <li><a href="../modules/APLSequences.html">APLSequences</a></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><a href="../modules/APLValues_Aura.html">APLValues_Aura</a></li>
+  <li><a href="../modules/APLValues_AuraSets.html">APLValues_AuraSets</a></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><a href="../modules/APLValues_Boss.html">APLValues_Boss</a></li>
+  <li><a href="../modules/APLValues_Dot.html">APLValues_Dot</a></li>
+  <li><a href="../modules/APLValues_Encounter.html">APLValues_Encounter</a></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><a href="../modules/APLValues_Resources.html">APLValues_Resources</a></li>
+  <li><strong>APLValues_Runes</strong></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><a href="../modules/APLValues_Unit.html">APLValues_Unit</a></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><a href="../modules/APL_Class.html">APL_Class</a></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><a href="../modules/NAG.EnhancedAuraHandlers.html">NAG.EnhancedAuraHandlers</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>APLValues_Runes</code></h1>
+<p>
+
+</p>
+<p>"
+ Rune-related APL value functions for the NAG addon</p>
+
+<p> This module provides utility functions for rune management, rune timing, and rune-based conditions.</p>
+
+<p> Rune Grace Mechanic (Blizzard): When a READY rune is used in combat, idle time (up to 2.47s) is
+ subtracted from the new cooldown. Example: Rune ready for 0.5s → cooldown = 10 - 0.5 = 9.5s.
+ Maximum benefit: ~7.5s cooldown (10 - 2.47) when used immediately after becoming ready.</p>
+
+<p> RuneGrace/RuneSlotGrace Functions: Measure idle time since rune regeneration (lastRegenTime),
+ matching wowsims-wotlk logic: grace = min(2500ms, currentTime - lastRegenTime).
+ lastRegenTime is tracked when runes transition from cooldown to ready (RUNE<em>POWER</em>UPDATE).
+ For runes on cooldown or pre-pull, returns 0. Same logic applies to WotLK (parallel regen
+ per type) and MoP (sequential regen).</p>
+
+<p> License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: Rakizi, Fonsas
+ Discord: https://discord.gg/ebonhold</p>
+
+<p> luacheck: ignore GetSpellInfo</p>
+
+
+<h2><a href="#Class_NAG">Class NAG </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentNonDeathRuneCount">NAG:CurrentNonDeathRuneCount (runeType)</a></td>
+	<td class="summary">Returns the number of non-death runes of a specific type that are ready.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentRuneActive">NAG:CurrentRuneActive (runeSlot)</a></td>
+	<td class="summary">Checks if a specific rune slot is active (not on cooldown).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentRuneCount">NAG:CurrentRuneCount (runeType)</a></td>
+	<td class="summary">Returns the current count of active runes of a specific type.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentRuneDeath">NAG:CurrentRuneDeath (runeSlot)</a></td>
+	<td class="summary">Checks if a specific rune slot contains a death rune.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:FullRuneCooldown">NAG:FullRuneCooldown (useBaseValue)</a></td>
+	<td class="summary">Returns the full rune cooldown duration, taking haste into account unless base value requested.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:NextRuneCooldown">NAG:NextRuneCooldown (runeType)</a></td>
+	<td class="summary">Returns the highest cooldown time among runes of a specific type.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:NumRunes">NAG:NumRunes (runeType)</a></td>
+	<td class="summary">Returns the number of runes of a specific type that are ready.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RuneCooldown">NAG:RuneCooldown (runeType)</a></td>
+	<td class="summary">Returns the lowest cooldown time among runes of a specific type.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RuneSlotCooldown">NAG:RuneSlotCooldown (runeSlot)</a></td>
+	<td class="summary">Returns the cooldown time for a specific rune slot.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_NAG"></a>Class NAG </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:CurrentNonDeathRuneCount"></a>
+    <strong>NAG:CurrentNonDeathRuneCount (runeType)</strong>
+    </dt>
+    <dd>
+    Returns the number of non-death runes of a specific type that are ready.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">runeType</span>
+            <span class="types"><span class="type">number</span></span>
+         The type of rune to count (1=Blood, 2=Frost, 3=Unholy)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        number of non-death runes of the specified type that are ready, or 0 if the player is not a Death Knight.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentNonDeathRuneCount</span>(runeType) &gt;= x</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentRuneActive"></a>
+    <strong>NAG:CurrentRuneActive (runeSlot)</strong>
+    </dt>
+    <dd>
+    Checks if a specific rune slot is active (not on cooldown).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">runeSlot</span>
+            <span class="types"><span class="type">number</span></span>
+         The rune slot to check (1-6)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the rune slot is active, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentRuneActive</span>(runeSlot)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentRuneCount"></a>
+    <strong>NAG:CurrentRuneCount (runeType)</strong>
+    </dt>
+    <dd>
+    Returns the current count of active runes of a specific type.
+ Handles Blood, Frost, Unholy, and Death runes with specialized logic for each type.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">runeType</span>
+            <span class="types"><span class="type">number</span></span>
+         The type of rune to count (1=Blood, 2=Frost, 3=Unholy, 4=Death)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        number of active runes of the specified type, or 0 if the player is not a Death Knight.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentRuneCount</span>(runeType) &gt;= x</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentRuneDeath"></a>
+    <strong>NAG:CurrentRuneDeath (runeSlot)</strong>
+    </dt>
+    <dd>
+    Checks if a specific rune slot contains a death rune.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">runeSlot</span>
+            <span class="types"><span class="type">number</span></span>
+         The rune slot to check (1-6)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the rune slot contains a death rune, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentRuneDeath</span>(runeSlot)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:FullRuneCooldown"></a>
+    <strong>NAG:FullRuneCooldown (useBaseValue)</strong>
+    </dt>
+    <dd>
+    Returns the full rune cooldown duration, taking haste into account unless base value requested.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">useBaseValue</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil When true, returns the unmodified baseline cooldown
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        rune cooldown duration in seconds
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:NextRuneCooldown"></a>
+    <strong>NAG:NextRuneCooldown (runeType)</strong>
+    </dt>
+    <dd>
+    Returns the highest cooldown time among runes of a specific type.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">runeType</span>
+            <span class="types"><span class="type">number</span></span>
+         The type of rune to check (1=Blood, 2=Frost, 3=Unholy, 4=Death)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        highest cooldown time among runes of the specified type, or 0 if the player is not a Death Knight.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">NextRuneCooldown</span>(runeType) &lt;= x</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:NumRunes"></a>
+    <strong>NAG:NumRunes (runeType)</strong>
+    </dt>
+    <dd>
+    Returns the number of runes of a specific type that are ready.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">runeType</span>
+            <span class="types"><span class="type">number</span></span>
+         The type of rune to count (1=Blood, 2=Frost, 3=Unholy, 4=Death)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        number of runes of the specified type that are ready, or 0 if the player is not a Death Knight.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">NumRunes</span>(runeType) &gt; <span class="number">0</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RuneCooldown"></a>
+    <strong>NAG:RuneCooldown (runeType)</strong>
+    </dt>
+    <dd>
+    Returns the lowest cooldown time among runes of a specific type.
+ Maps rune types to specific slots: 1=Blood(slots 1,2), 2=Frost(slots 5,6), 3=Unholy(slots 3,4), 4=All slots.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">runeType</span>
+            <span class="types"><span class="type">number</span></span>
+         The type of rune to check (1=Blood, 2=Frost, 3=Unholy, 4=All slots)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        lowest cooldown time among runes of the specified type, or 0 if the player is not a Death Knight.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">RuneCooldown</span>(runeType) &lt;= x</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RuneSlotCooldown"></a>
+    <strong>NAG:RuneSlotCooldown (runeSlot)</strong>
+    </dt>
+    <dd>
+    Returns the cooldown time for a specific rune slot.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">runeSlot</span>
+            <span class="types"><span class="type">number</span></span>
+         The rune slot to check (1-6)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        cooldown time for the specified rune slot, or 0 if the player is not a Death Knight.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">RuneSlotCooldown</span>(runeSlot) &lt;= x</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

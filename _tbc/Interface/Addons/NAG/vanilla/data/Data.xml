@@ -1,0 +1,16 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <!-- Data Files - _classic_era_ 1.15.8.64344 -->
+    <Script file="ClassSpells.lua"/>
+    <Script file="Consumables.lua"/>
+    <Script file="enchants.lua"/>
+    <Script file="OtherItems.lua"/>
+    <Script file="Racials.lua"/>
+    <Script file="schema.lua"/>
+    <Script file="Spells.lua"/>
+    <Script file="Talents.lua"/>
+    <Script file="TierSets.lua"/>
+    <Script file="Trinkets.lua"/>
+</Ui>
+
+

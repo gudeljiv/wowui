@@ -1,0 +1,1358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_NAG">Class NAG </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/APLAction_Casting.html">APLAction_Casting</a></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><a href="../modules/APLAction_Misc.html">APLAction_Misc</a></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><a href="../modules/APLDRW.html">APLDRW</a></li>
+  <li><a href="../modules/APLSequences.html">APLSequences</a></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><strong>APLValues_Aura</strong></li>
+  <li><a href="../modules/APLValues_AuraSets.html">APLValues_AuraSets</a></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><a href="../modules/APLValues_Boss.html">APLValues_Boss</a></li>
+  <li><a href="../modules/APLValues_Dot.html">APLValues_Dot</a></li>
+  <li><a href="../modules/APLValues_Encounter.html">APLValues_Encounter</a></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><a href="../modules/APLValues_Resources.html">APLValues_Resources</a></li>
+  <li><a href="../modules/APLValues_Runes.html">APLValues_Runes</a></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><a href="../modules/APLValues_Unit.html">APLValues_Unit</a></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><a href="../modules/APL_Class.html">APL_Class</a></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><a href="../modules/NAG.EnhancedAuraHandlers.html">NAG.EnhancedAuraHandlers</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>APLValues_Aura</code></h1>
+<p>
+
+</p>
+<p>"
+ Aura-related APL value functions for the NAG addon</p>
+
+<p> This module provides utility functions for aura checking, timing, stacks, and aura management.</p>
+
+<p> License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: Rakizi, Fonsas
+ Discord: https://discord.gg/ebonhold</p>
+
+<p> luacheck: ignore GetSpellInfo</p>
+
+
+<h2><a href="#Class_NAG">Class NAG </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AuraICDIsReady">NAG:AuraICDIsReady (auraId, sourceUnit, useReactionTime)</a></td>
+	<td class="summary">Checks if the internal cooldown (ICD) for a given spell is ready (i.e., not on cooldown) for the specified unit (defaults to player).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AuraInternalCooldown">NAG:AuraInternalCooldown (auraId, sourceUnit)</a></td>
+	<td class="summary">Returns the remaining internal cooldown (ICD) for a given spell on the specified unit (defaults to player).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AuraIsActive">NAG:AuraIsActive (id, sourceUnit, includeReactionTime, exactIdMatch)</a></td>
+	<td class="summary">Checks if a spell, trinket, tinker, or item is currently active.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AuraIsActiveWithReactionTime">NAG:AuraIsActiveWithReactionTime (auraId, sourceUnit)</a></td>
+	<td class="summary">Checks if an aura is active with reaction time consideration.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AuraIsInactive">NAG:AuraIsInactive (auraId, sourceUnit, useReactionTime)</a></td>
+	<td class="summary">Checks if an aura is inactive (not present) on the given unit.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AuraIsInactiveWithReactionTime">NAG:AuraIsInactiveWithReactionTime (auraId, sourceUnit)</a></td>
+	<td class="summary">Checks if an aura is inactive or expiring within reaction time.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AuraIsKnown">NAG:AuraIsKnown (auraId, sourceUnit)</a></td>
+	<td class="summary">Checks if an aura is known/exists in the system (even if not currently active).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AuraRemainingTime">NAG:AuraRemainingTime (auraId, sourceUnit)</a></td>
+	<td class="summary">Gets the remaining time (in seconds) of a specific aura on the given unit (defaults to player).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AuraShouldRefresh">NAG:AuraShouldRefresh (auraId, maxOverlap, sourceUnit)</a></td>
+	<td class="summary">Determines if an aura should be refreshed based on its remaining time and a maximum allowed overlap.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CanCastWFTotem">NAG:CanCastWFTotem ()</a></td>
+	<td class="summary">Returns true if the best known Windfury Totem rank is currently castable.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastGoATotem">NAG:CastGoATotem (position)</a></td>
+	<td class="summary">Cast Grace of Air Totem (best rank).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:FireTotemSlotNeedsFill">NAG:FireTotemSlotNeedsFill ()</a></td>
+	<td class="summary">Returns true when Shaman fire totem slot has no active fire totem (and no Fire Elemental).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetFireNovaDetonationDelaySeconds">NAG:GetFireNovaDetonationDelaySeconds ()</a></td>
+	<td class="summary">Returns Fire Nova detonation delay in seconds based on Improved Fire Totems talent rank.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetPaladinCountInGroup">NAG:GetPaladinCountInGroup ()</a></td>
+	<td class="summary">Returns the number of paladins in the group (including the player).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetSearingTotemDuration">NAG:GetSearingTotemDuration ()</a></td>
+	<td class="summary">Returns Searing Totem duration used by refresh logic.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetWeaponTempEnchantId">NAG:GetWeaponTempEnchantId (hand)</a></td>
+	<td class="summary">Returns the current temporary enchant ID for the player's main-hand/off-hand, or nil if none.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GroupHasWindfuryBuff">NAG:GroupHasWindfuryBuff ()</a></td>
+	<td class="summary">Returns true if any applicable melee unit currently has the Windfury Totem weapon buff.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GroupWindfuryRemaining">NAG:GroupWindfuryRemaining ()</a></td>
+	<td class="summary">Returns the minimum remaining duration (seconds) of Windfury Totem weapon buff across relevant units.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:HasManaSpringTotemBuff">NAG:HasManaSpringTotemBuff ()</a></td>
+	<td class="summary">Returns true if the player currently has any Mana Spring buff aura (any rank, any source).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:HasOtherPaladinInGroup">NAG:HasOtherPaladinInGroup ()</a></td>
+	<td class="summary">Returns true if another paladin is in the group (not the player).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:HasTotemOfWrathBuff">NAG:HasTotemOfWrathBuff ()</a></td>
+	<td class="summary">Returns true if the player currently has the Totem of Wrath buff aura (any source).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:HasWeaponTempEnchantFromSet">NAG:HasWeaponTempEnchantFromSet (hand, enchantSet)</a></td>
+	<td class="summary">Checks whether the player's specified weapon has one of the given temporary enchant IDs.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:HasWindfuryTotemWeaponBuff">NAG:HasWindfuryTotemWeaponBuff ()</a></td>
+	<td class="summary">Returns true if the player currently has any Windfury Totem weapon buff aura (any rank).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:HasWrathOfAirTotemBuff">NAG:HasWrathOfAirTotemBuff ()</a></td>
+	<td class="summary">Returns true if the player currently has the Wrath of Air Totem buff aura (any source).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:IsFireNovaTotemActiveOrInWindup">NAG:IsFireNovaTotemActiveOrInWindup ()</a></td>
+	<td class="summary">Returns true if Fire Nova Totem is active (in slot) or in windup (recently cast, waiting to explode).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:IsTotemActiveAnyRankForSpell">NAG:IsTotemActiveAnyRankForSpell (spellId)</a></td>
+	<td class="summary">Rank-agnostic totem check by spell ID (returns nil if not a tracked totem).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ItemRemainingTime">NAG:ItemRemainingTime (id)</a></td>
+	<td class="summary">Gets the remaining active time for an item in seconds.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RaidBuffIsActive">NAG:RaidBuffIsActive (buffType)</a></td>
+	<td class="summary">Checks if a raid buff type is active on the player.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RaidDebuffIsActive">NAG:RaidDebuffIsActive (debuffType)</a></td>
+	<td class="summary">Checks if a raid debuff type is active on the target.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RecordTotemicCall">NAG:RecordTotemicCall ()</a></td>
+	<td class="summary">Clears tracked totem timers after Totemic Call.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RogueHasDeadlyPoisonOH">NAG:RogueHasDeadlyPoisonOH ()</a></td>
+	<td class="summary">Returns true if the player's off-hand currently has any Deadly Poison enchant applied.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RogueHasInstantPoisonMH">NAG:RogueHasInstantPoisonMH ()</a></td>
+	<td class="summary">Returns true if the player's main-hand currently has any Instant Poison enchant applied.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ShouldTwistWindfury">NAG:ShouldTwistWindfury ()</a></td>
+	<td class="summary">Returns true if the group contains at least one melee class that strongly benefits from Windfury twisting.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ShouldUseCurseOfRecklessness">NAG:ShouldUseCurseOfRecklessness ()</a></td>
+	<td class="summary">Returns true if the group contains at least one melee class that benefits from Curse of Recklessness.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ShouldUseFaerieFire">NAG:ShouldUseFaerieFire ()</a></td>
+	<td class="summary">Returns true if the group contains at least one melee class that benefits from Faerie Fire.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WFWeaponRemaining">NAG:WFWeaponRemaining (hand)</a></td>
+	<td class="summary">Returns remaining time (seconds) of Windfury Weapon on specified hand ("MH" or "OH"), or 0 if absent.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_NAG"></a>Class NAG </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:AuraICDIsReady"></a>
+    <strong>NAG:AuraICDIsReady (auraId, sourceUnit, useReactionTime)</strong>
+    </dt>
+    <dd>
+    Checks if the internal cooldown (ICD) for a given spell is ready (i.e., not on cooldown) for the specified unit (defaults to player).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the spell.
+        </li>
+        <li><span class="parameter">sourceUnit</span>
+        ? string The unit to check (defaults to "player").
+        </li>
+        <li><span class="parameter">useReactionTime</span>
+        ? boolean Whether to use reaction time in calculations (defaults to true).
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the ICD is ready, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">(NAG:<span class="function-name">AuraICDIsReady</span>(<span class="number">73643</span>))</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AuraInternalCooldown"></a>
+    <strong>NAG:AuraInternalCooldown (auraId, sourceUnit)</strong>
+    </dt>
+    <dd>
+    Returns the remaining internal cooldown (ICD) for a given spell on the specified unit (defaults to player).  Handles special cases for certain spell IDs.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the spell.
+        </li>
+        <li><span class="parameter">sourceUnit</span>
+        ? string The unit to check (defaults to "player").
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        remaining ICD time in seconds, or 0 if not found.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">(NAG:<span class="function-name">AuraInternalCooldown</span>(<span class="number">73643</span>) &lt;= <span class="number">0</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AuraIsActive"></a>
+    <strong>NAG:AuraIsActive (id, sourceUnit, includeReactionTime, exactIdMatch)</strong>
+    </dt>
+    <dd>
+    Checks if a spell, trinket, tinker, or item is currently active.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID or alias (e.g., "trinket1") of the item.
+        </li>
+        <li><span class="parameter">sourceUnit</span>
+        ? string|nil Optional: the source unit of the aura.
+        </li>
+        <li><span class="parameter">includeReactionTime</span>
+        ? boolean Whether to enforce reaction-time window for aura checks (defaults to true).
+        </li>
+        <li><span class="parameter">exactIdMatch</span>
+        ? boolean If true, forces exact spell ID matching and skips name-based matching.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the item is active, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AuraIsActive</span>(<span class="number">73643</span>) <span class="keyword">or</span> NAG:<span class="function-name">AuraIsActive</span>(<span class="number">12345</span>, <span class="string">"pet"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AuraIsActiveWithReactionTime"></a>
+    <strong>NAG:AuraIsActiveWithReactionTime (auraId, sourceUnit)</strong>
+    </dt>
+    <dd>
+    Checks if an aura is active with reaction time consideration.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID of the aura to check.
+        </li>
+        <li><span class="parameter">sourceUnit</span>
+        ? string The unit to check (defaults to "player").
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the aura is active with reaction time consideration.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AuraIsActiveWithReactionTime</span>(<span class="number">73643</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AuraIsInactive"></a>
+    <strong>NAG:AuraIsInactive (auraId, sourceUnit, useReactionTime)</strong>
+    </dt>
+    <dd>
+    Checks if an aura is inactive (not present) on the given unit.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID of the aura to check.
+        </li>
+        <li><span class="parameter">sourceUnit</span>
+        ? string The unit to check (defaults to "player").
+        </li>
+        <li><span class="parameter">useReactionTime</span>
+        ? boolean Whether to use reaction time in calculations (defaults to true).
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the aura is inactive, false if active.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AuraIsInactive</span>(<span class="number">73643</span>) <span class="keyword">or</span> NAG:<span class="function-name">AuraIsInactive</span>(<span class="number">73643</span>, <span class="string">"pet"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AuraIsInactiveWithReactionTime"></a>
+    <strong>NAG:AuraIsInactiveWithReactionTime (auraId, sourceUnit)</strong>
+    </dt>
+    <dd>
+    Checks if an aura is inactive or expiring within reaction time.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID of the aura to check.
+        </li>
+        <li><span class="parameter">sourceUnit</span>
+        ? string The unit to check (defaults to "player").
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if aura is inactive or expiring within reaction time.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AuraIsInactiveWithReactionTime</span>(<span class="number">73643</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AuraIsKnown"></a>
+    <strong>NAG:AuraIsKnown (auraId, sourceUnit)</strong>
+    </dt>
+    <dd>
+    Checks if an aura is known/exists in the system (even if not currently active).
+ This is different from IsActiveAura - this checks if the aura exists at all.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID of the aura to check.
+        </li>
+        <li><span class="parameter">sourceUnit</span>
+        ? string The unit to check (defaults to "player").
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the aura is known/exists, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AuraIsKnown</span>(<span class="number">73643</span>) <span class="keyword">or</span> NAG:<span class="function-name">AuraIsKnown</span>(<span class="number">73643</span>, <span class="string">"pet"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AuraRemainingTime"></a>
+    <strong>NAG:AuraRemainingTime (auraId, sourceUnit)</strong>
+    </dt>
+    <dd>
+    Gets the remaining time (in seconds) of a specific aura on the given unit (defaults to player).  Handles item IDs and validates spell existence.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the spell to check.
+        </li>
+        <li><span class="parameter">sourceUnit</span>
+        ? string The unit to check (defaults to "player").
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        remaining time of the aura in seconds, or 0 if not found.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AuraRemainingTime</span>(<span class="number">73643</span>) &gt;= x</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AuraShouldRefresh"></a>
+    <strong>NAG:AuraShouldRefresh (auraId, maxOverlap, sourceUnit)</strong>
+    </dt>
+    <dd>
+    Determines if an aura should be refreshed based on its remaining time and a maximum allowed overlap.
+ This function checks not only the specified aura but also any other auras on the same unit,
+ including auras applied by other raid members, which apply the same debuff category.
+ For example, 'Should Refresh Debuff(Sunder Armor)' will return false if the unit has an active Expose Armor aura.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID of the aura.
+        </li>
+        <li><span class="parameter">maxOverlap</span>
+            <span class="types"><span class="type">number</span></span>
+         The maximum allowed overlap time in seconds.
+        </li>
+        <li><span class="parameter">sourceUnit</span>
+        ? string The unit to check (defaults to "target").
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the aura should be refreshed, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AuraShouldRefresh</span>(<span class="number">7386</span>, <span class="number">5</span>) <span class="comment">-- Sunder Armor with 5 second overlap</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CanCastWFTotem"></a>
+    <strong>NAG:CanCastWFTotem ()</strong>
+    </dt>
+    <dd>
+    Returns true if the best known Windfury Totem rank is currently castable.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:CastGoATotem"></a>
+    <strong>NAG:CastGoATotem (position)</strong>
+    </dt>
+    <dd>
+    Cast Grace of Air Totem (best rank).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">position</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional NAG.SPELL_POSITIONS constant (PRIMARY, RIGHT, etc.)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:FireTotemSlotNeedsFill"></a>
+    <strong>NAG:FireTotemSlotNeedsFill ()</strong>
+    </dt>
+    <dd>
+    Returns true when Shaman fire totem slot has no active fire totem (and no Fire Elemental).
+ Treats Fire Nova windup as "slot occupied" so we don't suggest Searing/Magma before it explodes.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:GetFireNovaDetonationDelaySeconds"></a>
+    <strong>NAG:GetFireNovaDetonationDelaySeconds ()</strong>
+    </dt>
+    <dd>
+    Returns Fire Nova detonation delay in seconds based on Improved Fire Totems talent rank.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:GetPaladinCountInGroup"></a>
+    <strong>NAG:GetPaladinCountInGroup ()</strong>
+    </dt>
+    <dd>
+    Returns the number of paladins in the group (including the player).  Uses subgroup scope (raid = subgroup only).
+ Solo play returns 1 if player is a paladin, 0 otherwise.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:GetSearingTotemDuration"></a>
+    <strong>NAG:GetSearingTotemDuration ()</strong>
+    </dt>
+    <dd>
+    Returns Searing Totem duration used by refresh logic.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:GetWeaponTempEnchantId"></a>
+    <strong>NAG:GetWeaponTempEnchantId (hand)</strong>
+    </dt>
+    <dd>
+    Returns the current temporary enchant ID for the player's main-hand/off-hand, or nil if none.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">hand</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         "MH" or "OH"
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        |nil enchantId
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:GroupHasWindfuryBuff"></a>
+    <strong>NAG:GroupHasWindfuryBuff ()</strong>
+    </dt>
+    <dd>
+    Returns true if any applicable melee unit currently has the Windfury Totem weapon buff.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:GroupWindfuryRemaining"></a>
+    <strong>NAG:GroupWindfuryRemaining ()</strong>
+    </dt>
+    <dd>
+    Returns the minimum remaining duration (seconds) of Windfury Totem weapon buff across relevant units.
+ Returns 0 if no buff is found.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:HasManaSpringTotemBuff"></a>
+    <strong>NAG:HasManaSpringTotemBuff ()</strong>
+    </dt>
+    <dd>
+    Returns true if the player currently has any Mana Spring buff aura (any rank, any source).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:HasOtherPaladinInGroup"></a>
+    <strong>NAG:HasOtherPaladinInGroup ()</strong>
+    </dt>
+    <dd>
+    Returns true if another paladin is in the group (not the player).  Uses subgroup scope (raid = subgroup only).
+ Solo play returns false.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:HasTotemOfWrathBuff"></a>
+    <strong>NAG:HasTotemOfWrathBuff ()</strong>
+    </dt>
+    <dd>
+    Returns true if the player currently has the Totem of Wrath buff aura (any source).
+ This is used to avoid suggesting Totem of Wrath when another shaman is already providing it.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:HasWeaponTempEnchantFromSet"></a>
+    <strong>NAG:HasWeaponTempEnchantFromSet (hand, enchantSet)</strong>
+    </dt>
+    <dd>
+    Checks whether the player's specified weapon has one of the given temporary enchant IDs.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">hand</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         "MH" or "OH"
+        </li>
+        <li><span class="parameter">enchantSet</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         <number, boolean>
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:HasWindfuryTotemWeaponBuff"></a>
+    <strong>NAG:HasWindfuryTotemWeaponBuff ()</strong>
+    </dt>
+    <dd>
+    Returns true if the player currently has any Windfury Totem weapon buff aura (any rank).
+ This is a buff (not the Shaman's self-imbue), and is used to avoid suggesting MH poisons
+ when the group is providing Windfury.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:HasWrathOfAirTotemBuff"></a>
+    <strong>NAG:HasWrathOfAirTotemBuff ()</strong>
+    </dt>
+    <dd>
+    Returns true if the player currently has the Wrath of Air Totem buff aura (any source).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:IsFireNovaTotemActiveOrInWindup"></a>
+    <strong>NAG:IsFireNovaTotemActiveOrInWindup ()</strong>
+    </dt>
+    <dd>
+    Returns true if Fire Nova Totem is active (in slot) or in windup (recently cast, waiting to explode).
+ Use this to block Magma Totem until Fire Nova has detonated (per TBC-sim fire twist behavior).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:IsTotemActiveAnyRankForSpell"></a>
+    <strong>NAG:IsTotemActiveAnyRankForSpell (spellId)</strong>
+    </dt>
+    <dd>
+    Rank-agnostic totem check by spell ID (returns nil if not a tracked totem).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+
+
+
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        |nil
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ItemRemainingTime"></a>
+    <strong>NAG:ItemRemainingTime (id)</strong>
+    </dt>
+    <dd>
+    Gets the remaining active time for an item in seconds.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">id</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the item.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        remaining time in seconds
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ItemRemainingTime</span>(<span class="number">12345</span>) &gt; <span class="number">0</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RaidBuffIsActive"></a>
+    <strong>NAG:RaidBuffIsActive (buffType)</strong>
+    </dt>
+    <dd>
+    Checks if a raid buff type is active on the player.
+ Returns true if any buff of the specified type is currently active on the player.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">buffType</span>
+            <span class="types"><span class="type">number</span></span>
+         The type of raid buff to check from Types:GetType("BuffType")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the buff type is active, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">RaidBuffIsActive</span>(Types:<span class="function-name">GetType</span>(<span class="string">"BuffType"</span>).STAMINA)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RaidDebuffIsActive"></a>
+    <strong>NAG:RaidDebuffIsActive (debuffType)</strong>
+    </dt>
+    <dd>
+    Checks if a raid debuff type is active on the target.
+ Returns true if any debuff of the specified type is currently active on the target.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">debuffType</span>
+            <span class="types"><span class="type">number</span></span>
+         The type of raid debuff to check from Types:GetType("DebuffType")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the debuff type is active, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">RaidDebuffIsActive</span>(Types:<span class="function-name">GetType</span>(<span class="string">"DebuffType"</span>).PHYSICAL_DAMAGE)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RecordTotemicCall"></a>
+    <strong>NAG:RecordTotemicCall ()</strong>
+    </dt>
+    <dd>
+    Clears tracked totem timers after Totemic Call.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">nil</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RogueHasDeadlyPoisonOH"></a>
+    <strong>NAG:RogueHasDeadlyPoisonOH ()</strong>
+    </dt>
+    <dd>
+    Returns true if the player's off-hand currently has any Deadly Poison enchant applied.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RogueHasInstantPoisonMH"></a>
+    <strong>NAG:RogueHasInstantPoisonMH ()</strong>
+    </dt>
+    <dd>
+    Returns true if the player's main-hand currently has any Instant Poison enchant applied.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ShouldTwistWindfury"></a>
+    <strong>NAG:ShouldTwistWindfury ()</strong>
+    </dt>
+    <dd>
+    Returns true if the group contains at least one melee class that strongly benefits from Windfury twisting.
+ Solo play returns true to keep twisting for personal DPS.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ShouldUseCurseOfRecklessness"></a>
+    <strong>NAG:ShouldUseCurseOfRecklessness ()</strong>
+    </dt>
+    <dd>
+    Returns true if the group contains at least one melee class that benefits from Curse of Recklessness.
+ Solo play returns false (no reason to recommend CoR).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ShouldUseFaerieFire"></a>
+    <strong>NAG:ShouldUseFaerieFire ()</strong>
+    </dt>
+    <dd>
+    Returns true if the group contains at least one melee class that benefits from Faerie Fire.
+ Solo play returns false (no reason to recommend FF).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:WFWeaponRemaining"></a>
+    <strong>NAG:WFWeaponRemaining (hand)</strong>
+    </dt>
+    <dd>
+    Returns remaining time (seconds) of Windfury Weapon on specified hand ("MH" or "OH"), or 0 if absent.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">hand</span>
+
+
+
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

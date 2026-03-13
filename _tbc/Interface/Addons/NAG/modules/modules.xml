@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.blizzard.com/wow/ui/" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <Script file="Modules\Services\LocaleManager.lua"/>
+
+    <!-- Mixins (load first) -->
+    <Script file="Modules\Prototypes\CoreModule.lua"/>
+    <Script file="Modules\Types.lua"/>
+
+    <Script file="Modules\Services\SpecCompat.lua"/>
+    <Script file="Modules\Prototypes\ClassBase.lua"/>
+    <Script file="Modules\KeybindManager.lua"/>
+    <Script file="Modules\Services\EventManager.lua"/>
+
+    <!-- Debug Base -->
+    <Script file="Modules\Debug\Profiling.lua"/>
+
+    <!-- Service Modules -->
+
+    <Script file="Modules\Services\NotificationManager.lua"/>
+    <Script file="Modules\Services\LeaderboardService.lua"/>
+    <Script file="Modules\Services\LeaderboardSyncService.lua"/>
+    <Script file="Modules\LeaderboardViewAdapter.lua"/>
+    <Script file="Modules\LeaderboardViewer.lua"/>
+    <Script file="Modules\Services\ResetManager.lua"/>
+    <Script file="Modules\Services\TimerManager.lua"/>
+    <Script file="Modules\Services\CacheRefreshManager.lua"/>
+    <Script file="Modules\Services\RenderingProfileStabilizer.lua"/>
+    <Script file="Modules\Services\RotationBundleInbox.lua"/>
+    <!--Script file="Modules\GarbageCollectorManager.lua"/>-->
+    <Script file="Modules\Services\EntityBehaviorValidator.lua"/>
+    <Script file="Modules\Services\SpecIndexMigration.lua"/>
+
+    <!-- APL Monitor Instrumentation Services -->
+    <!-- Temporarily disable APL Monitor Feed while reverting to legacy monitor -->
+    <Script file="Modules\Services\APLMonitorFeed.lua"/>
+    <Script file="Modules\Services\SnapshotManager.lua"/>
+
+    <!-- APL Evaluation Cache System -->
+    <Script file="Modules\SlashCommandHandler.lua"/>
+    <Script file="Modules\SpellbookManager.lua"/>
+    <Script file="Modules\handlers\EnhancedAuraHandlers.lua"/>
+    <Script file="Modules\handlers\CustomBehaviorOverrides.lua"/>
+
+
+    <Script file="Modules\schema-apl\SchemaModifications.lua"/>
+    <Script file="Modules\schema-apl\SchemaModifier.lua"/>
+    <Script file="Modules\schema-apl\SchemaAccessor.lua"/>
+    <Script file="Modules\schema-apl\SchemaUtils.lua"/>
+    <Script file="Modules\schema-apl\FieldFormatConverter.lua"/>
+
+
+    <!--Script file="Modules\schema-apl\APL.lua"/>-->
+    <!--Script file="Modules\schema-apl\APLSchema.lua"/-->
+    <!--Script file="Modules\schema-apl\APLExecutor.lua"/-->
+    <!--Script file="Modules\schema-apl\APLWalker.lua"/-->
+
+    <Script file="Modules\schema-apl\APLFunctionGenerator.lua"/>
+    <Script file="Modules\schema-apl\SchemaBrowser.lua"/>
+    <Script file="Modules\schema-apl\SchemaValidator.lua"/>
+    <Script file="Modules\schema-apl\APLValidatorFallback.lua"/>
+
+    <Script file="Modules\APLEvaluationCache.lua"/>
+
+    <!-- Schema Utilities -->
+    <Script file="Modules\Utils\WoWMaskUtils.lua"/>
+
+    <Script file="Modules\DataWalker.lua"/>
+    <Script file="Modules\DataManager.lua"/>
+    <Script file="Modules\DataLoader.lua"/>
+    <Script file="Modules\StateMachine.lua"/>
+    <Script file="Modules\StateManager.lua"/>
+    <Script file="Modules\DisplayManager.lua"/>
+    <Script file="Modules\HealingPriorityManager.lua"/>
+    <Script file="Modules\HealingTargetIndicator.lua"/>
+    <Script file="Modules\HealingDamageTracker.lua"/>
+
+    <Script file="Modules\ShareInGame.lua"/>
+    <Script file="Modules\SpellTrackingManager.lua"/>
+    <Script file="Modules\TooltipParser.lua"/>
+    <Script file="Modules\TrinketTrackingManager.lua"/>
+    <Script file="Modules\TrinketRegistrationManager.lua"/>
+    <Script file="Modules\TrinketCommunicationManager.lua"/>
+    <Script file="Modules\TTDManager.lua"/>
+    <Script file="Modules\Services\TaskManager.lua"/>
+    <Script file="Modules\SpellFlash.lua"/>
+    <Script file="Modules\OverlayManager.lua"/>
+    <Script file="Modules\BTK.lua"/>
+    <Script file="Modules\ImportExport.lua"/>
+    <Script file="Modules\Widgets\APLAutocomplete.lua"/>
+    <Script file="Modules\Widgets\SpellAutocomplete.lua"/>
+
+    <!-- AST System (Proto-Compatible) -->
+    <Script file="Modules\AST\ASTCore.lua"/>
+    <Script file="Modules\AST\ASTAction.lua"/>
+    <Script file="Modules\AST\ASTValue.lua"/>
+    <Script file="Modules\AST\ASTRotation.lua"/>
+    <Script file="Modules\AST\ASTVisitor.lua"/>
+    <Script file="Modules\AST\ASTSchema.lua"/>
+    <Script file="Modules\AST\ASTSchemaEmitter.lua"/>
+    <Script file="Modules\AST\ASTProto.lua"/>
+    <Script file="Modules\AST\ASTCache.lua"/>
+
+    <Script file="Modules\schema-apl\APLExecutor.lua"/>
+
+    <Script file="Modules\NAGStringParser.lua"/>
+
+    <Script file="Modules\Services\RotationConversionService.lua"/>
+
+    <Script file="Modules\BasicRotationStringEditor\GroupsVariablesEditor.lua"/>
+    <Script file="Modules\BasicRotationStringEditor\BasicPrePullEditor.lua"/>
+    <Script file="Modules\BasicRotationStringEditor\BasicRotationStringEditor.lua"/>
+    <Script file="Modules\RotationManager.lua"/>
+
+
+    <!-- RotationEditor Sub-Modules (load before main orchestrator) -->
+    <Script file="Modules\RotationEditor\SyntaxHighlighting.lua"/>
+    <Script file="Modules\RotationEditor\EditorUtils.lua"/>
+    <Script file="Modules\RotationEditor\Validation.lua"/>
+    <Script file="Modules\RotationEditor\Export.lua"/>
+    <Script file="Modules\RotationEditor\ArgumentRenderer.lua"/>
+    <Script file="Modules\RotationEditor\NodeInspector.lua"/>
+    <Script file="Modules\RotationEditor\NodeEditors.lua"/>
+    <Script file="Modules\RotationEditor\ASTEditor.lua"/>
+    <Script file="Modules\RotationEditor\TabRenderers.lua"/>
+    <Script file="Modules\RotationEditor\PrePullEditor.lua"/>
+    <Script file="Modules\RotationEditor\SmartSwitchingEditor.lua"/>
+    <Script file="Modules\RotationEditor\SpellLocationsEditor.lua"/>
+    <Script file="Modules\RotationEditor\RotationEditor.lua"/>
+
+    <Script file="Modules\Snapshotter.lua"/>
+    <Script file="Modules\Services\RequirementsChecker.lua"/>
+
+    <!-- SpellLearner (active v2 modules) -->
+    <Script file="Modules\SpellLearner\SpellAnalyzer.lua"/>
+    <Script file="Modules\SpellLearner\PredictionManager.lua"/>
+    <Script file="Modules\SpellLearner\PredictionAPI.lua"/>
+    <Script file="Modules\SpellLearner\AdvancedPredictionEngine.lua"/>
+    <Script file="Modules\Services\LearnedPredictionProvider.lua"/>
+
+    <!-- SpellLearner legacy stack intentionally disabled -->
+    <!-- <Script file="Modules\SpellLearner\SpellLearner-StateManager.lua"/> -->
+    <!-- <Script file="Modules\SpellLearner\SpellLearner.lua"/> -->
+    <!-- <Script file="Modules\SpellLearner\PredictionEngine.lua"/> -->
+
+
+
+    <Script file="Modules\Debug\APLMonitor.lua"/>
+    <!-- Temporarily disable APL Monitor AST module while running legacy monitor -->
+    <Script file="Modules\Debug\APLMonitorAST.lua"/>
+    <Script file="Modules\Debug\CLEUDebugger.lua"/>
+    <Script file="Modules\Debug\EncounterStopwatch.lua"/>
+    <Script file="Modules\Debug\AllocationProfiler.lua"/>
+
+    <!-- Diagnostics Modules -->
+    <Script file="Modules\Diagnostics\ProtoASTDiagnostics.lua"/>
+    <Script file="Modules\Diagnostics\NAGStringParserDiagnostics.lua"/>
+    <Script file="Modules\Diagnostics\CacheDiagnostics.lua"/>
+    <Script file="Modules\Diagnostics\RotationConversionDiagnostics.lua"/>
+    <Script file="Modules\Diagnostics\ASTFormatDiagnostics.lua"/>
+
+    <!-- Class Modules -->
+    <Script file="Modules\class\ShamanWeaveModule.lua"/>
+    <Script file="Modules\class\DruidSneakWeaveModule.lua"/>
+    <Script file="Modules\class\LeaderboardProviderBase.lua"/>
+    <Script file="Modules\class\PaladinTwistConstants.lua"/>
+    <Script file="Modules\class\PaladinSealTwistLeaderboard.lua"/>
+    <Script file="Modules\class\CritHealLeaderboardProvider.lua"/>
+    <Script file="Modules\class\WarlockShadowBoltConstants.lua"/>
+    <Script file="Modules\class\WarlockShadowBoltCritLeaderboard.lua"/>
+    <Script file="Modules\class\DeathKnightGargoyleLeaderboard.lua"/>
+    <Script file="Modules\class\ShamanWeaveBar.lua"/>
+    <Script file="Modules\PrePullTimeline.lua"/>
+    <Script file="Modules\PullTimerManager.lua"/>
+    <!-- Consolidated Uptime Tracker (replaces UptimeTrackerManager/UptimeTimeline/UptimeEditor) -->
+    <!--<Script file="Modules\UptimeTracker.lua"/>-->
+    <Script file="Modules\class\WarriorArmsCSWindow.lua"/>
+
+    <!-- New Modules -->
+    <Script file="Modules\UIBackground.lua"/>
+
+    <Script file="Modules\MinimapSelector.lua"/>
+    <Script file="Modules\FloatingSelector.lua"/>
+    <Script file="Modules\DisplayBroadcaster.lua"/>
+
+    <!-- UI Modules -->
+    <!--Script file="Modules\RotationSwitcher.lua"/-->
+
+    <!-- Boss Ability Observer (defensive pre-warn learning) -->
+    <!-- <Script file="Modules\BossAbilityObserver.lua"/> -->
+
+    <!-- PvP Tracker (enemy cooldowns, DR, interrupt alerts) -->
+    <Script file="Modules\PvPTracker\PvPSpellData.lua"/>
+    <Script file="Modules\PvPTracker\PvPDRData.lua"/>
+    <Script file="Modules\PvPTracker.lua"/>
+
+    <!-- Indiv test modules belong in tests\tests.xml DO NOT ENTER .Tests files here-->
+</Ui>

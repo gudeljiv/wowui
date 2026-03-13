@@ -1,0 +1,14 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <!-- Data Files - tbc 2.5.5.64508 -->
+    <Script file="schema.lua"/>
+    <Script file="ClassSpells.lua"/>
+    <Script file="ExtraSpells.lua"/>
+    <Script file="Talents.lua"/>
+    <Script file="TierSets.lua"/>
+    <Script file="Trinkets.lua"/>
+    <Script file="enchants.lua"/>
+    <Script file="Racials.lua"/>
+</Ui>
+
+

@@ -1,0 +1,538 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_NAG">Class NAG </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/APLAction_Casting.html">APLAction_Casting</a></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><a href="../modules/APLAction_Misc.html">APLAction_Misc</a></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><a href="../modules/APLDRW.html">APLDRW</a></li>
+  <li><a href="../modules/APLSequences.html">APLSequences</a></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><a href="../modules/APLValues_Aura.html">APLValues_Aura</a></li>
+  <li><strong>APLValues_AuraSets</strong></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><a href="../modules/APLValues_Boss.html">APLValues_Boss</a></li>
+  <li><a href="../modules/APLValues_Dot.html">APLValues_Dot</a></li>
+  <li><a href="../modules/APLValues_Encounter.html">APLValues_Encounter</a></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><a href="../modules/APLValues_Resources.html">APLValues_Resources</a></li>
+  <li><a href="../modules/APLValues_Runes.html">APLValues_Runes</a></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><a href="../modules/APLValues_Unit.html">APLValues_Unit</a></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><a href="../modules/APL_Class.html">APL_Class</a></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><a href="../modules/NAG.EnhancedAuraHandlers.html">NAG.EnhancedAuraHandlers</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>APLValues_AuraSets</code></h1>
+<p>
+
+</p>
+<p>"
+ APL Values and Actions for Aura Sets functionality in the NAG addon.</p>
+
+<p> This module provides functions for checking and managing aura sets, including item stat procs,
+ trinket procs, stat buff cooldowns, and related APL values and actions.
+ Maps to apl<em>values</em>aura_sets.go in the Go simulation.</p>
+
+<p> License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: Rakizi, Fonsas
+ Discord: https://discord.gg/ebonhold</p>
+
+
+<h2><a href="#Class_NAG">Class NAG </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AllTrinketStatProcsActive">NAG:AllTrinketStatProcsActive (statType1, statType2, statType3, minIcdSeconds)</a></td>
+	<td class="summary">All Item Proc Buffs Active
+ True if all proc trinkets (not use trinkets) that buff the specified stat type(s) are currently active, otherwise False.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AnyStatBuffCooldownsActive">NAG:AnyStatBuffCooldownsActive (statType1, statType2, statType3)</a></td>
+	<td class="summary">Any Stat Buff Cooldowns Active
+ True if any use trinkets (Major Cooldowns) that buff the specified stat type(s) are currently active, otherwise False.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AnyStatBuffCooldownsMinDuration">NAG:AnyStatBuffCooldownsMinDuration (statType1, statType2, statType3)</a></td>
+	<td class="summary">Gets the minimum remaining duration among active stat buff cooldowns (use trinkets) for the requested stat types.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AnyTrinketStatProcsActive">NAG:AnyTrinketStatProcsActive (statType1, statType2, statType3, minIcdSeconds)</a></td>
+	<td class="summary">Any Item Proc Buff Active
+ True if any proc trinkets (not use trinkets) that buff the specified stat type(s) are currently active, otherwise False.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AnyTrinketStatProcsAvailable">NAG:AnyTrinketStatProcsAvailable (statType1, statType2, statType3, minIcdSeconds)</a></td>
+	<td class="summary">Checks if any proc trinket that matches the requested stat types is currently available to trigger.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:NumEquippedStatProcTrinkets">NAG:NumEquippedStatProcTrinkets (statType1, statType2, statType3, minIcdSeconds)</a></td>
+	<td class="summary">Num Equipped Stat Proc Effects
+ Number of equipped passive item/enchant effects that buff the specified stat type(s) when they proc.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:NumStatBuffCooldowns">NAG:NumStatBuffCooldowns (statType1, statType2, statType3)</a></td>
+	<td class="summary">Num Stat Buff Cooldowns
+ Number of registered Major Cooldowns that buff the specified stat type(s) when they are cast.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:TrinketProcsMaxRemainingICD">NAG:TrinketProcsMaxRemainingICD (statType1, statType2, statType3, minIcdSeconds)</a></td>
+	<td class="summary">Item Procs Max Remaining ICD
+ Longest remaining ICD on any inactive proc trinkets (not use trinkets) that buff the specified stat type(s), or 0 if all are currently active.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:TrinketProcsMinRemainingTime">NAG:TrinketProcsMinRemainingTime (statType1, statType2, statType3, minIcdSeconds)</a></td>
+	<td class="summary">Item Procs Min Remaining Time
+ Shortest remaining duration on any active proc trinkets (not use trinkets) that buff the specified stat type(s), or infinity if none are currently active.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_NAG"></a>Class NAG </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:AllTrinketStatProcsActive"></a>
+    <strong>NAG:AllTrinketStatProcsActive (statType1, statType2, statType3, minIcdSeconds)</strong>
+    </dt>
+    <dd>
+    All Item Proc Buffs Active
+ True if all proc trinkets (not use trinkets) that buff the specified stat type(s) are currently active, otherwise False.  For stacking proc buffs, this condition also checks that the buff has been stacked to its maximum possible strength.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">statType1</span>
+        ? any First stat type to check (supports strings like "str", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType2</span>
+        ? any Second stat type to check (supports strings like "crit", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType3</span>
+        ? any Third stat type to check (supports strings like "haste", numbers, or nil)
+        </li>
+        <li><span class="parameter">minIcdSeconds</span>
+        ? number Minimum ICD threshold in seconds (defaults to 0)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if all matching proc trinkets have active procs, or if none are registered
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> allActive = NAG:<span class="function-name">AllTrinketStatProcsActive</span>(Types:<span class="function-name">GetType</span>(<span class="string">"Stat"</span>).HASTE)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AnyStatBuffCooldownsActive"></a>
+    <strong>NAG:AnyStatBuffCooldownsActive (statType1, statType2, statType3)</strong>
+    </dt>
+    <dd>
+    Any Stat Buff Cooldowns Active
+ True if any use trinkets (Major Cooldowns) that buff the specified stat type(s) are currently active, otherwise False.  For stacking buffs, this condition also checks that the buff has been stacked to its maximum possible strength after the cooldown is activated. Both manually casted cooldowns as well as cooldowns controlled by "Cast All Stat Buff Cooldowns" and "Autocast Other Cooldowns" actions are checked.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">statType1</span>
+        ? any First stat type to check (supports strings like "str", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType2</span>
+        ? any Second stat type to check (supports strings like "crit", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType3</span>
+        ? any Third stat type to check (supports strings like "haste", numbers, or nil)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if any matching use trinket cooldowns are active
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> anyActive = NAG:<span class="function-name">AnyStatBuffCooldownsActive</span>(Types:<span class="function-name">GetType</span>(<span class="string">"Stat"</span>).HASTE)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AnyStatBuffCooldownsMinDuration"></a>
+    <strong>NAG:AnyStatBuffCooldownsMinDuration (statType1, statType2, statType3)</strong>
+    </dt>
+    <dd>
+    Gets the minimum remaining duration among active stat buff cooldowns (use trinkets) for the requested stat types.
+ Returns 999 when no matching cooldown buffs are currently active to mirror simulator behavior.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">statType1</span>
+        ? any First stat type to check (supports strings, numbers, or nil)
+        </li>
+        <li><span class="parameter">statType2</span>
+        ? any Second stat type to check (supports strings, numbers, or nil)
+        </li>
+        <li><span class="parameter">statType3</span>
+        ? any Third stat type to check (supports strings, numbers, or nil)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        remaining duration in seconds, or 999 if none are active
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> minDuration = NAG:<span class="function-name">AnyStatBuffCooldownsMinDuration</span>(Types:<span class="function-name">GetType</span>(<span class="string">"Stat"</span>).HASTE)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AnyTrinketStatProcsActive"></a>
+    <strong>NAG:AnyTrinketStatProcsActive (statType1, statType2, statType3, minIcdSeconds)</strong>
+    </dt>
+    <dd>
+    Any Item Proc Buff Active
+ True if any proc trinkets (not use trinkets) that buff the specified stat type(s) are currently active, otherwise False.  For stacking proc buffs, this condition also checks that the buff has been stacked to its maximum possible strength.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">statType1</span>
+        ? any First stat type to check (supports strings like "str", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType2</span>
+        ? any Second stat type to check (supports strings like "crit", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType3</span>
+        ? any Third stat type to check (supports strings like "haste", numbers, or nil)
+        </li>
+        <li><span class="parameter">minIcdSeconds</span>
+        ? number Minimum ICD threshold in seconds (defaults to 0)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if any matching proc trinket has an active proc
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> anyActive = NAG:<span class="function-name">AnyTrinketStatProcsActive</span>(Types:<span class="function-name">GetType</span>(<span class="string">"Stat"</span>).HASTE)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AnyTrinketStatProcsAvailable"></a>
+    <strong>NAG:AnyTrinketStatProcsAvailable (statType1, statType2, statType3, minIcdSeconds)</strong>
+    </dt>
+    <dd>
+    Checks if any proc trinket that matches the requested stat types is currently available to trigger.
+ Availability is defined as the proc aura being inactive while the internal cooldown is ready.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">statType1</span>
+        ? any First stat type to check (supports strings, numbers, or nil)
+        </li>
+        <li><span class="parameter">statType2</span>
+        ? any Second stat type to check (supports strings, numbers, or nil)
+        </li>
+        <li><span class="parameter">statType3</span>
+        ? any Third stat type to check (supports strings, numbers, or nil)
+        </li>
+        <li><span class="parameter">minIcdSeconds</span>
+        ? number Minimum ICD threshold in seconds (optional)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if any matching proc trinket can proc immediately
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">if</span> NAG:<span class="function-name">AnyTrinketStatProcsAvailable</span>(Types:<span class="function-name">GetType</span>(<span class="string">"Stat"</span>).HASTE) <span class="keyword">then</span> ... <span class="keyword">end</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:NumEquippedStatProcTrinkets"></a>
+    <strong>NAG:NumEquippedStatProcTrinkets (statType1, statType2, statType3, minIcdSeconds)</strong>
+    </dt>
+    <dd>
+    Num Equipped Stat Proc Effects
+ Number of equipped passive item/enchant effects that buff the specified stat type(s) when they proc.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">statType1</span>
+        ? any First stat type to check (supports strings like "str", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType2</span>
+        ? any Second stat type to check (supports strings like "crit", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType3</span>
+        ? any Third stat type to check (supports strings like "haste", numbers, or nil)
+        </li>
+        <li><span class="parameter">minIcdSeconds</span>
+        ? number Minimum ICD threshold in seconds (defaults to 0)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        of matching equipped trinkets
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> count = NAG:<span class="function-name">NumEquippedStatProcTrinkets</span>(Types:<span class="function-name">GetType</span>(<span class="string">"Stat"</span>).HASTE)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:NumStatBuffCooldowns"></a>
+    <strong>NAG:NumStatBuffCooldowns (statType1, statType2, statType3)</strong>
+    </dt>
+    <dd>
+    Num Stat Buff Cooldowns
+ Number of registered Major Cooldowns that buff the specified stat type(s) when they are cast.  Both manually casted cooldowns as well as cooldowns controlled by "Cast All Stat Buff Cooldowns" and "Autocast Other Cooldowns" actions are included in the total count returned by this value.
+ NOTE: Currently only counts equipped OnUse trinkets (major cooldowns not yet implemented)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">statType1</span>
+        ? any First stat type to check (supports strings like "str", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType2</span>
+        ? any Second stat type to check (supports strings like "crit", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType3</span>
+        ? any Third stat type to check (supports strings like "haste", numbers, or nil)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        of equipped OnUse trinkets that provide matching stat buffs
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> numBuffs = NAG:<span class="function-name">NumStatBuffCooldowns</span>(Types:<span class="function-name">GetType</span>(<span class="string">"Stat"</span>).HASTE)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:TrinketProcsMaxRemainingICD"></a>
+    <strong>NAG:TrinketProcsMaxRemainingICD (statType1, statType2, statType3, minIcdSeconds)</strong>
+    </dt>
+    <dd>
+    Item Procs Max Remaining ICD
+ Longest remaining ICD on any inactive proc trinkets (not use trinkets) that buff the specified stat type(s), or 0 if all are currently active.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">statType1</span>
+        ? any First stat type to match (supports strings like "str", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType2</span>
+        ? any Second stat type to match (supports strings like "crit", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType3</span>
+        ? any Third stat type to match (supports strings like "haste", numbers, or nil)
+        </li>
+        <li><span class="parameter">minIcdSeconds</span>
+        ? number Minimum ICD in seconds to consider (optional)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        maximum remaining ICD time in seconds, or 0 if all matching proc trinkets are active
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> maxIcd = NAG:<span class="function-name">TrinketProcsMaxRemainingICD</span>(Types:<span class="function-name">GetType</span>(<span class="string">"Stat"</span>).HASTE)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:TrinketProcsMinRemainingTime"></a>
+    <strong>NAG:TrinketProcsMinRemainingTime (statType1, statType2, statType3, minIcdSeconds)</strong>
+    </dt>
+    <dd>
+    Item Procs Min Remaining Time
+ Shortest remaining duration on any active proc trinkets (not use trinkets) that buff the specified stat type(s), or infinity if none are currently active.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">statType1</span>
+        ? any First stat type to check (supports strings like "str", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType2</span>
+        ? any Second stat type to check (supports strings like "crit", numbers, or nil)
+        </li>
+        <li><span class="parameter">statType3</span>
+        ? any Third stat type to check (supports strings like "haste", numbers, or nil)
+        </li>
+        <li><span class="parameter">minIcdSeconds</span>
+        ? number Minimum ICD in seconds to consider (optional)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        remaining time among matching proc trinkets, or 999 if none are currently active
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> minTime = NAG:<span class="function-name">TrinketProcsMinRemainingTime</span>(Types:<span class="function-name">GetType</span>(<span class="string">"Stat"</span>).HASTE)</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_NAG">Class NAG </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/APLAction_Casting.html">APLAction_Casting</a></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><strong>APLAction_Misc</strong></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><a href="../modules/APLDRW.html">APLDRW</a></li>
+  <li><a href="../modules/APLSequences.html">APLSequences</a></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><a href="../modules/APLValues_Aura.html">APLValues_Aura</a></li>
+  <li><a href="../modules/APLValues_AuraSets.html">APLValues_AuraSets</a></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><a href="../modules/APLValues_Boss.html">APLValues_Boss</a></li>
+  <li><a href="../modules/APLValues_Dot.html">APLValues_Dot</a></li>
+  <li><a href="../modules/APLValues_Encounter.html">APLValues_Encounter</a></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><a href="../modules/APLValues_Resources.html">APLValues_Resources</a></li>
+  <li><a href="../modules/APLValues_Runes.html">APLValues_Runes</a></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><a href="../modules/APLValues_Unit.html">APLValues_Unit</a></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><a href="../modules/APL_Class.html">APL_Class</a></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><a href="../modules/NAG.EnhancedAuraHandlers.html">NAG.EnhancedAuraHandlers</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>APLAction_Misc</code></h1>
+<p>
+
+</p>
+<p>"
+ Miscellaneous APL action functions for the NAG addon</p>
+
+<p> This module provides utility functions for various miscellaneous actions and operations.</p>
+
+<p> License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: Rakizi, Fonsas
+ Discord: https://discord.gg/ebonhold</p>
+
+<p> luacheck: ignore GetSpellInfo</p>
+
+
+<h2><a href="#Class_NAG">Class NAG </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ActivateAllStatBuffProcAuras">NAG:ActivateAllStatBuffProcAuras (swapSet, statType1, statType2, statType3)</a></td>
+	<td class="summary">Activates all stat buff proc auras (not yet implemented).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ActivateAura">NAG:ActivateAura (auraId)</a></td>
+	<td class="summary">Activates an aura (alias to Cast for APL compatibility).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ActivateAuraWithStacks">NAG:ActivateAuraWithStacks (auraId, numStacks)</a></td>
+	<td class="summary">Activates an aura with a specific number of stacks.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AddComboPoints">NAG:AddComboPoints ()</a></td>
+	<td class="summary">Stub for AddComboPoints, which is not supported in this environment.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CancelAura">NAG:CancelAura (auraId)</a></td>
+	<td class="summary">Cancels an aura if it is active and shows an overlay for cancellation.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CancelMeta">NAG:CancelMeta ()</a></td>
+	<td class="summary">Shows a cancel prompt for Metamorphosis without cancelling automatically.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CastPaladinPrimarySeal">NAG:CastPaladinPrimarySeal ()</a></td>
+	<td class="summary">Casts the Paladin's primary seal (stub for compatibility).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ChangeTarget">NAG:ChangeTarget (newTarget)</a></td>
+	<td class="summary">Changes the current target to the specified unit and shows a targeting overlay.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CustomRotation">NAG:CustomRotation ()</a></td>
+	<td class="summary">Stub for CustomRotation, which is not supported in this environment.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ItemSwap">NAG:ItemSwap (swapSet)</a></td>
+	<td class="summary">Swaps items according to the provided swap set.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MoveDuration">NAG:MoveDuration (duration)</a></td>
+	<td class="summary">Placeholder for moving the player for a specific duration.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MoveToRange">NAG:MoveToRange (range)</a></td>
+	<td class="summary">No-op function for moving to a specified range (always returns false).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:TriggerICD">NAG:TriggerICD (auraId)</a></td>
+	<td class="summary">Triggers the internal cooldown for an aura.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_NAG"></a>Class NAG </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:ActivateAllStatBuffProcAuras"></a>
+    <strong>NAG:ActivateAllStatBuffProcAuras (swapSet, statType1, statType2, statType3)</strong>
+    </dt>
+    <dd>
+    Activates all stat buff proc auras (not yet implemented).
+ Maps to APLActionActivateAllStatBuffProcAuras in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">swapSet</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |number The item swap set to use (ItemSwapSet.Main, ItemSwapSet.Swap1, etc.)
+        </li>
+        <li><span class="parameter">statType1</span>
+            <span class="types"><span class="type">number</span></span>
+         First stat type to match (-1 for any)
+        </li>
+        <li><span class="parameter">statType2</span>
+            <span class="types"><span class="type">number</span></span>
+         Second stat type to match (-1 for any)
+        </li>
+        <li><span class="parameter">statType3</span>
+            <span class="types"><span class="type">number</span></span>
+         Third stat type to match (-1 for any)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns false (not implemented)
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ActivateAura"></a>
+    <strong>NAG:ActivateAura (auraId)</strong>
+    </dt>
+    <dd>
+    Activates an aura (alias to Cast for APL compatibility).
+ Maps to APLActionActivateAura in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the aura to activate
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        of the cast operation
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:ActivateAuraWithStacks"></a>
+    <strong>NAG:ActivateAuraWithStacks (auraId, numStacks)</strong>
+    </dt>
+    <dd>
+    Activates an aura with a specific number of stacks.
+ Maps to APLActionActivateAuraWithStacks in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the aura to activate
+        </li>
+        <li><span class="parameter">numStacks</span>
+            <span class="types"><span class="type">number</span></span>
+         The number of stacks to apply
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns true
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ActivateAuraWithStacks</span>(<span class="number">12345</span>, <span class="number">3</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AddComboPoints"></a>
+    <strong>NAG:AddComboPoints ()</strong>
+    </dt>
+    <dd>
+    Stub for AddComboPoints, which is not supported in this environment.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">nil</span></span>
+        returns nil and prints an error
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AddComboPoints</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CancelAura"></a>
+    <strong>NAG:CancelAura (auraId)</strong>
+    </dt>
+    <dd>
+    Cancels an aura if it is active and shows an overlay for cancellation.
+ Maps to APLActionCancelAura in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the aura to cancel
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the aura is not active or cancellation failed, true if successful
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:CancelMeta"></a>
+    <strong>NAG:CancelMeta ()</strong>
+    </dt>
+    <dd>
+    Shows a cancel prompt for Metamorphosis without cancelling automatically.
+ Displays a cancel overlay/symbol and text; does not alter rotation result.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns false so the APL evaluation continues
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:CastPaladinPrimarySeal"></a>
+    <strong>NAG:CastPaladinPrimarySeal ()</strong>
+    </dt>
+    <dd>
+    Casts the Paladin's primary seal (stub for compatibility).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns true
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CastPaladinPrimarySeal</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ChangeTarget"></a>
+    <strong>NAG:ChangeTarget (newTarget)</strong>
+    </dt>
+    <dd>
+    Changes the current target to the specified unit and shows a targeting overlay.
+ TODO: verify this is correct
+ Maps to APLActionChangeTarget in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">newTarget</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The new target unit (e.g., "target", "focus", "mouseover")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns true for APL compatibility
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ChangeTarget</span>(<span class="string">"focus"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CustomRotation"></a>
+    <strong>NAG:CustomRotation ()</strong>
+    </dt>
+    <dd>
+    Stub for CustomRotation, which is not supported in this environment.
+ Maps to APLActionCustomRotation in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">nil</span></span>
+        returns nil and prints an error
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CustomRotation</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ItemSwap"></a>
+    <strong>NAG:ItemSwap (swapSet)</strong>
+    </dt>
+    <dd>
+    Swaps items according to the provided swap set.
+ TODO: verify this is correct
+ Maps to APLActionItemSwap in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">swapSet</span>
+            <span class="types"><span class="type">any</span></span>
+         The swap set identifier (enum value, string, or table payload)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the swap overlay was shown, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ItemSwap</span>({<span class="number">12345</span>, <span class="number">67890</span>})</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:MoveDuration"></a>
+    <strong>NAG:MoveDuration (duration)</strong>
+    </dt>
+    <dd>
+    Placeholder for moving the player for a specific duration.
+ Maps to APLActionMoveDuration in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">duration</span>
+            <span class="types"><span class="type">number</span></span>
+         The duration to move for
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the action was successful
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">MoveDuration</span>(<span class="number">2</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:MoveToRange"></a>
+    <strong>NAG:MoveToRange (range)</strong>
+    </dt>
+    <dd>
+    No-op function for moving to a specified range (always returns false).
+ Maps to APLActionMove in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">range</span>
+            <span class="types"><span class="type">number</span></span>
+         The target range to move to
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns false
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:TriggerICD"></a>
+    <strong>NAG:TriggerICD (auraId)</strong>
+    </dt>
+    <dd>
+    Triggers the internal cooldown for an aura.
+ TODO: verify this is correct
+ Maps to APLActionTriggerICD in Go.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">auraId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the aura
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns true for APL compatibility
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">TriggerICD</span>(<span class="number">73643</span>)</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

@@ -12,7 +12,7 @@ MinimapButtonButtonOptions = {
 nil,
 "TOPRIGHT",
 -166.2307434082031,
--138.4127197265625,
+-137.7778778076172,
 },
 ["hidecompartment"] = false,
 ["buttonsPerRow"] = 100,

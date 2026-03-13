@@ -1,0 +1,585 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_NAG">Class NAG </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/APLAction_Casting.html">APLAction_Casting</a></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><a href="../modules/APLAction_Misc.html">APLAction_Misc</a></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><a href="../modules/APLDRW.html">APLDRW</a></li>
+  <li><strong>APLSequences</strong></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><a href="../modules/APLValues_Aura.html">APLValues_Aura</a></li>
+  <li><a href="../modules/APLValues_AuraSets.html">APLValues_AuraSets</a></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><a href="../modules/APLValues_Boss.html">APLValues_Boss</a></li>
+  <li><a href="../modules/APLValues_Dot.html">APLValues_Dot</a></li>
+  <li><a href="../modules/APLValues_Encounter.html">APLValues_Encounter</a></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><a href="../modules/APLValues_Resources.html">APLValues_Resources</a></li>
+  <li><a href="../modules/APLValues_Runes.html">APLValues_Runes</a></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><a href="../modules/APLValues_Unit.html">APLValues_Unit</a></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><a href="../modules/APL_Class.html">APL_Class</a></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><a href="../modules/NAG.EnhancedAuraHandlers.html">NAG.EnhancedAuraHandlers</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>APLSequences</code></h1>
+<p>
+
+</p>
+<p>"
+ APL sequence handlers for the NAG addon</p>
+
+<p> This module provides utility functions for APL sequences and sequence management.</p>
+
+<p> License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: Rakizi, Fonsas
+ Discord: https://discord.gg/ebonhold</p>
+
+
+<h2><a href="#Class_NAG">Class NAG </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ResetSequence">NAG:ResetSequence (name)</a></td>
+	<td class="summary">Resets a specific sequence by name.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ResetSequences">NAG:ResetSequences ()</a></td>
+	<td class="summary">Resets all sequences (non-strict).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ResetStrictSequence">NAG:ResetStrictSequence (name)</a></td>
+	<td class="summary">Resets a specific strict sequence by name.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ResetStrictSequences">NAG:ResetStrictSequences ()</a></td>
+	<td class="summary">Resets all strict sequences.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:Sequence">NAG:Sequence (name, forceMain, ...)</a></td>
+	<td class="summary">Initializes a progressive sequence of actions (spell IDs or functions) to be executed in order.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:SequenceIsActive">NAG:SequenceIsActive (name)</a></td>
+	<td class="summary">Checks if a sequence is currently active (regular or strict).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:SequenceIsComplete">NAG:SequenceIsComplete (name)</a></td>
+	<td class="summary">Checks if a sequence is complete (all actions performed).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:SequenceIsReady">NAG:SequenceIsReady (name, ...)</a></td>
+	<td class="summary">Checks if a sequence is ready to be executed (all spells off cooldown).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:SequenceTimeToReady">NAG:SequenceTimeToReady (sequenceName, ...)</a></td>
+	<td class="summary">Returns the maximum time to ready for a sequence (seconds until all spells are available).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:StrictSequence">NAG:StrictSequence (name, forceMain, ...)</a></td>
+	<td class="summary">Initializes a strict sequence of actions (spell IDs or wait commands) to be executed in order.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:StrictSequenceIsReady">NAG:StrictSequenceIsReady (sequence)</a></td>
+	<td class="summary">Checks if a strict sequence is ready to be executed (all spells off cooldown).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:StrictSequenceTimeToReady">NAG:StrictSequenceTimeToReady (sequence)</a></td>
+	<td class="summary">Returns the maximum time to ready for a strict sequence (seconds until all spells are available).</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_NAG"></a>Class NAG </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:ResetSequence"></a>
+    <strong>NAG:ResetSequence (name)</strong>
+    </dt>
+    <dd>
+    Resets a specific sequence by name.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The name of the sequence to reset.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the sequence is reset successfully.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ResetSequence</span>(<span class="string">"sequenceName"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ResetSequences"></a>
+    <strong>NAG:ResetSequences ()</strong>
+    </dt>
+    <dd>
+    Resets all sequences (non-strict).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the sequences are reset successfully.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ResetSequences</span>() <span class="comment">-- Reset all regular sequences</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ResetStrictSequence"></a>
+    <strong>NAG:ResetStrictSequence (name)</strong>
+    </dt>
+    <dd>
+    Resets a specific strict sequence by name.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The name of the strict sequence to reset.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the strict sequence is reset successfully.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ResetStrictSequence</span>(<span class="string">"strictSequenceName"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ResetStrictSequences"></a>
+    <strong>NAG:ResetStrictSequences ()</strong>
+    </dt>
+    <dd>
+    Resets all strict sequences.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the strict sequences are reset successfully.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ResetStrictSequences</span>() <span class="comment">-- Reset all strict sequences</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:Sequence"></a>
+    <strong>NAG:Sequence (name, forceMain, ...)</strong>
+    </dt>
+    <dd>
+    Initializes a progressive sequence of actions (spell IDs or functions) to be executed in order.
+ A Sequence progresses after each spell cast, preserving state between rotation cycles.
+ Does NOT require all spells to be ready before starting (unlike StrictSequence).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The name of the sequence.
+        </li>
+        <li><span class="parameter">forceMain</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil Optional flag to force first spell to main frame (default: true).
+        </li>
+        <li><span class="parameter">...</span>
+         any Variable arguments: spell IDs or functions to perform in sequence.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the sequence is active and should block main rotation, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">Sequence</span>(<span class="string">"sequenceName"</span>, <span class="keyword">nil</span>, spell1, spell2, spell3)</pre></li>
+        <li><pre class="example">NAG:<span class="function-name">Sequence</span>(<span class="string">"sequenceName"</span>, <span class="keyword">true</span>, spell1, spell2, spell3) <span class="comment">-- Force first spell to main frame</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:SequenceIsActive"></a>
+    <strong>NAG:SequenceIsActive (name)</strong>
+    </dt>
+    <dd>
+    Checks if a sequence is currently active (regular or strict).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The name of the sequence.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the sequence is active, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">SequenceIsActive</span>(<span class="string">"BearWeave"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:SequenceIsComplete"></a>
+    <strong>NAG:SequenceIsComplete (name)</strong>
+    </dt>
+    <dd>
+    Checks if a sequence is complete (all actions performed).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The name of the sequence.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the sequence is complete, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">SequenceIsComplete</span>(<span class="string">"sequenceName"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:SequenceIsReady"></a>
+    <strong>NAG:SequenceIsReady (name, ...)</strong>
+    </dt>
+    <dd>
+    Checks if a sequence is ready to be executed (all spells off cooldown).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The name of the sequence.
+        </li>
+        <li><span class="parameter">...</span>
+         number The spells in the sequence.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the sequence is ready, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">SequenceIsReady</span>(<span class="string">"sequenceName"</span>, <span class="number">73643</span>, <span class="number">12345</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:SequenceTimeToReady"></a>
+    <strong>NAG:SequenceTimeToReady (sequenceName, ...)</strong>
+    </dt>
+    <dd>
+    Returns the maximum time to ready for a sequence (seconds until all spells are available).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sequenceName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The name of the sequence.
+        </li>
+        <li><span class="parameter">...</span>
+         number The spells in the sequence.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        maximum time to ready for the sequence.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">SequenceTimeToReady</span>(<span class="string">"sequenceName"</span>, <span class="number">73643</span>, <span class="number">12345</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:StrictSequence"></a>
+    <strong>NAG:StrictSequence (name, forceMain, ...)</strong>
+    </dt>
+    <dd>
+    Initializes a strict sequence of actions (spell IDs or wait commands) to be executed in order.
+ A StrictSequence only activates when ALL listed actions are ready and castable at once.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">name</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The name of the sequence.
+        </li>
+        <li><span class="parameter">forceMain</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil Optional flag to force first spell to main frame (default: true).
+        </li>
+        <li><span class="parameter">...</span>
+         any Variable arguments: spell IDs (number) or wait commands (string) to perform in sequence.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the sequence is active and should block main rotation, false otherwise.
+    </ol>
+
+
+    <h3>See also:</h3>
+    <ul>
+    </ul>
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">StrictSequence</span>(<span class="string">"sequenceName"</span>, <span class="number">12345</span>) <span class="comment">-- forceMain optional: one action =&gt; defaults to true</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">StrictSequence</span>(<span class="string">"sequenceName"</span>, <span class="keyword">nil</span>, <span class="number">12345</span>, <span class="string">"NAG:Wait(2)"</span>, <span class="number">67890</span>)</pre></li>
+        <li><pre class="example">NAG:<span class="function-name">StrictSequence</span>(<span class="string">"sequenceName"</span>, <span class="keyword">true</span>, <span class="number">12345</span>, <span class="number">67890</span>) <span class="comment">-- Force first spell to main frame</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:StrictSequenceIsReady"></a>
+    <strong>NAG:StrictSequenceIsReady (sequence)</strong>
+    </dt>
+    <dd>
+    Checks if a strict sequence is ready to be executed (all spells off cooldown).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sequence</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         The spells in the strict sequence.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the strict sequence is ready, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">StrictSequenceIsReady</span>({<span class="number">73643</span>, <span class="number">12345</span>})</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:StrictSequenceTimeToReady"></a>
+    <strong>NAG:StrictSequenceTimeToReady (sequence)</strong>
+    </dt>
+    <dd>
+    Returns the maximum time to ready for a strict sequence (seconds until all spells are available).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sequence</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         The spells in the strict sequence.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        maximum time to ready for the strict sequence.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">StrictSequenceTimeToReady</span>({<span class="number">73643</span>, <span class="number">12345</span>})</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

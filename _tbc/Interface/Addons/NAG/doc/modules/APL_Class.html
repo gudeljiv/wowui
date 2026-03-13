@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_NAG">Class NAG </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/APLAction_Casting.html">APLAction_Casting</a></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><a href="../modules/APLAction_Misc.html">APLAction_Misc</a></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><a href="../modules/APLDRW.html">APLDRW</a></li>
+  <li><a href="../modules/APLSequences.html">APLSequences</a></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><a href="../modules/APLValues_Aura.html">APLValues_Aura</a></li>
+  <li><a href="../modules/APLValues_AuraSets.html">APLValues_AuraSets</a></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><a href="../modules/APLValues_Boss.html">APLValues_Boss</a></li>
+  <li><a href="../modules/APLValues_Dot.html">APLValues_Dot</a></li>
+  <li><a href="../modules/APLValues_Encounter.html">APLValues_Encounter</a></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><a href="../modules/APLValues_Resources.html">APLValues_Resources</a></li>
+  <li><a href="../modules/APLValues_Runes.html">APLValues_Runes</a></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><a href="../modules/APLValues_Unit.html">APLValues_Unit</a></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><strong>APL_Class</strong></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><a href="../modules/NAG.EnhancedAuraHandlers.html">NAG.EnhancedAuraHandlers</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>APL_Class</code></h1>
+<p>
+
+</p>
+<p>"
+ Class-specific APL logic for the NAG addon</p>
+
+<p> This module provides class-specific APL logic for the NAG addon</p>
+
+<p> License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: Rakizi, Fonsas
+ Discord: https://discord.gg/ebonhold
+ ~~~~~~~~~~ LOCALIZE ~~~~~~~~~~</p>
+
+
+<h2><a href="#Class_NAG">Class NAG </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AfflictionExhaleWindow">NAG:AfflictionExhaleWindow ()</a></td>
+	<td class="summary">Returns the configured Soul Swap Exhale window in seconds.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:BrewmasterMonkCurrentStaggerPercent">NAG:BrewmasterMonkCurrentStaggerPercent ()</a></td>
+	<td class="summary">Returns the current stagger percentage for a Brewmaster Monk.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CatExcessEnergy">NAG:CatExcessEnergy ()</a></td>
+	<td class="summary">Returns the excess energy for a Feral Druid (not yet implemented).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CatNewSavageRoarDuration">NAG:CatNewSavageRoarDuration ()</a></td>
+	<td class="summary">Calculates the duration of the new Savage Roar for Feral Druids.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DruidCurrentEclipsePhase">NAG:DruidCurrentEclipsePhase ()</a></td>
+	<td class="summary">Determine the current Eclipse phase for a Balance Druid.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MageCurrentCombustionDotEstimate">NAG:MageCurrentCombustionDotEstimate ()</a></td>
+	<td class="summary">Returns the estimated DoT damage for a Mage's Combustion.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:Pooling">NAG:Pooling ()</a></td>
+	<td class="summary">Triggers pooling visual overlay and WeakAuras event.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ShamanCanSnapshotStrongerFireElemental">NAG:ShamanCanSnapshotStrongerFireElemental ()</a></td>
+	<td class="summary">Checks if current buffs would create a stronger Fire Elemental than currently active.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ShamanFireElementalDuration">NAG:ShamanFireElementalDuration ()</a></td>
+	<td class="summary">Gets the remaining or total duration of Fire Elemental, accounting for Glyph of Fire Elemental if present.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WarlockCurrentPetMana">NAG:WarlockCurrentPetMana ()</a></td>
+	<td class="summary">Gets the current mana of the Warlock's pet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WarlockCurrentPetManaPercent">NAG:WarlockCurrentPetManaPercent ()</a></td>
+	<td class="summary">Gets the current mana percent of the Warlock's pet.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WarlockHandOfGuldanInFlight">NAG:WarlockHandOfGuldanInFlight ()</a></td>
+	<td class="summary">Checks if Hand of Guldan is currently in flight</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WarlockHauntInFlight">NAG:WarlockHauntInFlight ()</a></td>
+	<td class="summary">Checks if Haunt is currently in flight</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WarlockPetIsActive">NAG:WarlockPetIsActive ()</a></td>
+	<td class="summary">Checks if the Warlock's pet is currently active.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WarlockShouldRecastDrainSoul">NAG:WarlockShouldRecastDrainSoul ()</a></td>
+	<td class="summary">Determines if the current Drain Soul should be recast for a better snapshot (not yet implemented).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:WarlockShouldRefreshCorruption">NAG:WarlockShouldRefreshCorruption (unit)</a></td>
+	<td class="summary">Determines if the current Corruption should be recast for a better snapshot.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_NAG"></a>Class NAG </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:AfflictionExhaleWindow"></a>
+    <strong>NAG:AfflictionExhaleWindow ()</strong>
+    </dt>
+    <dd>
+    Returns the configured Soul Swap Exhale window in seconds.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        window duration in seconds
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:BrewmasterMonkCurrentStaggerPercent"></a>
+    <strong>NAG:BrewmasterMonkCurrentStaggerPercent ()</strong>
+    </dt>
+    <dd>
+    Returns the current stagger percentage for a Brewmaster Monk.
+ Calculates the percentage of maximum health currently being staggered by checking
+ Light, Moderate and Heavy stagger debuffs.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current stagger amount as a percentage of max health (0-100)
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> staggerPct = NAG:<span class="function-name">BrewmasterMonkCurrentStaggerPercent</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CatExcessEnergy"></a>
+    <strong>NAG:CatExcessEnergy ()</strong>
+    </dt>
+    <dd>
+    Returns the excess energy for a Feral Druid (not yet implemented).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        returns 0 (not implemented).
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CatExcessEnergy</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CatNewSavageRoarDuration"></a>
+    <strong>NAG:CatNewSavageRoarDuration ()</strong>
+    </dt>
+    <dd>
+    Calculates the duration of the new Savage Roar for Feral Druids.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        of Savage Roar.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CatNewSavageRoarDuration</span>() &gt;= x</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:DruidCurrentEclipsePhase"></a>
+    <strong>NAG:DruidCurrentEclipsePhase ()</strong>
+    </dt>
+    <dd>
+    Determine the current Eclipse phase for a Balance Druid.
+ Returns "SolarPhase", "LunarPhase", or "NeutralPhase" if neither is active.
+ Uses GetEclipseDirection API when available, falls back to aura checking.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        current Eclipse phase ("SolarPhase", "LunarPhase", or "NeutralPhase").
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">DruidCurrentEclipsePhase</span>() == <span class="string">"SolarPhase"</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:MageCurrentCombustionDotEstimate"></a>
+    <strong>NAG:MageCurrentCombustionDotEstimate ()</strong>
+    </dt>
+    <dd>
+    Returns the estimated DoT damage for a Mage's Combustion.
+ Uses actual tracked Ignite values to calculate Combustion damage, accounting for Glyph of Combustion,
+ haste scaling, and crit chance. Only considers Ignite as the source DoT.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        estimated total damage from Combustion based on current Ignite state.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">MageCurrentCombustionDotEstimate</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:Pooling"></a>
+    <strong>NAG:Pooling ()</strong>
+    </dt>
+    <dd>
+    Triggers pooling visual overlay and WeakAuras event.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns false.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">Pooling</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ShamanCanSnapshotStrongerFireElemental"></a>
+    <strong>NAG:ShamanCanSnapshotStrongerFireElemental ()</strong>
+    </dt>
+    <dd>
+    Checks if current buffs would create a stronger Fire Elemental than currently active.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if current buffs would create a stronger Fire Elemental.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ShamanCanSnapshotStrongerFireElemental</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ShamanFireElementalDuration"></a>
+    <strong>NAG:ShamanFireElementalDuration ()</strong>
+    </dt>
+    <dd>
+    Gets the remaining or total duration of Fire Elemental, accounting for Glyph of Fire Elemental if present.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        in seconds (remaining if active, otherwise total possible duration).
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ShamanFireElementalDuration</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:WarlockCurrentPetMana"></a>
+    <strong>NAG:WarlockCurrentPetMana ()</strong>
+    </dt>
+    <dd>
+    Gets the current mana of the Warlock's pet.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current mana of the pet.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">WarlockCurrentPetMana</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:WarlockCurrentPetManaPercent"></a>
+    <strong>NAG:WarlockCurrentPetManaPercent ()</strong>
+    </dt>
+    <dd>
+    Gets the current mana percent of the Warlock's pet.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current mana percent (0-100) of the pet.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">WarlockCurrentPetManaPercent</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:WarlockHandOfGuldanInFlight"></a>
+    <strong>NAG:WarlockHandOfGuldanInFlight ()</strong>
+    </dt>
+    <dd>
+    Checks if Hand of Guldan is currently in flight
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if Hand of Guldan is in flight, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">WarlockHandOfGuldanInFlight</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:WarlockHauntInFlight"></a>
+    <strong>NAG:WarlockHauntInFlight ()</strong>
+    </dt>
+    <dd>
+    Checks if Haunt is currently in flight
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if Haunt is in flight, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">WarlockHauntInFlight</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:WarlockPetIsActive"></a>
+    <strong>NAG:WarlockPetIsActive ()</strong>
+    </dt>
+    <dd>
+    Checks if the Warlock's pet is currently active.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the pet is active, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">WarlockPetIsActive</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:WarlockShouldRecastDrainSoul"></a>
+    <strong>NAG:WarlockShouldRecastDrainSoul ()</strong>
+    </dt>
+    <dd>
+    Determines if the current Drain Soul should be recast for a better snapshot (not yet implemented).
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        returns false (not implemented).
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">WarlockShouldRecastDrainSoul</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:WarlockShouldRefreshCorruption"></a>
+    <strong>NAG:WarlockShouldRefreshCorruption (unit)</strong>
+    </dt>
+    <dd>
+    Determines if the current Corruption should be recast for a better snapshot.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if Corruption should be refreshed, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">WarlockShouldRefreshCorruption</span>(<span class="string">"unit"</span>)</pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

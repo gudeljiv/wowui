@@ -1,0 +1,26 @@
+<Bindings>
+    <Binding name="NAG_TOGGLE_DEBUG_FRAME" category="Next Action Guide">
+        NAG:GetModule("APLMonitor"):Toggle()
+    </Binding>
+    <Binding name="NAG_NEXT_ROTATION" category="Next Action Guide">
+        NAG:GetClassModule():CycleRotation("next")
+    </Binding>
+    <Binding name="NAG_PREV_ROTATION" category="Next Action Guide">
+        NAG:GetClassModule():CycleRotation("prev")
+    </Binding>
+    <Binding name="NAG_TOGGLE_ROTATION_MANAGER" category="Next Action Guide">
+        NAG:GetModule("RotationManager"):Toggle()
+    </Binding>
+    <Binding name="NAG_TOGGLE_AOE_OVERRIDE" category="Next Action Guide">
+        NAG:GetModule("TTDManager"):ToggleSingleTargetOverride()
+    </Binding>
+    <Binding name="NAG_TOGGLE_COOLDOWNS_FRAMES" category="Next Action Guide">
+        local dm = NAG:GetModule("DisplayManager"); if dm and dm.SetLeftFramesEnabled and dm.IsLeftFramesEnabled then dm:SetLeftFramesEnabled(not dm:IsLeftFramesEnabled()) end
+    </Binding>
+    <Binding name="NAG_TOGGLE_AOE_FRAME" category="Next Action Guide">
+        local dm = NAG:GetModule("DisplayManager"); if dm and dm.SetAoeFrameEnabled and dm.IsAoeFrameEnabled then dm:SetAoeFrameEnabled(not dm:IsAoeFrameEnabled()) end
+    </Binding>
+    <Binding name="NAG_TAKE_SNAPSHOT" category="Next Action Guide">
+        NAG:GetModule("SnapshotManager"):TakeSnapshot("keybind")
+    </Binding>
+</Bindings>

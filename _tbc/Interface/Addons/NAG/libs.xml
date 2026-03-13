@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.blizzard.com/wow/ui/" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <!-- Core Libraries -->
+    <Include file="libs\Ace3.xml"/>
+    <Script file="libs\LibCompress\LibCompress.lua"/>
+    <Script file="libs\LibDataBroker-1.1\LibDataBroker-1.1.lua"/>
+    <Script file="libs\LibDBIcon-1.0\LibDBIcon-1.0.lua"/>
+    <Script file="libs\LibRangeCheck-3.0\LibRangeCheck-3.0.lua"/>
+    <Script file="libs\LibSharedMedia-3.0\LibSharedMedia-3.0.lua"/>
+    <Script file="libs\LibCustomGlow-1.0\LibCustomGlow-1.0.lua"/>
+    <Script file="libs\LibBase64-1.0\LibBase64-1.0.lua"/>
+    <Script file="libs\LibUIDropDownMenu-4.0\LibUIDropDownMenu.lua"/>
+    <Include file="libs\LibJSON-1.0\lib.xml"/>
+    <Include file="libs\AceGUI-3.0-SharedMediaWidgets\widget.xml"/>
+
+    <!-- Embedded Libraries -->
+    <Script file="libs\ForAllIndentsAndPurposes.lua"/>
+</Ui>

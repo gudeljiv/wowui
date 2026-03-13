@@ -1,0 +1,43 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+    <!-- APL Handlers -->
+    <Script file="APL_Class.lua"/>
+
+    <Script file="AuraUtils.lua"/>
+    <!-- APL Actions -->
+    <Script file="APLAction_Casting.lua"/>
+    <Script file="APLAction_Misc.lua"/>
+    <Script file="APLAction_Timing.lua"/>
+
+    <Script file="APLDRW.lua"/>
+    <Script file="APLSequences.lua"/>
+    <Script file="APLTotemTracking.lua"/>
+
+    <!-- APL Values -->
+    <Script file="APLValues__TierSets.lua"/>
+    <Script file="APLValues__Tinkers.lua"/>
+    <Script file="APLValues_Aura.lua"/>
+    <Script file="APLValues_AuraSets.lua"/>
+    <Script file="APLValues_AutoAttacks.lua"/>
+    <Script file="APLValues_Boss.lua"/>
+    <Script file="APLValues_Dot.lua"/>
+    <Script file="APLValues_Encounter.lua"/>
+    <Script file="APLValues_GCD.lua"/>
+    <Script file="APLValues_Misc.lua"/>
+    <Script file="APLValues_Operators.lua"/>
+    <Script file="APLValues_PvP.lua"/>
+    <Script file="APLValues_Properties.lua"/>
+    <Script file="APLValues_Resources.lua"/>
+    <Script file="APLValues_Runes.lua"/>
+    <Script file="APLValues_Spell.lua"/>
+    <!--Script file="APLValues_Snapshots.lua"/-->
+    <Script file="APLValues_Stats.lua"/>
+    <Script file="APLValues_Unit.lua"/>
+    <Script file="APLValues_Variables.lua"/>
+
+    <!-- APL Actions -->
+    <Script file="APLAction_Groups.lua"/>
+
+    <!-- APL Aliases - Load last to ensure all functions are defined -->
+    <Script file="APL_Aliases.lua"/>
+</Ui>

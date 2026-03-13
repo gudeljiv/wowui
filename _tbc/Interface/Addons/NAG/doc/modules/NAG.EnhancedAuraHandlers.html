@@ -1,0 +1,3417 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_CacheRefreshManager">Class CacheRefreshManager </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/APLAction_Casting.html">APLAction_Casting</a></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><a href="../modules/APLAction_Misc.html">APLAction_Misc</a></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><a href="../modules/APLDRW.html">APLDRW</a></li>
+  <li><a href="../modules/APLSequences.html">APLSequences</a></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><a href="../modules/APLValues_Aura.html">APLValues_Aura</a></li>
+  <li><a href="../modules/APLValues_AuraSets.html">APLValues_AuraSets</a></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><a href="../modules/APLValues_Boss.html">APLValues_Boss</a></li>
+  <li><a href="../modules/APLValues_Dot.html">APLValues_Dot</a></li>
+  <li><a href="../modules/APLValues_Encounter.html">APLValues_Encounter</a></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><a href="../modules/APLValues_Resources.html">APLValues_Resources</a></li>
+  <li><a href="../modules/APLValues_Runes.html">APLValues_Runes</a></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><a href="../modules/APLValues_Unit.html">APLValues_Unit</a></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><a href="../modules/APL_Class.html">APL_Class</a></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><strong>NAG.EnhancedAuraHandlers</strong></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>NAG.EnhancedAuraHandlers</code></h1>
+<p>
+
+</p>
+<p>"
+ Enhanced aura detection system with performance tiers and WoW API standard filters
+ License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: @Rakizi, @Fonsas
+ Discord: https://discord.gg/ebonhold</p>
+
+
+<h2><a href="#Class_CacheRefreshManager">Class CacheRefreshManager </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AddConditionalMapping">NAG:AddConditionalMapping (spellId, conditions, logic)</a></td>
+	<td class="summary">Adds a conditional mapping (complex logic with OR/AND/NOT).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AddCustomDamageHandler">NAG:AddCustomDamageHandler (spellId, handlerName)</a></td>
+	<td class="summary">Adds a custom damage handler for a spell ID.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AddCustomMapping">NAG:AddCustomMapping (spellId, handler, params)</a></td>
+	<td class="summary">Adds a custom mapping (custom handler for special cases).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AddMultiMapping">NAG:AddMultiMapping (spellId, auras, mappingType)</a></td>
+	<td class="summary">Adds a multi-mapping (one spell ID maps to multiple auras).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:AddSpellMapping">NAG:AddSpellMapping (spellId, mappedId, mappingType)</a></td>
+	<td class="summary">Adds a spell mapping to the unified mapping system.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ClearMultiMappings">NAG:ClearMultiMappings (mappingType)</a></td>
+	<td class="summary">Clear all multi-mappings of a specific type.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CountRaidMembersWithAura">NAG:CountRaidMembersWithAura (spellId, filter)</a></td>
+	<td class="summary">Counts unique group/raid members who have a player-cast aura active.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetCustomDamage">NAG:GetCustomDamage (spellId, unit)</a></td>
+	<td class="summary">Gets custom damage for a spell ID using the appropriate handler.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetMaxStacks">NAG:GetMaxStacks (spellId)</a></td>
+	<td class="summary">Gets the maximum stacks for a spell ID.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetMultiMappings">NAG:GetMultiMappings (mappingType)</a></td>
+	<td class="summary">Gets all multi-mappings of a specific type.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetSpellPriority">NAG:GetSpellPriority (spellId, debuffType)</a></td>
+	<td class="summary">Gets the priority for a spell ID in a debuff type.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:HasCustomDamageHandler">NAG:HasCustomDamageHandler (spellId)</a></td>
+	<td class="summary">Checks if a spell ID has a custom damage handler.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:HasHigherPriority">NAG:HasHigherPriority (competingSpellId, originalSpellId, debuffType)</a></td>
+	<td class="summary">Checks if one spell has higher priority than another in a debuff type.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RaidUnitAura">NAG:RaidUnitAura (spellId, filter)</a></td>
+	<td class="summary">Check if anyone in raid has an aura.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RaidUnitBuff">NAG:RaidUnitBuff (spellId, filter)</a></td>
+	<td class="summary">Check if anyone in raid has a buff.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RaidUnitBuffPlayer">NAG:RaidUnitBuffPlayer (spellId)</a></td>
+	<td class="summary">Check if anyone in raid has the player's buff.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RaidUnitDebuff">NAG:RaidUnitDebuff (spellId, filter)</a></td>
+	<td class="summary">Check if anyone in raid has a debuff.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RaidUnitDebuffPlayer">NAG:RaidUnitDebuffPlayer (spellId)</a></td>
+	<td class="summary">Check if anyone in raid has the player's debuff.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RemoveCustomDamageHandler">NAG:RemoveCustomDamageHandler (spellId)</a></td>
+	<td class="summary">Removes a custom damage handler for a spell ID.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RemoveMultiMapping">NAG:RemoveMultiMapping (spellId, mappingType)</a></td>
+	<td class="summary">Removes a multi-mapping from the unified mapping system.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RemoveSpellMapping">NAG:RemoveSpellMapping (spellId, mappingType)</a></td>
+	<td class="summary">Removes a spell mapping from the unified mapping system.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ResolveSpellId">NAG:ResolveSpellId (spellId, mappingType)</a></td>
+	<td class="summary">Resolves a spell ID through the unified mapping system (legacy compatibility).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:ResolveSpellIdForCasting">NAG:ResolveSpellIdForCasting (spellId)</a></td>
+	<td class="summary">Centralized spell ID resolution for casting.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitAura">NAG:UnitAura (unit, spellId, filter, exactIdMatch)</a></td>
+	<td class="summary">Core function that handles all aura detection logic with integrated smart detection.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitAuraMulti">NAG:UnitAuraMulti (unit, ...)</a></td>
+	<td class="summary">Check for multiple spells on a unit.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitBuff">NAG:UnitBuff (unit, spellId, filter, exactIdMatch)</a></td>
+	<td class="summary">Check for buffs on a unit.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitBuffMulti">NAG:UnitBuffMulti (unit, ...)</a></td>
+	<td class="summary">Check for multiple buffs on a unit.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitDebuff">NAG:UnitDebuff (unit, spellId, filter, exactIdMatch)</a></td>
+	<td class="summary">Check for debuffs on a unit.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitDebuffGlobal">NAG:UnitDebuffGlobal (unit, spellId)</a></td>
+	<td class="summary">Check for any debuff on a unit (global scope).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:UnitDebuffMulti">NAG:UnitDebuffMulti (unit, ...)</a></td>
+	<td class="summary">Check for multiple debuffs on a unit.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:AddConditionalMapping">cacherefreshmanager:AddConditionalMapping (spellId, conditions, logic)</a></td>
+	<td class="summary">Add a conditional mapping (complex logic with OR/AND/NOT)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:AddCustomDamageHandler">cacherefreshmanager:AddCustomDamageHandler (spellId, handlerName)</a></td>
+	<td class="summary">Adds a custom damage handler for a spell ID</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:AddCustomMapping">cacherefreshmanager:AddCustomMapping (spellId, handler, params)</a></td>
+	<td class="summary">Add a custom mapping (custom handler for special cases)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:AddMultiMapping">cacherefreshmanager:AddMultiMapping (spellId, auras, mappingType)</a></td>
+	<td class="summary">Add a multi-mapping (one spell ID maps to multiple auras)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:AddOverride">cacherefreshmanager:AddOverride (spellId, auraType)</a></td>
+	<td class="summary">Add spell to override list</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:AddSpellMapping">cacherefreshmanager:AddSpellMapping (spellId, mappedId, mappingType)</a></td>
+	<td class="summary">Adds a spell mapping</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:AuraNumStacks">cacherefreshmanager:AuraNumStacks (spellId, sourceUnit)</a></td>
+	<td class="summary">Gets the number of stacks for a spell ID (centralized version of AuraNumStacks)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:AutoDetectAuraType">cacherefreshmanager:AutoDetectAuraType (unit, spellId)</a></td>
+	<td class="summary">Auto-detects aura type by trying both filters and returning the one that exists</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:CacheResult">cacherefreshmanager:CacheResult (cacheKey, result)</a></td>
+	<td class="summary">Cache aura result</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:ClearCache">cacherefreshmanager:ClearCache ()</a></td>
+	<td class="summary">Clear aura cache</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:ClearMultiMappings">cacherefreshmanager:ClearMultiMappings (mappingType)</a></td>
+	<td class="summary">Clear all multi-mappings of a specific type</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:CountRaidMembersWithAura">cacherefreshmanager:CountRaidMembersWithAura (spellId, filter)</a></td>
+	<td class="summary">Counts unique group/raid members who have a player-cast aura active.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:FindAuraBySpellId">cacherefreshmanager:FindAuraBySpellId (unit, spellId, filter, exactIdMatch)</a></td>
+	<td class="summary">Internal function for pure aura detection (no spell resolution)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:FormatAuraResult">cacherefreshmanager:FormatAuraResult (spellTable)</a></td>
+	<td class="summary">Format aura result from spell table (handles both modern and classic APIs)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:GetCacheStats">cacherefreshmanager:GetCacheStats ()</a></td>
+	<td class="summary">Get cache statistics</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:GetCustomDamage">cacherefreshmanager:GetCustomDamage (spellId, unit)</a></td>
+	<td class="summary">Gets custom damage for a spell ID using the appropriate handler</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:GetCustomDamageHandler">cacherefreshmanager:GetCustomDamageHandler (spellId)</a></td>
+	<td class="summary">Gets the custom damage handler name for a spell ID</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:GetGroupMembers">cacherefreshmanager:GetGroupMembers ()</a></td>
+	<td class="summary">Get group members iterator (delegates to StateManager group API).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:GetMaxStacks">cacherefreshmanager:GetMaxStacks (spellId)</a></td>
+	<td class="summary">Gets the maximum stacks for a spell ID</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:GetMultiMappings">cacherefreshmanager:GetMultiMappings (mappingType)</a></td>
+	<td class="summary">Get all multi-mappings of a specific type</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:GetOptions">cacherefreshmanager:GetOptions ()</a></td>
+	<td class="summary">Get options for the module</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:GetSpellPriority">cacherefreshmanager:GetSpellPriority (spellId, debuffType)</a></td>
+	<td class="summary">Gets the priority for a spell ID in a debuff type</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:HandleChiBrewCase">cacherefreshmanager:HandleChiBrewCase (spellId, unit, ...)</a></td>
+	<td class="summary">Handles Chi Brew special case</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:HandleDarkTransformationCase">cacherefreshmanager:HandleDarkTransformationCase (spellId, unit, ...)</a></td>
+	<td class="summary">Handles Dark Transformation special case (MoP version checks pet unit)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:HandleGargoyleCase">cacherefreshmanager:HandleGargoyleCase (spellId, unit, ...)</a></td>
+	<td class="summary">Handles Unholy Death Knight Gargoyle special case (MoP cooldown-based simulation)
+ TODO: gargoyle attacking puts a debuff on the target?</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:HandleIgniteCase">cacherefreshmanager:HandleIgniteCase (spellId, unit, ...)</a></td>
+	<td class="summary">Handles Ignite special case (spell ID 12846) - uses SpellTrackingManager for damage calculation
+ This handler is only used when we specifically need damage calculation, not normal aura detection</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:HandleStormEarthFireCase">cacherefreshmanager:HandleStormEarthFireCase (spellId, unit, ...)</a></td>
+	<td class="summary">Handles Storm, Earth and Fire special case</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:HandleTotemCase">cacherefreshmanager:HandleTotemCase (spellId, unit, ...)</a></td>
+	<td class="summary">Handles totem special case (spell ID 88747)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:HandleVengeanceCase">cacherefreshmanager:HandleVengeanceCase (spellId, unit, ...)</a></td>
+	<td class="summary">Handles vengeance special case (spell ID 120267)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:HasCustomDamageHandler">cacherefreshmanager:HasCustomDamageHandler (spellId)</a></td>
+	<td class="summary">Checks if a spell ID has a custom damage handler</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:HasHigherPriority">cacherefreshmanager:HasHigherPriority (competingSpellId, originalSpellId, debuffType)</a></td>
+	<td class="summary">Checks if one spell has higher priority than another in a debuff type</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:MatchesAnySpell">cacherefreshmanager:MatchesAnySpell (aura, ...)</a></td>
+	<td class="summary">Check if aura matches any of the provided spell inputs
+ OPTIMIZATION: Inlined for performance - no table creation</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:RaidUnitAura">cacherefreshmanager:RaidUnitAura (spellId, filter)</a></td>
+	<td class="summary">Check if anyone in raid has an aura</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:RaidUnitBuff">cacherefreshmanager:RaidUnitBuff (spellId, filter)</a></td>
+	<td class="summary">Check if anyone in raid has a buff</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:RaidUnitBuffPlayer">cacherefreshmanager:RaidUnitBuffPlayer (spellId)</a></td>
+	<td class="summary">Check if anyone in raid has the player's buff</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:RaidUnitDebuff">cacherefreshmanager:RaidUnitDebuff (spellId, filter)</a></td>
+	<td class="summary">Check if anyone in raid has a debuff</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:RaidUnitDebuffPlayer">cacherefreshmanager:RaidUnitDebuffPlayer (spellId)</a></td>
+	<td class="summary">Check if anyone in raid has the player's debuff</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:RemoveCustomDamageHandler">cacherefreshmanager:RemoveCustomDamageHandler (spellId)</a></td>
+	<td class="summary">Removes a custom damage handler for a spell ID</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:RemoveMultiMapping">cacherefreshmanager:RemoveMultiMapping (spellId, mappingType)</a></td>
+	<td class="summary">Remove a multi-mapping</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:RemoveOverride">cacherefreshmanager:RemoveOverride (spellId)</a></td>
+	<td class="summary">Remove spell from override list</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:RemoveSpellMapping">cacherefreshmanager:RemoveSpellMapping (spellId, mappingType)</a></td>
+	<td class="summary">Removes a spell mapping</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:ResolveConditional">cacherefreshmanager:ResolveConditional (unit, mapping, filter)</a></td>
+	<td class="summary">Resolves conditional mappings (OR, AND, NOT logic)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:ResolveCustom">cacherefreshmanager:ResolveCustom (unit, mapping, filter)</a></td>
+	<td class="summary">Resolves custom handler mappings</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:ResolveMultiAura">cacherefreshmanager:ResolveMultiAura (unit, mapping, filter)</a></td>
+	<td class="summary">Resolves multi-aura mappings (ANY, ALL, NONE logic)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:ResolveSpell">cacherefreshmanager:ResolveSpell (spellId)</a></td>
+	<td class="summary">Unified spell resolution system - handles all mapping types with clear priority order</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:ResolveSpellId">cacherefreshmanager:ResolveSpellId (spellId)</a></td>
+	<td class="summary">Legacy function for backward compatibility - resolves only direct mappings</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:ResolveSpellIdForCasting">cacherefreshmanager:ResolveSpellIdForCasting (spellId)</a></td>
+	<td class="summary">Centralized spell ID resolution for casting</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:UnitAura">cacherefreshmanager:UnitAura (unit, spellId, filter, exactIdMatch)</a></td>
+	<td class="summary">Core function that handles all aura detection logic with integrated smart detection</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:UnitAuraMulti">cacherefreshmanager:UnitAuraMulti (unit, ...)</a></td>
+	<td class="summary">Check for multiple spells on a unit</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:UnitBuff">cacherefreshmanager:UnitBuff (unit, spellId, filter, exactIdMatch)</a></td>
+	<td class="summary">Check for buffs on a unit</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:UnitBuffMulti">cacherefreshmanager:UnitBuffMulti (unit, ...)</a></td>
+	<td class="summary">Check for multiple buffs on a unit</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:UnitDebuff">cacherefreshmanager:UnitDebuff (unit, spellId, filter, exactIdMatch)</a></td>
+	<td class="summary">Check for debuffs on a unit</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:UnitDebuffGlobal">cacherefreshmanager:UnitDebuffGlobal (unit, spellId)</a></td>
+	<td class="summary">Check for any debuff on a unit (global scope)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#cacherefreshmanager:UnitDebuffMulti">cacherefreshmanager:UnitDebuffMulti (unit, ...)</a></td>
+	<td class="summary">Check for multiple debuffs on a unit</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_CacheRefreshManager"></a>Class CacheRefreshManager </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:AddConditionalMapping"></a>
+    <strong>NAG:AddConditionalMapping (spellId, conditions, logic)</strong>
+    </dt>
+    <dd>
+    Adds a conditional mapping (complex logic with OR/AND/NOT).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to map
+        </li>
+        <li><span class="parameter">conditions</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Array of condition objects
+        </li>
+        <li><span class="parameter">logic</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Logic type ("or", "and", "not")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mapping was added successfully
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AddConditionalMapping</span>(<span class="number">99999</span>, {{aura = <span class="number">12346</span>, required = <span class="keyword">true</span>}}, <span class="string">"or"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AddCustomDamageHandler"></a>
+    <strong>NAG:AddCustomDamageHandler (spellId, handlerName)</strong>
+    </dt>
+    <dd>
+    Adds a custom damage handler for a spell ID.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to add
+        </li>
+        <li><span class="parameter">handlerName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The handler name
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if handler was added successfully
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AddCustomDamageHandler</span>(<span class="number">12345</span>, <span class="string">"my_handler"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AddCustomMapping"></a>
+    <strong>NAG:AddCustomMapping (spellId, handler, params)</strong>
+    </dt>
+    <dd>
+    Adds a custom mapping (custom handler for special cases).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to map
+        </li>
+        <li><span class="parameter">handler</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The handler name ("totem", "vengeance")
+        </li>
+        <li><span class="parameter">params</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         |nil Optional parameters for the handler
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mapping was added successfully
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AddCustomMapping</span>(<span class="number">88747</span>, <span class="string">"totem"</span>, {})</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AddMultiMapping"></a>
+    <strong>NAG:AddMultiMapping (spellId, auras, mappingType)</strong>
+    </dt>
+    <dd>
+    Adds a multi-mapping (one spell ID maps to multiple auras).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to map
+        </li>
+        <li><span class="parameter">auras</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Array of aura IDs to check
+        </li>
+        <li><span class="parameter">mappingType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Type of mapping ("any", "all", "none")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mapping was added successfully
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AddMultiMapping</span>(<span class="number">80353</span>, {<span class="number">80353</span>, <span class="number">2825</span>, <span class="number">32182</span>}, <span class="string">"any"</span>) <span class="comment">-- Bloodlust variants</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:AddSpellMapping"></a>
+    <strong>NAG:AddSpellMapping (spellId, mappedId, mappingType)</strong>
+    </dt>
+    <dd>
+    Adds a spell mapping to the unified mapping system.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to map
+        </li>
+        <li><span class="parameter">mappedId</span>
+            <span class="types"><span class="type">number</span></span>
+         The mapped spell ID
+        </li>
+        <li><span class="parameter">mappingType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The type of mapping ("direct", "items")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mapping was added successfully
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">AddSpellMapping</span>(<span class="number">12345</span>, <span class="number">54321</span>, <span class="string">"direct"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ClearMultiMappings"></a>
+    <strong>NAG:ClearMultiMappings (mappingType)</strong>
+    </dt>
+    <dd>
+    Clear all multi-mappings of a specific type.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">mappingType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil The type of mappings to clear ("multi", "conditional", "custom", or nil for all)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mappings were cleared successfully
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">ClearMultiMappings</span>(<span class="string">"multi"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CountRaidMembersWithAura"></a>
+    <strong>NAG:CountRaidMembersWithAura (spellId, filter)</strong>
+    </dt>
+    <dd>
+    Counts unique group/raid members who have a player-cast aura active.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name of the aura to count
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (defaults to "HELPFUL|PLAYER" for player-cast buffs)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        The count of unique party/raid members with the aura (1 if solo)
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example"><span class="keyword">local</span> count = NAG:<span class="function-name">CountRaidMembersWithAura</span>(<span class="number">12345</span>) <span class="comment">-- Count player-cast buffs</span></pre></li>
+        <li><pre class="example"><span class="keyword">local</span> count = NAG:<span class="function-name">CountRaidMembersWithAura</span>(<span class="number">12345</span>, <span class="string">"HARMFUL|PLAYER"</span>) <span class="comment">-- Count player-cast debuffs</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:GetCustomDamage"></a>
+    <strong>NAG:GetCustomDamage (spellId, unit)</strong>
+    </dt>
+    <dd>
+    Gets custom damage for a spell ID using the appropriate handler.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        damage value, or 0 if no custom handler or no damage
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> damage = NAG:<span class="function-name">GetCustomDamage</span>(<span class="number">12846</span>, <span class="string">"target"</span>) <span class="comment">-- Returns Ignite damage</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:GetMaxStacks"></a>
+    <strong>NAG:GetMaxStacks (spellId)</strong>
+    </dt>
+    <dd>
+    Gets the maximum stacks for a spell ID.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        maximum stacks for the spell, or 1 if not stackable
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> maxStacks = NAG:<span class="function-name">GetMaxStacks</span>(<span class="number">113746</span>) <span class="comment">-- Returns 3 for Sunder Armor</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:GetMultiMappings"></a>
+    <strong>NAG:GetMultiMappings (mappingType)</strong>
+    </dt>
+    <dd>
+    Gets all multi-mappings of a specific type.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">mappingType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil The type of mappings to get ("multi", "conditional", "custom", or nil for all)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        Table of mappings
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> mappings = NAG:<span class="function-name">GetMultiMappings</span>(<span class="string">"multi"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:GetSpellPriority"></a>
+    <strong>NAG:GetSpellPriority (spellId, debuffType)</strong>
+    </dt>
+    <dd>
+    Gets the priority for a spell ID in a debuff type.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+        <li><span class="parameter">debuffType</span>
+            <span class="types"><span class="type">number</span></span>
+         The debuff type
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        priority value, or 0 if not found
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> priority = NAG:<span class="function-name">GetSpellPriority</span>(<span class="number">8647</span>, Types:<span class="function-name">GetType</span>(<span class="string">"DebuffType"</span>).ARMOR) <span class="comment">-- Returns 100</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:HasCustomDamageHandler"></a>
+    <strong>NAG:HasCustomDamageHandler (spellId)</strong>
+    </dt>
+    <dd>
+    Checks if a spell ID has a custom damage handler.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the spell has a custom damage handler
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> hasCustom = NAG:<span class="function-name">HasCustomDamageHandler</span>(<span class="number">12846</span>) <span class="comment">-- Returns true for Ignite</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:HasHigherPriority"></a>
+    <strong>NAG:HasHigherPriority (competingSpellId, originalSpellId, debuffType)</strong>
+    </dt>
+    <dd>
+    Checks if one spell has higher priority than another in a debuff type.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">competingSpellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The competing spell ID
+        </li>
+        <li><span class="parameter">originalSpellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The original spell ID
+        </li>
+        <li><span class="parameter">debuffType</span>
+            <span class="types"><span class="type">number</span></span>
+         The debuff type
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if competing spell has higher priority
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> hasHigher = NAG:<span class="function-name">HasHigherPriority</span>(<span class="number">8647</span>, <span class="number">7386</span>, Types:<span class="function-name">GetType</span>(<span class="string">"DebuffType"</span>).ARMOR) <span class="comment">-- Returns true</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RaidUnitAura"></a>
+    <strong>NAG:RaidUnitAura (spellId, filter)</strong>
+    </dt>
+    <dd>
+    Check if anyone in raid has an aura.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (defaults to "HELPFUL")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if anyone in raid has the aura
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> hasAura = NAG:<span class="function-name">RaidUnitAura</span>(<span class="number">12345</span>, <span class="string">"HELPFUL"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RaidUnitBuff"></a>
+    <strong>NAG:RaidUnitBuff (spellId, filter)</strong>
+    </dt>
+    <dd>
+    Check if anyone in raid has a buff.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (defaults to "HELPFUL")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if anyone in raid has the buff
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> hasBuff = NAG:<span class="function-name">RaidUnitBuff</span>(<span class="number">12345</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RaidUnitBuffPlayer"></a>
+    <strong>NAG:RaidUnitBuffPlayer (spellId)</strong>
+    </dt>
+    <dd>
+    Check if anyone in raid has the player's buff.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if anyone in raid has the player's buff
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> hasBuff = NAG:<span class="function-name">RaidUnitBuffPlayer</span>(<span class="number">12345</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RaidUnitDebuff"></a>
+    <strong>NAG:RaidUnitDebuff (spellId, filter)</strong>
+    </dt>
+    <dd>
+    Check if anyone in raid has a debuff.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (defaults to "HARMFUL")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if anyone in raid has the debuff
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> hasDebuff = NAG:<span class="function-name">RaidUnitDebuff</span>(<span class="number">12345</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RaidUnitDebuffPlayer"></a>
+    <strong>NAG:RaidUnitDebuffPlayer (spellId)</strong>
+    </dt>
+    <dd>
+    Check if anyone in raid has the player's debuff.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if anyone in raid has the player's debuff
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> hasDebuff = NAG:<span class="function-name">RaidUnitDebuffPlayer</span>(<span class="number">12345</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RemoveCustomDamageHandler"></a>
+    <strong>NAG:RemoveCustomDamageHandler (spellId)</strong>
+    </dt>
+    <dd>
+    Removes a custom damage handler for a spell ID.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to remove
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if handler was removed successfully
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">RemoveCustomDamageHandler</span>(<span class="number">12345</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RemoveMultiMapping"></a>
+    <strong>NAG:RemoveMultiMapping (spellId, mappingType)</strong>
+    </dt>
+    <dd>
+    Removes a multi-mapping from the unified mapping system.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to remove
+        </li>
+        <li><span class="parameter">mappingType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The type of mapping to remove ("multi", "conditional", "custom")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mapping was removed successfully
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">RemoveMultiMapping</span>(<span class="number">80353</span>, <span class="string">"multi"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RemoveSpellMapping"></a>
+    <strong>NAG:RemoveSpellMapping (spellId, mappingType)</strong>
+    </dt>
+    <dd>
+    Removes a spell mapping from the unified mapping system.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to remove
+        </li>
+        <li><span class="parameter">mappingType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The type of mapping
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mapping was removed successfully
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">RemoveSpellMapping</span>(<span class="number">12345</span>, <span class="string">"direct"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ResolveSpellId"></a>
+    <strong>NAG:ResolveSpellId (spellId, mappingType)</strong>
+    </dt>
+    <dd>
+    Resolves a spell ID through the unified mapping system (legacy compatibility).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to resolve
+        </li>
+        <li><span class="parameter">mappingType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional mapping type filter
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        |string|nil Resolved spell ID or original spell name
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> resolvedId = NAG:<span class="function-name">ResolveSpellId</span>(<span class="number">138228</span>) <span class="comment">-- Returns 137639</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:ResolveSpellIdForCasting"></a>
+    <strong>NAG:ResolveSpellIdForCasting (spellId)</strong>
+    </dt>
+    <dd>
+    Centralized spell ID resolution for casting.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The original spell ID
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        resolved spell ID for casting
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> resolvedId = NAG:<span class="function-name">ResolveSpellIdForCasting</span>(<span class="number">138228</span>) <span class="comment">-- Returns 137639</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitAura"></a>
+    <strong>NAG:UnitAura (unit, spellId, filter, exactIdMatch)</strong>
+    </dt>
+    <dd>
+    Core function that handles all aura detection logic with integrated smart detection.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (e.g., "HELPFUL", "HARMFUL", "HARMFUL|PLAYER")
+        </li>
+        <li><span class="parameter">exactIdMatch</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil If true, forces exact spell ID matching and skips name-based matching
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example"><span class="keyword">local</span> aura = NAG:<span class="function-name">UnitAura</span>(<span class="string">"player"</span>, <span class="number">12345</span>, <span class="string">"HELPFUL"</span>)</pre></li>
+        <li><pre class="example"><span class="keyword">if</span> aura <span class="keyword">then</span> <span class="keyword">local</span> name, icon = aura.name, aura.icon <span class="keyword">end</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitAuraMulti"></a>
+    <strong>NAG:UnitAuraMulti (unit, ...)</strong>
+    </dt>
+    <dd>
+    Check for multiple spells on a unit.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">...</span>
+         number|string|boolean Variable arguments: spell IDs/names to check, and optional filter parameter
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> aura = NAG:<span class="function-name">UnitAuraMulti</span>(<span class="string">"player"</span>, <span class="number">12345</span>, <span class="number">67890</span>, <span class="string">"HELPFUL"</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitBuff"></a>
+    <strong>NAG:UnitBuff (unit, spellId, filter, exactIdMatch)</strong>
+    </dt>
+    <dd>
+    Check for buffs on a unit.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (defaults to "HELPFUL")
+        </li>
+        <li><span class="parameter">exactIdMatch</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil If true, forces exact spell ID matching and skips name-based matching
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> aura = NAG:<span class="function-name">UnitBuff</span>(<span class="string">"player"</span>, <span class="number">12345</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitBuffMulti"></a>
+    <strong>NAG:UnitBuffMulti (unit, ...)</strong>
+    </dt>
+    <dd>
+    Check for multiple buffs on a unit.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">...</span>
+         number|string|boolean Variable arguments: spell IDs/names to check, and optional filter parameter
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> aura = NAG:<span class="function-name">UnitBuffMulti</span>(<span class="string">"player"</span>, <span class="number">12345</span>, <span class="number">67890</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitDebuff"></a>
+    <strong>NAG:UnitDebuff (unit, spellId, filter, exactIdMatch)</strong>
+    </dt>
+    <dd>
+    Check for debuffs on a unit.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (defaults to "HARMFUL")
+        </li>
+        <li><span class="parameter">exactIdMatch</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil If true, forces exact spell ID matching and skips name-based matching
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> aura = NAG:<span class="function-name">UnitDebuff</span>(<span class="string">"target"</span>, <span class="number">12345</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitDebuffGlobal"></a>
+    <strong>NAG:UnitDebuffGlobal (unit, spellId)</strong>
+    </dt>
+    <dd>
+    Check for any debuff on a unit (global scope).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> aura = NAG:<span class="function-name">UnitDebuffGlobal</span>(<span class="string">"target"</span>, <span class="number">12345</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:UnitDebuffMulti"></a>
+    <strong>NAG:UnitDebuffMulti (unit, ...)</strong>
+    </dt>
+    <dd>
+    Check for multiple debuffs on a unit.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">...</span>
+         number|string|boolean Variable arguments: spell IDs/names to check, and optional filter parameter
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> aura = NAG:<span class="function-name">UnitDebuffMulti</span>(<span class="string">"target"</span>, <span class="number">12345</span>, <span class="number">67890</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:AddConditionalMapping"></a>
+    <strong>cacherefreshmanager:AddConditionalMapping (spellId, conditions, logic)</strong>
+    </dt>
+    <dd>
+    Add a conditional mapping (complex logic with OR/AND/NOT)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to map
+        </li>
+        <li><span class="parameter">conditions</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Array of condition objects
+        </li>
+        <li><span class="parameter">logic</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Logic type ("or", "and", "not")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mapping was added successfully
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:AddCustomDamageHandler"></a>
+    <strong>cacherefreshmanager:AddCustomDamageHandler (spellId, handlerName)</strong>
+    </dt>
+    <dd>
+    Adds a custom damage handler for a spell ID
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to add
+        </li>
+        <li><span class="parameter">handlerName</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The handler name
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if handler was added successfully
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:AddCustomMapping"></a>
+    <strong>cacherefreshmanager:AddCustomMapping (spellId, handler, params)</strong>
+    </dt>
+    <dd>
+    Add a custom mapping (custom handler for special cases)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to map
+        </li>
+        <li><span class="parameter">handler</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The handler name ("totem", "vengeance")
+        </li>
+        <li><span class="parameter">params</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         |nil Optional parameters for the handler
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mapping was added successfully
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:AddMultiMapping"></a>
+    <strong>cacherefreshmanager:AddMultiMapping (spellId, auras, mappingType)</strong>
+    </dt>
+    <dd>
+    Add a multi-mapping (one spell ID maps to multiple auras)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to map
+        </li>
+        <li><span class="parameter">auras</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         Array of aura IDs to check
+        </li>
+        <li><span class="parameter">mappingType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         Type of mapping ("any", "all", "none")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mapping was added successfully
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:AddOverride"></a>
+    <strong>cacherefreshmanager:AddOverride (spellId, auraType)</strong>
+    </dt>
+    <dd>
+    Add spell to override list
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to override
+        </li>
+        <li><span class="parameter">auraType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         "HELPFUL" or "HARMFUL"
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:AddSpellMapping"></a>
+    <strong>cacherefreshmanager:AddSpellMapping (spellId, mappedId, mappingType)</strong>
+    </dt>
+    <dd>
+    Adds a spell mapping
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to map
+        </li>
+        <li><span class="parameter">mappedId</span>
+            <span class="types"><span class="type">number</span></span>
+         The mapped spell ID
+        </li>
+        <li><span class="parameter">mappingType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The type of mapping ("direct", "items")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mapping was added successfully
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:AuraNumStacks"></a>
+    <strong>cacherefreshmanager:AuraNumStacks (spellId, sourceUnit)</strong>
+    </dt>
+    <dd>
+    Gets the number of stacks for a spell ID (centralized version of AuraNumStacks)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+        <li><span class="parameter">sourceUnit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil The unit to check (defaults to "player")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        number of stacks of the aura, or 0 if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:AutoDetectAuraType"></a>
+    <strong>cacherefreshmanager:AutoDetectAuraType (unit, spellId)</strong>
+    </dt>
+    <dd>
+    Auto-detects aura type by trying both filters and returning the one that exists
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        "HELPFUL" or "HARMFUL" based on which one exists
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:CacheResult"></a>
+    <strong>cacherefreshmanager:CacheResult (cacheKey, result)</strong>
+    </dt>
+    <dd>
+    Cache aura result
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">cacheKey</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The cache key
+        </li>
+        <li><span class="parameter">result</span>
+            <span class="types"><span class="type">AuraData</span></span>
+         |boolean The result to cache (AuraData table or false)
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:ClearCache"></a>
+    <strong>cacherefreshmanager:ClearCache ()</strong>
+    </dt>
+    <dd>
+    Clear aura cache
+
+    </ul>
+    </ul>
+    </ul>
+
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:ClearMultiMappings"></a>
+    <strong>cacherefreshmanager:ClearMultiMappings (mappingType)</strong>
+    </dt>
+    <dd>
+    Clear all multi-mappings of a specific type
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">mappingType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil The type of mappings to clear ("multi", "conditional", "custom", or nil for all)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mappings were cleared successfully
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:CountRaidMembersWithAura"></a>
+    <strong>cacherefreshmanager:CountRaidMembersWithAura (spellId, filter)</strong>
+    </dt>
+    <dd>
+    Counts unique group/raid members who have a player-cast aura active.
+ Uses battle-tested logic from APL_Class.lua with performance optimizations.
+ Deduplicates by GUID and caches results to reduce scanning overhead.
+ If not in a group, returns 1 if the player has the aura, else 0.
+ RESPECTS GROUP/RAID OVERRIDES for testing purposes.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name of the aura to count
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (defaults to "HELPFUL|PLAYER" for player-cast buffs)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        The count of unique party/raid members with the aura (1 if solo)
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:FindAuraBySpellId"></a>
+    <strong>cacherefreshmanager:FindAuraBySpellId (unit, spellId, filter, exactIdMatch)</strong>
+    </dt>
+    <dd>
+    Internal function for pure aura detection (no spell resolution)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The filter to use
+        </li>
+        <li><span class="parameter">exactIdMatch</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil If true, forces exact spell ID matching and skips name-based matching
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:FormatAuraResult"></a>
+    <strong>cacherefreshmanager:FormatAuraResult (spellTable)</strong>
+    </dt>
+    <dd>
+    Format aura result from spell table (handles both modern and classic APIs)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellTable</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         The spell table from API
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        Formatted result table with modern field names
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:GetCacheStats"></a>
+    <strong>cacherefreshmanager:GetCacheStats ()</strong>
+    </dt>
+    <dd>
+    Get cache statistics
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        Cache hit/miss statistics
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:GetCustomDamage"></a>
+    <strong>cacherefreshmanager:GetCustomDamage (spellId, unit)</strong>
+    </dt>
+    <dd>
+    Gets custom damage for a spell ID using the appropriate handler
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        damage value, or 0 if no custom handler or no damage
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:GetCustomDamageHandler"></a>
+    <strong>cacherefreshmanager:GetCustomDamageHandler (spellId)</strong>
+    </dt>
+    <dd>
+    Gets the custom damage handler name for a spell ID
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        |nil The handler name, or nil if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:GetGroupMembers"></a>
+    <strong>cacherefreshmanager:GetGroupMembers ()</strong>
+    </dt>
+    <dd>
+    Get group members iterator (delegates to StateManager group API).
+ RESPECTS GROUP/RAID OVERRIDES for testing purposes.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><span class="type">function</span></span>
+        Iterator function for group members</li>
+        <li>
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        Table of group member unit IDs</li>
+        <li>
+           <span class="types"><span class="type">number</span></span>
+        Starting index for iteration</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:GetMaxStacks"></a>
+    <strong>cacherefreshmanager:GetMaxStacks (spellId)</strong>
+    </dt>
+    <dd>
+    Gets the maximum stacks for a spell ID
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        maximum stacks for the spell, or 1 if not stackable
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:GetMultiMappings"></a>
+    <strong>cacherefreshmanager:GetMultiMappings (mappingType)</strong>
+    </dt>
+    <dd>
+    Get all multi-mappings of a specific type
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">mappingType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil The type of mappings to get ("multi", "conditional", "custom", or nil for all)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        Table of mappings
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:GetOptions"></a>
+    <strong>cacherefreshmanager:GetOptions ()</strong>
+    </dt>
+    <dd>
+    Get options for the module
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        table
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:GetSpellPriority"></a>
+    <strong>cacherefreshmanager:GetSpellPriority (spellId, debuffType)</strong>
+    </dt>
+    <dd>
+    Gets the priority for a spell ID in a debuff type
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+        <li><span class="parameter">debuffType</span>
+            <span class="types"><span class="type">number</span></span>
+         The debuff type
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        priority value, or 0 if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:HandleChiBrewCase"></a>
+    <strong>cacherefreshmanager:HandleChiBrewCase (spellId, unit, ...)</strong>
+    </dt>
+    <dd>
+    Handles Chi Brew special case
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID
+        </li>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">...</span>
+         any Additional parameters
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:HandleDarkTransformationCase"></a>
+    <strong>cacherefreshmanager:HandleDarkTransformationCase (spellId, unit, ...)</strong>
+    </dt>
+    <dd>
+    Handles Dark Transformation special case (MoP version checks pet unit)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID
+        </li>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">...</span>
+         any Additional parameters
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:HandleGargoyleCase"></a>
+    <strong>cacherefreshmanager:HandleGargoyleCase (spellId, unit, ...)</strong>
+    </dt>
+    <dd>
+    Handles Unholy Death Knight Gargoyle special case (MoP cooldown-based simulation)
+ TODO: gargoyle attacking puts a debuff on the target?
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID
+        </li>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">...</span>
+         any Additional parameters
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:HandleIgniteCase"></a>
+    <strong>cacherefreshmanager:HandleIgniteCase (spellId, unit, ...)</strong>
+    </dt>
+    <dd>
+    Handles Ignite special case (spell ID 12846) - uses SpellTrackingManager for damage calculation
+ This handler is only used when we specifically need damage calculation, not normal aura detection
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID
+        </li>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">...</span>
+         any Additional parameters
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:HandleStormEarthFireCase"></a>
+    <strong>cacherefreshmanager:HandleStormEarthFireCase (spellId, unit, ...)</strong>
+    </dt>
+    <dd>
+    Handles Storm, Earth and Fire special case
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID
+        </li>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">...</span>
+         any Additional parameters
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:HandleTotemCase"></a>
+    <strong>cacherefreshmanager:HandleTotemCase (spellId, unit, ...)</strong>
+    </dt>
+    <dd>
+    Handles totem special case (spell ID 88747)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID
+        </li>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">...</span>
+         any Additional parameters
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:HandleVengeanceCase"></a>
+    <strong>cacherefreshmanager:HandleVengeanceCase (spellId, unit, ...)</strong>
+    </dt>
+    <dd>
+    Handles vengeance special case (spell ID 120267)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID
+        </li>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">...</span>
+         any Additional parameters
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:HasCustomDamageHandler"></a>
+    <strong>cacherefreshmanager:HasCustomDamageHandler (spellId)</strong>
+    </dt>
+    <dd>
+    Checks if a spell ID has a custom damage handler
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the spell has a custom damage handler
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:HasHigherPriority"></a>
+    <strong>cacherefreshmanager:HasHigherPriority (competingSpellId, originalSpellId, debuffType)</strong>
+    </dt>
+    <dd>
+    Checks if one spell has higher priority than another in a debuff type
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">competingSpellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The competing spell ID
+        </li>
+        <li><span class="parameter">originalSpellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The original spell ID
+        </li>
+        <li><span class="parameter">debuffType</span>
+            <span class="types"><span class="type">number</span></span>
+         The debuff type
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if competing spell has higher priority
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:MatchesAnySpell"></a>
+    <strong>cacherefreshmanager:MatchesAnySpell (aura, ...)</strong>
+    </dt>
+    <dd>
+    Check if aura matches any of the provided spell inputs
+ OPTIMIZATION: Inlined for performance - no table creation
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">aura</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         The aura to check (expects {name=..., spellId=...})
+        </li>
+        <li><span class="parameter">...</span>
+         number|string Variable arguments: spell IDs/names to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if aura matches any spell input
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:RaidUnitAura"></a>
+    <strong>cacherefreshmanager:RaidUnitAura (spellId, filter)</strong>
+    </dt>
+    <dd>
+    Check if anyone in raid has an aura
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (defaults to "HELPFUL")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if anyone in raid has the aura
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:RaidUnitBuff"></a>
+    <strong>cacherefreshmanager:RaidUnitBuff (spellId, filter)</strong>
+    </dt>
+    <dd>
+    Check if anyone in raid has a buff
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (defaults to "HELPFUL")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if anyone in raid has the buff
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:RaidUnitBuffPlayer"></a>
+    <strong>cacherefreshmanager:RaidUnitBuffPlayer (spellId)</strong>
+    </dt>
+    <dd>
+    Check if anyone in raid has the player's buff
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if anyone in raid has the player's buff
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:RaidUnitDebuff"></a>
+    <strong>cacherefreshmanager:RaidUnitDebuff (spellId, filter)</strong>
+    </dt>
+    <dd>
+    Check if anyone in raid has a debuff
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (defaults to "HARMFUL")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if anyone in raid has the debuff
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:RaidUnitDebuffPlayer"></a>
+    <strong>cacherefreshmanager:RaidUnitDebuffPlayer (spellId)</strong>
+    </dt>
+    <dd>
+    Check if anyone in raid has the player's debuff
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if anyone in raid has the player's debuff
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:RemoveCustomDamageHandler"></a>
+    <strong>cacherefreshmanager:RemoveCustomDamageHandler (spellId)</strong>
+    </dt>
+    <dd>
+    Removes a custom damage handler for a spell ID
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to remove
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if handler was removed successfully
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:RemoveMultiMapping"></a>
+    <strong>cacherefreshmanager:RemoveMultiMapping (spellId, mappingType)</strong>
+    </dt>
+    <dd>
+    Remove a multi-mapping
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to remove
+        </li>
+        <li><span class="parameter">mappingType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The type of mapping to remove ("multi", "conditional", "custom")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mapping was removed successfully
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:RemoveOverride"></a>
+    <strong>cacherefreshmanager:RemoveOverride (spellId)</strong>
+    </dt>
+    <dd>
+    Remove spell from override list
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to remove
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:RemoveSpellMapping"></a>
+    <strong>cacherefreshmanager:RemoveSpellMapping (spellId, mappingType)</strong>
+    </dt>
+    <dd>
+    Removes a spell mapping
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to remove
+        </li>
+        <li><span class="parameter">mappingType</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The type of mapping
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        True if mapping was removed successfully
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:ResolveConditional"></a>
+    <strong>cacherefreshmanager:ResolveConditional (unit, mapping, filter)</strong>
+    </dt>
+    <dd>
+    Resolves conditional mappings (OR, AND, NOT logic)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">mapping</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         The conditional mapping configuration
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter for aura checking
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, true for pass conditions, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:ResolveCustom"></a>
+    <strong>cacherefreshmanager:ResolveCustom (unit, mapping, filter)</strong>
+    </dt>
+    <dd>
+    Resolves custom handler mappings
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">mapping</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         The custom mapping configuration
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter for aura checking
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:ResolveMultiAura"></a>
+    <strong>cacherefreshmanager:ResolveMultiAura (unit, mapping, filter)</strong>
+    </dt>
+    <dd>
+    Resolves multi-aura mappings (ANY, ALL, NONE logic)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">mapping</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+         The multi-mapping configuration
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter for aura checking
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, true for "none" type, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:ResolveSpell"></a>
+    <strong>cacherefreshmanager:ResolveSpell (spellId)</strong>
+    </dt>
+    <dd>
+    Unified spell resolution system - handles all mapping types with clear priority order
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to resolve
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+        <li>
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        |nil Resolution type ("direct", "multi", "conditional", "custom", or nil)</li>
+        <li>
+           <span class="types"><span class="type">any</span></span>
+        |nil Resolved data (new spell ID or mapping configuration)</li>
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:ResolveSpellId"></a>
+    <strong>cacherefreshmanager:ResolveSpellId (spellId)</strong>
+    </dt>
+    <dd>
+    Legacy function for backward compatibility - resolves only direct mappings
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to resolve
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        |string|nil Resolved spell ID or original spell name
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:ResolveSpellIdForCasting"></a>
+    <strong>cacherefreshmanager:ResolveSpellIdForCasting (spellId)</strong>
+    </dt>
+    <dd>
+    Centralized spell ID resolution for casting
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The original spell ID
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        resolved spell ID for casting
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:UnitAura"></a>
+    <strong>cacherefreshmanager:UnitAura (unit, spellId, filter, exactIdMatch)</strong>
+    </dt>
+    <dd>
+    Core function that handles all aura detection logic with integrated smart detection
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (e.g., "HELPFUL", "HARMFUL", "HARMFUL|PLAYER")
+   If nil and smart detection enabled, will auto-detect aura type
+   If nil and smart detection disabled, uses default based on unit
+        </li>
+        <li><span class="parameter">exactIdMatch</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil If true, forces exact spell ID matching and skips name-based matching
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:UnitAuraMulti"></a>
+    <strong>cacherefreshmanager:UnitAuraMulti (unit, ...)</strong>
+    </dt>
+    <dd>
+    Check for multiple spells on a unit
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">...</span>
+         number|string|boolean Variable arguments: spell IDs/names to check, and optional filter parameter
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:UnitBuff"></a>
+    <strong>cacherefreshmanager:UnitBuff (unit, spellId, filter, exactIdMatch)</strong>
+    </dt>
+    <dd>
+    Check for buffs on a unit
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (defaults to "HELPFUL")
+        </li>
+        <li><span class="parameter">exactIdMatch</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil If true, forces exact spell ID matching and skips name-based matching
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:UnitBuffMulti"></a>
+    <strong>cacherefreshmanager:UnitBuffMulti (unit, ...)</strong>
+    </dt>
+    <dd>
+    Check for multiple buffs on a unit
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">...</span>
+         number|string|boolean Variable arguments: spell IDs/names to check, and optional filter parameter
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:UnitDebuff"></a>
+    <strong>cacherefreshmanager:UnitDebuff (unit, spellId, filter, exactIdMatch)</strong>
+    </dt>
+    <dd>
+    Check for debuffs on a unit
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+        <li><span class="parameter">filter</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional filter (defaults to "HARMFUL|PLAYER")
+        </li>
+        <li><span class="parameter">exactIdMatch</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil If true, forces exact spell ID matching and skips name-based matching
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:UnitDebuffGlobal"></a>
+    <strong>cacherefreshmanager:UnitDebuffGlobal (unit, spellId)</strong>
+    </dt>
+    <dd>
+    Check for any debuff on a unit (global scope)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         |string The spell ID or name to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "cacherefreshmanager:UnitDebuffMulti"></a>
+    <strong>cacherefreshmanager:UnitDebuffMulti (unit, ...)</strong>
+    </dt>
+    <dd>
+    Check for multiple debuffs on a unit
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The unit to check
+        </li>
+        <li><span class="parameter">...</span>
+         number|string|boolean Variable arguments: spell IDs/names to check, and optional filter parameter
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">AuraData</span></span>
+        |boolean AuraData table if found, false if not found
+    </ol>
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

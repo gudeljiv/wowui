@@ -1,0 +1,62 @@
+## Interface: 20505
+## Version: 5.6.18
+## Title: Next Action Guides (NAG)
+## Notes: Next Action Guides (https://discorg.gg/ebonhold)
+## Author: Rakizi & Fonsas
+## IconTexture: Interface\AddOns\NAG\Media\NAGMiniMap.png
+## AddonCompartmentFunc: NAG_OnAddonCompartmentClick
+## AddonCompartmentFuncOnEnter: NAG_OnAddonCompartmentEnter
+## AddonCompartmentFuncOnLeave: NAG_OnAddonCompartmentLeave
+## Group: NAG
+## Category: Next Action Guides
+## X-Category: Interface Enhancements
+## SavedVariables: NAGDB, NAGLeaderboardDB
+## X-Curse-Project-ID: 1057119
+## X-Wago-Project-ID: BKpqpqGE
+## X-WoWI-ID: 26918
+## OptionalDeps: Ace3, LibCompress, LibDataBroker-1.1, LibDBIcon-1.0, LibRangeCheck-3.0, LibSharedMedia-3.0, LibClassicSwingTimerAPI
+
+# Libraries
+libs.xml
+
+# flavor specific Libraries
+Libs\LibClassicSwingTimerAPI\LibClassicSwingTimerAPI.lua
+
+# Core initialization
+Core.lua
+
+Utils\AssertUtils.lua
+Utils\ErrorUtils.lua
+Version.lua
+APICompat.lua
+Utils\utils.xml
+
+# Development Tools (excluded from release)
+
+Locales\Locales.xml
+
+Utils.lua
+
+NAG.lua
+
+Modules\Services\DebugManager.lua
+Modules\Services\OptionsFactory.lua
+Modules\Services\OptionsManager.lua
+
+# Data Files
+tbc\data\Data.xml
+
+# Entity Behaviors
+EntityBehaviors.lua
+
+# Ace3 Modules
+modules/modules-tbc.xml
+
+# Unit Testing
+
+# Main addon files
+Common.lua
+handlers\handlers.xml
+
+tbc\tbc.xml
+key.lua

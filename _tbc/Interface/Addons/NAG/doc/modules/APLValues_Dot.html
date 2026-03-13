@@ -1,0 +1,899 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_NAG">Class NAG </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/APLAction_Casting.html">APLAction_Casting</a></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><a href="../modules/APLAction_Misc.html">APLAction_Misc</a></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><a href="../modules/APLDRW.html">APLDRW</a></li>
+  <li><a href="../modules/APLSequences.html">APLSequences</a></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><a href="../modules/APLValues_Aura.html">APLValues_Aura</a></li>
+  <li><a href="../modules/APLValues_AuraSets.html">APLValues_AuraSets</a></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><a href="../modules/APLValues_Boss.html">APLValues_Boss</a></li>
+  <li><strong>APLValues_Dot</strong></li>
+  <li><a href="../modules/APLValues_Encounter.html">APLValues_Encounter</a></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><a href="../modules/APLValues_Resources.html">APLValues_Resources</a></li>
+  <li><a href="../modules/APLValues_Runes.html">APLValues_Runes</a></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><a href="../modules/APLValues_Unit.html">APLValues_Unit</a></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><a href="../modules/APL_Class.html">APL_Class</a></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><a href="../modules/NAG.EnhancedAuraHandlers.html">NAG.EnhancedAuraHandlers</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>APLValues_Dot</code></h1>
+<p>
+
+</p>
+<p>"
+ DoT (Damage over Time) related APL value functions for the NAG addon</p>
+
+<p> This module provides utility functions for DoT management, timing, and damage calculations.</p>
+
+<p> License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: Rakizi, Fonsas
+ Discord: https://discord.gg/ebonhold</p>
+
+<p> luacheck: ignore GetSpellInfo</p>
+
+
+<h2><a href="#Class_NAG">Class NAG </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotBaseDuration">NAG:DotBaseDuration (spellId)</a></td>
+	<td class="summary">TODO: This appears not working currently, most like needs data updates to work properly.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotCritPercentIncrease">NAG:DotCritPercentIncrease (spellID, targetUnit, useBaseValue)</a></td>
+	<td class="summary">Calculate the crit chance delta for a DoT relative to its snapshot.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotIsActive">NAG:DotIsActive (spellId, targetUnit)</a></td>
+	<td class="summary">Checks if a DoT (Damage over Time) spell is active on the target or specified unit.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotIsActiveGlobal">NAG:DotIsActiveGlobal (unit, spellId)</a></td>
+	<td class="summary">Checks if a debuff is active on a unit, regardless of who applied it (global scope).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotIsActiveOnAllTargets">NAG:DotIsActiveOnAllTargets (spellId)</a></td>
+	<td class="summary">Checks if a DoT (Damage over Time) spell is active on all targets.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotLowestRemainingTime">NAG:DotLowestRemainingTime (spellId)</a></td>
+	<td class="summary">Returns the lowest remaining time of a DoT spell across all targets.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotNumStacks">NAG:DotNumStacks (spellId)</a></td>
+	<td class="summary">Returns the number of stacks for a DoT (Damage over Time) spell on the target.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotNumStacksGlobal">NAG:DotNumStacksGlobal (spellId, unit)</a></td>
+	<td class="summary">Returns the number of stacks for a debuff on a unit, regardless of who applied it.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotPercentIncrease">NAG:DotPercentIncrease (spellID, targetUnit, useBaseValue)</a></td>
+	<td class="summary">Calculate DoT damage increase percentage based on attack power changes</p>
+
+<p> This is a specialized function for DoT (Damage over Time) effects that snapshot
+ attack power when applied.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotRemainingTime">NAG:DotRemainingTime (spellId, targetUnit)</a></td>
+	<td class="summary">Returns the remaining time of a DoT spell on the target or specified unit.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotRemainingTimeGlobal">NAG:DotRemainingTimeGlobal (unit, spellId)</a></td>
+	<td class="summary">Returns the remaining time of a debuff on a unit, regardless of who applied it (global scope).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotRemainingTimeNow">NAG:DotRemainingTimeNow (spellId, targetUnit)</a></td>
+	<td class="summary">Returns the remaining time of a DoT spell using the current time (not NextTime).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotTickFrequency">NAG:DotTickFrequency (spellId, targetUnit)</a></td>
+	<td class="summary">Returns the tick frequency of a DoT spell on the target or specified unit.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotTickRatePercentIncrease">NAG:DotTickRatePercentIncrease (spellID, targetUnit, useBaseValue)</a></td>
+	<td class="summary">Calculate the tick-rate delta for a DoT relative to its snapshot.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:DotTimeToNextTick">NAG:DotTimeToNextTick (spellId, targetUnit)</a></td>
+	<td class="summary">Returns the time remaining until the next DoT tick occurs.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:SnapStacksFoF">NAG:SnapStacksFoF (targetUnit)</a></td>
+	<td class="summary">Returns Feathers of Fury stacks captured at the last Blood Plague snapshot.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:Snapshot">NAG:Snapshot (...)</a></td>
+	<td class="summary">Query and compare stat snapshots with current values</p>
+
+<p> This function provides a flexible way to:
+ 1.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:SnapshotPercent">NAG:SnapshotPercent (spellID, ...)</a></td>
+	<td class="summary">Calculate percentage difference between current stats and snapshot values</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_NAG"></a>Class NAG </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:DotBaseDuration"></a>
+    <strong>NAG:DotBaseDuration (spellId)</strong>
+    </dt>
+    <dd>
+    TODO: This appears not working currently, most like needs data updates to work properly.
+ Retrieves the base duration (unmodified) of a DoT.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        base duration in seconds, or 0 if unavailable
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:DotCritPercentIncrease"></a>
+    <strong>NAG:DotCritPercentIncrease (spellID, targetUnit, useBaseValue)</strong>
+    </dt>
+    <dd>
+    Calculate the crit chance delta for a DoT relative to its snapshot.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellID</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to inspect
+        </li>
+        <li><span class="parameter">targetUnit</span>
+        ? string Optional unit to inspect (defaults to "target")
+        </li>
+        <li><span class="parameter">useBaseValue</span>
+        ? boolean Optional baseline comparison flag
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        crit chance percentage delta (e.g., 0.1 = 10% increase)
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:DotIsActive"></a>
+    <strong>NAG:DotIsActive (spellId, targetUnit)</strong>
+    </dt>
+    <dd>
+    Checks if a DoT (Damage over Time) spell is active on the target or specified unit.
+ Uses smart detection to automatically determine if the spell should check player-only or global scope.
+ For non-stacking debuffs (like Rend, Faerie Fire), checks if ANYONE has applied the debuff.
+ For regular DoTs, checks if the PLAYER has applied the debuff.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check for
+        </li>
+        <li><span class="parameter">targetUnit</span>
+        ? string The unit to check (defaults to "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the DoT is active, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">DotIsActive</span>(<span class="number">73643</span>) <span class="comment">-- Check if spell 73643 is active on target</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">DotIsActive</span>(<span class="number">73643</span>, <span class="string">"focus"</span>) <span class="comment">-- Check if spell 73643 is active on focus</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:DotIsActiveGlobal"></a>
+    <strong>NAG:DotIsActiveGlobal (unit, spellId)</strong>
+    </dt>
+    <dd>
+    Checks if a debuff is active on a unit, regardless of who applied it (global scope).
+ This is the "any applier" version (uses HARMFUL, not HARMFUL|PLAYER).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+        ? string The unit to check (defaults to "target")
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check for
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the debuff is active, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">DotIsActiveGlobal</span>(<span class="string">"target"</span>, <span class="number">33983</span>) <span class="comment">-- Mangle (Cat) debuff, any applier</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">DotIsActiveGlobal</span>(<span class="string">"focus"</span>, <span class="number">27011</span>) <span class="comment">-- Faerie Fire (Feral), any applier</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:DotIsActiveOnAllTargets"></a>
+    <strong>NAG:DotIsActiveOnAllTargets (spellId)</strong>
+    </dt>
+    <dd>
+    Checks if a DoT (Damage over Time) spell is active on all targets.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check for
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the DoT is active on all targets, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">DotIsActiveOnAllTargets</span>(<span class="number">73643</span>) <span class="comment">-- Check if spell 73643 is active on all targets</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:DotLowestRemainingTime"></a>
+    <strong>NAG:DotLowestRemainingTime (spellId)</strong>
+    </dt>
+    <dd>
+    Returns the lowest remaining time of a DoT spell across all targets.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        lowest remaining time in seconds, or 0 if not active on any target
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">DotLowestRemainingTime</span>(<span class="number">73643</span>) <span class="comment">-- Get lowest remaining time for spell 73643 across all targets</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:DotNumStacks"></a>
+    <strong>NAG:DotNumStacks (spellId)</strong>
+    </dt>
+    <dd>
+    Returns the number of stacks for a DoT (Damage over Time) spell on the target.
+ Uses smart detection to automatically determine if the spell should check player-only or global scope.
+ For non-stacking debuffs (like Rend, Faerie Fire), checks if ANYONE has applied the debuff.
+ For regular DoTs, checks if the PLAYER has applied the debuff.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        number of stacks, or 0 if not found
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">DotNumStacks</span>(<span class="number">73643</span>) <span class="comment">-- Get stack count for spell 73643 on target</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:DotNumStacksGlobal"></a>
+    <strong>NAG:DotNumStacksGlobal (spellId, unit)</strong>
+    </dt>
+    <dd>
+    Returns the number of stacks for a debuff on a unit, regardless of who applied it.
+ This is the "global" version of DotNumStacks (uses HARMFUL, not HARMFUL|PLAYER).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+        <li><span class="parameter">unit</span>
+        ? string The unit to check (defaults to "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        number of stacks, or 0 if not found
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">DotNumStacksGlobal</span>(<span class="number">7386</span>) <span class="comment">-- Sunder Armor stacks on target, any applier</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">DotNumStacksGlobal</span>(<span class="number">33745</span>, <span class="string">"focus"</span>) <span class="comment">-- Lacerate stacks on focus, any applier</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:DotPercentIncrease"></a>
+    <strong>NAG:DotPercentIncrease (spellID, targetUnit, useBaseValue)</strong>
+    </dt>
+    <dd>
+    Calculate DoT damage increase percentage based on attack power changes</p>
+
+<p> This is a specialized function for DoT (Damage over Time) effects that snapshot
+ attack power when applied.  It calculates how much the DoT damage has increased
+ since the spell was cast based on current vs snapshot attack power.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellID</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID of the DoT to check
+        </li>
+        <li><span class="parameter">targetUnit</span>
+        ? string Optional unit to inspect (defaults to "target")
+        </li>
+        <li><span class="parameter">useBaseValue</span>
+        ? boolean When true, compares against the baseline value recorded at encounter start if available
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        attack power percentage difference: (current<em>ap / snapshot</em>ap) - 1
+   - Positive values indicate damage increase (e.g., 0.15 = 15% more damage)
+   - Negative values indicate damage decrease (e.g., -0.1 = 10% less damage)
+   - Returns 0 if no snapshot exists or snapshot AP is 0
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="comment">-- Check how much a DoT's damage has increased since application
+</span><span class="keyword">local</span> damageIncrease = NAG:<span class="function-name">DotPercentIncrease</span>(<span class="number">59879</span>)
+
+<span class="comment">-- Example usage in conditions:
+</span><span class="comment">-- if NAG:DotPercentIncrease(rip_spellid) &gt; 0.2 then  -- If damage increased by 20%+
+</span><span class="comment">--     -- Consider refreshing the DoT for higher damage
+</span><span class="comment">-- end</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:DotRemainingTime"></a>
+    <strong>NAG:DotRemainingTime (spellId, targetUnit)</strong>
+    </dt>
+    <dd>
+    Returns the remaining time of a DoT spell on the target or specified unit.
+ Uses smart detection to automatically determine if the spell should check player-only or global scope.
+ For non-stacking debuffs (like Rend, Faerie Fire), checks if ANYONE has applied the debuff.
+ For regular DoTs, checks if the PLAYER has applied the debuff.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+        <li><span class="parameter">targetUnit</span>
+        ? string The unit to check (defaults to "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        remaining time in seconds, or 0 if the DoT is not active
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">DotRemainingTime</span>(<span class="number">73643</span>) <span class="comment">-- Get remaining time for spell 73643 on target</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">DotRemainingTime</span>(<span class="number">73643</span>, <span class="string">"focus"</span>) <span class="comment">-- Get remaining time for spell 73643 on focus</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:DotRemainingTimeGlobal"></a>
+    <strong>NAG:DotRemainingTimeGlobal (unit, spellId)</strong>
+    </dt>
+    <dd>
+    Returns the remaining time of a debuff on a unit, regardless of who applied it (global scope).
+ This is the "any applier" version of DotRemainingTime (uses UnitDebuffGlobal).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+        ? string The unit to check (defaults to "target")
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        remaining time in seconds, or 0 if the debuff is not active
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">DotRemainingTimeGlobal</span>(<span class="string">"target"</span>, <span class="number">7386</span>) <span class="comment">-- Sunder Armor remaining on target, any applier</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">DotRemainingTimeGlobal</span>(<span class="number">7386</span>) <span class="comment">-- backward-compat: defaults unit to "target"</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:DotRemainingTimeNow"></a>
+    <strong>NAG:DotRemainingTimeNow (spellId, targetUnit)</strong>
+    </dt>
+    <dd>
+    Returns the remaining time of a DoT spell using the current time (not NextTime).
+ Use this when you need to compare against a future cast finish time.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+        <li><span class="parameter">targetUnit</span>
+        ? string The unit to check (defaults to "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        remaining time in seconds, or 0 if the DoT is not active
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">DotRemainingTimeNow</span>(<span class="number">73643</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:DotTickFrequency"></a>
+    <strong>NAG:DotTickFrequency (spellId, targetUnit)</strong>
+    </dt>
+    <dd>
+    Returns the tick frequency of a DoT spell on the target or specified unit.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+        <li><span class="parameter">targetUnit</span>
+        ? string The unit to check (defaults to "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        tick frequency in seconds, or 0 if not found
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">DotTickFrequency</span>(<span class="number">73643</span>) <span class="comment">-- Get tick frequency for spell 73643 on target</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">DotTickFrequency</span>(<span class="number">73643</span>, <span class="string">"focus"</span>) <span class="comment">-- Get tick frequency for spell 73643 on focus</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:DotTickRatePercentIncrease"></a>
+    <strong>NAG:DotTickRatePercentIncrease (spellID, targetUnit, useBaseValue)</strong>
+    </dt>
+    <dd>
+    Calculate the tick-rate delta for a DoT relative to its snapshot.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellID</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to inspect
+        </li>
+        <li><span class="parameter">targetUnit</span>
+        ? string Optional unit to inspect (defaults to "target")
+        </li>
+        <li><span class="parameter">useBaseValue</span>
+        ? boolean Optional baseline comparison flag
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        tick-rate percentage delta (e.g., 0.1 = 10% faster)
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:DotTimeToNextTick"></a>
+    <strong>NAG:DotTimeToNextTick (spellId, targetUnit)</strong>
+    </dt>
+    <dd>
+    Returns the time remaining until the next DoT tick occurs.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check
+        </li>
+        <li><span class="parameter">targetUnit</span>
+        ? string The unit to check (defaults to "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        time in seconds until the next tick, or 0 if unknown
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:SnapStacksFoF"></a>
+    <strong>NAG:SnapStacksFoF (targetUnit)</strong>
+    </dt>
+    <dd>
+    Returns Feathers of Fury stacks captured at the last Blood Plague snapshot.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">targetUnit</span>
+        ? string Optional unit token (defaults to "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        FoF stacks in range 0-10
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:Snapshot"></a>
+    <strong>NAG:Snapshot (...)</strong>
+    </dt>
+    <dd>
+    Query and compare stat snapshots with current values</p>
+
+<p> This function provides a flexible way to:
+ 1.  Get snapshot values for DoT effects that are still active
+ 2. Get raw current stat values without comparison</p>
+
+<p> For active DoTs, returns the snapshot value (the stat value when the DoT was applied):
+ - This represents the stat value at the time the DoT was cast
+ - Useful for determining the "snapshot" value that affects DoT damage</p>
+
+<p> For expired DoTs, returns the current stat value.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">...</span>
+         any Variable number of arguments:
+   - number: spellID to check snapshot for
+   - string: stat name(s) to check. Valid stats: "str", "agi", "int", "crit", "haste", "mastery", "ap"
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        snapshot value or current value:
+   - With spellID (active DoT): snapshot<em>stat value
+   - With spellID (expired DoT): current</em>stat value
+   - Without spellID: sum of current stats
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="comment">-- Get attack power snapshot for a DoT
+</span><span class="keyword">local</span> snapshotAP = NAG:<span class="function-name">Snapshot</span>(<span class="string">"ap"</span>, <span class="number">55095</span>)  <span class="comment">-- Returns: AP value when Frost Fever was applied
+</span>
+<span class="comment">-- Get current strength + agility (no comparison)
+</span><span class="keyword">local</span> total = NAG:<span class="function-name">Snapshot</span>(<span class="string">"str"</span>, <span class="string">"agi"</span>)  <span class="comment">-- Returns: current_str + current_agi
+</span>
+<span class="comment">-- Get multiple stats from snapshot
+</span><span class="keyword">local</span> snapshotStats = NAG:<span class="function-name">Snapshot</span>(<span class="number">12345</span>, <span class="string">"crit"</span>, <span class="string">"haste"</span>)  <span class="comment">-- Returns: (snapshot_crit + snapshot_haste)
+</span>
+<span class="comment">-- Arguments can be in any order
+</span><span class="keyword">local</span> snapshotStats = NAG:<span class="function-name">Snapshot</span>(<span class="string">"ap"</span>, <span class="number">67890</span>, <span class="string">"mastery"</span>)  <span class="comment">-- Returns: (snapshot_ap + snapshot_mastery)</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:SnapshotPercent"></a>
+    <strong>NAG:SnapshotPercent (spellID, ...)</strong>
+    </dt>
+    <dd>
+    Calculate percentage difference between current stats and snapshot values  This function calculates the percentage change from snapshot to current values:
+ - Positive values indicate stat gains (e.g., 0.2 = 20% increase)
+ - Negative values indicate stat losses (e.g., -0.1 = 10% decrease)
+ - Zero indicates no change
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellID</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to compare snapshot against
+        </li>
+        <li><span class="parameter">...</span>
+         string Variable number of stat names to compare ("str", "agi", "int", "crit", "haste", "mastery", "ap")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        percentage difference: (current<em>total / snapshot</em>total) - 1
+   - Returns 0 if no snapshot exists or snapshot total is 0
+   - Returns 0 if no valid stats provided
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="comment">-- Check AP percentage difference for a buff
+</span><span class="keyword">local</span> apPercent = NAG:<span class="function-name">SnapshotPercent</span>(<span class="number">59879</span>, <span class="string">"ap"</span>)  <span class="comment">-- Returns: (current_ap / snapshot_ap) - 1
+</span>
+<span class="comment">-- Check combined crit + haste percentage difference
+</span><span class="keyword">local</span> combinedPercent = NAG:<span class="function-name">SnapshotPercent</span>(<span class="number">12345</span>, <span class="string">"crit"</span>, <span class="string">"haste"</span>)  <span class="comment">-- Returns: ((current_crit + current_haste) / (snapshot_crit + snapshot_haste)) - 1
+</span>
+<span class="comment">-- Example usage in conditions:
+</span><span class="comment">-- if NAG:SnapshotPercent(59879, "ap") &gt; 0.1 then  -- If AP increased by more than 10%</span></pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

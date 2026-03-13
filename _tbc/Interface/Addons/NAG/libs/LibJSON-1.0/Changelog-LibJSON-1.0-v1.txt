@@ -1,0 +1,15 @@
+tag v1
+a3ddfc611f6b949e8e97189d215bb257d8f2815c
+Cameron Knight <ckknight@ckknight-laptop.local>
+2008-11-29 00:13:31 -0600
+
+Tagging as v1
+
+
+--------------------
+
+Cameron Knight (3):
+      87d9513: Initial commit
+      c496f3d: Fix the ignore in .pkgmeta
+      56f8af3: doc tweaks
+

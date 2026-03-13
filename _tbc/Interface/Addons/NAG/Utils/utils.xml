@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.blizzard.com/wow/ui/" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+    <!-- Utility Modules (Load early - required by many modules) -->
+    <Script file="AceGUIPatches.lua"/>
+    <Script file="DatabaseUtils.lua"/>
+    <Script file="TableUtils.lua"/>
+    <Script file="StringUtil.lua"/>
+    <Script file="LuaFormatter.lua"/>
+    <Script file="TablePool.lua"/>
+    <Script file="DebugFrameUtil.lua"/>
+    <Script file="ChatCommandUtils.lua"/>
+    <Script file="DevDebugUtils.lua"/>
+    <!--<Script file="APICache.lua"/>-->
+    <Script file="AuraCache.lua"/>
+
+</Ui>

@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_NAG">Class NAG </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/APLAction_Casting.html">APLAction_Casting</a></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><a href="../modules/APLAction_Misc.html">APLAction_Misc</a></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><a href="../modules/APLDRW.html">APLDRW</a></li>
+  <li><a href="../modules/APLSequences.html">APLSequences</a></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><a href="../modules/APLValues_Aura.html">APLValues_Aura</a></li>
+  <li><a href="../modules/APLValues_AuraSets.html">APLValues_AuraSets</a></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><strong>APLValues_Boss</strong></li>
+  <li><a href="../modules/APLValues_Dot.html">APLValues_Dot</a></li>
+  <li><a href="../modules/APLValues_Encounter.html">APLValues_Encounter</a></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><a href="../modules/APLValues_Resources.html">APLValues_Resources</a></li>
+  <li><a href="../modules/APLValues_Runes.html">APLValues_Runes</a></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><a href="../modules/APLValues_Unit.html">APLValues_Unit</a></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><a href="../modules/APL_Class.html">APL_Class</a></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><a href="../modules/NAG.EnhancedAuraHandlers.html">NAG.EnhancedAuraHandlers</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>APLValues_Boss</code></h1>
+<p>
+
+</p>
+<p>"
+ Boss-related APL value functions for the NAG addon</p>
+
+<p> This module provides utility functions for boss encounters, boss mechanics, and encounter-specific conditions.</p>
+
+<p> License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: Rakizi, Fonsas
+ Discord: https://discord.gg/ebonhold</p>
+
+<p> luacheck: ignore GetSpellInfo</p>
+
+
+<h2><a href="#Class_NAG">Class NAG </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:BossCastTimeRemaining">NAG:BossCastTimeRemaining ()</a></td>
+	<td class="summary">Gets the remaining cast time for the boss's current spell.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:BossChannelTimeRemaining">NAG:BossChannelTimeRemaining ()</a></td>
+	<td class="summary">Gets the remaining channel time for the boss's current spell.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:BossCurrentTarget">NAG:BossCurrentTarget (targetUnit)</a></td>
+	<td class="summary">Checks if the specified unit's current target is the player.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:BossSpellIsCasting">NAG:BossSpellIsCasting (targetUnit, spellId)</a></td>
+	<td class="summary">Checks if the boss is currently casting or channeling a specific spell.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:BossSpellTimeToReady">NAG:BossSpellTimeToReady (targetUnit, spellId)</a></td>
+	<td class="summary">Gets the time until a boss spell is ready (off cooldown).</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_NAG"></a>Class NAG </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:BossCastTimeRemaining"></a>
+    <strong>NAG:BossCastTimeRemaining ()</strong>
+    </dt>
+    <dd>
+    Gets the remaining cast time for the boss's current spell.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        cast time in seconds, or 0 if not casting or no boss target
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">BossCastTimeRemaining</span>() &lt;= <span class="number">2.5</span> <span class="comment">-- Check if cast will finish within 2.5 seconds</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:BossChannelTimeRemaining"></a>
+    <strong>NAG:BossChannelTimeRemaining ()</strong>
+    </dt>
+    <dd>
+    Gets the remaining channel time for the boss's current spell.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        channel time in seconds, or 0 if not channeling or no boss target
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">BossChannelTimeRemaining</span>() &lt;= <span class="number">3.0</span> <span class="comment">-- Check if channel will finish within 3 seconds</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:BossCurrentTarget"></a>
+    <strong>NAG:BossCurrentTarget (targetUnit)</strong>
+    </dt>
+    <dd>
+    Checks if the specified unit's current target is the player.
+ Mirrors the simulator's BossCurrentTarget value which evaluates to true when
+ the boss is actively targeting the player (i.e., the player is tanking).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">targetUnit</span>
+        ? string Unit token for the boss (defaults to the first active boss unit or "target")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the boss is targeting the player, false otherwise
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:BossSpellIsCasting"></a>
+    <strong>NAG:BossSpellIsCasting (targetUnit, spellId)</strong>
+    </dt>
+    <dd>
+    Checks if the boss is currently casting or channeling a specific spell.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">targetUnit</span>
+        ? string The target unit to check (defaults to the first active boss unit or "target")
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check for (returns false if nil or invalid)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the boss is casting or channeling the specified spell, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">BossSpellIsCasting</span>(<span class="string">"target"</span>, <span class="number">12345</span>) <span class="comment">-- Check if boss is casting or channeling spell ID 12345</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:BossSpellTimeToReady"></a>
+    <strong>NAG:BossSpellTimeToReady (targetUnit, spellId)</strong>
+    </dt>
+    <dd>
+    Gets the time until a boss spell is ready (off cooldown).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">targetUnit</span>
+        ? string The target unit to check (defaults to "target")
+        </li>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check (returns 0 if nil or invalid)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        in seconds until the spell is ready, or 0 if already ready or invalid spellId
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">BossSpellTimeToReady</span>(<span class="string">"target"</span>, <span class="number">12345</span>) &lt;= <span class="number">10</span> <span class="comment">-- Check if spell will be ready within 10 seconds</span></pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

@@ -1,0 +1,1152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_NAG">Class NAG </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/APLAction_Casting.html">APLAction_Casting</a></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><a href="../modules/APLAction_Misc.html">APLAction_Misc</a></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><a href="../modules/APLDRW.html">APLDRW</a></li>
+  <li><a href="../modules/APLSequences.html">APLSequences</a></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><a href="../modules/APLValues_Aura.html">APLValues_Aura</a></li>
+  <li><a href="../modules/APLValues_AuraSets.html">APLValues_AuraSets</a></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><a href="../modules/APLValues_Boss.html">APLValues_Boss</a></li>
+  <li><a href="../modules/APLValues_Dot.html">APLValues_Dot</a></li>
+  <li><strong>APLValues_Encounter</strong></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><a href="../modules/APLValues_Resources.html">APLValues_Resources</a></li>
+  <li><a href="../modules/APLValues_Runes.html">APLValues_Runes</a></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><a href="../modules/APLValues_Unit.html">APLValues_Unit</a></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><a href="../modules/APL_Class.html">APL_Class</a></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><a href="../modules/NAG.EnhancedAuraHandlers.html">NAG.EnhancedAuraHandlers</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>APLValues_Encounter</code></h1>
+<p>
+
+</p>
+<p>"
+ Encounter-related APL value functions for the NAG addon</p>
+
+<p> This module provides utility functions for encounter detection, mechanics, and encounter-specific conditions.</p>
+
+<p> License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: Rakizi, Fonsas
+ Discord: https://discord.gg/ebonhold</p>
+
+<p> luacheck: ignore GetSpellInfo</p>
+
+
+<h2><a href="#Class_NAG">Class NAG </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CountEnemiesInRange">NAG:CountEnemiesInRange (self, maxRange, useAdvancedFeatures, useCaching)</a></td>
+	<td class="summary">Counts the number of enemies in range.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CountTargetsWithDebuffInRange">NAG:CountTargetsWithDebuffInRange (debuffId, maxRange)</a></td>
+	<td class="summary">Helper function to count targets with a specific debuff within a given range (uses unified enemy iteration).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentEncounterId">NAG:CurrentEncounterId ()</a></td>
+	<td class="summary">Get the current encounter ID if in an encounter, or 0 otherwise</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentTime">NAG:CurrentTime (self)</a></td>
+	<td class="summary">Get the current combat time in seconds since combat started, or 0 if not in combat.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentTimePercent">NAG:CurrentTimePercent (self)</a></td>
+	<td class="summary">Get the current time as a percentage of the total time (elapsed/total).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetClassCountInGroup">NAG:GetClassCountInGroup (classToken, scope)</a></td>
+	<td class="summary">Returns the number of units of the given class in the group or subgroup.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetCurrentAssignments">NAG:GetCurrentAssignments ()</a></td>
+	<td class="summary">Get the user's current assignment states</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetGroupMemberUnits">NAG:GetGroupMemberUnits (self)</a></td>
+	<td class="summary">Returns the list of unit IDs for current group members (respects overrides).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetNextAssignment">NAG:GetNextAssignment ()</a></td>
+	<td class="summary">Get the next priority assignment that should be cast
+ Checks enabled assignments in order and returns the first one that needs to be applied</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:GetSubgroupMemberUnits">NAG:GetSubgroupMemberUnits ()</a></td>
+	<td class="summary">Returns the list of unit IDs for the player's subgroup (raid = subgroup only; party = full party; solo = player).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:HasOtherClassInGroup">NAG:HasOtherClassInGroup (classToken, scope)</a></td>
+	<td class="summary">Returns true when at least one other unit of the given class (excluding player) is in the group/subgroup.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:InCombat">NAG:InCombat (unit)</a></td>
+	<td class="summary">Check if a unit is currently in combat</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:InEncounter">NAG:InEncounter (self)</a></td>
+	<td class="summary">Check if the player is currently in a raid or dungeon boss encounter or Training Dummy</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:IsAssignmentEnabled">NAG:IsAssignmentEnabled (assignmentId)</a></td>
+	<td class="summary">Check if a class assignment is enabled for the current class</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:IsAssignmentSpellEnabled">NAG:IsAssignmentSpellEnabled (spellId)</a></td>
+	<td class="summary">Check if a spell belongs to an enabled assignment</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:IsExecutePhase">NAG:IsExecutePhase (threshold)</a></td>
+	<td class="summary">Checks if the target is in execute phase (below a health percentage threshold).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:IsOnlyClassInGroup">NAG:IsOnlyClassInGroup (classToken, scope)</a></td>
+	<td class="summary">Returns true when at most one unit of the given class is in the group.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:NumberTargets">NAG:NumberTargets (range, useMeleeFallback)</a></td>
+	<td class="summary">Get the number of valid targets within range for AoE abilities.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:NumberTargetsWithTTD">NAG:NumberTargetsWithTTD (minTTD, range)</a></td>
+	<td class="summary">Get the number of targets in range that have Time To Death higher than a given threshold.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:PrepullActive">NAG:PrepullActive ()</a></td>
+	<td class="summary">Check if a pre-pull timer is currently active</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:PrepullSecondsRemaining">NAG:PrepullSecondsRemaining ()</a></td>
+	<td class="summary">Get the number of seconds until pull (negative means pull has happened)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RemainingTime">NAG:RemainingTime (self)</a></td>
+	<td class="summary">Get the remaining time (TTD or encounter timer) in seconds for the current target or encounter.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RemainingTimePercent">NAG:RemainingTimePercent (self)</a></td>
+	<td class="summary">Get the remaining time as a percentage of the total time (remaining/total).</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:TargetInMeleeRange">NAG:TargetInMeleeRange (maxRange)</a></td>
+	<td class="summary">Returns true if the player's current target is within a specified melee range.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:TestAssignmentEnabled">NAG:TestAssignmentEnabled (assignmentId)</a></td>
+	<td class="summary">Debug function to test assignment states (prints to chat)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:TimeOnTarget">NAG:TimeOnTarget (self)</a></td>
+	<td class="summary">Get the time spent on the current target in seconds, or 0 if not in combat or no target.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:TimeToPercent">NAG:TimeToPercent (self, percent)</a></td>
+	<td class="summary">Get the time remaining in seconds until the target reaches the specified health percentage.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_NAG"></a>Class NAG </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:CountEnemiesInRange"></a>
+    <strong>NAG:CountEnemiesInRange (self, maxRange, useAdvancedFeatures, useCaching)</strong>
+    </dt>
+    <dd>
+    Counts the number of enemies in range.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+            <span class="types"><a class="type" href="../modules/APLValues_Encounter.html#NAG">NAG</a></span>
+         The NAG addon instance
+        </li>
+        <li><span class="parameter">maxRange</span>
+            <span class="types"><span class="type">number</span></span>
+         The maximum range to check (1-100 yards).
+        </li>
+        <li><span class="parameter">useAdvancedFeatures</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil Optional: Whether to use advanced features (default: true)
+        </li>
+        <li><span class="parameter">useCaching</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil Optional: Whether to use caching (default: true)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        of enemies in range.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CountEnemiesInRange</span>(<span class="number">30</span>)
+
+**Note:** This <span class="keyword">function</span> now uses the unified TTDManager implementation with basic features.
+For advanced <span class="function-name">features</span> (training dummy detection, target handling, caching), use TTDManager directly.</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CountTargetsWithDebuffInRange"></a>
+    <strong>NAG:CountTargetsWithDebuffInRange (debuffId, maxRange)</strong>
+    </dt>
+    <dd>
+    Helper function to count targets with a specific debuff within a given range (uses unified enemy iteration).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">debuffId</span>
+            <span class="types"><span class="type">number</span></span>
+         The ID of the debuff to check for
+        </li>
+        <li><span class="parameter">maxRange</span>
+            <span class="types"><span class="type">number</span></span>
+         The maximum range to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        number of targets with the specified debuff
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentEncounterId"></a>
+    <strong>NAG:CurrentEncounterId ()</strong>
+    </dt>
+    <dd>
+    Get the current encounter ID if in an encounter, or 0 otherwise
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current encounter ID, or 0 if none
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">if</span> NAG:<span class="function-name">CurrentEncounterId</span>() == <span class="number">1498</span> <span class="keyword">then</span> ... <span class="keyword">end</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentTime"></a>
+    <strong>NAG:CurrentTime (self)</strong>
+    </dt>
+    <dd>
+    Get the current combat time in seconds since combat started, or 0 if not in combat.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+            <span class="types"><a class="type" href="../modules/APLValues_Encounter.html#NAG">NAG</a></span>
+         The NAG addon instance
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current combat time in seconds.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentTime</span>() &gt;= <span class="number">10</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentTimePercent"></a>
+    <strong>NAG:CurrentTimePercent (self)</strong>
+    </dt>
+    <dd>
+    Get the current time as a percentage of the total time (elapsed/total).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+            <span class="types"><a class="type" href="../modules/APLValues_Encounter.html#NAG">NAG</a></span>
+         The NAG addon instance
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current time percentage (0-100).
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentTimePercent</span>() &gt;= <span class="number">50</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:GetClassCountInGroup"></a>
+    <strong>NAG:GetClassCountInGroup (classToken, scope)</strong>
+    </dt>
+    <dd>
+    Returns the number of units of the given class in the group or subgroup.  When classToken is nil, uses player's class.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">classToken</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil e.g. "HUNTER"; nil = UnitClassBase("player")
+        </li>
+        <li><span class="parameter">scope</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil "group" (default) or "subgroup"
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:GetCurrentAssignments"></a>
+    <strong>NAG:GetCurrentAssignments ()</strong>
+    </dt>
+    <dd>
+    Get the user's current assignment states
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        of assignment states { [assignmentId] = enabled }
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> states = NAG:<span class="function-name">GetCurrentAssignments</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:GetGroupMemberUnits"></a>
+    <strong>NAG:GetGroupMemberUnits (self)</strong>
+    </dt>
+    <dd>
+    Returns the list of unit IDs for current group members (respects overrides).
+ Solo returns {"player"}. Callers should iterate immediately; do not store the returned table.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+            <span class="types"><a class="type" href="../modules/APLValues_Encounter.html#NAG">NAG</a></span>
+         The NAG addon instance
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        of unit ID strings
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">for</span> _, unit <span class="keyword">in</span> <span class="global">ipairs</span>(NAG:<span class="function-name">GetGroupMemberUnits</span>()) <span class="keyword">do</span> ... <span class="keyword">end</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:GetNextAssignment"></a>
+    <strong>NAG:GetNextAssignment ()</strong>
+    </dt>
+    <dd>
+    Get the next priority assignment that should be cast
+ Checks enabled assignments in order and returns the first one that needs to be applied
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+        |nil The assignment ID that should be cast next, or nil if none needed
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> nextAssignment = NAG:<span class="function-name">GetNextAssignment</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:GetSubgroupMemberUnits"></a>
+    <strong>NAG:GetSubgroupMemberUnits ()</strong>
+    </dt>
+    <dd>
+    Returns the list of unit IDs for the player's subgroup (raid = subgroup only; party = full party; solo = player).
+ Callers should iterate immediately; do not store the returned table.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.5">table</a></span>
+        of unit ID strings
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:HasOtherClassInGroup"></a>
+    <strong>NAG:HasOtherClassInGroup (classToken, scope)</strong>
+    </dt>
+    <dd>
+    Returns true when at least one other unit of the given class (excluding player) is in the group/subgroup.  When classToken is nil, uses player's class.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">classToken</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil nil = player's class
+        </li>
+        <li><span class="parameter">scope</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil "subgroup" (default) or "group"
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:InCombat"></a>
+    <strong>NAG:InCombat (unit)</strong>
+    </dt>
+    <dd>
+    Check if a unit is currently in combat
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+        ? string The unit to check (defaults to "player")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the unit is in combat, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">InCombat</span>()</pre></li>
+        <li><pre class="example">NAG:<span class="function-name">InCombat</span>(<span class="string">"target"</span>)</pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:InEncounter"></a>
+    <strong>NAG:InEncounter (self)</strong>
+    </dt>
+    <dd>
+    Check if the player is currently in a raid or dungeon boss encounter or Training Dummy
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+            <span class="types"><a class="type" href="../modules/APLValues_Encounter.html#NAG">NAG</a></span>
+         The NAG addon instance
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if in an encounter or training dummy simulation, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">local</span> inEncounter = NAG:<span class="function-name">InEncounter</span>()
+<span class="keyword">if</span> inEncounter <span class="keyword">then</span>
+    <span class="global">print</span>(<span class="string">"Player is in an encounter or training dummy simulation"</span>)
+<span class="keyword">end</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:IsAssignmentEnabled"></a>
+    <strong>NAG:IsAssignmentEnabled (assignmentId)</strong>
+    </dt>
+    <dd>
+    Check if a class assignment is enabled for the current class
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">assignmentId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         The assignment ID to check
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the assignment is enabled, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">if</span> NAG:<span class="function-name">IsAssignmentEnabled</span>(<span class="string">"curse_of_elements"</span>) <span class="keyword">then</span> ... <span class="keyword">end</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:IsAssignmentSpellEnabled"></a>
+    <strong>NAG:IsAssignmentSpellEnabled (spellId)</strong>
+    </dt>
+    <dd>
+    Check if a spell belongs to an enabled assignment
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">spellId</span>
+            <span class="types"><span class="type">number</span></span>
+         The spell ID to check against assignment spell lists
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the spell is part of an enabled assignment, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example"><span class="keyword">if</span> NAG:<span class="function-name">IsAssignmentSpellEnabled</span>(<span class="number">980</span>) <span class="keyword">then</span> ... <span class="keyword">end</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:IsExecutePhase"></a>
+    <strong>NAG:IsExecutePhase (threshold)</strong>
+    </dt>
+    <dd>
+    Checks if the target is in execute phase (below a health percentage threshold).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">threshold</span>
+            <span class="types"><span class="type">number</span></span>
+         The health percentage threshold for execute phase.
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the target is in execute phase, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">IsExecutePhase</span>(<span class="number">20</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:IsOnlyClassInGroup"></a>
+    <strong>NAG:IsOnlyClassInGroup (classToken, scope)</strong>
+    </dt>
+    <dd>
+    Returns true when at most one unit of the given class is in the group.  When classToken is nil, uses player's class.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">classToken</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil nil = player's class
+        </li>
+        <li><span class="parameter">scope</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil "group" (default) or "subgroup"
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:NumberTargets"></a>
+    <strong>NAG:NumberTargets (range, useMeleeFallback)</strong>
+    </dt>
+    <dd>
+    Get the number of valid targets within range for AoE abilities.
+ Uses spec-appropriate ranges for melee vs ranged classes.</p>
+
+<p> Behavior:
+ - If range is provided: Uses the specified range for target counting regardless of class type
+ - If range is nil: Uses spec-appropriate ranges (melee for melee classes, ranged for ranged classes)</p>
+
+<p> Spec-specific ranges are automatically applied when no range parameter is provided:
+ - Enhancement Shaman: 10-yard melee range for abilities like Unleash Elements
+ - Retribution Paladin: 10-yard melee range for abilities like Hammer of Wrath
+ - Ranged specs: 40-yard ranged range for spell casting
+ - Other melee specs: 5-8 yard melee ranges based on class abilities
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">range</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional range to use for counting targets (overrides spec-appropriate ranges)
+        </li>
+        <li><span class="parameter">useMeleeFallback</span>
+            <span class="types"><span class="type">boolean</span></span>
+         |nil Optional: Whether melee classes should fallback to ranged range when no enemies found in melee range. Default: true
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        number of valid targets within range. Returns 0 if no targets found.</p>
+
+<p> <strong>Important Usage Notes:</strong>
+ - <strong>No parameter</strong>: Uses spec-appropriate ranges (melee=5-10 yards, ranged=30-40 yards based on class/spec)
+ - <strong>With range parameter</strong>: Uses the specified range for target counting regardless of class type
+ - <strong>With useMeleeFallback parameter</strong>: Controls whether melee classes fallback to ranged range when no enemies in melee range
+ - <strong>Class behavior</strong>: Melee classes check melee range first, fallback to ranged if no targets found (unless disabled)
+ - <strong>Ranged classes</strong>: Always use the specified range (no fallback logic)
+ - <strong>WoWSims compatible</strong>: Matches WoWSims NumberTargets() behavior exactly when useMeleeFallback is true (default)
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">NumberTargets</span>() <span class="comment">-- Uses spec-appropriate ranges (e.g., 10 yards for Enhancement Shaman)</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">NumberTargets</span>(<span class="number">10</span>) <span class="comment">-- Uses 10 yards for target counting (class logic determines melee vs ranged behavior)</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">NumberTargets</span>(<span class="number">10</span>, <span class="keyword">false</span>) <span class="comment">-- Uses 10 yards without melee fallback for explicit range checking</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:NumberTargetsWithTTD"></a>
+    <strong>NAG:NumberTargetsWithTTD (minTTD, range)</strong>
+    </dt>
+    <dd>
+    Get the number of targets in range that have Time To Death higher than a given threshold.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">minTTD</span>
+            <span class="types"><span class="type">number</span></span>
+         The minimum Time To Death threshold in seconds
+        </li>
+        <li><span class="parameter">range</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Optional range to use for counting targets (default: 15)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        number of targets with TTD higher than the threshold
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">NumberTargetsWithTTD</span>(<span class="number">10</span>) <span class="comment">-- Check how many targets have TTD &gt; 10 seconds</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">NumberTargetsWithTTD</span>(<span class="number">5</span>, <span class="number">20</span>) <span class="comment">-- Check how many targets within 20 yards have TTD &gt; 5 seconds</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:PrepullActive"></a>
+    <strong>NAG:PrepullActive ()</strong>
+    </dt>
+    <dd>
+    Check if a pre-pull timer is currently active
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if a pre-pull timer is active
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">PrepullActive</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:PrepullSecondsRemaining"></a>
+    <strong>NAG:PrepullSecondsRemaining ()</strong>
+    </dt>
+    <dd>
+    Get the number of seconds until pull (negative means pull has happened)
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        until pull, or 0 if no active pull timer
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">PrepullSecondsRemaining</span>() &gt; <span class="number">5</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RemainingTime"></a>
+    <strong>NAG:RemainingTime (self)</strong>
+    </dt>
+    <dd>
+    Get the remaining time (TTD or encounter timer) in seconds for the current target or encounter.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+            <span class="types"><a class="type" href="../modules/APLValues_Encounter.html#NAG">NAG</a></span>
+         The NAG addon instance
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        remaining time.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">RemainingTime</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:RemainingTimePercent"></a>
+    <strong>NAG:RemainingTimePercent (self)</strong>
+    </dt>
+    <dd>
+    Get the remaining time as a percentage of the total time (remaining/total).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+            <span class="types"><a class="type" href="../modules/APLValues_Encounter.html#NAG">NAG</a></span>
+         The NAG addon instance
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        remaining time percentage (0-100).
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">RemainingTimePercent</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:TargetInMeleeRange"></a>
+    <strong>NAG:TargetInMeleeRange (maxRange)</strong>
+    </dt>
+    <dd>
+    Returns true if the player's current target is within a specified melee range.
+ Uses LibRangeCheck-3.0 via the shared <code>ns.RC</code> handle (same dependency used by NumberTargets logic).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">maxRange</span>
+            <span class="types"><span class="type">number</span></span>
+         |nil Max range in yards (default: 5)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:TestAssignmentEnabled"></a>
+    <strong>NAG:TestAssignmentEnabled (assignmentId)</strong>
+    </dt>
+    <dd>
+    Debug function to test assignment states (prints to chat)
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">assignmentId</span>
+            <span class="types"><a class="type" href="https://www.lua.org/manual/5.1/manual.html#5.4">string</a></span>
+         |nil Optional specific assignment ID to test, or nil to test all
+        </li>
+    </ul>
+
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">TestAssignmentEnabled</span>() <span class="comment">-- Test all assignments</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">TestAssignmentEnabled</span>(<span class="string">"curse_of_elements"</span>) <span class="comment">-- Test specific assignment</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:TimeOnTarget"></a>
+    <strong>NAG:TimeOnTarget (self)</strong>
+    </dt>
+    <dd>
+    Get the time spent on the current target in seconds, or 0 if not in combat or no target.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+            <span class="types"><a class="type" href="../modules/APLValues_Encounter.html#NAG">NAG</a></span>
+         The NAG addon instance
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        time spent on the current target in seconds.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">TimeOnTarget</span>() &gt;= <span class="number">10</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:TimeToPercent"></a>
+    <strong>NAG:TimeToPercent (self, percent)</strong>
+    </dt>
+    <dd>
+    Get the time remaining in seconds until the target reaches the specified health percentage.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">self</span>
+            <span class="types"><a class="type" href="../modules/APLValues_Encounter.html#NAG">NAG</a></span>
+         The NAG addon instance
+        </li>
+        <li><span class="parameter">percent</span>
+            <span class="types"><span class="type">number</span></span>
+         The target health percentage (0-100).
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        time remaining in seconds, or 8888 if unable to calculate.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">TimeToPercent</span>(<span class="number">20</span>) <span class="comment">-- Time until target reaches 20% health</span></pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>

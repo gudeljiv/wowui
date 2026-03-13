@@ -1,0 +1,1480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>NAG Reference Documentation</title>
+    <link rel="stylesheet" href="../ldoc.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>NAG</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Class_NAG">Class NAG </a></li>
+</ul>
+
+
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/APLAction_Casting.html">APLAction_Casting</a></li>
+  <li><a href="../modules/APLAction_Groups.html">APLAction_Groups</a></li>
+  <li><a href="../modules/APLAction_Misc.html">APLAction_Misc</a></li>
+  <li><a href="../modules/APLAction_Timing.html">APLAction_Timing</a></li>
+  <li><a href="../modules/APLDRW.html">APLDRW</a></li>
+  <li><a href="../modules/APLSequences.html">APLSequences</a></li>
+  <li><a href="../modules/APLTotemTracking.html">APLTotemTracking</a></li>
+  <li><a href="../modules/APLValues_Aura.html">APLValues_Aura</a></li>
+  <li><a href="../modules/APLValues_AuraSets.html">APLValues_AuraSets</a></li>
+  <li><a href="../modules/APLValues_AutoAttacks.html">APLValues_AutoAttacks</a></li>
+  <li><a href="../modules/APLValues_Boss.html">APLValues_Boss</a></li>
+  <li><a href="../modules/APLValues_Dot.html">APLValues_Dot</a></li>
+  <li><a href="../modules/APLValues_Encounter.html">APLValues_Encounter</a></li>
+  <li><a href="../modules/APLValues_GCD.html">APLValues_GCD</a></li>
+  <li><a href="../modules/APLValues_Misc.html">APLValues_Misc</a></li>
+  <li><a href="../modules/APLValues_Operators.html">APLValues_Operators</a></li>
+  <li><a href="../modules/APLValues_Properties.html">APLValues_Properties</a></li>
+  <li><a href="../modules/APLValues_PvP.html">APLValues_PvP</a></li>
+  <li><strong>APLValues_Resources</strong></li>
+  <li><a href="../modules/APLValues_Runes.html">APLValues_Runes</a></li>
+  <li><a href="../modules/APLValues_Spell.html">APLValues_Spell</a></li>
+  <li><a href="../modules/APLValues_Stats.html">APLValues_Stats</a></li>
+  <li><a href="../modules/APLValues_Unit.html">APLValues_Unit</a></li>
+  <li><a href="../modules/APLValues_Variables.html">APLValues_Variables</a></li>
+  <li><a href="../modules/APLValues__TierSets.html">APLValues__TierSets</a></li>
+  <li><a href="../modules/APLValues__Tinkers.html">APLValues__Tinkers</a></li>
+  <li><a href="../modules/APL_Aliases.html">APL_Aliases</a></li>
+  <li><a href="../modules/APL_Class.html">APL_Class</a></li>
+  <li><a href="../modules/AuraUtils.html">AuraUtils</a></li>
+  <li><a href="../modules/NAG.EnhancedAuraHandlers.html">NAG.EnhancedAuraHandlers</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Module <code>APLValues_Resources</code></h1>
+<p>
+
+</p>
+<p>"
+ Resource-related APL value functions for the NAG addon</p>
+
+<p> This module provides utility functions for mana, energy, rage, and other resource management.</p>
+
+<p> License: CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/legalcode)
+ Authors: Rakizi, Fonsas
+ Discord: https://discord.gg/ebonhold</p>
+
+<p> luacheck: ignore GetSpellInfo</p>
+
+
+<h2><a href="#Class_NAG">Class NAG </a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentAlternate">NAG:CurrentAlternate ()</a></td>
+	<td class="summary">Get the current alternate power of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentArcaneCharges">NAG:CurrentArcaneCharges ()</a></td>
+	<td class="summary">Gets the current number of Arcane Charges</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentBurningEmbers">NAG:CurrentBurningEmbers ()</a></td>
+	<td class="summary">Gets the current number of Burning Embers</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentComboPoints">NAG:CurrentComboPoints ()</a></td>
+	<td class="summary">Get the current combo points of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentDemonicFury">NAG:CurrentDemonicFury ()</a></td>
+	<td class="summary">Gets the current amount of Demonic Fury</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentEnergy">NAG:CurrentEnergy ()</a></td>
+	<td class="summary">Get the current energy of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentEnergyAtGCD">NAG:CurrentEnergyAtGCD ()</a></td>
+	<td class="summary">Predict energy at GCD end (TBC uses discrete energy ticks)</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentFocus">NAG:CurrentFocus ()</a></td>
+	<td class="summary">Get the current focus of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentGenericResource">NAG:CurrentGenericResource ()</a></td>
+	<td class="summary">Gets the current amount of the spec's secondary resource (Soul Shards, Demonic Fury, Holy Power, etc.)
+ Uses spec-specific logic to determine whether to return modified or unmodified values</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentHealth">NAG:CurrentHealth (sourceUnit)</a></td>
+	<td class="summary">Get the current health of a unit</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentHealthPercent">NAG:CurrentHealthPercent (unit)</a></td>
+	<td class="summary">Get the current health percentage of a unit</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentHolyPower">NAG:CurrentHolyPower ()</a></td>
+	<td class="summary">Get the current holy power of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentLunarEnergy">NAG:CurrentLunarEnergy ()</a></td>
+	<td class="summary">Get the current lunar energy of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentMaelstrom">NAG:CurrentMaelstrom ()</a></td>
+	<td class="summary">Get the current maelstrom of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentMana">NAG:CurrentMana (sourceUnit)</a></td>
+	<td class="summary">Get the current mana of a unit</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentManaPercent">NAG:CurrentManaPercent (sourceUnit)</a></td>
+	<td class="summary">Get the current mana percentage of a unit</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentManaPercentBase">NAG:CurrentManaPercentBase (sourceUnit)</a></td>
+	<td class="summary">Get the current mana percentage based on BASE mana (not total mana pool)
+ This is useful for powershifting checks where you want to know mana percentage
+ relative to your base mana pool, ignoring temporary mana pool increases from buffs.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentRage">NAG:CurrentRage ()</a></td>
+	<td class="summary">Get the current rage of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentRageAtGCD">NAG:CurrentRageAtGCD ()</a></td>
+	<td class="summary">Predict rage at GCD end</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentRunicPower">NAG:CurrentRunicPower ()</a></td>
+	<td class="summary">Get the current runic power of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentSolarEnergy">NAG:CurrentSolarEnergy ()</a></td>
+	<td class="summary">Get the current solar energy of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:CurrentSoulShards">NAG:CurrentSoulShards ()</a></td>
+	<td class="summary">Get the current soul shards of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:EnergyRegenPerSecond">NAG:EnergyRegenPerSecond ()</a></td>
+	<td class="summary">Get energy regeneration per second</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:EnergyThreshold">NAG:EnergyThreshold (threshold)</a></td>
+	<td class="summary">Checks if the player's current energy is less than or equal to the specified threshold</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:EnergyTimeToTarget">NAG:EnergyTimeToTarget (targetEnergy)</a></td>
+	<td class="summary">Gets time until target energy level is reached</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:FocusRegenPerSecond">NAG:FocusRegenPerSecond ()</a></td>
+	<td class="summary">Get focus regeneration per second</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:FocusTimeToTarget">NAG:FocusTimeToTarget (targetFocus)</a></td>
+	<td class="summary">Gets time until target focus level is reached</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:IsWarriorInBattleStance">NAG:IsWarriorInBattleStance ()</a></td>
+	<td class="summary">Checks if the Warrior is currently in Battle Stance.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:IsWarriorInBerserkerOrBattleStance">NAG:IsWarriorInBerserkerOrBattleStance ()</a></td>
+	<td class="summary">Checks if the Warrior is in Berserker or Battle Stance.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:IsWarriorInBerserkerStance">NAG:IsWarriorInBerserkerStance ()</a></td>
+	<td class="summary">Checks if the Warrior is currently in Berserker Stance.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MaxComboPoints">NAG:MaxComboPoints ()</a></td>
+	<td class="summary">Get the maximum combo points of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MaxEnergy">NAG:MaxEnergy ()</a></td>
+	<td class="summary">Get the maximum energy of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MaxFocus">NAG:MaxFocus ()</a></td>
+	<td class="summary">Get the maximum focus of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MaxHealth">NAG:MaxHealth ()</a></td>
+	<td class="summary">Get the maximum health of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MaxRage">NAG:MaxRage ()</a></td>
+	<td class="summary">Get the maximum rage of the player</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MaxRunicPower">NAG:MaxRunicPower ()</a></td>
+	<td class="summary">Get the maximum runic power capacity of the player, accounting for talents</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MonkCurrentChi">NAG:MonkCurrentChi ()</a></td>
+	<td class="summary">Gets current chi</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:MonkMaxChi">NAG:MonkMaxChi ()</a></td>
+	<td class="summary">Gets maximum chi</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RogueShouldAvoidSnDHolding">NAG:RogueShouldAvoidSnDHolding (comboPoints)</a></td>
+	<td class="summary">Determines if we should avoid holding combo points for Slice and Dice.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:RogueSliceAndDiceFullDuration">NAG:RogueSliceAndDiceFullDuration (comboPoints)</a></td>
+	<td class="summary">Gets the full Slice and Dice duration in seconds for the given combo points.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:TimeToEnergyTick">NAG:TimeToEnergyTick ()</a></td>
+	<td class="summary">Calculates the time until the next energy tick for Rogues and Feral Druids</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#NAG:TimeToEnergyTickWithGCD">NAG:TimeToEnergyTickWithGCD ()</a></td>
+	<td class="summary">Calculates the time until the next energy tick for Rogues and Feral Druids</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Class_NAG"></a>Class NAG </h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "NAG:CurrentAlternate"></a>
+    <strong>NAG:CurrentAlternate ()</strong>
+    </dt>
+    <dd>
+    Get the current alternate power of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current alternate power of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentAlternate</span>() &gt;= <span class="number">50</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentArcaneCharges"></a>
+    <strong>NAG:CurrentArcaneCharges ()</strong>
+    </dt>
+    <dd>
+    Gets the current number of Arcane Charges
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current number of Arcane Charges
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentArcaneCharges</span>() &gt;= <span class="number">3</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentBurningEmbers"></a>
+    <strong>NAG:CurrentBurningEmbers ()</strong>
+    </dt>
+    <dd>
+    Gets the current number of Burning Embers
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current number of Burning Embers
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentBurningEmbers</span>() &gt;= <span class="number">2</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentComboPoints"></a>
+    <strong>NAG:CurrentComboPoints ()</strong>
+    </dt>
+    <dd>
+    Get the current combo points of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current combo points of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentComboPoints</span>() &gt;= <span class="number">3</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentDemonicFury"></a>
+    <strong>NAG:CurrentDemonicFury ()</strong>
+    </dt>
+    <dd>
+    Gets the current amount of Demonic Fury
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current amount of Demonic Fury
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentDemonicFury</span>() &gt;= <span class="number">50</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentEnergy"></a>
+    <strong>NAG:CurrentEnergy ()</strong>
+    </dt>
+    <dd>
+    Get the current energy of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current energy of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentEnergy</span>() &gt;= <span class="number">50</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentEnergyAtGCD"></a>
+    <strong>NAG:CurrentEnergyAtGCD ()</strong>
+    </dt>
+    <dd>
+    Predict energy at GCD end (TBC uses discrete energy ticks)
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        predicted energy when GCD is ready
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentEnergyAtGCD</span>() &lt;= <span class="number">21</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentFocus"></a>
+    <strong>NAG:CurrentFocus ()</strong>
+    </dt>
+    <dd>
+    Get the current focus of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current focus of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentFocus</span>() &gt;= <span class="number">50</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentGenericResource"></a>
+    <strong>NAG:CurrentGenericResource ()</strong>
+    </dt>
+    <dd>
+    Gets the current amount of the spec's secondary resource (Soul Shards, Demonic Fury, Holy Power, etc.)
+ Uses spec-specific logic to determine whether to return modified or unmodified values
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current amount of the spec's secondary resource
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentGenericResource</span>() &gt;= <span class="number">3</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentHealth"></a>
+    <strong>NAG:CurrentHealth (sourceUnit)</strong>
+    </dt>
+    <dd>
+    Get the current health of a unit
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sourceUnit</span>
+        ? string The unit to check health for (defaults to "player")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current health of the specified unit
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">CurrentHealth</span>() &gt;= <span class="number">1000</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">CurrentHealth</span>(<span class="string">"target"</span>) &gt;= <span class="number">5000</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentHealthPercent"></a>
+    <strong>NAG:CurrentHealthPercent (unit)</strong>
+    </dt>
+    <dd>
+    Get the current health percentage of a unit
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">unit</span>
+        ? string The unit to check health percentage for (defaults to "player")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current health percentage of the specified unit (0-1 for all units)
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">CurrentHealthPercent</span>() &gt;= <span class="number">0.5</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">CurrentHealthPercent</span>(<span class="string">"target"</span>) &gt;= <span class="number">0.2</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentHolyPower"></a>
+    <strong>NAG:CurrentHolyPower ()</strong>
+    </dt>
+    <dd>
+    Get the current holy power of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current holy power of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentHolyPower</span>() &gt;= <span class="number">3</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentLunarEnergy"></a>
+    <strong>NAG:CurrentLunarEnergy ()</strong>
+    </dt>
+    <dd>
+    Get the current lunar energy of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current lunar energy of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentLunarEnergy</span>() &gt;= <span class="number">50</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentMaelstrom"></a>
+    <strong>NAG:CurrentMaelstrom ()</strong>
+    </dt>
+    <dd>
+    Get the current maelstrom of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current maelstrom of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentMaelstrom</span>() &gt;= <span class="number">50</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentMana"></a>
+    <strong>NAG:CurrentMana (sourceUnit)</strong>
+    </dt>
+    <dd>
+    Get the current mana of a unit
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sourceUnit</span>
+        ? string The unit to check mana for (defaults to "player")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current mana of the specified unit
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">CurrentMana</span>() &gt;= <span class="number">1000</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">CurrentMana</span>(<span class="string">"target"</span>) &gt;= <span class="number">5000</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentManaPercent"></a>
+    <strong>NAG:CurrentManaPercent (sourceUnit)</strong>
+    </dt>
+    <dd>
+    Get the current mana percentage of a unit
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sourceUnit</span>
+        ? string The unit to check mana percentage for (defaults to "player")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current mana percentage of the specified unit (0-1 decimal range)
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <li><pre class="example">NAG:<span class="function-name">CurrentManaPercent</span>() &gt;= <span class="number">0.3</span></pre></li>
+        <li><pre class="example">NAG:<span class="function-name">CurrentManaPercent</span>(<span class="string">"target"</span>) &gt;= <span class="number">0.5</span></pre></li>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentManaPercentBase"></a>
+    <strong>NAG:CurrentManaPercentBase (sourceUnit)</strong>
+    </dt>
+    <dd>
+    Get the current mana percentage based on BASE mana (not total mana pool)
+ This is useful for powershifting checks where you want to know mana percentage
+ relative to your base mana pool, ignoring temporary mana pool increases from buffs.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">sourceUnit</span>
+        ? string The unit to check mana percentage for (defaults to "player")
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current mana percentage of base mana (0-1 decimal range), or current/total if base cannot be calculated
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentManaPercentBase</span>() &gt; <span class="number">0.35</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentRage"></a>
+    <strong>NAG:CurrentRage ()</strong>
+    </dt>
+    <dd>
+    Get the current rage of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current rage of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentRage</span>() &gt;= <span class="number">30</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentRageAtGCD"></a>
+    <strong>NAG:CurrentRageAtGCD ()</strong>
+    </dt>
+    <dd>
+    Predict rage at GCD end
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        predicted rage when GCD is ready
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentRageAtGCD</span>() &gt;= <span class="number">30</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentRunicPower"></a>
+    <strong>NAG:CurrentRunicPower ()</strong>
+    </dt>
+    <dd>
+    Get the current runic power of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current runic power of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentRunicPower</span>() &gt;= <span class="number">30</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentSolarEnergy"></a>
+    <strong>NAG:CurrentSolarEnergy ()</strong>
+    </dt>
+    <dd>
+    Get the current solar energy of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current solar energy of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentSolarEnergy</span>() &gt;= <span class="number">50</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:CurrentSoulShards"></a>
+    <strong>NAG:CurrentSoulShards ()</strong>
+    </dt>
+    <dd>
+    Get the current soul shards of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        current soul shards of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">CurrentSoulShards</span>() &gt;= <span class="number">3</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:EnergyRegenPerSecond"></a>
+    <strong>NAG:EnergyRegenPerSecond ()</strong>
+    </dt>
+    <dd>
+    Get energy regeneration per second
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        regen rate per second
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">EnergyRegenPerSecond</span>() &gt;= <span class="number">10</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:EnergyThreshold"></a>
+    <strong>NAG:EnergyThreshold (threshold)</strong>
+    </dt>
+    <dd>
+    Checks if the player's current energy is less than or equal to the specified threshold
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">threshold</span>
+            <span class="types"><span class="type">number</span></span>
+         The energy threshold to check against
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if the player's current energy is less than or equal to the threshold, false otherwise
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">EnergyThreshold</span>(<span class="number">35</span>)</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:EnergyTimeToTarget"></a>
+    <strong>NAG:EnergyTimeToTarget (targetEnergy)</strong>
+    </dt>
+    <dd>
+    Gets time until target energy level is reached
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">targetEnergy</span>
+            <span class="types"><span class="type">number</span></span>
+         |table The target energy level to reach
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        in seconds until target energy is reached
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">EnergyTimeToTarget</span>(<span class="number">100</span>) &lt;= <span class="number">5</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:FocusRegenPerSecond"></a>
+    <strong>NAG:FocusRegenPerSecond ()</strong>
+    </dt>
+    <dd>
+    Get focus regeneration per second
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        regen rate per second
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">FocusRegenPerSecond</span>() &gt;= <span class="number">4</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:FocusTimeToTarget"></a>
+    <strong>NAG:FocusTimeToTarget (targetFocus)</strong>
+    </dt>
+    <dd>
+    Gets time until target focus level is reached
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">targetFocus</span>
+            <span class="types"><span class="type">number</span></span>
+         The target focus level to reach
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        in seconds until target focus is reached
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">FocusTimeToTarget</span>(<span class="number">100</span>) &lt;= <span class="number">10</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:IsWarriorInBattleStance"></a>
+    <strong>NAG:IsWarriorInBattleStance ()</strong>
+    </dt>
+    <dd>
+    Checks if the Warrior is currently in Battle Stance.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if in Battle Stance, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">IsWarriorInBattleStance</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:IsWarriorInBerserkerOrBattleStance"></a>
+    <strong>NAG:IsWarriorInBerserkerOrBattleStance ()</strong>
+    </dt>
+    <dd>
+    Checks if the Warrior is in Berserker or Battle Stance.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if in Berserker or Battle Stance, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">IsWarriorInBerserkerOrBattleStance</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:IsWarriorInBerserkerStance"></a>
+    <strong>NAG:IsWarriorInBerserkerStance ()</strong>
+    </dt>
+    <dd>
+    Checks if the Warrior is currently in Berserker Stance.
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+        if in Berserker Stance, false otherwise.
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">IsWarriorInBerserkerStance</span>()</pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:MaxComboPoints"></a>
+    <strong>NAG:MaxComboPoints ()</strong>
+    </dt>
+    <dd>
+    Get the maximum combo points of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        maximum combo points of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">MaxComboPoints</span>() &gt;= <span class="number">5</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:MaxEnergy"></a>
+    <strong>NAG:MaxEnergy ()</strong>
+    </dt>
+    <dd>
+    Get the maximum energy of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        maximum energy of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">MaxEnergy</span>() &gt;= <span class="number">100</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:MaxFocus"></a>
+    <strong>NAG:MaxFocus ()</strong>
+    </dt>
+    <dd>
+    Get the maximum focus of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        maximum focus of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">MaxFocus</span>() &gt;= <span class="number">100</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:MaxHealth"></a>
+    <strong>NAG:MaxHealth ()</strong>
+    </dt>
+    <dd>
+    Get the maximum health of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        maximum health of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">MaxHealth</span>() &gt;= <span class="number">10000</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:MaxRage"></a>
+    <strong>NAG:MaxRage ()</strong>
+    </dt>
+    <dd>
+    Get the maximum rage of the player
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        maximum rage of the player
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">MaxRage</span>() &gt;= <span class="number">100</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:MaxRunicPower"></a>
+    <strong>NAG:MaxRunicPower ()</strong>
+    </dt>
+    <dd>
+    Get the maximum runic power capacity of the player, accounting for talents
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        maximum runic power capacity
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">MaxRunicPower</span>() &gt;= <span class="number">100</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:MonkCurrentChi"></a>
+    <strong>NAG:MonkCurrentChi ()</strong>
+    </dt>
+    <dd>
+    Gets current chi
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        chi value
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:MonkMaxChi"></a>
+    <strong>NAG:MonkMaxChi ()</strong>
+    </dt>
+    <dd>
+    Gets maximum chi
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        chi value
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RogueShouldAvoidSnDHolding"></a>
+    <strong>NAG:RogueShouldAvoidSnDHolding (comboPoints)</strong>
+    </dt>
+    <dd>
+    Determines if we should avoid holding combo points for Slice and Dice.
+ Matches TBC-sim: refresh SnD at &lt;=1s, pool when SnD remaining >2s (use finishers instead).
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">comboPoints</span>
+        ? number Optional combo point override (defaults to current combo points)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">boolean</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:RogueSliceAndDiceFullDuration"></a>
+    <strong>NAG:RogueSliceAndDiceFullDuration (comboPoints)</strong>
+    </dt>
+    <dd>
+    Gets the full Slice and Dice duration in seconds for the given combo points.
+
+    </ul>
+    </ul>
+    </ul>
+
+    <h3>Parameters:</h3>
+    <ul>
+        <li><span class="parameter">comboPoints</span>
+        ? number Optional combo point override (defaults to current combo points)
+        </li>
+    </ul>
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+
+
+
+    </ol>
+
+
+
+
+</dd>
+    <dt>
+    <a name = "NAG:TimeToEnergyTick"></a>
+    <strong>NAG:TimeToEnergyTick ()</strong>
+    </dt>
+    <dd>
+    Calculates the time until the next energy tick for Rogues and Feral Druids
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        in seconds until the next energy tick
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">TimeToEnergyTick</span>() &lt;= <span class="number">1.5</span></pre>
+    </ul>
+
+</dd>
+    <dt>
+    <a name = "NAG:TimeToEnergyTickWithGCD"></a>
+    <strong>NAG:TimeToEnergyTickWithGCD ()</strong>
+    </dt>
+    <dd>
+    Calculates the time until the next energy tick for Rogues and Feral Druids
+
+    </ul>
+    </ul>
+    </ul>
+
+
+    <h3>Returns:</h3>
+    <ol>
+
+           <span class="types"><span class="type">number</span></span>
+        in seconds until the next energy tick
+    </ol>
+
+
+
+    <h3>Usage:</h3>
+    <ul>
+        <pre class="example">NAG:<span class="function-name">TimeToEnergyTick</span>() &lt;= <span class="number">1.5</span></pre>
+    </ul>
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2026-03-04 05:01:57 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
