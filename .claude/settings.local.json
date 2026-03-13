@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(pip install \"pillow==12.1.1\")"
+      "Bash(pip install \"pillow==12.1.1\")",
+      "Bash(python3 -:*)"
     ]
   }
 }

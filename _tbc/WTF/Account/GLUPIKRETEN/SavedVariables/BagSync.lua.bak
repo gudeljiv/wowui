@@ -9,13 +9,27 @@ BagSyncDB = {
 ["enableAddonCompartment"] = true,
 ["useIconLocations"] = true,
 ["showWarbandTabs"] = false,
-["extTT_FontSize"] = 12,
+["enableRealmIDTags"] = true,
 ["enableTooltipItemID"] = false,
 ["sortCurrencyByExpansion"] = true,
-["extTT_CustomAnchorLocation"] = "CENTER",
-["enableCR"] = true,
+["tracking"] = {
+["warband"] = false,
+["bag"] = true,
+["guild"] = true,
+["bank"] = true,
+["auction"] = true,
+["reagents"] = false,
+["professions"] = true,
+["void"] = false,
+["equip"] = true,
+["currency"] = true,
+["mailbox"] = true,
+},
+["tooltipOnlySearch"] = false,
 ["enableCurrentRealmShortName"] = false,
-["showEquipBagSlots"] = false,
+["unitDBVersion"] = {
+["auction"] = 1,
+},
 ["debug"] = {
 ["SL2"] = false,
 ["cache"] = false,
@@ -35,17 +49,17 @@ BagSyncDB = {
 ["enableFactionIcons"] = false,
 ["showBNETCRInfoWindow"] = false,
 ["showTotal"] = true,
-["extTT_FontMonochrome"] = false,
-["enableCurrencyWindowTooltipData"] = true,
-["extTT_Anchor"] = "BOTTOM",
+["sortShowCurrentPlayerOnTop"] = false,
+["extTT_FontOutline"] = "OUTLINE",
+["showBankTabs"] = false,
 ["cacheThrottle"] = "slow",
 ["showRaceIcons"] = true,
-["enableRealmShortName"] = false,
+["enableLoginVersionInfo"] = true,
 ["enableRealmNames"] = true,
 ["enableAccurateBattlePets"] = true,
-["enableItemTypes"] = false,
+["enableTooltipGreenCheck"] = true,
 ["extTT_CustomAnchorX"] = 0,
-["itemTotalsByClassColor"] = true,
+["extTT_Font"] = "Friz Quadrata TT",
 ["alwaysShowSearchFilters"] = false,
 ["addonversion"] = "20.12",
 ["minimap"] = {
@@ -53,124 +67,110 @@ BagSyncDB = {
 ["hide"] = false,
 },
 ["showCurrentCharacterOnly"] = false,
-["enableFaction"] = true,
-["enableTooltipSeparator"] = true,
-["enableShowUniqueItemsTotals"] = true,
-["tooltipModifer"] = "NONE",
-["enableBNET"] = false,
-["enableUnitClass"] = true,
-["enableCurrentRealmName"] = false,
+["enableRealmShortName"] = false,
 ["extTT_CustomAnchorY"] = 0,
-["extTT_Font"] = "Friz Quadrata TT",
-["enableTooltipGreenCheck"] = true,
-["enableLoginVersionInfo"] = true,
+["enableCurrentRealmName"] = false,
+["itemTotalsByClassColor"] = true,
+["enableItemTypes"] = false,
+["enableUnitClass"] = true,
+["enableShowUniqueItemsTotals"] = true,
+["enableBNET"] = false,
+["tooltipModifer"] = "NONE",
+["enableTooltipSeparator"] = true,
+["enableFaction"] = true,
 ["enable_GSC_Display"] = false,
 ["enableTooltips"] = true,
-["showBankTabs"] = false,
-["extTT_FontOutline"] = "OUTLINE",
-["sortShowCurrentPlayerOnTop"] = false,
+["extTT_Anchor"] = "BOTTOM",
+["enableCurrencyWindowTooltipData"] = true,
+["extTT_FontMonochrome"] = false,
 ["showGuildTabs"] = false,
 ["colors"] = {
 ["warband"] = {
-["r"] = 1,
-["g"] = 0.2352941176470588,
 ["b"] = 0.2196078431372549,
+["g"] = 0.2352941176470588,
+["r"] = 1,
 },
 ["total"] = {
-["r"] = 0.9568627450980393,
-["g"] = 0.6431372549019608,
 ["b"] = 0.3764705882352941,
+["g"] = 0.6431372549019608,
+["r"] = 0.9568627450980393,
 },
 ["debug"] = {
-["r"] = 0.3019607843137255,
-["g"] = 0.8470588235294118,
 ["b"] = 0.1529411764705883,
+["g"] = 0.8470588235294118,
+["r"] = 0.3019607843137255,
 },
 ["currentrealm"] = {
-["r"] = 0.2980392156862745,
-["g"] = 0.7333333333333333,
 ["b"] = 0.09019607843137255,
+["g"] = 0.7333333333333333,
+["r"] = 0.2980392156862745,
 },
 ["guild"] = {
-["r"] = 0.396078431372549,
-["g"] = 0.7215686274509804,
 ["b"] = 0.7529411764705882,
+["g"] = 0.7215686274509804,
+["r"] = 0.396078431372549,
 },
 ["first"] = {
-["r"] = 0.5019607843137255,
-["g"] = 1,
 ["b"] = 0,
-},
-["bagslots"] = {
-["r"] = 0.2666666666666667,
-["g"] = 0.9333333333333333,
-["b"] = 0.4666666666666667,
-},
-["second"] = {
-["r"] = 1,
 ["g"] = 1,
-["b"] = 1,
-},
-["warbandtabs"] = {
-["r"] = 0.03529411764705882,
-["g"] = 0.8588235294117647,
-["b"] = 0.8784313725490196,
-},
-["expansion"] = {
-["r"] = 0.8117647058823529,
-["g"] = 0.6235294117647059,
-["b"] = 1,
-},
-["banktabs"] = {
-["r"] = 0.03529411764705882,
-["g"] = 0.8588235294117647,
-["b"] = 0.8784313725490196,
-},
-["guildtabs"] = {
-["r"] = 0.03529411764705882,
-["g"] = 0.8588235294117647,
-["b"] = 0.8784313725490196,
-},
-["itemid"] = {
-["r"] = 0.3215686274509804,
-["g"] = 0.8274509803921568,
-["b"] = 0.5254901960784314,
-},
-["itemtypes"] = {
-["r"] = 0.8,
-["g"] = 0.8117647058823529,
-["b"] = 0.4,
+["r"] = 0.5019607843137255,
 },
 ["bnet"] = {
-["r"] = 0.207843137254902,
-["g"] = 0.5333333333333333,
 ["b"] = 1,
+["g"] = 0.5333333333333333,
+["r"] = 0.207843137254902,
+},
+["second"] = {
+["b"] = 1,
+["g"] = 1,
+["r"] = 1,
+},
+["warbandtabs"] = {
+["b"] = 0.8784313725490196,
+["g"] = 0.8588235294117647,
+["r"] = 0.03529411764705882,
+},
+["expansion"] = {
+["b"] = 1,
+["g"] = 0.6235294117647059,
+["r"] = 0.8117647058823529,
+},
+["itemid"] = {
+["b"] = 0.5254901960784314,
+["g"] = 0.8274509803921568,
+["r"] = 0.3215686274509804,
+},
+["guildtabs"] = {
+["b"] = 0.8784313725490196,
+["g"] = 0.8588235294117647,
+["r"] = 0.03529411764705882,
+},
+["banktabs"] = {
+["b"] = 0.8784313725490196,
+["g"] = 0.8588235294117647,
+["r"] = 0.03529411764705882,
+},
+["itemtypes"] = {
+["b"] = 0.4,
+["g"] = 0.8117647058823529,
+["r"] = 0.8,
+},
+["bagslots"] = {
+["b"] = 0.4666666666666667,
+["g"] = 0.9333333333333333,
+["r"] = 0.2666666666666667,
 },
 ["cr"] = {
-["r"] = 1,
-["g"] = 0.4901960784313725,
 ["b"] = 0.0392156862745098,
+["g"] = 0.4901960784313725,
+["r"] = 1,
 },
 },
 ["enableWhitelist"] = false,
-["unitDBVersion"] = {
-["auction"] = 1,
-},
-["tooltipOnlySearch"] = false,
-["tracking"] = {
-["warband"] = false,
-["bag"] = true,
-["guild"] = true,
-["mailbox"] = true,
-["auction"] = true,
-["currency"] = true,
-["void"] = false,
-["equip"] = true,
-["professions"] = true,
-["reagents"] = false,
-["bank"] = true,
-},
-["enableRealmIDTags"] = true,
+["showEquipBagSlots"] = false,
+["enableCR"] = true,
+["extTT_CustomAnchorLocation"] = "CENTER",
+["extTT_FontSize"] = 12,
 },
 ["blacklist§"] = {
 },
@@ -247,16 +247,7 @@ BagSyncDB = {
 ["gender"] = 3,
 ["currency"] = {
 },
-["equipbags"] = {
-["bag"] = {
-"4245;1;bagslot=1",
-"4245;1;bagslot=2",
-"4245;1;bagslot=3",
-"4245;1;bagslot=4",
-},
-["bank"] = {
-},
-},
+["class_id"] = 2,
 ["local_class_name"] = "Paladin",
 ["auction"] = {
 ["lastscan"] = 1773400952,
@@ -302,11 +293,22 @@ BagSyncDB = {
 ["faction"] = "Horde",
 ["professions"] = {
 },
-["class_id"] = 2,
+["equipbags"] = {
+["bank"] = {
+},
+["bag"] = {
+"4245;1;bagslot=1",
+"4245;1;bagslot=2",
+"4245;1;bagslot=3",
+"4245;1;bagslot=4",
+},
+},
 ["local_race_name"] = "Blood Elf",
 ["mailbox"] = {
 "7417",
 "7406",
+"2080",
+"15250",
 },
 },
 ["Testvermin"] = {
@@ -324,63 +326,40 @@ BagSyncDB = {
 ["realmKey"] = "Thunderstrike",
 ["rwsKey"] = "Thunderstrike",
 ["gender"] = 2,
-["equipbags"] = {
-["bag"] = {
-},
-["bank"] = {
-},
-},
+["race_id"] = 5,
 ["currency"] = {
-},
-["local_class_name"] = "Rogue",
-["money"] = 14,
-["faction"] = "Horde",
-["professions"] = {
 },
 ["bag"] = {
 [0] = {
 "6948",
 },
 },
+["money"] = 14,
+["faction"] = "Horde",
+["professions"] = {
+},
+["local_class_name"] = "Rogue",
 ["local_race_name"] = "Undead",
-["race_id"] = 5,
+["equipbags"] = {
+["bank"] = {
+},
+["bag"] = {
+},
+},
 },
 ["Moolatz"] = {
 ["bag"] = {
 {
 "1710;2",
-"6300;2",
-"4634",
-"6302",
-"5794;5",
-"19937;2",
 "929;4",
-"12037;3",
-"11416",
 "929;2",
 },
 {
-"5115",
-"5848;3",
-"6308",
-"4337",
-"5795;2",
-"729",
-"17056",
-"4232;3",
-"2319;7",
-"11384",
 },
 {
-"11385",
-"15232",
-"1288",
-"3399",
 "5838",
-"5114",
 "3530;20",
 "3771;12",
-"19938",
 "5997;4",
 },
 {
@@ -396,25 +375,13 @@ BagSyncDB = {
 },
 [0] = {
 "1645;19",
-"4234;20",
-"2319;20",
+"10592;3",
 "14542",
-"1701;5",
-"5798;13",
+"3712;10",
+"5827",
 "3508",
-"5637",
-"11386;2",
-"4093",
-"1701;4",
-"1702;3",
-"6302;5",
 "5811",
 "3703",
-"5877",
-"5854;5",
-"5855",
-"5853;3",
-"3356;5",
 },
 },
 ["guild"] = "Maximum Effort©",
@@ -423,14 +390,14 @@ BagSyncDB = {
 ["currency"] = {
 },
 ["equipbags"] = {
-["bank"] = {
-"918;1;bagslot=5",
-},
 ["bag"] = {
 "5764;1;bagslot=1",
 "5764;1;bagslot=2",
 "5764;1;bagslot=3",
 "5764;1;bagslot=4",
+},
+["bank"] = {
+"918;1;bagslot=5",
 },
 },
 ["guildrealm"] = "Thunderstrike",
@@ -442,21 +409,9 @@ BagSyncDB = {
 },
 ["realmKey"] = "Thunderstrike",
 ["race_id"] = 6,
-["money"] = 438935,
+["money"] = 495687,
 ["gender"] = 2,
 ["local_class_name"] = "Druid",
-["class_id"] = 11,
-["race"] = "Tauren",
-["auction"] = {
-["lastscan"] = 1773073879,
-["bag"] = {
-},
-["count"] = 0,
-},
-["rwsKey"] = "Thunderstrike",
-["faction"] = "Horde",
-["professions"] = {
-},
 ["equip"] = {
 "15134",
 "12040",
@@ -472,6 +427,18 @@ BagSyncDB = {
 "9898",
 "15464",
 },
+["race"] = "Tauren",
+["auction"] = {
+["lastscan"] = 1773416426,
+["bag"] = {
+},
+["count"] = 0,
+},
+["rwsKey"] = "Thunderstrike",
+["faction"] = "Horde",
+["professions"] = {
+},
+["class_id"] = 11,
 ["local_race_name"] = "Tauren",
 ["mailbox"] = {
 },
@@ -520,26 +487,29 @@ BagSyncDB = {
 ["class"] = "SHAMAN",
 ["race"] = "Orc",
 ["equipbags"] = {
+["bank"] = {
+},
 ["bag"] = {
 "4245;1;bagslot=1",
 "4245;1;bagslot=2",
 "4245;1;bagslot=3",
 "4245;1;bagslot=4",
 },
-["bank"] = {
-},
 },
 ["realmKey"] = "Thunderstrike",
 ["money"] = 215811,
 ["gender"] = 2,
 ["class_id"] = 7,
-["currency"] = {
-},
+["race_id"] = 2,
 ["auction"] = {
 ["lastscan"] = 1772881022,
 ["bag"] = {
 },
 ["count"] = 0,
+},
+["rwsKey"] = "Thunderstrike",
+["faction"] = "Horde",
+["professions"] = {
 },
 ["equip"] = {
 "30419",
@@ -554,11 +524,8 @@ BagSyncDB = {
 "15124",
 "15269",
 },
-["faction"] = "Horde",
-["professions"] = {
+["currency"] = {
 },
-["rwsKey"] = "Thunderstrike",
-["race_id"] = 2,
 ["mailbox"] = {
 },
 },
@@ -582,15 +549,15 @@ BagSyncDB = {
 ["class"] = "PRIEST",
 ["race"] = "Scourge",
 ["equipbags"] = {
-["bank"] = {
-"10051;1;bagslot=5",
-"10051;1;bagslot=6",
-},
 ["bag"] = {
 "10050;1;bagslot=1",
 "10050;1;bagslot=2",
 "10050;1;bagslot=3",
 "10050;1;bagslot=4",
+},
+["bank"] = {
+"10051;1;bagslot=5",
+"10051;1;bagslot=6",
 },
 },
 ["bank"] = {
@@ -636,7 +603,8 @@ BagSyncDB = {
 ["rwsKey"] = "Thunderstrike",
 ["gender"] = 2,
 ["local_class_name"] = "Priest",
-["class_id"] = 5,
+["currency"] = {
+},
 ["equip"] = {
 "2572",
 "36",
@@ -654,8 +622,7 @@ BagSyncDB = {
 ["faction"] = "Horde",
 ["professions"] = {
 },
-["currency"] = {
-},
+["class_id"] = 5,
 ["local_race_name"] = "Undead",
 ["mailbox"] = {
 },
@@ -674,16 +641,16 @@ BagSyncDB = {
 ["guid"] = "Player-6409-050753DA",
 ["money"] = 41,
 ["class"] = "ROGUE",
-["rwsKey"] = "Thunderstrike",
+["gender"] = 2,
 ["race"] = "Scourge",
-["equipbags"] = {
-["bag"] = {
-},
-["bank"] = {
-},
+["currency"] = {
 },
 ["faction"] = "Horde",
-["professions"] = {
+["equipbags"] = {
+["bank"] = {
+},
+["bag"] = {
+},
 },
 ["equip"] = {
 "2105",
@@ -692,16 +659,14 @@ BagSyncDB = {
 "2092",
 "25861",
 },
-["currency"] = {
+["professions"] = {
 },
-["gender"] = 2,
+["rwsKey"] = "Thunderstrike",
 },
 ["Handrmandr"] = {
 ["bag"] = {
 {
-"3030;200",
-"3030;200",
-"3030;200",
+"3030;119",
 "3030;200",
 "3030;200",
 "3030;200",
@@ -715,16 +680,22 @@ BagSyncDB = {
 "3030;200",
 },
 {
+"12037;3",
+"1288;4",
+"5794;6",
+"2776;3",
+"5848;6",
 "3711",
 },
 {
 "5950",
+"11970",
 "5838",
+"5795;9",
 "5811",
-"5850",
 "14542",
 "6450;17",
-"3771;15",
+"3771;13",
 "3703",
 "1645;20",
 "4599;20",
@@ -736,16 +707,29 @@ BagSyncDB = {
 "3382;15",
 "1710",
 "1710;5",
-"184937;7",
-"184938",
+"184937;6",
 "2901",
 "7005",
 "6948",
 },
 [0] = {
 "2459;3",
-"929;5",
+"1701",
 "3508",
+"5996;2",
+"4234;3",
+"184938",
+"17056;2",
+"5115",
+"5798;20",
+"5798;10",
+"3712;5",
+"3399;2",
+"4235",
+"5877",
+"5854;5",
+"5855",
+"5853;3",
 },
 },
 ["guid"] = "Player-6409-04889BA2",
@@ -776,20 +760,10 @@ BagSyncDB = {
 },
 ["realmKey"] = "Thunderstrike",
 ["race"] = "Orc",
-["money"] = 361905,
+["money"] = 393532,
 ["gender"] = 2,
 ["local_class_name"] = "Hunter",
-["equipbags"] = {
-["bank"] = {
-"918;1;bagslot=5",
-},
-["bag"] = {
-"7371;1;bagslot=1",
-"10050;1;bagslot=2",
-"10050;1;bagslot=3",
-"10050;1;bagslot=4",
-},
-},
+["class_id"] = 3,
 ["race_id"] = 2,
 ["auction"] = {
 ["lastscan"] = 1773325084,
@@ -801,7 +775,17 @@ BagSyncDB = {
 ["faction"] = "Horde",
 ["professions"] = {
 },
-["class_id"] = 3,
+["equipbags"] = {
+["bag"] = {
+"7371;1;bagslot=1",
+"10050;1;bagslot=2",
+"10050;1;bagslot=3",
+"10050;1;bagslot=4",
+},
+["bank"] = {
+"918;1;bagslot=5",
+},
+},
 ["local_race_name"] = "Orc",
 ["mailbox"] = {
 },
@@ -869,30 +853,30 @@ BagSyncDB = {
 ["realmKey"] = "Thunderstrike",
 ["rwsKey"] = "Thunderstrike",
 ["gender"] = 2,
-["class_id"] = 1,
-["race_id"] = 2,
-["faction"] = "Horde",
-["professions"] = {
-},
-["money"] = 87728,
-["currency"] = {
-[1901] = {
-["name"] = "Honor Points",
-["header"] = "Player vs. Player",
-["count"] = 1,
-["icon"] = 137000,
-},
-},
 ["equipbags"] = {
-["bank"] = {
-},
 ["bag"] = {
 "14046;1;bagslot=1",
 "14046;1;bagslot=2",
 "14046;1;bagslot=3",
 "14046;1;bagslot=4",
 },
+["bank"] = {
 },
+},
+["currency"] = {
+[1901] = {
+["icon"] = 137000,
+["count"] = 1,
+["name"] = "Honor Points",
+["header"] = "Player vs. Player",
+},
+},
+["faction"] = "Horde",
+["professions"] = {
+},
+["money"] = 87728,
+["race_id"] = 2,
+["class_id"] = 1,
 },
 },
 ["forceDBReset§"] = 3,

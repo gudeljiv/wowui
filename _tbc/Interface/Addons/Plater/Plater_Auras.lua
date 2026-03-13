@@ -1111,7 +1111,7 @@ end
 	--hidden icons aren't in use and should be ignored
 	--self is the buff container
 	--~align
-	function Plater.AlignAuraFrames (self)
+	function platerInternal.AlignAuraFrames (self)
 
 		if (self.isNameplate) then
 			local profile = Plater.db.profile
@@ -1341,6 +1341,7 @@ end
 			self:SetHeight (verticalHeight)
 		end
 	end
+	Plater.AlignAuraFrames = platerInternal.AlignAuraFrames
 
 	--adjust the texcoord of the icon by the size of the icon
 	--if the icon is more of a retangular shape, it'll cut the top and bottom sides of the icon giving a wide view
@@ -1913,7 +1914,7 @@ end
 				local isDefensive = not C_UnitAuras.IsAuraFilteredOutByInstanceID(auraIconFrame.unitFrame.namePlateUnitToken, i, "HELPFUL|BIG_DEFENSIVE") or not C_UnitAuras.IsAuraFilteredOutByInstanceID(auraIconFrame.unitFrame.namePlateUnitToken, i, "HELPFUL|EXTERNAL_DEFENSIVE")
 				if isDefensive ~= nil then
 					er, eg, eb, ea = unpack (profile.aura_border_colors.defensive)
-					r, g, b, a = SplitEvaluateColor(isCC, er, eg, eb, ea, r, g, b, a)
+					r, g, b, a = SplitEvaluateColor(isDefensive, er, eg, eb, ea, r, g, b, a)
 				end
 
 				if isStealable ~= nil then
@@ -2237,13 +2238,13 @@ end
 					local isCC = not C_UnitAuras.IsAuraFilteredOutByInstanceID(self.unitFrame.namePlateUnitToken, id, "HARMFUL|CROWD_CONTROL")
 					if isCC ~= nil then
 						er, eg, eb, ea = unpack (profile.debuff_show_cc_border)
-						r, g, b, a = SplitEvaluateColor(isCC or false, er, eg, eb, ea, r, g, b, a)
+						r, g, b, a = SplitEvaluateColor(isCC, er, eg, eb, ea, r, g, b, a)
 					end
 
 					local isDefensive = not C_UnitAuras.IsAuraFilteredOutByInstanceID(self.unitFrame.namePlateUnitToken, id, "HELPFUL|BIG_DEFENSIVE") or not C_UnitAuras.IsAuraFilteredOutByInstanceID(self.unitFrame.namePlateUnitToken, id, "HELPFUL|EXTERNAL_DEFENSIVE")
 					if isDefensive ~= nil then
 						er, eg, eb, ea = unpack (profile.extra_icon_show_defensive_border)
-						r, g, b, a = SplitEvaluateColor(isCC, er, eg, eb, ea, r, g, b, a)
+						r, g, b, a = SplitEvaluateColor(isDefensive, er, eg, eb, ea, r, g, b, a)
 					end
 
 					if isStealable ~= nil then
@@ -3143,10 +3144,10 @@ end
 						end
 						
 						Plater.HideNonUsedAuraIcons (buffFrame)
-						Plater.AlignAuraFrames (buffFrame)
+						platerInternal.AlignAuraFrames (buffFrame)
 						
 						if (DB_AURA_SEPARATE_BUFFS) then
-							Plater.AlignAuraFrames (buffFrame.BuffFrame2)
+							platerInternal.AlignAuraFrames (buffFrame.BuffFrame2)
 						end
 					end
 				end

@@ -1,4 +1,8 @@
 @cont1nuity:
+- Fixing incorrect aura border colors.
+- Fixing cast bar icon size not adjusting correctly in some cases.
+- Fixing cast bar shield icon for not interruptible casts not showing correctly.
+- Fixing some cases of threat colors not showing correctly.
 - Fixing font override options not working correctly.
 - Hiding unneeded or disabled options.
 - Hiding Friendly NPCs healthbars works in dungeons now.
@@ -14,4 +18,9 @@
 
 @Terciob:
 - Additions and fixes for the Designer.
+- Additions and fixes for the Designer.
+
+@httpsx:
+- Fixing shield indicators not showing correctly.
+- Additional fixes for font overrides.
 

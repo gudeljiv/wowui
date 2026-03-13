@@ -1,6 +1,6 @@
 VER 3 0000000000000033 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:3530
+/cast item:6450
 END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
@@ -15,7 +15,7 @@ VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:3771
+/cast item:4599
 END
 VER 3 000000000000003F "gather" "134400"
 #showtooltip
@@ -54,16 +54,11 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:3771
+#showtooltip item:12037
 /cast feed pet
-/use item:3771
+/use item:12037
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Scorpid Terror
-/targetexact Scorpid Reaver
-/targetexact Sparkleshell Tortoise
-/targetexact Sparkleshell Borer
-/targetexact Sparkleshell Snapper
 /targetexact Salt Flats Vulture
 /targetexact Salt Flats Scavenger
 /targetlasttarget [dead]

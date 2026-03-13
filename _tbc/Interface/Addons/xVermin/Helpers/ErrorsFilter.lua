@@ -61,7 +61,7 @@ function uierrorsframe_addmessage(frame, text, red, green, blue, id)
 		if ratio >= 1 then
 			cr, cg, cb = 0, 255, 0
 		else
-			cr, cg, cb = 255, 255, math.floor(128 * (1 - ratio))
+			cr, cg, cb = 255, 255, math.floor(255 * (1 - ratio))
 		end
 		displayText = text:gsub("%s*(%d+)/(%d+)", function(a, b)
 			return string.format("\n|cFF%02X%02X%02X%s/%s|r", cr, cg, cb, a, b)
@@ -71,3 +71,31 @@ function uierrorsframe_addmessage(frame, text, red, green, blue, id)
 end
 
 filter_error_messages()
+
+local zoneOrigSizes = {}
+local zoneOrigWidths = {}
+for _, f in ipairs({ ZoneTextString, PVPInfoTextString, SubZoneTextString, PVPArenaTextString }) do
+	local _, size = f:GetFont()
+	zoneOrigSizes[f] = size
+	zoneOrigWidths[f] = f:GetWidth()
+end
+
+local zoneFrame = CreateFrame("Frame")
+zoneFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
+zoneFrame:RegisterEvent("ZONE_CHANGED")
+zoneFrame:RegisterEvent("ZONE_CHANGED_INDOORS")
+zoneFrame:SetScript("OnEvent", function()
+	local font = xVermin.Config.font.coalition
+	for _, f in ipairs({ ZoneTextString, PVPInfoTextString }) do
+		f:SetFont(font, zoneOrigSizes[f] * 1.6, "OUTLINE")
+		f:SetShadowColor(0, 0, 0, 1)
+		f:SetShadowOffset(1, -1)
+		f:SetWidth(zoneOrigWidths[f] * 1.5)
+	end
+	for _, f in ipairs({ SubZoneTextString, PVPArenaTextString }) do
+		f:SetFont(font, zoneOrigSizes[f] * 1.2, "OUTLINE")
+		f:SetShadowColor(0, 0, 0, 1)
+		f:SetShadowOffset(1, -1)
+		f:SetWidth(zoneOrigWidths[f] * 1.5)
+	end
+end)

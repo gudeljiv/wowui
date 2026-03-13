@@ -470,7 +470,8 @@ local setToggleProperties = function(parent, widget, widgetTable, currentXOffset
     end
 
     if (widgetTable.children_follow_enabled) then
-        widget.SetValueOriginal = widget.SetValue --perhaps widgetTable.set()  --perhaps setscrip OnClick
+        --widget.SetValueOriginal = widget.SetValue --perhaps widgetTable.set()  --perhaps setscrip OnClick
+        widget.SetValueOriginal = widget.SetValueOriginal or widget.SetValue
         widget._name = widgetTable.name
 
         local newSetFunc = function(thisWidget, value)
@@ -974,7 +975,7 @@ local onMenuBuilt = function(parent)
     checkForDisableIF(parent)
 end
 
-local refreshOptions = function(self)
+local refreshOptions = function(self) --~refresh
     for _, widget in ipairs(self.widget_list) do
         if (widget._get) then
             if (widget.widget_type == "label") then
@@ -1262,6 +1263,11 @@ function detailsFramework:BuildMenuVolatile(parent, menuOptions, xOffset, yOffse
         if userValueChangeHook then
             userValueChangeHook()
         end
+
+        if menuOptions.no_refresh_on_change then
+            return
+        end
+
         if refreshTimer then
             return
         else
@@ -1483,12 +1489,9 @@ function detailsFramework:BuildMenuVolatile(parent, menuOptions, xOffset, yOffse
                     end
                 end
 
+                widgetTable.widget = widgetCreated
                 if widgetTable.disableif then
-                    --isn't setWidgetId already adding the widget to the table?
-                    widgetTable.widget = widgetCreated
                     table.insert(parent.widget_to_disable_check, widgetTable)
-                else
-                    widgetTable.widget = nil
                 end
 
                 if (extraPaddingY > 0) then
@@ -1600,6 +1603,11 @@ function detailsFramework:BuildMenu(parent, menuOptions, xOffset, yOffset, heigh
         if userValueChangeHook then
             userValueChangeHook()
         end
+
+        if menuOptions.no_refresh_on_change then
+            return
+        end
+
         if refreshTimer then
             return
         else
@@ -1853,8 +1861,8 @@ function detailsFramework:BuildMenu(parent, menuOptions, xOffset, yOffset, heigh
                 end
             end
 
+            widgetTable.widget = widgetCreated
             if widgetTable.disableif then
-                widgetTable.widget = widgetCreated
                 table.insert(parent.widget_to_disable_check, widgetTable)
             end
 

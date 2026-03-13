@@ -120,15 +120,14 @@ xVerminSavedData = {
 ["Greater Rock Elemental"] = {
 "Serpent Sting",
 },
-["Furious Stone Spirit"] = {
-"Lightning Shield",
-"Serpent Sting",
+["Boiling Elemental"] = {
+"Instant Poison",
 },
 ["Lava Spout Totem"] = {
 "Sunder Armor",
 },
-["Skeletal Miner"] = {
-"Rend",
+["Rok'Alim the Pounder"] = {
+"Serpent Sting",
 },
 ["Burning Ravager"] = {
 "Lava Lash",
@@ -142,423 +141,6 @@ xVerminSavedData = {
 },
 ["Splinterbone Centurion"] = {
 "Intimidating Shout",
-},
-["Dark Rider"] = {
-"Charge Stun",
-"Concussive Shot",
-"Frostbite",
-"Intercept Stun",
-"Intimidation",
-"Starfire Stun",
-},
-["Stoneskin Totem II"] = {
-"Rend",
-},
-["Dopemend"] = {
-},
-["Arclector"] = {
-"Firebolt",
-"Shadowburn",
-},
-["Charlga Razorflank"] = {
-"Charge Stun",
-"Earth Shock",
-"Mangle",
-"War Stomp",
-},
-["Sneed's Shredder"] = {
-"Rend",
-"Deep Wound",
-"Garrote",
-"Serpent Sting",
-},
-["Shadowfang Moonwalker"] = {
-"Seal of Command",
-"Fire Blast",
-"Hunter's Mark",
-"Arcane Explosion",
-},
-["Stone Behemoth"] = {
-"Rend",
-},
-["Cracked Golem"] = {
-"Rend",
-},
-["Ambershard Destroyer"] = {
-"Lightning Shield",
-},
-["Burning Destroyer"] = {
-"Lava Lash",
-"Serpent Sting",
-},
-["Whirlwind Stormwalker"] = {
-"Deep Wound",
-},
-["Entropic Beast"] = {
-"Lava Lash",
-},
-["Scalding Elemental"] = {
-"Rend",
-},
-["Unfettered Spirit"] = {
-"Deep Wound",
-},
-["Shredder 9000"] = {
-"Serpent Sting",
-"Drain Life",
-"Crippling Poison",
-"Void Plague",
-"Instant Poison III",
-},
-["Freezing Spirit"] = {
-"Deep Wound",
-},
-["Amnennar the Coldbringer"] = {
-"Intimidation",
-},
-["Shadowshard Smasher"] = {
-"Lightning Shield",
-"Chain Lightning",
-},
-["Glutton"] = {
-"Starfire Stun",
-},
-["Ambereye Reaver"] = {
-"Lightning Shield",
-"Serpent Sting",
-},
-["Mr. Smite"] = {
-"Concussive Shot",
-},
-["Shadowfang Darksoul"] = {
-"Shadow Word: Pain",
-},
-["Landslide"] = {
-"Blackout",
-},
-["Burning Exile"] = {
-"Serpent Sting",
-},
-["Bloodmage Thalnos"] = {
-"Charge Stun",
-"Deep Wound",
-"Intimidation",
-"Starfire Stun",
-"Rend",
-"rake",
-"Crippling Poison",
-},
-["Rogue Flame Spirit"] = {
-"Lava Lash",
-"Rend",
-"Serpent Sting",
-},
-["Whirling Tempest"] = {
-"Lightning Shield",
-"Earth Shock",
-"Chain Lightning",
-"Lightning Bolt",
-"Serpent Sting",
-},
-["Scarlet Commander Mograine"] = {
-"Charge Stun",
-"Earth Shock",
-"Quick Strike",
-"Raptor Strike",
-"Serpent Sting",
-"Stormstrike",
-"Sunder Armor",
-"Wing Clip",
-"Crippling Poison",
-"Multi-Shot",
-"Arcane Shot",
-"Smite",
-"Firebolt",
-"Flame Shock",
-"Mutilate",
-"Lava Lash",
-"Explosive Shot",
-"Earthbind",
-"Magma Totem",
-"Faerie Fire (Feral)",
-"Mortal Strike",
-"Mangle",
-"Dreamstate",
-"Wrath",
-"Lightning Shield",
-},
-["Princess Theradras"] = {
-"Lightning Shield",
-"Instant Poison IV",
-"Deadly Poison II",
-"Chain Lightning",
-"Blackout",
-"Rupture",
-"Serpent Sting",
-"Earth Shock",
-"Intimidation",
-},
-["Scarlet Chaplain"] = {
-"Weakened Soul",
-},
-["Primordial Behemoth"] = {
-"Concussive Shot",
-},
-["Larsera"] = {
-"Serpent Sting",
-"Intimidation",
-"Earth Shock",
-"Impact",
-"Sunfire",
-"Wrath",
-"Charge Stun",
-"Starfire Stun",
-"Electrocutioner's Shock",
-"Chimera Shot",
-},
-["Shadowshard Rumbler"] = {
-"Lightning Shield",
-"Chain Lightning",
-},
-["XT:9"] = {
-"Serpent Sting",
-},
-["Fire Elemental"] = {
-"Flametongue Attack",
-"Magma Totem",
-"Serpent Sting",
-"Lava Lash",
-"Deep Wound",
-"Explosive Trap Effect",
-},
-["Shadowfang Whitescalp"] = {
-"Frostbolt",
-"Frost Nova",
-},
-["Gahz'rilla"] = {
-"Impact",
-"Intimidation",
-"Charge Stun",
-"Counterspell",
-},
-["Overlord Ramtusk"] = {
-"Concussive Shot",
-"Entrapment",
-},
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
-},
-["Befouled Water Elemental"] = {
-"Serpent Sting",
-},
-["Cracked Skull Soldier"] = {
-"Rend",
-"Fear",
-},
-["Ambershard Crusher"] = {
-"Chain Lightning",
-"Serpent Sting",
-},
-["Entropic Horror"] = {
-"Lava Lash",
-"Flame Shock",
-},
-["Sea Spray"] = {
-"Frost Shock",
-},
-["Rusty Harvest Golem"] = {
-"Rend",
-},
-["Verdan the Everliving"] = {
-"Charge Stun",
-"Bash",
-},
-["Theradrim Guardian"] = {
-"Lightning Shield",
-"Chain Lightning",
-"Deadly Poison II",
-"Instant Poison IV",
-"Poison",
-"Chimera Shot",
-"Serpent Sting",
-"Thunder Clap",
-},
-["Stone Rumbler"] = {
-"Lightning Shield",
-},
-["Ambereye Basilisk"] = {
-"Lightning Shield",
-"Chain Lightning",
-"Serpent Sting",
-},
-["Galgann Firehammer"] = {
-"War Stomp",
-},
-["Minor Manifestation of Fire"] = {
-"Flame Shock",
-"Flametongue Attack",
-},
-["Elemental Slave"] = {
-"Serpent Sting",
-"Faerie Fire (Feral)",
-},
-["Enraged Voidwalker"] = {
-"Poison Cloud",
-},
-["Mordresh Fire Eye"] = {
-"Rend",
-"Deep Wound",
-},
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
-"Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
-"Serpent Sting",
-"Flame Shock",
-"Corruption",
-"Curse of Agony",
-},
-["Mutanus the Devourer"] = {
-"Shadow Word: Pain",
-"Corruption",
-"Curse of Agony",
-"Shadow Bolt",
-},
-["Sea Elemental"] = {
-"Frost Shock",
-},
-["Ironspine"] = {
-"Rend",
-},
-["Ruuzlu"] = {
-"Charge Stun",
-"Impact",
-},
-["Dust Devil"] = {
-"Serpent Sting",
-},
-["Enraged Stone Spirit"] = {
-"Rend",
-},
-["Whirlwind Ripper"] = {
-"Lightning Shield",
-"Serpent Sting",
-},
-["Healing Ward"] = {
-"Faerie Fire (Feral)",
-"Serpent Sting",
-},
-["Rock Elemental"] = {
-"Serpent Sting",
-},
-["Remote-Controlled Golem"] = {
-"Rend",
-"Deep Wound",
-},
-["Jazzter"] = {
-"Fireball",
-},
-["Razorlash"] = {
-"Blackout",
-},
-["Jade Sludge"] = {
-"Concussive Shot",
-},
-["Bound Elemental"] = {
-"Lightning Shield",
-"Rend",
-},
-["Sandfury Shadowcaster"] = {
-"Earthbind",
-},
-["Nelyz"] = {
-"Concussive Shot",
-},
-["Thundering Boulderkin"] = {
-"Serpent Sting",
-"Instant Poison II",
-},
-["Dianastalion"] = {
-"Stormstrike",
-"Mutilate",
-},
-["Thepalalol"] = {
-"Cheap Shot",
-"Mutilate",
-},
-["Lesser Rock Elemental"] = {
-"Serpent Sting",
-},
-["Lord Vyletongue"] = {
-"Blackout",
-"Impact",
-},
-["Constrictor Vine"] = {
-"Earthbind",
-},
-["Wailing Highborne"] = {
-"Rend",
-},
-["Writhing Highborne"] = {
-"Rend",
-},
-["Agathelos the Raging"] = {
-"Charge Stun",
-"Entrapment",
-},
-["Wandering Spirit"] = {
-"Fear",
-},
-["Healing Ward IV"] = {
-"Rend",
-},
-["Corrupt Minor Manifestation of Water"] = {
-"Frost Shock",
-},
-["Bristleback Geomancer"] = {
-"Firebolt",
-"Incinerate",
-},
-["Theradrim Shardling"] = {
-"Chain Lightning",
-"Lightning Shield",
-"Lightning Bolt",
-"Rupture",
-"Poison",
-"Serpent Sting",
-},
-["Sandfury Witch Doctor"] = {
-"Earthbind",
-},
-["High Inquisitor Whitemane"] = {
-"Intercept Stun",
-"Intimidation",
-"Crippling Poison",
-},
-["Cyclonian"] = {
-"Starfire Stun",
-"Sunfire",
-"War Stomp",
-"Wrath",
-},
-["Delirious Ancient"] = {
-"Impact",
-"Charge Stun",
 },
 ["Herod"] = {
 "Arcane Shot",
@@ -591,11 +173,429 @@ xVerminSavedData = {
 "Pounce",
 "Starfire Stun",
 },
-["Rok'Alim the Pounder"] = {
+["Stoneskin Totem II"] = {
+"Rend",
+},
+["Sneed's Shredder"] = {
+"Rend",
+"Deep Wound",
+"Garrote",
 "Serpent Sting",
 },
-["Boiling Elemental"] = {
-"Instant Poison",
+["High Inquisitor Whitemane"] = {
+"Intercept Stun",
+"Intimidation",
+"Crippling Poison",
+},
+["Charlga Razorflank"] = {
+"Charge Stun",
+"Earth Shock",
+"Mangle",
+"War Stomp",
+},
+["Dopemend"] = {
+},
+["Shadowfang Moonwalker"] = {
+"Seal of Command",
+"Fire Blast",
+"Hunter's Mark",
+"Arcane Explosion",
+},
+["Stone Behemoth"] = {
+"Rend",
+},
+["Cracked Golem"] = {
+"Rend",
+},
+["Bristleback Geomancer"] = {
+"Firebolt",
+"Incinerate",
+},
+["Corrupt Minor Manifestation of Water"] = {
+"Frost Shock",
+},
+["Whirlwind Stormwalker"] = {
+"Deep Wound",
+},
+["Burning Destroyer"] = {
+"Lava Lash",
+"Serpent Sting",
+},
+["Scalding Elemental"] = {
+"Rend",
+},
+["Healing Ward IV"] = {
+"Rend",
+},
+["Shredder 9000"] = {
+"Serpent Sting",
+"Drain Life",
+"Crippling Poison",
+"Void Plague",
+"Instant Poison III",
+},
+["Freezing Spirit"] = {
+"Deep Wound",
+},
+["Amnennar the Coldbringer"] = {
+"Intimidation",
+},
+["Shadowshard Smasher"] = {
+"Lightning Shield",
+"Chain Lightning",
+},
+["Wandering Spirit"] = {
+"Fear",
+},
+["Ambereye Reaver"] = {
+"Lightning Shield",
+"Serpent Sting",
+},
+["Writhing Highborne"] = {
+"Rend",
+},
+["Burning Exile"] = {
+"Serpent Sting",
+},
+["Landslide"] = {
+"Blackout",
+},
+["Shadowfang Darksoul"] = {
+"Shadow Word: Pain",
+},
+["Bloodmage Thalnos"] = {
+"Charge Stun",
+"Deep Wound",
+"Intimidation",
+"Starfire Stun",
+"Rend",
+"rake",
+"Crippling Poison",
+},
+["Rogue Flame Spirit"] = {
+"Lava Lash",
+"Rend",
+"Serpent Sting",
+},
+["Constrictor Vine"] = {
+"Earthbind",
+},
+["Lord Vyletongue"] = {
+"Blackout",
+"Impact",
+},
+["Princess Theradras"] = {
+"Lightning Shield",
+"Instant Poison IV",
+"Deadly Poison II",
+"Chain Lightning",
+"Blackout",
+"Rupture",
+"Serpent Sting",
+"Earth Shock",
+"Intimidation",
+},
+["Thepalalol"] = {
+"Cheap Shot",
+"Mutilate",
+},
+["Primordial Behemoth"] = {
+"Concussive Shot",
+},
+["Dianastalion"] = {
+"Stormstrike",
+"Mutilate",
+},
+["Shadowshard Rumbler"] = {
+"Lightning Shield",
+"Chain Lightning",
+},
+["XT:9"] = {
+"Serpent Sting",
+},
+["Befouled Water Elemental"] = {
+"Serpent Sting",
+},
+["Ambershard Crusher"] = {
+"Chain Lightning",
+"Serpent Sting",
+},
+["Sandfury Shadowcaster"] = {
+"Earthbind",
+},
+["Bound Elemental"] = {
+"Lightning Shield",
+"Rend",
+},
+["Jade Sludge"] = {
+"Concussive Shot",
+},
+["Fire Elemental"] = {
+"Flametongue Attack",
+"Magma Totem",
+"Serpent Sting",
+"Lava Lash",
+"Deep Wound",
+"Explosive Trap Effect",
+},
+["Sea Elemental"] = {
+"Frost Shock",
+},
+["Larsera"] = {
+"Serpent Sting",
+"Intimidation",
+"Earth Shock",
+"Impact",
+"Sunfire",
+"Wrath",
+"Charge Stun",
+"Starfire Stun",
+"Electrocutioner's Shock",
+"Chimera Shot",
+},
+["Ironspine"] = {
+"Rend",
+},
+["Sea Spray"] = {
+"Frost Shock",
+},
+["Rusty Harvest Golem"] = {
+"Rend",
+},
+["Verdan the Everliving"] = {
+"Charge Stun",
+"Bash",
+},
+["Gahz'rilla"] = {
+"Impact",
+"Intimidation",
+"Charge Stun",
+"Counterspell",
+},
+["Stone Rumbler"] = {
+"Lightning Shield",
+},
+["Ambereye Basilisk"] = {
+"Lightning Shield",
+"Chain Lightning",
+"Serpent Sting",
+},
+["Galgann Firehammer"] = {
+"War Stomp",
+},
+["Minor Manifestation of Fire"] = {
+"Flame Shock",
+"Flametongue Attack",
+},
+["Elemental Slave"] = {
+"Serpent Sting",
+"Faerie Fire (Feral)",
+},
+["Remote-Controlled Golem"] = {
+"Rend",
+"Deep Wound",
+},
+["Mordresh Fire Eye"] = {
+"Rend",
+"Deep Wound",
+},
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
+},
+["Mutanus the Devourer"] = {
+"Shadow Word: Pain",
+"Corruption",
+"Curse of Agony",
+"Shadow Bolt",
+},
+["Rock Elemental"] = {
+"Serpent Sting",
+},
+["Entropic Horror"] = {
+"Lava Lash",
+"Flame Shock",
+},
+["Ruuzlu"] = {
+"Charge Stun",
+"Impact",
+},
+["Dust Devil"] = {
+"Serpent Sting",
+},
+["Enraged Stone Spirit"] = {
+"Rend",
+},
+["Enraged Voidwalker"] = {
+"Poison Cloud",
+},
+["Healing Ward"] = {
+"Faerie Fire (Feral)",
+"Serpent Sting",
+},
+["Cracked Skull Soldier"] = {
+"Rend",
+"Fear",
+},
+["Whirlwind Ripper"] = {
+"Lightning Shield",
+"Serpent Sting",
+},
+["Jazzter"] = {
+"Fireball",
+},
+["Razorlash"] = {
+"Blackout",
+},
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
+"Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
+"Serpent Sting",
+"Flame Shock",
+"Corruption",
+"Curse of Agony",
+},
+["Overlord Ramtusk"] = {
+"Concussive Shot",
+"Entrapment",
+},
+["Theradrim Guardian"] = {
+"Lightning Shield",
+"Chain Lightning",
+"Deadly Poison II",
+"Instant Poison IV",
+"Poison",
+"Chimera Shot",
+"Serpent Sting",
+"Thunder Clap",
+},
+["Nelyz"] = {
+"Concussive Shot",
+},
+["Thundering Boulderkin"] = {
+"Serpent Sting",
+"Instant Poison II",
+},
+["Shadowfang Whitescalp"] = {
+"Frostbolt",
+"Frost Nova",
+},
+["Scarlet Chaplain"] = {
+"Weakened Soul",
+},
+["Lesser Rock Elemental"] = {
+"Serpent Sting",
+},
+["Scarlet Commander Mograine"] = {
+"Charge Stun",
+"Earth Shock",
+"Quick Strike",
+"Raptor Strike",
+"Serpent Sting",
+"Stormstrike",
+"Sunder Armor",
+"Wing Clip",
+"Crippling Poison",
+"Multi-Shot",
+"Arcane Shot",
+"Smite",
+"Firebolt",
+"Flame Shock",
+"Mutilate",
+"Lava Lash",
+"Explosive Shot",
+"Earthbind",
+"Magma Totem",
+"Faerie Fire (Feral)",
+"Mortal Strike",
+"Mangle",
+"Dreamstate",
+"Wrath",
+"Lightning Shield",
+},
+["Whirling Tempest"] = {
+"Lightning Shield",
+"Earth Shock",
+"Chain Lightning",
+"Lightning Bolt",
+"Serpent Sting",
+},
+["Wailing Highborne"] = {
+"Rend",
+},
+["Mr. Smite"] = {
+"Concussive Shot",
+},
+["Agathelos the Raging"] = {
+"Charge Stun",
+"Entrapment",
+},
+["Glutton"] = {
+"Starfire Stun",
+},
+["Unfettered Spirit"] = {
+"Deep Wound",
+},
+["Entropic Beast"] = {
+"Lava Lash",
+},
+["Ambershard Destroyer"] = {
+"Lightning Shield",
+},
+["Theradrim Shardling"] = {
+"Chain Lightning",
+"Lightning Shield",
+"Lightning Bolt",
+"Rupture",
+"Poison",
+"Serpent Sting",
+},
+["Sandfury Witch Doctor"] = {
+"Earthbind",
+},
+["Arclector"] = {
+"Firebolt",
+"Shadowburn",
+},
+["Cyclonian"] = {
+"Starfire Stun",
+"Sunfire",
+"War Stomp",
+"Wrath",
+},
+["Delirious Ancient"] = {
+"Impact",
+"Charge Stun",
+},
+["Dark Rider"] = {
+"Charge Stun",
+"Concussive Shot",
+"Frostbite",
+"Intercept Stun",
+"Intimidation",
+"Starfire Stun",
+},
+["Skeletal Miner"] = {
+"Rend",
+},
+["Furious Stone Spirit"] = {
+"Lightning Shield",
+"Serpent Sting",
 },
 },
 }
