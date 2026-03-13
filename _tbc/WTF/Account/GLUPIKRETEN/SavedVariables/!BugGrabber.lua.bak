@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 14475,
+["session"] = 14481,
 ["errors"] = {
 {
 ["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'WhatsTraining' tried to call the protected function 'PetActionBarFrame:SetPoint()'.",

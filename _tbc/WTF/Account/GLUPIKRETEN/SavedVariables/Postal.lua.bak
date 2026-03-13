@@ -54,7 +54,7 @@ Postal3DB = {
 ["global"] = {
 ["BlackBook"] = {
 ["alts"] = {
-"Battitude|Thunderstrike|Horde|2|ROGUE",
+"Battitude|Thunderstrike|Horde|5|ROGUE",
 "Battitude|Zandalar Tribe|Alliance|1|ROGUE",
 "Battlenac|Celebras|Alliance|3|PRIEST",
 "Battlenac|Zandalar Tribe|Alliance|4|PRIEST",
@@ -231,7 +231,6 @@ Postal3DB = {
 },
 },
 ["Dopeseal - Thunderstrike"] = {
-["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Handrmandr|Thunderstrike|Horde",
@@ -240,6 +239,7 @@ Postal3DB = {
 "Vermins|Thunderstrike|Horde",
 },
 },
+["OpenSpeed"] = 0,
 },
 ["Dopesnare - Living Flame"] = {
 },
@@ -308,6 +308,7 @@ Postal3DB = {
 },
 },
 ["Handrmandr - Thunderstrike"] = {
+["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Dopeseal|Thunderstrike|Horde",
@@ -315,18 +316,17 @@ Postal3DB = {
 "Pitchwise|Thunderstrike|Horde",
 },
 },
-["OpenSpeed"] = 0,
 },
 ["Dopetrap - Lone Wolf"] = {
 },
 ["Pitchwise - Thunderstrike"] = {
+["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Dopecure|Thunderstrike|Horde",
 "Dopeseal|Thunderstrike|Horde",
 },
 },
-["OpenSpeed"] = 0,
 },
 ["Turbonac - Celebras"] = {
 },
@@ -344,7 +344,6 @@ Postal3DB = {
 ["Battlenac - Zandalar Tribe"] = {
 },
 ["Dopecoil - Thunderstrike"] = {
-["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
 "Dopecure|Thunderstrike|Horde",
@@ -352,6 +351,7 @@ Postal3DB = {
 "Dopeclaw|Thunderstrike|Horde",
 },
 },
+["OpenSpeed"] = 0,
 },
 ["Dopebolt - Living Flame"] = {
 },

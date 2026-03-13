@@ -1,32 +1,41 @@
 
 NAGDB = {
 ["namespaces"] = {
+["WARRIOR"] = {
+["char"] = {
+["Vermins - Thunderstrike"] = {
+["selectedRotations"] = {
+"Arms (Kebab)",
+},
+},
+},
+},
+["ROGUE"] = {
+["char"] = {
+["Battitude - Thunderstrike"] = {
+["saveEnergyForKicks"] = true,
+},
+},
+},
 ["LearnedPredictionProvider"] = {
 ["char"] = {
-["Moolatz - Thunderstrike"] = {
+["Handrmandr - Thunderstrike"] = {
 ["patchSensitiveSpells"] = {
 },
-["sessionCount"] = 7,
 ["accuracyStats"] = {
 },
-["lastPatchResetScope"] = "full",
 ["patchResetLog"] = {
 {
 ["spellCount"] = 0,
 ["current"] = "66265",
-["timestamp"] = 475089.411,
 ["scope"] = "full",
+["timestamp"] = 475348.625,
 },
 },
-["autoPruneEveryNSessions"] = 10,
-["lastPatchResetTime"] = 475089.411,
-["lastClientBuild"] = "66265",
-},
-["Handrmandr - Thunderstrike"] = {
-["accuracyStats"] = {
-},
+["lastPatchResetTime"] = 475348.625,
 ["autoPruneEveryNSessions"] = 10,
 ["lastPatchResetScope"] = "full",
+["lastClientBuild"] = "66265",
 ["bucketedData"] = {
 [10768] = {
 ["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
@@ -73,7 +82,7 @@ NAGDB = {
 },
 ["buffStacks"] = {
 },
-["generation"] = {
+["cost"] = {
 },
 ["castTime"] = {
 ["min"] = 1.5,
@@ -94,7 +103,7 @@ NAGDB = {
 ["count"] = 0,
 ["mean"] = 0,
 },
-["cost"] = {
+["generation"] = {
 },
 },
 },
@@ -144,7 +153,7 @@ NAGDB = {
 },
 ["buffStacks"] = {
 },
-["generation"] = {
+["cost"] = {
 },
 ["castTime"] = {
 ["m2"] = 0,
@@ -163,7 +172,7 @@ NAGDB = {
 ["count"] = 0,
 ["mean"] = 0,
 },
-["cost"] = {
+["generation"] = {
 },
 },
 },
@@ -213,7 +222,7 @@ NAGDB = {
 },
 ["buffStacks"] = {
 },
-["generation"] = {
+["cost"] = {
 },
 ["castTime"] = {
 ["min"] = 0.5,
@@ -234,145 +243,7 @@ NAGDB = {
 ["count"] = 0,
 ["mean"] = 0,
 },
-["cost"] = {
-},
-},
-},
-},
-[6991] = {
-["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
-["meta"] = {
-["hasBloodlust"] = false,
-["targetCount"] = 0,
-["contextFlags"] = {
-["lockAndLoad"] = false,
-["bloodlust"] = false,
-},
-["hasteBand"] = "low",
-["hastePercent"] = 0,
-["lastHastePercent"] = 0,
-["targetBand"] = "st",
-["groupType"] = "solo",
-["hasLockAndLoad"] = false,
-["inCombat"] = false,
-},
-["samples"] = 2,
-["lastUpdated"] = 475613.612,
-["metrics"] = {
-["flags"] = {
-["lockAndLoad"] = {
-["min"] = 0,
-["m2"] = 0,
-["count"] = 2,
-["max"] = 0,
-["mean"] = 0,
-},
-["bloodlust"] = {
-["min"] = 0,
-["m2"] = 0,
-["count"] = 2,
-["max"] = 0,
-["mean"] = 0,
-},
-},
 ["generation"] = {
-},
-["cost"] = {
-},
-["buffStacks"] = {
-},
-["castTime"] = {
-["m2"] = 0,
-["count"] = 0,
-["mean"] = 0,
-},
-["resourceBefore"] = {
-["min"] = 1455,
-["m2"] = 0,
-["count"] = 2,
-["max"] = 1455,
-["mean"] = 1455,
-},
-["tickInterval"] = {
-["m2"] = 0,
-["count"] = 0,
-["mean"] = 0,
-},
-["resourceAfter"] = {
-["min"] = 1455,
-["m2"] = 0,
-["count"] = 2,
-["max"] = 1455,
-["mean"] = 1455,
-},
-},
-},
-},
-[836] = {
-["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
-["meta"] = {
-["hasBloodlust"] = false,
-["targetCount"] = 0,
-["contextFlags"] = {
-["lockAndLoad"] = false,
-["bloodlust"] = false,
-},
-["hasteBand"] = "low",
-["hastePercent"] = 0,
-["lastHastePercent"] = 0,
-["hasLockAndLoad"] = false,
-["groupType"] = "solo",
-["targetBand"] = "st",
-["inCombat"] = false,
-},
-["samples"] = 1,
-["lastUpdated"] = 475357.915,
-["metrics"] = {
-["flags"] = {
-["lockAndLoad"] = {
-["min"] = 0,
-["m2"] = 0,
-["count"] = 1,
-["max"] = 0,
-["mean"] = 0,
-},
-["bloodlust"] = {
-["min"] = 0,
-["m2"] = 0,
-["count"] = 1,
-["max"] = 0,
-["mean"] = 0,
-},
-},
-["resourceAfter"] = {
-["min"] = 1436,
-["m2"] = 0,
-["count"] = 1,
-["max"] = 1436,
-["mean"] = 1436,
-},
-["buffStacks"] = {
-},
-["generation"] = {
-},
-["castTime"] = {
-["m2"] = 0,
-["count"] = 0,
-["mean"] = 0,
-},
-["resourceBefore"] = {
-["min"] = 1436,
-["m2"] = 0,
-["count"] = 1,
-["max"] = 1436,
-["mean"] = 1436,
-},
-["tickInterval"] = {
-["m2"] = 0,
-["count"] = 0,
-["mean"] = 0,
-},
-["cost"] = {
 },
 },
 },
@@ -422,7 +293,7 @@ NAGDB = {
 },
 ["buffStacks"] = {
 },
-["generation"] = {
+["cost"] = {
 },
 ["castTime"] = {
 ["min"] = 0.5,
@@ -443,7 +314,453 @@ NAGDB = {
 ["count"] = 0,
 ["mean"] = 0,
 },
+["generation"] = {
+},
+},
+},
+},
+[836] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["hasLockAndLoad"] = false,
+["groupType"] = "solo",
+["targetBand"] = "st",
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 475357.915,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["resourceAfter"] = {
+["min"] = 1436,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 1436,
+["mean"] = 1436,
+},
+["buffStacks"] = {
+},
 ["cost"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 1436,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 1436,
+["mean"] = 1436,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["generation"] = {
+},
+},
+},
+},
+[6991] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 2,
+["lastUpdated"] = 475613.612,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 2,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 2,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["cost"] = {
+},
+["generation"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 1455,
+["m2"] = 0,
+["count"] = 2,
+["max"] = 1455,
+["mean"] = 1455,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 1455,
+["m2"] = 0,
+["count"] = 2,
+["max"] = 1455,
+["mean"] = 1455,
+},
+},
+},
+},
+},
+["sessionCount"] = 3,
+},
+["Dopeseal - Thunderstrike"] = {
+["patchSensitiveSpells"] = {
+},
+["accuracyStats"] = {
+},
+["patchResetLog"] = {
+{
+["spellCount"] = 0,
+["current"] = "66265",
+["scope"] = "full",
+["timestamp"] = 482853.517,
+},
+},
+["lastPatchResetTime"] = 482853.517,
+["autoPruneEveryNSessions"] = 10,
+["lastPatchResetScope"] = "full",
+["lastClientBuild"] = "66265",
+["bucketedData"] = {
+[836] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["hasLockAndLoad"] = false,
+["groupType"] = "solo",
+["targetBand"] = "st",
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 482862.304,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["resourceAfter"] = {
+["min"] = 703,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 703,
+["mean"] = 703,
+},
+["buffStacks"] = {
+},
+["generation"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 703,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 703,
+["mean"] = 703,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["cost"] = {
+},
+},
+},
+},
+[20217] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["hasLockAndLoad"] = false,
+["groupType"] = "solo",
+["targetBand"] = "st",
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 482886.59,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["resourceAfter"] = {
+["min"] = 580,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 580,
+["mean"] = 580,
+},
+["buffStacks"] = {
+},
+["generation"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 580,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 580,
+["mean"] = 580,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["cost"] = {
+},
+},
+},
+},
+[25780] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["hasLockAndLoad"] = false,
+["groupType"] = "solo",
+["targetBand"] = "st",
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 482884.277,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["resourceAfter"] = {
+["min"] = 606,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 606,
+["mean"] = 606,
+},
+["buffStacks"] = {
+},
+["generation"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 606,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 606,
+["mean"] = 606,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["cost"] = {
+},
+},
+},
+},
+},
+["sessionCount"] = 1,
+},
+["Dopecure - Thunderstrike"] = {
+["accuracyStats"] = {
+},
+["autoPruneEveryNSessions"] = 10,
+["lastClientBuild"] = "66265",
+["lastPatchResetScope"] = "full",
+["lastPatchResetTime"] = 483133.312,
+["bucketedData"] = {
+[836] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["hasLockAndLoad"] = false,
+["groupType"] = "solo",
+["targetBand"] = "st",
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 483142.417,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["resourceAfter"] = {
+["min"] = 247,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 247,
+["mean"] = 247,
+},
+["buffStacks"] = {
+},
+["cost"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 247,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 247,
+["mean"] = 247,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["generation"] = {
 },
 },
 },
@@ -454,14 +771,1627 @@ NAGDB = {
 ["spellCount"] = 0,
 ["current"] = "66265",
 ["scope"] = "full",
-["timestamp"] = 475348.625,
+["timestamp"] = 483133.312,
 },
 },
-["lastPatchResetTime"] = 475348.625,
 ["patchSensitiveSpells"] = {
 },
+["sessionCount"] = 1,
+},
+["Battitude - Thunderstrike"] = {
+["patchSensitiveSpells"] = {
+},
+["accuracyStats"] = {
+},
+["patchResetLog"] = {
+{
+["spellCount"] = 0,
+["current"] = "66265",
+["scope"] = "full",
+["timestamp"] = 482536.256,
+},
+},
+["lastPatchResetTime"] = 482536.256,
+["autoPruneEveryNSessions"] = 10,
+["lastPatchResetScope"] = "full",
 ["lastClientBuild"] = "66265",
-["sessionCount"] = 3,
+["bucketedData"] = {
+[1752] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["hasLockAndLoad"] = false,
+["groupType"] = "solo",
+["targetBand"] = "st",
+["inCombat"] = false,
+},
+["samples"] = 3,
+["lastUpdated"] = 482648.651,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 3,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 3,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["resourceAfter"] = {
+["min"] = 0,
+["m2"] = 2016.666666666667,
+["count"] = 3,
+["max"] = 55,
+["mean"] = 36.66666666666666,
+},
+["buffStacks"] = {
+},
+["cost"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 0,
+["m2"] = 2016.666666666667,
+["count"] = 3,
+["max"] = 55,
+["mean"] = 36.66666666666666,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["generation"] = {
+},
+},
+},
+["low|bl0|lnl0|st|c1|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 1,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["hasLockAndLoad"] = false,
+["groupType"] = "solo",
+["targetBand"] = "st",
+["inCombat"] = true,
+},
+["samples"] = 4,
+["lastUpdated"] = 482651.281,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 4,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 4,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["resourceAfter"] = {
+["min"] = 5,
+["m2"] = 625,
+["count"] = 4,
+["max"] = 30,
+["mean"] = 17.5,
+},
+["buffStacks"] = {
+},
+["cost"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 5,
+["m2"] = 625,
+["count"] = 4,
+["max"] = 30,
+["mean"] = 17.5,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["generation"] = {
+},
+},
+},
+},
+[2098] = {
+["low|bl0|lnl0|2|c1|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 2,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["hasLockAndLoad"] = false,
+["groupType"] = "solo",
+["targetBand"] = "2",
+["inCombat"] = true,
+},
+["samples"] = 1,
+["lastUpdated"] = 482591.172,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["resourceAfter"] = {
+["min"] = 6,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 6,
+["mean"] = 6,
+},
+["buffStacks"] = {
+},
+["cost"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 6,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 6,
+["mean"] = 6,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["generation"] = {
+},
+},
+},
+},
+[836] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["hasLockAndLoad"] = false,
+["groupType"] = "solo",
+["targetBand"] = "st",
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 482545.228,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["resourceAfter"] = {
+["min"] = 100,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 100,
+["mean"] = 100,
+},
+["buffStacks"] = {
+},
+["cost"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 100,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 100,
+["mean"] = 100,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["generation"] = {
+},
+},
+},
+},
+},
+["sessionCount"] = 1,
+},
+["Pitchwise - Thunderstrike"] = {
+["patchSensitiveSpells"] = {
+},
+["accuracyStats"] = {
+},
+["patchResetLog"] = {
+{
+["spellCount"] = 0,
+["current"] = "66265",
+["timestamp"] = 482686.042,
+["scope"] = "full",
+},
+},
+["lastPatchResetTime"] = 482686.042,
+["autoPruneEveryNSessions"] = 10,
+["lastPatchResetScope"] = "full",
+["sessionCount"] = 1,
+["bucketedData"] = {
+[8052] = {
+["low|bl0|lnl0|st|c1|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 1,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = true,
+},
+["samples"] = 1,
+["lastUpdated"] = 482750.81,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["cost"] = {
+},
+["generation"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 667,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 667,
+["mean"] = 667,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 667,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 667,
+["mean"] = 667,
+},
+},
+},
+},
+[8075] = {
+["low|bl0|lnl0|st|c1|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 1,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = true,
+},
+["samples"] = 1,
+["lastUpdated"] = 482757.344,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["cost"] = {
+},
+["generation"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 547,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 547,
+["mean"] = 547,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 547,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 547,
+["mean"] = 547,
+},
+},
+},
+},
+[1535] = {
+["low|bl0|lnl0|st|c1|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 1,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = true,
+},
+["samples"] = 1,
+["lastUpdated"] = 482755.893,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["cost"] = {
+},
+["generation"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 572,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 572,
+["mean"] = 572,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 572,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 572,
+["mean"] = 572,
+},
+},
+},
+},
+[8044] = {
+["low|bl0|lnl0|st|c1|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 1,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = true,
+},
+["samples"] = 1,
+["lastUpdated"] = 482759.153,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["cost"] = {
+},
+["generation"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 497,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 497,
+["mean"] = 497,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 497,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 497,
+["mean"] = 497,
+},
+},
+},
+},
+[836] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 482695.393,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["cost"] = {
+},
+["generation"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 762,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 762,
+["mean"] = 762,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 762,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 762,
+["mean"] = 762,
+},
+},
+},
+},
+[2645] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 482811.729,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["cost"] = {
+},
+["generation"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 662,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 662,
+["mean"] = 662,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 662,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 662,
+["mean"] = 662,
+},
+},
+},
+},
+},
+["lastClientBuild"] = "66265",
+},
+["Moolatz - Thunderstrike"] = {
+["patchSensitiveSpells"] = {
+},
+["sessionCount"] = 7,
+["accuracyStats"] = {
+},
+["lastPatchResetScope"] = "full",
+["patchResetLog"] = {
+{
+["spellCount"] = 0,
+["current"] = "66265",
+["timestamp"] = 475089.411,
+["scope"] = "full",
+},
+},
+["autoPruneEveryNSessions"] = 10,
+["lastPatchResetTime"] = 475089.411,
+["lastClientBuild"] = "66265",
+},
+["Dopecoil - Thunderstrike"] = {
+["patchSensitiveSpells"] = {
+},
+["accuracyStats"] = {
+},
+["patchResetLog"] = {
+{
+["spellCount"] = 0,
+["current"] = "66265",
+["timestamp"] = 482960.971,
+["scope"] = "full",
+},
+},
+["lastPatchResetTime"] = 482960.971,
+["autoPruneEveryNSessions"] = 10,
+["lastPatchResetScope"] = "full",
+["sessionCount"] = 1,
+["bucketedData"] = {
+[836] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 482970.101,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["generation"] = {
+},
+["cost"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 913,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 913,
+["mean"] = 913,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 913,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 913,
+["mean"] = 913,
+},
+},
+},
+},
+[706] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 483045.219,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["generation"] = {
+},
+["cost"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 803,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 803,
+["mean"] = 803,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 803,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 803,
+["mean"] = 803,
+},
+},
+},
+},
+},
+["lastClientBuild"] = "66265",
+},
+["Vermins - Thunderstrike"] = {
+["patchSensitiveSpells"] = {
+},
+["accuracyStats"] = {
+},
+["patchResetLog"] = {
+{
+["spellCount"] = 0,
+["current"] = "66265",
+["timestamp"] = 482206.061,
+["scope"] = "full",
+},
+},
+["lastPatchResetTime"] = 482206.061,
+["autoPruneEveryNSessions"] = 10,
+["lastPatchResetScope"] = "full",
+["sessionCount"] = 1,
+["bucketedData"] = {
+[6178] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 4,
+["lastUpdated"] = 482450.571,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 4,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 4,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["generation"] = {
+},
+["cost"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 24,
+["m2"] = 62,
+["count"] = 4,
+["max"] = 35,
+["mean"] = 29,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 24,
+["m2"] = 62,
+["count"] = 4,
+["max"] = 35,
+["mean"] = 29,
+},
+},
+},
+},
+[6192] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 3,
+["lastUpdated"] = 482432.01,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 3,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 3,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["generation"] = {
+},
+["cost"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 17,
+["m2"] = 360.6666666666666,
+["count"] = 3,
+["max"] = 42,
+["mean"] = 32.33333333333334,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 17,
+["m2"] = 360.6666666666666,
+["count"] = 3,
+["max"] = 42,
+["mean"] = 32.33333333333334,
+},
+},
+},
+},
+[2457] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 6,
+["lastUpdated"] = 482472.307,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 6,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 6,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["generation"] = {
+},
+["cost"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 0,
+["m2"] = 333.3333333333333,
+["count"] = 6,
+["max"] = 23,
+["mean"] = 9.666666666666666,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 0,
+["m2"] = 333.3333333333333,
+["count"] = 6,
+["max"] = 23,
+["mean"] = 9.666666666666666,
+},
+},
+},
+},
+[8204] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 482446.851,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["generation"] = {
+},
+["cost"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 12,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 12,
+["mean"] = 12,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 12,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 12,
+["mean"] = 12,
+},
+},
+},
+},
+[2687] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 482437.531,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["generation"] = {
+},
+["cost"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 6,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 6,
+["mean"] = 6,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 6,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 6,
+["mean"] = 6,
+},
+},
+},
+},
+[20252] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 482383.768,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["generation"] = {
+},
+["cost"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 8,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 8,
+["mean"] = 8,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 8,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 8,
+["mean"] = 8,
+},
+},
+},
+["low|bl0|lnl0|st|c1|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = true,
+},
+["samples"] = 1,
+["lastUpdated"] = 482450.937,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["generation"] = {
+},
+["cost"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+},
+},
+[836] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 482215.798,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["generation"] = {
+},
+["cost"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+},
+},
+[2458] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 4,
+["lastUpdated"] = 482470.159,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 4,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 4,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["generation"] = {
+},
+["cost"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 0,
+["m2"] = 1064,
+["count"] = 4,
+["max"] = 40,
+["mean"] = 12,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 0,
+["m2"] = 1064,
+["count"] = 4,
+["max"] = 40,
+["mean"] = 12,
+},
+},
+},
+["low|bl0|lnl0|st|c1|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = true,
+},
+["samples"] = 2,
+["lastUpdated"] = 482450.937,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 2,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 2,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["generation"] = {
+},
+["cost"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 24,
+["m2"] = 12.5,
+["count"] = 2,
+["max"] = 29,
+["mean"] = 26.5,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 24,
+["m2"] = 12.5,
+["count"] = 2,
+["max"] = 29,
+["mean"] = 26.5,
+},
+},
+},
+},
+},
+["lastClientBuild"] = "66265",
 },
 },
 },
@@ -490,47 +2420,272 @@ NAGDB = {
 },
 },
 },
+["Battitude - Thunderstrike"] = {
+["localDamageCritTopN"] = {
+{
+["scope"] = "local",
+["playerKey"] = "Battitude-Thunderstrike",
+["value"] = 20,
+["className"] = "ROGUE",
+["playerName"] = "Battitude",
+["timestamp"] = 1773438240,
+["context"] = {
+["targetGUID"] = "Creature-0-6423-0-21014-1501-000034832B",
+["targetName"] = "Mindless Zombie",
+["targetLevel"] = 1,
+["spellIcon"] = 132292,
+["playerLevel"] = 5,
+["spellId"] = 2098,
+["eventType"] = "SPELL_DAMAGE",
+["spellName"] = "Eviscerate",
+},
+["playerGUID"] = "Player-6409-050753DA",
+},
+{
+["scope"] = "local",
+["playerKey"] = "Battitude-Thunderstrike",
+["value"] = 19,
+["className"] = "ROGUE",
+["playerName"] = "Battitude",
+["timestamp"] = 1773438236,
+["context"] = {
+["targetGUID"] = "Creature-0-6423-0-21014-1501-000034832B",
+["targetName"] = "Mindless Zombie",
+["targetLevel"] = 1,
+["spellIcon"] = 136189,
+["playerLevel"] = 5,
+["spellId"] = 1752,
+["eventType"] = "SPELL_DAMAGE",
+["spellName"] = "Sinister Strike",
+},
+["playerGUID"] = "Player-6409-050753DA",
+},
+{
+["scope"] = "local",
+["playerKey"] = "Battitude-Thunderstrike",
+["value"] = 17,
+["className"] = "ROGUE",
+["playerName"] = "Battitude",
+["timestamp"] = 1773438300,
+["context"] = {
+["targetGUID"] = "Creature-0-6423-0-21014-1502-0000348339",
+["targetName"] = "Wretched Zombie",
+["targetLevel"] = 2,
+["spellIcon"] = 136189,
+["playerLevel"] = 5,
+["spellId"] = 1752,
+["eventType"] = "SPELL_DAMAGE",
+["spellName"] = "Sinister Strike",
+},
+["playerGUID"] = "Player-6409-050753DA",
+},
+{
+["scope"] = "local",
+["playerKey"] = "Battitude-Thunderstrike",
+["value"] = 12,
+["className"] = "ROGUE",
+["playerName"] = "Battitude",
+["timestamp"] = 1773438299,
+["context"] = {
+["targetGUID"] = "Creature-0-6423-0-21014-1502-0000348339",
+["targetName"] = "Wretched Zombie",
+["targetLevel"] = 2,
+["spellIcon"] = 132349,
+["playerLevel"] = 5,
+["spellId"] = 0,
+["eventType"] = "SWING_DAMAGE",
+["spellName"] = "Melee",
+},
+["playerGUID"] = "Player-6409-050753DA",
+},
+},
+},
+["Vermins - Thunderstrike"] = {
+["localDamageCritTopN"] = {
+{
+["value"] = 149,
+["context"] = {
+["targetLevel"] = 9,
+["playerLevel"] = 31,
+["targetGUID"] = "Creature-0-6414-1-20289-3100-0000347FD3",
+["spellIcon"] = 132349,
+["targetName"] = "Elder Mottled Boar",
+["spellId"] = 0,
+["eventType"] = "SWING_DAMAGE",
+["spellName"] = "Melee",
+},
+["playerName"] = "Vermins",
+["className"] = "WARRIOR",
+["scope"] = "local",
+["timestamp"] = 1773438013,
+["playerKey"] = "Vermins-Thunderstrike",
+["playerGUID"] = "Player-6409-04889C3C",
+},
+{
+["value"] = 75,
+["context"] = {
+["targetLevel"] = 9,
+["playerLevel"] = 31,
+["targetGUID"] = "Creature-0-6414-1-20289-3100-0000347971",
+["spellIcon"] = 132349,
+["targetName"] = "Elder Mottled Boar",
+["spellId"] = 0,
+["eventType"] = "SWING_DAMAGE",
+["spellName"] = "Melee",
+},
+["playerName"] = "Vermins",
+["className"] = "WARRIOR",
+["scope"] = "local",
+["timestamp"] = 1773438046,
+["playerKey"] = "Vermins-Thunderstrike",
+["playerGUID"] = "Player-6409-04889C3C",
+},
+{
+["value"] = 68,
+["context"] = {
+["targetLevel"] = 9,
+["playerLevel"] = 31,
+["targetGUID"] = "Creature-0-6414-1-20289-3100-0000347FD3",
+["spellIcon"] = 132349,
+["targetName"] = "Elder Mottled Boar",
+["spellId"] = 0,
+["eventType"] = "SWING_DAMAGE",
+["spellName"] = "Melee",
+},
+["playerName"] = "Vermins",
+["className"] = "WARRIOR",
+["scope"] = "local",
+["timestamp"] = 1773438009,
+["playerKey"] = "Vermins-Thunderstrike",
+["playerGUID"] = "Player-6409-04889C3C",
+},
+},
+},
+},
+},
+["PRIEST"] = {
+["char"] = {
+["Dopecure - Thunderstrike"] = {
+["enableAutomaticRotationSwitching"] = false,
+},
+},
+},
+["RotationManager"] = {
+["char"] = {
+["Vermins - Thunderstrike"] = {
+["frameStatus"] = {
+["top"] = 935.7142333984375,
+["height"] = 400,
+["left"] = 869.0476684570312,
+["width"] = 1000,
+},
+},
 },
 },
 ["DisplayManager"] = {
 ["char"] = {
-["Moolatz - Thunderstrike"] = {
-["tbcHunterRoundMaskDefaultApplied"] = true,
-},
 ["Handrmandr - Thunderstrike"] = {
-["tbcHunterRoundMaskDefaultApplied"] = true,
 ["frameSettings"] = {
 ["point"] = "TOP",
+["offsetY"] = -328.8097229003906,
 ["offsetX"] = -3.888834238052368,
 ["relativePoint"] = "TOP",
-["offsetY"] = -328.8097229003906,
 },
 ["groupSettings"] = {
+["sequence"] = {
+["offsetY"] = 0,
+["offsetX"] = 300,
+["iconFlowDirection"] = "E",
+},
 ["interrupts"] = {
 ["iconFlowDirection"] = "E",
 ["offsetY"] = -100,
 },
 ["cooldowns"] = {
+["offsetY"] = 100,
 ["offsetX"] = 0,
 ["iconFlowDirection"] = "E",
-["offsetY"] = 100,
-},
-["sequence"] = {
-["offsetX"] = 300,
-["iconFlowDirection"] = "E",
-["offsetY"] = 0,
 },
 ["defensives"] = {
+["offsetY"] = 0,
 ["offsetX"] = -200,
 ["iconFlowDirection"] = "E",
-["offsetY"] = 0,
 },
 ["aoe"] = {
+["offsetY"] = 0,
 ["offsetX"] = 200,
 ["iconFlowDirection"] = "E",
-["offsetY"] = 0,
 },
 },
+["tbcHunterRoundMaskDefaultApplied"] = true,
+},
+["Dopeseal - Thunderstrike"] = {
+["frameSettings"] = {
+["point"] = "TOP",
+["offsetY"] = -279.9209899902344,
+["offsetX"] = 5.634963035583496,
+["relativePoint"] = "TOP",
+},
+["tbcHunterRoundMaskDefaultApplied"] = true,
+},
+["Dopecure - Thunderstrike"] = {
+["tbcHunterRoundMaskDefaultApplied"] = true,
+["frameSettings"] = {
+["offsetX"] = 4.365195274353027,
+["offsetY"] = 207.4601593017578,
+},
+},
+["Battitude - Thunderstrike"] = {
+["frameSettings"] = {
+["offsetX"] = 15.15884399414063,
+["offsetY"] = 321.1107177734375,
+},
+["tbcHunterRoundMaskDefaultApplied"] = true,
+},
+["Pitchwise - Thunderstrike"] = {
+["frameSettings"] = {
+["offsetX"] = 10.07927322387695,
+["offsetY"] = -264.0477600097656,
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+},
+["tbcHunterRoundMaskDefaultApplied"] = true,
+},
+["Moolatz - Thunderstrike"] = {
+["tbcHunterRoundMaskDefaultApplied"] = true,
+},
+["Dopecoil - Thunderstrike"] = {
+["frameSettings"] = {
+["offsetX"] = 3.73026967048645,
+["offsetY"] = 170.6348114013672,
+},
+["tbcHunterRoundMaskDefaultApplied"] = true,
+},
+["Vermins - Thunderstrike"] = {
+["frameSettings"] = {
+["offsetX"] = -20.39681243896484,
+["offsetY"] = -259.6036071777344,
+["point"] = "TOP",
+["relativePoint"] = "TOP",
+},
+["tbcHunterRoundMaskDefaultApplied"] = true,
+},
+},
+},
+["PaladinRetTwistBar"] = {
+["class"] = {
+["PALADIN"] = {
+["_migratedDown5"] = true,
+["y"] = 28,
+["_migratedDivBoundaryDefaultOffV1"] = true,
+["_migratedJudgeSocLayoutDefaultV2"] = true,
+},
+},
+},
+["WARLOCK"] = {
+["char"] = {
+["Dopecoil - Thunderstrike"] = {
+["enableAutomaticRotationSwitching"] = false,
 },
 },
 },
@@ -544,9 +2699,29 @@ NAGDB = {
 },
 },
 },
+["FloatingSelector"] = {
+["global"] = {
+["floatingSelector"] = {
+["autoRotationSpam"] = {
+["rotationName"] = "Affliction",
+},
+},
+},
+},
+["TBCEnhancementShamanWeaponSync"] = {
+["class"] = {
+["SHAMAN"] = {
+["bar"] = {
+["y"] = 974.1267700195312,
+["x"] = 1065.873046875,
+["point"] = "BOTTOMLEFT",
+},
+},
+},
+},
 },
 ["global"] = {
-["lastSentSpam"] = 475743.153,
+["lastSentSpam"] = 483146.747,
 ["keys"] = {
 ["keysMigrated"] = true,
 ["classic"] = {
@@ -571,19 +2746,306 @@ NAGDB = {
 },
 },
 ["profileKeys"] = {
-["Moolatz - Thunderstrike"] = "Default",
 ["Handrmandr - Thunderstrike"] = "Handrmandr - Thunderstrike",
+["Dopeseal - Thunderstrike"] = "Dopeseal - Thunderstrike",
+["Dopecure - Thunderstrike"] = "Dopecure - Thunderstrike",
+["Battitude - Thunderstrike"] = "Battitude - Thunderstrike",
+["Pitchwise - Thunderstrike"] = "Pitchwise - Thunderstrike",
+["Moolatz - Thunderstrike"] = "Default",
+["Dopecoil - Thunderstrike"] = "Dopecoil - Thunderstrike",
+["Vermins - Thunderstrike"] = "Vermins - Thunderstrike",
 },
 }
 NAGLeaderboardDB = {
 ["profileKeys"] = {
-["Moolatz - Thunderstrike"] = "Moolatz - Thunderstrike",
-["Dopeseal - Thunderstrike"] = "Dopeseal - Thunderstrike",
 ["Handrmandr - Thunderstrike"] = "Handrmandr - Thunderstrike",
+["Dopeseal - Thunderstrike"] = "Dopeseal - Thunderstrike",
+["Dopecure - Thunderstrike"] = "Dopecure - Thunderstrike",
+["Battitude - Thunderstrike"] = "Battitude - Thunderstrike",
+["Pitchwise - Thunderstrike"] = "Pitchwise - Thunderstrike",
+["Moolatz - Thunderstrike"] = "Moolatz - Thunderstrike",
+["Dopecoil - Thunderstrike"] = "Dopecoil - Thunderstrike",
+["Vermins - Thunderstrike"] = "Vermins - Thunderstrike",
 },
 ["namespaces"] = {
 ["LeaderboardService"] = {
 ["char"] = {
+["Handrmandr - Thunderstrike"] = {
+["metricMeta"] = {
+["damage_crit_topX"] = {
+["lastHash"] = "0e3c1f40",
+["lastRecordAt"] = 475408.962,
+["validRecords"] = 2,
+["totalRecords"] = 2,
+["invalidRecords"] = 0,
+},
+},
+["bucketSchemaVersion"] = 1,
+["metricRecords"] = {
+["damage_crit_topX"] = {
+{
+["addonVersion"] = "unknown",
+["prevHash"] = "root",
+["playerKey"] = "Handrmandr-Thunderstrike",
+["expansionTag"] = "tbc",
+["value"] = 125,
+["context"] = {
+["targetGUID"] = "Creature-0-6414-1-20272-4154-00003456D9",
+["targetName"] = "Salt Flats Scavenger",
+["targetLevel"] = 31,
+["spellIcon"] = 135490,
+["playerLevel"] = 36,
+["spellId"] = 75,
+["eventType"] = "RANGE_DAMAGE",
+["spellName"] = "Auto Shot",
+},
+["payloadHash"] = "4395aa49",
+["metricId"] = "damage_crit_topX",
+["buildTag"] = "tbc",
+["playerLevel"] = 36,
+["serverName"] = "Thunderstrike",
+["chainHash"] = "d9a10db1",
+["integrityState"] = "valid",
+["sourceModule"] = "CritHealLeaderboardProvider",
+["className"] = "HUNTER",
+["scope"] = "local",
+["guildName"] = "",
+["identityKey"] = "guid:Player-6409-04889BA2",
+["timestamp"] = 470759.58,
+["playerName"] = "Handrmandr-Thunderstrike",
+["playerGUID"] = "Player-6409-04889BA2",
+},
+{
+["addonVersion"] = "unknown",
+["prevHash"] = "d9a10db1",
+["playerKey"] = "Handrmandr-Thunderstrike",
+["expansionTag"] = "tbc",
+["value"] = 131,
+["context"] = {
+["targetGUID"] = "Creature-0-6423-0-21015-1151-000034681F",
+["targetName"] = "Saltwater Crocolisk",
+["targetLevel"] = 35,
+["spellIcon"] = 135490,
+["playerLevel"] = 36,
+["spellId"] = 75,
+["eventType"] = "RANGE_DAMAGE",
+["spellName"] = "Auto Shot",
+},
+["payloadHash"] = "30cf9740",
+["metricId"] = "damage_crit_topX",
+["buildTag"] = "tbc",
+["playerName"] = "Handrmandr-Thunderstrike",
+["serverName"] = "Thunderstrike",
+["chainHash"] = "0e3c1f40",
+["integrityState"] = "valid",
+["sourceModule"] = "CritHealLeaderboardProvider",
+["className"] = "HUNTER",
+["scope"] = "local",
+["guildName"] = "",
+["identityKey"] = "guid:Player-6409-04889BA2",
+["timestamp"] = 475408.962,
+["playerLevel"] = 36,
+["playerGUID"] = "Player-6409-04889BA2",
+},
+},
+},
+["displayMigrationVersion"] = 1,
+["metricSnapshotState"] = {
+["byMetricVersion"] = {
+["damage_crit_topX|HUNTER"] = 2,
+},
+["byMetricHash"] = {
+["damage_crit_topX|HUNTER"] = "29af7b64",
+},
+["byMetricAppliedAt"] = {
+["damage_crit_topX|HUNTER"] = 475408.962,
+},
+},
+["recordsByScopeClassMetric"] = {
+["local"] = {
+["HUNTER"] = {
+["damage_crit_topX"] = {
+["Handrmandr-Thunderstrike"] = {
+["addonVersion"] = "unknown",
+["prevHash"] = "d9a10db1",
+["playerKey"] = "Handrmandr-Thunderstrike",
+["expansionTag"] = "tbc",
+["value"] = 131,
+["context"] = {
+["targetGUID"] = "Creature-0-6423-0-21015-1151-000034681F",
+["targetName"] = "Saltwater Crocolisk",
+["targetLevel"] = 35,
+["spellIcon"] = 135490,
+["playerLevel"] = 36,
+["spellId"] = 75,
+["eventType"] = "RANGE_DAMAGE",
+["spellName"] = "Auto Shot",
+},
+["payloadHash"] = "30cf9740",
+["metricId"] = "damage_crit_topX",
+["playerLevel"] = 36,
+["playerName"] = "Handrmandr-Thunderstrike",
+["timestamp"] = 475408.962,
+["identityKey"] = "guid:Player-6409-04889BA2",
+["integrityState"] = "valid",
+["sourceModule"] = "CritHealLeaderboardProvider",
+["guildName"] = "",
+["scope"] = "local",
+["className"] = "HUNTER",
+["chainHash"] = "0e3c1f40",
+["serverName"] = "Thunderstrike",
+["buildTag"] = "tbc",
+["playerGUID"] = "Player-6409-04889BA2",
+},
+},
+},
+},
+},
+},
+["Dopeseal - Thunderstrike"] = {
+["bucketSchemaVersion"] = 1,
+["displayMigrationVersion"] = 1,
+},
+["Dopecure - Thunderstrike"] = {
+["bucketSchemaVersion"] = 1,
+["displayMigrationVersion"] = 1,
+},
+["Battitude - Thunderstrike"] = {
+["metricMeta"] = {
+["damage_crit_topX"] = {
+["validRecords"] = 2,
+["lastRecordAt"] = 482591.172,
+["invalidRecords"] = 0,
+["totalRecords"] = 2,
+["lastHash"] = "78b03b64",
+},
+},
+["metricSnapshotState"] = {
+["byMetricVersion"] = {
+["damage_crit_topX|ROGUE"] = 2,
+},
+["byMetricHash"] = {
+["damage_crit_topX|ROGUE"] = "3944073e",
+},
+["byMetricAppliedAt"] = {
+["damage_crit_topX|ROGUE"] = 482591.172,
+},
+},
+["metricRecords"] = {
+["damage_crit_topX"] = {
+{
+["addonVersion"] = "unknown",
+["prevHash"] = "root",
+["playerKey"] = "Battitude-Thunderstrike",
+["expansionTag"] = "tbc",
+["value"] = 19,
+["context"] = {
+["targetGUID"] = "Creature-0-6423-0-21014-1501-000034832B",
+["targetName"] = "Mindless Zombie",
+["targetLevel"] = 1,
+["spellIcon"] = 136189,
+["playerLevel"] = 5,
+["spellId"] = 1752,
+["eventType"] = "SPELL_DAMAGE",
+["spellName"] = "Sinister Strike",
+},
+["payloadHash"] = "8226e3d6",
+["metricId"] = "damage_crit_topX",
+["buildTag"] = "tbc",
+["playerName"] = "Battitude-Thunderstrike",
+["serverName"] = "Thunderstrike",
+["chainHash"] = "1bcad148",
+["integrityState"] = "valid",
+["sourceModule"] = "CritHealLeaderboardProvider",
+["className"] = "ROGUE",
+["scope"] = "local",
+["guildName"] = "",
+["identityKey"] = "guid:Player-6409-050753DA",
+["timestamp"] = 482587.373,
+["playerLevel"] = 5,
+["playerGUID"] = "Player-6409-050753DA",
+},
+{
+["addonVersion"] = "unknown",
+["prevHash"] = "1bcad148",
+["playerKey"] = "Battitude-Thunderstrike",
+["expansionTag"] = "tbc",
+["value"] = 20,
+["context"] = {
+["targetGUID"] = "Creature-0-6423-0-21014-1501-000034832B",
+["targetName"] = "Mindless Zombie",
+["targetLevel"] = 1,
+["spellIcon"] = 132292,
+["playerLevel"] = 5,
+["spellId"] = 2098,
+["eventType"] = "SPELL_DAMAGE",
+["spellName"] = "Eviscerate",
+},
+["payloadHash"] = "60bb2536",
+["metricId"] = "damage_crit_topX",
+["buildTag"] = "tbc",
+["playerName"] = "Battitude-Thunderstrike",
+["serverName"] = "Thunderstrike",
+["chainHash"] = "78b03b64",
+["integrityState"] = "valid",
+["sourceModule"] = "CritHealLeaderboardProvider",
+["className"] = "ROGUE",
+["scope"] = "local",
+["guildName"] = "",
+["identityKey"] = "guid:Player-6409-050753DA",
+["timestamp"] = 482591.172,
+["playerLevel"] = 5,
+["playerGUID"] = "Player-6409-050753DA",
+},
+},
+},
+["displayMigrationVersion"] = 1,
+["bucketSchemaVersion"] = 1,
+["recordsByScopeClassMetric"] = {
+["local"] = {
+["ROGUE"] = {
+["damage_crit_topX"] = {
+["Battitude-Thunderstrike"] = {
+["addonVersion"] = "unknown",
+["prevHash"] = "1bcad148",
+["playerKey"] = "Battitude-Thunderstrike",
+["expansionTag"] = "tbc",
+["value"] = 20,
+["context"] = {
+["targetGUID"] = "Creature-0-6423-0-21014-1501-000034832B",
+["targetName"] = "Mindless Zombie",
+["targetLevel"] = 1,
+["spellIcon"] = 132292,
+["playerLevel"] = 5,
+["spellId"] = 2098,
+["eventType"] = "SPELL_DAMAGE",
+["spellName"] = "Eviscerate",
+},
+["payloadHash"] = "60bb2536",
+["metricId"] = "damage_crit_topX",
+["playerLevel"] = 5,
+["playerName"] = "Battitude-Thunderstrike",
+["timestamp"] = 482591.172,
+["identityKey"] = "guid:Player-6409-050753DA",
+["integrityState"] = "valid",
+["sourceModule"] = "CritHealLeaderboardProvider",
+["guildName"] = "",
+["scope"] = "local",
+["className"] = "ROGUE",
+["chainHash"] = "78b03b64",
+["serverName"] = "Thunderstrike",
+["buildTag"] = "tbc",
+["playerGUID"] = "Player-6409-050753DA",
+},
+},
+},
+},
+},
+},
+["Pitchwise - Thunderstrike"] = {
+["bucketSchemaVersion"] = 1,
+["displayMigrationVersion"] = 1,
+},
 ["Moolatz - Thunderstrike"] = {
 ["metricSnapshotState"] = {
 ["byMetricVersion"] = {
@@ -617,8 +3079,8 @@ NAGLeaderboardDB = {
 },
 ["payloadHash"] = "c8115e83",
 ["metricId"] = "damage_crit_topX",
-["playerName"] = "Moolatz-Thunderstrike",
 ["playerLevel"] = 35,
+["playerName"] = "Moolatz-Thunderstrike",
 ["timestamp"] = 457952.258,
 ["identityKey"] = "guid:Player-6409-04889C0E",
 ["integrityState"] = "valid",
@@ -649,8 +3111,8 @@ NAGLeaderboardDB = {
 },
 ["payloadHash"] = "1685607d",
 ["metricId"] = "damage_crit_topX",
-["playerName"] = "Moolatz-Thunderstrike",
 ["playerLevel"] = 35,
+["playerName"] = "Moolatz-Thunderstrike",
 ["timestamp"] = 457952.679,
 ["identityKey"] = "guid:Player-6409-04889C0E",
 ["integrityState"] = "valid",
@@ -681,8 +3143,8 @@ NAGLeaderboardDB = {
 },
 ["payloadHash"] = "e7d49390",
 ["metricId"] = "damage_crit_topX",
-["playerName"] = "Moolatz-Thunderstrike",
 ["playerLevel"] = 35,
+["playerName"] = "Moolatz-Thunderstrike",
 ["timestamp"] = 459402.139,
 ["identityKey"] = "guid:Player-6409-04889C0E",
 ["integrityState"] = "valid",
@@ -714,7 +3176,7 @@ NAGLeaderboardDB = {
 ["payloadHash"] = "cce5016d",
 ["metricId"] = "damage_crit_topX",
 ["buildTag"] = "tbc",
-["playerLevel"] = 36,
+["playerName"] = "Moolatz-Thunderstrike",
 ["serverName"] = "Thunderstrike",
 ["chainHash"] = "f08c83e2",
 ["integrityState"] = "valid",
@@ -724,7 +3186,7 @@ NAGLeaderboardDB = {
 ["guildName"] = "Maximum Effort",
 ["identityKey"] = "guid:Player-6409-04889C0E",
 ["timestamp"] = 475041.004,
-["playerName"] = "Moolatz-Thunderstrike",
+["playerLevel"] = 36,
 ["playerGUID"] = "Player-6409-04889C0E",
 },
 },
@@ -1248,7 +3710,7 @@ NAGLeaderboardDB = {
 ["payloadHash"] = "e7d49390",
 ["metricId"] = "damage_crit_topX",
 ["buildTag"] = "tbc",
-["playerName"] = "Moolatz-Thunderstrike",
+["playerLevel"] = 35,
 ["serverName"] = "Thunderstrike",
 ["chainHash"] = "94dc725c",
 ["integrityState"] = "valid",
@@ -1258,7 +3720,7 @@ NAGLeaderboardDB = {
 ["guildName"] = "Maximum Effort",
 ["identityKey"] = "guid:Player-6409-04889C0E",
 ["timestamp"] = 459402.139,
-["playerLevel"] = 35,
+["playerName"] = "Moolatz-Thunderstrike",
 ["playerGUID"] = "Player-6409-04889C0E",
 },
 },
@@ -1266,30 +3728,29 @@ NAGLeaderboardDB = {
 },
 },
 },
-["Dopeseal - Thunderstrike"] = {
+["Dopecoil - Thunderstrike"] = {
 ["bucketSchemaVersion"] = 1,
 ["displayMigrationVersion"] = 1,
 },
-["Handrmandr - Thunderstrike"] = {
+["Vermins - Thunderstrike"] = {
 ["metricMeta"] = {
 ["damage_crit_topX"] = {
-["lastHash"] = "0e3c1f40",
-["lastRecordAt"] = 475408.962,
-["validRecords"] = 2,
+["lastHash"] = "4e0fb1bd",
 ["totalRecords"] = 2,
+["validRecords"] = 2,
+["lastRecordAt"] = 482364.32,
 ["invalidRecords"] = 0,
 },
 },
-["bucketSchemaVersion"] = 1,
 ["metricSnapshotState"] = {
 ["byMetricVersion"] = {
-["damage_crit_topX|HUNTER"] = 2,
-},
-["byMetricHash"] = {
-["damage_crit_topX|HUNTER"] = "29af7b64",
+["damage_crit_topX|WARRIOR"] = 2,
 },
 ["byMetricAppliedAt"] = {
-["damage_crit_topX|HUNTER"] = 475408.962,
+["damage_crit_topX|WARRIOR"] = 482364.32,
+},
+["byMetricHash"] = {
+["damage_crit_topX|WARRIOR"] = "53eaaf07",
 },
 },
 ["metricRecords"] = {
@@ -1297,105 +3758,106 @@ NAGLeaderboardDB = {
 {
 ["addonVersion"] = "unknown",
 ["prevHash"] = "root",
-["playerKey"] = "Handrmandr-Thunderstrike",
+["playerKey"] = "Vermins-Thunderstrike",
 ["expansionTag"] = "tbc",
-["value"] = 125,
+["value"] = 68,
 ["context"] = {
-["targetGUID"] = "Creature-0-6414-1-20272-4154-00003456D9",
-["targetName"] = "Salt Flats Scavenger",
-["targetLevel"] = 31,
-["spellIcon"] = 135490,
-["playerLevel"] = 36,
-["spellId"] = 75,
-["eventType"] = "RANGE_DAMAGE",
-["spellName"] = "Auto Shot",
+["targetLevel"] = 9,
+["playerLevel"] = 31,
+["targetGUID"] = "Creature-0-6414-1-20289-3100-0000347FD3",
+["spellIcon"] = 132349,
+["targetName"] = "Elder Mottled Boar",
+["spellId"] = 0,
+["eventType"] = "SWING_DAMAGE",
+["spellName"] = "Melee",
 },
-["payloadHash"] = "4395aa49",
+["payloadHash"] = "c6d1c7b7",
 ["metricId"] = "damage_crit_topX",
-["buildTag"] = "tbc",
-["playerName"] = "Handrmandr-Thunderstrike",
-["serverName"] = "Thunderstrike",
-["chainHash"] = "d9a10db1",
+["playerLevel"] = 31,
+["playerName"] = "Vermins-Thunderstrike",
+["timestamp"] = 482360.851,
+["identityKey"] = "guid:Player-6409-04889C3C",
 ["integrityState"] = "valid",
 ["sourceModule"] = "CritHealLeaderboardProvider",
-["className"] = "HUNTER",
+["guildName"] = "Maximum Effort",
 ["scope"] = "local",
-["guildName"] = "",
-["identityKey"] = "guid:Player-6409-04889BA2",
-["timestamp"] = 470759.58,
-["playerLevel"] = 36,
-["playerGUID"] = "Player-6409-04889BA2",
+["className"] = "WARRIOR",
+["chainHash"] = "91acf494",
+["serverName"] = "Thunderstrike",
+["buildTag"] = "tbc",
+["playerGUID"] = "Player-6409-04889C3C",
 },
 {
 ["addonVersion"] = "unknown",
-["prevHash"] = "d9a10db1",
-["playerKey"] = "Handrmandr-Thunderstrike",
+["prevHash"] = "91acf494",
+["playerKey"] = "Vermins-Thunderstrike",
 ["expansionTag"] = "tbc",
-["value"] = 131,
+["value"] = 149,
 ["context"] = {
-["targetGUID"] = "Creature-0-6423-0-21015-1151-000034681F",
-["targetName"] = "Saltwater Crocolisk",
-["targetLevel"] = 35,
-["spellIcon"] = 135490,
-["playerLevel"] = 36,
-["spellId"] = 75,
-["eventType"] = "RANGE_DAMAGE",
-["spellName"] = "Auto Shot",
+["targetLevel"] = 9,
+["playerLevel"] = 31,
+["targetGUID"] = "Creature-0-6414-1-20289-3100-0000347FD3",
+["spellIcon"] = 132349,
+["targetName"] = "Elder Mottled Boar",
+["spellId"] = 0,
+["eventType"] = "SWING_DAMAGE",
+["spellName"] = "Melee",
 },
-["payloadHash"] = "30cf9740",
+["payloadHash"] = "84634644",
 ["metricId"] = "damage_crit_topX",
-["buildTag"] = "tbc",
-["playerLevel"] = 36,
-["serverName"] = "Thunderstrike",
-["chainHash"] = "0e3c1f40",
+["playerLevel"] = 31,
+["playerName"] = "Vermins-Thunderstrike",
+["timestamp"] = 482364.32,
+["identityKey"] = "guid:Player-6409-04889C3C",
 ["integrityState"] = "valid",
 ["sourceModule"] = "CritHealLeaderboardProvider",
-["className"] = "HUNTER",
+["guildName"] = "Maximum Effort",
 ["scope"] = "local",
-["guildName"] = "",
-["identityKey"] = "guid:Player-6409-04889BA2",
-["timestamp"] = 475408.962,
-["playerName"] = "Handrmandr-Thunderstrike",
-["playerGUID"] = "Player-6409-04889BA2",
+["className"] = "WARRIOR",
+["chainHash"] = "4e0fb1bd",
+["serverName"] = "Thunderstrike",
+["buildTag"] = "tbc",
+["playerGUID"] = "Player-6409-04889C3C",
 },
 },
 },
 ["displayMigrationVersion"] = 1,
+["bucketSchemaVersion"] = 1,
 ["recordsByScopeClassMetric"] = {
 ["local"] = {
-["HUNTER"] = {
+["WARRIOR"] = {
 ["damage_crit_topX"] = {
-["Handrmandr-Thunderstrike"] = {
+["Vermins-Thunderstrike"] = {
 ["addonVersion"] = "unknown",
-["prevHash"] = "d9a10db1",
-["playerKey"] = "Handrmandr-Thunderstrike",
+["prevHash"] = "91acf494",
+["playerKey"] = "Vermins-Thunderstrike",
 ["expansionTag"] = "tbc",
-["value"] = 131,
+["value"] = 149,
 ["context"] = {
-["targetGUID"] = "Creature-0-6423-0-21015-1151-000034681F",
-["targetName"] = "Saltwater Crocolisk",
-["targetLevel"] = 35,
-["spellIcon"] = 135490,
-["playerLevel"] = 36,
-["spellId"] = 75,
-["eventType"] = "RANGE_DAMAGE",
-["spellName"] = "Auto Shot",
+["targetLevel"] = 9,
+["playerLevel"] = 31,
+["targetGUID"] = "Creature-0-6414-1-20289-3100-0000347FD3",
+["spellIcon"] = 132349,
+["targetName"] = "Elder Mottled Boar",
+["spellId"] = 0,
+["eventType"] = "SWING_DAMAGE",
+["spellName"] = "Melee",
 },
-["payloadHash"] = "30cf9740",
+["payloadHash"] = "84634644",
 ["metricId"] = "damage_crit_topX",
-["playerName"] = "Handrmandr-Thunderstrike",
-["playerLevel"] = 36,
-["timestamp"] = 475408.962,
-["identityKey"] = "guid:Player-6409-04889BA2",
+["buildTag"] = "tbc",
+["playerLevel"] = 31,
+["serverName"] = "Thunderstrike",
+["chainHash"] = "4e0fb1bd",
 ["integrityState"] = "valid",
 ["sourceModule"] = "CritHealLeaderboardProvider",
-["guildName"] = "",
+["className"] = "WARRIOR",
 ["scope"] = "local",
-["className"] = "HUNTER",
-["chainHash"] = "0e3c1f40",
-["serverName"] = "Thunderstrike",
-["buildTag"] = "tbc",
-["playerGUID"] = "Player-6409-04889BA2",
+["guildName"] = "Maximum Effort",
+["identityKey"] = "guid:Player-6409-04889C3C",
+["timestamp"] = 482364.32,
+["playerName"] = "Vermins-Thunderstrike",
+["playerGUID"] = "Player-6409-04889C3C",
 },
 },
 },
@@ -1406,6 +3868,52 @@ NAGLeaderboardDB = {
 },
 ["LeaderboardSyncService"] = {
 ["char"] = {
+["Handrmandr - Thunderstrike"] = {
+["syncStats"] = {
+["dropped"] = 48,
+["droppedByType"] = {
+["SYNC_REQUEST"] = 13,
+["TOPX_SNAPSHOT"] = 10,
+["METRIC_DIGEST"] = 23,
+["BEST_UPDATE"] = 2,
+},
+},
+},
+["Dopeseal - Thunderstrike"] = {
+["syncStats"] = {
+["dropped"] = 2,
+["droppedByType"] = {
+["SYNC_REQUEST"] = 2,
+},
+},
+},
+["Dopecure - Thunderstrike"] = {
+["syncStats"] = {
+["dropped"] = 1,
+["droppedByType"] = {
+["SYNC_REQUEST"] = 1,
+},
+},
+},
+["Battitude - Thunderstrike"] = {
+["syncStats"] = {
+["dropped"] = 5,
+["droppedByType"] = {
+["SYNC_REQUEST"] = 1,
+["TOPX_SNAPSHOT"] = 1,
+["METRIC_DIGEST"] = 1,
+["BEST_UPDATE"] = 2,
+},
+},
+},
+["Pitchwise - Thunderstrike"] = {
+["syncStats"] = {
+["droppedByType"] = {
+["SYNC_REQUEST"] = 1,
+},
+["dropped"] = 1,
+},
+},
 ["Moolatz - Thunderstrike"] = {
 ["syncStats"] = {
 ["received"] = 17,
@@ -1427,23 +3935,30 @@ NAGLeaderboardDB = {
 ["digestCompared"] = 4,
 },
 },
-["Dopeseal - Thunderstrike"] = {
+["Dopecoil - Thunderstrike"] = {
 ["syncStats"] = {
-["dropped"] = 1,
 ["droppedByType"] = {
 ["SYNC_REQUEST"] = 1,
 },
+["dropped"] = 1,
 },
 },
-["Handrmandr - Thunderstrike"] = {
+["Vermins - Thunderstrike"] = {
 ["syncStats"] = {
-["dropped"] = 48,
+["received"] = 2,
+["dropped"] = 2,
 ["droppedByType"] = {
-["SYNC_REQUEST"] = 13,
-["TOPX_SNAPSHOT"] = 10,
-["METRIC_DIGEST"] = 23,
 ["BEST_UPDATE"] = 2,
 },
+["lastReceivedAt"] = 482509.869,
+["sent"] = 2,
+["sentByType"] = {
+["SYNC_REQUEST"] = 1,
+["METRIC_DIGEST"] = 1,
+},
+["lastSentAt"] = 482509.638,
+["digestUpToDate"] = 1,
+["digestCompared"] = 1,
 },
 },
 },

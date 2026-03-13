@@ -54,9 +54,9 @@ TomTomDB = {
 ["Doperage - Living Flame"] = "Default",
 ["Antun - Golemagg"] = "Default",
 ["Provokator - Jin'do"] = "Default",
-["Battitude - Thunderstrike"] = "Default",
-["Dopestab - Lone Wolf"] = "Default",
 ["Dopebolt - Lone Wolf"] = "Default",
+["Dopestab - Lone Wolf"] = "Default",
+["Battitude - Thunderstrike"] = "Default",
 ["Moolatz - Dreadnaught"] = "Default",
 ["Battlenac - Celebras"] = "Default",
 ["Moolatz - Celebras"] = "Default",
@@ -181,9 +181,9 @@ TomTomWaypointsM = {
 ["Doperage - Living Flame"] = "Doperage - Living Flame",
 ["Antun - Golemagg"] = "Antun - Golemagg",
 ["Provokator - Jin'do"] = "Provokator - Jin'do",
-["Battitude - Thunderstrike"] = "Battitude - Thunderstrike",
-["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
 ["Dopebolt - Lone Wolf"] = "Dopebolt - Lone Wolf",
+["Dopestab - Lone Wolf"] = "Dopestab - Lone Wolf",
+["Battitude - Thunderstrike"] = "Battitude - Thunderstrike",
 ["Moolatz - Dreadnaught"] = "Moolatz - Dreadnaught",
 ["Battlenac - Celebras"] = "Battlenac - Celebras",
 ["Moolatz - Celebras"] = "Moolatz - Celebras",
@@ -325,11 +325,11 @@ TomTomWaypointsM = {
 },
 ["Provokator - Jin'do"] = {
 },
-["Battitude - Thunderstrike"] = {
+["Dopebolt - Lone Wolf"] = {
 },
 ["Dopestab - Lone Wolf"] = {
 },
-["Dopebolt - Lone Wolf"] = {
+["Battitude - Thunderstrike"] = {
 },
 ["Moolatz - Dreadnaught"] = {
 },
