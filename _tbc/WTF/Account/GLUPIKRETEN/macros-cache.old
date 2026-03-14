@@ -54,14 +54,15 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:12184
+#showtooltip item:12037
 /cast feed pet
-/use item:12184
+/use item:12037
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Stranglethorn Raptor
-/targetexact Stranglethorn Tiger
-/targetexact Panther
+/targetexact Bloodscalp Shaman
+/targetexact Bloodscalp Axe Thrower
+/targetexact Bloodscalp Warrior
+/targetexact Elder Stranglethorn Tiger
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
@@ -71,7 +72,7 @@ VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
 /click StaticPopup1Button1
 END
 VER 3 0000000000000041 "TEST" "132123"
-/run print(UnitBuff("target", 1))
+/run print(C_NamePlate.GetNamePlateForUnit("pettarget"):GetName())
 END
 VER 3 000000000000001D "TSMDestroy" "133938"
 /tsm destroy
