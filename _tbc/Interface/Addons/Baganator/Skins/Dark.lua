@@ -106,64 +106,30 @@ local function RemoveFrameTextures(frame)
 end
 
 local texCoords = { 0.08, 0.92, 0.08, 0.92 }
+local function ApplyItemBorderColor(frame, itemRarity, itemType)
+	if itemType and itemType == "Quest" then
+		frame:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
+		frame:SetBeautyBorderColor(1, 0.964, 0, 1)
+	elseif itemRarity and itemRarity > 1 then
+		local c = ITEM_QUALITY_COLORS[itemRarity]
+		if c then
+			frame:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
+			frame:SetBeautyBorderColor(c.r or 1, c.g or 1, c.b or 1)
+		end
+	else
+		frame:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
+		frame:SetBeautyBorderColor(1, 1, 1)
+	end
+end
+
 local function ItemButtonQualityHook(frame, quality)
 	frame.IconBorder:Hide()
 	frame.IconBorder:HookScript("OnShow", function(self)
 		self:Hide()
 	end)
-	if frame.bgrSimpleHooked then
-		frame:CreateBeautyBorder(8)
-
-		local c = ITEM_QUALITY_COLORS[quality]
-
-		if frame.BGRUpdateQuests then
-			local questTexture = frame:GetName() and _G[frame:GetName() .. "IconQuestTexture"] or frame.IconQuestTexture
-			hooksecurefunc(frame, "BGRUpdateQuests", function()
-				if questTexture then
-					local textureID = questTexture:GetTexture()
-					if textureID then
-						questTexture:Hide()
-						frame:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
-						frame:SetBeautyBorderColor(1, 0.964, 0, 1)
-					end
-				end
-			end)
-		end
-
-		if c and quality and quality > 1 then
-			frame:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
-			frame:SetBeautyBorderColor(c.r or 1, c.g or 1, c.b or 1)
-		else
-			frame:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
-			frame:SetBeautyBorderColor(1, 1, 1)
-		end
-
-		if frame.SetItemDetails then
-			hooksecurefunc(frame, "SetItemDetails", function(_, details)
-				if details.itemID then
-					local slot = details.slotID
-					local bag = details.bagID
-					local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType, itemSubType, itemStackCount, itemEquipLoc, itemTexture, itemSellPrice =
-						GetItemInfo(details.itemID)
-					-- isQuestItem, questId, isActive = GetContainerItemQuestInfo(bag, slot)
-
-					c = ITEM_QUALITY_COLORS[itemRarity]
-
-					if c and itemRarity and itemRarity > 1 then
-						frame:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureWhite")
-						frame:SetBeautyBorderColor(c.r or 1, c.g or 1, c.b or 1)
-					else
-						frame:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\media\\textureNormal")
-						frame:SetBeautyBorderColor(1, 1, 1)
-					end
-
-					if itemType and itemType == "Quest" then
-						frame:SetBeautyBorderTexture("Interface\\AddOns\\xVermin\\Media\\textureWhite")
-						frame:SetBeautyBorderColor(1, 0.964, 0, 1)
-					end
-				end
-			end)
-		end
+	-- fallback za frame-ove bez SetItemDetails
+	if frame.bgrSimpleHooked and not frame.SetItemDetails then
+		ApplyItemBorderColor(frame, quality, nil)
 	end
 end
 local function ItemButtonTextureHook(frame)
@@ -239,6 +205,18 @@ local skinners = {
 			frame.SlotBackground:SetSize(35, 35)
 		end
 		frame.SlotBackground:SetShown(showSlots)
+		frame:CreateBeautyBorder(8)
+		if frame.SetItemDetails then
+			hooksecurefunc(frame, "SetItemDetails", function(_, details)
+				if details.itemID then
+					local itemName, itemLink, itemRarity, itemLevel, itemMinLevel, itemType =
+						GetItemInfo(details.itemID)
+					ApplyItemBorderColor(frame, itemRarity, itemType)
+				else
+					ApplyItemBorderColor(frame, nil, nil)
+				end
+			end)
+		end
 		if frame.SetItemButtonQuality then
 			hooksecurefunc(frame, "SetItemButtonQuality", ItemButtonQualityHook)
 		end

@@ -1,7 +1,7 @@
 nPower: disabled
 nHealth: disabled
 Immersion: enabled
-AdiBags: enabled
+AdiBags: disabled
 AdiBags_Config: enabled
 Sorted: disabled
 WeakAurasCompanion: enabled
@@ -282,7 +282,7 @@ DBM-WorldEvents: enabled
 Arcana: enabled
 AtlasLootClassic_BiS: enabled
 AvoidanceRating: enabled
-Baganator: disabled
+Baganator: enabled
 BaganatorCustomSkin: disabled
 BagSync: enabled
 Broker_Everything: enabled
@@ -307,7 +307,7 @@ Routes: enabled
 SetRoleButtons: enabled
 SpellActivationOverlay: enabled
 SUI: enabled
-Syndicator: disabled
+Syndicator: enabled
 Tamed: enabled
 TipTac: enabled
 TipTacItemRef: enabled

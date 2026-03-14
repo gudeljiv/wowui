@@ -281,7 +281,7 @@ ClassicCastbarsDB = {
 1,
 },
 ["enabled"] = true,
-["textPositionY"] = 0,
+["textPositionY"] = -3,
 ["castFont"] = "Interface\\Addons\\SharedMedia_xVermin\\media\\Coalition.ttf",
 ["timerTextPositionY"] = 0,
 ["statusColorChannel"] = {
@@ -334,7 +334,7 @@ ClassicCastbarsDB = {
 0,
 0.535,
 },
-["borderPaddingWidth"] = 1.205,
+["borderPaddingWidth"] = 1.2,
 ["textColor"] = {
 1,
 1,

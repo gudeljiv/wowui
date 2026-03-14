@@ -11,11 +11,11 @@ VER 3 0000000000000025 "bomb" "134400"
 END
 VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:1205
+/cast item:0
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:4593
+/cast item:0
 END
 VER 3 000000000000003F "gather" "134400"
 #showtooltip
@@ -23,7 +23,7 @@ VER 3 000000000000003F "gather" "134400"
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:929
+/cast item:0
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -54,13 +54,12 @@ VER 3 000000000000003B "pdef" "132328"
 /petpassive
 END
 VER 3 000000000000000E "PF" "Inv_misc_questionmark"
-#showtooltip item:12037
+#showtooltip item:3771
 /cast feed pet
-/use item:12037
+/use item:3771
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Andruk
-/targetexact Astranaar Sentinel
+/targetexact Undertaker Mordo
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"

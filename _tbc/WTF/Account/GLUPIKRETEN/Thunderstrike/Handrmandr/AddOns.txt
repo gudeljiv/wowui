@@ -10,7 +10,7 @@ nMainbar: disabled
 nMinimap: enabled
 !Beautycase: enabled
 !Colorz: enabled
-AdiBags: enabled
+AdiBags: disabled
 AdiBags_Config: enabled
 Align: disabled
 AtlasLootClassic_Options: enabled
@@ -144,12 +144,12 @@ ElvUI_Options: disabled
 ElvUI: disabled
 ElvUI_Libraries: disabled
 AdiBags_Item_Sets: disabled
-Baganator: disabled
+Baganator: enabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
 Buffet: enabled
 Drift: enabled
-Syndicator: disabled
+Syndicator: enabled
 Blizzard_ObjectiveTracker: enabled
 DBM-Core: enabled
 DBM-GUI: enabled

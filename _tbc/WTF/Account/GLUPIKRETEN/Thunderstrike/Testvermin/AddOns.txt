@@ -14,7 +14,7 @@ DBM-Raids-Vanilla: enabled
 DBM-Outlands: enabled
 DBM-Azeroth: enabled
 DBM-WorldEvents: enabled
-AdiBags: enabled
+AdiBags: disabled
 AdiBags_Config: enabled
 AtlasLootClassic_BiS: enabled
 AtlasLootClassic_Collections: enabled
@@ -27,7 +27,7 @@ AtlasLootClassic_Options: enabled
 AtlasLootClassic_PvP: enabled
 Auctionator: enabled
 AvoidanceRating: enabled
-Baganator: disabled
+Baganator: enabled
 BaganatorCustomSkin: disabled
 Buffet: enabled
 !BugGrabber: enabled
@@ -99,7 +99,7 @@ SigmaHelmAndCloak: enabled
 SortBags: enabled
 SpellActivationOverlay: enabled
 SUI: enabled
-Syndicator: disabled
+Syndicator: enabled
 TacoTip: enabled
 Tamed: enabled
 TellMeWhen: enabled

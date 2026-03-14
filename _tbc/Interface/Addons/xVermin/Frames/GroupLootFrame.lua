@@ -3,19 +3,19 @@ local _, xVermin = ...
 local function RepositionLootFrames()
 	local anchor = _G["GroupLootContainer"]
 	anchor:ClearAllPoints()
-	anchor:SetPoint("CENTER", UIParent, "CENTER", 700, 550)
+	anchor:SetPoint("CENTER", UIParent, "CENTER", 450, 400)
 	anchor:SetScale(0.8)
 
 	for i = 1, NUM_GROUP_LOOT_FRAMES do
-		frame = _G["GroupLootFrame" .. i]
-		if frame and frame ~= nil then
+		local frame = _G["GroupLootFrame" .. i]
+		if frame then
 			if i == 1 then
 				frame:ClearAllPoints()
-				frame:SetPoint("CENTER", UIParent, "CENTER", 700, 550)
+				frame:SetPoint("CENTER", UIParent, "CENTER", 450, 400)
 				frame:SetScale(1)
-			elseif i > 1 then
+			else
 				frame:ClearAllPoints()
-				frame:SetPoint("BOTTOM", "GroupLootFrame" .. (i - 1), "TOP", 0, 5)
+				frame:SetPoint("TOP", "GroupLootFrame" .. (i - 1), "BOTTOM", 0, -5)
 				frame:SetScale(1)
 			end
 		end
@@ -38,3 +38,4 @@ for _, funcName in ipairs(functionsToHook) do
 end
 
 _G.RepositionLootFrames = RepositionLootFrames
+

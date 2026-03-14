@@ -14,7 +14,7 @@ WeakAuras: enabled
 xVermin: enabled
 RXPGuides: enabled
 ItemRackOptions: enabled
-AdiBags: enabled
+AdiBags: disabled
 AdiBags_Config: enabled
 nMinimap: enabled
 nBuff: disabled
@@ -135,7 +135,7 @@ LibSharedMedia-3.0: enabled
 Scrap: enabled
 BrainDead: enabled
 SyLevel: enabled
-Baganator: disabled
+Baganator: enabled
 RXPGuides_Themes: enabled
 Blizzard_CombatText: enabled
 ElvUI_AuraBarsMovers: disabled
@@ -162,7 +162,7 @@ SpellActivationOverlay: enabled
 Baganator-Simple: disabled
 NovaConsumesHelper: enabled
 Drift: enabled
-Syndicator: disabled
+Syndicator: enabled
 Blizzard_ObjectiveTracker: enabled
 DBM-Core: enabled
 DBM-GUI: enabled

@@ -1,7 +1,7 @@
 nPower: disabled
 nHealth: disabled
 Immersion: enabled
-AdiBags: enabled
+AdiBags: disabled
 AdiBags_Config: enabled
 Sorted: disabled
 WeakAurasCompanion: enabled
@@ -266,12 +266,12 @@ ElvUI_Options: disabled
 ElvUI: disabled
 ElvUI_Libraries: disabled
 AdiBags_Item_Sets: disabled
-Baganator: disabled
+Baganator: enabled
 SpellActivationOverlay: enabled
 Baganator-Simple: disabled
 NovaConsumesHelper: disabled
 Drift: enabled
-Syndicator: disabled
+Syndicator: enabled
 Blizzard_ObjectiveTracker: enabled
 DBM-VPVEM: enabled
 DBM-Party-BC: enabled

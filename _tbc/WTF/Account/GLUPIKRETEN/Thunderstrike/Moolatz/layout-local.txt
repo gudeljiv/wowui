@@ -13,13 +13,6 @@ X: 0
 Y: -116
 W: 920
 H: 724
-Frame: ColorPickerFrame
-FrameLevel: 23
-Anchor: CENTER
-X: -46
-Y: 166
-W: 365
-H: 200
 Frame: WorldStateScoreFrame
 FrameLevel: 1
 Anchor: CENTER
@@ -232,9 +225,9 @@ W: 36
 H: 36
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
-Anchor: TOPRIGHT
+Anchor: RIGHT
 X: -351
-Y: -175
+Y: 175
 W: 607
 H: 672
 Frame: PallyPowerBlessingsFrame
@@ -286,3 +279,10 @@ X: -26
 Y: -275
 W: 330
 H: 113
+Frame: ColorPickerFrame
+FrameLevel: 23
+Anchor: CENTER
+X: -46
+Y: 166
+W: 305
+H: 200
