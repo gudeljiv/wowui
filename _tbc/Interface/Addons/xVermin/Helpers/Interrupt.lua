@@ -105,6 +105,7 @@ local HandleUnit = function(unit)
 			xVermin.Class == "SHAMAN"
 			and xVermin.GetSpellID("Earth Shock") ~= nil
 			and IsSpellKnownOrOverridesKnown(xVermin.GetSpellID("Earth Shock"))
+			and GetShapeshiftForm() ~= 1 -- ako nije ghost wolf form
 		then
 			if select(2, GetSpellCooldown("Earth Shock")) <= 1.5 and IsSpellInRange("Earth Shock", unit) == 1 then
 				HRF = true

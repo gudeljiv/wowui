@@ -70,7 +70,7 @@ GMMONEY = {
 ["CLASS"] = "PRIEST",
 },
 ["Pitchwise"] = {
-["GOLD"] = 211655,
+["GOLD"] = 186209,
 ["CLASS"] = "SHAMAN",
 },
 ["Battitude"] = {

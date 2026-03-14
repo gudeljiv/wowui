@@ -546,6 +546,18 @@ xVermin.TalentLearned = function(tabIndex, talentIndex)
 end
 xTalentLearned = xVermin.TalentLearned
 
+xVermin.GetTalentRank = function(tabIndex, talentName)
+	local numTalents = GetNumTalents(tabIndex)
+	for i = 1, numTalents do
+		local name, _, _, _, rank = GetTalentInfo(tabIndex, i)
+		if name == talentName then
+			return rank -- 0 ako nije naučen, 1 ako jest (max rank je 1)
+		end
+	end
+	return 0
+end
+xGetTalentRank = xVermin.GetTalentRank
+
 xVermin.SpellCooldown = function(spellID, spellName)
 	local start, duration, enabled
 

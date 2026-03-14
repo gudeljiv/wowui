@@ -103,7 +103,7 @@ SharedMedia: enabled
 SharedMedia_xVermin: enabled
 SigmaHelmAndCloak: enabled
 StatLogic: enabled
-Syndicator: disabled
+Syndicator: enabled
 TacoTip: enabled
 TellMeWhen: enabled
 TellMeWhen_Options: enabled

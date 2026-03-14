@@ -45,7 +45,8 @@ function uierrorsframe_addmessage(frame, text, red, green, blue, id)
 			return
 		end
 		lastErrorTime[text] = now
-		local color = text:match("%d+/%d+") and _G.GREEN_FONT_COLOR_CODE or _G.RED_FONT_COLOR_CODE
+		local lowerText = text:lower()
+		local color = (text:match("%d+/%d+") or lowerText:match("complet")) and _G.GREEN_FONT_COLOR_CODE or _G.RED_FONT_COLOR_CODE
 		ChatFrame7:AddMessage(color .. text)
 	end
 	for i, v in ipairs(messages) do
@@ -66,6 +67,8 @@ function uierrorsframe_addmessage(frame, text, red, green, blue, id)
 		displayText = text:gsub("%s*(%d+)/(%d+)", function(a, b)
 			return string.format("\n|cFF%02X%02X%02X%s/%s|r", cr, cg, cb, a, b)
 		end)
+	else
+		displayText = text:gsub("([Cc]ompleted?%f[%A])", "|cFF00FF00%1|r"):gsub("([Dd]one%f[%A])", "|cFF00FF00%1|r")
 	end
 	old_uierrosframe_addmessage(frame, displayText, red, green, blue, id)
 end

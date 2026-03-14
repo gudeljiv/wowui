@@ -3,7 +3,8 @@
     "allow": [
       "Bash(pip install \"pillow==12.1.1\")",
       "Bash(python3 -:*)",
-      "Bash(grep -E \"\\\\.lua$|^d\")"
+      "Bash(grep -E \"\\\\.lua$|^d\")",
+      "WebFetch(domain:github.com)"
     ]
   }
 }

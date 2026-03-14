@@ -170,7 +170,7 @@ TotemTimers_Profiles = {
 ["TimerSpacing"] = 5,
 ["MaelstromNumberOnly"] = false,
 ["PowerSurgeOverlay"] = true,
-["LastWeaponEnchant"] = 8019,
+["LastWeaponEnchant"] = 10399,
 ["HideInVehicle"] = true,
 ["DisabledMultiSpells"] = {
 },
@@ -589,7 +589,7 @@ nil,
 ["CDTimersOnButtons"] = true,
 ["LastTotems"] = {
 6363,
-8075,
+8160,
 8166,
 8835,
 },
