@@ -99,8 +99,8 @@ nil,
 ["enableLevelingReportInspections"] = true,
 ["enableQuestChoiceRecommendation"] = true,
 ["enableMobMarking"] = true,
-["updateFrequency"] = 75,
-["soundOnFind"] = 3175,
+["shareQuests"] = false,
+["numMapPins"] = 7,
 ["activeTheme"] = "Default",
 ["showFlightTimers"] = true,
 ["itemUpgradeSpec"] = "Retribution",
@@ -109,7 +109,7 @@ nil,
 ["enableTargetMarking"] = true,
 ["enableFPAutomation"] = true,
 ["soundOnFindChannel"] = "Master",
-["shareQuests"] = false,
+["updateFrequency"] = 75,
 ["enableWorldMapButton"] = true,
 ["enableLevelUpAnnounceGroup"] = false,
 ["dungeons"] = {
@@ -196,7 +196,7 @@ nil,
 ["textLootColor"] = "FF00BCD4",
 ["enableLevelUpAnnounceSolo"] = false,
 ["enableDrowningScreenFlash"] = true,
-["numMapPins"] = 7,
+["soundOnFind"] = 3175,
 ["windowScale"] = 1,
 ["activeTargetScale"] = 1.25,
 ["emergencyThreshold"] = 0.2,
@@ -3059,9 +3059,41 @@ nil,
 ["frameHeight"] = 125.0000152587891,
 },
 ["Handrmandr - Thunderstrike"] = {
-["gnomeTele"] = false,
-["tbcWBF"] = true,
+["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
+["tbcStart"] = 2,
+["questPrioIndex"] = {
+},
+["questPrio"] = {
+},
+["skipQuest"] = {
+},
+["lockFrames"] = false,
+["frameSizes"] = {
+["activeTargetFrame"] = {
+84.79988861083984,
+42.99992370605469,
+},
+["RXPFrame"] = {
+253.0314331054688,
+207.4602813720703,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+39.99979782104492,
+},
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+},
+["itemUpgradeSpec"] = "Hunter",
 ["goblinTele"] = false,
+["tbcWBF"] = true,
+["gnomeTele"] = false,
+["portalTele"] = false,
+["customTheme"] = {
+["displayName"] = "Default",
+},
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -3100,38 +3132,6 @@ nil,
 },
 },
 },
-["frameSizes"] = {
-["activeTargetFrame"] = {
-115.9998092651367,
-42.99992370605469,
-},
-["RXPFrame"] = {
-253.0314331054688,
-207.4602813720703,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-39.99979782104492,
-},
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-},
-["portalTele"] = false,
-["tbcStart"] = 2,
-["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
-["itemUpgradeSpec"] = "Hunter",
-["customTheme"] = {
-["displayName"] = "Default",
-},
-["questPrio"] = {
-},
-["questPrioIndex"] = {
-},
-["skipQuest"] = {
-},
-["lockFrames"] = false,
 },
 ["Mxzq - Golemagg"] = {
 ["season"] = 0,
@@ -3256,40 +3256,8 @@ nil,
 },
 },
 ["Default"] = {
-["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
-["tbcStart"] = 2,
-["questPrioIndex"] = {
-},
-["questPrio"] = {
-},
-["skipQuest"] = {
-},
-["frameSizes"] = {
-["arrowFrame"] = {
-32.00003814697266,
-31.99995613098145,
-},
-["RXPFrame"] = {
-253.0314331054688,
-207.4602813720703,
-},
-["activeItemFrame"] = {
-72.69862365722656,
-39.99988174438477,
-},
-["activeTargetFrame"] = {
-84.79988861083984,
-42.99992370605469,
-},
-},
-["itemUpgradeSpec"] = "Destruction",
-["goblinTele"] = false,
-["tbcWBF"] = true,
 ["gnomeTele"] = false,
-["portalTele"] = false,
-["customTheme"] = {
-["displayName"] = "Default",
-},
+["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
 ["framePositions"] = {
 ["arrowFrame"] = {
 {
@@ -3328,6 +3296,37 @@ nil,
 },
 },
 },
+["skipQuest"] = {
+},
+["tbcStart"] = 2,
+["questPrioIndex"] = {
+},
+["portalTele"] = false,
+["customTheme"] = {
+["displayName"] = "Default",
+},
+["questPrio"] = {
+},
+["frameSizes"] = {
+["arrowFrame"] = {
+32.00003814697266,
+31.99995613098145,
+},
+["RXPFrame"] = {
+253.0314331054688,
+27.99999809265137,
+},
+["activeItemFrame"] = {
+72.69862365722656,
+39.99988174438477,
+},
+["activeTargetFrame"] = {
+84.79988861083984,
+18.00000190734863,
+},
+},
+["goblinTele"] = false,
+["tbcWBF"] = true,
 },
 ["Dopestab - Lone Wolf"] = {
 ["framePositions"] = {

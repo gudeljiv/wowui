@@ -148,3 +148,4 @@ Routes: enabled
 SetRoleButtons: enabled
 Tamed: enabled
 TotemTimers: enabled
+NAG: disabled

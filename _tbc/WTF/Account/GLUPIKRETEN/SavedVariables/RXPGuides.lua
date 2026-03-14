@@ -113,14 +113,14 @@ nil,
 ["activeTargetScale"] = 1.25,
 ["windowScale"] = 1,
 ["activeTheme"] = "Default",
-["numMapPins"] = 7,
+["soundOnFind"] = 3175,
 ["itemUpgradeSpec"] = "Retribution",
 ["batchSize"] = 6,
 ["arrowScale"] = 1,
 ["levelSplitsHistory"] = 10,
 ["enableFPAutomation"] = true,
 ["soundOnFindChannel"] = "Master",
-["updateFrequency"] = 75,
+["shareQuests"] = false,
 ["showFlightTimers"] = true,
 ["enableLevelUpAnnounceGroup"] = false,
 ["dungeons"] = {
@@ -208,8 +208,8 @@ nil,
 ["enableLevelUpAnnounceSolo"] = false,
 ["enableDrowningScreenFlash"] = true,
 ["enableWorldMapButton"] = true,
-["shareQuests"] = false,
-["soundOnFind"] = 3175,
+["updateFrequency"] = 75,
+["numMapPins"] = 7,
 ["enableMobMarking"] = true,
 ["enableQuestChoiceRecommendation"] = true,
 ["showTargetingOnProximity"] = false,
@@ -2429,9 +2429,9 @@ nil,
 ["frameHeight"] = 125.0000152587891,
 },
 ["Handrmandr - Thunderstrike"] = {
-["gnomeTele"] = false,
-["lockFrames"] = false,
-["skipQuest"] = {
+["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
+["tbcStart"] = 2,
+["questPrioIndex"] = {
 },
 ["framePositions"] = {
 ["activeTargetFrame"] = {
@@ -2471,17 +2471,9 @@ nil,
 },
 },
 },
-["questPrioIndex"] = {
+["skipQuest"] = {
 },
-["questPrio"] = {
-},
-["portalTele"] = false,
-["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
-["itemUpgradeSpec"] = "Hunter",
-["customTheme"] = {
-["displayName"] = "Default",
-},
-["tbcStart"] = 2,
+["lockFrames"] = false,
 ["frameSizes"] = {
 ["arrowFrame"] = {
 32.00003814697266,
@@ -2496,12 +2488,20 @@ nil,
 39.99979782104492,
 },
 ["activeTargetFrame"] = {
-115.9998092651367,
+84.79988861083984,
 42.99992370605469,
 },
 },
+["itemUpgradeSpec"] = "Hunter",
 ["goblinTele"] = false,
 ["tbcWBF"] = true,
+["gnomeTele"] = false,
+["portalTele"] = false,
+["customTheme"] = {
+["displayName"] = "Default",
+},
+["questPrio"] = {
+},
 },
 ["Battitude - Zandalar Tribe"] = {
 ["showDangerousUnitscan"] = false,
@@ -3241,18 +3241,16 @@ nil,
 ["frameHeight"] = 125.0000152587891,
 },
 ["Default"] = {
+["gnomeTele"] = false,
 ["tbcTurnInOrder"] = "Prep-Burning Steppes Start;Burning Steppes Start;Silithus CH Start;Un'Goro to Tanaris;Felwood to Winterspring;Plaguelands;STV to Blasted Lands",
-["tbcStart"] = 2,
-["questPrioIndex"] = {
-},
 ["framePositions"] = {
-["arrowFrame"] = {
+["activeTargetFrame"] = {
 {
 "CENTER",
 nil,
 "CENTER",
--151.0001068115234,
--23.99999046325684,
+352.4122314453125,
+65.3967514038086,
 },
 },
 ["RXPFrame"] = {
@@ -3273,26 +3271,26 @@ nil,
 -74.2860336303711,
 },
 },
-["activeTargetFrame"] = {
+["arrowFrame"] = {
 {
 "CENTER",
 nil,
 "CENTER",
-352.4122314453125,
-65.3967514038086,
+-151.0001068115234,
+-23.99999046325684,
 },
 },
 },
-["skipQuest"] = {
-},
+["goblinTele"] = false,
+["tbcStart"] = 2,
 ["frameSizes"] = {
 ["activeTargetFrame"] = {
 84.79988861083984,
-42.99992370605469,
+18.00000190734863,
 },
 ["RXPFrame"] = {
 253.0314331054688,
-207.4602813720703,
+27.99999809265137,
 },
 ["activeItemFrame"] = {
 72.69862365722656,
@@ -3303,15 +3301,17 @@ nil,
 31.99995613098145,
 },
 },
-["goblinTele"] = false,
-["tbcWBF"] = true,
-["gnomeTele"] = false,
-["portalTele"] = false,
+["questPrio"] = {
+},
 ["customTheme"] = {
 ["displayName"] = "Default",
 },
-["questPrio"] = {
+["portalTele"] = false,
+["questPrioIndex"] = {
 },
+["skipQuest"] = {
+},
+["tbcWBF"] = true,
 },
 ["Dopeclaw - Thunderstrike"] = {
 ["showDangerousMobsMap"] = true,

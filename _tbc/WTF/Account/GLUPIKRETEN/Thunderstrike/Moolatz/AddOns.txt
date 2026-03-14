@@ -326,3 +326,4 @@ SetRoleButtons: enabled
 SUI: enabled
 Tamed: enabled
 TotemTimers: enabled
+NAG: disabled

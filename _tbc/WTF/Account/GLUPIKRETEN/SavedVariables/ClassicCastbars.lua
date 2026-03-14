@@ -282,7 +282,7 @@ ClassicCastbarsDB = {
 },
 ["enabled"] = true,
 ["textPositionY"] = 0,
-["castFont"] = "Fonts\\ARIALN.TTF",
+["castFont"] = "Interface\\Addons\\SharedMedia_xVermin\\media\\Coalition.ttf",
 ["timerTextPositionY"] = 0,
 ["statusColorChannel"] = {
 0,
@@ -323,7 +323,7 @@ ClassicCastbarsDB = {
 0,
 1,
 },
-["castStatusBar"] = "Interface\\Addons\\SharedMedia_xVermin\\statusbar\\xVerminClean.tga",
+["castStatusBar"] = "Interface\\Addons\\SharedMedia_xVermin\\media\\xVerminClean.tga",
 ["statusBackgroundColor"] = {
 0,
 0,

@@ -298,7 +298,7 @@ PlaterDB = {
 [35290] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Nasu",
+["source"] = "Boar",
 ["npcID"] = 1126,
 },
 [6984] = {
@@ -539,7 +539,7 @@ PlaterDB = {
 },
 [7816] = {
 ["isChanneled"] = false,
-["source"] = "Zahneth",
+["source"] = "Unknown",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 1863,
 },
@@ -1149,8 +1149,8 @@ PlaterDB = {
 },
 [7809] = {
 ["isChanneled"] = false,
+["source"] = "Mezzgron",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Phanjuk",
 ["npcID"] = 1860,
 },
 [13583] = {
@@ -1334,8 +1334,8 @@ PlaterDB = {
 [16828] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Flatterine",
-["npcID"] = 1997,
+["source"] = "Obelix",
+["npcID"] = 822,
 },
 [6266] = {
 ["isChanneled"] = false,
@@ -1491,9 +1491,9 @@ PlaterDB = {
 },
 [16829] = {
 ["isChanneled"] = false,
-["source"] = "Crab",
+["source"] = "Owl",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 3812,
+["npcID"] = 1996,
 },
 [6778] = {
 ["encounterName"] = "Lord Serpentis",
@@ -1835,8 +1835,8 @@ PlaterDB = {
 },
 [7810] = {
 ["isChanneled"] = false,
-["source"] = "Grak'los",
 ["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Graz'juk",
 ["npcID"] = 1860,
 },
 [11538] = {
@@ -2452,9 +2452,9 @@ PlaterDB = {
 },
 [13443] = {
 ["isChanneled"] = false,
-["source"] = "Ursangous",
+["source"] = "Elder Stranglethorn Tiger",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 12678,
+["npcID"] = 1085,
 },
 [5708] = {
 ["isChanneled"] = false,
@@ -2642,9 +2642,9 @@ PlaterDB = {
 },
 [10277] = {
 ["isChanneled"] = false,
-["source"] = "Bloodscalp Axe Thrower",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 694,
+["source"] = "Bloodscalp Hunter",
+["npcID"] = 595,
 },
 [8246] = {
 ["isChanneled"] = false,
@@ -2805,9 +2805,9 @@ PlaterDB = {
 },
 [6660] = {
 ["isChanneled"] = false,
+["source"] = "Venture Co. Mechanic",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Syndicate Pathstalker",
-["npcID"] = 2587,
+["npcID"] = 1097,
 },
 [6668] = {
 ["isChanneled"] = false,
@@ -3103,9 +3103,9 @@ PlaterDB = {
 },
 [8599] = {
 ["isChanneled"] = false,
-["source"] = "Bloodscalp Warrior",
+["source"] = "Bloodscalp Scout",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 587,
+["npcID"] = 588,
 },
 [12741] = {
 ["isChanneled"] = false,
@@ -3556,9 +3556,9 @@ PlaterDB = {
 },
 [14917] = {
 ["isChanneled"] = false,
+["source"] = "Kalli",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Boar",
-["npcID"] = 1125,
+["npcID"] = 471,
 },
 [19655] = {
 ["isChanneled"] = false,
@@ -3581,8 +3581,8 @@ PlaterDB = {
 [6533] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Witherbark Headhunter",
-["npcID"] = 2556,
+["source"] = "Bloodscalp Hunter",
+["npcID"] = 595,
 },
 [6589] = {
 ["isChanneled"] = false,
@@ -3925,9 +3925,9 @@ PlaterDB = {
 },
 [14918] = {
 ["isChanneled"] = false,
+["source"] = "Rohlik",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Flatterine",
-["npcID"] = 1997,
+["npcID"] = 1085,
 },
 [21832] = {
 ["encounterName"] = "Princess Theradras",
@@ -4083,9 +4083,9 @@ PlaterDB = {
 },
 [184] = {
 ["isChanneled"] = false,
+["source"] = "Venture Co. Geologist",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Lesser Felguard",
-["npcID"] = 3772,
+["npcID"] = 1096,
 },
 [7965] = {
 ["encounterName"] = "Lord Cobrahn",
@@ -4401,6 +4401,12 @@ PlaterDB = {
 ["source"] = "Pesterhide Hyena",
 ["npcID"] = 4248,
 },
+[14443] = {
+["isChanneled"] = false,
+["source"] = "Venture Co. Mechanic",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 1097,
+},
 [3472] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
@@ -4427,17 +4433,17 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 13282,
 },
-[6982] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Screeching Windcaller",
-["npcID"] = 4104,
-},
 [42648] = {
 ["isChanneled"] = false,
 ["source"] = "Dun Garok Mountaineer",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 2344,
+},
+[6982] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Screeching Windcaller",
+["npcID"] = 4104,
 },
 [3658] = {
 ["isChanneled"] = false,
@@ -4445,17 +4451,11 @@ PlaterDB = {
 ["source"] = "Dalaran Summoner",
 ["npcID"] = 2358,
 },
-[3631] = {
+[3650] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Windshear Overlord",
-["npcID"] = 4004,
-},
-[11977] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Arnak Grimtotem",
-["npcID"] = 10896,
+["source"] = "Mudsnout Gnoll",
+["npcID"] = 2372,
 },
 [16143] = {
 ["event"] = "SPELL_AURA_APPLIED",
@@ -4463,11 +4463,23 @@ PlaterDB = {
 ["source"] = "Mangled Cadaver",
 ["npcID"] = 10382,
 },
+[11977] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Arnak Grimtotem",
+["npcID"] = 10896,
+},
 [35325] = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["type"] = "DEBUFF",
 ["source"] = "Umbraglow Stinger",
 ["npcID"] = 18132,
+},
+[34410] = {
+["event"] = "SPELL_AURA_APPLIED",
+["type"] = "BUFF",
+["source"] = "Garrosh's Buff Bots",
+["npcID"] = 19660,
 },
 [7038] = {
 ["isChanneled"] = false,
@@ -4475,11 +4487,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 202391,
 },
-[34410] = {
-["event"] = "SPELL_AURA_APPLIED",
+[4148] = {
+["source"] = "Giant Ashenvale Bear",
 ["type"] = "BUFF",
-["source"] = "Garrosh's Buff Bots",
-["npcID"] = 19660,
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 3811,
 },
 [12057] = {
 ["isChanneled"] = false,
@@ -4543,12 +4555,6 @@ PlaterDB = {
 ["source"] = "Cat",
 ["npcID"] = 2384,
 },
-[35076] = {
-["source"] = "A'dal",
-["type"] = "BUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 18481,
-},
 [52970] = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["type"] = "BUFF",
@@ -4569,6 +4575,12 @@ PlaterDB = {
 ["source"] = "Skethyl Owl",
 ["npcID"] = 21450,
 },
+[27572] = {
+["event"] = "SPELL_AURA_APPLIED",
+["type"] = "BUFF",
+["source"] = "Kwee Q. Peddlefeet",
+["npcID"] = 16075,
+},
 [3584] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
@@ -4581,11 +4593,11 @@ PlaterDB = {
 ["source"] = "Scorpid",
 ["npcID"] = 5422,
 },
-[3335] = {
+[33543] = {
 ["isChanneled"] = false,
-["source"] = "Black Slime",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 1030,
+["source"] = "Infernal Hound",
+["npcID"] = 19207,
 },
 [428687] = {
 ["isChanneled"] = false,
@@ -4601,21 +4613,15 @@ PlaterDB = {
 },
 [3604] = {
 ["isChanneled"] = false,
-["source"] = "Saltwater Crocolisk",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 1151,
+["source"] = "River Crocolisk",
+["npcID"] = 1150,
 },
-[33543] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Infernal Hound",
-["npcID"] = 19207,
-},
-[13444] = {
-["source"] = "Warpwood Shredder",
-["type"] = "DEBUFF",
+[12279] = {
 ["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 7101,
+["type"] = "DEBUFF",
+["source"] = "Scholomance Dark Summoner",
+["npcID"] = 11582,
 },
 [11980] = {
 ["isChanneled"] = false,
@@ -4623,17 +4629,23 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 7342,
 },
+[16333] = {
+["event"] = "SPELL_AURA_APPLIED",
+["type"] = "DEBUFF",
+["source"] = "Hungering Wraith",
+["npcID"] = 1802,
+},
 [446088] = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["type"] = "BUFF",
 ["source"] = "Enraged Leywalker",
 ["npcID"] = 222407,
 },
-[16333] = {
-["event"] = "SPELL_AURA_APPLIED",
-["type"] = "DEBUFF",
-["source"] = "Hungering Wraith",
-["npcID"] = 1802,
+[3639] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Scarlet Soldier",
+["npcID"] = 4286,
 },
 [8363] = {
 ["isChanneled"] = false,
@@ -4653,23 +4665,23 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 4147,
 },
-[3639] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Scarlet Soldier",
-["npcID"] = 4286,
-},
-[20511] = {
+[21063] = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["type"] = "DEBUFF",
-["source"] = "Lok Orcbane",
-["npcID"] = 3435,
+["source"] = "Highlord Kruul",
+["npcID"] = 18338,
 },
 [6957] = {
 ["isChanneled"] = false,
 ["source"] = "Grik'nir the Cold",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 808,
+},
+[40505] = {
+["isChanneled"] = false,
+["source"] = "Scorpid Reaver",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 4140,
 },
 [3652] = {
 ["isChanneled"] = false,
@@ -4695,11 +4707,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 5307,
 },
-[40505] = {
-["isChanneled"] = false,
-["source"] = "Scorpid Reaver",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 4140,
+[2791] = {
+["source"] = "Archbishop Benedictus",
+["type"] = "BUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 1284,
 },
 [3672] = {
 ["isChanneled"] = false,
@@ -4707,17 +4719,17 @@ PlaterDB = {
 ["source"] = "Elemental Slave",
 ["npcID"] = 2359,
 },
-[2791] = {
-["source"] = "Archbishop Benedictus",
-["type"] = "BUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 1284,
-},
 [34889] = {
 ["source"] = "Mihawk",
 ["type"] = "DEBUFF",
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 15649,
+},
+[5115] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Hillsbrad Foreman",
+["npcID"] = 2503,
 },
 [7366] = {
 ["isChanneled"] = false,
@@ -4725,11 +4737,13 @@ PlaterDB = {
 ["source"] = "Fallen Champion",
 ["npcID"] = 6488,
 },
-[5115] = {
+[11836] = {
+["encounterName"] = "Gahz'rilla",
+["source"] = "Gahz'rilla",
+["encounterID"] = 594,
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Hillsbrad Foreman",
-["npcID"] = 2503,
+["npcID"] = 7273,
 },
 [17230] = {
 ["isChanneled"] = false,
@@ -4749,13 +4763,11 @@ PlaterDB = {
 ["source"] = "Venomhide Ravasaur",
 ["npcID"] = 6508,
 },
-[11836] = {
-["encounterName"] = "Gahz'rilla",
-["source"] = "Gahz'rilla",
-["encounterID"] = 594,
+[14517] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 7273,
+["source"] = "Scarlet Gallant",
+["npcID"] = 4287,
 },
 [418459] = {
 ["event"] = "SPELL_AURA_APPLIED",
@@ -4781,23 +4793,11 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 3475,
 },
-[7993] = {
-["isChanneled"] = false,
-["source"] = "Son of Cenarius",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 4057,
-},
 [31287] = {
 ["isChanneled"] = false,
 ["source"] = "Mutated Tangler",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 17346,
-},
-[14920] = {
-["isChanneled"] = false,
-["source"] = "Felshetzer",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 16932,
 },
 [70893] = {
 ["encounterName"] = "Kel'Thuzad",
@@ -4807,11 +4807,17 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["encounterID"] = 1114,
 },
-[913] = {
+[14920] = {
 ["isChanneled"] = false,
-["source"] = "Greymist Oracle",
+["source"] = "Felshetzer",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 2207,
+["npcID"] = 16932,
+},
+[13953] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Dun Garok Mountaineer",
+["npcID"] = 2344,
 },
 [8645] = {
 ["isChanneled"] = false,
@@ -4837,6 +4843,14 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 1137,
 },
+[12470] = {
+["encounterName"] = "Bloodmage Thalnos",
+["source"] = "Bloodmage Thalnos",
+["encounterID"] = 2779,
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 4543,
+},
 [10938] = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["type"] = "BUFF",
@@ -4849,19 +4863,11 @@ PlaterDB = {
 ["source"] = "Shadow Priestess Vandis",
 ["npcID"] = 11055,
 },
-[12470] = {
-["encounterName"] = "Bloodmage Thalnos",
-["source"] = "Bloodmage Thalnos",
-["encounterID"] = 2779,
+[13728] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 4543,
-},
-[7164] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Refuge Pointe Defender",
-["npcID"] = 10696,
+["source"] = "Ambershard Destroyer",
+["npcID"] = 11782,
 },
 [6274] = {
 ["isChanneled"] = false,
@@ -4905,17 +4911,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 5429,
 },
-[7289] = {
+[402818] = {
 ["isChanneled"] = false,
-["source"] = "Zalazane",
+["source"] = "Homunculus",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 3205,
-},
-[5567] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Timberling Mire Beast",
-["npcID"] = 2029,
+["npcID"] = 202392,
 },
 [1020] = {
 ["isChanneled"] = false,
@@ -4923,11 +4923,17 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 3976,
 },
-[24450] = {
+[5567] = {
 ["isChanneled"] = false,
-["source"] = "Félin",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 2406,
+["source"] = "Timberling Mire Beast",
+["npcID"] = 2029,
+},
+[3229] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Riverpaw Taskmaster",
+["npcID"] = 98,
 },
 [5532] = {
 ["encounterName"] = "Oggleflint",
@@ -4937,17 +4943,19 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 2732,
 },
+[11837] = {
+["encounterName"] = "Chief Ukorz Sandscalp",
+["source"] = "Chief Ukorz Sandscalp",
+["npcID"] = 7267,
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["encounterID"] = 600,
+},
 [7646] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Witherbark Shadow Hunter",
 ["npcID"] = 2557,
-},
-[446274] = {
-["source"] = "Dream Fog",
-["type"] = "DEBUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 222516,
 },
 [10767] = {
 ["isChanneled"] = false,
@@ -4969,17 +4977,17 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 1062,
 },
-[13321] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Jaedenar Hound",
-["npcID"] = 7125,
-},
 [20753] = {
 ["isChanneled"] = false,
 ["source"] = "Nightmare Grizzly",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 221230,
+},
+[13321] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Jaedenar Hound",
+["npcID"] = 7125,
 },
 [446695] = {
 ["isChanneled"] = false,
@@ -4987,17 +4995,17 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 15076,
 },
-[9275] = {
-["source"] = "Scarlet Torturer",
-["type"] = "DEBUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 4306,
-},
 [12161] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Grimtotem Naturalist",
 ["npcID"] = 7726,
+},
+[9275] = {
+["source"] = "Scarlet Torturer",
+["type"] = "DEBUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 4306,
 },
 [7481] = {
 ["isChanneled"] = false,
@@ -5005,11 +5013,19 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 4279,
 },
-[12468] = {
+[15584] = {
 ["isChanneled"] = false,
-["source"] = "Ohk'zi",
+["source"] = "Dreamharvester",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 222233,
+["npcID"] = 221264,
+},
+[11086] = {
+["encounterName"] = "Witch Doctor Zum'rah",
+["source"] = "Witch Doctor Zum'rah",
+["npcID"] = 7271,
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["encounterID"] = 597,
 },
 [18670] = {
 ["isChanneled"] = false,
@@ -5023,21 +5039,13 @@ PlaterDB = {
 ["source"] = "Grimtotem Reaver",
 ["npcID"] = 10761,
 },
-[11086] = {
-["encounterName"] = "Witch Doctor Zum'rah",
-["source"] = "Witch Doctor Zum'rah",
-["npcID"] = 7271,
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["encounterID"] = 597,
-},
-[20813] = {
+[20811] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Grimtotem Geomancer",
 ["npcID"] = 10760,
 },
-[20811] = {
+[20813] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Grimtotem Geomancer",
@@ -5049,6 +5057,12 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 5278,
 },
+[447585] = {
+["isChanneled"] = false,
+["source"] = "Terror Whelp",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 221260,
+},
 [9435] = {
 ["encounterName"] = "Arcanist Doan",
 ["source"] = "Arcanist Doan",
@@ -5057,11 +5071,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 447,
 },
-[8996] = {
+[449890] = {
 ["isChanneled"] = false,
+["source"] = "Larsera",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Dark Iron Rifleman",
-["npcID"] = 6523,
+["npcID"] = 221265,
 },
 [5759] = {
 ["isChanneled"] = false,
@@ -5075,11 +5089,11 @@ PlaterDB = {
 ["source"] = "Lynna",
 ["npcID"] = 1863,
 },
-[449890] = {
+[414723] = {
 ["isChanneled"] = false,
-["source"] = "Larsera",
+["source"] = "Wooden Effigy",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 221265,
+["npcID"] = 206248,
 },
 [21069] = {
 ["isChanneled"] = false,
@@ -5093,17 +5107,17 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 5708,
 },
-[414723] = {
-["isChanneled"] = false,
-["source"] = "Wooden Effigy",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 206248,
-},
 [588] = {
 ["isChanneled"] = false,
-["source"] = "Kurzen Medicine Man",
 ["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Kurzen Medicine Man",
 ["npcID"] = 940,
+},
+[9080] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Lok Orcbane",
+["npcID"] = 3435,
 },
 [246] = {
 ["isChanneled"] = false,
@@ -5117,14 +5131,6 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 2346,
 },
-[10666] = {
-["encounterName"] = "Archaedas",
-["source"] = "Earthen Custodian",
-["npcID"] = 7309,
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["encounterID"] = 554,
-},
 [7713] = {
 ["isChanneled"] = false,
 ["source"] = "Wandering Spirit",
@@ -5137,23 +5143,29 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 10540,
 },
-[15800] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Shadowforge Darkcaster",
-["npcID"] = 4848,
-},
 [19615] = {
 ["source"] = "Synd",
 ["type"] = "BUFF",
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 682,
 },
+[15800] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Shadowforge Darkcaster",
+["npcID"] = 4848,
+},
 [20436] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Goblin Pit Crewman",
 ["npcID"] = 4429,
+},
+[3635] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Crystal Spine Basilisk",
+["npcID"] = 689,
 },
 [15848] = {
 ["isChanneled"] = false,
@@ -5219,11 +5231,11 @@ PlaterDB = {
 ["source"] = "Sandfury Blood Drinker",
 ["npcID"] = 5649,
 },
-[11978] = {
+[9483] = {
 ["isChanneled"] = false,
+["source"] = "Dustbelcher Wyrmhunter",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Grimtotem Bandit",
-["npcID"] = 10758,
+["npcID"] = 2716,
 },
 [8014] = {
 ["isChanneled"] = false,
@@ -5255,12 +5267,6 @@ PlaterDB = {
 ["source"] = "Razorfen Groundshaker",
 ["npcID"] = 4523,
 },
-[9483] = {
-["isChanneled"] = false,
-["source"] = "Dustbelcher Wyrmhunter",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 2716,
-},
 [25712] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
@@ -5272,6 +5278,12 @@ PlaterDB = {
 ["source"] = "Frozen Soul",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 7352,
+},
+[8457] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Scarlet Magician",
+["npcID"] = 4282,
 },
 [8078] = {
 ["isChanneled"] = false,
@@ -5285,17 +5297,17 @@ PlaterDB = {
 ["source"] = "Gorilla",
 ["npcID"] = 1557,
 },
-[6921] = {
-["isChanneled"] = false,
-["source"] = "Shadowhorn Stag",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 3817,
-},
 [11020] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Sul'lithuz Sandcrawler",
 ["npcID"] = 8095,
+},
+[12170] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Sergeant Bly",
+["npcID"] = 7604,
 },
 [6063] = {
 ["isChanneled"] = false,
@@ -5303,11 +5315,11 @@ PlaterDB = {
 ["source"] = "Scarlet Disciple",
 ["npcID"] = 4285,
 },
-[12170] = {
+[992] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Sergeant Bly",
-["npcID"] = 7604,
+["source"] = "Witherbark Shadow Hunter",
+["npcID"] = 2557,
 },
 [18159] = {
 ["source"] = "Magrami Spectre",
@@ -5337,12 +5349,6 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 592,
 },
-[6870] = {
-["source"] = "Shadethicket Moss Eater",
-["type"] = "DEBUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 3780,
-},
 [16790] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
@@ -5363,6 +5369,12 @@ PlaterDB = {
 ["source"] = "Greater Kraul Bat",
 ["npcID"] = 4539,
 },
+[7395] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Undead Dynamiter",
+["npcID"] = 625,
+},
 [8190] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
@@ -5377,17 +5389,19 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 587,
 },
-[7395] = {
+[21869] = {
+["encounterName"] = "Princess Theradras",
+["source"] = "Princess Theradras",
+["npcID"] = 12201,
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Undead Dynamiter",
-["npcID"] = 625,
+["encounterID"] = 429,
 },
-[9906] = {
+[4961] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Jadespine Basilisk",
-["npcID"] = 4863,
+["source"] = "Dark Iron Supplier",
+["npcID"] = 2575,
 },
 [18543] = {
 ["event"] = "SPELL_AURA_APPLIED",
@@ -5407,29 +5421,17 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 222409,
 },
-[4961] = {
+[9874] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Dark Iron Supplier",
-["npcID"] = 2575,
+["source"] = "Stone Keeper",
+["npcID"] = 4857,
 },
 [8316] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Zigqua",
 ["npcID"] = 416,
-},
-[15970] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Wrathtail Priestess",
-["npcID"] = 3944,
-},
-[10395] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Vilebranch Soothsayer",
-["npcID"] = 4467,
 },
 [11902] = {
 ["encounterName"] = "Gahz'rilla",
@@ -5439,17 +5441,29 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 7273,
 },
-[8380] = {
+[10395] = {
 ["isChanneled"] = false,
-["source"] = "Firemane Scalebane",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 4328,
+["source"] = "Vilebranch Soothsayer",
+["npcID"] = 4467,
 },
 [419307] = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["type"] = "BUFF",
 ["source"] = "Supplicant",
 ["npcID"] = 215096,
+},
+[8380] = {
+["isChanneled"] = false,
+["source"] = "Firemane Scalebane",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 4328,
+},
+[8806] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Bristleback Hunter",
+["npcID"] = 3258,
 },
 [29098] = {
 ["isChanneled"] = false,
@@ -5469,12 +5483,6 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 7348,
 },
-[6866] = {
-["source"] = "Shadethicket Moss Eater",
-["type"] = "DEBUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 3780,
-},
 [64495] = {
 ["encounterName"] = "Kel'Thuzad",
 ["type"] = "BUFF",
@@ -5483,23 +5491,17 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["encounterID"] = 1114,
 },
+[11918] = {
+["isChanneled"] = false,
+["source"] = "Spindleweb Lurker",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 16351,
+},
 [21070] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Noxious Slime",
 ["npcID"] = 12221,
-},
-[6946] = {
-["source"] = "Bleakheart Shadowstalker",
-["type"] = "DEBUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 3770,
-},
-[25228] = {
-["event"] = "SPELL_AURA_APPLIED",
-["type"] = "BUFF",
-["source"] = "Unknown",
-["npcID"] = 417,
 },
 [7] = {
 ["isChanneled"] = false,
@@ -5507,11 +5509,17 @@ PlaterDB = {
 ["source"] = "Silithid Creeper Egg",
 ["npcID"] = 5781,
 },
-[23836] = {
+[25228] = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["type"] = "BUFF",
-["source"] = "Betona",
-["npcID"] = 1863,
+["source"] = "Unknown",
+["npcID"] = 417,
+},
+[420825] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Desert Mirage",
+["npcID"] = 209742,
 },
 [12946] = {
 ["encounterName"] = "Plaguemaw the Rotting",
@@ -5527,17 +5535,23 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 3771,
 },
-[6351] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Searing Totem III",
-["npcID"] = 3903,
-},
 [12747] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Bristleback Thornweaver",
 ["npcID"] = 3261,
+},
+[6351] = {
+["isChanneled"] = false,
+["source"] = "Searing Totem III",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 3903,
+},
+[11015] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Vilebranch Blood Drinker",
+["npcID"] = 2646,
 },
 [4320] = {
 ["isChanneled"] = false,
@@ -5552,12 +5566,6 @@ PlaterDB = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 424,
-},
-[11015] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Vilebranch Blood Drinker",
-["npcID"] = 2646,
 },
 [15531] = {
 ["encounterName"] = "Amnennar the Coldbringer",
@@ -5579,12 +5587,6 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 4530,
 },
-[14873] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Sentinel Spy",
-["npcID"] = 16330,
-},
 [9482] = {
 ["encounterName"] = "Galgann Firehammer",
 ["source"] = "Galgann Firehammer",
@@ -5593,17 +5595,29 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 552,
 },
+[14873] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Sentinel Spy",
+["npcID"] = 16330,
+},
+[12471] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Jugkar Grim'rod",
+["npcID"] = 5771,
+},
 [15795] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Sister of Celebrian",
 ["npcID"] = 11794,
 },
-[446639] = {
+[3605] = {
 ["isChanneled"] = false,
-["source"] = "Vengeful Ancient",
+["source"] = "Goblin Engineer",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 221263,
+["npcID"] = 622,
 },
 [27819] = {
 ["encounterName"] = "Kel'Thuzad",
@@ -5624,23 +5638,17 @@ PlaterDB = {
 ["source"] = "Hulfnar Stonetotem",
 ["npcID"] = 10599,
 },
-[3605] = {
+[8267] = {
 ["isChanneled"] = false,
-["source"] = "Goblin Engineer",
+["source"] = "Rotting Agam'ar",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 622,
+["npcID"] = 4512,
 },
 [6479] = {
 ["isChanneled"] = false,
 ["source"] = "Razormane Hunter",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 3265,
-},
-[45] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Gorehoof the Black",
-["npcID"] = 11914,
 },
 [434834] = {
 ["isChanneled"] = false,
@@ -5654,6 +5662,13 @@ PlaterDB = {
 ["source"] = "Razorfen Beastmaster",
 ["npcID"] = 4532,
 },
+[47481] = {
+["encounterName"] = "Kel'Thuzad",
+["source"] = "Rockgrinder",
+["npcID"] = 26125,
+["event"] = "SPELL_CAST_SUCCESS",
+["encounterID"] = 1114,
+},
 [417192] = {
 ["source"] = "Loa Altar",
 ["type"] = "DEBUFF",
@@ -5666,11 +5681,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 216474,
 },
-[6535] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Galak Stormer",
-["npcID"] = 4097,
+[23766] = {
+["event"] = "SPELL_AURA_APPLIED",
+["type"] = "BUFF",
+["source"] = "Sayge",
+["npcID"] = 14822,
 },
 [19983] = {
 ["isChanneled"] = false,
@@ -5692,11 +5707,11 @@ PlaterDB = {
 ["source"] = "Ashlan Stonesmirk",
 ["npcID"] = 1073,
 },
-[23766] = {
-["event"] = "SPELL_AURA_APPLIED",
-["type"] = "BUFF",
-["source"] = "Sayge",
-["npcID"] = 14822,
+[2610] = {
+["isChanneled"] = false,
+["source"] = "Nezzliok the Dire",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 1062,
 },
 [7750] = {
 ["isChanneled"] = false,
@@ -5704,17 +5719,17 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 5676,
 },
-[8129] = {
-["isChanneled"] = false,
-["source"] = "Saltstone Crystalhide",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 4151,
-},
 [2602] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Firemane Flamecaller",
 ["npcID"] = 4334,
+},
+[20816] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Witherbark Shadowcaster",
+["npcID"] = 2553,
 },
 [11131] = {
 ["encounterName"] = "Gahz'rilla",
@@ -5724,18 +5739,6 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 594,
 },
-[20816] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Witherbark Shadowcaster",
-["npcID"] = 2553,
-},
-[6607] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Sunscale Lashtail",
-["npcID"] = 3254,
-},
 [5200] = {
 ["encounterName"] = "Edwin VanCleef",
 ["source"] = "Edwin VanCleef",
@@ -5744,23 +5747,35 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 639,
 },
+[6607] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Sunscale Lashtail",
+["npcID"] = 3254,
+},
+[15532] = {
+["isChanneled"] = false,
+["source"] = "Freezing Spirit",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 7353,
+},
 [15620] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Baelog",
 ["npcID"] = 6906,
 },
-[9977] = {
-["isChanneled"] = false,
-["source"] = "Wrenix's Gizmotronic Apparatus",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 7166,
-},
 [324] = {
 ["isChanneled"] = false,
 ["source"] = "Razormane Mystic",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 3271,
+},
+[9977] = {
+["isChanneled"] = false,
+["source"] = "Wrenix's Gizmotronic Apparatus",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 7166,
 },
 [17685] = {
 ["isChanneled"] = false,
@@ -5780,11 +5795,11 @@ PlaterDB = {
 ["source"] = "Windfury Sorceress",
 ["npcID"] = 2964,
 },
-[8602] = {
+[7054] = {
 ["isChanneled"] = false,
+["source"] = "Tormented Officer",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Thistlefur Avenger",
-["npcID"] = 3925,
+["npcID"] = 3873,
 },
 [63619] = {
 ["encounterName"] = "Kel'Thuzad",
@@ -5794,12 +5809,6 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["encounterID"] = 1114,
 },
-[7054] = {
-["isChanneled"] = false,
-["source"] = "Tormented Officer",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 3873,
-},
 [9481] = {
 ["encounterName"] = "High Inquisitor Whitemane",
 ["source"] = "High Inquisitor Whitemane",
@@ -5808,17 +5817,23 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 3977,
 },
+[3551] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Gravelsnout Digger",
+["npcID"] = 4113,
+},
 [16561] = {
 ["isChanneled"] = false,
 ["source"] = "Wyrmkin Nightstalker",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 221259,
 },
-[20801] = {
+[6725] = {
 ["isChanneled"] = false,
+["source"] = "Azzere the Skyblade",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Imp Minion",
-["npcID"] = 12922,
+["npcID"] = 5834,
 },
 [22766] = {
 ["source"] = "Deviate Stalker",
@@ -5826,11 +5841,11 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 3634,
 },
-[6725] = {
-["isChanneled"] = false,
-["source"] = "Azzere the Skyblade",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 5834,
+[35706] = {
+["event"] = "SPELL_AURA_APPLIED",
+["type"] = "BUFF",
+["source"] = "Unknown",
+["npcID"] = 17252,
 },
 [9232] = {
 ["encounterName"] = "High Inquisitor Whitemane",
@@ -5852,11 +5867,11 @@ PlaterDB = {
 ["source"] = "Night Web Spider",
 ["npcID"] = 1505,
 },
-[13281] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Grimtotem Stomper",
-["npcID"] = 10759,
+[7998] = {
+["event"] = "SPELL_AURA_APPLIED",
+["type"] = "DEBUFF",
+["source"] = "Blackened Ancient",
+["npcID"] = 4029,
 },
 [6767] = {
 ["source"] = "Parqual Fintallas",
@@ -5864,11 +5879,13 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 4488,
 },
-[7998] = {
-["event"] = "SPELL_AURA_APPLIED",
-["type"] = "DEBUFF",
-["source"] = "Blackened Ancient",
-["npcID"] = 4029,
+[7342] = {
+["encounterName"] = "Skum",
+["source"] = "Deviate Lasher",
+["npcID"] = 5055,
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["encounterID"] = 589,
 },
 [21007] = {
 ["isChanneled"] = false,
@@ -5882,11 +5899,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 221282,
 },
-[15657] = {
-["isChanneled"] = false,
-["source"] = "Pyrewood Tailor",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 3530,
+[12187] = {
+["source"] = "Undercity Guardian",
+["type"] = "BUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 5624,
 },
 [21071] = {
 ["isChanneled"] = false,
@@ -5896,15 +5913,9 @@ PlaterDB = {
 },
 [9532] = {
 ["isChanneled"] = false,
+["source"] = "Venture Co. Geologist",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Kolkar Stormer",
-["npcID"] = 3273,
-},
-[12187] = {
-["source"] = "Undercity Guardian",
-["type"] = "BUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 5624,
+["npcID"] = 1096,
 },
 [700] = {
 ["encounterName"] = "Lady Anacondra",
@@ -5913,6 +5924,12 @@ PlaterDB = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 585,
+},
+[11430] = {
+["isChanneled"] = false,
+["source"] = "Razorfen Battleguard",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 7873,
 },
 [6742] = {
 ["isChanneled"] = false,
@@ -5946,12 +5963,6 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 2775,
 },
-[11767] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Zigbis",
-["npcID"] = 416,
-},
 [6979] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
@@ -5969,6 +5980,12 @@ PlaterDB = {
 ["source"] = "Mosh'Ogg Witch Doctor",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 1144,
+},
+[38864] = {
+["source"] = "Dr. Whitherlimb",
+["type"] = "DEBUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 22062,
 },
 [11771] = {
 ["event"] = "SPELL_AURA_APPLIED",
@@ -5988,23 +6005,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 3770,
 },
-[26683] = {
-["isChanneled"] = false,
-["source"] = "Orgrimmar Grunt",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 3296,
-},
 [23768] = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["type"] = "BUFF",
 ["source"] = "Sayge",
 ["npcID"] = 14822,
-},
-[6951] = {
-["isChanneled"] = false,
-["source"] = "Leper Gnome",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 1211,
 },
 [12255] = {
 ["encounterName"] = "Tuten'kash",
@@ -6014,11 +6019,23 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 7355,
 },
+[6951] = {
+["isChanneled"] = false,
+["source"] = "Leper Gnome",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 1211,
+},
 [11899] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Sandfury Witch Doctor",
 ["npcID"] = 5650,
+},
+[13965] = {
+["isChanneled"] = false,
+["source"] = "Warlord Krom'zar",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 9456,
 },
 [17649] = {
 ["isChanneled"] = false,
@@ -6026,11 +6043,11 @@ PlaterDB = {
 ["source"] = "Thontek Rumblehoof",
 ["npcID"] = 10600,
 },
-[13965] = {
+[6146] = {
 ["isChanneled"] = false,
-["source"] = "Warlord Krom'zar",
+["source"] = "Scarlet Sorcerer",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 9456,
+["npcID"] = 4294,
 },
 [21807] = {
 ["encounterName"] = "Celebras the Cursed",
@@ -6039,12 +6056,6 @@ PlaterDB = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 425,
-},
-[6146] = {
-["isChanneled"] = false,
-["source"] = "Scarlet Sorcerer",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 4294,
 },
 [22540] = {
 ["isChanneled"] = false,
@@ -6078,6 +6089,12 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 17527,
 },
+[26683] = {
+["isChanneled"] = false,
+["source"] = "Orgrimmar Grunt",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 3296,
+},
 [7047] = {
 ["isChanneled"] = false,
 ["source"] = "Homunculus",
@@ -6090,11 +6107,11 @@ PlaterDB = {
 ["source"] = "Delirious Ancient",
 ["npcID"] = 222573,
 },
-[38864] = {
-["source"] = "Dr. Whitherlimb",
-["type"] = "DEBUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 22062,
+[433254] = {
+["isChanneled"] = false,
+["source"] = "Ravaging Tempest",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 216474,
 },
 [58567] = {
 ["event"] = "SPELL_AURA_APPLIED",
@@ -6102,11 +6119,11 @@ PlaterDB = {
 ["source"] = "Bael'dun Excavator",
 ["npcID"] = 3374,
 },
-[433254] = {
+[11767] = {
 ["isChanneled"] = false,
-["source"] = "Ravaging Tempest",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 216474,
+["source"] = "Zigbis",
+["npcID"] = 416,
 },
 [432330] = {
 ["isChanneled"] = false,
@@ -6128,11 +6145,11 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 3475,
 },
-[11430] = {
+[15657] = {
 ["isChanneled"] = false,
-["source"] = "Razorfen Battleguard",
+["source"] = "Pyrewood Tailor",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 7873,
+["npcID"] = 3530,
 },
 [448707] = {
 ["isChanneled"] = false,
@@ -6152,13 +6169,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 215655,
 },
-[7342] = {
-["encounterName"] = "Skum",
-["source"] = "Deviate Lasher",
-["npcID"] = 5055,
+[13281] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["encounterID"] = 589,
+["source"] = "Grimtotem Stomper",
+["npcID"] = 10759,
 },
 [12251] = {
 ["source"] = "Tomb Reaver",
@@ -6172,11 +6187,11 @@ PlaterDB = {
 ["source"] = "Syndicate Footpad",
 ["npcID"] = 2240,
 },
-[35706] = {
-["event"] = "SPELL_AURA_APPLIED",
-["type"] = "BUFF",
-["source"] = "Unknown",
-["npcID"] = 17252,
+[20801] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Imp Minion",
+["npcID"] = 12922,
 },
 [10252] = {
 ["encounterName"] = "Archaedas",
@@ -6186,17 +6201,17 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 554,
 },
-[3551] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Gravelsnout Digger",
-["npcID"] = 4113,
-},
 [434876] = {
 ["isChanneled"] = false,
 ["source"] = "Amaryllis Webb",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 217412,
+},
+[8602] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Thistlefur Avenger",
+["npcID"] = 3925,
 },
 [18545] = {
 ["isChanneled"] = false,
@@ -6250,11 +6265,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 647,
 },
-[15532] = {
+[8129] = {
 ["isChanneled"] = false,
-["source"] = "Freezing Spirit",
+["source"] = "Saltstone Crystalhide",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 7353,
+["npcID"] = 4151,
 },
 [12491] = {
 ["encounterName"] = "Witch Doctor Zum'rah",
@@ -6270,11 +6285,11 @@ PlaterDB = {
 ["source"] = "Disciple of Naralex",
 ["npcID"] = 3678,
 },
-[2610] = {
+[6535] = {
 ["isChanneled"] = false,
-["source"] = "Nezzliok the Dire",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 1062,
+["source"] = "Galak Stormer",
+["npcID"] = 4097,
 },
 [7295] = {
 ["isChanneled"] = false,
@@ -6288,18 +6303,17 @@ PlaterDB = {
 ["source"] = "Grimtotem Mercenary",
 ["npcID"] = 11911,
 },
-[47481] = {
-["encounterName"] = "Kel'Thuzad",
-["source"] = "Rockgrinder",
-["npcID"] = 26125,
-["event"] = "SPELL_CAST_SUCCESS",
-["encounterID"] = 1114,
-},
 [16827] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "brummbär",
 ["npcID"] = 17345,
+},
+[45] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Gorehoof the Black",
+["npcID"] = 11914,
 },
 [5280] = {
 ["isChanneled"] = false,
@@ -6307,11 +6321,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 3111,
 },
-[8267] = {
+[446639] = {
 ["isChanneled"] = false,
-["source"] = "Rotting Agam'ar",
+["source"] = "Vengeful Ancient",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 4512,
+["npcID"] = 221263,
 },
 [2649] = {
 ["isChanneled"] = false,
@@ -6324,12 +6338,6 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Windfury Matriarch",
 ["npcID"] = 2965,
-},
-[12471] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Jugkar Grim'rod",
-["npcID"] = 5771,
 },
 [8399] = {
 ["encounterName"] = "High Inquisitor Fairbanks",
@@ -6357,17 +6365,17 @@ PlaterDB = {
 ["source"] = "Mangletooth",
 ["npcID"] = 3430,
 },
-[7399] = {
-["isChanneled"] = false,
-["source"] = "Scorpid Terror",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 4139,
-},
 [5916] = {
 ["isChanneled"] = false,
 ["source"] = "Dreamthorn Stalker",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 221258,
+},
+[7399] = {
+["isChanneled"] = false,
+["source"] = "Scorpid Terror",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 4139,
 },
 [47482] = {
 ["encounterName"] = "Kel'Thuzad",
@@ -6375,6 +6383,12 @@ PlaterDB = {
 ["npcID"] = 26125,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 1114,
+},
+[23836] = {
+["event"] = "SPELL_AURA_APPLIED",
+["type"] = "BUFF",
+["source"] = "Betona",
+["npcID"] = 1863,
 },
 [12795] = {
 ["encounterName"] = "Glutton",
@@ -6384,11 +6398,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 8567,
 },
-[420825] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Desert Mirage",
-["npcID"] = 209742,
+[6946] = {
+["source"] = "Bleakheart Shadowstalker",
+["type"] = "DEBUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 3770,
 },
 [19505] = {
 ["isChanneled"] = false,
@@ -6396,11 +6410,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 417,
 },
-[11918] = {
-["isChanneled"] = false,
-["source"] = "Spindleweb Lurker",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 16351,
+[6866] = {
+["source"] = "Shadethicket Moss Eater",
+["type"] = "DEBUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 3780,
 },
 [25710] = {
 ["isChanneled"] = false,
@@ -6414,17 +6428,17 @@ PlaterDB = {
 ["source"] = "Besseleth",
 ["npcID"] = 11921,
 },
-[8806] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Bristleback Hunter",
-["npcID"] = 3258,
-},
 [7901] = {
 ["isChanneled"] = false,
 ["source"] = "Withered Grimscale",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 16403,
+},
+[15970] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Wrathtail Priestess",
+["npcID"] = 3944,
 },
 [7487] = {
 ["encounterName"] = "Wolf Master Nandos",
@@ -6434,11 +6448,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 2754,
 },
-[9874] = {
+[9906] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Stone Keeper",
-["npcID"] = 4857,
+["source"] = "Jadespine Basilisk",
+["npcID"] = 4863,
 },
 [21808] = {
 ["encounterName"] = "Landslide",
@@ -6447,14 +6461,6 @@ PlaterDB = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 426,
-},
-[21869] = {
-["encounterName"] = "Princess Theradras",
-["source"] = "Princess Theradras",
-["npcID"] = 12201,
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["encounterID"] = 429,
 },
 [7067] = {
 ["isChanneled"] = false,
@@ -6474,6 +6480,12 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 1196,
 },
+[6870] = {
+["source"] = "Shadethicket Moss Eater",
+["type"] = "DEBUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 3780,
+},
 [21968] = {
 ["encounterName"] = "Celebras the Cursed",
 ["source"] = "Celebras the Cursed",
@@ -6482,11 +6494,11 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 12225,
 },
-[992] = {
+[6921] = {
 ["isChanneled"] = false,
+["source"] = "Shadowhorn Stag",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Witherbark Shadow Hunter",
-["npcID"] = 2557,
+["npcID"] = 3817,
 },
 [427739] = {
 ["isChanneled"] = false,
@@ -6501,12 +6513,6 @@ PlaterDB = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 448,
-},
-[8457] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Scarlet Magician",
-["npcID"] = 4282,
 },
 [5213] = {
 ["encounterName"] = "Gilnid",
@@ -6523,6 +6529,12 @@ PlaterDB = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 3974,
+},
+[11978] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Grimtotem Bandit",
+["npcID"] = 10758,
 },
 [9053] = {
 ["isChanneled"] = false,
@@ -6541,12 +6553,6 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Kodo Matriarch",
 ["npcID"] = 2974,
-},
-[3635] = {
-["isChanneled"] = false,
-["source"] = "Saltstone Gazer",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 4150,
 },
 [12245] = {
 ["source"] = "Withered Spearhide",
@@ -6568,17 +6574,19 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 7354,
 },
+[10666] = {
+["encounterName"] = "Archaedas",
+["source"] = "Earthen Custodian",
+["npcID"] = 7309,
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["encounterID"] = 554,
+},
 [427742] = {
 ["isChanneled"] = false,
 ["source"] = "Felguard",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 213450,
-},
-[9080] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Lok Orcbane",
-["npcID"] = 3435,
 },
 [25009] = {
 ["isChanneled"] = false,
@@ -6592,6 +6600,12 @@ PlaterDB = {
 ["source"] = "Searing Totem IV",
 ["npcID"] = 3904,
 },
+[8996] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Dark Iron Rifleman",
+["npcID"] = 6523,
+},
 [13323] = {
 ["encounterName"] = "Arcanist Doan",
 ["source"] = "Arcanist Doan",
@@ -6599,12 +6613,6 @@ PlaterDB = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 447,
-},
-[447585] = {
-["isChanneled"] = false,
-["source"] = "Terror Whelp",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 221260,
 },
 [29109] = {
 ["source"] = "Manawraith",
@@ -6618,17 +6626,17 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 7337,
 },
+[12468] = {
+["isChanneled"] = false,
+["source"] = "Ohk'zi",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 222233,
+},
 [427744] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Felguard",
 ["npcID"] = 213450,
-},
-[15584] = {
-["isChanneled"] = false,
-["source"] = "Dreamharvester",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 221264,
 },
 [12097] = {
 ["isChanneled"] = false,
@@ -6643,23 +6651,17 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 1114,
 },
-[427745] = {
-["isChanneled"] = false,
-["source"] = "Felguard",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 213450,
-},
 [6466] = {
 ["isChanneled"] = false,
 ["source"] = "Goblin Woodcarver",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 641,
 },
-[11436] = {
+[427745] = {
 ["isChanneled"] = false,
+["source"] = "Felguard",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Grimtotem Geomancer",
-["npcID"] = 10760,
+["npcID"] = 213450,
 },
 [3385] = {
 ["isChanneled"] = false,
@@ -6667,19 +6669,29 @@ PlaterDB = {
 ["source"] = "Elder Mottled Boar",
 ["npcID"] = 3100,
 },
+[11436] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Grimtotem Geomancer",
+["npcID"] = 10760,
+},
+[446274] = {
+["source"] = "Dream Fog",
+["type"] = "DEBUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 222516,
+},
 [427746] = {
 ["source"] = "Felguard",
 ["type"] = "DEBUFF",
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 213450,
 },
-[11837] = {
-["encounterName"] = "Chief Ukorz Sandscalp",
-["source"] = "Chief Ukorz Sandscalp",
-["npcID"] = 7267,
+[24450] = {
 ["isChanneled"] = false,
+["source"] = "Félin",
 ["event"] = "SPELL_CAST_SUCCESS",
-["encounterID"] = 600,
+["npcID"] = 2406,
 },
 [7799] = {
 ["isChanneled"] = false,
@@ -6687,23 +6699,17 @@ PlaterDB = {
 ["source"] = "Gelpad",
 ["npcID"] = 416,
 },
-[3229] = {
+[7289] = {
 ["isChanneled"] = false,
+["source"] = "Zalazane",
 ["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Riverpaw Taskmaster",
-["npcID"] = 98,
+["npcID"] = 3205,
 },
 [7815] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Cattrida",
 ["npcID"] = 1863,
-},
-[402818] = {
-["isChanneled"] = false,
-["source"] = "Homunculus",
-["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 202392,
 },
 [4971] = {
 ["isChanneled"] = false,
@@ -6743,17 +6749,17 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 3475,
 },
+[7164] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Refuge Pointe Defender",
+["npcID"] = 10696,
+},
 [9613] = {
 ["isChanneled"] = false,
 ["source"] = "Mannoroc Lasher",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 11697,
-},
-[13728] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Ambershard Destroyer",
-["npcID"] = 11782,
 },
 [8264] = {
 ["isChanneled"] = false,
@@ -6779,23 +6785,29 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 2261,
 },
+[913] = {
+["isChanneled"] = false,
+["source"] = "Greymist Oracle",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 2207,
+},
 [2941] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Stonevault Flameweaver",
 ["npcID"] = 7321,
 },
-[13953] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Dun Garok Mountaineer",
-["npcID"] = 2344,
-},
 [447563] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Vilebranch Mask",
 ["npcID"] = 222695,
+},
+[7993] = {
+["isChanneled"] = false,
+["source"] = "Son of Cenarius",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 4057,
 },
 [7951] = {
 ["isChanneled"] = false,
@@ -6816,12 +6828,6 @@ PlaterDB = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["encounterID"] = 592,
-},
-[14517] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Scarlet Gallant",
-["npcID"] = 4287,
 },
 [35292] = {
 ["isChanneled"] = false,
@@ -6847,23 +6853,29 @@ PlaterDB = {
 ["source"] = "Frenzied Black Drake",
 ["npcID"] = 9461,
 },
+[20511] = {
+["event"] = "SPELL_AURA_APPLIED",
+["type"] = "DEBUFF",
+["source"] = "Lok Orcbane",
+["npcID"] = 3435,
+},
 [9885] = {
 ["source"] = "Watcher Leesa'oh",
 ["type"] = "BUFF",
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 17831,
 },
-[21063] = {
-["event"] = "SPELL_AURA_APPLIED",
-["type"] = "DEBUFF",
-["source"] = "Highlord Kruul",
-["npcID"] = 18338,
-},
 [28902] = {
 ["isChanneled"] = false,
 ["source"] = "Blackpaw Shaman",
 ["event"] = "SPELL_CAST_SUCCESS",
 ["npcID"] = 16337,
+},
+[13444] = {
+["source"] = "Warpwood Shredder",
+["type"] = "DEBUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 7101,
 },
 [25999] = {
 ["source"] = "Boar",
@@ -6877,23 +6889,17 @@ PlaterDB = {
 ["source"] = "Sandfury Witch Doctor",
 ["npcID"] = 5650,
 },
-[12279] = {
-["event"] = "SPELL_AURA_APPLIED",
-["type"] = "DEBUFF",
-["source"] = "Scholomance Dark Summoner",
-["npcID"] = 11582,
+[3335] = {
+["isChanneled"] = false,
+["source"] = "Black Slime",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 1030,
 },
 [6016] = {
 ["isChanneled"] = false,
-["source"] = "Silithid Invader",
+["source"] = "Venture Co. Miner",
 ["event"] = "SPELL_CAST_SUCCESS",
-["npcID"] = 4131,
-},
-[27572] = {
-["event"] = "SPELL_AURA_APPLIED",
-["type"] = "BUFF",
-["source"] = "Kwee Q. Peddlefeet",
-["npcID"] = 16075,
+["npcID"] = 1094,
 },
 [39796] = {
 ["event"] = "SPELL_AURA_APPLIED",
@@ -6906,6 +6912,12 @@ PlaterDB = {
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Scarlet Guardsman",
 ["npcID"] = 4290,
+},
+[35076] = {
+["source"] = "A'dal",
+["type"] = "BUFF",
+["event"] = "SPELL_AURA_APPLIED",
+["npcID"] = 18481,
 },
 [16186] = {
 ["source"] = "Mummified Atal'ai",
@@ -6936,12 +6948,6 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["encounterID"] = 551,
 },
-[4148] = {
-["source"] = "Giant Ashenvale Bear",
-["type"] = "BUFF",
-["event"] = "SPELL_AURA_APPLIED",
-["npcID"] = 3811,
-},
 [23834] = {
 ["source"] = "Carrlith",
 ["type"] = "BUFF",
@@ -6954,23 +6960,29 @@ PlaterDB = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["npcID"] = 4967,
 },
+[3631] = {
+["isChanneled"] = false,
+["source"] = "Venture Co. Workboss",
+["event"] = "SPELL_CAST_SUCCESS",
+["npcID"] = 1095,
+},
 [8151] = {
 ["isChanneled"] = false,
 ["event"] = "SPELL_CAST_SUCCESS",
 ["source"] = "Crag Stalker",
 ["npcID"] = 4126,
 },
-[3650] = {
-["isChanneled"] = false,
-["event"] = "SPELL_CAST_SUCCESS",
-["source"] = "Mudsnout Gnoll",
-["npcID"] = 2372,
-},
 [9735] = {
 ["event"] = "SPELL_AURA_APPLIED",
 ["type"] = "BUFF",
 ["source"] = "Tiev Mordune",
 ["npcID"] = 7007,
+},
+[24577] = {
+["isChanneled"] = false,
+["event"] = "SPELL_CAST_SUCCESS",
+["source"] = "Carrion Bird",
+["npcID"] = 154,
 },
 },
 ["profileKeys"] = {
@@ -25326,7 +25338,6 @@ nil,
 ["x"] = 1,
 ["side"] = 1,
 },
-["health_selection_overlay_alpha"] = 0,
 ["minor_height_scale"] = 0.9999999403953552,
 ["aura_padding"] = 2,
 ["last_news_time"] = 1551553489,
@@ -25334,33 +25345,257 @@ nil,
 ["aura_stack_size"] = 13,
 ["aura_height2"] = 14,
 ["health_cutoff"] = false,
-["class_colors"] = {
-["DEATHKNIGHT"] = {
-["colorStr"] = "ffc31d3a",
+["hook_data_trash"] = {
+{
+["OptionsValues"] = {
 },
-["WARRIOR"] = {
-["colorStr"] = "ffc69a6d",
+["LastHookEdited"] = "Initialization",
+["UID"] = "0x69b51f801f1ec243",
+["Hooks"] = {
+["Initialization"] = "function (modTable)\n    --insert code here\n    \nend\n\n\n",
 },
-["PALADIN"] = {
-["colorStr"] = "fff48bb9",
+["__TrashAt"] = 1773477860,
+["Time"] = 1773477802,
+["LoadConditions"] = {
+["talent"] = {
 },
-["WARLOCK"] = {
-["colorStr"] = "ff8687ed",
+["group"] = {
 },
-["DEMONHUNTER"] = {
-["colorStr"] = "ffa22fc8",
+["class"] = {
 },
-["ROGUE"] = {
-["colorStr"] = "fffff467",
+["map_ids"] = {
 },
-["DRUID"] = {
-["colorStr"] = "ffff7c09",
+["role"] = {
 },
-["EVOKER"] = {
-["colorStr"] = "ff33937e",
+["pvptalent"] = {
 },
-["SHAMAN"] = {
-["colorStr"] = "ff006fdd",
+["race"] = {
+},
+["affix"] = {
+},
+["encounter_ids"] = {
+},
+["spec"] = {
+},
+},
+["Icon"] = 132182,
+["Enabled"] = true,
+["Revision"] = 2,
+["Options"] = {
+},
+["Author"] = "Handrmandr-Thunderstrike",
+["Desc"] = "",
+["Prio"] = 99,
+["Name"] = "Pet Target Marker",
+["PlaterCore"] = 1,
+["HooksTemp"] = {
+["Initialization"] = "function (modTable)\n    --insert code here\n    \nend\n\n\n",
+},
+},
+{
+["OptionsValues"] = {
+},
+["HooksTemp"] = {
+["Nameplate Created"] = "function (self, unitId, unitFrame, envTable)\n    \n    --run constructor!\n    --constructor is executed only once when any script of the hook runs.\n    \nend\n\n\n",
+["Nameplate Added"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if need update the amount of combo points shown\n    if (envTable.LastPlayerTalentUpdate > envTable.LastUpdate) then\n        envTable.UpdateComboPointAmount()\n    end    \n    \n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n        \n    else\n        envTable.ComboPointFrame:Hide()\n    end    \n    \nend\n\n\n",
+["Target Changed"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if this nameplate is the current target\n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n    else\n        envTable.ComboPointFrame:Hide()\n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+["Player Power Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.UpdateComboPoints()\n    end\n    \n    \nend\n\n\n\n\n\n\n",
+["Nameplate Removed"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n",
+["Destructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n\n\n",
+["Player Talent Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    --update the amount of comboo points shown when the player changes talents or specialization\n    envTable.UpdateComboPointAmount()\n    \n    --save the time of the last talent change\n    envTable.LastPlayerTalentUpdate = GetTime()\n    \n    \nend\n\n\n",
+["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    --settings\n    local anchors = {\n        {\"bottom\", unitFrame.healthBar, \"top\", 0, 24},\n    }\n    \n    local sizes = {\n        width = 12,\n        height = 12,\n        scale = 1,\n    }\n    \n    local textures = {\n        backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        backgroundTexCoords = {78/128, 98/128, 21/64, 41/64},\n        \n        comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        comboPointTexCoords = {100/128, 120/128, 21/64, 41/64},\n    }\n    \n    local frameLevel = 1000\n    local frameStrata = \"high\"    \n    \n    --private\n    do\n        --store combo points frames on this table\n        envTable.ComboPoints = {}\n        --save when the player changed talents or spec\n        envTable.LastPlayerTalentUpdate = GetTime()\n        --save when this nameplate got a combo point amount and alignment update        \n        \n        --build combo points frame anchor (combo point are anchored to this)\n        if (not unitFrame.PlaterComboPointFrame) then\n            local hostFrame = CreateFrame (\"frame\", nil, unitFrame)\n            hostFrame.ComboPointFramesPool = {}\n            unitFrame.PlaterComboPointFrame = hostFrame\n            envTable.ComboPointFrame = hostFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            \n            --DetailsFramework:ApplyStandardBackdrop (envTable.ComboPointFrame) --debug anchor size\n            \n            --animations\n            local onPlayShowAnimation = function (animation)\n                --stop the hide animation if it's playing\n                if (animation:GetParent():GetParent().HideAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().HideAnimation:Stop()\n                end\n                \n                animation:GetParent():Show()\n            end\n            \n            local onPlayHideAnimation = function (animation)\n                --stop the show animation if it's playing\n                if (animation:GetParent():GetParent().ShowAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().ShowAnimation:Stop()\n                end\n            end        \n            local onStopHideAnimation = function (animation)\n                animation:GetParent():Hide()       \n            end\n            \n            local createAnimations = function (comboPoint)\n                --on show\n                comboPoint.ShowAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayShowAnimation, nil)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 1, 0.1, 0, 0, 1, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"alpha\", 1, 0.1, .5, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 2, 0.1, 1.2, 1.2, 1, 1)\n                \n                --on hide\n                comboPoint.HideAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayHideAnimation, onStopHideAnimation)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"scale\", 1, 0.1, 1, 1, 0, 0)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"alpha\", 1, 0.1, 1, 0)\n            end\n            \n            --build combo point frame        \n            for i =1, 10 do \n                local f = CreateFrame (\"frame\", nil, envTable.ComboPointFrame)\n                f:SetSize (sizes.width, sizes.height)\n                tinsert (envTable.ComboPoints, f)\n                tinsert (unitFrame.PlaterComboPointFrame.ComboPointFramesPool, f)\n                \n                local backgroundTexture = f:CreateTexture (nil, \"background\")\n                backgroundTexture:SetTexture (textures.backgroundTexture)\n                backgroundTexture:SetTexCoord (unpack (textures.backgroundTexCoords))\n                backgroundTexture:SetSize (sizes.width, sizes.height)\n                backgroundTexture:SetPoint (\"center\")\n                \n                local comboPointTexture = f:CreateTexture (nil, \"artwork\")\n                comboPointTexture:SetTexture (textures.comboPointTexture)\n                comboPointTexture:SetTexCoord (unpack (textures.comboPointTexCoords))\n                \n                comboPointTexture:SetSize (sizes.width, sizes.height)\n                comboPointTexture:SetPoint (\"center\")\n                comboPointTexture:Hide()            \n                \n                f.IsActive = false\n                \n                f.backgroundTexture = backgroundTexture\n                f.comboPointTexture = comboPointTexture\n                \n                createAnimations (f)\n            end\n            \n        else\n            envTable.ComboPointFrame = unitFrame.PlaterComboPointFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            envTable.ComboPoints = unitFrame.PlaterComboPointFrame.ComboPointFramesPool\n            \n        end            \n        \n        envTable.ComboPointFrame:SetFrameLevel (frameLevel)\n        envTable.ComboPointFrame:SetFrameStrata (frameStrata)\n        \n        function envTable.UpdateComboPoints()\n            local comboPoints = UnitPower (\"player\", Enum.PowerType.ComboPoints)\n            \n            for i = 1, envTable.TotalComboPoints do\n                local thisComboPoint = envTable.ComboPoints [i]\n                \n                if (i <= comboPoints ) then\n                    --combo point enabled\n                    if (not thisComboPoint.IsActive) then\n                        thisComboPoint.ShowAnimation:Play()\n                        thisComboPoint.IsActive = true\n                        \n                    end\n                    \n                else\n                    --combo point disabled\n                    if (thisComboPoint.IsActive) then\n                        thisComboPoint.HideAnimation:Play()\n                        thisComboPoint.IsActive = false\n                        \n                    end\n                end\n            end\n            \n            \n        end\n        \n        function envTable.UpdateComboPointAmount()\n            local namePlateWidth = Plater.db.profile.plate_config.enemynpc.health_incombat[1]\n            local comboPoints = UnitPowerMax (\"player\", Enum.PowerType.ComboPoints)\n            local reservedSpace = namePlateWidth / comboPoints\n            \n            --store the total amount of combo points\n            envTable.TotalComboPoints = comboPoints\n            \n            --update anchor frame\n            envTable.ComboPointFrame:SetWidth (namePlateWidth)\n            envTable.ComboPointFrame:SetHeight (20)\n            envTable.ComboPointFrame:ClearAllPoints()\n            for i = 1, #anchors do\n                local anchor = anchors[i]\n                envTable.ComboPointFrame:SetPoint (unpack (anchor))\n            end        \n            \n            --\n            for i = 1, #envTable.ComboPoints do\n                envTable.ComboPoints[i]:Hide()\n                envTable.ComboPoints[i]:ClearAllPoints()\n            end\n            \n            for i = 1, comboPoints do\n                local comboPoint = envTable.ComboPoints[i]\n                comboPoint:SetPoint (\"left\", envTable.ComboPointFrame, \"left\", reservedSpace * (i-1), 0)\n                comboPoint:Show()\n            end\n            \n            envTable.LastUpdate = GetTime()\n            \n            envTable.UpdateComboPoints()\n        end\n        \n        --initialize\n        envTable.UpdateComboPointAmount()\n        envTable.ComboPointFrame:Hide()\n    end\n    \n    \nend",
+},
+["Hooks"] = {
+["Nameplate Created"] = "function (self, unitId, unitFrame, envTable)\n    \n    --run constructor!\n    --constructor is executed only once when any script of the hook runs.\n    \nend\n\n\n",
+["Nameplate Added"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if need update the amount of combo points shown\n    if (envTable.LastPlayerTalentUpdate > envTable.LastUpdate) then\n        envTable.UpdateComboPointAmount()\n    end    \n    \n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n        \n    else\n        envTable.ComboPointFrame:Hide()\n    end    \n    \nend\n\n\n",
+["Target Changed"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if this nameplate is the current target\n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n    else\n        envTable.ComboPointFrame:Hide()\n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+["Player Power Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.UpdateComboPoints()\n    end\n    \n    \nend\n\n\n\n\n\n\n",
+["Nameplate Removed"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n",
+["Destructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n\n\n",
+["Player Talent Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    --update the amount of comboo points shown when the player changes talents or specialization\n    envTable.UpdateComboPointAmount()\n    \n    --save the time of the last talent change\n    envTable.LastPlayerTalentUpdate = GetTime()\n    \n    \nend\n\n\n",
+["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    --settings\n    local anchors = {\n        {\"bottom\", unitFrame.healthBar, \"top\", 0, 24},\n    }\n    \n    local sizes = {\n        width = 12,\n        height = 12,\n        scale = 1,\n    }\n    \n    local textures = {\n        backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        backgroundTexCoords = {78/128, 98/128, 21/64, 41/64},\n        \n        comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        comboPointTexCoords = {100/128, 120/128, 21/64, 41/64},\n    }\n    \n    local frameLevel = 1000\n    local frameStrata = \"high\"    \n    \n    --private\n    do\n        --store combo points frames on this table\n        envTable.ComboPoints = {}\n        --save when the player changed talents or spec\n        envTable.LastPlayerTalentUpdate = GetTime()\n        --save when this nameplate got a combo point amount and alignment update        \n        \n        --build combo points frame anchor (combo point are anchored to this)\n        if (not unitFrame.PlaterComboPointFrame) then\n            local hostFrame = CreateFrame (\"frame\", nil, unitFrame)\n            hostFrame.ComboPointFramesPool = {}\n            unitFrame.PlaterComboPointFrame = hostFrame\n            envTable.ComboPointFrame = hostFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            \n            --DetailsFramework:ApplyStandardBackdrop (envTable.ComboPointFrame) --debug anchor size\n            \n            --animations\n            local onPlayShowAnimation = function (animation)\n                --stop the hide animation if it's playing\n                if (animation:GetParent():GetParent().HideAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().HideAnimation:Stop()\n                end\n                \n                animation:GetParent():Show()\n            end\n            \n            local onPlayHideAnimation = function (animation)\n                --stop the show animation if it's playing\n                if (animation:GetParent():GetParent().ShowAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().ShowAnimation:Stop()\n                end\n            end        \n            local onStopHideAnimation = function (animation)\n                animation:GetParent():Hide()       \n            end\n            \n            local createAnimations = function (comboPoint)\n                --on show\n                comboPoint.ShowAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayShowAnimation, nil)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 1, 0.1, 0, 0, 1, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"alpha\", 1, 0.1, .5, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 2, 0.1, 1.2, 1.2, 1, 1)\n                \n                --on hide\n                comboPoint.HideAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayHideAnimation, onStopHideAnimation)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"scale\", 1, 0.1, 1, 1, 0, 0)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"alpha\", 1, 0.1, 1, 0)\n            end\n            \n            --build combo point frame        \n            for i =1, 10 do \n                local f = CreateFrame (\"frame\", nil, envTable.ComboPointFrame)\n                f:SetSize (sizes.width, sizes.height)\n                tinsert (envTable.ComboPoints, f)\n                tinsert (unitFrame.PlaterComboPointFrame.ComboPointFramesPool, f)\n                \n                local backgroundTexture = f:CreateTexture (nil, \"background\")\n                backgroundTexture:SetTexture (textures.backgroundTexture)\n                backgroundTexture:SetTexCoord (unpack (textures.backgroundTexCoords))\n                backgroundTexture:SetSize (sizes.width, sizes.height)\n                backgroundTexture:SetPoint (\"center\")\n                \n                local comboPointTexture = f:CreateTexture (nil, \"artwork\")\n                comboPointTexture:SetTexture (textures.comboPointTexture)\n                comboPointTexture:SetTexCoord (unpack (textures.comboPointTexCoords))\n                \n                comboPointTexture:SetSize (sizes.width, sizes.height)\n                comboPointTexture:SetPoint (\"center\")\n                comboPointTexture:Hide()            \n                \n                f.IsActive = false\n                \n                f.backgroundTexture = backgroundTexture\n                f.comboPointTexture = comboPointTexture\n                \n                createAnimations (f)\n            end\n            \n        else\n            envTable.ComboPointFrame = unitFrame.PlaterComboPointFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            envTable.ComboPoints = unitFrame.PlaterComboPointFrame.ComboPointFramesPool\n            \n        end            \n        \n        envTable.ComboPointFrame:SetFrameLevel (frameLevel)\n        envTable.ComboPointFrame:SetFrameStrata (frameStrata)\n        \n        function envTable.UpdateComboPoints()\n            local comboPoints = UnitPower (\"player\", Enum.PowerType.ComboPoints)\n            \n            for i = 1, envTable.TotalComboPoints do\n                local thisComboPoint = envTable.ComboPoints [i]\n                \n                if (i <= comboPoints ) then\n                    --combo point enabled\n                    if (not thisComboPoint.IsActive) then\n                        thisComboPoint.ShowAnimation:Play()\n                        thisComboPoint.IsActive = true\n                        \n                    end\n                    \n                else\n                    --combo point disabled\n                    if (thisComboPoint.IsActive) then\n                        thisComboPoint.HideAnimation:Play()\n                        thisComboPoint.IsActive = false\n                        \n                    end\n                end\n            end\n            \n            \n        end\n        \n        function envTable.UpdateComboPointAmount()\n            local namePlateWidth = Plater.db.profile.plate_config.enemynpc.health_incombat[1]\n            local comboPoints = UnitPowerMax (\"player\", Enum.PowerType.ComboPoints)\n            local reservedSpace = namePlateWidth / comboPoints\n            \n            --store the total amount of combo points\n            envTable.TotalComboPoints = comboPoints\n            \n            --update anchor frame\n            envTable.ComboPointFrame:SetWidth (namePlateWidth)\n            envTable.ComboPointFrame:SetHeight (20)\n            envTable.ComboPointFrame:ClearAllPoints()\n            for i = 1, #anchors do\n                local anchor = anchors[i]\n                envTable.ComboPointFrame:SetPoint (unpack (anchor))\n            end        \n            \n            --\n            for i = 1, #envTable.ComboPoints do\n                envTable.ComboPoints[i]:Hide()\n                envTable.ComboPoints[i]:ClearAllPoints()\n            end\n            \n            for i = 1, comboPoints do\n                local comboPoint = envTable.ComboPoints[i]\n                comboPoint:SetPoint (\"left\", envTable.ComboPointFrame, \"left\", reservedSpace * (i-1), 0)\n                comboPoint:Show()\n            end\n            \n            envTable.LastUpdate = GetTime()\n            \n            envTable.UpdateComboPoints()\n        end\n        \n        --initialize\n        envTable.UpdateComboPointAmount()\n        envTable.ComboPointFrame:Hide()\n    end\n    \n    \nend",
+},
+["__TrashAt"] = 1773477867,
+["Time"] = 1773056286,
+["LoadConditions"] = {
+["talent"] = {
+},
+["group"] = {
+},
+["class"] = {
+["Enabled"] = true,
+["DRUID"] = true,
+["ROGUE"] = true,
+},
+["map_ids"] = {
+},
+["role"] = {
+},
+["pvptalent"] = {
+},
+["affix"] = {
+},
+["race"] = {
+},
+["encounter_ids"] = {
+},
+["spec"] = {
+["103"] = true,
+["Enabled"] = true,
+},
+},
+["url"] = "https://wago.io/ob3TKJGiq/3",
+["Icon"] = 135426,
+["Enabled"] = false,
+["Revision"] = 195,
+["semver"] = "1.0.2",
+["Author"] = "Izimode-Azralon",
+["Desc"] = "Show combo points above the nameplate for Druid Feral and Rogues.",
+["Prio"] = 99,
+["Name"] = "Combo Points [Plater]",
+["PlaterCore"] = 1,
+["version"] = 3,
+["LastHookEdited"] = "",
+["Options"] = {
+},
+},
+{
+["OptionsValues"] = {
+},
+["LastHookEdited"] = "",
+["Hooks"] = {
+["Nameplate Created"] = "function (self, unitId, unitFrame, envTable)\n    \n    --run constructor!\n    --constructor is executed only once when any script of the hook runs.\n    \nend\n\n\n",
+["Nameplate Added"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if need update the amount of combo points shown\n    if (envTable.LastPlayerTalentUpdate > envTable.LastUpdate) then\n        envTable.UpdateComboPointAmount()\n    end    \n    \n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n        \n    else\n        envTable.ComboPointFrame:Hide()\n    end    \n    \nend\n\n\n",
+["Target Changed"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if this nameplate is the current target\n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n    else\n        envTable.ComboPointFrame:Hide()\n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+["Player Power Update"] = "function (self, unitId, unitFrame, envTable, modTable, ...)\n    local powerType = ...\n    \n    if (powerType and powerType == \"COMBO_POINTS\" and unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.UpdateComboPoints()\n    end\n    \n    \nend",
+["Nameplate Removed"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n",
+["Destructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n\n\n",
+["Player Talent Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    --update the amount of comboo points shown when the player changes talents or specialization\n    envTable.UpdateComboPointAmount()\n    \n    --save the time of the last talent change\n    envTable.LastPlayerTalentUpdate = GetTime()\n    \n    \nend\n\n\n",
+["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    --settings\n    local anchors = {\n        {\"bottom\", unitFrame.healthBar, \"top\", 0, 24},\n    }\n    \n    local sizes = {\n        width = 12,\n        height = 12,\n        scale = 1,\n    }\n    \n    local textures = {\n        backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        backgroundTexCoords = {0/128, 21/128, 101/128, 122/128},\n        \n        comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        comboPointTexCoords = {3/128, 18/128, 81/128, 96/128},\n    }\n    if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then\n        textures = {\n            backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n            backgroundTexCoords = {78/128, 98/128, 21/64, 41/64},\n            \n            comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n            comboPointTexCoords = {100/128, 120/128, 21/64, 41/64},\n        }\n    end\n    \n    local frameLevel = 1000\n    local frameStrata = \"high\"    \n    \n    --private\n    do\n        --store combo points frames on this table\n        envTable.ComboPoints = {}\n        --save when the player changed talents or spec\n        envTable.LastPlayerTalentUpdate = GetTime()\n        --save when this nameplate got a combo point amount and alignment update        \n        \n        --build combo points frame anchor (combo point are anchored to this)\n        if (not unitFrame.PlaterComboPointFrame) then\n            local hostFrame = CreateFrame (\"frame\", nil, unitFrame)\n            hostFrame.ComboPointFramesPool = {}\n            unitFrame.PlaterComboPointFrame = hostFrame\n            envTable.ComboPointFrame = hostFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            \n            --DetailsFramework:ApplyStandardBackdrop (envTable.ComboPointFrame) --debug anchor size\n            \n            --animations\n            local onPlayShowAnimation = function (animation)\n                --stop the hide animation if it's playing\n                if (animation:GetParent():GetParent().HideAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().HideAnimation:Stop()\n                end\n                \n                animation:GetParent():Show()\n            end\n            \n            local onPlayHideAnimation = function (animation)\n                --stop the show animation if it's playing\n                if (animation:GetParent():GetParent().ShowAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().ShowAnimation:Stop()\n                end\n            end        \n            local onStopHideAnimation = function (animation)\n                animation:GetParent():Hide()       \n            end\n            \n            local createAnimations = function (comboPoint)\n                --on show\n                comboPoint.ShowAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayShowAnimation, nil)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 1, 0.1, 0, 0, 1, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"alpha\", 1, 0.1, .5, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 2, 0.1, 1.2, 1.2, 1, 1)\n                \n                --on hide\n                comboPoint.HideAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayHideAnimation, onStopHideAnimation)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"scale\", 1, 0.1, 1, 1, 0, 0)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"alpha\", 1, 0.1, 1, 0)\n            end\n            \n            --build combo point frame        \n            for i =1, 10 do \n                local f = CreateFrame (\"frame\", nil, envTable.ComboPointFrame)\n                f:SetSize (sizes.width, sizes.height)\n                tinsert (envTable.ComboPoints, f)\n                tinsert (unitFrame.PlaterComboPointFrame.ComboPointFramesPool, f)\n                \n                local backgroundTexture = f:CreateTexture (nil, \"background\")\n                backgroundTexture:SetTexture (textures.backgroundTexture)\n                backgroundTexture:SetTexCoord (unpack (textures.backgroundTexCoords))\n                backgroundTexture:SetSize (sizes.width, sizes.height)\n                backgroundTexture:SetPoint (\"center\")\n                \n                local comboPointTexture = f:CreateTexture (nil, \"artwork\")\n                comboPointTexture:SetTexture (textures.comboPointTexture)\n                comboPointTexture:SetTexCoord (unpack (textures.comboPointTexCoords))\n                \n                comboPointTexture:SetSize (sizes.width, sizes.height)\n                comboPointTexture:SetPoint (\"center\")\n                comboPointTexture:Hide()            \n                \n                f.IsActive = false\n                \n                f.backgroundTexture = backgroundTexture\n                f.comboPointTexture = comboPointTexture\n                \n                createAnimations (f)\n            end\n            \n        else\n            envTable.ComboPointFrame = unitFrame.PlaterComboPointFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            envTable.ComboPoints = unitFrame.PlaterComboPointFrame.ComboPointFramesPool\n            \n        end            \n        \n        envTable.ComboPointFrame:SetFrameLevel (frameLevel)\n        envTable.ComboPointFrame:SetFrameStrata (frameStrata)\n        \n        function envTable.UpdateComboPoints()\n            local comboPoints = GetComboPoints(\"player\", \"target\")\n            --UnitPower (\"player\", Enum.PowerType.ComboPoints)\n            \n            for i = 1, envTable.TotalComboPoints do\n                local thisComboPoint = envTable.ComboPoints [i]\n                \n                if (i <= comboPoints ) then\n                    --combo point enabled\n                    if (not thisComboPoint.IsActive) then\n                        thisComboPoint.ShowAnimation:Play()\n                        thisComboPoint.IsActive = true\n                        \n                    end\n                    \n                else\n                    --combo point disabled\n                    if (thisComboPoint.IsActive) then\n                        thisComboPoint.HideAnimation:Play()\n                        thisComboPoint.IsActive = false\n                        \n                    end\n                end\n            end\n            \n            \n        end\n        \n        function envTable.UpdateComboPointAmount()\n            local namePlateWidth = Plater.db.profile.plate_config.enemynpc.health_incombat[1]\n            local comboPoints = UnitPowerMax (\"player\", Enum.PowerType.ComboPoints)\n            local reservedSpace = (namePlateWidth - sizes.width * comboPoints)  / comboPoints \n            \n            --store the total amount of combo points\n            envTable.TotalComboPoints = comboPoints\n            \n            --update anchor frame\n            envTable.ComboPointFrame:SetWidth (namePlateWidth)\n            envTable.ComboPointFrame:SetHeight (20)\n            envTable.ComboPointFrame:ClearAllPoints()\n            for i = 1, #anchors do\n                local anchor = anchors[i]\n                envTable.ComboPointFrame:SetPoint (unpack (anchor))\n            end        \n            \n            --\n            for i = 1, #envTable.ComboPoints do\n                envTable.ComboPoints[i]:Hide()\n                envTable.ComboPoints[i]:ClearAllPoints()\n            end\n            \n            for i = 1, comboPoints do\n                local comboPoint = envTable.ComboPoints[i]\n                if i == 1 then\n                    comboPoint:SetPoint (\"left\", envTable.ComboPointFrame, \"left\", reservedSpace/2, 0)\n                else\n                    comboPoint:SetPoint (\"left\", envTable.ComboPoints[i-1], \"right\", reservedSpace, 0)\n                end\n                \n                comboPoint:Show()\n            end\n            \n            envTable.LastUpdate = GetTime()\n            \n            envTable.UpdateComboPoints()\n        end\n        \n        --initialize\n        envTable.UpdateComboPointAmount()\n        envTable.ComboPointFrame:Hide()\n    end\n    \n    \nend",
+},
+["__TrashAt"] = 1773477870,
+["Time"] = 1773056505,
+["LoadConditions"] = {
+["talent"] = {
+},
+["group"] = {
+},
+["class"] = {
+["Enabled"] = true,
+["DRUID"] = true,
+["ROGUE"] = true,
+},
+["map_ids"] = {
+},
+["role"] = {
+},
+["pvptalent"] = {
+},
+["spec"] = {
+["103"] = true,
+["Enabled"] = true,
+},
+["race"] = {
+},
+["encounter_ids"] = {
+},
+["affix"] = {
+},
+},
+["url"] = "",
+["Icon"] = 135426,
+["Enabled"] = false,
+["Revision"] = 294,
+["semver"] = "",
+["Author"] = "Izimode-Azralon",
+["Desc"] = "Show combo points above the nameplate for Druid Feral and Rogues.",
+["Prio"] = 99,
+["Name"] = "Combo Points [Plater]",
+["PlaterCore"] = 1,
+["version"] = -1,
+["HooksTemp"] = {
+["Nameplate Created"] = "function (self, unitId, unitFrame, envTable)\n    \n    --run constructor!\n    --constructor is executed only once when any script of the hook runs.\n    \nend\n\n\n",
+["Nameplate Added"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if need update the amount of combo points shown\n    if (envTable.LastPlayerTalentUpdate > envTable.LastUpdate) then\n        envTable.UpdateComboPointAmount()\n    end    \n    \n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n        \n    else\n        envTable.ComboPointFrame:Hide()\n    end    \n    \nend\n\n\n",
+["Target Changed"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if this nameplate is the current target\n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n    else\n        envTable.ComboPointFrame:Hide()\n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+["Player Power Update"] = "function (self, unitId, unitFrame, envTable, modTable, ...)\n    local powerType = ...\n    \n    if (powerType and powerType == \"COMBO_POINTS\" and unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.UpdateComboPoints()\n    end\n    \n    \nend",
+["Nameplate Removed"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n",
+["Destructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n\n\n",
+["Player Talent Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    --update the amount of comboo points shown when the player changes talents or specialization\n    envTable.UpdateComboPointAmount()\n    \n    --save the time of the last talent change\n    envTable.LastPlayerTalentUpdate = GetTime()\n    \n    \nend\n\n\n",
+["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    --settings\n    local anchors = {\n        {\"bottom\", unitFrame.healthBar, \"top\", 0, 24},\n    }\n    \n    local sizes = {\n        width = 12,\n        height = 12,\n        scale = 1,\n    }\n    \n    local textures = {\n        backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        backgroundTexCoords = {0/128, 21/128, 101/128, 122/128},\n        \n        comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        comboPointTexCoords = {3/128, 18/128, 81/128, 96/128},\n    }\n    if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then\n        textures = {\n            backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n            backgroundTexCoords = {78/128, 98/128, 21/64, 41/64},\n            \n            comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n            comboPointTexCoords = {100/128, 120/128, 21/64, 41/64},\n        }\n    end\n    \n    local frameLevel = 1000\n    local frameStrata = \"high\"    \n    \n    --private\n    do\n        --store combo points frames on this table\n        envTable.ComboPoints = {}\n        --save when the player changed talents or spec\n        envTable.LastPlayerTalentUpdate = GetTime()\n        --save when this nameplate got a combo point amount and alignment update        \n        \n        --build combo points frame anchor (combo point are anchored to this)\n        if (not unitFrame.PlaterComboPointFrame) then\n            local hostFrame = CreateFrame (\"frame\", nil, unitFrame)\n            hostFrame.ComboPointFramesPool = {}\n            unitFrame.PlaterComboPointFrame = hostFrame\n            envTable.ComboPointFrame = hostFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            \n            --DetailsFramework:ApplyStandardBackdrop (envTable.ComboPointFrame) --debug anchor size\n            \n            --animations\n            local onPlayShowAnimation = function (animation)\n                --stop the hide animation if it's playing\n                if (animation:GetParent():GetParent().HideAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().HideAnimation:Stop()\n                end\n                \n                animation:GetParent():Show()\n            end\n            \n            local onPlayHideAnimation = function (animation)\n                --stop the show animation if it's playing\n                if (animation:GetParent():GetParent().ShowAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().ShowAnimation:Stop()\n                end\n            end        \n            local onStopHideAnimation = function (animation)\n                animation:GetParent():Hide()       \n            end\n            \n            local createAnimations = function (comboPoint)\n                --on show\n                comboPoint.ShowAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayShowAnimation, nil)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 1, 0.1, 0, 0, 1, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"alpha\", 1, 0.1, .5, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 2, 0.1, 1.2, 1.2, 1, 1)\n                \n                --on hide\n                comboPoint.HideAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayHideAnimation, onStopHideAnimation)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"scale\", 1, 0.1, 1, 1, 0, 0)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"alpha\", 1, 0.1, 1, 0)\n            end\n            \n            --build combo point frame        \n            for i =1, 10 do \n                local f = CreateFrame (\"frame\", nil, envTable.ComboPointFrame)\n                f:SetSize (sizes.width, sizes.height)\n                tinsert (envTable.ComboPoints, f)\n                tinsert (unitFrame.PlaterComboPointFrame.ComboPointFramesPool, f)\n                \n                local backgroundTexture = f:CreateTexture (nil, \"background\")\n                backgroundTexture:SetTexture (textures.backgroundTexture)\n                backgroundTexture:SetTexCoord (unpack (textures.backgroundTexCoords))\n                backgroundTexture:SetSize (sizes.width, sizes.height)\n                backgroundTexture:SetPoint (\"center\")\n                \n                local comboPointTexture = f:CreateTexture (nil, \"artwork\")\n                comboPointTexture:SetTexture (textures.comboPointTexture)\n                comboPointTexture:SetTexCoord (unpack (textures.comboPointTexCoords))\n                \n                comboPointTexture:SetSize (sizes.width, sizes.height)\n                comboPointTexture:SetPoint (\"center\")\n                comboPointTexture:Hide()            \n                \n                f.IsActive = false\n                \n                f.backgroundTexture = backgroundTexture\n                f.comboPointTexture = comboPointTexture\n                \n                createAnimations (f)\n            end\n            \n        else\n            envTable.ComboPointFrame = unitFrame.PlaterComboPointFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            envTable.ComboPoints = unitFrame.PlaterComboPointFrame.ComboPointFramesPool\n            \n        end            \n        \n        envTable.ComboPointFrame:SetFrameLevel (frameLevel)\n        envTable.ComboPointFrame:SetFrameStrata (frameStrata)\n        \n        function envTable.UpdateComboPoints()\n            local comboPoints = GetComboPoints(\"player\", \"target\")\n            --UnitPower (\"player\", Enum.PowerType.ComboPoints)\n            \n            for i = 1, envTable.TotalComboPoints do\n                local thisComboPoint = envTable.ComboPoints [i]\n                \n                if (i <= comboPoints ) then\n                    --combo point enabled\n                    if (not thisComboPoint.IsActive) then\n                        thisComboPoint.ShowAnimation:Play()\n                        thisComboPoint.IsActive = true\n                        \n                    end\n                    \n                else\n                    --combo point disabled\n                    if (thisComboPoint.IsActive) then\n                        thisComboPoint.HideAnimation:Play()\n                        thisComboPoint.IsActive = false\n                        \n                    end\n                end\n            end\n            \n            \n        end\n        \n        function envTable.UpdateComboPointAmount()\n            local namePlateWidth = Plater.db.profile.plate_config.enemynpc.health_incombat[1]\n            local comboPoints = UnitPowerMax (\"player\", Enum.PowerType.ComboPoints)\n            local reservedSpace = (namePlateWidth - sizes.width * comboPoints)  / comboPoints \n            \n            --store the total amount of combo points\n            envTable.TotalComboPoints = comboPoints\n            \n            --update anchor frame\n            envTable.ComboPointFrame:SetWidth (namePlateWidth)\n            envTable.ComboPointFrame:SetHeight (20)\n            envTable.ComboPointFrame:ClearAllPoints()\n            for i = 1, #anchors do\n                local anchor = anchors[i]\n                envTable.ComboPointFrame:SetPoint (unpack (anchor))\n            end        \n            \n            --\n            for i = 1, #envTable.ComboPoints do\n                envTable.ComboPoints[i]:Hide()\n                envTable.ComboPoints[i]:ClearAllPoints()\n            end\n            \n            for i = 1, comboPoints do\n                local comboPoint = envTable.ComboPoints[i]\n                if i == 1 then\n                    comboPoint:SetPoint (\"left\", envTable.ComboPointFrame, \"left\", reservedSpace/2, 0)\n                else\n                    comboPoint:SetPoint (\"left\", envTable.ComboPoints[i-1], \"right\", reservedSpace, 0)\n                end\n                \n                comboPoint:Show()\n            end\n            \n            envTable.LastUpdate = GetTime()\n            \n            envTable.UpdateComboPoints()\n        end\n        \n        --initialize\n        envTable.UpdateComboPointAmount()\n        envTable.ComboPointFrame:Hide()\n    end\n    \n    \nend",
+},
+["Options"] = {
+{
+["Type"] = 2,
+["Max"] = 1,
+["Desc"] = "",
+["Min"] = 0,
+["Key"] = "option1",
+["Value"] = 0.5,
+["Fraction"] = true,
+["Icon"] = "Interface\\AddOns\\Plater\\images\\option_number",
+["Name"] = "Option 1",
+},
+},
+},
+{
+["OptionsValues"] = {
+},
+["LastHookEdited"] = "Initialization",
+["UID"] = "0x61c2355223d60a",
+["Hooks"] = {
+["Nameplate Created"] = "function (self, unitId, unitFrame, envTable, modTable)\n    if (not unitFrame.ComboPointFrame) then\n        unitFrame.ComboPointFrame = modTable.CreateComboPointHostFrame(unitFrame)\n    end\nend",
+["Nameplate Updated"] = "function (self, unitId, unitFrame, envTable, modTable)\n    if ( unitFrame.ComboPointFrame) then\n        unitFrame.ComboPointFrame:Update()\n    end\nend\n\n\n",
+["Initialization"] = "function (modTable)\n    local options = {\n        width = 16,\n        height = 16,\n        scale = 1,\n        fontName = \"Fonts\\\\ARIALN.ttf\",\n        fontSize = 32,\n        fontFlags = \"OUTLINE\",\n        frameLevel = 1000,\n        frameStrata = \"high\"\n    }\n    \n    local _shouldShow = function(unitId)\n        if (not UnitExists(unitId)) then\n            return false\n        end\n        local isTarget = UnitIsUnit(unitId, \"target\")\n        local canAttack = UnitCanAttack(\"player\", \"target\")\n        local hasComboPoints = GetComboPoints(\"player\", unitId) > 0\n        return (isTarget and canAttack) or hasComboPoints\n    end\n    \n    local _getTextColorPrefix = function(numComboPoints)\n        numComboPoints = numComboPoints and numComboPoints or 0\n        local color = \"|cff\"\n        if (numComboPoints == 5) then return color .. \"ff0000\" end\n        if (numComboPoints >= 3) then return color .. \"ffff00\" end\n        return color .. \"00ff00\"\n    end\n    \n    function modTable.CreateComboPointHostFrame(unitFrame)\n        local hostFrame = CreateFrame(\"frame\", unitFrame:GetName() .. \"ComboPoint\", unitFrame)\n        \n        hostFrame.lastUpdate = 0\n        hostFrame.numComboPoints = 0\n        \n        hostFrame.textFrame = hostFrame:CreateFontString(hostFrame:GetName() .. \"Text\", \"ARTWORK\")\n        hostFrame.textFrame:SetFont(options.fontName, options.fontSize, options.fontFlags)\n        hostFrame.textFrame:SetPoint(\"CENTER\", 0, 0)\n        \n        hostFrame:SetScale(options.scale)\n        hostFrame:SetWidth(options.width)\n        hostFrame:SetHeight(options.height)\n        hostFrame:SetFrameLevel(options.frameLevel)\n        hostFrame:SetFrameStrata(options.frameStrata)\n        hostFrame:SetPoint(\"LEFT\", unitFrame.healthBar, \"LEFT\", -10, 20)\n        \n        function hostFrame:UpdateComboPoints()\n            self.numComboPoints = GetComboPoints(\"player\", unitFrame.namePlateUnitToken)\n            local colorPrefix = _getTextColorPrefix(self.numComboPoints)\n            self.textFrame:SetText(colorPrefix .. tostring(self.numComboPoints))\n            self.lastUpdate = GetTime()\n        end\n        \n        function hostFrame:Update()\n            local unit = unitFrame.namePlateUnitToken\n            if (_shouldShow(unit)) then\n                self:Show()\n                self:UpdateComboPoints()\n            else\n                self:Hide()\n            end\n        end\n        \n        -- Events \n        function hostFrame:PLAYER_TARGET_CHANGED()\n            self:Update()\n        end\n        \n        function hostFrame:ZONE_CHANGED()\n            self:Update()\n        end\n        \n        function hostFrame:ZONE_CHANGED_NEW_AREA()\n            self:Update()\n        end\n        \n        function hostFrame:UNIT_POWER_FREQUENT(_, powerType)\n            if (powerType == \"COMBO_POINTS\") then\n                self:Update()\n            end\n        end\n        \n        hostFrame:SetScript(\"OnEvent\", function(self, event, ...)\n                self[event](self, ...)\n        end)\n        \n        hostFrame:RegisterEvent(\"PLAYER_TARGET_CHANGED\")\n        hostFrame:RegisterEvent(\"ZONE_CHANGED\")\n        hostFrame:RegisterEvent(\"ZONE_CHANGED_NEW_AREA\")\n        hostFrame:RegisterUnitEvent(\"UNIT_POWER_FREQUENT\", \"player\")\n        \n        return hostFrame\n    end\nend",
+["Nameplate Added"] = "function (self, unitId, unitFrame, envTable, modTable)\n    if (not unitFrame.ComboPointFrame) then\n        unitFrame.ComboPointFrame = modTable.CreateComboPointHostFrame(unitFrame)\n    end\nend",
+},
+["__TrashAt"] = 1773477871,
+["Time"] = 1773230501,
+["LoadConditions"] = {
+["talent"] = {
+},
+["group"] = {
+},
+["class"] = {
+["Enabled"] = true,
+["DRUID"] = true,
+["ROGUE"] = true,
+},
+["map_ids"] = {
+},
+["role"] = {
+},
+["pvptalent"] = {
+},
+["spec"] = {
+["103"] = true,
+["Enabled"] = true,
+},
+["race"] = {
+},
+["encounter_ids"] = {
+},
+["affix"] = {
+},
+},
+["url"] = "https://wago.io/LW22M-yiX/2",
+["Icon"] = 136189,
+["Enabled"] = false,
+["Revision"] = 574,
+["semver"] = "1.0.1",
+["Author"] = "Izimode-Azralon",
+["Desc"] = "Show combo point number on top left of nameplate",
+["Prio"] = 99,
+["Name"] = "Combo Points Number",
+["PlaterCore"] = 1,
+["Options"] = {
+},
+["HooksTemp"] = {
+["Nameplate Created"] = "function (self, unitId, unitFrame, envTable, modTable)\n    if (not unitFrame.ComboPointFrame) then\n        unitFrame.ComboPointFrame = modTable.CreateComboPointHostFrame(unitFrame)\n    end\nend",
+["Nameplate Updated"] = "function (self, unitId, unitFrame, envTable, modTable)\n    if ( unitFrame.ComboPointFrame) then\n        unitFrame.ComboPointFrame:Update()\n    end\nend\n\n\n",
+["Initialization"] = "function (modTable)\n    local options = {\n        width = 16,\n        height = 16,\n        scale = 1,\n        fontName = \"Fonts\\\\ARIALN.ttf\",\n        fontSize = 32,\n        fontFlags = \"OUTLINE\",\n        frameLevel = 1000,\n        frameStrata = \"high\"\n    }\n    \n    local _shouldShow = function(unitId)\n        if (not UnitExists(unitId)) then\n            return false\n        end\n        local isTarget = UnitIsUnit(unitId, \"target\")\n        local canAttack = UnitCanAttack(\"player\", \"target\")\n        local hasComboPoints = GetComboPoints(\"player\", unitId) > 0\n        return (isTarget and canAttack) or hasComboPoints\n    end\n    \n    local _getTextColorPrefix = function(numComboPoints)\n        numComboPoints = numComboPoints and numComboPoints or 0\n        local color = \"|cff\"\n        if (numComboPoints == 5) then return color .. \"ff0000\" end\n        if (numComboPoints >= 3) then return color .. \"ffff00\" end\n        return color .. \"00ff00\"\n    end\n    \n    function modTable.CreateComboPointHostFrame(unitFrame)\n        local hostFrame = CreateFrame(\"frame\", unitFrame:GetName() .. \"ComboPoint\", unitFrame)\n        \n        hostFrame.lastUpdate = 0\n        hostFrame.numComboPoints = 0\n        \n        hostFrame.textFrame = hostFrame:CreateFontString(hostFrame:GetName() .. \"Text\", \"ARTWORK\")\n        hostFrame.textFrame:SetFont(options.fontName, options.fontSize, options.fontFlags)\n        hostFrame.textFrame:SetPoint(\"CENTER\", 0, 0)\n        \n        hostFrame:SetScale(options.scale)\n        hostFrame:SetWidth(options.width)\n        hostFrame:SetHeight(options.height)\n        hostFrame:SetFrameLevel(options.frameLevel)\n        hostFrame:SetFrameStrata(options.frameStrata)\n        hostFrame:SetPoint(\"LEFT\", unitFrame.healthBar, \"LEFT\", -10, 20)\n        \n        function hostFrame:UpdateComboPoints()\n            self.numComboPoints = GetComboPoints(\"player\", unitFrame.namePlateUnitToken)\n            local colorPrefix = _getTextColorPrefix(self.numComboPoints)\n            self.textFrame:SetText(colorPrefix .. tostring(self.numComboPoints))\n            self.lastUpdate = GetTime()\n        end\n        \n        function hostFrame:Update()\n            local unit = unitFrame.namePlateUnitToken\n            if (_shouldShow(unit)) then\n                self:Show()\n                self:UpdateComboPoints()\n            else\n                self:Hide()\n            end\n        end\n        \n        -- Events \n        function hostFrame:PLAYER_TARGET_CHANGED()\n            self:Update()\n        end\n        \n        function hostFrame:ZONE_CHANGED()\n            self:Update()\n        end\n        \n        function hostFrame:ZONE_CHANGED_NEW_AREA()\n            self:Update()\n        end\n        \n        function hostFrame:UNIT_POWER_FREQUENT(_, powerType)\n            if (powerType == \"COMBO_POINTS\") then\n                self:Update()\n            end\n        end\n        \n        hostFrame:SetScript(\"OnEvent\", function(self, event, ...)\n                self[event](self, ...)\n        end)\n        \n        hostFrame:RegisterEvent(\"PLAYER_TARGET_CHANGED\")\n        hostFrame:RegisterEvent(\"ZONE_CHANGED\")\n        hostFrame:RegisterEvent(\"ZONE_CHANGED_NEW_AREA\")\n        hostFrame:RegisterUnitEvent(\"UNIT_POWER_FREQUENT\", \"player\")\n        \n        return hostFrame\n    end\nend",
+["Nameplate Added"] = "function (self, unitId, unitFrame, envTable, modTable)\n    if (not unitFrame.ComboPointFrame) then\n        unitFrame.ComboPointFrame = modTable.CreateComboPointHostFrame(unitFrame)\n    end\nend",
+},
+["version"] = 2,
 },
 },
 ["enable_masque_support"] = true,
@@ -25473,7 +25708,7 @@ nil,
 ["nameplateTargetRadialPosition"] = "1",
 ["nameplateShowFriendlyPets"] = "1",
 },
-["login_counter"] = 13534,
+["login_counter"] = 13546,
 ["extra_icon_caster_name"] = false,
 ["aura_cooldown_show_swipe"] = false,
 ["show_aggro_flash"] = true,
@@ -25851,7 +26086,7 @@ nil,
 },
 ["aura_y_offset"] = 15.5,
 ["use_ui_parent"] = true,
-["focus_texture"] = "xVerminClean",
+["aura_alpha"] = 1,
 ["cast_statusbar_bgcolor"] = {
 0,
 0,
@@ -25884,6 +26119,7 @@ nil,
 },
 ["indicator_scale"] = 0.300000011920929,
 ["cast_statusbar_spark_offset"] = -13,
+["focus_texture"] = "xVerminClean",
 ["castbar_icon_size"] = "same as castbar plus healthbar",
 ["npc_colors"] = {
 [131670] = {
@@ -26532,8 +26768,8 @@ false,
 "peru",
 },
 },
-["aura_timer"] = false,
-["cast_statusbar_spark_alpha"] = 0.699999988079071,
+["castbar_framelevel"] = 0,
+["aura2_y_offset"] = 15.5,
 ["cast_statusbar_spark_half"] = true,
 ["auto_inside_raid_dungeon"] = {
 ["hide_enemy_player_pets"] = true,
@@ -26750,83 +26986,6 @@ false,
 ["Time"] = 1552354619,
 ["Icon"] = 878211,
 ["LastHookEdited"] = "",
-},
-{
-["OptionsValues"] = {
-},
-["LastHookEdited"] = "",
-["Hooks"] = {
-["Nameplate Created"] = "function (self, unitId, unitFrame, envTable)\n    \n    --run constructor!\n    --constructor is executed only once when any script of the hook runs.\n    \nend\n\n\n",
-["Nameplate Added"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if need update the amount of combo points shown\n    if (envTable.LastPlayerTalentUpdate > envTable.LastUpdate) then\n        envTable.UpdateComboPointAmount()\n    end    \n    \n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n        \n    else\n        envTable.ComboPointFrame:Hide()\n    end    \n    \nend\n\n\n",
-["Target Changed"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if this nameplate is the current target\n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n    else\n        envTable.ComboPointFrame:Hide()\n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-["Player Power Update"] = "function (self, unitId, unitFrame, envTable, modTable, ...)\n    local powerType = ...\n    \n    if (powerType and powerType == \"COMBO_POINTS\" and unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.UpdateComboPoints()\n    end\n    \n    \nend",
-["Nameplate Removed"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n",
-["Destructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n\n\n",
-["Player Talent Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    --update the amount of comboo points shown when the player changes talents or specialization\n    envTable.UpdateComboPointAmount()\n    \n    --save the time of the last talent change\n    envTable.LastPlayerTalentUpdate = GetTime()\n    \n    \nend\n\n\n",
-["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    --settings\n    local anchors = {\n        {\"bottom\", unitFrame.healthBar, \"top\", 0, 24},\n    }\n    \n    local sizes = {\n        width = 12,\n        height = 12,\n        scale = 1,\n    }\n    \n    local textures = {\n        backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        backgroundTexCoords = {0/128, 21/128, 101/128, 122/128},\n        \n        comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        comboPointTexCoords = {3/128, 18/128, 81/128, 96/128},\n    }\n    if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then\n        textures = {\n            backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n            backgroundTexCoords = {78/128, 98/128, 21/64, 41/64},\n            \n            comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n            comboPointTexCoords = {100/128, 120/128, 21/64, 41/64},\n        }\n    end\n    \n    local frameLevel = 1000\n    local frameStrata = \"high\"    \n    \n    --private\n    do\n        --store combo points frames on this table\n        envTable.ComboPoints = {}\n        --save when the player changed talents or spec\n        envTable.LastPlayerTalentUpdate = GetTime()\n        --save when this nameplate got a combo point amount and alignment update        \n        \n        --build combo points frame anchor (combo point are anchored to this)\n        if (not unitFrame.PlaterComboPointFrame) then\n            local hostFrame = CreateFrame (\"frame\", nil, unitFrame)\n            hostFrame.ComboPointFramesPool = {}\n            unitFrame.PlaterComboPointFrame = hostFrame\n            envTable.ComboPointFrame = hostFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            \n            --DetailsFramework:ApplyStandardBackdrop (envTable.ComboPointFrame) --debug anchor size\n            \n            --animations\n            local onPlayShowAnimation = function (animation)\n                --stop the hide animation if it's playing\n                if (animation:GetParent():GetParent().HideAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().HideAnimation:Stop()\n                end\n                \n                animation:GetParent():Show()\n            end\n            \n            local onPlayHideAnimation = function (animation)\n                --stop the show animation if it's playing\n                if (animation:GetParent():GetParent().ShowAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().ShowAnimation:Stop()\n                end\n            end        \n            local onStopHideAnimation = function (animation)\n                animation:GetParent():Hide()       \n            end\n            \n            local createAnimations = function (comboPoint)\n                --on show\n                comboPoint.ShowAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayShowAnimation, nil)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 1, 0.1, 0, 0, 1, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"alpha\", 1, 0.1, .5, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 2, 0.1, 1.2, 1.2, 1, 1)\n                \n                --on hide\n                comboPoint.HideAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayHideAnimation, onStopHideAnimation)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"scale\", 1, 0.1, 1, 1, 0, 0)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"alpha\", 1, 0.1, 1, 0)\n            end\n            \n            --build combo point frame        \n            for i =1, 10 do \n                local f = CreateFrame (\"frame\", nil, envTable.ComboPointFrame)\n                f:SetSize (sizes.width, sizes.height)\n                tinsert (envTable.ComboPoints, f)\n                tinsert (unitFrame.PlaterComboPointFrame.ComboPointFramesPool, f)\n                \n                local backgroundTexture = f:CreateTexture (nil, \"background\")\n                backgroundTexture:SetTexture (textures.backgroundTexture)\n                backgroundTexture:SetTexCoord (unpack (textures.backgroundTexCoords))\n                backgroundTexture:SetSize (sizes.width, sizes.height)\n                backgroundTexture:SetPoint (\"center\")\n                \n                local comboPointTexture = f:CreateTexture (nil, \"artwork\")\n                comboPointTexture:SetTexture (textures.comboPointTexture)\n                comboPointTexture:SetTexCoord (unpack (textures.comboPointTexCoords))\n                \n                comboPointTexture:SetSize (sizes.width, sizes.height)\n                comboPointTexture:SetPoint (\"center\")\n                comboPointTexture:Hide()            \n                \n                f.IsActive = false\n                \n                f.backgroundTexture = backgroundTexture\n                f.comboPointTexture = comboPointTexture\n                \n                createAnimations (f)\n            end\n            \n        else\n            envTable.ComboPointFrame = unitFrame.PlaterComboPointFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            envTable.ComboPoints = unitFrame.PlaterComboPointFrame.ComboPointFramesPool\n            \n        end            \n        \n        envTable.ComboPointFrame:SetFrameLevel (frameLevel)\n        envTable.ComboPointFrame:SetFrameStrata (frameStrata)\n        \n        function envTable.UpdateComboPoints()\n            local comboPoints = GetComboPoints(\"player\", \"target\")\n            --UnitPower (\"player\", Enum.PowerType.ComboPoints)\n            \n            for i = 1, envTable.TotalComboPoints do\n                local thisComboPoint = envTable.ComboPoints [i]\n                \n                if (i <= comboPoints ) then\n                    --combo point enabled\n                    if (not thisComboPoint.IsActive) then\n                        thisComboPoint.ShowAnimation:Play()\n                        thisComboPoint.IsActive = true\n                        \n                    end\n                    \n                else\n                    --combo point disabled\n                    if (thisComboPoint.IsActive) then\n                        thisComboPoint.HideAnimation:Play()\n                        thisComboPoint.IsActive = false\n                        \n                    end\n                end\n            end\n            \n            \n        end\n        \n        function envTable.UpdateComboPointAmount()\n            local namePlateWidth = Plater.db.profile.plate_config.enemynpc.health_incombat[1]\n            local comboPoints = UnitPowerMax (\"player\", Enum.PowerType.ComboPoints)\n            local reservedSpace = (namePlateWidth - sizes.width * comboPoints)  / comboPoints \n            \n            --store the total amount of combo points\n            envTable.TotalComboPoints = comboPoints\n            \n            --update anchor frame\n            envTable.ComboPointFrame:SetWidth (namePlateWidth)\n            envTable.ComboPointFrame:SetHeight (20)\n            envTable.ComboPointFrame:ClearAllPoints()\n            for i = 1, #anchors do\n                local anchor = anchors[i]\n                envTable.ComboPointFrame:SetPoint (unpack (anchor))\n            end        \n            \n            --\n            for i = 1, #envTable.ComboPoints do\n                envTable.ComboPoints[i]:Hide()\n                envTable.ComboPoints[i]:ClearAllPoints()\n            end\n            \n            for i = 1, comboPoints do\n                local comboPoint = envTable.ComboPoints[i]\n                if i == 1 then\n                    comboPoint:SetPoint (\"left\", envTable.ComboPointFrame, \"left\", reservedSpace/2, 0)\n                else\n                    comboPoint:SetPoint (\"left\", envTable.ComboPoints[i-1], \"right\", reservedSpace, 0)\n                end\n                \n                comboPoint:Show()\n            end\n            \n            envTable.LastUpdate = GetTime()\n            \n            envTable.UpdateComboPoints()\n        end\n        \n        --initialize\n        envTable.UpdateComboPointAmount()\n        envTable.ComboPointFrame:Hide()\n    end\n    \n    \nend",
-},
-["Time"] = 1773056505,
-["LoadConditions"] = {
-["talent"] = {
-},
-["group"] = {
-},
-["class"] = {
-["Enabled"] = true,
-["DRUID"] = true,
-["ROGUE"] = true,
-},
-["map_ids"] = {
-},
-["role"] = {
-},
-["pvptalent"] = {
-},
-["spec"] = {
-["103"] = true,
-["Enabled"] = true,
-},
-["race"] = {
-},
-["encounter_ids"] = {
-},
-["affix"] = {
-},
-},
-["url"] = "",
-["Icon"] = 135426,
-["Enabled"] = false,
-["Revision"] = 294,
-["semver"] = "",
-["Author"] = "Izimode-Azralon",
-["Desc"] = "Show combo points above the nameplate for Druid Feral and Rogues.",
-["Prio"] = 99,
-["Name"] = "Combo Points [Plater]",
-["PlaterCore"] = 1,
-["version"] = -1,
-["HooksTemp"] = {
-["Nameplate Created"] = "function (self, unitId, unitFrame, envTable)\n    \n    --run constructor!\n    --constructor is executed only once when any script of the hook runs.\n    \nend\n\n\n",
-["Nameplate Added"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if need update the amount of combo points shown\n    if (envTable.LastPlayerTalentUpdate > envTable.LastUpdate) then\n        envTable.UpdateComboPointAmount()\n    end    \n    \n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n        \n    else\n        envTable.ComboPointFrame:Hide()\n    end    \n    \nend\n\n\n",
-["Target Changed"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if this nameplate is the current target\n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n    else\n        envTable.ComboPointFrame:Hide()\n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-["Player Power Update"] = "function (self, unitId, unitFrame, envTable, modTable, ...)\n    local powerType = ...\n    \n    if (powerType and powerType == \"COMBO_POINTS\" and unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.UpdateComboPoints()\n    end\n    \n    \nend",
-["Nameplate Removed"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n",
-["Destructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n\n\n",
-["Player Talent Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    --update the amount of comboo points shown when the player changes talents or specialization\n    envTable.UpdateComboPointAmount()\n    \n    --save the time of the last talent change\n    envTable.LastPlayerTalentUpdate = GetTime()\n    \n    \nend\n\n\n",
-["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    --settings\n    local anchors = {\n        {\"bottom\", unitFrame.healthBar, \"top\", 0, 24},\n    }\n    \n    local sizes = {\n        width = 12,\n        height = 12,\n        scale = 1,\n    }\n    \n    local textures = {\n        backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        backgroundTexCoords = {0/128, 21/128, 101/128, 122/128},\n        \n        comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        comboPointTexCoords = {3/128, 18/128, 81/128, 96/128},\n    }\n    if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then\n        textures = {\n            backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n            backgroundTexCoords = {78/128, 98/128, 21/64, 41/64},\n            \n            comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n            comboPointTexCoords = {100/128, 120/128, 21/64, 41/64},\n        }\n    end\n    \n    local frameLevel = 1000\n    local frameStrata = \"high\"    \n    \n    --private\n    do\n        --store combo points frames on this table\n        envTable.ComboPoints = {}\n        --save when the player changed talents or spec\n        envTable.LastPlayerTalentUpdate = GetTime()\n        --save when this nameplate got a combo point amount and alignment update        \n        \n        --build combo points frame anchor (combo point are anchored to this)\n        if (not unitFrame.PlaterComboPointFrame) then\n            local hostFrame = CreateFrame (\"frame\", nil, unitFrame)\n            hostFrame.ComboPointFramesPool = {}\n            unitFrame.PlaterComboPointFrame = hostFrame\n            envTable.ComboPointFrame = hostFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            \n            --DetailsFramework:ApplyStandardBackdrop (envTable.ComboPointFrame) --debug anchor size\n            \n            --animations\n            local onPlayShowAnimation = function (animation)\n                --stop the hide animation if it's playing\n                if (animation:GetParent():GetParent().HideAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().HideAnimation:Stop()\n                end\n                \n                animation:GetParent():Show()\n            end\n            \n            local onPlayHideAnimation = function (animation)\n                --stop the show animation if it's playing\n                if (animation:GetParent():GetParent().ShowAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().ShowAnimation:Stop()\n                end\n            end        \n            local onStopHideAnimation = function (animation)\n                animation:GetParent():Hide()       \n            end\n            \n            local createAnimations = function (comboPoint)\n                --on show\n                comboPoint.ShowAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayShowAnimation, nil)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 1, 0.1, 0, 0, 1, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"alpha\", 1, 0.1, .5, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 2, 0.1, 1.2, 1.2, 1, 1)\n                \n                --on hide\n                comboPoint.HideAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayHideAnimation, onStopHideAnimation)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"scale\", 1, 0.1, 1, 1, 0, 0)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"alpha\", 1, 0.1, 1, 0)\n            end\n            \n            --build combo point frame        \n            for i =1, 10 do \n                local f = CreateFrame (\"frame\", nil, envTable.ComboPointFrame)\n                f:SetSize (sizes.width, sizes.height)\n                tinsert (envTable.ComboPoints, f)\n                tinsert (unitFrame.PlaterComboPointFrame.ComboPointFramesPool, f)\n                \n                local backgroundTexture = f:CreateTexture (nil, \"background\")\n                backgroundTexture:SetTexture (textures.backgroundTexture)\n                backgroundTexture:SetTexCoord (unpack (textures.backgroundTexCoords))\n                backgroundTexture:SetSize (sizes.width, sizes.height)\n                backgroundTexture:SetPoint (\"center\")\n                \n                local comboPointTexture = f:CreateTexture (nil, \"artwork\")\n                comboPointTexture:SetTexture (textures.comboPointTexture)\n                comboPointTexture:SetTexCoord (unpack (textures.comboPointTexCoords))\n                \n                comboPointTexture:SetSize (sizes.width, sizes.height)\n                comboPointTexture:SetPoint (\"center\")\n                comboPointTexture:Hide()            \n                \n                f.IsActive = false\n                \n                f.backgroundTexture = backgroundTexture\n                f.comboPointTexture = comboPointTexture\n                \n                createAnimations (f)\n            end\n            \n        else\n            envTable.ComboPointFrame = unitFrame.PlaterComboPointFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            envTable.ComboPoints = unitFrame.PlaterComboPointFrame.ComboPointFramesPool\n            \n        end            \n        \n        envTable.ComboPointFrame:SetFrameLevel (frameLevel)\n        envTable.ComboPointFrame:SetFrameStrata (frameStrata)\n        \n        function envTable.UpdateComboPoints()\n            local comboPoints = GetComboPoints(\"player\", \"target\")\n            --UnitPower (\"player\", Enum.PowerType.ComboPoints)\n            \n            for i = 1, envTable.TotalComboPoints do\n                local thisComboPoint = envTable.ComboPoints [i]\n                \n                if (i <= comboPoints ) then\n                    --combo point enabled\n                    if (not thisComboPoint.IsActive) then\n                        thisComboPoint.ShowAnimation:Play()\n                        thisComboPoint.IsActive = true\n                        \n                    end\n                    \n                else\n                    --combo point disabled\n                    if (thisComboPoint.IsActive) then\n                        thisComboPoint.HideAnimation:Play()\n                        thisComboPoint.IsActive = false\n                        \n                    end\n                end\n            end\n            \n            \n        end\n        \n        function envTable.UpdateComboPointAmount()\n            local namePlateWidth = Plater.db.profile.plate_config.enemynpc.health_incombat[1]\n            local comboPoints = UnitPowerMax (\"player\", Enum.PowerType.ComboPoints)\n            local reservedSpace = (namePlateWidth - sizes.width * comboPoints)  / comboPoints \n            \n            --store the total amount of combo points\n            envTable.TotalComboPoints = comboPoints\n            \n            --update anchor frame\n            envTable.ComboPointFrame:SetWidth (namePlateWidth)\n            envTable.ComboPointFrame:SetHeight (20)\n            envTable.ComboPointFrame:ClearAllPoints()\n            for i = 1, #anchors do\n                local anchor = anchors[i]\n                envTable.ComboPointFrame:SetPoint (unpack (anchor))\n            end        \n            \n            --\n            for i = 1, #envTable.ComboPoints do\n                envTable.ComboPoints[i]:Hide()\n                envTable.ComboPoints[i]:ClearAllPoints()\n            end\n            \n            for i = 1, comboPoints do\n                local comboPoint = envTable.ComboPoints[i]\n                if i == 1 then\n                    comboPoint:SetPoint (\"left\", envTable.ComboPointFrame, \"left\", reservedSpace/2, 0)\n                else\n                    comboPoint:SetPoint (\"left\", envTable.ComboPoints[i-1], \"right\", reservedSpace, 0)\n                end\n                \n                comboPoint:Show()\n            end\n            \n            envTable.LastUpdate = GetTime()\n            \n            envTable.UpdateComboPoints()\n        end\n        \n        --initialize\n        envTable.UpdateComboPointAmount()\n        envTable.ComboPointFrame:Hide()\n    end\n    \n    \nend",
-},
-["Options"] = {
-{
-["Type"] = 2,
-["Max"] = 1,
-["Desc"] = "",
-["Min"] = 0,
-["Key"] = "option1",
-["Value"] = 0.5,
-["Fraction"] = true,
-["Icon"] = "Interface\\AddOns\\Plater\\images\\option_number",
-["Name"] = "Option 1",
-},
-},
 },
 {
 ["Enabled"] = false,
@@ -27207,8 +27366,7 @@ false,
 {
 ["Enabled"] = false,
 ["Revision"] = 55,
-["HooksTemp"] = {
-},
+["LastHookEdited"] = "Constructor",
 ["Author"] = "Izimode-Azralon",
 ["Desc"] = "Tint nameplates of Reaping Soul units (Mythic Dungeon Affix) depending on its target and role of the player",
 ["Hooks"] = {
@@ -27217,11 +27375,7 @@ false,
 ["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    --npcs affected by this script\n    \n    envTable.npcIDs = {\n        [148716] = true, --risen soul\n        [148893] = true, --tormented soul\n        [148894] = true, --lost soul\n        \n        [127278] = true, --skittering feeder (tests and debug, also need to disable the load conditions)\n    }\n    \n    --detect aggro, if true it will see which group member the soul is attacking and override the color\n    envTable.detectAggro = true\n    \n    \nend\n\n\n",
 },
 ["Prio"] = 99,
-["Name"] = "M+ Bwonsamdi Reaping",
-["PlaterCore"] = 1,
-["LastHookEdited"] = "Constructor",
 ["Time"] = 1579030189,
-["Icon"] = 2446016,
 ["LoadConditions"] = {
 ["talent"] = {
 },
@@ -27248,6 +27402,11 @@ false,
 ["spec"] = {
 },
 },
+["HooksTemp"] = {
+},
+["Name"] = "M+ Bwonsamdi Reaping",
+["Icon"] = 2446016,
+["PlaterCore"] = 1,
 },
 {
 ["Enabled"] = false,
@@ -28388,72 +28547,6 @@ false,
 ["OptionsValues"] = {
 },
 ["HooksTemp"] = {
-["Nameplate Created"] = "function (self, unitId, unitFrame, envTable)\n    \n    --run constructor!\n    --constructor is executed only once when any script of the hook runs.\n    \nend\n\n\n",
-["Nameplate Added"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if need update the amount of combo points shown\n    if (envTable.LastPlayerTalentUpdate > envTable.LastUpdate) then\n        envTable.UpdateComboPointAmount()\n    end    \n    \n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n        \n    else\n        envTable.ComboPointFrame:Hide()\n    end    \n    \nend\n\n\n",
-["Target Changed"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if this nameplate is the current target\n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n    else\n        envTable.ComboPointFrame:Hide()\n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-["Player Power Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.UpdateComboPoints()\n    end\n    \n    \nend\n\n\n\n\n\n\n",
-["Nameplate Removed"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n",
-["Destructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n\n\n",
-["Player Talent Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    --update the amount of comboo points shown when the player changes talents or specialization\n    envTable.UpdateComboPointAmount()\n    \n    --save the time of the last talent change\n    envTable.LastPlayerTalentUpdate = GetTime()\n    \n    \nend\n\n\n",
-["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    --settings\n    local anchors = {\n        {\"bottom\", unitFrame.healthBar, \"top\", 0, 24},\n    }\n    \n    local sizes = {\n        width = 12,\n        height = 12,\n        scale = 1,\n    }\n    \n    local textures = {\n        backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        backgroundTexCoords = {78/128, 98/128, 21/64, 41/64},\n        \n        comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        comboPointTexCoords = {100/128, 120/128, 21/64, 41/64},\n    }\n    \n    local frameLevel = 1000\n    local frameStrata = \"high\"    \n    \n    --private\n    do\n        --store combo points frames on this table\n        envTable.ComboPoints = {}\n        --save when the player changed talents or spec\n        envTable.LastPlayerTalentUpdate = GetTime()\n        --save when this nameplate got a combo point amount and alignment update        \n        \n        --build combo points frame anchor (combo point are anchored to this)\n        if (not unitFrame.PlaterComboPointFrame) then\n            local hostFrame = CreateFrame (\"frame\", nil, unitFrame)\n            hostFrame.ComboPointFramesPool = {}\n            unitFrame.PlaterComboPointFrame = hostFrame\n            envTable.ComboPointFrame = hostFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            \n            --DetailsFramework:ApplyStandardBackdrop (envTable.ComboPointFrame) --debug anchor size\n            \n            --animations\n            local onPlayShowAnimation = function (animation)\n                --stop the hide animation if it's playing\n                if (animation:GetParent():GetParent().HideAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().HideAnimation:Stop()\n                end\n                \n                animation:GetParent():Show()\n            end\n            \n            local onPlayHideAnimation = function (animation)\n                --stop the show animation if it's playing\n                if (animation:GetParent():GetParent().ShowAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().ShowAnimation:Stop()\n                end\n            end        \n            local onStopHideAnimation = function (animation)\n                animation:GetParent():Hide()       \n            end\n            \n            local createAnimations = function (comboPoint)\n                --on show\n                comboPoint.ShowAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayShowAnimation, nil)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 1, 0.1, 0, 0, 1, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"alpha\", 1, 0.1, .5, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 2, 0.1, 1.2, 1.2, 1, 1)\n                \n                --on hide\n                comboPoint.HideAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayHideAnimation, onStopHideAnimation)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"scale\", 1, 0.1, 1, 1, 0, 0)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"alpha\", 1, 0.1, 1, 0)\n            end\n            \n            --build combo point frame        \n            for i =1, 10 do \n                local f = CreateFrame (\"frame\", nil, envTable.ComboPointFrame)\n                f:SetSize (sizes.width, sizes.height)\n                tinsert (envTable.ComboPoints, f)\n                tinsert (unitFrame.PlaterComboPointFrame.ComboPointFramesPool, f)\n                \n                local backgroundTexture = f:CreateTexture (nil, \"background\")\n                backgroundTexture:SetTexture (textures.backgroundTexture)\n                backgroundTexture:SetTexCoord (unpack (textures.backgroundTexCoords))\n                backgroundTexture:SetSize (sizes.width, sizes.height)\n                backgroundTexture:SetPoint (\"center\")\n                \n                local comboPointTexture = f:CreateTexture (nil, \"artwork\")\n                comboPointTexture:SetTexture (textures.comboPointTexture)\n                comboPointTexture:SetTexCoord (unpack (textures.comboPointTexCoords))\n                \n                comboPointTexture:SetSize (sizes.width, sizes.height)\n                comboPointTexture:SetPoint (\"center\")\n                comboPointTexture:Hide()            \n                \n                f.IsActive = false\n                \n                f.backgroundTexture = backgroundTexture\n                f.comboPointTexture = comboPointTexture\n                \n                createAnimations (f)\n            end\n            \n        else\n            envTable.ComboPointFrame = unitFrame.PlaterComboPointFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            envTable.ComboPoints = unitFrame.PlaterComboPointFrame.ComboPointFramesPool\n            \n        end            \n        \n        envTable.ComboPointFrame:SetFrameLevel (frameLevel)\n        envTable.ComboPointFrame:SetFrameStrata (frameStrata)\n        \n        function envTable.UpdateComboPoints()\n            local comboPoints = UnitPower (\"player\", Enum.PowerType.ComboPoints)\n            \n            for i = 1, envTable.TotalComboPoints do\n                local thisComboPoint = envTable.ComboPoints [i]\n                \n                if (i <= comboPoints ) then\n                    --combo point enabled\n                    if (not thisComboPoint.IsActive) then\n                        thisComboPoint.ShowAnimation:Play()\n                        thisComboPoint.IsActive = true\n                        \n                    end\n                    \n                else\n                    --combo point disabled\n                    if (thisComboPoint.IsActive) then\n                        thisComboPoint.HideAnimation:Play()\n                        thisComboPoint.IsActive = false\n                        \n                    end\n                end\n            end\n            \n            \n        end\n        \n        function envTable.UpdateComboPointAmount()\n            local namePlateWidth = Plater.db.profile.plate_config.enemynpc.health_incombat[1]\n            local comboPoints = UnitPowerMax (\"player\", Enum.PowerType.ComboPoints)\n            local reservedSpace = namePlateWidth / comboPoints\n            \n            --store the total amount of combo points\n            envTable.TotalComboPoints = comboPoints\n            \n            --update anchor frame\n            envTable.ComboPointFrame:SetWidth (namePlateWidth)\n            envTable.ComboPointFrame:SetHeight (20)\n            envTable.ComboPointFrame:ClearAllPoints()\n            for i = 1, #anchors do\n                local anchor = anchors[i]\n                envTable.ComboPointFrame:SetPoint (unpack (anchor))\n            end        \n            \n            --\n            for i = 1, #envTable.ComboPoints do\n                envTable.ComboPoints[i]:Hide()\n                envTable.ComboPoints[i]:ClearAllPoints()\n            end\n            \n            for i = 1, comboPoints do\n                local comboPoint = envTable.ComboPoints[i]\n                comboPoint:SetPoint (\"left\", envTable.ComboPointFrame, \"left\", reservedSpace * (i-1), 0)\n                comboPoint:Show()\n            end\n            \n            envTable.LastUpdate = GetTime()\n            \n            envTable.UpdateComboPoints()\n        end\n        \n        --initialize\n        envTable.UpdateComboPointAmount()\n        envTable.ComboPointFrame:Hide()\n    end\n    \n    \nend",
-},
-["Hooks"] = {
-["Nameplate Created"] = "function (self, unitId, unitFrame, envTable)\n    \n    --run constructor!\n    --constructor is executed only once when any script of the hook runs.\n    \nend\n\n\n",
-["Nameplate Added"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if need update the amount of combo points shown\n    if (envTable.LastPlayerTalentUpdate > envTable.LastUpdate) then\n        envTable.UpdateComboPointAmount()\n    end    \n    \n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n        \n    else\n        envTable.ComboPointFrame:Hide()\n    end    \n    \nend\n\n\n",
-["Target Changed"] = "function (self, unitId, unitFrame, envTable)\n    \n    --check if this nameplate is the current target\n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.ComboPointFrame:Show()\n        envTable.UpdateComboPoints()\n    else\n        envTable.ComboPointFrame:Hide()\n    end\n    \nend\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
-["Player Power Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    if (unitFrame.namePlateIsTarget and not unitFrame.IsSelf) then\n        envTable.UpdateComboPoints()\n    end\n    \n    \nend\n\n\n\n\n\n\n",
-["Nameplate Removed"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n",
-["Destructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    envTable.ComboPointFrame:Hide()\n    \nend\n\n\n\n\n",
-["Player Talent Update"] = "function (self, unitId, unitFrame, envTable)\n    \n    --update the amount of comboo points shown when the player changes talents or specialization\n    envTable.UpdateComboPointAmount()\n    \n    --save the time of the last talent change\n    envTable.LastPlayerTalentUpdate = GetTime()\n    \n    \nend\n\n\n",
-["Constructor"] = "function (self, unitId, unitFrame, envTable)\n    \n    --settings\n    local anchors = {\n        {\"bottom\", unitFrame.healthBar, \"top\", 0, 24},\n    }\n    \n    local sizes = {\n        width = 12,\n        height = 12,\n        scale = 1,\n    }\n    \n    local textures = {\n        backgroundTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        backgroundTexCoords = {78/128, 98/128, 21/64, 41/64},\n        \n        comboPointTexture = [[Interface\\PLAYERFRAME\\ClassOverlayComboPoints]],\n        comboPointTexCoords = {100/128, 120/128, 21/64, 41/64},\n    }\n    \n    local frameLevel = 1000\n    local frameStrata = \"high\"    \n    \n    --private\n    do\n        --store combo points frames on this table\n        envTable.ComboPoints = {}\n        --save when the player changed talents or spec\n        envTable.LastPlayerTalentUpdate = GetTime()\n        --save when this nameplate got a combo point amount and alignment update        \n        \n        --build combo points frame anchor (combo point are anchored to this)\n        if (not unitFrame.PlaterComboPointFrame) then\n            local hostFrame = CreateFrame (\"frame\", nil, unitFrame)\n            hostFrame.ComboPointFramesPool = {}\n            unitFrame.PlaterComboPointFrame = hostFrame\n            envTable.ComboPointFrame = hostFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            \n            --DetailsFramework:ApplyStandardBackdrop (envTable.ComboPointFrame) --debug anchor size\n            \n            --animations\n            local onPlayShowAnimation = function (animation)\n                --stop the hide animation if it's playing\n                if (animation:GetParent():GetParent().HideAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().HideAnimation:Stop()\n                end\n                \n                animation:GetParent():Show()\n            end\n            \n            local onPlayHideAnimation = function (animation)\n                --stop the show animation if it's playing\n                if (animation:GetParent():GetParent().ShowAnimation:IsPlaying()) then\n                    animation:GetParent():GetParent().ShowAnimation:Stop()\n                end\n            end        \n            local onStopHideAnimation = function (animation)\n                animation:GetParent():Hide()       \n            end\n            \n            local createAnimations = function (comboPoint)\n                --on show\n                comboPoint.ShowAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayShowAnimation, nil)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 1, 0.1, 0, 0, 1, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"alpha\", 1, 0.1, .5, 1)\n                Plater:CreateAnimation (comboPoint.ShowAnimation, \"scale\", 2, 0.1, 1.2, 1.2, 1, 1)\n                \n                --on hide\n                comboPoint.HideAnimation = Plater:CreateAnimationHub (comboPoint.comboPointTexture, onPlayHideAnimation, onStopHideAnimation)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"scale\", 1, 0.1, 1, 1, 0, 0)\n                Plater:CreateAnimation (comboPoint.HideAnimation, \"alpha\", 1, 0.1, 1, 0)\n            end\n            \n            --build combo point frame        \n            for i =1, 10 do \n                local f = CreateFrame (\"frame\", nil, envTable.ComboPointFrame)\n                f:SetSize (sizes.width, sizes.height)\n                tinsert (envTable.ComboPoints, f)\n                tinsert (unitFrame.PlaterComboPointFrame.ComboPointFramesPool, f)\n                \n                local backgroundTexture = f:CreateTexture (nil, \"background\")\n                backgroundTexture:SetTexture (textures.backgroundTexture)\n                backgroundTexture:SetTexCoord (unpack (textures.backgroundTexCoords))\n                backgroundTexture:SetSize (sizes.width, sizes.height)\n                backgroundTexture:SetPoint (\"center\")\n                \n                local comboPointTexture = f:CreateTexture (nil, \"artwork\")\n                comboPointTexture:SetTexture (textures.comboPointTexture)\n                comboPointTexture:SetTexCoord (unpack (textures.comboPointTexCoords))\n                \n                comboPointTexture:SetSize (sizes.width, sizes.height)\n                comboPointTexture:SetPoint (\"center\")\n                comboPointTexture:Hide()            \n                \n                f.IsActive = false\n                \n                f.backgroundTexture = backgroundTexture\n                f.comboPointTexture = comboPointTexture\n                \n                createAnimations (f)\n            end\n            \n        else\n            envTable.ComboPointFrame = unitFrame.PlaterComboPointFrame\n            envTable.ComboPointFrame:SetScale (sizes.scale)\n            envTable.ComboPoints = unitFrame.PlaterComboPointFrame.ComboPointFramesPool\n            \n        end            \n        \n        envTable.ComboPointFrame:SetFrameLevel (frameLevel)\n        envTable.ComboPointFrame:SetFrameStrata (frameStrata)\n        \n        function envTable.UpdateComboPoints()\n            local comboPoints = UnitPower (\"player\", Enum.PowerType.ComboPoints)\n            \n            for i = 1, envTable.TotalComboPoints do\n                local thisComboPoint = envTable.ComboPoints [i]\n                \n                if (i <= comboPoints ) then\n                    --combo point enabled\n                    if (not thisComboPoint.IsActive) then\n                        thisComboPoint.ShowAnimation:Play()\n                        thisComboPoint.IsActive = true\n                        \n                    end\n                    \n                else\n                    --combo point disabled\n                    if (thisComboPoint.IsActive) then\n                        thisComboPoint.HideAnimation:Play()\n                        thisComboPoint.IsActive = false\n                        \n                    end\n                end\n            end\n            \n            \n        end\n        \n        function envTable.UpdateComboPointAmount()\n            local namePlateWidth = Plater.db.profile.plate_config.enemynpc.health_incombat[1]\n            local comboPoints = UnitPowerMax (\"player\", Enum.PowerType.ComboPoints)\n            local reservedSpace = namePlateWidth / comboPoints\n            \n            --store the total amount of combo points\n            envTable.TotalComboPoints = comboPoints\n            \n            --update anchor frame\n            envTable.ComboPointFrame:SetWidth (namePlateWidth)\n            envTable.ComboPointFrame:SetHeight (20)\n            envTable.ComboPointFrame:ClearAllPoints()\n            for i = 1, #anchors do\n                local anchor = anchors[i]\n                envTable.ComboPointFrame:SetPoint (unpack (anchor))\n            end        \n            \n            --\n            for i = 1, #envTable.ComboPoints do\n                envTable.ComboPoints[i]:Hide()\n                envTable.ComboPoints[i]:ClearAllPoints()\n            end\n            \n            for i = 1, comboPoints do\n                local comboPoint = envTable.ComboPoints[i]\n                comboPoint:SetPoint (\"left\", envTable.ComboPointFrame, \"left\", reservedSpace * (i-1), 0)\n                comboPoint:Show()\n            end\n            \n            envTable.LastUpdate = GetTime()\n            \n            envTable.UpdateComboPoints()\n        end\n        \n        --initialize\n        envTable.UpdateComboPointAmount()\n        envTable.ComboPointFrame:Hide()\n    end\n    \n    \nend",
-},
-["Time"] = 1773056286,
-["LoadConditions"] = {
-["talent"] = {
-},
-["group"] = {
-},
-["class"] = {
-["Enabled"] = true,
-["DRUID"] = true,
-["ROGUE"] = true,
-},
-["map_ids"] = {
-},
-["role"] = {
-},
-["pvptalent"] = {
-},
-["affix"] = {
-},
-["race"] = {
-},
-["encounter_ids"] = {
-},
-["spec"] = {
-["103"] = true,
-["Enabled"] = true,
-},
-},
-["url"] = "https://wago.io/ob3TKJGiq/3",
-["Icon"] = 135426,
-["Enabled"] = false,
-["Revision"] = 195,
-["semver"] = "1.0.2",
-["Author"] = "Izimode-Azralon",
-["Desc"] = "Show combo points above the nameplate for Druid Feral and Rogues.",
-["Prio"] = 99,
-["Name"] = "Combo Points [Plater]",
-["PlaterCore"] = 1,
-["version"] = 3,
-["LastHookEdited"] = "",
-["Options"] = {
-},
-},
-{
-["OptionsValues"] = {
-},
-["HooksTemp"] = {
 ["Nameplate Updated"] = "function (self, unitId, unitFrame, envTable)\n    Plater.UpdatePersonalBar (true)\nend",
 ["Target Changed"] = "function (self, unitId, unitFrame, envTable)\n    Plater.UpdatePersonalBar (false)\nend",
 ["Player Logon"] = "function ()\n    \n    -- change these to your liking. val\n    local config = {\n        --alpha = 0.75, -- defaults to 1.\n        --frameLevel = 25, -- sub-level within the strata level. defaults to 25\n        --frameStrata = \"LOW\", -- frame level. defaults to Level & Strata -> Current Target strata (\"BACKGROUND\" -> \"LOW\" -> \"MEDIUM\" -> \"HIGH\" -> \"DIALOG\")\n    }\n    \n    \n    local origUpdateResourceFrame = Plater.UpdateResourceFrame\n    \n    ---------------------------------------------------------------------------------------------------------------------------\n    local UpdateResourceFrameSettings = function (notUpdateOrig)\n        if not notUpdateOrig then\n            origUpdateResourceFrame(self)\n        end\n        local showSelf = GetCVarBool (\"nameplateShowSelf\")\n        local onCurrentTarget = GetCVarBool (\"nameplateResourceOnTarget\")\n        \n        if (not onCurrentTarget) then\n            return\n        end\n        \n        local resourceFrame = NamePlateDriverFrame.classNamePlateMechanicFrame\n        if (not resourceFrame) then return end\n        if (resourceFrame:IsForbidden()) then return end\n        \n        resourceFrame:SetParent(UIParent)\n        resourceFrame:SetFrameStrata(config.frameStrata or Plater.db.profile.ui_parent_target_strata)\n        resourceFrame:SetFrameLevel(config.frameLevel or 25)\n        resourceFrame:SetAlpha(config.alpha or 1)\n    end\n    \n    Plater.UpdateResourceFrame = UpdateResourceFrameSettings\n    \nend\n\n\n\n\n\n",
@@ -28501,69 +28594,10 @@ false,
 ["Options"] = {
 },
 },
-{
-["OptionsValues"] = {
 },
-["LastHookEdited"] = "Initialization",
-["UID"] = "0x61c2355223d60a",
-["Hooks"] = {
-["Nameplate Created"] = "function (self, unitId, unitFrame, envTable, modTable)\n    if (not unitFrame.ComboPointFrame) then\n        unitFrame.ComboPointFrame = modTable.CreateComboPointHostFrame(unitFrame)\n    end\nend",
-["Nameplate Updated"] = "function (self, unitId, unitFrame, envTable, modTable)\n    if ( unitFrame.ComboPointFrame) then\n        unitFrame.ComboPointFrame:Update()\n    end\nend\n\n\n",
-["Initialization"] = "function (modTable)\n    local options = {\n        width = 16,\n        height = 16,\n        scale = 1,\n        fontName = \"Fonts\\\\ARIALN.ttf\",\n        fontSize = 32,\n        fontFlags = \"OUTLINE\",\n        frameLevel = 1000,\n        frameStrata = \"high\"\n    }\n    \n    local _shouldShow = function(unitId)\n        if (not UnitExists(unitId)) then\n            return false\n        end\n        local isTarget = UnitIsUnit(unitId, \"target\")\n        local canAttack = UnitCanAttack(\"player\", \"target\")\n        local hasComboPoints = GetComboPoints(\"player\", unitId) > 0\n        return (isTarget and canAttack) or hasComboPoints\n    end\n    \n    local _getTextColorPrefix = function(numComboPoints)\n        numComboPoints = numComboPoints and numComboPoints or 0\n        local color = \"|cff\"\n        if (numComboPoints == 5) then return color .. \"ff0000\" end\n        if (numComboPoints >= 3) then return color .. \"ffff00\" end\n        return color .. \"00ff00\"\n    end\n    \n    function modTable.CreateComboPointHostFrame(unitFrame)\n        local hostFrame = CreateFrame(\"frame\", unitFrame:GetName() .. \"ComboPoint\", unitFrame)\n        \n        hostFrame.lastUpdate = 0\n        hostFrame.numComboPoints = 0\n        \n        hostFrame.textFrame = hostFrame:CreateFontString(hostFrame:GetName() .. \"Text\", \"ARTWORK\")\n        hostFrame.textFrame:SetFont(options.fontName, options.fontSize, options.fontFlags)\n        hostFrame.textFrame:SetPoint(\"CENTER\", 0, 0)\n        \n        hostFrame:SetScale(options.scale)\n        hostFrame:SetWidth(options.width)\n        hostFrame:SetHeight(options.height)\n        hostFrame:SetFrameLevel(options.frameLevel)\n        hostFrame:SetFrameStrata(options.frameStrata)\n        hostFrame:SetPoint(\"LEFT\", unitFrame.healthBar, \"LEFT\", -10, 20)\n        \n        function hostFrame:UpdateComboPoints()\n            self.numComboPoints = GetComboPoints(\"player\", unitFrame.namePlateUnitToken)\n            local colorPrefix = _getTextColorPrefix(self.numComboPoints)\n            self.textFrame:SetText(colorPrefix .. tostring(self.numComboPoints))\n            self.lastUpdate = GetTime()\n        end\n        \n        function hostFrame:Update()\n            local unit = unitFrame.namePlateUnitToken\n            if (_shouldShow(unit)) then\n                self:Show()\n                self:UpdateComboPoints()\n            else\n                self:Hide()\n            end\n        end\n        \n        -- Events \n        function hostFrame:PLAYER_TARGET_CHANGED()\n            self:Update()\n        end\n        \n        function hostFrame:ZONE_CHANGED()\n            self:Update()\n        end\n        \n        function hostFrame:ZONE_CHANGED_NEW_AREA()\n            self:Update()\n        end\n        \n        function hostFrame:UNIT_POWER_FREQUENT(_, powerType)\n            if (powerType == \"COMBO_POINTS\") then\n                self:Update()\n            end\n        end\n        \n        hostFrame:SetScript(\"OnEvent\", function(self, event, ...)\n                self[event](self, ...)\n        end)\n        \n        hostFrame:RegisterEvent(\"PLAYER_TARGET_CHANGED\")\n        hostFrame:RegisterEvent(\"ZONE_CHANGED\")\n        hostFrame:RegisterEvent(\"ZONE_CHANGED_NEW_AREA\")\n        hostFrame:RegisterUnitEvent(\"UNIT_POWER_FREQUENT\", \"player\")\n        \n        return hostFrame\n    end\nend",
-["Nameplate Added"] = "function (self, unitId, unitFrame, envTable, modTable)\n    if (not unitFrame.ComboPointFrame) then\n        unitFrame.ComboPointFrame = modTable.CreateComboPointHostFrame(unitFrame)\n    end\nend",
-},
-["Time"] = 1773230501,
-["LoadConditions"] = {
-["talent"] = {
-},
-["group"] = {
-},
-["class"] = {
-["Enabled"] = true,
-["DRUID"] = true,
-["ROGUE"] = true,
-},
-["map_ids"] = {
-},
-["role"] = {
-},
-["pvptalent"] = {
-},
-["spec"] = {
-["103"] = true,
-["Enabled"] = true,
-},
-["race"] = {
-},
-["encounter_ids"] = {
-},
-["affix"] = {
-},
-},
-["url"] = "https://wago.io/LW22M-yiX/2",
-["Icon"] = 136189,
-["Enabled"] = false,
-["Revision"] = 574,
-["semver"] = "1.0.1",
-["Author"] = "Izimode-Azralon",
-["Desc"] = "Show combo point number on top left of nameplate",
-["Prio"] = 99,
-["Name"] = "Combo Points Number",
-["PlaterCore"] = 1,
-["Options"] = {
-},
-["HooksTemp"] = {
-["Nameplate Created"] = "function (self, unitId, unitFrame, envTable, modTable)\n    if (not unitFrame.ComboPointFrame) then\n        unitFrame.ComboPointFrame = modTable.CreateComboPointHostFrame(unitFrame)\n    end\nend",
-["Nameplate Updated"] = "function (self, unitId, unitFrame, envTable, modTable)\n    if ( unitFrame.ComboPointFrame) then\n        unitFrame.ComboPointFrame:Update()\n    end\nend\n\n\n",
-["Initialization"] = "function (modTable)\n    local options = {\n        width = 16,\n        height = 16,\n        scale = 1,\n        fontName = \"Fonts\\\\ARIALN.ttf\",\n        fontSize = 32,\n        fontFlags = \"OUTLINE\",\n        frameLevel = 1000,\n        frameStrata = \"high\"\n    }\n    \n    local _shouldShow = function(unitId)\n        if (not UnitExists(unitId)) then\n            return false\n        end\n        local isTarget = UnitIsUnit(unitId, \"target\")\n        local canAttack = UnitCanAttack(\"player\", \"target\")\n        local hasComboPoints = GetComboPoints(\"player\", unitId) > 0\n        return (isTarget and canAttack) or hasComboPoints\n    end\n    \n    local _getTextColorPrefix = function(numComboPoints)\n        numComboPoints = numComboPoints and numComboPoints or 0\n        local color = \"|cff\"\n        if (numComboPoints == 5) then return color .. \"ff0000\" end\n        if (numComboPoints >= 3) then return color .. \"ffff00\" end\n        return color .. \"00ff00\"\n    end\n    \n    function modTable.CreateComboPointHostFrame(unitFrame)\n        local hostFrame = CreateFrame(\"frame\", unitFrame:GetName() .. \"ComboPoint\", unitFrame)\n        \n        hostFrame.lastUpdate = 0\n        hostFrame.numComboPoints = 0\n        \n        hostFrame.textFrame = hostFrame:CreateFontString(hostFrame:GetName() .. \"Text\", \"ARTWORK\")\n        hostFrame.textFrame:SetFont(options.fontName, options.fontSize, options.fontFlags)\n        hostFrame.textFrame:SetPoint(\"CENTER\", 0, 0)\n        \n        hostFrame:SetScale(options.scale)\n        hostFrame:SetWidth(options.width)\n        hostFrame:SetHeight(options.height)\n        hostFrame:SetFrameLevel(options.frameLevel)\n        hostFrame:SetFrameStrata(options.frameStrata)\n        hostFrame:SetPoint(\"LEFT\", unitFrame.healthBar, \"LEFT\", -10, 20)\n        \n        function hostFrame:UpdateComboPoints()\n            self.numComboPoints = GetComboPoints(\"player\", unitFrame.namePlateUnitToken)\n            local colorPrefix = _getTextColorPrefix(self.numComboPoints)\n            self.textFrame:SetText(colorPrefix .. tostring(self.numComboPoints))\n            self.lastUpdate = GetTime()\n        end\n        \n        function hostFrame:Update()\n            local unit = unitFrame.namePlateUnitToken\n            if (_shouldShow(unit)) then\n                self:Show()\n                self:UpdateComboPoints()\n            else\n                self:Hide()\n            end\n        end\n        \n        -- Events \n        function hostFrame:PLAYER_TARGET_CHANGED()\n            self:Update()\n        end\n        \n        function hostFrame:ZONE_CHANGED()\n            self:Update()\n        end\n        \n        function hostFrame:ZONE_CHANGED_NEW_AREA()\n            self:Update()\n        end\n        \n        function hostFrame:UNIT_POWER_FREQUENT(_, powerType)\n            if (powerType == \"COMBO_POINTS\") then\n                self:Update()\n            end\n        end\n        \n        hostFrame:SetScript(\"OnEvent\", function(self, event, ...)\n                self[event](self, ...)\n        end)\n        \n        hostFrame:RegisterEvent(\"PLAYER_TARGET_CHANGED\")\n        hostFrame:RegisterEvent(\"ZONE_CHANGED\")\n        hostFrame:RegisterEvent(\"ZONE_CHANGED_NEW_AREA\")\n        hostFrame:RegisterUnitEvent(\"UNIT_POWER_FREQUENT\", \"player\")\n        \n        return hostFrame\n    end\nend",
-["Nameplate Added"] = "function (self, unitId, unitFrame, envTable, modTable)\n    if (not unitFrame.ComboPointFrame) then\n        unitFrame.ComboPointFrame = modTable.CreateComboPointHostFrame(unitFrame)\n    end\nend",
-},
-["version"] = 2,
-},
-},
+["hover_highlight_alpha"] = 0.75,
 ["url"] = "https://wago.io/g-jp-v2zw/5",
 ["aura_width"] = 16,
-["target_highlight"] = false,
 ["ghost_auras"] = {
 ["height"] = 10.23566341400147,
 ["width"] = 10.23566341400147,
@@ -28583,7 +28617,7 @@ false,
 },
 },
 },
-["pet_width_scale"] = 0.9999999403953552,
+["range_check_enabled"] = false,
 ["quick_hide"] = true,
 ["extra_icon_stack_outline"] = "OUTLINE",
 ["resources"] = {
@@ -28683,15 +28717,15 @@ nil,
 ["scale"] = 1,
 },
 },
+["target_highlight"] = false,
 ["target_shady_alpha"] = 0.597934901714325,
 ["extra_icon_show_swipe"] = false,
 ["target_highlight_height"] = 21,
-["hover_highlight_alpha"] = 0.75,
-["version"] = 5,
 ["cast_statusbar_fadein_time"] = 0.009999999776482582,
+["version"] = 5,
 ["indicator_raidmark_scale"] = 1.399999976158142,
-["aura2_y_offset"] = 15.5,
-["castbar_framelevel"] = 0,
+["cast_statusbar_spark_alpha"] = 0.699999988079071,
+["aura_timer"] = false,
 ["extra_icon_auras_mine"] = {
 ["224991"] = true,
 ["Sunder Armor"] = false,
@@ -28702,10 +28736,11 @@ nil,
 ["range_check_in_range_or_target_alpha"] = 1,
 ["aura_timer_text_size"] = 10,
 ["extra_icon_show_timer"] = false,
-["number_region_first_run"] = true,
 ["first_run2"] = true,
+["number_region_first_run"] = true,
 ["health_animation_time_dilatation"] = 2.869999885559082,
 ["aura_cooldown_reverse"] = false,
+["health_selection_overlay_alpha"] = 0,
 ["aura_width2"] = 16,
 ["health_statusbar_bgcolor"] = {
 0.0431372,
@@ -28715,6 +28750,35 @@ nil,
 },
 ["castbar_target_anchor"] = {
 ["side"] = 11,
+},
+["class_colors"] = {
+["DEATHKNIGHT"] = {
+["colorStr"] = "ffc31d3a",
+},
+["WARRIOR"] = {
+["colorStr"] = "ffc69a6d",
+},
+["PALADIN"] = {
+["colorStr"] = "fff48bb9",
+},
+["WARLOCK"] = {
+["colorStr"] = "ff8687ed",
+},
+["DEMONHUNTER"] = {
+["colorStr"] = "ffa22fc8",
+},
+["ROGUE"] = {
+["colorStr"] = "fffff467",
+},
+["DRUID"] = {
+["colorStr"] = "ffff7c09",
+},
+["EVOKER"] = {
+["colorStr"] = "ff33937e",
+},
+["SHAMAN"] = {
+["colorStr"] = "ff006fdd",
+},
 },
 ["script_auto_imported"] = {
 ["Relics 9.2 M Dungeons"] = 2,
@@ -28762,7 +28826,6 @@ nil,
 ["Unit Power"] = 1,
 ["Unit - Show Energy"] = 11,
 },
-["range_check_enabled"] = false,
 ["dps"] = {
 ["colors"] = {
 ["solo"] = {
@@ -28785,7 +28848,7 @@ nil,
 },
 },
 },
-["aura_alpha"] = 1,
+["pet_width_scale"] = 0.9999999403953552,
 ["first_run3"] = true,
 ["auto_toggle_stacking"] = {
 ["party"] = false,
@@ -40023,6 +40086,18 @@ PlaterLanguage = {
 }
 PlaterLogs = {
 ["_general_logs"] = {
+"2026-03-14 10:34:04 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
+"2026-03-14 10:00:40 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
+"2026-03-14 09:59:52 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
+"2026-03-14 09:57:25 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
+"2026-03-14 09:55:35 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
+"2026-03-14 09:50:54 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
+"2026-03-14 09:49:46 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
+"2026-03-14 09:49:12 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
+"2026-03-14 09:47:07 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
+"2026-03-14 09:20:28 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
+"2026-03-14 09:18:24 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
+"2026-03-14 09:14:14 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Dopeseal",
 "2026-03-13 22:53:02 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Dopecure",
 "2026-03-13 22:50:10 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Dopecoil",
 "2026-03-13 22:48:23 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Dopeseal",
@@ -40030,18 +40105,6 @@ PlaterLogs = {
 "2026-03-13 22:43:05 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Battitude",
 "2026-03-13 22:37:35 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Vermins",
 "2026-03-13 20:49:41 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
-"2026-03-13 20:45:30 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
-"2026-03-13 20:43:18 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
-"2026-03-13 20:42:20 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Moolatz",
-"2026-03-13 20:41:43 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Moolatz",
-"2026-03-13 20:40:37 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Moolatz",
-"2026-03-13 20:40:19 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Moolatz",
-"2026-03-13 20:39:55 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Moolatz",
-"2026-03-13 20:39:26 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Moolatz",
-"2026-03-13 20:38:58 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Moolatz",
-"2026-03-13 20:36:24 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Moolatz",
-"2026-03-13 20:36:07 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
-"2026-03-13 20:35:01 | INIT | Plater-v636-TBC | Framework v693 | 2.5.5 | enUS | Handrmandr",
 },
 ["_error_logs"] = {
 },

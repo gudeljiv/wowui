@@ -134,3 +134,4 @@ Routes: enabled
 Arcana: enabled
 Broker_Everything: enabled
 MinimapButtonButton: enabled
+NAG: disabled

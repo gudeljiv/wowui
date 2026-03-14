@@ -308,12 +308,12 @@ Broker_Everything_CharacterDB = {
 },
 ["Dopeseal-Thunderstrike"] = {
 ["orderId"] = 1,
-["lastLogin"] = 1773438501,
+["lastLogin"] = 1773476043,
 ["class"] = "PALADIN",
 ["race"] = "BloodElf",
 ["name"] = "Dopeseal",
 ["Gold"] = {
-["money"] = 3763960,
+["money"] = 4007707,
 ["profit"] = {
 ["monthly"] = {
 [1774994399] = 0,
@@ -322,9 +322,9 @@ Broker_Everything_CharacterDB = {
 ["daily"] = {
 [1773183599] = "1973591",
 [1773269999] = "2596894",
-[1773097199] = "2914969",
-[1773442799] = 0,
+[1773442799] = "3763960",
 [1773356399] = "3676143",
+[1773529199] = 0,
 },
 ["weekly"] = {
 [1773010799] = "2986328",
@@ -341,9 +341,9 @@ Broker_Everything_CharacterDB = {
 ["daily"] = {
 [1773183599] = 2914969,
 [1773269999] = 1973591,
-[1773097199] = 2986328,
 [1773442799] = 3676143,
 [1773356399] = 2596894,
+[1773529199] = 3763960,
 },
 ["weekly"] = {
 [1773010799] = 1680952,
@@ -439,9 +439,9 @@ Broker_Everything_CharacterDB = {
 },
 ["Handrmandr-Thunderstrike"] = {
 ["orderId"] = 2,
-["lastLogin"] = 1773431379,
+["lastLogin"] = 1773480843,
 ["Gold"] = {
-["money"] = 377721,
+["money"] = 382341,
 ["profit"] = {
 ["monthly"] = {
 [1774994399] = 0,
@@ -450,8 +450,8 @@ Broker_Everything_CharacterDB = {
 ["daily"] = {
 [1773183599] = "390841",
 [1773269999] = "321398",
-[1773097199] = "0",
-[1773442799] = 0,
+[1773442799] = "377721",
+[1773529199] = 0,
 [1773356399] = "361905",
 },
 ["weekly"] = {
@@ -469,8 +469,8 @@ Broker_Everything_CharacterDB = {
 ["daily"] = {
 [1773183599] = 390841,
 [1773269999] = 390841,
-[1773097199] = 390841,
 [1773442799] = 361905,
+[1773529199] = 377721,
 [1773356399] = 321398,
 },
 ["weekly"] = {
@@ -491,7 +491,7 @@ Broker_Everything_CharacterDB = {
 },
 ["hasCooldowns"] = false,
 },
-["level"] = 36,
+["level"] = 37,
 ["Professions"] = {
 ["learnedRecipes"] = {
 },
@@ -572,11 +572,6 @@ Broker_Everything_AceDB = {
 ["minimapPos"] = 184.5925604095874,
 },
 },
-["Ammo"] = {
-["minimap"] = {
-["minimapPos"] = 206.0102451219126,
-},
-},
 ["Gold"] = {
 ["goldHideBB"] = "0",
 ["showCharsFrom"] = "4",
@@ -589,6 +584,11 @@ Broker_Everything_AceDB = {
 ["numDisplayAddOns"] = 12,
 ["showHomeOnBroker"] = false,
 ["showRealmOnBroker"] = false,
+},
+["Ammo"] = {
+["minimap"] = {
+["minimapPos"] = 206.0102451219126,
+},
 },
 },
 ["ROGUE"] = {

@@ -3,7 +3,7 @@ local _, xVermin = ...
 local interrupt_warning = CreateFrame("Frame", "InterruptWarningFrame")
 interrupt_warning:SetPoint("TOP", UIParent, "TOP", 0, -130)
 interrupt_warning.text = interrupt_warning:CreateFontString(nil, "ARTWORK")
-interrupt_warning.text:SetFont(xVermin.Config.font.arial, 40, "NONE")
+interrupt_warning.text:SetFont(xVermin.Config.font.coalition, 40, "NONE")
 interrupt_warning.text:SetShadowOffset(1, -1)
 interrupt_warning.text:SetPoint("TOP", interrupt_warning, "TOP", 0, 0)
 interrupt_warning.text:SetText("INTERRUPT NOW")

@@ -20,22 +20,10 @@ NAGDB = {
 ["LearnedPredictionProvider"] = {
 ["char"] = {
 ["Handrmandr - Thunderstrike"] = {
-["patchSensitiveSpells"] = {
-},
 ["accuracyStats"] = {
 },
-["patchResetLog"] = {
-{
-["spellCount"] = 0,
-["current"] = "66265",
-["scope"] = "full",
-["timestamp"] = 475348.625,
-},
-},
-["lastPatchResetTime"] = 475348.625,
 ["autoPruneEveryNSessions"] = 10,
 ["lastPatchResetScope"] = "full",
-["lastClientBuild"] = "66265",
 ["bucketedData"] = {
 [10768] = {
 ["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
@@ -54,31 +42,31 @@ NAGDB = {
 ["targetBand"] = "st",
 ["inCombat"] = false,
 },
-["samples"] = 1,
-["lastUpdated"] = 475424.249,
+["samples"] = 2,
+["lastUpdated"] = 520761.044,
 ["metrics"] = {
 ["flags"] = {
 ["lockAndLoad"] = {
 ["min"] = 0,
 ["m2"] = 0,
-["count"] = 1,
+["count"] = 2,
 ["max"] = 0,
 ["mean"] = 0,
 },
 ["bloodlust"] = {
 ["min"] = 0,
 ["m2"] = 0,
-["count"] = 1,
+["count"] = 2,
 ["max"] = 0,
 ["mean"] = 0,
 },
 },
 ["resourceAfter"] = {
-["min"] = 949,
-["m2"] = 0,
-["count"] = 1,
-["max"] = 949,
-["mean"] = 949,
+["min"] = 1180,
+["m2"] = 37812.5,
+["count"] = 2,
+["max"] = 1455,
+["mean"] = 1317.5,
 },
 ["buffStacks"] = {
 },
@@ -87,85 +75,16 @@ NAGDB = {
 ["castTime"] = {
 ["min"] = 1.5,
 ["m2"] = 0,
-["count"] = 1,
+["count"] = 2,
 ["max"] = 1.5,
 ["mean"] = 1.5,
 },
 ["resourceBefore"] = {
-["min"] = 949,
-["m2"] = 0,
-["count"] = 1,
-["max"] = 949,
-["mean"] = 949,
-},
-["tickInterval"] = {
-["m2"] = 0,
-["count"] = 0,
-["mean"] = 0,
-},
-["generation"] = {
-},
-},
-},
-},
-[14283] = {
-["low|bl0|lnl0|st|c1|solo|lockAndLoad:0|bloodlust:0"] = {
-["meta"] = {
-["hasBloodlust"] = false,
-["targetCount"] = 1,
-["contextFlags"] = {
-["lockAndLoad"] = false,
-["bloodlust"] = false,
-},
-["hasteBand"] = "low",
-["hastePercent"] = 0,
-["lastHastePercent"] = 0,
-["hasLockAndLoad"] = false,
-["groupType"] = "solo",
-["targetBand"] = "st",
-["inCombat"] = true,
-},
-["samples"] = 3,
-["lastUpdated"] = 475418.106,
-["metrics"] = {
-["flags"] = {
-["lockAndLoad"] = {
-["min"] = 0,
-["m2"] = 0,
-["count"] = 3,
-["max"] = 0,
-["mean"] = 0,
-},
-["bloodlust"] = {
-["min"] = 0,
-["m2"] = 0,
-["count"] = 3,
-["max"] = 0,
-["mean"] = 0,
-},
-},
-["resourceAfter"] = {
-["min"] = 949,
-["m2"] = 44850.66666666669,
-["count"] = 3,
-["max"] = 1235,
-["mean"] = 1117.666666666667,
-},
-["buffStacks"] = {
-},
-["cost"] = {
-},
-["castTime"] = {
-["m2"] = 0,
-["count"] = 0,
-["mean"] = 0,
-},
-["resourceBefore"] = {
-["min"] = 949,
-["m2"] = 44850.66666666669,
-["count"] = 3,
-["max"] = 1235,
-["mean"] = 1117.666666666667,
+["min"] = 1180,
+["m2"] = 37812.5,
+["count"] = 2,
+["max"] = 1455,
+["mean"] = 1317.5,
 },
 ["tickInterval"] = {
 ["m2"] = 0,
@@ -194,31 +113,31 @@ NAGDB = {
 ["targetBand"] = "st",
 ["inCombat"] = true,
 },
-["samples"] = 7,
-["lastUpdated"] = 475417.654,
+["samples"] = 3,
+["lastUpdated"] = 520756.203,
 ["metrics"] = {
 ["flags"] = {
 ["lockAndLoad"] = {
 ["min"] = 0,
 ["m2"] = 0,
-["count"] = 7,
+["count"] = 3,
 ["max"] = 0,
 ["mean"] = 0,
 },
 ["bloodlust"] = {
 ["min"] = 0,
 ["m2"] = 0,
-["count"] = 7,
+["count"] = 3,
 ["max"] = 0,
 ["mean"] = 0,
 },
 },
 ["resourceAfter"] = {
-["min"] = 1029,
-["m2"] = 74758.85714285709,
-["count"] = 7,
-["max"] = 1315,
-["mean"] = 1180.142857142857,
+["min"] = 1180,
+["m2"] = 12800,
+["count"] = 3,
+["max"] = 1340,
+["mean"] = 1260,
 },
 ["buffStacks"] = {
 },
@@ -227,16 +146,16 @@ NAGDB = {
 ["castTime"] = {
 ["min"] = 0.5,
 ["m2"] = 0,
-["count"] = 7,
+["count"] = 3,
 ["max"] = 0.5,
 ["mean"] = 0.5,
 },
 ["resourceBefore"] = {
-["min"] = 1029,
-["m2"] = 74758.85714285709,
-["count"] = 7,
-["max"] = 1315,
-["mean"] = 1180.142857142857,
+["min"] = 1180,
+["m2"] = 12800,
+["count"] = 3,
+["max"] = 1340,
+["mean"] = 1260,
 },
 ["tickInterval"] = {
 ["m2"] = 0,
@@ -248,7 +167,145 @@ NAGDB = {
 },
 },
 },
-[14288] = {
+[5118] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["hasLockAndLoad"] = false,
+["groupType"] = "solo",
+["targetBand"] = "st",
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 520708.141,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["resourceAfter"] = {
+["min"] = 1365,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 1365,
+["mean"] = 1365,
+},
+["buffStacks"] = {
+},
+["cost"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 1365,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 1365,
+["mean"] = 1365,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["generation"] = {
+},
+},
+},
+},
+[14319] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["hasLockAndLoad"] = false,
+["groupType"] = "solo",
+["targetBand"] = "st",
+["inCombat"] = false,
+},
+["samples"] = 1,
+["lastUpdated"] = 520706.09,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["resourceAfter"] = {
+["min"] = 1405,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 1405,
+["mean"] = 1405,
+},
+["buffStacks"] = {
+},
+["cost"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 1405,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 1405,
+["mean"] = 1405,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["generation"] = {
+},
+},
+},
+},
+[14283] = {
 ["low|bl0|lnl0|st|c1|solo|lockAndLoad:0|bloodlust:0"] = {
 ["meta"] = {
 ["hasBloodlust"] = false,
@@ -266,7 +323,7 @@ NAGDB = {
 ["inCombat"] = true,
 },
 ["samples"] = 2,
-["lastUpdated"] = 475413.767,
+["lastUpdated"] = 520755.468,
 ["metrics"] = {
 ["flags"] = {
 ["lockAndLoad"] = {
@@ -285,29 +342,27 @@ NAGDB = {
 },
 },
 ["resourceAfter"] = {
-["min"] = 1029,
-["m2"] = 40898,
+["min"] = 1180,
+["m2"] = 3200,
 ["count"] = 2,
-["max"] = 1315,
-["mean"] = 1172,
+["max"] = 1260,
+["mean"] = 1220,
 },
 ["buffStacks"] = {
 },
 ["cost"] = {
 },
 ["castTime"] = {
-["min"] = 0.5,
 ["m2"] = 0,
-["count"] = 2,
-["max"] = 0.5,
-["mean"] = 0.5,
+["count"] = 0,
+["mean"] = 0,
 },
 ["resourceBefore"] = {
-["min"] = 1029,
-["m2"] = 40898,
+["min"] = 1180,
+["m2"] = 3200,
 ["count"] = 2,
-["max"] = 1315,
-["mean"] = 1172,
+["max"] = 1260,
+["mean"] = 1220,
 },
 ["tickInterval"] = {
 ["m2"] = 0,
@@ -337,7 +392,7 @@ NAGDB = {
 ["inCombat"] = false,
 },
 ["samples"] = 1,
-["lastUpdated"] = 475357.915,
+["lastUpdated"] = 520662.551,
 ["metrics"] = {
 ["flags"] = {
 ["lockAndLoad"] = {
@@ -356,11 +411,11 @@ NAGDB = {
 },
 },
 ["resourceAfter"] = {
-["min"] = 1436,
+["min"] = 1437,
 ["m2"] = 0,
 ["count"] = 1,
-["max"] = 1436,
-["mean"] = 1436,
+["max"] = 1437,
+["mean"] = 1437,
 },
 ["buffStacks"] = {
 },
@@ -372,11 +427,11 @@ NAGDB = {
 ["mean"] = 0,
 },
 ["resourceBefore"] = {
-["min"] = 1436,
+["min"] = 1437,
 ["m2"] = 0,
 ["count"] = 1,
-["max"] = 1436,
-["mean"] = 1436,
+["max"] = 1437,
+["mean"] = 1437,
 },
 ["tickInterval"] = {
 ["m2"] = 0,
@@ -388,11 +443,11 @@ NAGDB = {
 },
 },
 },
-[6991] = {
-["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+[13552] = {
+["low|bl0|lnl0|st|c1|solo|lockAndLoad:0|bloodlust:0"] = {
 ["meta"] = {
 ["hasBloodlust"] = false,
-["targetCount"] = 0,
+["targetCount"] = 1,
 ["contextFlags"] = {
 ["lockAndLoad"] = false,
 ["bloodlust"] = false,
@@ -400,35 +455,40 @@ NAGDB = {
 ["hasteBand"] = "low",
 ["hastePercent"] = 0,
 ["lastHastePercent"] = 0,
-["targetBand"] = "st",
-["groupType"] = "solo",
 ["hasLockAndLoad"] = false,
-["inCombat"] = false,
+["groupType"] = "solo",
+["targetBand"] = "st",
+["inCombat"] = true,
 },
-["samples"] = 2,
-["lastUpdated"] = 475613.612,
+["samples"] = 1,
+["lastUpdated"] = 520746.984,
 ["metrics"] = {
 ["flags"] = {
 ["lockAndLoad"] = {
 ["min"] = 0,
 ["m2"] = 0,
-["count"] = 2,
+["count"] = 1,
 ["max"] = 0,
 ["mean"] = 0,
 },
 ["bloodlust"] = {
 ["min"] = 0,
 ["m2"] = 0,
-["count"] = 2,
+["count"] = 1,
 ["max"] = 0,
 ["mean"] = 0,
 },
 },
-["cost"] = {
-},
-["generation"] = {
+["resourceAfter"] = {
+["min"] = 1340,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 1340,
+["mean"] = 1340,
 },
 ["buffStacks"] = {
+},
+["cost"] = {
 },
 ["castTime"] = {
 ["m2"] = 0,
@@ -436,29 +496,43 @@ NAGDB = {
 ["mean"] = 0,
 },
 ["resourceBefore"] = {
-["min"] = 1455,
+["min"] = 1340,
 ["m2"] = 0,
-["count"] = 2,
-["max"] = 1455,
-["mean"] = 1455,
+["count"] = 1,
+["max"] = 1340,
+["mean"] = 1340,
 },
 ["tickInterval"] = {
 ["m2"] = 0,
 ["count"] = 0,
 ["mean"] = 0,
 },
-["resourceAfter"] = {
-["min"] = 1455,
-["m2"] = 0,
-["count"] = 2,
-["max"] = 1455,
-["mean"] = 1455,
+["generation"] = {
 },
 },
 },
 },
 },
-["sessionCount"] = 3,
+["patchResetLog"] = {
+{
+["spellCount"] = 0,
+["current"] = "66265",
+["scope"] = "full",
+["timestamp"] = 475348.625,
+},
+{
+["spellCount"] = 0,
+["current"] = "66383",
+["previous"] = "66265",
+["timestamp"] = 520653.02,
+["scope"] = "full",
+},
+},
+["lastPatchResetTime"] = 520653.02,
+["patchSensitiveSpells"] = {
+},
+["lastClientBuild"] = "66383",
+["sessionCount"] = 4,
 },
 ["Dopeseal - Thunderstrike"] = {
 ["patchSensitiveSpells"] = {
@@ -472,11 +546,18 @@ NAGDB = {
 ["scope"] = "full",
 ["timestamp"] = 482853.517,
 },
+{
+["spellCount"] = 0,
+["current"] = "66383",
+["previous"] = "66265",
+["timestamp"] = 520401.752,
+["scope"] = "full",
 },
-["lastPatchResetTime"] = 482853.517,
+},
+["lastPatchResetTime"] = 520401.752,
 ["autoPruneEveryNSessions"] = 10,
 ["lastPatchResetScope"] = "full",
-["lastClientBuild"] = "66265",
+["lastClientBuild"] = "66383",
 ["bucketedData"] = {
 [836] = {
 ["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
@@ -490,13 +571,13 @@ NAGDB = {
 ["hasteBand"] = "low",
 ["hastePercent"] = 0,
 ["lastHastePercent"] = 0,
-["hasLockAndLoad"] = false,
-["groupType"] = "solo",
 ["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
 ["inCombat"] = false,
 },
 ["samples"] = 1,
-["lastUpdated"] = 482862.304,
+["lastUpdated"] = 520424.907,
 ["metrics"] = {
 ["flags"] = {
 ["lockAndLoad"] = {
@@ -514,16 +595,11 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["resourceAfter"] = {
-["min"] = 703,
-["m2"] = 0,
-["count"] = 1,
-["max"] = 703,
-["mean"] = 703,
+["generation"] = {
+},
+["cost"] = {
 },
 ["buffStacks"] = {
-},
-["generation"] = {
 },
 ["castTime"] = {
 ["m2"] = 0,
@@ -531,23 +607,28 @@ NAGDB = {
 ["mean"] = 0,
 },
 ["resourceBefore"] = {
-["min"] = 703,
+["min"] = 755,
 ["m2"] = 0,
 ["count"] = 1,
-["max"] = 703,
-["mean"] = 703,
+["max"] = 755,
+["mean"] = 755,
 },
 ["tickInterval"] = {
 ["m2"] = 0,
 ["count"] = 0,
 ["mean"] = 0,
 },
-["cost"] = {
+["resourceAfter"] = {
+["min"] = 755,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 755,
+["mean"] = 755,
 },
 },
 },
 },
-[20217] = {
+[26573] = {
 ["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
 ["meta"] = {
 ["hasBloodlust"] = false,
@@ -559,13 +640,13 @@ NAGDB = {
 ["hasteBand"] = "low",
 ["hastePercent"] = 0,
 ["lastHastePercent"] = 0,
-["hasLockAndLoad"] = false,
-["groupType"] = "solo",
 ["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
 ["inCombat"] = false,
 },
 ["samples"] = 1,
-["lastUpdated"] = 482886.59,
+["lastUpdated"] = 520568.36,
 ["metrics"] = {
 ["flags"] = {
 ["lockAndLoad"] = {
@@ -583,16 +664,11 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["resourceAfter"] = {
-["min"] = 580,
-["m2"] = 0,
-["count"] = 1,
-["max"] = 580,
-["mean"] = 580,
+["generation"] = {
+},
+["cost"] = {
 },
 ["buffStacks"] = {
-},
-["generation"] = {
 },
 ["castTime"] = {
 ["m2"] = 0,
@@ -600,101 +676,47 @@ NAGDB = {
 ["mean"] = 0,
 },
 ["resourceBefore"] = {
-["min"] = 580,
+["min"] = 635,
 ["m2"] = 0,
 ["count"] = 1,
-["max"] = 580,
-["mean"] = 580,
+["max"] = 635,
+["mean"] = 635,
 },
 ["tickInterval"] = {
 ["m2"] = 0,
 ["count"] = 0,
 ["mean"] = 0,
-},
-["cost"] = {
-},
-},
-},
-},
-[25780] = {
-["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
-["meta"] = {
-["hasBloodlust"] = false,
-["targetCount"] = 0,
-["contextFlags"] = {
-["lockAndLoad"] = false,
-["bloodlust"] = false,
-},
-["hasteBand"] = "low",
-["hastePercent"] = 0,
-["lastHastePercent"] = 0,
-["hasLockAndLoad"] = false,
-["groupType"] = "solo",
-["targetBand"] = "st",
-["inCombat"] = false,
-},
-["samples"] = 1,
-["lastUpdated"] = 482884.277,
-["metrics"] = {
-["flags"] = {
-["lockAndLoad"] = {
-["min"] = 0,
-["m2"] = 0,
-["count"] = 1,
-["max"] = 0,
-["mean"] = 0,
-},
-["bloodlust"] = {
-["min"] = 0,
-["m2"] = 0,
-["count"] = 1,
-["max"] = 0,
-["mean"] = 0,
-},
 },
 ["resourceAfter"] = {
-["min"] = 606,
+["min"] = 635,
 ["m2"] = 0,
 ["count"] = 1,
-["max"] = 606,
-["mean"] = 606,
-},
-["buffStacks"] = {
-},
-["generation"] = {
-},
-["castTime"] = {
-["m2"] = 0,
-["count"] = 0,
-["mean"] = 0,
-},
-["resourceBefore"] = {
-["min"] = 606,
-["m2"] = 0,
-["count"] = 1,
-["max"] = 606,
-["mean"] = 606,
-},
-["tickInterval"] = {
-["m2"] = 0,
-["count"] = 0,
-["mean"] = 0,
-},
-["cost"] = {
+["max"] = 635,
+["mean"] = 635,
 },
 },
 },
 },
 },
-["sessionCount"] = 1,
+["sessionCount"] = 2,
 },
 ["Dopecure - Thunderstrike"] = {
+["patchSensitiveSpells"] = {
+},
 ["accuracyStats"] = {
 },
-["autoPruneEveryNSessions"] = 10,
-["lastClientBuild"] = "66265",
-["lastPatchResetScope"] = "full",
+["patchResetLog"] = {
+{
+["spellCount"] = 0,
+["current"] = "66265",
+["scope"] = "full",
+["timestamp"] = 483133.312,
+},
+},
 ["lastPatchResetTime"] = 483133.312,
+["autoPruneEveryNSessions"] = 10,
+["lastPatchResetScope"] = "full",
+["lastClientBuild"] = "66265",
 ["bucketedData"] = {
 [836] = {
 ["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
@@ -741,7 +763,7 @@ NAGDB = {
 },
 ["buffStacks"] = {
 },
-["cost"] = {
+["generation"] = {
 },
 ["castTime"] = {
 ["m2"] = 0,
@@ -760,21 +782,11 @@ NAGDB = {
 ["count"] = 0,
 ["mean"] = 0,
 },
-["generation"] = {
+["cost"] = {
 },
 },
 },
 },
-},
-["patchResetLog"] = {
-{
-["spellCount"] = 0,
-["current"] = "66265",
-["scope"] = "full",
-["timestamp"] = 483133.312,
-},
-},
-["patchSensitiveSpells"] = {
 },
 ["sessionCount"] = 1,
 },
@@ -841,7 +853,7 @@ NAGDB = {
 },
 ["buffStacks"] = {
 },
-["cost"] = {
+["generation"] = {
 },
 ["castTime"] = {
 ["m2"] = 0,
@@ -860,7 +872,7 @@ NAGDB = {
 ["count"] = 0,
 ["mean"] = 0,
 },
-["generation"] = {
+["cost"] = {
 },
 },
 },
@@ -908,7 +920,7 @@ NAGDB = {
 },
 ["buffStacks"] = {
 },
-["cost"] = {
+["generation"] = {
 },
 ["castTime"] = {
 ["m2"] = 0,
@@ -927,7 +939,7 @@ NAGDB = {
 ["count"] = 0,
 ["mean"] = 0,
 },
-["generation"] = {
+["cost"] = {
 },
 },
 },
@@ -977,7 +989,7 @@ NAGDB = {
 },
 ["buffStacks"] = {
 },
-["cost"] = {
+["generation"] = {
 },
 ["castTime"] = {
 ["m2"] = 0,
@@ -996,7 +1008,7 @@ NAGDB = {
 ["count"] = 0,
 ["mean"] = 0,
 },
-["generation"] = {
+["cost"] = {
 },
 },
 },
@@ -1046,7 +1058,7 @@ NAGDB = {
 },
 ["buffStacks"] = {
 },
-["cost"] = {
+["generation"] = {
 },
 ["castTime"] = {
 ["m2"] = 0,
@@ -1065,7 +1077,7 @@ NAGDB = {
 ["count"] = 0,
 ["mean"] = 0,
 },
-["generation"] = {
+["cost"] = {
 },
 },
 },
@@ -1127,9 +1139,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["cost"] = {
-},
 ["generation"] = {
+},
+["cost"] = {
 },
 ["buffStacks"] = {
 },
@@ -1196,9 +1208,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["cost"] = {
-},
 ["generation"] = {
+},
+["cost"] = {
 },
 ["buffStacks"] = {
 },
@@ -1265,9 +1277,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["cost"] = {
-},
 ["generation"] = {
+},
+["cost"] = {
 },
 ["buffStacks"] = {
 },
@@ -1334,9 +1346,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["cost"] = {
-},
 ["generation"] = {
+},
+["cost"] = {
 },
 ["buffStacks"] = {
 },
@@ -1403,9 +1415,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["cost"] = {
-},
 ["generation"] = {
+},
+["cost"] = {
 },
 ["buffStacks"] = {
 },
@@ -1472,9 +1484,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["cost"] = {
-},
 ["generation"] = {
+},
+["cost"] = {
 },
 ["buffStacks"] = {
 },
@@ -1581,9 +1593,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["generation"] = {
-},
 ["cost"] = {
+},
+["generation"] = {
 },
 ["buffStacks"] = {
 },
@@ -1650,9 +1662,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["generation"] = {
-},
 ["cost"] = {
+},
+["generation"] = {
 },
 ["buffStacks"] = {
 },
@@ -1704,75 +1716,6 @@ NAGDB = {
 ["lastPatchResetScope"] = "full",
 ["sessionCount"] = 1,
 ["bucketedData"] = {
-[6178] = {
-["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
-["meta"] = {
-["hasBloodlust"] = false,
-["targetCount"] = 0,
-["contextFlags"] = {
-["lockAndLoad"] = false,
-["bloodlust"] = false,
-},
-["hasteBand"] = "low",
-["hastePercent"] = 0,
-["lastHastePercent"] = 0,
-["targetBand"] = "st",
-["groupType"] = "solo",
-["hasLockAndLoad"] = false,
-["inCombat"] = false,
-},
-["samples"] = 4,
-["lastUpdated"] = 482450.571,
-["metrics"] = {
-["flags"] = {
-["lockAndLoad"] = {
-["min"] = 0,
-["m2"] = 0,
-["count"] = 4,
-["max"] = 0,
-["mean"] = 0,
-},
-["bloodlust"] = {
-["min"] = 0,
-["m2"] = 0,
-["count"] = 4,
-["max"] = 0,
-["mean"] = 0,
-},
-},
-["generation"] = {
-},
-["cost"] = {
-},
-["buffStacks"] = {
-},
-["castTime"] = {
-["m2"] = 0,
-["count"] = 0,
-["mean"] = 0,
-},
-["resourceBefore"] = {
-["min"] = 24,
-["m2"] = 62,
-["count"] = 4,
-["max"] = 35,
-["mean"] = 29,
-},
-["tickInterval"] = {
-["m2"] = 0,
-["count"] = 0,
-["mean"] = 0,
-},
-["resourceAfter"] = {
-["min"] = 24,
-["m2"] = 62,
-["count"] = 4,
-["max"] = 35,
-["mean"] = 29,
-},
-},
-},
-},
 [6192] = {
 ["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
 ["meta"] = {
@@ -1809,9 +1752,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["generation"] = {
-},
 ["cost"] = {
+},
+["generation"] = {
 },
 ["buffStacks"] = {
 },
@@ -1838,6 +1781,75 @@ NAGDB = {
 ["count"] = 3,
 ["max"] = 42,
 ["mean"] = 32.33333333333334,
+},
+},
+},
+},
+[6178] = {
+["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = false,
+},
+["samples"] = 4,
+["lastUpdated"] = 482450.571,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 4,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 4,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["cost"] = {
+},
+["generation"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 24,
+["m2"] = 62,
+["count"] = 4,
+["max"] = 35,
+["mean"] = 29,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 24,
+["m2"] = 62,
+["count"] = 4,
+["max"] = 35,
+["mean"] = 29,
 },
 },
 },
@@ -1878,9 +1890,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["generation"] = {
-},
 ["cost"] = {
+},
+["generation"] = {
 },
 ["buffStacks"] = {
 },
@@ -1911,7 +1923,7 @@ NAGDB = {
 },
 },
 },
-[8204] = {
+[2458] = {
 ["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
 ["meta"] = {
 ["hasBloodlust"] = false,
@@ -1928,28 +1940,28 @@ NAGDB = {
 ["hasLockAndLoad"] = false,
 ["inCombat"] = false,
 },
-["samples"] = 1,
-["lastUpdated"] = 482446.851,
+["samples"] = 4,
+["lastUpdated"] = 482470.159,
 ["metrics"] = {
 ["flags"] = {
 ["lockAndLoad"] = {
 ["min"] = 0,
 ["m2"] = 0,
-["count"] = 1,
+["count"] = 4,
 ["max"] = 0,
 ["mean"] = 0,
 },
 ["bloodlust"] = {
 ["min"] = 0,
 ["m2"] = 0,
-["count"] = 1,
+["count"] = 4,
 ["max"] = 0,
 ["mean"] = 0,
 },
 },
-["generation"] = {
-},
 ["cost"] = {
+},
+["generation"] = {
 },
 ["buffStacks"] = {
 },
@@ -1959,10 +1971,10 @@ NAGDB = {
 ["mean"] = 0,
 },
 ["resourceBefore"] = {
-["min"] = 12,
-["m2"] = 0,
-["count"] = 1,
-["max"] = 12,
+["min"] = 0,
+["m2"] = 1064,
+["count"] = 4,
+["max"] = 40,
 ["mean"] = 12,
 },
 ["tickInterval"] = {
@@ -1971,11 +1983,78 @@ NAGDB = {
 ["mean"] = 0,
 },
 ["resourceAfter"] = {
-["min"] = 12,
-["m2"] = 0,
-["count"] = 1,
-["max"] = 12,
+["min"] = 0,
+["m2"] = 1064,
+["count"] = 4,
+["max"] = 40,
 ["mean"] = 12,
+},
+},
+},
+["low|bl0|lnl0|st|c1|solo|lockAndLoad:0|bloodlust:0"] = {
+["meta"] = {
+["hasBloodlust"] = false,
+["targetCount"] = 0,
+["contextFlags"] = {
+["lockAndLoad"] = false,
+["bloodlust"] = false,
+},
+["hasteBand"] = "low",
+["hastePercent"] = 0,
+["lastHastePercent"] = 0,
+["targetBand"] = "st",
+["groupType"] = "solo",
+["hasLockAndLoad"] = false,
+["inCombat"] = true,
+},
+["samples"] = 2,
+["lastUpdated"] = 482450.937,
+["metrics"] = {
+["flags"] = {
+["lockAndLoad"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 2,
+["max"] = 0,
+["mean"] = 0,
+},
+["bloodlust"] = {
+["min"] = 0,
+["m2"] = 0,
+["count"] = 2,
+["max"] = 0,
+["mean"] = 0,
+},
+},
+["cost"] = {
+},
+["generation"] = {
+},
+["buffStacks"] = {
+},
+["castTime"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceBefore"] = {
+["min"] = 24,
+["m2"] = 12.5,
+["count"] = 2,
+["max"] = 29,
+["mean"] = 26.5,
+},
+["tickInterval"] = {
+["m2"] = 0,
+["count"] = 0,
+["mean"] = 0,
+},
+["resourceAfter"] = {
+["min"] = 24,
+["m2"] = 12.5,
+["count"] = 2,
+["max"] = 29,
+["mean"] = 26.5,
 },
 },
 },
@@ -2016,9 +2095,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["generation"] = {
-},
 ["cost"] = {
+},
+["generation"] = {
 },
 ["buffStacks"] = {
 },
@@ -2085,9 +2164,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["generation"] = {
-},
 ["cost"] = {
+},
+["generation"] = {
 },
 ["buffStacks"] = {
 },
@@ -2152,9 +2231,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["generation"] = {
-},
 ["cost"] = {
+},
+["generation"] = {
 },
 ["buffStacks"] = {
 },
@@ -2221,9 +2300,9 @@ NAGDB = {
 ["mean"] = 0,
 },
 },
-["generation"] = {
-},
 ["cost"] = {
+},
+["generation"] = {
 },
 ["buffStacks"] = {
 },
@@ -2254,7 +2333,7 @@ NAGDB = {
 },
 },
 },
-[2458] = {
+[8204] = {
 ["low|bl0|lnl0|st|c0|solo|lockAndLoad:0|bloodlust:0"] = {
 ["meta"] = {
 ["hasBloodlust"] = false,
@@ -2271,28 +2350,28 @@ NAGDB = {
 ["hasLockAndLoad"] = false,
 ["inCombat"] = false,
 },
-["samples"] = 4,
-["lastUpdated"] = 482470.159,
+["samples"] = 1,
+["lastUpdated"] = 482446.851,
 ["metrics"] = {
 ["flags"] = {
 ["lockAndLoad"] = {
 ["min"] = 0,
 ["m2"] = 0,
-["count"] = 4,
+["count"] = 1,
 ["max"] = 0,
 ["mean"] = 0,
 },
 ["bloodlust"] = {
 ["min"] = 0,
 ["m2"] = 0,
-["count"] = 4,
+["count"] = 1,
 ["max"] = 0,
 ["mean"] = 0,
 },
 },
-["generation"] = {
-},
 ["cost"] = {
+},
+["generation"] = {
 },
 ["buffStacks"] = {
 },
@@ -2302,10 +2381,10 @@ NAGDB = {
 ["mean"] = 0,
 },
 ["resourceBefore"] = {
-["min"] = 0,
-["m2"] = 1064,
-["count"] = 4,
-["max"] = 40,
+["min"] = 12,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 12,
 ["mean"] = 12,
 },
 ["tickInterval"] = {
@@ -2314,78 +2393,11 @@ NAGDB = {
 ["mean"] = 0,
 },
 ["resourceAfter"] = {
-["min"] = 0,
-["m2"] = 1064,
-["count"] = 4,
-["max"] = 40,
+["min"] = 12,
+["m2"] = 0,
+["count"] = 1,
+["max"] = 12,
 ["mean"] = 12,
-},
-},
-},
-["low|bl0|lnl0|st|c1|solo|lockAndLoad:0|bloodlust:0"] = {
-["meta"] = {
-["hasBloodlust"] = false,
-["targetCount"] = 0,
-["contextFlags"] = {
-["lockAndLoad"] = false,
-["bloodlust"] = false,
-},
-["hasteBand"] = "low",
-["hastePercent"] = 0,
-["lastHastePercent"] = 0,
-["targetBand"] = "st",
-["groupType"] = "solo",
-["hasLockAndLoad"] = false,
-["inCombat"] = true,
-},
-["samples"] = 2,
-["lastUpdated"] = 482450.937,
-["metrics"] = {
-["flags"] = {
-["lockAndLoad"] = {
-["min"] = 0,
-["m2"] = 0,
-["count"] = 2,
-["max"] = 0,
-["mean"] = 0,
-},
-["bloodlust"] = {
-["min"] = 0,
-["m2"] = 0,
-["count"] = 2,
-["max"] = 0,
-["mean"] = 0,
-},
-},
-["generation"] = {
-},
-["cost"] = {
-},
-["buffStacks"] = {
-},
-["castTime"] = {
-["m2"] = 0,
-["count"] = 0,
-["mean"] = 0,
-},
-["resourceBefore"] = {
-["min"] = 24,
-["m2"] = 12.5,
-["count"] = 2,
-["max"] = 29,
-["mean"] = 26.5,
-},
-["tickInterval"] = {
-["m2"] = 0,
-["count"] = 0,
-["mean"] = 0,
-},
-["resourceAfter"] = {
-["min"] = 24,
-["m2"] = 12.5,
-["count"] = 2,
-["max"] = 29,
-["mean"] = 26.5,
 },
 },
 },
@@ -2400,11 +2412,11 @@ NAGDB = {
 ["Handrmandr - Thunderstrike"] = {
 ["localDamageCritTopN"] = {
 {
-["value"] = 131,
-["playerKey"] = "Handrmandr-Thunderstrike",
-["playerName"] = "Handrmandr",
-["className"] = "HUNTER",
 ["scope"] = "local",
+["playerKey"] = "Handrmandr-Thunderstrike",
+["value"] = 131,
+["className"] = "HUNTER",
+["playerName"] = "Handrmandr",
 ["timestamp"] = 1773431057,
 ["context"] = {
 ["targetGUID"] = "Creature-0-6423-0-21015-1151-000034681F",
@@ -2423,11 +2435,11 @@ NAGDB = {
 ["Battitude - Thunderstrike"] = {
 ["localDamageCritTopN"] = {
 {
-["scope"] = "local",
-["playerKey"] = "Battitude-Thunderstrike",
-["value"] = 20,
-["className"] = "ROGUE",
 ["playerName"] = "Battitude",
+["playerKey"] = "Battitude-Thunderstrike",
+["scope"] = "local",
+["className"] = "ROGUE",
+["value"] = 20,
 ["timestamp"] = 1773438240,
 ["context"] = {
 ["targetGUID"] = "Creature-0-6423-0-21014-1501-000034832B",
@@ -2442,11 +2454,11 @@ NAGDB = {
 ["playerGUID"] = "Player-6409-050753DA",
 },
 {
-["scope"] = "local",
-["playerKey"] = "Battitude-Thunderstrike",
-["value"] = 19,
-["className"] = "ROGUE",
 ["playerName"] = "Battitude",
+["playerKey"] = "Battitude-Thunderstrike",
+["scope"] = "local",
+["className"] = "ROGUE",
+["value"] = 19,
 ["timestamp"] = 1773438236,
 ["context"] = {
 ["targetGUID"] = "Creature-0-6423-0-21014-1501-000034832B",
@@ -2461,11 +2473,11 @@ NAGDB = {
 ["playerGUID"] = "Player-6409-050753DA",
 },
 {
-["scope"] = "local",
-["playerKey"] = "Battitude-Thunderstrike",
-["value"] = 17,
-["className"] = "ROGUE",
 ["playerName"] = "Battitude",
+["playerKey"] = "Battitude-Thunderstrike",
+["scope"] = "local",
+["className"] = "ROGUE",
+["value"] = 17,
 ["timestamp"] = 1773438300,
 ["context"] = {
 ["targetGUID"] = "Creature-0-6423-0-21014-1502-0000348339",
@@ -2480,11 +2492,11 @@ NAGDB = {
 ["playerGUID"] = "Player-6409-050753DA",
 },
 {
-["scope"] = "local",
-["playerKey"] = "Battitude-Thunderstrike",
-["value"] = 12,
-["className"] = "ROGUE",
 ["playerName"] = "Battitude",
+["playerKey"] = "Battitude-Thunderstrike",
+["scope"] = "local",
+["className"] = "ROGUE",
+["value"] = 12,
 ["timestamp"] = 1773438299,
 ["context"] = {
 ["targetGUID"] = "Creature-0-6423-0-21014-1502-0000348339",
@@ -2503,7 +2515,7 @@ NAGDB = {
 ["Vermins - Thunderstrike"] = {
 ["localDamageCritTopN"] = {
 {
-["value"] = 149,
+["scope"] = "local",
 ["context"] = {
 ["targetLevel"] = 9,
 ["playerLevel"] = 31,
@@ -2514,15 +2526,15 @@ NAGDB = {
 ["eventType"] = "SWING_DAMAGE",
 ["spellName"] = "Melee",
 },
-["playerName"] = "Vermins",
+["value"] = 149,
 ["className"] = "WARRIOR",
-["scope"] = "local",
+["playerName"] = "Vermins",
 ["timestamp"] = 1773438013,
 ["playerKey"] = "Vermins-Thunderstrike",
 ["playerGUID"] = "Player-6409-04889C3C",
 },
 {
-["value"] = 75,
+["scope"] = "local",
 ["context"] = {
 ["targetLevel"] = 9,
 ["playerLevel"] = 31,
@@ -2533,15 +2545,15 @@ NAGDB = {
 ["eventType"] = "SWING_DAMAGE",
 ["spellName"] = "Melee",
 },
-["playerName"] = "Vermins",
+["value"] = 75,
 ["className"] = "WARRIOR",
-["scope"] = "local",
+["playerName"] = "Vermins",
 ["timestamp"] = 1773438046,
 ["playerKey"] = "Vermins-Thunderstrike",
 ["playerGUID"] = "Player-6409-04889C3C",
 },
 {
-["value"] = 68,
+["scope"] = "local",
 ["context"] = {
 ["targetLevel"] = 9,
 ["playerLevel"] = 31,
@@ -2552,9 +2564,9 @@ NAGDB = {
 ["eventType"] = "SWING_DAMAGE",
 ["spellName"] = "Melee",
 },
-["playerName"] = "Vermins",
+["value"] = 68,
 ["className"] = "WARRIOR",
-["scope"] = "local",
+["playerName"] = "Vermins",
 ["timestamp"] = 1773438009,
 ["playerKey"] = "Vermins-Thunderstrike",
 ["playerGUID"] = "Player-6409-04889C3C",
@@ -2585,55 +2597,55 @@ NAGDB = {
 ["DisplayManager"] = {
 ["char"] = {
 ["Handrmandr - Thunderstrike"] = {
+["tbcHunterRoundMaskDefaultApplied"] = true,
 ["frameSettings"] = {
 ["point"] = "TOP",
-["offsetY"] = -328.8097229003906,
 ["offsetX"] = -3.888834238052368,
 ["relativePoint"] = "TOP",
+["offsetY"] = -328.8097229003906,
 },
 ["groupSettings"] = {
 ["sequence"] = {
-["offsetY"] = 0,
 ["offsetX"] = 300,
 ["iconFlowDirection"] = "E",
+["offsetY"] = 0,
 },
 ["interrupts"] = {
 ["iconFlowDirection"] = "E",
 ["offsetY"] = -100,
 },
 ["cooldowns"] = {
-["offsetY"] = 100,
 ["offsetX"] = 0,
 ["iconFlowDirection"] = "E",
+["offsetY"] = 100,
 },
 ["defensives"] = {
-["offsetY"] = 0,
 ["offsetX"] = -200,
 ["iconFlowDirection"] = "E",
+["offsetY"] = 0,
 },
 ["aoe"] = {
-["offsetY"] = 0,
 ["offsetX"] = 200,
 ["iconFlowDirection"] = "E",
+["offsetY"] = 0,
 },
 },
-["tbcHunterRoundMaskDefaultApplied"] = true,
 },
 ["Dopeseal - Thunderstrike"] = {
 ["frameSettings"] = {
-["point"] = "TOP",
-["offsetY"] = -279.9209899902344,
 ["offsetX"] = 5.634963035583496,
+["offsetY"] = -279.9209899902344,
+["point"] = "TOP",
 ["relativePoint"] = "TOP",
 },
 ["tbcHunterRoundMaskDefaultApplied"] = true,
 },
 ["Dopecure - Thunderstrike"] = {
-["tbcHunterRoundMaskDefaultApplied"] = true,
 ["frameSettings"] = {
 ["offsetX"] = 4.365195274353027,
 ["offsetY"] = 207.4601593017578,
 },
+["tbcHunterRoundMaskDefaultApplied"] = true,
 },
 ["Battitude - Thunderstrike"] = {
 ["frameSettings"] = {
@@ -2675,8 +2687,8 @@ NAGDB = {
 ["PaladinRetTwistBar"] = {
 ["class"] = {
 ["PALADIN"] = {
-["_migratedDown5"] = true,
 ["y"] = 28,
+["_migratedDown5"] = true,
 ["_migratedDivBoundaryDefaultOffV1"] = true,
 ["_migratedJudgeSocLayoutDefaultV2"] = true,
 },
@@ -2721,7 +2733,7 @@ NAGDB = {
 },
 },
 ["global"] = {
-["lastSentSpam"] = 483146.747,
+["lastSentSpam"] = 520666.457,
 ["keys"] = {
 ["keysMigrated"] = true,
 ["classic"] = {
@@ -2771,13 +2783,24 @@ NAGLeaderboardDB = {
 ["LeaderboardService"] = {
 ["char"] = {
 ["Handrmandr - Thunderstrike"] = {
+["metricSnapshotState"] = {
+["byMetricVersion"] = {
+["damage_crit_topX|HUNTER"] = 2,
+},
+["byMetricHash"] = {
+["damage_crit_topX|HUNTER"] = "29af7b64",
+},
+["byMetricAppliedAt"] = {
+["damage_crit_topX|HUNTER"] = 475408.962,
+},
+},
 ["metricMeta"] = {
 ["damage_crit_topX"] = {
-["lastHash"] = "0e3c1f40",
-["lastRecordAt"] = 475408.962,
 ["validRecords"] = 2,
-["totalRecords"] = 2,
+["lastRecordAt"] = 475408.962,
 ["invalidRecords"] = 0,
+["totalRecords"] = 2,
+["lastHash"] = "0e3c1f40",
 },
 },
 ["bucketSchemaVersion"] = 1,
@@ -2802,7 +2825,7 @@ NAGLeaderboardDB = {
 ["payloadHash"] = "4395aa49",
 ["metricId"] = "damage_crit_topX",
 ["buildTag"] = "tbc",
-["playerLevel"] = 36,
+["playerName"] = "Handrmandr-Thunderstrike",
 ["serverName"] = "Thunderstrike",
 ["chainHash"] = "d9a10db1",
 ["integrityState"] = "valid",
@@ -2812,7 +2835,7 @@ NAGLeaderboardDB = {
 ["guildName"] = "",
 ["identityKey"] = "guid:Player-6409-04889BA2",
 ["timestamp"] = 470759.58,
-["playerName"] = "Handrmandr-Thunderstrike",
+["playerLevel"] = 36,
 ["playerGUID"] = "Player-6409-04889BA2",
 },
 {
@@ -2834,7 +2857,7 @@ NAGLeaderboardDB = {
 ["payloadHash"] = "30cf9740",
 ["metricId"] = "damage_crit_topX",
 ["buildTag"] = "tbc",
-["playerName"] = "Handrmandr-Thunderstrike",
+["playerLevel"] = 36,
 ["serverName"] = "Thunderstrike",
 ["chainHash"] = "0e3c1f40",
 ["integrityState"] = "valid",
@@ -2844,23 +2867,12 @@ NAGLeaderboardDB = {
 ["guildName"] = "",
 ["identityKey"] = "guid:Player-6409-04889BA2",
 ["timestamp"] = 475408.962,
-["playerLevel"] = 36,
+["playerName"] = "Handrmandr-Thunderstrike",
 ["playerGUID"] = "Player-6409-04889BA2",
 },
 },
 },
 ["displayMigrationVersion"] = 1,
-["metricSnapshotState"] = {
-["byMetricVersion"] = {
-["damage_crit_topX|HUNTER"] = 2,
-},
-["byMetricHash"] = {
-["damage_crit_topX|HUNTER"] = "29af7b64",
-},
-["byMetricAppliedAt"] = {
-["damage_crit_topX|HUNTER"] = 475408.962,
-},
-},
 ["recordsByScopeClassMetric"] = {
 ["local"] = {
 ["HUNTER"] = {
@@ -2883,8 +2895,8 @@ NAGLeaderboardDB = {
 },
 ["payloadHash"] = "30cf9740",
 ["metricId"] = "damage_crit_topX",
-["playerLevel"] = 36,
 ["playerName"] = "Handrmandr-Thunderstrike",
+["playerLevel"] = 36,
 ["timestamp"] = 475408.962,
 ["identityKey"] = "guid:Player-6409-04889BA2",
 ["integrityState"] = "valid",
@@ -2913,11 +2925,11 @@ NAGLeaderboardDB = {
 ["Battitude - Thunderstrike"] = {
 ["metricMeta"] = {
 ["damage_crit_topX"] = {
-["validRecords"] = 2,
-["lastRecordAt"] = 482591.172,
 ["invalidRecords"] = 0,
-["totalRecords"] = 2,
+["lastRecordAt"] = 482591.172,
 ["lastHash"] = "78b03b64",
+["totalRecords"] = 2,
+["validRecords"] = 2,
 },
 },
 ["metricSnapshotState"] = {
@@ -2952,7 +2964,7 @@ NAGLeaderboardDB = {
 ["payloadHash"] = "8226e3d6",
 ["metricId"] = "damage_crit_topX",
 ["buildTag"] = "tbc",
-["playerName"] = "Battitude-Thunderstrike",
+["playerLevel"] = 5,
 ["serverName"] = "Thunderstrike",
 ["chainHash"] = "1bcad148",
 ["integrityState"] = "valid",
@@ -2962,7 +2974,7 @@ NAGLeaderboardDB = {
 ["guildName"] = "",
 ["identityKey"] = "guid:Player-6409-050753DA",
 ["timestamp"] = 482587.373,
-["playerLevel"] = 5,
+["playerName"] = "Battitude-Thunderstrike",
 ["playerGUID"] = "Player-6409-050753DA",
 },
 {
@@ -2984,7 +2996,7 @@ NAGLeaderboardDB = {
 ["payloadHash"] = "60bb2536",
 ["metricId"] = "damage_crit_topX",
 ["buildTag"] = "tbc",
-["playerName"] = "Battitude-Thunderstrike",
+["playerLevel"] = 5,
 ["serverName"] = "Thunderstrike",
 ["chainHash"] = "78b03b64",
 ["integrityState"] = "valid",
@@ -2994,7 +3006,7 @@ NAGLeaderboardDB = {
 ["guildName"] = "",
 ["identityKey"] = "guid:Player-6409-050753DA",
 ["timestamp"] = 482591.172,
-["playerLevel"] = 5,
+["playerName"] = "Battitude-Thunderstrike",
 ["playerGUID"] = "Player-6409-050753DA",
 },
 },
@@ -3023,8 +3035,8 @@ NAGLeaderboardDB = {
 },
 ["payloadHash"] = "60bb2536",
 ["metricId"] = "damage_crit_topX",
-["playerLevel"] = 5,
 ["playerName"] = "Battitude-Thunderstrike",
+["playerLevel"] = 5,
 ["timestamp"] = 482591.172,
 ["identityKey"] = "guid:Player-6409-050753DA",
 ["integrityState"] = "valid",
@@ -3079,8 +3091,8 @@ NAGLeaderboardDB = {
 },
 ["payloadHash"] = "c8115e83",
 ["metricId"] = "damage_crit_topX",
-["playerLevel"] = 35,
 ["playerName"] = "Moolatz-Thunderstrike",
+["playerLevel"] = 35,
 ["timestamp"] = 457952.258,
 ["identityKey"] = "guid:Player-6409-04889C0E",
 ["integrityState"] = "valid",
@@ -3111,8 +3123,8 @@ NAGLeaderboardDB = {
 },
 ["payloadHash"] = "1685607d",
 ["metricId"] = "damage_crit_topX",
-["playerLevel"] = 35,
 ["playerName"] = "Moolatz-Thunderstrike",
+["playerLevel"] = 35,
 ["timestamp"] = 457952.679,
 ["identityKey"] = "guid:Player-6409-04889C0E",
 ["integrityState"] = "valid",
@@ -3143,8 +3155,8 @@ NAGLeaderboardDB = {
 },
 ["payloadHash"] = "e7d49390",
 ["metricId"] = "damage_crit_topX",
-["playerLevel"] = 35,
 ["playerName"] = "Moolatz-Thunderstrike",
+["playerLevel"] = 35,
 ["timestamp"] = 459402.139,
 ["identityKey"] = "guid:Player-6409-04889C0E",
 ["integrityState"] = "valid",
@@ -3176,7 +3188,7 @@ NAGLeaderboardDB = {
 ["payloadHash"] = "cce5016d",
 ["metricId"] = "damage_crit_topX",
 ["buildTag"] = "tbc",
-["playerName"] = "Moolatz-Thunderstrike",
+["playerLevel"] = 36,
 ["serverName"] = "Thunderstrike",
 ["chainHash"] = "f08c83e2",
 ["integrityState"] = "valid",
@@ -3186,7 +3198,7 @@ NAGLeaderboardDB = {
 ["guildName"] = "Maximum Effort",
 ["identityKey"] = "guid:Player-6409-04889C0E",
 ["timestamp"] = 475041.004,
-["playerLevel"] = 36,
+["playerName"] = "Moolatz-Thunderstrike",
 ["playerGUID"] = "Player-6409-04889C0E",
 },
 },
@@ -3194,11 +3206,11 @@ NAGLeaderboardDB = {
 ["displayMigrationVersion"] = 1,
 ["metricMeta"] = {
 ["damage_crit_topX"] = {
-["lastHash"] = "f08c83e2",
-["totalRecords"] = 4,
 ["validRecords"] = 4,
-["lastRecordAt"] = 475041.004,
+["totalRecords"] = 4,
 ["invalidRecords"] = 0,
+["lastRecordAt"] = 475041.004,
+["lastHash"] = "f08c83e2",
 },
 },
 ["recordsByScopeClassMetric"] = {
@@ -3710,7 +3722,7 @@ NAGLeaderboardDB = {
 ["payloadHash"] = "e7d49390",
 ["metricId"] = "damage_crit_topX",
 ["buildTag"] = "tbc",
-["playerLevel"] = 35,
+["playerName"] = "Moolatz-Thunderstrike",
 ["serverName"] = "Thunderstrike",
 ["chainHash"] = "94dc725c",
 ["integrityState"] = "valid",
@@ -3720,7 +3732,7 @@ NAGLeaderboardDB = {
 ["guildName"] = "Maximum Effort",
 ["identityKey"] = "guid:Player-6409-04889C0E",
 ["timestamp"] = 459402.139,
-["playerName"] = "Moolatz-Thunderstrike",
+["playerLevel"] = 35,
 ["playerGUID"] = "Player-6409-04889C0E",
 },
 },
@@ -3735,11 +3747,11 @@ NAGLeaderboardDB = {
 ["Vermins - Thunderstrike"] = {
 ["metricMeta"] = {
 ["damage_crit_topX"] = {
-["lastHash"] = "4e0fb1bd",
-["totalRecords"] = 2,
 ["validRecords"] = 2,
-["lastRecordAt"] = 482364.32,
+["totalRecords"] = 2,
 ["invalidRecords"] = 0,
+["lastRecordAt"] = 482364.32,
+["lastHash"] = "4e0fb1bd",
 },
 },
 ["metricSnapshotState"] = {
@@ -3773,8 +3785,8 @@ NAGLeaderboardDB = {
 },
 ["payloadHash"] = "c6d1c7b7",
 ["metricId"] = "damage_crit_topX",
-["playerLevel"] = 31,
 ["playerName"] = "Vermins-Thunderstrike",
+["playerLevel"] = 31,
 ["timestamp"] = 482360.851,
 ["identityKey"] = "guid:Player-6409-04889C3C",
 ["integrityState"] = "valid",
@@ -3805,8 +3817,8 @@ NAGLeaderboardDB = {
 },
 ["payloadHash"] = "84634644",
 ["metricId"] = "damage_crit_topX",
-["playerLevel"] = 31,
 ["playerName"] = "Vermins-Thunderstrike",
+["playerLevel"] = 31,
 ["timestamp"] = 482364.32,
 ["identityKey"] = "guid:Player-6409-04889C3C",
 ["integrityState"] = "valid",
@@ -3846,7 +3858,7 @@ NAGLeaderboardDB = {
 ["payloadHash"] = "84634644",
 ["metricId"] = "damage_crit_topX",
 ["buildTag"] = "tbc",
-["playerLevel"] = 31,
+["playerName"] = "Vermins-Thunderstrike",
 ["serverName"] = "Thunderstrike",
 ["chainHash"] = "4e0fb1bd",
 ["integrityState"] = "valid",
@@ -3856,7 +3868,7 @@ NAGLeaderboardDB = {
 ["guildName"] = "Maximum Effort",
 ["identityKey"] = "guid:Player-6409-04889C3C",
 ["timestamp"] = 482364.32,
-["playerName"] = "Vermins-Thunderstrike",
+["playerLevel"] = 31,
 ["playerGUID"] = "Player-6409-04889C3C",
 },
 },
@@ -3870,21 +3882,21 @@ NAGLeaderboardDB = {
 ["char"] = {
 ["Handrmandr - Thunderstrike"] = {
 ["syncStats"] = {
-["dropped"] = 48,
+["dropped"] = 50,
 ["droppedByType"] = {
-["SYNC_REQUEST"] = 13,
+["SYNC_REQUEST"] = 14,
 ["TOPX_SNAPSHOT"] = 10,
-["METRIC_DIGEST"] = 23,
+["METRIC_DIGEST"] = 24,
 ["BEST_UPDATE"] = 2,
 },
 },
 },
 ["Dopeseal - Thunderstrike"] = {
 ["syncStats"] = {
-["dropped"] = 2,
 ["droppedByType"] = {
-["SYNC_REQUEST"] = 2,
+["SYNC_REQUEST"] = 3,
 },
+["dropped"] = 3,
 },
 },
 ["Dopecure - Thunderstrike"] = {

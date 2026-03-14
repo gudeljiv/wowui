@@ -314,3 +314,4 @@ TipTacItemRef: enabled
 TipTacOptions: enabled
 TipTacTalents: enabled
 TotemTimers: enabled
+NAG: disabled

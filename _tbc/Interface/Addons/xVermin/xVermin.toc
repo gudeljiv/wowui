@@ -104,6 +104,7 @@ Helpers/ImmuneData.lua
 Helpers/Interrupt.lua
 Helpers/LootHelper.lua
 Helpers/MaxStackSize.lua
+Helpers/PetTargetMarker.lua
 Helpers/QuestRewardMostValueItem.lua
 # Helpers/SkinBuffs.lua
 Helpers/Threat.lua
