@@ -46,6 +46,13 @@ VER 3 010000000100001D "op" "134400"
 /cast Overpower
 /cast Bloodrage
 END
+VER 3 0100000001000027 "op2" "134400"
+#showtooltip [mod:shift] Defensive Stance; Overpower
+/startattack
+/cast [mod:shift, nostance:2] Defensive Stance
+/cast [nomod, nostance:1] Battle Stance
+/cast [nomod] Overpower
+END
 VER 3 0100000001000021 "rend" "134400"
 #showtooltip
 /startattack
@@ -72,7 +79,7 @@ VER 3 010000000100001E "sunder" "134400"
 END
 VER 3 0100000001000026 "swap" "134400"
 /stopcasting
-/equipslot [noequipped:Shield] 17 Ruga's Bulwark
+/equipslot [noequipped:Shield] 17 Clink Shield
 /equipslot 16 Wingblade
 /equipslot 17 Slatemetal Cutlass
 /equipslot [equipped:Shield] 17 Curved Dagger of Fiery Wrath

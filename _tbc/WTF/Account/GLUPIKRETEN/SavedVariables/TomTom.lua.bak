@@ -64,9 +64,9 @@ TomTomDB = {
 ["Turbonac - Celebras"] = "Default",
 ["Dopetrap - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
-["Doperage - Thunderstrike"] = "Default",
 ["Mxys - Golemagg"] = "Default",
 ["Mq - Celebras"] = "Default",
+["Doperage - Thunderstrike"] = "Default",
 ["Pitchwise - Dreadnaught"] = "Default",
 ["Vermins - Stitches"] = "Default",
 ["Grgur - Golemagg"] = "Default",
@@ -191,9 +191,9 @@ TomTomWaypointsM = {
 ["Turbonac - Celebras"] = "Turbonac - Celebras",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
 ["Nitwit - Dreadnaught"] = "Nitwit - Dreadnaught",
-["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
 ["Mxys - Golemagg"] = "Mxys - Golemagg",
 ["Mq - Celebras"] = "Mq - Celebras",
+["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
 ["Pitchwise - Dreadnaught"] = "Pitchwise - Dreadnaught",
 ["Vermins - Stitches"] = "Vermins - Stitches",
 ["Grgur - Golemagg"] = "Grgur - Golemagg",
@@ -345,11 +345,11 @@ TomTomWaypointsM = {
 },
 ["Nitwit - Dreadnaught"] = {
 },
-["Doperage - Thunderstrike"] = {
-},
 ["Mxys - Golemagg"] = {
 },
 ["Mq - Celebras"] = {
+},
+["Doperage - Thunderstrike"] = {
 },
 ["Pitchwise - Dreadnaught"] = {
 },

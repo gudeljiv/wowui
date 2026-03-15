@@ -79,8 +79,8 @@ data = {
         ],
         "secondary": [
             {"name": "shield block", "type": "GetSpellTexture", "id": 2565, "key": "5", "modifier": "lshift"},
-            {"name": "last stand", "type": "GetSpellTexture", "id": 12975, "key": "t", "modifier": "lshift"},
-            {"name": "shield wall", "type": "GetSpellTexture", "id": 871, "key": "e", "modifier": "lalt"},
+            {"name": "last stand", "type": "GetSpellTexture", "id": 12975, "key": "e", "modifier": "lshift"},
+            {"name": "shield wall", "type": "GetSpellTexture", "id": 871, "key": "t", "modifier": "lshift"},
             {"name": "bloodrage", "type": "GetSpellTexture", "id": 2687, "key": "f", "modifier": "lalt"},
             {"name": "heroic strike", "type": "GetSpellTexture", "id": 78, "key": "2"},
             {"name": "cleave", "type": "GetSpellTexture", "id": 845, "key": "3"},

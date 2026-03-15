@@ -35,10 +35,10 @@ Postal3DB = {
 ["Dopede - Stitches"] = "Dopede - Stitches",
 ["Handrmandr - Thunderstrike"] = "Handrmandr - Thunderstrike",
 ["Dopetrap - Lone Wolf"] = "Dopetrap - Lone Wolf",
-["Turbonac - Celebras"] = "Turbonac - Celebras",
 ["Vermin - Celebras"] = "Vermin - Celebras",
-["Doperage - Living Flame"] = "Doperage - Living Flame",
 ["Pitchwise - Thunderstrike"] = "Pitchwise - Thunderstrike",
+["Doperage - Living Flame"] = "Doperage - Living Flame",
+["Turbonac - Celebras"] = "Turbonac - Celebras",
 ["Battlenac - Zandalar Tribe"] = "Battlenac - Zandalar Tribe",
 ["Dopecoil - Thunderstrike"] = "Dopecoil - Thunderstrike",
 ["Dopebolt - Living Flame"] = "Dopebolt - Living Flame",
@@ -101,7 +101,7 @@ Postal3DB = {
 "Turbonac|Celebras|Alliance|7|WARLOCK",
 "Vbank|Celebras|Alliance|1|WARRIOR",
 "Vermins|Stitches|Horde|27|WARRIOR",
-"Vermins|Thunderstrike|Horde|31|WARRIOR",
+"Vermins|Thunderstrike|Horde|32|WARRIOR",
 "Vermin|Celebras|Alliance|23|WARRIOR",
 "Vermin|Zandalar Tribe|Alliance|7|WARRIOR",
 },
@@ -172,8 +172,10 @@ Postal3DB = {
 },
 },
 ["Dopecure - Thunderstrike"] = {
+["OpenSpeed"] = 0,
 ["BlackBook"] = {
 ["recent"] = {
+"Vermins|Thunderstrike|Horde",
 "Handrmandr|Thunderstrike|Horde",
 "Dopeseal|Thunderstrike|Horde",
 "Moolatz|Thunderstrike|Horde",
@@ -184,7 +186,6 @@ Postal3DB = {
 "Dopecoil|Thunderstrike|Horde",
 },
 },
-["OpenSpeed"] = 0,
 },
 ["Dopedot - Lone Wolf"] = {
 },
@@ -321,8 +322,6 @@ Postal3DB = {
 },
 ["Dopetrap - Lone Wolf"] = {
 },
-["Turbonac - Celebras"] = {
-},
 ["Vermin - Celebras"] = {
 ["BlackBook"] = {
 ["recent"] = {
@@ -332,8 +331,6 @@ Postal3DB = {
 },
 },
 },
-["Doperage - Living Flame"] = {
-},
 ["Pitchwise - Thunderstrike"] = {
 ["BlackBook"] = {
 ["recent"] = {
@@ -342,6 +339,10 @@ Postal3DB = {
 },
 },
 ["OpenSpeed"] = 0,
+},
+["Doperage - Living Flame"] = {
+},
+["Turbonac - Celebras"] = {
 },
 ["Battlenac - Zandalar Tribe"] = {
 },
@@ -410,6 +411,11 @@ Postal3DB = {
 },
 },
 ["Vermins - Thunderstrike"] = {
+["BlackBook"] = {
+["recent"] = {
+"Dopecure|Thunderstrike|Horde",
+},
+},
 ["OpenSpeed"] = 0,
 },
 },

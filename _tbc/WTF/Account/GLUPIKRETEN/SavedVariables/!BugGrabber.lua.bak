@@ -1,22 +1,8 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 14557,
+["session"] = 14561,
 ["errors"] = {
-{
-["message"] = "...nterface/AddOns/Dejunk/src/ui/widgets/item-frame.lua:3: attempt to index field 'Libs' (a nil value)",
-["time"] = "2026/01/14 19:06:56",
-["locals"] = "",
-["stack"] = "",
-["session"] = 13285,
-["counter"] = 1,
-},
-{
-["message"] = "Interface/AddOns/NovaWorldBuffs/Modules/Data.lua:1 Interface/AddOns/NovaWorldBuffs/Modules/Data.lua:369: attempt to concatenate field 'i' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
-["session"] = 13285,
-["counter"] = 1,
-},
 {
 ["message"] = "Interface/AddOns/NovaWorldBuffs/Modules/BuffsWindow.lua:1 ...erface/AddOns/NovaWorldBuffs/Modules/BuffsWindow.lua:13: attempt to call method 'addBackdrop' (a nil value)",
 ["time"] = "2026/01/14 19:06:59",
@@ -3906,6 +3892,22 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/TacoTip/options.lua]:843: in function '?'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:227: in function 'ParseText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:252: in function 'SendText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:370: in function <...s/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua:366>\n",
 ["session"] = 14557,
 ["counter"] = 2,
+},
+{
+["message"] = "...ce/AddOns/Broker_Everything/modules/ammo_classic.lua:84: attempt to compare number with boolean",
+["time"] = 1773594910,
+["locals"] = "tt = Frame {\n parent = <table> {\n }\n key = \"AmmoTT\"\n scrollChild = Frame {\n }\n labelProvider = <table> {\n }\n height = 19.968254\n lines = <table> {\n }\n layoutType = \"TooltipDefaultLayout\"\n scripts = <table> {\n }\n headerFont = GameTooltipHeaderText {\n }\n mode = <table> {\n }\n columns = <table> {\n }\n scrollFrame = ScrollFrame {\n }\n NineSlice = Frame {\n }\n elapsed = 0\n colspans = <table> {\n }\n width = 9\n regularFont = GameTooltipText {\n }\n}\nupdate = nil\n(*temporary) = false\n(*temporary) = Frame {\n parent = <table> {\n }\n key = \"AmmoTT\"\n scrollChild = Frame {\n }\n labelProvider = <table> {\n }\n height = 19.968254\n lines = <table> {\n }\n layoutType = \"TooltipDefaultLayout\"\n scripts = <table> {\n }\n headerFont = GameTooltipHeaderText {\n }\n mode = <table> {\n }\n columns = <table> {\n }\n scrollFrame = ScrollFrame {\n }\n NineSlice = Frame {\n }\n elapsed = 0\n colspans = <table> {\n }\n width = 9\n regularFont = GameTooltipText {\n }\n}\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = 2\n(*temporary) = 1\n(*temporary) = Frame {\n Center = Texture {\n }\n BottomRightCorner = Texture {\n }\n BottomEdge = Texture {\n }\n backdropInfo = <table> {\n }\n RightEdge = Texture {\n }\n BottomLeftCorner = Texture {\n }\n TopRightCorner = Texture {\n }\n TopLeftCorner = Texture {\n }\n TopEdge = Texture {\n }\n cells = <table> {\n }\n height = 1\n LeftEdge = Texture {\n }\n}\n(*temporary) = <table> {\n a = 1\n b = 0\n g = 0.819608\n r = 1\n}\n(*temporary) = 2\n(*temporary) = 1\n(*temporary) = 1\n(*temporary) = 0.819608\n(*temporary) = 0\n(*temporary) = 1\n(*temporary) = \"attempt to compare number with boolean\"\nttName = \"AmmoTT\"\nammo = <table> {\n itemInfo = <table> {\n }\n sum = false\n inUse = 0\n}\nthrown = <table> {\n itemInfo = <table> {\n }\n sum = false\n inUse = 0\n}\nL = <table> {\n}\nns = <table> {\n}\nname = \"Ammo\"\n",
+["stack"] = "[Interface/AddOns/Broker_Everything/modules/ammo_classic.lua]:84: in function <...ce/AddOns/Broker_Everything/modules/ammo_classic.lua:61>\n[Interface/AddOns/Broker_Everything/modules/ammo_classic.lua]:215: in function 'OnEnter'\n[Interface/AddOns/Broker_Everything/libs/LibDBIcon-1.0/LibDBIcon-1.0.lua]:85: in function <...oker_Everything/libs/LibDBIcon-1.0/LibDBIcon-1.0.lua:68>\n",
+["session"] = 14559,
+["counter"] = 7,
+},
+{
+["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'RXPGuides' tried to call the protected function 'RXPItemFrame:StopMovingOrSizing()'.",
+["time"] = 1773595931,
+["locals"] = "self = <table> {\n}\nevent = \"ADDON_ACTION_BLOCKED\"\naddonName = \"RXPGuides\"\naddonFunc = \"RXPItemFrame:StopMovingOrSizing()\"\nname = \"RXPGuides\"\nbadAddons = <table> {\n RXPGuides = true\n}\nL = <table> {\n NO_DISPLAY_2 = \"|cffffff00The standard display is called BugSack, and can probably be found on the same site where you found !BugGrabber.|r\"\n ERROR_DETECTED = \"%s |cffffff00captured, click the link for more information.|r\"\n BUGGRABBER_STOPPED = \"|cffffff00There are too many errors in your UI. As a result, your game experience may be degraded. Disable or update the failing addons if you don't want to see this message again.|r\"\n USAGE = \"|cffffff00Usage: /buggrabber <1-%d>.|r\"\n STOP_NAG = \"|cffffff00!BugGrabber will not nag about missing a display addon again until next patch.|r\"\n NO_DISPLAY_STOP = \"|cffffff00If you don't want to be reminded about this again, run /stopnag.|r\"\n NO_DISPLAY_1 = \"|cffffff00You seem to be running !BugGrabber with no display addon to go along with it. Although a slash command is provided for accessing error reports, a display can help you manage these errors in a more convenient way.|r\"\n ERROR_UNABLE = \"|cffffff00!BugGrabber is unable to retrieve errors from other players by itself. Please install BugSack or a similar display addon that might give you this functionality.|r\"\n ADDON_CALL_PROTECTED = \"[%s] AddOn '%s' tried to call the protected function '%s'.\"\n}\n",
+["stack"] = "[Interface/AddOns/!BugGrabber/BugGrabber.lua]:532: in function '?'\n[Interface/AddOns/!BugGrabber/BugGrabber.lua]:516: in function <Interface/AddOns/!BugGrabber/BugGrabber.lua:516>\n[C]: in function 'StopMovingOrSizing'\n[Interface/AddOns/RXPGuides/ActiveItemFrame.lua]:260: in function <Interface/AddOns/RXPGuides/ActiveItemFrame.lua:259>\n",
+["session"] = 14559,
+["counter"] = 1,
 },
 },
 }

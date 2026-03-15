@@ -2,20 +2,8 @@
 WeakAurasOptionsSaved = {
 ["magnetAlign"] = true,
 ["rebuilding"] = false,
-["savedSnippets"] = {
-},
 ["spellCacheAchievements"] = true,
-["spellCacheAchivements"] = true,
-["locale"] = "enUS",
-["needsRebuild"] = false,
-["version"] = "5.21.2",
-["lockPositions"] = false,
-["spellCacheStrings"] = true,
-["frame"] = {
-["xOffset"] = 1436.460144042969,
-["width"] = 879.2689208984375,
-["height"] = 1085.433837890625,
-["yOffset"] = 1321.906127929688,
+["savedSnippets"] = {
 },
 ["spellCache"] = {
 ["Enchant Cloak - Greater Defense"] = {
@@ -3451,7 +3439,7 @@ WeakAurasOptionsSaved = {
 ["spells"] = "15272=136205,15318=136205,15320=136205",
 },
 ["Kristy Test"] = {
-["spells"] = "1244002=132116",
+["spells"] = "1244002=135314",
 },
 ["Reset Faerlina Adds"] = {
 ["spells"] = "347551=136235",
@@ -28555,7 +28543,7 @@ WeakAurasOptionsSaved = {
 ["spells"] = "25146=135805",
 },
 ["Attack"] = {
-["spells"] = "3606=135825,6350=135825,6351=135825,6352=135825,6603=132116,7389=132150,10435=135825,10436=135825,15037=135825,22048=135825,25530=135825,31992=135825,32969=135825,38296=135825,38584=135825,39592=135825,39593=135825",
+["spells"] = "3606=135825,6350=135825,6351=135825,6352=135825,6603=135314,7389=132150,10435=135825,10436=135825,15037=135825,22048=135825,25530=135825,31992=135825,32969=135825,38296=135825,38584=135825,39592=135825,39593=135825",
 },
 ["Detonate Mana"] = {
 ["spells"] = "27819=136116",
@@ -29890,7 +29878,7 @@ WeakAurasOptionsSaved = {
 ["spells"] = "19480=136122,19481=136122,20435=136122,41002=136122",
 },
 ["Whip Terrorfiend"] = {
-["spells"] = "35673=132116",
+["spells"] = "35673=135314",
 },
 ["Fel Reaver Controller"] = {
 ["spells"] = "38002=136235,38003=133015,38120=136235,38121=133015,38122=136235,38123=133015,38125=136235,38126=133015,38127=136235,38128=133015,38129=136235,38130=133015",
@@ -47365,5 +47353,17 @@ WeakAurasOptionsSaved = {
 ["spells"] = "359998=135745",
 },
 },
+["locale"] = "enUS",
+["needsRebuild"] = false,
+["version"] = "5.21.2",
+["lockPositions"] = false,
+["frame"] = {
+["xOffset"] = 1605.983825683594,
+["yOffset"] = 1332.065063476563,
+["height"] = 1085.433837890625,
+["width"] = 879.2689208984375,
+},
+["spellCacheAchivements"] = true,
+["spellCacheStrings"] = true,
 ["build"] = "66383",
 }
