@@ -1,6 +1,6 @@
 VER 3 0000000000000033 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:6450
+/cast item:3530
 END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
@@ -15,7 +15,7 @@ VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:4599
+/cast item:3771
 END
 VER 3 000000000000003F "gather" "134400"
 #showtooltip
@@ -23,7 +23,7 @@ VER 3 000000000000003F "gather" "134400"
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:3928
+/cast item:1710
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -59,10 +59,10 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3771
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Mosh'Ogg Witch Doctor
-/targetexact Mosh'Ogg Brute
-/targetexact Stranglethorn Tigress
-/targetexact Shadowmaw Panther
+/targetexact Sir S. J. Erlgadin
+/targetexact Ajeck Rouack
+/targetexact Hemet Nesingwary Jr.
+/targetexact Barnil Stonepot
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 14535,
+["session"] = 14539,
 ["errors"] = {
 {
 ["message"] = "Interface/AddOns/AtlasLootClassic/Loader.lua:109: attempt to call upvalue 'GetNumAddOns' (a nil value)",

@@ -315,3 +315,5 @@ TipTacOptions: enabled
 TipTacTalents: enabled
 TotemTimers: enabled
 NAG: disabled
+!Swatter: disabled
+!ImprovedErrorFrame: disabled

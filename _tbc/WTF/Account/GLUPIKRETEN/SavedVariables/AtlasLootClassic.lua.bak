@@ -76,14 +76,14 @@ AtlasLootClassicDB = {
 ["Dopetrap - Lone Wolf"] = "Default",
 ["Nitwit - Dreadnaught"] = "Default",
 ["Grgur - Golemagg"] = "Default",
+["Mxys - Golemagg"] = "Default",
 ["Mq - Celebras"] = "Default",
-["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
 ["Dopesnare - Stitches"] = "Default",
 ["Vermins - Stitches"] = "Default",
 ["Koloman - Golemagg"] = "Default",
 ["Provokator - Jin'do"] = "Default",
 ["Dopesnare - Lone Wolf"] = "Default",
-["Mxys - Golemagg"] = "Default",
+["Doperage - Thunderstrike"] = "Doperage - Thunderstrike",
 ["Vermin - Celebras"] = "Default",
 ["Moolatz - Golemagg"] = "Default",
 ["Vermins - Stonespine"] = "Default",
@@ -906,8 +906,8 @@ AtlasLootClassicDB = {
 [18831] = "honor:5000",
 [39757] = "EmblemOfValor:25",
 [35095] = "honor:9500",
-[35093] = "honor:9500",
 [28813] = "honor:3800",
+[41234] = "honor:43400",
 [42060] = "honor:16590",
 [33936] = "honor:2850",
 [35029] = "honor:9500",
@@ -971,11 +971,11 @@ AtlasLootClassicDB = {
 [41202] = "EmblemOfHeroism:45",
 [30490] = "honor:5320",
 [31638] = "honor:3800",
-[40207] = "EmblemOfValor:25",
+[34066] = "honor:5130",
 [42062] = "honor:33180",
 [33938] = "honor:5130",
+[40207] = "EmblemOfValor:25",
 [19088] = "honor:2805",
-[34066] = "honor:5130",
 [33066] = "honor:3990",
 [44429] = "honor:5700",
 [20068] = "honor:4590",
@@ -1087,7 +1087,7 @@ AtlasLootClassicDB = {
 [41214] = "EmblemOfHeroism:30",
 [47735] = "EmblemOfTriumph:50",
 [32982] = "honor:3800",
-[41234] = "honor:43400",
+[35093] = "honor:9500",
 [35157] = "honor:7600",
 [31636] = "honor:3040",
 [28909] = "arcanerune:8",
@@ -1819,6 +1819,10 @@ nil,
 ["hide"] = true,
 },
 },
+["Whatevs - Stonespine"] = {
+},
+["Battitude - Thunderstrike"] = {
+},
 ["Moolatz - Dreadnaught"] = {
 ["GUI"] = {
 ["selected"] = {
@@ -1829,14 +1833,6 @@ nil,
 0,
 },
 },
-["minimap"] = {
-["shown"] = false,
-["hide"] = true,
-},
-},
-["Battitude - Thunderstrike"] = {
-},
-["Battlenac - Celebras"] = {
 ["minimap"] = {
 ["shown"] = false,
 ["hide"] = true,
@@ -1922,6 +1918,21 @@ nil,
 },
 ["Grgur - Golemagg"] = {
 },
+["Mq - Celebras"] = {
+["minimap"] = {
+["shown"] = false,
+["hide"] = true,
+},
+["GUI"] = {
+["selected"] = {
+nil,
+"Maraudon",
+10,
+1,
+0,
+},
+},
+},
 ["Doperage - Thunderstrike"] = {
 ["minimap"] = {
 ["shown"] = false,
@@ -1942,12 +1953,6 @@ nil,
 1,
 0,
 },
-},
-},
-["Mxys - Golemagg"] = {
-["minimap"] = {
-["shown"] = false,
-["hide"] = true,
 },
 },
 ["Default"] = {
@@ -2043,19 +2048,10 @@ nil,
 ["hide"] = true,
 },
 },
-["Mq - Celebras"] = {
+["Mxys - Golemagg"] = {
 ["minimap"] = {
 ["shown"] = false,
 ["hide"] = true,
-},
-["GUI"] = {
-["selected"] = {
-nil,
-"Maraudon",
-10,
-1,
-0,
-},
 },
 },
 ["Provokator - Jin'do"] = {
@@ -2079,7 +2075,11 @@ nil,
 ["hide"] = true,
 },
 },
-["Whatevs - Stonespine"] = {
+["Battlenac - Celebras"] = {
+["minimap"] = {
+["shown"] = false,
+["hide"] = true,
+},
 },
 ["Vermin - Celebras"] = {
 ["GUI"] = {

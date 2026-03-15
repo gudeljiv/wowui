@@ -135,3 +135,5 @@ Arcana: enabled
 Broker_Everything: enabled
 MinimapButtonButton: enabled
 NAG: disabled
+!Swatter: disabled
+!ImprovedErrorFrame: disabled

@@ -211,14 +211,15 @@ xVerminSavedData = {
 "Firebolt",
 "Incinerate",
 },
-["Entropic Beast"] = {
+["Burning Destroyer"] = {
 "Lava Lash",
+"Serpent Sting",
 },
 ["Whirlwind Stormwalker"] = {
 "Deep Wound",
 },
-["Corrupt Minor Manifestation of Water"] = {
-"Frost Shock",
+["Entropic Beast"] = {
+"Lava Lash",
 },
 ["Scalding Elemental"] = {
 "Rend",
@@ -319,24 +320,13 @@ xVerminSavedData = {
 "Chain Lightning",
 "Serpent Sting",
 },
-["Evolving Ectoplasm"] = {
-"Attack",
-"Chilled",
-"Earth Shock",
-"Earthbind",
-"Firebolt",
-"Flametongue Attack",
-"Frost Shock",
-"Frostbolt",
-"Incinerate",
-"Lava Lash",
-"Lightning Shield",
-"Living Bomb",
-"Molten Blast",
-"Serpent Sting",
-"Flame Shock",
-"Corruption",
-"Curse of Agony",
+["Klaxxi"] = {
+"Big Bronze Bomb",
+"Flanking Strike",
+"Penance",
+"Psychic Scream",
+"Raptor Strike",
+"Void Plague",
 },
 ["Bound Elemental"] = {
 "Lightning Shield",
@@ -356,8 +346,9 @@ xVerminSavedData = {
 "Deep Wound",
 "Explosive Trap Effect",
 },
-["Rock Elemental"] = {
-"Serpent Sting",
+["Cracked Skull Soldier"] = {
+"Rend",
+"Fear",
 },
 ["Shadowfang Whitescalp"] = {
 "Frostbolt",
@@ -405,23 +396,37 @@ xVerminSavedData = {
 "Serpent Sting",
 "Faerie Fire (Feral)",
 },
-["Whirlwind Ripper"] = {
-"Lightning Shield",
-"Serpent Sting",
+["Enraged Voidwalker"] = {
+"Poison Cloud",
 },
 ["Mordresh Fire Eye"] = {
 "Rend",
 "Deep Wound",
 },
-["Sandfury Shadowcaster"] = {
+["Evolving Ectoplasm"] = {
+"Attack",
+"Chilled",
+"Earth Shock",
 "Earthbind",
+"Firebolt",
+"Flametongue Attack",
+"Frost Shock",
+"Frostbolt",
+"Incinerate",
+"Lava Lash",
+"Lightning Shield",
+"Living Bomb",
+"Molten Blast",
+"Serpent Sting",
+"Flame Shock",
+"Corruption",
+"Curse of Agony",
 },
 ["Jade Sludge"] = {
 "Concussive Shot",
 },
-["Cracked Skull Soldier"] = {
-"Rend",
-"Fear",
+["Sea Elemental"] = {
+"Frost Shock",
 },
 ["Entropic Horror"] = {
 "Lava Lash",
@@ -437,19 +442,20 @@ xVerminSavedData = {
 ["Enraged Stone Spirit"] = {
 "Rend",
 },
-["Remote-Controlled Golem"] = {
-"Rend",
-"Deep Wound",
+["Whirlwind Ripper"] = {
+"Lightning Shield",
+"Serpent Sting",
 },
 ["Healing Ward"] = {
 "Faerie Fire (Feral)",
 "Serpent Sting",
 },
-["Sea Elemental"] = {
-"Frost Shock",
+["Rock Elemental"] = {
+"Serpent Sting",
 },
-["Enraged Voidwalker"] = {
-"Poison Cloud",
+["Remote-Controlled Golem"] = {
+"Rend",
+"Deep Wound",
 },
 ["Jazzter"] = {
 "Fireball",
@@ -457,13 +463,8 @@ xVerminSavedData = {
 ["Razorlash"] = {
 "Blackout",
 },
-["Klaxxi"] = {
-"Big Bronze Bomb",
-"Flanking Strike",
-"Penance",
-"Psychic Scream",
-"Raptor Strike",
-"Void Plague",
+["Sandfury Shadowcaster"] = {
+"Earthbind",
 },
 ["Overlord Ramtusk"] = {
 "Concussive Shot",
@@ -550,9 +551,8 @@ xVerminSavedData = {
 ["Unfettered Spirit"] = {
 "Deep Wound",
 },
-["Burning Destroyer"] = {
-"Lava Lash",
-"Serpent Sting",
+["Corrupt Minor Manifestation of Water"] = {
+"Frost Shock",
 },
 ["Ambershard Destroyer"] = {
 "Lightning Shield",

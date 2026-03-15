@@ -99,6 +99,7 @@ Helpers/DalaranAuctionHouse.lua
 Helpers/DamageFont.lua
 # Helpers/Engravings.lua
 Helpers/ErrorsFilter.lua
+Helpers/ZoneText.lua
 # Helpers/FastLoot.lua
 Helpers/ImmuneData.lua
 Helpers/Interrupt.lua

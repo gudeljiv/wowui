@@ -177,3 +177,5 @@ SUI: enabled
 Tamed: enabled
 TotemTimers: enabled
 NAG: disabled
+!Swatter: disabled
+!ImprovedErrorFrame: disabled

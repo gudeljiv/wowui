@@ -46,7 +46,8 @@ function uierrorsframe_addmessage(frame, text, red, green, blue, id)
 		end
 		lastErrorTime[text] = now
 		local lowerText = text:lower()
-		local color = (text:match("%d+/%d+") or lowerText:match("complet")) and _G.GREEN_FONT_COLOR_CODE or _G.RED_FONT_COLOR_CODE
+		local color = (text:match("%d+/%d+") or lowerText:match("complet")) and _G.GREEN_FONT_COLOR_CODE
+			or _G.RED_FONT_COLOR_CODE
 		ChatFrame7:AddMessage(color .. text)
 	end
 	for i, v in ipairs(messages) do
@@ -68,37 +69,10 @@ function uierrorsframe_addmessage(frame, text, red, green, blue, id)
 			return string.format("\n|cFF%02X%02X%02X%s/%s|r", cr, cg, cb, a, b)
 		end)
 	else
-		displayText = text:gsub("([Cc]ompleted?%f[%A])", "|cFF00FF00%1|r"):gsub("([Dd]one%f[%A])", "|cFF00FF00%1|r")
+		displayText = text:gsub("(%(?)([Cc]ompleted?%f[%A])(%)?)", "|cFF00FF00%1%2%3|r")
+			:gsub("(%(?)([Dd]one%f[%A])(%)?)", "|cFF00FF00%1%2%3|r")
 	end
 	old_uierrosframe_addmessage(frame, displayText, red, green, blue, id)
 end
 
 filter_error_messages()
-
-local zoneOrigSizes = {}
-local zoneOrigWidths = {}
-for _, f in ipairs({ ZoneTextString, PVPInfoTextString, SubZoneTextString, PVPArenaTextString }) do
-	local _, size = f:GetFont()
-	zoneOrigSizes[f] = size
-	zoneOrigWidths[f] = f:GetWidth()
-end
-
-local zoneFrame = CreateFrame("Frame")
-zoneFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
-zoneFrame:RegisterEvent("ZONE_CHANGED")
-zoneFrame:RegisterEvent("ZONE_CHANGED_INDOORS")
-zoneFrame:SetScript("OnEvent", function()
-	local font = xVermin.Config.font.coalition
-	for _, f in ipairs({ ZoneTextString, PVPInfoTextString }) do
-		f:SetFont(font, zoneOrigSizes[f] * 1.6, "OUTLINE")
-		f:SetShadowColor(0, 0, 0, 1)
-		f:SetShadowOffset(1, -1)
-		f:SetWidth(zoneOrigWidths[f] * 1.5)
-	end
-	for _, f in ipairs({ SubZoneTextString, PVPArenaTextString }) do
-		f:SetFont(font, zoneOrigSizes[f] * 1.2, "OUTLINE")
-		f:SetShadowColor(0, 0, 0, 1)
-		f:SetShadowOffset(1, -1)
-		f:SetWidth(zoneOrigWidths[f] * 1.5)
-	end
-end)
