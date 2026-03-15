@@ -615,5 +615,6 @@
 		"AUCTION_CATEGORY_MISCELLANEOUS",
 		"ToggleFrame",
 		"WorldMapFrame"
-	]
+	],
+	"stylua.targetReleaseVersion": "latest"
 }
