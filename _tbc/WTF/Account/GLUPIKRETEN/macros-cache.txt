@@ -1,6 +1,6 @@
 VER 3 0000000000000033 "bandage" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:6451
 END
 VER 3 0000000000000012 "BH" "136173"
 /click BehindTarget
@@ -15,7 +15,7 @@ VER 3 0000000000000034 "drink" "INV_Misc_QuestionMark"
 END
 VER 3 000000000000003E "food" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:3771
 END
 VER 3 000000000000003F "gather" "134400"
 #showtooltip
@@ -23,7 +23,7 @@ VER 3 000000000000003F "gather" "134400"
 END
 VER 3 0000000000000036 "hpotion" "INV_Misc_QuestionMark"
 #showtooltip
-/cast item:0
+/cast item:1710
 END
 VER 3 0000000000000038 "hstone" "INV_Misc_QuestionMark"
 #showtooltip
@@ -59,12 +59,12 @@ VER 3 000000000000000E "PF" "Inv_misc_questionmark"
 /use item:3771
 END
 VER 3 000000000000002D "RXPTargeting" "Ability_eyeoftheowl"
-/targetexact Undertaker Mordo
+/targetexact Rok'Alim the Pounder
 /targetlasttarget [dead]
 END
 VER 3 0000000000000040 "sharp" "INV_Misc_QuestionMark"
-#showtooltip item:0
-/use item:0
+#showtooltip item:2863
+/use item:2863
 /use [button:2] 17; 16
 /click StaticPopup1Button1
 END

@@ -1,16 +1,8 @@
 
 BugGrabberDB = {
 ["lastSanitation"] = 3,
-["session"] = 14555,
+["session"] = 14557,
 ["errors"] = {
-{
-["message"] = "Interface/AddOns/CCleanerClassic/GUI.lua:88: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["time"] = "2026/01/14 19:02:48",
-["locals"] = "",
-["stack"] = "",
-["session"] = 13285,
-["counter"] = 2,
-},
 {
 ["message"] = "...nterface/AddOns/Dejunk/src/ui/widgets/item-frame.lua:3: attempt to index field 'Libs' (a nil value)",
 ["time"] = "2026/01/14 19:06:56",
@@ -3906,6 +3898,14 @@ BugGrabberDB = {
 ["stack"] = "[Interface/AddOns/xVermin/Addons/Auctionator.lua]:17: in function <Interface/AddOns/xVermin/Addons/Auctionator.lua:15>\n[Interface/AddOns/xVermin/Addons/Auctionator.lua]:47: in function <Interface/AddOns/xVermin/Addons/Auctionator.lua:41>\n[Interface/AddOns/xVermin/Addons/Auctionator.lua]:72: in function <Interface/AddOns/xVermin/Addons/Auctionator.lua:71>\n",
 ["session"] = 14551,
 ["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/TacoTip/options.lua:843: attempt to call global 'InterfaceOptionsFrame_OpenToCategory' (a nil value)",
+["time"] = 1773574968,
+["locals"] = "msg = \"\"\ncmd = \"\"\n(*temporary) = nil\n(*temporary) = \"TacoTip\"\n(*temporary) = \"attempt to call global 'InterfaceOptionsFrame_OpenToCategory' (a nil value)\"\nL = <table> {\n Show Achievement Points = \"Show Achievement Points\"\n INSPECT_FRAME_ILVL_TITLE_XPOS = 270\n Show unit's health bar under tooltip = \"Show unit's health bar under tooltip\"\n Guild Rank = \"Guild Rank\"\n Left-Click = \"Left-Click\"\n Anchor spell tooltips to mouse cursor = \"Anchor spell tooltips to mouse cursor\"\n CHARACTER_FRAME_GS_TITLE_YPOS = 248\n CHARACTER_FRAME_GS_VALUE_YPOS = 260\n CHARACTER_FRAME_GS_VALUE_XPOS = 72\n Display item level in the tooltip for certain items. = \"Display item level in the tooltip for certain items.\"\n Power Bar = \"Power Bar\"\n Talents = \"Talents\"\n CHARACTER_FRAME_ILVL_TITLE_XPOS = 270\n Average iLvl = \"Average iLvl\"\n Tooltip Style = \"Tooltip Style\"\n Target = \"Target\"\n CHARACTER_FRAME_ILVL_TITLE_FONT = \"Fonts\\FRIZQT__.TTF\"\n Instant Fade = \"Instant Fade\"\n You = \"You\"\n Configuration has been reset to default. = \"Configuration has been reset to default.\"\n Color class names in tooltips = \"Color class names in tooltips\"\n None = \"None\"\n Guild = \"Guild\"\n Disable gearscore & talents in combat = \"Disable gearscore & talents in combat\"\n Custom tooltip position disabled. = \"Custom tooltip position disabled.\"\n INSPECT_FRAME_GS_VALUE_FONT_SIZE = 10\n Health Bar = \"Health Bar\"\n Anchor to Mouse = \"Anchor to Mouse\"\n CHARACTER_FRAME_ILVL_VALUE_FONT_SIZE = 10\n TEXT_DLG_CUSTOM_POS_CONFIRM = \"\nDo you want to save custom tooltip position or reset back to default?\n\n\"\n Show player's pvp flag status as icon instead of text = \"Show player's pvp flag status as icon instead of text\"\n Mover = \"Mover\"\n PVP Icon = \"PVP Icon\"\n Unit Tooltips = \"Unit Tooltips\"\n Show unit's power bar under tooltip = \"Show unit's power bar under tooltip\"\n CHARACTER_FRAME_ILVL_VALUE_YPOS = 260\n COMPACT/FULL = \"COMPACT/FULL\"\n Custom Tooltip Position = \"Custom Tooltip Position\"\n INSPECT_FRAME_ILVL_VALUE_YPOS = 153\n Character Frame = \"Character Frame\"\n INSPECT_FRAME_GS_TITLE_XPOS = 72\n Level = \"Level\"\n Show player's title in tooltips = \"Show player's title in tooltips\"\n Item Level = \"Item Level\"\n Show player's GearScore in tooltips = \"Show player's GearScore in tooltips\"\n Pet = \"Pet\"\n INSPECT_FRAME_GS_TITLE_YPOS = 141\n Show talents and specialization in tooltips = \"Show talents and specialization in tooltips\"\n Fade out unit tooltips instantly = \"Fade out unit tooltips instantly\"\n MINI = \"MINI\"\n Always FULL = \"\"\n INSPECT_FRAME_GS_TITLE_FONT_SIZE = 10\n Always COMPACT = \"Always COMPACT\"\n Guild Name = \"Guild Name\"\n CHARACTER_FRAME_ILVL_VALUE_XPOS = 270\n Self = \"Self\"\n Chat Class Colors = \"Chat Class Colors\"\n Extra = \"Extra\"\n COMPACT = \"COMPACT\"\n Save Position = \"Save Position\"\n Wide, Dual Spec, GearScore, Average iLvl = \"Wide, Dual Spec, GearScore, Average iLvl\"\n Lock GearScore and Average Item Level positions in character frame = \"Lock GearScore and Average Item Level positions in character frame\"\n Right-Click = \"Right-Click\"\n  the Kingslayer = \" the Kingslayer\"\n Only in WorldFrame = \"Only in WorldFrame\"\n Set a custom position for tooltips = \"Set a custom position for tooltips\"\n Default COMPACT, hold SHIFT for FULL = \"Default COMPACT, hold SHIFT for FULL\"\n Lock Position = \"Lock Position\"\n Custom tooltip position enabled. = \"Custom tooltip position enabled.\"\n Middle-Click = \"Middle-Click\"\n Show player's PawnScore in tooltips (may affect performance) = \"Show player's PawnScore in tooltips (may affect performance)\"\n Show Average Item Level in character frame = \"Show Average Item Level in character frame\"\n Style = \"Style\"\n Show GearScore in item tooltips = \"Show GearScore in item tooltips\"\n INSPECT_FRAME_ILVL_VALUE_FONT_SIZE = 10\n FULL = \"FULL\"\n TEXT_OPT_DESC = \"Better player tooltips - class colors, talents/specialization,\n     gearscore, guild ranks\"\n requires Pawn = \"requires Pawn\"\n TEXT_HELP_ANCHOR = \"Usage: /tacotip anchor ANCHOR. Valid ANCHOR values are TOPLEFT/TOPRIGHT/BOTTOMLEFT/BOTTOMRIGHT/CENTER.\"\n CHARACTER_FRAME_GS_TITLE_FONT = \"Fonts\\FRIZQT__.TTF\"\n Show player's faction icon (Horde/Allian",
+["stack"] = "[Interface/AddOns/TacoTip/options.lua]:843: in function '?'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:227: in function 'ParseText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:252: in function 'SendText'\n[Interface/AddOns/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua]:370: in function <...s/Blizzard_ChatFrameBase/Shared/ChatFrameEditBox.lua:366>\n",
+["session"] = 14557,
+["counter"] = 2,
 },
 },
 }
