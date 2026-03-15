@@ -46,6 +46,7 @@ Experience/MobsToKill.lua
 
 Reputation/Reputation.lua
 
+Addons/Auctionator.lua
 Addons/AdiBags.lua
 Addons/AutoLayer.lua
 Addons/Baganator.lua

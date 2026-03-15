@@ -310,7 +310,7 @@ Arcana: enabled
 AtlasLootClassic_BiS: enabled
 AvoidanceRating: enabled
 BaganatorCustomSkin: disabled
-BagSync: enabled
+BagSync: disabled
 Broker_Everything: enabled
 CookieEasyEnchant: enabled
 Dominos: enabled
@@ -329,3 +329,4 @@ TotemTimers: enabled
 NAG: disabled
 !Swatter: disabled
 !ImprovedErrorFrame: disabled
+ElvUI_RatioMinimapAuras: disabled

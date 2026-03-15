@@ -1,12 +1,22 @@
 
 RXPCData = {
 ["completedWaypoints"] = {
-[15] = {
+[29] = {
 },
 },
-["currentStep"] = 15,
+["currentStep"] = 29,
 ["questObjectivesCache"] = {
-[0] = 95,
+[0] = 96,
+[583] = {
+{
+["type"] = "event",
+["numRequired"] = 1,
+["generated"] = true,
+["text"] = "Objective Complete",
+["numFulfilled"] = 0,
+},
+["finished"] = false,
+},
 [496] = {
 {
 ["type"] = "item",
@@ -6107,11 +6117,17 @@ RXPCData = {
 ["activeTalentGuide"] = "DRUID - Feral 10-60",
 ["stepSkip"] = {
 true,
-[11] = true,
-[4] = true,
+[26] = true,
 [14] = true,
+[4] = true,
+[16] = true,
+[17] = true,
+[19] = true,
+[11] = true,
+[22] = true,
+[23] = true,
 },
-["currentStepId"] = 4104458926,
+["currentStepId"] = 4104459091,
 ["guideDisabled"] = {
 34325,
 101302,
@@ -6822,7 +6838,7 @@ RXPCTrackingData = {
 },
 },
 [36] = {
-["groupExperience"] = 0,
+["groupExperience"] = 568,
 ["deaths"] = 0,
 ["mobs"] = {
 ["Thousand Needles"] = {
@@ -6830,8 +6846,8 @@ RXPCTrackingData = {
 ["count"] = 4,
 },
 ["Stranglethorn Vale"] = {
-["xp"] = 3383,
-["count"] = 4,
+["xp"] = 31549,
+["count"] = 67,
 },
 ["The Barrens"] = {
 ["xp"] = 4225,
@@ -6863,9 +6879,21 @@ RXPCTrackingData = {
 [1175] = 2900,
 },
 ["Stranglethorn Vale"] = {
-[1180] = 925,
+[5762] = 1250,
 [1115] = 1750,
+[338] = 6550,
+[339] = 1100,
+[340] = 1100,
+[341] = 1100,
+[1180] = 925,
+[342] = 1100,
+[186] = 1450,
+[583] = 200,
 [1181] = 370,
+[185] = 1250,
+[191] = 1450,
+[190] = 1250,
+[194] = 1550,
 },
 ["The Barrens"] = {
 [1148] = 3300,
@@ -7142,10 +7170,10 @@ RXPCTrackingData = {
 },
 ["quests"] = {
 ["Mulgore"] = {
-[745] = 550,
 [754] = 550,
-[771] = 625,
 [748] = 450,
+[771] = 625,
+[745] = 550,
 },
 },
 },
@@ -7530,11 +7558,11 @@ RXPCTrackingData = {
 ["The Barrens"] = {
 [845] = 900,
 [894] = 750,
-[5041] = 975,
 [900] = 490,
+[872] = 1050,
 [867] = 1050,
 [869] = 900,
-[872] = 1050,
+[5041] = 975,
 [901] = 750,
 },
 },
@@ -8206,10 +8234,10 @@ RXPCTrackingData = {
 },
 ["quests"] = {
 ["Mulgore"] = {
-[745] = 550,
 [754] = 550,
-[771] = 625,
 [748] = 450,
+[771] = 625,
+[745] = 550,
 },
 },
 },
@@ -8594,11 +8622,11 @@ RXPCTrackingData = {
 ["The Barrens"] = {
 [845] = 900,
 [894] = 750,
-[5041] = 975,
 [900] = 490,
+[872] = 1050,
 [867] = 1050,
 [869] = 900,
-[872] = 1050,
+[5041] = 975,
 [901] = 750,
 },
 },
@@ -9119,14 +9147,14 @@ RXPCTrackingData = {
 },
 ["quests"] = {
 ["Hillsbrad Foothills"] = {
-[527] = 1950,
-[501] = 1950,
 [1066] = 1850,
+[501] = 1950,
+[502] = 1450,
 [496] = 180,
 [549] = 1750,
 [498] = 2200,
 [499] = 1750,
-[502] = 1450,
+[527] = 1950,
 },
 },
 },
@@ -9184,9 +9212,9 @@ RXPCTrackingData = {
 },
 ["The Barrens"] = {
 [857] = 2450,
-[846] = 2100,
 [849] = 2100,
 [843] = 1850,
+[846] = 2100,
 },
 ["Hillsbrad Foothills"] = {
 [528] = 2000,
@@ -9289,6 +9317,18 @@ RXPCComms = {
 },
 ["Moolatz - Thunderstrike"] = {
 ["players"] = {
+["Araqq"] = {
+["timePlayed"] = 34.3920000000071,
+["class"] = "ROGUE",
+["xp"] = 0,
+["version"] = 1,
+},
+["Bibozubel"] = {
+["timePlayed"] = 34.3920000000071,
+["class"] = "MAGE",
+["xp"] = 0,
+["version"] = 1,
+},
 ["Batoxx"] = {
 ["timePlayed"] = 72.75500000000466,
 ["isRxp"] = true,
@@ -9305,11 +9345,15 @@ RXPCComms = {
 ["xp"] = 0,
 ["version"] = 1,
 },
-["Doulia"] = {
-["timePlayed"] = 0,
-["class"] = "MAGE",
-["xp"] = 0,
+["Hirvihiileri"] = {
+["level"] = 33,
+["class"] = "DRUID",
 ["version"] = 1,
+["lastSeen"] = 608952.748,
+["timePlayed"] = 220.670999999973,
+["isRxp"] = true,
+["xp"] = 0,
+["xpPercentage"] = 94,
 },
 ["Nomasters"] = {
 ["level"] = 26,
@@ -9331,14 +9375,8 @@ RXPCComms = {
 ["xp"] = 0,
 ["level"] = 31,
 },
-["Araqq"] = {
-["timePlayed"] = 34.3920000000071,
-["class"] = "ROGUE",
-["xp"] = 0,
-["version"] = 1,
-},
-["Bibozubel"] = {
-["timePlayed"] = 34.3920000000071,
+["Doulia"] = {
+["timePlayed"] = 0,
 ["class"] = "MAGE",
 ["xp"] = 0,
 ["version"] = 1,
@@ -9621,6 +9659,12 @@ RXPCComms = {
 ["xp"] = 0,
 ["timePlayed"] = 126.8379999999888,
 },
+["Derblender"] = {
+["timePlayed"] = 176.2690000000293,
+["class"] = "PALADIN",
+["xp"] = 0,
+["version"] = 1,
+},
 ["Shadowdmg"] = {
 ["class"] = "WARLOCK",
 ["level"] = 21,
@@ -9630,12 +9674,6 @@ RXPCComms = {
 ["isRxp"] = true,
 ["xp"] = 0,
 ["timePlayed"] = 6085.896000000008,
-},
-["Bjørneangreb"] = {
-["timePlayed"] = 2319.158999999985,
-["class"] = "DRUID",
-["xp"] = 0,
-["version"] = 1,
 },
 ["Kanallia"] = {
 ["timePlayed"] = 0,
@@ -9649,9 +9687,9 @@ RXPCComms = {
 ["xp"] = 0,
 ["version"] = 1,
 },
-["Derblender"] = {
-["timePlayed"] = 176.2690000000293,
-["class"] = "PALADIN",
+["Bjørneangreb"] = {
+["timePlayed"] = 2319.158999999985,
+["class"] = "DRUID",
 ["xp"] = 0,
 ["version"] = 1,
 },

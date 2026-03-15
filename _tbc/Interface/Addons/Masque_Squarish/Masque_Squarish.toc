@@ -1,0 +1,33 @@
+## Interface: 11508, 20504, 20505, 30405, 38000, 40402, 50503, 110207, 120000, 120001
+
+## Author: StormFX
+## Title: Masque: Squarish
+## Version: 11.2.8
+
+## Category: Masque
+## Dependencies: Masque
+## IconTexture: Interface\AddOns\Masque_Squarish\Textures\Icon
+
+## Notes: Squarish skins for Masque.
+## Notes-deDE: Squarish-Skin für Masque.
+## Notes-esMX: Skins Squarish para Masque.
+## Notes-esES: Skins Squarish para Masque.
+## Notes-frFR: Skins de Squarish pour Masque.
+## Notes-itIT: Skins Squarish per Masque.
+## Notes-ruRU: Скин Squarish для Masque.
+## Notes-zhTW: Masque的Squarish皮膚。
+
+## X-Category: Interface Enhancements
+## X-Credits: Phanx, MoonWitch, ScythXIII
+## X-Discord: https://discord.gg/7MTWRgDzz8
+## X-Website: https://github.com/SFX-WoW/Masque_Squarish
+
+## X-Curse-Project-ID: 714798
+## X-Wago-ID: yQKy8467
+## X-WoWI-ID: 26494
+
+# Locales
+Locales.lua
+
+# Skins
+Skins.lua

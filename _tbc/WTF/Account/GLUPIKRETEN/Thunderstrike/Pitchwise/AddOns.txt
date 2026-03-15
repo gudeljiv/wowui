@@ -151,3 +151,6 @@ TotemTimers: enabled
 NAG: disabled
 !Swatter: disabled
 !ImprovedErrorFrame: disabled
+ElvUI: disabled
+ElvUI_Options: disabled
+ElvUI_Libraries: disabled

@@ -1,16 +1,8 @@
 
 BugGrabberDB = {
+["session"] = 14556,
 ["lastSanitation"] = 3,
-["session"] = 14539,
 ["errors"] = {
-{
-["message"] = "Interface/AddOns/AtlasLootClassic/Loader.lua:109: attempt to call upvalue 'GetNumAddOns' (a nil value)",
-["time"] = "2026/01/14 19:02:47",
-["locals"] = "tmp = nil\nplayerName = \"Dopecure\"\n(*temporary) = 1\n(*temporary) = nil\n(*temporary) = \"attempt to call upvalue 'GetNumAddOns' (a nil value)\"\nGetNumAddOns = nil\nGetAddOnInfo = nil\nModuleList = <table> {\n}\nIsAddOnLoaded = nil\nATLASLOOT_MODULE_LIST_NAMES = <table> {\n AtlasLootClassic_Factions = 3\n AtlasLootClassic_Collections = 5\n AtlasLootClassic_PvP = 4\n AtlasLootClassic_Crafting = 2\n AtlasLootClassic_DungeonsAndRaids = 1\n}\nAtlasModuleList = <table> {\n}\nIsInit = false\nAllLoaded = nil\nLoader = <table> {\n}\nAtlasMapsModuleLoaded = false\nAtlasLoot = <table> {\n ClickHandler = <table> {\n }\n IS_CLASSIC = false\n Data = <table> {\n }\n IngameLocales = <table> {\n }\n Locale = <table> {\n }\n Button = <table> {\n }\n Loader = <table> {\n }\n __addonrevision = 3050022\n db = <table> {\n }\n dbRaw = <table> {\n }\n Addons = <table> {\n }\n GUI = <table> {\n }\n SlashCommands = <table> {\n }\n LibBabble = <table> {\n }\n IS_BC = true\n dbGlobal = <table> {\n }\n MiniMapButton = <table> {\n }\n Tooltip = <table> {\n }\n CLASSIC_VERSION_NUM = 1\n ItemDB = <table> {\n }\n ItemQuery = <table> {\n }\n ItemInfo = <table> {\n }\n TooltipScan = <table> {\n }\n __addonversion = \"v3.5.22\"\n TargetScan = <table> {\n }\n Locales = <table> {\n }\n IS_SEASONAL = true\n DIFFICULTY = <table> {\n }\n BC_VERSION_NUM = 2\n CURRENT_VERSION_NUM = 2\n IS_RETAIL = false\n Init = <table> {\n }\n WRATH_VERSION_NUM = 3\n IS_SOD = false\n RETAIL_VERSION_NUM = 99\n ItemString = <table> {\n }\n AtlasLootDBDefaults = <table> {\n }\n SEASON = 125\n IS_WRATH = false\n GAME_VERSION_TEXTURES = <table> {\n }\n}\n",
-["stack"] = "[Interface/AddOns/AtlasLootClassic/Loader.lua]:109: in function 'func'\n[Interface/AddOns/AtlasLootClassic/AtlasLoot.lua]:42: in function <Interface/AddOns/AtlasLootClassic/AtlasLoot.lua:34>",
-["session"] = 13285,
-["counter"] = 2,
-},
 {
 ["message"] = "Interface/AddOns/CCleanerClassic/GUI.lua:88: attempt to call global 'GetAddOnMetadata' (a nil value)",
 ["time"] = "2026/01/14 19:02:48",
@@ -29,32 +21,32 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/NovaWorldBuffs/Modules/Data.lua:1 Interface/AddOns/NovaWorldBuffs/Modules/Data.lua:369: attempt to concatenate field 'i' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/NovaWorldBuffs/Modules/BuffsWindow.lua:1 ...erface/AddOns/NovaWorldBuffs/Modules/BuffsWindow.lua:13: attempt to call method 'addBackdrop' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/picoFPS/picoFPS.lua:1 Interface/AddOns/picoFPS/picoFPS.lua:11: attempt to call global 'GetNumAddOns' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Plater/libs/LibRangeCheck-2.0-100217/LibRangeCheck-2.0.lua:1 Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/RangeDisplay/libs/LibRangeCheck-3.0-31/LibRangeCheck-3.0.lua:1 Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13285,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 1,
 },
 {
@@ -67,50 +59,50 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/ShadowedUnitFrames/modules/auraindicators.lua:1 ...ace/AddOns/ShadowedUnitFrames/ShadowedUnitFrames.lua:589: attempt to call global 'IsAddOnLoaded' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/SkillInfoPlus/SkillInfoPlus.lua:1 Frame:RegisterEvent(): Frame:RegisterEvent(): Attempt to register unknown event \"LEARNED_SPELL_IN_TAB\"",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TacoTip/options.lua:1 Interface/AddOns/TacoTip/options.lua:3: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["time"] = "2026/01/14 19:06:59",
 ["session"] = 13286,
+["time"] = "2026/01/14 19:06:59",
 ["counter"] = 2,
 },
 {
 ["message"] = "Interface/AddOns/TacoTip/main.lua:1 Interface/AddOns/TacoTip/main.lua:3: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/ThreatClassic2/core/init.lua:1 Interface/AddOns/ThreatClassic2/core/init.lua:13: attempt to call global 'GetAddOnMetadata' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/CustomContainers.lua:1 Interface/AddOns/xVermin/Frames/CustomContainers.lua:28: attempt to call method 'CreateBeautyBorder' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/DefaultFramesDarker.lua:1 ...erface/AddOns/xVermin/Frames/DefaultFramesDarker.lua:50: attempt to index global 'CastingBarFrame' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Frames/KillCount.lua:1 Interface/AddOns/xVermin/Frames/KillCount.lua:40: attempt to call method 'CreateBeautyBorder' (a nil value)",
-["session"] = 13286,
 ["time"] = "2026/01/14 19:09:41",
+["session"] = 13286,
 ["counter"] = 1,
 },
 {
@@ -131,14 +123,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Details/Details_TBC.toc:191 Duplicate File Load Detected. [Interface/AddOns/Details/core/parser_nocleu.lua] first loaded at [Interface/AddOns/Details/Details_TBC.toc:83]",
-["session"] = 13287,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13287,
 ["counter"] = 4,
 },
 {
 ["message"] = "Interface/AddOns/Details/Details_TBC.toc:192 Duplicate File Load Detected. [Interface/AddOns/Details/core/parser_nocleu1.lua] first loaded at [Interface/AddOns/Details/Details_TBC.toc:162]",
-["session"] = 13287,
 ["time"] = "2026/01/14 19:03:03",
+["session"] = 13287,
 ["counter"] = 4,
 },
 {
@@ -807,8 +799,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nBuff/core.lua:1 Interface/AddOns/nBuff/core.lua:102: '<eof>' expected near 'TemporaryEnchantFrame'",
-["time"] = "2026/01/15 19:10:57",
 ["session"] = 13353,
+["time"] = "2026/01/15 19:10:57",
 ["counter"] = 1,
 },
 {
@@ -821,8 +813,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/nBuff/core.lua:1 Interface/AddOns/nBuff/core.lua:62: unexpected symbol near ')'",
-["time"] = "2026/01/15 19:14:00",
 ["session"] = 13361,
+["time"] = "2026/01/15 19:14:00",
 ["counter"] = 1,
 },
 {
@@ -955,14 +947,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/TellMeWhen/TellMeWhen.lua:1 Interface/AddOns/TellMeWhen/TellMeWhen.lua:21: unexpected symbol near '.'",
-["time"] = "2026/01/15 19:39:20",
 ["session"] = 13377,
+["time"] = "2026/01/15 19:39:20",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/TellMeWhen/Components/IconModules/IconModule_CooldownSweep/CooldownSweep.lua:1 ...MeWhen/Components/IconModules/IconModule_CooldownSweep/CooldownSweep.lua:22: unexpected symbol near '.'",
-["time"] = "2026/01/15 19:39:20",
 ["session"] = 13377,
+["time"] = "2026/01/15 19:39:20",
 ["counter"] = 1,
 },
 {
@@ -1007,8 +999,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Masque_BeautyBorder/Masque_BeautyBorder.toc:22 Error loading Interface/AddOns/Masque_BeautyBorder/Skins.lua",
-["time"] = "2026/01/15 19:53:54",
 ["session"] = 13387,
+["time"] = "2026/01/15 19:53:54",
 ["counter"] = 1,
 },
 {
@@ -1093,14 +1085,14 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/AdiBags/modules/Junk.lua:1 Interface/AddOns/AdiBags/modules/Junk.lua:32: unexpected symbol near '.'",
-["session"] = 13398,
 ["time"] = "2026/01/15 20:04:47",
+["session"] = 13398,
 ["counter"] = 3,
 },
 {
 ["message"] = "Interface/AddOns/AdiBags/modules/CurrencyFrame.lua:1 Interface/AddOns/AdiBags/modules/CurrencyFrame.lua:42: unexpected symbol near '.'",
-["session"] = 13398,
 ["time"] = "2026/01/15 20:04:47",
+["session"] = 13398,
 ["counter"] = 3,
 },
 {
@@ -1201,38 +1193,38 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/WorldMapTaintWorkaround.lua:1 Interface/AddOns/Questie/Modules/WorldMapTaintWorkaround.lua:4: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/QuestieCoordinates.lua:1 Interface/AddOns/Questie/Modules/QuestieCoordinates.lua:20: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Tracker/QuestieTracker.lua:1 Interface/AddOns/Questie/Modules/Tracker/QuestieTracker.lua:84: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Tracker/TrackerUtils.lua:1 Interface/AddOns/Questie/Modules/Tracker/TrackerUtils.lua:36: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Tracker/TrackerHeaderFrame.lua:1 Interface/AddOns/Questie/Modules/Tracker/TrackerHeaderFrame.lua:29: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Questie/Modules/Options/TrackerTab/QuestieOptionsTracker.lua:1 ...face/AddOns/Questie/Modules/Options/TrackerTab/QuestieOptionsTracker.lua:28: unexpected symbol near '.'",
-["time"] = "2026/01/16 10:48:14",
 ["session"] = 13415,
+["time"] = "2026/01/16 10:48:14",
 ["counter"] = 1,
 },
 {
@@ -1253,8 +1245,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/Buffs.lua:1 Interface/AddOns/xVermin/Helpers/Buffs.lua:109: ')' expected (to close '(' at line 103) near 'end'",
-["time"] = "2026/01/16 11:11:25",
 ["session"] = 13423,
+["time"] = "2026/01/16 11:11:25",
 ["counter"] = 1,
 },
 {
@@ -1363,62 +1355,62 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:28 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:29 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:32 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:55 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:56 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:77 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:79 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:232 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:233 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
 ["message"] = "Interface/AddOns/Details/frames/anime.xml:260 Unrecognized XML attribute: change",
-["session"] = 13426,
 ["time"] = "2026/01/16 11:27:42",
+["session"] = 13426,
 ["counter"] = 1,
 },
 {
@@ -1575,8 +1567,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/AtlasLootClassic/Loader.lua:1 Interface/AddOns/AtlasLootClassic/Loader.lua:11: unexpected symbol near '.'",
-["session"] = 13446,
 ["time"] = "2026/01/16 12:06:09",
+["session"] = 13446,
 ["counter"] = 1,
 },
 {
@@ -1733,8 +1725,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Dejunk/src/consts.lua:1 Interface/AddOns/Dejunk/src/consts.lua:7: unexpected symbol near '.'",
-["session"] = 13456,
 ["time"] = "2026/01/16 12:15:12",
+["session"] = 13456,
 ["counter"] = 1,
 },
 {
@@ -1763,8 +1755,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/Dejunk/src/bags.lua:1 Interface/AddOns/Dejunk/src/bags.lua:9: unexpected symbol near '.'",
-["session"] = 13458,
 ["time"] = "2026/01/16 12:15:12",
+["session"] = 13458,
 ["counter"] = 3,
 },
 {
@@ -1833,8 +1825,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/NugKeyFeedback/NugKeyFeedback.lua:1 Interface/AddOns/NugKeyFeedback/NugKeyFeedback.lua:51: unexpected symbol near '.'",
-["time"] = "2026/01/16 12:28:12",
 ["session"] = 13463,
+["time"] = "2026/01/16 12:28:12",
 ["counter"] = 1,
 },
 {
@@ -2079,8 +2071,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/FarmHud_TrailPath/FarmHud_TrailPath.xml:7 Deferred XML Node object named FarmHudTrailPathPinTemplate already exists",
-["time"] = "2026/01/21 16:46:57",
 ["session"] = 13667,
+["time"] = "2026/01/21 16:46:57",
 ["counter"] = 1,
 },
 {
@@ -2277,8 +2269,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Addons/SUI.lua:1 Interface/AddOns/xVermin/Addons/SUI.lua:17: unexpected symbol near ')'",
-["session"] = 13752,
 ["time"] = "2026/01/22 12:11:04",
+["session"] = 13752,
 ["counter"] = 1,
 },
 {
@@ -2387,8 +2379,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/xVermin.toc:113 Couldn't open Interface/AddOns/xVermin/Helpers/WeaponBuff",
-["time"] = "2026/01/23 18:05:21",
 ["session"] = 13791,
+["time"] = "2026/01/23 18:05:21",
 ["counter"] = 1,
 },
 {
@@ -2833,8 +2825,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/AdiBags/AdiBags_TBC.toc:51 Duplicate File Load Detected. [Interface/AddOns/AdiBags/core/EventHandlers.lua] first loaded at [Interface/AddOns/AdiBags/AdiBags_TBC.toc:47]",
-["session"] = 13848,
 ["time"] = "2026/01/27 22:23:43",
+["session"] = 13848,
 ["counter"] = 1,
 },
 {
@@ -3031,8 +3023,8 @@ BugGrabberDB = {
 },
 {
 ["message"] = "Interface/AddOns/xVermin/Helpers/_Misc.lua:1 File Interface/AddOns/xVermin/Helpers/_Misc.lua is empty.",
-["time"] = "2026/02/13 19:15:53",
 ["session"] = 13947,
+["time"] = "2026/02/13 19:15:53",
 ["counter"] = 1,
 },
 {
@@ -3905,6 +3897,14 @@ BugGrabberDB = {
 ["locals"] = "",
 ["stack"] = "",
 ["session"] = 14531,
+["counter"] = 1,
+},
+{
+["message"] = "Interface/AddOns/xVermin/Addons/Auctionator.lua:17: attempt to call method 'SetBackdrop' (a nil value)",
+["time"] = 1773567232,
+["locals"] = "frame = AuctionFrame {\n numTabs = 3\n backdrop = Frame {\n }\n selectedTab = 1\n DialogOverlay = Button {\n }\n}\nbr = nil\nbg = nil\nbb = nil\nba = nil\n(*temporary) = nil\n(*temporary) = AuctionFrame {\n numTabs = 3\n backdrop = Frame {\n }\n selectedTab = 1\n DialogOverlay = Button {\n }\n}\n(*temporary) = <table> {\n bgFile = \"Interface\\Buttons\\WHITE8x8\"\n tileSize = 0\n edgeFile = \"Interface\\Buttons\\WHITE8x8\"\n tile = false\n edgeSize = 1\n insets = <table> {\n }\n}\n(*temporary) = \"attempt to call method 'SetBackdrop' (a nil value)\"\nBG = \"Interface\\Buttons\\WHITE8x8\"\n",
+["stack"] = "[Interface/AddOns/xVermin/Addons/Auctionator.lua]:17: in function <Interface/AddOns/xVermin/Addons/Auctionator.lua:15>\n[Interface/AddOns/xVermin/Addons/Auctionator.lua]:47: in function <Interface/AddOns/xVermin/Addons/Auctionator.lua:41>\n[Interface/AddOns/xVermin/Addons/Auctionator.lua]:72: in function <Interface/AddOns/xVermin/Addons/Auctionator.lua:71>\n",
+["session"] = 14551,
 ["counter"] = 1,
 },
 },
